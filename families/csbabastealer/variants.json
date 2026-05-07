@@ -1,0 +1,16 @@
+{
+  "family": "CSBabaStealer",
+  "variants": [
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Configuration"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_ce7d07a2",
+      "synthetic": true
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+Keyboard Language: Arabic
+Display Resolution: 1920x1080
+Wallpaper Hash: no_wallpaper
+
+
+═══════════════════════════════════════════════════════════════════
+                        IP GEOLOCATION DATA
+═══════════════════════════════════════════════════════════════════
+
+IP Address:      <redacted>
+Country:         Saudi Arabia (SA)
+Region:          Riyadh Region
+City:            <redacted>
+Postal Code:     <redacted>
+
+
+Timezone:        Asia/Riyadh (UTC)
+
+═══════════════════════════════════════════════════════════════════

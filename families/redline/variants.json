@@ -1,0 +1,29 @@
+{
+  "family": "Redline",
+  "variants": [
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Anti-Viruses",
+        "Available KeyboardLayouts",
+        "Country",
+        "Current Language",
+        "FileLocation",
+        "HWID",
+        "Hardwares",
+        "IP",
+        "Name",
+        "Operation System",
+        "Process Elevation",
+        "ScreenSize",
+        "UserName",
+        "Zip Code"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_7d94dffd",
+      "synthetic": true
+    }
+  ]
+}

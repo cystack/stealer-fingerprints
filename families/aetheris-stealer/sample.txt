@@ -1,0 +1,6 @@
+[GPU]
+Intel(R) UHD Graphics 630
+
+[Basic]
+User Domain: DESHAWNSPC
+CLR Version: 4.0.30319.42000

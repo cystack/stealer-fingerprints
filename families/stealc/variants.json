@@ -1,0 +1,451 @@
+{
+  "family": "StealC",
+  "variants": [
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Architecture",
+        "Cores",
+        "Country",
+        "Device String",
+        "Display Resolution",
+        "GPU",
+        "HWID",
+        "IP",
+        "Keyboards",
+        "Language",
+        "Laptop",
+        "Local Time",
+        "OS",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UTC",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_17febd38",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Architecture",
+        "CPU",
+        "Cores",
+        "Country",
+        "Device String",
+        "Display Resolution",
+        "GPU",
+        "HWID",
+        "IP",
+        "Keyboards",
+        "Language",
+        "Laptop",
+        "Local Time",
+        "OS",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UTC",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_2f93db51",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Architecture",
+        "CPU",
+        "Cores",
+        "Country",
+        "Device String",
+        "Display Resolution",
+        "GPU",
+        "IP",
+        "Keyboards",
+        "Language",
+        "Laptop",
+        "Local Time",
+        "OS",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UTC",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_32366ff6",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Architecture",
+        "Cores",
+        "Device String",
+        "Display Resolution",
+        "HWID",
+        "Keyboards",
+        "Laptop",
+        "Local Time",
+        "OS",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UTC",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_374303d1",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Architecture",
+        "CPU",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Device String",
+        "Display Resolution",
+        "GPU",
+        "IP",
+        "Keyboards",
+        "Language",
+        "Laptop",
+        "Local Time",
+        "OS",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UTC",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_3a34a244",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Architecture",
+        "Cores",
+        "Country",
+        "Device String",
+        "Display Resolution",
+        "GPU",
+        "HWID",
+        "IP",
+        "Language",
+        "Laptop",
+        "Local Time",
+        "OS",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UTC",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_3dbb2ef5",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Architecture",
+        "Cores",
+        "Country",
+        "Device String",
+        "Display Resolution",
+        "GPU",
+        "IP",
+        "Keyboards",
+        "Language",
+        "Laptop",
+        "Local Time",
+        "OS",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UTC",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_3e5aeb50",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Architecture",
+        "Cores",
+        "Device String",
+        "Display Resolution",
+        "GPU",
+        "HWID",
+        "Keyboards",
+        "Language",
+        "Laptop",
+        "Local Time",
+        "OS",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UTC",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_5a3cdc62",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Architecture",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Device String",
+        "Display Resolution",
+        "GPU",
+        "IP",
+        "Keyboards",
+        "Language",
+        "Laptop",
+        "Local Time",
+        "OS",
+        "Path",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UTC",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_769e0ade",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Network Info",
+        "Process List",
+        "Process count",
+        "System Summary"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_7a8ccb6e",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Architecture",
+        "CPU",
+        "Cores",
+        "Country",
+        "Device String",
+        "Display Resolution",
+        "GPU",
+        "HWID",
+        "Language",
+        "Laptop",
+        "Local Time",
+        "OS",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UTC",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_8b3c31f9",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Architecture",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Device String",
+        "Display Resolution",
+        "GPU",
+        "IP",
+        "Keyboards",
+        "Language",
+        "Laptop",
+        "Local Time",
+        "OS",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UTC",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_9e89f04b",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Architecture",
+        "CPU",
+        "Cores",
+        "Device String",
+        "Display Resolution",
+        "GPU",
+        "HWID",
+        "Language",
+        "Laptop",
+        "Local Time",
+        "OS",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UTC",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_a9654ba8",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Architecture",
+        "Cores",
+        "Country",
+        "Device String",
+        "Display Resolution",
+        "HWID",
+        "IP",
+        "Keyboards",
+        "Laptop",
+        "Local Time",
+        "OS",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UTC",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_c1d935a4",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Architecture",
+        "Cores",
+        "Country",
+        "Device String",
+        "Display Resolution",
+        "GPU",
+        "HWID",
+        "Keyboards",
+        "Language",
+        "Laptop",
+        "Local Time",
+        "OS",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UTC",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_db7c0462",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Architecture",
+        "Cores",
+        "Country",
+        "Device String",
+        "Display Resolution",
+        "GPU",
+        "HWID",
+        "Language",
+        "Laptop",
+        "Local Time",
+        "OS",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UTC",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_dd9953b8",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Architecture",
+        "Cores",
+        "Country",
+        "Device String",
+        "Display Resolution",
+        "HWID",
+        "Keyboards",
+        "Laptop",
+        "Local Time",
+        "OS",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UTC",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_f95c1aaa",
+      "synthetic": true
+    }
+  ]
+}

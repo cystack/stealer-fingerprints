@@ -1,0 +1,25 @@
+░▄▀▄░█░█░▀█▀░█▀▄░▀▀█░█▀▀░█░░░█▀█░█░█░█▀▄
+░█▀▀░█▀▄░░█░░█▀▄░░▀▄░█░░░█░░░█░█░█░█░█░█
+░░▀░░▀░▀░▀▀▀░▀░▀░▀▀░░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀░                                                                                                                                   
+@𝗸𝗶𝗿𝟯𝗰𝗹𝗼𝘂𝗱 -- @𝗸𝗶𝗿𝟯𝗼𝘄𝗻𝗲𝗿 @̲k̲i̲r̲3̲c̲l̲o̲u̲d̲ ̲-̲-̲ ̲@̲k̲i̲r̲3̲o̲w̲n̲e̲r̲ －－ ＠ｋｉｒ３ｃｌｏｕｄ －－ ＠ｋｉｒ３ｏｗｎｅｒ  
+
+IP: <redacted>
+FileLocation: <redacted>
+UserName: <redacted>
+Country: UNKNOWN
+Zip Code: <redacted>
+HWID: <redacted>
+Current Language: English (United States)
+ScreenSize: {Width = 1536,Height = 864}TimeZone: (UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi
+Operation System: Windows 10 Home Single Language x64
+Process Elevation: True
+Available KeyboardLayouts: 
+English (India)
+English (United States)
+Hardwares: 
+Name: AMD Ryzen 7 7735HS with Radeon Graphics        , 8 Cores
+Name: AMD Radeon(TM) Graphics, 536870912 bytes
+Name: Total of RAM, 15557.48 MB or 16313200640 bytes
+Anti-Viruses: 
+Windows Defender
+McAfee

@@ -1,0 +1,53 @@
+{
+  "family": "BracketSection Stealer",
+  "variants": [
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Buildtag",
+        "CPU",
+        "City",
+        "Country",
+        "FileLocation",
+        "GPU",
+        "Hostname",
+        "Hwid",
+        "IP",
+        "Keyboard",
+        "Logdate",
+        "OS Product",
+        "RAM",
+        "Screensize",
+        "System Language",
+        "Timezone",
+        "Username"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_9a2ff223",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "CPU",
+        "City",
+        "Country",
+        "GPU",
+        "Hwid",
+        "IP",
+        "RAM",
+        "Screensize",
+        "System Language",
+        "Timezone",
+        "Username"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_e81b5e96",
+      "synthetic": true
+    }
+  ]
+}

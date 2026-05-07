@@ -1,0 +1,18 @@
+- KORTEX // STEAL
+- Path: C:\Users\<user>\AppData\Local\Temp\PLD45E.tmp
+- ID: s-mn731qgq-4mp
+
+- OS Version: Windows 10.0
+- Local Date: 26.03.2026 <ip>
+- Time Zone: UTC+5
+- Install Date: Unknown
+- Elevated: true
+- Computer: DESKTOP-R5F22AO
+- User: MSI
+- Language: en-US
+- HWID: 4EF7A335
+- RAM Size: 32621MB
+- CPU: 12th Gen Intel(R) Core(TM) i5-12400F
+- GPU: NVIDIA GeForce RTX 3060
+- Display: 1920x1080
+- IP: <ip>

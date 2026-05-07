@@ -1,0 +1,24 @@
+{
+  "family": "CSGeoBoxStealer",
+  "variants": [
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "City",
+        "Country",
+        "Display Resolution",
+        "IP Address",
+        "Keyboard Language",
+        "Postal Code",
+        "Region",
+        "Timezone",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_a4e34ae5",
+      "synthetic": true
+    }
+  ]
+}

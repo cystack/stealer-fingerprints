@@ -1,0 +1,34 @@
+{
+  "family": "Lumma",
+  "variants": [
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Country",
+        "Display resolution",
+        "Domain",
+        "GPU",
+        "HWID"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_4177c9d7",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [],
+      "filenames": [
+        "System.txt",
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_c65f37b2",
+      "synthetic": true
+    }
+  ]
+}

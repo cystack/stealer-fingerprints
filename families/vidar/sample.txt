@@ -1,0 +1,58 @@
+<url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bot @arthouse_full_bot   <url>      Subscribe    ArtHouse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ip: <redacted>
+Country: IN
+HWID: <redacted>
+Windows: Windows 11 Home Single Language
+AV: Windows Defender
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English English
+Local Time: 28/03/2026 <ip>
+TimeZone: 5
+Processor: AMD Ryzen 5 5625U with Radeon Graphics
+Cores: 12
+Threads: 12
+RAM: 15708 MB

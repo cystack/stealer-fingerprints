@@ -1,0 +1,60 @@
+<url>          @arthouse_full_bot   Subscribe    ArtHouse    Cloud 2021-2026  <url>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<url>          @arthouse_full_bot       @cloud_arthouse       Subscribe    ArtHouse    Cloud 2021-2026  <url>
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+IP: <redacted>
+Country: IN
+HWID: <redacted>
+OS: Windows 11
+Architecture: x64
+UserName: <redacted>
+Local Time: 28/03/2026 <ip>
+UTC: 4
+Language: en-IN
+Laptop: TRUE
+Cores: 4
+Threads: 8
+RAM: 12 GB
+Display Resolution:
+Device String: Intel(R) Iris(R) Xe Graphics
+Resolution: 1920x1080
+GPU:

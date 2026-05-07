@@ -1,0 +1,20 @@
+- User: erenh
+- Domain: Failed to Fetch.
+- Hostname: Failed to Fetch.
+- Anti Virus:
+  - Windows Defender
+- HWID: Failed to Fetch.
+- RAM Size: Failed to Fetch.
+- CPU Vendor: Failed to Fetch.
+- CPU Name: Failed to Fetch.
+- CPU Threads: Failed to Fetch.
+- CPU Cores: Failed to Fetch.
+- GPU: Failed to Fetch.
+- Display resolution: 1720x1080
+
+- Clipboard: <url>
+M0N2QoLgcrUX6qNuwGZwYDFZKJOpTHvlpk
+
+- IP Address: <ip>
+- Time: 02.02.2026 <ip>
+- Country: NL

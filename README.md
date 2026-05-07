@@ -1,45 +1,28 @@
 # Stealer Fingerprints
 
-Public catalog of malware family fingerprints for stealer logs. Each entry documents a stealer family with its banner strings, field signatures, a sanitized sample, and YARA rules ready to drop into a detection pipeline.
+Public catalog of malware-family fingerprints curated by CyStack security research. Each entry documents a stealer log family with its banner strings, field signatures, sanitized sample, and ready-to-use YARA rules.
 
-Maintained by [CyStack](https://cystack.net) threat intelligenge team.
+## Families
 
-## Layout
-
-```
-families/
-  <family-name>/
-    README.md       Description, variants, detection guidance
-    rules.yar       YARA rules per variant
-    sample.txt      One sanitized sample log
-    variants.json   Machine-readable variant list
-```
-
-The top-level [`README.md`](README.md) above also has a table of all families with their variant counts.
-
-## How to use
-
-**Incident response.** Grep the family pages for any distinctive banner string you observed in a captured log. Match it against the `rules.yar` of the suspected family to confirm.
-
-**Detection engineering.** Import any family's `rules.yar` into your YARA scanner of choice. Each rule fires on either a unique banner string or the family's full observed field key set. Tune the threshold at the use site for low false positives.
-
-**Threat intelligence.** Cross-reference variants by alias, MITRE ATT&CK technique, or reference link.
-
-## Sample data
-
-Sample logs in this repository are sanitized before publication. Email addresses, URLs, IP addresses, computer names, hardware ids, and other identifying values are replaced with placeholders such as `<email>` or `<redacted>`. The fingerprint structure (banners, field labels, overall layout) is preserved so the samples remain useful for analyst review and YARA tuning.
+| Family | Variants |
+|---|---|
+| [`Aetheris Stealer`](families/aetheris-stealer/) | 4 |
+| [`BracketSection Stealer`](families/bracketsection-stealer/) | 2 |
+| [`CSALStealer`](families/csalstealer/) | 1 |
+| [`CSArtHouseCloudStealer`](families/csarthousecloudstealer/) | 4 |
+| [`CSBabaStealer`](families/csbabastealer/) | 1 |
+| [`CSCashFlowStealer`](families/cscashflowstealer/) | 3 |
+| [`CSGeoBoxStealer`](families/csgeoboxstealer/) | 1 |
+| [`CSHunterCloudStealer`](families/cshuntercloudstealer/) | 7 |
+| [`CSKortexStealer`](families/cskortexstealer/) | 1 |
+| [`CSPixelCloudStealer`](families/cspixelcloudstealer/) | 14 |
+| [`CSRussia34Stealer`](families/csrussia34stealer/) | 21 |
+| [`Lumma`](families/lumma/) | 2 |
+| [`Redline`](families/redline/) | 1 |
+| [`RedlineLike Stealer`](families/redlinelike-stealer/) | 37 |
+| [`StealC`](families/stealc/) | 17 |
+| [`Vidar`](families/vidar/) | 20 |
 
 ## Contributing
 
-Pull requests are welcome for:
-
-* New variants of an existing family (a `variants.json` entry plus a YARA rule).
-* New family pages.
-* Corrections to descriptions, MITRE ATT&CK mappings, or reference links.
-* Improved YARA rules.
-
-Before submitting a sample log, please verify every victim identifier is redacted.
-
-## License
-
-Apache License 2.0. See [`LICENSE`](LICENSE).
+Found a new variant or correction? Open a pull request adding the fingerprint banner, field keys, and any reference URLs. Sample logs must be sanitized of victim data before submission.

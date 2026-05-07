@@ -1,0 +1,460 @@
+{
+  "family": "Vidar",
+  "variants": [
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Cores",
+        "Display Resolution",
+        "HWID",
+        "Keyboard Languages",
+        "Local Time",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_0045b9fa",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Display Resolution",
+        "HWID",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_15f71433",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Display Resolution",
+        "HWID",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_1c2ffdc6",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Cores",
+        "Display Resolution",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_34b19de7",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Display Resolution",
+        "HWID",
+        "Keyboard Languages",
+        "Local Time",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_3a8dd8c4",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Display Resolution",
+        "HWID",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_4414d826",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Display Resolution",
+        "User Name",
+        "Windows"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_46863199",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Display Resolution",
+        "HWID",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_4b957099",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Cores",
+        "Display Resolution",
+        "Keyboard Languages",
+        "Local Time",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_4dc28b60",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Cores",
+        "Country",
+        "Display Resolution",
+        "HWID",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "Path",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_88eeffdf",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Cores",
+        "Country",
+        "Display Resolution",
+        "HWID",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_9e67c647",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Cores",
+        "Country",
+        "Display Resolution",
+        "HWID",
+        "Keyboard Languages",
+        "Local Time",
+        "Path",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_a1a2984a",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Cores",
+        "Country",
+        "Display Resolution",
+        "Keyboard Languages",
+        "Local Time",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_a43160bc",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Display Resolution",
+        "HWID",
+        "Keyboard Languages",
+        "Local Time",
+        "Path",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_aef85b8c",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Cores",
+        "Country",
+        "Display Resolution",
+        "HWID",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_b03f12ca",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Display Resolution",
+        "HWID",
+        "Keyboard Languages",
+        "Local Time",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_c49e7f05",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Cores",
+        "Country",
+        "Display Resolution",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_d6cd44c9",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Display Resolution",
+        "HWID",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "Path",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_def8826b",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Cores",
+        "Country",
+        "Display Resolution",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_fd304eee",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Cores",
+        "Country",
+        "Display Resolution",
+        "HWID",
+        "Keyboard Languages",
+        "Local Time",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_fdfce735",
+      "synthetic": true
+    }
+  ]
+}

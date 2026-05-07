@@ -1,0 +1,69 @@
+{
+  "family": "CSArtHouseCloudStealer",
+  "variants": [
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Country",
+        "Display resolution",
+        "Domain",
+        "GPU",
+        "HWID"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_4177c9d7",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Country",
+        "HWID",
+        "IP",
+        "Operation System",
+        "ScreenSize",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_4afc8936",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "CPU (Processor)",
+        "Country",
+        "IP",
+        "Operating System",
+        "Username"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_604764a3",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Country",
+        "IP",
+        "Operating System",
+        "Username"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_931e4ef2",
+      "synthetic": true
+    }
+  ]
+}
