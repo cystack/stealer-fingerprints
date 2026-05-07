@@ -123,6 +123,58 @@ Keyboard Language: Spanish
 Display Resolution: 1920x1080
 ```
 
+### `cystack_2f855a8f`
+
+**Field keys:**
+`Version`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+***********************************************
+*                                             *
+*   ____  _____ ____  _     ___ _   _ _____   *
+*  |  _ \| ____|  _ \| |   |_ _| \ | | ____|  *
+*  | |_) |  _| | | | | |    | ||  \| |  _|    *
+*  |  _ <| |___| |_| | |___ | || |\  | |___   *
+*  |_| \_|_____|____/|_____|___|_| \_|_____|  *
+*                                             *
+*                                             *
+***********************************************
+*          New subscribers here:              *
+*          <url>               *
+*          <url>               *
+*          <url>               *
+***********************************************
+[... 4 blank lines ...]
+- Path: C:\Windows\SysWOW32\install.exe
+Version: Russia 34
+- Local Date: 07.03.2026 <ip>
+- Install Date: 27.11.2024 <ip>
+- Time Zone: India Standard Time
+- Elevated: false
+- Computer: LAPTOP-8LG6M5PI
+- Hostname: LAPTOP-8LG6M5PI
+- User: ASUS
+- NetBIOS: LAPTOP-8LG6M5PI
+- Language: en-US
+- HWID: 6690209D3521D10929EC-094ddb8c-3434
+- RAM Size: 16106MB
+- CPU Vendor: GenuineIntel
+- CPU Name: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+- CPU Threads: 12
+- CPU Cores: 12
+- GPU:
+	- Intel(R) UHD Graphics
+- Display resolution: 1920x1080
+- BSSID: <ip>
+- Country: IN
+- Time: 07.03.2026 <ip> (sig:1772903885.69ac5dcd)
+- Wallpaper SHA256: D4200D7FCCE54AC672699FF5DAB35B7D4B75B18D471B103447C60C955AD094A7
+```
+
 ### `cystack_3f14dfa1`
 
 **Field keys:**
@@ -153,6 +205,43 @@ Model Name: Mac mini
 Memory: 16 GB
 Chipset Model: Apple M1
 Resolution: 2048 x 1152
+```
+
+### `cystack_4177c9d7`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Country`, `Display resolution`, `Domain`, `GPU`, `HWID`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+***********************************************
+*                                             *
+*   ____  _____ ____  _     ___ _   _ _____   *
+*  |  _ \| ____|  _ \| |   |_ _| \ | | ____|  *
+*  | |_) |  _| | | | | |    | ||  \| |  _|    *
+*  |  _ <| |___| |_| | |___ | || |\  | |___   *
+*  |_| \_|_____|____/|_____|___|_| \_|_____|  *
+*                                             *
+*                                             *
+***********************************************
+*          New subscribers here:              *
+*          <url>               *
+*          <url>               *
+*          <url>               *
+***********************************************
+
+Domain: <redacted>
+HWID: <redacted>
+CPU Vendor: GenuineIntel
+CPU Name: 12th Gen Intel(R) Core(TM) i3-1215U
+CPU Threads: 8
+CPU Cores: 6
+GPU: Intel(R) UHD Graphics
+Display resolution: 1536x864
+Country: IN
 ```
 
 ### `cystack_4565f9fe`
@@ -554,7 +643,7 @@ Display Resolution: 1280x720
 UserName: <redacted>
 Country: UNKNOWN
 HWID: <redacted>
-ScreenSize: {Width = 1600,Height = 900}TimeZone: (UTC+03:00) İstanbul
+ScreenSize: {Width = 1920,Height = 1080}TimeZone: (UTC+00:00) Dublín, Edimburgo, Lisboa, Londres
 Operation System: Windows 10 Pro x64
 ```
 

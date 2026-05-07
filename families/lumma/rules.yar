@@ -3,6 +3,26 @@
 // observed field-key set. Tune false-positive thresholds at use
 // site, especially for variants relying on field combinations.
 
+rule Lumma_cystack_00237ee6
+{
+    meta:
+        family = "Lumma"
+        fingerprint_id = "cystack_00237ee6"
+
+    strings:
+        $key_0 = "CPU Name:" ascii
+        $key_1 = "CPU Threads:" ascii
+        $key_2 = "CPU Vendor:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Display resolution:" ascii
+        $key_5 = "Domain:" ascii
+        $key_6 = "GPU:" ascii
+        $key_7 = "HWID:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Lumma_cystack_4177c9d7
 {
     meta:

@@ -29,6 +29,17 @@
     {
       "banner_strings": [],
       "field_keys": [
+        "Version"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_2f855a8f",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
         "Admin Group",
         "Country",
         "Display Resolution",
@@ -75,6 +86,21 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_5455ca59",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Computer Name",
+        "Network Info",
+        "Process List",
+        "Process count",
+        "System Summary"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_733cba35",
       "synthetic": true
     },
     {

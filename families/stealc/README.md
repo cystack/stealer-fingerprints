@@ -58,6 +58,49 @@ Resolution: 1366x768
 GPU:
 ```
 
+### `cystack_28c48a61`
+
+**Field keys:**
+`Architecture`, `Cores`, `Device String`, `Display Resolution`, `GPU`, `HWID`, `Language`, `Laptop`, `Local Time`, `OS`, `RAM`, `Resolution`, `Threads`, `UTC`, `UserName`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+***********************************************
+*                                             *
+*   ____  _____ ____  _     ___ _   _ _____   *
+*  |  _ \| ____|  _ \| |   |_ _| \ | | ____|  *
+*  | |_) |  _| | | | | |    | ||  \| |  _|    *
+*  |  _ <| |___| |_| | |___ | || |\  | |___   *
+*  |_| \_|_____|____/|_____|___|_| \_|_____|  *
+*                                             *
+*                                             *
+***********************************************
+*          New subscribers here:              *
+*          <url>               *
+*          <url>               *
+*          <url>               *
+***********************************************
+
+HWID: <redacted>
+OS: Windows 10
+Architecture: x64
+UserName: <redacted>
+Local Time: 26/03/2026 <ip>
+UTC: 3
+Language: id-ID
+Laptop: FALSE
+Cores: 4
+Threads: 8
+RAM: 4 GB
+Display Resolution:
+Device String: Intel(R) HD Graphics 4000
+Resolution: 1600x900
+GPU:
+```
+
 ### `cystack_2f93db51`
 
 **Field keys:**
@@ -898,6 +941,51 @@ RAM: 63 GB
 Display Resolution:
 Device String: Microsoft Basic Display Adapter
 Resolution: 1920x1080
+```
+
+### `cystack_c3cc1ed0`
+
+**Field keys:**
+`Architecture`, `Computer Name`, `Cores`, `Country`, `Device String`, `Display Resolution`, `GPU`, `IP`, `Language`, `Laptop`, `Local Time`, `OS`, `RAM`, `Resolution`, `Threads`, `UTC`, `UserName`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+***********************************************
+*                                             *
+*   ____  _____ ____  _     ___ _   _ _____   *
+*  |  _ \| ____|  _ \| |   |_ _| \ | | ____|  *
+*  | |_) |  _| | | | | |    | ||  \| |  _|    *
+*  |  _ <| |___| |_| | |___ | || |\  | |___   *
+*  |_| \_|_____|____/|_____|___|_| \_|_____|  *
+*                                             *
+*                                             *
+***********************************************
+*          New subscribers here:              *
+*          <url>               *
+*          <url>               *
+*          <url>               *
+***********************************************
+
+IP: <redacted>
+Country: US
+OS: Windows 11
+Architecture: x64
+UserName: <redacted>
+Computer Name: <redacted>
+Local Time: 2026-03-17 <ip>
+UTC: -8
+Language: en-US
+Laptop: TRUE
+Cores: 4
+Threads: 8
+RAM: 12 GB
+Display Resolution:
+Device String: Intel(R) Iris(R) Plus Graphics
+Resolution: 1920x1080
+GPU:
 ```
 
 ### `cystack_db7c0462`

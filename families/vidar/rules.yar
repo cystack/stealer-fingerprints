@@ -450,6 +450,31 @@ rule Vidar_cystack_def8826b
         all of ($key_*)
 }
 
+rule Vidar_cystack_e74c0052
+{
+    meta:
+        family = "Vidar"
+        fingerprint_id = "cystack_e74c0052"
+
+    strings:
+        $key_0 = "AV:" ascii
+        $key_1 = "Cores:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Display Resolution:" ascii
+        $key_4 = "Ip:" ascii
+        $key_5 = "Keyboard Languages:" ascii
+        $key_6 = "Local Time:" ascii
+        $key_7 = "Processor:" ascii
+        $key_8 = "RAM:" ascii
+        $key_9 = "Threads:" ascii
+        $key_10 = "TimeZone:" ascii
+        $key_11 = "User Name:" ascii
+        $key_12 = "Windows:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Vidar_cystack_fd304eee
 {
     meta:

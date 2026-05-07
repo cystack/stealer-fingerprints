@@ -713,6 +713,47 @@ Threads: 4
 RAM: 7098 MB
 ```
 
+### `cystack_e74c0052`
+
+**Field keys:**
+`AV`, `Cores`, `Country`, `Display Resolution`, `Ip`, `Keyboard Languages`, `Local Time`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Windows`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+***********************************************
+*                                             *
+*   ____  _____ ____  _     ___ _   _ _____   *
+*  |  _ \| ____|  _ \| |   |_ _| \ | | ____|  *
+*  | |_) |  _| | | | | |    | ||  \| |  _|    *
+*  |  _ <| |___| |_| | |___ | || |\  | |___   *
+*  |_| \_|_____|____/|_____|___|_| \_|_____|  *
+*                                             *
+*                                             *
+***********************************************
+*          New subscribers here:              *
+*          <url>               *
+*          <url>               *
+*          <url>               *
+***********************************************
+
+Ip: <redacted>
+Country: US
+Windows: Windows 11 Home
+AV: Windows Defender
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 26/03/2026 <ip>
+TimeZone: 4294967291
+Processor: Intel(R) Core(TM) Ultra 7 265
+Cores: 20
+Threads: 20
+RAM: 32210 MB
+```
+
 ### `cystack_fd304eee`
 
 **Field keys:**

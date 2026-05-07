@@ -1,0 +1,23 @@
+{
+  "PcName": "PCDEMIGUEL",
+  "Os": "Windows 10",
+  "Ip": "<ip>",
+  "GPU": [
+    "Intel(R) G41 Express Chipset (Microsoft Corporation - WDDM 1.1)"
+  ],
+  "RAM": 3037,
+  "ScreenSize": "1024x768",
+  "Arch": "x64",
+  "CpuCores": 2,
+  "Country": "BR",
+  "City": "S\u00E3o Jo\u00E3o del Rei",
+  "ZipCode": "36300",
+  "LocalTime": "null",
+  "LocalAdapterIpList": [],
+  "IsElevator": false,
+  "ProcessList": [],
+  "InstalledSoftware": [],
+  "UserName": "migue",
+  "Domain": "null",
+  "Hwid": "PCDEMIGUEL1d6e60eb-5006-48c8-bf30-e1bb5efa0401"
+}

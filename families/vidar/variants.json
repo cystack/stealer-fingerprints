@@ -419,6 +419,29 @@
         "Cores",
         "Country",
         "Display Resolution",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Windows"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_e74c0052",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "AV",
+        "Cores",
+        "Country",
+        "Display Resolution",
         "Keyboard Languages",
         "Local Time",
         "Processor",

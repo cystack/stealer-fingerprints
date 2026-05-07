@@ -19,6 +19,35 @@ signature on the `Time:` line. Build banners reference the
 
 ## Variants
 
+### `cystack_00237ee6`
+
+**Field keys:**
+`CPU Name`, `CPU Threads`, `CPU Vendor`, `Country`, `Display resolution`, `Domain`, `GPU`, `HWID`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>  
+
+Domain: <redacted>
+HWID: <redacted>
+CPU Vendor: GenuineIntel
+CPU Name: 12th Gen Intel(R) Core(TM) i5-12450HX
+CPU Threads: 12
+GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU
+Display resolution: 1536x864
+Country: TN
+```
+
 ### `cystack_4177c9d7`
 
 **Field keys:**

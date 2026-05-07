@@ -85,6 +85,23 @@ rule CSHunterCloudStealer_cystack_5455ca59
         all of ($key_*)
 }
 
+rule CSHunterCloudStealer_cystack_733cba35
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_733cba35"
+
+    strings:
+        $key_0 = "Computer Name:" ascii
+        $key_1 = "Network Info:" ascii
+        $key_2 = "Process List:" ascii
+        $key_3 = "Process count:" ascii
+        $key_4 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSHunterCloudStealer_cystack_d018500e
 {
     meta:

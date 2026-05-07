@@ -4,6 +4,24 @@
     {
       "banner_strings": [],
       "field_keys": [
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Country",
+        "Display resolution",
+        "Domain",
+        "GPU",
+        "HWID"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_00237ee6",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
         "CPU Cores",
         "CPU Name",
         "CPU Threads",
