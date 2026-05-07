@@ -31,48 +31,15 @@ horizontal rules. The `@ft7links` operator labels the archive
 
 ```
 <url>          @arthouse_full_bot   Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
-
-
+[... 5 blank lines ...]
 🏪 Support: @HUNTER_CLOUDS 🖤
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
+[... 3 blank lines ...]
 IP: <redacted>
 UserName: <redacted>
 Country: UNKNOWN
@@ -92,48 +59,15 @@ Operation System: Windows 10 Home x64
 
 ```
 <url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>          @arthouse_full_bot   Subscribe    ArtHouse    Cloud 2021-2026  <url>
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
-
-
+[... 5 blank lines ...]
 🏪 Support: @HUNTER_CLOUDS 🖤
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
+[... 3 blank lines ...]
 IP: <redacted>
 Country: IN (India)
 Operating System: Windows 11
@@ -152,48 +86,15 @@ CPU (Processor): 13th Gen Intel(R) Core(TM) i7-1355U
 
 ```
 Bot @arthouse_full_bot
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>          @arthouse_full_bot       @cloud_arthouse       Subscribe    ArtHouse    Cloud 2021-2026  <url>
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
-
-
+[... 5 blank lines ...]
 🏪 Support: @HUNTER_CLOUDS 🖤
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
+[... 3 blank lines ...]
 IP: <redacted>
 Country: IT (Italy)
 Operating System: Windows 11

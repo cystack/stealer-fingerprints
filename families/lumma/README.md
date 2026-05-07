@@ -30,49 +30,9 @@ signature on the `Time:` line. Build banners reference the
 
 ```
 Bot @arthouse_full_bot
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 14 blank lines ...]
 Domain: <redacted>
 HWID: <redacted>
 CPU Vendor: AuthenticAMD

@@ -29,48 +29,15 @@ with the v2 rewrite tracked through 2024.
 
 ```
 Bot @arthouse_full_bot   <url>      Subscribe    ArtHouse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 Bot @arthouse_full_bot
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
-
-
+[... 5 blank lines ...]
 🏪 Support: @HUNTER_CLOUDS 🖤
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
+[... 3 blank lines ...]
 IP: <redacted>
 Country: PK
 HWID: <redacted>
@@ -151,48 +118,15 @@ GPU:
 
 ```
 <url>          @arthouse_full_bot       @cloud_arthouse       Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
-
-
+[... 5 blank lines ...]
 🏪 Support: @HUNTER_CLOUDS 🖤
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
+[... 3 blank lines ...]
 IP: <redacted>
 Country: NP
 OS: Windows 11
@@ -315,48 +249,15 @@ GPU:
 
 ```
 <url>          @arthouse_full_bot   Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>          @arthouse_full_bot       @cloud_arthouse       Subscribe    ArtHouse    Cloud 2021-2026  <url>
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
-
-
+[... 5 blank lines ...]
 🏪 Support: @HUNTER_CLOUDS 🖤
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
+[... 3 blank lines ...]
 IP: <redacted>
 Country: IN
 HWID: <redacted>
@@ -387,49 +288,9 @@ GPU:
 
 ```
 <url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>          @arthouse_full_bot       @cloud_arthouse       Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 14 blank lines ...]
 IP: <redacted>
 Country: PH
 OS: Windows 11
@@ -553,48 +414,15 @@ GPU:
 
 ```
 <url>          @arthouse_full_bot   Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>          @arthouse_full_bot   Subscribe    ArtHouse    Cloud 2021-2026  <url>
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
-
-
+[... 5 blank lines ...]
 🏪 Support: @HUNTER_CLOUDS 🖤
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
+[... 3 blank lines ...]
 Network Info:
 	- IP: <ip>
 	- Country: PL
@@ -1045,48 +873,15 @@ GPU:
 
 ```
 <url>          @arthouse_full_bot   Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
-
-
+[... 5 blank lines ...]
 🏪 Support: @HUNTER_CLOUDS 🖤
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
+[... 3 blank lines ...]
 IP: <redacted>
 Country: NL
 HWID: <redacted>
@@ -1116,49 +911,9 @@ Resolution: 1920x1080
 
 ```
 <url>          @arthouse_full_bot       @cloud_arthouse       Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 14 blank lines ...]
 Country: PL
 HWID: <redacted>
 OS: Windows 11
@@ -1235,48 +990,15 @@ GPU:
 
 ```
 Bot @arthouse_full_bot   <url>      Subscribe    ArtHouse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>          @arthouse_full_bot   Subscribe    ArtHouse    Cloud 2021-2026  <url>
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
-
-
+[... 5 blank lines ...]
 🏪 Support: @HUNTER_CLOUDS 🖤
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
+[... 3 blank lines ...]
 Country: JP
 HWID: <redacted>
 OS: Windows 11

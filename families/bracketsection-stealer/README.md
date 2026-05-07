@@ -63,49 +63,9 @@ RAM: 20349 MB
 
 ```
 <url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 Bot @arthouse_full_bot   <url>      Subscribe    ArtHouse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 14 blank lines ...]
 Username: <redacted>
 IP: <redacted>
 Country: Pakistan (PK)

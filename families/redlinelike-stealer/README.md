@@ -179,48 +179,15 @@ Domain Name: <redacted>
 
 ```
 <url>          @arthouse_full_bot   Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
-
-
+[... 5 blank lines ...]
 🏪 Support: @HUNTER_CLOUDS 🖤
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
+[... 3 blank lines ...]
 System Language: Italian
 Processor: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
 Installed RAM: 7995 MB
@@ -311,48 +278,15 @@ Graphics card: Intel(R) Iris(R) Plus Graphics 640
 
 ```
 Bot @arthouse_full_bot
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
-
-
+[... 5 blank lines ...]
 🏪 Support: @HUNTER_CLOUDS 🖤
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
+[... 3 blank lines ...]
 Country: IN
 IP: <redacted>
 System Language: English
@@ -1070,48 +1004,15 @@ Display Resolution: 1280x720 [h2307]
 
 ```
 Bot @arthouse_full_bot   <url>      Subscribe    ArtHouse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
-
-
+[... 5 blank lines ...]
 🏪 Support: @HUNTER_CLOUDS 🖤
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
+[... 3 blank lines ...]
 Log date: 11/03/26 19:41
 HWID: <redacted>
 Country: IN
@@ -1226,48 +1127,15 @@ Timezone:        Europe/Berlin (UTC)
 
 ```
 Bot @arthouse_full_bot
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 Bot @arthouse_full_bot
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
-
-
+[... 5 blank lines ...]
 🏪 Support: @HUNTER_CLOUDS 🖤
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
+[... 3 blank lines ...]
 System Language: La
 Processor: Intel(R) Core(TM) i3-10100F CPU @ 3.60GHz (4 cores, 8 threads)
 Installed RAM: 15.94 GB
@@ -1351,48 +1219,15 @@ Display Resolution: 2560x1440
 
 ```
 <url>          @arthouse_full_bot       @cloud_arthouse       Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 Bot @arthouse_full_bot
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
-
-
+[... 5 blank lines ...]
 🏪 Support: @HUNTER_CLOUDS 🖤
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
+[... 3 blank lines ...]
 Country: Spain
 IP: <redacted>
 System Language: Spanish

@@ -1,46 +1,13 @@
 <url>          @arthouse_full_bot       @cloud_arthouse       Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 Bot @arthouse_full_bot
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
-
-
+[... 5 blank lines ...]
 🏪 Support: @HUNTER_CLOUDS 🖤
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
+[... 3 blank lines ...]
 Country: Spain
 IP: <redacted>
 System Language: Spanish

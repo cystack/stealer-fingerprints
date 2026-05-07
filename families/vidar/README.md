@@ -404,49 +404,9 @@ RAM: 16310 MB
 
 ```
 Bot @arthouse_full_bot
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>          @arthouse_full_bot       @cloud_arthouse       Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 14 blank lines ...]
 Ip: <redacted>
 Country: KE
 HWID: <redacted>
@@ -474,49 +434,9 @@ RAM: 3983 MB
 
 ```
 <url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 Bot @arthouse_full_bot   <url>      Subscribe    ArtHouse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 14 blank lines ...]
 Ip: <redacted>
 Country: IN
 HWID: <redacted>
@@ -544,48 +464,15 @@ RAM: 15708 MB
 
 ```
 <url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>          @arthouse_full_bot       @cloud_arthouse       Subscribe    ArtHouse    Cloud 2021-2026  <url>
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
-
-
+[... 5 blank lines ...]
 🏪 Support: @HUNTER_CLOUDS 🖤
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
+[... 3 blank lines ...]
 Country: IQ
 HWID: <redacted>
 Path: <redacted>
@@ -612,48 +499,15 @@ RAM: 7884 MB
 
 ```
 <url>          @arthouse_full_bot   Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>          @arthouse_full_bot       @cloud_arthouse       Subscribe    ArtHouse    Cloud 2021-2026  <url>
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
-
-
+[... 5 blank lines ...]
 🏪 Support: @HUNTER_CLOUDS 🖤
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
+[... 3 blank lines ...]
 Country: PE
 Windows: Windows 11 Home Single Language
 AV: Windows Defender
@@ -721,48 +575,15 @@ RAM: 8108 MB
 
 ```
 <url>          @arthouse_full_bot       @cloud_arthouse       Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>          @arthouse_full_bot       @cloud_arthouse       Subscribe    ArtHouse    Cloud 2021-2026  <url>
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
-
-
+[... 5 blank lines ...]
 🏪 Support: @HUNTER_CLOUDS 🖤
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-
-
+[... 3 blank lines ...]
 Ip: <redacted>
 Country: LU
 HWID: <redacted>
@@ -831,49 +652,9 @@ RAM: 3797 MB
 
 ```
 t.me / +GnCJu3Wqao1jBhi = CASHFLOW•PREMIUM•CLOUD•LOGS — premium quality daily
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 t.me/+GnCJu3Wqao1jBhi = C A S H F L O W   P R E M I U M   C L O U D   L O G S — fresh daily
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 14 blank lines ...]
 Ip: <redacted>
 Country: AT
 Windows: Windows 11 Home
@@ -943,49 +724,9 @@ RAM: 7098 MB
 
 ```
 Bot @arthouse_full_bot
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 14 blank lines ...]
 Country: IN
 Windows: Windows 11 Pro
 AV: Windows Defender
@@ -1011,49 +752,9 @@ RAM: 16256 MB
 
 ```
 Bot @arthouse_full_bot
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 28 blank lines ...]
 <url>          @arthouse_full_bot   Subscribe    ArtHouse    Cloud 2021-2026  <url>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[... 14 blank lines ...]
 Country: IN
 HWID: <redacted>
 Windows: Windows 11 Pro
