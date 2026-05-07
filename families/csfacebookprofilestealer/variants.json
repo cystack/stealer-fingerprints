@@ -1,0 +1,14 @@
+{
+  "family": "CSFacebookProfileStealer",
+  "variants": [
+    {
+      "banner_strings": [],
+      "field_keys": [],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_c65f37b2",
+      "synthetic": true
+    }
+  ]
+}

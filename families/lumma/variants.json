@@ -22,6 +22,17 @@
     {
       "banner_strings": [],
       "field_keys": [
+        "Version"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_2f855a8f",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
         "CPU Cores",
         "CPU Name",
         "CPU Threads",

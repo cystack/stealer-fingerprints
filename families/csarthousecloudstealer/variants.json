@@ -31,7 +31,8 @@
         "UserName"
       ],
       "filenames": [
-        "System.txt"
+        "System.txt",
+        "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_4afc8936",
       "synthetic": true
@@ -49,6 +50,29 @@
         "System.txt"
       ],
       "fingerprint_id": "cystack_604764a3",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Country",
+        "Graphics card",
+        "IP",
+        "Installed RAM",
+        "Keyboard Language",
+        "Log date",
+        "MachineID",
+        "Operation System",
+        "Processor",
+        "ScreenSize",
+        "System Language",
+        "User Language",
+        "UserName"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_84127066",
       "synthetic": true
     },
     {

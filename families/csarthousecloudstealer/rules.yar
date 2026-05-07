@@ -59,6 +59,31 @@ rule CSArtHouseCloudStealer_cystack_604764a3
         all of ($key_*)
 }
 
+rule CSArtHouseCloudStealer_cystack_84127066
+{
+    meta:
+        family = "CSArtHouseCloudStealer"
+        fingerprint_id = "cystack_84127066"
+
+    strings:
+        $key_0 = "Country:" ascii
+        $key_1 = "Graphics card:" ascii
+        $key_2 = "IP:" ascii
+        $key_3 = "Installed RAM:" ascii
+        $key_4 = "Keyboard Language:" ascii
+        $key_5 = "Log date:" ascii
+        $key_6 = "MachineID:" ascii
+        $key_7 = "Operation System:" ascii
+        $key_8 = "Processor:" ascii
+        $key_9 = "ScreenSize:" ascii
+        $key_10 = "System Language:" ascii
+        $key_11 = "User Language:" ascii
+        $key_12 = "UserName:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSArtHouseCloudStealer_cystack_931e4ef2
 {
     meta:

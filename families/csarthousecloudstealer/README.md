@@ -25,7 +25,7 @@ horizontal rules. The `@ft7links` operator labels the archive
 **Field keys:**
 `Country`, `HWID`, `IP`, `Operation System`, `ScreenSize`, `UserName`
 
-**Filenames:** `System.txt`
+**Filenames:** `System.txt`, `UserInformation.txt`
 
 **Sample (sanitized):**
 
@@ -73,6 +73,41 @@ Country: IN (India)
 Operating System: Windows 11
 Username: <redacted>
 CPU (Processor): 13th Gen Intel(R) Core(TM) i7-1355U
+```
+
+### `cystack_84127066`
+
+**Field keys:**
+`Country`, `Graphics card`, `IP`, `Installed RAM`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `ScreenSize`, `System Language`, `User Language`, `UserName`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Bot @arthouse_full_bot
+[... 28 blank lines ...]
+<url>          @arthouse_full_bot       @cloud_arthouse       Subscribe    ArtHouse    Cloud 2021-2026  <url>
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[... 5 blank lines ...]
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[... 3 blank lines ...]
+Log date: 2026-03-16 <ip>
+IP: <redacted>
+Country: IQ
+UserName: <redacted>
+Operation System: Windows 11 build 26200
+System Language: Arabic
+User Language: English
+Keyboard Language: English
+MachineID: <redacted>
+ScreenSize: 3840x2400
+Processor: Intel(R) Core(TM) i9-14900HX
+Installed RAM: 32469 MB
+Graphics card: NVIDIA GeForce RTX 4090 Laptop GPU, Intel(R) UHD Graphics
 ```
 
 ### `cystack_931e4ef2`

@@ -248,6 +248,34 @@
       "banner_strings": [],
       "field_keys": [
         "Architecture",
+        "CPU",
+        "Cores",
+        "Country",
+        "Device String",
+        "Display Resolution",
+        "GPU",
+        "HWID",
+        "Keyboards",
+        "Language",
+        "Laptop",
+        "Local Time",
+        "OS",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UTC",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_677f855d",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Architecture",
         "Computer Name",
         "Cores",
         "Country",
@@ -366,6 +394,31 @@
         "System.txt"
       ],
       "fingerprint_id": "cystack_a9654ba8",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Architecture",
+        "CPU",
+        "Cores",
+        "Country",
+        "Device String",
+        "Display Resolution",
+        "GPU",
+        "HWID",
+        "Language",
+        "Laptop",
+        "OS",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_ac35d607",
       "synthetic": true
     },
     {

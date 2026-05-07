@@ -16,19 +16,20 @@ __________________________________________________________
 |        <url>      |      <url>      |      <url>      |      <url>         |
 |_________________________________________________________|
 
+Log date: 03 Dec 25 22:25
 HWID: <redacted>
-Country: FR
+Country: Saudi Arabia
 IP: <redacted>
-System Language: French
-Installed RAM: 15.92 GB
-Operation System: Windows 11 (Build 26200) (64 Bit)
-Graphics card: NVIDIA GeForce RTX 2070 SUPER
+System Language: English
+Installed RAM: 31.86 GB
+Operation System: Windows 11 24H2 Pro (Build 26200) (64 Bit)
+Graphics card: NVIDIA GeForce RTX 3050 + Parsec Virtual Display Adapter
 Computer Name: <redacted>
 Domain Name: <redacted>
 User Name: <redacted>
 Admin Group: FALSE
 Integrity: Medium
-TimeZone: UTC+1
-UserLanguage: French
-Keyboard Language: French
-Display Resolution: 1920x1080
+TimeZone: UTC+3
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 2560x1440

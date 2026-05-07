@@ -94,6 +94,34 @@ Keyboard Language: English
 Display Resolution: 1280x800
 ```
 
+### `cystack_1863c96d`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+IP: <redacted>
+System Language: English
+Processor: 13th Gen Intel(R) Core(TM) i5-13420H (8 cores, 12 threads)
+Installed RAM: 15.69 GB
+Operation System: Windows 11 (Build 26200) (64 Bit)
+Graphics card: Intel(R) UHD Graphics
+Computer Name: <redacted>
+Domain Name: <redacted>
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+3
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1536x864
+```
+
 ### `cystack_2460a6dc`
 
 **Field keys:**
@@ -206,6 +234,61 @@ Wallpaper Hash: f78bca4847b3404f79aba9fe8ab1fcab25617a1e
 Country:         Italy (IT)
 City:            <redacted>
 Timezone:        Europe/Rome (UTC)
+```
+
+### `cystack_2d2c7ce0`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+@ k i r 3 c l o u d  	@ k i r 3 c l o u d	@ k i r 3 c l o u d  	@ k i r 3 c l o u d      @ k i r 3 c l o u d
+@ k i r 3 c l o u d  	@ k i r 3 c l o u d	@ k i r 3 c l o u d  	@ k i r 3 c l o u d      @ k i r 3 c l o u d
+@ k i r 3 c l o u d  	@ k i r 3 c l o u d	@ k i r 3 c l o u d  	@ k i r 3 c l o u d      @ k i r 3 c l o u d
+@ k i r 3 c l o u d  	@ k i r 3 c l o u d	@ k i r 3 c l o u d  	@ k i r 3 c l o u d      @ k i r 3 c l o u d
+░▄▀▄░█░█░▀█▀░█▀▄░▀▀█░█▀▀░█░░░█▀█░█░█░█▀▄
+░█▀▀░█▀▄░░█░░█▀▄░░▀▄░█░░░█░░░█░█░█░█░█░█
+░░▀░░▀░▀░▀▀▀░▀░▀░▀▀░░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀░                                                                                                                                   
+@𝗸𝗶𝗿𝟯𝗰𝗹𝗼𝘂𝗱 -- @𝗸𝗶𝗿𝟯𝗼𝘄𝗻𝗲𝗿 @̲k̲i̲r̲3̲c̲l̲o̲u̲d̲ ̲-̲-̲ ̲@̲k̲i̲r̲3̲o̲w̲n̲e̲r̲ －－ ＠ｋｉｒ３ｃｌｏｕｄ －－ ＠ｋｉｒ３ｏｗｎｅｒ  
+
+⣿⣿⣿⣿⡟⠛⠁⠄⠄⠄⠄⢀⣀⣀⠄⠄⠄⠄⣤⣽⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⡋⠁⠄⠄⠄⣠⣶⣾⣿⣿⣿⣿⠄⢦⡄⠐⠬⠛⢿⣿⣿⣿⣿⣿⣿
+⣿⡿⠇⠁⠄⠄⣠⣾⣿⣿⡿⠟⠋⠁⠄⠄⠈⠁⠄⠄⠄⠄⠙⢿⣿⣿⣿⣿
+⣿⠃⠄⠄⠄⠘⣿⣿⣿⣿⢀⣠⠄⠄⠄⠄⣰⣶⣀⠄⠄⠄⠄⠸⣿⣿⣿⣿
+⣏⠄⠄⠄⠄⠄⣿⣿⣿⡿⢟⣁⠄⣀⣠⣴⣿⣿⠿⠷⠶⠒⠄⠄⢹⣿⣿⣿
+⡏⠄⠄⠄⠄⢰⣿⣿⣿⣿⣿⣿⣿⣿⡟⠄⠛⠁⠄⠄⠄⠄⠄⠄⢠⣿⣿⣿
+⡇⠄⠄⠄⠄⠈⢿⣿⣿⣿⣿⣿⣿⣿⡇⠄⣼⣿⠇⠘⠄⠁⠄⠄⠄⢻⣿⣿ - Fucked by Boss Of This Gym
+⣇⠄⠄⠄⠄⠄⠸⢿⣿⣿⣿⣿⣿⣿⠁⠸⠟⠁⣠⣤⣤⣶⣤⠄⠄⠄⢻⣿
+⣿⡄⠄⡤⢤⣤⡀⠈⣿⣿⣿⣿⣿⣿⡆⠄⠄⠘⠋⠁⠄⠄⠈⠄⠄⠄⢸⣿ - You known number 8639479?
+⣿⣿⡜⢰⡾⢻⣧⣰⣿⣿⣿⣿⣿⣿⣷⠄⣼⣷⣶⣶⡆⠄⠄⠄⠄⠄⠄⣿
+⣿⣿⣧⢸⠄⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⠄⠄⠄⠄⠄⠄⠄⣿
+⣿⣿⣿⣿⡿⢿⡟⠉⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠄⠄⢀⡀⠄⠘⣿
+⣿⣿⣿⣿⣿⣆⢻⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠄⠄⠈⠁⠄⠄⣿
+⣿⣿⣿⣿⣿⣿⡆⢻⣿⣿⣿⣿⣿⣿⡿⠛⠛⠛⠃⠄⠄⠄⠄⠄⠄⠄⢀⣿
+⣿⣿⣿⣿⣿⣿⣿⣆⣻⣿⣿⣿⣿⣿⣷⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿
+Log date: 10 Jan 26 10:01
+HWID: <redacted>
+Country: India
+IP: <redacted>
+System Language: English
+Processor: AMD Ryzen 7 7435HS (8 cores, 16 threads)
+Installed RAM: 15.82 GB
+Operation System: Windows 11 25H2 Home Single Language (Build 26200) (64 Bit)
+Graphics card: NVIDIA GeForce RTX 2050
+Computer Name: <redacted>
+Domain Name: <redacted>
+-------------
+User Name: <redacted>
+Admin Group: TRUE
+Integrity: High
+TimeZone: UTC+5
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1536x864
 ```
 
 ### `cystack_3662db05`
@@ -349,6 +432,42 @@ Timezone:        Europe/Brussels (UTC)
 ═══════════════════════════════════════════════════════════════════
 ```
 
+### `cystack_4ba92b06`
+
+**Field keys:**
+`Admin Group`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `RAM`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>  
+
+Country: KR
+IP: <redacted>
+System Language: English
+Processor: 11th Gen Intel(R) Core(TM) i7-11700F @ 2.50GHz (8 cores, 16 threads)
+RAM: 15.86 GB
+Operation System: Windows 10 (Build 19045) (64 Bit)
+Graphics card: NVIDIA GeForce RTX 3070 Ti
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: 9
+UserLanguage: English
+Keyboard Language: English [H5364]
+Display Resolution: 1920x1080
+```
+
 ### `cystack_4c3cebf2`
 
 **Banners:**
@@ -422,6 +541,38 @@ Admin Group: FALSE
 Integrity: Medium
 TimeZone: UTC+2
 UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+```
+
+### `cystack_512a8969`
+
+**Field keys:**
+`Admin Group`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+  
+
+Country: LU
+IP: <redacted>
+Processor: AMD Ryzen 5 1600 Six-Core Processor  (6 cores, 12 threads)
+Installed RAM: 15.93 GB
+Operation System: Windows 10 (Build 19045) (64 Bit)
+Graphics card: Radeon RX 580 Series
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: 8
+UserLanguage: Russian
 Keyboard Language: English
 Display Resolution: 1920x1080
 ```
@@ -549,6 +700,66 @@ Keyboard Language: English
 Display Resolution: 1920x1080
 ```
 
+### `cystack_674eb669`
+
+**Banners:**
+- `===DARKSIDE_BRAND_BEGIN===`
+
+**Field keys:**
+`Country`, `Graphics card`, `IP`, `Installed RAM`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `ScreenSize`, `System Language`, `TimeZone`, `User Language`, `UserName`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+===DARKSIDE_BRAND_BEGIN===
+|________________________________________________________________________________________________________________________|
+| D                                                                                                                    D |
+| A Join: <url>                                                                               A |
+| R                                                                                                                    R |
+| K $$$$$$$\                      $$\                 $$\       $$\                                                    K |
+| S $$  __$$\                     $$ |                \__|      $$ |                                                   S |
+| I $$ |  $$ | $$$$$$\   $$$$$$\  $$ |  $$\  $$$$$$$\ $$\  $$$$$$$ | $$$$$$\                                           I |
+| D $$ |  $$ | \____$$\ $$  __$$\ $$ | $$  |$$  _____|$$ |$$  __$$ |$$  __$$\                                          D |
+| E $$ |  $$ | $$$$$$$ |$$ |  \__|$$$$$$  / \$$$$$$\  $$ |$$ /  $$ |$$$$$$$$ |                                         E |
+| C $$ |  $$ |$$  __$$ |$$ |      $$  _$$<   \____$$\ $$ |$$ |  $$ |$$   ____|                                         C |
+| L $$$$$$$  |\$$$$$$$ |$$ |      $$ | \$$\ $$$$$$$  |$$ |\$$$$$$$ |\$$$$$$$\                                          L |
+| O \_______/  \_______|\__|      \__|  \__|\_______/ \__| \_______| \_______|                                         O |
+| U                                                                                                                    U |
+| D                                                                                                                    D |
+| D                                                                                                                    D |
+| A                                                                                                                    A |
+| R DARKSIDE PRIVATE CLOUD - Private Monthly Packs                                                                     R |
+| K TIERS (monthly):  BUDGET $100  |  PREMIUM $200  |  GOLD $300                                                       K |
+| S                                                                                                                    S |
+| I                                                                                                                    I |
+| D C  Budget Channel: 100$/month - Access up to 10+ private channels (total 500$).                                    D |
+| E L  Premium Channel: 200$/month - Access to 10-20+ private channels (total 1000$).                                  E |
+| C O  Gold Channel: 300$/month - Access to 20-30+ private channels (total 2000$).                                     C |
+| L U          Join: <url>                                                                    L |
+| O D             Join: <url>                                                                 O |
+| U                   Join: <url>                                                             U |
+| D DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD      D |
+|________________________________________________________________________________________________________________________|
+===DARKSIDE_BRAND_END===
+
+Log date: 2026-03-08 <ip>
+IP: <redacted>
+Country: GB
+UserName: <redacted>
+Operation System: Windows 11 build 26200
+System Language: English
+User Language: English
+Keyboard Language: English
+TimeZone: -1
+MachineID: <redacted>
+ScreenSize: 3440x1440
+Processor: AMD Ryzen 7 5800X 8-Core Processor
+Installed RAM: 32653 MB
+Graphics card: NVIDIA GeForce RTX 5070 Ti
+```
+
 ### `cystack_735b57ba`
 
 **Field keys:**
@@ -610,6 +821,59 @@ TimeZone: -1
 UserLanguage: Portuguese
 Keyboard Language: Portuguese
 Display Resolution: 1920x1080
+```
+
+### `cystack_795dea64`
+
+**Field keys:**
+`Admin Group`, `Antivirus`, `City`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP Address`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Postal Code`, `Processor`, `Region`, `TimeZone`, `Timezone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Bot @arthouse_full_bot
+[... 28 blank lines ...]
+<url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[... 5 blank lines ...]
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[... 3 blank lines ...]
+    System Language: Arabic
+Processor: Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz
+Installed RAM: 8073 MB
+Operation System: Windows 10 Home build 19045 (64 Bit)
+Graphics card: Intel(R) HD Graphics 3000
+Antivirus: Windows Defender
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+0
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1366x768
+Wallpaper Hash: 30086ff0e62ecc58de50846a913fe0fe964fab9a
+
+
+═══════════════════════════════════════════════════════════════════
+                        IP GEOLOCATION DATA
+═══════════════════════════════════════════════════════════════════
+
+IP Address:      <redacted>
+Country:         Morocco (MA)
+Region:          Fès-Meknès
+City:            <redacted>
+Postal Code:     <redacted>
+
+
+Timezone:        Africa/Casablanca (UTC)
+
+═══════════════════════════════════════════════════════════════════
 ```
 
 ### `cystack_80805b46`
@@ -1032,6 +1296,37 @@ Keyboard Language: English
 Display Resolution: 1536x864
 ```
 
+### `cystack_d1f53760`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `Product Key`, `Router MAC Address`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+IP: <redacted>
+TimeZone: +2
+System Language: English
+Processor: AMD Ryzen 7 5700U with Radeon Graphics
+Installed RAM: 10085 MB
+Operation System: Windows 11-10.0.26200
+Graphics card: AMD Radeon(TM) Graphics
+Computer Name: <redacted>
+Router MAC Address: <ip>
+Domain Name: <redacted>
+Product Key: NF6HC-QH89W-F8WYV-WWXV4-WFG6P
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1600x900
+Wallpaper Hash: 75fac2956852c4176f1a463aeb436451e3c40bfb
+```
+
 ### `cystack_d6ea5c3d`
 
 **Field keys:**
@@ -1149,6 +1444,41 @@ TimeZone: 0
 UserLanguage: Latvian
 Keyboard Language: Latvian
 Display Resolution: 1920x1080
+```
+
+### `cystack_da6b26f6`
+
+**Field keys:**
+`Admin Group`, `Country`, `Display Resolution`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>  
+
+Country: KR
+IP: <redacted>
+System Language: Korean
+Processor: AMD Ryzen 5 5600X 6-Core Processor  (6 cores, 12 threads)
+Installed RAM: 31.89 GB
+Operation System: Windows 11 (Build 26200) (64 Bit)
+Graphics card: NVIDIA GeForce RTX 3060
+User Name: <redacted>
+Admin Group: FALSE [F2503]
+Integrity: Medium
+TimeZone: 10
+UserLanguage: Korean [u1218] [I4635]
+Keyboard Language: Korean
+Display Resolution: 2560x1440
 ```
 
 ### `cystack_dd8d6359`

@@ -1,0 +1,19 @@
+============================================================
+
+User time: 2026-03-14 <ip>
+HWID: <redacted>
+PC Name: 264711-1-1
+User Name: <redacted>
+CPU: AMD Ryzen 5 3600 6-Core Processor              
+GPU: Meta Virtual Monitor, LuminonCore IDDCX Adapter, NVIDIA GeForce RTX 3060 Ti
+Memory: 64 GB 
+OS: Microsoft Windows 11 Pro
+Active window: Speed Dial - Opera
+Build Path: C:\Users\<user>\AppData\Local\Resolume Avenue\logioptionsplus_agent.exe
+Build ID: zN8hEq769bkgWGsvS7gE
+Build Version: 0.27.0
+Build Comment: 
+Admin rights: true
+IP: <redacted>
+GEO: GB
+Resolution: 1920x1080, 1920x1080

@@ -40,7 +40,8 @@
         "User Domain"
       ],
       "filenames": [
-        "Information.txt"
+        "Information.txt",
+        "information.txt"
       ],
       "fingerprint_id": "cystack_2052a4d3",
       "synthetic": true

@@ -264,6 +264,36 @@ rule StealC_cystack_5a3cdc62
         all of ($key_*)
 }
 
+rule StealC_cystack_677f855d
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_677f855d"
+
+    strings:
+        $key_0 = "Architecture:" ascii
+        $key_1 = "CPU:" ascii
+        $key_2 = "Cores:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Device String:" ascii
+        $key_5 = "Display Resolution:" ascii
+        $key_6 = "GPU:" ascii
+        $key_7 = "HWID:" ascii
+        $key_8 = "Keyboards:" ascii
+        $key_9 = "Language:" ascii
+        $key_10 = "Laptop:" ascii
+        $key_11 = "Local Time:" ascii
+        $key_12 = "OS:" ascii
+        $key_13 = "RAM:" ascii
+        $key_14 = "Resolution:" ascii
+        $key_15 = "Threads:" ascii
+        $key_16 = "UTC:" ascii
+        $key_17 = "UserName:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule StealC_cystack_769e0ade
 {
     meta:
@@ -393,6 +423,33 @@ rule StealC_cystack_a9654ba8
         $key_13 = "Threads:" ascii
         $key_14 = "UTC:" ascii
         $key_15 = "UserName:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_ac35d607
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_ac35d607"
+
+    strings:
+        $key_0 = "Architecture:" ascii
+        $key_1 = "CPU:" ascii
+        $key_2 = "Cores:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Device String:" ascii
+        $key_5 = "Display Resolution:" ascii
+        $key_6 = "GPU:" ascii
+        $key_7 = "HWID:" ascii
+        $key_8 = "Language:" ascii
+        $key_9 = "Laptop:" ascii
+        $key_10 = "OS:" ascii
+        $key_11 = "RAM:" ascii
+        $key_12 = "Resolution:" ascii
+        $key_13 = "Threads:" ascii
+        $key_14 = "UserName:" ascii
 
     condition:
         all of ($key_*)

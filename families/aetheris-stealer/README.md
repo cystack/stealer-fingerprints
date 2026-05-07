@@ -167,7 +167,7 @@ CLR Version: 4.0.30319.42000
 **Field keys:**
 `CLR Version`, `CPU Name`, `Clipboard`, `Default Gateway`, `External IP`, `Hwid`, `Input ISO`, `Internal IP`, `Logical Cores`, `Machine`, `Now`, `OS Arch`, `OS Build`, `OS Product`, `RAM Available (MB)`, `RAM Total (MB)`, `User`, `User Domain`
 
-**Filenames:** `Information.txt`
+**Filenames:** `Information.txt`, `information.txt`
 
 **Sample (sanitized):**
 

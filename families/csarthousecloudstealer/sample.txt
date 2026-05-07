@@ -1,6 +1,6 @@
-<url>          @arthouse_full_bot   Subscribe    ArtHouse    Cloud 2021-2026  <url>
+Bot @arthouse_full_bot
 [... 28 blank lines ...]
-<url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
+<url>          @arthouse_full_bot       @cloud_arthouse       Subscribe    ArtHouse    Cloud 2021-2026  <url>
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 [... 5 blank lines ...]
@@ -8,9 +8,16 @@
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 [... 3 blank lines ...]
+Log date: 2026-03-16 <ip>
 IP: <redacted>
+Country: IQ
 UserName: <redacted>
-Country: UNKNOWN
-HWID: <redacted>
-ScreenSize: {Width = 1536,Height = 864}TimeZone: (UTC+04:00) Abu Dhabi, Muscat
-Operation System: Windows 10 Home x64
+Operation System: Windows 11 build 26200
+System Language: Arabic
+User Language: English
+Keyboard Language: English
+MachineID: <redacted>
+ScreenSize: 3840x2400
+Processor: Intel(R) Core(TM) i9-14900HX
+Installed RAM: 32469 MB
+Graphics card: NVIDIA GeForce RTX 4090 Laptop GPU, Intel(R) UHD Graphics

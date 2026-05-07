@@ -2,6 +2,29 @@
   "family": "BracketSection Stealer",
   "variants": [
     {
+      "banner_strings": [
+        "===DARKSIDE_BRAND_BEGIN==="
+      ],
+      "field_keys": [
+        "CPU",
+        "City",
+        "Country",
+        "GPU",
+        "Hwid",
+        "IP",
+        "RAM",
+        "Screensize",
+        "System Language",
+        "Timezone",
+        "Username"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_2928a851",
+      "synthetic": true
+    },
+    {
       "banner_strings": [],
       "field_keys": [
         "Buildtag",

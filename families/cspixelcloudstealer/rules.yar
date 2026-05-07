@@ -36,6 +36,27 @@ rule CSPixelCloudStealer_cystack_0fe89d26
         all of ($key_*)
 }
 
+rule CSPixelCloudStealer_cystack_4177c9d7
+{
+    meta:
+        family = "CSPixelCloudStealer"
+        fingerprint_id = "cystack_4177c9d7"
+
+    strings:
+        $key_0 = "CPU Cores:" ascii
+        $key_1 = "CPU Name:" ascii
+        $key_2 = "CPU Threads:" ascii
+        $key_3 = "CPU Vendor:" ascii
+        $key_4 = "Country:" ascii
+        $key_5 = "Display resolution:" ascii
+        $key_6 = "Domain:" ascii
+        $key_7 = "GPU:" ascii
+        $key_8 = "HWID:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSPixelCloudStealer_cystack_47bdc5de
 {
     meta:
@@ -101,6 +122,34 @@ rule CSPixelCloudStealer_cystack_55a19892
         $key_10 = "TimeZone:" ascii
         $key_11 = "User Name:" ascii
         $key_12 = "UserLanguage:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSPixelCloudStealer_cystack_5ab79345
+{
+    meta:
+        family = "CSPixelCloudStealer"
+        fingerprint_id = "cystack_5ab79345"
+
+    strings:
+        $key_0 = "Admin Group:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Display Resolution:" ascii
+        $key_4 = "Domain Name:" ascii
+        $key_5 = "HWID:" ascii
+        $key_6 = "IP:" ascii
+        $key_7 = "Installed RAM:" ascii
+        $key_8 = "Integrity:" ascii
+        $key_9 = "Keyboard Language:" ascii
+        $key_10 = "Log date:" ascii
+        $key_11 = "Operation System:" ascii
+        $key_12 = "System Language:" ascii
+        $key_13 = "TimeZone:" ascii
+        $key_14 = "User Name:" ascii
+        $key_15 = "UserLanguage:" ascii
 
     condition:
         all of ($key_*)
@@ -212,6 +261,26 @@ rule CSPixelCloudStealer_cystack_7c3f49e3
         all of ($key_*)
 }
 
+rule CSPixelCloudStealer_cystack_8eb4ba72
+{
+    meta:
+        family = "CSPixelCloudStealer"
+        fingerprint_id = "cystack_8eb4ba72"
+
+    strings:
+        $key_0 = "Chipset Model:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Memory:" ascii
+        $key_3 = "Model Name:" ascii
+        $key_4 = "Resolution:" ascii
+        $key_5 = "User Name:" ascii
+        $key_6 = "Username:" ascii
+        $key_7 = "Version:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSPixelCloudStealer_cystack_a5b1cb3f
 {
     meta:
@@ -224,6 +293,62 @@ rule CSPixelCloudStealer_cystack_a5b1cb3f
         $key_2 = "Operation System:" ascii
         $key_3 = "ScreenSize:" ascii
         $key_4 = "UserName:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSPixelCloudStealer_cystack_a938c77c
+{
+    meta:
+        family = "CSPixelCloudStealer"
+        fingerprint_id = "cystack_a938c77c"
+
+    strings:
+        $key_0 = "Admin Group:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Display Resolution:" ascii
+        $key_4 = "Domain Name:" ascii
+        $key_5 = "Graphics card:" ascii
+        $key_6 = "HWID:" ascii
+        $key_7 = "IP:" ascii
+        $key_8 = "Installed RAM:" ascii
+        $key_9 = "Integrity:" ascii
+        $key_10 = "Keyboard Language:" ascii
+        $key_11 = "Log date:" ascii
+        $key_12 = "Operation System:" ascii
+        $key_13 = "System Language:" ascii
+        $key_14 = "TimeZone:" ascii
+        $key_15 = "User Name:" ascii
+        $key_16 = "UserLanguage:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSPixelCloudStealer_cystack_ae1e54a0
+{
+    meta:
+        family = "CSPixelCloudStealer"
+        fingerprint_id = "cystack_ae1e54a0"
+
+    strings:
+        $key_0 = "Admin Group:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Display Resolution:" ascii
+        $key_4 = "Domain Name:" ascii
+        $key_5 = "Graphics card:" ascii
+        $key_6 = "IP:" ascii
+        $key_7 = "Installed RAM:" ascii
+        $key_8 = "Integrity:" ascii
+        $key_9 = "Keyboard Language:" ascii
+        $key_10 = "Operation System:" ascii
+        $key_11 = "System Language:" ascii
+        $key_12 = "TimeZone:" ascii
+        $key_13 = "User Name:" ascii
+        $key_14 = "UserLanguage:" ascii
 
     condition:
         all of ($key_*)
@@ -249,6 +374,32 @@ rule CSPixelCloudStealer_cystack_d7c6c67e
         $key_10 = "TimeZone:" ascii
         $key_11 = "User Name:" ascii
         $key_12 = "UserLanguage:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSPixelCloudStealer_cystack_e6316c5e
+{
+    meta:
+        family = "CSPixelCloudStealer"
+        fingerprint_id = "cystack_e6316c5e"
+
+    strings:
+        $key_0 = "Admin Group:" ascii
+        $key_1 = "Country:" ascii
+        $key_2 = "Display Resolution:" ascii
+        $key_3 = "Domain Name:" ascii
+        $key_4 = "Graphics card:" ascii
+        $key_5 = "IP:" ascii
+        $key_6 = "Installed RAM:" ascii
+        $key_7 = "Integrity:" ascii
+        $key_8 = "Keyboard Language:" ascii
+        $key_9 = "Operation System:" ascii
+        $key_10 = "System Language:" ascii
+        $key_11 = "TimeZone:" ascii
+        $key_12 = "User Name:" ascii
+        $key_13 = "UserLanguage:" ascii
 
     condition:
         all of ($key_*)

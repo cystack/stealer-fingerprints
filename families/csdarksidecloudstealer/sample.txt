@@ -1,0 +1,287 @@
+===DARKSIDE_BRAND_BEGIN===
+|________________________________________________________________________________________________________________________|
+| D                                                                                                                    D |
+| A Join: <url>                                                                               A |
+| R                                                                                                                    R |
+| K $$$$$$$\                      $$\                 $$\       $$\                                                    K |
+| S $$  __$$\                     $$ |                \__|      $$ |                                                   S |
+| I $$ |  $$ | $$$$$$\   $$$$$$\  $$ |  $$\  $$$$$$$\ $$\  $$$$$$$ | $$$$$$\                                           I |
+| D $$ |  $$ | \____$$\ $$  __$$\ $$ | $$  |$$  _____|$$ |$$  __$$ |$$  __$$\                                          D |
+| E $$ |  $$ | $$$$$$$ |$$ |  \__|$$$$$$  / \$$$$$$\  $$ |$$ /  $$ |$$$$$$$$ |                                         E |
+| C $$ |  $$ |$$  __$$ |$$ |      $$  _$$<   \____$$\ $$ |$$ |  $$ |$$   ____|                                         C |
+| L $$$$$$$  |\$$$$$$$ |$$ |      $$ | \$$\ $$$$$$$  |$$ |\$$$$$$$ |\$$$$$$$\                                          L |
+| O \_______/  \_______|\__|      \__|  \__|\_______/ \__| \_______| \_______|                                         O |
+| U                                                                                                                    U |
+| D                                                                                                                    D |
+| D                                                                                                                    D |
+| A                                                                                                                    A |
+| R DARKSIDE PRIVATE CLOUD - Private Monthly Packs                                                                     R |
+| K TIERS (monthly):  BUDGET $100  |  PREMIUM $200  |  GOLD $300                                                       K |
+| S                                                                                                                    S |
+| I                                                                                                                    I |
+| D C  Budget Channel: 100$/month - Access up to 10+ private channels (total 500$).                                    D |
+| E L  Premium Channel: 200$/month - Access to 10-20+ private channels (total 1000$).                                  E |
+| C O  Gold Channel: 300$/month - Access to 20-30+ private channels (total 2000$).                                     C |
+| L U          Join: <url>                                                                    L |
+| O D             Join: <url>                                                                 O |
+| U                   Join: <url>                                                             U |
+| D DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD      D |
+|________________________________________________________________________________________________________________________|
+===DARKSIDE_BRAND_END===
+
+-------------------ADS ADS ADS-------------------
+Checking "wallets" folder from logs. Brute Metamask, Phantom, Exodus etc.
+Best logs and ULP Aggregator
+
+
+-------------------ADS-------------------
+all free clouds are saved here for free 
+
+
+-------------------ADS ADS ADS-------------------
+
+Ip: <redacted>
+Country: AF
+Version: 18.6
+
+Date: 23/03/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 03/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Persian
+Local Time: 23/03/2026 <ip>
+TimeZone: 4294967288
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+Cores: 12
+Threads: 12
+RAM: 16234 MB
+VideoCard: Radeon RX Vega
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+services.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+winlogon.exe
+svchost.exe
+svchost.exe
+fontdrvhost.exe
+dwm.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+amdfendrsr.exe
+atiesrxx.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+atieclxx.exe
+svchost.exe
+Memory Compression
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+spoolsv.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+alg.exe
+svchost.exe
+svchost.exe
+dllhost.exe
+svchost.exe
+svchost.exe
+AppleMobileDeviceService.exe
+svchost.exe
+svchost.exe
+mDNSResponder.exe
+p2penhance.exe
+perfhost.exe
+ssh-agent.exe
+escsvc64.exe
+svchost.exe
+OSE.EXE
+Locator.exe
+Service_KMS.exe
+snmptrap.exe
+Spectrum.exe
+WmiApSrv.exe
+DiagnosticsHub.StandardCollector.Service.exe
+vds.exe
+TieringEngineService.exe
+ss_conn_service.exe
+elevation_service.exe
+ss_conn_service2.exe
+WsidService.exe
+ElevationService.exe
+PerceptionSimulationService.exe
+VSSVC.exe
+InstallAssistService.exe
+jhi_service.exe
+WMIRegistrationService.exe
+SearchIndexer.exe
+MsMpEng.exe
+MpDefenderCoreService.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+sihost.exe
+svchost.exe
+svchost.exe
+taskhostw.exe
+WmiPrvSE.exe
+WmiPrvSE.exe
+taskhostw.exe
+svchost.exe
+svchost.exe
+ctfmon.exe
+svchost.exe
+explorer.exe
+svchost.exe
+svchost.exe
+svchost.exe
+conhost.exe
+explorer.exe
+StartMenuExperienceHost.exe
+RuntimeBroker.exe
+svchost.exe
+SearchApp.exe
+RuntimeBroker.exe
+svchost.exe
+svchost.exe
+svchost.exe
+NisSrv.exe
+RuntimeBroker.exe
+LockApp.exe
+RuntimeBroker.exe
+svchost.exe
+audiodg.exe
+TextInputHost.exe
+E_YATIYWE.EXE
+explorer.exe
+svchost.exe
+svchost.exe
+svchost.exe
+UnlockToolPRO.exe
+svchost.exe
+msdtc.exe
+uhssvc.exe
+svchost.exe
+SecurityHealthService.exe
+SearchProtocolHost.exe
+taskhostw.exe
+taskhostw.exe
+svchost.exe
+~mlhjaa.exe
+~mlhjaa.tmp
+~flnhba.exe
+~bhmkba.exe
+~gnanba.exe
+~nkalca.exe
+mp3djremixer.exe
+WMIADAP.exe
+GDFwAdmin.exe
+SearchFilterHost.exe
+d4SY6wLEo4Tw9F5JG92sfS8W.exe
+svchost.exe
+svchost.exe
+GDFwAdmin.exe
+svchost.exe
+CompPkgSrv.exe
+backgroundTaskHost.exe
+backgroundTaskHost.exe
+backgroundTaskHost.exe
+backgroundTaskHost.exe
+backgroundTaskHost.exe
+backgroundTaskHost.exe
+svchost.exe
+RuntimeBroker.exe
+opera_autoupdate.exe
+opera_autoupdate.exe
+RuntimeBroker.exe
+opera_autoupdate.exe
+opera_autoupdate.exe
+assistant_installer.exe
+RuntimeBroker.exe
+
+[Software]
+EPSON L3250 Series Printer Uninstall
+LibUSB-Win32-<ip> - <ip>
+MediaTek SP Driver version <ip> - <ip>
+WinRAR 7.20 (64-bit) - 7.20.0
+Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664 - 12.0.40664
+Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219 - 10.0.40219
+Microsoft Update Health Tools - <ip>
+Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030 - 11.0.61030
+ZeroKnox Removal version 2.1 - 2.1
+Microsoft Visual Studio 2010 Tools for Office Runtime (x64) - 10.0.60833
+Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664 - 12.0.40664
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161 - 9.0.30729.6161
+ZeroKnox Removal version 2.7 - 2.7
+UsbDk Runtime Libraries - 1.0.22
+Bonjour - <ip>
+Update for Windows 10 for x64-based Systems (KB5001716) - <ip>
+KMSpico
+Microsoft Visual C++ 2005 Redistributable (x64) - 8.0.61000
+Apple Mobile Device Support - <ip>
+Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030 - 11.0.61030
+Samsung USB Driver for Mobile Phones - <ip>
+iRemove Tools (A12+ Edition) - 9.4
+EpsonNet Print - <ip>
+MP3 DJ Remix 4.8.3.3926
+Microsoft OneDrive - 26.032.0217.0003
+Opera GX Stable 128.0.5807.97 - 128.0.5807.97
+Telegram Desktop - 6.5.1

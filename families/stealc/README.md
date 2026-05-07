@@ -397,6 +397,54 @@ Resolution: 1920x1080
 GPU:
 ```
 
+### `cystack_677f855d`
+
+**Field keys:**
+`Architecture`, `CPU`, `Cores`, `Country`, `Device String`, `Display Resolution`, `GPU`, `HWID`, `Keyboards`, `Language`, `Laptop`, `Local Time`, `OS`, `RAM`, `Resolution`, `Threads`, `UTC`, `UserName`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+__________________________________________________________
+|                                                                                                                                                        |
+|             .d8888888b.  8888888b. 8888888 88b   d88P 8888888888 888      .d8888b.   .d8888b.  888      .d88888b.  888     888 8888888b.              |
+|            d88P"   "88b 888   88b  888    88b d88P  888        888     d88P  88b d88P  88b 888     d88P" "88b 888     888 888  "88b             |
+|            888  d8b  888 888    888  888     88o88P   888        888     88b.      888    888 888     888     888 888     888 888    888             |
+|            888  888  888 888   d88P  888      888P    8888888    888      "888b.   888        888     888     888 888     888 888    888             |
+|            888  888bd88P 8888888P"   888      d888b    888        888         "88b. 888        888     888     888 888     888 888    888             |
+|            888  8888P"  888         888     d88888b   888        888           "888 888    888 888     888     888 888     888 888    888             |
+|            88b.     .d8 888         888    d88P 88b  888        888     88b  d88P 88b  d88P 888     88b. .d88P 88b. .d88P 888  .d88P             |
+|             "88888888P" 888       8888888 d88P   88b 8888888888 88888888 "8888P"   "8888P"  88888888 "88888P"   "88888P"  8888888P"              |
+|                                                                                                                                                        |
+|                                                                    JOIN OUR CHANNEL!                                                                   |
+|                                                                                                                                                        |
+|        <url>      |      <url>      |      <url>      |      <url>         |
+|        <url>      |      <url>      |      <url>      |      <url>         |
+|        <url>      |      <url>      |      <url>      |      <url>         |
+|_________________________________________________________|
+
+Country: TR
+HWID: <redacted>
+OS: Windows 11
+Architecture: x64
+UserName: <redacted>
+Local Time: 26/03/2026 <ip>
+UTC: 4
+Language: tr-TR
+Keyboards: Türkçe (Türkiye)
+Laptop: TRUE
+CPU: 13th Gen Intel(R) Core(TM) i7-13620H
+Cores: 10
+Threads: 16
+RAM: 16 GB
+Display Resolution:
+Device String: Intel(R) UHD Graphics
+Resolution: 1920x1080
+GPU:
+```
+
 ### `cystack_769e0ade`
 
 **Field keys:**
@@ -902,6 +950,35 @@ RAM: 16 GB
 Display Resolution:
 Device String: NVIDIA GeForce RTX 2060
 Resolution: 2560x1080
+GPU:
+```
+
+### `cystack_ac35d607`
+
+**Field keys:**
+`Architecture`, `CPU`, `Cores`, `Country`, `Device String`, `Display Resolution`, `GPU`, `HWID`, `Language`, `Laptop`, `OS`, `RAM`, `Resolution`, `Threads`, `UserName`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+Country: PH
+HWID: <redacted>
+OS: Windows 10
+Architecture: x64
+UserName: <redacted>
+	Local Time: 27/03/2026 <ip>
+	UTC: 9
+Language: en-PH
+Laptop: FALSE
+CPU: AMD Ryzen 5 3600 6-Core Processor
+Cores: 6
+Threads: 12
+RAM: 16 GB
+Display Resolution:
+Device String: NVIDIA GeForce GTX 1660 SUPER
+Resolution: 1920x1080
 GPU:
 ```
 
