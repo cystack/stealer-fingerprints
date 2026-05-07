@@ -36,6 +36,21 @@ rule CSPixelCloudStealer_cystack_0fe89d26
         all of ($key_*)
 }
 
+rule CSPixelCloudStealer_cystack_18ae3e96
+{
+    meta:
+        family = "CSPixelCloudStealer"
+        fingerprint_id = "cystack_18ae3e96"
+
+    strings:
+        $key_0 = "Country:" ascii
+        $key_1 = "Operating System:" ascii
+        $key_2 = "Username:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSPixelCloudStealer_cystack_4177c9d7
 {
     meta:

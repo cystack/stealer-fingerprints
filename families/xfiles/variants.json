@@ -1,0 +1,26 @@
+{
+  "family": "XFiles",
+  "variants": [
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Buy",
+        "CPU (Processor)",
+        "Computer Name",
+        "Desktop Screenshot Taken",
+        "GPU (Display Devices)",
+        "Hardware ID",
+        "Processed parts",
+        "RAM (Memory)",
+        "Reserve Link",
+        "Screens",
+        "Username"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_fe611d56",
+      "synthetic": true
+    }
+  ]
+}

@@ -33,6 +33,56 @@ Operating System: Windows 11
 Username: <redacted>
 ```
 
+### `cystack_4afc8936`
+
+**Field keys:**
+`Country`, `HWID`, `IP`, `Operation System`, `ScreenSize`, `UserName`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+CASHFLOW PREMIUM CLOUD LOGS — top cashflow → t dot me slash +GnCJu3Wqao1jBhi
+[... 28 blank lines ...]
+CASHFLOW|PREMIUM|CLOUD|LOGS — top cashflow → t/me/+GnCJu3Wqao1jBhi
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[... 5 blank lines ...]
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[... 3 blank lines ...]
+IP: <redacted>
+UserName: <redacted>
+Country: UNKNOWN
+HWID: <redacted>
+ScreenSize: {Width = 1920,Height = 1080}TimeZone: (UTC+07:00) Bangkok, Hanoi, Jakarta
+Operation System: Windows 10 Pro x64
+```
+
+### `cystack_530b5636`
+
+**Field keys:**
+`Chipset Model`, `Memory`, `Model Name`, `Resolution`, `User Name`, `Username`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+C4SHFL0W PR3M1UM CL0UD L0G5 — top cashflow → t.me / +GnCJu3Wqao1jBhi
+[... 28 blank lines ...]
+t/me/Link_CashFlow = C A S H F L O W   P R E M I U M   C L O U D   L O G S — premium quality daily
+[... 14 blank lines ...]
+Username: <redacted>
+User Name: <redacted>
+Model Name: iMac
+Memory: 24 GB
+Chipset Model: AMD Radeon Pro 5300
+Resolution: Retina 5K (5120 x 2880)
+```
+
 ### `cystack_604764a3`
 
 **Field keys:**
@@ -60,6 +110,30 @@ Username: <redacted>
 CPU (Processor): Intel(R) N200
 ```
 
+### `cystack_7043df8f`
+
+**Field keys:**
+`Operating System`, `Username`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+C4SHFL0W PR3M1UM CL0UD L0G5 — best cloud → t . m e / + G n C J u 3 W q a o 1 j B h i
+[... 28 blank lines ...]
+t dot me slash +GnCJu3Wqao1jBhi = CASHFLOW|PREMIUM|CLOUD|LOGS — premium Cashflow logs
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[... 5 blank lines ...]
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[... 3 blank lines ...]
+Operating System: Windows 10
+Username: <redacted>
+```
+
 ### `cystack_931e4ef2`
 
 **Field keys:**
@@ -84,6 +158,27 @@ IP: <redacted>
 Country: AU (Australia)
 Operating System: Windows 11
 Username: <redacted>
+```
+
+### `cystack_a5b1cb3f`
+
+**Field keys:**
+`Country`, `HWID`, `Operation System`, `ScreenSize`, `UserName`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+t . me / +GnCJu3Wqao1jBhi = C4SHFL0W PR3M1UM CL0UD L0G5 — fresh daily
+[... 28 blank lines ...]
+t.me / +GnCJu3Wqao1jBhi = C4SHFL0W PR3M1UM CL0UD L0G5 — premium quality daily
+[... 14 blank lines ...]
+UserName: <redacted>
+Country: UNKNOWN
+HWID: <redacted>
+ScreenSize: {Width = 2560,Height = 1440}TimeZone: (UTC+09:00) 서울
+Operation System: Windows 10 Home x64
 ```
 
 ## Detection

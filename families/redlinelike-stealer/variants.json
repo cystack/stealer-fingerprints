@@ -372,6 +372,29 @@
       "banner_strings": [],
       "field_keys": [
         "Admin Group",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Operation System",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_55a19892",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Admin Group",
         "Country",
         "Display Resolution",
         "Domain Name",
@@ -522,6 +545,28 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_795dea64",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Admin Group",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Operation System",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_796e25f3",
       "synthetic": true
     },
     {
@@ -700,6 +745,29 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_a1b233c6",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Admin Group",
+        "Buy",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Operation System",
+        "Reserve Link",
+        "TimeZone",
+        "User Name",
+        "UserLanguage"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_a98d2638",
       "synthetic": true
     },
     {
@@ -1037,6 +1105,31 @@
       "banner_strings": [],
       "field_keys": [
         "Admin Group",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "HWID",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Operation System",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_e90367ce",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Admin Group",
         "BUILD NAME",
         "Computer Name",
         "Country",
@@ -1137,6 +1230,7 @@
         "UserLanguage"
       ],
       "filenames": [
+        "System.txt",
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_f95511e0",

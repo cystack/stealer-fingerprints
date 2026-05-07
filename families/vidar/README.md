@@ -7214,7 +7214,7 @@ Legacy Launcher Stable version <ip> - <ip>
 **Field keys:**
 `AV`, `Cores`, `Display Resolution`, `Keyboard Languages`, `Local Time`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`
 
-**Filenames:** `information.txt`
+**Filenames:** `System.txt`, `information.txt`
 
 **Sample (sanitized):**
 
@@ -12208,6 +12208,48 @@ Wondershare NativePush(Build <ip>)
 Legacy Launcher Stable version <ip> - <ip>
 ```
 
+### `cystack_17743ca0`
+
+**Field keys:**
+`AV`, `Buy`, `Cores`, `Display Resolution`, `Install Date`, `Keyboard Languages`, `Local Time`, `RAM`, `Reserve Link`, `Threads`, `TimeZone`, `User Name`, `VideoCard`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+│    [
+
+The Best fresh logs and ULP Cloud
+
+t.me/WichLoveFromR
+t.me/WichLoveFromR
+t.me/WichLoveFromR
+
+Reserve Link: <url>
+Buy: @AltairSupport
+
+
+Install Date: 10/02/2026 <ip>
+AV: Windows Defender
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 28/03/2026 <ip>
+TimeZone: 2
+[Hardware]
+Cores: 2
+Threads: 2
+RAM: 3933 MB
+VideoCard: Intel(R) UHD Graphics
+[Processes]
+System
+Registry
+Memory Compression
+[Software]
+```
+
 ### `cystack_17b946ab`
 
 **Field keys:**
@@ -14258,6 +14300,29 @@ Processor: AMD Ryzen 3 3250U with Radeon Graphics
 Cores: 4
 Threads: 4
 RAM: 7857 MB
+```
+
+### `cystack_1fb0a366`
+
+**Field keys:**
+`Cores`, `Display Resolution`, `Keyboard Languages`, `Local Time`, `RAM`, `Threads`, `TimeZone`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+C A S H F L O W   P R E M I U M   C L O U D   L O G S — premium Cashflow logs → t.me / Link_CashFlow
+[... 28 blank lines ...]
+C4SHFL0W PR3M1UM CL0UD L0G5 — top cashflow → t dot me slash +GnCJu3Wqao1jBhi
+[... 14 blank lines ...]
+Display Resolution: 1366x768
+Keyboard Languages: English English Urdu Urdu Urdu Urdu Urdu Urdu Urdu Urdu
+Local Time: 26/03/2026 <ip>
+TimeZone: 3
+Cores: 4
+Threads: 4
+RAM: 8110 MB
 ```
 
 ### `cystack_1fbe9c26`
@@ -27773,6 +27838,48 @@ Riot Client
 VALORANT
 Roblox Player for KennOsaur
 Microsoft Visual Studio Code (User) - 1.110.0
+```
+
+### `cystack_3725ca36`
+
+**Field keys:**
+`AV`, `Cores`, `Country`, `Display Resolution`, `HWID`, `Install Date`, `Keyboard Languages`, `Local Time`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+Country: TR
+HWID: <redacted>
+Windows: Windows 10 Home
+Install Date: 18/05/2025 <ip>
+AV: Windows Defender
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Turkish
+Local Time: 27/03/2026 <ip>
+TimeZone: 3
+[Hardware]
+Cores: 12
+Threads: 12
+RAM: 16219 MB
+VideoCard: NVIDIA GeForce RTX 3060
+[Processes]
+System
+Registry
+NVDisplay.Container.exe
+Memory Compression
+NVDisplay.Container.exe
+[Software]
+Riot Vanguard
+SteamTools
+Update for x64-based Windows Systems (KB5001716) - <ip>
+FiveM
+Riot Client 
+VALORANT
+Roblox Player for berat
+Roblox Studio for berat
 ```
 
 ### `cystack_3728f8d6`
@@ -50756,6 +50863,42 @@ Spotify - <ip>.g2316a870
 Wand - 12.15.0
 Python 3.13.3 (64-bit) - 3.13.3150.0
 Proton Drive - 1.12.4
+```
+
+### `cystack_5cbcfc5f`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Display Resolution`, `HWID`, `Install Date`, `Keyboard Languages`, `Local Time`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+Country: IN
+HWID: <redacted>
+Work Dir: In memory
+Windows: Windows 11 Pro
+Install Date: 03/05/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English English
+Local Time: 27/03/2026 <ip>
+TimeZone: 4294967288
+[Hardware]
+Processor: AMD Ryzen 3 3250U with Radeon Graphics         
+Cores: 4
+Threads: 4
+RAM: 6086 MB
+VideoCard: AMD Radeon(TM) Graphics
+[Processes]
+System
+Registry
+Memory Compression
+NetworkCap.exe
+[Software]
 ```
 
 ### `cystack_5e942ad1`
@@ -96714,6 +96857,68 @@ SKlauncher 3.2.18 - <ip>
 Proton Drive - 1.12.11
 ```
 
+### `cystack_a7b2726a`
+
+**Field keys:**
+`AV`, `Buy`, `Computer Name`, `Cores`, `Display Resolution`, `HWID`, `Install Date`, `Keyboard Languages`, `Local Time`, `RAM`, `Reserve Link`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+The Best fresh logs and ULP Cloud
+
+t.me/WichLoveFromR
+t.me/WichLoveFromR
+t.me/WichLoveFromR
+
+Reserve Link: <url>
+Buy: @AltairSupport
+[... 6 blank lines ...]
+HWID: <redacted>
+Work Dir: In memory
+Windows: Windows 10 Pro
+Install Date: 24/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x1024
+Keyboard Languages: Portuguese
+Local Time: 23/03/2026 <ip>
+TimeZone: 4294967293
+[Hardware]
+Cores: 16
+Threads: 16
+RAM: 32658 MB
+VideoCard: NVIDIA GeForce RTX 3060
+[Processes]
+System
+Registry
+NVDisplay.Container.exe
+Memory Compression
+NVDisplay.Container.exe
+EpicOnlineServicesUserHelper.exe
+EpicOnlineServicesUserHelper.exe
+UserOOBEBroker.exe
+[Software]
+Call of Duty?
+Euro Truck Simulator 2
+Delta Force
+Grand Theft Auto V Legacy
+Farming Simulator 17
+Pure Farming 2018
+Soundpad Demo
+MudRunner
+NVIDIA AIUser Container - 1.48
+NVIDIA LocalSystem Container - 1.48
+NVIDIA User Container - 1.48
+Update for x64-based Windows Systems (KB5001716) - <ip>
+FiveM
+Riot Client 
+VALORANT
+```
+
 ### `cystack_a7cbe8e9`
 
 **Field keys:**
@@ -98656,6 +98861,45 @@ Spotify - <ip>.g8cd7fb22
 Wondershare Filmora 14(Build 14.8.17.14177)
 Wondershare NativePush(Build <ip>)
 Zoom Workplace - 6.7.8 (32670)
+```
+
+### `cystack_aa192558`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `HWID`, `IP`, `Integrity`, `Keyboard Languages`, `LocalIPv4`, `MachineID`, `Path`, `Processor`, `RAM`, `SystemTimestamp`, `SystemUptime`, `TAG`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Wallpaper Hash`, `Windows`
+
+**Filenames:** `systeminfo.txt`
+
+**Sample (sanitized):**
+
+```
+ 
+IP: <redacted>
+Country: Pakistan
+=== SYSTEM DATA LOG ===
+TAG: charliekirkie
+LocalIPv4: <ip>
+Date: 23/03/2026 <ip>
+MachineID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Windows: Windows 10 10.0 build 19045 (64 Bit)
+Computer Name: <redacted>
+User Name: <redacted>
+Integrity: Medium
+Admin Group: FALSE
+TimeZone: UTC-8
+Wallpaper Hash: 045ee5795d861eb61517040bc2396491
+SystemUptime: 67 hours
+SystemTimestamp: 14/11/2024 <ip>
+Display Resolution: 1366x768
+Keyboard Languages: English (United States)
+[Hardware]
+Processor: Intel(R) Core(TM) i7-6600U CPU @ 2.60GHz
+Cores: 2
+Threads: 4
+RAM: 16271 MB
+VideoCard: Intel(R) HD Graphics 520
 ```
 
 ### `cystack_aa6e688f`
@@ -134622,6 +134866,43 @@ Mechvibes 2.3.4 - 2.3.4
 PowerToys (Preview) x64 - 0.93.0
 ```
 
+### `cystack_ebf5f347`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Cores`, `Date`, `Display Resolution`, `HWID`, `Integrity`, `Keyboard Languages`, `LocalIPv4`, `MachineID`, `Path`, `Processor`, `RAM`, `SystemTimestamp`, `SystemUptime`, `TAG`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Wallpaper Hash`, `Windows`
+
+**Filenames:** `systeminfo.txt`
+
+**Sample (sanitized):**
+
+```
+ 
+=== SYSTEM DATA LOG ===
+TAG: YfkSeas4
+LocalIPv4: <ip>
+Date: 24/03/2026 <ip>
+MachineID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Windows: Windows 11 10.0 build 26200 (64 Bit)
+Computer Name: <redacted>
+User Name: <redacted>
+Integrity: Medium
+Admin Group: FALSE
+TimeZone: UTC+9:30
+Wallpaper Hash: aeb0176c103d86a87d561d83c4b9a08d
+SystemUptime: 1 hours
+SystemTimestamp: 07/02/2025 <ip>
+Display Resolution: 1280x1024
+Keyboard Languages: English (Australia) / English (United Kingdom)
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12450H
+Cores: 8
+Threads: 12
+RAM: 16070 MB
+VideoCard: Intel(R) UHD Graphics
+```
+
 ### `cystack_ed12304e`
 
 **Field keys:**
@@ -138601,7 +138882,7 @@ RAM: 7930 MB
 **Field keys:**
 `AV`, `Cores`, `Display Resolution`, `HWID`, `Keyboard Languages`, `Local Time`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Windows`
 
-**Filenames:** `information.txt`
+**Filenames:** `System.txt`, `information.txt`
 
 **Sample (sanitized):**
 

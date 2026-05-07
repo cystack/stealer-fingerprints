@@ -1,0 +1,17 @@
+
+#BUY NOW: TG @DataMonk_file -- @DataMonk_Admin
+=== System Information ===
+Build: test_00
+IP: <redacted>
+HWID: <redacted>
+System Language: en-US
+Processor: Intel(R) Celeron(R) N4100 CPU @ 1.10GHz
+CPU Cores: 4
+CPU Threads: 4
+GPU: Intel(R) UHD Graphics 600
+OS: Windows 10 Pro
+OS Version: 10.0.19045 (Build 19045)
+Computer Name: <redacted>
+Total RAM: 3913 MB
+Drives: C:\
+==========================

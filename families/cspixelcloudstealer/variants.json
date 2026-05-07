@@ -33,6 +33,19 @@
     {
       "banner_strings": [],
       "field_keys": [
+        "Country",
+        "Operating System",
+        "Username"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_18ae3e96",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
         "Version"
       ],
       "filenames": [

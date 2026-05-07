@@ -14,6 +14,130 @@ the content.
 
 ## Variants
 
+### `cystack_0045b9fa`
+
+**Field keys:**
+`AV`, `Cores`, `Display Resolution`, `HWID`, `Keyboard Languages`, `Local Time`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Windows`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+HWID: <redacted>
+Windows: Windows 11 Pro
+AV: Windows Defender
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 27/03/2026 <ip>
+TimeZone: 4294967289
+Cores: 4
+Threads: 4
+RAM: 16215 MB
+```
+
+### `cystack_0231d93b`
+
+**Field keys:**
+`Architecture`, `Cores`, `Device String`, `Display Resolution`, `HWID`, `Laptop`, `Local Time`, `OS`, `RAM`, `Resolution`, `Threads`, `UTC`, `UserName`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+HWID: <redacted>
+OS: Windows 11
+Architecture: x32
+UserName: <redacted>
+Local Time: 26/03/2026 <ip>
+UTC: 8
+Laptop: FALSE
+Cores: 8
+Threads: 3
+RAM: 20 GB
+Display Resolution:
+Device String: Microsoft Basic Display Adapter
+Resolution: 1920x1080
+```
+
+### `cystack_04b4fc19`
+
+**Field keys:**
+`CPU (Processor)`, `Country`, `Operating System`, `Username`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+Country: AR (Argentina)
+Operating System: Windows 11
+Username: <redacted>
+CPU (Processor): AMD Ryzen 7 5700G with Radeon Graphics
+```
+
 ### `cystack_0501dc8e`
 
 **Field keys:**
@@ -885,6 +1009,43 @@ Microsoft OneDrive - 26.022.0203.0006
 Riot Client 
 VALORANT
 Roblox Player for MiniOS
+```
+
+### `cystack_0fe89d26`
+
+**Field keys:**
+`Computer Name`, `Country`, `IP`, `Operating System`, `Username`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+IP: <redacted>
+Country: IN (India)
+Operating System: Windows 10
+Username: <redacted>
+Computer Name: <redacted>
 ```
 
 ### `cystack_10e649d6`
@@ -1936,6 +2097,53 @@ PLITCH 2.18.10 - 2.18.10
 SKlauncher 3.2 - <ip>
 ```
 
+### `cystack_15f71433`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Display Resolution`, `HWID`, `Ip`, `Keyboard Languages`, `Local Time`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Windows`, `Work Dir`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+Ip: <redacted>
+Country: CA
+HWID: <redacted>
+Work Dir: Admin @logslead
+Windows: Windows 11 Pro
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 08/03/2026 <ip>
+TimeZone: 4294967288
+Cores: 8
+Threads: 8
+RAM: 16262 MB
+```
+
 ### `cystack_1863c96d`
 
 **Field keys:**
@@ -2632,6 +2840,91 @@ Roblox Player for Monkeys 12
 Roblox Studio for Monkeys 12
 ```
 
+### `cystack_1c2ffdc6`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Display Resolution`, `HWID`, `Keyboard Languages`, `Local Time`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Windows`, `Work Dir`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+HWID: <redacted>
+Work Dir: Admin @logslead
+Windows: Windows 11 Home Single Language
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English Thai
+Local Time: 25/03/2026 <ip>
+TimeZone: 7
+Processor: AMD Ryzen 5 5500U with Radeon Graphics
+Cores: 12
+Threads: 12
+RAM: 7579 MB
+```
+
+### `cystack_1fb0a366`
+
+**Field keys:**
+`Cores`, `Display Resolution`, `Keyboard Languages`, `Local Time`, `RAM`, `Threads`, `TimeZone`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+Display Resolution: 1366x768
+Keyboard Languages: English English
+Local Time: 26/03/2026 <ip>
+TimeZone: 4
+Cores: 2
+Threads: 2
+RAM: 3918 MB
+```
+
 ### `cystack_223fc697`
 
 **Field keys:**
@@ -2998,6 +3291,53 @@ VALORANT
 Roblox Player for FIFA
 Roblox Studio for FIFA
 WeMod - 10.12.0
+```
+
+### `cystack_28c48a61`
+
+**Field keys:**
+`Architecture`, `Cores`, `Device String`, `Display Resolution`, `GPU`, `HWID`, `Language`, `Laptop`, `Local Time`, `OS`, `RAM`, `Resolution`, `Threads`, `UTC`, `UserName`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+HWID: <redacted>
+OS: Windows 11
+Architecture: x64
+UserName: <redacted>
+Local Time: 27/03/2026 <ip>
+UTC: 4
+Language: en-IN
+Laptop: TRUE
+Cores: 4
+Threads: 8
+RAM: 16 GB
+Display Resolution:
+Device String: Intel(R) UHD Graphics 620
+Resolution: 1920x1080
+GPU:
 ```
 
 ### `cystack_2ad65524`
@@ -4417,7 +4757,7 @@ SKlauncher 3.2 - <ip>
 **Field keys:**
 `AV`, `Cores`, `Display Resolution`, `Keyboard Languages`, `Local Time`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Windows`
 
-**Filenames:** `information.txt`
+**Filenames:** `System.txt`, `information.txt`
 
 **Sample (sanitized):**
 
@@ -5437,6 +5777,51 @@ Microsoft OneDrive - 26.032.0217.0003
 League of Legends
 Riot Client 
 ?S?ԭ^??
+```
+
+### `cystack_3a8dd8c4`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Display Resolution`, `HWID`, `Keyboard Languages`, `Local Time`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Windows`, `Work Dir`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+HWID: <redacted>
+Work Dir: Admin @logslead
+Windows: Windows 11 Pro
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Portuguese Spanish
+Local Time: 25/03/2026 <ip>
+TimeZone: 4294967291
+Cores: 8
+Threads: 8
+RAM: 40697 MB
 ```
 
 ### `cystack_3cd05a02`
@@ -8150,6 +8535,48 @@ Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61135 - 11.0.61135
 Zalo 26.1.10 - 26.1.10
 Opera Stable 128.0.5807.66 - 128.0.5807.66
 Track Studio Panel 4.1.3.3945
+```
+
+### `cystack_4dc28b60`
+
+**Field keys:**
+`AV`, `Cores`, `Display Resolution`, `Keyboard Languages`, `Local Time`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Windows`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+Windows: Windows 10 Pro
+AV: Windows Defender
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English
+Local Time: 26/03/2026 <ip>
+TimeZone: 5
+Cores: 4
+Threads: 4
+RAM: 16263 MB
 ```
 
 ### `cystack_5455ca59`
@@ -11978,6 +12405,56 @@ Opera Stable 127.0.5778.76 - 127.0.5778.76
 Roblox Player for rubad
 ```
 
+### `cystack_677f855d`
+
+**Field keys:**
+`Architecture`, `CPU`, `Cores`, `Country`, `Device String`, `Display Resolution`, `GPU`, `HWID`, `Keyboards`, `Language`, `Laptop`, `Local Time`, `OS`, `RAM`, `Resolution`, `Threads`, `UTC`, `UserName`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+Country: TR
+HWID: <redacted>
+OS: Windows 11
+Architecture: x64
+UserName: <redacted>
+Local Time: 26/03/2026 <ip>
+UTC: 3
+Language: tr-TR
+Keyboards: Türkçe (Türkiye)
+Laptop: TRUE
+CPU: 12th Gen Intel(R) Core(TM) i7-12700H
+Cores: 14
+Threads: 20
+RAM: 16 GB
+Display Resolution:
+Device String: Intel(R) Iris(R) Xe Graphics
+Resolution: 1920x1200
+GPU:
+```
+
 ### `cystack_6b10f644`
 
 **Field keys:**
@@ -13248,6 +13725,50 @@ Riot Client
 VALORANT
 Roblox Player for silva
 Roblox Studio for silva
+```
+
+### `cystack_796e25f3`
+
+**Field keys:**
+`Admin Group`, `Display Resolution`, `Domain Name`, `Graphics card`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+System Language: English
+Installed RAM: 7.89 GB [s4275]
+Operation System: Windows 10 (Build 19045) (64 Bit)
+Graphics card: NVIDIA GeForce GT 710
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: 6
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1366x768
 ```
 
 ### `cystack_7d46e4a5`
@@ -16223,6 +16744,55 @@ Magic DJ Station 5.2.2.3942
 Zoom Workplace - 6.7.2 (26346)
 ```
 
+### `cystack_8b3c31f9`
+
+**Field keys:**
+`Architecture`, `CPU`, `Cores`, `Country`, `Device String`, `Display Resolution`, `GPU`, `HWID`, `Language`, `Laptop`, `Local Time`, `OS`, `RAM`, `Resolution`, `Threads`, `UTC`, `UserName`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+Country: PH
+HWID: <redacted>
+OS: Windows 10
+Architecture: x64
+UserName: <redacted>
+Local Time: 27/03/2026 <ip>
+UTC: 9
+Language: en-PH
+Laptop: FALSE
+CPU: AMD Ryzen 5 3600 6-Core Processor
+Cores: 6
+Threads: 12
+RAM: 16 GB
+Display Resolution:
+Device String: NVIDIA GeForce GTX 1660 SUPER
+Resolution: 1920x1080
+GPU:
+```
+
 ### `cystack_8cf44194`
 
 **Field keys:**
@@ -17859,6 +18429,56 @@ Roblox Studio for myron
 Alpine Client - 1.8.5
 NVIDIA GeForce NOW <ip> - <ip>
 NVIDIA Install Application - 2.1002.427.0
+```
+
+### `cystack_9e89f04b`
+
+**Field keys:**
+`Architecture`, `Computer Name`, `Cores`, `Country`, `Device String`, `Display Resolution`, `GPU`, `IP`, `Keyboards`, `Language`, `Laptop`, `Local Time`, `OS`, `RAM`, `Resolution`, `Threads`, `UTC`, `UserName`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+IP: <redacted>
+Country: ID
+OS: Windows 10
+Architecture: x64
+UserName: <redacted>
+Computer Name: <redacted>
+Local Time: 2026-03-24 <ip>
+UTC: 7
+Language: id-ID
+Keyboards: English (United States)
+Laptop: FALSE
+Cores: 4
+Threads: 8
+RAM: 16 GB
+Display Resolution:
+Device String: NVIDIA GeForce GTX 750 Ti
+Resolution: 1920x1080
+GPU:
 ```
 
 ### `cystack_9f14d8ed`
@@ -19561,6 +20181,49 @@ NVIDIA Install Application - 2.1002.410.0
 Taskbar system version <ip> - <ip>
 ```
 
+### `cystack_a43160bc`
+
+**Field keys:**
+`AV`, `Cores`, `Country`, `Display Resolution`, `Keyboard Languages`, `Local Time`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Windows`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+Country: DK
+Windows: Windows 11 Pro
+AV: Windows Defender
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Danish English
+Local Time: 26/03/2026 <ip>
+TimeZone: 0
+Cores: 12
+Threads: 12
+RAM: 16307 MB
+```
+
 ### `cystack_a5cd12ee`
 
 **Field keys:**
@@ -19856,6 +20519,55 @@ Discord - 1.0.9226
 Sheets - 1.0
 Roblox Player for MF
 Roblox Studio for MF
+```
+
+### `cystack_a938c77c`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `Operation System`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+Log date: 04 Jan 26 00:46
+HWID: <redacted>
+Country: Philippines
+IP: <redacted>
+System Language: English
+Installed RAM: 15.95 GB
+Operation System: Windows 11 25H2 Pro (Build 26200) (64 Bit)
+Graphics card: AMD Radeon RX 6600
+Computer Name: <redacted>
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: TRUE
+Integrity: High
+TimeZone: UTC+8
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
 ```
 
 ### `cystack_ac9f09f0`
@@ -20657,6 +21369,53 @@ Riot Client
 VALORANT
 ```
 
+### `cystack_aef85b8c`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Display Resolution`, `HWID`, `Keyboard Languages`, `Local Time`, `Path`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Windows`, `Work Dir`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+Country: DZ
+HWID: <redacted>
+Path: <redacted>
+Work Dir: Admin @logslead
+Windows: Windows 10 Pro
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English French Arabic
+Local Time: 27/03/2026 <ip>
+TimeZone: 1
+Cores: 2
+Threads: 2
+RAM: 3981 MB
+```
+
 ### `cystack_af5c9dfa`
 
 **Field keys:**
@@ -20948,6 +21707,51 @@ VALORANT
 Roblox Player for LEY
 Roblox Studio for LEY
 Spotify - <ip>.ga1ff6607
+```
+
+### `cystack_b03f12ca`
+
+**Field keys:**
+`AV`, `Cores`, `Country`, `Display Resolution`, `HWID`, `Ip`, `Keyboard Languages`, `Local Time`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Windows`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+Ip: <redacted>
+Country: ID
+HWID: <redacted>
+Windows: Windows 11 Pro
+AV: Windows Defender
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English
+Local Time: 28/03/2026 <ip>
+TimeZone: 8
+Cores: 4
+Threads: 4
+RAM: 16287 MB
 ```
 
 ### `cystack_b0635926`
@@ -22825,6 +23629,54 @@ Microsoft OneDrive - 26.012.0119.0002
 Streaming Audio Recorder 4.3.5.3959
 ```
 
+### `cystack_c1d935a4`
+
+**Field keys:**
+`Architecture`, `Cores`, `Country`, `Device String`, `Display Resolution`, `HWID`, `IP`, `Keyboards`, `Laptop`, `Local Time`, `OS`, `RAM`, `Resolution`, `Threads`, `UTC`, `UserName`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+IP: <redacted>
+Country: SE
+HWID: <redacted>
+OS: Windows 11
+Architecture: x32
+UserName: <redacted>
+Local Time: 26/03/2026 <ip>
+UTC: 6
+Keyboards: Jordan (Jordan)
+Laptop: FALSE
+Cores: 4
+Threads: 2
+RAM: 17 GB
+Display Resolution:
+Device String: Microsoft Basic Display Adapter
+Resolution: 1920x1080
+```
+
 ### `cystack_c951eb15`
 
 **Field keys:**
@@ -24436,6 +25288,50 @@ MSYS2 - 20250830
 Microsoft Visual Studio Code (User) - 1.111.0
 ```
 
+### `cystack_d6cd44c9`
+
+**Field keys:**
+`AV`, `Cores`, `Country`, `Display Resolution`, `Ip`, `Keyboard Languages`, `Local Time`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Windows`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+Ip: <redacted>
+Country: IE
+Windows: Windows 11 Home
+AV: Windows Defender [q3646]
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: English English
+Local Time: 27/03/2026 <ip>
+TimeZone: -1
+Cores: 16
+Threads: 16
+RAM: 32557 MB
+```
+
 ### `cystack_d706f1b5`
 
 **Field keys:**
@@ -24505,7 +25401,7 @@ Timezone:        America/Araguaina (UTC)
 **Field keys:**
 `Admin Group`, `Display Resolution`, `Domain Name`, `Graphics card`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
 
-**Filenames:** `UserInformation.txt`
+**Filenames:** `System.txt`, `UserInformation.txt`
 
 **Sample (sanitized):**
 
@@ -25531,6 +26427,54 @@ Microsoft OneDrive - 26.040.0301.0001
 Python 3.14.3 - 3.14-64
 Telegram Desktop - 6.6.2
 Microsoft Visual Studio Code (User) - 1.113.0
+```
+
+### `cystack_dd9953b8`
+
+**Field keys:**
+`Architecture`, `Cores`, `Country`, `Device String`, `Display Resolution`, `GPU`, `HWID`, `Language`, `Laptop`, `Local Time`, `OS`, `RAM`, `Resolution`, `Threads`, `UTC`, `UserName`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+Country: PK
+HWID: <redacted>
+OS: Windows 10
+Architecture: x64
+UserName: <redacted>
+Local Time: 27/03/2026 <ip>
+UTC: -5
+Language: en-US
+Laptop: TRUE
+Cores: 2
+Threads: 4
+RAM: 8 GB
+Display Resolution:
+Device String: Intel(R) HD Graphics 4600
+Resolution: 1600x900
+GPU:
 ```
 
 ### `cystack_ddf83cf5`
@@ -26628,6 +27572,52 @@ Sheets - 1.0
 Microsoft OneDrive - 26.026.0209.0004
 Zoom Workplace - 6.7.8 (32670)
 Telegram Desktop - 5.13.1
+```
+
+### `cystack_e6316c5e`
+
+**Field keys:**
+`Admin Group`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+Country: FR
+IP: <redacted>
+System Language: French
+Installed RAM: 15.71 GB
+Operation System: Windows 11 (Build 26200) (64 Bit) [P1336]
+Graphics card: Intel(R) UHD Graphics
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: TRUE
+Integrity: High
+TimeZone: 3
+UserLanguage: French [O3675]
+Keyboard Language: French
+Display Resolution: 1536x864
 ```
 
 ### `cystack_e64adfe9`
@@ -28626,6 +29616,91 @@ TimeZone: -1
 UserLanguage: Portuguese
 Keyboard Language: Portuguese
 Display Resolution: 1600x900
+```
+
+### `cystack_f95c1aaa`
+
+**Field keys:**
+`Architecture`, `Cores`, `Country`, `Device String`, `Display Resolution`, `HWID`, `Keyboards`, `Laptop`, `Local Time`, `OS`, `RAM`, `Resolution`, `Threads`, `UTC`, `UserName`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+Country: IE
+HWID: <redacted>
+OS: Windows 11
+Architecture: x64
+UserName: <redacted>
+Local Time: 26/03/2026 <ip>
+UTC: 7
+Keyboards: Austria (Austria)
+Laptop: FALSE
+Cores: 4
+Threads: 2
+RAM: 11 GB
+Display Resolution:
+Device String: Microsoft Basic Display Adapter
+Resolution: 1920x1080
+```
+
+### `cystack_fc838809`
+
+**Field keys:**
+`CPU (Processor)`, `Computer Name`, `Country`, `IP`, `Operating System`, `Username`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                          H U N T E R   C L O U D
+
+💵 1 Week: 50$ 💵
+💵 1 Month: 110$ 💵
+💵 3 Months: 300$ 💵
+💵 Lifetime: 2000$ 💵
+
+🌧 Payment Method: Usdt 💵 - Btc 💵 - Ltc 💵 - Eth 💵 Any Crypto Accepted 🌧
+
+⚡Join: <url> 
+
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+***********************************************
+
+IP: <redacted>
+Country: BR (Brazil)
+Operating System: Windows 10
+Username: <redacted>
+Computer Name: <redacted>
+CPU (Processor): AMD Ryzen 7 5700X 8-Core Processor
 ```
 
 ### `cystack_fcf3a05d`

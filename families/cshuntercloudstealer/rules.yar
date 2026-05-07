@@ -3,6 +3,70 @@
 // observed field-key set. Tune false-positive thresholds at use
 // site, especially for variants relying on field combinations.
 
+rule CSHunterCloudStealer_cystack_0045b9fa
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_0045b9fa"
+
+    strings:
+        $key_0 = "AV:" ascii
+        $key_1 = "Cores:" ascii
+        $key_2 = "Display Resolution:" ascii
+        $key_3 = "HWID:" ascii
+        $key_4 = "Keyboard Languages:" ascii
+        $key_5 = "Local Time:" ascii
+        $key_6 = "RAM:" ascii
+        $key_7 = "Threads:" ascii
+        $key_8 = "TimeZone:" ascii
+        $key_9 = "User Name:" ascii
+        $key_10 = "Windows:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSHunterCloudStealer_cystack_0231d93b
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_0231d93b"
+
+    strings:
+        $key_0 = "Architecture:" ascii
+        $key_1 = "Cores:" ascii
+        $key_2 = "Device String:" ascii
+        $key_3 = "Display Resolution:" ascii
+        $key_4 = "HWID:" ascii
+        $key_5 = "Laptop:" ascii
+        $key_6 = "Local Time:" ascii
+        $key_7 = "OS:" ascii
+        $key_8 = "RAM:" ascii
+        $key_9 = "Resolution:" ascii
+        $key_10 = "Threads:" ascii
+        $key_11 = "UTC:" ascii
+        $key_12 = "UserName:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSHunterCloudStealer_cystack_04b4fc19
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_04b4fc19"
+
+    strings:
+        $key_0 = "CPU (Processor):" ascii
+        $key_1 = "Country:" ascii
+        $key_2 = "Operating System:" ascii
+        $key_3 = "Username:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSHunterCloudStealer_cystack_0501dc8e
 {
     meta:
@@ -127,6 +191,23 @@ rule CSHunterCloudStealer_cystack_0fdb8f69
         all of ($key_*)
 }
 
+rule CSHunterCloudStealer_cystack_0fe89d26
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_0fe89d26"
+
+    strings:
+        $key_0 = "Computer Name:" ascii
+        $key_1 = "Country:" ascii
+        $key_2 = "IP:" ascii
+        $key_3 = "Operating System:" ascii
+        $key_4 = "Username:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSHunterCloudStealer_cystack_10e649d6
 {
     meta:
@@ -218,6 +299,33 @@ rule CSHunterCloudStealer_cystack_1231270e
         all of ($key_*)
 }
 
+rule CSHunterCloudStealer_cystack_15f71433
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_15f71433"
+
+    strings:
+        $key_0 = "AV:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Cores:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Display Resolution:" ascii
+        $key_5 = "HWID:" ascii
+        $key_6 = "Ip:" ascii
+        $key_7 = "Keyboard Languages:" ascii
+        $key_8 = "Local Time:" ascii
+        $key_9 = "RAM:" ascii
+        $key_10 = "Threads:" ascii
+        $key_11 = "TimeZone:" ascii
+        $key_12 = "User Name:" ascii
+        $key_13 = "Windows:" ascii
+        $key_14 = "Work Dir:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSHunterCloudStealer_cystack_1863c96d
 {
     meta:
@@ -304,6 +412,51 @@ rule CSHunterCloudStealer_cystack_1abb69ea
         all of ($key_*)
 }
 
+rule CSHunterCloudStealer_cystack_1c2ffdc6
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_1c2ffdc6"
+
+    strings:
+        $key_0 = "AV:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Cores:" ascii
+        $key_3 = "Display Resolution:" ascii
+        $key_4 = "HWID:" ascii
+        $key_5 = "Keyboard Languages:" ascii
+        $key_6 = "Local Time:" ascii
+        $key_7 = "Processor:" ascii
+        $key_8 = "RAM:" ascii
+        $key_9 = "Threads:" ascii
+        $key_10 = "TimeZone:" ascii
+        $key_11 = "User Name:" ascii
+        $key_12 = "Windows:" ascii
+        $key_13 = "Work Dir:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSHunterCloudStealer_cystack_1fb0a366
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_1fb0a366"
+
+    strings:
+        $key_0 = "Cores:" ascii
+        $key_1 = "Display Resolution:" ascii
+        $key_2 = "Keyboard Languages:" ascii
+        $key_3 = "Local Time:" ascii
+        $key_4 = "RAM:" ascii
+        $key_5 = "Threads:" ascii
+        $key_6 = "TimeZone:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSHunterCloudStealer_cystack_223fc697
 {
     meta:
@@ -354,6 +507,33 @@ rule CSHunterCloudStealer_cystack_24493581
         $key_15 = "User Name:" ascii
         $key_16 = "VideoCard:" ascii
         $key_17 = "Windows:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSHunterCloudStealer_cystack_28c48a61
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_28c48a61"
+
+    strings:
+        $key_0 = "Architecture:" ascii
+        $key_1 = "Cores:" ascii
+        $key_2 = "Device String:" ascii
+        $key_3 = "Display Resolution:" ascii
+        $key_4 = "GPU:" ascii
+        $key_5 = "HWID:" ascii
+        $key_6 = "Language:" ascii
+        $key_7 = "Laptop:" ascii
+        $key_8 = "Local Time:" ascii
+        $key_9 = "OS:" ascii
+        $key_10 = "RAM:" ascii
+        $key_11 = "Resolution:" ascii
+        $key_12 = "Threads:" ascii
+        $key_13 = "UTC:" ascii
+        $key_14 = "UserName:" ascii
 
     condition:
         all of ($key_*)
@@ -613,6 +793,31 @@ rule CSHunterCloudStealer_cystack_39640ce0
         $key_20 = "VideoCard:" ascii
         $key_21 = "Windows:" ascii
         $key_22 = "Work Dir:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSHunterCloudStealer_cystack_3a8dd8c4
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_3a8dd8c4"
+
+    strings:
+        $key_0 = "AV:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Cores:" ascii
+        $key_3 = "Display Resolution:" ascii
+        $key_4 = "HWID:" ascii
+        $key_5 = "Keyboard Languages:" ascii
+        $key_6 = "Local Time:" ascii
+        $key_7 = "RAM:" ascii
+        $key_8 = "Threads:" ascii
+        $key_9 = "TimeZone:" ascii
+        $key_10 = "User Name:" ascii
+        $key_11 = "Windows:" ascii
+        $key_12 = "Work Dir:" ascii
 
     condition:
         all of ($key_*)
@@ -902,6 +1107,28 @@ rule CSHunterCloudStealer_cystack_4c07b228
         $key_19 = "VideoCard:" ascii
         $key_20 = "Windows:" ascii
         $key_21 = "Work Dir:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSHunterCloudStealer_cystack_4dc28b60
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_4dc28b60"
+
+    strings:
+        $key_0 = "AV:" ascii
+        $key_1 = "Cores:" ascii
+        $key_2 = "Display Resolution:" ascii
+        $key_3 = "Keyboard Languages:" ascii
+        $key_4 = "Local Time:" ascii
+        $key_5 = "RAM:" ascii
+        $key_6 = "Threads:" ascii
+        $key_7 = "TimeZone:" ascii
+        $key_8 = "User Name:" ascii
+        $key_9 = "Windows:" ascii
 
     condition:
         all of ($key_*)
@@ -1321,6 +1548,36 @@ rule CSHunterCloudStealer_cystack_6591e643
         all of ($key_*)
 }
 
+rule CSHunterCloudStealer_cystack_677f855d
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_677f855d"
+
+    strings:
+        $key_0 = "Architecture:" ascii
+        $key_1 = "CPU:" ascii
+        $key_2 = "Cores:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Device String:" ascii
+        $key_5 = "Display Resolution:" ascii
+        $key_6 = "GPU:" ascii
+        $key_7 = "HWID:" ascii
+        $key_8 = "Keyboards:" ascii
+        $key_9 = "Language:" ascii
+        $key_10 = "Laptop:" ascii
+        $key_11 = "Local Time:" ascii
+        $key_12 = "OS:" ascii
+        $key_13 = "RAM:" ascii
+        $key_14 = "Resolution:" ascii
+        $key_15 = "Threads:" ascii
+        $key_16 = "UTC:" ascii
+        $key_17 = "UserName:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSHunterCloudStealer_cystack_6b10f644
 {
     meta:
@@ -1447,6 +1704,30 @@ rule CSHunterCloudStealer_cystack_75fa09f4
         $key_18 = "VideoCard:" ascii
         $key_19 = "Windows:" ascii
         $key_20 = "Work Dir:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSHunterCloudStealer_cystack_796e25f3
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_796e25f3"
+
+    strings:
+        $key_0 = "Admin Group:" ascii
+        $key_1 = "Display Resolution:" ascii
+        $key_2 = "Domain Name:" ascii
+        $key_3 = "Graphics card:" ascii
+        $key_4 = "Installed RAM:" ascii
+        $key_5 = "Integrity:" ascii
+        $key_6 = "Keyboard Language:" ascii
+        $key_7 = "Operation System:" ascii
+        $key_8 = "System Language:" ascii
+        $key_9 = "TimeZone:" ascii
+        $key_10 = "User Name:" ascii
+        $key_11 = "UserLanguage:" ascii
 
     condition:
         all of ($key_*)
@@ -1783,6 +2064,35 @@ rule CSHunterCloudStealer_cystack_8993a574
         all of ($key_*)
 }
 
+rule CSHunterCloudStealer_cystack_8b3c31f9
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_8b3c31f9"
+
+    strings:
+        $key_0 = "Architecture:" ascii
+        $key_1 = "CPU:" ascii
+        $key_2 = "Cores:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Device String:" ascii
+        $key_5 = "Display Resolution:" ascii
+        $key_6 = "GPU:" ascii
+        $key_7 = "HWID:" ascii
+        $key_8 = "Language:" ascii
+        $key_9 = "Laptop:" ascii
+        $key_10 = "Local Time:" ascii
+        $key_11 = "OS:" ascii
+        $key_12 = "RAM:" ascii
+        $key_13 = "Resolution:" ascii
+        $key_14 = "Threads:" ascii
+        $key_15 = "UTC:" ascii
+        $key_16 = "UserName:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSHunterCloudStealer_cystack_8cf44194
 {
     meta:
@@ -1940,6 +2250,36 @@ rule CSHunterCloudStealer_cystack_9acb87ed
         $key_18 = "VideoCard:" ascii
         $key_19 = "Windows:" ascii
         $key_20 = "Work Dir:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSHunterCloudStealer_cystack_9e89f04b
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_9e89f04b"
+
+    strings:
+        $key_0 = "Architecture:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Cores:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Device String:" ascii
+        $key_5 = "Display Resolution:" ascii
+        $key_6 = "GPU:" ascii
+        $key_7 = "IP:" ascii
+        $key_8 = "Keyboards:" ascii
+        $key_9 = "Language:" ascii
+        $key_10 = "Laptop:" ascii
+        $key_11 = "Local Time:" ascii
+        $key_12 = "OS:" ascii
+        $key_13 = "RAM:" ascii
+        $key_14 = "Resolution:" ascii
+        $key_15 = "Threads:" ascii
+        $key_16 = "UTC:" ascii
+        $key_17 = "UserName:" ascii
 
     condition:
         all of ($key_*)
@@ -2119,6 +2459,29 @@ rule CSHunterCloudStealer_cystack_a3829d94
         all of ($key_*)
 }
 
+rule CSHunterCloudStealer_cystack_a43160bc
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_a43160bc"
+
+    strings:
+        $key_0 = "AV:" ascii
+        $key_1 = "Cores:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Display Resolution:" ascii
+        $key_4 = "Keyboard Languages:" ascii
+        $key_5 = "Local Time:" ascii
+        $key_6 = "RAM:" ascii
+        $key_7 = "Threads:" ascii
+        $key_8 = "TimeZone:" ascii
+        $key_9 = "User Name:" ascii
+        $key_10 = "Windows:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSHunterCloudStealer_cystack_a5cd12ee
 {
     meta:
@@ -2143,6 +2506,35 @@ rule CSHunterCloudStealer_cystack_a5cd12ee
         $key_14 = "User Name:" ascii
         $key_15 = "VideoCard:" ascii
         $key_16 = "Windows:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSHunterCloudStealer_cystack_a938c77c
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_a938c77c"
+
+    strings:
+        $key_0 = "Admin Group:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Display Resolution:" ascii
+        $key_4 = "Domain Name:" ascii
+        $key_5 = "Graphics card:" ascii
+        $key_6 = "HWID:" ascii
+        $key_7 = "IP:" ascii
+        $key_8 = "Installed RAM:" ascii
+        $key_9 = "Integrity:" ascii
+        $key_10 = "Keyboard Language:" ascii
+        $key_11 = "Log date:" ascii
+        $key_12 = "Operation System:" ascii
+        $key_13 = "System Language:" ascii
+        $key_14 = "TimeZone:" ascii
+        $key_15 = "User Name:" ascii
+        $key_16 = "UserLanguage:" ascii
 
     condition:
         all of ($key_*)
@@ -2252,6 +2644,33 @@ rule CSHunterCloudStealer_cystack_ad711950
         all of ($key_*)
 }
 
+rule CSHunterCloudStealer_cystack_aef85b8c
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_aef85b8c"
+
+    strings:
+        $key_0 = "AV:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Cores:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Display Resolution:" ascii
+        $key_5 = "HWID:" ascii
+        $key_6 = "Keyboard Languages:" ascii
+        $key_7 = "Local Time:" ascii
+        $key_8 = "Path:" ascii
+        $key_9 = "RAM:" ascii
+        $key_10 = "Threads:" ascii
+        $key_11 = "TimeZone:" ascii
+        $key_12 = "User Name:" ascii
+        $key_13 = "Windows:" ascii
+        $key_14 = "Work Dir:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSHunterCloudStealer_cystack_af5c9dfa
 {
     meta:
@@ -2276,6 +2695,31 @@ rule CSHunterCloudStealer_cystack_af5c9dfa
         $key_14 = "User Name:" ascii
         $key_15 = "VideoCard:" ascii
         $key_16 = "Windows:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSHunterCloudStealer_cystack_b03f12ca
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_b03f12ca"
+
+    strings:
+        $key_0 = "AV:" ascii
+        $key_1 = "Cores:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Display Resolution:" ascii
+        $key_4 = "HWID:" ascii
+        $key_5 = "Ip:" ascii
+        $key_6 = "Keyboard Languages:" ascii
+        $key_7 = "Local Time:" ascii
+        $key_8 = "RAM:" ascii
+        $key_9 = "Threads:" ascii
+        $key_10 = "TimeZone:" ascii
+        $key_11 = "User Name:" ascii
+        $key_12 = "Windows:" ascii
 
     condition:
         all of ($key_*)
@@ -2510,6 +2954,34 @@ rule CSHunterCloudStealer_cystack_bf897973
         all of ($key_*)
 }
 
+rule CSHunterCloudStealer_cystack_c1d935a4
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_c1d935a4"
+
+    strings:
+        $key_0 = "Architecture:" ascii
+        $key_1 = "Cores:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Device String:" ascii
+        $key_4 = "Display Resolution:" ascii
+        $key_5 = "HWID:" ascii
+        $key_6 = "IP:" ascii
+        $key_7 = "Keyboards:" ascii
+        $key_8 = "Laptop:" ascii
+        $key_9 = "Local Time:" ascii
+        $key_10 = "OS:" ascii
+        $key_11 = "RAM:" ascii
+        $key_12 = "Resolution:" ascii
+        $key_13 = "Threads:" ascii
+        $key_14 = "UTC:" ascii
+        $key_15 = "UserName:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSHunterCloudStealer_cystack_c951eb15
 {
     meta:
@@ -2692,6 +3164,30 @@ rule CSHunterCloudStealer_cystack_d3276457
         all of ($key_*)
 }
 
+rule CSHunterCloudStealer_cystack_d6cd44c9
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_d6cd44c9"
+
+    strings:
+        $key_0 = "AV:" ascii
+        $key_1 = "Cores:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Display Resolution:" ascii
+        $key_4 = "Ip:" ascii
+        $key_5 = "Keyboard Languages:" ascii
+        $key_6 = "Local Time:" ascii
+        $key_7 = "RAM:" ascii
+        $key_8 = "Threads:" ascii
+        $key_9 = "TimeZone:" ascii
+        $key_10 = "User Name:" ascii
+        $key_11 = "Windows:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSHunterCloudStealer_cystack_d706f1b5
 {
     meta:
@@ -2846,6 +3342,34 @@ rule CSHunterCloudStealer_cystack_da27d611
         all of ($key_*)
 }
 
+rule CSHunterCloudStealer_cystack_dd9953b8
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_dd9953b8"
+
+    strings:
+        $key_0 = "Architecture:" ascii
+        $key_1 = "Cores:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Device String:" ascii
+        $key_4 = "Display Resolution:" ascii
+        $key_5 = "GPU:" ascii
+        $key_6 = "HWID:" ascii
+        $key_7 = "Language:" ascii
+        $key_8 = "Laptop:" ascii
+        $key_9 = "Local Time:" ascii
+        $key_10 = "OS:" ascii
+        $key_11 = "RAM:" ascii
+        $key_12 = "Resolution:" ascii
+        $key_13 = "Threads:" ascii
+        $key_14 = "UTC:" ascii
+        $key_15 = "UserName:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSHunterCloudStealer_cystack_ddf83cf5
 {
     meta:
@@ -2943,6 +3467,32 @@ rule CSHunterCloudStealer_cystack_e44ec768
         $key_21 = "VideoCard:" ascii
         $key_22 = "Windows:" ascii
         $key_23 = "Work Dir:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSHunterCloudStealer_cystack_e6316c5e
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_e6316c5e"
+
+    strings:
+        $key_0 = "Admin Group:" ascii
+        $key_1 = "Country:" ascii
+        $key_2 = "Display Resolution:" ascii
+        $key_3 = "Domain Name:" ascii
+        $key_4 = "Graphics card:" ascii
+        $key_5 = "IP:" ascii
+        $key_6 = "Installed RAM:" ascii
+        $key_7 = "Integrity:" ascii
+        $key_8 = "Keyboard Language:" ascii
+        $key_9 = "Operation System:" ascii
+        $key_10 = "System Language:" ascii
+        $key_11 = "TimeZone:" ascii
+        $key_12 = "User Name:" ascii
+        $key_13 = "UserLanguage:" ascii
 
     condition:
         all of ($key_*)
@@ -3234,6 +3784,51 @@ rule CSHunterCloudStealer_cystack_f95511e0
         $key_11 = "TimeZone:" ascii
         $key_12 = "User Name:" ascii
         $key_13 = "UserLanguage:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSHunterCloudStealer_cystack_f95c1aaa
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_f95c1aaa"
+
+    strings:
+        $key_0 = "Architecture:" ascii
+        $key_1 = "Cores:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Device String:" ascii
+        $key_4 = "Display Resolution:" ascii
+        $key_5 = "HWID:" ascii
+        $key_6 = "Keyboards:" ascii
+        $key_7 = "Laptop:" ascii
+        $key_8 = "Local Time:" ascii
+        $key_9 = "OS:" ascii
+        $key_10 = "RAM:" ascii
+        $key_11 = "Resolution:" ascii
+        $key_12 = "Threads:" ascii
+        $key_13 = "UTC:" ascii
+        $key_14 = "UserName:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSHunterCloudStealer_cystack_fc838809
+{
+    meta:
+        family = "CSHunterCloudStealer"
+        fingerprint_id = "cystack_fc838809"
+
+    strings:
+        $key_0 = "CPU (Processor):" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "IP:" ascii
+        $key_4 = "Operating System:" ascii
+        $key_5 = "Username:" ascii
 
     condition:
         all of ($key_*)

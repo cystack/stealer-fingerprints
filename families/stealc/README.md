@@ -18,6 +18,68 @@ with the v2 rewrite tracked through 2024.
 
 ## Variants
 
+### `cystack_08756da8`
+
+**Field keys:**
+`Cores`, `Device String`, `Display Resolution`, `GPU`, `Keyboards`, `Language`, `Laptop`, `RAM`, `Resolution`, `Threads`, `UserName`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+UserName: <redacted>
+	Local Time: 27/03/2026 <ip>
+	UTC: -9
+Language: en-US
+Keyboards: English (United States)
+Laptop: FALSE
+Cores: 2
+Threads: 2
+RAM: 8 GB
+Display Resolution:
+Device String: Intel(R) HD Graphics 510
+Resolution: 1920x1080
+GPU:
+```
+
+### `cystack_108e2cc4`
+
+**Field keys:**
+`Architecture`, `Buy`, `Cores`, `Device String`, `Display Resolution`, `Keyboards`, `Laptop`, `RAM`, `Reserve Link`, `Resolution`, `Threads`, `UserName`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+│    [
+
+The Best fresh logs and ULP Cloud
+
+t.me/WichLoveFromR
+t.me/WichLoveFromR
+t.me/WichLoveFromR
+
+Reserve Link: <url>
+Buy: @AltairSupport
+
+
+Architecture: x64
+UserName: <redacted>
+	Local Time: 27/03/2026 <ip>
+	UTC: 5
+Keyboards: Gabon (Gabon)
+Laptop: FALSE
+Cores: 5
+Threads: 8
+RAM: 4 GB
+Display Resolution:
+Device String: Microsoft Basic Display Adapter
+Resolution: 1920x1080
+```
+
 ### `cystack_17febd38`
 
 **Field keys:**
@@ -350,6 +412,53 @@ RAM: 8 GB
 Display Resolution:
 Device String: Intel(R) Iris(R) Xe Graphics
 Resolution: 1920x1080
+GPU:
+```
+
+### `cystack_56641a31`
+
+**Field keys:**
+`Architecture`, `CPU`, `Cores`, `Device String`, `Display Resolution`, `GPU`, `HWID`, `Keyboards`, `Language`, `Laptop`, `Local Time`, `OS`, `RAM`, `Resolution`, `Threads`, `UTC`, `UserName`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+__________________________________________________________
+|                                                                                                                                                        |
+|             .d8888888b.  8888888b. 8888888 88b   d88P 8888888888 888      .d8888b.   .d8888b.  888      .d88888b.  888     888 8888888b.              |
+|            d88P"   "88b 888   88b  888    88b d88P  888        888     d88P  88b d88P  88b 888     d88P" "88b 888     888 888  "88b             |
+|            888  d8b  888 888    888  888     88o88P   888        888     88b.      888    888 888     888     888 888     888 888    888             |
+|            888  888  888 888   d88P  888      888P    8888888    888      "888b.   888        888     888     888 888     888 888    888             |
+|            888  888bd88P 8888888P"   888      d888b    888        888         "88b. 888        888     888     888 888     888 888    888             |
+|            888  8888P"  888         888     d88888b   888        888           "888 888    888 888     888     888 888     888 888    888             |
+|            88b.     .d8 888         888    d88P 88b  888        888     88b  d88P 88b  d88P 888     88b. .d88P 88b. .d88P 888  .d88P             |
+|             "88888888P" 888       8888888 d88P   88b 8888888888 88888888 "8888P"   "8888P"  88888888 "88888P"   "88888P"  8888888P"              |
+|                                                                                                                                                        |
+|                                                                    JOIN OUR CHANNEL!                                                                   |
+|                                                                                                                                                        |
+|        <url>      |      <url>      |      <url>      |      <url>         |
+|        <url>      |      <url>      |      <url>      |      <url>         |
+|        <url>      |      <url>      |      <url>      |      <url>         |
+|_________________________________________________________|
+
+HWID: <redacted>
+OS: Windows 10
+Architecture: x64
+UserName: <redacted>
+Local Time: 27/03/2026 <ip>
+UTC: 7
+Language: en-US
+Keyboards: English (United States)
+Laptop: FALSE
+CPU: AMD PRO A8-9600 R7, 10 COMPUTE CORES 4C+6G
+Cores: 4
+Threads: 4
+RAM: 7 GB
+Display Resolution:
+Device String: AMD Radeon R7 Graphics
+Resolution: 1280x1024
 GPU:
 ```
 

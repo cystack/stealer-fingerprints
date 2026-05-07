@@ -11,18 +11,18 @@ Reserve Link: <url>
 Buy: @AltairSupport
 
 
+UserName: <redacted>
 Country: UNKNOWN
 Zip Code: <redacted>
 HWID: <redacted>
-Current Language: English (United States)
-ScreenSize: {Width = 1920,Height = 1080}TimeZone: (UTC+07:00) Bangkok, Hanoi, Jakarta
+Current Language: Turkish (Türkiye)
+ScreenSize: {Width = 1920,Height = 1080}TimeZone: (UTC+03:00) İstanbul
 Operation System: Windows 10 Pro x64
 Process Elevation: True
 Available KeyboardLayouts: 
-English (United States)
-Vietnamese (Vietnam)
+Turkish (Türkiye)
 Hardwares: 
-Name: Intel(R) UHD Graphics 630, 1073741824 bytes
-Name: Total of RAM, 8064.33 MB or 8456065024 bytes
+Name: 12th Gen Intel(R) Core(TM) i5-1235U, 10 Cores
+Name: Intel(R) UHD Graphics, 4129648640 bytes
+Name: Total of RAM, 7876.68 MB or 8259297280 bytes
 Windows Defender
-Microsoft Defender

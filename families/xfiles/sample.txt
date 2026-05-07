@@ -1,0 +1,66 @@
+
+│    [
+
+The Best fresh logs and ULP Cloud
+
+t.me/WichLoveFromR
+t.me/WichLoveFromR
+t.me/WichLoveFromR
+
+Reserve Link: <url>
+Buy: @AltairSupport
+
+
+Username: <redacted>
+Computer Name: <redacted>
+Hardware ID: <redacted>
+CPU (Processor): Intel Core Processor (Broadwell)
+GPU (Display Devices): Standard VGA Graphics Adapter, RDPDD Chained DD, RDP Encoder Mirror Driver, RDP Reflector Display Driver
+RAM (Memory): 2047.484375
+Screens: 1280x720
+Desktop Screenshot Taken: No
+Windows Processes [
+   System
+   smss.exe
+   csrss.exe
+   wininit.exe
+   csrss.exe
+   winlogon.exe
+   services.exe
+   lsass.exe
+   lsm.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   audiodg.exe
+   svchost.exe
+   svchost.exe
+   spoolsv.exe
+   svchost.exe
+   taskhost.exe
+   dwm.exe
+   explorer.exe
+   OSPPSVC.EXE
+   WmiPrvSE.exe
+   dllhost.exe
+   svchost.exe
+   sppsvc.exe
+   Digi_V16.exe
+   ParallelProfi.exe
+]
+Processed parts: [
+   Total Time to process: <ip>.0635189
+   Messengers: <ip>.0003320
+   EmailClients: <ip>.0002927
+   Games: <ip>.0007388
+   Vpn: <ip>.0006133
+   RemoteAdminControl: <ip>.0003565
+   Vnc: <ip>.0005330
+   Ftp: <ip>.0015727
+   ChromiumBrowsers: <ip>.0160871
+   GeckoBrowsers: <ip>.0400422
+   FileGrabber: <ip>.0013524
+   Hardware: <ip>.00C4SHFL0W PR3M1UM CL0UD L0G5 — fresh daily → t.me / +GnCJu3Wqao1jBhi2
+]

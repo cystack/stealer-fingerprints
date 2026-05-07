@@ -1,6 +1,6 @@
-t . m e / + G n C J u 3 W q a o 1 j B h i = C4SHFL0W PR3M1UM CL0UD L0G5 — premium quality daily
+CASHFLOW PREMIUM CLOUD LOGS — top cashflow → t dot me slash +GnCJu3Wqao1jBhi
 [... 28 blank lines ...]
-t✅me/Link_CashFlow = C4SHFL0W PR3M1UM CL0UD L0G5 — fresh daily
+CASHFLOW|PREMIUM|CLOUD|LOGS — top cashflow → t/me/+GnCJu3Wqao1jBhi
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 [... 5 blank lines ...]
@@ -9,7 +9,8 @@ t✅me/Link_CashFlow = C4SHFL0W PR3M1UM CL0UD L0G5 — fresh daily
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 [... 3 blank lines ...]
 IP: <redacted>
-Country: AU (Australia)
-Operating System: Windows 11
-Username: <redacted>
-CPU (Processor): Intel(R) N200
+UserName: <redacted>
+Country: UNKNOWN
+HWID: <redacted>
+ScreenSize: {Width = 1920,Height = 1080}TimeZone: (UTC+07:00) Bangkok, Hanoi, Jakarta
+Operation System: Windows 10 Pro x64

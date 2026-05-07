@@ -37,6 +37,46 @@ a curated-CTI confirmation.
 
 ## Variants
 
+### `cystack_3f8964db`
+
+**Field keys:**
+`Available KeyboardLayouts`, `Buy`, `Country`, `Current Language`, `HWID`, `Hardwares`, `Name`, `Operation System`, `Process Elevation`, `Reserve Link`, `ScreenSize`, `UserName`, `Zip Code`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+│    [
+
+The Best fresh logs and ULP Cloud
+
+t.me/WichLoveFromR
+t.me/WichLoveFromR
+t.me/WichLoveFromR
+
+Reserve Link: <url>
+Buy: @AltairSupport
+
+
+UserName: <redacted>
+Country: UNKNOWN
+Zip Code: <redacted>
+HWID: <redacted>
+Current Language: Turkish (Türkiye)
+ScreenSize: {Width = 1920,Height = 1080}TimeZone: (UTC+03:00) İstanbul
+Operation System: Windows 10 Pro x64
+Process Elevation: True
+Available KeyboardLayouts: 
+Turkish (Türkiye)
+Hardwares: 
+Name: 12th Gen Intel(R) Core(TM) i5-1235U, 10 Cores
+Name: Intel(R) UHD Graphics, 4129648640 bytes
+Name: Total of RAM, 7876.68 MB or 8259297280 bytes
+Windows Defender
+```
+
 ### `cystack_658ba444`
 
 **Field keys:**

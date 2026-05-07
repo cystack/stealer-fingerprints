@@ -397,6 +397,31 @@ rule RedlineLike_Stealer_cystack_5455ca59
         all of ($key_*)
 }
 
+rule RedlineLike_Stealer_cystack_55a19892
+{
+    meta:
+        family = "RedlineLike Stealer"
+        fingerprint_id = "cystack_55a19892"
+
+    strings:
+        $key_0 = "Admin Group:" ascii
+        $key_1 = "Display Resolution:" ascii
+        $key_2 = "Domain Name:" ascii
+        $key_3 = "Graphics card:" ascii
+        $key_4 = "IP:" ascii
+        $key_5 = "Installed RAM:" ascii
+        $key_6 = "Integrity:" ascii
+        $key_7 = "Keyboard Language:" ascii
+        $key_8 = "Operation System:" ascii
+        $key_9 = "System Language:" ascii
+        $key_10 = "TimeZone:" ascii
+        $key_11 = "User Name:" ascii
+        $key_12 = "UserLanguage:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule RedlineLike_Stealer_cystack_60bb56d3
 {
     meta:
@@ -558,6 +583,30 @@ rule RedlineLike_Stealer_cystack_795dea64
         $key_17 = "User Name:" ascii
         $key_18 = "UserLanguage:" ascii
         $key_19 = "Wallpaper Hash:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule RedlineLike_Stealer_cystack_796e25f3
+{
+    meta:
+        family = "RedlineLike Stealer"
+        fingerprint_id = "cystack_796e25f3"
+
+    strings:
+        $key_0 = "Admin Group:" ascii
+        $key_1 = "Display Resolution:" ascii
+        $key_2 = "Domain Name:" ascii
+        $key_3 = "Graphics card:" ascii
+        $key_4 = "Installed RAM:" ascii
+        $key_5 = "Integrity:" ascii
+        $key_6 = "Keyboard Language:" ascii
+        $key_7 = "Operation System:" ascii
+        $key_8 = "System Language:" ascii
+        $key_9 = "TimeZone:" ascii
+        $key_10 = "User Name:" ascii
+        $key_11 = "UserLanguage:" ascii
 
     condition:
         all of ($key_*)
@@ -749,6 +798,31 @@ rule RedlineLike_Stealer_cystack_a1b233c6
         $key_7 = "User Name:" ascii
         $key_8 = "UserLanguage:" ascii
         $key_9 = "Wallpaper Hash:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule RedlineLike_Stealer_cystack_a98d2638
+{
+    meta:
+        family = "RedlineLike Stealer"
+        fingerprint_id = "cystack_a98d2638"
+
+    strings:
+        $key_0 = "Admin Group:" ascii
+        $key_1 = "Buy:" ascii
+        $key_2 = "Display Resolution:" ascii
+        $key_3 = "Domain Name:" ascii
+        $key_4 = "Graphics card:" ascii
+        $key_5 = "Installed RAM:" ascii
+        $key_6 = "Integrity:" ascii
+        $key_7 = "Keyboard Language:" ascii
+        $key_8 = "Operation System:" ascii
+        $key_9 = "Reserve Link:" ascii
+        $key_10 = "TimeZone:" ascii
+        $key_11 = "User Name:" ascii
+        $key_12 = "UserLanguage:" ascii
 
     condition:
         all of ($key_*)
@@ -1106,6 +1180,33 @@ rule RedlineLike_Stealer_cystack_e6316c5e
         $key_11 = "TimeZone:" ascii
         $key_12 = "User Name:" ascii
         $key_13 = "UserLanguage:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule RedlineLike_Stealer_cystack_e90367ce
+{
+    meta:
+        family = "RedlineLike Stealer"
+        fingerprint_id = "cystack_e90367ce"
+
+    strings:
+        $key_0 = "Admin Group:" ascii
+        $key_1 = "Country:" ascii
+        $key_2 = "Display Resolution:" ascii
+        $key_3 = "Domain Name:" ascii
+        $key_4 = "Graphics card:" ascii
+        $key_5 = "HWID:" ascii
+        $key_6 = "IP:" ascii
+        $key_7 = "Installed RAM:" ascii
+        $key_8 = "Integrity:" ascii
+        $key_9 = "Keyboard Language:" ascii
+        $key_10 = "Operation System:" ascii
+        $key_11 = "System Language:" ascii
+        $key_12 = "TimeZone:" ascii
+        $key_13 = "User Name:" ascii
+        $key_14 = "UserLanguage:" ascii
 
     condition:
         all of ($key_*)

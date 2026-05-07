@@ -9,25 +9,28 @@ Public catalog of malware-family fingerprints curated by CyStack threat intellig
 | [`Acreed`](families/acreed/) | 1 |
 | [`Aetheris Stealer`](families/aetheris-stealer/) | 4 |
 | [`BracketSection Stealer`](families/bracketsection-stealer/) | 3 |
-| [`CSALStealer`](families/csalstealer/) | 1 |
+| [`CSALStealer`](families/csalstealer/) | 2 |
 | [`CSArtHouseCloudStealer`](families/csarthousecloudstealer/) | 5 |
 | [`CSBabaStealer`](families/csbabastealer/) | 1 |
 | [`CSBuildBlockStealer`](families/csbuildblockstealer/) | 1 |
-| [`CSCashFlowStealer`](families/cscashflowstealer/) | 3 |
+| [`CSCashFlowStealer`](families/cscashflowstealer/) | 7 |
 | [`CSDarkSideCloudStealer`](families/csdarksidecloudstealer/) | 276 |
+| [`CSDataMonkStealer`](families/csdatamonkstealer/) | 1 |
 | [`CSFacebookProfileStealer`](families/csfacebookprofilestealer/) | 1 |
 | [`CSGeoBoxStealer`](families/csgeoboxstealer/) | 1 |
-| [`CSHunterCloudStealer`](families/cshuntercloudstealer/) | 106 |
+| [`CSHunterCloudStealer`](families/cshuntercloudstealer/) | 130 |
 | [`CSKortexStealer`](families/cskortexstealer/) | 1 |
-| [`CSPixelCloudStealer`](families/cspixelcloudstealer/) | 21 |
+| [`CSPixelCloudStealer`](families/cspixelcloudstealer/) | 22 |
 | [`CSPrimoCloudStealer`](families/csprimocloudstealer/) | 55 |
-| [`CSProcessElevationStealer`](families/csprocesselevationstealer/) | 2 |
+| [`CSProcessElevationStealer`](families/csprocesselevationstealer/) | 3 |
 | [`CSRussia34Stealer`](families/csrussia34stealer/) | 58 |
+| [`Cthulhu Stealer`](families/cthulhu-stealer/) | 2 |
 | [`Lumma`](families/lumma/) | 4 |
 | [`Redline`](families/redline/) | 1 |
-| [`RedlineLike Stealer`](families/redlinelike-stealer/) | 45 |
-| [`StealC`](families/stealc/) | 21 |
-| [`Vidar`](families/vidar/) | 523 |
+| [`RedlineLike Stealer`](families/redlinelike-stealer/) | 49 |
+| [`StealC`](families/stealc/) | 24 |
+| [`Vidar`](families/vidar/) | 530 |
+| [`XFiles`](families/xfiles/) | 1 |
 
 ## Contributing
 

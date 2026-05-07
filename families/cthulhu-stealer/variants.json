@@ -1,0 +1,44 @@
+{
+  "family": "Cthulhu Stealer",
+  "variants": [
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "BuildID",
+        "Graphics/Displays",
+        "Hardware",
+        "Software",
+        "Timezone",
+        "Zipcode"
+      ],
+      "filenames": [
+        "userinfo.txt"
+      ],
+      "fingerprint_id": "cystack_0525ee66",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "BuildID",
+        "City",
+        "Country",
+        "Country Code",
+        "Graphics/Displays",
+        "Hardware",
+        "IP",
+        "Latitude",
+        "Longitude",
+        "Region",
+        "Software",
+        "Timezone",
+        "Zipcode"
+      ],
+      "filenames": [
+        "userinfo.txt"
+      ],
+      "fingerprint_id": "cystack_9862de74",
+      "synthetic": true
+    }
+  ]
+}

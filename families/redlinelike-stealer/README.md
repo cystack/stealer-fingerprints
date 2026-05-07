@@ -607,6 +607,41 @@ Keyboard Language: English
 Display Resolution: 1920x1080
 ```
 
+### `cystack_55a19892`
+
+**Field keys:**
+`Admin Group`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+t.me / Link_CashFlow = C4SHFL0W PR3M1UM CL0UD L0G5 — top cashflow
+[... 28 blank lines ...]
+t/me/+GnCJu3Wqao1jBhi = CASHFLOW•PREMIUM•CLOUD•LOGS — premium Cashflow logs
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[... 5 blank lines ...]
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[... 3 blank lines ...]
+IP: <redacted>
+System Language: English
+Installed RAM: 15.84 GB
+Operation System: Windows 11 (Build 26200) (64 Bit)
+Graphics card: NVIDIA GeForce RTX 4060
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: 9
+UserLanguage: Thai
+Keyboard Language: English
+Display Resolution: 1920x1080
+```
+
 ### `cystack_60bb56d3`
 
 **Field keys:**
@@ -876,6 +911,40 @@ Timezone:        Africa/Casablanca (UTC)
 ═══════════════════════════════════════════════════════════════════
 ```
 
+### `cystack_796e25f3`
+
+**Field keys:**
+`Admin Group`, `Display Resolution`, `Domain Name`, `Graphics card`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+CASHFLOW PREMIUM CLOUD LOGS — top cashflow → t . me/Link_CashFlow
+[... 28 blank lines ...]
+C4SHFL0W PR3M1UM CL0UD L0G5 — premium quality daily → t/me/Link_CashFlow
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[... 5 blank lines ...]
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[... 3 blank lines ...]
+System Language: English
+Installed RAM: 7.28 GB
+Operation System: Windows 11 (Build 26200) (64 Bit)
+Graphics card: AMD Radeon 740M Graphics
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: -7
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1536x960
+```
+
 ### `cystack_80805b46`
 
 **Field keys:**
@@ -1125,6 +1194,42 @@ UserLanguage: German
 Keyboard Language: English
 Display Resolution: 1920x1080
 Wallpaper Hash: 7edf68c495f6fe8b8001a36c9ea0b65040a2d0a7
+```
+
+### `cystack_a98d2638`
+
+**Field keys:**
+`Admin Group`, `Buy`, `Display Resolution`, `Domain Name`, `Graphics card`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Reserve Link`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+│    [
+
+The Best fresh logs and ULP Cloud
+
+t.me/WichLoveFromR
+t.me/WichLoveFromR
+t.me/WichLoveFromR
+
+Reserve Link: <url>
+Buy: @AltairSupport
+
+
+Installed RAM: 7.65 GB
+Operation System: Windows 11 25H2 Home Single Language (Build 26200) (64 Bit)
+Graphics card: Intel(R) Iris(R) Xe Graphics
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: TRUE
+Integrity: High
+TimeZone: -6
+UserLanguage: Spanish
+Keyboard Language: Spanish
+Display Resolution: 1280x720 [s1895]
 ```
 
 ### `cystack_b6ece516`
@@ -1574,6 +1679,43 @@ Keyboard Language: Spanish
 Display Resolution: 1920x1080
 ```
 
+### `cystack_e90367ce`
+
+**Field keys:**
+`Admin Group`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+t . me/+GnCJu3Wqao1jBhi = CASHFLOW•PREMIUM•CLOUD•LOGS — premium quality daily
+[... 28 blank lines ...]
+CASHFLOW•PREMIUM•CLOUD•LOGS — best cloud → t.✅me/🙌Link_CashFlow
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[... 5 blank lines ...]
+🏪 Support: @HUNTER_CLOUDS 🖤
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[... 3 blank lines ...]
+HWID: <redacted>
+Country: FR
+IP: <redacted>
+System Language: French
+Installed RAM: 15.92 GB
+Operation System: Windows 11 (Build 26200) (64 Bit)
+Graphics card: NVIDIA GeForce RTX 2070 SUPER
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+1
+UserLanguage: French
+Keyboard Language: French
+Display Resolution: 1920x1080
+```
+
 ### `cystack_ec5637c1`
 
 **Field keys:**
@@ -1681,7 +1823,7 @@ GOOGLE: 47.592955, -52.73486
 **Field keys:**
 `Admin Group`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
 
-**Filenames:** `UserInformation.txt`
+**Filenames:** `System.txt`, `UserInformation.txt`
 
 **Sample (sanitized):**
 

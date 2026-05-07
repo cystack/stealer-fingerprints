@@ -3,6 +3,53 @@
 // observed field-key set. Tune false-positive thresholds at use
 // site, especially for variants relying on field combinations.
 
+rule StealC_cystack_08756da8
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_08756da8"
+
+    strings:
+        $key_0 = "Cores:" ascii
+        $key_1 = "Device String:" ascii
+        $key_2 = "Display Resolution:" ascii
+        $key_3 = "GPU:" ascii
+        $key_4 = "Keyboards:" ascii
+        $key_5 = "Language:" ascii
+        $key_6 = "Laptop:" ascii
+        $key_7 = "RAM:" ascii
+        $key_8 = "Resolution:" ascii
+        $key_9 = "Threads:" ascii
+        $key_10 = "UserName:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_108e2cc4
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_108e2cc4"
+
+    strings:
+        $key_0 = "Architecture:" ascii
+        $key_1 = "Buy:" ascii
+        $key_2 = "Cores:" ascii
+        $key_3 = "Device String:" ascii
+        $key_4 = "Display Resolution:" ascii
+        $key_5 = "Keyboards:" ascii
+        $key_6 = "Laptop:" ascii
+        $key_7 = "RAM:" ascii
+        $key_8 = "Reserve Link:" ascii
+        $key_9 = "Resolution:" ascii
+        $key_10 = "Threads:" ascii
+        $key_11 = "UserName:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule StealC_cystack_17febd38
 {
     meta:
@@ -221,6 +268,35 @@ rule StealC_cystack_3e5aeb50
         $key_4 = "Display Resolution:" ascii
         $key_5 = "GPU:" ascii
         $key_6 = "IP:" ascii
+        $key_7 = "Keyboards:" ascii
+        $key_8 = "Language:" ascii
+        $key_9 = "Laptop:" ascii
+        $key_10 = "Local Time:" ascii
+        $key_11 = "OS:" ascii
+        $key_12 = "RAM:" ascii
+        $key_13 = "Resolution:" ascii
+        $key_14 = "Threads:" ascii
+        $key_15 = "UTC:" ascii
+        $key_16 = "UserName:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_56641a31
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_56641a31"
+
+    strings:
+        $key_0 = "Architecture:" ascii
+        $key_1 = "CPU:" ascii
+        $key_2 = "Cores:" ascii
+        $key_3 = "Device String:" ascii
+        $key_4 = "Display Resolution:" ascii
+        $key_5 = "GPU:" ascii
+        $key_6 = "HWID:" ascii
         $key_7 = "Keyboards:" ascii
         $key_8 = "Language:" ascii
         $key_9 = "Laptop:" ascii

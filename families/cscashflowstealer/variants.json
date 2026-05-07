@@ -17,6 +17,38 @@
     {
       "banner_strings": [],
       "field_keys": [
+        "Country",
+        "HWID",
+        "IP",
+        "Operation System",
+        "ScreenSize",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_4afc8936",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Chipset Model",
+        "Memory",
+        "Model Name",
+        "Resolution",
+        "User Name",
+        "Username"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_530b5636",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
         "CPU (Processor)",
         "Country",
         "IP",
@@ -32,6 +64,18 @@
     {
       "banner_strings": [],
       "field_keys": [
+        "Operating System",
+        "Username"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_7043df8f",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
         "Country",
         "IP",
         "Operating System",
@@ -41,6 +85,21 @@
         "System.txt"
       ],
       "fingerprint_id": "cystack_931e4ef2",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Country",
+        "HWID",
+        "Operation System",
+        "ScreenSize",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_a5b1cb3f",
       "synthetic": true
     }
   ]
