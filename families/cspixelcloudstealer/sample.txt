@@ -16,9 +16,19 @@ __________________________________________________________
 |        <url>      |      <url>      |      <url>      |      <url>         |
 |_________________________________________________________|
 
-IP: <redacted>
-UserName: <redacted>
-Country: UNKNOWN
 HWID: <redacted>
-ScreenSize: {Width = 1366,Height = 768}TimeZone: (UTC-03:00) Ciudad de Buenos Aires
-Operation System: Windows 10 Pro x64
+Country: FR
+IP: <redacted>
+System Language: French
+Installed RAM: 15.92 GB
+Operation System: Windows 11 (Build 26200) (64 Bit)
+Graphics card: NVIDIA GeForce RTX 2070 SUPER
+Computer Name: <redacted>
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+1
+UserLanguage: French
+Keyboard Language: French
+Display Resolution: 1920x1080

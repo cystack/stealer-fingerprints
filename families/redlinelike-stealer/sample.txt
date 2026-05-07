@@ -1,24 +1,37 @@
-<url>          @arthouse_full_bot       @cloud_arthouse       Subscribe    ArtHouse    Cloud 2021-2026  <url>
-[... 28 blank lines ...]
-Bot @arthouse_full_bot
+@ k i r 3 c l o u d  	@ k i r 3 c l o u d	@ k i r 3 c l o u d  	@ k i r 3 c l o u d      @ k i r 3 c l o u d
+@ k i r 3 c l o u d  	@ k i r 3 c l o u d	@ k i r 3 c l o u d  	@ k i r 3 c l o u d      @ k i r 3 c l o u d
+@ k i r 3 c l o u d  	@ k i r 3 c l o u d	@ k i r 3 c l o u d  	@ k i r 3 c l o u d      @ k i r 3 c l o u d
+@ k i r 3 c l o u d  	@ k i r 3 c l o u d	@ k i r 3 c l o u d  	@ k i r 3 c l o u d      @ k i r 3 c l o u d
+░▄▀▄░█░█░▀█▀░█▀▄░▀▀█░█▀▀░█░░░█▀█░█░█░█▀▄
+░█▀▀░█▀▄░░█░░█▀▄░░▀▄░█░░░█░░░█░█░█░█░█░█
+░░▀░░▀░▀░▀▀▀░▀░▀░▀▀░░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀░                                                                                                                                   
+@𝗸𝗶𝗿𝟯𝗰𝗹𝗼𝘂𝗱 -- @𝗸𝗶𝗿𝟯𝗼𝘄𝗻𝗲𝗿 @̲k̲i̲r̲3̲c̲l̲o̲u̲d̲ ̲-̲-̲ ̲@̲k̲i̲r̲3̲o̲w̲n̲e̲r̲ －－ ＠ｋｉｒ３ｃｌｏｕｄ －－ ＠ｋｉｒ３ｏｗｎｅｒ  
 
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-[... 5 blank lines ...]
-🏪 Support: @HUNTER_CLOUDS 🖤
-
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-[... 3 blank lines ...]
-Country: Spain
-IP: <redacted>
-System Language: Spanish
-Installed RAM: 32.00 GB
-Operation System: Windows 11 (Build 26200) (64 Bit)
-Graphics card: NVIDIA GeForce RTX 4060 Ti
+Log date: 14 Mar 26 00:42
+HWID: <redacted>
+System Language: English
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+Installed RAM: 32581 MB
+Operation System: Windows 10 Pro build 26200 (64 Bit)
+Graphics card: NVIDIA GeForce RTX 3060
+Antivirus: Windows Defender
+Computer Name: <redacted>
 Domain Name: <redacted>
 User Name: <redacted>
-Admin Group: TRUE
-Integrity: High
-TimeZone: UTC+1
-UserLanguage: Spanish
-Keyboard Language: Spanish
-Display Resolution: 1920x1080
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+3
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1366x768
+Wallpaper Hash: 4eff1592e863915bb0f2fd791bd00ca258a7185c
+═══════════════════════════════════════════════════════════════════
+                        IP GEOLOCATION DATA
+═══════════════════════════════════════════════════════════════════
+IP Address:      <redacted>
+Country:         Saudi Arabia (SA)
+Region:          Riyadh Region
+City:            <redacted>
+Postal Code:     <redacted>
+Timezone:        Asia/Riyadh (UTC)
+═══════════════════════════════════════════════════════════════════

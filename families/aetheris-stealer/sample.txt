@@ -1,6 +1,40 @@
+
+                                          
+ __  __           _                 
+ \ \/ /___  _ __ (_)_   _ _ __ ___  
+  \  // _ \| '__|| | | | | '_ ` _ \ 
+  /  \ (_) | |   | | |_| | | | | | |
+ /_/\_\___/|_|   |_|\__,_|_| |_| |_|
+                                     
+                               Developer @aesxor
+[User Info]
+User: lEvi_WiNdows10
+Machine: DESKTOP-A1L4J9S
+Now: 2026-03-17 <ip>
+Input ISO: en
+Hwid: <redacted>
+Clipboard: adb shell locksettings clear --old <current_credential>
+
+[Network]
+External IP: <redacted>
+Internal IP: <ip>
+Default Gateway: <ip>
+
+[System]
+OS Product: Windows 10 Pro 2009
+OS Build: 19045
+OS Arch: x64
+CPU Name: Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz
+Logical Cores: 8
+RAM Total (MB): 16260
+RAM Available (MB): 9121
+
+[Drives]
+C: Fixed FS:NTFS Size:327GB Free:68GB
+
 [GPU]
-Intel(R) UHD Graphics 630
+AMD Radeon R9 M370X
 
 [Basic]
-User Domain: DESHAWNSPC
+User Domain: DESKTOP-A1L4J9S
 CLR Version: 4.0.30319.42000

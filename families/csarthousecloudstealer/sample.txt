@@ -1,6 +1,6 @@
-<url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
-[... 28 blank lines ...]
 <url>          @arthouse_full_bot   Subscribe    ArtHouse    Cloud 2021-2026  <url>
+[... 28 blank lines ...]
+<url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 [... 5 blank lines ...]
@@ -9,7 +9,8 @@
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 [... 3 blank lines ...]
 IP: <redacted>
-Country: IN (India)
-Operating System: Windows 11
-Username: <redacted>
-CPU (Processor): 13th Gen Intel(R) Core(TM) i7-1355U
+UserName: <redacted>
+Country: UNKNOWN
+HWID: <redacted>
+ScreenSize: {Width = 1536,Height = 864}TimeZone: (UTC+04:00) Abu Dhabi, Muscat
+Operation System: Windows 10 Home x64

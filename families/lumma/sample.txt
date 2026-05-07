@@ -1,20 +1,13 @@
-- User: erenh
-- Domain: Failed to Fetch.
-- Hostname: Failed to Fetch.
-- Anti Virus:
-  - Windows Defender
-- HWID: Failed to Fetch.
-- RAM Size: Failed to Fetch.
-- CPU Vendor: Failed to Fetch.
-- CPU Name: Failed to Fetch.
-- CPU Threads: Failed to Fetch.
-- CPU Cores: Failed to Fetch.
-- GPU: Failed to Fetch.
-- Display resolution: 1720x1080
-
-- Clipboard: <url>
-M0N2QoLgcrUX6qNuwGZwYDFZKJOpTHvlpk
-
-- IP Address: <ip>
-- Time: 02.02.2026 <ip>
-- Country: NL
+Bot @arthouse_full_bot
+[... 28 blank lines ...]
+<url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
+[... 14 blank lines ...]
+Domain: <redacted>
+HWID: <redacted>
+CPU Vendor: AuthenticAMD
+CPU Name: AMD Ryzen 5 3600 6-Core Processor
+CPU Threads: 12
+CPU Cores: 6
+GPU: NVIDIA GeForce RTX 3060 Ti
+Display resolution: 3440x1440
+Country: LT

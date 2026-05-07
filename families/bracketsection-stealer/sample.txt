@@ -1,15 +1,31 @@
-<url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
-[... 28 blank lines ...]
-Bot @arthouse_full_bot   <url>      Subscribe    ArtHouse
-[... 14 blank lines ...]
+ __  _ |_|              +                   _     
+|  \/  |_|___  ___ _ __(_) ___ ___  _ __ __| | ___ 
+| |\/| | / __|/ _ \ '__| |/ __/ _ \| '__/ _` |/ _ \
+| |  | | \__ \  __/ |  | | (_| (_) | | | (_| |  __/
+|_|  |_|_|___/\___|_|  |_|\___\___/|_|  \__,_|\___|
+       | | Telegram - <url>
+       | |
+       | |
+       \_/
+
 Username: <redacted>
+Hostname: <redacted>
+FileLocation: <redacted>
 IP: <redacted>
-Country: Pakistan (PK)
-Timezone: Asia/Karachi
-City: <redacted>
-Hwid: <redacted>
-Screensize: 1600x900
-System Language: en-US
-GPU: AMD Radeon R7 200 Series
-CPU: Intel(R) Core(TM) i5-4590T CPU @ 2.00GHz
-RAM: 8134 MB
+Country:  ()
+Timezone: 
+City: 
+<redacted>
+Logdate: 2026-04-07 <ip>
+Buildtag: cherry512
+
+[System]
+OS Product: Windows 10 Home Single Language 25H2 x64 (26200)
+Screensize: 1920x1080
+Keyboard: Espaol (Mxico), Ingls (Estados Unidos)
+System Language: es-MX
+
+[Hardware]
+GPU: AMD Radeon RX 580 2048SP
+CPU: AMD Ryzen 5 PRO 4650G with Radeon Graphics
+RAM: 20349 MB

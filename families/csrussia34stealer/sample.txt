@@ -14,19 +14,22 @@
 *          <url>               *
 ***********************************************
 
-Country: AR
-IP: <redacted>
-System Language: Spanish
-Processor: AMD Ryzen 5 3400G with Radeon Vega Graphics  (4 cores, 8 threads)
-Installed RAM: 15.95 GB
-Operation System: Windows 10 (Build 19045) (64 Bit)
-Graphics card: NVIDIA GeForce GTX 1660 Ti
+System Language: English
+Processor: Intel(R) Core(TM) i3-4030U CPU @ 1.90GHz
+Installed RAM: 4013 MB
+Operation System: Windows 10 Pro build 19041 (64 Bit)
+Graphics card: Intel(R) HD Graphics Family
+Antivirus: Windows Defender
 Computer Name: <redacted>
 Domain Name: <redacted>
 User Name: <redacted>
 Admin Group: FALSE
 Integrity: Medium
-TimeZone: UTC-3
-UserLanguage: Spanish
-Keyboard Language: Spanish
-Display Resolution: 1920x1080
+TimeZone: UTC+7
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1366x768
+Wallpaper Hash: 3a3dae50949057fa5e88062253d9ac6387c855fc
+Country:         Indonesia (ID)
+City:            <redacted>
+Timezone:        Asia/Jakarta (UTC)
