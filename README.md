@@ -1,6 +1,6 @@
 # Stealer Fingerprints
 
-Public catalog of malware-family fingerprints curated by CyStack security research. Each entry documents a stealer log family with its banner strings, field signatures, sanitized sample, and ready-to-use YARA rules.
+Public catalog of malware-family fingerprints curated by CyStack threat intelligence. Each entry documents a stealer log family with its banner strings, field signatures, sanitized sample, and ready-to-use YARA rules.
 
 ## Families
 
