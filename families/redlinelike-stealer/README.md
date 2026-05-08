@@ -642,6 +642,49 @@ Keyboard Language: English
 Display Resolution: 1920x1080
 ```
 
+### `cystack_5e2c1672`
+
+**Field keys:**
+`ASN`, `Admin Group`, `Antivirus`, `City`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP Address`, `ISP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `Operation System`, `Organization`, `Postal Code`, `Processor`, `Region`, `System Language`, `TimeZone`, `Timezone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 10 Feb 26 <ip>
+HWID: <redacted>
+System Language: Czech
+Processor: Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+Installed RAM: 16251 MB
+Operation System: Windows 10 Home build 26200 (64 Bit)
+Graphics card: Intel(R) UHD Graphics
+Antivirus: Windows Defender
+Computer Name: <redacted>
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+1
+UserLanguage: Czech
+Keyboard Language: Czech
+Display Resolution: 1920x1080
+Wallpaper Hash: f5d05f21697a9e3ffa4c6d16dcd47c2a509a6455
+═══════════════════════════════════════════════════════════════════
+                        IP GEOLOCATION DATA
+═══════════════════════════════════════════════════════════════════
+IP Address:      <redacted>
+Country:         Czech Republic (CZ)
+Region:          Prague
+City:            <redacted>
+Postal Code:     <redacted>
+ISP:             O Czech Republic, A.S.
+Organization:    Assigned for Infrastructure
+ASN:             5610
+Timezone:        Europe/Prague (UTC+01:00)
+═══════════════════════════════════════════════════════════════════
+```
+
 ### `cystack_60bb56d3`
 
 **Field keys:**
@@ -1232,6 +1275,37 @@ Keyboard Language: Spanish
 Display Resolution: 1280x720 [s1895]
 ```
 
+### `cystack_ab10acf1`
+
+**Field keys:**
+`Admin Group`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>
+@Primo_Cloud:<url>  
+
+Country: US
+IP: <redacted>
+System Language: English [X1900]
+Processor: AMD Ryzen 7 7840HS w/ Radeon 780M Graphics  (8 cores, 16 threads)
+Operation System: Windows 11 (Build 26200) (64 Bit)
+Graphics card: AMD Radeon(TM) 780M [N0911]
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: -7
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1707x1067 [Y2115]
+```
+
 ### `cystack_b6ece516`
 
 **Field keys:**
@@ -1399,6 +1473,40 @@ TimeZone: UTC+5
 UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1536x864
+```
+
+### `cystack_cf236422`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Display Resolution`, `Domain Name`, `GOOGLE`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `Product Key`, `Router MAC Address`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+IP: <redacted>
+TimeZone: -5
+System Language: English
+Processor: Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+Installed RAM: 7968 MB
+Operation System: Windows 11-10.0.26200
+Graphics card: Intel(R) UHD Graphics
+Computer Name: <redacted>
+Router MAC Address: <ip>
+Domain Name: <redacted>
+Product Key: 37GNV-YCQVD-38XP9-T848R-FC2HD
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+Wallpaper Hash: 7f0051c9f3e9da9fb4f22af1621f1959d5e91681
+
+=== GEOLOCATION ===
+GOOGLE: 29.640736, -81.650585
 ```
 
 ### `cystack_d1f53760`
@@ -1752,6 +1860,59 @@ Wallpaper Hash: 07e4b5cb74ddc87b24b25d26a76fe4ad60104c87
 
 === GEOLOCATION ===
 MYLNIKOV: 52.472744, 13.457951
+```
+
+### `cystack_ee21de76`
+
+**Banners:**
+- `===DARKSIDE_BRAND_BEGIN===`
+
+**Field keys:**
+`Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Operation System`, `Processor`, `System Language`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+===DARKSIDE_BRAND_BEGIN===
+|________________________________________________________________________________________________________________________|
+| D                                                                                                                    D |
+| A Join: <url>                                                                               A |
+| R                                                                                                                    R |
+| K $$$$$$$\                      $$\                 $$\       $$\                                                    K |
+| S $$  __$$\                     $$ |                \__|      $$ |                                                   S |
+| I $$ |  $$ | $$$$$$\   $$$$$$\  $$ |  $$\  $$$$$$$\ $$\  $$$$$$$ | $$$$$$\                                           I |
+| D $$ |  $$ | \____$$\ $$  __$$\ $$ | $$  |$$  _____|$$ |$$  __$$ |$$  __$$\                                          D |
+| E $$ |  $$ | $$$$$$$ |$$ |  \__|$$$$$$  / \$$$$$$\  $$ |$$ /  $$ |$$$$$$$$ |                                         E |
+| C $$ |  $$ |$$  __$$ |$$ |      $$  _$$<   \____$$\ $$ |$$ |  $$ |$$   ____|                                         C |
+| L $$$$$$$  |\$$$$$$$ |$$ |      $$ | \$$\ $$$$$$$  |$$ |\$$$$$$$ |\$$$$$$$\                                          L |
+| O \_______/  \_______|\__|      \__|  \__|\_______/ \__| \_______| \_______|                                         O |
+| U                                                                                                                    U |
+| D                                                                                                                    D |
+| D                                                                                                                    D |
+| A                                                                                                                    A |
+| R DARKSIDE PRIVATE CLOUD - Private Monthly Packs                                                                     R |
+| K TIERS (monthly):  BUDGET $100  |  PREMIUM $200  |  GOLD $300                                                       K |
+| S                                                                                                                    S |
+| I                                                                                                                    I |
+| D C  Budget Channel: 100$/month - Access up to 10+ private channels (total 500$).                                    D |
+| E L  Premium Channel: 200$/month - Access to 10-20+ private channels (total 1000$).                                  E |
+| C O  Gold Channel: 300$/month - Access to 20-30+ private channels (total 2000$).                                     C |
+| L U          Join: <url>                                                                    L |
+| O D             Join: <url>                                                                 O |
+| U                   Join: <url>                                                             U |
+| D DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD      D |
+|________________________________________________________________________________________________________________________|
+===DARKSIDE_BRAND_END===
+
+IP: <redacted>
+System Language: English
+Processor: AMD Ryzen 7 5700X 8-Core Processor  (8 cores, 16 threads)
+Installed RAM: 63.91 GB
+Operation System: Windows 11 (Build 26200) (64 Bit)
+Graphics card: NVIDIA GeForce RTX 3070 Ti
+Domain Name: <redacted>
 ```
 
 ### `cystack_efe7f525`

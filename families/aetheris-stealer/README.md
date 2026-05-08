@@ -232,6 +232,57 @@ User Domain: DESHAWNSPC
 CLR Version: 4.0.30319.42000
 ```
 
+### `cystack_5f8f9b68`
+
+**Field keys:**
+`CPU Name`, `Clipboard`, `Default Gateway`, `External IP`, `Hwid`, `Input ISO`, `Internal IP`, `Logical Cores`, `Machine`, `Now`, `OS Arch`, `OS Build`, `OS Product`, `RAM Available (MB)`, `RAM Total (MB)`, `User`, `User Domain`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+
+                                          
+ █████  ███████ ████████ ██   ██ ███████ ██████  ██ ███████ 
+██   ██ ██         ██    ██   ██ ██      ██   ██ ██ ██      
+███████ █████      ██    ███████ █████   ██████  ██ ███████ 
+██   ██ ██         ██    ██   ██ ██      ██   ██ ██      ██ 
+██   ██ ███████    ██    ██   ██ ███████ ██   ██ ██ ███████ 
+[... 3 blank lines ...]
+                               Developer @sexyweekly
+[User Info]
+User: fomki
+Machine: DESKTOP-OB2IQSR
+Now: 2026-02-15 <ip>
+Input ISO: ru
+Hwid: <redacted>
+Clipboard: @toooolsss
+
+[Network]
+External IP: <redacted>
+Internal IP: <ip>
+Default Gateway: <ip>
+
+[System]
+OS Product: Windows 10 Home 2009
+OS Build: 19045
+OS Arch: x64
+CPU Name: Intel(R) Core(TM) i3-2310M CPU @ 2.10GHz
+Logical Cores: 4
+RAM Total (MB): 4003
+RAM Available (MB): 301
+
+[Drives]
+C: Fixed FS:NTFS Size:232GB Free:110GB
+
+[GPU]
+Intel(R) HD Graphics 3000
+
+[Basic]
+User Domain: DESKTOP-OB2IQSR
+```
+
 ### `cystack_f9f01b3a`
 
 **Field keys:**

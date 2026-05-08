@@ -7,7 +7,7 @@ Public catalog of malware-family fingerprints curated by CyStack threat intellig
 | Family | Variants |
 |---|---|
 | [`Acreed`](families/acreed/) | 1 |
-| [`Aetheris Stealer`](families/aetheris-stealer/) | 4 |
+| [`Aetheris Stealer`](families/aetheris-stealer/) | 5 |
 | [`BracketSection Stealer`](families/bracketsection-stealer/) | 3 |
 | [`CSALStealer`](families/csalstealer/) | 2 |
 | [`CSArtHouseCloudStealer`](families/csarthousecloudstealer/) | 5 |
@@ -23,11 +23,11 @@ Public catalog of malware-family fingerprints curated by CyStack threat intellig
 | [`CSPixelCloudStealer`](families/cspixelcloudstealer/) | 22 |
 | [`CSPrimoCloudStealer`](families/csprimocloudstealer/) | 55 |
 | [`CSProcessElevationStealer`](families/csprocesselevationstealer/) | 3 |
-| [`CSRussia34Stealer`](families/csrussia34stealer/) | 58 |
+| [`CSRussia34Stealer`](families/csrussia34stealer/) | 61 |
 | [`Cthulhu Stealer`](families/cthulhu-stealer/) | 2 |
 | [`Lumma`](families/lumma/) | 4 |
 | [`Redline`](families/redline/) | 1 |
-| [`RedlineLike Stealer`](families/redlinelike-stealer/) | 49 |
+| [`RedlineLike Stealer`](families/redlinelike-stealer/) | 53 |
 | [`StealC`](families/stealc/) | 24 |
 | [`Vidar`](families/vidar/) | 530 |
 | [`XFiles`](families/xfiles/) | 1 |

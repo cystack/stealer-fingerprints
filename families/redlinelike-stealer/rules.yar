@@ -422,6 +422,45 @@ rule RedlineLike_Stealer_cystack_55a19892
         all of ($key_*)
 }
 
+rule RedlineLike_Stealer_cystack_5e2c1672
+{
+    meta:
+        family = "RedlineLike Stealer"
+        fingerprint_id = "cystack_5e2c1672"
+
+    strings:
+        $key_0 = "ASN:" ascii
+        $key_1 = "Admin Group:" ascii
+        $key_2 = "Antivirus:" ascii
+        $key_3 = "City:" ascii
+        $key_4 = "Computer Name:" ascii
+        $key_5 = "Country:" ascii
+        $key_6 = "Display Resolution:" ascii
+        $key_7 = "Domain Name:" ascii
+        $key_8 = "Graphics card:" ascii
+        $key_9 = "HWID:" ascii
+        $key_10 = "IP Address:" ascii
+        $key_11 = "ISP:" ascii
+        $key_12 = "Installed RAM:" ascii
+        $key_13 = "Integrity:" ascii
+        $key_14 = "Keyboard Language:" ascii
+        $key_15 = "Log date:" ascii
+        $key_16 = "Operation System:" ascii
+        $key_17 = "Organization:" ascii
+        $key_18 = "Postal Code:" ascii
+        $key_19 = "Processor:" ascii
+        $key_20 = "Region:" ascii
+        $key_21 = "System Language:" ascii
+        $key_22 = "TimeZone:" ascii
+        $key_23 = "Timezone:" ascii
+        $key_24 = "User Name:" ascii
+        $key_25 = "UserLanguage:" ascii
+        $key_26 = "Wallpaper Hash:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule RedlineLike_Stealer_cystack_60bb56d3
 {
     meta:
@@ -828,6 +867,32 @@ rule RedlineLike_Stealer_cystack_a98d2638
         all of ($key_*)
 }
 
+rule RedlineLike_Stealer_cystack_ab10acf1
+{
+    meta:
+        family = "RedlineLike Stealer"
+        fingerprint_id = "cystack_ab10acf1"
+
+    strings:
+        $key_0 = "Admin Group:" ascii
+        $key_1 = "Country:" ascii
+        $key_2 = "Display Resolution:" ascii
+        $key_3 = "Domain Name:" ascii
+        $key_4 = "Graphics card:" ascii
+        $key_5 = "IP:" ascii
+        $key_6 = "Integrity:" ascii
+        $key_7 = "Keyboard Language:" ascii
+        $key_8 = "Operation System:" ascii
+        $key_9 = "Processor:" ascii
+        $key_10 = "System Language:" ascii
+        $key_11 = "TimeZone:" ascii
+        $key_12 = "User Name:" ascii
+        $key_13 = "UserLanguage:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule RedlineLike_Stealer_cystack_b6ece516
 {
     meta:
@@ -956,6 +1021,37 @@ rule RedlineLike_Stealer_cystack_cc52bdba
         $key_14 = "TimeZone:" ascii
         $key_15 = "User Name:" ascii
         $key_16 = "UserLanguage:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule RedlineLike_Stealer_cystack_cf236422
+{
+    meta:
+        family = "RedlineLike Stealer"
+        fingerprint_id = "cystack_cf236422"
+
+    strings:
+        $key_0 = "Admin Group:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Display Resolution:" ascii
+        $key_3 = "Domain Name:" ascii
+        $key_4 = "GOOGLE:" ascii
+        $key_5 = "Graphics card:" ascii
+        $key_6 = "IP:" ascii
+        $key_7 = "Installed RAM:" ascii
+        $key_8 = "Integrity:" ascii
+        $key_9 = "Keyboard Language:" ascii
+        $key_10 = "Operation System:" ascii
+        $key_11 = "Processor:" ascii
+        $key_12 = "Product Key:" ascii
+        $key_13 = "Router MAC Address:" ascii
+        $key_14 = "System Language:" ascii
+        $key_15 = "TimeZone:" ascii
+        $key_16 = "User Name:" ascii
+        $key_17 = "UserLanguage:" ascii
+        $key_18 = "Wallpaper Hash:" ascii
 
     condition:
         all of ($key_*)
@@ -1244,6 +1340,26 @@ rule RedlineLike_Stealer_cystack_ec5637c1
 
     condition:
         all of ($key_*)
+}
+
+rule RedlineLike_Stealer_cystack_ee21de76
+{
+    meta:
+        family = "RedlineLike Stealer"
+        fingerprint_id = "cystack_ee21de76"
+
+    strings:
+        $banner_0 = "===DARKSIDE_BRAND_BEGIN===" ascii nocase
+        $key_0 = "Domain Name:" ascii
+        $key_1 = "Graphics card:" ascii
+        $key_2 = "IP:" ascii
+        $key_3 = "Installed RAM:" ascii
+        $key_4 = "Operation System:" ascii
+        $key_5 = "Processor:" ascii
+        $key_6 = "System Language:" ascii
+
+    condition:
+        any of ($banner_*) or all of ($key_*)
 }
 
 rule RedlineLike_Stealer_cystack_efe7f525

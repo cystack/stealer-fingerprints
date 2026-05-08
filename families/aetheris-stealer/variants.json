@@ -62,6 +62,33 @@
       "banner_strings": [],
       "field_keys": [
         "CPU Name",
+        "Clipboard",
+        "Default Gateway",
+        "External IP",
+        "Hwid",
+        "Input ISO",
+        "Internal IP",
+        "Logical Cores",
+        "Machine",
+        "Now",
+        "OS Arch",
+        "OS Build",
+        "OS Product",
+        "RAM Available (MB)",
+        "RAM Total (MB)",
+        "User",
+        "User Domain"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_5f8f9b68",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "CPU Name",
         "Hwid"
       ],
       "filenames": [

@@ -122,6 +122,96 @@ Threads: 12
 RAM: 16197 MB
 ```
 
+### `cystack_1bfecca9`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `System Language`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+***********************************************
+*                                             *
+*   ____  _____ ____  _     ___ _   _ _____   *
+*  |  _ \| ____|  _ \| |   |_ _| \ | | ____|  *
+*  | |_) |  _| | | | | |    | ||  \| |  _|    *
+*  |  _ <| |___| |_| | |___ | || |\  | |___   *
+*  |_| \_|_____|____/|_____|___|_| \_|_____|  *
+*                                             *
+*                                             *
+***********************************************
+*          New subscribers here:              *
+*          <url>               *
+*          <url>               *
+*          <url>               *
+***********************************************
+
+HWID: <redacted>
+Country: TR
+IP: <redacted>
+System Language: Turkish
+Processor: AMD Ryzen 7 5800X 8-Core Processor
+Installed RAM: 16331 MB [W0951]
+Operation System: Windows 10-10.0.19045
+Graphics card: NVIDIA GeForce RTX 3070 Ti [s2995]
+Computer Name: <redacted>
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+UserLanguage: Turkish
+Keyboard Language: Turkish
+Display Resolution: 1920x1080
+Wallpaper Hash: 71946f050720d4541de12454c9ae4960cb7b228e
+```
+
+### `cystack_2551ed92`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+***********************************************
+*                                             *
+*   ____  _____ ____  _     ___ _   _ _____   *
+*  |  _ \| ____|  _ \| |   |_ _| \ | | ____|  *
+*  | |_) |  _| | | | | |    | ||  \| |  _|    *
+*  |  _ <| |___| |_| | |___ | || |\  | |___   *
+*  |_| \_|_____|____/|_____|___|_| \_|_____|  *
+*                                             *
+*                                             *
+***********************************************
+*          New subscribers here:              *
+*          <url>               *
+*          <url>               *
+*          <url>               *
+***********************************************
+
+HWID: <redacted>
+Country: EG
+IP: <redacted>
+TimeZone: +2
+System Language: English
+Installed RAM: 16323 MB [n0138] [W2598]
+Operation System: Windows 10-10.0.19045
+Graphics card: Radeon RX 570 Series
+Computer Name: <redacted>
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: TRUE
+Integrity: High [r3811]
+UserLanguage: English
+Keyboard Language: English [R1473] [F5721]
+Display Resolution: 1920x1080
+Wallpaper Hash: dfa456ad6fb2ff40f7a769ac72a41b878aa03361
+```
+
 ### `cystack_26bfa01e`
 
 **Field keys:**
@@ -4505,6 +4595,66 @@ UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1280x720
 Wallpaper Hash: 5ca45c751a95745a4178ede1b2614e0c51a2ad37
+```
+
+### `cystack_d706f1b5`
+
+**Field keys:**
+`Admin Group`, `Antivirus`, `City`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP Address`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Postal Code`, `Processor`, `Region`, `TimeZone`, `Timezone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+***********************************************
+*                                             *
+*   ____  _____ ____  _     ___ _   _ _____   *
+*  |  _ \| ____|  _ \| |   |_ _| \ | | ____|  *
+*  | |_) |  _| | | | | |    | ||  \| |  _|    *
+*  |  _ <| |___| |_| | |___ | || |\  | |___   *
+*  |_| \_|_____|____/|_____|___|_| \_|_____|  *
+*                                             *
+*                                             *
+***********************************************
+*          New subscribers here:              *
+*          <url>               *
+*          <url>               *
+*          <url>               *
+***********************************************
+
+    System Language: English
+Processor: Intel(R) Core(TM) i3-10105 CPU @ 3.70GHz
+Installed RAM: 8107 MB
+Operation System: Windows 10 Pro build 26200 (64 Bit)
+Graphics card: NVIDIA GeForce GTX 1060 3GB
+Antivirus: Windows Defender
+Computer Name: <redacted>
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+7
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+Wallpaper Hash: ee2242c3ce7ebf0d0abb4f23ec94486147965f71
+
+
+═══════════════════════════════════════════════════════════════════
+                        IP GEOLOCATION DATA
+═══════════════════════════════════════════════════════════════════
+
+IP Address:      <redacted>
+Country:         Vietnam (VN)
+Region:          Quảng Ninh
+City:            <redacted>
+Postal Code:     <redacted>
+
+
+Timezone:        Asia/Ho_Chi_Minh (UTC)
+
+═══════════════════════════════════════════════════════════════════
 ```
 
 ### `cystack_db621574`

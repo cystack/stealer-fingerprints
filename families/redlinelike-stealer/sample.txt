@@ -1,37 +1,31 @@
-@ k i r 3 c l o u d  	@ k i r 3 c l o u d	@ k i r 3 c l o u d  	@ k i r 3 c l o u d      @ k i r 3 c l o u d
-@ k i r 3 c l o u d  	@ k i r 3 c l o u d	@ k i r 3 c l o u d  	@ k i r 3 c l o u d      @ k i r 3 c l o u d
-@ k i r 3 c l o u d  	@ k i r 3 c l o u d	@ k i r 3 c l o u d  	@ k i r 3 c l o u d      @ k i r 3 c l o u d
-@ k i r 3 c l o u d  	@ k i r 3 c l o u d	@ k i r 3 c l o u d  	@ k i r 3 c l o u d      @ k i r 3 c l o u d
-░▄▀▄░█░█░▀█▀░█▀▄░▀▀█░█▀▀░█░░░█▀█░█░█░█▀▄
-░█▀▀░█▀▄░░█░░█▀▄░░▀▄░█░░░█░░░█░█░█░█░█░█
-░░▀░░▀░▀░▀▀▀░▀░▀░▀▀░░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀░                                                                                                                                   
-@𝗸𝗶𝗿𝟯𝗰𝗹𝗼𝘂𝗱 -- @𝗸𝗶𝗿𝟯𝗼𝘄𝗻𝗲𝗿 @̲k̲i̲r̲3̲c̲l̲o̲u̲d̲ ̲-̲-̲ ̲@̲k̲i̲r̲3̲o̲w̲n̲e̲r̲ －－ ＠ｋｉｒ３ｃｌｏｕｄ －－ ＠ｋｉｒ３ｏｗｎｅｒ  
-
-Log date: 14 Mar 26 00:42
+Log date: 10 Feb 26 <ip>
 HWID: <redacted>
-System Language: English
-Processor: 12th Gen Intel(R) Core(TM) i5-12400F
-Installed RAM: 32581 MB
-Operation System: Windows 10 Pro build 26200 (64 Bit)
-Graphics card: NVIDIA GeForce RTX 3060
+System Language: Czech
+Processor: Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+Installed RAM: 16251 MB
+Operation System: Windows 10 Home build 26200 (64 Bit)
+Graphics card: Intel(R) UHD Graphics
 Antivirus: Windows Defender
 Computer Name: <redacted>
 Domain Name: <redacted>
 User Name: <redacted>
 Admin Group: FALSE
 Integrity: Medium
-TimeZone: UTC+3
-UserLanguage: English
-Keyboard Language: English
-Display Resolution: 1366x768
-Wallpaper Hash: 4eff1592e863915bb0f2fd791bd00ca258a7185c
+TimeZone: UTC+1
+UserLanguage: Czech
+Keyboard Language: Czech
+Display Resolution: 1920x1080
+Wallpaper Hash: f5d05f21697a9e3ffa4c6d16dcd47c2a509a6455
 ═══════════════════════════════════════════════════════════════════
                         IP GEOLOCATION DATA
 ═══════════════════════════════════════════════════════════════════
 IP Address:      <redacted>
-Country:         Saudi Arabia (SA)
-Region:          Riyadh Region
+Country:         Czech Republic (CZ)
+Region:          Prague
 City:            <redacted>
 Postal Code:     <redacted>
-Timezone:        Asia/Riyadh (UTC)
+ISP:             O Czech Republic, A.S.
+Organization:    Assigned for Infrastructure
+ASN:             5610
+Timezone:        Europe/Prague (UTC+01:00)
 ═══════════════════════════════════════════════════════════════════

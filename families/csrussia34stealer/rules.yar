@@ -64,6 +64,64 @@ rule CSRussia34Stealer_cystack_1b200d6d
         all of ($key_*)
 }
 
+rule CSRussia34Stealer_cystack_1bfecca9
+{
+    meta:
+        family = "CSRussia34Stealer"
+        fingerprint_id = "cystack_1bfecca9"
+
+    strings:
+        $key_0 = "Admin Group:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Display Resolution:" ascii
+        $key_4 = "Domain Name:" ascii
+        $key_5 = "Graphics card:" ascii
+        $key_6 = "HWID:" ascii
+        $key_7 = "IP:" ascii
+        $key_8 = "Installed RAM:" ascii
+        $key_9 = "Integrity:" ascii
+        $key_10 = "Keyboard Language:" ascii
+        $key_11 = "Operation System:" ascii
+        $key_12 = "Processor:" ascii
+        $key_13 = "System Language:" ascii
+        $key_14 = "User Name:" ascii
+        $key_15 = "UserLanguage:" ascii
+        $key_16 = "Wallpaper Hash:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSRussia34Stealer_cystack_2551ed92
+{
+    meta:
+        family = "CSRussia34Stealer"
+        fingerprint_id = "cystack_2551ed92"
+
+    strings:
+        $key_0 = "Admin Group:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Display Resolution:" ascii
+        $key_4 = "Domain Name:" ascii
+        $key_5 = "Graphics card:" ascii
+        $key_6 = "HWID:" ascii
+        $key_7 = "IP:" ascii
+        $key_8 = "Installed RAM:" ascii
+        $key_9 = "Integrity:" ascii
+        $key_10 = "Keyboard Language:" ascii
+        $key_11 = "Operation System:" ascii
+        $key_12 = "System Language:" ascii
+        $key_13 = "TimeZone:" ascii
+        $key_14 = "User Name:" ascii
+        $key_15 = "UserLanguage:" ascii
+        $key_16 = "Wallpaper Hash:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSRussia34Stealer_cystack_26bfa01e
 {
     meta:
@@ -1337,6 +1395,39 @@ rule CSRussia34Stealer_cystack_d2200157
         $key_15 = "User Name:" ascii
         $key_16 = "UserLanguage:" ascii
         $key_17 = "Wallpaper Hash:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSRussia34Stealer_cystack_d706f1b5
+{
+    meta:
+        family = "CSRussia34Stealer"
+        fingerprint_id = "cystack_d706f1b5"
+
+    strings:
+        $key_0 = "Admin Group:" ascii
+        $key_1 = "Antivirus:" ascii
+        $key_2 = "City:" ascii
+        $key_3 = "Computer Name:" ascii
+        $key_4 = "Country:" ascii
+        $key_5 = "Display Resolution:" ascii
+        $key_6 = "Domain Name:" ascii
+        $key_7 = "Graphics card:" ascii
+        $key_8 = "IP Address:" ascii
+        $key_9 = "Installed RAM:" ascii
+        $key_10 = "Integrity:" ascii
+        $key_11 = "Keyboard Language:" ascii
+        $key_12 = "Operation System:" ascii
+        $key_13 = "Postal Code:" ascii
+        $key_14 = "Processor:" ascii
+        $key_15 = "Region:" ascii
+        $key_16 = "TimeZone:" ascii
+        $key_17 = "Timezone:" ascii
+        $key_18 = "User Name:" ascii
+        $key_19 = "UserLanguage:" ascii
+        $key_20 = "Wallpaper Hash:" ascii
 
     condition:
         all of ($key_*)
