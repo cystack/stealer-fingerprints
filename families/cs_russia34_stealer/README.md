@@ -5202,7 +5202,7 @@ set to confirm.
 ## Related families
 
 - [`redline`](../redline/)
-- [`redlinelike-stealer`](../redlinelike-stealer/)
+- [`redlinelike-stealer`](../redlinelike_stealer/)
 
 ## References
 

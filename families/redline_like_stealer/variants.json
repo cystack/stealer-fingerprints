@@ -1097,6 +1097,42 @@
     {
       "banner_strings": [],
       "field_keys": [
+        "ASN",
+        "Admin Group",
+        "Antivirus",
+        "City",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "HWID",
+        "IP Address",
+        "ISP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Log date",
+        "Operation System",
+        "Organization",
+        "Processor",
+        "Region",
+        "System Language",
+        "TimeZone",
+        "Timezone",
+        "User Name",
+        "UserLanguage",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_d948cd26",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
         "Admin Group",
         "Country",
         "Display Resolution",

@@ -1659,6 +1659,48 @@ Keyboard Language: Latvian
 Display Resolution: 1920x1080
 ```
 
+### `cystack_d948cd26`
+
+**Field keys:**
+`ASN`, `Admin Group`, `Antivirus`, `City`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP Address`, `ISP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `Operation System`, `Organization`, `Processor`, `Region`, `System Language`, `TimeZone`, `Timezone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 10 Feb 26 <ip>
+HWID: <redacted>
+System Language: English
+Processor: Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Installed RAM: 12124 MB
+Operation System: Windows 10 Home Single Language build 19045 (64 Bit)
+Graphics card: Intel(R) UHD Graphics
+Antivirus: Windows Defender
+Computer Name: <redacted>
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+7
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1536x864
+Wallpaper Hash: caa2adbdb2065f2f410468cd00d999d43f85dc43
+═══════════════════════════════════════════════════════════════════
+                        IP GEOLOCATION DATA
+═══════════════════════════════════════════════════════════════════
+IP Address:      <redacted>
+Country:         Indonesia (ID)
+Region:          Bangka-Belitung Islands
+City:            <redacted>
+ISP:             Cloudflare, Inc.
+Organization:    CLOUDFLAREWARP
+ASN:             13335
+Timezone:        Asia/Jakarta (UTC+07:00)
+═══════════════════════════════════════════════════════════════════
+```
+
 ### `cystack_da6b26f6`
 
 **Field keys:**
@@ -2036,7 +2078,7 @@ in incident-response triage.
 ## Related families
 
 - [`vidar`](../vidar/)
-- [`meta-stealer`](../meta-stealer/)
+- [`meta-stealer`](../meta_stealer/)
 
 ## References
 

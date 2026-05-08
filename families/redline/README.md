@@ -71,7 +71,7 @@ paired with `FileLocation:`. Stripped variants without
 
 ## Related families
 
-- [`redlinelike-stealer`](../redlinelike-stealer/)
+- [`redlinelike-stealer`](../redlinelike_stealer/)
 - [`metastealer`](../metastealer/)
 
 ## References

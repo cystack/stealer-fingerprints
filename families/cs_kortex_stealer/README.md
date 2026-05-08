@@ -58,7 +58,7 @@ unique.
 
 - [`lumma`](../lumma/)
 - [`xfiles`](../xfiles/)
-- [`redlinelike-stealer`](../redlinelike-stealer/)
+- [`redlinelike-stealer`](../redlinelike_stealer/)
 
 ## References
 

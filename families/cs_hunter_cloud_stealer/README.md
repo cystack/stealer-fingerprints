@@ -30411,7 +30411,7 @@ is preserved but spaced apart by the watermark.
 ## Related families
 
 - [`redline`](../redline/)
-- [`redlinelike-stealer`](../redlinelike-stealer/)
+- [`redlinelike-stealer`](../redlinelike_stealer/)
 
 ## References
 

@@ -13389,7 +13389,7 @@ a published threat-intel mapping for this layout.
 ## Related families
 
 - [`redline`](../redline/)
-- [`redlinelike-stealer`](../redlinelike-stealer/)
+- [`redlinelike-stealer`](../redlinelike_stealer/)
 
 ## References
 

@@ -199,7 +199,7 @@ the signature; they should be tracked separately.
 
 ## Related families
 
-- [`remus-stealer`](../remus-stealer/)
+- [`remus-stealer`](../remus_stealer/)
 - [`csalstealer`](../csalstealer/)
 - [`csbabastealer`](../csbabastealer/)
 - [`csarthousecloudstealer`](../csarthousecloudstealer/)

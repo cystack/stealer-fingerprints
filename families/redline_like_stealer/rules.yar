@@ -1176,6 +1176,44 @@ rule RedlineLike_Stealer_cystack_d7c6c67e
         all of ($key_*)
 }
 
+rule RedlineLike_Stealer_cystack_d948cd26
+{
+    meta:
+        family = "RedlineLike Stealer"
+        fingerprint_id = "cystack_d948cd26"
+
+    strings:
+        $key_0 = "ASN:" ascii
+        $key_1 = "Admin Group:" ascii
+        $key_2 = "Antivirus:" ascii
+        $key_3 = "City:" ascii
+        $key_4 = "Computer Name:" ascii
+        $key_5 = "Country:" ascii
+        $key_6 = "Display Resolution:" ascii
+        $key_7 = "Domain Name:" ascii
+        $key_8 = "Graphics card:" ascii
+        $key_9 = "HWID:" ascii
+        $key_10 = "IP Address:" ascii
+        $key_11 = "ISP:" ascii
+        $key_12 = "Installed RAM:" ascii
+        $key_13 = "Integrity:" ascii
+        $key_14 = "Keyboard Language:" ascii
+        $key_15 = "Log date:" ascii
+        $key_16 = "Operation System:" ascii
+        $key_17 = "Organization:" ascii
+        $key_18 = "Processor:" ascii
+        $key_19 = "Region:" ascii
+        $key_20 = "System Language:" ascii
+        $key_21 = "TimeZone:" ascii
+        $key_22 = "Timezone:" ascii
+        $key_23 = "User Name:" ascii
+        $key_24 = "UserLanguage:" ascii
+        $key_25 = "Wallpaper Hash:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule RedlineLike_Stealer_cystack_da6b26f6
 {
     meta:

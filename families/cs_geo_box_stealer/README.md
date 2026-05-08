@@ -62,7 +62,7 @@ but the explicit panel banner is absent.
 ## Related families
 
 - [`redline`](../redline/)
-- [`redlinelike-stealer`](../redlinelike-stealer/)
+- [`redlinelike-stealer`](../redlinelike_stealer/)
 - [`csenchantcloudstealer`](../csenchantcloudstealer/)
 
 ## References

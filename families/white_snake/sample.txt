@@ -1,0 +1,14 @@
+🖥Computer info:
+System: Microsoft Windows 10 Pro (x64)
+User name: <redacted>
+System time: 2026-02-14 <ip> PM
+CPU: Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz
+GPU: Intel(R) UHD Graphics 630
+RAM: 3968 MB
+HWID: <redacted>
+
+🛡Security:
+Installed antivirus: Windows Defender.
+Started as admin: True
+
+📡Whois: Failed to fetch data

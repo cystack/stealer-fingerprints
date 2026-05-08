@@ -170,7 +170,7 @@ Redline-derived body shape.
 ## Related families
 
 - [`redline`](../redline/)
-- [`redlinelike-stealer`](../redlinelike-stealer/)
+- [`redlinelike-stealer`](../redlinelike_stealer/)
 - [`csenchantcloudstealer`](../csenchantcloudstealer/)
 - [`csrussia34stealer`](../csrussia34stealer/)
 

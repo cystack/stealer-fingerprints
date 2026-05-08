@@ -1,0 +1,24 @@
+{
+  "family": "WhiteSnake",
+  "variants": [
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "CPU",
+        "GPU",
+        "HWID",
+        "Installed antivirus",
+        "RAM",
+        "Started as admin",
+        "System",
+        "System time",
+        "User name"
+      ],
+      "filenames": [
+        "PC_info.txt"
+      ],
+      "fingerprint_id": "cystack_b5e6aa06",
+      "synthetic": true
+    }
+  ]
+}
