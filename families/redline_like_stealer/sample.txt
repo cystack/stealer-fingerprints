@@ -1,31 +1,20 @@
-Log date: 10 Feb 26 <ip>
+Log date: 05 Jan 26 10:35 MSK
 HWID: <redacted>
-System Language: German
-Processor: Intel(R) Pentium(R) Silver N6000 @ 1.10GHz
-Installed RAM: 8029 MB
-Operation System: Windows 10 Home build 26100 (64 Bit)
-Graphics card: Intel(R) UHD Graphics
-Antivirus: Avast
+Country: AO
+IP: <redacted>
+System Language: English
+Processor: Intel(R) Core(TM) i5-10600KF CPU @ 4.10GHz
+Installed RAM: 16292 MB
+Operation System: Windows 10 Pro build 19045 (64 Bit)
+Graphics card: NVIDIA GeForce GT 710
 Computer Name: <redacted>
 Domain Name: <redacted>
+MachineID: <redacted>
 User Name: <redacted>
-Admin Group: TRUE
+Admin Group: FALSE
 Integrity: Medium
 TimeZone: UTC+1
-UserLanguage: German
-Keyboard Language: German
+UserLanguage: Portuguese
+Keyboard Language: Portuguese
 Display Resolution: 1920x1080
-Wallpaper Hash: f82d29ef0409f8f1885e6ab74de47ba7283afbff
-═══════════════════════════════════════════════════════════════════
-                        IP GEOLOCATION DATA
-═══════════════════════════════════════════════════════════════════
-IP Address:      <redacted>
-Country:         Germany (DE)
-Region:          Free Hanseatic City of Bremen
-City:            <redacted>
-Postal Code:     <redacted>
-ISP:             Vodafone GmbH
-Organization:    Kabel Deutschland Vertrieb Und Service GmbH
-ASN:             3209
-Timezone:        Europe/Berlin (UTC+01:00)
-═══════════════════════════════════════════════════════════════════
+Wallpaper Hash: d08c477d7682cd97be0a55cf613fdf56c9c08923

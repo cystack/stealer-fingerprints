@@ -3,11 +3,11 @@
 // observed field-key set. Tune false-positive thresholds at use
 // site, especially for variants relying on field combinations.
 
-rule Aetheris_Stealer_cystack_5f8f9b68
+rule Aetheris_Stealer_cystack_0f67ab2e
 {
     meta:
         family = "Aetheris Stealer"
-        fingerprint_id = "cystack_5f8f9b68"
+        fingerprint_id = "cystack_0f67ab2e"
 
     strings:
         $key_0 = "CPU Name:" ascii
@@ -25,8 +25,9 @@ rule Aetheris_Stealer_cystack_5f8f9b68
         $key_12 = "OS Product:" ascii
         $key_13 = "RAM Available (MB):" ascii
         $key_14 = "RAM Total (MB):" ascii
-        $key_15 = "User:" ascii
-        $key_16 = "User Domain:" ascii
+        $key_15 = "Screen Resolution:" ascii
+        $key_16 = "User:" ascii
+        $key_17 = "User Domain:" ascii
 
     condition:
         all of ($key_*)

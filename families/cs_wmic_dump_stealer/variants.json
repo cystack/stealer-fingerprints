@@ -2,15 +2,18 @@
   "family": "CSWmicDumpStealer",
   "variants": [
     {
+      "attribution_confidence": "unknown",
       "banner_strings": [],
+      "distribution_channel": null,
       "field_keys": [
         "Ethernet adapter Ethernet"
       ],
       "filenames": [
         "system_info.txt"
       ],
-      "fingerprint_id": "cystack_557aa6a2",
-      "synthetic": true
+      "fingerprint_id": "snake_case_wmic_dump_system_info_txt",
+      "panel_brand": "snake_case wmic-dump system_info.txt",
+      "synthetic": false
     }
   ]
 }

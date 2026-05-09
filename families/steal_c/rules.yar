@@ -52,6 +52,43 @@ rule StealC_cystack_68dce857
         all of ($key_*)
 }
 
+rule StealC_cystack_6afce0a1
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_6afce0a1"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Current User:" ascii
+        $key_2 = "Installed Apps:" ascii
+        $key_3 = "Network Info:" ascii
+        $key_4 = "Process List:" ascii
+        $key_5 = "System Summary:" ascii
+        $key_6 = "User Agents:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_771cd779
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_771cd779"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Installed Apps:" ascii
+        $key_2 = "Network Info:" ascii
+        $key_3 = "Process Count:" ascii
+        $key_4 = "Process List:" ascii
+        $key_5 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule StealC_cystack_7a8ccb6e
 {
     meta:
@@ -118,6 +155,23 @@ rule StealC_cystack_b7b299ef
         $key_3 = "Process List:" ascii
         $key_4 = "Process count:" ascii
         $key_5 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_da422d08
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_da422d08"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Installed Apps:" ascii
+        $key_2 = "Network Info:" ascii
+        $key_3 = "System Summary:" ascii
+        $key_4 = "User Agents:" ascii
 
     condition:
         all of ($key_*)

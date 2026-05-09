@@ -3,11 +3,11 @@
 // observed field-key set. Tune false-positive thresholds at use
 // site, especially for variants relying on field combinations.
 
-rule CSBitArchStealer_cystack_d0ea9322
+rule CSBitArchStealer_bitarch_x64_bit_info_txt
 {
     meta:
         family = "CSBitArchStealer"
-        fingerprint_id = "cystack_d0ea9322"
+        fingerprint_id = "bitarch_x64_bit_info_txt"
 
     strings:
         $key_0 = "Antivirus:" ascii

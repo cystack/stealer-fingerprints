@@ -1,0 +1,17 @@
+{
+  "family": "RL Stealer",
+  "variants": [
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_c65f37b2",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

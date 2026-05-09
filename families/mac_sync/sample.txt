@@ -1,51 +1,58 @@
 MacSync Stealer
 
-Build Tag: TestCloud
+Build Tag: Alves
 
 Username: <redacted>
-Password:      
+Password: 9929
 
 Software:
 
     System Software Overview:
 
-      Boot Volume: Untitled
+      Boot Volume: 500
       Boot Mode: Normal
       Computer Name: <redacted>
       User Name: <redacted>
       Secure Virtual Memory: Enabled
       System Integrity Protection: Enabled
-      Time since boot: 7 hours, 56 minutes
+      Time since boot: 2 dni, 2 godziny i 31 minut
 
 Hardware:
 
     Hardware Overview:
 
-      Model Name: MacBook Air
-      Model Identifier: MacBookAir10,1
-      Model Number: MGN63FN/A
-      Chip: Apple M1
-      Total Number of Cores: 8 (4 performance and 4 efficiency)
-      Memory: 8 GB
-      Serial Number (system): C02G9SQ5Q6L4
-      Hardware UUID: 2EA339D4-5249-5EC2-952B-83A4010B1EDC
-      Provisioning UDID: 00008103-001C11223487001E
-      Activation Lock Status: Disabled
+      Model Name: MacBook Pro
+      Model Identifier: MacBookPro14,2
+      Processor Name: Dual-Core Intel Core i7
+      Processor Speed: 3,5 GHz
+      Number of Processors: 1
+      Total Number of Cores: 2
+      L2 Cache (per Core): 256 KB
+      L3 Cache: 4 MB
+      Hyper-Threading Technology: Enabled
+      Memory: 16 GB
+      SMC Version (system): 2.44f6
+      Serial Number (system): C02WM0S8HV2R
+      Hardware UUID: B6B7D385-F0F0-53DC-80C7-3F89BF001BE6
+      Provisioning UDID: B6B7D385-F0F0-53DC-80C7-3F89BF001BE6
 
 Graphics/Displays:
 
-    Apple M1:
+    Intel Iris Plus Graphics 650:
 
-      Chipset Model: Apple M1
+      Chipset Model: Intel Iris Plus Graphics 650
       Type: GPU
       Bus: Built-In
-      Total Number of Cores: 7
-      Vendor: Apple (0x106b)
-      Metal Support: Metal 4
+      VRAM (Dynamic, Max): 1536 MB
+      Vendor: Intel
+      Device ID: 0x5927
+      Revision ID: 0x0006
+      Metal Support: Metal 3
       Displays:
         Color LCD:
           Display Type: Built-In Retina LCD
           Resolution: 2560 x 1600 Retina
+          Framebuffer Depth: 24-Bit Color (ARGB8888)
           Main Display: Yes
           Mirror: Off
           Online: Yes

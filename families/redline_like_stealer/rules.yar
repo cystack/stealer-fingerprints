@@ -3,6 +3,33 @@
 // observed field-key set. Tune false-positive thresholds at use
 // site, especially for variants relying on field combinations.
 
+rule RedlineLike_Stealer_cystack_1863c96d
+{
+    meta:
+        family = "RedlineLike Stealer"
+        fingerprint_id = "cystack_1863c96d"
+
+    strings:
+        $key_0 = "Admin Group:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Display Resolution:" ascii
+        $key_3 = "Domain Name:" ascii
+        $key_4 = "Graphics card:" ascii
+        $key_5 = "IP:" ascii
+        $key_6 = "Installed RAM:" ascii
+        $key_7 = "Integrity:" ascii
+        $key_8 = "Keyboard Language:" ascii
+        $key_9 = "Operation System:" ascii
+        $key_10 = "Processor:" ascii
+        $key_11 = "System Language:" ascii
+        $key_12 = "TimeZone:" ascii
+        $key_13 = "User Name:" ascii
+        $key_14 = "UserLanguage:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule RedlineLike_Stealer_cystack_2d2c7ce0
 {
     meta:
@@ -33,114 +60,61 @@ rule RedlineLike_Stealer_cystack_2d2c7ce0
         all of ($key_*)
 }
 
-rule RedlineLike_Stealer_cystack_5e2c1672
+rule RedlineLike_Stealer_cystack_5455ca59
 {
     meta:
         family = "RedlineLike Stealer"
-        fingerprint_id = "cystack_5e2c1672"
-
-    strings:
-        $key_0 = "ASN:" ascii
-        $key_1 = "Admin Group:" ascii
-        $key_2 = "Antivirus:" ascii
-        $key_3 = "City:" ascii
-        $key_4 = "Computer Name:" ascii
-        $key_5 = "Country:" ascii
-        $key_6 = "Display Resolution:" ascii
-        $key_7 = "Domain Name:" ascii
-        $key_8 = "Graphics card:" ascii
-        $key_9 = "HWID:" ascii
-        $key_10 = "IP Address:" ascii
-        $key_11 = "ISP:" ascii
-        $key_12 = "Installed RAM:" ascii
-        $key_13 = "Integrity:" ascii
-        $key_14 = "Keyboard Language:" ascii
-        $key_15 = "Log date:" ascii
-        $key_16 = "Operation System:" ascii
-        $key_17 = "Organization:" ascii
-        $key_18 = "Postal Code:" ascii
-        $key_19 = "Processor:" ascii
-        $key_20 = "Region:" ascii
-        $key_21 = "System Language:" ascii
-        $key_22 = "TimeZone:" ascii
-        $key_23 = "Timezone:" ascii
-        $key_24 = "User Name:" ascii
-        $key_25 = "UserLanguage:" ascii
-        $key_26 = "Wallpaper Hash:" ascii
-
-    condition:
-        all of ($key_*)
-}
-
-rule RedlineLike_Stealer_cystack_a06e8d9d
-{
-    meta:
-        family = "RedlineLike Stealer"
-        fingerprint_id = "cystack_a06e8d9d"
+        fingerprint_id = "cystack_5455ca59"
 
     strings:
         $key_0 = "Admin Group:" ascii
-        $key_1 = "Antivirus:" ascii
-        $key_2 = "City:" ascii
-        $key_3 = "Computer Name:" ascii
-        $key_4 = "Country:" ascii
-        $key_5 = "Display Resolution:" ascii
-        $key_6 = "Domain Name:" ascii
-        $key_7 = "Graphics card:" ascii
-        $key_8 = "HWID:" ascii
-        $key_9 = "IP Address:" ascii
-        $key_10 = "Installed RAM:" ascii
-        $key_11 = "Integrity:" ascii
-        $key_12 = "Keyboard Language:" ascii
-        $key_13 = "Log date:" ascii
-        $key_14 = "Operation System:" ascii
-        $key_15 = "Postal Code:" ascii
-        $key_16 = "Processor:" ascii
-        $key_17 = "Region:" ascii
-        $key_18 = "System Language:" ascii
-        $key_19 = "TimeZone:" ascii
-        $key_20 = "Timezone:" ascii
-        $key_21 = "User Name:" ascii
-        $key_22 = "UserLanguage:" ascii
-        $key_23 = "Wallpaper Hash:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Display Resolution:" ascii
+        $key_4 = "Domain Name:" ascii
+        $key_5 = "Graphics card:" ascii
+        $key_6 = "IP:" ascii
+        $key_7 = "Installed RAM:" ascii
+        $key_8 = "Integrity:" ascii
+        $key_9 = "Keyboard Language:" ascii
+        $key_10 = "Operation System:" ascii
+        $key_11 = "Processor:" ascii
+        $key_12 = "System Language:" ascii
+        $key_13 = "TimeZone:" ascii
+        $key_14 = "User Name:" ascii
+        $key_15 = "UserLanguage:" ascii
 
     condition:
         all of ($key_*)
 }
 
-rule RedlineLike_Stealer_cystack_d948cd26
+rule RedlineLike_Stealer_cystack_d377db09
 {
     meta:
         family = "RedlineLike Stealer"
-        fingerprint_id = "cystack_d948cd26"
+        fingerprint_id = "cystack_d377db09"
 
     strings:
-        $key_0 = "ASN:" ascii
-        $key_1 = "Admin Group:" ascii
-        $key_2 = "Antivirus:" ascii
-        $key_3 = "City:" ascii
-        $key_4 = "Computer Name:" ascii
-        $key_5 = "Country:" ascii
-        $key_6 = "Display Resolution:" ascii
-        $key_7 = "Domain Name:" ascii
-        $key_8 = "Graphics card:" ascii
-        $key_9 = "HWID:" ascii
-        $key_10 = "IP Address:" ascii
-        $key_11 = "ISP:" ascii
-        $key_12 = "Installed RAM:" ascii
-        $key_13 = "Integrity:" ascii
-        $key_14 = "Keyboard Language:" ascii
-        $key_15 = "Log date:" ascii
-        $key_16 = "Operation System:" ascii
-        $key_17 = "Organization:" ascii
-        $key_18 = "Processor:" ascii
-        $key_19 = "Region:" ascii
-        $key_20 = "System Language:" ascii
-        $key_21 = "TimeZone:" ascii
-        $key_22 = "Timezone:" ascii
-        $key_23 = "User Name:" ascii
-        $key_24 = "UserLanguage:" ascii
-        $key_25 = "Wallpaper Hash:" ascii
+        $key_0 = "Admin Group:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Display Resolution:" ascii
+        $key_4 = "Domain Name:" ascii
+        $key_5 = "Graphics card:" ascii
+        $key_6 = "HWID:" ascii
+        $key_7 = "IP:" ascii
+        $key_8 = "Installed RAM:" ascii
+        $key_9 = "Integrity:" ascii
+        $key_10 = "Keyboard Language:" ascii
+        $key_11 = "Log date:" ascii
+        $key_12 = "MachineID:" ascii
+        $key_13 = "Operation System:" ascii
+        $key_14 = "Processor:" ascii
+        $key_15 = "System Language:" ascii
+        $key_16 = "TimeZone:" ascii
+        $key_17 = "User Name:" ascii
+        $key_18 = "UserLanguage:" ascii
+        $key_19 = "Wallpaper Hash:" ascii
 
     condition:
         all of ($key_*)

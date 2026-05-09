@@ -1,6 +1,7 @@
-Country: PH
+Ip: <redacted>
+Country: AE
 
-Date: 24/01/2026 <ip>
+Date: 01/01/2026 <ip>
 MachineID: <redacted>
 GUID: <redacted>
 HWID: <redacted>
@@ -9,49 +10,54 @@ Path: <redacted>
 Work Dir: In memory
 
 Windows: Windows 11 Pro
-Install Date: 04/12/2024 <ip>
+Install Date: 05/09/2025 <ip>
 AV: Windows Defender
 Computer Name: <redacted>
 User Name: <redacted>
-Display Resolution: 2048x1152
-Keyboard Languages: English English
-Local Time: 24/01/2026 <ip>
-TimeZone: 8
+Display Resolution: 1920x1080
+Keyboard Languages: English Arabic
+Local Time: 01/01/2026 <ip>
+TimeZone: 4
 
 [Hardware]
-Processor: AMD Ryzen 5 3600 6-Core Processor              
-Cores: 12
-Threads: 12
-RAM: 16337 MB
-VideoCard: Radeon RX 590 Series
+Processor: 13th Gen Intel(R) Core(TM) i5-13400
+Cores: 16
+Threads: 16
+RAM: 32538 MB
+VideoCard: Intel(R) UHD Graphics 730
 
 [Processes]
 System
+Secure System
 Registry
 smss.exe
 csrss.exe
 wininit.exe
+csrss.exe
 services.exe
+LsaIso.exe
+winlogon.exe
 lsass.exe
 svchost.exe
 fontdrvhost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+dwm.exe
 svchost.exe
 svchost.exe
 svchost.exe
 svchost.exe
 svchost.exe
 svchost.exe
+IntelCpHDCPSvc.exe
 svchost.exe
 svchost.exe
 svchost.exe
 svchost.exe
 svchost.exe
-spaceman.exe
 svchost.exe
-amdfendrsr.exe
-atiesrxx.exe
-svchost.exe
-svchost.exe
+NVDisplay.Container.exe
 svchost.exe
 svchost.exe
 svchost.exe
@@ -70,34 +76,37 @@ svchost.exe
 svchost.exe
 svchost.exe
 svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
 spoolsv.exe
 svchost.exe
 svchost.exe
 svchost.exe
+NVDisplay.Container.exe
 svchost.exe
 svchost.exe
 svchost.exe
+OneApp.IGCC.WinService.exe
+EasyTuneEngineService.exe
+AdjustService.exe
 svchost.exe
 svchost.exe
+jhi_service.exe
 svchost.exe
-GamingApp_Service.exe
+MemuService.exe
 svchost.exe
+nvcontainer.exe
+RvControlSvc.exe
 svchost.exe
-AudioDeviceService.exe
-MsMpEng.exe
-MysticLight2_Service.exe
+servicehost.exe
+PlanetVPNService.exe
+svchost.exe
+SignalRgbService.exe
+UltraViewer_Service.exe
 MpDefenderCoreService.exe
-MSI_ActiveX_Service.exe
-ChargeService.exe
-GamingHotkey_Service.exe
-InstallAssistService.exe
-RtkAudUService64.exe
-AppManager_Service.exe
-MSIControlService.exe
-MSI_LiveUpdate_Service.exe
+MsMpEng.exe
+svchost.exe
+WMIRegistrationService.exe
+svchost.exe
+GigabyteUpdateService.exe
 svchost.exe
 dasHost.exe
 svchost.exe
@@ -107,186 +116,238 @@ svchost.exe
 svchost.exe
 svchost.exe
 svchost.exe
+NgcIso.exe
+svchost.exe
 gamingservices.exe
 gamingservicesnet.exe
-cmd.exe
-conhost.exe
-AtiFlash.exe
-svchost.exe
-svchost.exe
 AggregatorHost.exe
 svchost.exe
 svchost.exe
 svchost.exe
 svchost.exe
+nvcontainer.exe
 svchost.exe
-NisSrv.exe
-svchost.exe
-SearchIndexer.exe
-svchost.exe
-SecurityHealthService.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-WmiPrvSE.exe
-WmiPrvSE.exe
-WmiPrvSE.exe
-svchost.exe
-csrss.exe
-winlogon.exe
-fontdrvhost.exe
-dwm.exe
-atieclxx.exe
-svchost.exe
-svchost.exe
+uihost.exe
+nvcontainer.exe
+nvcontainer.exe
 sihost.exe
 svchost.exe
 svchost.exe
 svchost.exe
-muachost.exe
-MSIToastServer.exe
 taskhostw.exe
-VideoCardMonitorII.exe
-EyeRest.exe
-TriggerModeMonitor.exe
+svchost.exe
+svchost.exe
 explorer.exe
 ShellHost.exe
-GamingHotkey.exe
-CrossDeviceResume.exe
-LEDKeeper.exe
 svchost.exe
-SearchHost.exe
+CrossDeviceResume.exe
+svchost.exe
+nvsphelper64.exe
+NVIDIA Overlay.exe
+ApCent.exe
 StartMenuExperienceHost.exe
 svchost.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
+SearchIndexer.exe
+NVIDIA Overlay.exe
+NVIDIA Overlay.exe
+NVIDIA Overlay.exe
+NVIDIA Overlay.exe
+nvfvsdksvc_x64.exe
+FvContainer.System.exe
+FvContainer.exe
+PresentMon_x64.exe
+nvrla.exe
 ctfmon.exe
-SecurityHealthSystray.exe
+PhoneExperienceHost.exe
 TextInputHost.exe
-RtkAudUService64.exe
-vgtray.exe
-TranslucentTB.exe
+GraphicsCardEngine.exe
+Discord.exe
+Discord.exe
+Discord.exe
+Discord.exe
+Discord.exe
+Discord.exe
+steam.exe
+steamwebhelper.exe
+steamservice.exe
+steamwebhelper.exe
+steamwebhelper.exe
+steamwebhelper.exe
+steamwebhelper.exe
+steamwebhelper.exe
+steamwebhelper.exe
+GCloud.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+MoNotificationUx.exe
+svchost.exe
+svchost.exe
 RuntimeBroker.exe
-RadeonSoftware.exe
-CPUMetricsServer.exe
-cncmd.exe
-cmd.exe
-conhost.exe
-AMDRSServ.exe
-amdow.exe
-ApplicationFrameHost.exe
+OneDrive.Sync.Service.exe
+svchost.exe
 svchost.exe
 UserOOBEBroker.exe
-firefox.exe
-crashhelper.exe
-firefox.exe
-firefox.exe
-firefox.exe
-firefox.exe
-firefox.exe
-firefox.exe
-firefox.exe
-RuntimeBroker.exe
+svchost.exe
+ApplicationFrameHost.exe
 svchost.exe
 svchost.exe
-svchost.exe
-EdgeGameAssist.exe
-XboxPcAppFT.exe
-AMDRSSrcExt.exe
-SystemSettings.exe
-firefox.exe
-firefox.exe
-svchost.exe
-svchost.exe
+Discord.exe
+Discord.exe
 ShellExperienceHost.exe
 RuntimeBroker.exe
+RuntimeBroker.exe
+svchost.exe
+SecurityHealthService.exe
+svchost.exe
+svchost.exe
 audiodg.exe
-firefox.exe
+SearchHost.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
 svchost.exe
-firefox.exe
-Telegram.exe
-firefox.exe
+backgroundTaskHost.exe
+RuntimeBroker.exe
+Copilot.exe
+urban-vpn-service.exe
+urban-vpn-app.exe
+WUDFHost.exe
 svchost.exe
-firefox.exe
-firefox.exe
-firefox.exe
-smartscreen.exe
+SystemSettings.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+RobloxPlayerBeta.exe
+RobloxCrashHandler.exe
+GameBarPresenceWriter.exe
 svchost.exe
-mshta.exe
 svchost.exe
-rundll32.exe
-mshta.exe
-rundll32.exe
-WmiPrvSE.exe
-cmd.exe
-conhost.exe
-OpenConsole.exe
-WindowsTerminal.exe
-powershell.exe
-AG0ol.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+svchost.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
 SearchProtocolHost.exe
+chrome.exe
+smartscreen.exe
+WmiPrvSE.exe
+svchost.exe
+svchost.exe
+SecHealthUI.exe
+svchost.exe
+SecurityHealthHost.exe
+svchost.exe
+SecurityHealthHost.exe
+SearchFilterHost.exe
+SearchFilterHost.exe
+SearchFilterHost.exe
+Boostrsapppper.exe
+chrome.exe
 
 [Software]
-AMD Software - 25.8.1
-Mozilla Firefox (x64 en-US) - 147.0.1
-Mozilla Maintenance Service - 74.0
-Riot Vanguard
-Source SDK Base 2007
-The Witcher 3: Wild Hunt
-Heartopia
-Aim Lab
-Fish Tycoon 2: Virtual Aquarium
-VLC media player - 3.0.21
-WinRAR 7.11 (64-bit) - 7.11.0
-Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664 - 12.0.40664
-Patriot Viper M2 SSD RGB - 1.00.04
-RyzenMasterSDK - <ip>
-Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219 - 10.0.40219
-Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.42.34438 - 14.42.34438
-AMD DVR64 - 1.0.2
-ENE_EHD_M2_HAL - 1.00.04
+BlueStacks - 5.22.130.1019
+Clownfish Voice Changer
+dbForge SQL Tools Enterprise - 2025.2.37
+dbForge Event Profiler for SQL Server, v2025.2.37 - 2025.2.37
+dbForge DevOps Automation PowerShell for SQL Server, v1.2.77.0 - <ip>
+dbForge Query Builder for SQL Server, v2025.2.37 - 2025.2.37
+dbForge SQL Decryptor, v3.1.24 - 3.1.24
+Equalizer APO - 1.4.2
+HeidiSQL 12.11.0.7065 - 12.11
+Process Hacker 2.39 (r124) - <ip>
+Ranch Simulator
+Ranch Simulator Soundtrack
+Nightmare House: The Original Mod
+Schedule I: Free Sample
+Quarantine Zone: The Last Check Demo
+Counter-Strike 2
+TAP-Windows 9.24.2 - 9.24.2
+TikTok LIVE Studio - 1.11.2
+UrbanVPN - <ip>
+WinRAR 7.13 (64-bit) - 7.13.0
+XAMPP - 8.0.30-0
+Node.js - 22.20.0
+Python 3.13.7 Add to Path (64-bit) - 3.13.7150.0
 Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030 - 11.0.61030
-RyzenMasterSDK - <ip>
 Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.44.35211 - 14.44.35211
-Branding64 - 1.00.0009
-Speedtest by Ookla - <ip>
-AMD WVR64 - 1.0.2
-Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664 - 12.0.40664
-Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161 - 9.0.30729.6161
-Microsoft .NET Host FX Resolver - 5.0.4 (x64) - 40.16.29816
-AMD WVR64 - 1.0.2
-AMD DVR64 - 1.0.2
-Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.17 - 9.0.30729
+Microsoft Windows Desktop Runtime - 6.0.36 (x64) - 48.144.23186
+Microsoft .NET Host FX Resolver - 8.0.19 (x64) - 64.76.37566
+Python 3.13.7 Test Suite (64-bit) - 3.13.7150.0
 Microsoft Visual C++ 2022 X64 Additional Runtime - 14.44.35211 - 14.44.35211
-Microsoft .NET Runtime - 5.0.4 (x64) - 40.16.29816
-Microsoft Windows Desktop Runtime - 5.0.4 (x64) - 40.16.29817
-Revo Uninstaller 2.5.7 - 2.5.7
-Microsoft Visual C++ 2005 Redistributable (x64) - 8.0.61000
-ENE RGB HAL - 1.00.15
-AMD Settings - 2025.0306.1536.1996
-ENE_DRAM_RGB_AURA42 - 1.00.02
-AMD Settings - 2025.0701.0345.1996
-Microsoft Update Health Tools - <ip>
+Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.21005 - 12.0.21005
+Python 3.13.7 Development Libraries (64-bit) - 3.13.7150.0
+Python 3.13.7 Standard Library (64-bit) - 3.13.7150.0
+Python 3.13.7 Tcl/Tk Support (64-bit) - 3.13.7150.0
+Microsoft Windows Desktop Runtime - 8.0.19 (x64) - 64.76.37602
+Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.21005 - 12.0.21005
+Microsoft .NET Host FX Resolver - 6.0.36 (x64) - 48.144.23141
+NVIDIA Graphics Driver 560.94 - 560.94
+NVIDIA App <ip> - <ip>
+NVIDIA MessageBus 3 for NvApp - 3.16
+NVIDIA Backend - <ip>
+NvCpl - 1.0
+NVIDIA FrameView SDK 1.5.11504.36206172 - 1.5.11504.36206172
+NVIDIA Install Application - 2.1002.438.0
+NVIDIA Container - 1.44
+NVIDIA AIUser Container - 1.44
+NVIDIA LocalSystem Container - 1.44
+NVIDIA Session Container - 1.44
+NVIDIA User Container - 1.44
+NVIDIA NvDLISR - 1.0
+NVIDIA Watchdog Plugin for NvContainer - 1.44
+NVIDIA Telemetry Client - <ip>
+NVIDIA ShadowPlay <ip> - <ip>
+NVIDIA Virtual Audio <ip> - <ip>
+Microsoft .NET Host - 8.0.19 (x64) - 64.76.37566
+Microsoft .NET Runtime - 8.0.19 (x64) - 64.76.37566
+Python 3.13.7 Core Interpreter (64-bit) - 3.13.7150.0
+Microsoft .NET Runtime - 6.0.36 (x64) - 48.144.23141
+Python 3.13.7 pip Bootstrap (64-bit) - 3.13.7150.0
 Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030 - 11.0.61030
-UE4 Prerequisites (x64) - <ip>
-AMD Ryzen Master SDK - 2.1.0.1236
-Microsoft .NET Host - 5.0.4 (x64) - 40.16.29816
-Microsoft Visual C++ 2022 X64 Additional Runtime - 14.42.34438 - 14.42.34438
+Python 3.13.7 Documentation (64-bit) - 3.13.7150.0
+Microsoft .NET Host - 6.0.36 (x64) - 48.144.23141
+Python 3.13.7 Executables (64-bit) - 3.13.7150.0
+Epic Games Launcher Prerequisites (x64) - <ip>
 Microsoft GameInput - 10.1.26100.6879
-Discord - 1.0.9187
-Microsoft OneDrive - 25.238.1204.0001
-Opera GX Stable 126.0.5750.56 - 126.0.5750.56
-BUFF - <ip>
-Valorant Tracker - 1.30.0
-Riot Client 
-VALORANT
-Telegram Desktop - 6.4.2
-REDlauncher
+Voicemod - 1.5.3
+Snapchat - 1.0
+BlueStacks Services - 3.0.9
+FiveM
+Discord - 1.0.9219
+GitHub Desktop - 3.5.4
+Microsoft OneDrive - 25.222.1112.0002
+OP Auto Clicker - V4.0
+OpenIV - 4.1.1502
+Opera Stable 125.0.5729.49 - 125.0.5729.49
+Comet - 143.0.7499.33692
+Roblox Player for ahmed
+Roblox Studio for ahmed
+SignalRgb - 2.5.16
+Wispr Flow - 1.4.155
+Microsoft Visual Studio Code (User) - 1.107.1
+Python 3.13.7 (64-bit) - 3.13.7150.0

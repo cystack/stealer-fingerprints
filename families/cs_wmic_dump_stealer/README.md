@@ -37,6 +37,11 @@ snake_case fields) as the suffix; rename the family
 constant if a curated CTI report later identifies the
 underlying builder.
 
+**Variants observed:** 1
+**Total observations:** 4
+**Top attribution confidence:** `unknown`
+**Operator panel brands:** `snake_case wmic-dump system_info.txt`
+
 ## Targets
 
 - System hardware and locale inventory
@@ -45,7 +50,11 @@ underlying builder.
 
 ## Variants
 
-### `cystack_557aa6a2`
+### `snake_case wmic-dump system_info.txt`
+
+**Fingerprint id:** `snake_case_wmic_dump_system_info_txt`
+
+**Attribution confidence:** `unknown`
 
 **Field keys:**
 `Ethernet adapter Ethernet`
@@ -95,55 +104,7 @@ user_domain: DESKTOP-SRFGNPO
 ram_modules: Capacity     Manufacturer  PartNumber        Speed  
 
 17179869184  Samsung       M393B2G70QH0-YK0  1600   
-[... 4 blank lines ...]
-os: Windows
-cpu_count: 24
-username: <redacted>
-disk_info: InterfaceType  Model                         SerialNumber          Size          
-
-IDE            MCQUEST FALCON 256GB SATA3.0  YS202508TKHALLDFZOHP  256052966400  
-[... 4 blank lines ...]
-network_config_full: 
-Windows IP Configuration
-
-   Host Name . . . . . . . . . . . . : DESKTOP-SRFGNPO
-   Primary Dns Suffix  . . . . . . . : 
-   Node Type . . . . . . . . . . . . : Hybrid
-   IP Routing Enabled. . . . . . . . : No
-   WINS Proxy Enabled. . . . . . . . : No
-   DNS Suffix Search List. . . . . . : <ip>
-
-Ethernet adapter Ethernet:
-
-   Connection-specific DNS Suffix  . : <ip>
-   Description . . . . . . . . . . . : Realtek PCIe GbE Family Controller
-   Physical Address. . . . . . . . . : 22-10-4D-05-18-F8
-   DHCP Enabled. . . . . . . . . . . : Yes
-   Autoconfiguration Enabled . . . . : Yes
-   IPv6 Address. . . . . . . . . . . : <ip>(Preferred) 
-   Temporary IPv6 Address. . . . . . : <ip>(Preferred) 
-   Link-local IPv6 Address . . . . . : fe80::<ip>%14(Preferred) 
-   IPv4 Address. . . . . . . . . . . : <ip>(Preferred) 
-   Subnet Mask . . . . . . . . . . . : <ip>
-   Lease Obtained. . . . . . . . . . : Monday, January 5, 2026 <ip> PM
-   Lease Expires . . . . . . . . . . : Tuesday, January 6, 2026 <ip> PM
-   Default Gateway . . . . . . . . . : fe80::1%14
-                                       <ip>
-   DHCP Server . . . . . . . . . . . : <ip>
-   DHCPv6 IAID . . . . . . . . . . . : 102895693
-   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-30-D4-1F-B7-22-10-4D-05-18-F8
-   DNS Servers . . . . . . . . . . . : fe80::1%14
-                                       <ip>
-                                       <ip>
-                                       fe80::1%14
-   Primary WINS Server . . . . . . . : <ip>
-   NetBIOS over Tcpip. . . . . . . . : Enabled
-
-cpu_info: Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz
-computer_model: Manufacturer  Model  SystemType    
-
-JGINYUE              x64-based PC  
-[... 4 blank lines ...]
+[... truncated; full sample at ``sample.txt`` (approx. 49 more lines) ...]
 ```
 
 ## Detection

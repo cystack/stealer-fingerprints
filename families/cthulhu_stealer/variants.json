@@ -1,22 +1,26 @@
 {
-  "family": "MacSync",
+  "family": "Cthulhu Stealer",
   "variants": [
     {
       "attribution_confidence": "high",
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
-        "Build Tag",
+        "BuildID",
+        "City",
+        "Country",
+        "Debanks",
         "Graphics/Displays",
         "Hardware",
-        "Password",
+        "IP",
+        "MetaMask Info",
         "Software",
-        "Username"
+        "Userinfo"
       ],
       "filenames": [
-        "Information.txt"
+        "UserInformation.txt"
       ],
-      "fingerprint_id": "cystack_4897375d",
+      "fingerprint_id": "cystack_cd0458aa",
       "panel_brand": null,
       "synthetic": true
     }

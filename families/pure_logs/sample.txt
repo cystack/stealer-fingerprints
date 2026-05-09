@@ -1,0 +1,40 @@
+{
+  "FirstTime": false,
+  "Username_Hwid": "user_DBE3B384D3C4",
+  "IPAddress": "<ip>",
+  "Date": "2026-01-23_08-01-25.867",
+  "StubVersion": "v4.0.1",
+  "Country": "GB",
+  "Group": "MH",
+  "Note": null,
+  "DomainDetector": null,
+  "BrowserPasswords": 478,
+  "BrowserCookies": 0,
+  "BrowserCreditCards": 0,
+  "BrowserExtenstions": 0,
+  "BrowserExtenstionsNames": null,
+  "DesktopCryptoWallets": null,
+  "Applications": "Outlook",
+  "LogFolder": "C:\\PureLogs v4\\Logs\\GB\\user_DBE3B384D3C4_2026-01-23_08-01-25.867",
+  "BotInfo": {
+    "System": {
+      "WindowsVersion": "Windows 11 Pro 64bit",
+      "Username": "user",
+      "Domain": "DESKTOP-1O59BJU",
+      "Country": "GB",
+      "Antivirus": "McAfee",
+      "Clipboard": ""
+    },
+    "Hardware": {
+      "Cpu": "Intel(R) Core(TM) i5-6400T CPU @ 2.20GHz",
+      "Gpu": "Intel(R) HD Graphics 530",
+      "Ram": "7 GB",
+      "ScreenSize": "1920x1080"
+    },
+    "Network": {
+      "Public_IP": "<ip>",
+      "Private_IP": "<ip>",
+      "Gateway": "<ip>"
+    }
+  }
+}

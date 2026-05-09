@@ -1,0 +1,23 @@
+
+==============================================
+ Operating system: Windows 11 Pro (64 Bit)
+ PC user: DESKTOP-OYF2376/SYSTEM
+ ClipBoard: 
+ Launch: C:\Users\<user>\AppData\Local\Temp\tempfile_22639.exe
+==============================================
+ Screen resolution: 1400x1050
+ Current time: 1/16/2026 <ip> AM
+ HWID: <redacted>
+==============================================
+ CPU: Intel(R) Xeon(R) CPU @ 2.80GHz
+ RAM: 4194MB
+ GPU: 73ZBXXKB
+==============================================
+ IP Geolocation: <ip> United States
+ Log Date: 01/16/2026 11:52
+ BSSID: <ip>
+==============================================
+ HDD: 2848D22B
+ MAC: <redacted>
+ BIOS caption: Default System BIOS
+==============================================

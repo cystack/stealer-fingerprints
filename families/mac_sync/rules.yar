@@ -20,20 +20,3 @@ rule MacSync_cystack_4897375d
     condition:
         all of ($key_*)
 }
-
-rule MacSync_cystack_88fd83ff
-{
-    meta:
-        family = "MacSync"
-        fingerprint_id = "cystack_88fd83ff"
-
-    strings:
-        $key_0 = "Graphics/Displays:" ascii
-        $key_1 = "Hardware:" ascii
-        $key_2 = "Password:" ascii
-        $key_3 = "Software:" ascii
-        $key_4 = "Username:" ascii
-
-    condition:
-        all of ($key_*)
-}

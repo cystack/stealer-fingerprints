@@ -2,7 +2,23 @@
   "family": "StealC",
   "variants": [
     {
+      "attribution_confidence": "high",
       "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "System Summary"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_1a6c3169",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
       "field_keys": [
         "Installed Apps",
         "Network Info",
@@ -14,10 +30,13 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_2eb9685e",
+      "panel_brand": null,
       "synthetic": true
     },
     {
+      "attribution_confidence": "high",
       "banner_strings": [],
+      "distribution_channel": null,
       "field_keys": [
         "All Users",
         "Installed Apps",
@@ -29,10 +48,13 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_3028b0ca",
+      "panel_brand": null,
       "synthetic": true
     },
     {
+      "attribution_confidence": "high",
       "banner_strings": [],
+      "distribution_channel": null,
       "field_keys": [
         "Process List",
         "Process count",
@@ -42,10 +64,52 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_68dce857",
+      "panel_brand": null,
       "synthetic": true
     },
     {
+      "attribution_confidence": "high",
       "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
+        "Current User",
+        "Installed Apps",
+        "Network Info",
+        "Process List",
+        "System Summary",
+        "User Agents"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_6afce0a1",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
+        "Installed Apps",
+        "Network Info",
+        "Process Count",
+        "Process List",
+        "System Summary"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_771cd779",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
       "field_keys": [
         "Network Info",
         "Process List",
@@ -56,10 +120,13 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_7a8ccb6e",
+      "panel_brand": null,
       "synthetic": true
     },
     {
+      "attribution_confidence": "high",
       "banner_strings": [],
+      "distribution_channel": null,
       "field_keys": [
         "All Users",
         "Installed Apps",
@@ -72,10 +139,13 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_7a949b1d",
+      "panel_brand": null,
       "synthetic": true
     },
     {
+      "attribution_confidence": "high",
       "banner_strings": [],
+      "distribution_channel": null,
       "field_keys": [
         "All Users",
         "Current User",
@@ -89,10 +159,13 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_a867f3f5",
+      "panel_brand": null,
       "synthetic": true
     },
     {
+      "attribution_confidence": "high",
       "banner_strings": [],
+      "distribution_channel": null,
       "field_keys": [
         "All Users",
         "Current User",
@@ -105,10 +178,31 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_b7b299ef",
+      "panel_brand": null,
       "synthetic": true
     },
     {
+      "attribution_confidence": "high",
       "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
+        "Installed Apps",
+        "Network Info",
+        "System Summary",
+        "User Agents"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_da422d08",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
       "field_keys": [
         "Installed Apps",
         "Process List",
@@ -119,6 +213,7 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_e460e932",
+      "panel_brand": null,
       "synthetic": true
     }
   ]

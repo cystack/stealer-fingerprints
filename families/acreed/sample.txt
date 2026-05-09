@@ -1,0 +1,23 @@
+{
+  "PcName": "NOWSHADMMAK",
+  "Os": "Windows 11",
+  "Ip": "<ip>",
+  "GPU": [
+    "Intel(R) Iris(R) Xe Graphics"
+  ],
+  "RAM": 7886,
+  "ScreenSize": "1680x1050",
+  "Arch": "x64",
+  "CpuCores": 8,
+  "Country": "AE",
+  "City": "Sharjah",
+  "ZipCode": "00000",
+  "LocalTime": "null",
+  "LocalAdapterIpList": [],
+  "IsElevator": false,
+  "ProcessList": [],
+  "InstalledSoftware": [],
+  "UserName": "Nowshad",
+  "Domain": "null",
+  "Hwid": "NOWSHADMMAK3d3c15f2-f8cf-448c-b001-e48e5049d004"
+}

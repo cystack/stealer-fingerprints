@@ -1,202 +1,335 @@
 Network Info:
 	- IP: <ip>
-	- Country: AE
+	- Country: BD
 
 System Summary:
-	- HWID: 7EBDE087-257C-1B03-D09F-845B98370C33
-	- OS: Windows 10
+	- HWID: FB25AF6279E5845770397
+	- OS: Windows 10 Home Single Language
 	- Architecture: x64
-	- UserName: golden planet
-	- Computer Name: DESKTOP-7PJGQIR
-	- Local Time: 2026-01-30 <ip>
-	- UTC: 4
+	- UserName: HUAWEI
+	- Computer Name: LAPTOP-IQN95I2F
+	- Local Time: 2024/3/18 <ip>
+	- UTC: 6
 	- Language: en-US
 	- Keyboards: English (United States)
-	- Laptop: FALSE
-	- Running Path: C:\Users\<user>\AppData\Local\Temp\Rockstar_Games\Setup.exe
-	- CPU: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz
+	- Laptop: TRUE
+	- Running Path: C:\Users\<user>\Mp3tag.exe
+	- CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
 	- Cores: 4
-	- Threads: 4
-	- RAM: 6 GB
-	- Display Resolution: 
-		Monitor 1
-			Device Name: \\.\DISPLAY1
-			Device String: Intel(R) HD Graphics
-			Resolution: 1024x768
-			Color Depth: 32 bits per pixel
+	- Threads: 8
+	- RAM: 7991 MB
+	- Display Resolution: 1920x1080
 	- GPU:
-		-Intel(R) HD Graphics
+		-Intel(R) Iris(R) Xe Graphics
+		-Intel(R) Iris(R) Xe Graphics
+		-Intel(R) Iris(R) Xe Graphics
+		-Intel(R) Iris(R) Xe Graphics
+		-Virtual Display Device
 
-Process count: 158
-Process List: 
-	[System Process] [0]
-	System [4]
-	Registry [108]
-	smss.exe [440]
-	csrss.exe [532]
-	csrss.exe [632]
-	wininit.exe [656]
-	winlogon.exe [704]
-	services.exe [776]
-	lsass.exe [796]
-	svchost.exe [920]
-	fontdrvhost.exe [948]
-	fontdrvhost.exe [956]
-	svchost.exe [468]
-	svchost.exe [556]
-	svchost.exe [808]
-	svchost.exe [1080]
-	dwm.exe [1176]
-	svchost.exe [1240]
-	svchost.exe [1248]
-	svchost.exe [1260]
-	Memory Compression [1312]
-	svchost.exe [1388]
-	svchost.exe [1432]
-	svchost.exe [1440]
-	svchost.exe [1448]
-	svchost.exe [1528]
-	svchost.exe [1568]
-	svchost.exe [1608]
-	svchost.exe [1616]
-	svchost.exe [1716]
-	svchost.exe [1744]
-	svchost.exe [1848]
-	svchost.exe [1872]
-	svchost.exe [1944]
-	svchost.exe [1972]
-	svchost.exe [2024]
-	svchost.exe [2032]
-	svchost.exe [2040]
-	svchost.exe [1964]
-	svchost.exe [2136]
-	spoolsv.exe [2188]
-	svchost.exe [2232]
-	svchost.exe [2264]
-	svchost.exe [2332]
-	svchost.exe [2448]
-	svchost.exe [2508]
-	AppleMobileDeviceService.exe [2560]
-	svchost.exe [2568]
-	svchost.exe [2584]
-	svchost.exe [2592]
-	svchost.exe [2664]
-	svchost.exe [2736]
-	svchost.exe [2748]
-	UltraViewer_Service.exe [2756]
-	svchost.exe [2792]
-	svchost.exe [2800]
-	svchost.exe [2848]
-	MsMpEng.exe [2960]
-	svchost.exe [3048]
-	svchost.exe [1656]
-	MpDefenderCoreService.exe [3100]
-	AudioCopyPlugin.exe [3140]
-	svchost.exe [3184]
-	svchost.exe [3232]
-	svchost.exe [3656]
-	svchost.exe [3996]
-	svchost.exe [3580]
-	dllhost.exe [4760]
-	AggregatorHost.exe [5108]
-	svchost.exe [4260]
-	svchost.exe [3700]
-	dialer.exe [4620]
-	dialer.exe [4556]
-	NisSrv.exe [3504]
-	WmiPrvSE.exe [3860]
-	svchost.exe [1132]
-	sihost.exe [640]
-	svchost.exe [928]
-	svchost.exe [4884]
-	taskhostw.exe [5144]
-	dopwjo.exe [5412]
-	svchost.exe [5480]
-	ctfmon.exe [5520]
-	svchost.exe [5564]
-	svchost.exe [5680]
-	svchost.exe [5816]
-	svchost.exe [6016]
-	svchost.exe [1224]
-	explorer.exe [1988]
-	svchost.exe [5196]
-	StartMenuExperienceHost.exe [3960]
-	svchost.exe [7540]
-	RuntimeBroker.exe [7796]
-	TextInputHost.exe [8120]
-	svchost.exe [7768]
-	eServiceHost.exe [4956]
-	svchost.exe [720]
-	svchost.exe [5000]
-	svchost.exe [1504]
-	PhoneExperienceHost.exe [8004]
-	SecurityHealthSystray.exe [7236]
-	SecurityHealthService.exe [6208]
-	igfxtray.exe [6636]
-	hkcmd.exe [6548]
-	igfxpers.exe [6928]
-	OneDrive.exe [6188]
-	eld3.exe [7260]
-	svchost.exe [4488]
-	eld3.exe [3420]
-	M365Copilot.exe [1512]
-	RuntimeBroker.exe [7104]
-	msedgewebview2.exe [6464]
-	msedgewebview2.exe [6552]
-	msedgewebview2.exe [4452]
-	msedgewebview2.exe [3848]
-	msedgewebview2.exe [2808]
-	WmiPrvSE.exe [3588]
-	ShellExperienceHost.exe [1284]
-	RuntimeBroker.exe [4328]
-	explorer.exe [3520]
-	svchost.exe [5028]
-	taskhostw.exe [6788]
-	svchost.exe [4084]
-	svchost.exe [7116]
-	svchost.exe [6828]
-	dasHost.exe [1596]
-	msedgewebview2.exe [4952]
-	svchost.exe [2844]
-	backgroundTaskHost.exe [5920]
-	postman.exe [4356]
-	postman.exe [8892]
-	svchost.exe [2460]
-	UserOOBEBroker.exe [6036]
-	smartscreen.exe [5688]
-	svchost.exe [4736]
-	svchost.exe [4980]
-	chrome.exe [4916]
-	svchost.exe [68]
-	chrome.exe [6052]
-	svchost.exe [6652]
-	svchost.exe [2328]
-	updater.exe [7868]
-	updater.exe [9000]
-	updater.exe [7900]
-	updater.exe [7648]
-	updater.exe [8520]
-	updater.exe [3540]
-	updater.exe [7908]
-	updater.exe [5984]
-	audiodg.exe [2692]
-	powershell.exe [6768]
-	conhost.exe [1332]
-	TFT Unlock.exe [7212]
-	WmiPrvSE.exe [7140]
-	updater.exe [8700]
-	updater.exe [8132]
-	Setup.exe [4420]
+User Agents:
+	Google Chrome - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.129 Safari/537.36
 
 Installed Apps:
 All Users:
-	LibUSB-Win32-<ip> - <ip>
-	WinRAR 7.13 (64-bit) - 7.13.0
-	iTunes - <ip>
-	Microsoft Update Health Tools - <ip>
-	WinUSB Drivers x64 - 2011.44.1.182
-	Update for x64-based Windows Systems (KB5001716) - <ip>
-	Apple Mobile Device Support - <ip>
+	Adobe Creative Cloud - <ip>
+	Adobe Genuine Service - <ip>
+	Avro Keyboard 5.6.0 - 5.6.0
+	Brave - <ip>
+	Link Now - <ip>
+	FastStone Image Viewer 7.7 - 7.7
+	Google Chrome - 122.0.6261.129
+	Internet Download Manager - 6.41.2
+	IObit Uninstaller 12 - <ip>
+	Microsoft Edge - 122.0.2365.92
+	Microsoft Edge Update - <ip>
+	Microsoft Edge WebView2 Runtime - 122.0.2365.92
+	MKVToolNix 71.1.0 (64-bit) - 71.1.0
+	UXP WebView Support - 1.1.0
+	VLC media player - 2.2.8
+	SHAREit - <ip>
+	Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40664 - 12.0.40664.0
+	Microsoft_VC90_CRT_x86 - 1.00.0000
+	XiaoMiFlash - 1.1.4
+	Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.4148 - 9.0.30729.4148
+	Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.32.31326 - 14.32.31326.0
+	Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030 - 11.0.61030.0
+	Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.32.31326 - 14.32.31326
+	Intel(R) Dynamic Tuning - 8.7.10400.15556
+	Microsoft Visual C++ 2005 Redistributable - 8.0.61001
+	Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.40664 - 12.0.40664
+	Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.32.31326 - 14.32.31326.0
+	Microsoft_VC80_CRT_x86 - 8.0.50727.4053
+	Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40664 - 12.0.40664.0
+	Microsoft Visual C++ 2022 X86 Additional Runtime - 14.32.31326 - 14.32.31326
+	Intel(R) Chipset Device Software - 10.1.18460.8229
+	Adobe Refresh Manager - 1.8.0
+	Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61030 - 11.0.61030
+	Intel(R) Dynamic Tuning Technology - 8.7.10400.15556
+	Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61030 - 11.0.61030
+	PDF Settings CS6 - 11.0
+	Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030 - 11.0.61030.0
+	Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.40664 - 12.0.40664
+	Qualcomm USB Drivers For Windows - 1.00.57
+	Adobe Creative Suite 6 Master Collection - 6
+	Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219 - 10.0.40219
 Current User:
-	Audio Copy 3.8.8.4109
-	Microsoft OneDrive - 25.243.1211.0001
+	YouTube - 1.0
+	Gmail - 1.0
+	Gmail - 1.0
+	Docs - 1.0
+	Slides - 1.0
+	YouTube - 1.0
+	Google Drive - 1.0
+	Sheets - 1.0
+	BlueStacks X - 10.10.6.1001
+	BlueStacks Services - 3.0.8
+	YouTube - 1.0
+	Slides - 1.0
+	Sheets - 1.0
+	Google Drive - 1.0
+	Docs - 1.0
+	Microsoft OneDrive - 24.040.0225.0003
+	µTorrent - 3.6.0.46984
+	Zoom - 5.8.0 (1324)
+
+Process List:
+	System
+	Secure System
+	Registry
+	smss.exe
+	csrss.exe
+	wininit.exe
+	services.exe
+	LsaIso.exe
+	lsass.exe
+	svchost.exe
+	WUDFHost.exe
+	fontdrvhost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	WUDFHost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	IntelCpHDCPSvc.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	WUDFHost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	Memory Compression
+	WUDFHost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	igfxCUIServiceN.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	spoolsv.exe
+	svchost.exe
+	svchost.exe
+	wlanext.exe
+	conhost.exe
+	Intel_PIE_Service.exe
+	WUCSProxyService.exe
+	svchost.exe
+	PresentationFontCache.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	AdobeUpdateService.exe
+	svchost.exe
+	svchost.exe
+	OfficeClickToRun.exe
+	AGMService.exe
+	svchost.exe
+	HiConnectivityService.exe
+	HwDistributedMainService.exe
+	osdservice.exe
+	HWVEAudioService.exe
+	OneApp.IGCC.WinService.exe
+	BasicService.exe
+	svchost.exe
+	esif_uf.exe
+	IntelAudioService.exe
+	svchost.exe
+	LCD_Service.exe
+	LMS.exe
+	MateBookService.exe
+	NahimicService.exe
+	qcmtusvc.exe
+	SessionService.exe
+	svchost.exe
+	svchost.exe
+	MsMpEng.exe
+	svchost.exe
+	svchost.exe
+	jhi_service.exe
+	WUDFHost.exe
+	unsecapp.exe
+	WmiPrvSE.exe
+	AggregatorHost.exe
+	WmiPrvSE.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	NisSrv.exe
+	SecurityHealthService.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	GoogleCrashHandler.exe
+	GoogleCrashHandler64.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	SearchIndexer.exe
+	armsvc.exe
+	svchost.exe
+	urbanvpnserv.exe
+	svchost.exe
+	audiodg.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	csrss.exe
+	winlogon.exe
+	fontdrvhost.exe
+	dwm.exe
+	svchost.exe
+	MoUsoCoreWorker.exe
+	svchost.exe
+	svchost.exe
+	sihost.exe
+	svchost.exe
+	svchost.exe
+	igfxEMN.exe
+	svchost.exe
+	svchost.exe
+	taskhostw.exe
+	explorer.exe
+	svchost.exe
+	svchost.exe
+	taskhostw.exe
+	StartMenuExperienceHost.exe
+	SearchHost.exe
+	RuntimeBroker.exe
+	RuntimeBroker.exe
+	Widgets.exe
+	svchost.exe
+	svchost.exe
+	dllhost.exe
+	smartscreen.exe
+	SecurityHealthSystray.exe
+	svchost.exe
+	svchost.exe
+	NahimicSvc64.exe
+	NahimicSvc32.exe
+	ctfmon.exe
+	MBAMessageCenter.exe
+	HWVEAudioSession.exe
+	HwMdcCenter.exe
+	conhost.exe
+	unsecapp.exe
+	HiviewService.exe
+	HwMdcUI.exe
+	MessageCenterUI.exe
+	TextInputHost.exe
+	svchost.exe
+	OneDrive.exe
+	Avro Keyboard.exe
+	IDMan.exe
+	urbanvpn-gui.exe
+	BlueStacksServices.exe
+	client32.exe
+	BlueStacksServices.exe
+	WmiPrvSE.exe
+	BlueStacksServices.exe
+	BlueStacksServices.exe
+	msedge.exe
+	msedge.exe
+	msedge.exe
+	msedge.exe
+	msedge.exe
+	msedge.exe
+	msedge.exe
+	chrome.exe
+	msedge.exe
+	msedge.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	svchost.exe
+	Mp3tag.exe
+	msteams.exe
+	ShellExperienceHost.exe
+	RuntimeBroker.exe
+	RuntimeBroker.exe
+	msteamsupdate.exe
+	svchost.exe
+	SystemSettingsBroker.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	svchost.exe
+	CrossDeviceService.exe
+	msedge.exe
+	svchost.exe
+	RuntimeBroker.exe
+	ApplicationFrameHost.exe
+	Nahimic3.exe
+	RuntimeBroker.exe
+	chrome.exe
+	chrome.exe
+	svchost.exe
+	chrome.exe
+	msedge.exe

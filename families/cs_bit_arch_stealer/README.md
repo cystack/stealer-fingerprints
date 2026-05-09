@@ -32,6 +32,11 @@ distinctive marker as the suffix; rename the family
 constant if a curated CTI report later identifies the
 underlying builder.
 
+**Variants observed:** 1
+**Total observations:** 4
+**Top attribution confidence:** `unknown`
+**Operator panel brands:** `BitArch:(x64 bit) info.txt`
+
 ## Targets
 
 - Browser saved credentials and cookies
@@ -39,7 +44,11 @@ underlying builder.
 
 ## Variants
 
-### `cystack_d0ea9322`
+### `BitArch:(x64 bit) info.txt`
+
+**Fingerprint id:** `bitarch_x64_bit_info_txt`
+
+**Attribution confidence:** `unknown`
 
 **Field keys:**
 `Antivirus`, `BitArch`, `CPU`, `City`, `Country`, `Date`, `DomainName`, `GPU`, `IP`, `RAM`, `Region`, `ScreenSize`, `TimeZone`, `Username`, `WindowsVersion`, `ZIP`

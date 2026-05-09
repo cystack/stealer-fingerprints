@@ -1,0 +1,85 @@
+MetaMask Info:
+Debanks: 
+BuildID:drive
+
+Userinfo:
+Country: AE
+IP: <redacted>
+City: <redacted>
+Software:
+
+    System Software Overview:
+
+      System Version: macOS 26.0.1 (25A362)
+      Kernel Version: Darwin 25.0.0
+      Boot Volume: Untitled
+      Boot Mode: Normal
+      Computer Name: <redacted>
+      User Name: <redacted>
+      Secure Virtual Memory: Enabled
+      System Integrity Protection: Enabled
+      Time since boot: 30 minutes, 31 seconds
+
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: MacBook Pro
+      Model Identifier: MacBookPro16,1
+      Processor Name: 6-Core Intel Core i7
+      Processor Speed: 2.6 GHz
+      Number of Processors: 1
+      Total Number of Cores: 6
+      L2 Cache (per Core): 256 KB
+      L3 Cache: 12 MB
+      Hyper-Threading Technology: Enabled
+      Memory: 16 GB
+      System Firmware Version: 2092.<ip> (iBridge: 23.16.10350.0.0,0)
+      OS Loader Version: 583~2470
+      Serial Number (system): C02FXEQUMD6M
+      Hardware UUID: 7B1F9FDA-4B99-5692-BE49-D4D811FFE2B7
+      Provisioning UDID: 7B1F9FDA-4B99-5692-BE49-D4D811FFE2B7
+      Activation Lock Status: Enabled
+
+Graphics/Displays:
+
+    Intel UHD Graphics 630:
+
+      Chipset Model: Intel UHD Graphics 630
+      Type: GPU
+      Bus: Built-In
+      VRAM (Dynamic, Max): 1536 MB
+      Vendor: Intel
+      Device ID: 0x3e9b
+      Revision ID: 0x0000
+      Automatic Graphics Switching: Supported
+      gMux Version: 5.0.0
+      Metal Support: Metal 3
+
+    AMD Radeon Pro 5300M:
+
+      Chipset Model: AMD Radeon Pro 5300M
+      Type: GPU
+      Bus: PCIe
+      PCIe Lane Width: x16
+      VRAM (Total): 4 GB
+      Vendor: AMD (0x1002)
+      Device ID: 0x7340
+      Revision ID: 0x0043
+      ROM Revision: 113-D3220E-190
+      VBIOS Version: 113-D32207P1-020
+      Option ROM Version: 113-D32207P1-020
+      EFI Driver Version: 01.A1.190
+      Automatic Graphics Switching: Supported
+      gMux Version: 5.0.0
+      Metal Support: Metal 3
+      Displays:
+        Color LCD:
+          Display Type: Built-In Retina LCD
+          Resolution: 3072 x 1920 Retina
+          Framebuffer Depth: 24-Bit Color (ARGB8888)
+          Main Display: Yes
+          Mirror: Off
+          Online: Yes
+          Automatically Adjust Brightness: Yes
+          Connection Type: Internal

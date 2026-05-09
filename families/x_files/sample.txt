@@ -1,0 +1,283 @@
+Operation ID: 3a1b0807-9710-4e49-3ecf-15d29caf161f/3a1e1069-b1b7-7b83-d388-1a36f6319473
+
+IP: <redacted>
+Country: AE (United Arab Emirates)
+Operating System: Windows 10
+Username: <redacted>
+Computer Name: <redacted>
+Hardware ID: <redacted>
+CPU (Processor): Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+GPU (Display Devices): AMD Radeon HD 6800 Series
+RAM (Memory): 
+Screens: 1920x1080
+Desktop Screenshot Taken: Yes
+
+Windows Processes [
+   System
+   Registry
+   smss.exe
+   csrss.exe
+   csrss.exe
+   wininit.exe
+   winlogon.exe
+   services.exe
+   lsass.exe
+   svchost.exe
+   fontdrvhost.exe
+   fontdrvhost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   dwm.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   atiesrxx.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   spoolsv.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   nssm.exe
+   JetBrains.Etw.Collector.Host.exe
+   MsMpEng.exe
+   sqlwriter.exe
+   MpDefenderCoreService.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   conhost.exe
+   sqlceip.exe
+   sqlservr.exe
+   AggregatorHost.exe
+   dllhost.exe
+   v2ray.exe
+   svchost.exe
+   SQLAGENT.EXE
+   fdlauncher.exe
+   fdhost.exe
+   conhost.exe
+   conhost.exe
+   atieclxx.exe
+   NisSrv.exe
+   sihost.exe
+   svchost.exe
+   svchost.exe
+   taskhostw.exe
+   svchost.exe
+   ctfmon.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   explorer.exe
+   StartMenuExperienceHost.exe
+   TextInputHost.exe
+   RuntimeBroker.exe
+   svchost.exe
+   RuntimeBroker.exe
+   svchost.exe
+   msdtc.exe
+   svchost.exe
+   cnext.exe
+   svchost.exe
+   svchost.exe
+   TfsJobAgent.exe
+   svchost.exe
+   svchost.exe
+   ShellExperienceHost.exe
+   RuntimeBroker.exe
+   w3wp.exe
+   LockApp.exe
+   RuntimeBroker.exe
+   svchost.exe
+   svchost.exe
+   MusNotifyIcon.exe
+   SecurityHealthService.exe
+   dllhost.exe
+   WINWORD.EXE
+   WINWORD.EXE
+   WINWORD.EXE
+   WINWORD.EXE
+   WINWORD.EXE
+   WINWORD.EXE
+   WINWORD.EXE
+   WINWORD.EXE
+   WINWORD.EXE
+   taskhostw.exe
+   SearchApp.exe
+   mstsc.exe
+   RuntimeBroker.exe
+   notepad.exe
+   SSMS.exe
+   DevHub.exe
+   svchost.exe
+   SystemSettingsBroker.exe
+   rider64.exe
+   StandardCollector.Service.exe
+   Rider.Backend.exe
+   conhost.exe
+   fsnotifier.exe
+   conhost.exe
+   dotnet.exe
+   conhost.exe
+   dotnet.exe
+   conhost.exe
+   JetBrains.DPA.Protocol.Backend.exe
+   conhost.exe
+   JetBrains.Dpa.Collector.exe
+   conhost.exe
+   JetBrains.ProcessEnumerator.Worker.exe
+   conhost.exe
+   JetBrains.ProcessEnumerator.Worker32.exe
+   devenv.exe
+   PerfWatson2.exe
+   ServiceHub.RoslynCodeAnalysisService.exe
+   Microsoft.WebTools.Languages.LanguageServer.Host.exe
+   conhost.exe
+   node.exe
+   conhost.exe
+   DevHub.exe
+   node.exe
+   node.exe
+   conhost.exe
+   conhost.exe
+   node.exe
+   ServiceHub.IntellicodeModelService.exe
+   Microsoft.WebTools.Languages.LanguageServer.Host.exe
+   conhost.exe
+   node.exe
+   conhost.exe
+   symsrvhost.exe
+   conhost.exe
+   devenv.exe
+   PerfWatson2.exe
+   ServiceHub.RoslynCodeAnalysisService.exe
+   DevHub.exe
+   Microsoft.WebTools.Languages.LanguageServer.Host.exe
+   node.exe
+   conhost.exe
+   conhost.exe
+   node.exe
+   node.exe
+   conhost.exe
+   conhost.exe
+   node.exe
+   Microsoft.WebTools.Languages.LanguageServer.Host.exe
+   conhost.exe
+   node.exe
+   conhost.exe
+   VsDebugConsole.exe
+   conhost.exe
+   ServiceHub.DataWarehouseHost.exe
+   svchost.exe
+   svchost.exe
+   nssm.exe
+   conhost.exe
+   bedrock_server.exe
+   dotnet.exe
+   conhost.exe
+   chrome.exe
+   chrome.exe
+   chrome.exe
+   chrome.exe
+   chrome.exe
+   ServiceHub.IntellicodeModelService.exe
+   dotnet.exe
+   conhost.exe
+   chrome.exe
+   VBCSCompiler.exe
+   conhost.exe
+   dotnet.exe
+   conhost.exe
+   OpenConsole.exe
+   dotnet.exe
+   chrome.exe
+   chrome.exe
+   smartscreen.exe
+   chrome.exe
+   svchost.exe
+   API.exe
+   svchost.exe
+   msedgewebview2.exe
+   msedgewebview2.exe
+   msedgewebview2.exe
+   msedgewebview2.exe
+   msedgewebview2.exe
+   msedgewebview2.exe
+   msedgewebview2.exe
+   msedge.exe
+   msedge.exe
+   msedge.exe
+   msedge.exe
+   msedge.exe
+   msedge.exe
+   msedge.exe
+   svchost.exe
+   Na-Toolkit16.exe
+   VsDebugConsole.exe
+   conhost.exe
+   ServiceHub.DataWarehouseHost.exe
+   API.exe
+   msedge.exe
+   CasHarvester.exe
+   XPFix.exe
+   msedge.exe
+   msedgewebview2.exe
+   msedgewebview2.exe
+   msedgewebview2.exe
+   msedgewebview2.exe
+   msedgewebview2.exe
+   msedgewebview2.exe
+   msedgewebview2.exe
+   msedge.exe
+]
+Processed parts: [
+   Total Time to process: <ip>.1200041
+   Wallets: <ip>.0001761
+   Ftp: <ip>.0002807
+   Messengers: <ip>.0003646
+   Games: <ip>.0003427
+   Vpn: <ip>.0002691
+   Vnc: <ip>.0002733
+   GeckoBrowsers: <ip>.0007571
+   ChromiumBrowsers: <ip>.0918971
+   EmailClients: <ip>.0001981
+   RemoteAdminControl: <ip>.0110004
+   FileGrabber: <ip>.0103482
+   Hardware: <ip>.0040967
+]

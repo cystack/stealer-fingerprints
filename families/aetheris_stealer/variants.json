@@ -2,7 +2,9 @@
   "family": "Aetheris Stealer",
   "variants": [
     {
+      "attribution_confidence": "high",
       "banner_strings": [],
+      "distribution_channel": null,
       "field_keys": [
         "CPU Name",
         "Clipboard",
@@ -19,13 +21,15 @@
         "OS Product",
         "RAM Available (MB)",
         "RAM Total (MB)",
+        "Screen Resolution",
         "User",
         "User Domain"
       ],
       "filenames": [
         "Information.txt"
       ],
-      "fingerprint_id": "cystack_5f8f9b68",
+      "fingerprint_id": "cystack_0f67ab2e",
+      "panel_brand": null,
       "synthetic": true
     }
   ]

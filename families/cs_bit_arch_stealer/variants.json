@@ -2,7 +2,9 @@
   "family": "CSBitArchStealer",
   "variants": [
     {
+      "attribution_confidence": "unknown",
       "banner_strings": [],
+      "distribution_channel": null,
       "field_keys": [
         "Antivirus",
         "BitArch",
@@ -24,8 +26,9 @@
       "filenames": [
         "info.txt"
       ],
-      "fingerprint_id": "cystack_d0ea9322",
-      "synthetic": true
+      "fingerprint_id": "bitarch_x64_bit_info_txt",
+      "panel_brand": "BitArch:(x64 bit) info.txt",
+      "synthetic": false
     }
   ]
 }

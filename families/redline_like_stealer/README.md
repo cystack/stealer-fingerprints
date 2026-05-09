@@ -9,6 +9,10 @@ the underlying field layout intact.
 
 **Also known as:** `redline`, `redline-extended`
 
+**Variants observed:** 4
+**Total observations:** 109
+**Top attribution confidence:** `unknown`
+
 ## Targets
 
 - Browser saved credentials (Chromium and Gecko families)
@@ -19,7 +23,40 @@ the underlying field layout intact.
 
 ## Variants
 
+### `cystack_1863c96d`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+    Country: United Arab Emirates
+IP: <redacted>
+System Language: English
+Processor: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz (6 cores, 12 threads)
+Installed RAM: 15.86 GB
+Operation System: Windows 10 22H2 Pro (Build 19045) (64 Bit)
+Graphics card: NVIDIA GeForce GTX 1650
+Computer Name: <redacted>
+Domain Name: <redacted>
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+4
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+```
+
 ### `cystack_2d2c7ce0`
+
+**Attribution confidence:** `unknown`
 
 **Field keys:**
 `Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
@@ -29,150 +66,90 @@ the underlying field layout intact.
 **Sample (sanitized):**
 
 ```
-Log date: 10 Feb 26 <ip>
+Log date: 29 Dec 25 20:53
 HWID: <redacted>
-Country: Indonesia
+Country: Argentina
 IP: <redacted>
-System Language: Indonesian
-Processor: AMD Ryzen 5 7520U with Radeon Graphics (4 cores, 8 threads)
-Installed RAM: 15.28 GB
-Operation System: Windows 11 24H2 Home Single Language (Build 26100) (64 Bit)
-Graphics card: AMD Radeon(TM) Graphics
+System Language: Spanish
+Processor: AMD Ryzen 5 8400F 6-Core Processor (6 cores, 12 threads)
+Installed RAM: 31.64 GB
+Operation System: Windows 10 22H2 Pro (Build 19045) (64 Bit)
+Graphics card: AMD Radeon RX 6600
 Computer Name: <redacted>
 Domain Name: <redacted>
 -------------
 User Name: <redacted>
 Admin Group: FALSE
 Integrity: Medium
-TimeZone: UTC+7
-UserLanguage: Indonesian
-Keyboard Language: English
-Display Resolution: 1280x720
-```
-
-### `cystack_5e2c1672`
-
-**Field keys:**
-`ASN`, `Admin Group`, `Antivirus`, `City`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP Address`, `ISP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `Operation System`, `Organization`, `Postal Code`, `Processor`, `Region`, `System Language`, `TimeZone`, `Timezone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
-
-**Filenames:** `UserInformation.txt`
-
-**Sample (sanitized):**
-
-```
-Log date: 10 Feb 26 <ip>
-HWID: <redacted>
-System Language: German
-Processor: Intel(R) Pentium(R) Silver N6000 @ 1.10GHz
-Installed RAM: 8029 MB
-Operation System: Windows 10 Home build 26100 (64 Bit)
-Graphics card: Intel(R) UHD Graphics
-Antivirus: Avast
-Computer Name: <redacted>
-Domain Name: <redacted>
-User Name: <redacted>
-Admin Group: TRUE
-Integrity: Medium
-TimeZone: UTC+1
-UserLanguage: German
-Keyboard Language: German
+TimeZone: UTC-3
+UserLanguage: Spanish
+Keyboard Language: Spanish
 Display Resolution: 1920x1080
-Wallpaper Hash: f82d29ef0409f8f1885e6ab74de47ba7283afbff
-═══════════════════════════════════════════════════════════════════
-                        IP GEOLOCATION DATA
-═══════════════════════════════════════════════════════════════════
-IP Address:      <redacted>
-Country:         Germany (DE)
-Region:          Free Hanseatic City of Bremen
-City:            <redacted>
-Postal Code:     <redacted>
-ISP:             Vodafone GmbH
-Organization:    Kabel Deutschland Vertrieb Und Service GmbH
-ASN:             3209
-Timezone:        Europe/Berlin (UTC+01:00)
-═══════════════════════════════════════════════════════════════════
 ```
 
-### `cystack_a06e8d9d`
+### `cystack_5455ca59`
+
+**Attribution confidence:** `unknown`
 
 **Field keys:**
-`Admin Group`, `Antivirus`, `City`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP Address`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `Operation System`, `Postal Code`, `Processor`, `Region`, `System Language`, `TimeZone`, `Timezone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
 
 **Filenames:** `UserInformation.txt`
 
 **Sample (sanitized):**
 
 ```
-Log date: 10 Feb 26 <ip>
-HWID: <redacted>
+Country: United Arab Emirates
+IP: <redacted>
 System Language: English
-Processor: Intel(R) Core(TM) Ultra 7 155H
-Installed RAM: 32469 MB
-Operation System: Windows 10 Home Single Language build 26100 (64 Bit)
-Graphics card: Intel(R) Arc(TM) Graphics
-Antivirus: Windows Defender
+Processor: Intel(R) Core(TM) i9-14900KF (24 cores, 32 threads)
+Installed RAM: 31.79 GB
+Operation System: Windows 11 25H2 Pro (Build 26200) (64 Bit)
+Graphics card: NVIDIA GeForce RTX 4080 SUPER
 Computer Name: <redacted>
 Domain Name: <redacted>
+-------------
 User Name: <redacted>
 Admin Group: FALSE
 Integrity: Medium
-TimeZone: UTC+7
-UserLanguage: Malay
-Keyboard Language: Malay
-Display Resolution: 1536x960
-Wallpaper Hash: 75fac2956852c4176f1a463aeb436451e3c40bfb
-═══════════════════════════════════════════════════════════════════
-                        IP GEOLOCATION DATA
-═══════════════════════════════════════════════════════════════════
-IP Address:      <redacted>
-Country:         Indonesia (ID)
-Region:          West Java
-City:            <redacted>
-Postal Code:     <redacted>
-Timezone:        Asia/Jakarta (UTC)
-═══════════════════════════════════════════════════════════════════
-```
-
-### `cystack_d948cd26`
-
-**Field keys:**
-`ASN`, `Admin Group`, `Antivirus`, `City`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP Address`, `ISP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `Operation System`, `Organization`, `Processor`, `Region`, `System Language`, `TimeZone`, `Timezone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
-
-**Filenames:** `UserInformation.txt`
-
-**Sample (sanitized):**
-
-```
-Log date: 10 Feb 26 <ip>
-HWID: <redacted>
-System Language: English
-Processor: Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
-Installed RAM: 12124 MB
-Operation System: Windows 10 Home Single Language build 19045 (64 Bit)
-Graphics card: Intel(R) UHD Graphics
-Antivirus: Windows Defender
-Computer Name: <redacted>
-Domain Name: <redacted>
-User Name: <redacted>
-Admin Group: FALSE
-Integrity: Medium
-TimeZone: UTC+7
+TimeZone: UTC+4
 UserLanguage: English
 Keyboard Language: English
-Display Resolution: 1536x864
-Wallpaper Hash: caa2adbdb2065f2f410468cd00d999d43f85dc43
-═══════════════════════════════════════════════════════════════════
-                        IP GEOLOCATION DATA
-═══════════════════════════════════════════════════════════════════
-IP Address:      <redacted>
-Country:         Indonesia (ID)
-Region:          Bangka-Belitung Islands
-City:            <redacted>
-ISP:             Cloudflare, Inc.
-Organization:    CLOUDFLAREWARP
-ASN:             13335
-Timezone:        Asia/Jakarta (UTC+07:00)
-═══════════════════════════════════════════════════════════════════
+Display Resolution: 5120x1440
+```
+
+### `cystack_d377db09`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 05 Jan 26 10:35 MSK
+HWID: <redacted>
+Country: AO
+IP: <redacted>
+System Language: English
+Processor: Intel(R) Core(TM) i5-10600KF CPU @ 4.10GHz
+Installed RAM: 16292 MB
+Operation System: Windows 10 Pro build 19045 (64 Bit)
+Graphics card: NVIDIA GeForce GT 710
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+1
+UserLanguage: Portuguese
+Keyboard Language: Portuguese
+Display Resolution: 1920x1080
+Wallpaper Hash: d08c477d7682cd97be0a55cf613fdf56c9c08923
 ```
 
 ## Detection
