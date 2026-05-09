@@ -1,0 +1,23 @@
+{
+  "family": "CSGADSPanelStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AntiVirus",
+        "Browser Data",
+        "Country",
+        "IP",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_e76892c4",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

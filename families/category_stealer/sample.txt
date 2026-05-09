@@ -1,0 +1,37 @@
+   _____ __                          __    _ ______           
+  / ___// /_  ____ _____  ___  _____/ /_  (_) __/ /____  _____
+  \__ \/ __ \/ __ `/ __ \/ _ \/ ___/ __ \/ / /_/ __/ _ \/ ___/
+ ___/ / / / / /_/ / /_/ /  __(__  ) / / / / __/ /_/  __/ /    
+/____/_/ /_/\__,_/ .___/\___/____/_/ /_/_/_/  \__/\___/_/     
+                /_/                                           
+                        t.me/RokuTeamNew_bot
+
+Category: User
+------------------------------------------------------------
+Build ID:      44XN3H3LQFY28RQX22
+Username:      <redacted>
+Computer:      trav
+HWID:          <redacted>
+IP:            <redacted>
+Country:       AU
+Path:          <redacted>
+
+
+Category: System
+------------------------------------------------------------
+OS:            Windows 10.0.26200 (Workstation) Windows 10 Home (Build 26200)
+Language:      en-AU
+System:        N/A
+Keyboards:     N/A
+Local Time:    2026-01-10 <ip>
+UTC Time:      2026-01-10 <ip> UTC
+Timezone:      UTC10
+
+
+Category: Hardware
+------------------------------------------------------------
+CPU:           AMD Ryzen 5 7500F 6-Core Processor
+Cores/Threads: 6 / 12
+RAM:           31.6 GB
+GPU:           NVIDIA GeForce RTX 5060, AMD Radeon(TM) Graphics, NVIDIA GeForce RTX 5070, Meta Virtual Monitor
+Displays:      2560x1080

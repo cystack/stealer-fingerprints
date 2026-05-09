@@ -1,0 +1,29 @@
+[... 9 blank lines ...]
+* *
+* *
+
+IP: <redacted>
+FileLocation: <redacted>
+UserName: <redacted>
+MachineName: DESKTOP-QFQ4FGM
+Country: BD
+Zip Code: <redacted>
+Location: Dhaka, Dhaka
+HWID: <redacted>
+Current Language: English (United States)
+ScreenSize: {Width=1536, Height=864}
+TimeZone: (UTC+06:00) Dhaka
+Operation System: Windows 11 Pro x64
+Log date: 15/01/2026 <ip>
+
+Available KeyboardLayouts: 
+English (United States)
+
+Hardwares: 
+Name: Total of RAM, 7896.49 Mb or 8280072192 bytes
+Name: 12th Gen Intel(R) Core(TM) i3-1215U, 6 Cores
+Name: Intel(R) UHD Graphics, 134217728 bytes
+cuspe 
+ccwfe 
+ljwecfxxs Anti-Viruses:
+odkwhnnrc Windows Defender

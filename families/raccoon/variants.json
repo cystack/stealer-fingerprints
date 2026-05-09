@@ -1,0 +1,24 @@
+{
+  "family": "Raccoon",
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Build",
+        "IP info",
+        "Installed applications",
+        "Last seen",
+        "System Information",
+        "User ID"
+      ],
+      "filenames": [
+        "System Info.txt"
+      ],
+      "fingerprint_id": "cystack_143f8a91",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

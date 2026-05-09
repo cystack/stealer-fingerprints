@@ -9,7 +9,7 @@ Observed in `@bugatti_cloud` aggregator packs.
 **Also known as:** `Cthulhu macOS Stealer`
 
 **Variants observed:** 1
-**Total observations:** 7
+**Total observations:** 28
 **Top attribution confidence:** `high`
 
 ## Targets

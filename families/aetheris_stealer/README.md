@@ -9,7 +9,7 @@ sections.
 **Also known as:** `Aetheris Stealer`
 
 **Variants observed:** 1
-**Total observations:** 14
+**Total observations:** 42
 **Top attribution confidence:** `high`
 
 ## Targets

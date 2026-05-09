@@ -1,0 +1,69 @@
+{
+  "family": "Category Stealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Build ID",
+        "CPU",
+        "Category",
+        "Computer",
+        "Cores/Threads",
+        "Country",
+        "Displays",
+        "GPU",
+        "HWID",
+        "IP",
+        "Language",
+        "Local Time",
+        "OS",
+        "Path",
+        "RAM",
+        "Timezone",
+        "UTC Time",
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_999ef900",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Build ID",
+        "CPU",
+        "Category",
+        "Computer",
+        "Cores/Threads",
+        "Country",
+        "Displays",
+        "GPU",
+        "HWID",
+        "IP",
+        "Keyboards",
+        "Language",
+        "Local Time",
+        "OS",
+        "Path",
+        "RAM",
+        "System",
+        "Timezone",
+        "UTC Time",
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_f2b70568",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

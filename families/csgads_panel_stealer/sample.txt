@@ -1,0 +1,5 @@
+IP: <redacted>
+Country: 🇧🇩 BD - Bangladesh
+User: hp
+AntiVirus: Windows Defender
+Browser Data: CK:3325|PW:43|AF:416|CC:0|FB:2|GADS:False

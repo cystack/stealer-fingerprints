@@ -10,7 +10,7 @@ redistributors) and via a MaaS subscription model.
 **Also known as:** `WhiteSnake Stealer`
 
 **Variants observed:** 1
-**Total observations:** 419
+**Total observations:** 757
 **Top attribution confidence:** `high`
 
 ## Targets

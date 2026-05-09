@@ -1,0 +1,29 @@
+{
+  "family": "CSBareVersionStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": "@BRADMAX",
+      "field_keys": [
+        "Active window",
+        "Admin rights",
+        "CPU",
+        "GEO",
+        "GPU",
+        "HWID",
+        "IP",
+        "Memory",
+        "OS",
+        "PC Name",
+        "User Name"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "bare_version_line_build_block_stripped",
+      "panel_brand": "bare Version line (Build block stripped)",
+      "synthetic": false
+    }
+  ]
+}

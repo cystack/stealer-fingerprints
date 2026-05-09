@@ -1,0 +1,34 @@
+           (|)
+  _____/|\_____
+ /____( * )____\ 
+ __  _ |_|              +                   _     
+|  \/  |_|___  ___ _ __(_) ___ ___  _ __ __| | ___ 
+| |\/| | / __|/ _ \ '__| |/ __/ _ \| '__/ _` |/ _ \
+| |  | | \__ \  __/ |  | | (_| (_) | | | (_| |  __/
+|_|  |_|_|___/\___|_|  |_|\___\___/|_|  \__,_|\___|
+       | | Telegram - <url>
+       | |
+       | |
+       \_/
+
+Username: <redacted>
+Hostname: <redacted>
+FileLocation: <redacted>
+IP: <redacted>
+Country: Australia (AU)
+Timezone: Australia/Melbourne
+City: <redacted>
+Hwid: <redacted>
+Logdate: 2026-01-08 <ip>
+Buildtag: cherry162
+
+[System]
+OS Product: Windows 10 Pro 25H2 x64 (26200)
+Screensize: 1680x1050
+Keyboard: English (Australia), English (United States)
+System Language: en-AU
+
+[Hardware]
+GPU: Unknown GPU
+CPU: 12th Gen Intel(R) Core(TM) i7-12700K
+RAM: 16125 MB

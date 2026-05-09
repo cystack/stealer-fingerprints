@@ -9,8 +9,8 @@ the underlying field layout intact.
 
 **Also known as:** `redline`, `redline-extended`
 
-**Variants observed:** 4
-**Total observations:** 183
+**Variants observed:** 5
+**Total observations:** 954
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -84,6 +84,38 @@ Integrity: Medium
 TimeZone: UTC-3
 UserLanguage: Spanish
 Keyboard Language: Spanish
+Display Resolution: 1920x1080
+```
+
+### `cystack_47bdc5de`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+[... 4 blank lines ...]
+Country: Australia
+IP: <redacted>
+System Language: English
+Processor: 12th Gen Intel(R) Core(TM) i7-12650H (10 cores, 16 threads)
+Installed RAM: 15.78 GB
+Operation System: Windows 11 25H2 Home (Build 26200) (64 Bit)
+Graphics card: NVIDIA GeForce RTX 4070 Laptop GPU
+Computer Name
+Domain Name: <redacted>
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+10
+UserLanguage: English
+Keyboard Language: English
 Display Resolution: 1920x1080
 ```
 

@@ -1,0 +1,51 @@
+User ID: 00f1354b-0907-4dae-ac64-b4af4d9e2450|GASTON.NT2
+Last seen: Thu Dec 15 2022 <ip> GMT+0100 (Central European Standard Time)
+Build: 638123...25bedf
+IP info: AR <ip>
+System Information: 
+	- Locale: Spanish
+	- Time zone: 	- OS: Windows 10 Pro
+	- Architecture: x64
+	- CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GH (8 cores)
+	- RAM: 7886 MB
+	- Display size: 1536x864
+	- Display Devices:
+		0) Intel(R) Iris(R) Xe Graphics
+Installed applications:
+	BlueStacks 5 5.9.350.1035
+	CCleaner 6.05
+	CPUID CPU-Z 1.96 
+	FabFilter Total Bundle 2019.3
+	Nicky Romero Kickstart 1.0.9 
+	Arturia Pigments 2.0.0
+	rekordbox 6.5.3 64bit 6.5.3.0028
+	rekordbox 6.6.7 64bit 6.6.7.0048
+	AIR Music Technology Studio Strings 1.1.0
+	u-he All Effects 2019.3
+	WinRAR 6.02 (64-bit) 6.02.0
+	Native Instruments Service Center <ip>
+	Apple Mobile Device Support <ip>
+	Native Instruments Massive 1.3.0.2050
+	Bonjour <ip>
+	iTunes <ip>
+	Ableton Live 11 Trial <ip>
+	Epic Games Launcher Prerequisites (x64) <ip>
+	Arturia Software Center 2.0.4 
+	FirmwareUpdateManager <ip>
+	Google Chrome 108.0.5359.100
+	IL Harmor 
+	IL Minihost Modular 
+	JBridge 
+	Microsoft Edge 108.0.1462.46
+	Microsoft Edge Update <ip>
+	WebView2 Runtime de Microsoft Edge 108.0.1462.46
+	Mini V3 3.7.1 
+	Native Instruments Massive 
+	Native Instruments Service Center 
+	Adobe Photoshop 2020 21.0.3
+	PunkBuster Services 0.986
+	reFX Nexus VSTi RTAS v2.2.0 
+	Launcher Prerequisites (x64) <ip>
+	Intel(R) Graphics Driver Software <ip>
+	Apple Software Update <ip>
+	SD Card Formatter 5.0.1

@@ -1,0 +1,13 @@
+    User time: 2025-10-16 <ip>
+HWID: <redacted>
+PC Name: MSI-7D17
+User Name: <redacted>
+CPU: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+GPU: NVIDIA GeForce RTX 3050
+Memory: 32 GB 
+OS: Майкрософт Windows 11 Pro
+Active window: %username%-Cryptor [GUI] {@%username%}
+Version
+Admin rights: true
+IP: 
+<redacted>
