@@ -11,7 +11,7 @@ VPN, FTP, RDP, and messenger client data.
 **Also known as:** `X-FILES`, `DeerStealer`, `X-Files Stealer`
 
 **Variants observed:** 2
-**Total observations:** 20
+**Total observations:** 35
 **Top attribution confidence:** `high`
 
 ## Targets

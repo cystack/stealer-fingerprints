@@ -9,7 +9,7 @@ high-volume infostealer family in 2025+.
 **Also known as:** `VidarStealer`
 
 **Variants observed:** 56
-**Total observations:** 4,391
+**Total observations:** 8,466
 **Top attribution confidence:** `high`
 
 ## Targets

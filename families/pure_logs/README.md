@@ -17,7 +17,7 @@ path begins with `C:\PureLogs v4\Logs\<COUNTRY>\`.
 **Also known as:** `PureLog Stealer`, `PureLogStealer`, `win.purelogs`
 
 **Variants observed:** 1
-**Total observations:** 4
+**Total observations:** 8
 **Top attribution confidence:** `high`
 
 ## Targets

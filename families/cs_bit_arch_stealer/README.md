@@ -33,7 +33,7 @@ constant if a curated CTI report later identifies the
 underlying builder.
 
 **Variants observed:** 1
-**Total observations:** 4
+**Total observations:** 8
 **Top attribution confidence:** `unknown`
 **Operator panel brands:** `BitArch:(x64 bit) info.txt`
 

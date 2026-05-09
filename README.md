@@ -8,19 +8,19 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 
 | Family | Variants | Channels | Observations | Top confidence |
 |---|---|---|---|---|
-| [`Acreed`](families/acreed/) | 1 | 0 | 125 | `high` |
-| [`Aetheris Stealer`](families/aetheris_stealer/) | 1 | 0 | 8 | `high` |
-| [`CSBitArchStealer`](families/cs_bit_arch_stealer/) | 1 | 0 | 4 | `unknown` |
-| [`CSWmicDumpStealer`](families/cs_wmic_dump_stealer/) | 1 | 0 | 4 | `unknown` |
-| [`Cthulhu Stealer`](families/cthulhu_stealer/) | 1 | 0 | 4 | `high` |
-| [`MacSync`](families/mac_sync/) | 1 | 0 | 2,460 | `high` |
-| [`PureLogs`](families/pure_logs/) | 1 | 0 | 4 | `high` |
-| [`RL Stealer`](families/rl_stealer/) | 1 | 0 | 12 | `medium` |
-| [`RedlineLike Stealer`](families/redline_like_stealer/) | 4 | 0 | 109 | `unknown` |
-| [`StealC`](families/steal_c/) | 12 | 0 | 55,044 | `high` |
-| [`Vidar`](families/vidar/) | 56 | 0 | 4,391 | `high` |
-| [`WhiteSnake`](families/white_snake/) | 1 | 0 | 219 | `high` |
-| [`XFiles`](families/x_files/) | 2 | 0 | 20 | `high` |
+| [`Acreed`](families/acreed/) | 1 | 0 | 206 | `high` |
+| [`Aetheris Stealer`](families/aetheris_stealer/) | 1 | 0 | 14 | `high` |
+| [`CSBitArchStealer`](families/cs_bit_arch_stealer/) | 1 | 0 | 8 | `unknown` |
+| [`CSWmicDumpStealer`](families/cs_wmic_dump_stealer/) | 1 | 0 | 8 | `unknown` |
+| [`Cthulhu Stealer`](families/cthulhu_stealer/) | 1 | 0 | 7 | `high` |
+| [`MacSync`](families/mac_sync/) | 1 | 0 | 4,916 | `high` |
+| [`PureLogs`](families/pure_logs/) | 1 | 0 | 8 | `high` |
+| [`RL Stealer`](families/rl_stealer/) | 1 | 0 | 23 | `medium` |
+| [`RedlineLike Stealer`](families/redline_like_stealer/) | 4 | 0 | 183 | `unknown` |
+| [`StealC`](families/steal_c/) | 12 | 0 | 109,068 | `high` |
+| [`Vidar`](families/vidar/) | 56 | 0 | 8,466 | `high` |
+| [`WhiteSnake`](families/white_snake/) | 1 | 0 | 419 | `high` |
+| [`XFiles`](families/x_files/) | 2 | 0 | 35 | `high` |
 
 ## Contributing
 

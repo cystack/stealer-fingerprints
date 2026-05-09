@@ -24,7 +24,7 @@ builder-code confirmation.
 **Also known as:** `Ades`, `44Caliber variant`, `StormKitty variant`
 
 **Variants observed:** 1
-**Total observations:** 12
+**Total observations:** 23
 **Top attribution confidence:** `medium`
 
 ## Targets
