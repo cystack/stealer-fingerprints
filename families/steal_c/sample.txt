@@ -1,37 +1,202 @@
-__________________________________________________________
-|                                                                                                                                                        |
-|             .d8888888b.  8888888b. 8888888 88b   d88P 8888888888 888      .d8888b.   .d8888b.  888      .d88888b.  888     888 8888888b.              |
-|            d88P"   "88b 888   88b  888    88b d88P  888        888     d88P  88b d88P  88b 888     d88P" "88b 888     888 888  "88b             |
-|            888  d8b  888 888    888  888     88o88P   888        888     88b.      888    888 888     888     888 888     888 888    888             |
-|            888  888  888 888   d88P  888      888P    8888888    888      "888b.   888        888     888     888 888     888 888    888             |
-|            888  888bd88P 8888888P"   888      d888b    888        888         "88b. 888        888     888     888 888     888 888    888             |
-|            888  8888P"  888         888     d88888b   888        888           "888 888    888 888     888     888 888     888 888    888             |
-|            88b.     .d8 888         888    d88P 88b  888        888     88b  d88P 88b  d88P 888     88b. .d88P 88b. .d88P 888  .d88P             |
-|             "88888888P" 888       8888888 d88P   88b 8888888888 88888888 "8888P"   "8888P"  88888888 "88888P"   "88888P"  8888888P"              |
-|                                                                                                                                                        |
-|                                                                    JOIN OUR CHANNEL!                                                                   |
-|                                                                                                                                                        |
-|        <url>      |      <url>      |      <url>      |      <url>         |
-|        <url>      |      <url>      |      <url>      |      <url>         |
-|        <url>      |      <url>      |      <url>      |      <url>         |
-|_________________________________________________________|
+Network Info:
+	- IP: <ip>
+	- Country: AE
 
-IP: <redacted>
-Country: IN
-OS: Windows 11
-Architecture: x64
-UserName: <redacted>
-Computer Name: <redacted>
-Local Time: 2026-03-19 <ip>
-UTC: 5
-Language: en-IN
-Keyboards: English (India) / English (United States) / English (United Kingdom)
-Laptop: TRUE
-Path: <redacted>
-Cores: 2
-Threads: 4
-RAM: 8 GB
-Display Resolution:
-Device String: Intel(R) HD Graphics 620
-Resolution: 1920x1080
-GPU:
+System Summary:
+	- HWID: 7EBDE087-257C-1B03-D09F-845B98370C33
+	- OS: Windows 10
+	- Architecture: x64
+	- UserName: golden planet
+	- Computer Name: DESKTOP-7PJGQIR
+	- Local Time: 2026-01-30 <ip>
+	- UTC: 4
+	- Language: en-US
+	- Keyboards: English (United States)
+	- Laptop: FALSE
+	- Running Path: C:\Users\<user>\AppData\Local\Temp\Rockstar_Games\Setup.exe
+	- CPU: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz
+	- Cores: 4
+	- Threads: 4
+	- RAM: 6 GB
+	- Display Resolution: 
+		Monitor 1
+			Device Name: \\.\DISPLAY1
+			Device String: Intel(R) HD Graphics
+			Resolution: 1024x768
+			Color Depth: 32 bits per pixel
+	- GPU:
+		-Intel(R) HD Graphics
+
+Process count: 158
+Process List: 
+	[System Process] [0]
+	System [4]
+	Registry [108]
+	smss.exe [440]
+	csrss.exe [532]
+	csrss.exe [632]
+	wininit.exe [656]
+	winlogon.exe [704]
+	services.exe [776]
+	lsass.exe [796]
+	svchost.exe [920]
+	fontdrvhost.exe [948]
+	fontdrvhost.exe [956]
+	svchost.exe [468]
+	svchost.exe [556]
+	svchost.exe [808]
+	svchost.exe [1080]
+	dwm.exe [1176]
+	svchost.exe [1240]
+	svchost.exe [1248]
+	svchost.exe [1260]
+	Memory Compression [1312]
+	svchost.exe [1388]
+	svchost.exe [1432]
+	svchost.exe [1440]
+	svchost.exe [1448]
+	svchost.exe [1528]
+	svchost.exe [1568]
+	svchost.exe [1608]
+	svchost.exe [1616]
+	svchost.exe [1716]
+	svchost.exe [1744]
+	svchost.exe [1848]
+	svchost.exe [1872]
+	svchost.exe [1944]
+	svchost.exe [1972]
+	svchost.exe [2024]
+	svchost.exe [2032]
+	svchost.exe [2040]
+	svchost.exe [1964]
+	svchost.exe [2136]
+	spoolsv.exe [2188]
+	svchost.exe [2232]
+	svchost.exe [2264]
+	svchost.exe [2332]
+	svchost.exe [2448]
+	svchost.exe [2508]
+	AppleMobileDeviceService.exe [2560]
+	svchost.exe [2568]
+	svchost.exe [2584]
+	svchost.exe [2592]
+	svchost.exe [2664]
+	svchost.exe [2736]
+	svchost.exe [2748]
+	UltraViewer_Service.exe [2756]
+	svchost.exe [2792]
+	svchost.exe [2800]
+	svchost.exe [2848]
+	MsMpEng.exe [2960]
+	svchost.exe [3048]
+	svchost.exe [1656]
+	MpDefenderCoreService.exe [3100]
+	AudioCopyPlugin.exe [3140]
+	svchost.exe [3184]
+	svchost.exe [3232]
+	svchost.exe [3656]
+	svchost.exe [3996]
+	svchost.exe [3580]
+	dllhost.exe [4760]
+	AggregatorHost.exe [5108]
+	svchost.exe [4260]
+	svchost.exe [3700]
+	dialer.exe [4620]
+	dialer.exe [4556]
+	NisSrv.exe [3504]
+	WmiPrvSE.exe [3860]
+	svchost.exe [1132]
+	sihost.exe [640]
+	svchost.exe [928]
+	svchost.exe [4884]
+	taskhostw.exe [5144]
+	dopwjo.exe [5412]
+	svchost.exe [5480]
+	ctfmon.exe [5520]
+	svchost.exe [5564]
+	svchost.exe [5680]
+	svchost.exe [5816]
+	svchost.exe [6016]
+	svchost.exe [1224]
+	explorer.exe [1988]
+	svchost.exe [5196]
+	StartMenuExperienceHost.exe [3960]
+	svchost.exe [7540]
+	RuntimeBroker.exe [7796]
+	TextInputHost.exe [8120]
+	svchost.exe [7768]
+	eServiceHost.exe [4956]
+	svchost.exe [720]
+	svchost.exe [5000]
+	svchost.exe [1504]
+	PhoneExperienceHost.exe [8004]
+	SecurityHealthSystray.exe [7236]
+	SecurityHealthService.exe [6208]
+	igfxtray.exe [6636]
+	hkcmd.exe [6548]
+	igfxpers.exe [6928]
+	OneDrive.exe [6188]
+	eld3.exe [7260]
+	svchost.exe [4488]
+	eld3.exe [3420]
+	M365Copilot.exe [1512]
+	RuntimeBroker.exe [7104]
+	msedgewebview2.exe [6464]
+	msedgewebview2.exe [6552]
+	msedgewebview2.exe [4452]
+	msedgewebview2.exe [3848]
+	msedgewebview2.exe [2808]
+	WmiPrvSE.exe [3588]
+	ShellExperienceHost.exe [1284]
+	RuntimeBroker.exe [4328]
+	explorer.exe [3520]
+	svchost.exe [5028]
+	taskhostw.exe [6788]
+	svchost.exe [4084]
+	svchost.exe [7116]
+	svchost.exe [6828]
+	dasHost.exe [1596]
+	msedgewebview2.exe [4952]
+	svchost.exe [2844]
+	backgroundTaskHost.exe [5920]
+	postman.exe [4356]
+	postman.exe [8892]
+	svchost.exe [2460]
+	UserOOBEBroker.exe [6036]
+	smartscreen.exe [5688]
+	svchost.exe [4736]
+	svchost.exe [4980]
+	chrome.exe [4916]
+	svchost.exe [68]
+	chrome.exe [6052]
+	svchost.exe [6652]
+	svchost.exe [2328]
+	updater.exe [7868]
+	updater.exe [9000]
+	updater.exe [7900]
+	updater.exe [7648]
+	updater.exe [8520]
+	updater.exe [3540]
+	updater.exe [7908]
+	updater.exe [5984]
+	audiodg.exe [2692]
+	powershell.exe [6768]
+	conhost.exe [1332]
+	TFT Unlock.exe [7212]
+	WmiPrvSE.exe [7140]
+	updater.exe [8700]
+	updater.exe [8132]
+	Setup.exe [4420]
+
+Installed Apps:
+All Users:
+	LibUSB-Win32-<ip> - <ip>
+	WinRAR 7.13 (64-bit) - 7.13.0
+	iTunes - <ip>
+	Microsoft Update Health Tools - <ip>
+	WinUSB Drivers x64 - 2011.44.1.182
+	Update for x64-based Windows Systems (KB5001716) - <ip>
+	Apple Mobile Device Support - <ip>
+Current User:
+	Audio Copy 3.8.8.4109
+	Microsoft OneDrive - 25.243.1211.0001

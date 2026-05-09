@@ -45,6 +45,35 @@ Started as admin: True
 📡Whois: Failed to fetch data
 ```
 
+### `cystack_c501beb3`
+
+**Field keys:**
+`CPU`, `City`, `Country`, `GPU`, `HWID`, `IP`, `Installed antivirus`, `Internet provider`, `RAM`, `Region`, `Started as admin`, `System`, `System time`, `User name`
+
+**Filenames:** `PC_info.txt`
+
+**Sample (sanitized):**
+
+```
+    🖥Computer info:
+System: Microsoft Windows 11 Home (x64)
+User name: <redacted>
+System time: 2026-01-15 <ip> PM
+CPU: AMD Ryzen 3 7320U with Radeon Graphics         
+GPU: AMD Radeon(TM) Graphics
+RAM: 14069 MB
+HWID: <redacted>
+🛡Security:
+Installed antivirus: Windows Defender.
+Started as admin: False
+📡Whois:
+IP: <redacted>
+Country: Ecuador [EC]
+City: <redacted>
+Region: Pichincha
+Internet provider: Telconet S.A
+```
+
 ## Detection
 
 The emoji-prefixed section header (`🖥Computer info:`) is

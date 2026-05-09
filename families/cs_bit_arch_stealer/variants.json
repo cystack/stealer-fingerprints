@@ -1,0 +1,31 @@
+{
+  "family": "CSBitArchStealer",
+  "variants": [
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Antivirus",
+        "BitArch",
+        "CPU",
+        "City",
+        "Country",
+        "Date",
+        "DomainName",
+        "GPU",
+        "IP",
+        "RAM",
+        "Region",
+        "ScreenSize",
+        "TimeZone",
+        "Username",
+        "WindowsVersion",
+        "ZIP"
+      ],
+      "filenames": [
+        "info.txt"
+      ],
+      "fingerprint_id": "cystack_d0ea9322",
+      "synthetic": true
+    }
+  ]
+}

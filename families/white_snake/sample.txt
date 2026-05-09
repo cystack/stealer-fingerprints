@@ -1,14 +1,17 @@
-🖥Computer info:
-System: Microsoft Windows 10 Pro (x64)
+    🖥Computer info:
+System: Microsoft Windows 11 Home (x64)
 User name: <redacted>
-System time: 2026-02-14 <ip> PM
-CPU: Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz
-GPU: Intel(R) UHD Graphics 630
-RAM: 3968 MB
+System time: 2026-01-15 <ip> PM
+CPU: AMD Ryzen 3 7320U with Radeon Graphics         
+GPU: AMD Radeon(TM) Graphics
+RAM: 14069 MB
 HWID: <redacted>
-
 🛡Security:
 Installed antivirus: Windows Defender.
-Started as admin: True
-
-📡Whois: Failed to fetch data
+Started as admin: False
+📡Whois:
+IP: <redacted>
+Country: Ecuador [EC]
+City: <redacted>
+Region: Pichincha
+Internet provider: Telconet S.A

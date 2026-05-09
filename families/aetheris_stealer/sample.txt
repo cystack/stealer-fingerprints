@@ -1,19 +1,19 @@
 
                                           
- __  __           _                 
- \ \/ /___  _ __ (_)_   _ _ __ ___  
-  \  // _ \| '__|| | | | | '_ ` _ \ 
-  /  \ (_) | |   | | |_| | | | | | |
- /_/\_\___/|_|   |_|\__,_|_| |_| |_|
-                                     
-                               Developer @aesxor
+ █████  ███████ ████████ ██   ██ ███████ ██████  ██ ███████ 
+██   ██ ██         ██    ██   ██ ██      ██   ██ ██ ██      
+███████ █████      ██    ███████ █████   ██████  ██ ███████ 
+██   ██ ██         ██    ██   ██ ██      ██   ██ ██      ██ 
+██   ██ ███████    ██    ██   ██ ███████ ██   ██ ██ ███████ 
+[... 3 blank lines ...]
+                               Developer @sexyweekly
 [User Info]
-User: lEvi_WiNdows10
-Machine: DESKTOP-A1L4J9S
-Now: 2026-03-17 <ip>
-Input ISO: en
+User: fomki
+Machine: DESKTOP-OB2IQSR
+Now: 2026-02-15 <ip>
+Input ISO: ru
 Hwid: <redacted>
-Clipboard: adb shell locksettings clear --old <current_credential>
+Clipboard: @toooolsss
 
 [Network]
 External IP: <redacted>
@@ -21,20 +21,19 @@ Internal IP: <ip>
 Default Gateway: <ip>
 
 [System]
-OS Product: Windows 10 Pro 2009
+OS Product: Windows 10 Home 2009
 OS Build: 19045
 OS Arch: x64
-CPU Name: Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz
-Logical Cores: 8
-RAM Total (MB): 16260
-RAM Available (MB): 9121
+CPU Name: Intel(R) Core(TM) i3-2310M CPU @ 2.10GHz
+Logical Cores: 4
+RAM Total (MB): 4003
+RAM Available (MB): 301
 
 [Drives]
-C: Fixed FS:NTFS Size:327GB Free:68GB
+C: Fixed FS:NTFS Size:232GB Free:110GB
 
 [GPU]
-AMD Radeon R9 M370X
+Intel(R) HD Graphics 3000
 
 [Basic]
-User Domain: DESKTOP-A1L4J9S
-CLR Version: 4.0.30319.42000
+User Domain: DESKTOP-OB2IQSR

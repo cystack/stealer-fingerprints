@@ -9,63 +9,6 @@ format has not been mapped to a published threat-intel name.
 
 ## Variants
 
-### `cystack_2928a851`
-
-**Banners:**
-- `===DARKSIDE_BRAND_BEGIN===`
-
-**Field keys:**
-`CPU`, `City`, `Country`, `GPU`, `Hwid`, `IP`, `RAM`, `Screensize`, `System Language`, `Timezone`, `Username`
-
-**Filenames:** `UserInformation.txt`
-
-**Sample (sanitized):**
-
-```
-===DARKSIDE_BRAND_BEGIN===
-|________________________________________________________________________________________________________________________|
-| D                                                                                                                    D |
-| A Join: <url>                                                                               A |
-| R                                                                                                                    R |
-| K $$$$$$$\                      $$\                 $$\       $$\                                                    K |
-| S $$  __$$\                     $$ |                \__|      $$ |                                                   S |
-| I $$ |  $$ | $$$$$$\   $$$$$$\  $$ |  $$\  $$$$$$$\ $$\  $$$$$$$ | $$$$$$\                                           I |
-| D $$ |  $$ | \____$$\ $$  __$$\ $$ | $$  |$$  _____|$$ |$$  __$$ |$$  __$$\                                          D |
-| E $$ |  $$ | $$$$$$$ |$$ |  \__|$$$$$$  / \$$$$$$\  $$ |$$ /  $$ |$$$$$$$$ |                                         E |
-| C $$ |  $$ |$$  __$$ |$$ |      $$  _$$<   \____$$\ $$ |$$ |  $$ |$$   ____|                                         C |
-| L $$$$$$$  |\$$$$$$$ |$$ |      $$ | \$$\ $$$$$$$  |$$ |\$$$$$$$ |\$$$$$$$\                                          L |
-| O \_______/  \_______|\__|      \__|  \__|\_______/ \__| \_______| \_______|                                         O |
-| U                                                                                                                    U |
-| D                                                                                                                    D |
-| D                                                                                                                    D |
-| A                                                                                                                    A |
-| R DARKSIDE PRIVATE CLOUD - Private Monthly Packs                                                                     R |
-| K TIERS (monthly):  BUDGET $100  |  PREMIUM $200  |  GOLD $300                                                       K |
-| S                                                                                                                    S |
-| I                                                                                                                    I |
-| D C  Budget Channel: 100$/month - Access up to 10+ private channels (total 500$).                                    D |
-| E L  Premium Channel: 200$/month - Access to 10-20+ private channels (total 1000$).                                  E |
-| C O  Gold Channel: 300$/month - Access to 20-30+ private channels (total 2000$).                                     C |
-| L U          Join: <url>                                                                    L |
-| O D             Join: <url>                                                                 O |
-| U                   Join: <url>                                                             U |
-| D DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD      D |
-|________________________________________________________________________________________________________________________|
-===DARKSIDE_BRAND_END===
-
-Username: <redacted>
-IP: <redacted>
-Country: Pakistan (PK)
-Timezone: Asia/Karachi
-City: <redacted>
-Hwid: <redacted>
-Screensize: 1600x900
-System Language: en-US
-GPU: AMD Radeon R7 200 Series
-CPU: Intel(R) Core(TM) i5-4590T CPU @ 2.00GHz
-RAM: 8134 MB
-```
-
 ### `cystack_9a2ff223`
 
 **Field keys:**
@@ -76,6 +19,9 @@ RAM: 8134 MB
 **Sample (sanitized):**
 
 ```
+       (|)
+  _____/|\_____
+ /____( * )____\ 
  __  _ |_|              +                   _     
 |  \/  |_|___  ___ _ __(_) ___ ___  _ __ __| | ___ 
 | |\/| | / __|/ _ \ '__| |/ __/ _ \| '__/ _` |/ _ \
@@ -85,55 +31,25 @@ RAM: 8134 MB
        | |
        | |
        \_/
-
 Username: <redacted>
 Hostname: <redacted>
 FileLocation: <redacted>
 IP: <redacted>
-Country:  ()
-Timezone: 
-City: 
-<redacted>
-Logdate: 2026-04-07 <ip>
-Buildtag: cherry512
-
-[System]
-OS Product: Windows 10 Home Single Language 25H2 x64 (26200)
-Screensize: 1920x1080
-Keyboard: Espaol (Mxico), Ingls (Estados Unidos)
-System Language: es-MX
-
-[Hardware]
-GPU: AMD Radeon RX 580 2048SP
-CPU: AMD Ryzen 5 PRO 4650G with Radeon Graphics
-RAM: 20349 MB
-```
-
-### `cystack_e81b5e96`
-
-**Field keys:**
-`CPU`, `City`, `Country`, `GPU`, `Hwid`, `IP`, `RAM`, `Screensize`, `System Language`, `Timezone`, `Username`
-
-**Filenames:** `UserInformation.txt`
-
-**Sample (sanitized):**
-
-```
-<url>      Subscribe    ArtHouse    Cloud 2021-2026  <url>
-[... 28 blank lines ...]
-Bot @arthouse_full_bot   <url>      Subscribe    ArtHouse
-[... 14 blank lines ...]
-Username: <redacted>
-IP: <redacted>
-Country: Pakistan (PK)
-Timezone: Asia/Karachi
+Country: Czechia (CZ)
+Timezone: Europe/Prague
 City: <redacted>
 Hwid: <redacted>
-Screensize: 1600x900
+Logdate: 2026-01-17 <ip>
+Buildtag: cherry118
+[System]
+OS Product: Windows 10 Pro 22H2 x64 (19045)
+Screensize: 1440x900
+Keyboard: English (United States)
 System Language: en-US
-GPU: AMD Radeon R7 200 Series
-CPU: Intel(R) Core(TM) i5-4590T CPU @ 2.00GHz
-RAM: 8134 MB
+[Hardware]
+GPU: Microsoft Basic Display Adapter
+CPU: Intel(R) Core(TM)Gold 6252 CPU @ 2.10GHz
+RAM: 4095 MB
 ```
 
 ## Detection

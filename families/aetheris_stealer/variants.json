@@ -4,63 +4,6 @@
     {
       "banner_strings": [],
       "field_keys": [
-        "Clipboard",
-        "Hwid",
-        "Input ISO",
-        "Machine",
-        "Now",
-        "User"
-      ],
-      "filenames": [
-        "Information.txt"
-      ],
-      "fingerprint_id": "cystack_026d1c92",
-      "synthetic": true
-    },
-    {
-      "banner_strings": [],
-      "field_keys": [
-        "CLR Version",
-        "CPU Name",
-        "Clipboard",
-        "Default Gateway",
-        "External IP",
-        "Hwid",
-        "Input ISO",
-        "Internal IP",
-        "Logical Cores",
-        "Machine",
-        "Now",
-        "OS Arch",
-        "OS Build",
-        "OS Product",
-        "RAM Available (MB)",
-        "RAM Total (MB)",
-        "User",
-        "User Domain"
-      ],
-      "filenames": [
-        "Information.txt",
-        "information.txt"
-      ],
-      "fingerprint_id": "cystack_2052a4d3",
-      "synthetic": true
-    },
-    {
-      "banner_strings": [],
-      "field_keys": [
-        "CLR Version",
-        "User Domain"
-      ],
-      "filenames": [
-        "Information.txt"
-      ],
-      "fingerprint_id": "cystack_30092aaa",
-      "synthetic": true
-    },
-    {
-      "banner_strings": [],
-      "field_keys": [
         "CPU Name",
         "Clipboard",
         "Default Gateway",
@@ -83,18 +26,6 @@
         "Information.txt"
       ],
       "fingerprint_id": "cystack_5f8f9b68",
-      "synthetic": true
-    },
-    {
-      "banner_strings": [],
-      "field_keys": [
-        "CPU Name",
-        "Hwid"
-      ],
-      "filenames": [
-        "Information.txt"
-      ],
-      "fingerprint_id": "cystack_f9f01b3a",
       "synthetic": true
     }
   ]

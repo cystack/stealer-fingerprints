@@ -1,0 +1,36 @@
+{
+  "family": "MacSync",
+  "variants": [
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Build Tag",
+        "Graphics/Displays",
+        "Hardware",
+        "Password",
+        "Software",
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_4897375d",
+      "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Graphics/Displays",
+        "Hardware",
+        "Password",
+        "Software",
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_88fd83ff",
+      "synthetic": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "family": "CSWmicDumpStealer",
+  "variants": [
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "Ethernet adapter Ethernet"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_557aa6a2",
+      "synthetic": true
+    }
+  ]
+}

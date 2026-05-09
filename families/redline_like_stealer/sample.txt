@@ -1,31 +1,31 @@
 Log date: 10 Feb 26 <ip>
 HWID: <redacted>
-System Language: Czech
-Processor: Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
-Installed RAM: 16251 MB
-Operation System: Windows 10 Home build 26200 (64 Bit)
+System Language: German
+Processor: Intel(R) Pentium(R) Silver N6000 @ 1.10GHz
+Installed RAM: 8029 MB
+Operation System: Windows 10 Home build 26100 (64 Bit)
 Graphics card: Intel(R) UHD Graphics
-Antivirus: Windows Defender
+Antivirus: Avast
 Computer Name: <redacted>
 Domain Name: <redacted>
 User Name: <redacted>
-Admin Group: FALSE
+Admin Group: TRUE
 Integrity: Medium
 TimeZone: UTC+1
-UserLanguage: Czech
-Keyboard Language: Czech
+UserLanguage: German
+Keyboard Language: German
 Display Resolution: 1920x1080
-Wallpaper Hash: f5d05f21697a9e3ffa4c6d16dcd47c2a509a6455
+Wallpaper Hash: f82d29ef0409f8f1885e6ab74de47ba7283afbff
 ═══════════════════════════════════════════════════════════════════
                         IP GEOLOCATION DATA
 ═══════════════════════════════════════════════════════════════════
 IP Address:      <redacted>
-Country:         Czech Republic (CZ)
-Region:          Prague
+Country:         Germany (DE)
+Region:          Free Hanseatic City of Bremen
 City:            <redacted>
 Postal Code:     <redacted>
-ISP:             O Czech Republic, A.S.
-Organization:    Assigned for Infrastructure
-ASN:             5610
-Timezone:        Europe/Prague (UTC+01:00)
+ISP:             Vodafone GmbH
+Organization:    Kabel Deutschland Vertrieb Und Service GmbH
+ASN:             3209
+Timezone:        Europe/Berlin (UTC+01:00)
 ═══════════════════════════════════════════════════════════════════

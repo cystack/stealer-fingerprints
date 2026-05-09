@@ -19,6 +19,30 @@
       ],
       "fingerprint_id": "cystack_b5e6aa06",
       "synthetic": true
+    },
+    {
+      "banner_strings": [],
+      "field_keys": [
+        "CPU",
+        "City",
+        "Country",
+        "GPU",
+        "HWID",
+        "IP",
+        "Installed antivirus",
+        "Internet provider",
+        "RAM",
+        "Region",
+        "Started as admin",
+        "System",
+        "System time",
+        "User name"
+      ],
+      "filenames": [
+        "PC_info.txt"
+      ],
+      "fingerprint_id": "cystack_c501beb3",
+      "synthetic": true
     }
   ]
 }
