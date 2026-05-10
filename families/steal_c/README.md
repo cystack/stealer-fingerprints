@@ -8,7 +8,7 @@ with the v2 rewrite tracked through 2024.
 
 **Also known as:** `StealC v1`, `StealC v2`
 
-**Variants observed:** 12
+**Variants observed:** 13
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -597,6 +597,61 @@ All Users:
 	Microsoft Edge - 124.0.2478.80
 	Microsoft Edge Update - <ip>
 [... truncated; full sample at ``sample.txt`` (approx. 420 more lines) ...]
+```
+
+### `cystack_e1caec1c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Current User`, `Installed Apps`, `Network Info`, `System Summary`, `User Agents`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+[... 3 blank lines ...]
+Network Info:
+	- IP: <ip>
+	- Country: MX
+
+System Summary:
+	- HWID: F6CDC77DB40E1845150070
+	- OS: Windows 10 Pro
+	- Architecture: x64
+	- UserName: Celex
+	- Computer Name: DESKTOP-ELRN5V3
+	- Local Time: 2024/8/2 <ip>
+	- UTC: -6
+	- Language: es-MX
+	- Keyboards: Español (México)
+	- Laptop: FALSE
+	- Running Path: C:\Users\<user>\1000029002\7b0afc85da.exe
+	- CPU: 11th Gen Intel(R) Core(TM) i5-11400 @ 2.60GHz
+	- Cores: 6
+	- Threads: 12
+	- RAM: 16149 MB
+	- Display Resolution: 1360x768
+	- GPU:
+		-Intel(R) UHD Graphics 730
+		-Intel(R) UHD Graphics 730
+		-Intel(R) UHD Graphics 730
+
+User Agents:
+	Google Chrome - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.89 Safari/537.36
+
+Installed Apps:
+All Users:
+	z3x shell 4.8.3
+	Flip PDF Plus Pro - 4.26.19
+	3uTools(32bit) - 3.02.012
+	Samsung Tool PRO 45.14
+	Abarrotes Punto de Venta  2.12
+	Antaris Media Player 1.3.3
+	AnyDesk - ad 8.0.10
+	Brave - <ip>
+[... truncated; full sample at ``sample.txt`` (approx. 345 more lines) ...]
 ```
 
 ### `cystack_e460e932`

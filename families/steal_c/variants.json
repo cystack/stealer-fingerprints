@@ -204,6 +204,25 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "All Users",
+        "Current User",
+        "Installed Apps",
+        "Network Info",
+        "System Summary",
+        "User Agents"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_e1caec1c",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "Installed Apps",
         "Process List",
         "Process count",
