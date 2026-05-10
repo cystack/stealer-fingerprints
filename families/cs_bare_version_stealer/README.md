@@ -61,7 +61,7 @@ stripped-Build / bare-`Version` field set.
 **Attribution confidence:** `unknown`
 
 **Field keys:**
-`Active window`, `Admin rights`, `CPU`, `GEO`, `GPU`, `HWID`, `IP`, `Memory`, `OS`, `PC Name`, `User Name`
+`Active window`, `Admin rights`, `Build Comment`, `CPU`, `GEO`, `GPU`, `HWID`, `IP`, `Memory`, `OS`, `PC Name`, `User Name`
 
 **Filenames:** `UserInformation.txt`
 

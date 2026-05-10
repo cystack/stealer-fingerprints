@@ -1,0 +1,16 @@
+    
+User time: 2025-10-22 <ip>
+HWID: <redacted>
+PC Name: кпкуц
+User Name: <redacted>
+CPU: 12th Gen Intel(R) Core(TM) i5-12400
+GPU: NVIDIA GeForce RTX 3060
+Memory: 32 GB 
+OS: Майкрософт Windows 11 Домашняя
+Active window: Администратор: Командная строка
+Build Path: C:\Users\<user>\AppData\Local\wave-updater\MpDefenderCoreService.exe
+Build Version: 0.25.10
+Build Comment: Xeno
+Admin rights: true
+IP: 
+<redacted>

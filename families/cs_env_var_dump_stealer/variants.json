@@ -1,0 +1,33 @@
+{
+  "family": "CSEnvVarDumpStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": "@BRADMAX",
+      "field_keys": [
+        "Antivirus",
+        "CLR Version",
+        "CPU",
+        "Computer Name",
+        "Default Gateway",
+        "GPU",
+        "Local IP",
+        "OS Version",
+        "Processor Count",
+        "RAM",
+        "SCREEN",
+        "System Directory",
+        "System Version",
+        "Timestamp",
+        "User Name"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_6d185ced",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

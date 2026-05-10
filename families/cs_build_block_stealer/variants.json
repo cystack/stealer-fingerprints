@@ -1,14 +1,16 @@
 {
-  "family": "CSBareVersionStealer",
+  "family": "CSBuildBlockStealer",
   "variants": [
     {
       "attribution_confidence": "unknown",
       "banner_strings": [],
-      "distribution_channel": "@BRADMAX",
+      "distribution_channel": "@ft7links",
       "field_keys": [
         "Active window",
         "Admin rights",
         "Build Comment",
+        "Build Path",
+        "Build Version",
         "CPU",
         "GEO",
         "GPU",
@@ -17,13 +19,14 @@
         "Memory",
         "OS",
         "PC Name",
-        "User Name"
+        "User Name",
+        "User time"
       ],
       "filenames": [
         "UserInformation.txt"
       ],
-      "fingerprint_id": "bare_version_line_build_block_stripped",
-      "panel_brand": "bare Version line (Build block stripped)",
+      "fingerprint_id": "4_key_build_block_path_id_version_commen",
+      "panel_brand": "4-key Build block (Path/ID/Version/Comment)",
       "synthetic": false
     }
   ]

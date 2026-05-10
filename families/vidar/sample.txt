@@ -1,27 +1,27 @@
 Ip: <redacted>
-Country: BR
+Country: DE
 
-Date: 18/01/2026 <ip>
+Date: 03/01/2026 <ip>
 
 Path: <redacted>
 Work Dir: In memory
 
-Windows: Windows 11 Pro
-Install Date: 02/05/2025 <ip>
+Windows: Windows 11 Pro for Workstations
+Install Date: 09/10/2024 <ip>
 AV: Windows Defender
 Computer Name: <redacted>
 User Name: <redacted>
-Display Resolution: 1920x1080
-Keyboard Languages: Portuguese
-Local Time: 18/01/2026 <ip>
-TimeZone: 4294967293
+Display Resolution: 2560x1440
+Keyboard Languages: German
+Local Time: 03/01/2026 <ip>
+TimeZone: 1
 
 [Hardware]
-Processor: AMD Ryzen 3 5300G with Radeon Graphics         
-Cores: 8
-Threads: 8
-RAM: 15740 MB
-VideoCard: AMD Radeon(TM) Graphics
+Processor: AMD Ryzen 5 7600X 6-Core Processor             
+Cores: 12
+Threads: 12
+RAM: 32361 MB
+VideoCard: NVIDIA GeForce RTX 3060
 
 [Processes]
 System
@@ -30,13 +30,17 @@ Registry
 smss.exe
 csrss.exe
 wininit.exe
+csrss.exe
 services.exe
 LsaIso.exe
 lsass.exe
+winlogon.exe
 svchost.exe
+fontdrvhost.exe
 fontdrvhost.exe
 svchost.exe
 svchost.exe
+dwm.exe
 svchost.exe
 svchost.exe
 svchost.exe
@@ -49,11 +53,13 @@ svchost.exe
 svchost.exe
 svchost.exe
 svchost.exe
-amdfendrsr.exe
-atiesrxx.exe
 svchost.exe
 svchost.exe
 svchost.exe
+svchost.exe
+dasHost.exe
+svchost.exe
+NVDisplay.Container.exe
 svchost.exe
 svchost.exe
 svchost.exe
@@ -71,40 +77,109 @@ svchost.exe
 svchost.exe
 svchost.exe
 svchost.exe
-NgcIso.exe
+svchost.exe
+svchost.exe
+NVDisplay.Container.exe
+svchost.exe
+svchost.exe
+svchost.exe
 spoolsv.exe
 svchost.exe
+AmdPpkgSvc.exe
+svchost.exe
+AnyDesk.exe
 svchost.exe
 svchost.exe
+hamachi-2.exe
 svchost.exe
-svchost.exe
-svchost.exe
-AlmoristicsService.exe
-svchost.exe
-svchost.exe
-svchost.exe
-rsDNSSvc.exe
-AdjustService.exe
-svchost.exe
-rsDNSClientSvc.exe
-svchost.exe
-rsDNSResolver.exe
-svchost.exe
-OfficeClickToRun.exe
-GigabyteUpdateService.exe
-svchost.exe
+LightKeeperService.exe
+ijplmsvc.exe
+LMIGuardianSvc.exe
+lghub_updater.exe
+logi_lamparray_service.exe
 MpDefenderCoreService.exe
+MSI_Case_Service.exe
+MSI_Central_Service.exe
+Mystic_Light_Service.exe
+RtkAudUService64.exe
+svchost.exe
+svchost.exe
+svchost.exe
 MsMpEng.exe
-dasHost.exe
 svchost.exe
 svchost.exe
+WmiPrvSE.exe
 svchost.exe
+WmiPrvSE.exe
+svchost.exe
+svchost.exe
+MSI.CentralServer.exe
+gamingservices.exe
+gamingservicesnet.exe
+conhost.exe
+wlanext.exe
 AggregatorHost.exe
+sihost.exe
 svchost.exe
 svchost.exe
 svchost.exe
-BraveCrashHandler.exe
-BraveCrashHandler64.exe
+svchost.exe
+LEDKeeper2.exe
+svchost.exe
+svchost.exe
+taskhostw.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+NisSrv.exe
+svchost.exe
+explorer.exe
+ShellHost.exe
+svchost.exe
+svchost.exe
+SearchHost.exe
+StartMenuExperienceHost.exe
+WidgetBoard.exe
+RuntimeBroker.exe
+svchost.exe
+WidgetService.exe
+svchost.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+MicrosoftStartFeedProvider.exe
+svchost.exe
+PhoneExperienceHost.exe
+MSI.TerminalServer.exe
+ctfmon.exe
+SecurityHealthSystray.exe
+SecurityHealthService.exe
+svchost.exe
+svchost.exe
+TextInputHost.exe
+RtkAudUService64.exe
+lghub_system_tray.exe
+lghub_agent.exe
+CC_Engine_x64.exe
+conhost.exe
+unsecapp.exe
+CrossDeviceService.exe
+RuntimeBroker.exe
+AnyDesk.exe
+CNMNSST2.exe
+hamachi-2-ui.exe
+backgroundTaskHost.exe
+ApplicationFrameHost.exe
+SystemSettings.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
 svchost.exe
 svchost.exe
 svchost.exe
@@ -112,306 +187,209 @@ svchost.exe
 svchost.exe
 svchost.exe
 SearchIndexer.exe
-svchost.exe
-svchost.exe
-SecurityHealthService.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-csrss.exe
-winlogon.exe
-fontdrvhost.exe
-dwm.exe
-atieclxx.exe
-sihost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-taskhostw.exe
-taskhostw.exe
-CrossDeviceResume.exe
-svchost.exe
-rsAppUI.exe
-svchost.exe
-ApCent.exe
-rsAppUI.exe
-WidgetBoard.exe
-svchost.exe
-rsAppUI.exe
-rsAppUI.exe
-WidgetService.exe
-ctfmon.exe
-svchost.exe
-MicrosoftStartFeedProvider.exe
-svchost.exe
-SecurityHealthSystray.exe
-svchost.exe
-svchost.exe
-Lively.exe
-Lively.Watchdog.exe
-Lively.Player.WebView2.exe
-RuntimeBroker.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-svchost.exe
-ApplicationFrameHost.exe
-SystemSettings.exe
-svchost.exe
-UserOOBEBroker.exe
-svchost.exe
-RobloxPlayerBeta.exe
-RobloxCrashHandler.exe
-GameBarPresenceWriter.exe
-svchost.exe
-XboxPcAppFT.exe
+steam.exe
+steamwebhelper.exe
+SteamService.exe
+steamwebhelper.exe
+steamwebhelper.exe
+steamwebhelper.exe
+steamwebhelper.exe
+steamwebhelper.exe
 audiodg.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-WerFault.exe
-explorer.exe
-StartMenuExperienceHost.exe
-SearchHost.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-TextInputHost.exe
-backgroundTaskHost.exe
+svchost.exe
+svchost.exe
+ShellExperienceHost.exe
 RuntimeBroker.exe
-msedge.exe
-msedge.exe
-msedge.exe
-msedge.exe
-msedge.exe
+steamwebhelper.exe
+taskhostw.exe
+XboxPcAppFT.exe
 svchost.exe
-SecHealthUI.exe
-SecurityHealthHost.exe
-svchost.exe
-ShellHost.exe
 svchost.exe
 chrome.exe
 chrome.exe
-RuntimeBroker.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
 svchost.exe
-SearchProtocolHost.exe
-SearchFilterHost.exe
+msedge.exe
+msedge.exe
+msedge.exe
+msedge.exe
+msedge.exe
+chrome.exe
+chrome.exe
+svchost.exe
+chrome.exe
 smartscreen.exe
-SearchFilterHost.exe
 svchost.exe
-SearchFilterHost.exe
-Bootstapper.exe
+svchost.exe
+NeoHub.exe
 
 [Software]
-AlmoristicsApplication - <ip>
-AntiCheatExpert - 21.2.2507.685
-BlueStacks - 5.22.130.1019
-CPUID CPU-Z 2.15 - 2.15
-Denuvo Anti-Cheat - 6.7.0.8498
-Microsoft OneDrive - 25.224.1116.0003
-Microsoft Office LTSC Professional Plus 2024 - en-us - 16.0.17932.20638
-Microsoft Office LTSC Professional Plus 2024 - pt-br - 16.0.17932.20638
-Safer Web - 4.0.7
-Riot Vanguard
-30XX
+Mozilla Thunderbird ESR (x64 de) - 140.6.0
+Mozilla Maintenance Service - 102.12.0
+Kingdoms of Amalur: Re-Reckoning
 Ori and the Will of the Wisps
-Biped
-Project Zomboid
-Ember Knights
-Hades
-Owlboy
-A Way Out
+Icarus
+Horizon Zero Dawn? Complete Edition
+STAR WARS Jedi: Fallen Order? 
+TRANSFORMERS: BATTLEGROUNDS
+Pathfinder: Wrath of the Righteous - Enhanced Edition
+Enshrouded
+Command & Conquer? Remastered Collection
+Detroit: Become Human
+The Sims? 4
+Need for Speed? Heat 
+Dragon Age? Inquisition
+STAR WARS?: Squadrons
 Unravel Two
-Bang-On Balls: Chronicles
-Battletoads
-Party Animals
-Loop Hero
-Archvale
-Teenage Mutant Ninja Turtles: Shredder's Revenge
-ENDER LILIES: Quietus of the Knights
-The Crackpet Show
-Nobody Saves the World
-Bread & Fred
-Fears to Fathom - Episode 1
-Brotato
-Pizza Possum
-Trash Patrol - Academic Version
-Cave Story+
-FPS Chess
-To the Moon
-Gal Guardians: Demon Purge
-Lone Survivor: The Director's Cut
-Sonic & All-Stars Racing Transformed Collection
-Trinity Trigger
-The Cave
-FEZ
-Brothers - A Tale of Two Sons
-Gone Home
-Rogue Legacy
-Rayman Legends
-Shovel Knight: Treasure Trove
-TowerFall Ascension
-Lovers in a Dangerous Spacetime
-Hyper Light Drifter
-Cuphead
-Brawlhalla
-Split/Second
-INSIDE
-Terminull Brigade?
-Rain World
-Marvel Contest of Champions
-The Killing Antidote - Demo
-LISA
-Biped 2 Demo
-NARUTO SHIPPUDEN: Ultimate Ninja STORM 4
-Codename CURE
-Death's Gambit: Afterlife
-Hollow Knight
-CrossCode
-Chronicon
-Rivals of Aether
-Undertale
-Serious Sam 3: BFE
-Spelunky 2
-OneShot
-Momodora: Reverie Under the Moonlight
-Katana ZERO
-LIMBO
-Celeste
-Guacamelee! 2
-TUNIC
-99Vidas
-Dead Cells
-Moonlighter
-Blazing Chrome
-FAR: Lone Sails
-Dandara: Trials of Fear Edition
-Portal 2
-Risk of Rain 2
-The Escapists 2
-DRAGON BALL FighterZ
-GRIS
-Trine 4: The Nightmare Prince
-Kingdom Two Crowns
-Overcooked! 2
-Forager
-The Messenger
-Noita
-INMOST
-Bravery and Greed
-CARRION
-Inkulinati
-Spiritfarer?: Edi??o Farewell
-Eastward
-Streets of Rage 4
-SteamTools
-TAP-Windows 9.24.2 - 9.24.2
-VBCABLE, The Virtual Audio Cable
+STAR WARS? Battlefront? II
+Titanfall? 2
+Dragon Age II
+The Planet Crafter
+Disciples: Liberation
+Need for Speed? Hot Pursuit Remastered
+Mass Effect? Legendary Edition
+MONSTER HUNTER RISE
+Aliens: Fireteam Elite
+Lost Ark
+Palworld
+Command & Conquer?: Alarmstufe Rot 3
+Among Us VR
+Batman?: Arkham Knight
+Resident Evil 6
+Giana Sisters: Twisted Dreams
+Alien Breed: Impact
+Alien Breed 2: Assault
+Alien Breed 3: Descent
+Euro Truck Simulator 2
+PAC-MAN Championship Edition DX+
+Middle-earth?: Shadow of Mordor?
+Homeworld Remastered Collection
+Space Engineers
+Command & Conquer 3: Tiberium Wars?
+Command & Conquer? Alarmstufe Rot? 3 - Uprising
+Command & Conquer 3: Kanes Rache
+Ori and the Blind Forest
+Soulmask
+XCOM 2
+Grand Theft Auto V
+No Man's Sky
+Homeworld: Deserts of Kharak
+Warhammer 40,000: Dawn of War III
+The Witcher 3: Wild Hunt
+FINAL FANTASY XIII
+Mortal Kombat X
+Street Fighter V
+LEGO? Worlds
+Total War: SHOGUN 2
+ARK: Survival Evolved
+Middle-earth?: Shadow of War?
+Elite Dangerous
+FINAL FANTASY X/X-2 HD Remaster
+Yooka-Laylee
+ASTRONEER
+Sudden Strike 4
+Dead by Daylight
+Ori and the Blind Forest: Definitive Edition
+Rise of the Tomb Raider
+DiRT 4
+Little Nightmares
+LEGO? STAR WARS?: The Force Awakens
+Conan Exiles
+Job Simulator
+Battle Chasers: Nightwar
+Halo Wars: Definitive Edition
+Fury Unleashed
+UNO
+Aven Colony
+Warhammer 40,000: Gladius - Relics of War
+Planet Coaster
+Railway Empire
+Ashes of the Singularity: Escalation
+Satisfactory
+Star Trek: Bridge Crew
+Warhammer 40,000: Inquisitor - Martyr
+Two Point Hospital
+Far Cry 5
+Monopoly Plus
+LEGO? City Undercover
+House Flipper
+Ancestors Legacy
+Injustice? 2
+MORDHAU
+The LEGO? NINJAGO? Movie Video Game
+Raft
+Phasmophobia
+Smalland: Survive the Wilds
+Crab Champions
+Clue/Cluedo: The Classic Mystery Game
+Age of Empires II: Definitive Edition
+Green Hell
+Iron Harvest
+Valheim
+Hasbro's BATTLESHIP
+The Survivalists
+Cat Quest II
+LEGO? Star Wars?: Die Skywalker Saga
+Conan Exiles - Public Beta Client
+Age of Empires III: Definitive Edition
+Supreme Commander
+Supreme Commander: Forged Alliance
+Among Us
+Unsung Warriors - Prologue
+Bloons TD 6
+Beyond: Two Souls
+King of Retail
+Mortal Kombat 11
+Marvel's Avengers ? Definitive Edition
+VLC media player - 3.0.20
 Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664 - 12.0.40664
-Microsoft.NET.Workload.Mono.Toolchain.Current.Manifest (x64) - 72.0.29501
-Microsoft .NET AppHost Pack - 9.0.3 (x64_arm64) - 72.12.29501
-Microsoft.NET.Workload.Emscripten.Current.Manifest (x64) - 72.48.29394
-Microsoft .NET Host FX Resolver - 9.0.3 (x64) - 72.12.29501
-Microsoft .NET Runtime - 9.0.3 (x64) - 72.12.29501
-Microsoft.NET.Sdk.macOS.Manifest-9.0.100 (x64) - 15.0.9617
-Microsoft Windows Desktop Targeting Pack - 9.0.3 (x64) - 72.12.29522
-Microsoft ASP.NET Core 9.0.3 Shared Framework (x64) - 9.0.3.25112
+WD_BLACK AN1500 - <ip>
+Canon G6000 series MP Drivers - 1.01
 Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219 - 10.0.40219
-Microsoft .NET Runtime - 8.0.12 (x64) - 64.48.26165
-Python 3.13.7 Add to Path (64-bit) - 3.13.7150.0
-Microsoft.NET.Sdk.Aspire.Manifest-8.0.100 (x64) - 64.136.23253
-Microsoft.NET.Sdk.Maui.Manifest-9.0.100 (x64) - 9.0.0
-Microsoft .NET 9.0 Templates 9.0.201 (x64) - 36.9.54273
+ENE_External_Device_HAL - <ip>
+Verbatim_SureFireGaming_Product - <ip>
+ENE_EHD_M2_HAL - <ip>
 Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030 - 11.0.61030
-Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.42.34433 - 14.42.34433
-Microsoft.NET.Sdk.MacCatalyst.Manifest-9.0.100 (x64) - 18.0.9617
-Microsoft.NET.Workload.Emscripten.net7.Manifest (x64) - 72.48.29394
+Java(TM) SE Development Kit 23.0.1 (64-bit) - <ip>
+Microsoft .NET Host - 8.0.8 (x64) - 64.32.18380
+Microsoft .NET Runtime - 6.0.32 (x64) - 48.128.16743
+Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.44.35211 - 14.44.35211
+Corsair Device Control Service - 1.1.13
+Logitech G HUB - 2025.9.814157
 Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664 - 12.0.40664
-Microsoft .NET Toolset 9.0.201 (x64) - 36.9.21505
 Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161 - 9.0.30729.6161
-Microsoft ASP.NET Core 9.0.3 Targeting Pack (x64) - 9.0.3.25112
-Microsoft.NET.Workload.Mono.Toolchain.net7.Manifest (x64) - 72.0.29501
-Python 3.13.7 Test Suite (64-bit) - 3.13.7150.0
-Microsoft.NET.Workload.Mono.Toolchain.net6.Manifest (x64) - 72.0.29501
-Java 8 Update 401 (64-bit) - 8.0.4010.10
-Microsoft Windows Desktop Runtime - 8.0.12 (x64) - 64.48.26178
-Microsoft.NET.Sdk.iOS.Manifest-9.0.100 (x64) - 18.0.9617
-Microsoft.NET.Sdk.Android.Manifest-9.0.100 (x64) - 35.0.7
-Office 16 Click-to-Run Licensing Component - 16.0.17932.20638
-Office 16 Click-to-Run Extensibility Component - 16.0.17928.20216
-Office 16 Click-to-Run Localization Component - 16.0.17928.20216
-Python 3.13.7 Development Libraries (64-bit) - 3.13.7150.0
-Microsoft.NET.Workload.Emscripten.net6.Manifest (x64) - 72.48.29394
-Microsoft .NET AppHost Pack - 9.0.3 (x64) - 72.12.29501
-Python 3.13.7 Standard Library (64-bit) - 3.13.7150.0
-PlayStation? Accessories - <ip>
-Python 3.13.7 Tcl/Tk Support (64-bit) - 3.13.7150.0
-Microsoft .NET Standard Targeting Pack - 2.1.0 (x64) - 24.0.28113
-Microsoft .NET AppHost Pack - 9.0.3 (x64_x86) - 72.12.29501
-Python 3.13.7 Core Interpreter (64-bit) - 3.13.7150.0
-EA app - 13.614.2.6133
-Microsoft .NET Host - 8.0.12 (x64) - 64.48.26165
-Microsoft .NET Host FX Resolver - 8.0.12 (x64) - 64.48.26165
-Python 3.13.7 pip Bootstrap (64-bit) - 3.13.7150.0
+Microsoft Windows Desktop Runtime - 8.0.8 (x64) - 64.32.18376
+Microsoft .NET Host FX Resolver - 6.0.32 (x64) - 48.128.16743
+Microsoft .NET Host FX Resolver - 8.0.8 (x64) - 64.32.18380
+Microsoft Visual C++ 2022 X64 Additional Runtime - 14.44.35211 - 14.44.35211
+Microsoft Windows Desktop Runtime - 6.0.32 (x64) - 48.128.16742
+ViGEm Bus Driver - 1.22.0
+PlayStation(R) PC SDK Runtime - 3.00.0013
+Microsoft .NET Runtime - 8.0.8 (x64) - 64.32.18380
+ENE_MousePad_HAL - <ip>
+ENE Video Capture Box HAL - <ip>
+Microsoft .NET Host - 6.0.32 (x64) - 48.128.16743
+Microsoft Visual C++ 2005 Redistributable (x64) - 8.0.61000
+NVIDIA Grafiktreiber 591.59 - 591.59
+NVIDIA PhysX-Systemsoftware 9.23.1019 - 9.23.1019
+NVIDIA HD-Audiotreiber <ip> - <ip>
+NVIDIA Install Application - 2.1002.438.0
+WD_BLACK D50 - <ip>
+EA app - 13.616.1.6133
+Microsoft Update Health Tools - <ip>
 Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030 - 11.0.61030
-Microsoft.NET.Sdk.tvOS.Manifest-9.0.100 (x64) - 18.0.9617
-Python 3.13.7 Documentation (64-bit) - 3.13.7150.0
-Microsoft.NET.Workload.Emscripten.net8.Manifest (x64) - 72.48.29394
-UE4 Prerequisites (x64) - <ip>
-Microsoft Visual C++ 2022 X64 Additional Runtime - 14.42.34433 - 14.42.34433
-Microsoft .NET Host - 9.0.3 (x64) - 72.12.29501
-Python 3.13.7 Executables (64-bit) - 3.13.7150.0
-Microsoft Windows Desktop Runtime - 9.0.3 (x64) - 72.12.29522
-Microsoft.NET.Workload.Mono.Toolchain.net8.Manifest (x64) - 72.0.29501
-Microsoft .NET Targeting Pack - 9.0.3 (x64) - 72.12.29501
-Voicemod - 1.5.2
-Rave 1.17.10 - 1.17.10
-BlueStacks Services - 3.0.9
-Cuphead 7.93.154 - 7.93.154
-CapCut - 7.3.0.2974
-Discord - 1.0.9220
-DualSenseX - 1.4.9
-MacroRecorder v4.0.51 - 4.0.51
-Opera Stable 125.0.5729.49 - 125.0.5729.49
-Opera GX Stable 125.0.5729.58 - 125.0.5729.58
-League of Legends
-Riot Client 
-VALORANT
-Roblox Player for valen
-Roblox Studio for valen
-uTorrent Web - 1.4.0
-Microsoft Visual Studio Code (User) - 1.105.1
-Python 3.13.7 (64-bit) - 3.13.7150.0
+ENE_X_AIC_HAL - <ip>
+AMD Ryzen Master SDK - 2.14.2.3330
+Microsoft GameInput - 10.1.26100.6879
+WD P40 Game Drive - <ip>
+Epic Games Launcher Prerequisites (x64) - <ip>
+CurseForge 1.295.0-29976 - 1.295.0-29976
+Discord - 1.0.9219
+Google Chrome - 143.0.7499.170
+UE3Redist - 1.00.0000
+Wand - 12.6.0

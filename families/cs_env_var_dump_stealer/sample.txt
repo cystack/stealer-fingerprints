@@ -1,0 +1,59 @@
+=== SYSTEM INFORMATION ===
+Timestamp: 20/01/2026 <ip>
+Computer Name: <redacted>
+OS Version: Microsoft Windows NT 6.2.9200.0
+User Name: <redacted>
+System Directory: C:\WINDOWS\system32
+Processor Count: 6
+CLR Version: 4.0.30319.42000
+.NET Runtime: 4.0.30319.42000
+System Version: Microsoft Windows 10 Pro (64 Bit)
+Default Gateway: <ip>
+Antivirus: Windows Defender
+Local IP: <redacted>
+CPU: AMD Ryzen 5 3500 6-Core Processor
+GPU: Microsoft Basic Display Adapter
+RAM: 6138MB
+SCREEN: 1360x768
+RAM: NoSystemBattery (100%)
+
+=== ENVIRONMENT VARIABLES ===
+Path = <redacted>
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+USERDOMAIN = DESKTOP-JGLLJLD
+PROCESSOR_ARCHITECTURE = x86
+ProgramW6432 = C:\Program Files
+DriverData = C:\Windows\System32\Drivers\DriverData
+PUBLIC = C:\Users\<user>
+APPDATA = C:\Users\<user>\AppData\Roaming
+windir = C:\WINDOWS
+LOCALAPPDATA = C:\Users\<user>\AppData\Local
+CommonProgramW6432 = C:\Program Files\Common Files
+OneDrive = C:\Users\<user>\OneDrive
+USERPROFILE = C:\Users\<user>
+ProgramFiles = C:\Program Files (x86)
+PROCESSOR_LEVEL = 23
+CommonProgramFiles(x86) = C:\Program Files (x86)\Common Files
+HOMEPATH = \Users\admin
+COMPUTERNAME = DESKTOP-JGLLJLD
+PROCESSOR_ARCHITEW6432 = AMD64
+USERNAME = <redacted>
+PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 1 Stepping 2, AuthenticAMD
+NUMBER_OF_PROCESSORS = 6
+POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Pro
+SystemRoot = C:\WINDOWS
+ComSpec = C:\WINDOWS\system32\cmd.exe
+LOGONSERVER = \\DESKTOP-JGLLJLD
+TEMP = C:\Users\<user>\AppData\Local\Temp
+ProgramFiles(x86) = C:\Program Files (x86)
+CommonProgramFiles = C:\Program Files (x86)\Common Files
+__COMPAT_LAYER = DetectorsAppHealth Installer
+TMP = C:\Users\<user>\AppData\Local\Temp
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-JGLLJLD
+PROCESSOR_REVISION = 0102
+PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+ALLUSERSPROFILE = C:\ProgramData
+SystemDrive = C:
+OS = Windows_NT
+ProgramData = C:\ProgramData
+HOMEDRIVE = C:

@@ -10,10 +10,12 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 |---|---|---|---|
 | [`Acreed`](families/acreed/) | 1 | 0 | `high` |
 | [`Aetheris Stealer`](families/aetheris_stealer/) | 1 | 0 | `high` |
-| [`Blank Grabber`](families/blank_grabber/) | 1 | 0 | `high` |
+| [`Blank Grabber`](families/blank_grabber/) | 2 | 0 | `high` |
 | [`BracketSection Stealer`](families/bracket_section_stealer/) | 1 | 0 | `unknown` |
 | [`CSBareVersionStealer`](families/cs_bare_version_stealer/) | 1 | 1 | `unknown` |
 | [`CSBitArchStealer`](families/cs_bit_arch_stealer/) | 1 | 0 | `unknown` |
+| [`CSBuildBlockStealer`](families/cs_build_block_stealer/) | 1 | 1 | `unknown` |
+| [`CSEnvVarDumpStealer`](families/cs_env_var_dump_stealer/) | 1 | 1 | `unknown` |
 | [`CSGADSPanelStealer`](families/csgads_panel_stealer/) | 1 | 0 | `unknown` |
 | [`CSWmicDumpStealer`](families/cs_wmic_dump_stealer/) | 1 | 0 | `unknown` |
 | [`Category Stealer`](families/category_stealer/) | 2 | 0 | `unknown` |
@@ -23,10 +25,10 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`PureLogs`](families/pure_logs/) | 1 | 0 | `high` |
 | [`RL Stealer`](families/rl_stealer/) | 1 | 0 | `medium` |
 | [`Raccoon`](families/raccoon/) | 1 | 0 | `high` |
-| [`Redline`](families/redline/) | 1 | 0 | `high` |
+| [`Redline`](families/redline/) | 2 | 0 | `high` |
 | [`RedlineLike Stealer`](families/redline_like_stealer/) | 5 | 0 | `unknown` |
 | [`StealC`](families/steal_c/) | 12 | 0 | `high` |
-| [`Vidar`](families/vidar/) | 527 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 800 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 1 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 2 | 0 | `high` |
 

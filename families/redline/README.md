@@ -8,7 +8,7 @@ the field block.
 
 **Also known as:** `RedLine`, `RedLineStealer`
 
-**Variants observed:** 1
+**Variants observed:** 2
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -62,6 +62,52 @@ cuspe
 ccwfe 
 ljwecfxxs Anti-Viruses:
 odkwhnnrc Windows Defender
+```
+
+### `cystack_f2fae5b0`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Available KeyboardLayouts`, `Country`, `Current Language`, `FileLocation`, `HWID`, `Hardwares`, `IP`, `Location`, `Log date`, `MachineName`, `Operation System`, `ScreenSize`, `TimeZone`, `UserName`, `Zip Code`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+[... 7 blank lines ...]
+* *
+* *
+
+IP: <redacted>
+FileLocation: <redacted>
+UserName: <redacted>
+MachineName: KAMEL-PC
+Country: DZ
+Zip Code: <redacted>
+Location: Mechta Bou Nabel, Jijel
+HWID: <redacted>
+Current Language: French (France)
+ScreenSize: {Width=1366, Height=768}
+TimeZone: (UTC+01:00) Bruxelles, Copenhague, Madrid, Paris
+Operation System: Windows 7 Édition Intégrale x32
+Log date: 15/01/2026 <ip>
+
+Available KeyboardLayouts: 
+French (France)
+Arabic (Saudi Arabia)
+Chinese (Traditional, Taiwan)
+English (United States)
+
+Hardwares: 
+tofhk Name: Total of RAM, 2718.36 Mb or 2850402304 bytes
+qzyky Name: Intel(R) Core(TM) i3-3120M CPU @ 2.50GHz, 2 Cores
+dumclejk Name: Intel(R) HD Graphics 4000, 1223874560 bytes
+texzqfqkh 
+cskaukibf 
+gftfdrawy Anti-Viruses:
+ckrfa Windows Defender
 ```
 
 ## Detection

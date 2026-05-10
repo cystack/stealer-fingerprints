@@ -12,15 +12,16 @@ rule CSBareVersionStealer_bare_version_line_build_block_stripped
     strings:
         $key_0 = "Active window:" ascii
         $key_1 = "Admin rights:" ascii
-        $key_2 = "CPU:" ascii
-        $key_3 = "GEO:" ascii
-        $key_4 = "GPU:" ascii
-        $key_5 = "HWID:" ascii
-        $key_6 = "IP:" ascii
-        $key_7 = "Memory:" ascii
-        $key_8 = "OS:" ascii
-        $key_9 = "PC Name:" ascii
-        $key_10 = "User Name:" ascii
+        $key_2 = "Build Comment:" ascii
+        $key_3 = "CPU:" ascii
+        $key_4 = "GEO:" ascii
+        $key_5 = "GPU:" ascii
+        $key_6 = "HWID:" ascii
+        $key_7 = "IP:" ascii
+        $key_8 = "Memory:" ascii
+        $key_9 = "OS:" ascii
+        $key_10 = "PC Name:" ascii
+        $key_11 = "User Name:" ascii
 
     condition:
         all of ($key_*)

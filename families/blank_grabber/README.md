@@ -18,7 +18,7 @@ Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 
 **Also known as:** `BlankGrabber`, `Blank-c/Blank-Grabber`
 
-**Variants observed:** 1
+**Variants observed:** 2
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -86,6 +86,60 @@ Uplay Session : No
 Battle.Net Session : No
 Growtopia Session : No
 [... truncated; full sample at ``sample.txt`` (approx. 2 more lines) ...]
+```
+
+### `cystack_abb02c93`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Autofills`, `Blank Grabber got a new victim`, `CPU`, `Cellular Network`, `Common Files`, `Computer Name`, `Computer OS`, `Cookies`, `Country`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `IP`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Proxy/VPN`, `Region`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Telegram Sessions`, `Timezone`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+Blank Grabber got a new victim: YOU
+
+IP Info
+
+IP: <redacted>
+Region: Tizi Ouzou
+Country: Algeria
+Timezone: Africa/Algiers
+
+Cellular Network:❎
+Proxy/VPN:   ❎
+
+System Info
+Computer Name: <redacted>
+Computer OS: Microsoft Windows 10 Pro
+Total Memory: 8 GB
+UUID: 3586D34C-35C2-11B2-A85C-8564A5581A50
+CPU: Intel64 Family 6 Model 142 Stepping 9, GenuineIntel
+GPU: Intel(R) HD Graphics 620
+Product Key: NF6HC-QH89W-F8WYV-WWXV4-WFG6P
+
+Grabbed Info
+Discord Accounts : 0
+Passwords : 1
+Cookies : 0
+History : 13092
+Autofills : 343
+Roblox Cookies : 0
+Telegram Sessions : 1
+Common Files : 11
+Wallets : 0
+Wifi Passwords : 5
+Webcam : 1
+Minecraft Sessions : 0
+Epic Session : No
+Steam Session : No
+Uplay Session : No
+Growtopia Session : No
+Screenshot : Yes
+System Info : Yes
 ```
 
 ## Detection
