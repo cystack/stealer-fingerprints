@@ -19,7 +19,6 @@ Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 **Also known as:** `BlankGrabber`, `Blank-c/Blank-Grabber`
 
 **Variants observed:** 1
-**Total observations:** 1
 **Top attribution confidence:** `high`
 
 ## Targets

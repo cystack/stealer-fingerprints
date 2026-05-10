@@ -8,7 +8,6 @@ flat key-value block. Family attribution is provisional; the
 format has not been mapped to a published threat-intel name.
 
 **Variants observed:** 1
-**Total observations:** 33
 **Top attribution confidence:** `unknown`
 
 ## Variants

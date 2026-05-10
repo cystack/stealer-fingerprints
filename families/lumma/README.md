@@ -10,7 +10,6 @@ signature on the `Time:` line. Build banners reference the
 **Also known as:** `LummaC2`, `Lumma Stealer`
 
 **Variants observed:** 1
-**Total observations:** 3
 **Top attribution confidence:** `high`
 
 ## Targets

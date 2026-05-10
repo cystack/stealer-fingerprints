@@ -9,7 +9,6 @@ with the v2 rewrite tracked through 2024.
 **Also known as:** `StealC v1`, `StealC v2`
 
 **Variants observed:** 12
-**Total observations:** 191,799
 **Top attribution confidence:** `high`
 
 ## Targets

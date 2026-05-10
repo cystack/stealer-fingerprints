@@ -38,7 +38,6 @@ constant if a curated CTI report later identifies the
 underlying builder.
 
 **Variants observed:** 1
-**Total observations:** 18
 **Top attribution confidence:** `unknown`
 **Operator panel brands:** `snake_case wmic-dump system_info.txt`
 

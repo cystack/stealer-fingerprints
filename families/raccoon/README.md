@@ -1,7 +1,6 @@
 # Raccoon
 
 **Variants observed:** 1
-**Total observations:** 12
 **Top attribution confidence:** `high`
 
 ## Variants
