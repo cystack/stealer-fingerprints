@@ -36,6 +36,34 @@
       "distribution_channel": null,
       "field_keys": [
         "Available KeyboardLayouts",
+        "Current Language",
+        "FileLocation",
+        "HWID",
+        "Hardwares",
+        "IP",
+        "Location",
+        "Log date",
+        "MachineName",
+        "Name",
+        "Operation System",
+        "ScreenSize",
+        "TimeZone",
+        "UserName",
+        "Zip Code"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_e61b3dc8",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Available KeyboardLayouts",
         "Country",
         "Current Language",
         "FileLocation",

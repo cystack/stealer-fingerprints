@@ -8,7 +8,7 @@ the field block.
 
 **Also known as:** `RedLine`, `RedLineStealer`
 
-**Variants observed:** 2
+**Variants observed:** 3
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -62,6 +62,47 @@ cuspe
 ccwfe 
 ljwecfxxs Anti-Viruses:
 odkwhnnrc Windows Defender
+```
+
+### `cystack_e61b3dc8`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Available KeyboardLayouts`, `Current Language`, `FileLocation`, `HWID`, `Hardwares`, `IP`, `Location`, `Log date`, `MachineName`, `Name`, `Operation System`, `ScreenSize`, `TimeZone`, `UserName`, `Zip Code`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+* *
+* *
+
+IP: <redacted>
+FileLocation: <redacted>
+UserName: <redacted>
+MachineName: NODE1
+Zip Code: <redacted>
+Location: Kochi, Kerala
+HWID: <redacted>
+Current Language: English (United States)
+ScreenSize: {Width=1366, Height=768}
+TimeZone: (UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi
+Operation System: Windows 8.1 Pro x32
+Log date: 15/01/2026 <ip>
+
+Available KeyboardLayouts: 
+English (United States)
+
+Hardwares: 
+Name: Total of RAM, 3494.25 Mb or 3663990784 bytes
+Name: Intel(R) Pentium(R) CPU G3260 @ 3.30GHz, 2 Cores
+Name: Intel(R) HD Graphics, 1073741824 bytes
+ysxfgt 
+forqxxih 
+lqegvlvnd Anti-Viruses:
+ujngmyjg Windows Defender
 ```
 
 ### `cystack_f2fae5b0`

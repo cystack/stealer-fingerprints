@@ -8,7 +8,7 @@ divider, with column-aligned key/value records under each.
 Family attribution is provisional pending a published
 threat-intel mapping for this layout.
 
-**Variants observed:** 2
+**Variants observed:** 3
 **Top attribution confidence:** `unknown`
 
 ## Variants
@@ -111,6 +111,52 @@ Cores/Threads: 6 / 12
 RAM:           31.6 GB
 GPU:           NVIDIA GeForce RTX 5060, AMD Radeon(TM) Graphics, NVIDIA GeForce RTX 5070, Meta Virtual Monitor
 Displays:      2560x1080
+```
+
+### `cystack_f2e27cfe`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`CPU`, `Category`, `Computer`, `Cores/Threads`, `Country`, `Displays`, `GPU`, `HWID`, `IP`, `Keyboards`, `Language`, `Local Time`, `OS`, `Path`, `RAM`, `System`, `Timezone`, `UTC Time`, `Username`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+     _____ __ __ _ ______ 
+ / ___// /_ ____ _____ ___ _____/ /_ (_) __/ /____ _____
+ \__ \/ __ \/ __ `/ __ \/ _ \/ ___/ __ \/ / /_/ __/ _ \/ ___/
+ ___/ / / / / /_/ / /_/ / __(__ ) / / / / __/ /_/ __/ / 
+/____/_/ /_/\__,_/ .___/\___/____/_/ /_/_/_/ \__/\___/_/ 
+ /_/ 
+ t.me/RokuTeamNew_bot
+
+Username: <redacted>
+Computer: DESKTOP-SFKAICN
+HWID: <redacted>
+IP: <redacted>
+Country: FR
+Path: <redacted>
+
+Category: System
+------------------------------------------------------------
+OS: Windows 10.0.26100 (Workstation) Windows 10 Home (Build 26100)
+Language: fr-FR
+System: French
+Keyboards: French, English
+Local Time: 2026-01-11 <ip>
+UTC Time: 2026-01-11 <ip> UTC
+Timezone: UTC+1
+
+Category: Hardware
+------------------------------------------------------------
+CPU: AMD Ryzen 5 4600H with Radeon Graphics
+Cores/Threads: 6 / 12
+RAM: 7.4 GB
+GPU: AMD Radeon(TM) Graphics, NVIDIA GeForce GTX 1650
+Displays: 1920x1080
 ```
 
 ## Detection
