@@ -9,7 +9,7 @@ the field block.
 **Also known as:** `RedLine`, `RedLineStealer`
 
 **Variants observed:** 1
-**Total observations:** 3
+**Total observations:** 9
 **Top attribution confidence:** `high`
 
 ## Targets

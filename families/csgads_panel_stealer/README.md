@@ -32,7 +32,7 @@ threat-intel mapping for this exact panel-summary layout.
 **Also known as:** `!! 2026 JAN aggregator panel summary`
 
 **Variants observed:** 1
-**Total observations:** 3
+**Total observations:** 9
 **Top attribution confidence:** `unknown`
 
 ## Targets

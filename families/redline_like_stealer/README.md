@@ -10,7 +10,7 @@ the underlying field layout intact.
 **Also known as:** `redline`, `redline-extended`
 
 **Variants observed:** 5
-**Total observations:** 954
+**Total observations:** 2,834
 **Top attribution confidence:** `unknown`
 
 ## Targets

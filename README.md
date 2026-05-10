@@ -8,25 +8,27 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 
 | Family | Variants | Channels | Observations | Top confidence |
 |---|---|---|---|---|
-| [`Acreed`](families/acreed/) | 1 | 0 | 1,170 | `high` |
-| [`Aetheris Stealer`](families/aetheris_stealer/) | 1 | 0 | 42 | `high` |
-| [`BracketSection Stealer`](families/bracket_section_stealer/) | 1 | 0 | 12 | `unknown` |
-| [`CSBareVersionStealer`](families/cs_bare_version_stealer/) | 1 | 1 | 1 | `unknown` |
-| [`CSBitArchStealer`](families/cs_bit_arch_stealer/) | 1 | 0 | 12 | `unknown` |
-| [`CSGADSPanelStealer`](families/csgads_panel_stealer/) | 1 | 0 | 3 | `unknown` |
-| [`CSWmicDumpStealer`](families/cs_wmic_dump_stealer/) | 1 | 0 | 12 | `unknown` |
-| [`Category Stealer`](families/category_stealer/) | 2 | 0 | 5 | `unknown` |
-| [`Cthulhu Stealer`](families/cthulhu_stealer/) | 1 | 0 | 28 | `high` |
-| [`MacSync`](families/mac_sync/) | 1 | 0 | 6,953 | `high` |
-| [`PureLogs`](families/pure_logs/) | 1 | 0 | 14 | `high` |
-| [`RL Stealer`](families/rl_stealer/) | 1 | 0 | 32 | `medium` |
-| [`Raccoon`](families/raccoon/) | 1 | 0 | 6 | `high` |
-| [`Redline`](families/redline/) | 1 | 0 | 3 | `high` |
-| [`RedlineLike Stealer`](families/redline_like_stealer/) | 5 | 0 | 954 | `unknown` |
-| [`StealC`](families/steal_c/) | 12 | 0 | 150,384 | `high` |
-| [`Vidar`](families/vidar/) | 398 | 0 | 22,417 | `high` |
-| [`WhiteSnake`](families/white_snake/) | 1 | 0 | 757 | `high` |
-| [`XFiles`](families/x_files/) | 2 | 0 | 176 | `high` |
+| [`Acreed`](families/acreed/) | 1 | 0 | 3,595 | `high` |
+| [`Aetheris Stealer`](families/aetheris_stealer/) | 1 | 0 | 127 | `high` |
+| [`Blank Grabber`](families/blank_grabber/) | 1 | 0 | 1 | `high` |
+| [`BracketSection Stealer`](families/bracket_section_stealer/) | 1 | 0 | 33 | `unknown` |
+| [`CSBareVersionStealer`](families/cs_bare_version_stealer/) | 1 | 1 | 4 | `unknown` |
+| [`CSBitArchStealer`](families/cs_bit_arch_stealer/) | 1 | 0 | 15 | `unknown` |
+| [`CSGADSPanelStealer`](families/csgads_panel_stealer/) | 1 | 0 | 9 | `unknown` |
+| [`CSWmicDumpStealer`](families/cs_wmic_dump_stealer/) | 1 | 0 | 18 | `unknown` |
+| [`Category Stealer`](families/category_stealer/) | 2 | 0 | 32 | `unknown` |
+| [`Cthulhu Stealer`](families/cthulhu_stealer/) | 1 | 0 | 65 | `high` |
+| [`Lumma`](families/lumma/) | 1 | 0 | 3 | `high` |
+| [`MacSync`](families/mac_sync/) | 1 | 0 | 8,846 | `high` |
+| [`PureLogs`](families/pure_logs/) | 1 | 0 | 20 | `high` |
+| [`RL Stealer`](families/rl_stealer/) | 1 | 0 | 41 | `medium` |
+| [`Raccoon`](families/raccoon/) | 1 | 0 | 12 | `high` |
+| [`Redline`](families/redline/) | 1 | 0 | 9 | `high` |
+| [`RedlineLike Stealer`](families/redline_like_stealer/) | 5 | 0 | 2,834 | `unknown` |
+| [`StealC`](families/steal_c/) | 12 | 0 | 191,799 | `high` |
+| [`Vidar`](families/vidar/) | 527 | 0 | 46,024 | `high` |
+| [`WhiteSnake`](families/white_snake/) | 1 | 0 | 1,372 | `high` |
+| [`XFiles`](families/x_files/) | 2 | 0 | 374 | `high` |
 
 ## Contributing
 

@@ -8,7 +8,7 @@ keys (`PcName`, `Os`, `Cpu`, etc.).
 **Also known as:** `Acreed Stealer`
 
 **Variants observed:** 1
-**Total observations:** 1,170
+**Total observations:** 3,595
 **Top attribution confidence:** `high`
 
 ## Targets

@@ -9,7 +9,7 @@ Family attribution is provisional pending a published
 threat-intel mapping for this layout.
 
 **Variants observed:** 2
-**Total observations:** 5
+**Total observations:** 32
 **Top attribution confidence:** `unknown`
 
 ## Variants

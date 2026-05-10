@@ -40,7 +40,7 @@ stripped-Build / bare-`Version` field set.
 **Also known as:** `@BRADMAX stripped Build variant`, `BradMax Cloud`
 
 **Variants observed:** 1
-**Total observations:** 1
+**Total observations:** 4
 **Top attribution confidence:** `unknown`
 **Operator panel brands:** `bare Version line (Build block stripped)`
 **Distribution channels:** `@BRADMAX`

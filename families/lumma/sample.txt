@@ -1,0 +1,26 @@
+
+ 
+- Path: C:\Users\<user>\AppData\Local\Temp\118083\Secretariat.com
+
+- Elevated: false
+- Computer: DESKTOP-PQTQDKI
+- User: denan
+- Domain: 
+- Hostname: DESKTOP-PQTQDKI
+- NetBIOS: DESKTOP-PQTQDKI
+- Language: pt-BR
+- Anti Virus:
+	- Windows Defender
+- HWID: 7183DCE3556ED14C23B78A6C75E2DD1E
+- RAM Size: 8192MB
+- CPU Vendor: GenuineIntel
+- CPU Name: Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz
+- CPU Threads: 8
+- CPU Cores: 4
+- GPU:
+- Display resolution: 1024x768
+
+- IP Address: <ip>
+- Time: 19.07.2025 <ip> (sig:1752891423.31dc75bf4e926c574f2456308d5f28ea)
+- Country: <ip>
+

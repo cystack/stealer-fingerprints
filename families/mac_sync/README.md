@@ -10,7 +10,7 @@ banner, captured account credentials, and the verbatim output of
 **Also known as:** `Mac.c`, `MacSync Stealer`
 
 **Variants observed:** 1
-**Total observations:** 6,953
+**Total observations:** 8,846
 **Top attribution confidence:** `high`
 
 ## Targets
