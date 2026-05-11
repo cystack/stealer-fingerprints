@@ -8,7 +8,7 @@ the field block.
 
 **Also known as:** `RedLine`, `RedLineStealer`
 
-**Variants observed:** 3
+**Variants observed:** 11
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -20,6 +20,107 @@ the field block.
 - Discord and Telegram session tokens
 
 ## Variants
+
+### `cystack_55f0c282`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Anti-Viruses`, `Available KeyboardLayouts`, `Build ID`, `Country`, `Current Language`, `FileLocation`, `HWID`, `Hardwares`, `IP`, `Location`, `Log date`, `Name`, `Operation System`, `Process Elevation`, `ScreenSize`, `TimeZone`, `UserName`, `Zip Code`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+***********************************************
+*               _   _   _   _                 *
+*              / \ / \ / \ / \                *
+*             ( M | E | T | A )               *
+*              \_/ \_/ \_/ \_/                *
+*                                             *
+*    Telegram: <url>   *
+***********************************************
+
+Build ID:
+IP: <redacted>
+FileLocation: <redacted>
+UserName: <redacted>
+Country: AF
+Zip Code: <redacted>
+Location: Kabul, Kabul
+HWID: <redacted>
+Current Language: English (United States)
+ScreenSize: {Width=1366, Height=768}
+TimeZone: (UTC+04:30) Kabul
+Operation System: Windows 8 Pro with Media Center x64
+Process Elevation: False
+Log date: 10/18/2023 <ip> PM
+
+Available KeyboardLayouts: 
+English (United States)
+Pashto (Afghanistan)
+Persian
+
+
+Hardwares: 
+Name: Total of RAM, 3982.49 MB or 4175945728 bytes
+Name: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, 4 Cores
+Name: Intel(R) HD Graphics, 1886646272 bytes
+
+
+Anti-Viruses: 
+Windows Defender
+```
+
+### `cystack_648cafef`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Anti-Viruses`, `Build ID`, `Country`, `Current Language`, `FileLocation`, `HWID`, `Hardwares`, `IP`, `Location`, `Log date`, `Name`, `Operation System`, `Process Elevation`, `ScreenSize`, `TimeZone`, `UAC`, `UserName`, `Zip Code`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+***********************************************
+*                                             *
+*   ____  _____ ____  _     ___ _   _ _____   *
+*  |  _ \| ____|  _ \| |   |_ _| \ | | ____|  *
+*  | |_) |  _| | | | | |    | ||  \| |  _|    *
+*  |  _ <| |___| |_| | |___ | || |\  | |___   *
+*  |_| \_|_____|____/|_____|___|_| \_|_____|  *
+*                                             *
+*                                             *
+***********************************************
+
+Build ID:
+IP: <redacted>
+FileLocation: <redacted>
+UserName: <redacted>
+Country: AR
+Zip Code: <redacted>
+Location: Buenos Aires, Ciudad Autonoma de Buenos Aires
+HWID: <redacted>
+Current Language: Spanish (Argentina)
+ScreenSize: {Width=1920, Height=1080}
+TimeZone: (UTC-03:00) Ciudad de Buenos Aires
+Operation System: Windows 10 Enterprise x64
+UAC: AllowAll
+Process Elevation: False
+Log date: 10/18/2023 <ip> PM
+
+Hardwares: 
+Name: AMD Ryzen 5 5600G with Radeon Graphics         , 6 Cores
+Name: AMD Radeon(TM) Graphics, 536870912 bytes
+Name: Total of RAM, 15665.73 MB or 16426713088 bytes
+
+
+Anti-Viruses: 
+Windows Defender
+```
 
 ### `cystack_65b17882`
 
@@ -62,6 +163,289 @@ cuspe
 ccwfe 
 ljwecfxxs Anti-Viruses:
 odkwhnnrc Windows Defender
+```
+
+### `cystack_69d1cad4`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Available KeyboardLayouts`, `Build ID`, `Country`, `Current Language`, `FileLocation`, `HWID`, `Hardwares`, `IP`, `Location`, `Log date`, `Name`, `Operation System`, `Process Elevation`, `ScreenSize`, `TimeZone`, `UserName`, `Zip Code`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+***********************************************
+*               _   _   _   _                 *
+*              / \ / \ / \ / \                *
+*             ( M | E | T | A )               *
+*              \_/ \_/ \_/ \_/                *
+*                                             *
+*    Telegram: <url>   *
+***********************************************
+
+Build ID:
+IP: <redacted>
+FileLocation: <redacted>
+UserName: <redacted>
+Country: AR
+Zip Code: <redacted>
+Location: Jose C. Paz, Buenos Aires
+HWID: <redacted>
+Current Language: Spanish (Spain, International Sort)
+ScreenSize: {Width=1280, Height=960}
+TimeZone: (UTC-03:00) Ciudad de Buenos Aires
+Operation System: Windows 10 Enterprise LTSC 2019 x64
+Process Elevation: False
+Log date: 10/18/2023 <ip> PM
+
+Available KeyboardLayouts: 
+Spanish (Argentina)
+Spanish (Spain, International Sort)
+
+
+Hardwares: 
+Name: Total of RAM, 8134.55 MB or 8529698816 bytes
+Name: AMD A8-5600K APU with Radeon(tm) HD Graphics   , 2 Cores
+Name: AMD Radeon R7 200 Series, 2147483648 bytes
+```
+
+### `cystack_73218974`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Available KeyboardLayouts`, `Build ID`, `Country`, `Current Language`, `FileLocation`, `HWID`, `IP`, `Location`, `Log date`, `Operation System`, `Process Elevation`, `ScreenSize`, `TimeZone`, `UAC`, `UserName`, `Zip Code`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+***********************************************
+*                                             *
+*   ____  _____ ____  _     ___ _   _ _____   *
+*  |  _ \| ____|  _ \| |   |_ _| \ | | ____|  *
+*  | |_) |  _| | | | | |    | ||  \| |  _|    *
+*  |  _ <| |___| |_| | |___ | || |\  | |___   *
+*  |_| \_|_____|____/|_____|___|_| \_|_____|  *
+*                                             *
+*                                             *
+***********************************************
+
+Build ID:
+IP: <redacted>
+FileLocation: <redacted>
+UserName: <redacted>
+Country: BR
+Zip Code: <redacted>
+Location: Cianorte, Parana
+HWID: <redacted>
+Current Language: Portuguese (Brazil)
+ScreenSize: {Width=800, Height=800}
+TimeZone: (UTC-03:00) Brasília
+Operation System: Windows 10 Home x64
+UAC: AllowAll
+Process Elevation: False
+Log date: 10/17/2023 <ip> AM
+
+Available KeyboardLayouts: 
+Portuguese (Brazil)
+Portuguese (Brazil)
+```
+
+### `cystack_73292a89`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Anti-Viruses`, `Available KeyboardLayouts`, `Build ID`, `Country`, `Current Language`, `FileLocation`, `HWID`, `Hardwares`, `IP`, `Location`, `Log date`, `Name`, `Operation System`, `Process Elevation`, `ScreenSize`, `TimeZone`, `UAC`, `UserName`, `Zip Code`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+***********************************************
+*                                             *
+*   ____  _____ ____  _     ___ _   _ _____   *
+*  |  _ \| ____|  _ \| |   |_ _| \ | | ____|  *
+*  | |_) |  _| | | | | |    | ||  \| |  _|    *
+*  |  _ <| |___| |_| | |___ | || |\  | |___   *
+*  |_| \_|_____|____/|_____|___|_| \_|_____|  *
+*                                             *
+*                                             *
+***********************************************
+
+Build ID:
+IP: <redacted>
+FileLocation: <redacted>
+UserName: <redacted>
+Country: MA
+Zip Code: <redacted>
+Location: UNKNOWN
+HWID: <redacted>
+Current Language: French (France)
+ScreenSize: {Width=1440, Height=900}
+TimeZone: (UTC+01:00) Bruxelles, Copenhague, Madrid, Paris
+Operation System: Windows 10 Enterprise x64
+UAC: AllowAll
+Process Elevation: False
+Log date: 10/17/2023 <ip> AM
+
+Available KeyboardLayouts: 
+French (France)
+Arabic (Morocco)
+
+
+Hardwares: 
+Name: Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz, 2 Cores
+Name: Intel(R) HD Graphics, 1877772288 bytes
+Name: Total of RAM, 3965.57 MB or 4158197760 bytes
+
+
+Anti-Viruses: 
+Windows Defender
+```
+
+### `cystack_84cd011a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Available KeyboardLayouts`, `Build ID`, `Country`, `Current Language`, `FileLocation`, `HWID`, `Hardwares`, `IP`, `Location`, `Log date`, `Name`, `Operation System`, `Process Elevation`, `ScreenSize`, `TimeZone`, `UAC`, `UserName`, `Zip Code`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+***********************************************
+*                                             *
+*   ____  _____ ____  _     ___ _   _ _____   *
+*  |  _ \| ____|  _ \| |   |_ _| \ | | ____|  *
+*  | |_) |  _| | | | | |    | ||  \| |  _|    *
+*  |  _ <| |___| |_| | |___ | || |\  | |___   *
+*  |_| \_|_____|____/|_____|___|_| \_|_____|  *
+*                                             *
+*                                             *
+***********************************************
+
+Build ID:
+IP: <redacted>
+FileLocation: <redacted>
+UserName: <redacted>
+Country: AL
+Zip Code: <redacted>
+Location: Durres, Durres
+HWID: <redacted>
+Current Language: English (United States)
+ScreenSize: {Width=1440, Height=900}
+TimeZone: (UTC+03:00) Istanbul
+Operation System: Windows 10 Enterprise x64
+UAC: AllowAll
+Process Elevation: False
+Log date: 10/17/2023 <ip> AM
+
+Available KeyboardLayouts: 
+English (United States)
+
+
+Hardwares: 
+Name: Intel(R) Core(TM)2 Duo CPU     E8500  @ 3.16GHz, 2 Cores
+Name: Intel(R) Q45/Q43 Express Chipset (Microsoft Corporation - WDDM 1.1), 2899097600 bytes
+Name: Total of RAM, 5977.59 MB or 6267957248 bytes
+```
+
+### `cystack_b95b940e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Anti-Viruses`, `Available KeyboardLayouts`, `Build ID`, `Country`, `Current Language`, `FileLocation`, `HWID`, `IP`, `Location`, `Log date`, `Operation System`, `Process Elevation`, `ScreenSize`, `TimeZone`, `UAC`, `UserName`, `Zip Code`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+***********************************************
+*                                             *
+*   ____  _____ ____  _     ___ _   _ _____   *
+*  |  _ \| ____|  _ \| |   |_ _| \ | | ____|  *
+*  | |_) |  _| | | | | |    | ||  \| |  _|    *
+*  |  _ <| |___| |_| | |___ | || |\  | |___   *
+*  |_| \_|_____|____/|_____|___|_| \_|_____|  *
+*                                             *
+*                                             *
+***********************************************
+
+Build ID:
+IP: <redacted>
+FileLocation: <redacted>
+UserName: <redacted>
+Country: BE
+Zip Code: <redacted>
+Location: Lommel, Limburg
+HWID: <redacted>
+Current Language: Dutch (Netherlands)
+ScreenSize: {Width=1920, Height=1080}
+TimeZone: (UTC+01:00) Brussel, Kopenhagen, Madrid, Parijs
+Operation System: Windows 10 Home x64
+UAC: AllowAll
+Process Elevation: False
+Log date: 10/17/2023 <ip> AM
+
+Available KeyboardLayouts: 
+Dutch (Netherlands)
+Dutch (Netherlands)
+
+
+Anti-Viruses: 
+Windows Defender
+AVG Antivirus
+```
+
+### `cystack_d7157e6b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Build ID`, `Country`, `Current Language`, `FileLocation`, `HWID`, `IP`, `Location`, `Log date`, `Operation System`, `Process Elevation`, `ScreenSize`, `TimeZone`, `UAC`, `UserName`, `Zip Code`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+***********************************************
+*                                             *
+*   ____  _____ ____  _     ___ _   _ _____   *
+*  |  _ \| ____|  _ \| |   |_ _| \ | | ____|  *
+*  | |_) |  _| | | | | |    | ||  \| |  _|    *
+*  |  _ <| |___| |_| | |___ | || |\  | |___   *
+*  |_| \_|_____|____/|_____|___|_| \_|_____|  *
+*                                             *
+*  Telegram: <url>  *
+***********************************************
+
+Build ID:
+IP: <redacted>
+FileLocation: <redacted>
+UserName: <redacted>
+Country: AR
+Zip Code: <redacted>
+Location: Villa Mercedes, San Luis
+HWID: <redacted>
+Current Language: Spanish (Argentina)
+ScreenSize: {Width=1366, Height=768}
+TimeZone: (UTC-03:00) Ciudad de Buenos Aires
+Operation System: Windows 10 Enterprise x64
+UAC: AllowAll
+Process Elevation: False
+Log date: 10/18/2023 <ip> PM
 ```
 
 ### `cystack_e61b3dc8`
