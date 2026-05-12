@@ -8,7 +8,7 @@ Observed in `@bugatti_cloud` aggregator packs.
 
 **Also known as:** `Cthulhu macOS Stealer`
 
-**Variants observed:** 2
+**Variants observed:** 3
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -129,6 +129,51 @@ Hardware:
       Serial Number (system): C02FXEQUMD6M
       Hardware UUID: 7B1F9FDA-4B99-5692-BE49-D4D811FFE2B7
 [... truncated; full sample at ``sample.txt`` (approx. 45 more lines) ...]
+```
+
+### `cystack_d48169df`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`BuildID`, `City`, `Country`, `Hardware`, `IP`, `MetaMask Info`, `Software`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+BuildID:Yanger
+Userinfo:
+Country: SE
+IP: <redacted>
+City: <redacted>
+Software:
+    System Software Overview:
+      System Version: macOS 26.0 (25A354)
+      Kernel Version: Darwin 25.0.0
+      Boot Volume: Macintosh HD
+      Boot Mode: Normal
+      Computer Name: <redacted>
+      User Name: <redacted>
+      Secure Virtual Memory: Enabled
+      System Integrity Protection: Enabled
+      Time since boot: 20 minutes, 39 seconds
+Hardware:
+    Hardware Overview:
+      Model Name: Apple Virtual Machine 1
+      Model Identifier: VirtualMac2,1
+      Model Number: VM0001UA/A
+      Chip: Apple M4 Max (Virtual)
+      Total Number of Cores: 4
+      Memory: 8 GB
+      System Firmware Version: 13822.1.2
+      OS Loader Version: 13822.1.2
+      Serial Number (system): Z4K614MYR0
+      Hardware UUID: 775BE00F-5114-51B3-B223-AB901BC3A36C
+      Provisioning UDID: 39b19135a46f38d132963a1166ad9b36d715325c
+      Activation Lock Status: Disabled
 ```
 
 ## Detection

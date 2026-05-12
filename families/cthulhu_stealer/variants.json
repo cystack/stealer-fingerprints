@@ -45,6 +45,27 @@
       "fingerprint_id": "cystack_cd0458aa",
       "panel_brand": null,
       "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "BuildID",
+        "City",
+        "Country",
+        "Hardware",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_d48169df",
+      "panel_brand": null,
+      "synthetic": true
     }
   ]
 }

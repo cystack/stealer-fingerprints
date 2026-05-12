@@ -18,8 +18,9 @@ Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 
 **Also known as:** `BlankGrabber`, `Blank-c/Blank-Grabber`
 
-**Variants observed:** 4
+**Variants observed:** 5
 **Top attribution confidence:** `high`
+**Operator panel brands:** `Dead`
 
 ## Targets
 
@@ -235,6 +236,56 @@ Epic Session : No
 Steam Session : No
 Uplay Session : No
 Battle.Net Session : No
+Growtopia Session : No
+Screenshot : Yes
+System Info : Yes
+```
+
+### `Dead`
+
+**Fingerprint id:** `dead`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Autofills`, `CPU`, `Cellular Network`, `Common Files`, `Computer Name`, `Computer OS`, `Cookies`, `Country`, `Dead got a new victim`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `IP`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Region`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Telegram Sessions`, `Timezone`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+Dead got a new victim: wende
+IP Info
+IP: <redacted>
+Region: Texas
+Country: United States
+Timezone: America/Chicago
+Cellular Network:    ❎
+System Info
+Computer Name: <redacted>
+Computer OS: Microsoft Windows 11 Pro
+Total Memory: 34 GB
+UUID: FDCDA900-99DD-11EE-8B47-AC9DEB28190A
+CPU: Intel64 Family 6 Model 158 Stepping 13, GenuineIntel
+GPU: NVIDIA GeForce RTX 2060
+Product Key: VK7JG-NPHTM-C97JM-9MPGT-3V66T
+Grabbed Info
+Discord Accounts : 3
+Passwords : 11
+Cookies : 860
+History : 7126
+Autofills : 205
+Roblox Cookies : 0
+Telegram Sessions : 0
+Common Files : 5
+Wallets : 0
+Wifi Passwords : 0
+Webcam : 0
+Minecraft Sessions : 0
+Epic Session : No
+Steam Session : No
+Uplay Session : Yes
 Growtopia Session : No
 Screenshot : Yes
 System Info : Yes

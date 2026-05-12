@@ -180,6 +180,50 @@
       "fingerprint_id": "cystack_cde4f3d7",
       "panel_brand": null,
       "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Autofills",
+        "CPU",
+        "Cellular Network",
+        "Common Files",
+        "Computer Name",
+        "Computer OS",
+        "Cookies",
+        "Country",
+        "Dead got a new victim",
+        "Discord Accounts",
+        "Epic Session",
+        "GPU",
+        "Growtopia Session",
+        "History",
+        "IP",
+        "Minecraft Sessions",
+        "Passwords",
+        "Product Key",
+        "Region",
+        "Roblox Cookies",
+        "Screenshot",
+        "Steam Session",
+        "System Info",
+        "Telegram Sessions",
+        "Timezone",
+        "Total Memory",
+        "UUID",
+        "Uplay Session",
+        "Wallets",
+        "Webcam",
+        "Wifi Passwords"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "dead",
+      "panel_brand": "Dead",
+      "synthetic": false
     }
   ]
 }
