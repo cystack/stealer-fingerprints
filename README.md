@@ -10,26 +10,29 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 |---|---|---|---|
 | [`Acreed`](families/acreed/) | 1 | 0 | `high` |
 | [`Aetheris Stealer`](families/aetheris_stealer/) | 1 | 0 | `high` |
-| [`Blank Grabber`](families/blank_grabber/) | 2 | 0 | `high` |
+| [`Blank Grabber`](families/blank_grabber/) | 3 | 0 | `high` |
 | [`BracketSection Stealer`](families/bracket_section_stealer/) | 1 | 0 | `unknown` |
 | [`CSBareVersionStealer`](families/cs_bare_version_stealer/) | 1 | 1 | `unknown` |
 | [`CSBitArchStealer`](families/cs_bit_arch_stealer/) | 1 | 0 | `unknown` |
+| [`CSBrowersStealer`](families/cs_browers_stealer/) | 1 | 0 | `unknown` |
 | [`CSBuildBlockStealer`](families/cs_build_block_stealer/) | 1 | 1 | `unknown` |
+| [`CSEmojiInfoStealer`](families/cs_emoji_info_stealer/) | 1 | 0 | `unknown` |
 | [`CSEnvVarDumpStealer`](families/cs_env_var_dump_stealer/) | 1 | 1 | `unknown` |
-| [`CSGADSPanelStealer`](families/csgads_panel_stealer/) | 1 | 0 | `unknown` |
+| [`CSGADSPanelStealer`](families/csgads_panel_stealer/) | 2 | 0 | `unknown` |
 | [`CSWmicDumpStealer`](families/cs_wmic_dump_stealer/) | 1 | 0 | `unknown` |
 | [`Category Stealer`](families/category_stealer/) | 3 | 0 | `unknown` |
 | [`Cthulhu Stealer`](families/cthulhu_stealer/) | 1 | 0 | `high` |
 | [`Lumma`](families/lumma/) | 1 | 0 | `high` |
 | [`MacSync`](families/mac_sync/) | 1 | 0 | `high` |
+| [`PXA Stealer`](families/pxa_stealer/) | 2 | 0 | `high` |
 | [`PureLogs`](families/pure_logs/) | 1 | 0 | `high` |
 | [`RL Stealer`](families/rl_stealer/) | 1 | 0 | `medium` |
 | [`Raccoon`](families/raccoon/) | 1 | 0 | `high` |
-| [`Redline`](families/redline/) | 11 | 0 | `high` |
-| [`RedlineLike Stealer`](families/redline_like_stealer/) | 5 | 0 | `unknown` |
+| [`Redline`](families/redline/) | 15 | 0 | `high` |
+| [`RedlineLike Stealer`](families/redline_like_stealer/) | 6 | 0 | `unknown` |
 | [`StealC`](families/steal_c/) | 13 | 0 | `high` |
-| [`Vidar`](families/vidar/) | 1772 | 0 | `high` |
-| [`WhiteSnake`](families/white_snake/) | 1 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 1782 | 0 | `high` |
+| [`WhiteSnake`](families/white_snake/) | 2 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 2 | 0 | `high` |
 
 ## Contributing

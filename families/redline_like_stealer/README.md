@@ -9,7 +9,7 @@ the underlying field layout intact.
 
 **Also known as:** `redline`, `redline-extended`
 
-**Variants observed:** 5
+**Variants observed:** 6
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -116,6 +116,41 @@ TimeZone: UTC+10
 UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1920x1080
+```
+
+### `cystack_5076fdca`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+
+Country: CA
+IP: <redacted>
+System Language: English
+Processor: 12th Gen Intel(R) Core(TM) i5-12500
+Installed RAM: 7880 MB
+Operation System: Windows 11 24H2 build 26100 (64 Bit)
+Graphics card: Intel(R) UHD Graphics 770
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key: 
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC-6
+UserLanguage: English
+Keyboard Language: Chinese (Simplified)
+Display Resolution: 1920x1080
+Wallpaper Hash: bacd46dd2134fea31c6a5f275c21c01507f209e7
 ```
 
 ### `cystack_5455ca59`

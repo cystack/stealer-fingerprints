@@ -1,38 +1,39 @@
 {
-  "family": "CSGADSPanelStealer",
+  "family": "PXA Stealer",
   "variants": [
     {
-      "attribution_confidence": "unknown",
+      "attribution_confidence": "high",
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
         "AntiVirus",
-        "Browser Data",
+        "Country",
+        "Data Information",
         "IP",
         "User"
       ],
       "filenames": [
         "Information.txt"
       ],
-      "fingerprint_id": "cystack_8479d801",
+      "fingerprint_id": "cystack_15c13fbc",
       "panel_brand": null,
       "synthetic": true
     },
     {
-      "attribution_confidence": "unknown",
+      "attribution_confidence": "high",
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
         "AntiVirus",
-        "Browser Data",
         "Country",
+        "Data Information",
         "IP",
-        "User"
+        "Username"
       ],
       "filenames": [
         "Information.txt"
       ],
-      "fingerprint_id": "cystack_e76892c4",
+      "fingerprint_id": "cystack_724e1a44",
       "panel_brand": null,
       "synthetic": true
     }

@@ -964,6 +964,45 @@
       "distribution_channel": null,
       "field_keys": [
         "AV",
+        "Bully",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Stick Fight",
+        "Suicide Squad",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Version",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_03796b66",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
         "Computer Name",
         "Cores",
         "Country",
@@ -4351,6 +4390,32 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Computer Name",
+        "Cores",
+        "Counter-Strike",
+        "Display Resolution",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "The Binding of Isaac",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_1048b967",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "AV",
         "Age of Empires III",
         "Computer Name",
@@ -7710,6 +7775,43 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_1fd19cc3",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Stronghold Crusader",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Version",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_200b2d9d",
       "panel_brand": null,
       "synthetic": true
     },
@@ -13893,6 +13995,32 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Blackjack 21",
+        "Computer Name",
+        "Cores",
+        "Display Resolution",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Warplanes"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_3ae6d4c5",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "AV",
         "Computer Name",
         "Cores",
@@ -15629,6 +15757,43 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_437dd060",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "The Witcher 3",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Version",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_438f4dd6",
       "panel_brand": null,
       "synthetic": true
     },
@@ -23105,6 +23270,31 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Computer Name",
+        "Cores",
+        "Display Resolution",
+        "Keyboard Languages",
+        "Local Time",
+        "Magic",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_5fa85f94",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "AV",
         "Age of Empires IV",
         "Computer Name",
@@ -24156,6 +24346,43 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_646cf474",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Supermarket Simulator",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Version",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_647e993d",
       "panel_brand": null,
       "synthetic": true
     },
@@ -38469,6 +38696,42 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_a0fba827",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Counter-Strike",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "Grand Theft Auto",
+        "Grand Theft Auto IV",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Wolfteam",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_a17ac440",
       "panel_brand": null,
       "synthetic": true
     },
@@ -54247,6 +54510,44 @@
         "Keyboard Languages",
         "Local Time",
         "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "Unreal Development Kit",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir",
+        "Wrap House Simulator"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_df8af255",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Dark Hours",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "MachineID",
         "Money Simulator",
         "Path",
         "Processor",
@@ -58246,6 +58547,30 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_ef35e413",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Computer Name",
+        "Cores",
+        "Display Resolution",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_ef5eaad7",
       "panel_brand": null,
       "synthetic": true
     },

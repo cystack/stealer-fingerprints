@@ -127,6 +127,36 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Build ID",
+        "Country",
+        "Current Language",
+        "FileLocation",
+        "HWID",
+        "Hardwares",
+        "IP",
+        "Location",
+        "Log date",
+        "Name",
+        "Operation System",
+        "Process Elevation",
+        "ScreenSize",
+        "TimeZone",
+        "UAC",
+        "UserName",
+        "Zip Code"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_709d1fed",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "Available KeyboardLayouts",
         "Build ID",
         "Country",
@@ -180,6 +210,33 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_73292a89",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Anti-Viruses",
+        "Available KeyboardLayouts",
+        "Country",
+        "Current Language",
+        "FileLocation",
+        "HWID",
+        "Hardwares",
+        "IP",
+        "Name",
+        "Operation System",
+        "Process Elevation",
+        "ScreenSize",
+        "UserName",
+        "Zip Code"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_7d94dffd",
       "panel_brand": null,
       "synthetic": true
     },
@@ -249,6 +306,20 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Build ID"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_ba5fe0ea",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "Build ID",
         "Country",
         "Current Language",
@@ -297,6 +368,35 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_e61b3dc8",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Anti-Viruses",
+        "Build ID",
+        "Country",
+        "Current Language",
+        "FileLocation",
+        "HWID",
+        "IP",
+        "Location",
+        "Log date",
+        "Operation System",
+        "Process Elevation",
+        "ScreenSize",
+        "TimeZone",
+        "UAC",
+        "UserName",
+        "Zip Code"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_ebcec32a",
       "panel_brand": null,
       "synthetic": true
     },

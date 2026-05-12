@@ -1,0 +1,5 @@
+IP: <redacted>
+Country: 🇧🇷 BR - Brazil
+User: ruann
+AntiVirus: Windows Defender, Kaspersky, Reason Cybersecurity
+Data Information: CK:16204|PW:650|AF:9749|CC:1|TK:37|FB:9|Sites:25|Wallets:3|Apps:0

@@ -1,0 +1,27 @@
+{
+  "family": "CSBrowersStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Antivirus",
+        "Applications",
+        "Browers",
+        "Country",
+        "Extensions",
+        "Facebook",
+        "IP",
+        "Username",
+        "Wallets"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_74dcf9e8",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

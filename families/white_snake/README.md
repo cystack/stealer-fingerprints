@@ -9,7 +9,7 @@ redistributors) and via a MaaS subscription model.
 
 **Also known as:** `WhiteSnake Stealer`
 
-**Variants observed:** 1
+**Variants observed:** 2
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -21,6 +21,34 @@ redistributors) and via a MaaS subscription model.
 - Email and FTP client credentials
 
 ## Variants
+
+### `cystack_b5e6aa06`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU`, `GPU`, `HWID`, `Installed antivirus`, `RAM`, `Started as admin`, `System`, `System time`, `User name`
+
+**Filenames:** `PC_info.txt`
+
+**Sample (sanitized):**
+
+```
+🖥Computer info:
+System: Microsoft Windows 11 Pro (x64)
+User name: <redacted>
+System time: 2025-10-13 <ip> PM
+CPU: Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+GPU: Intel(R) Iris(R) Plus Graphics
+RAM: 7946 MB
+HWID: <redacted>
+
+🛡Security:
+Installed antivirus: Windows Defender, McAfee VirusScan, McAfee.
+Started as admin: True
+
+📡Whois: Failed to fetch data
+```
 
 ### `cystack_c501beb3`
 

@@ -18,7 +18,7 @@ Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 
 **Also known as:** `BlankGrabber`, `Blank-c/Blank-Grabber`
 
-**Variants observed:** 2
+**Variants observed:** 3
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -137,6 +137,56 @@ Minecraft Sessions : 0
 Epic Session : No
 Steam Session : No
 Uplay Session : No
+Growtopia Session : No
+Screenshot : Yes
+System Info : Yes
+```
+
+### `cystack_cde4f3d7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Autofills`, `Blank Grabber got a new victim`, `CPU`, `Cellular Network`, `Common Files`, `Computer Name`, `Computer OS`, `Cookies`, `Country`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `IP`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Region`, `Reverse DNS`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Telegram Sessions`, `Timezone`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+Blank Grabber got a new victim: rbiqu
+IP Info
+IP: <redacted>
+Region: Jalisco
+Country: Mexico
+Timezone: America/Mexico_City
+Cellular Network:    ❎
+Reverse DNS: dsl-187-212-132-189-dyn.prod-infinitum.com.mx
+System Info
+Computer Name: <redacted>
+Computer OS: Unable to detect OS
+Total Memory: Unable to detect total memory
+UUID: Unable to detect UUID
+CPU: AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD
+GPU: Unable to detect GPU
+Product Key: VK7JG-NPHTM-C97JM-9MPGT-3V66T
+Grabbed Info
+Discord Accounts : 0
+Passwords : 45
+Cookies : 0
+History : 0
+Autofills : 0
+Roblox Cookies : 0
+Telegram Sessions : 0
+Common Files : 0
+Wallets : 0
+Wifi Passwords : 0
+Webcam : 0
+Minecraft Sessions : 0
+Epic Session : No
+Steam Session : No
+Uplay Session : No
+Battle.Net Session : No
 Growtopia Session : No
 Screenshot : Yes
 System Info : Yes

@@ -933,6 +933,44 @@ rule Vidar_cystack_036f3d7c
         all of ($key_*)
 }
 
+rule Vidar_cystack_03796b66
+{
+    meta:
+        family = "Vidar"
+        fingerprint_id = "cystack_03796b66"
+
+    strings:
+        $key_0 = "AV:" ascii
+        $key_1 = "Bully:" ascii
+        $key_2 = "Computer Name:" ascii
+        $key_3 = "Cores:" ascii
+        $key_4 = "Country:" ascii
+        $key_5 = "Date:" ascii
+        $key_6 = "Display Resolution:" ascii
+        $key_7 = "GUID:" ascii
+        $key_8 = "HWID:" ascii
+        $key_9 = "Install Date:" ascii
+        $key_10 = "Ip:" ascii
+        $key_11 = "Keyboard Languages:" ascii
+        $key_12 = "Local Time:" ascii
+        $key_13 = "MachineID:" ascii
+        $key_14 = "Path:" ascii
+        $key_15 = "Processor:" ascii
+        $key_16 = "RAM:" ascii
+        $key_17 = "Stick Fight:" ascii
+        $key_18 = "Suicide Squad:" ascii
+        $key_19 = "Threads:" ascii
+        $key_20 = "TimeZone:" ascii
+        $key_21 = "User Name:" ascii
+        $key_22 = "Version:" ascii
+        $key_23 = "VideoCard:" ascii
+        $key_24 = "Windows:" ascii
+        $key_25 = "Work Dir:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Vidar_cystack_03a211e5
 {
     meta:
@@ -4225,6 +4263,31 @@ rule Vidar_cystack_104263e7
         all of ($key_*)
 }
 
+rule Vidar_cystack_1048b967
+{
+    meta:
+        family = "Vidar"
+        fingerprint_id = "cystack_1048b967"
+
+    strings:
+        $key_0 = "Computer Name:" ascii
+        $key_1 = "Cores:" ascii
+        $key_2 = "Counter-Strike:" ascii
+        $key_3 = "Display Resolution:" ascii
+        $key_4 = "Keyboard Languages:" ascii
+        $key_5 = "Local Time:" ascii
+        $key_6 = "Processor:" ascii
+        $key_7 = "RAM:" ascii
+        $key_8 = "The Binding of Isaac:" ascii
+        $key_9 = "Threads:" ascii
+        $key_10 = "TimeZone:" ascii
+        $key_11 = "User Name:" ascii
+        $key_12 = "VideoCard:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Vidar_cystack_1072d050
 {
     meta:
@@ -7491,6 +7554,42 @@ rule Vidar_cystack_1fd19cc3
         $key_20 = "VideoCard:" ascii
         $key_21 = "Windows:" ascii
         $key_22 = "Work Dir:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Vidar_cystack_200b2d9d
+{
+    meta:
+        family = "Vidar"
+        fingerprint_id = "cystack_200b2d9d"
+
+    strings:
+        $key_0 = "AV:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Cores:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Date:" ascii
+        $key_5 = "Display Resolution:" ascii
+        $key_6 = "GUID:" ascii
+        $key_7 = "HWID:" ascii
+        $key_8 = "Install Date:" ascii
+        $key_9 = "Ip:" ascii
+        $key_10 = "Keyboard Languages:" ascii
+        $key_11 = "Local Time:" ascii
+        $key_12 = "MachineID:" ascii
+        $key_13 = "Path:" ascii
+        $key_14 = "Processor:" ascii
+        $key_15 = "RAM:" ascii
+        $key_16 = "Stronghold Crusader:" ascii
+        $key_17 = "Threads:" ascii
+        $key_18 = "TimeZone:" ascii
+        $key_19 = "User Name:" ascii
+        $key_20 = "Version:" ascii
+        $key_21 = "VideoCard:" ascii
+        $key_22 = "Windows:" ascii
+        $key_23 = "Work Dir:" ascii
 
     condition:
         all of ($key_*)
@@ -13496,6 +13595,31 @@ rule Vidar_cystack_3ac9ad6f
         all of ($key_*)
 }
 
+rule Vidar_cystack_3ae6d4c5
+{
+    meta:
+        family = "Vidar"
+        fingerprint_id = "cystack_3ae6d4c5"
+
+    strings:
+        $key_0 = "Blackjack 21:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Cores:" ascii
+        $key_3 = "Display Resolution:" ascii
+        $key_4 = "Keyboard Languages:" ascii
+        $key_5 = "Local Time:" ascii
+        $key_6 = "Processor:" ascii
+        $key_7 = "RAM:" ascii
+        $key_8 = "Threads:" ascii
+        $key_9 = "TimeZone:" ascii
+        $key_10 = "User Name:" ascii
+        $key_11 = "VideoCard:" ascii
+        $key_12 = "Warplanes:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Vidar_cystack_3af9035a
 {
     meta:
@@ -15186,6 +15310,42 @@ rule Vidar_cystack_437dd060
         $key_22 = "VideoCard:" ascii
         $key_23 = "Windows:" ascii
         $key_24 = "Work Dir:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Vidar_cystack_438f4dd6
+{
+    meta:
+        family = "Vidar"
+        fingerprint_id = "cystack_438f4dd6"
+
+    strings:
+        $key_0 = "AV:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Cores:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Date:" ascii
+        $key_5 = "Display Resolution:" ascii
+        $key_6 = "GUID:" ascii
+        $key_7 = "HWID:" ascii
+        $key_8 = "Install Date:" ascii
+        $key_9 = "Ip:" ascii
+        $key_10 = "Keyboard Languages:" ascii
+        $key_11 = "Local Time:" ascii
+        $key_12 = "MachineID:" ascii
+        $key_13 = "Path:" ascii
+        $key_14 = "Processor:" ascii
+        $key_15 = "RAM:" ascii
+        $key_16 = "The Witcher 3:" ascii
+        $key_17 = "Threads:" ascii
+        $key_18 = "TimeZone:" ascii
+        $key_19 = "User Name:" ascii
+        $key_20 = "Version:" ascii
+        $key_21 = "VideoCard:" ascii
+        $key_22 = "Windows:" ascii
+        $key_23 = "Work Dir:" ascii
 
     condition:
         all of ($key_*)
@@ -22447,6 +22607,30 @@ rule Vidar_cystack_5f82cf46
         all of ($key_*)
 }
 
+rule Vidar_cystack_5fa85f94
+{
+    meta:
+        family = "Vidar"
+        fingerprint_id = "cystack_5fa85f94"
+
+    strings:
+        $key_0 = "Computer Name:" ascii
+        $key_1 = "Cores:" ascii
+        $key_2 = "Display Resolution:" ascii
+        $key_3 = "Keyboard Languages:" ascii
+        $key_4 = "Local Time:" ascii
+        $key_5 = "Magic:" ascii
+        $key_6 = "Processor:" ascii
+        $key_7 = "RAM:" ascii
+        $key_8 = "Threads:" ascii
+        $key_9 = "TimeZone:" ascii
+        $key_10 = "User Name:" ascii
+        $key_11 = "VideoCard:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Vidar_cystack_5fcf8d3e
 {
     meta:
@@ -23471,6 +23655,42 @@ rule Vidar_cystack_646cf474
         $key_19 = "Version:" ascii
         $key_20 = "Windows:" ascii
         $key_21 = "Work Dir:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Vidar_cystack_647e993d
+{
+    meta:
+        family = "Vidar"
+        fingerprint_id = "cystack_647e993d"
+
+    strings:
+        $key_0 = "AV:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Cores:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Date:" ascii
+        $key_5 = "Display Resolution:" ascii
+        $key_6 = "GUID:" ascii
+        $key_7 = "HWID:" ascii
+        $key_8 = "Install Date:" ascii
+        $key_9 = "Ip:" ascii
+        $key_10 = "Keyboard Languages:" ascii
+        $key_11 = "Local Time:" ascii
+        $key_12 = "MachineID:" ascii
+        $key_13 = "Path:" ascii
+        $key_14 = "Processor:" ascii
+        $key_15 = "RAM:" ascii
+        $key_16 = "Supermarket Simulator:" ascii
+        $key_17 = "Threads:" ascii
+        $key_18 = "TimeZone:" ascii
+        $key_19 = "User Name:" ascii
+        $key_20 = "Version:" ascii
+        $key_21 = "VideoCard:" ascii
+        $key_22 = "Windows:" ascii
+        $key_23 = "Work Dir:" ascii
 
     condition:
         all of ($key_*)
@@ -37377,6 +37597,41 @@ rule Vidar_cystack_a0fba827
         $key_18 = "VideoCard:" ascii
         $key_19 = "Windows:" ascii
         $key_20 = "Work Dir:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Vidar_cystack_a17ac440
+{
+    meta:
+        family = "Vidar"
+        fingerprint_id = "cystack_a17ac440"
+
+    strings:
+        $key_0 = "AV:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Cores:" ascii
+        $key_3 = "Counter-Strike:" ascii
+        $key_4 = "Country:" ascii
+        $key_5 = "Date:" ascii
+        $key_6 = "Display Resolution:" ascii
+        $key_7 = "Grand Theft Auto:" ascii
+        $key_8 = "Grand Theft Auto IV:" ascii
+        $key_9 = "Install Date:" ascii
+        $key_10 = "Ip:" ascii
+        $key_11 = "Keyboard Languages:" ascii
+        $key_12 = "Local Time:" ascii
+        $key_13 = "Path:" ascii
+        $key_14 = "Processor:" ascii
+        $key_15 = "RAM:" ascii
+        $key_16 = "Threads:" ascii
+        $key_17 = "TimeZone:" ascii
+        $key_18 = "User Name:" ascii
+        $key_19 = "VideoCard:" ascii
+        $key_20 = "Windows:" ascii
+        $key_21 = "Wolfteam:" ascii
+        $key_22 = "Work Dir:" ascii
 
     condition:
         all of ($key_*)
@@ -52688,6 +52943,43 @@ rule Vidar_cystack_df48d929
         all of ($key_*)
 }
 
+rule Vidar_cystack_df8af255
+{
+    meta:
+        family = "Vidar"
+        fingerprint_id = "cystack_df8af255"
+
+    strings:
+        $key_0 = "AV:" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Cores:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Dark Hours:" ascii
+        $key_5 = "Date:" ascii
+        $key_6 = "Display Resolution:" ascii
+        $key_7 = "GUID:" ascii
+        $key_8 = "HWID:" ascii
+        $key_9 = "Install Date:" ascii
+        $key_10 = "Ip:" ascii
+        $key_11 = "Keyboard Languages:" ascii
+        $key_12 = "Local Time:" ascii
+        $key_13 = "MachineID:" ascii
+        $key_14 = "Path:" ascii
+        $key_15 = "Processor:" ascii
+        $key_16 = "RAM:" ascii
+        $key_17 = "Threads:" ascii
+        $key_18 = "TimeZone:" ascii
+        $key_19 = "Unreal Development Kit:" ascii
+        $key_20 = "User Name:" ascii
+        $key_21 = "VideoCard:" ascii
+        $key_22 = "Windows:" ascii
+        $key_23 = "Work Dir:" ascii
+        $key_24 = "Wrap House Simulator:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Vidar_cystack_dff1346c
 {
     meta:
@@ -56589,6 +56881,29 @@ rule Vidar_cystack_ef35e413
         $key_17 = "VideoCard:" ascii
         $key_18 = "Windows:" ascii
         $key_19 = "Work Dir:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Vidar_cystack_ef5eaad7
+{
+    meta:
+        family = "Vidar"
+        fingerprint_id = "cystack_ef5eaad7"
+
+    strings:
+        $key_0 = "Computer Name:" ascii
+        $key_1 = "Cores:" ascii
+        $key_2 = "Display Resolution:" ascii
+        $key_3 = "Keyboard Languages:" ascii
+        $key_4 = "Local Time:" ascii
+        $key_5 = "Processor:" ascii
+        $key_6 = "RAM:" ascii
+        $key_7 = "Threads:" ascii
+        $key_8 = "TimeZone:" ascii
+        $key_9 = "User Name:" ascii
+        $key_10 = "VideoCard:" ascii
 
     condition:
         all of ($key_*)
