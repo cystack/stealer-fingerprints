@@ -6,6 +6,32 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Available KeyboardLayouts",
+        "Country",
+        "Current Language",
+        "FileLocation",
+        "HWID",
+        "Hardwares",
+        "IP",
+        "Name",
+        "Operation System",
+        "Process Elevation",
+        "ScreenSize",
+        "UserName",
+        "Zip Code"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_4ec8e352",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "Anti-Viruses",
         "Available KeyboardLayouts",
         "Build ID",
@@ -368,6 +394,34 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_e61b3dc8",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Anti-Viruses",
+        "Available KeyboardLayouts",
+        "Country",
+        "Current Language",
+        "FileLocation",
+        "HWID",
+        "Hardwares",
+        "IP",
+        "Name",
+        "Operation System",
+        "Process Elevation",
+        "ScreenSize",
+        "TimeZone",
+        "UserName",
+        "Zip Code"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_e9a53ad6",
       "panel_brand": null,
       "synthetic": true
     },

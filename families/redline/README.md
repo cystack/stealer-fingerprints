@@ -8,7 +8,7 @@ the field block.
 
 **Also known as:** `RedLine`, `RedLineStealer`
 
-**Variants observed:** 15
+**Variants observed:** 17
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -20,6 +20,39 @@ the field block.
 - Discord and Telegram session tokens
 
 ## Variants
+
+### `cystack_4ec8e352`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Available KeyboardLayouts`, `Country`, `Current Language`, `FileLocation`, `HWID`, `Hardwares`, `IP`, `Name`, `Operation System`, `Process Elevation`, `ScreenSize`, `UserName`, `Zip Code`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+IP: <redacted>
+FileLocation: <redacted>
+UserName: <redacted>
+Country: UNKNOWN
+Zip Code: <redacted>
+HWID: <redacted>
+Current Language: English (United States)
+ScreenSize: {Width = 1600,Height = 900}TimeZone: (UTC-08:00) Pacific Time (US & Canada)
+Operation System: Windows 10 Home x64
+Process Elevation: True
+
+Available KeyboardLayouts: 
+English (United States)
+
+
+Hardwares: 
+Name: Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz, 2 Cores
+Name: Intel(R) HD Graphics Family, 1073741824 bytes
+Name: Total of RAM, 7898.57 MB or 8282255360 bytes
+```
 
 ### `cystack_55f0c282`
 
@@ -597,6 +630,44 @@ ysxfgt
 forqxxih 
 lqegvlvnd Anti-Viruses:
 ujngmyjg Windows Defender
+```
+
+### `cystack_e9a53ad6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Anti-Viruses`, `Available KeyboardLayouts`, `Country`, `Current Language`, `FileLocation`, `HWID`, `Hardwares`, `IP`, `Name`, `Operation System`, `Process Elevation`, `ScreenSize`, `TimeZone`, `UserName`, `Zip Code`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+IP: <redacted>
+FileLocation: <redacted>
+UserName: <redacted>
+Country: UNKNOWN
+Zip Code: <redacted>
+HWID: <redacted>
+Current Language: English (United States)
+ScreenSize: UNKNOWN
+TimeZone: (UTC-05:00) Eastern Time (US & Canada)
+Operation System: Windows 10 Home x64
+Process Elevation: True
+
+Available KeyboardLayouts: 
+English (United States)
+
+
+Hardwares: 
+Name: Intel(R) Core(TM) i7-9700F CPU @ 3.00GHz, 8 Cores
+Name: NVIDIA GeForce RTX 2070 SUPER, 4293918720 bytes
+Name: Total of RAM, 16305.04 MB or 17097068544 bytes
+
+
+Anti-Viruses: 
+Windows Defender
 ```
 
 ### `cystack_ebcec32a`

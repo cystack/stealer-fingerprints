@@ -1,0 +1,19 @@
+{
+  "family": "CSNewLogStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_6a5a1e72",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

@@ -18,7 +18,7 @@ Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 
 **Also known as:** `BlankGrabber`, `Blank-c/Blank-Grabber`
 
-**Variants observed:** 3
+**Variants observed:** 4
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -86,6 +86,54 @@ Uplay Session : No
 Battle.Net Session : No
 Growtopia Session : No
 [... truncated; full sample at ``sample.txt`` (approx. 2 more lines) ...]
+```
+
+### `cystack_4ed137de`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Autofills`, `Blank Grabber got a new victim`, `CPU`, `Cellular Network`, `Common Files`, `Computer Name`, `Computer OS`, `Cookies`, `Country`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `IP`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Region`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Telegram Sessions`, `Timezone`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+Blank Grabber got a new victim: Carlos Andrés
+IP Info
+IP: <redacted>
+Region: Valle del Cauca Department
+Country: Colombia
+Timezone: America/Bogota
+Cellular Network:    ❎
+System Info
+Computer Name: <redacted>
+Computer OS: Unable to detect OS
+Total Memory: Unable to detect total memory
+UUID: Unable to detect UUID
+CPU: Intel64 Family 6 Model 154 Stepping 4, GenuineIntel
+GPU: Unable to detect GPU
+Product Key: FHDPX-JNVDW-FF3RD-HPDKC-MP2TB
+Grabbed Info
+Discord Accounts : 0
+Passwords : 122
+Cookies : 0
+History : 0
+Autofills : 0
+Roblox Cookies : 0
+Telegram Sessions : 0
+Common Files : 7
+Wallets : 0
+Wifi Passwords : 0
+Webcam : 0
+Minecraft Sessions : 0
+Epic Session : No
+Steam Session : No
+Uplay Session : No
+Growtopia Session : No
+Screenshot : Yes
+System Info : Yes
 ```
 
 ### `cystack_abb02c93`

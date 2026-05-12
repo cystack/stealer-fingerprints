@@ -18375,6 +18375,31 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Call of Duty",
+        "Computer Name",
+        "Cores",
+        "Display Resolution",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_4dc19fa9",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "AV",
         "Computer Name",
         "Cores",
@@ -50196,6 +50221,31 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_ccfc6df4",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Computer Name",
+        "Cores",
+        "Display Resolution",
+        "Game of Thrones",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_cd2248ac",
       "panel_brand": null,
       "synthetic": true
     },
