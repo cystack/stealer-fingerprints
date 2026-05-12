@@ -1,20 +1,23 @@
-Log date: 05 Jan 26 10:35 MSK
+Log date: 25 Oct 25
+# Buy now:@BRADLOGS (BRADMAX) / <url>
 HWID: <redacted>
-Country: AO
+Country: CA
 IP: <redacted>
 System Language: English
-Processor: Intel(R) Core(TM) i5-10600KF CPU @ 4.10GHz
-Installed RAM: 16292 MB
-Operation System: Windows 10 Pro build 19045 (64 Bit)
-Graphics card: NVIDIA GeForce GT 710
+Processor: 12th Gen Intel(R) Core(TM) i5-1235U
+Installed RAM: 16068 MB
+Operation System: Windows 11 24H2 build 26100 (64 Bit)
+Graphics card: Intel(R) Iris(R) Xe Graphics
 Computer Name: <redacted>
 Domain Name: <redacted>
 MachineID: <redacted>
+Product Key: 
+-------------
 User Name: <redacted>
 Admin Group: FALSE
 Integrity: Medium
-TimeZone: UTC+1
-UserLanguage: Portuguese
-Keyboard Language: Portuguese
+TimeZone: UTC-3
+UserLanguage: English
+Keyboard Language: English
 Display Resolution: 1920x1080
-Wallpaper Hash: d08c477d7682cd97be0a55cf613fdf56c9c08923
+Wallpaper Hash: 2a9dc3afc25ee3f465343d47108ab027bb519214

@@ -1,0 +1,20 @@
+{
+  "family": "CSDataCollectedStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Computer",
+        "IP"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "data_collected_successfully_ack",
+      "panel_brand": "Data collected successfully ack",
+      "synthetic": false
+    }
+  ]
+}

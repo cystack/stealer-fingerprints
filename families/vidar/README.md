@@ -8,7 +8,7 @@ high-volume infostealer family in 2025+.
 
 **Also known as:** `VidarStealer`
 
-**Variants observed:** 1784
+**Variants observed:** 1799
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -3044,6 +3044,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 269 more lines) ...]
+```
+
+### `cystack_0692f413`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Knightfall`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+Ip: <redacted>
+Country: IN
+Date: 22/10/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Work Dir: In memory
+Windows: Windows 11 Home Single Language
+Install Date: 26/03/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English English
+Local Time: 22/10/2025 <ip>
+TimeZone: 5
+[Hardware]
+Processor: AMD Ryzen 5 4600H with Radeon Graphics         
+Cores: 12
+Threads: 12
+RAM: 16253 MB
+VideoCard: 
+[Processes]
+System
+Secure System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+services.exe
+winlogon.exe
+LsaIso.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+fontdrvhost.exe
+WUDFHost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 340 more lines) ...]
 ```
 
 ### `cystack_06c57dc1`
@@ -13331,6 +13386,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 293 more lines) ...]
 ```
 
+### `cystack_22b4c80a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Computer Name`, `Cores`, `Counter-Strike`, `Counter-Strike Nexon`, `Display Resolution`, `Grand Theft Auto`, `Keyboard Languages`, `Local Time`, `PUBG`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Warface`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Turkish
+Local Time: 16/10/2025 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-5820K CPU @ 3.30GHz
+Cores: 12
+Threads: 12
+RAM: 32668 MB
+VideoCard: 
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+services.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 348 more lines) ...]
+```
+
 ### `cystack_22d0d6a2`
 
 **Attribution confidence:** `high`
@@ -14099,6 +14209,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 303 more lines) ...]
+```
+
+### `cystack_245f0fbf`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Dominated by`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+Ip: <redacted>
+Country: PE
+Date: 21/10/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Work Dir: In memory
+Windows: Windows 11 Pro
+Install Date: 15/09/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: Spanish Spanish
+Local Time: 21/10/2025 <ip>
+TimeZone: 4294967291
+[Hardware]
+Processor: AMD Ryzen 5 7520U with Radeon Graphics         
+Cores: 8
+Threads: 8
+RAM: 5965 MB
+VideoCard: 
+[Processes]
+System
+Secure System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+services.exe
+LsaIso.exe
+lsass.exe
+winlogon.exe
+svchost.exe
+fontdrvhost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 271 more lines) ...]
 ```
 
 ### `cystack_2460d054`
@@ -17399,6 +17564,61 @@ svchost.exe
 fontdrvhost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 261 more lines) ...]
+```
+
+### `cystack_2eced001`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `Uncrashed`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+Ip: <redacted>
+Country: DE
+
+Date: 11/10/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Deutsch (Deutschland)
+Local Time: 11/10/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 7 5700X 8-Core Processor             
+Cores: 8
+Threads: 16
+RAM: 32680 MB
+VideoCard: NVIDIA GeForce RTX 5060
+
+[Processes]
+[System Process]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+winlogon.exe
+services.exe
+lsass.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 326 more lines) ...]
 ```
 
 ### `cystack_2ee49a41`
@@ -24386,6 +24606,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 344 more lines) ...]
 ```
 
+### `cystack_42edbedd`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Computer Name`, `Cores`, `Display Resolution`, `Keyboard Languages`, `Local Time`, `PUBG`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Turkish
+Local Time: 16/10/2025 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: AMD Ryzen 5 1600 Six-Core Processor            
+Cores: 12
+Threads: 12
+RAM: 16320 MB
+VideoCard: 
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+services.exe
+winlogon.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+dwm.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+QMEmulatorService.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 202 more lines) ...]
+```
+
 ### `cystack_432952e7`
 
 **Attribution confidence:** `high`
@@ -28566,6 +28841,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 303 more lines) ...]
 ```
 
+### `cystack_4cf99639`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Read Solo Leveling`, `Solo Leveling`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+Ip: <redacted>
+Country: IN
+Date: 24/10/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Work Dir: In memory
+Windows: Windows 11 Pro
+Install Date: 23/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1680x1050
+Keyboard Languages: English English
+Local Time: 24/10/2025 <ip>
+TimeZone: 5
+[Hardware]
+Processor: Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz
+Cores: 8
+Threads: 8
+RAM: 8113 MB
+VideoCard: 
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+services.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 187 more lines) ...]
+```
+
 ### `cystack_4daa8297`
 
 **Attribution confidence:** `high`
@@ -30381,6 +30711,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 261 more lines) ...]
 ```
 
+### `cystack_52391be7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Need for Speed`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+Ip: <redacted>
+Country: MA
+Date: 22/10/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Work Dir: In memory
+Windows: Windows 10 Pro
+Install Date: 12/01/2022 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: French
+Local Time: 22/10/2025 <ip>
+TimeZone: 0
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz
+Cores: 4
+Threads: 4
+RAM: 8072 MB
+VideoCard: 
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+winlogon.exe
+services.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+fontdrvhost.exe
+WUDFHost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 314 more lines) ...]
+```
+
 ### `cystack_5239d9db`
 
 **Attribution confidence:** `high`
@@ -31096,6 +31481,61 @@ winlogon.exe
 [... truncated; full sample at ``sample.txt`` (approx. 204 more lines) ...]
 ```
 
+### `cystack_538fc7a4`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Nuts and Bolts`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+Ip: <redacted>
+Country: CR
+Date: 24/10/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Work Dir: In memory
+Windows: Windows 11 Pro
+Install Date: 25/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Spanish Spanish
+Local Time: 24/10/2025 <ip>
+TimeZone: 4294967290
+[Hardware]
+Processor: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+Cores: 8
+Threads: 8
+RAM: 8075 MB
+VideoCard: 
+[Processes]
+System
+Secure System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+services.exe
+LsaIso.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 246 more lines) ...]
+```
+
 ### `cystack_5396d5eb`
 
 **Attribution confidence:** `high`
@@ -31699,6 +32139,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 320 more lines) ...]
+```
+
+### `cystack_553749d7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Computer Name`, `Cores`, `Counter-Strike`, `Display Resolution`, `Keyboard Languages`, `Local Time`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: English Macedonian
+Local Time: 16/10/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+Cores: 6
+Threads: 6
+RAM: 16305 MB
+VideoCard: 
+
+[Processes]
+System
+Secure System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+services.exe
+LsaIso.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+NVDisplay.Container.exe
+svchost.exe
+svchost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 340 more lines) ...]
 ```
 
 ### `cystack_55919e81`
@@ -50346,6 +50841,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 375 more lines) ...]
 ```
 
+### `cystack_876dd745`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Arena Breakout`, `Computer Name`, `Cores`, `Display Resolution`, `Keyboard Languages`, `Local Time`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English English
+Local Time: 16/10/2025 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz
+Cores: 12
+Threads: 12
+RAM: 32632 MB
+VideoCard: 
+
+[Processes]
+System
+Secure System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+winlogon.exe
+services.exe
+LsaIso.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+dwm.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 205 more lines) ...]
+```
+
 ### `cystack_87706e24`
 
 **Attribution confidence:** `high`
@@ -54139,6 +54689,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 214 more lines) ...]
+```
+
+### `cystack_90040d31`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `FLASHOUT 3D`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+Ip: <redacted>
+Country: IN
+Date: 22/10/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Work Dir: In memory
+Windows: Windows 11 Home Single Language
+Install Date: 28/02/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English English
+Local Time: 22/10/2025 <ip>
+TimeZone: 5
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+Cores: 8
+Threads: 8
+RAM: 8059 MB
+VideoCard: 
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+services.exe
+lsass.exe
+svchost.exe
+WUDFHost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+WUDFHost.exe
+winlogon.exe
+fontdrvhost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 300 more lines) ...]
 ```
 
 ### `cystack_9004d7c3`
@@ -62941,6 +63546,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 309 more lines) ...]
 ```
 
+### `cystack_a77f8e08`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Black Myth`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+Ip: <redacted>
+Country: KH
+Date: 24/10/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Work Dir: In memory
+Windows: Windows 11 Pro
+Install Date: 12/11/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Khmer Chinese (S
+Local Time: 24/10/2025 <ip>
+TimeZone: 7
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i7-12700KF
+Cores: 20
+Threads: 20
+RAM: 32581 MB
+VideoCard: 
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+services.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+winlogon.exe
+svchost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 341 more lines) ...]
+```
+
 ### `cystack_a7d3f5e5`
 
 **Attribution confidence:** `high`
@@ -70586,6 +71246,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 318 more lines) ...]
 ```
 
+### `cystack_b9ca01be`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Age of Mythology`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+Ip: <redacted>
+Country: BR
+Date: 23/10/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Work Dir: In memory
+Windows: Windows 10 Pro
+Install Date: 02/04/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese Portuguese
+Local Time: 23/10/2025 <ip>
+TimeZone: 4294967293
+[Hardware]
+Processor: AMD Ryzen 5 4600G with Radeon Graphics
+Cores: 12
+Threads: 12
+RAM: 15761 MB
+VideoCard: 
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+services.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+WUDFHost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 273 more lines) ...]
+```
+
 ### `cystack_b9e05cee`
 
 **Attribution confidence:** `high`
@@ -78011,6 +78726,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 370 more lines) ...]
 ```
 
+### `cystack_cba41527`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Computer Name`, `Cores`, `Display Resolution`, `HFSQL`, `Keyboard Languages`, `Local Time`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1360x768
+Keyboard Languages: French Arabic
+Local Time: 16/10/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Pentium(R) Gold G5400 CPU @ 3.70GHz
+Cores: 4
+Threads: 4
+RAM: 8019 MB
+VideoCard: 
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+services.exe
+lsass.exe
+winlogon.exe
+svchost.exe
+fontdrvhost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+dwm.exe
+IntelCpHDCPSvc.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 199 more lines) ...]
+```
+
 ### `cystack_cc58f211`
 
 **Attribution confidence:** `high`
@@ -84774,6 +85544,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 364 more lines) ...]
+```
+
+### `cystack_de05f2a0`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Law Prep Tutorial`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+Ip: <redacted>
+Country: IN
+Date: 22/10/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Work Dir: In memory
+Windows: Windows 11 Home Single Language
+Install Date: 18/04/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English English
+Local Time: 22/10/2025 <ip>
+TimeZone: 5
+[Hardware]
+Processor: 13th Gen Intel(R) Core(TM) i5-1334U
+Cores: 12
+Threads: 12
+RAM: 16027 MB
+VideoCard: 
+[Processes]
+System
+Secure System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+services.exe
+LsaIso.exe
+lsass.exe
+fontdrvhost.exe
+svchost.exe
+WUDFHost.exe
+svchost.exe
+svchost.exe
+WUDFHost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 259 more lines) ...]
 ```
 
 ### `cystack_de319e47`

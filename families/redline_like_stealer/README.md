@@ -9,7 +9,7 @@ the underlying field layout intact.
 
 **Also known as:** `redline`, `redline-extended`
 
-**Variants observed:** 6
+**Variants observed:** 7
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -84,6 +84,43 @@ TimeZone: UTC-3
 UserLanguage: Spanish
 Keyboard Language: Spanish
 Display Resolution: 1920x1080
+```
+
+### `cystack_2e13a9b2`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 25 Oct 25
+# Buy now:@BRADLOGS (BRADMAX) / <url>
+HWID: <redacted>
+Country: CA
+IP: <redacted>
+System Language: English
+Processor: 12th Gen Intel(R) Core(TM) i5-1235U
+Installed RAM: 16068 MB
+Operation System: Windows 11 24H2 build 26100 (64 Bit)
+Graphics card: Intel(R) Iris(R) Xe Graphics
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key: 
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC-3
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+Wallpaper Hash: 2a9dc3afc25ee3f465343d47108ab027bb519214
 ```
 
 ### `cystack_47bdc5de`

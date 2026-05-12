@@ -9,6 +9,28 @@
         "BuildID",
         "City",
         "Country",
+        "Graphics/Displays",
+        "Hardware",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_72d91b19",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "BuildID",
+        "City",
+        "Country",
         "Debanks",
         "Graphics/Displays",
         "Hardware",

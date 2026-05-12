@@ -8,7 +8,7 @@ even before content matches.
 
 **Also known as:** `PXAStealer`
 
-**Variants observed:** 2
+**Variants observed:** 4
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -57,6 +57,57 @@ Country: 🇧🇷 BR - Brazil
 Username: <redacted>
 AntiVirus: McAfee, Windows Defender
 Data Information: CK:3277|PW:221|AF:9256|CC:0|TK:6|FB:4|Sites:16|Wallets:0|Apps:0
+```
+
+### `cystack_94cdfe2d`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AntiVirus`, `Data Information`, `IP`, `Username`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+IP: <redacted>
+Username: <redacted>
+AntiVirus: Windows Defender
+Data Information: CK:5133|PW:308|AF:1222|CC:0|TK:3|FB:1|Sites:3|Wallets:0|Apps:0
+```
+
+### `cystack_c65f37b2`
+
+**Attribution confidence:** `high`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+Thông tin hệ thống
+
+install_date: 1767274718
+ram_used_percent: 9
+product_name: Windows 10 Pro
+public_ip: <ip>
+timezone: SE Asia Standard Time
+cpu_count: 20
+mac_address: Realtek Gaming 2.5GbE Family Controller
+username: <redacted>
+ram_total: 63.84 GB
+screen_resolution: 1920x1080
+user_domain: DESKTOP-CM1RHUN
+local_ip: <ip>
+system_language: 0409
+windows_version: 24H2
+hostname: <redacted>
+windows_build: 26100
+computer_name: DESKTOP-CM1RHUN
+edition_id: Professional
+processor: 12th Gen Intel(R) Core(TM) i7-12700F
+ram_available: 57.73 GB
 ```
 
 ## Detection

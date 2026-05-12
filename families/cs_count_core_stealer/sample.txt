@@ -1,0 +1,16 @@
+🔐 Passwords Count: 7
+⚙ System Information:
+
+Mac: <redacted>
+Gpu: AMD Radeon(TM) Graphics
+Cpu: AMD Ryzen 7 7735H with Radeon Graphics         
+Uuid: 20230908-14AC-6026-1ECB-14AC60261ECC
+Hostname: <redacted>
+User Info: Admin
+IP Address: <redacted>
+Version: Windows 10 Home
+Type: Windows_NT
+Arch: x64
+Release: 10.0.26100
+Count Core: 16
+File Location: <redacted>

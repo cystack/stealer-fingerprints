@@ -1,0 +1,3 @@
+Computer: DESKTOP-OVSAVUG
+IP: <redacted>
+Data collected successfully

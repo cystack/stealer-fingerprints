@@ -8,7 +8,7 @@ Observed in `@bugatti_cloud` aggregator packs.
 
 **Also known as:** `Cthulhu macOS Stealer`
 
-**Variants observed:** 1
+**Variants observed:** 2
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -20,6 +20,61 @@ Observed in `@bugatti_cloud` aggregator packs.
 - System inventory and hardware fingerprint
 
 ## Variants
+
+### `cystack_72d91b19`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`BuildID`, `City`, `Country`, `Graphics/Displays`, `Hardware`, `IP`, `MetaMask Info`, `Software`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+BuildID:Zapor
+Userinfo:
+Country: FR
+IP: <redacted>
+City: <redacted>
+Software:
+    System Software Overview:
+      System Version: macOS 15.6 (24G84)
+      Kernel Version: Darwin 24.6.0
+      Boot Volume: Macintosh HD
+      Boot Mode: Normal
+      Computer Name: <redacted>
+      User Name: <redacted>
+      Secure Virtual Memory: Enabled
+      System Integrity Protection: Enabled
+      Time since boot: 3jours, 9heures et 24 minutes
+Hardware:
+    Hardware Overview:
+      Model Name: MacBook Air
+      Model Identifier: MacBookAir10,1
+      Model Number: Z12400015FN/A
+      Chip: Apple M1
+      Total Number of Cores: 8 (4 performance and 4 efficiency)
+      Memory: 16 GB
+      System Firmware Version: 11881.140.96
+      OS Loader Version: 11881.140.96
+      Serial Number (system): C02GK4P1Q6LR
+      Hardware UUID: C74ABC59-0BA7-56C9-8E03-8E3D70C77DA1
+      Provisioning UDID: 00008103-001E29280AA3001E
+      Activation Lock Status: Enabled
+Graphics/Displays:
+    Apple M1:
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 7
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+      Displays:
+[... truncated; full sample at ``sample.txt`` (approx. 8 more lines) ...]
+```
 
 ### `cystack_cd0458aa`
 

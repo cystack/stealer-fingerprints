@@ -8,7 +8,7 @@ sections.
 
 **Also known as:** `Aetheris Stealer`
 
-**Variants observed:** 1
+**Variants observed:** 2
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -71,6 +71,61 @@ NVIDIA GeForce RTX 4070
 
 [Basic]
 User Domain: PC---13
+```
+
+### `cystack_3e0869cd`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Buildtag`, `CPU Name`, `Clipboard`, `Country`, `Default Gateway`, `External IP`, `FileLocation`, `Hwid`, `Input ISO`, `Internal IP`, `Keyboard`, `Logical Cores`, `Machine`, `Now`, `OS Arch`, `OS Build`, `OS Product`, `RAM Available (MB)`, `RAM Total (MB)`, `Screensize`, `System Language`, `User`, `User Domain`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+~~Banshee v1.4 Report (2025-12-20 00:34)
+Buildtag: cherry147
+
+
+[User Info]
+User: Administrator
+Machine: WIN-IP66DBD0FTN
+Now: 2025-12-20 <ip>
+FileLocation: <redacted>
+Country: United Kingdom
+Input ISO: pt
+Hwid: <redacted>
+Clipboard:
+
+[Network]
+External IP: <redacted>
+Internal IP: <ip>
+Default Gateway: <ip>
+
+[System]
+OS Product: Windows 10 Pro 2004
+OS Build: 19041
+OS Arch: x64
+CPU Name: AMD Ryzen 5 9600X 6-Core Processor 
+Logical Cores: 12
+RAM Total (MB): 31849
+RAM Available (MB): 25940
+Screensize: 1920x1080
+Keyboard: pt-PT
+System Language: en-US
+
+[Drives]
+C: Fixed FS:NTFS Size:476GB Free:364GB
+D: Removable FS:FAT32 Size:28GB Free:28GB
+
+[GPU]
+NVIDIA GeForce RTX 5060 Ti
+AMD Radeon(TM) Graphics
+
+[Basic]
+[... truncated; full sample at ``sample.txt`` (approx. 1 more lines) ...]
 ```
 
 ## Detection

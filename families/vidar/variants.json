@@ -1955,6 +1955,43 @@
       "distribution_channel": null,
       "field_keys": [
         "AV",
+        "Call of Duty",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Knightfall",
+        "Local Time",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_0692f413",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
         "Computer Name",
         "Cores",
         "Country",
@@ -8529,6 +8566,35 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Computer Name",
+        "Cores",
+        "Counter-Strike",
+        "Counter-Strike Nexon",
+        "Display Resolution",
+        "Grand Theft Auto",
+        "Keyboard Languages",
+        "Local Time",
+        "PUBG",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Warface"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_22b4c80a",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "AV",
         "Computer Name",
         "Cores",
@@ -9013,6 +9079,42 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_24517901",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "Dominated by",
+        "GUID",
+        "HWID",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_245f0fbf",
       "panel_brand": null,
       "synthetic": true
     },
@@ -11138,6 +11240,42 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_2ecdf88c",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "Uncrashed",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_2eced001",
       "panel_brand": null,
       "synthetic": true
     },
@@ -15616,6 +15754,31 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Computer Name",
+        "Cores",
+        "Display Resolution",
+        "Keyboard Languages",
+        "Local Time",
+        "PUBG",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_42edbedd",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "AV",
         "Computer Name",
         "Cores",
@@ -18355,6 +18518,43 @@
         "Path",
         "Processor",
         "RAM",
+        "Read Solo Leveling",
+        "Solo Leveling",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_4cf99639",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
         "SWAT Commander",
         "Threads",
         "TimeZone",
@@ -19490,6 +19690,42 @@
         "Country",
         "Date",
         "Display Resolution",
+        "GUID",
+        "HWID",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "MachineID",
+        "Need for Speed",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_52391be7",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
         "Duck Life",
         "Install Date",
         "Ip",
@@ -19957,6 +20193,42 @@
         "Keyboard Languages",
         "Local Time",
         "MachineID",
+        "Nuts and Bolts",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_538fc7a4",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "MachineID",
         "Path",
         "Processor",
         "RAM",
@@ -20328,6 +20600,31 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_54f58901",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Computer Name",
+        "Cores",
+        "Counter-Strike",
+        "Display Resolution",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_553749d7",
       "panel_brand": null,
       "synthetic": true
     },
@@ -32289,6 +32586,31 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Arena Breakout",
+        "Computer Name",
+        "Cores",
+        "Display Resolution",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_876dd745",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "ARK",
         "AV",
         "Computer Name",
@@ -34683,6 +35005,42 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_8ffbe691",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "FLASHOUT 3D",
+        "GUID",
+        "HWID",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_90040d31",
       "panel_brand": null,
       "synthetic": true
     },
@@ -40304,6 +40662,43 @@
       "distribution_channel": null,
       "field_keys": [
         "AV",
+        "Black Myth",
+        "Computer Name",
+        "Cores",
+        "Counter-Strike",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_a77f8e08",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
         "Call of Duty",
         "Computer Name",
         "Cores",
@@ -45182,6 +45577,42 @@
       "distribution_channel": null,
       "field_keys": [
         "AV",
+        "Age of Mythology",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_b9ca01be",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
         "Computer Name",
         "Cores",
         "Country",
@@ -49918,6 +50349,31 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Computer Name",
+        "Cores",
+        "Display Resolution",
+        "HFSQL",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_cba41527",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "AV",
         "Computer Name",
         "Cores",
@@ -54194,6 +54650,42 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_ddc8a925",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Law Prep Tutorial",
+        "Local Time",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_de05f2a0",
       "panel_brand": null,
       "synthetic": true
     },

@@ -1,0 +1,13 @@
+{
+    "channel": "A7-574",
+    "pc_name": "WTL314",
+    "pc_login": "Admin",
+    "pc_info": "Windows-11-10.0.26100-SP0",
+    "path": "D:\\Shubham\\veg\\VegetableMarket-MobileApp",
+    "uuid": "00000000-0000-0000-0000-b278d02ef0dd",
+    "sid": "S-1-5-21-3058702912-1689282778-2706428528",
+    "inz_ext_count": 0,
+    "python": "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python3127\\python.exe",
+    "timestamp": 1760697813,
+    "client_utc": "2025-10-17 <ip>"
+}
