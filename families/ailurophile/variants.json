@@ -1,0 +1,33 @@
+{
+  "family": "Ailurophile",
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": "@HORUS B13",
+      "field_keys": [
+        "Allowed Extensions",
+        "Architecture",
+        "Browsers",
+        "Chrome Default - version",
+        "Country",
+        "File Path",
+        "Files",
+        "Folders to Search",
+        "HORUS B13",
+        "Hostname",
+        "IP",
+        "MAC Address",
+        "Main Path",
+        "PC Type",
+        "Screen Resolution"
+      ],
+      "filenames": [
+        "info.txt"
+      ],
+      "fingerprint_id": "horus_b13",
+      "panel_brand": "HORUS B13",
+      "synthetic": false
+    }
+  ]
+}

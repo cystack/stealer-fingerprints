@@ -10,6 +10,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 |---|---|---|---|
 | [`Acreed`](families/acreed/) | 1 | 0 | `high` |
 | [`Aetheris Stealer`](families/aetheris_stealer/) | 2 | 0 | `high` |
+| [`Ailurophile`](families/ailurophile/) | 1 | 1 | `high` |
 | [`Blank Grabber`](families/blank_grabber/) | 5 | 0 | `high` |
 | [`BracketSection Stealer`](families/bracket_section_stealer/) | 1 | 0 | `unknown` |
 | [`CSBareVersionStealer`](families/cs_bare_version_stealer/) | 1 | 1 | `unknown` |

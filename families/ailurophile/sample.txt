@@ -1,0 +1,16 @@
+HORUS B13: @HORUS B13
+
+IP: <redacted>
+Country: United States
+Hostname: <redacted>
+PC Type: Microsoft Windows Server 2019 Datacenter 10.0.17763
+Architecture: amd64
+File Path: C:\xampp\htdocs\ailurophilego\crypt
+Main Path: C:\Users\<user>\AppData\Local\Ailurophile
+Allowed Extensions: [rdp txt doc docx pdf csv xls xlsx keys ldb log]
+Folders to Search: [Documents Desktop Downloads]
+Files: [secret password account tax key wallet gang default backup passw mdp motdepasse acc mot_de_passe login secret bot atomic account acount paypal banque bot metamask wallet crypto exodus discord 2fa code memo compte token backup secret seed mnemonic memoric private key passphrase pass phrase steal bank info casino prv privé prive telegram identifiant identifiants personnel trading bitcoin sauvegarde funds recup note]
+MAC Address: <redacted>
+Screen Resolution: 1680x1050
+Browsers:
+Chrome Default - version: 143.0.7499.170
