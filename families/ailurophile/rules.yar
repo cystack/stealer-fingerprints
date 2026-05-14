@@ -15,16 +15,17 @@ rule Ailurophile_horus_b13
         $key_2 = "Browsers:" ascii
         $key_3 = "Chrome Default - version:" ascii
         $key_4 = "Country:" ascii
-        $key_5 = "File Path:" ascii
-        $key_6 = "Files:" ascii
-        $key_7 = "Folders to Search:" ascii
-        $key_8 = "HORUS B13:" ascii
-        $key_9 = "Hostname:" ascii
-        $key_10 = "IP:" ascii
-        $key_11 = "MAC Address:" ascii
-        $key_12 = "Main Path:" ascii
-        $key_13 = "PC Type:" ascii
-        $key_14 = "Screen Resolution:" ascii
+        $key_5 = "Edge Default - version:" ascii
+        $key_6 = "File Path:" ascii
+        $key_7 = "Files:" ascii
+        $key_8 = "Folders to Search:" ascii
+        $key_9 = "HORUS B13:" ascii
+        $key_10 = "Hostname:" ascii
+        $key_11 = "IP:" ascii
+        $key_12 = "MAC Address:" ascii
+        $key_13 = "Main Path:" ascii
+        $key_14 = "PC Type:" ascii
+        $key_15 = "Screen Resolution:" ascii
 
     condition:
         all of ($key_*)

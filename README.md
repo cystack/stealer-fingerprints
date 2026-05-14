@@ -38,7 +38,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Redline`](families/redline/) | 17 | 0 | `high` |
 | [`RedlineLike Stealer`](families/redline_like_stealer/) | 10 | 0 | `unknown` |
 | [`StealC`](families/steal_c/) | 13 | 0 | `high` |
-| [`Vidar`](families/vidar/) | 1855 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 1867 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 2 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 3 | 0 | `high` |
 

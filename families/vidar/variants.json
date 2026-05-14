@@ -2909,6 +2909,39 @@
         "Country",
         "Date",
         "Display Resolution",
+        "Firefighting Simulator",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_0ac0cb54",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
         "Half-Life",
         "Install Date",
         "Ip",
@@ -3384,6 +3417,39 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_0c70d378",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "Path",
+        "Portal Stories",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_0caa43ce",
       "panel_brand": null,
       "synthetic": true
     },
@@ -7381,6 +7447,40 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_1d26aff5",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "Maurice",
+        "Path",
+        "Processor",
+        "RAM",
+        "Stick Fight",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_1d2c8968",
       "panel_brand": null,
       "synthetic": true
     },
@@ -22232,6 +22332,39 @@
       "distribution_channel": null,
       "field_keys": [
         "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "Path",
+        "Processor",
+        "RAM",
+        "Sandbox",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_5833fdcf",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
         "Ant Colony",
         "Computer Name",
         "Cores",
@@ -25468,6 +25601,45 @@
       "distribution_channel": null,
       "field_keys": [
         "AV",
+        "Call of Duty",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "Feed and Grow",
+        "GUID",
+        "HWID",
+        "Hollow Knight",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Stick Fight",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_649340cf",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
         "Computer Name",
         "Cores",
         "Country",
@@ -27563,6 +27735,41 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_6eaddcf3",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "Men of War",
+        "Path",
+        "Processor",
+        "Quarantine Zone",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "Total War",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_6eb900d1",
       "panel_brand": null,
       "synthetic": true
     },
@@ -34623,6 +34830,42 @@
       "distribution_channel": null,
       "field_keys": [
         "AV",
+        "Asphalt 9",
+        "Computer Name",
+        "Cores",
+        "Counter-Strike",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "Half-Life",
+        "Install Date",
+        "Ip",
+        "KartRider",
+        "Keyboard Languages",
+        "Local Time",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_8ad35808",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
         "Computer Name",
         "Cores",
         "Country",
@@ -38983,6 +39226,42 @@
       "distribution_channel": null,
       "field_keys": [
         "AV",
+        "Black Myth",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "ONE PIECE",
+        "Path",
+        "Pixel Gun 3D",
+        "Processor",
+        "RAM",
+        "Saints Row",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_9ba92ecb",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
         "Call to Arms - Gates of Hell",
         "Computer Name",
         "Cores",
@@ -39465,6 +39744,43 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_9e3abf9e",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "SCP",
+        "The Walking Dead",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_9e4c0756",
       "panel_brand": null,
       "synthetic": true
     },
@@ -47959,6 +48275,44 @@
       "distribution_channel": null,
       "field_keys": [
         "AV",
+        "Call of Duty",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Session",
+        "Sleeping Dogs",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_bc5018b8",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
         "Age of Empires III",
         "Backrooms",
         "Computer Name",
@@ -49320,6 +49674,42 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_c076d5bb",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Black Myth",
+        "Computer Name",
+        "Contraband Police",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "Path",
+        "Processor",
+        "RAM",
+        "Stormworks",
+        "Threads",
+        "TimeZone",
+        "Treasure Hunters",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_c0cbddd9",
       "panel_brand": null,
       "synthetic": true
     },
@@ -55008,6 +55398,40 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_d7395ddc",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Backrooms Descent",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "Path",
+        "Processor",
+        "Quarantine Zone",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_d74be7f2",
       "panel_brand": null,
       "synthetic": true
     },

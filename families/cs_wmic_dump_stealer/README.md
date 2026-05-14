@@ -56,7 +56,7 @@ underlying builder.
 **Attribution confidence:** `unknown`
 
 **Field keys:**
-`Ethernet adapter Ethernet`
+`Ethernet adapter Ethernet`, `Tunnel adapter 6to4 Adapter`, `Wireless LAN adapter Wi-Fi`
 
 **Filenames:** `system_info.txt`
 

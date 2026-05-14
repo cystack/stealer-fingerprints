@@ -6,7 +6,9 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
-        "Ethernet adapter Ethernet"
+        "Ethernet adapter Ethernet",
+        "Tunnel adapter 6to4 Adapter",
+        "Wireless LAN adapter Wi-Fi"
       ],
       "filenames": [
         "system_info.txt"

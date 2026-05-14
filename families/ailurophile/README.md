@@ -39,7 +39,7 @@ Search:`, `PC Type:`, and `Screen Resolution:`.
 **Attribution confidence:** `high`
 
 **Field keys:**
-`Allowed Extensions`, `Architecture`, `Browsers`, `Chrome Default - version`, `Country`, `File Path`, `Files`, `Folders to Search`, `HORUS B13`, `Hostname`, `IP`, `MAC Address`, `Main Path`, `PC Type`, `Screen Resolution`
+`Allowed Extensions`, `Architecture`, `Browsers`, `Chrome Default - version`, `Country`, `Edge Default - version`, `File Path`, `Files`, `Folders to Search`, `HORUS B13`, `Hostname`, `IP`, `MAC Address`, `Main Path`, `PC Type`, `Screen Resolution`
 
 **Filenames:** `info.txt`
 
