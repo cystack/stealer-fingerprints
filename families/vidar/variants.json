@@ -1286,6 +1286,36 @@
       "distribution_channel": null,
       "field_keys": [
         "AV",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_04acf9df",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
         "Computer Name",
         "Cores",
         "Country",
@@ -5068,6 +5098,44 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_132de305",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Backrooms",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "SCP",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Version",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_1335ee7d",
       "panel_brand": null,
       "synthetic": true
     },
@@ -13506,6 +13574,35 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_37d16b41",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Date",
+        "Display Resolution",
+        "Install Date",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_37d4fba6",
       "panel_brand": null,
       "synthetic": true
     },
@@ -44302,6 +44399,37 @@
       "distribution_channel": null,
       "field_keys": [
         "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_aff1f6a8",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
         "Car Dealer Simulator",
         "Computer Name",
         "Cores",
@@ -61000,6 +61128,38 @@
         "information.txt"
       ],
       "fingerprint_id": "cystack_f080a5ca",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AV",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "Install Date",
+        "Ip",
+        "Keyboard Languages",
+        "Local Time",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "User Name",
+        "Version",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_f0926d8e",
       "panel_brand": null,
       "synthetic": true
     },

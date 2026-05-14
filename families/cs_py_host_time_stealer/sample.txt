@@ -1,0 +1,4 @@
+    User: youss
+Host: ooo
+OS: Windows-11-10.0.26200-SP0
+Time: 2025-11-07 <ip>.041050

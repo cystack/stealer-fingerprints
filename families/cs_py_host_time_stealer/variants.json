@@ -1,0 +1,21 @@
+{
+  "family": "CSPyHostTimeStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": "@BRADLOGS",
+      "field_keys": [
+        "Host",
+        "OS",
+        "Time"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "bradmax",
+      "panel_brand": "BRADMAX",
+      "synthetic": false
+    }
+  ]
+}

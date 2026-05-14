@@ -9,7 +9,7 @@ the underlying field layout intact.
 
 **Also known as:** `redline`, `redline-extended`
 
-**Variants observed:** 7
+**Variants observed:** 10
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -21,6 +21,40 @@ the underlying field layout intact.
 - Discord and Telegram session tokens
 
 ## Variants
+
+### `cystack_10fe4746`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 25 Oct 25 22:50 UTC
+Country: AE
+IP: <redacted>
+System Language: English
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+Installed RAM: 16197 MB
+Operation System: Windows 11 24H2 build 26200 (64 Bit)
+Graphics card: NVIDIA GeForce RTX 4060
+Computer Name: <redacted>
+Domain Name: <redacted>
+Product Key: 
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+4
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+Wallpaper Hash: 423295216c266958ef6cb2d6bc8eeea7f491ef75
+```
 
 ### `cystack_1863c96d`
 
@@ -219,6 +253,73 @@ TimeZone: UTC+4
 UserLanguage: English
 Keyboard Language: English
 Display Resolution: 5120x1440
+```
+
+### `cystack_60ccf6d5`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+    Country: AE
+IP: <redacted>
+System Language: English
+Processor: Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+Installed RAM: 16319 MB
+Operation System: Windows 11 24H2 build 26200 (64 Bit)
+Graphics card: NVIDIA GeForce GTX 1660 SUPER
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key: 
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+4
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1720x1080
+Wallpaper Hash: 4d10156e41790d76cd3e7133778b082af9242d78
+```
+
+### `cystack_6d229675`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 23 Nov 25
+Country: AE
+IP: <redacted>
+System Language: English
+Processor: 13th Gen Intel(R) Core(TM) i7-13700H
+Installed RAM: 16064 MB
+Operation System: Windows 11 24H2 build 26200 (64 Bit)
+Graphics card: Intel(R) UHD Graphics
+Domain Name: <redacted>
+Product Key: 
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+4
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1200
+Wallpaper Hash: 32a4f2aead9726b13a6b06d1170070a036adac8e
 ```
 
 ### `cystack_d377db09`

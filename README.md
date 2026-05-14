@@ -25,6 +25,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSInzExtStealer`](families/cs_inz_ext_stealer/) | 1 | 0 | `unknown` |
 | [`CSMSKDateStealer`](families/csmsk_date_stealer/) | 1 | 0 | `unknown` |
 | [`CSNewLogStealer`](families/cs_new_log_stealer/) | 1 | 0 | `unknown` |
+| [`CSPyHostTimeStealer`](families/cs_py_host_time_stealer/) | 1 | 1 | `unknown` |
 | [`CSWmicDumpStealer`](families/cs_wmic_dump_stealer/) | 1 | 0 | `unknown` |
 | [`Category Stealer`](families/category_stealer/) | 3 | 0 | `unknown` |
 | [`Cthulhu Stealer`](families/cthulhu_stealer/) | 3 | 0 | `high` |
@@ -35,9 +36,9 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`RL Stealer`](families/rl_stealer/) | 1 | 0 | `medium` |
 | [`Raccoon`](families/raccoon/) | 1 | 0 | `high` |
 | [`Redline`](families/redline/) | 17 | 0 | `high` |
-| [`RedlineLike Stealer`](families/redline_like_stealer/) | 7 | 0 | `unknown` |
+| [`RedlineLike Stealer`](families/redline_like_stealer/) | 10 | 0 | `unknown` |
 | [`StealC`](families/steal_c/) | 13 | 0 | `high` |
-| [`Vidar`](families/vidar/) | 1850 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 1855 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 2 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 3 | 0 | `high` |
 
