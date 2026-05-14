@@ -1,0 +1,34 @@
+{
+  "family": "CSMSKDateStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "City",
+        "Country",
+        "CountryCode",
+        "Date",
+        "GPU",
+        "IP",
+        "IP Timezone",
+        "Local Time",
+        "MAC",
+        "Machine",
+        "Machine UUID",
+        "Processor",
+        "RAM",
+        "Region Name",
+        "Windows",
+        "ZIP"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_79d81103",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

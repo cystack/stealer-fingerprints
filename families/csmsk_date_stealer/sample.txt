@@ -1,0 +1,20 @@
+Date: 18.10.2022 <ip> MSK
+Machine UUID: 91cc0abb57b01362
+Windows: Windows 10 Home
+Machine: DESKTOP-VT4F6K1/pc
+Local Time: 18.10.2022 <ip> (UTC+03:00) İstanbul
+Processor: Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz
+RAM: 8 GB
+GPU: NVIDIA GeForce GTX 1050 Ti
+MAC: <redacted>
+
+IP: <redacted>
+Country: Turkey
+CountryCode: TR
+Region Name: Istanbul
+City: <redacted>
+ZIP: <redacted>
+IP Timezone: +03:00
+
+MetaMask       -> %USERPROFILE%\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Local Extension Settings\\nkbihfbeogaeaoehlefnkodbefgpgknn
+Phantom        -> %USERPROFILE%\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Local Extension Settings\\bfnaelmomeimhlpmgjnjophhpkkoljpa

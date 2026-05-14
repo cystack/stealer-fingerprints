@@ -10,7 +10,7 @@ VPN, FTP, RDP, and messenger client data.
 
 **Also known as:** `X-FILES`, `DeerStealer`, `X-Files Stealer`
 
-**Variants observed:** 2
+**Variants observed:** 3
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -22,6 +22,61 @@ VPN, FTP, RDP, and messenger client data.
 - Messenger session data (Telegram, Discord, Steam)
 
 ## Variants
+
+### `cystack_7098e015`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU (Processor)`, `Computer Name`, `Country`, `Desktop Screenshot Taken`, `GPU (Display Devices)`, `Hardware ID`, `IP`, `Operating System`, `Processed parts`, `RAM (Memory)`, `Screens`, `Username`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+    Operation ID: 3a1b0807-9710-4e49-3ecf-15d29caf161f/3a1e1069-b1b7-7b83-d388-1a36f6319473
+
+IP: <redacted>
+Country: BD (Bangladesh)
+Operating System: Windows 11
+Username: <redacted>
+Computer Name: <redacted>
+Hardware ID: <redacted>
+CPU (Processor): AMD Ryzen 7 7435HS
+GPU (Display Devices): NVIDIA GeForce RTX 4050 Laptop GPU
+RAM (Memory): 
+Screens: 1920x1080
+Desktop Screenshot Taken: Yes
+
+Windows Processes [
+   System
+   Registry
+   smss.exe
+   csrss.exe
+   wininit.exe
+   services.exe
+   lsass.exe
+   svchost.exe
+   fontdrvhost.exe
+   WUDFHost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 239 more lines) ...]
+```
 
 ### `cystack_779697d2`
 

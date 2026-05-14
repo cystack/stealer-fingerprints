@@ -9,7 +9,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | Family | Variants | Channels | Top confidence |
 |---|---|---|---|
 | [`Acreed`](families/acreed/) | 1 | 0 | `high` |
-| [`Aetheris Stealer`](families/aetheris_stealer/) | 2 | 0 | `high` |
+| [`Aetheris Stealer`](families/aetheris_stealer/) | 3 | 0 | `high` |
 | [`Ailurophile`](families/ailurophile/) | 1 | 1 | `high` |
 | [`Blank Grabber`](families/blank_grabber/) | 5 | 0 | `high` |
 | [`BracketSection Stealer`](families/bracket_section_stealer/) | 1 | 0 | `unknown` |
@@ -23,6 +23,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSEnvVarDumpStealer`](families/cs_env_var_dump_stealer/) | 1 | 1 | `unknown` |
 | [`CSGADSPanelStealer`](families/csgads_panel_stealer/) | 2 | 0 | `unknown` |
 | [`CSInzExtStealer`](families/cs_inz_ext_stealer/) | 1 | 0 | `unknown` |
+| [`CSMSKDateStealer`](families/csmsk_date_stealer/) | 1 | 0 | `unknown` |
 | [`CSNewLogStealer`](families/cs_new_log_stealer/) | 1 | 0 | `unknown` |
 | [`CSWmicDumpStealer`](families/cs_wmic_dump_stealer/) | 1 | 0 | `unknown` |
 | [`Category Stealer`](families/category_stealer/) | 3 | 0 | `unknown` |
@@ -36,9 +37,9 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Redline`](families/redline/) | 17 | 0 | `high` |
 | [`RedlineLike Stealer`](families/redline_like_stealer/) | 7 | 0 | `unknown` |
 | [`StealC`](families/steal_c/) | 13 | 0 | `high` |
-| [`Vidar`](families/vidar/) | 1829 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 1850 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 2 | 0 | `high` |
-| [`XFiles`](families/x_files/) | 2 | 0 | `high` |
+| [`XFiles`](families/x_files/) | 3 | 0 | `high` |
 
 ## Contributing
 

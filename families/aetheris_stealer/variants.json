@@ -67,6 +67,36 @@
       "fingerprint_id": "cystack_3e0869cd",
       "panel_brand": null,
       "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Name",
+        "Clipboard",
+        "Default Gateway",
+        "External IP",
+        "Hwid",
+        "Input ISO",
+        "Internal IP",
+        "Logical Cores",
+        "Machine",
+        "Now",
+        "OS Arch",
+        "OS Build",
+        "OS Product",
+        "RAM Available (MB)",
+        "RAM Total (MB)",
+        "User",
+        "User Domain"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_5f8f9b68",
+      "panel_brand": null,
+      "synthetic": true
     }
   ]
 }

@@ -8,7 +8,7 @@ sections.
 
 **Also known as:** `Aetheris Stealer`
 
-**Variants observed:** 2
+**Variants observed:** 3
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -126,6 +126,59 @@ AMD Radeon(TM) Graphics
 
 [Basic]
 [... truncated; full sample at ``sample.txt`` (approx. 1 more lines) ...]
+```
+
+### `cystack_5f8f9b68`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Name`, `Clipboard`, `Default Gateway`, `External IP`, `Hwid`, `Input ISO`, `Internal IP`, `Logical Cores`, `Machine`, `Now`, `OS Arch`, `OS Build`, `OS Product`, `RAM Available (MB)`, `RAM Total (MB)`, `User`, `User Domain`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+
+  
+ __  __   _ 
+ \ \/ /___  _ __ (_)_   _ _ __ ___  
+  \  // _ \| '__|| | | | | '_ ` _ \ 
+  /  \ (_) | |   | | |_| | | | | | |
+ /_/\_\___/|_|   |_|\__,_|_| |_| |_|
+ 
+   Developer @aesxor
+[User Info]
+User: Administrator
+Machine: DESKTOP-GC2KJGF
+Now: 2025-12-27 <ip>
+Input ISO: ko
+Hwid: <redacted>
+Clipboard:
+
+[Network]
+External IP: <redacted>
+Internal IP: <ip>
+Default Gateway: <ip>
+
+[System]
+OS Product: Windows 10 Pro 2009
+OS Build: 19045
+OS Arch: x64
+CPU Name: Intel(R) Core(TM) i5-9600KF CPU @ 3.70GHz
+Logical Cores: 6
+RAM Total (MB): 16326
+RAM Available (MB): 9908
+
+[Drives]
+C: Fixed FS:NTFS Size:465GB Free:54GB
+
+[GPU]
+NVIDIA GeForce RTX 2060
+
+[Basic]
+User Domain: DESKTOP-GC2KJGF
 ```
 
 ## Detection
