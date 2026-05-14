@@ -8,7 +8,7 @@ even before content matches.
 
 **Also known as:** `PXAStealer`
 
-**Variants observed:** 4
+**Variants observed:** 5
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -75,6 +75,25 @@ IP: <redacted>
 Username: <redacted>
 AntiVirus: Windows Defender
 Data Information: CK:5133|PW:308|AF:1222|CC:0|TK:3|FB:1|Sites:3|Wallets:0|Apps:0
+```
+
+### `cystack_b7ba88f7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AntiVirus`, `Country`, `Data Information`, `Username`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+    IP: <redacted>
+Country: 🇦🇪 AE - United Arab Emirates
+Username: <redacted>
+AntiVirus: Windows Defender
+Data Information: CK:7554|PW:118|AF:4307|CC:0|TK:2|FB:1|Sites:8|Wallets:0|Apps:1
 ```
 
 ### `cystack_c65f37b2`

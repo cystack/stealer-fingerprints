@@ -9,7 +9,7 @@ the underlying field layout intact.
 
 **Also known as:** `redline`, `redline-extended`
 
-**Variants observed:** 10
+**Variants observed:** 12
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -320,6 +320,75 @@ UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1920x1200
 Wallpaper Hash: 32a4f2aead9726b13a6b06d1170070a036adac8e
+```
+
+### `cystack_c47c7f16`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 19 Nov 25
+Country: AE
+IP: <redacted>
+System Language: English
+Processor: AMD Ryzen 7 5800H with Radeon Graphics         
+Installed RAM: 28524 MB
+Operation System: Windows 11 23H2 build 22631 (64 Bit)
+Graphics card: AMD Radeon(TM) Graphics
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key: 
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+4
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+Wallpaper Hash: 0f8bee011383a069bd2d1fbd678fba86021b5036
+```
+
+### `cystack_c6375578`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+
+Country: AE
+IP: <redacted>
+System Language: English
+Processor: Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+Installed RAM: 16227 MB
+Operation System: Windows 10 22H2 build 19045 (64 Bit)
+Graphics card: Intel(R) UHD Graphics 620
+Computer Name: <redacted>
+Domain Name: <redacted>
+Product Key: 
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC-8
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+Wallpaper Hash: 028f4ff456fd2615687e34bf4043bdbe5364a42e
 ```
 
 ### `cystack_d377db09`

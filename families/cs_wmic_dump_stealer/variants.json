@@ -7,6 +7,8 @@
       "distribution_channel": null,
       "field_keys": [
         "Ethernet adapter Ethernet",
+        "Ethernet adapter vEthernet (Ethernet)",
+        "Ethernet adapter vEthernet (Wi-Fi)",
         "Tunnel adapter 6to4 Adapter",
         "Wireless LAN adapter Wi-Fi"
       ],

@@ -1,0 +1,85 @@
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: AF
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 15.0 (24A335)
+  Kernel Version: Darwin 24.0.0
+  Boot Volume: Macintosh HD
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 10 hours, 37 minutes
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: MacBook Pro
+  Model Identifier: MacBookPro16,1
+  Processor Name: 8-Core Intel Core i9
+  Processor Speed: 2.4 GHz
+  Number of Processors: 1
+  Total Number of Cores: 8
+  L2 Cache (per Core): 256 KB
+  L3 Cache: 16 MB
+  Hyper-Threading Technology: Enabled
+  Memory: 64 GB
+  System Firmware Version: 2075.<ip> (iBridge: 22.16.15072.0.0,0)
+  OS Loader Version: 582~1023
+  Serial Number (system): C02DV8JLMD6T
+  Hardware UUID: 12844F3C-078A-59F1-9034-B1820F8F7D08
+  Provisioning UDID: 12844F3C-078A-59F1-9034-B1820F8F7D08
+  Activation Lock Status: Enabled
+
+Graphics/Displays:
+
+Intel UHD Graphics 630:
+
+  Chipset Model: Intel UHD Graphics 630
+  Type: GPU
+  Bus: Built-In
+  VRAM (Dynamic, Max): 1536 MB
+  Vendor: Intel
+  Device ID: 0x3e9b
+  Revision ID: 0x0002
+  Automatic Graphics Switching: Supported
+  gMux Version: 5.0.0
+  Metal Support: Metal 3
+
+AMD Radeon Pro 5500M:
+
+  Chipset Model: AMD Radeon Pro 5500M
+  Type: GPU
+  Bus: PCIe
+  PCIe Lane Width: x16
+  VRAM (Total): 8 GB
+  Vendor: AMD (0x1002)
+  Device ID: 0x7340
+  Revision ID: 0x0040
+  ROM Revision: 113-D3220E-190
+  VBIOS Version: 113-D32206U1-020
+  Option ROM Version: 113-D32206U1-020
+  EFI Driver Version: 01.A1.190
+  Automatic Graphics Switching: Supported
+  gMux Version: 5.0.0
+  Metal Support: Metal 3
+  Displays:
+Color LCD:
+  Display Type: Built-In Retina LCD
+  Resolution: 3072 x 1920 Retina
+  Framebuffer Depth: 24-Bit Color (ARGB8888)
+  Main Display: Yes
+  Mirror: Off
+  Online: Yes
+  Automatically Adjust Brightness: Yes
+  Connection Type: Internal

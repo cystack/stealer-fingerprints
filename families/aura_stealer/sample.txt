@@ -1,0 +1,267 @@
+AURA v1.5.2
+
+HWID: <redacted>
+Launched at: 
+   Local time: 2025-10-26 <ip>
+   UTC time: 2025-10-26 <ip>
+Location: C:\Windows\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe
+Run as Admin: No
+User in Admins group: Yes
+Running on: Desktop PC
+
+[System Info]
+   OS Name: Windows 10 Pro
+   Edition: Professional
+   Version: 10.0.22621/1/x64
+   Build Number: 22621
+   Build Lab: 22621.ni_release.220506-1250
+   Install Date: May 30 2025 <ip>
+   Product Id: 00330-80000-00000-AA052
+   Architecture: x64
+   Language: id-ID
+   Keyboard Layouts: en-US
+   Time Zone: Asia/Dubai UTC+04:00
+   Computer Name: <redacted>
+   User Name: <redacted>
+   Screen resolution: 1440x900
+
+[Hardware]
+   CPU: Intel(R) Core(TM) i3-4150 CPU @ 3.50GHz (4 cores)
+   RAM: 8110 MB (Used 5923 MB)
+   GPUs: Intel(R) HD Graphics 4400 
+
+[Processes List]
+   [System Process] [0]
+   System [4]
+   Registry [104]
+   smss.exe [504]
+   csrss.exe [716]
+   wininit.exe [808]
+   csrss.exe [816]
+   services.exe [880]
+   lsass.exe [900]
+   winlogon.exe [968]
+   svchost.exe [804]
+   fontdrvhost.exe [688]
+   fontdrvhost.exe [936]
+   svchost.exe [1132]
+   svchost.exe [1180]
+   svchost.exe [1272]
+   svchost.exe [1332]
+   svchost.exe [1356]
+   svchost.exe [1368]
+   svchost.exe [1444]
+   svchost.exe [1556]
+   svchost.exe [1604]
+   svchost.exe [1624]
+   svchost.exe [1680]
+   svchost.exe [1688]
+   svchost.exe [1704]
+   svchost.exe [1716]
+   dwm.exe [1724]
+   svchost.exe [1980]
+   svchost.exe [2008]
+   svchost.exe [1712]
+   svchost.exe [1864]
+   igfxCUIService.exe [2056]
+   Memory Compression [2080]
+   svchost.exe [2256]
+   svchost.exe [2268]
+   svchost.exe [2288]
+   svchost.exe [2316]
+   svchost.exe [2396]
+   svchost.exe [2464]
+   svchost.exe [2688]
+   svchost.exe [2704]
+   svchost.exe [2908]
+   svchost.exe [2980]
+   svchost.exe [3024]
+   svchost.exe [2652]
+   svchost.exe [2800]
+   svchost.exe [3116]
+   svchost.exe [3124]
+   svchost.exe [3284]
+   svchost.exe [3312]
+   svchost.exe [3360]
+   svchost.exe [3368]
+   svchost.exe [3392]
+   spoolsv.exe [3400]
+   svchost.exe [3720]
+   mDNSResponder.exe [3784]
+   OfficeClickToRun.exe [3804]
+   svchost.exe [3816]
+   WsidService.exe [3828]
+   svchost.exe [3840]
+   svchost.exe [3884]
+   servicehost.exe [3988]
+   svchost.exe [3996]
+   MpDefenderCoreService.exe [4016]
+   AppleMobileDeviceService.exe [4040]
+   ss_conn_service.exe [4072]
+   ss_conn_service2.exe [3652]
+   UltraViewer_Service.exe [3536]
+   svchost.exe [3304]
+   MsMpEng.exe [4064]
+   svchost.exe [4112]
+   AggregatorHost.exe [5696]
+   svchost.exe [6056]
+   svchost.exe [5212]
+   svchost.exe [2844]
+   svchost.exe [6312]
+   svchost.exe [7056]
+   uihost.exe [2332]
+   sihost.exe [5820]
+   svchost.exe [6496]
+   svchost.exe [6652]
+   svchost.exe [6760]
+   svchost.exe [6780]
+   PresentationFontCache.exe [6696]
+   SecurityHealthServices.exe [6964]
+   SystemSettingsDS.exe [7004]
+   taskhostw.exe [6944]
+   svchost.exe [7024]
+   explorer.exe [7668]
+   igfxEM.exe [8104]
+   igfxHK.exe [8112]
+   igfxTray.exe [8132]
+   svchost.exe [6552]
+   SearchHost.exe [8168]
+   StartMenuExperienceHost.exe [5860]
+   Widgets.exe [7140]
+   RuntimeBroker.exe [1296]
+   RuntimeBroker.exe [5172]
+   svchost.exe [8232]
+   WidgetService.exe [8344]
+   ShellExperienceHost.exe [8632]
+   LocationNotificationWindows.exe [8756]
+   dllhost.exe [8784]
+   svchost.exe [9080]
+   ctfmon.exe [9488]
+   SearchIndexer.exe [9888]
+   SecurityHealthSystray.exe [9300]
+   SecurityHealthService.exe [10188]
+   RtkNGUI64.exe [3632]
+   svchost.exe [6932]
+   svchost.exe [5508]
+   MoUsoCoreWorker.exe [9880]
+   svchost.exe [8492]
+   svchost.exe [2016]
+   svchost.exe [1668]
+   svchost.exe [6044]
+   OneDrive.exe [8092]
+   DeskRest.exe [2452]
+   CrossDeviceService.exe [4484]
+   RuntimeBroker.exe [708]
+   Copilot.exe [2820]
+   WebViewHost.exe [2252]
+   RuntimeBroker.exe [1316]
+   msedgewebview2.exe [2436]
+   msedgewebview2.exe [3900]
+   msedgewebview2.exe [2092]
+   msedgewebview2.exe [5684]
+   msedgewebview2.exe [5876]
+   msedgewebview2.exe [5316]
+   svchost.exe [4144]
+   ApplicationFrameHost.exe [8296]
+   SystemSettings.exe [3232]
+   svchost.exe [6000]
+   svchost.exe [6168]
+   svchost.exe [6180]
+   msedgewebview2.exe [10688]
+   msedgewebview2.exe [10724]
+   msedgewebview2.exe [10904]
+   msedgewebview2.exe [10912]
+   msedgewebview2.exe [11048]
+   msedgewebview2.exe [11136]
+   svchost.exe [10452]
+   svchost.exe [11596]
+   OneDrive.Sync.Service.exe [4200]
+   Borneo Schematics.exe [9028]
+   RuntimeBroker.exe [11820]
+   svchost.exe [10464]
+   svchost.exe [6024]
+   svchost.exe [9088]
+   3uTools.exe [8604]
+   taskhostw.exe [9320]
+   QtWebEngineProcess.exe [12664]
+   svchost.exe [6752]
+   svchost.exe [6296]
+   FileCoAuth.exe [2280]
+   svchost.exe [8364]
+   dllhost.exe [8900]
+   UnlockTool-2025-10-24-0.exe [4232]
+   DataExchangeHost.exe [696]
+   WmiPrvSE.exe [252]
+   msedge.exe [2384]
+   msedge.exe [1416]
+   msedge.exe [12908]
+   msedge.exe [10388]
+   msedge.exe [6424]
+   msedge.exe [13272]
+   msedge.exe [12376]
+   SamFwTool.exe [13000]
+   adb.exe [12860]
+   chrome.exe [12072]
+   chrome.exe [13300]
+   chrome.exe [9532]
+   chrome.exe [10732]
+   chrome.exe [12476]
+   chrome.exe [12436]
+   chrome.exe [4704]
+   chrome.exe [11676]
+   chrome.exe [7540]
+   chrome.exe [9420]
+   chrome.exe [12752]
+   chrome.exe [12236]
+   chrome.exe [9004]
+   svchost.exe [9156]
+   WUDFHost.exe [12536]
+   svchost.exe [8744]
+   chrome.exe [1888]
+   Telegram.exe [9856]
+   smartscreen.exe [13188]
+   svchost.exe [6140]
+   chrome.exe [9984]
+   msedge.exe [8876]
+   msedge.exe [4204]
+   RuntimeBroker.exe [12384]
+   msedge.exe [3100]
+   RegAsm.exe [7180]
+   explorer.exe [13256]
+
+[Installed Software]
+   3uTools (3.27.015)
+   Borneo Schematics (<ip>)
+   F3arRa1n Tool v7.1.4.0
+   Google Chrome (141.0.7390.123)
+   IM-Magic Partition Resizer Free  ()
+   MFT
+   Microsoft Edge (141.0.3537.99)
+   Microsoft Edge WebView2 Runtime (141.0.3537.99)
+   MRT Tool V6.1.0 (V6.1.0)
+   Windows 11 Installation Assistant (1.4.19041.5003)
+   Internet Download Manager version 7.1 (7.1)
+   The-ghost tool version 3.0.0 (3.0.0)
+   WebAdvisor by McAfee (4.1.1.1076)
+   Microsoft Visual C++ 2005 Redistributable (8.0.61187)
+   Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.40664 (12.0.40664)
+   HFZ Activator A12+ Premium V1.0 (1.0.0)
+   Microsoft Visual C++ 2022 X86 Additional Runtime - 14.32.31332 (14.32.31332)
+   Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161 (9.0.30729.6161)
+   Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.32.31332 (14.32.31332)
+   Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61135 (11.0.61135)
+   Apple Software Update (<ip>)
+   SamFw Tool (4.9)
+   iBypass LPro Premium V5.0 (5.0.0)
+   Minimal ADB and Fastboot version 1.4.3 (1.4.3)
+   Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61135 (11.0.61135)
+   LG Mobile Drivers (4.2.0)
+   Microsoft Visual Basic/C++ Runtime (x86) (1.1.0)
+   Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.40664 (12.0.40664)
+   Qualcomm USB Drivers For Windows (1.00.65)
+   UltraViewer version 6.6.113 (6.6.113)
+   Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219 (10.0.40219)
+   Intel(R) Processor Graphics (20.19.15.4835)
+   Intel(R) Processor Graphics (20.19.15.4835)
+   Realtek High Definition Audio Driver (6.0.1.6086)
+

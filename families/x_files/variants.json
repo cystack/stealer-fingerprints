@@ -7,6 +7,30 @@
       "distribution_channel": null,
       "field_keys": [
         "CPU (Processor)",
+        "Country",
+        "Desktop Screenshot Taken",
+        "GPU (Display Devices)",
+        "Hardware ID",
+        "IP",
+        "Operating System",
+        "Operation ID",
+        "RAM (Memory)",
+        "Screens",
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_1a8fdd10",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU (Processor)",
         "Computer Name",
         "Country",
         "Desktop Screenshot Taken",

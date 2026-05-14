@@ -8,9 +8,11 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 
 | Family | Variants | Channels | Top confidence |
 |---|---|---|---|
+| [`AMOS Stealer`](families/amos_stealer/) | 2 | 0 | `medium` |
 | [`Acreed`](families/acreed/) | 1 | 0 | `high` |
-| [`Aetheris Stealer`](families/aetheris_stealer/) | 3 | 0 | `high` |
+| [`Aetheris Stealer`](families/aetheris_stealer/) | 4 | 0 | `high` |
 | [`Ailurophile`](families/ailurophile/) | 1 | 1 | `high` |
+| [`AuraStealer`](families/aura_stealer/) | 1 | 0 | `high` |
 | [`Blank Grabber`](families/blank_grabber/) | 5 | 0 | `high` |
 | [`BracketSection Stealer`](families/bracket_section_stealer/) | 1 | 0 | `unknown` |
 | [`CSBareVersionStealer`](families/cs_bare_version_stealer/) | 1 | 1 | `unknown` |
@@ -31,16 +33,16 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Cthulhu Stealer`](families/cthulhu_stealer/) | 3 | 0 | `high` |
 | [`Lumma`](families/lumma/) | 1 | 0 | `high` |
 | [`MacSync`](families/mac_sync/) | 1 | 0 | `high` |
-| [`PXA Stealer`](families/pxa_stealer/) | 4 | 0 | `high` |
+| [`PXA Stealer`](families/pxa_stealer/) | 5 | 0 | `high` |
 | [`PureLogs`](families/pure_logs/) | 1 | 0 | `high` |
 | [`RL Stealer`](families/rl_stealer/) | 1 | 0 | `medium` |
 | [`Raccoon`](families/raccoon/) | 1 | 0 | `high` |
 | [`Redline`](families/redline/) | 17 | 0 | `high` |
-| [`RedlineLike Stealer`](families/redline_like_stealer/) | 10 | 0 | `unknown` |
+| [`RedlineLike Stealer`](families/redline_like_stealer/) | 12 | 0 | `unknown` |
 | [`StealC`](families/steal_c/) | 13 | 0 | `high` |
-| [`Vidar`](families/vidar/) | 1867 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 1888 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 2 | 0 | `high` |
-| [`XFiles`](families/x_files/) | 3 | 0 | `high` |
+| [`XFiles`](families/x_files/) | 4 | 0 | `high` |
 
 ## Contributing
 

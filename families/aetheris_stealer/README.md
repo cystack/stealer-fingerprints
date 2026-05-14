@@ -8,7 +8,7 @@ sections.
 
 **Also known as:** `Aetheris Stealer`
 
-**Variants observed:** 3
+**Variants observed:** 4
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -179,6 +179,60 @@ NVIDIA GeForce RTX 2060
 
 [Basic]
 User Domain: DESKTOP-GC2KJGF
+```
+
+### `cystack_7d0668ba`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Name`, `Clipboard`, `Default Gateway`, `External IP`, `Hwid`, `Input ISO`, `Internal IP`, `Logical Cores`, `Machine`, `Now`, `OS Arch`, `OS Build`, `OS Product`, `RAM Available (MB)`, `RAM Total (MB)`, `Screen Resolution`, `Step 2`, `Step 3`, `Step 4`, `Step 5`, `User`, `User Domain`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+[User Info]
+User: Admin
+Machine: SAGAR
+Now: 2025-12-27 <ip>
+Input ISO: en
+Screen Resolution: 1920x1080
+Hwid: <redacted>
+Clipboard: Step 1: Install Prerequisites - Ensure your system meets requirements (Windows 10/11, MacOS 10.14+, 4GB RAM).
+Step 2: Load the Resources - Place files in the application directory and launch Filmora.
+Step 3: Access Interface - Use the main menu to explore AI and editing tools.
+Step 4: Create Videos - Start with templates or edit your clips.
+Step 5: Export Projects - Save in 4K or share on social media.
+
+[Network]
+External IP: <redacted>
+Internal IP: <ip>
+Default Gateway: <ip>
+
+[System]
+OS Product: Windows 10 Home Single Language 2009
+OS Build: 19045
+OS Arch: x64
+CPU Name: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+Logical Cores: 8
+RAM Total (MB): 8058
+RAM Available (MB): 4447
+
+[Drives]
+C: Fixed FS:NTFS Size:237GB Free:136GB
+D: Fixed FS:NTFS Size:145GB Free:109GB
+E: Fixed FS:NTFS Size:196GB Free:168GB
+F: Fixed FS:NTFS Size:196GB Free:123GB
+G: Fixed FS:NTFS Size:196GB Free:165GB
+H: Fixed FS:NTFS Size:196GB Free:194GB
+
+[GPU]
+Intel(R) UHD Graphics 620
+
+[Basic]
+User Domain: SAGAR
 ```
 
 ## Detection
