@@ -1,0 +1,26 @@
+Build Date: Oct 26 2025
+Configuration: 
+Execution Path: C:\WINDOWS\SysWOW64\explorer.exe
+Elevated: No
+Computer Name: <redacted>
+User Name: <redacted>
+User Language: en-CA
+Netbios: DESKTOP-GQJ1LJE
+Operation System: Windows 11 Pro 10.0.26100 (x64)
+Install Date: 04.01.2025 <ip>
+System Date: 26.10.2025 <ip>
+Time Zone: UTC-4
+Antivirus:Windows Defender
+HWID: <redacted>
+Processor: AMD Ryzen 7 7800X3D 8-Core Processor           
+Processor Threads: 16
+Processor Cores: 8
+Graphics Card:
+	NVIDIA GeForce RTX 4070
+Installed RAM: 32768MB
+Display Resolution: 3440x1440
+
+IP Address: <redacted>
+Time: 27.10.2025 <ip> (sig:1761514221.5438bbfd0ea358414d330be54eb33e1c)
+Country: CA
+User: z [newjisn]

@@ -8,7 +8,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 
 | Family | Variants | Channels | Top confidence |
 |---|---|---|---|
-| [`AMOS Stealer`](families/amos_stealer/) | 10 | 0 | `medium` |
+| [`AMOS Stealer`](families/amos_stealer/) | 12 | 0 | `medium` |
 | [`Acreed`](families/acreed/) | 1 | 0 | `high` |
 | [`Aetheris Stealer`](families/aetheris_stealer/) | 6 | 0 | `high` |
 | [`Ailurophile`](families/ailurophile/) | 1 | 1 | `high` |
@@ -25,24 +25,26 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSDataCollectedStealer`](families/cs_data_collected_stealer/) | 1 | 0 | `unknown` |
 | [`CSEmojiInfoStealer`](families/cs_emoji_info_stealer/) | 1 | 0 | `unknown` |
 | [`CSEnvVarDumpStealer`](families/cs_env_var_dump_stealer/) | 1 | 1 | `unknown` |
+| [`CSFacebookMarketStealer`](families/cs_facebook_market_stealer/) | 1 | 1 | `unknown` |
 | [`CSGADSPanelStealer`](families/csgads_panel_stealer/) | 3 | 0 | `unknown` |
 | [`CSInzExtStealer`](families/cs_inz_ext_stealer/) | 1 | 0 | `unknown` |
 | [`CSMSKDateStealer`](families/csmsk_date_stealer/) | 1 | 0 | `unknown` |
 | [`CSNewLogStealer`](families/cs_new_log_stealer/) | 1 | 0 | `unknown` |
 | [`CSPyHostTimeStealer`](families/cs_py_host_time_stealer/) | 1 | 1 | `unknown` |
+| [`CSSigInfoStealer`](families/cs_sig_info_stealer/) | 1 | 1 | `low` |
 | [`CSWmicDumpStealer`](families/cs_wmic_dump_stealer/) | 1 | 0 | `unknown` |
 | [`Category Stealer`](families/category_stealer/) | 3 | 0 | `unknown` |
-| [`Cthulhu Stealer`](families/cthulhu_stealer/) | 5 | 0 | `high` |
+| [`Cthulhu Stealer`](families/cthulhu_stealer/) | 6 | 0 | `high` |
 | [`Lumma`](families/lumma/) | 1 | 0 | `high` |
 | [`MacSync`](families/mac_sync/) | 1 | 0 | `high` |
-| [`PXA Stealer`](families/pxa_stealer/) | 5 | 0 | `high` |
+| [`PXA Stealer`](families/pxa_stealer/) | 6 | 0 | `high` |
 | [`PureLogs`](families/pure_logs/) | 1 | 0 | `high` |
 | [`RL Stealer`](families/rl_stealer/) | 1 | 0 | `medium` |
 | [`Raccoon`](families/raccoon/) | 1 | 0 | `high` |
 | [`Redline`](families/redline/) | 17 | 0 | `high` |
 | [`RedlineLike Stealer`](families/redline_like_stealer/) | 12 | 0 | `unknown` |
 | [`StealC`](families/steal_c/) | 13 | 0 | `high` |
-| [`Vidar`](families/vidar/) | 2033 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 2277 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 4 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 5 | 0 | `high` |
 

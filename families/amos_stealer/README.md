@@ -23,7 +23,7 @@ than inlined into this summary.
 
 **Also known as:** `Atomic Stealer`, `Atomic macOS Stealer`, `AMOS`, `Atomic Mac`
 
-**Variants observed:** 10
+**Variants observed:** 12
 **Top attribution confidence:** `medium`
 
 ## Targets
@@ -530,6 +530,116 @@ Hardware Overview:
 
 Graphics/Displays:
 [... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
+```
+
+### `cystack_e68b8a47`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`Apple M1`, `City`, `Color LCD`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `KG273`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: BR
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 15.6 (24G84)
+  Kernel Version: Darwin 24.6.0
+  Boot Volume: Macintosh HD
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 4 horas e 56 minutos
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: MacBook Pro
+  Model Identifier: MacBookPro17,1
+  Model Number: MYD82LL/A
+  Chip: Apple M1
+  Total Number of Cores: 8 (4 performance and 4 efficiency)
+  Memory: 8 GB
+  System Firmware Version: 11881.140.96
+  OS Loader Version: 11881.140.96
+  Serial Number (system): C02FJ0QMQ05D
+  Hardware UUID: DF1FB436-7521-5970-A55D-F0F848ABEBDD
+  Provisioning UDID: 00008103-000611581479001E
+  Activation Lock Status: Enabled
+
+Graphics/Displays:
+[... truncated; full sample at ``sample.txt`` (approx. 24 more lines) ...]
+```
+
+### `cystack_f1d98937`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`Apple M4 Pro`, `City`, `Color LCD`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: CA
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 15.3 (24D60)
+  Kernel Version: Darwin 24.3.0
+  Boot Volume: Macintosh HD
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 29 days, 10 hours, 10 minutes
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: MacBook Pro
+  Model Identifier: Mac16,8
+  Model Number: MX2H3LL/A
+  Chip: Apple M4 Pro
+  Total Number of Cores: 12 (8 performance and 4 efficiency)
+  Memory: 24 GB
+  System Firmware Version: 11881.81.2
+  OS Loader Version: 11881.81.2
+  Serial Number (system): JQ2QJ0CVMG
+  Hardware UUID: BAAEFB12-8872-5D9F-8288-AE25A4A9B6B1
+  Provisioning UDID: 00006040-000E716E1E00801C
+  Activation Lock Status: Enabled
+
+Graphics/Displays:
+[... truncated; full sample at ``sample.txt`` (approx. 19 more lines) ...]
 ```
 
 ### `cystack_ff62cc07`

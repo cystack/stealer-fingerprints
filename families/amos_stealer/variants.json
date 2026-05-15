@@ -251,6 +251,59 @@
         "Hardware",
         "Hardware Overview",
         "IP",
+        "KG273",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_e68b8a47",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Apple M4 Pro",
+        "City",
+        "Color LCD",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_f1d98937",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Apple M1",
+        "City",
+        "Color LCD",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
         "MetaMask Info",
         "Software",
         "System Software Overview",

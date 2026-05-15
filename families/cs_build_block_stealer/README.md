@@ -46,7 +46,7 @@ than the log-template level - none match.
 **Attribution confidence:** `unknown`
 
 **Field keys:**
-`Active window`, `Admin rights`, `Build Comment`, `Build Path`, `Build Version`, `CPU`, `GEO`, `GPU`, `HWID`, `IP`, `Memory`, `OS`, `PC Name`, `User Name`, `User time`
+`Active window`, `Admin rights`, `Build Comment`, `Build ID`, `Build Path`, `Build Version`, `CPU`, `GEO`, `GPU`, `HWID`, `IP`, `Memory`, `OS`, `PC Name`, `User Name`, `User time`
 
 **Filenames:** `UserInformation.txt`
 

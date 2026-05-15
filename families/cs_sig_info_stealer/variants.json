@@ -1,0 +1,42 @@
+{
+  "family": "CSSigInfoStealer",
+  "variants": [
+    {
+      "attribution_confidence": "low",
+      "banner_strings": [],
+      "distribution_channel": "@BRADLOGS",
+      "field_keys": [
+        "Antivirus",
+        "Build Date",
+        "Computer Name",
+        "Configuration",
+        "Country",
+        "Display Resolution",
+        "Elevated",
+        "Execution Path",
+        "Graphics Card",
+        "HWID",
+        "IP Address",
+        "Install Date",
+        "Installed RAM",
+        "Netbios",
+        "Operation System",
+        "Processor",
+        "Processor Cores",
+        "Processor Threads",
+        "System Date",
+        "Time",
+        "Time Zone",
+        "User",
+        "User Language",
+        "User Name"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "fingerprint_id": "cystack_6efeb6b8",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

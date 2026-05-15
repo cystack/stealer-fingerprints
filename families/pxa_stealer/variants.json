@@ -25,6 +25,22 @@
       "distribution_channel": null,
       "field_keys": [
         "AntiVirus",
+        "Data Information",
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_51cd69b2",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AntiVirus",
         "Country",
         "Data Information",
         "IP",

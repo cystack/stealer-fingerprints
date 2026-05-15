@@ -8,7 +8,7 @@ Observed in `@bugatti_cloud` aggregator packs.
 
 **Also known as:** `Cthulhu macOS Stealer`
 
-**Variants observed:** 5
+**Variants observed:** 6
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -229,6 +229,61 @@ Hardware:
       Hardware UUID: 775BE00F-5114-51B3-B223-AB901BC3A36C
       Provisioning UDID: 39b19135a46f38d132963a1166ad9b36d715325c
       Activation Lock Status: Disabled
+```
+
+### `cystack_d883046a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Apple M1 Pro`, `BuildID`, `City`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+BuildID:F2
+
+Userinfo:
+Country: CA
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 15.5 (24F74)
+  Kernel Version: Darwin 24.5.0
+  Boot Volume: Macintosh HD
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 20 minutes, 36 seconds
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: MacBook Pro
+  Model Identifier: MacBookPro18,1
+  Model Number: MK193LL/A
+  Chip: Apple M1 Pro
+  Total Number of Cores: 10 (8 performance and 2 efficiency)
+  Memory: 16 GB
+  System Firmware Version: 11881.121.1
+  OS Loader Version: 11881.121.1
+  Serial Number (system): YFJ2CQVJ7H
+  Hardware UUID: 2FFC939F-255F-52F7-A917-6DA259D0BB3C
+  Provisioning UDID: 00006000-001A258611C3801E
+  Activation Lock Status: Enabled
+
+Graphics/Displays:
+[... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
 ```
 
 ### `cystack_f6f1b312`
