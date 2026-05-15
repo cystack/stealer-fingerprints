@@ -18,7 +18,7 @@ Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 
 **Also known as:** `BlankGrabber`, `Blank-c/Blank-Grabber`
 
-**Variants observed:** 8
+**Variants observed:** 9
 **Top attribution confidence:** `high`
 **Operator panel brands:** `Dead`
 
@@ -33,6 +33,61 @@ Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 - Game launcher sessions (Epic, Steam, Uplay, Battle.net, Growtopia)
 
 ## Variants
+
+### `cystack_22dec19e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Autofills`, `Blank Grabber got a new victim`, `CPU`, `Cellular Network`, `Common Files`, `Computer OS`, `Cookies`, `Country`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `IP`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Proxy/VPN`, `Region`, `Reverse DNS`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Telegram Sessions`, `Timezone`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+Blank Grabber got a new victim: jessi
+
+IP Info
+
+IP: <redacted>
+Region: Santiago Metropolitan
+Country: Chile
+Timezone: America/Santiago
+
+Cellular Network:    ❎
+Proxy/VPN:           ❎
+Reverse DNS: 181-212-27-33.baf.movistar.cl
+
+System Info
+Computer OS: Unable to detect OS
+Total Memory: Unable to detect total memory
+UUID: Unable to detect UUID
+CPU: Intel64 Family 6 Model 186 Stepping 3, GenuineIntel
+GPU: Unable to detect GPU
+Product Key: FHDPX-JNVDW-FF3RD-HPDKC-MP2TB
+
+Grabbed Info
+Discord Accounts : 0
+Passwords : 61
+Cookies : 0
+History : 0
+Autofills : 0
+Roblox Cookies : 0
+Telegram Sessions : 0
+Common Files : 0
+Wallets : 0
+Wifi Passwords : 0
+Webcam : 0
+Minecraft Sessions : 0
+Epic Session : No
+Steam Session : No
+Uplay Session : No
+Battle.Net Session : No
+Growtopia Session : No
+Screenshot : Yes
+[... truncated; full sample at ``sample.txt`` (approx. 1 more lines) ...]
+```
 
 ### `cystack_2ec99495`
 

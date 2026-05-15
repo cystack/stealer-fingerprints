@@ -22,7 +22,7 @@ per the injection chain documented by Chen Aviani and Foresiet.
 
 **Also known as:** `Aura Stealer`, `AuraStealer`
 
-**Variants observed:** 1
+**Variants observed:** 2
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -87,6 +87,61 @@ Running on: Desktop PC
    wininit.exe [808]
    csrss.exe [816]
 [... truncated; full sample at ``sample.txt`` (approx. 226 more lines) ...]
+```
+
+### `cystack_e35cafcc`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Launched at`, `Location`, `Run as Admin`, `Running on`, `User in Admins group`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+AURA v1.5.2
+
+Launched at: 
+   Local time: 2025-11-13 <ip>
+   UTC time: 2025-11-13 <ip>
+Location: C:\WINDOWS\SysWOW64\WindowsPowerShell\v1.0\powershell.exe
+Run as Admin: No
+User in Admins group: Yes
+Running on: Laptop
+
+[System Info]
+   OS Name: Windows 10 Enterprise
+   Edition: Enterprise
+   Version: 10.0.19045/1/x64
+   Build Number: 19045
+   Build Lab: 19041.vb_release.191206-1406
+   Install Date: Nov 02 2024 <ip>
+   Product Id: 00329-00000-00003-AA737
+   Architecture: x64
+   Language: fr-FR
+   Keyboard Layouts: fr-CI, fr-FR, fr-CA
+   Time Zone: Africa/Abidjan UTC+00:00
+   Computer Name: <redacted>
+   User Name: <redacted>
+   Screen resolution: 1366x768
+
+[Hardware]
+   CPU: Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz (4 cores)
+   RAM: 8017 MB (Used 5229 MB)
+   GPUs: Intel(R) HD Graphics 520 
+
+[Processes List]
+   [System Process] [0]
+   System [4]
+   Registry [100]
+   smss.exe [396]
+   csrss.exe [576]
+   wininit.exe [664]
+   csrss.exe [672]
+   winlogon.exe [768]
+[... truncated; full sample at ``sample.txt`` (approx. 223 more lines) ...]
 ```
 
 ## Detection

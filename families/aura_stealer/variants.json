@@ -19,6 +19,24 @@
       "fingerprint_id": "cystack_7146b159",
       "panel_brand": null,
       "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Launched at",
+        "Location",
+        "Run as Admin",
+        "Running on",
+        "User in Admins group"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_e35cafcc",
+      "panel_brand": null,
+      "synthetic": true
     }
   ]
 }
