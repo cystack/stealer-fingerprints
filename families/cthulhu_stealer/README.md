@@ -8,7 +8,7 @@ Observed in `@bugatti_cloud` aggregator packs.
 
 **Also known as:** `Cthulhu macOS Stealer`
 
-**Variants observed:** 6
+**Variants observed:** 7
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -74,6 +74,61 @@ Hardware Overview:
 
 Graphics/Displays:
 [... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
+```
+
+### `cystack_65967d4c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Apple M4`, `BuildID`, `City`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `LS27D300G`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+BuildID:james
+
+Userinfo:
+Country: DK
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 15.6.1 (24G90)
+  Kernel Version: Darwin 24.6.0
+  Boot Volume: Macintosh HD
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name:  <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 2552
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: MacBook Air
+  Model Identifier: Mac16,13
+  Model Number: Z1HF0008SCH/A
+  Chip: Apple M4
+  Total Number of Cores: 10 (4 performance and 6 efficiency)
+  Memory: 32 GB
+  System Firmware Version: 11881.140.96
+  OS Loader Version: 11881.140.96
+  Serial Number (system): FG6JQQ3YGK
+  Hardware UUID: B9FFF9B2-212A-58A9-B333-1A69A6B271F7
+  Provisioning UDID: 00008132-0019719C227A801C
+  Activation Lock Status: Enabled
+
+Graphics/Displays:
+[... truncated; full sample at ``sample.txt`` (approx. 17 more lines) ...]
 ```
 
 ### `cystack_72d91b19`
