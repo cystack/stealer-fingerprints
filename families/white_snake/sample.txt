@@ -1,19 +1,20 @@
 🖥Computer info:
 System: Microsoft Windows 11 Pro (x64)
+Computer name: <redacted>
 User name: <redacted>
-System time: 2026-01-19 <ip> PM
-CPU: Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz
-GPU: Intel(R) UHD Graphics
-RAM: 20257 MB
+System time: 2025-11-05 <ip> AM
+CPU: Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+GPU: Radeon 620 Series
+RAM: 16072 MB
 HWID: <redacted>
 
 🛡Security:
-Installed antivirus: Windows Defender.
-Started as admin: True
+Installed antivirus: Windows Defender, ESET Security.
+Started as admin: False
 
 📡Whois:
 IP: <redacted>
-Country: Colombia [CO]
+Country: Argentina [AR]
 City: <redacted>
-Region: Norte de Santander Department
-Internet provider: Telmex Colombia S.A.
+Region: Buenos Aires F.D.
+Internet provider: SpaceX Starlink

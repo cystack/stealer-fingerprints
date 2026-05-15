@@ -9,7 +9,7 @@ redistributors) and via a MaaS subscription model.
 
 **Also known as:** `WhiteSnake Stealer`
 
-**Variants observed:** 2
+**Variants observed:** 4
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -21,6 +21,72 @@ redistributors) and via a MaaS subscription model.
 - Email and FTP client credentials
 
 ## Variants
+
+### `cystack_3e31e88c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU`, `City`, `Country`, `GPU`, `IP`, `Installed antivirus`, `Internet provider`, `RAM`, `Region`, `Started as admin`, `System`, `System time`, `User name`
+
+**Filenames:** `PC_info.txt`
+
+**Sample (sanitized):**
+
+```
+🖥Computer info:
+System: Microsoft Windows 11 Home Single Language (x64)
+User name: <redacted>
+System time: 2025-11-19 <ip> PM
+CPU: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+GPU: NVIDIA GeForce GTX 1650
+RAM: 24355 MB
+
+🛡Security:
+Installed antivirus: Windows Defender, Norton Security Ultra.
+Started as admin: True
+
+📡Whois:
+IP: <redacted>
+Country: Argentina [AR]
+City: <redacted>
+Region: Corrientes
+Internet provider: Corrientes Telecomunicaciones S.A.P.E.M
+```
+
+### `cystack_80fe6e56`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU`, `City`, `Computer name`, `Country`, `GPU`, `HWID`, `IP`, `Installed antivirus`, `Internet provider`, `RAM`, `Region`, `Started as admin`, `System`, `System time`, `User name`
+
+**Filenames:** `PC_info.txt`
+
+**Sample (sanitized):**
+
+```
+🖥Computer info:
+System: Microsoft Windows 11 Pro (x64)
+Computer name: <redacted>
+User name: <redacted>
+System time: 2025-11-05 <ip> AM
+CPU: Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+GPU: Radeon 620 Series
+RAM: 16072 MB
+HWID: <redacted>
+
+🛡Security:
+Installed antivirus: Windows Defender, ESET Security.
+Started as admin: False
+
+📡Whois:
+IP: <redacted>
+Country: Argentina [AR]
+City: <redacted>
+Region: Buenos Aires F.D.
+Internet provider: SpaceX Starlink
+```
 
 ### `cystack_b5e6aa06`
 

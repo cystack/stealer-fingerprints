@@ -1,0 +1,13 @@
+    ┏━━━  SYSTEM INFORMATION ━━━┓
+┃  • Location: Paris, France (Orange S.A.)
+┃  • Device: CHAR076
+┃  • OS: Windows 10.0 (Build 26100)
+┃  • IP: <ip>
+┃  • Time: 10/31/2025, <ip> (UTC+01:00)
+┣━━━  EXTRACTION RESULTS ━━━┫
+┃  • Cookies: 3801
+┃  • Passwords: 12
+┃  • Facebook: 1
+┃  • CC with CVC: 0
+┃  • Count Runs: 79
+┗━━━━━━━━━━━━━━━━━┛

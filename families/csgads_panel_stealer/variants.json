@@ -8,6 +8,23 @@
       "field_keys": [
         "AntiVirus",
         "Browser Data",
+        "Country",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_2ba34ed5",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AntiVirus",
+        "Browser Data",
         "IP",
         "User"
       ],

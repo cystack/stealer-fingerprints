@@ -18,7 +18,7 @@ Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 
 **Also known as:** `BlankGrabber`, `Blank-c/Blank-Grabber`
 
-**Variants observed:** 5
+**Variants observed:** 8
 **Top attribution confidence:** `high`
 **Operator panel brands:** `Dead`
 
@@ -33,6 +33,60 @@ Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 - Game launcher sessions (Epic, Steam, Uplay, Battle.net, Growtopia)
 
 ## Variants
+
+### `cystack_2ec99495`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Autofills`, `CPU`, `Cellular Network`, `Common Files`, `Computer Name`, `Computer OS`, `Cookies`, `Country`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `IP`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Proxy/VPN`, `Region`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Telegram Sessions`, `Timezone`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+    Blank Grabber got a new victim: roke25
+
+IP Info
+
+IP: <redacted>
+Region: Salta
+Country: Argentina
+Timezone: America/Argentina/Salta
+
+Cellular Network:    ❎
+Proxy/VPN:           ❎
+
+System Info
+Computer Name: <redacted>
+Computer OS: Microsoft Windows 11 Home Single Language
+Total Memory: 68 GB
+UUID: 2F96AAF2-74A2-11EF-A4F7-40C2BA84B6B8
+CPU: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+Product Key: FHDPX-JNVDW-FF3RD-HPDKC-MP2TB
+
+Grabbed Info
+Discord Accounts : 0
+Passwords : 26
+Cookies : 149
+History : 0
+Autofills : 0
+Roblox Cookies : 0
+Telegram Sessions : 0
+Common Files : 106
+Wallets : 0
+Wifi Passwords : 0
+Webcam : 0
+Minecraft Sessions : 0
+Epic Session : No
+Steam Session : No
+Uplay Session : No
+Growtopia Session : No
+Screenshot : Yes
+System Info : Yes
+```
 
 ### `cystack_3db9f760`
 
@@ -235,6 +289,115 @@ Minecraft Sessions : 0
 Epic Session : No
 Steam Session : No
 Uplay Session : No
+Battle.Net Session : No
+Growtopia Session : No
+Screenshot : Yes
+System Info : Yes
+```
+
+### `cystack_dc1d861b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Autofills`, `CPU`, `Cellular Network`, `Common Files`, `Computer Name`, `Computer OS`, `Cookies`, `Country`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `IP`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Proxy/VPN`, `Region`, `Reverse DNS`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Telegram Sessions`, `Timezone`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+    Blank Grabber got a new victim: mauri
+
+IP Info
+
+IP: <redacted>
+Region: Buenos Aires
+Country: Argentina
+Timezone: America/Argentina/Buenos_Aires
+
+Cellular Network:    ❎
+Proxy/VPN:           ❎
+Reverse DNS: 115-131-17-190.fibertel.com.ar
+
+System Info
+Computer Name: <redacted>
+Computer OS: Unable to detect OS
+Total Memory: Unable to detect total memory
+UUID: Unable to detect UUID
+CPU: Intel64 Family 6 Model 151 Stepping 2, GenuineIntel
+GPU: Unable to detect GPU
+Product Key: VK7JG-NPHTM-C97JM-9MPGT-3V66T
+
+Grabbed Info
+Discord Accounts : 0
+Passwords : 2
+Cookies : 4080
+History : 0
+Autofills : 0
+Roblox Cookies : 0
+Telegram Sessions : 1
+Common Files : 2
+Wallets : 0
+Wifi Passwords : 0
+Webcam : 0
+Minecraft Sessions : 0
+Epic Session : No
+Steam Session : No
+Uplay Session : No
+Growtopia Session : No
+Screenshot : Yes
+[... truncated; full sample at ``sample.txt`` (approx. 1 more lines) ...]
+```
+
+### `cystack_e5b29e31`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Autofills`, `Blank Grabber got a new victim`, `CPU`, `Cellular Network`, `Common Files`, `Computer OS`, `Cookies`, `Country`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `IP`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Proxy/VPN`, `Region`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Telegram Sessions`, `Timezone`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+Blank Grabber got a new victim: MEGABYTE
+
+IP Info
+
+IP: <redacted>
+Region: Santa Fe
+Country: Argentina
+Timezone: America/Argentina/Cordoba
+
+Cellular Network:    ❎
+Proxy/VPN:           ✅
+
+System Info
+Computer OS: Microsoft Windows 10 Pro
+Total Memory: 17 GB
+UUID: 032E02B4-0499-056F-5606-610700080009
+CPU: Intel64 Family 6 Model 158 Stepping 11, GenuineIntel
+GPU: NVIDIA GeForce GTX 1050 Ti
+Product Key: YC7N8-G7WR6-9WR4H-6Y2W4-KBT6X
+
+Grabbed Info
+Discord Accounts : 0
+Passwords : 8
+Cookies : 99
+History : 0
+Autofills : 754
+Roblox Cookies : 0
+Telegram Sessions : 0
+Common Files : 3
+Wallets : 0
+Wifi Passwords : 0
+Webcam : 0
+Minecraft Sessions : 1
+Epic Session : Yes
+Steam Session : Yes
+Uplay Session : Yes
 Battle.Net Session : No
 Growtopia Session : No
 Screenshot : Yes

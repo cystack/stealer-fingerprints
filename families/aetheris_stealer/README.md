@@ -8,7 +8,7 @@ sections.
 
 **Also known as:** `Aetheris Stealer`
 
-**Variants observed:** 4
+**Variants observed:** 6
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -71,6 +71,53 @@ NVIDIA GeForce RTX 4070
 
 [Basic]
 User Domain: PC---13
+```
+
+### `cystack_2052a4d3`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CLR Version`, `CPU Name`, `Clipboard`, `Default Gateway`, `External IP`, `Hwid`, `Input ISO`, `Internal IP`, `Logical Cores`, `Machine`, `Now`, `OS Arch`, `OS Build`, `OS Product`, `RAM Available (MB)`, `RAM Total (MB)`, `User`, `User Domain`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+Xorium
+                               coded by @aesxor
+[User Info]
+User: user
+Machine: DESKTOP-9DOF55B
+Now: 2025-11-23 <ip>
+Input ISO: ko
+Hwid: <redacted>
+Clipboard:
+
+[Network]
+External IP: <redacted>
+Internal IP: <ip>
+Default Gateway: <ip>
+
+[System]
+OS Product: Windows 10 Pro 2009
+OS Build: 26200
+OS Arch: x64
+CPU Name: 12th Gen Intel(R) Core(TM) i5-1235U
+Logical Cores: 12
+RAM Total (MB): 16055
+RAM Available (MB): 11313
+
+[Drives]
+C: Fixed FS:NTFS Size:470GB Free:419GB
+
+[GPU]
+Intel(R) Iris(R) Xe Graphics
+
+[Basic]
+User Domain: DESKTOP-9DOF55B
+CLR Version: 4.0.30319.42000
 ```
 
 ### `cystack_3e0869cd`
@@ -233,6 +280,56 @@ Intel(R) UHD Graphics 620
 
 [Basic]
 User Domain: SAGAR
+```
+
+### `cystack_ae6f6dd2`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CLR Version`, `CPU Name`, `Clipboard`, `Default Gateway`, `External IP`, `Hwid`, `Input ISO`, `Internal IP`, `Logical Cores`, `Machine`, `Now`, `OS Arch`, `OS Build`, `OS Product`, `RAM Available (MB)`, `RAM Total (MB)`, `Undertale au arena`, `User`, `User Domain`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+Xorium
+                               coded by @aesxor
+[User Info]
+User: comet
+Machine: MSI
+Now: 2025-11-23 <ip>
+Input ISO: ko
+Hwid: <redacted>
+Clipboard: 
+Undertale au arena:multiverse destruction
+
+[Network]
+External IP: <redacted>
+Internal IP: <ip>
+Default Gateway: <ip>
+
+[System]
+OS Product: Windows 10 Home 2009
+OS Build: 19045
+OS Arch: x64
+CPU Name: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+Logical Cores: 16
+RAM Total (MB): 65238
+RAM Available (MB): 40584
+
+[Drives]
+C: Fixed FS:NTFS Size:930GB Free:301GB
+D: Fixed FS:NTFS Size:1907GB Free:1404GB
+
+[GPU]
+Intel(R) UHD Graphics
+NVIDIA GeForce RTX 3070 Laptop GPU
+
+[Basic]
+User Domain: MSI
+CLR Version: 4.0.30319.42000
 ```
 
 ## Detection

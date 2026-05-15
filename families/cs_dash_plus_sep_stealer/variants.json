@@ -1,0 +1,21 @@
+{
+  "family": "CSDashPlusSepStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": "@BRADLOGS",
+      "field_keys": [
+        "CK",
+        "ID",
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "bradmax",
+      "panel_brand": "BRADMAX",
+      "synthetic": false
+    }
+  ]
+}

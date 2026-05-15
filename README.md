@@ -8,29 +8,31 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 
 | Family | Variants | Channels | Top confidence |
 |---|---|---|---|
-| [`AMOS Stealer`](families/amos_stealer/) | 2 | 0 | `medium` |
+| [`AMOS Stealer`](families/amos_stealer/) | 10 | 0 | `medium` |
 | [`Acreed`](families/acreed/) | 1 | 0 | `high` |
-| [`Aetheris Stealer`](families/aetheris_stealer/) | 4 | 0 | `high` |
+| [`Aetheris Stealer`](families/aetheris_stealer/) | 6 | 0 | `high` |
 | [`Ailurophile`](families/ailurophile/) | 1 | 1 | `high` |
 | [`AuraStealer`](families/aura_stealer/) | 1 | 0 | `high` |
-| [`Blank Grabber`](families/blank_grabber/) | 5 | 0 | `high` |
+| [`Blank Grabber`](families/blank_grabber/) | 8 | 0 | `high` |
 | [`BracketSection Stealer`](families/bracket_section_stealer/) | 1 | 0 | `unknown` |
 | [`CSBareVersionStealer`](families/cs_bare_version_stealer/) | 1 | 1 | `unknown` |
 | [`CSBitArchStealer`](families/cs_bit_arch_stealer/) | 1 | 0 | `unknown` |
-| [`CSBrowersStealer`](families/cs_browers_stealer/) | 1 | 0 | `unknown` |
+| [`CSBrowersStealer`](families/cs_browers_stealer/) | 2 | 0 | `unknown` |
 | [`CSBuildBlockStealer`](families/cs_build_block_stealer/) | 1 | 1 | `unknown` |
 | [`CSCountCoreStealer`](families/cs_count_core_stealer/) | 2 | 0 | `unknown` |
+| [`CSCountRunsStealer`](families/cs_count_runs_stealer/) | 1 | 1 | `unknown` |
+| [`CSDashPlusSepStealer`](families/cs_dash_plus_sep_stealer/) | 1 | 1 | `unknown` |
 | [`CSDataCollectedStealer`](families/cs_data_collected_stealer/) | 1 | 0 | `unknown` |
 | [`CSEmojiInfoStealer`](families/cs_emoji_info_stealer/) | 1 | 0 | `unknown` |
 | [`CSEnvVarDumpStealer`](families/cs_env_var_dump_stealer/) | 1 | 1 | `unknown` |
-| [`CSGADSPanelStealer`](families/csgads_panel_stealer/) | 2 | 0 | `unknown` |
+| [`CSGADSPanelStealer`](families/csgads_panel_stealer/) | 3 | 0 | `unknown` |
 | [`CSInzExtStealer`](families/cs_inz_ext_stealer/) | 1 | 0 | `unknown` |
 | [`CSMSKDateStealer`](families/csmsk_date_stealer/) | 1 | 0 | `unknown` |
 | [`CSNewLogStealer`](families/cs_new_log_stealer/) | 1 | 0 | `unknown` |
 | [`CSPyHostTimeStealer`](families/cs_py_host_time_stealer/) | 1 | 1 | `unknown` |
 | [`CSWmicDumpStealer`](families/cs_wmic_dump_stealer/) | 1 | 0 | `unknown` |
 | [`Category Stealer`](families/category_stealer/) | 3 | 0 | `unknown` |
-| [`Cthulhu Stealer`](families/cthulhu_stealer/) | 3 | 0 | `high` |
+| [`Cthulhu Stealer`](families/cthulhu_stealer/) | 5 | 0 | `high` |
 | [`Lumma`](families/lumma/) | 1 | 0 | `high` |
 | [`MacSync`](families/mac_sync/) | 1 | 0 | `high` |
 | [`PXA Stealer`](families/pxa_stealer/) | 5 | 0 | `high` |
@@ -40,9 +42,9 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Redline`](families/redline/) | 17 | 0 | `high` |
 | [`RedlineLike Stealer`](families/redline_like_stealer/) | 12 | 0 | `unknown` |
 | [`StealC`](families/steal_c/) | 13 | 0 | `high` |
-| [`Vidar`](families/vidar/) | 1888 | 0 | `high` |
-| [`WhiteSnake`](families/white_snake/) | 2 | 0 | `high` |
-| [`XFiles`](families/x_files/) | 4 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 2033 | 0 | `high` |
+| [`WhiteSnake`](families/white_snake/) | 4 | 0 | `high` |
+| [`XFiles`](families/x_files/) | 5 | 0 | `high` |
 
 ## Contributing
 

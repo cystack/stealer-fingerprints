@@ -6,6 +6,33 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Apple M3",
+        "BuildID",
+        "City",
+        "Color LCD",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_161680a5",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "BuildID",
         "City",
         "Country",
@@ -64,6 +91,33 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_d48169df",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Apple M4",
+        "BuildID",
+        "City",
+        "Color LCD",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_f6f1b312",
       "panel_brand": null,
       "synthetic": true
     }

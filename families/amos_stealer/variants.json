@@ -53,6 +53,215 @@
       "fingerprint_id": "cystack_4a8d83d3",
       "panel_brand": null,
       "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Apple M1",
+        "City",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "PHL 273V7",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_7b9b631b",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Apple M1",
+        "City",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo",
+        "WD215I10"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_7c8ec672",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Apple M1 Pro",
+        "City",
+        "Color LCD",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "Studio Display",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_9732ef4d",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Apple M1 Pro",
+        "City",
+        "Color LCD",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "PA278QV",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_a9896efb",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Apple M4",
+        "City",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_b296ae1d",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Apple M2",
+        "City",
+        "Color LCD",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_c426f34d",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Apple M3",
+        "City",
+        "Color LCD",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_c632d977",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Apple M1",
+        "City",
+        "Color LCD",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_ff62cc07",
+      "panel_brand": null,
+      "synthetic": true
     }
   ]
 }

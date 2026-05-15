@@ -1,0 +1,9 @@
+country :  Ar Rifā‘-Southern Governorate-BH
+ID : 103997301866391
+Windows-11-10.0.26100-SP0
+Username: <redacted>
+CK: 0 | Card: 0
+---+---+---+---+---+---+---
+KCG
+17
+T-111111111111111111

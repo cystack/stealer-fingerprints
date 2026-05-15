@@ -10,7 +10,7 @@ VPN, FTP, RDP, and messenger client data.
 
 **Also known as:** `X-FILES`, `DeerStealer`, `X-Files Stealer`
 
-**Variants observed:** 4
+**Variants observed:** 5
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -186,6 +186,61 @@ Windows Processes [
    svchost.exe
    svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 286 more lines) ...]
+```
+
+### `cystack_a4048dad`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU (Processor)`, `Country`, `Desktop Screenshot Taken`, `GPU (Display Devices)`, `Hardware ID`, `IP`, `Operating System`, `Operation ID`, `Processed parts`, `RAM (Memory)`, `Screens`, `Username`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+Operation ID: 3a1b0807-9710-4e49-3ecf-15d29caf161f3a1d84ee-ed20-af35-aa82-2abb61008bfd
+
+IP: <redacted>
+Country: US (United States)
+Operating System: Windows 10
+Username: <redacted>
+Hardware ID: <redacted>
+CPU (Processor): Intel(R) Core(TM)2 CPU 6600 @ 2.40 GHz
+GPU (Display Devices): Jivyxnnli Jkrwh Uiajimk Rsdqbpt
+RAM (Memory): 
+Screens: 1280x1024
+Desktop Screenshot Taken: Yes
+
+Windows Processes [
+   System
+   Registry
+   smss.exe
+   csrss.exe
+   wininit.exe
+   csrss.exe
+   winlogon.exe
+   services.exe
+   lsass.exe
+   svchost.exe
+   fontdrvhost.exe
+   fontdrvhost.exe
+   svchost.exe
+   svchost.exe
+   dwm.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 105 more lines) ...]
 ```
 
 ### `cystack_c10789f1`
