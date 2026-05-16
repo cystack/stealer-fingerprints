@@ -23,7 +23,7 @@ than inlined into this summary.
 
 **Also known as:** `Atomic Stealer`, `Atomic macOS Stealer`, `AMOS`, `Atomic Mac`
 
-**Variants observed:** 18
+**Variants observed:** 33
 **Top attribution confidence:** `medium`
 
 ## Targets
@@ -36,6 +36,116 @@ than inlined into this summary.
 - Documents and Desktop file grabber (.txt, .pdf, .docx, .wallet, .key)
 
 ## Variants
+
+### `cystack_130284cc`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`AMD Radeon R9 M390`, `City`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: GB
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 12.7.6 (21H1320)
+  Kernel Version: Darwin 21.6.0
+  Boot Volume: bez 
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Disabled
+  Time since boot: 5:47
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: iMac
+  Model Identifier: iMac17,1
+  Processor Name: Quad-Core Intel Core i5
+  Processor Speed: 3.2 GHz
+  Number of Processors: 1
+  Total Number of Cores: 4
+  L2 Cache (per Core): 256 KB
+  L3 Cache: 6 MB
+  Memory: 16 GB
+  System Firmware Version: <ip>.0
+  OS Loader Version: 540.120.3~37
+  SMC Version (system): 2.33f12
+  Serial Number (system): C02QF5W6GG7L
+  Hardware UUID: 721A29DE-23FC-5152-B102-8B0A0C9475DB
+[... truncated; full sample at ``sample.txt`` (approx. 28 more lines) ...]
+```
+
+### `cystack_130a8bd3`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`City`, `Color LCD`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `Intel Iris Plus Graphics`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: FR
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 15.7 (24G217)
+  Kernel Version: Darwin 24.6.0
+  Boot Volume: Macintosh HD
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 5jours, 16heures et 57 minutes
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: MacBook Air
+  Model Identifier: MacBookAir9,1
+  Processor Name: Quad-Core Intel Core i7
+  Processor Speed: 1,2 GHz
+  Number of Processors: 1
+  Total Number of Cores: 4
+  L2 Cache (per Core): 512 KB
+  L3 Cache: 8 MB
+  Hyper-Threading Technology: Enabled
+  Memory: 16 GB
+  System Firmware Version: 2092.<ip> (iBridge: 23.16.10348.5.1,0)
+  OS Loader Version: 583~2317
+  Serial Number (system): FVFCW0CXMLVD
+  Hardware UUID: B9421B60-7910-5CC5-8146-F72E5AE5BE9F
+[... truncated; full sample at ``sample.txt`` (approx. 25 more lines) ...]
+```
 
 ### `cystack_3311417f`
 
@@ -92,6 +202,61 @@ Hardware Overview:
 [... truncated; full sample at ``sample.txt`` (approx. 45 more lines) ...]
 ```
 
+### `cystack_3a4ae0ac`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`Apple M1`, `City`, `Country`, `Debanks`, `Graphics/Displays`, `HP 22f`, `Hardware`, `Hardware Overview`, `IP`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: ES
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 15.6.1 (24G90)
+  Kernel Version: Darwin 24.6.0
+  Boot Volume: Macintosh HD
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 13 horas y 38 minutos
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: Mac mini
+  Model Identifier: Macmini9,1
+  Model Number: MGNT3Y/A
+  Chip: Apple M1
+  Total Number of Cores: 8 (4 performance and 4 efficiency)
+  Memory: 8 GB
+  System Firmware Version: 11881.140.96
+  OS Loader Version: 11881.140.96
+  Serial Number (system): C07DP1N8Q6NW
+  Hardware UUID: B9EF151B-A298-586C-ADED-36E001E670E3
+  Provisioning UDID: 00008103-000130190440291E
+  Activation Lock Status: Disabled
+
+Graphics/Displays:
+[... truncated; full sample at ``sample.txt`` (approx. 17 more lines) ...]
+```
+
 ### `cystack_4a8d83d3`
 
 **Attribution confidence:** `medium`
@@ -145,6 +310,61 @@ Hardware Overview:
   SMC Version (system): 2.28f7
   Serial Number (system): C02Q38CDFVH7
 [... truncated; full sample at ``sample.txt`` (approx. 25 more lines) ...]
+```
+
+### `cystack_6be8171f`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`City`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `MetaMask Info`, `NVIDIA GeForce GTX 660M`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: FR
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 10.15.7 (19H2026)
+  Kernel Version: Darwin 19.6.0
+  Boot Volume: MACINTOSH HD
+  Boot Mode: Normal
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 8 minutes
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: iMac
+  Model Identifier: iMac13,2
+  Processor Name: Quad-Core Intel Core i5
+  Processor Speed: 2,9 GHz
+  Number of Processors: 1
+  Total Number of Cores: 4
+  L2 Cache (per Core): 256 KB
+  L3 Cache: 6 MB
+  Memory: 16 GB
+  Boot ROM Version: <ip>.0
+  SMC Version (system): 2.11f16
+  Serial Number (system): C02K98HCDNCV
+  Hardware UUID: 54DD2387-0A12-5156-B837-1A36C7D15292
+
+Graphics/Displays:
+[... truncated; full sample at ``sample.txt`` (approx. 24 more lines) ...]
 ```
 
 ### `cystack_7542b9ba`
@@ -312,6 +532,61 @@ Graphics/Displays:
 [... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
 ```
 
+### `cystack_807f3e69`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`City`, `Color LCD`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `Intel HD Graphics 3000`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: FR
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 14.7.6 (23H626)
+  Kernel Version: Darwin 23.6.0
+  Boot Volume: Macintosh HD1
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Disabled
+  Time since boot: 4jours et 3 minutes
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: MacBook Pro
+  Model Identifier: MacBookPro8,1
+  Processor Name: Dual-Core Intel Core i5
+  Processor Speed: 2,3 GHz
+  Number of Processors: 1
+  Total Number of Cores: 2
+  L2 Cache (per Core): 256 KB
+  L3 Cache: 3 MB
+  Hyper-Threading Technology: Enabled
+  Memory: 8 GB
+  System Firmware Version: <ip>.0
+  OS Loader Version: 580.140.1~51
+  SMC Version (system): 1.68f99
+  Serial Number (system): C2VG5WN3DRJ7
+[... truncated; full sample at ``sample.txt`` (approx. 28 more lines) ...]
+```
+
 ### `cystack_8c35232d`
 
 **Attribution confidence:** `medium`
@@ -367,6 +642,116 @@ Graphics/Displays:
 [... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
 ```
 
+### `cystack_8e4aecf0`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`AMD Radeon RX 580`, `City`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `MetaMask Info`, `Software`, `System Software Overview`, `T27D390`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: ES
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 11.7.10 (20G1427)
+  Kernel Version: Darwin 20.6.0
+  Boot Volume:   SSD 970 EVO 500
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Disabled
+  Time since boot: 1:45
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: Mac Pro
+  Model Identifier: MacPro5,1
+  Processor Name: 6-Core Intel Xeon
+  Processor Speed: 3,46 GHz
+  Number of Processors: 1
+  Total Number of Cores: 6
+  L2 Cache (per Core): 256 KB
+  L3 Cache: 12 MB
+  Hyper-Threading Technology: Enabled
+  Memory: 24 GB
+  System Firmware Version: 9999.<ip>
+  SMC Version (system): 9.9999
+  SMC Version (processor tray): 1.39f11
+  Serial Number (system): CK1110C1HF7
+[... truncated; full sample at ``sample.txt`` (approx. 27 more lines) ...]
+```
+
+### `cystack_94207481`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`Apple M1`, `City`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `MetaMask Info`, `REALTEK`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: FR
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 15.3.1 (24D70)
+  Kernel Version: Darwin 24.3.0
+  Boot Volume: Macintosh HD
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 17 minuti e 28 secondi
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: Mac mini
+  Model Identifier: Macmini9,1
+  Model Number: Z12N0004VT/A
+  Chip: Apple M1
+  Total Number of Cores: 8 (4 performance and 4 efficiency)
+  Memory: 16 GB
+  System Firmware Version: 11881.81.4
+  OS Loader Version: 11881.81.4
+  Serial Number (system): C07FC2Z3Q6NY
+  Hardware UUID: 6EDE8F32-9B3B-5C34-9CD3-8A587C43BBF1
+  Provisioning UDID: 00008103-0004186E02D1001E
+  Activation Lock Status: Enabled
+
+Graphics/Displays:
+[... truncated; full sample at ``sample.txt`` (approx. 17 more lines) ...]
+```
+
 ### `cystack_9732ef4d`
 
 **Attribution confidence:** `medium`
@@ -419,6 +804,61 @@ Hardware Overview:
   Activation Lock Status: Enabled
 
 Graphics/Displays:
+[... truncated; full sample at ``sample.txt`` (approx. 26 more lines) ...]
+```
+
+### `cystack_9b82e639`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`City`, `Color LCD`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `Intel HD Graphics 4000`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: FR
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 10.15.7 (19H2026)
+  Kernel Version: Darwin 19.6.0
+  Boot Volume: APFS
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 2:23
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: MacBook Pro
+  Model Identifier: MacBookPro9,2
+  Processor Name: Dual-Core Intel Core i7
+  Processor Speed: 2,9 GHz
+  Number of Processors: 1
+  Total Number of Cores: 2
+  L2 Cache (per Core): 256 KB
+  L3 Cache: 4 MB
+  Hyper-Threading Technology: Enabled
+  Memory: 8 GB
+  Boot ROM Version: <ip>.0
+  SMC Version (system): 2.2f44
+  Serial Number (system): C1MK36N9DTY4
+  Hardware UUID: 9BD33BEC-AC1D-5420-947E-0DBD10EC89FB
 [... truncated; full sample at ``sample.txt`` (approx. 26 more lines) ...]
 ```
 
@@ -477,6 +917,116 @@ Graphics/Displays:
 [... truncated; full sample at ``sample.txt`` (approx. 23 more lines) ...]
 ```
 
+### `cystack_afcd54ef`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`City`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `Intel Iris Plus Graphics 640`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: FR
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 15.6 (24G84)
+  Kernel Version: Darwin 24.6.0
+  Boot Volume: SSD
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Disabled
+  Time since boot: 5heures et 24 minutes
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: iMac
+  Model Identifier: iMac18,1
+  Processor Name: Dual-Core Intel Core i5
+  Processor Speed: 2,3 GHz
+  Number of Processors: 1
+  Total Number of Cores: 2
+  L2 Cache (per Core): 256 KB
+  L3 Cache: 4 MB
+  Hyper-Threading Technology: Enabled
+  Memory: 8 GB
+  System Firmware Version: <ip>.0
+  OS Loader Version: 583~2210
+  SMC Version (system): 2.39f40
+  Serial Number (system): C02W92E0H7JY
+[... truncated; full sample at ``sample.txt`` (approx. 27 more lines) ...]
+```
+
+### `cystack_b12ddaf1`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`City`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `Intel UHD Graphics 630`, `MetaMask Info`, `PHL 247E6`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: FR
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 12.2 (21D49)
+  Kernel Version: Darwin 21.3.0
+  Boot Volume: Macintosh HD
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Disabled
+  Time since boot: 9:31
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: Mac mini
+  Model Identifier: Macmini8,1
+  Processor Name: 6-Core Intel Core i7
+  Processor Speed: 3,2 GHz
+  Number of Processors: 1
+  Total Number of Cores: 6
+  L2 Cache (per Core): 256 KB
+  L3 Cache: 12 MB
+  Hyper-Threading Technology: Enabled
+  Memory: 8 GB
+  System Firmware Version: 1715.<ip> (iBridge: 19.16.10744.0.0,0)
+  OS Loader Version: 540.80.2~11
+  Serial Number (system): C07XX0EYJYVY
+  Hardware UUID: 28E0F0DF-3687-5934-8D3A-62BF916860D1
+[... truncated; full sample at ``sample.txt`` (approx. 28 more lines) ...]
+```
+
 ### `cystack_b296ae1d`
 
 **Attribution confidence:** `medium`
@@ -527,6 +1077,116 @@ Hardware Overview:
   Hardware UUID: 8D506880-C9EA-572D-B5E4-5C68431FC974
   Provisioning UDID: 00008132-0009595901F9001C
   Activation Lock Status: Disabled
+
+Graphics/Displays:
+[... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
+```
+
+### `cystack_c2db85fe`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`AMD Radeon R9 M290`, `City`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: GB
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 11.7.10 (20G1427)
+  Kernel Version: Darwin 20.6.0
+  Boot Volume: disk0s2
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 6 minutes
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: iMac
+  Model Identifier: iMac15,1
+  Processor Name: Quad-Core Intel Core i5
+  Processor Speed: 3.3 GHz
+  Number of Processors: 1
+  Total Number of Cores: 4
+  L2 Cache (per Core): 256 KB
+  L3 Cache: 6 MB
+  Memory: 16 GB
+  System Firmware Version: <ip>.0
+  SMC Version (system): 2.22f16
+  Serial Number (system): DGKPK04SFY10
+  Hardware UUID: 3F2A424F-1970-593B-A3C5-EAD879D16A83
+  Provisioning UDID: 3F2A424F-1970-593B-A3C5-EAD879D16A83
+[... truncated; full sample at ``sample.txt`` (approx. 27 more lines) ...]
+```
+
+### `cystack_c405812f`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`Apple M3 Max`, `City`, `Color LCD`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: GB
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 15.6.1 (24G90)
+  Kernel Version: Darwin 24.6.0
+  Boot Volume: Macintosh HD
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 1 day, 1 hour, 51 minutes
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: MacBook Pro
+  Model Identifier: Mac15,9
+  Model Number: Z1AG00264B/A
+  Chip: Apple M3 Max
+  Total Number of Cores: 16 (12 performance and 4 efficiency)
+  Memory: 48 GB
+  System Firmware Version: 11881.140.96
+  OS Loader Version: 11881.140.96
+  Serial Number (system): M545Q1WHY0
+  Hardware UUID: 04B72080-F5A1-5A6D-ACFD-5406ECF8AEA5
+  Provisioning UDID: 00006031-000411600C44001C
+  Activation Lock Status: Enabled
 
 Graphics/Displays:
 [... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
@@ -697,6 +1357,61 @@ Graphics/Displays:
 [... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
 ```
 
+### `cystack_c94ad68f`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`Apple M4 Max`, `City`, `Color LCD`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `MSI MD271UL`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: GB
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 15.4 (24E248)
+  Kernel Version: Darwin 24.4.0
+  Boot Volume: Macintosh HD
+  Boot Mode: Normal
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 1 hour, 42 minutes
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: MacBook Pro
+  Model Identifier: Mac16,5
+  Model Number: MX303B/A
+  Chip: Apple M4 Max
+  Total Number of Cores: 14 (10 performance and 4 efficiency)
+  Memory: 36 GB
+  System Firmware Version: 11881.101.1
+  OS Loader Version: 11881.101.1
+  Serial Number (system): LWX56L2G33
+  Hardware UUID: CB5331B3-9922-5862-8684-C1B23102B21C
+  Provisioning UDID: 00006041-000828A80260801C
+  Activation Lock Status: Disabled
+
+Graphics/Displays:
+
+[... truncated; full sample at ``sample.txt`` (approx. 23 more lines) ...]
+```
+
 ### `cystack_cfb6969f`
 
 **Attribution confidence:** `medium`
@@ -750,6 +1465,61 @@ Hardware Overview:
   SMC Version (system): 2.30f2
   Serial Number (system): C02QLA4XG8WP
 [... truncated; full sample at ``sample.txt`` (approx. 44 more lines) ...]
+```
+
+### `cystack_e47fc049`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`AMD Radeon HD 6770M`, `City`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: FR
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 10.13.6 (17G14042)
+  Kernel Version: Darwin 17.7.0
+  Boot Volume: High Sierra
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 2 days 5:44
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: iMac
+  Model Identifier: iMac12,2
+  Processor Name: Intel Core i5
+  Processor Speed: 2,7 GHz
+  Number of Processors: 1
+  Total Number of Cores: 4
+  L2 Cache (per Core): 256 KB
+  L3 Cache: 6 MB
+  Memory: 12 GB
+  Boot ROM Version: <ip>.0
+  SMC Version (system): 1.72f1
+  Serial Number (system): C02FC0MYDHJP
+  Hardware UUID: 52B11572-F60F-5858-87B1-3F4C406EC401
+
+[... truncated; full sample at ``sample.txt`` (approx. 27 more lines) ...]
 ```
 
 ### `cystack_e68b8a47`
@@ -860,6 +1630,61 @@ Hardware Overview:
 
 Graphics/Displays:
 [... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
+```
+
+### `cystack_ef0f7581`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`City`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `IP`, `MetaMask Info`, `Software`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: GB
+IP: <redacted>
+City: <redacted>
+Software:
+
+    System Software Overview:
+
+      Boot Volume: Macintosh HD
+      Boot Mode: Normal
+      Computer Name: <redacted>
+      User Name: <redacted>
+      Secure Virtual Memory: Enabled
+      System Integrity Protection: Enabled
+      Time since boot: 8 days, 13 hours, 13 minutes
+
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: MacBook Air
+      Model Identifier: Mac14,2
+      Model Number: MC7X4B/A
+      Chip: Apple M2
+      Total Number of Cores: 8 (4 performance and 4 efficiency)
+      Memory: 16 GB
+      Serial Number (system): CMX0PQV33Q
+      Hardware UUID: 79E58E0C-4334-53E1-9777-B55247E5F9AC
+      Provisioning UDID: 00008112-0004516434FBA01E
+      Activation Lock Status: Enabled
+
+Graphics/Displays:
+
+    Apple M2:
+
+      Chipset Model: Apple M2
+[... truncated; full sample at ``sample.txt`` (approx. 14 more lines) ...]
 ```
 
 ### `cystack_f1d98937`

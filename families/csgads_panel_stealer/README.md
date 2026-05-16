@@ -31,7 +31,7 @@ threat-intel mapping for this exact panel-summary layout.
 
 **Also known as:** `!! 2026 JAN aggregator panel summary`
 
-**Variants observed:** 3
+**Variants observed:** 4
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -42,6 +42,24 @@ threat-intel mapping for this exact panel-summary layout.
 - Google Ads account presence flag
 
 ## Variants
+
+### `cystack_0bc18c67`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`AntiVirus`, `Browser Data`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+    IP: <redacted>
+User: LENOVO
+AntiVirus: Windows Defender
+Browser Data: CK:3972|PW:210|AF:5243|CC:0|FB:0|GADS:False
+```
 
 ### `cystack_2ba34ed5`
 
