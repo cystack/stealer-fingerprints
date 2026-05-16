@@ -1,0 +1,17 @@
+{
+  "family": "CSDaisyCloudStealer",
+  "variants": [
+    {
+      "attribution_confidence": "low",
+      "banner_strings": [],
+      "distribution_channel": "@UP_DAISYCLOUD",
+      "field_keys": [],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "daisy_private_cloud",
+      "panel_brand": "Daisy Private cloud",
+      "synthetic": false
+    }
+  ]
+}
