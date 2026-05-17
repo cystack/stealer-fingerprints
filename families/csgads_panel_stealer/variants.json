@@ -6,6 +6,23 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Browser Data",
+        "Country",
+        "IP",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_01e16bb3",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "AntiVirus",
         "Browser Data",
         "User"
@@ -31,6 +48,22 @@
         "Information.txt"
       ],
       "fingerprint_id": "cystack_2ba34ed5",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Browser Data",
+        "Country",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_7c0940cc",
       "panel_brand": null,
       "synthetic": true
     },

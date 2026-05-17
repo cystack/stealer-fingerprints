@@ -3,6 +3,22 @@
 // observed field-key set. Tune false-positive thresholds at use
 // site, especially for variants relying on field combinations.
 
+rule CSGADSPanelStealer_cystack_01e16bb3
+{
+    meta:
+        family = "CSGADSPanelStealer"
+        fingerprint_id = "cystack_01e16bb3"
+
+    strings:
+        $key_0 = "Browser Data:" ascii
+        $key_1 = "Country:" ascii
+        $key_2 = "IP:" ascii
+        $key_3 = "User:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSGADSPanelStealer_cystack_0bc18c67
 {
     meta:
@@ -29,6 +45,21 @@ rule CSGADSPanelStealer_cystack_2ba34ed5
         $key_1 = "Browser Data:" ascii
         $key_2 = "Country:" ascii
         $key_3 = "User:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSGADSPanelStealer_cystack_7c0940cc
+{
+    meta:
+        family = "CSGADSPanelStealer"
+        fingerprint_id = "cystack_7c0940cc"
+
+    strings:
+        $key_0 = "Browser Data:" ascii
+        $key_1 = "Country:" ascii
+        $key_2 = "User:" ascii
 
     condition:
         all of ($key_*)

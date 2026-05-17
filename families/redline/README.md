@@ -8,7 +8,7 @@ the field block.
 
 **Also known as:** `RedLine`, `RedLineStealer`
 
-**Variants observed:** 17
+**Variants observed:** 18
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -549,6 +549,16 @@ AVG Antivirus
 ***********************************************
 
 Build ID:
+```
+
+### `cystack_c65f37b2`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+    
 ```
 
 ### `cystack_d7157e6b`

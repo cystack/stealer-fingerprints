@@ -27,7 +27,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSEmojiInfoStealer`](families/cs_emoji_info_stealer/) | 1 | 0 | `unknown` |
 | [`CSEnvVarDumpStealer`](families/cs_env_var_dump_stealer/) | 1 | 1 | `unknown` |
 | [`CSFacebookMarketStealer`](families/cs_facebook_market_stealer/) | 1 | 1 | `unknown` |
-| [`CSGADSPanelStealer`](families/csgads_panel_stealer/) | 4 | 0 | `unknown` |
+| [`CSGADSPanelStealer`](families/csgads_panel_stealer/) | 6 | 0 | `unknown` |
 | [`CSInzExtStealer`](families/cs_inz_ext_stealer/) | 1 | 0 | `unknown` |
 | [`CSMSKDateStealer`](families/csmsk_date_stealer/) | 1 | 0 | `unknown` |
 | [`CSNewLogStealer`](families/cs_new_log_stealer/) | 1 | 0 | `unknown` |
@@ -42,10 +42,10 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`PureLogs`](families/pure_logs/) | 1 | 0 | `high` |
 | [`RL Stealer`](families/rl_stealer/) | 1 | 0 | `medium` |
 | [`Raccoon`](families/raccoon/) | 1 | 0 | `high` |
-| [`Redline`](families/redline/) | 17 | 0 | `high` |
-| [`RedlineLike Stealer`](families/redline_like_stealer/) | 12 | 0 | `unknown` |
+| [`Redline`](families/redline/) | 18 | 0 | `high` |
+| [`RedlineLike Stealer`](families/redline_like_stealer/) | 13 | 0 | `unknown` |
 | [`StealC`](families/steal_c/) | 13 | 0 | `high` |
-| [`Vidar`](families/vidar/) | 2788 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 2842 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 4 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 5 | 0 | `high` |
 

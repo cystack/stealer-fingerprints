@@ -9,7 +9,7 @@ the underlying field layout intact.
 
 **Also known as:** `redline`, `redline-extended`
 
-**Variants observed:** 12
+**Variants observed:** 13
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -187,6 +187,43 @@ TimeZone: UTC+10
 UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1920x1080
+```
+
+### `cystack_49f11599`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `Prodct Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 27 Sep 25 19:15 MSK
+now: @russia_logs
+HWID: <redacted>
+Country: IN
+IP: <redacted>
+System Language: English
+Processor: Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz
+Installed RAM: 12252 MB
+Operation System: Windows 10 22H2 build 19045 (64 Bit)
+Graphics card: NVIDIA GeForce GT 610
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Prodct Key:   @ logs_russia   
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+5
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+Wallpaper Hash: 0825e886///  @ l o g s _ r u s s i a  ///4c47e6 cae75034d51d8ffe2fa03196d9a08f6958757be6
 ```
 
 ### `cystack_5076fdca`

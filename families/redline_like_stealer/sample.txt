@@ -1,23 +1,23 @@
-Log date: 25 Oct 25
-# Buy now:@BRADLOGS (BRADMAX) / <url>
+Log date: 27 Sep 25 19:15 MSK
+now: @russia_logs
 HWID: <redacted>
-Country: CA
+Country: IN
 IP: <redacted>
 System Language: English
-Processor: 12th Gen Intel(R) Core(TM) i5-1235U
-Installed RAM: 16068 MB
-Operation System: Windows 11 24H2 build 26100 (64 Bit)
-Graphics card: Intel(R) Iris(R) Xe Graphics
+Processor: Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz
+Installed RAM: 12252 MB
+Operation System: Windows 10 22H2 build 19045 (64 Bit)
+Graphics card: NVIDIA GeForce GT 610
 Computer Name: <redacted>
 Domain Name: <redacted>
 MachineID: <redacted>
-Product Key: 
+Prodct Key:   @ logs_russia   
 -------------
 User Name: <redacted>
 Admin Group: FALSE
 Integrity: Medium
-TimeZone: UTC-3
+TimeZone: UTC+5
 UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1920x1080
-Wallpaper Hash: 2a9dc3afc25ee3f465343d47108ab027bb519214
+Wallpaper Hash: 0825e886///  @ l o g s _ r u s s i a  ///4c47e6 cae75034d51d8ffe2fa03196d9a08f6958757be6
