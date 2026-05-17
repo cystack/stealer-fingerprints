@@ -35,7 +35,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSSigInfoStealer`](families/cs_sig_info_stealer/) | 1 | 1 | `low` |
 | [`CSWmicDumpStealer`](families/cs_wmic_dump_stealer/) | 1 | 0 | `unknown` |
 | [`Category Stealer`](families/category_stealer/) | 3 | 0 | `unknown` |
-| [`Cthulhu Stealer`](families/cthulhu_stealer/) | 14 | 0 | `high` |
+| [`Cthulhu Stealer`](families/cthulhu_stealer/) | 17 | 0 | `high` |
 | [`Lumma`](families/lumma/) | 1 | 0 | `high` |
 | [`MacSync`](families/mac_sync/) | 1 | 0 | `high` |
 | [`PXA Stealer`](families/pxa_stealer/) | 6 | 0 | `high` |
@@ -44,8 +44,8 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Raccoon`](families/raccoon/) | 1 | 0 | `high` |
 | [`Redline`](families/redline/) | 18 | 0 | `high` |
 | [`RedlineLike Stealer`](families/redline_like_stealer/) | 13 | 0 | `unknown` |
-| [`StealC`](families/steal_c/) | 13 | 0 | `high` |
-| [`Vidar`](families/vidar/) | 2842 | 0 | `high` |
+| [`StealC`](families/steal_c/) | 14 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 2904 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 4 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 5 | 0 | `high` |
 

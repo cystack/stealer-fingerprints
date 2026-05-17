@@ -8,7 +8,7 @@ Observed in `@bugatti_cloud` aggregator packs.
 
 **Also known as:** `Cthulhu macOS Stealer`
 
-**Variants observed:** 14
+**Variants observed:** 17
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -131,6 +131,61 @@ Graphics/Displays:
 [... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
 ```
 
+### `cystack_2a8c0f89`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`BuildID`, `City`, `Color LCD`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `Intel UHD Graphics 617`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+BuildID:james
+
+Userinfo:
+Country: IN
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 14.7.8 (23H730)
+  Kernel Version: Darwin 23.6.0
+  Boot Volume: Macintosh HD
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 3 hours, 5 minutes
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: MacBook Air
+  Model Identifier: MacBookAir8,2
+  Processor Name: Dual-Core Intel Core i5
+  Processor Speed: 1.6 GHz
+  Number of Processors: 1
+  Total Number of Cores: 2
+  L2 Cache (per Core): 256 KB
+  L3 Cache: 4 MB
+  Hyper-Threading Technology: Enabled
+  Memory: 8 GB
+  System Firmware Version: 2075.<ip> (iBridge: 22.16.16083.0.0,0)
+  OS Loader Version: 580.140.1~51
+  Serial Number (system): FVFYV064LYWM
+  Hardware UUID: 41DCD0BA-0626-590E-A48F-C0F14B327724
+[... truncated; full sample at ``sample.txt`` (approx. 25 more lines) ...]
+```
+
 ### `cystack_32f80447`
 
 **Attribution confidence:** `high`
@@ -184,6 +239,61 @@ Hardware Overview:
   Hardware UUID: E27D394F-680D-578F-9BD5-3E2E2DD64534
   Provisioning UDID: 00008112-0011302621F9401E
 [... truncated; full sample at ``sample.txt`` (approx. 27 more lines) ...]
+```
+
+### `cystack_6238b4e0`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Apple M2`, `BuildID`, `City`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `MetaMask Info`, `Software`, `SwitchResX4 - Color LCD`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+BuildID:F2
+
+Userinfo:
+Country: IN
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 15.6.1 (24G90)
+  Kernel Version: Darwin 24.6.0
+  Boot Volume: Macintosh HD
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 30 days, 18 hours, 33 minutes
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: MacBook Air
+  Model Identifier: Mac14,2
+  Model Number: MLY13HN/A
+  Chip: Apple M2
+  Total Number of Cores: 8 (4 performance and 4 efficiency)
+  Memory: 8 GB
+  System Firmware Version: 11881.140.96
+  OS Loader Version: 11881.140.96
+  Serial Number (system): Q5VV77FC2D
+  Hardware UUID: 1DA7D104-C14C-5EBB-BA62-1322904D1622
+  Provisioning UDID: 00008112-0001258002F1401E
+  Activation Lock Status: Enabled
+
+Graphics/Displays:
+[... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
 ```
 
 ### `cystack_62f9b2c7`
@@ -349,6 +459,61 @@ Graphics/Displays:
       Metal Support: Metal 3
       Displays:
 [... truncated; full sample at ``sample.txt`` (approx. 8 more lines) ...]
+```
+
+### `cystack_7afe11aa`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Apple M2`, `BuildID`, `City`, `Color LCD`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+BuildID:E3
+
+Userinfo:
+Country: IN
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 26.0 (25A354)
+  Kernel Version: Darwin 25.0.0
+  Boot Volume: Macintosh HD
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 6 days, 16 hours, 58 minutes
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: MacBook Air
+  Model Identifier: Mac14,2
+  Model Number: MLY23HN/A
+  Chip: Apple M2
+  Total Number of Cores: 8 (4 performance and 4 efficiency)
+  Memory: 8 GB
+  System Firmware Version: 13822.1.2
+  OS Loader Version: 13822.1.2
+  Serial Number (system): DWDJWK2CT4
+  Hardware UUID: C295E773-2143-5276-9E1F-238484844355
+  Provisioning UDID: 00008112-000839D42E23C01E
+  Activation Lock Status: Enabled
+
+Graphics/Displays:
+[... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
 ```
 
 ### `cystack_92b81443`

@@ -8,7 +8,7 @@ with the v2 rewrite tracked through 2024.
 
 **Also known as:** `StealC v1`, `StealC v2`
 
-**Variants observed:** 13
+**Variants observed:** 14
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -102,6 +102,61 @@ Process List:
 	lsass.exe [465]
 	lsm.exe [452]
 [... truncated; full sample at ``sample.txt`` (approx. 122 more lines) ...]
+```
+
+### `cystack_2f35dc10`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Installed Apps`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+    672]
+	CCleaner.exe [10580]
+	explorer.exe [11252]
+	svchost.exe [14564]
+	StartMenuExperienceHost.exe [132]
+	nvWmi64.exe [13772]
+	RAVBg64.exe [9480]
+	RuntimeBroker.exe [14940]
+	SearchApp.exe [18460]
+	RuntimeBroker.exe [27596]
+	svchost.exe [27164]
+	svchost.exe [24864]
+	ctfmon.exe [14420]
+	LockApp.exe [4676]
+	RuntimeBroker.exe [8832]
+	taskhostw.exe [19332]
+	WUDFHost.exe [8400]
+	RuntimeBroker.exe [22868]
+	TextInputHost.exe [17392]
+	SecurityHealthSystray.exe [27212]
+	RAVCpl64.exe [3452]
+	ACDSeeCommanderUltimate18.exe [15844]
+	uTorrent.exe [14704]
+	utorrentie.exe [9476]
+	utorrentie.exe [17256]
+	AdobeCollabSync.exe [10364]
+	msedgewebview2.exe [21884]
+	AdobeCollabSync.exe [9088]
+	msedgewebview2.exe [12488]
+	msedgewebview2.exe [2204]
+	msedgewebview2.exe [12744]
+	msedgewebview2.exe [10424]
+	msedgewebview2.exe [10764]
+	msedgewebview2.exe [9556]
+	CompPkgSrv.exe [28860]
+	AnyDesk.exe [12156]
+	helper.exe [27208]
+	SearchApp.exe [5916]
+	msedgewebview2.exe [12300]
+	msedgewebview2.exe [6508]
+[... truncated; full sample at ``sample.txt`` (approx. 135 more lines) ...]
 ```
 
 ### `cystack_3028b0ca`
