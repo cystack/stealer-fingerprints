@@ -1,0 +1,17 @@
+{
+  "family": "Millenium RAT",
+  "variants": [
+    {
+      "attribution_confidence": null,
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_c65f37b2",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}
