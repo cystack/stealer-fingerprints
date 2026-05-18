@@ -19,6 +19,26 @@
       "fingerprint_id": "cystack_4897375d",
       "panel_brand": null,
       "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Build Tag",
+        "Graphics/Displays",
+        "Hardware",
+        "Password",
+        "Software",
+        "Username",
+        "Version"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_c6bf9b88",
+      "panel_brand": null,
+      "synthetic": true
     }
   ]
 }

@@ -26,7 +26,7 @@ signature on the `Time:` line. Build banners reference the
 
 **Attribution confidence:** `high`
 
-**Filenames:** `System.txt`
+**Filenames:** `System.txt`, `system_info.txt`
 
 **Sample (sanitized):**
 

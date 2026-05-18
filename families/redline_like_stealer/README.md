@@ -9,7 +9,7 @@ the underlying field layout intact.
 
 **Also known as:** `redline`, `redline-extended`
 
-**Variants observed:** 13
+**Variants observed:** 14
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -460,6 +460,40 @@ UserLanguage: Portuguese
 Keyboard Language: Portuguese
 Display Resolution: 1920x1080
 Wallpaper Hash: d08c477d7682cd97be0a55cf613fdf56c9c08923
+```
+
+### `cystack_ea6a2985`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `MachineID`, `Operation System`, `Processor`, `Prodct Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+    Country: JM
+IP: <redacted>
+System Language: English
+Processor: 12th Gen Intel(R) Core(TM) i5-1235U
+Installed RAM: 11956 MB
+Operation System: Windows 11 24H2 build 26100 (64 Bit)
+Graphics card: Intel(R) Iris(R) Xe Graphics
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Prodct Key:   @ logs_russia   
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC-5
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+Wallpaper Hash: 0825e886///  @ l o g s _ r u s s i a  ///4c47e6 49d8b8245dea194637ebc808ba25f0d3590f78be
 ```
 
 ## Detection

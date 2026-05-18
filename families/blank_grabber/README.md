@@ -18,7 +18,7 @@ Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 
 **Also known as:** `BlankGrabber`, `Blank-c/Blank-Grabber`
 
-**Variants observed:** 9
+**Variants observed:** 10
 **Top attribution confidence:** `high`
 **Operator panel brands:** `Dead`
 
@@ -138,6 +138,54 @@ Minecraft Sessions : 0
 Epic Session : No
 Steam Session : No
 Uplay Session : No
+Growtopia Session : No
+Screenshot : Yes
+System Info : Yes
+```
+
+### `cystack_30a7fa5c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Autofills`, `CPU`, `Common Files`, `Computer Name`, `Computer OS`, `Cookies`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Telegram Sessions`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+    Blank Grabber got a new victim: maximo.ariza31
+
+IP Info
+(Unable to get IP info)
+
+System Info
+Computer Name: <redacted>
+Computer OS: Microsoft Windows 10 IoT Enterprise
+Total Memory: 8 GB
+UUID: 03000200-0400-0500-0006-000700080009
+CPU: Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
+GPU: NVIDIA GeForce 605
+Product Key: XQQYW-NFFMW-XJPBH-K8732-CKFFD
+
+Grabbed Info
+Discord Accounts : 0
+Passwords : 522
+Cookies : 30
+History : 0
+Autofills : 0
+Roblox Cookies : 0
+Telegram Sessions : 0
+Common Files : 52
+Wallets : 0
+Wifi Passwords : 0
+Webcam : 0
+Minecraft Sessions : 0
+Epic Session : No
+Steam Session : No
+Uplay Session : No
+Battle.Net Session : No
 Growtopia Session : No
 Screenshot : Yes
 System Info : Yes

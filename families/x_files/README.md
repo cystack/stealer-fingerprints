@@ -10,7 +10,7 @@ VPN, FTP, RDP, and messenger client data.
 
 **Also known as:** `X-FILES`, `DeerStealer`, `X-Files Stealer`
 
-**Variants observed:** 5
+**Variants observed:** 6
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -76,6 +76,61 @@ Windows Processes [
    svchost.exe
    svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 333 more lines) ...]
+```
+
+### `cystack_4007d694`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU (Processor)`, `Computer Name`, `Country`, `Desktop Screenshot Taken`, `GPU (Display Devices)`, `Hardware ID`, `IP`, `Operating System`, `RAM (Memory)`, `Screens`, `Username`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+    Operation ID: 3a1b0807-9710-4e49-3ecf-15d29caf161f3a1ccb2f-e112-dd1d-4e74-3cf1201756ee
+
+IP: <redacted>
+Country: KR (South Korea)
+Operating System: Windows 11
+Username: <redacted>
+Computer Name: <redacted>
+Hardware ID: <redacted>
+CPU (Processor): 13th Gen Intel(R) Core(TM) i5-1335U
+GPU (Display Devices): Intel(R) Iris(R) Xe Graphics
+RAM (Memory): 
+Screens: 2560x1600
+Desktop Screenshot Taken: Yes
+
+Windows Processes [
+   System
+   Registry
+   smss.exe
+   csrss.exe
+   wininit.exe
+   services.exe
+   lsass.exe
+   svchost.exe
+   fontdrvhost.exe
+   WUDFHost.exe
+   svchost.exe
+   svchost.exe
+   WUDFHost.exe
+   WUDFHost.exe
+   WUDFHost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   IntelCpHDCPSvc.exe
+[... truncated; full sample at ``sample.txt`` (approx. 259 more lines) ...]
 ```
 
 ### `cystack_7098e015`

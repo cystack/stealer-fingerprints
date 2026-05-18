@@ -1,65 +1,85 @@
 MetaMask Info:
 Debanks: 
-BuildID:random
+BuildID:E3
 
 Userinfo:
-Country: GB
+Country: KR
 IP: <redacted>
 City: <redacted>
 Software:
 
 System Software Overview:
 
-  System Version: macOS 15.6.1 (24G90)
-  Kernel Version: Darwin 24.6.0
+  System Version: macOS 26.0 (25A354)
+  Kernel Version: Darwin 25.0.0
   Boot Volume: Macintosh HD
   Boot Mode: Normal
   Computer Name: <redacted>
   User Name: <redacted>
   Secure Virtual Memory: Enabled
   System Integrity Protection: Enabled
-  Time since boot: 6 days, 22 hours, 11 minutes
+  Time since boot: 39 14
 
 Hardware:
 
 Hardware Overview:
 
   Model Name: MacBook Pro
-  Model Identifier: MacBookPro18,1
-  Model Number: MK193B/A
-  Chip: Apple M1 Pro
-  Total Number of Cores: 10 (8 performance and 2 efficiency)
-  Memory: 16 GB
-  System Firmware Version: 11881.140.96
-  OS Loader Version: 11881.140.96
-  Serial Number (system): Y3HGD6KJ7T
-  Hardware UUID: 76E1DE10-5B97-5E00-871E-629C7FF4E617
-  Provisioning UDID: 00006000-000868E226D2801E
-  Activation Lock Status: Disabled
+  Model Identifier: MacBookPro16,1
+  Processor Name: 6-Core Intel Core i7
+  Processor Speed: 2.6 GHz
+  Number of Processors: 1
+  Total Number of Cores: 6
+  L2 Cache (per Core): 256 KB
+  L3 Cache: 12 MB
+  Hyper-Threading Technology: Enabled
+  Memory: 32 GB
+  System Firmware Version: 2092.<ip> (iBridge: 23.16.10350.0.0,0)
+  OS Loader Version: 583~2470
+  Serial Number (system): C02CD0BGMD6V
+  Hardware UUID: 5414DEB1-C0A7-5E3D-9B1E-17A5420C1679
+  Provisioning UDID: 5414DEB1-C0A7-5E3D-9B1E-17A5420C1679
+  Activation Lock Status: Enabled
 
 Graphics/Displays:
 
-Apple M1 Pro:
+Intel UHD Graphics 630:
 
-  Chipset Model: Apple M1 Pro
+  Chipset Model: Intel UHD Graphics 630
   Type: GPU
   Bus: Built-In
-  Total Number of Cores: 16
-  Vendor: Apple (0x106b)
+  VRAM (Dynamic, Max): 1536 MB
+  Vendor: Intel
+  Device ID: 0x3e9b
+  Revision ID: 0x0000
+  Automatic Graphics Switching: Supported
+  gMux Version: 5.0.0
   Metal Support: Metal 3
   Displays:
 Color LCD:
-  Display Type: Built-in Liquid Retina XDR Display
-  Resolution: 3456 x 2234 Retina
+  Display Type: Built-In Retina LCD
+  Resolution: 3072 x 1920 Retina
+  Framebuffer Depth: 24-Bit Color (ARGB8888)
   Main Display: Yes
   Mirror: Off
   Online: Yes
-  Automatically Adjust Brightness: Yes
-  Connection Type: Internal
-G274F:
-  Resolution: 1920 x 1080 (1080p FHD - Full High Definition)
-  UI Looks like: 1920 x 1080 @ 180.00Hz
-  Mirror: Off
-  Online: Yes
-  Rotation: Supported
   Automatically Adjust Brightness: No
+  Connection Type: Internal
+
+AMD Radeon Pro 5300M:
+
+  Chipset Model: AMD Radeon Pro 5300M
+  Type: GPU
+  Bus: PCIe
+  PCIe Lane Width: x16
+  VRAM (Total): 4 GB
+  Vendor: AMD (0x1002)
+  Device ID: 0x7340
+  Revision ID: 0x0043
+  ROM Revision: 113-D3220E-190
+  VBIOS Version: 113-D32207P1-019
+  Option ROM Version: 113-D32207P1-019
+  EFI Driver Version: 01.A1.190
+  Automatic Graphics Switching: Supported
+  gMux Version: 5.0.0
+  Metal Support: Metal 3

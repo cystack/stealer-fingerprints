@@ -38,6 +38,30 @@
         "Hardware ID",
         "IP",
         "Operating System",
+        "RAM (Memory)",
+        "Screens",
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_4007d694",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU (Processor)",
+        "Computer Name",
+        "Country",
+        "Desktop Screenshot Taken",
+        "GPU (Display Devices)",
+        "Hardware ID",
+        "IP",
+        "Operating System",
         "Processed parts",
         "RAM (Memory)",
         "Screens",

@@ -1,58 +1,56 @@
-MacSync Stealer
+    MacSync Stealer
 
-Build Tag: Alves
+Build Tag: @BRADLOGS (BRADMAX) / <url>
+Version: 1.0.7_release (x64_86 & ARM)
 
 Username: <redacted>
-Password: 9929
+Password: 9999
 
 Software:
 
     System Software Overview:
 
-      Boot Volume: 500
+      System Version: macOS 26.0.1 (25A362)
+      Kernel Version: Darwin 25.0.0
+      Boot Volume: ]\'[[[[']
       Boot Mode: Normal
       Computer Name: <redacted>
       User Name: <redacted>
       Secure Virtual Memory: Enabled
       System Integrity Protection: Enabled
-      Time since boot: 2 dni, 2 godziny i 31 minut
+      Time since boot: 5 hours, 50 minutes
 
 Hardware:
 
     Hardware Overview:
 
-      Model Name: MacBook Pro
-      Model Identifier: MacBookPro14,2
-      Processor Name: Dual-Core Intel Core i7
-      Processor Speed: 3,5 GHz
-      Number of Processors: 1
-      Total Number of Cores: 2
-      L2 Cache (per Core): 256 KB
-      L3 Cache: 4 MB
-      Hyper-Threading Technology: Enabled
-      Memory: 16 GB
-      SMC Version (system): 2.44f6
-      Serial Number (system): C02WM0S8HV2R
-      Hardware UUID: B6B7D385-F0F0-53DC-80C7-3F89BF001BE6
-      Provisioning UDID: B6B7D385-F0F0-53DC-80C7-3F89BF001BE6
+      Model Name: iMac
+      Model Identifier: iMac21,1
+      Model Number: Z13200023TH/A
+      Chip: Apple M1
+      Total Number of Cores: 8 (4 performance and 4 efficiency)
+      Memory: 8 GB
+      System Firmware Version: 13822.1.2
+      OS Loader Version: 13822.1.2
+      Serial Number (system): C02G30N8Q6XH
+      Hardware UUID: 8DED2515-46B7-59E3-9F52-6E5DAFE186AE
+      Provisioning UDID: 00008103-001259E93C79001E
+      Activation Lock Status: Disabled
 
 Graphics/Displays:
 
-    Intel Iris Plus Graphics 650:
+    Apple M1:
 
-      Chipset Model: Intel Iris Plus Graphics 650
+      Chipset Model: Apple M1
       Type: GPU
       Bus: Built-In
-      VRAM (Dynamic, Max): 1536 MB
-      Vendor: Intel
-      Device ID: 0x5927
-      Revision ID: 0x0006
-      Metal Support: Metal 3
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 4
       Displays:
-        Color LCD:
+        iMac:
           Display Type: Built-In Retina LCD
-          Resolution: 2560 x 1600 Retina
-          Framebuffer Depth: 24-Bit Color (ARGB8888)
+          Resolution: Retina 4.5K (4480 x 2520)
           Main Display: Yes
           Mirror: Off
           Online: Yes

@@ -9,7 +9,7 @@ banner, captured account credentials, and the verbatim output of
 
 **Also known as:** `Mac.c`, `MacSync Stealer`
 
-**Variants observed:** 1
+**Variants observed:** 2
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -75,6 +75,61 @@ Hardware:
 Graphics/Displays:
 
 [... truncated; full sample at ``sample.txt`` (approx. 20 more lines) ...]
+```
+
+### `cystack_c6bf9b88`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Build Tag`, `Graphics/Displays`, `Hardware`, `Password`, `Software`, `Username`, `Version`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+    MacSync Stealer
+
+Build Tag: @BRADLOGS (BRADMAX) / <url>
+Version: 1.0.7_release (x64_86 & ARM)
+
+Username: <redacted>
+Password: 9999
+
+Software:
+
+    System Software Overview:
+
+      System Version: macOS 26.0.1 (25A362)
+      Kernel Version: Darwin 25.0.0
+      Boot Volume: ]\'[[[[']
+      Boot Mode: Normal
+      Computer Name: <redacted>
+      User Name: <redacted>
+      Secure Virtual Memory: Enabled
+      System Integrity Protection: Enabled
+      Time since boot: 5 hours, 50 minutes
+
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: iMac
+      Model Identifier: iMac21,1
+      Model Number: Z13200023TH/A
+      Chip: Apple M1
+      Total Number of Cores: 8 (4 performance and 4 efficiency)
+      Memory: 8 GB
+      System Firmware Version: 13822.1.2
+      OS Loader Version: 13822.1.2
+      Serial Number (system): C02G30N8Q6XH
+      Hardware UUID: 8DED2515-46B7-59E3-9F52-6E5DAFE186AE
+      Provisioning UDID: 00008103-001259E93C79001E
+      Activation Lock Status: Disabled
+
+Graphics/Displays:
+[... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
 ```
 
 ## Detection

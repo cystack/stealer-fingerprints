@@ -29,6 +29,32 @@ rule Cthulhu_Stealer_cystack_000c0121
         all of ($key_*)
 }
 
+rule Cthulhu_Stealer_cystack_0ac18884
+{
+    meta:
+        family = "Cthulhu Stealer"
+        fingerprint_id = "cystack_0ac18884"
+
+    strings:
+        $key_0 = "BuildID:" ascii
+        $key_1 = "City:" ascii
+        $key_2 = "Color LCD:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Debanks:" ascii
+        $key_5 = "Graphics/Displays:" ascii
+        $key_6 = "Hardware:" ascii
+        $key_7 = "Hardware Overview:" ascii
+        $key_8 = "IP:" ascii
+        $key_9 = "Intel HD Graphics 5000:" ascii
+        $key_10 = "MetaMask Info:" ascii
+        $key_11 = "Software:" ascii
+        $key_12 = "System Software Overview:" ascii
+        $key_13 = "Userinfo:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Cthulhu_Stealer_cystack_161680a5
 {
     meta:
@@ -108,6 +134,59 @@ rule Cthulhu_Stealer_cystack_32f80447
         all of ($key_*)
 }
 
+rule Cthulhu_Stealer_cystack_40506711
+{
+    meta:
+        family = "Cthulhu Stealer"
+        fingerprint_id = "cystack_40506711"
+
+    strings:
+        $key_0 = "BuildID:" ascii
+        $key_1 = "City:" ascii
+        $key_2 = "Color LCD:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Debanks:" ascii
+        $key_5 = "Graphics/Displays:" ascii
+        $key_6 = "Hardware:" ascii
+        $key_7 = "Hardware Overview:" ascii
+        $key_8 = "IP:" ascii
+        $key_9 = "Intel HD Graphics 6000:" ascii
+        $key_10 = "MetaMask Info:" ascii
+        $key_11 = "Software:" ascii
+        $key_12 = "System Software Overview:" ascii
+        $key_13 = "Userinfo:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Cthulhu_Stealer_cystack_5bdc5a4e
+{
+    meta:
+        family = "Cthulhu Stealer"
+        fingerprint_id = "cystack_5bdc5a4e"
+
+    strings:
+        $key_0 = "AMD Radeon Pro 5300M:" ascii
+        $key_1 = "BuildID:" ascii
+        $key_2 = "City:" ascii
+        $key_3 = "Color LCD:" ascii
+        $key_4 = "Country:" ascii
+        $key_5 = "Debanks:" ascii
+        $key_6 = "Graphics/Displays:" ascii
+        $key_7 = "Hardware:" ascii
+        $key_8 = "Hardware Overview:" ascii
+        $key_9 = "IP:" ascii
+        $key_10 = "Intel UHD Graphics 630:" ascii
+        $key_11 = "MetaMask Info:" ascii
+        $key_12 = "Software:" ascii
+        $key_13 = "System Software Overview:" ascii
+        $key_14 = "Userinfo:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Cthulhu_Stealer_cystack_6238b4e0
 {
     meta:
@@ -177,6 +256,32 @@ rule Cthulhu_Stealer_cystack_65967d4c
         $key_7 = "Hardware Overview:" ascii
         $key_8 = "IP:" ascii
         $key_9 = "LS27D300G:" ascii
+        $key_10 = "MetaMask Info:" ascii
+        $key_11 = "Software:" ascii
+        $key_12 = "System Software Overview:" ascii
+        $key_13 = "Userinfo:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Cthulhu_Stealer_cystack_6b6e6129
+{
+    meta:
+        family = "Cthulhu Stealer"
+        fingerprint_id = "cystack_6b6e6129"
+
+    strings:
+        $key_0 = "Apple M4 Max:" ascii
+        $key_1 = "BuildID:" ascii
+        $key_2 = "City:" ascii
+        $key_3 = "Color LCD:" ascii
+        $key_4 = "Country:" ascii
+        $key_5 = "Debanks:" ascii
+        $key_6 = "Graphics/Displays:" ascii
+        $key_7 = "Hardware:" ascii
+        $key_8 = "Hardware Overview:" ascii
+        $key_9 = "IP:" ascii
         $key_10 = "MetaMask Info:" ascii
         $key_11 = "Software:" ascii
         $key_12 = "System Software Overview:" ascii
@@ -398,6 +503,32 @@ rule Cthulhu_Stealer_cystack_dd4f9b5b
         $key_10 = "Software:" ascii
         $key_11 = "System Software Overview:" ascii
         $key_12 = "Userinfo:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Cthulhu_Stealer_cystack_e8263afb
+{
+    meta:
+        family = "Cthulhu Stealer"
+        fingerprint_id = "cystack_e8263afb"
+
+    strings:
+        $key_0 = "Apple M1:" ascii
+        $key_1 = "BuildID:" ascii
+        $key_2 = "City:" ascii
+        $key_3 = "Color LCD:" ascii
+        $key_4 = "Country:" ascii
+        $key_5 = "Debanks:" ascii
+        $key_6 = "Graphics/Displays:" ascii
+        $key_7 = "Hardware:" ascii
+        $key_8 = "Hardware Overview:" ascii
+        $key_9 = "IP:" ascii
+        $key_10 = "MetaMask Info:" ascii
+        $key_11 = "Software:" ascii
+        $key_12 = "System Software Overview:" ascii
+        $key_13 = "Userinfo:" ascii
 
     condition:
         all of ($key_*)
