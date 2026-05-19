@@ -320,6 +320,33 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Apple M3 Max",
+        "City",
+        "Color LCD",
+        "Country",
+        "DELL P2419H",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_7655c83f",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "Apple M1",
         "City",
         "Country",
@@ -390,6 +417,32 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_807f3e69",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Apple M1 Ultra",
+        "City",
+        "Country",
+        "DELL U2723QE",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_887171ab",
       "panel_brand": null,
       "synthetic": true
     },
@@ -547,6 +600,32 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_9732ef4d",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Apple M1",
+        "City",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "SAMSUNG",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_97abd0d5",
       "panel_brand": null,
       "synthetic": true
     },
@@ -1218,6 +1297,33 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_f9a7b8dd",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "City",
+        "Color LCD",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "Intel Iris Pro",
+        "MetaMask Info",
+        "NVIDIA GeForce GT 750M",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_fbebf84e",
       "panel_brand": null,
       "synthetic": true
     },

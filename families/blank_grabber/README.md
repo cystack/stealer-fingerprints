@@ -18,7 +18,7 @@ Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 
 **Also known as:** `BlankGrabber`, `Blank-c/Blank-Grabber`
 
-**Variants observed:** 10
+**Variants observed:** 11
 **Top attribution confidence:** `high`
 **Operator panel brands:** `Dead`
 
@@ -385,6 +385,54 @@ Autofills : 0
 Roblox Cookies : 0
 Telegram Sessions : 0
 Common Files : 0
+Wallets : 0
+Wifi Passwords : 0
+Webcam : 0
+Minecraft Sessions : 0
+Epic Session : No
+Steam Session : No
+Uplay Session : No
+Battle.Net Session : No
+Growtopia Session : No
+Screenshot : Yes
+System Info : Yes
+```
+
+### `cystack_d36c2a31`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Autofills`, `Blank Grabber got a new victim`, `CPU`, `Common Files`, `Computer Name`, `Computer OS`, `Cookies`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Telegram Sessions`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+Blank Grabber got a new victim: USUARIO
+
+IP Info
+(Unable to get IP info)
+
+System Info
+Computer Name: <redacted>
+Computer OS: Unable to detect OS
+Total Memory: Unable to detect total memory
+UUID: Unable to detect UUID
+CPU: Intel64 Family 6 Model 189 Stepping 1, GenuineIntel
+GPU: Unable to detect GPU
+Product Key: HBY4H-RNXB8-Y2YTR-443VB-MY6F8
+
+Grabbed Info
+Discord Accounts : 0
+Passwords : 57
+Cookies : 0
+History : 0
+Autofills : 0
+Roblox Cookies : 0
+Telegram Sessions : 0
+Common Files : 31
 Wallets : 0
 Wifi Passwords : 0
 Webcam : 0

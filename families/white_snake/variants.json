@@ -61,6 +61,29 @@
       "distribution_channel": null,
       "field_keys": [
         "CPU",
+        "Computer name",
+        "GPU",
+        "HWID",
+        "Installed antivirus",
+        "RAM",
+        "Started as admin",
+        "System",
+        "System time",
+        "User name"
+      ],
+      "filenames": [
+        "PC_info.txt"
+      ],
+      "fingerprint_id": "cystack_a11b2a84",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU",
         "GPU",
         "HWID",
         "Installed antivirus",

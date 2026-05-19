@@ -8,12 +8,12 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 
 | Family | Variants | Channels | Top confidence |
 |---|---|---|---|
-| [`AMOS Stealer`](families/amos_stealer/) | 48 | 0 | `medium` |
+| [`AMOS Stealer`](families/amos_stealer/) | 52 | 0 | `medium` |
 | [`Acreed`](families/acreed/) | 1 | 0 | `high` |
 | [`Aetheris Stealer`](families/aetheris_stealer/) | 6 | 0 | `high` |
 | [`Ailurophile`](families/ailurophile/) | 1 | 1 | `high` |
 | [`AuraStealer`](families/aura_stealer/) | 2 | 0 | `high` |
-| [`Blank Grabber`](families/blank_grabber/) | 10 | 0 | `high` |
+| [`Blank Grabber`](families/blank_grabber/) | 11 | 0 | `high` |
 | [`BracketSection Stealer`](families/bracket_section_stealer/) | 1 | 0 | `unknown` |
 | [`CSBareVersionStealer`](families/cs_bare_version_stealer/) | 1 | 1 | `unknown` |
 | [`CSBitArchStealer`](families/cs_bit_arch_stealer/) | 1 | 0 | `unknown` |
@@ -24,6 +24,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSDaisyCloudStealer`](families/cs_daisy_cloud_stealer/) | 1 | 1 | `low` |
 | [`CSDashPlusSepStealer`](families/cs_dash_plus_sep_stealer/) | 1 | 1 | `unknown` |
 | [`CSDataCollectedStealer`](families/cs_data_collected_stealer/) | 1 | 0 | `unknown` |
+| [`CSEmojiCountStealer`](families/cs_emoji_count_stealer/) | 2 | 0 | `unknown` |
 | [`CSEmojiInfoStealer`](families/cs_emoji_info_stealer/) | 1 | 0 | `unknown` |
 | [`CSEnvVarDumpStealer`](families/cs_env_var_dump_stealer/) | 1 | 1 | `unknown` |
 | [`CSFacebookMarketStealer`](families/cs_facebook_market_stealer/) | 1 | 1 | `unknown` |
@@ -36,7 +37,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSSoftwareTailStealer`](families/cs_software_tail_stealer/) | 1 | 1 | `unknown` |
 | [`CSWmicDumpStealer`](families/cs_wmic_dump_stealer/) | 1 | 0 | `unknown` |
 | [`Category Stealer`](families/category_stealer/) | 3 | 0 | `unknown` |
-| [`Cthulhu Stealer`](families/cthulhu_stealer/) | 22 | 0 | `high` |
+| [`Cthulhu Stealer`](families/cthulhu_stealer/) | 23 | 0 | `high` |
 | [`Lumma`](families/lumma/) | 1 | 0 | `high` |
 | [`MacSync`](families/mac_sync/) | 2 | 0 | `high` |
 | [`Millenium RAT`](families/millenium_rat/) | 1 | 0 | `-` |
@@ -47,8 +48,8 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Redline`](families/redline/) | 18 | 0 | `high` |
 | [`RedlineLike Stealer`](families/redline_like_stealer/) | 14 | 0 | `unknown` |
 | [`StealC`](families/steal_c/) | 14 | 0 | `high` |
-| [`Vidar`](families/vidar/) | 3153 | 0 | `high` |
-| [`WhiteSnake`](families/white_snake/) | 4 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 3187 | 0 | `high` |
+| [`WhiteSnake`](families/white_snake/) | 5 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 6 | 0 | `high` |
 
 ## Contributing

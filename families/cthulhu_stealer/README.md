@@ -8,7 +8,7 @@ Observed in `@bugatti_cloud` aggregator packs.
 
 **Also known as:** `Cthulhu macOS Stealer`
 
-**Variants observed:** 22
+**Variants observed:** 23
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -1164,6 +1164,61 @@ Hardware Overview:
 
 Graphics/Displays:
 [... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
+```
+
+### `cystack_eeff932e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`BuildID`, `City`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `Intel HD Graphics 5000`, `MetaMask Info`, `PHL 243V5`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+BuildID:james_4
+
+Userinfo:
+Country: NO
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 12.7.6 (21H1320)
+  Kernel Version: Darwin 21.6.0
+  Boot Volume: gigvideo2
+  Boot Mode: Normal
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Disabled
+  Time since boot: 3 days 3:18
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: Mac mini
+  Model Identifier: Macmini7,1
+  Processor Name: Dual-Core Intel Core i5
+  Processor Speed: 1,4 GHz
+  Number of Processors: 1
+  Total Number of Cores: 2
+  L2 Cache (per Core): 256 KB
+  L3 Cache: 3 MB
+  Hyper-Threading Technology: Enabled
+  Memory: 4 GB
+  System Firmware Version: <ip>.0
+  OS Loader Version: 540.120.3~37
+  SMC Version (system): 2.24f32
+  Serial Number (system): C07NT0EHG1HV
+  Hardware UUID: 3E8D32D0-3296-5BAE-AD89-AAD7C90D4FD7
+[... truncated; full sample at ``sample.txt`` (approx. 24 more lines) ...]
 ```
 
 ### `cystack_f6f1b312`

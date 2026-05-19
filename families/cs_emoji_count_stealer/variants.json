@@ -1,0 +1,76 @@
+{
+  "family": "CSEmojiCountStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Antivirus",
+        "Build",
+        "CPU",
+        "City",
+        "Cookies",
+        "Country",
+        "Credit Cards",
+        "Current Language",
+        "Discord Tokens",
+        "FileLocation",
+        "Files",
+        "GPU",
+        "IP",
+        "ISP",
+        "Is Elevated",
+        "OS",
+        "Others",
+        "Passwords",
+        "Postal",
+        "Servers FTP/SSH",
+        "Timezone",
+        "Wallets"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_1a0ba773",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Antivirus",
+        "Build",
+        "CPU",
+        "City",
+        "Cookies",
+        "Country",
+        "Credit Cards",
+        "Current Language",
+        "Discord Tokens",
+        "FileLocation",
+        "Files",
+        "GPU",
+        "HWID",
+        "IP",
+        "ISP",
+        "Is Elevated",
+        "OS",
+        "Others",
+        "Passwords",
+        "Postal",
+        "Servers FTP/SSH",
+        "Timezone",
+        "Wallets"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_b6fbe92c",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

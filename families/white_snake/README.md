@@ -9,7 +9,7 @@ redistributors) and via a MaaS subscription model.
 
 **Also known as:** `WhiteSnake Stealer`
 
-**Variants observed:** 4
+**Variants observed:** 5
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -86,6 +86,35 @@ Country: Argentina [AR]
 City: <redacted>
 Region: Buenos Aires F.D.
 Internet provider: SpaceX Starlink
+```
+
+### `cystack_a11b2a84`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU`, `Computer name`, `GPU`, `HWID`, `Installed antivirus`, `RAM`, `Started as admin`, `System`, `System time`, `User name`
+
+**Filenames:** `PC_info.txt`
+
+**Sample (sanitized):**
+
+```
+🖥Computer info:
+System: Microsoft Windows 10 Pro (x64)
+Computer name: <redacted>
+User name: <redacted>
+System time: 2025-11-23 <ip> AM
+CPU: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+GPU: Intel(R) HD Graphics 4000
+RAM: 16302 MB
+HWID: <redacted>
+
+🛡Security:
+Installed antivirus: Windows Defender.
+Started as admin: False
+
+📡Whois: Failed to fetch data
 ```
 
 ### `cystack_b5e6aa06`
