@@ -557,6 +557,31 @@ rule AMOS_Stealer_cystack_8e4aecf0
         all of ($key_*)
 }
 
+rule AMOS_Stealer_cystack_934540d9
+{
+    meta:
+        family = "AMOS Stealer"
+        fingerprint_id = "cystack_934540d9"
+
+    strings:
+        $key_0 = "BuildVersion:" ascii
+        $key_1 = "City:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Debanks:" ascii
+        $key_4 = "Graphics/Displays:" ascii
+        $key_5 = "Hardware:" ascii
+        $key_6 = "IP:" ascii
+        $key_7 = "MetaMask Info:" ascii
+        $key_8 = "Private Keys:" ascii
+        $key_9 = "ProductName:" ascii
+        $key_10 = "ProductVersion:" ascii
+        $key_11 = "Seeds:" ascii
+        $key_12 = "Userinfo:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule AMOS_Stealer_cystack_94207481
 {
     meta:
@@ -704,6 +729,26 @@ rule AMOS_Stealer_cystack_a9896efb
         $key_11 = "Software:" ascii
         $key_12 = "System Software Overview:" ascii
         $key_13 = "Userinfo:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule AMOS_Stealer_cystack_ab3c30c5
+{
+    meta:
+        family = "AMOS Stealer"
+        fingerprint_id = "cystack_ab3c30c5"
+
+    strings:
+        $key_0 = "City:" ascii
+        $key_1 = "Country:" ascii
+        $key_2 = "Debanks:" ascii
+        $key_3 = "Graphics/Displays:" ascii
+        $key_4 = "IP:" ascii
+        $key_5 = "MetaMask Info:" ascii
+        $key_6 = "Software:" ascii
+        $key_7 = "Userinfo:" ascii
 
     condition:
         all of ($key_*)
@@ -1077,6 +1122,28 @@ rule AMOS_Stealer_cystack_e68b8a47
         $key_11 = "Software:" ascii
         $key_12 = "System Software Overview:" ascii
         $key_13 = "Userinfo:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule AMOS_Stealer_cystack_e7103028
+{
+    meta:
+        family = "AMOS Stealer"
+        fingerprint_id = "cystack_e7103028"
+
+    strings:
+        $key_0 = "Board-ID:" ascii
+        $key_1 = "City:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Debanks:" ascii
+        $key_4 = "Graphics/Displays:" ascii
+        $key_5 = "Hardware:" ascii
+        $key_6 = "IP:" ascii
+        $key_7 = "MetaMask Info:" ascii
+        $key_8 = "Software:" ascii
+        $key_9 = "Userinfo:" ascii
 
     condition:
         all of ($key_*)

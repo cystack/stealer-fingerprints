@@ -8,7 +8,7 @@ high-volume infostealer family in 2025+.
 
 **Also known as:** `VidarStealer`
 
-**Variants observed:** 3293
+**Variants observed:** 3375
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -3101,6 +3101,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 281 more lines) ...]
 ```
 
+### `cystack_033509b9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Saints Row IV`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: BR
+Version: 13.2
+
+Date: 19/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States) / Portuguese (Brazil)
+Local Time: 19/3/2025 <ip>
+TimeZone: -3
+
+[Hardware]
+Processor: AMD Ryzen 5 4500 6-Core Processor              
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 265 more lines) ...]
+```
+
 ### `cystack_034f88e7`
 
 **Attribution confidence:** `high`
@@ -3484,6 +3539,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 296 more lines) ...]
+```
+
+### `cystack_03f4cdcd`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Dead Rising 2`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: BO
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Espa?ol (Espa?a, internacional) / Espa?ol (Bolivia) / Ingl?s (Estados Unidos)
+Local Time: 23/3/2025 <ip>
+TimeZone: -4
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+Cores: 2
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 371 more lines) ...]
 ```
 
 ### `cystack_040526e4`
@@ -5024,6 +5134,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 304 more lines) ...]
+```
+
+### `cystack_05f9dffe`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `DRAGON BALL`, `Date`, `Display Resolution`, `Dragon Ball`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: US
+Version: 13.2
+
+Date: 16/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States)
+Local Time: 16/3/2025 <ip>
+TimeZone: -8
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 171 more lines) ...]
 ```
 
 ### `cystack_0607ad2d`
@@ -7226,6 +7391,116 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 206 more lines) ...]
 ```
 
+### `cystack_0914f462`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Big Fish`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: US
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English (United States)
+Local Time: 23/3/2025 <ip>
+TimeZone: -5
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i3-1215U
+Cores: 6
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 255 more lines) ...]
+```
+
+### `cystack_0924a968`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Demon Slayer`, `Display Resolution`, `GTA`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Sleeping Dogs`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: IN
+Version: 13.2
+
+Date: 19/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States)
+Local Time: 19/3/2025 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-4590S CPU @ 3.00GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 263 more lines) ...]
+```
+
 ### `cystack_09414739`
 
 **Attribution confidence:** `high`
@@ -7886,6 +8161,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 323 more lines) ...]
 ```
 
+### `cystack_09c15a76`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `UNCHARTED`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: IN
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English (United States) / English (India)
+Local Time: 23/3/2025 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 277 more lines) ...]
+```
+
 ### `cystack_09c33c17`
 
 **Attribution confidence:** `high`
@@ -8326,6 +8656,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 248 more lines) ...]
 ```
 
+### `cystack_0ac04302`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `LustyVerse`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: VN
+Version: 13.2
+
+Date: 24/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Enterprise
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: English (United States)
+Local Time: 24/3/2025 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 319 more lines) ...]
+```
+
 ### `cystack_0ac0cb54`
 
 **Attribution confidence:** `high`
@@ -8379,6 +8764,61 @@ svchost.exe
 fontdrvhost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 378 more lines) ...]
+```
+
+### `cystack_0ac4eff3`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `Project1 (C`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: IN
+Version: 13.2
+
+Date: 19/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: English (United States) / English (India)
+Local Time: 19/3/2025 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz
+Cores: 2
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 251 more lines) ...]
 ```
 
 ### `cystack_0aef524d`
@@ -9589,6 +10029,61 @@ fontdrvhost.exe
 WUDFHost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 280 more lines) ...]
+```
+
+### `cystack_0ca6a40f`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Sekiro`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: EG
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1680x1050
+Keyboard Languages: Arabic (Egypt) / English (United States)
+Local Time: 23/3/2025 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 240 more lines) ...]
 ```
 
 ### `cystack_0caa43ce`
@@ -10964,6 +11459,61 @@ winlogon.exe
 services.exe
 LsaIso.exe
 [... truncated; full sample at ``sample.txt`` (approx. 286 more lines) ...]
+```
+
+### `cystack_0e82d15a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Delta Force`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: HN
+Version: 13.2
+
+Date: 24/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1440x900
+Keyboard Languages: Ingl?s (Estados Unidos) / Espa?ol (Latinoam?rica) / Espa?ol (Espa?a, internacional) / Espa?ol (Honduras)
+Local Time: 24/3/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 300 more lines) ...]
 ```
 
 ### `cystack_0e943371`
@@ -15641,6 +16191,61 @@ WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 240 more lines) ...]
 ```
 
+### `cystack_157c6caa`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `DOOM3`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MTA`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: BR
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1360x768
+Keyboard Languages: Portugu?s (Brasil)
+Local Time: 23/3/2025 <ip>
+TimeZone: -3
+
+[Hardware]
+Processor: Intel(R) Core(TM)2 Quad CPU    Q9550  @ 2.83GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 316 more lines) ...]
+```
+
 ### `cystack_158d86b9`
 
 **Attribution confidence:** `high`
@@ -17894,6 +18499,61 @@ svchost.exe
 fontdrvhost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 218 more lines) ...]
+```
+
+### `cystack_1932f143`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Sonic Colors`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: BR
+Version: 13.2
+
+Date: 22/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portugu?s (Brasil) / Portugu?s (Brasil)
+Local Time: 22/3/2025 <ip>
+TimeZone: -3
+
+[Hardware]
+Processor: Intel(R) Core(TM)2 Quad CPU    Q8400  @ 2.66GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 123 more lines) ...]
 ```
 
 ### `cystack_19330ab2`
@@ -23011,6 +23671,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 302 more lines) ...]
 ```
 
+### `cystack_20cb4d2c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Dying Light`, `Far Cry`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MTA`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: EG
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English (United States) / Arabic (Egypt)
+Local Time: 23/3/2025 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-1235U
+Cores: 10
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 248 more lines) ...]
+```
+
 ### `cystack_20cc2bf3`
 
 **Attribution confidence:** `high`
@@ -23174,6 +23889,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 318 more lines) ...]
+```
+
+### `cystack_20ffe886`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hitman Absolution`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: EG
+Version: 13.2
+
+Date: 19/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States) / Arabic (Egypt)
+Local Time: 19/3/2025 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 249 more lines) ...]
 ```
 
 ### `cystack_2112545c`
@@ -32196,6 +32966,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 288 more lines) ...]
 ```
 
+### `cystack_2d89dacd`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `DRAGON BALL`, `Date`, `Display Resolution`, `GUID`, `HWID`, `HoneyCome`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: AU
+Version: 13.2
+
+Date: 21/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1080
+Keyboard Languages: English (United States) / English (Australia)
+Local Time: 21/3/2025 <ip>
+TimeZone: 10
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i7-12700K
+Cores: 12
+Threads: 20
+[... truncated; full sample at ``sample.txt`` (approx. 270 more lines) ...]
+```
+
 ### `cystack_2dc94903`
 
 **Attribution confidence:** `high`
@@ -33129,6 +33954,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 295 more lines) ...]
+```
+
+### `cystack_2f846529`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Outcast`, `Path`, `Processor`, `RAM`, `RoboCop`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: US
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1080
+Keyboard Languages: English (United States)
+Local Time: 23/3/2025 <ip>
+TimeZone: -8
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-6900K CPU @ 3.20GHz
+Cores: 8
+Threads: 16
+[... truncated; full sample at ``sample.txt`` (approx. 283 more lines) ...]
 ```
 
 ### `cystack_2f8cd866`
@@ -37806,6 +38686,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 314 more lines) ...]
 ```
 
+### `cystack_36fe51b8`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Ace Combat 7`, `Batman`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: ZA
+Version: 13.2
+
+Date: 22/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States)
+Local Time: 22/3/2025 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 312 more lines) ...]
+```
+
 ### `cystack_3712fef6`
 
 **Attribution confidence:** `high`
@@ -38849,6 +39784,61 @@ LsaIso.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 286 more lines) ...]
+```
+
+### `cystack_38254981`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Cyberpunk 2077`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: ES
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: Espa?ol (Espa?a, internacional) / Ingl?s (Estados Unidos)
+Local Time: 23/3/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 297 more lines) ...]
 ```
 
 ### `cystack_3845c26c`
@@ -40831,6 +41821,61 @@ lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 256 more lines) ...]
 ```
 
+### `cystack_3afc8f42`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Heavy Cargo`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: PL
+Version: 13.2
+
+Date: 22/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Polski (Polska)
+Local Time: 22/3/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 257 more lines) ...]
+```
+
 ### `cystack_3b0af80b`
 
 **Attribution confidence:** `high`
@@ -41599,6 +42644,116 @@ lsass.exe
 fontdrvhost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 331 more lines) ...]
+```
+
+### `cystack_3c3c26fd`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MTA`, `MachineID`, `Mesh Agent - 2022-12-02 22`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: TR
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home Single Language
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: T?rk?e (T?rkiye)
+Local Time: 23/3/2025 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 278 more lines) ...]
+```
+
+### `cystack_3c453a53`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Exotica`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: TR
+Version: 13.2
+
+Date: 24/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: T?rk?e (T?rkiye)
+Local Time: 24/3/2025 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i3-12100F
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 374 more lines) ...]
 ```
 
 ### `cystack_3c46476f`
@@ -46496,6 +47651,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 258 more lines) ...]
 ```
 
+### `cystack_444bc031`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `TRANSFORMERS`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: ID
+Version: 13.2
+
+Date: 21/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States)
+Local Time: 21/3/2025 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-4790S CPU @ 3.20GHz
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 261 more lines) ...]
+```
+
 ### `cystack_445286ec`
 
 **Attribution confidence:** `high`
@@ -50564,6 +51774,61 @@ services.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 239 more lines) ...]
+```
+
+### `cystack_4960064b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MTA`, `MachineID`, `Path`, `Processor`, `RAM`, `The Elder Scrolls V`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: BR
+Version: 13.2
+
+Date: 22/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Ingl?s (Estados Unidos) / Portugu?s (Brasil) / Portugu?s (Brasil)
+Local Time: 22/3/2025 <ip>
+TimeZone: -3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3 CPU         550  @ 3.20GHz
+Cores: 2
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 288 more lines) ...]
 ```
 
 ### `cystack_49740b40`
@@ -56836,6 +58101,61 @@ WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 294 more lines) ...]
 ```
 
+### `cystack_527f8be4`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Call of Duty`, `Cities`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: FR
+Version: 13.2
+
+Date: 24/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Fran?ais (France)
+Local Time: 24/3/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 362 more lines) ...]
+```
+
 ### `cystack_52989967`
 
 **Attribution confidence:** `high`
@@ -59199,6 +60519,61 @@ svchost.exe
 NVDisplay.Container.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 242 more lines) ...]
+```
+
+### `cystack_556b8af6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Halo`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: MY
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home Single Language
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x1024
+Keyboard Languages: English (Malaysia) / English (United Kingdom)
+Local Time: 23/3/2025 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 236 more lines) ...]
 ```
 
 ### `cystack_5585d4a5`
@@ -66241,6 +67616,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 362 more lines) ...]
 ```
 
+### `cystack_5e17f803`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GTA`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Spider-Man`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: PK
+Version: 13.2
+
+Date: 24/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States) / English (United States)
+Local Time: 24/3/2025 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 209 more lines) ...]
+```
+
 ### `cystack_5e1a2b89`
 
 **Attribution confidence:** `high`
@@ -72126,6 +73556,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 301 more lines) ...]
 ```
 
+### `cystack_67ba4040`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Documents`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: US
+Version: 13.2
+
+Date: 22/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Education
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States)
+Local Time: 22/3/2025 <ip>
+TimeZone: -6
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7 CPU         930  @ 2.80GHz
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 235 more lines) ...]
+```
+
 ### `cystack_67c40af9`
 
 **Attribution confidence:** `high`
@@ -73281,6 +74766,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 247 more lines) ...]
 ```
 
+### `cystack_68ff2cd4`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `NARUTO`, `NARUTO SHIPPUDEN`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: IN
+Version: 13.2
+
+Date: 19/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English (India) / English (United States) / English (United States)
+Local Time: 19/3/2025 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 329 more lines) ...]
+```
+
 ### `cystack_69004a28`
 
 **Attribution confidence:** `high`
@@ -73666,6 +75206,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 351 more lines) ...]
 ```
 
+### `cystack_69dbc081`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `FNaF`, `GUID`, `HWID`, `Install Date`, `Ip`, `Jujutsu Kaisen`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: AR
+Version: 13.2
+
+Date: 22/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Espa?ol (Argentina) / Espa?ol (Espa?a, internacional)
+Local Time: 22/3/2025 <ip>
+TimeZone: -3
+
+[Hardware]
+Processor: AMD Ryzen 5 PRO 4650G with Radeon Graphics
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 255 more lines) ...]
+```
+
 ### `cystack_69de784e`
 
 **Attribution confidence:** `high`
@@ -73719,6 +75314,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 266 more lines) ...]
+```
+
+### `cystack_69fdc3c9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MCShield`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: PE
+Version: 13.2
+
+Date: 20/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Espa?ol (M?xico) / Espa?ol (Per?) / Ingl?s (Estados Unidos)
+Local Time: 20/3/2025 <ip>
+TimeZone: -5
+
+[Hardware]
+Processor: AMD Athlon 200GE with Radeon Vega Graphics     
+Cores: 2
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 213 more lines) ...]
 ```
 
 ### `cystack_6a00b771`
@@ -74434,6 +76084,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 182 more lines) ...]
+```
+
+### `cystack_6b01c128`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Little Nightmares II`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: EG
+Version: 13.2
+
+Date: 22/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1200
+Keyboard Languages: English (United States) / Arabic (Egypt)
+Local Time: 22/3/2025 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6600 CPU @ 3.30GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 233 more lines) ...]
 ```
 
 ### `cystack_6b02a6a3`
@@ -77956,6 +79661,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 362 more lines) ...]
 ```
 
+### `cystack_6ff55aa9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `Quake`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: MX
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Espa?ol (Espa?a, internacional) / Espa?ol (M?xico)
+Local Time: 23/3/2025 <ip>
+TimeZone: -6
+
+[Hardware]
+Processor: Intel(R) Xeon(R) CPU E3-1225 v3 @ 3.20GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 229 more lines) ...]
+```
+
 ### `cystack_7016980a`
 
 **Attribution confidence:** `high`
@@ -80431,6 +82191,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 206 more lines) ...]
 ```
 
+### `cystack_740d9cb8`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MTA`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: MA
+Version: 13.2
+
+Date: 22/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home Single Language
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x800
+Keyboard Languages: Fran?ais (France) / Anglais (?tats-Unis)
+Local Time: 22/3/2025 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-4570 CPU @ 3.20GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 192 more lines) ...]
+```
+
 ### `cystack_742d1f2c`
 
 **Attribution confidence:** `high`
@@ -81366,6 +83181,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 235 more lines) ...]
 ```
 
+### `cystack_75a7942b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Far Cry`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: LK
+Version: 13.2
+
+Date: 24/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English (United States) / English (United States) / Korean (Korea) / English (Australia) / English (Canada) / English (Barbados) / English (Anguilla)
+Local Time: 24/3/2025 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz
+Cores: 2
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 228 more lines) ...]
+```
+
 ### `cystack_75b7f66c`
 
 **Attribution confidence:** `high`
@@ -82136,6 +84006,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 325 more lines) ...]
 ```
 
+### `cystack_76fc1e37`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `Ghost Recon`, `HWID`, `Horizon`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: PH
+Version: 13.2
+
+Date: 24/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (Philippines) / English (United States)
+Local Time: 24/3/2025 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-10105 CPU @ 3.70GHz
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 296 more lines) ...]
+```
+
 ### `cystack_7708707b`
 
 **Attribution confidence:** `high`
@@ -82794,6 +84719,61 @@ svchost.exe
 fontdrvhost.exe
 WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 289 more lines) ...]
+```
+
+### `cystack_77c440c9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HITMAN`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: GB
+Version: 13.2
+
+Date: 24/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1480x1080
+Keyboard Languages: English (United Kingdom)
+Local Time: 24/3/2025 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: AMD Ryzen 5 5600 6-Core Processor              
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 286 more lines) ...]
 ```
 
 ### `cystack_77db1aac`
@@ -84774,6 +86754,61 @@ fontdrvhost.exe
 WUDFHost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 348 more lines) ...]
+```
+
+### `cystack_7bd7eea6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `GameHouse Games Collection`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: PH
+Version: 13.2
+
+Date: 21/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English (United States)
+Local Time: 21/3/2025 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-8130U CPU @ 2.20GHz
+Cores: 2
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 397 more lines) ...]
 ```
 
 ### `cystack_7be9d701`
@@ -88076,6 +90111,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 306 more lines) ...]
 ```
 
+### `cystack_803e2856`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Metal Gear Rising`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: DZ
+Version: 13.2
+
+Date: 20/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Anglais (?tats-Unis) / Fran?ais (France) / Arabe (Alg?rie)
+Local Time: 20/3/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 5600 6-Core Processor              
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 281 more lines) ...]
+```
+
 ### `cystack_804e592d`
 
 **Attribution confidence:** `high`
@@ -88624,6 +90714,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 283 more lines) ...]
+```
+
+### `cystack_80f80478`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Oddworld`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: HU
+Version: 13.2
+
+Date: 24/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1680x1050
+Keyboard Languages: magyar (Magyarorsz?g) / angol (Egyes?lt ?llamok)
+Local Time: 24/3/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD FX(tm)-8350 Eight-Core Processor           
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 259 more lines) ...]
 ```
 
 ### `cystack_811d9292`
@@ -91596,6 +93741,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 336 more lines) ...]
 ```
 
+### `cystack_857ac509`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Captain Tsubasa`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: VN
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States) / Japanese (Japan)
+Local Time: 23/3/2025 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12400
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 329 more lines) ...]
+```
+
 ### `cystack_858a2f6c`
 
 **Attribution confidence:** `high`
@@ -93961,6 +96161,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 279 more lines) ...]
 ```
 
+### `cystack_891b7083`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Backrooms`, `Bright Memory`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Fears to Fathom`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `NFS`, `Need for Speed`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: PH
+Version: 13.2
+
+Date: 16/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English (United States) / English (Philippines)
+Local Time: 16/3/2025 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: AMD Ryzen 3 3250U with Radeon Graphics         
+Cores: 2
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 317 more lines) ...]
+```
+
 ### `cystack_894e856a`
 
 **Attribution confidence:** `high`
@@ -95829,6 +98084,61 @@ svchost.exe
 fontdrvhost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 391 more lines) ...]
+```
+
+### `cystack_8ad99908`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Outlast`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: KH
+Version: 13.2
+
+Date: 21/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States)
+Local Time: 21/3/2025 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 257 more lines) ...]
 ```
 
 ### `cystack_8b12d241`
@@ -99626,6 +101936,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 214 more lines) ...]
 ```
 
+### `cystack_9002de47`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `Loquendo TTS`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: PE
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Enterprise
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Espa?ol (Per?) / Ingl?s (Estados Unidos) / Ingl?s (Estados Unidos) / Espa?ol (Espa?a, internacional)
+Local Time: 23/3/2025 <ip>
+TimeZone: -3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10400T CPU @ 2.00GHz
+Cores: 2
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 205 more lines) ...]
+```
+
 ### `cystack_90040d31`
 
 **Attribution confidence:** `high`
@@ -100231,6 +102596,61 @@ dwm.exe
 [... truncated; full sample at ``sample.txt`` (approx. 212 more lines) ...]
 ```
 
+### `cystack_90de14dc`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `UNDERTALE`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: JP
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: ???{?? (???{) / ?p?? (?č?)
+Local Time: 23/3/2025 <ip>
+TimeZone: 9
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 243 more lines) ...]
+```
+
 ### `cystack_90de67f5`
 
 **Attribution confidence:** `high`
@@ -100394,6 +102814,61 @@ fontdrvhost.exe
 WUDFHost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 383 more lines) ...]
+```
+
+### `cystack_91227c5f`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Vacation Adventures`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: PE
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: Espa?ol (M?xico) / Espa?ol (Per?) / Ingl?s (Estados Unidos)
+Local Time: 23/3/2025 <ip>
+TimeZone: -5
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-1235U
+Cores: 10
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 263 more lines) ...]
 ```
 
 ### `cystack_913f1ffe`
@@ -106116,6 +108591,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 120 more lines) ...]
 ```
 
+### `cystack_9a4b7dff`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GTA`, `GUID`, `God of War`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Mafia`, `Path`, `Processor`, `RAM`, `TEKKEN 7`, `Threads`, `TimeZone`, `Tomb Raider`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: PK
+Version: 13.2
+
+Date: 24/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States)
+Local Time: 24/3/2025 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-4710HQ CPU @ 2.50GHz
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 250 more lines) ...]
+```
+
 ### `cystack_9a4c4b09`
 
 **Attribution confidence:** `high`
@@ -108646,6 +111176,61 @@ WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 302 more lines) ...]
 ```
 
+### `cystack_9d66a2c5`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Need for Speed`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: BR
+Version: 13.2
+
+Date: 22/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portugu?s (Brasil) / Portugu?s (Brasil)
+Local Time: 22/3/2025 <ip>
+TimeZone: -3
+
+[Hardware]
+Processor: AMD Ryzen 5 5600G with Radeon Graphics         
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 201 more lines) ...]
+```
+
 ### `cystack_9d6780f9`
 
 **Attribution confidence:** `high`
@@ -108754,6 +111339,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 265 more lines) ...]
+```
+
+### `cystack_9d8eb7e1`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GTA IV`, `GTA SA`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Need for Speed`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: RO
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English (United States)
+Local Time: 23/3/2025 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz
+Cores: 2
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 226 more lines) ...]
 ```
 
 ### `cystack_9d96d8df`
@@ -108974,6 +111614,61 @@ svchost.exe
 fontdrvhost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 225 more lines) ...]
+```
+
+### `cystack_9e02306b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AC`, `AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Kingdom Come`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: CZ
+Version: 13.2
+
+Date: 24/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: ?e?tina (?esko)
+Local Time: 24/3/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 314 more lines) ...]
 ```
 
 ### `cystack_9e3abf9e`
@@ -111284,6 +113979,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 316 more lines) ...]
+```
+
+### `cystack_a08bf95e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Minecraft`, `Need for Speed`, `One Punch Man`, `Path`, `Processor`, `RAM`, `The Walking Dead`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: PH
+Version: 13.2
+
+Date: 21/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (Philippines) / English (United States)
+Local Time: 21/3/2025 <ip>
+TimeZone: -8
+
+[Hardware]
+Processor: AMD Ryzen 5 3400GE with Radeon Vega Graphics   
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 221 more lines) ...]
 ```
 
 ### `cystack_a0978232`
@@ -117116,6 +119866,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 318 more lines) ...]
 ```
 
+### `cystack_a96d0628`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hard Truck 2`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: LK
+Version: 13.2
+
+Date: 24/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1200
+Keyboard Languages: English (United States)
+Local Time: 24/3/2025 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 226 more lines) ...]
+```
+
 ### `cystack_a974229f`
 
 **Attribution confidence:** `high`
@@ -118381,6 +121186,61 @@ svchost.exe [1132]
 [... truncated; full sample at ``sample.txt`` (approx. 179 more lines) ...]
 ```
 
+### `cystack_ab13f16b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Batman`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MTA`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: AR
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 960x540
+Keyboard Languages: Espa?ol (Espa?a, internacional) / Espa?ol (Argentina)
+Local Time: 23/3/2025 <ip>
+TimeZone: -3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 337 more lines) ...]
+```
+
 ### `cystack_ab1458e6`
 
 **Attribution confidence:** `high`
@@ -118821,6 +121681,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 278 more lines) ...]
 ```
 
+### `cystack_ab8de759`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Police Simulator`, `Processor`, `RAM`, `Spec Ops`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: LK
+Version: 13.2
+
+Date: 20/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1024x768
+Keyboard Languages: English (United States)
+Local Time: 20/3/2025 <ip>
+TimeZone: -8
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-4430 CPU @ 3.00GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 237 more lines) ...]
+```
+
 ### `cystack_ab9e62ce`
 
 **Attribution confidence:** `high`
@@ -118929,6 +121844,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 196 more lines) ...]
+```
+
+### `cystack_aba6c51d`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Splinter Cell`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: DZ
+Version: 13.2
+
+Date: 20/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Enterprise
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English (United States) / French (France) / Arabic (Algeria)
+Local Time: 20/3/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 PRO 4650G with Radeon Graphics
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 188 more lines) ...]
 ```
 
 ### `cystack_abad35d1`
@@ -125421,6 +128391,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 323 more lines) ...]
 ```
 
+### `cystack_b2e56b29`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `God Eater`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Monster Hunter World`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: MV
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States) / Divehi (Maldives)
+Local Time: 23/3/2025 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10500 CPU @ 3.10GHz
+Cores: 2
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 310 more lines) ...]
+```
+
 ### `cystack_b3097abb`
 
 **Attribution confidence:** `high`
@@ -127564,6 +130589,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 222 more lines) ...]
+```
+
+### `cystack_b5b8cf87`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Door Kickers`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: ID
+Version: 13.2
+
+Date: 21/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home Single Language
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Indonesian (Indonesia) / English (United States)
+Local Time: 21/3/2025 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: AMD Ryzen 3 3250U with Radeon Graphics         
+Cores: 2
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 272 more lines) ...]
 ```
 
 ### `cystack_b5dd1de8`
@@ -130426,6 +133506,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 229 more lines) ...]
 ```
 
+### `cystack_ba060719`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Batman`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `God of War`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: IN
+Version: 13.2
+
+Date: 24/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2048x1080
+Keyboard Languages: English (United States)
+Local Time: 24/3/2025 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 288 more lines) ...]
+```
+
 ### `cystack_ba10e6a0`
 
 **Attribution confidence:** `high`
@@ -132844,6 +135979,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 210 more lines) ...]
+```
+
+### `cystack_bd550087`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `James Bond 007`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Pink Panther`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: VE
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1360x768
+Keyboard Languages: Espa?ol (Espa?a, internacional) / Espa?ol (Venezuela)
+Local Time: 23/3/2025 <ip>
+TimeZone: -4
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 272 more lines) ...]
 ```
 
 ### `cystack_bd90ea39`
@@ -138731,6 +141921,61 @@ LsaIso.exe
 [... truncated; full sample at ``sample.txt`` (approx. 341 more lines) ...]
 ```
 
+### `cystack_c4dd3b18`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Ragnarok M`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: TH
+Version: 13.2
+
+Date: 21/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Thai (Thailand) / English (United States)
+Local Time: 21/3/2025 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: AMD Ryzen 5 2600 Six-Core Processor            
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 330 more lines) ...]
+```
+
 ### `cystack_c4e535eb`
 
 **Attribution confidence:** `high`
@@ -140666,6 +143911,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 309 more lines) ...]
 ```
 
+### `cystack_c7931221`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Dragon Ball Z`, `GUID`, `HWID`, `Hogwarts Legacy`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: TH
+Version: 13.2
+
+Date: 20/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: English (United States) / Thai (Thailand)
+Local Time: 20/3/2025 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: AMD Ryzen 5 5600 6-Core Processor              
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 271 more lines) ...]
+```
+
 ### `cystack_c7cb4292`
 
 **Attribution confidence:** `high`
@@ -141489,6 +144789,61 @@ winlogon.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 291 more lines) ...]
+```
+
+### `cystack_c918562c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Dreams of Desire`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: PK
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x960
+Keyboard Languages: English (United States)
+Local Time: 23/3/2025 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 231 more lines) ...]
 ```
 
 ### `cystack_c94a5319`
@@ -143086,6 +146441,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 282 more lines) ...]
 ```
 
+### `cystack_cb438aaa`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `Vice City`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: RO
+Version: 13.2
+
+Date: 22/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x1024
+Keyboard Languages: Rom?n? (Rom?nia) / Englez? (Statele Unite)
+Local Time: 22/3/2025 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-4160 CPU @ 3.60GHz
+Cores: 2
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 227 more lines) ...]
+```
+
 ### `cystack_cb4573fb`
 
 **Attribution confidence:** `high`
@@ -144461,6 +147871,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 345 more lines) ...]
 ```
 
+### `cystack_cd2328e5`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Need for Speed`, `Path`, `Processor`, `RAM`, `Sekiro`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: DE
+Version: 13.2
+
+Date: 20/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Deutsch (Deutschland) / Englisch (Vereinigte Staaten)
+Local Time: 20/3/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6600K CPU @ 3.50GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 254 more lines) ...]
+```
+
 ### `cystack_cd43a5bc`
 
 **Attribution confidence:** `high`
@@ -145284,6 +148749,61 @@ svchost.exe
 WUDFHost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 319 more lines) ...]
+```
+
+### `cystack_cde14c38`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `Ancestors`, `Ben 10`, `Computer Name`, `Cores`, `Country`, `DRAGON BALL`, `Date`, `Display Resolution`, `Far Cry`, `GUID`, `God of War`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Spider-Man`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: GB
+Version: 13.2
+
+Date: 20/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States) / English (United Kingdom)
+Local Time: 20/3/2025 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 234 more lines) ...]
 ```
 
 ### `cystack_cde410b5`
@@ -147924,6 +151444,61 @@ Aplicaciones de Microsoft 365 para empresas - es-es - 16.0.19328.20244
 Microsoft OneDrive - 25.209.1026.0002
 Safer Web - 4.0.7
 [... truncated; full sample at ``sample.txt`` (approx. 70 more lines) ...]
+```
+
+### `cystack_d15379b7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Bad Dream`, `Computer Name`, `Cores`, `Country`, `DARQ`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: BD
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English (United States)
+Local Time: 23/3/2025 <ip>
+TimeZone: 6
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 269 more lines) ...]
 ```
 
 ### `cystack_d15c1972`
@@ -150621,6 +154196,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 319 more lines) ...]
 ```
 
+### `cystack_d51bfa4a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Batman`, `Chef Life`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `HoneyCome`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `NieR`, `Path`, `Processor`, `RAM`, `Resident Evil 4`, `Sekiro`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: PH
+Version: 13.2
+
+Date: 16/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States)
+Local Time: 16/3/2025 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: AMD Ryzen 3 3200G with Radeon Vega Graphics    
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 248 more lines) ...]
+```
+
 ### `cystack_d52238ed`
 
 **Attribution confidence:** `high`
@@ -151886,6 +155516,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 280 more lines) ...]
 ```
 
+### `cystack_d6ea8069`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `James Bond 007`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: BR
+Version: 13.2
+
+Date: 25/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Portugu?s (Brasil)
+Local Time: 25/3/2025 <ip>
+TimeZone: -3
+
+[Hardware]
+Processor: Intel(R) Celeron(R) CPU N3350 @ 1.10GHz
+Cores: 2
+Threads: 2
+[... truncated; full sample at ``sample.txt`` (approx. 155 more lines) ...]
+```
+
 ### `cystack_d6fa9625`
 
 **Attribution confidence:** `high`
@@ -152599,6 +156284,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 245 more lines) ...]
+```
+
+### `cystack_d7b605ce`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Nymphomaniac`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: PH
+Version: 13.2
+
+Date: 24/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English (United States) / English (Philippines)
+Local Time: 24/3/2025 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-9100 CPU @ 3.60GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 222 more lines) ...]
 ```
 
 ### `cystack_d7d277ab`
@@ -154084,6 +157824,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 274 more lines) ...]
+```
+
+### `cystack_d9b72170`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Middle-earth`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: BR
+Version: 13.2
+
+Date: 21/3/2025 <ip>
+MachineID: 
+<redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portugu?s (Brasil) / Portugu?s (Brasil) / Ingl?s (Estados Unidos)
+Local Time: 21/3/2025 <ip>
+TimeZone: -3
+
+[Hardware]
+Processor: AMD Ryzen 5 5500                               
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 308 more lines) ...]
 ```
 
 ### `cystack_d9f51922`
@@ -157276,6 +161071,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 280 more lines) ...]
 ```
 
+### `cystack_df14bf99`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Final Fantasy VII`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: TH
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English (United States) / Thai (Thailand)
+Local Time: 23/3/2025 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 285 more lines) ...]
+```
+
 ### `cystack_df1984b8`
 
 **Attribution confidence:** `high`
@@ -157494,6 +161344,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 308 more lines) ...]
+```
+
+### `cystack_df6c9770`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Spider-Man`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: IN
+Version: 13.2
+
+Date: 24/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1360x768
+Keyboard Languages: English (United States)
+Local Time: 24/3/2025 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-3570 CPU @ 3.40GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 269 more lines) ...]
 ```
 
 ### `cystack_df7dff5e`
@@ -157989,6 +161894,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 258 more lines) ...]
+```
+
+### `cystack_e13f3f42`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Shotgun King`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: VN
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home Single Language
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: Vietnamese (Vietnam) / English (United States)
+Local Time: 23/3/2025 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 306 more lines) ...]
 ```
 
 ### `cystack_e141375d`
@@ -159916,6 +163876,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 207 more lines) ...]
 ```
 
+### `cystack_e4059153`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `Ghost Recon`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: TH
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States) / Thai (Thailand)
+Local Time: 23/3/2025 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-9100F CPU @ 3.60GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 292 more lines) ...]
+```
+
 ### `cystack_e40a824c`
 
 **Attribution confidence:** `high`
@@ -161564,6 +165579,61 @@ LsaIso.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 331 more lines) ...]
+```
+
+### `cystack_e5c18c83`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `One Punch Man`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: DE
+Version: 13.2
+
+Date: 22/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Deutsch (Deutschland) / Englisch (Vereinigte Staaten)
+Local Time: 22/3/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7 CPU         920  @ 2.67GHz
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 290 more lines) ...]
 ```
 
 ### `cystack_e5c3f872`
@@ -164646,6 +168716,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 333 more lines) ...]
 ```
 
+### `cystack_ea10435e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Stronghold`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: BR
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home Single Language
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Portugu?s (Brasil) / Portugu?s (Brasil)
+Local Time: 23/3/2025 <ip>
+TimeZone: -3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-1005G1 CPU @ 1.20GHz
+Cores: 2
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 205 more lines) ...]
+```
+
 ### `cystack_ea1154c5`
 
 **Attribution confidence:** `high`
@@ -166901,6 +171026,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 338 more lines) ...]
 ```
 
+### `cystack_ed602de6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Resident Evil 7`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: DZ
+Version: 13.2
+
+Date: 24/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1200x820
+Keyboard Languages: Fran?ais (France) / Arabe (Arabie saoudite) / Anglais (?tats-Unis) / Arabe (Alg?rie) / arabe (?mirats arabes unis)
+Local Time: 24/3/2025 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 198 more lines) ...]
+```
+
 ### `cystack_ed82cb63`
 
 **Attribution confidence:** `high`
@@ -167174,6 +171354,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 322 more lines) ...]
+```
+
+### `cystack_eda8a4ba`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Deus Ex`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: SG
+Version: 13.2
+
+Date: 21/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States) / Chinese (Simplified, China) / English (Singapore) / English (United States)
+Local Time: 21/3/2025 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 275 more lines) ...]
 ```
 
 ### `cystack_edb191c4`
@@ -172181,6 +176416,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 234 more lines) ...]
 ```
 
+### `cystack_f4711f20`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GTA`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: BD
+Version: 13.2
+
+Date: 22/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States)
+Local Time: 22/3/2025 <ip>
+TimeZone: 6
+
+[Hardware]
+Processor: AMD Ryzen 3 1300X Quad-Core Processor          
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 279 more lines) ...]
+```
+
 ### `cystack_f4853d59`
 
 **Attribution confidence:** `high`
@@ -174766,6 +179056,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 313 more lines) ...]
 ```
 
+### `cystack_f7f086c1`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Jujutsu Kaisen`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: DZ
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (Canada) / French (France) / Arabic (Saudi Arabia) / Arabic (Algeria) / English (United States)
+Local Time: 23/3/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 3 4300GE with Radeon Graphics
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 293 more lines) ...]
+```
+
 ### `cystack_f812f566`
 
 **Attribution confidence:** `high`
@@ -176746,6 +181091,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 318 more lines) ...]
 ```
 
+### `cystack_f9e31c78`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MTA`, `MachineID`, `Naruto to Boruto`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: TR
+Version: 13.2
+
+Date: 23/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x1024
+Keyboard Languages: T?rk?e (T?rkiye) / ?ngilizce (Amerikan)
+Local Time: 23/3/2025 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx  
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 150 more lines) ...]
+```
+
 ### `cystack_f9e7dd19`
 
 **Attribution confidence:** `high`
@@ -177404,6 +181804,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 202 more lines) ...]
+```
+
+### `cystack_fb09cbf5`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GTA IV`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: RS
+Version: 13.2
+
+Date: 20/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1680x1050
+Keyboard Languages: English (United States) / Serbian (Latin, Serbia) / Serbian (Cyrillic, Serbia)
+Local Time: 20/3/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 225 more lines) ...]
 ```
 
 ### `cystack_fb2b78e9`
@@ -181089,6 +185544,61 @@ services.exe
 LsaIso.exe
 lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 245 more lines) ...]
+```
+
+### `cystack_fff87e43`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Human`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+Ip: <redacted>
+Country: BD
+Version: 13.2
+
+Date: 22/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x900
+Keyboard Languages: English (United States)
+Local Time: 22/3/2025 <ip>
+TimeZone: 6
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+Cores: 4
+Threads: 4
+[... truncated; full sample at ``sample.txt`` (approx. 261 more lines) ...]
 ```
 
 ## Detection

@@ -1,23 +1,23 @@
-Log date: 27 Sep 25 19:15 MSK
-now: @russia_logs
+Log date: 16 Mar 25 15:36 UTC
+Traffic: @MAXERSTE (BRADMAX) / <url>
 HWID: <redacted>
-Country: IN
+Country: TH
 IP: <redacted>
-System Language: English
-Processor: Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz
-Installed RAM: 12252 MB
+System Language: Thai
+Processor: Intel(R) Core(TM) i3-6100U CPU @ 2.30GHz
+Installed RAM: 3995 MB
 Operation System: Windows 10 22H2 build 19045 (64 Bit)
-Graphics card: NVIDIA GeForce GT 610
+Graphics card: Intel(R) HD Graphics 520
 Computer Name: <redacted>
 Domain Name: <redacted>
 MachineID: <redacted>
-Prodct Key:   @ logs_russia   
+Product Key: 
 -------------
 User Name: <redacted>
 Admin Group: FALSE
 Integrity: Medium
-TimeZone: UTC+5
-UserLanguage: English
+TimeZone: UTC+7
+UserLanguage: Thai
 Keyboard Language: English
-Display Resolution: 1920x1080
-Wallpaper Hash: 0825e886///  @ l o g s _ r u s s i a  ///4c47e6 cae75034d51d8ffe2fa03196d9a08f6958757be6
+Display Resolution: 1366x768
+Wallpaper Hash: 

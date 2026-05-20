@@ -8,7 +8,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 
 | Family | Variants | Channels | Top confidence |
 |---|---|---|---|
-| [`AMOS Stealer`](families/amos_stealer/) | 54 | 0 | `medium` |
+| [`AMOS Stealer`](families/amos_stealer/) | 57 | 0 | `medium` |
 | [`Acreed`](families/acreed/) | 1 | 0 | `high` |
 | [`Aetheris Stealer`](families/aetheris_stealer/) | 6 | 0 | `high` |
 | [`Ailurophile`](families/ailurophile/) | 1 | 1 | `high` |
@@ -38,7 +38,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSWmicDumpStealer`](families/cs_wmic_dump_stealer/) | 1 | 0 | `unknown` |
 | [`Category Stealer`](families/category_stealer/) | 3 | 0 | `unknown` |
 | [`Cthulhu Stealer`](families/cthulhu_stealer/) | 23 | 0 | `high` |
-| [`Lumma`](families/lumma/) | 1 | 0 | `high` |
+| [`Lumma`](families/lumma/) | 2 | 0 | `high` |
 | [`MacSync`](families/mac_sync/) | 2 | 0 | `high` |
 | [`Millenium RAT`](families/millenium_rat/) | 1 | 0 | `-` |
 | [`PXA Stealer`](families/pxa_stealer/) | 6 | 0 | `high` |
@@ -46,9 +46,9 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`RL Stealer`](families/rl_stealer/) | 1 | 0 | `medium` |
 | [`Raccoon`](families/raccoon/) | 1 | 0 | `high` |
 | [`Redline`](families/redline/) | 18 | 0 | `high` |
-| [`RedlineLike Stealer`](families/redline_like_stealer/) | 14 | 0 | `unknown` |
+| [`RedlineLike Stealer`](families/redline_like_stealer/) | 16 | 0 | `unknown` |
 | [`StealC`](families/steal_c/) | 14 | 0 | `high` |
-| [`Vidar`](families/vidar/) | 3293 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 3375 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 5 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 6 | 0 | `high` |
 

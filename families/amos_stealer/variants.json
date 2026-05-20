@@ -582,6 +582,32 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "BuildVersion",
+        "City",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "IP",
+        "MetaMask Info",
+        "Private Keys",
+        "ProductName",
+        "ProductVersion",
+        "Seeds",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_934540d9",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "Apple M1",
         "City",
         "Country",
@@ -732,6 +758,27 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_a9896efb",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "City",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_ab3c30c5",
       "panel_brand": null,
       "synthetic": true
     },
@@ -1120,6 +1167,29 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_e68b8a47",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Board-ID",
+        "City",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_e7103028",
       "panel_brand": null,
       "synthetic": true
     },

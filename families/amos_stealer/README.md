@@ -23,7 +23,7 @@ than inlined into this summary.
 
 **Also known as:** `Atomic Stealer`, `Atomic macOS Stealer`, `AMOS`, `Atomic Mac`
 
-**Variants observed:** 54
+**Variants observed:** 57
 **Top attribution confidence:** `medium`
 
 ## Targets
@@ -1247,6 +1247,61 @@ Hardware Overview:
 [... truncated; full sample at ``sample.txt`` (approx. 27 more lines) ...]
 ```
 
+### `cystack_934540d9`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`BuildVersion`, `City`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `IP`, `MetaMask Info`, `Private Keys`, `ProductName`, `ProductVersion`, `Seeds`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/Maxerste                       *
+**************************************************************
+
+MetaMask Info:
+Seeds: 
+Private Keys: 
+Debanks: <url>
+<url>
+<url>
+
+
+Userinfo:
+Country: DE
+IP: <redacted>
+City: <redacted>
+ProductName:		macOS
+ProductVersion:		14.5
+BuildVersion:		23F79
+
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: Mac
+      Model Identifier: VMware20,1
+      Processor Name: Unknown
+      Processor Speed: 2 GHz
+      Number of Processors: 1
+      Total Number of Cores: 4
+[... truncated; full sample at ``sample.txt`` (approx. 28 more lines) ...]
+```
+
 ### `cystack_94207481`
 
 **Attribution confidence:** `medium`
@@ -1575,6 +1630,61 @@ Hardware Overview:
 Graphics/Displays:
 
 [... truncated; full sample at ``sample.txt`` (approx. 23 more lines) ...]
+```
+
+### `cystack_ab3c30c5`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`City`, `Country`, `Debanks`, `Graphics/Displays`, `IP`, `MetaMask Info`, `Software`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: PL
+IP: <redacted>
+City: <redacted>
+Software:
+
+    System Software Overview:
+
+      System Version: macOS 13.7.2 (22H313)
+      Kernel Version: Darwin 22.6.0
+      Boot Volume: Macintosh HD
+      Boot Mode: Normal
+      Computer Name: <redacted>
+      User Name: <redacted>
+      Secure Virtual Memory: Enabled
+      System Integrity Protection: Enabled
+      Time since boot: 3 godziny i 42 minuty
+
+Graphics/Displays:
+
+    AMD Radeon RX 580:
+
+      Chipset Model: AMD Radeon RX 580
+      Type: GPU
+      Bus: PCIe
+      PCIe Lane Width: x16
+      VRAM (Total): 8 GB
+      Vendor: AMD (0x1002)
+      Device ID: 0x67df
+      Revision ID: 0x00e7
+      Metal Support: Metal 2
+      Displays:
+        PL2783Q:
+          Resolution: 2048 x 1152
+          UI Looks like: 2048 x 1152 @ 69.00Hz
+          Framebuffer Depth: 30-Bit Color (ARGB2101010)
+[... truncated; full sample at ``sample.txt`` (approx. 6 more lines) ...]
 ```
 
 ### `cystack_adc800f0`
@@ -2400,6 +2510,61 @@ Hardware Overview:
 
 Graphics/Displays:
 [... truncated; full sample at ``sample.txt`` (approx. 24 more lines) ...]
+```
+
+### `cystack_e7103028`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`Board-ID`, `City`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `IP`, `MetaMask Info`, `Software`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: US
+IP: <redacted>
+City: <redacted>
+Software:
+
+    System Software Overview:
+
+      System Version: macOS 14.7.2 (23H311)
+      Kernel Version: Darwin 23.6.0
+      Boot Volume: Sonoma
+      Boot Mode: Normal
+      Computer Name: <redacted>
+      User Name: <redacted>
+      Secure Virtual Memory: Enabled
+      System Integrity Protection: Disabled
+      Time since boot: 1 day, 4 hours, 47 minutes
+
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: iMac
+      Model Identifier: iMac19,1
+      Processor Name: 6-Core Intel Core i5
+      Processor Speed: 2.81 GHz
+      Number of Processors: 1
+      Total Number of Cores: 6
+      L2 Cache (per Core): 256 KB
+      L3 Cache: 9 MB
+      Memory: 24 GB
+      System Firmware Version: 1968.<ip>
+      OS Loader Version: 580.140.1~51
+      Apple ROM Info: Apple ROM Version.
+Board-ID : Mac-AA95B1DDAB278B95
+?  Powered by Clover revision: 5159 (master, commit 677fbb159)
+[... truncated; full sample at ``sample.txt`` (approx. 47 more lines) ...]
 ```
 
 ### `cystack_ea2e8de7`

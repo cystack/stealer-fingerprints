@@ -9,7 +9,7 @@ the underlying field layout intact.
 
 **Also known as:** `redline`, `redline-extended`
 
-**Variants observed:** 14
+**Variants observed:** 16
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -359,6 +359,41 @@ Display Resolution: 1920x1200
 Wallpaper Hash: 32a4f2aead9726b13a6b06d1170070a036adac8e
 ```
 
+### `cystack_ac5ebc70`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `HWID`, `IP`, `Installed RAM`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `Traffic`, `User Name`, `UserLanguage`, `Video card`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 15 Mar 25 20:56 UTC
+Traffic: @MAXERSTE (BRADMAX) / <url>
+HWID: <redacted>
+Country: DZ
+IP: <redacted>
+System Language: English
+Processor: Intel(R) Core(TM)2 Duo CPU     P7450  @ 2.13GHz
+Installed RAM: 4024 MB
+Operation System: Windows 10 build 19045 (64 Bit)
+Video card: Mobile Intel(R) 4 Series Express Chipset Family (Microsoft Corporation - WDDM 1.1)
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key: 
+-------------
+User Name: <redacted>
+TimeZone: UTC-8
+UserLanguage: English
+Keyboard Language: French
+Display Resolution: 1366x768
+Wallpaper Hash: 9926b26bfb8ba791ca1b08e52dbcc60bd1daed78
+```
+
 ### `cystack_c47c7f16`
 
 **Attribution confidence:** `unknown`
@@ -460,6 +495,43 @@ UserLanguage: Portuguese
 Keyboard Language: Portuguese
 Display Resolution: 1920x1080
 Wallpaper Hash: d08c477d7682cd97be0a55cf613fdf56c9c08923
+```
+
+### `cystack_d5e7e4a8`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `Traffic`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 16 Mar 25 15:36 UTC
+Traffic: @MAXERSTE (BRADMAX) / <url>
+HWID: <redacted>
+Country: TH
+IP: <redacted>
+System Language: Thai
+Processor: Intel(R) Core(TM) i3-6100U CPU @ 2.30GHz
+Installed RAM: 3995 MB
+Operation System: Windows 10 22H2 build 19045 (64 Bit)
+Graphics card: Intel(R) HD Graphics 520
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key: 
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+7
+UserLanguage: Thai
+Keyboard Language: English
+Display Resolution: 1366x768
+Wallpaper Hash: 
 ```
 
 ### `cystack_ea6a2985`

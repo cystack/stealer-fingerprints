@@ -9,7 +9,7 @@ signature on the `Time:` line. Build banners reference the
 
 **Also known as:** `LummaC2`, `Lumma Stealer`
 
-**Variants observed:** 1
+**Variants observed:** 2
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -21,6 +21,61 @@ signature on the `Time:` line. Build banners reference the
 - Cryptocurrency seed phrases harvested from text files
 
 ## Variants
+
+### `cystack_0df566a5`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`TG`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+- LummaC2 Build: Feb 23 2025
+- @MAXERSTE (BRADMAX) / <url>
+- Configuration: 
+- Path: C:\WINDOWS\SysWOW64\explorer.exe
+
+- OS Version: Windows 10 Home Single Language (10.0.19045) x64
+- Local Date: 03.03.2025 <ip>
+- Time Zone: UTC+4
+- Install Date: 01.08.2020 <ip>
+- Elevated: false
+- Computer: AISON
+- User: AIS�N
+- Domain: 
+- Hostname: Aison
+- NetBIOS: AISON
+- Language: en-US
+- Anti Virus:
+	- Norton 360
+- HWID: 2BB1CAF18934E4DD8E7A5F48C2665F48
+- RAM Size: 8192MB
+- CPU Vendor: GenuineIntel
+- CPU Name: Intel(R) Core(TM) i5-4570T CPU @ 2.90GHz
+- CPU Threads: 4
+- CPU Cores: 2
+- GPU:
+	- Intel(R) HD Graphics 4600
+- Display resolution: 1920x1080
+
+- IP Address: <ip>
+- Time: 03.03.2025 <ip> (sig:1741006955.06e122ce556622a5d752de1af3bbe448)
+- Country: AE
+
+------------------------------------
+
+Automated log store >> t.me/lummamarketplace_bot
+Tens of thousands of logs for sale, rating system, search by filters and countries, hundreds of sellers with their own storefronts. Unique development based on MaaS from LummaC2.
+Purchase quality material right now - t.me/lummamarketplace_bot
+
+------------------------------------
+
+[... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
+```
 
 ### `cystack_c65f37b2`
 

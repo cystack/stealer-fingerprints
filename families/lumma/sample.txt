@@ -1,26 +1,58 @@
+- LummaC2 Build: Feb 23 2025
+- @MAXERSTE (BRADMAX) / <url>
+- Configuration: 
+- Path: C:\WINDOWS\SysWOW64\explorer.exe
 
- 
-- Path: C:\Users\<user>\AppData\Local\Temp\118083\Secretariat.com
-
+- OS Version: Windows 10 Home Single Language (10.0.19045) x64
+- Local Date: 03.03.2025 <ip>
+- Time Zone: UTC+4
+- Install Date: 01.08.2020 <ip>
 - Elevated: false
-- Computer: DESKTOP-PQTQDKI
-- User: denan
+- Computer: AISON
+- User: AIS�N
 - Domain: 
-- Hostname: DESKTOP-PQTQDKI
-- NetBIOS: DESKTOP-PQTQDKI
-- Language: pt-BR
+- Hostname: Aison
+- NetBIOS: AISON
+- Language: en-US
 - Anti Virus:
-	- Windows Defender
-- HWID: 7183DCE3556ED14C23B78A6C75E2DD1E
+	- Norton 360
+- HWID: 2BB1CAF18934E4DD8E7A5F48C2665F48
 - RAM Size: 8192MB
 - CPU Vendor: GenuineIntel
-- CPU Name: Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz
-- CPU Threads: 8
-- CPU Cores: 4
+- CPU Name: Intel(R) Core(TM) i5-4570T CPU @ 2.90GHz
+- CPU Threads: 4
+- CPU Cores: 2
 - GPU:
-- Display resolution: 1024x768
+	- Intel(R) HD Graphics 4600
+- Display resolution: 1920x1080
 
 - IP Address: <ip>
-- Time: 19.07.2025 <ip> (sig:1752891423.31dc75bf4e926c574f2456308d5f28ea)
-- Country: <ip>
+- Time: 03.03.2025 <ip> (sig:1741006955.06e122ce556622a5d752de1af3bbe448)
+- Country: AE
 
+------------------------------------
+
+Automated log store >> t.me/lummamarketplace_bot
+Tens of thousands of logs for sale, rating system, search by filters and countries, hundreds of sellers with their own storefronts. Unique development based on MaaS from LummaC2.
+Purchase quality material right now - t.me/lummamarketplace_bot
+
+------------------------------------
+
+Куплю ваши YouTube каналы в больших объемах!
+Работая в данной сфере больше 6 лет  и могу с уверенностью сказать, что только работая с нами вы сможете  реализовать ваши YouTube каналы и получить максимальную выгоду.
+
+Постоянным продавцам мы предоставляем лучшую цену на рынке за любой канал + % со стрима.
+Наша команда на находится на связи 24/7.
+
+TG: <url>
+
+------------------------------------
+
+#1 Cервис по подобору паролей (MetaMask, Phantom, Exodus и множество других)
+
+Применяем широкий спектр атак для подбора паролей. Большой опыт в области криптографии и взлома паролей.
+Работаем с кошельками от $5,000
+
+Процент: 70/30 или 60/40 в вашу пользу (зависит от сложности подобранного пароля)
+
+Контакты - <url>

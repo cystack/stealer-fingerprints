@@ -5,6 +5,20 @@
       "attribution_confidence": "high",
       "banner_strings": [],
       "distribution_channel": null,
+      "field_keys": [
+        "TG"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_0df566a5",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
       "field_keys": [],
       "filenames": [
         "System.txt",
