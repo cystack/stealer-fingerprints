@@ -137,6 +137,32 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "City",
+        "Color LCD",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "Intel HD Graphics 5000",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_1f9547de",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "AMD Radeon Pro 5500M",
         "City",
         "Color LCD",
@@ -156,6 +182,33 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_3311417f",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "ASUS VG249",
+        "Apple M1",
+        "City",
+        "Color LCD",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_37b8f105",
       "panel_brand": null,
       "synthetic": true
     },

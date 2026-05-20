@@ -1,43 +1,46 @@
 Ip: <redacted>
-Country: DE
+Country: PH
+Version: 16.5
 
-Date: 03/01/2026 <ip>
+Date: 11/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
 
 Path: <redacted>
 Work Dir: In memory
 
-Windows: Windows 11 Pro for Workstations
-Install Date: 09/10/2024 <ip>
+Windows: Windows 10 Pro
+Install Date: 24/11/2023 <ip>
 AV: Windows Defender
 Computer Name: <redacted>
 User Name: <redacted>
-Display Resolution: 2560x1440
-Keyboard Languages: German
-Local Time: 03/01/2026 <ip>
-TimeZone: 1
+Display Resolution: 1920x1080
+Keyboard Languages: English English
+Local Time: 11/11/2025 <ip>
+TimeZone: 8
 
 [Hardware]
-Processor: AMD Ryzen 5 7600X 6-Core Processor             
-Cores: 12
-Threads: 12
-RAM: 32361 MB
-VideoCard: NVIDIA GeForce RTX 3060
+Processor: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+Cores: 4
+Threads: 4
+RAM: 12252 MB
+VideoCard: NVIDIA GeForce GTX 1050 Ti
 
 [Processes]
 System
-Secure System
 Registry
 smss.exe
 csrss.exe
 wininit.exe
 csrss.exe
 services.exe
-LsaIso.exe
 lsass.exe
 winlogon.exe
 svchost.exe
 fontdrvhost.exe
 fontdrvhost.exe
+svchost.exe
 svchost.exe
 svchost.exe
 dwm.exe
@@ -52,14 +55,10 @@ svchost.exe
 svchost.exe
 svchost.exe
 svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-dasHost.exe
-svchost.exe
 NVDisplay.Container.exe
+svchost.exe
+svchost.exe
+svchost.exe
 svchost.exe
 svchost.exe
 svchost.exe
@@ -79,317 +78,294 @@ svchost.exe
 svchost.exe
 svchost.exe
 svchost.exe
+svchost.exe
+spoolsv.exe
+svchost.exe
 NVDisplay.Container.exe
 svchost.exe
 svchost.exe
 svchost.exe
-spoolsv.exe
-svchost.exe
-AmdPpkgSvc.exe
-svchost.exe
-AnyDesk.exe
-svchost.exe
-svchost.exe
-hamachi-2.exe
-svchost.exe
-LightKeeperService.exe
-ijplmsvc.exe
-LMIGuardianSvc.exe
-lghub_updater.exe
-logi_lamparray_service.exe
-MpDefenderCoreService.exe
-MSI_Case_Service.exe
-MSI_Central_Service.exe
-Mystic_Light_Service.exe
-RtkAudUService64.exe
 svchost.exe
 svchost.exe
 svchost.exe
+svchost.exe
+jhi_service.exe
+svchost.exe
+nvcontainer.exe
+CCleaner_service.exe
+wallpaperservice32_c.exe
 MsMpEng.exe
+WMIRegistrationService.exe
+MpDefenderCoreService.exe
+RstMwService.exe
 svchost.exe
 svchost.exe
-WmiPrvSE.exe
-svchost.exe
-WmiPrvSE.exe
 svchost.exe
 svchost.exe
-MSI.CentralServer.exe
-gamingservices.exe
-gamingservicesnet.exe
-conhost.exe
-wlanext.exe
+svchost.exe
+svchost.exe
+svchost.exe
+dasHost.exe
+SearchIndexer.exe
+dllhost.exe
+svchost.exe
+nvcontainer.exe
 AggregatorHost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+wallpaper32.exe
+nvcontainer.exe
 sihost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-LEDKeeper2.exe
+nvcontainer.exe
 svchost.exe
 svchost.exe
 taskhostw.exe
+CCleaner.exe
 svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-NisSrv.exe
+ctfmon.exe
 svchost.exe
 explorer.exe
-ShellHost.exe
 svchost.exe
 svchost.exe
-SearchHost.exe
+nvsphelper64.exe
+NVIDIA Overlay.exe
+svchost.exe
+NisSrv.exe
 StartMenuExperienceHost.exe
-WidgetBoard.exe
+svchost.exe
+svchost.exe
 RuntimeBroker.exe
+NVIDIA Overlay.exe
+NVIDIA Overlay.exe
+NVIDIA Overlay.exe
+NVIDIA Overlay.exe
+UserOOBEBroker.exe
 svchost.exe
-WidgetService.exe
-svchost.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-MicrosoftStartFeedProvider.exe
-svchost.exe
-PhoneExperienceHost.exe
-MSI.TerminalServer.exe
-ctfmon.exe
 SecurityHealthSystray.exe
 SecurityHealthService.exe
+RtkNGUI64.exe
 svchost.exe
-svchost.exe
-TextInputHost.exe
-RtkAudUService64.exe
-lghub_system_tray.exe
-lghub_agent.exe
-CC_Engine_x64.exe
-conhost.exe
-unsecapp.exe
-CrossDeviceService.exe
-RuntimeBroker.exe
-AnyDesk.exe
-CNMNSST2.exe
-hamachi-2-ui.exe
-backgroundTaskHost.exe
-ApplicationFrameHost.exe
-SystemSettings.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-SearchIndexer.exe
 steam.exe
+Discord.exe
+Discord.exe
+Discord.exe
+Discord.exe
+CompPkgSrv.exe
 steamwebhelper.exe
-SteamService.exe
+steamservice.exe
+Discord.exe
 steamwebhelper.exe
 steamwebhelper.exe
 steamwebhelper.exe
+Discord.exe
 steamwebhelper.exe
 steamwebhelper.exe
-audiodg.exe
+TextInputHost.exe
+RiotClientServices.exe
+teraboxwebservice.exe
+MEGAsync.exe
+mega-desktop-app-gfxworker.exe
+RiotClientCrashHandler.exe
 svchost.exe
+RuntimeBroker.exe
+SearchApp.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
 svchost.exe
 ShellExperienceHost.exe
 RuntimeBroker.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+svchost.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+SystemSettings.exe
+ApplicationFrameHost.exe
+svchost.exe
+SearchApp.exe
+RuntimeBroker.exe
+svchost.exe
+svchost.exe
+audiodg.exe
 steamwebhelper.exe
+OneDrive.Sync.Service.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+WmiPrvSE.exe
+steamwebhelper.exe
+svchost.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
 taskhostw.exe
-XboxPcAppFT.exe
 svchost.exe
-svchost.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-svchost.exe
-msedge.exe
-msedge.exe
-msedge.exe
-msedge.exe
-msedge.exe
 chrome.exe
 chrome.exe
 svchost.exe
 chrome.exe
 smartscreen.exe
+powershell.exe
+conhost.exe
 svchost.exe
+chrome.exe
+WmiPrvSE.exe
 svchost.exe
-NeoHub.exe
+HgRfzRGTFYyIO.exe
+Gko5Kmkos4n.exe
+consent.exe
+msiexec.exe
+msiexec.exe
 
 [Software]
-Mozilla Thunderbird ESR (x64 de) - 140.6.0
-Mozilla Maintenance Service - 102.12.0
-Kingdoms of Amalur: Re-Reckoning
-Ori and the Will of the Wisps
-Icarus
-Horizon Zero Dawn? Complete Edition
-STAR WARS Jedi: Fallen Order? 
-TRANSFORMERS: BATTLEGROUNDS
-Pathfinder: Wrath of the Righteous - Enhanced Edition
-Enshrouded
-Command & Conquer? Remastered Collection
-Detroit: Become Human
-The Sims? 4
-Need for Speed? Heat 
-Dragon Age? Inquisition
-STAR WARS?: Squadrons
-Unravel Two
-STAR WARS? Battlefront? II
-Titanfall? 2
-Dragon Age II
-The Planet Crafter
-Disciples: Liberation
-Need for Speed? Hot Pursuit Remastered
-Mass Effect? Legendary Edition
-MONSTER HUNTER RISE
-Aliens: Fireteam Elite
-Lost Ark
-Palworld
-Command & Conquer?: Alarmstufe Rot 3
-Among Us VR
-Batman?: Arkham Knight
-Resident Evil 6
-Giana Sisters: Twisted Dreams
-Alien Breed: Impact
-Alien Breed 2: Assault
-Alien Breed 3: Descent
-Euro Truck Simulator 2
-PAC-MAN Championship Edition DX+
-Middle-earth?: Shadow of Mordor?
-Homeworld Remastered Collection
-Space Engineers
-Command & Conquer 3: Tiberium Wars?
-Command & Conquer? Alarmstufe Rot? 3 - Uprising
-Command & Conquer 3: Kanes Rache
-Ori and the Blind Forest
-Soulmask
-XCOM 2
-Grand Theft Auto V
-No Man's Sky
-Homeworld: Deserts of Kharak
-Warhammer 40,000: Dawn of War III
-The Witcher 3: Wild Hunt
-FINAL FANTASY XIII
-Mortal Kombat X
-Street Fighter V
-LEGO? Worlds
-Total War: SHOGUN 2
-ARK: Survival Evolved
-Middle-earth?: Shadow of War?
-Elite Dangerous
-FINAL FANTASY X/X-2 HD Remaster
-Yooka-Laylee
-ASTRONEER
-Sudden Strike 4
-Dead by Daylight
-Ori and the Blind Forest: Definitive Edition
-Rise of the Tomb Raider
-DiRT 4
-Little Nightmares
-LEGO? STAR WARS?: The Force Awakens
-Conan Exiles
-Job Simulator
-Battle Chasers: Nightwar
-Halo Wars: Definitive Edition
-Fury Unleashed
-UNO
-Aven Colony
-Warhammer 40,000: Gladius - Relics of War
-Planet Coaster
-Railway Empire
-Ashes of the Singularity: Escalation
-Satisfactory
-Star Trek: Bridge Crew
-Warhammer 40,000: Inquisitor - Martyr
-Two Point Hospital
-Far Cry 5
-Monopoly Plus
-LEGO? City Undercover
-House Flipper
-Ancestors Legacy
-Injustice? 2
-MORDHAU
-The LEGO? NINJAGO? Movie Video Game
-Raft
-Phasmophobia
-Smalland: Survive the Wilds
-Crab Champions
-Clue/Cluedo: The Classic Mystery Game
-Age of Empires II: Definitive Edition
-Green Hell
-Iron Harvest
-Valheim
-Hasbro's BATTLESHIP
-The Survivalists
-Cat Quest II
-LEGO? Star Wars?: Die Skywalker Saga
-Conan Exiles - Public Beta Client
-Age of Empires III: Definitive Edition
-Supreme Commander
-Supreme Commander: Forged Alliance
-Among Us
-Unsung Warriors - Prologue
-Bloons TD 6
-Beyond: Two Souls
-King of Retail
-Mortal Kombat 11
-Marvel's Avengers ? Definitive Edition
-VLC media player - 3.0.20
-Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664 - 12.0.40664
-WD_BLACK AN1500 - <ip>
-Canon G6000 series MP Drivers - 1.01
+BlueStacks App Player - 4.240.30.1002
+CCleaner 7 - 7.0.1010.1196
+CPUID CPU-Z 2.06 - 2.06
+CrystalDiskInfo 9.1.1 - 9.1.1
+AIShoujo AI
+SMPlayer 24.5.0 (x64) - 24.5.0
+Star Rail - <ip>
+GRANDIA HD Remaster
+Ultimate Zombie Defense
+Project Zomboid
+Herd is Coming Demo
+Stay Out
+Nexomon: Extinction
+Loop Hero
+Eternal Dreamers
+Angel Legion: LSP Idle RPG
+ENDER LILIES: Quietus of the Knights
+Dire Destiny :Time Travel
+Bail or Jail Demo
+Zumbi Blocks 2 Open Alpha
+Lethal Company
+Backpack Hero
+CounterSide
+Withering Rooms
+Zold:out
+TRIBE NINE
+Wizardry Variants Daphne
+HoloCure - Save the Fans!
+The Killing Antidote Playtest
+Backpack Battles Demo
+DRACOMATON
+Shadowverse: Worlds Beyond
+Atelier Resleriana: Forgotten Alchemy and the Polar Night Liberator
+Astral Party 
+Drive Beyond Horizons
+Species: Unknown
+Kamikaze Lassplanes Demo
+Blood Typers
+100% Orange Juice
+Blood Typers Demo
+The Walking Dead: No Man's Land
+He is Coming Demo
+THE SPIRIT LIFT Demo
+Morimens
+Reverse: 1999
+Zombieville USA 3D Demo
+Into the Dead: Our Darkest Days Demo
+UNLOVED
+Umamusume: Pretty Derby
+R.E.P.O.
+UNLIGHT:Revive
+CloverPit Demo
+Fogpiercer Demo
+iDigging
+A Simple Life with My Unobtrusive Sister Demo
+Menherarium Demo
+gogh: Focus with Your Avatar Demo
+The Demons Told Me to Make This Game Demo
+Apokerlypse Demo
+Beneath Playtest
+Slot or Not Demo
+SANGRA Demo
+SKYHILL
+Dead In Bermuda
+N.O.X. Demo
+Species: Unknown Demo
+A Game of D.I.C.E. Demo
+Wallpaper Engine
+Shadowverse
+Zomborg
+Scheming Through The Zombie Apocalypse: The Beginning
+Unlight:SchizoChronicle
+Scheming Through The Zombie Apocalypse Ep2: Caged
+Synaptics Pointing Device Driver - <ip>
+WinRAR 6.23 (64-bit) - 6.23.0
 Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219 - 10.0.40219
-ENE_External_Device_HAL - <ip>
-Verbatim_SureFireGaming_Product - <ip>
-ENE_EHD_M2_HAL - <ip>
-Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030 - 11.0.61030
-Java(TM) SE Development Kit 23.0.1 (64-bit) - <ip>
-Microsoft .NET Host - 8.0.8 (x64) - 64.32.18380
-Microsoft .NET Runtime - 6.0.32 (x64) - 48.128.16743
-Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.44.35211 - 14.44.35211
-Corsair Device Control Service - 1.1.13
-Logitech G HUB - 2025.9.814157
-Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664 - 12.0.40664
-Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161 - 9.0.30729.6161
-Microsoft Windows Desktop Runtime - 8.0.8 (x64) - 64.32.18376
-Microsoft .NET Host FX Resolver - 6.0.32 (x64) - 48.128.16743
-Microsoft .NET Host FX Resolver - 8.0.8 (x64) - 64.32.18380
-Microsoft Visual C++ 2022 X64 Additional Runtime - 14.44.35211 - 14.44.35211
-Microsoft Windows Desktop Runtime - 6.0.32 (x64) - 48.128.16742
-ViGEm Bus Driver - 1.22.0
-PlayStation(R) PC SDK Runtime - 3.00.0013
-Microsoft .NET Runtime - 8.0.8 (x64) - 64.32.18380
-ENE_MousePad_HAL - <ip>
-ENE Video Capture Box HAL - <ip>
-Microsoft .NET Host - 6.0.32 (x64) - 48.128.16743
-Microsoft Visual C++ 2005 Redistributable (x64) - 8.0.61000
-NVIDIA Grafiktreiber 591.59 - 591.59
-NVIDIA PhysX-Systemsoftware 9.23.1019 - 9.23.1019
-NVIDIA HD-Audiotreiber <ip> - <ip>
-NVIDIA Install Application - 2.1002.438.0
-WD_BLACK D50 - <ip>
-EA app - 13.616.1.6133
 Microsoft Update Health Tools - <ip>
+Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030 - 11.0.61030
+Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.44.35211 - 14.44.35211
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161 - 9.0.30729.6161
+Microsoft Visual C++ 2022 X64 Additional Runtime - 14.44.35211 - 14.44.35211
+Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.21005 - 12.0.21005
+Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.21005 - 12.0.21005
+Microsoft Visual C++ 2005 Redistributable (x64) - 8.0.61000
+NVIDIA Graphics Driver 581.57 - 581.57
+NVIDIA App <ip> - <ip>
+NVIDIA MessageBus 3 for NvApp - 3.16
+NVIDIA Backend - <ip>
+NvCpl - 1.0
+NVIDIA PhysX System Software 9.23.1019 - 9.23.1019
+NVIDIA FrameView SDK 1.5.11504.36206172 - 1.5.11504.36206172
+NVIDIA HD Audio Driver <ip> - <ip>
+NVIDIA Install Application - 2.1002.438.0
+NVIDIA Container - 1.44
+NVIDIA AIUser Container - 1.44
+NVIDIA LocalSystem Container - 1.44
+NVIDIA Session Container - 1.44
+NVIDIA User Container - 1.44
+NVIDIA NvDLISR - 1.0
+NVIDIA Watchdog Plugin for NvContainer - 1.44
+NVIDIA Telemetry Client - <ip>
+NVIDIA ShadowPlay <ip> - <ip>
+NVIDIA Virtual Audio <ip> - <ip>
+Update for x64-based Windows Systems (KB5001716) - <ip>
 Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030 - 11.0.61030
-ENE_X_AIC_HAL - <ip>
-AMD Ryzen Master SDK - 2.14.2.3330
-Microsoft GameInput - 10.1.26100.6879
-WD P40 Game Drive - <ip>
-Epic Games Launcher Prerequisites (x64) - <ip>
-CurseForge 1.295.0-29976 - 1.295.0-29976
-Discord - 1.0.9219
-Google Chrome - 143.0.7499.170
-UE3Redist - 1.00.0000
-Wand - 12.6.0
+Discord - 1.0.9163
+Etheria Restart - <ip>
+Microsoft OneDrive - 25.194.1005.0003
+Riot Client 

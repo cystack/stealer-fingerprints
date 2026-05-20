@@ -23,7 +23,7 @@ than inlined into this summary.
 
 **Also known as:** `Atomic Stealer`, `Atomic macOS Stealer`, `AMOS`, `Atomic Mac`
 
-**Variants observed:** 52
+**Variants observed:** 54
 **Top attribution confidence:** `medium`
 
 ## Targets
@@ -312,6 +312,61 @@ Hardware Overview:
 [... truncated; full sample at ``sample.txt`` (approx. 25 more lines) ...]
 ```
 
+### `cystack_1f9547de`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`City`, `Color LCD`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `Intel HD Graphics 5000`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: PH
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 11.7.10 (20G1427)
+  Kernel Version: Darwin 20.6.0
+  Boot Volume: MacOS X
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 9:06
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: MacBook Air
+  Model Identifier: MacBookAir6,2
+  Processor Name: Dual-Core Intel Core i5
+  Processor Speed: 1.4 GHz
+  Number of Processors: 1
+  Total Number of Cores: 2
+  L2 Cache (per Core): 256 KB
+  L3 Cache: 3 MB
+  Hyper-Threading Technology: Enabled
+  Memory: 4 GB
+  System Firmware Version: <ip>.0
+  SMC Version (system): 2.13f15
+  Serial Number (system): C1MNX7XVG085
+  Hardware UUID: 83EF4357-A11B-52EB-9128-C50AD279BBC7
+[... truncated; full sample at ``sample.txt`` (approx. 25 more lines) ...]
+```
+
 ### `cystack_3311417f`
 
 **Attribution confidence:** `medium`
@@ -365,6 +420,61 @@ Hardware Overview:
   Serial Number (system): C02DV8JLMD6T
   Hardware UUID: 12844F3C-078A-59F1-9034-B1820F8F7D08
 [... truncated; full sample at ``sample.txt`` (approx. 45 more lines) ...]
+```
+
+### `cystack_37b8f105`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`ASUS VG249`, `Apple M1`, `City`, `Color LCD`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: PH
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 15.6.1 (24G90)
+  Kernel Version: Darwin 24.6.0
+  Boot Volume: Macintosh HD
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 15 hours
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: MacBook Air
+  Model Identifier: MacBookAir10,1
+  Model Number: MGN93PP/A
+  Chip: Apple M1
+  Total Number of Cores: 8 (4 performance and 4 efficiency)
+  Memory: 8 GB
+  System Firmware Version: 11881.140.96
+  OS Loader Version: 11881.140.96
+  Serial Number (system): FVFH59ZMQ6L7
+  Hardware UUID: 98B66BBB-4D9B-50FE-B7AB-3C20986ECE39
+  Provisioning UDID: 00008103-001109C80AD3001E
+  Activation Lock Status: Enabled
+
+Graphics/Displays:
+[... truncated; full sample at ``sample.txt`` (approx. 24 more lines) ...]
 ```
 
 ### `cystack_39a9de7a`
