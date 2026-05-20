@@ -16,6 +16,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Blank Grabber`](families/blank_grabber/) | 11 | 0 | `high` |
 | [`BracketSection Stealer`](families/bracket_section_stealer/) | 1 | 0 | `unknown` |
 | [`CSBareVersionStealer`](families/cs_bare_version_stealer/) | 1 | 1 | `unknown` |
+| [`CSBinaryGarbageStealer`](families/cs_binary_garbage_stealer/) | 1 | 1 | `unknown` |
 | [`CSBitArchStealer`](families/cs_bit_arch_stealer/) | 1 | 0 | `unknown` |
 | [`CSBrowersStealer`](families/cs_browers_stealer/) | 2 | 0 | `unknown` |
 | [`CSBuildBlockStealer`](families/cs_build_block_stealer/) | 1 | 1 | `unknown` |
@@ -48,7 +49,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Redline`](families/redline/) | 18 | 0 | `high` |
 | [`RedlineLike Stealer`](families/redline_like_stealer/) | 16 | 0 | `unknown` |
 | [`StealC`](families/steal_c/) | 14 | 0 | `high` |
-| [`Vidar`](families/vidar/) | 3375 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 3443 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 5 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 6 | 0 | `high` |
 
