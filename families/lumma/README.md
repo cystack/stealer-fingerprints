@@ -9,7 +9,7 @@ signature on the `Time:` line. Build banners reference the
 
 **Also known as:** `LummaC2`, `Lumma Stealer`
 
-**Variants observed:** 2
+**Variants observed:** 3
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -75,6 +75,53 @@ Purchase quality material right now - t.me/lummamarketplace_bot
 ------------------------------------
 
 [... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
+```
+
+### `cystack_802420de`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`LID`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+
+- @MAXERSTE (BRADMAX) / <url>
+- Configuration: 
+- Path: C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe
+
+- OS Version: Windows 11 Home (10.0.26100) x64
+- Local Date: 18.03.2025 <ip>
+- Time Zone: UTC-5
+- Install Date: 30.11.2024 <ip>
+- Elevated: false
+- Computer: MIKES
+- User: micha
+- Domain: 
+- Hostname: Mikes
+- NetBIOS: MIKES
+- Language: en-US
+- Anti Virus:
+	- Windows Defender
+- HWID: AD3A692E9BB335CB8C9A1C42E7B3F29E
+- RAM Size: 12288MB
+- CPU Vendor: AuthenticAMD
+- CPU Name: AMD Athlon Silver 3050U with Radeon Graphics   
+- CPU Threads: 2
+- CPU Cores: 1
+- GPU:
+	- AMD Radeon(TM) Vega 3 Graphics
+- Display resolution: 1366x768
+
+- IP Address: <ip>
+- Time: 18.03.2025 <ip> (sig:1742307760.8839f447a216b645675b3fa5b6cf834c)
+- Country: JM
+LID: FATE99--Main
 ```
 
 ### `cystack_c65f37b2`

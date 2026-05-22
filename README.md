@@ -39,7 +39,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSWmicDumpStealer`](families/cs_wmic_dump_stealer/) | 1 | 0 | `unknown` |
 | [`Category Stealer`](families/category_stealer/) | 3 | 0 | `unknown` |
 | [`Cthulhu Stealer`](families/cthulhu_stealer/) | 23 | 0 | `high` |
-| [`Lumma`](families/lumma/) | 2 | 0 | `high` |
+| [`Lumma`](families/lumma/) | 3 | 0 | `high` |
 | [`MacSync`](families/mac_sync/) | 2 | 0 | `high` |
 | [`Millenium RAT`](families/millenium_rat/) | 1 | 0 | `-` |
 | [`PXA Stealer`](families/pxa_stealer/) | 6 | 0 | `high` |

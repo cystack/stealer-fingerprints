@@ -19,6 +19,20 @@
       "attribution_confidence": "high",
       "banner_strings": [],
       "distribution_channel": null,
+      "field_keys": [
+        "LID"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_802420de",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
       "field_keys": [],
       "filenames": [
         "System.txt",
