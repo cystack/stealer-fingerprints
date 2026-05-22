@@ -1,0 +1,17 @@
+{
+  "family": "CSPcNameSnakeStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": "@BRADLOGS",
+      "field_keys": [],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "bradmax",
+      "panel_brand": "BRADMAX",
+      "synthetic": false
+    }
+  ]
+}

@@ -33,6 +33,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSInzExtStealer`](families/cs_inz_ext_stealer/) | 1 | 0 | `unknown` |
 | [`CSMSKDateStealer`](families/csmsk_date_stealer/) | 1 | 0 | `unknown` |
 | [`CSNewLogStealer`](families/cs_new_log_stealer/) | 1 | 0 | `unknown` |
+| [`CSPcNameSnakeStealer`](families/cs_pc_name_snake_stealer/) | 1 | 1 | `unknown` |
 | [`CSPyHostTimeStealer`](families/cs_py_host_time_stealer/) | 1 | 1 | `unknown` |
 | [`CSSigInfoStealer`](families/cs_sig_info_stealer/) | 1 | 1 | `low` |
 | [`CSSoftwareTailStealer`](families/cs_software_tail_stealer/) | 1 | 1 | `unknown` |
@@ -49,7 +50,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Redline`](families/redline/) | 18 | 0 | `high` |
 | [`RedlineLike Stealer`](families/redline_like_stealer/) | 16 | 0 | `unknown` |
 | [`StealC`](families/steal_c/) | 14 | 0 | `high` |
-| [`Vidar`](families/vidar/) | 3443 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 3457 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 5 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 6 | 0 | `high` |
 
