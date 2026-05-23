@@ -457,6 +457,31 @@ rule AMOS_Stealer_cystack_807f3e69
         all of ($key_*)
 }
 
+rule AMOS_Stealer_cystack_86e52024
+{
+    meta:
+        family = "AMOS Stealer"
+        fingerprint_id = "cystack_86e52024"
+
+    strings:
+        $key_0 = "Apple M2 Max:" ascii
+        $key_1 = "City:" ascii
+        $key_2 = "Color LCD:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Debanks:" ascii
+        $key_5 = "Graphics/Displays:" ascii
+        $key_6 = "Hardware:" ascii
+        $key_7 = "Hardware Overview:" ascii
+        $key_8 = "IP:" ascii
+        $key_9 = "MetaMask Info:" ascii
+        $key_10 = "Software:" ascii
+        $key_11 = "System Software Overview:" ascii
+        $key_12 = "Userinfo:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule AMOS_Stealer_cystack_887171ab
 {
     meta:
@@ -699,6 +724,31 @@ rule AMOS_Stealer_cystack_9b82e639
         $key_6 = "Hardware Overview:" ascii
         $key_7 = "IP:" ascii
         $key_8 = "Intel HD Graphics 4000:" ascii
+        $key_9 = "MetaMask Info:" ascii
+        $key_10 = "Software:" ascii
+        $key_11 = "System Software Overview:" ascii
+        $key_12 = "Userinfo:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule AMOS_Stealer_cystack_a1b4843d
+{
+    meta:
+        family = "AMOS Stealer"
+        fingerprint_id = "cystack_a1b4843d"
+
+    strings:
+        $key_0 = "Apple M2 Pro:" ascii
+        $key_1 = "City:" ascii
+        $key_2 = "Color LCD:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Debanks:" ascii
+        $key_5 = "Graphics/Displays:" ascii
+        $key_6 = "Hardware:" ascii
+        $key_7 = "Hardware Overview:" ascii
+        $key_8 = "IP:" ascii
         $key_9 = "MetaMask Info:" ascii
         $key_10 = "Software:" ascii
         $key_11 = "System Software Overview:" ascii
@@ -1046,6 +1096,30 @@ rule AMOS_Stealer_cystack_cfb6969f
         $key_11 = "Software:" ascii
         $key_12 = "System Software Overview:" ascii
         $key_13 = "Userinfo:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule AMOS_Stealer_cystack_d58bf3c7
+{
+    meta:
+        family = "AMOS Stealer"
+        fingerprint_id = "cystack_d58bf3c7"
+
+    strings:
+        $key_0 = "ATI Radeon HD 5750:" ascii
+        $key_1 = "City:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Debanks:" ascii
+        $key_4 = "Graphics/Displays:" ascii
+        $key_5 = "Hardware:" ascii
+        $key_6 = "Hardware Overview:" ascii
+        $key_7 = "IP:" ascii
+        $key_8 = "MetaMask Info:" ascii
+        $key_9 = "Software:" ascii
+        $key_10 = "System Software Overview:" ascii
+        $key_11 = "Userinfo:" ascii
 
     condition:
         all of ($key_*)

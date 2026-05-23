@@ -8,7 +8,7 @@ Observed in `@bugatti_cloud` aggregator packs.
 
 **Also known as:** `Cthulhu macOS Stealer`
 
-**Variants observed:** 23
+**Variants observed:** 24
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -844,6 +844,61 @@ Hardware Overview:
   Serial Number (system): C02TP5JSJ1GG
   Hardware UUID: 5E19BC9D-AD6E-5B4C-9F9B-132A5E729AC6
 [... truncated; full sample at ``sample.txt`` (approx. 28 more lines) ...]
+```
+
+### `cystack_bfc51e78`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Apple M3 Ultra`, `BuildID`, `City`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+BuildID:james_4
+
+Userinfo:
+Country: SA
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 15.7 (24G222)
+  Kernel Version: Darwin 24.6.0
+  Boot Volume: Macintosh HD
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 4 hours, 53 minutes
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: Mac Studio
+  Model Identifier: Mac15,14
+  Model Number: Z1CE000FBAB/A
+  Chip: Apple M3 Ultra
+  Total Number of Cores: 32 (24 performance and 8 efficiency)
+  Memory: 96 GB
+  System Firmware Version: 13822.1.2
+  OS Loader Version: 11881.140.96
+  Serial Number (system): WDN2WLT9JC
+  Hardware UUID: EF355601-3786-5B78-86D8-60CCB10F5593
+  Provisioning UDID: 00006032-001030CE1A46801C
+  Activation Lock Status: Disabled
+
+Graphics/Displays:
+[... truncated; full sample at ``sample.txt`` (approx. 17 more lines) ...]
 ```
 
 ### `cystack_c6bf81f0`
