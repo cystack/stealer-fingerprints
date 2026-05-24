@@ -23,7 +23,7 @@ than inlined into this summary.
 
 **Also known as:** `Atomic Stealer`, `Atomic macOS Stealer`, `AMOS`, `Atomic Mac`
 
-**Variants observed:** 60
+**Variants observed:** 62
 **Top attribution confidence:** `medium`
 
 ## Targets
@@ -2457,6 +2457,61 @@ Hardware Overview:
 [... truncated; full sample at ``sample.txt`` (approx. 44 more lines) ...]
 ```
 
+### `cystack_d397c379`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`Apple M1`, `City`, `Color LCD`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `LC27T55`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: TW
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 15.1.1 (24B91)
+  Kernel Version: Darwin 24.1.0
+  Boot Volume: Macintosh HD
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 2513p19
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: MacBook Pro
+  Model Identifier: MacBookPro17,1
+  Model Number: MYD82TA/A
+  Chip: Apple M1
+  Total Number of Cores: 8 (4 performance and 4 efficiency)
+  Memory: 8 GB
+  System Firmware Version: 11881.41.5
+  OS Loader Version: 11881.41.5
+  Serial Number (system): C02FV43BQ05D
+  Hardware UUID: B9D03DB4-0B3E-54B3-8621-613D5CD6BDF8
+  Provisioning UDID: 00008103-001511DC2EDA001E
+  Activation Lock Status: Enabled
+
+Graphics/Displays:
+[... truncated; full sample at ``sample.txt`` (approx. 24 more lines) ...]
+```
+
 ### `cystack_d58bf3c7`
 
 **Attribution confidence:** `medium`
@@ -2510,6 +2565,61 @@ Hardware Overview:
   Serial Number (system): W80482S6DB5
   Hardware UUID: 0DC12E18-9087-5636-8C8B-1F22CA75DE8C
 [... truncated; full sample at ``sample.txt`` (approx. 28 more lines) ...]
+```
+
+### `cystack_d6f974f0`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`Apple M2`, `BenQ GW2480`, `City`, `Color LCD`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: TW
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 15.6.1 (24G90)
+  Kernel Version: Darwin 24.6.0
+  Boot Volume: Macintosh HD
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 9 days, 27 minutes
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: MacBook Air
+  Model Identifier: Mac14,2
+  Model Number: Z1600000ZTA/A
+  Chip: Apple M2
+  Total Number of Cores: 8 (4 performance and 4 efficiency)
+  Memory: 24 GB
+  System Firmware Version: 11881.140.96
+  OS Loader Version: 11881.140.96
+  Serial Number (system): Y14TKXHR93
+  Hardware UUID: 41A5BD8A-BC59-5AAF-AD68-98799AD34BAC
+  Provisioning UDID: 00008112-001659222E78201E
+  Activation Lock Status: Enabled
+
+Graphics/Displays:
+[... truncated; full sample at ``sample.txt`` (approx. 26 more lines) ...]
 ```
 
 ### `cystack_e075b836`

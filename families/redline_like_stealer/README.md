@@ -9,7 +9,7 @@ the underlying field layout intact.
 
 **Also known as:** `redline`, `redline-extended`
 
-**Variants observed:** 16
+**Variants observed:** 17
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -324,6 +324,42 @@ UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1720x1080
 Wallpaper Hash: 4d10156e41790d76cd3e7133778b082af9242d78
+```
+
+### `cystack_655435f6`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+    Log date: 03 Nov 25 15:40 CET
+HWID: <redacted>
+Country: TR
+IP: <redacted>
+System Language: Turkish
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+Installed RAM: 16243 MB
+Operation System: Windows 11 24H2 build 26200 (64 Bit)
+Graphics card: NVIDIA GeForce RTX 4060
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key: 
+-------------
+User Name: <redacted>
+Admin Group: TRUE
+Integrity: High
+TimeZone: UTC+3
+UserLanguage: Turkish
+Keyboard Language: Turkish
+Display Resolution: 3440x1440
+Wallpaper Hash: db91794afafc7b32b6d71b9561e067f72ceb4e16
 ```
 
 ### `cystack_6d229675`

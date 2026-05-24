@@ -1148,6 +1148,33 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Apple M1",
+        "City",
+        "Color LCD",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "LC27T55",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_d397c379",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "ATI Radeon HD 5750",
         "City",
         "Country",
@@ -1165,6 +1192,33 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_d58bf3c7",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Apple M2",
+        "BenQ GW2480",
+        "City",
+        "Color LCD",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_d6f974f0",
       "panel_brand": null,
       "synthetic": true
     },

@@ -42,6 +42,33 @@
         "Hardware",
         "Hardware Overview",
         "IP",
+        "Intel HD Graphics 4000",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_014e308e",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "BuildID",
+        "City",
+        "Color LCD",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
         "Intel HD Graphics 5000",
         "MetaMask Info",
         "Software",

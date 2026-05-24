@@ -8,7 +8,7 @@ Observed in `@bugatti_cloud` aggregator packs.
 
 **Also known as:** `Cthulhu macOS Stealer`
 
-**Variants observed:** 24
+**Variants observed:** 25
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -74,6 +74,61 @@ Hardware Overview:
   Hardware UUID: D888A79B-AC68-53FB-AC68-3A7F5A0E0BAA
   Provisioning UDID: D888A79B-AC68-53FB-AC68-3A7F5A0E0BAA
 [... truncated; full sample at ``sample.txt`` (approx. 25 more lines) ...]
+```
+
+### `cystack_014e308e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`BuildID`, `City`, `Color LCD`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `Intel HD Graphics 4000`, `MetaMask Info`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+BuildID:F2
+
+Userinfo:
+Country: TT
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 14.7.1 (23H222)
+  Kernel Version: Darwin 23.6.0
+  Boot Volume: Macintosh HD - Data - Data - Data
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Disabled
+  Time since boot: 23 hours, 32 minutes
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: MacBook Pro
+  Model Identifier: MacBookPro10,2
+  Processor Name: Dual-Core Intel Core i5
+  Processor Speed: 2.6 GHz
+  Number of Processors: 1
+  Total Number of Cores: 2
+  L2 Cache (per Core): 256 KB
+  L3 Cache: 3 MB
+  Hyper-Threading Technology: Enabled
+  Memory: 8 GB
+  System Firmware Version: <ip>.0
+  OS Loader Version: 580.140.1~51
+  SMC Version (system): 2.6f59
+  Serial Number (system): C02K69U4FFRP
+[... truncated; full sample at ``sample.txt`` (approx. 27 more lines) ...]
 ```
 
 ### `cystack_0ac18884`

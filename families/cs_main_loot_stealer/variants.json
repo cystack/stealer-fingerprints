@@ -1,0 +1,19 @@
+{
+  "family": "CSMainLootStealer",
+  "variants": [
+    {
+      "attribution_confidence": "low",
+      "banner_strings": [],
+      "distribution_channel": "@VerifiedThief",
+      "field_keys": [
+        "Support"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_a7412858",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

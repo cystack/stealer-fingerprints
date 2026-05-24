@@ -286,6 +286,39 @@
       "distribution_channel": null,
       "field_keys": [
         "Admin Group",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "HWID",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "MachineID",
+        "Operation System",
+        "Processor",
+        "Product Key",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_655435f6",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
         "Country",
         "Display Resolution",
         "Domain Name",
