@@ -1,6 +1,6 @@
 # Raccoon
 
-**Variants observed:** 1
+**Variants observed:** 2
 **Top attribution confidence:** `high`
 
 ## Variants
@@ -58,4 +58,59 @@ Installed applications:
 	Microsoft Edge 108.0.1462.46
 	Microsoft Edge Update <ip>
 [... truncated; full sample at ``sample.txt`` (approx. 11 more lines) ...]
+```
+
+### `cystack_a913a5d3`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Build compile date`, `Installed Apps`, `Launched at`, `System Information`
+
+**Filenames:** `System Info.txt`
+
+**Sample (sanitized):**
+
+```
+Racc0_0n | 1.8.0
+
+Build compile date: Fri Aug 13 <ip> 2021
+
+Launched at: 2021.08.17 - <ip> GMT
+
+Bot_ID: A354A065-1A99-467C-88D9-BA20A1FA41D1_User
+
+Running on a laptop
+[... 3 blank lines ...]
+-------------
+[... 3 blank lines ...]
+  - Cookies: 4402
+
+  - Passwords: 33
+
+  - Files: 117
+[... 3 blank lines ...]
+System Information:
+
+  - System Language: Polish
+
+  - System TimeZone: +1 hrs
+
+  - IP: <ip>
+
+  - Location: 52.239399, 21.036200 | ?, ?, Poland (?)
+
+  - ComputerName: DESKTOP-6CHEB2H
+
+  - Username: User
+
+  - Windows version: NT 10.0
+
+  - Product name: Windows 10 Pro
+
+  - System arch: x64
+
+  - CPU: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz (12 cores)
+
+[... truncated; full sample at ``sample.txt`` (approx. 90 more lines) ...]
 ```

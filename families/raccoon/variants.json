@@ -19,6 +19,23 @@
       "fingerprint_id": "cystack_143f8a91",
       "panel_brand": null,
       "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Build compile date",
+        "Installed Apps",
+        "Launched at",
+        "System Information"
+      ],
+      "filenames": [
+        "System Info.txt"
+      ],
+      "fingerprint_id": "cystack_a913a5d3",
+      "panel_brand": null,
+      "synthetic": true
     }
   ]
 }

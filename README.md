@@ -47,7 +47,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`PXA Stealer`](families/pxa_stealer/) | 6 | 0 | `high` |
 | [`PureLogs`](families/pure_logs/) | 1 | 0 | `high` |
 | [`RL Stealer`](families/rl_stealer/) | 1 | 0 | `medium` |
-| [`Raccoon`](families/raccoon/) | 1 | 0 | `high` |
+| [`Raccoon`](families/raccoon/) | 2 | 0 | `high` |
 | [`Redline`](families/redline/) | 18 | 0 | `high` |
 | [`RedlineLike Stealer`](families/redline_like_stealer/) | 17 | 0 | `unknown` |
 | [`StealC`](families/steal_c/) | 14 | 0 | `high` |
