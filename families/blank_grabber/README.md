@@ -18,7 +18,7 @@ Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 
 **Also known as:** `BlankGrabber`, `Blank-c/Blank-Grabber`
 
-**Variants observed:** 11
+**Variants observed:** 12
 **Top attribution confidence:** `high`
 **Operator panel brands:** `Dead`
 
@@ -282,6 +282,52 @@ Autofills : 0
 Roblox Cookies : 0
 Telegram Sessions : 0
 Common Files : 7
+Wallets : 0
+Wifi Passwords : 0
+Webcam : 0
+Minecraft Sessions : 0
+Epic Session : No
+Steam Session : No
+Uplay Session : No
+Growtopia Session : No
+Screenshot : Yes
+System Info : Yes
+```
+
+### `cystack_57d3f2a5`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Autofills`, `Blank Grabber got a new victim`, `CPU`, `Common Files`, `Computer OS`, `Cookies`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Telegram Sessions`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+Blank Grabber got a new victim: jorge
+
+IP Info
+(Unable to get IP info)
+
+System Info
+Computer OS: Unable to detect OS
+Total Memory: Unable to detect total memory
+UUID: Unable to detect UUID
+CPU: Intel64 Family 6 Model 165 Stepping 2, GenuineIntel
+GPU: Unable to detect GPU
+Product Key: NTRHT-XTHTG-GBWCG-4MTMP-HH64C
+
+Grabbed Info
+Discord Accounts : 0
+Passwords : 357
+Cookies : 0
+History : 0
+Autofills : 0
+Roblox Cookies : 0
+Telegram Sessions : 0
+Common Files : 0
 Wallets : 0
 Wifi Passwords : 0
 Webcam : 0

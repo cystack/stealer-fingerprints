@@ -29,6 +29,31 @@ rule AMOS_Stealer_cystack_08f7ef15
         all of ($key_*)
 }
 
+rule AMOS_Stealer_cystack_0cd83a7e
+{
+    meta:
+        family = "AMOS Stealer"
+        fingerprint_id = "cystack_0cd83a7e"
+
+    strings:
+        $key_0 = "Apple M3 Pro:" ascii
+        $key_1 = "City:" ascii
+        $key_2 = "Color LCD:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Debanks:" ascii
+        $key_5 = "Graphics/Displays:" ascii
+        $key_6 = "Hardware:" ascii
+        $key_7 = "Hardware Overview:" ascii
+        $key_8 = "IP:" ascii
+        $key_9 = "MetaMask Info:" ascii
+        $key_10 = "Software:" ascii
+        $key_11 = "System Software Overview:" ascii
+        $key_12 = "Userinfo:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule AMOS_Stealer_cystack_130284cc
 {
     meta:
@@ -307,6 +332,57 @@ rule AMOS_Stealer_cystack_4a8d83d3
         all of ($key_*)
 }
 
+rule AMOS_Stealer_cystack_50ea6b3f
+{
+    meta:
+        family = "AMOS Stealer"
+        fingerprint_id = "cystack_50ea6b3f"
+
+    strings:
+        $key_0 = "Apple M1:" ascii
+        $key_1 = "City:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "DENON-AVR:" ascii
+        $key_4 = "Debanks:" ascii
+        $key_5 = "Graphics/Displays:" ascii
+        $key_6 = "Hardware:" ascii
+        $key_7 = "Hardware Overview:" ascii
+        $key_8 = "IP:" ascii
+        $key_9 = "MetaMask Info:" ascii
+        $key_10 = "Software:" ascii
+        $key_11 = "System Software Overview:" ascii
+        $key_12 = "Userinfo:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule AMOS_Stealer_cystack_6b704a1d
+{
+    meta:
+        family = "AMOS Stealer"
+        fingerprint_id = "cystack_6b704a1d"
+
+    strings:
+        $key_0 = "Apple M1 Pro:" ascii
+        $key_1 = "City:" ascii
+        $key_2 = "Color LCD:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Debanks:" ascii
+        $key_5 = "Graphics/Displays:" ascii
+        $key_6 = "Hardware:" ascii
+        $key_7 = "Hardware Overview:" ascii
+        $key_8 = "IP:" ascii
+        $key_9 = "MetaMask Info:" ascii
+        $key_10 = "S34J55x:" ascii
+        $key_11 = "Software:" ascii
+        $key_12 = "System Software Overview:" ascii
+        $key_13 = "Userinfo:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule AMOS_Stealer_cystack_6be8171f
 {
     meta:
@@ -452,6 +528,32 @@ rule AMOS_Stealer_cystack_807f3e69
         $key_10 = "Software:" ascii
         $key_11 = "System Software Overview:" ascii
         $key_12 = "Userinfo:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule AMOS_Stealer_cystack_80cb47fe
+{
+    meta:
+        family = "AMOS Stealer"
+        fingerprint_id = "cystack_80cb47fe"
+
+    strings:
+        $key_0 = "AMD FirePro D700:" ascii
+        $key_1 = "BenQ EW3270U:" ascii
+        $key_2 = "Cinema HD Display:" ascii
+        $key_3 = "City:" ascii
+        $key_4 = "Country:" ascii
+        $key_5 = "Debanks:" ascii
+        $key_6 = "Graphics/Displays:" ascii
+        $key_7 = "Hardware:" ascii
+        $key_8 = "Hardware Overview:" ascii
+        $key_9 = "IP:" ascii
+        $key_10 = "MetaMask Info:" ascii
+        $key_11 = "Software:" ascii
+        $key_12 = "System Software Overview:" ascii
+        $key_13 = "Userinfo:" ascii
 
     condition:
         all of ($key_*)
@@ -750,6 +852,31 @@ rule AMOS_Stealer_cystack_a1b4843d
         $key_7 = "Hardware Overview:" ascii
         $key_8 = "IP:" ascii
         $key_9 = "MetaMask Info:" ascii
+        $key_10 = "Software:" ascii
+        $key_11 = "System Software Overview:" ascii
+        $key_12 = "Userinfo:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule AMOS_Stealer_cystack_a7264601
+{
+    meta:
+        family = "AMOS Stealer"
+        fingerprint_id = "cystack_a7264601"
+
+    strings:
+        $key_0 = "AMD Radeon Pro 5300:" ascii
+        $key_1 = "City:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Debanks:" ascii
+        $key_4 = "Graphics/Displays:" ascii
+        $key_5 = "Hardware:" ascii
+        $key_6 = "Hardware Overview:" ascii
+        $key_7 = "IP:" ascii
+        $key_8 = "MetaMask Info:" ascii
+        $key_9 = "PHL 221V8:" ascii
         $key_10 = "Software:" ascii
         $key_11 = "System Software Overview:" ascii
         $key_12 = "Userinfo:" ascii

@@ -8,12 +8,12 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 
 | Family | Variants | Channels | Top confidence |
 |---|---|---|---|
-| [`AMOS Stealer`](families/amos_stealer/) | 62 | 0 | `medium` |
+| [`AMOS Stealer`](families/amos_stealer/) | 67 | 0 | `medium` |
 | [`Acreed`](families/acreed/) | 1 | 0 | `high` |
-| [`Aetheris Stealer`](families/aetheris_stealer/) | 6 | 0 | `high` |
+| [`Aetheris Stealer`](families/aetheris_stealer/) | 7 | 0 | `high` |
 | [`Ailurophile`](families/ailurophile/) | 1 | 1 | `high` |
 | [`AuraStealer`](families/aura_stealer/) | 2 | 0 | `high` |
-| [`Blank Grabber`](families/blank_grabber/) | 11 | 0 | `high` |
+| [`Blank Grabber`](families/blank_grabber/) | 12 | 0 | `high` |
 | [`BracketSection Stealer`](families/bracket_section_stealer/) | 1 | 0 | `unknown` |
 | [`CSBareVersionStealer`](families/cs_bare_version_stealer/) | 1 | 1 | `unknown` |
 | [`CSBinaryGarbageStealer`](families/cs_binary_garbage_stealer/) | 1 | 1 | `unknown` |
@@ -51,7 +51,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Redline`](families/redline/) | 18 | 0 | `high` |
 | [`RedlineLike Stealer`](families/redline_like_stealer/) | 17 | 0 | `unknown` |
 | [`StealC`](families/steal_c/) | 14 | 0 | `high` |
-| [`Vidar`](families/vidar/) | 3634 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 3635 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 5 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 6 | 0 | `high` |
 

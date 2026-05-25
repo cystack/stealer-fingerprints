@@ -8,7 +8,7 @@ sections.
 
 **Also known as:** `Aetheris Stealer`
 
-**Variants observed:** 6
+**Variants observed:** 7
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -226,6 +226,51 @@ NVIDIA GeForce RTX 2060
 
 [Basic]
 User Domain: DESKTOP-GC2KJGF
+```
+
+### `cystack_763fa6fd`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Name`, `Clipboard`, `Default Gateway`, `External IP`, `Input ISO`, `Internal IP`, `Logical Cores`, `Machine`, `Now`, `OS Arch`, `OS Build`, `OS Product`, `RAM Available (MB)`, `RAM Total (MB)`, `User`, `User Domain`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+Xorium
+                               coded by @aesxor
+[User Info]
+User: COM
+Machine: DESKTOP-F38EV2V
+Now: 2025-11-21 <ip>
+Input ISO: en
+Clipboard:
+
+[Network]
+External IP: <redacted>
+Internal IP: <ip>
+Default Gateway: <ip>
+
+[System]
+OS Product: Windows 10 Pro 2009
+OS Build: 26100
+OS Arch: x64
+CPU Name: AMD Ryzen 5 7500F 6-Core Processor             
+Logical Cores: 12
+RAM Total (MB): 32373
+RAM Available (MB): 24091
+
+[Drives]
+C: Fixed FS:NTFS Size:930GB Free:570GB
+
+[GPU]
+NVIDIA GeForce RTX 4060
+
+[Basic]
+User Domain: DESKTOP-F38EV2V
 ```
 
 ### `cystack_7d0668ba`
