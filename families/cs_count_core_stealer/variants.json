@@ -48,6 +48,52 @@
       "fingerprint_id": "cystack_93fdb3ac",
       "panel_brand": null,
       "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Arch",
+        "Count Core",
+        "File Location",
+        "Hostname",
+        "IP Address",
+        "Release",
+        "Type",
+        "User Info"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_aeea7400",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Arch",
+        "Count Core",
+        "Cpu",
+        "File Location",
+        "Gpu",
+        "Hostname",
+        "IP Address",
+        "Mac",
+        "Release",
+        "Type",
+        "User Info",
+        "Uuid"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_bc6dd75d",
+      "panel_brand": null,
+      "synthetic": true
     }
   ]
 }

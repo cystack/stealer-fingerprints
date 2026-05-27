@@ -3,68 +3,92 @@ Debanks:
 
 
 Userinfo:
-Country: IT
+Country: US
 IP: <redacted>
 City: <redacted>
 Software:
 
 System Software Overview:
 
-  System Version: macOS 15.2 (24C101)
-  Kernel Version: Darwin 24.2.0
+  System Version: macOS 15.6.1 (24G90)
+  Kernel Version: Darwin 24.6.0
   Boot Volume: Macintosh HD
   Boot Mode: Normal
   Computer Name: <redacted>
   User Name: <redacted>
   Secure Virtual Memory: Enabled
   System Integrity Protection: Enabled
-  Time since boot: 9 uur en 36 minuten
+  Time since boot: 5 days, 2 hours, 12 minutes
 
 Hardware:
 
 Hardware Overview:
 
   Model Name: MacBook Pro
-  Model Identifier: Mac15,7
-  Model Number: G1AG0T/A
-  Chip: Apple M3 Pro
-  Total Number of Cores: 12 (6 performance and 6 efficiency)
-  Memory: 36 GB
-  System Firmware Version: 11881.61.3
-  OS Loader Version: 11881.61.3
-  Serial Number (system): FYHLFW076Q
-  Hardware UUID: 9753371D-EE1B-5B8F-A2F8-DDE7D1825A1B
-  Provisioning UDID: 00006030-000A51392279001C
-  Activation Lock Status: Enabled
+  Model Identifier: MacBookPro16,1
+  Processor Name: 8-Core Intel Core i9
+  Processor Speed: 2.3 GHz
+  Number of Processors: 1
+  Total Number of Cores: 8
+  L2 Cache (per Core): 256 KB
+  L3 Cache: 16 MB
+  Hyper-Threading Technology: Enabled
+  Memory: 16 GB
+  System Firmware Version: 2075.<ip> (iBridge: 22.16.16083.0.0,0)
+  OS Loader Version: 583~2210
+  Serial Number (system): C02ZH4JVMD6N
+  Hardware UUID: 838EBA9D-5534-5E62-A610-D7FB08FC4F62
+  Provisioning UDID: 838EBA9D-5534-5E62-A610-D7FB08FC4F62
+  Activation Lock Status: Disabled
 
 Graphics/Displays:
 
-Apple M3 Pro:
+Intel UHD Graphics 630:
 
-  Chipset Model: Apple M3 Pro
+  Chipset Model: Intel UHD Graphics 630
   Type: GPU
   Bus: Built-In
-  Total Number of Cores: 18
-  Vendor: Apple (0x106b)
+  VRAM (Dynamic, Max): 1536 MB
+  Vendor: Intel
+  Device ID: 0x3e9b
+  Revision ID: 0x0002
+  Automatic Graphics Switching: Supported
+  gMux Version: 5.0.0
+  Metal Support: Metal 3
+
+AMD Radeon Pro 5500M:
+
+  Chipset Model: AMD Radeon Pro 5500M
+  Type: GPU
+  Bus: PCIe
+  PCIe Lane Width: x16
+  VRAM (Total): 4 GB
+  Vendor: AMD (0x1002)
+  Device ID: 0x7340
+  Revision ID: 0x0040
+  ROM Revision: 113-D3220E-190
+  VBIOS Version: 113-D32206U1-019
+  Option ROM Version: 113-D32206U1-019
+  EFI Driver Version: 01.A1.190
+  Automatic Graphics Switching: Supported
+  gMux Version: 5.0.0
   Metal Support: Metal 3
   Displays:
-BenQ PD3205U:
-  Resolution: 5120 x 2880 (5K/UHD+ - Ultra High Definition Plus)
-  UI Looks like: 2560 x 1440 @ 60.00Hz
-  Main Display: Yes
-  Mirror: Off
-  Online: Yes
-  Rotation: Supported
 Color LCD:
-  Display Type: Built-in Liquid Retina XDR Display
-  Resolution: 3456 x 2234 Retina
+  Display Type: Built-In Retina LCD
+  Resolution: 3072 x 1920 Retina
+  Framebuffer Depth: 30-Bit Color (ARGB2101010)
+  Main Display: Yes
   Mirror: Off
   Online: Yes
   Automatically Adjust Brightness: No
   Connection Type: Internal
-MSI MD241P:
+G276HL:
   Resolution: 1920 x 1080 (1080p FHD - Full High Definition)
-  UI Looks like: 1920 x 1080 @ 75.00Hz
+  UI Looks like: 1920 x 1080 @ 60.00Hz
+  Framebuffer Depth: 30-Bit Color (ARGB2101010)
+  Display Serial Number: LW9AA006855A
   Mirror: Off
   Online: Yes
   Rotation: Supported
+  Connection Type: Thunderbolt/DisplayPort

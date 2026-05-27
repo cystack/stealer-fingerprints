@@ -30,7 +30,7 @@ publish a matching caption format in their write-ups.
 
 **Also known as:** `!! 2025 OCT aggregator NodeJS-os panel summary`
 
-**Variants observed:** 2
+**Variants observed:** 4
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -96,6 +96,59 @@ Type: Windows_NT
 Arch: x64
 Release: 10.0.19045
 Count Core: 4
+File Location: <redacted>
+```
+
+### `cystack_aeea7400`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Arch`, `Count Core`, `File Location`, `Hostname`, `IP Address`, `Release`, `Type`, `User Info`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+⚙ System Information:
+
+Hostname: <redacted>
+User Info: Admin
+IP Address: <redacted>
+Type: Windows_NT
+Arch: x64
+Release: 10.0.22631
+Count Core: 8
+File Location: <redacted>
+```
+
+### `cystack_bc6dd75d`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Arch`, `Count Core`, `Cpu`, `File Location`, `Gpu`, `Hostname`, `IP Address`, `Mac`, `Release`, `Type`, `User Info`, `Uuid`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+🔐 Passwords Count: 14
+⚙ System Information:
+
+Mac: <redacted>
+Gpu: Intel(R) Iris(R) Xe Graphics
+Cpu: 13th Gen Intel(R) Core(TM) i5-1340P
+Uuid: 4C4C4544-0044-4C10-8030-C3C04F5A3434
+Hostname: <redacted>
+User Info: Admin
+IP Address: <redacted>
+Type: Windows_NT
+Arch: x64
+Release: 10.0.26200
+Count Core: 16
 File Location: <redacted>
 ```
 

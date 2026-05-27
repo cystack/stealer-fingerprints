@@ -42,6 +42,38 @@
       "distribution_channel": null,
       "field_keys": [
         "Antivirus",
+        "CPU",
+        "City",
+        "Cookies",
+        "Country",
+        "Credit Cards",
+        "Current Language",
+        "FileLocation",
+        "Files",
+        "GPU",
+        "HWID",
+        "IP",
+        "ISP",
+        "Is Elevated",
+        "OS",
+        "Passwords",
+        "Postal",
+        "Timezone",
+        "Wallets"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_1b6dac8d",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Antivirus",
         "Build",
         "CPU",
         "City",

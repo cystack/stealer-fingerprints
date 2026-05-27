@@ -381,6 +381,33 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "ATI Radeon HD 5870",
+        "BuildID",
+        "City",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "TOSHIBA-TV",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_8ae5163b",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "BuildID",
         "City",
         "Color LCD",

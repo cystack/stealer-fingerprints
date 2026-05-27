@@ -24,7 +24,7 @@ intel mapping for this layout.
 
 **Also known as:** `Dash-section emoji-count Information.txt panel`, `4-section ✅/❌ checkmark stealer`
 
-**Variants observed:** 2
+**Variants observed:** 3
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -90,6 +90,52 @@ Credit Cards: ❌
 Servers FTP/SSH: ❌
 Discord Tokens: ✅ 1
 Others: ❌
+```
+
+### `cystack_1b6dac8d`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Antivirus`, `CPU`, `City`, `Cookies`, `Country`, `Credit Cards`, `Current Language`, `FileLocation`, `Files`, `GPU`, `HWID`, `IP`, `ISP`, `Is Elevated`, `OS`, `Passwords`, `Postal`, `Timezone`, `Wallets`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+    - IP Info -
+
+IP: <redacted>
+Country: United States
+City: <redacted>
+Postal: 33128
+ISP: Cogent Communications, LLC - A174
+Timezone: -04:00
+
+- PC Info -
+
+OS: Microsoft Windows 10 IoT Enterprise LTSC
+CPU: AMD EPYC 7402 24-Core Processor                
+GPU: 
+    - Intel(R) UHD Graphics 630 (1280, 1024)
+HWID: <redacted>
+Current Language: English (Canada)
+FileLocation: <redacted>
+Is Elevated: true
+
+- Other Info -
+
+Antivirus: 
+    - Windows Defender
+
+- Log Info -
+
+Passwords: ❌
+Cookies: ✅ 22
+Wallets: ❌
+Files: ✅ 16
+Credit Cards: ❌
 ```
 
 ### `cystack_b6fbe92c`

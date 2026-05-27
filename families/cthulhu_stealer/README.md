@@ -8,7 +8,7 @@ Observed in `@bugatti_cloud` aggregator packs.
 
 **Also known as:** `Cthulhu macOS Stealer`
 
-**Variants observed:** 25
+**Variants observed:** 26
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -789,6 +789,61 @@ Hardware Overview:
 
 Graphics/Displays:
 [... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
+```
+
+### `cystack_8ae5163b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ATI Radeon HD 5870`, `BuildID`, `City`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `MetaMask Info`, `Software`, `System Software Overview`, `TOSHIBA-TV`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+BuildID:ND1
+
+Userinfo:
+Country: US
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 12.7.4 (21H1123)
+  Kernel Version: Darwin 21.6.0
+  Boot Volume: Mac Pro Monterrey
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Disabled
+  Time since boot: 1 day 41 minutes
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: Mac Pro
+  Model Identifier: MacPro5,1
+  Processor Name: 6-Core Intel Xeon
+  Processor Speed: 2.93 GHz
+  Number of Processors: 2
+  Total Number of Cores: 12
+  L2 Cache (per Core): 256 KB
+  L3 Cache (per Processor): 12 MB
+  Hyper-Threading Technology: Enabled
+  Memory: 112 GB
+  System Firmware Version: <ip>.0
+  OS Loader Version: 540.120.3~37
+  SMC Version (system): 1.39f11
+  SMC Version (processor tray): 1.39f11
+[... truncated; full sample at ``sample.txt`` (approx. 30 more lines) ...]
 ```
 
 ### `cystack_92b81443`

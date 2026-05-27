@@ -194,6 +194,34 @@
         "Color LCD",
         "Country",
         "Debanks",
+        "G276HL",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "Intel UHD Graphics 630",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_2239c625",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "AMD Radeon Pro 5500M",
+        "City",
+        "Color LCD",
+        "Country",
+        "Debanks",
         "Graphics/Displays",
         "Hardware",
         "Hardware Overview",
@@ -208,6 +236,31 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_3311417f",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "City",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "NVIDIA GeForce GT 755M",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_35ac4fd3",
       "panel_brand": null,
       "synthetic": true
     },
@@ -296,6 +349,31 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "AMD Radeon Pro 5300",
+        "City",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_4208527f",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "Apple M2 Pro",
         "City",
         "Country",
@@ -366,6 +444,33 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_50ea6b3f",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "City",
+        "Color LCD",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "Intel UHD Graphics 630",
+        "MetaMask Info",
+        "Radeon Pro 560X",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_63268a10",
       "panel_brand": null,
       "synthetic": true
     },
@@ -1332,6 +1437,31 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "City",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "Radeon Pro 570X",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_d600bd49",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "Apple M2",
         "BenQ GW2480",
         "City",
@@ -1403,6 +1533,32 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_e47fc049",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Apple M2",
+        "Beyond TV",
+        "City",
+        "Country",
+        "Debanks",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "IP",
+        "MetaMask Info",
+        "Software",
+        "System Software Overview",
+        "Userinfo"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_e4cb30d1",
       "panel_brand": null,
       "synthetic": true
     },
