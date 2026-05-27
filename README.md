@@ -8,7 +8,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 
 | Family | Variants | Channels | Top confidence |
 |---|---|---|---|
-| [`AMOS Stealer`](families/amos_stealer/) | 73 | 0 | `medium` |
+| [`AMOS Stealer`](families/amos_stealer/) | 74 | 0 | `medium` |
 | [`Acreed`](families/acreed/) | 1 | 0 | `high` |
 | [`Aetheris Stealer`](families/aetheris_stealer/) | 7 | 0 | `high` |
 | [`Ailurophile`](families/ailurophile/) | 1 | 1 | `high` |
@@ -45,6 +45,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Lumma`](families/lumma/) | 3 | 0 | `high` |
 | [`MacSync`](families/mac_sync/) | 2 | 0 | `high` |
 | [`Millenium RAT`](families/millenium_rat/) | 1 | 0 | `-` |
+| [`NotMalware`](families/not_malware/) | 1 | 1 | `benign` |
 | [`PXA Stealer`](families/pxa_stealer/) | 6 | 0 | `high` |
 | [`PureLogs`](families/pure_logs/) | 1 | 0 | `high` |
 | [`RL Stealer`](families/rl_stealer/) | 1 | 0 | `medium` |
