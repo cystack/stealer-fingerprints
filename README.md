@@ -47,6 +47,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Millenium RAT`](families/millenium_rat/) | 1 | 0 | `-` |
 | [`NotMalware`](families/not_malware/) | 1 | 1 | `benign` |
 | [`PXA Stealer`](families/pxa_stealer/) | 6 | 0 | `high` |
+| [`Phantom Stealer`](families/phantom_stealer/) | 1 | 1 | `high` |
 | [`PureLogs`](families/pure_logs/) | 1 | 0 | `high` |
 | [`RL Stealer`](families/rl_stealer/) | 1 | 0 | `medium` |
 | [`Raccoon`](families/raccoon/) | 2 | 0 | `high` |

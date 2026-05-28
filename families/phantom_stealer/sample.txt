@@ -1,0 +1,58 @@
+😹 *Phantom stealer v2.0 - Report:*
+━━━━━━━━━━━━━━━━━━━━━━
+📅 Date: 2025-10-19 <ip> AM
+🖥️ System: Microsoft Windows 10 Pro (64 Bit)
+👤 Username: Frank
+💻 CompName: DESKTOP-D019GDM
+🌐 Language: 🇺🇸 en-US
+🛡️ Antivirus: Windows Defender
+
+*HARDWARE INFORMATION*
+━━━━━━━━━━━━━━━━━━━━━━
+⚡ CPU: Intel(R) Celeron(R) CPU G3930TE @ 2.70GHz
+🎮 GPU: ASPEED Graphics Family(WDDM)
+📊 RAM: 16259MB
+🔋 Power: NoSystemBattery (100%)
+📺 Screen: 1280x1024
+📷 Webcams: 0
+
+*NETWORK INFORMATION*
+━━━━━━━━━━━━━━━━━━━━━━
+🌐 Gateway IP: <ip>
+🔒 Internal IP: <ip>
+🌍 External IP: <ip>
+
+*DETECTED DOMAINS*
+━━━━━━━━━━━━━━━━━━━━━━
+   - 🏦 Banking Services (No data)
+   - 💰 Crypto Services (No data)
+   - 🔞 Adult Websites (No data)
+
+*BROWSER DATA*
+━━━━━━━━━━━━━━━━━━━━━━
+   ∟ 🔑 Passwords: 1
+   ∟ 🍪 Cookies: 58
+   ∟ 📝 AutoFill: 1
+   ∟ 📜 History: 32
+   ∟ 🔖 Bookmarks: 5
+
+*SOFTWARE & ACCOUNTS*
+━━━━━━━━━━━━━━━━━━━━━━
+
+*DEVICE INFORMATION*
+━━━━━━━━━━━━━━━━━━━━━━
+   ∟ 🔑 Windows Key
+   ∟ 🖼️ Desktop Shot
+
+*INSTALLATION STATUS*
+━━━━━━━━━━━━━━━━━━━━━━
+   ∟ ⛔ Startup: Disabled
+   ∟ ⛔ Keylogger: Stopped
+
+🔐 Archive password is: "f08bff3a1c70ebeccb726306d63f3b7a"
+
+ contact <url>
+
+ marketplace <url>
+
+ website <url>

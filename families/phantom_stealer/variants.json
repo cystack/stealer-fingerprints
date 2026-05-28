@@ -1,0 +1,17 @@
+{
+  "family": "Phantom Stealer",
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": "@Phantomsoftwares_bot",
+      "field_keys": [],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "phantom_stealer_v2_0",
+      "panel_brand": "Phantom stealer v2.0",
+      "synthetic": false
+    }
+  ]
+}
