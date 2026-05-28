@@ -1,0 +1,17 @@
+{
+  "family": "CSLoaderReadyStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": "@BRADLOGS",
+      "field_keys": [],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "unknown",
+      "panel_brand": "\u041b\u043e\u0430\u0434\u0435\u0440 \u0433\u043e\u0442\u043e\u0432!",
+      "synthetic": false
+    }
+  ]
+}

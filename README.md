@@ -31,6 +31,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSFacebookMarketStealer`](families/cs_facebook_market_stealer/) | 1 | 1 | `unknown` |
 | [`CSGADSPanelStealer`](families/csgads_panel_stealer/) | 6 | 0 | `unknown` |
 | [`CSInzExtStealer`](families/cs_inz_ext_stealer/) | 1 | 0 | `unknown` |
+| [`CSLoaderReadyStealer`](families/cs_loader_ready_stealer/) | 1 | 1 | `unknown` |
 | [`CSMSKDateStealer`](families/csmsk_date_stealer/) | 1 | 0 | `unknown` |
 | [`CSMainLootStealer`](families/cs_main_loot_stealer/) | 1 | 1 | `low` |
 | [`CSNewLogStealer`](families/cs_new_log_stealer/) | 1 | 0 | `unknown` |
