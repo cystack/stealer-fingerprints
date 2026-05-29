@@ -49,6 +49,33 @@ rule XFiles_cystack_4007d694
         all of ($key_*)
 }
 
+rule XFiles_cystack_534fb995
+{
+    meta:
+        family = "XFiles"
+        fingerprint_id = "cystack_534fb995"
+
+    strings:
+        $key_0 = "CPU (Processor):" ascii
+        $key_1 = "Channel with contacts:" ascii
+        $key_2 = "Computer Name:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Desktop Screenshot Taken:" ascii
+        $key_5 = "GPU (Display Devices):" ascii
+        $key_6 = "Hardware ID:" ascii
+        $key_7 = "IP:" ascii
+        $key_8 = "Operating System:" ascii
+        $key_9 = "Operation ID:" ascii
+        $key_10 = "Processed parts:" ascii
+        $key_11 = "RAM (Memory):" ascii
+        $key_12 = "Screens:" ascii
+        $key_13 = "Telegram:" ascii
+        $key_14 = "Username:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule XFiles_cystack_7098e015
 {
     meta:
@@ -92,6 +119,32 @@ rule XFiles_cystack_779697d2
         $key_9 = "RAM (Memory):" ascii
         $key_10 = "Screens:" ascii
         $key_11 = "Username:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule XFiles_cystack_9b8ee162
+{
+    meta:
+        family = "XFiles"
+        fingerprint_id = "cystack_9b8ee162"
+
+    strings:
+        $key_0 = "CPU (Processor):" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Desktop Screenshot Taken:" ascii
+        $key_4 = "GPU (Display Devices):" ascii
+        $key_5 = "Hardware ID:" ascii
+        $key_6 = "IP:" ascii
+        $key_7 = "Jabber:" ascii
+        $key_8 = "Operating System:" ascii
+        $key_9 = "Operation ID:" ascii
+        $key_10 = "RAM (Memory):" ascii
+        $key_11 = "Screens:" ascii
+        $key_12 = "Telegram:" ascii
+        $key_13 = "Username:" ascii
 
     condition:
         all of ($key_*)
@@ -141,6 +194,59 @@ rule XFiles_cystack_c10789f1
         $key_10 = "RAM (Memory):" ascii
         $key_11 = "Screens:" ascii
         $key_12 = "Username:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule XFiles_cystack_f0d30fc2
+{
+    meta:
+        family = "XFiles"
+        fingerprint_id = "cystack_f0d30fc2"
+
+    strings:
+        $key_0 = "CPU (Processor):" ascii
+        $key_1 = "Computer Name:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Desktop Screenshot Taken:" ascii
+        $key_4 = "GPU (Display Devices):" ascii
+        $key_5 = "Hardware ID:" ascii
+        $key_6 = "IP:" ascii
+        $key_7 = "Jabber:" ascii
+        $key_8 = "Operating System:" ascii
+        $key_9 = "Operation ID:" ascii
+        $key_10 = "Processed parts:" ascii
+        $key_11 = "RAM (Memory):" ascii
+        $key_12 = "Screens:" ascii
+        $key_13 = "Telegram:" ascii
+        $key_14 = "Username:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule XFiles_cystack_fc2b93d4
+{
+    meta:
+        family = "XFiles"
+        fingerprint_id = "cystack_fc2b93d4"
+
+    strings:
+        $key_0 = "CPU (Processor):" ascii
+        $key_1 = "Channel with contacts:" ascii
+        $key_2 = "Computer Name:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Desktop Screenshot Taken:" ascii
+        $key_5 = "GPU (Display Devices):" ascii
+        $key_6 = "Hardware ID:" ascii
+        $key_7 = "IP:" ascii
+        $key_8 = "Operating System:" ascii
+        $key_9 = "Operation ID:" ascii
+        $key_10 = "RAM (Memory):" ascii
+        $key_11 = "Screens:" ascii
+        $key_12 = "Telegram:" ascii
+        $key_13 = "Username:" ascii
 
     condition:
         all of ($key_*)

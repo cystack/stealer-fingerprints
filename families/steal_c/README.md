@@ -8,7 +8,7 @@ with the v2 rewrite tracked through 2024.
 
 **Also known as:** `StealC v1`, `StealC v2`
 
-**Variants observed:** 14
+**Variants observed:** 20
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -47,6 +47,112 @@ System Summary:
 	- UTC: -8
 	- Language: en-US
 [... truncated; full sample at ``sample.txt`` (approx. 263 more lines) ...]
+```
+
+### `cystack_1f8e4d74`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Installed Apps`, `Network Info`, `System Summary`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+
+
+Network Info:
+	- IP: <ip>
+	- Country: AR
+
+System Summary:
+	- HWID: 8BZGZEW2EO397UH6UFIHLX
+	- OS: Windows 8.1 Single Language
+	- Architecture: x64
+	- UserName: pc
+	- Computer Name: EXO
+	- Local Time: 2025/7/9 <ip>
+	- UTC: -3
+	- Language: en-US
+	- Keyboards: Espa?ol (Espa?a, internacional)
+	- Laptop: FALSE
+	- Running Path: C:\Windows\Microsoft.NET\Framework\v4.0.30319\BRADLOGS.exe
+	- CPU: Intel(R) Core(TM) i7-4790S CPU @ 3.20GHz
+	- Cores: 4
+	- Threads: 8
+	- RAM: 8061 MB
+	- Display Resolution: 1920x1080
+	- GPU:
+		-Intel(R) HD Graphics 4600
+
+Installed Apps:
+All Users:
+	Microsoft Edge - <ip>
+	WebView2 Runtime de Microsoft Edge - 109.0.1518.140
+	Microsoft Office Professional Plus 2010 - 14.0.7015.1000
+	Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005 - 12.0.21005
+	Java 8 Update 101 - 8.0.1010.13
+	Java 8 Update 91 - <ip>
+	Java Auto Updater - <ip>
+	Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.42.34438 - 14.42.34438
+	Microsoft Visual C++ 2005 Redistributable - 8.0.61001
+	Realtek Ethernet Controller Driver - 8.31.423.2014
+	Microsoft Office Professional Plus 2010 - 14.0.7015.1000
+	Security Update for Microsoft Office 2010 (KB2956063) 32-Bit Edition
+[... truncated; full sample at ``sample.txt`` (approx. 350 more lines) ...]
+```
+
+### `cystack_27cecfc2`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Channel with contacts`, `Commission split`, `Current User`, `Installed Apps`, `Network Info`, `System Summary`, `Telegram`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+
+ㅤ______     ______   ______     ______     __         ______
+/\  ___\   /\__  _\ /\  ___\   /\  __ \   /\ \       /\  ___\
+\ \___  \  \/_/\ \/ \ \  __\   \ \  __ \  \ \ \____  \ \ \____
+ \/\_____\    \ \_\  \ \_____\  \ \_\ \_\  \ \_____\  \ \_____\
+  \/_____/     \/_/   \/_____/   \/_/\/_/   \/_____/   \/_____/
+
+                       stealc stealer
+
+powerful native stealer based on C lang
+
+forum topics:
+	- <url>
+	- <url>
+
+buy:
+	- jabber: <email>
+        - tox: 1FCCEA0D37D99894B958C0FCEAC66034FE3580B193C335745D632A19F8E6053C34DFEAAE2538
+
+----------------------------------------------------------------
+
+.--------------. .--------------. .--------------. .--------------. .--------------. 
+| ____    ____ | |      __      | |     _____    | |  _________   | |  _________   | 
+||_   \  /   _|| |     /  \     | |    |_   _|   | | |_   ___  |  | | |_   ___  |  | 
+|  |   \/   |  | |    / /\ \    | |      | |     | |   | |_  \_|  | |   | |_  \_|  | 
+|  | |\  /| |  | |   / ____ \   | |      | |     | |   |  _|      | |   |  _|  _   | 
+| _| |_\/_| |_ | | _/ /    \ \_ | |     _| |_    | |  _| |_       | |  _| |___/ |  | 
+||_____||_____|| ||____|  |____|| |    |_____|   | | |_____|      | | |_________|  | 
+|              | |              | |              | |              | |              | 
+'--------------' '--------------' '--------------' '--------------' '--------------' 
+Brute-force (password cracking) for crypto wallets (Metamask, Exodus, .dat files, and others)
+
+• We have been withdrawing cryptocurrency from logs for over 4 years, with a total amount withdrawn exceeding $15.000.000
+• Our total deposit on forums exceeds 5 BTC (over $300.000), which confirms our reliability, while feedback from satisfied clients confirms successful cases.
+• In addition to manual work, we use a powerful ML model we created and trained as an auxiliary tool. It has been trained on over 1.000.000 logs, allowing us to speed up the process and improve the accuracy of password cracking.
+
+[... truncated; full sample at ``sample.txt`` (approx. 423 more lines) ...]
 ```
 
 ### `cystack_2eb9685e`
@@ -212,6 +318,57 @@ Process List:
 	services.exe [836]
 	lsass.exe [844]
 [... truncated; full sample at ``sample.txt`` (approx. 286 more lines) ...]
+```
+
+### `cystack_678bd448`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Channel with contacts`, `Commission split`, `Current User`, `Installed Apps`, `Network Info`, `Process List`, `System Summary`, `Telegram`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+
+ㅤ______     ______   ______     ______     __         ______
+/\  ___\   /\__  _\ /\  ___\   /\  __ \   /\ \       /\  ___\
+\ \___  \  \/_/\ \/ \ \  __\   \ \  __ \  \ \ \____  \ \ \____
+ \/\_____\    \ \_\  \ \_____\  \ \_\ \_\  \ \_____\  \ \_____\
+  \/_____/     \/_/   \/_____/   \/_/\/_/   \/_____/   \/_____/
+
+                       stealc stealer
+
+powerful native stealer based on C lang
+
+forum topics:
+	- <url>
+	- <url>
+
+buy:
+	- jabber: <email>
+        - tox: 1FCCEA0D37D99894B958C0FCEAC66034FE3580B193C335745D632A19F8E6053C34DFEAAE2538
+
+----------------------------------------------------------------
+
+.--------------. .--------------. .--------------. .--------------. .--------------. 
+| ____    ____ | |      __      | |     _____    | |  _________   | |  _________   | 
+||_   \  /   _|| |     /  \     | |    |_   _|   | | |_   ___  |  | | |_   ___  |  | 
+|  |   \/   |  | |    / /\ \    | |      | |     | |   | |_  \_|  | |   | |_  \_|  | 
+|  | |\  /| |  | |   / ____ \   | |      | |     | |   |  _|      | |   |  _|  _   | 
+| _| |_\/_| |_ | | _/ /    \ \_ | |     _| |_    | |  _| |_       | |  _| |___/ |  | 
+||_____||_____|| ||____|  |____|| |    |_____|   | | |_____|      | | |_________|  | 
+|              | |              | |              | |              | |              | 
+'--------------' '--------------' '--------------' '--------------' '--------------' 
+Brute-force (password cracking) for crypto wallets (Metamask, Exodus, .dat files, and others)
+
+• We have been withdrawing cryptocurrency from logs for over 4 years, with a total amount withdrawn exceeding $15.000.000
+• Our total deposit on forums exceeds 5 BTC (over $300.000), which confirms our reliability, while feedback from satisfied clients confirms successful cases.
+• In addition to manual work, we use a powerful ML model we created and trained as an auxiliary tool. It has been trained on over 1.000.000 logs, allowing us to speed up the process and improve the accuracy of password cracking.
+
+[... truncated; full sample at ``sample.txt`` (approx. 348 more lines) ...]
 ```
 
 ### `cystack_68dce857`
@@ -489,6 +646,57 @@ Process List:
 [... truncated; full sample at ``sample.txt`` (approx. 278 more lines) ...]
 ```
 
+### `cystack_a52d3ec9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Channel with contacts`, `Commission split`, `Installed Apps`, `Network Info`, `System Summary`, `Telegram`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+
+ㅤ______     ______   ______     ______     __         ______
+/\  ___\   /\__  _\ /\  ___\   /\  __ \   /\ \       /\  ___\
+\ \___  \  \/_/\ \/ \ \  __\   \ \  __ \  \ \ \____  \ \ \____
+ \/\_____\    \ \_\  \ \_____\  \ \_\ \_\  \ \_____\  \ \_____\
+  \/_____/     \/_/   \/_____/   \/_/\/_/   \/_____/   \/_____/
+
+                       stealc stealer
+
+powerful native stealer based on C lang
+
+forum topics:
+	- <url>
+	- <url>
+
+buy:
+	- jabber: <email>
+        - tox: 1FCCEA0D37D99894B958C0FCEAC66034FE3580B193C335745D632A19F8E6053C34DFEAAE2538
+
+----------------------------------------------------------------
+
+.--------------. .--------------. .--------------. .--------------. .--------------. 
+| ____    ____ | |      __      | |     _____    | |  _________   | |  _________   | 
+||_   \  /   _|| |     /  \     | |    |_   _|   | | |_   ___  |  | | |_   ___  |  | 
+|  |   \/   |  | |    / /\ \    | |      | |     | |   | |_  \_|  | |   | |_  \_|  | 
+|  | |\  /| |  | |   / ____ \   | |      | |     | |   |  _|      | |   |  _|  _   | 
+| _| |_\/_| |_ | | _/ /    \ \_ | |     _| |_    | |  _| |_       | |  _| |___/ |  | 
+||_____||_____|| ||____|  |____|| |    |_____|   | | |_____|      | | |_________|  | 
+|              | |              | |              | |              | |              | 
+'--------------' '--------------' '--------------' '--------------' '--------------' 
+Brute-force (password cracking) for crypto wallets (Metamask, Exodus, .dat files, and others)
+
+• We have been withdrawing cryptocurrency from logs for over 4 years, with a total amount withdrawn exceeding $15.000.000
+• Our total deposit on forums exceeds 5 BTC (over $300.000), which confirms our reliability, while feedback from satisfied clients confirms successful cases.
+• In addition to manual work, we use a powerful ML model we created and trained as an auxiliary tool. It has been trained on over 1.000.000 logs, allowing us to speed up the process and improve the accuracy of password cracking.
+
+[... truncated; full sample at ``sample.txt`` (approx. 295 more lines) ...]
+```
+
 ### `cystack_a867f3f5`
 
 **Attribution confidence:** `high`
@@ -544,6 +752,61 @@ Process List:
 [... truncated; full sample at ``sample.txt`` (approx. 176 more lines) ...]
 ```
 
+### `cystack_b76da4f7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Current User`, `Installed Apps`, `Network Info`, `System Summary`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                        t.me/BRADLOGS                       *
+**************************************************************
+Network Info:
+	- IP: <ip>
+	- Country: AL
+
+System Summary:
+	- HWID: RNY4VPR73GNOTX6VRJJ782
+	- OS: Windows 10 Pro
+	- Architecture: x64
+	- UserName: user
+	- Computer Name: DESKTOP-D2C695V
+	- Local Time: 2025/7/9 <ip>
+	- UTC: 1
+	- Language: en-US
+	- Keyboards: English (United States)
+	- Laptop: FALSE
+	- Running Path: C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe
+	- CPU: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz
+	- Cores: 4
+	- Threads: 8
+	- RAM: 16270 MB
+	- Display Resolution: 1366x768
+	- GPU:
+		-Intel(R) UHD Graphics 620
+
+Installed Apps:
+All Users:
+[... truncated; full sample at ``sample.txt`` (approx. 292 more lines) ...]
+```
+
 ### `cystack_b7b299ef`
 
 **Attribution confidence:** `high`
@@ -597,6 +860,61 @@ Process List:
 	services.exe [960]
 	winlogon.exe [988]
 [... truncated; full sample at ``sample.txt`` (approx. 116 more lines) ...]
+```
+
+### `cystack_b8ed4e31`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Current User`, `Installed Apps`, `Network Info`, `Process List`, `System Summary`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+
+
+Network Info:
+	- IP: <ip>
+	- Country: AE
+
+System Summary:
+	- HWID: HLEHN2R6QQUAO6J5DKONMU
+	- OS: Windows 11
+	- Architecture: x64
+	- UserName: HP
+	- Computer Name: DESKTOP-946CS9H
+	- Local Time: 2025/7/13 <ip>
+	- UTC: 4
+	- Language: en-US
+	- Keyboards: English (United States)
+	- Laptop: FALSE
+	- Running Path: C:\Windows\Microsoft.NET\Framework\v4.0.30319\BRADLOGS.exe
+	- CPU: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+	- Cores: 4
+	- Threads: 8
+	- RAM: 8094 MB
+	- Display Resolution: 1536x864
+	- GPU:
+		-Intel(R) UHD Graphics 620
+
+Installed Apps:
+All Users:
+	Microsoft Edge - 138.0.3351.83
+	Microsoft Edge WebView2 Runtime - 138.0.3351.83
+	Windows TubeMate 5
+	SanDisk Security - <ip>
+	Microsoft Visual C++ 2010  x86 Redistributable - 10.0.30319 - 10.0.30319
+	Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.28.29914 - 14.28.29914.0
+	Microsoft Bing Service - <ip>
+	SanDisk Security - <ip>
+	Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.28.29914 - 14.28.29914
+	Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.28.29914 - 14.28.29914.0
+	Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161 - 9.0.30729.6161
+	Microsoft Visual C++ 2019 X86 Additional Runtime - 14.28.29914 - 14.28.29914
+[... truncated; full sample at ``sample.txt`` (approx. 300 more lines) ...]
 ```
 
 ### `cystack_da422d08`

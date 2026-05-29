@@ -10,7 +10,7 @@ VPN, FTP, RDP, and messenger client data.
 
 **Also known as:** `X-FILES`, `DeerStealer`, `X-Files Stealer`
 
-**Variants observed:** 6
+**Variants observed:** 10
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -133,6 +133,61 @@ Windows Processes [
 [... truncated; full sample at ``sample.txt`` (approx. 259 more lines) ...]
 ```
 
+### `cystack_534fb995`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU (Processor)`, `Channel with contacts`, `Computer Name`, `Country`, `Desktop Screenshot Taken`, `GPU (Display Devices)`, `Hardware ID`, `IP`, `Operating System`, `Operation ID`, `Processed parts`, `RAM (Memory)`, `Screens`, `Telegram`, `Username`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+██╗  ██╗███████╗██╗██╗     ███████╗███████╗
+╚██╗██╔╝██╔════╝██║██║     ██╔════╝██╔════╝
+ ╚███╔╝ █████╗  ██║██║     █████╗  ███████╗
+ ██╔██╗ ██╔══╝  ██║██║     ██╔══╝  ╚════██║
+██╔╝ ██╗██║     ██║███████╗███████╗███████║
+╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝
+* Official Support Links
+* TOX ——————— C96EA8DFB780D9053728816F20901315F6284CB73B735559100696FB30B31364CE0AD357E634
+* Jabber ———— <email>
+* Links ————— <url>
+
+------------------- Official Partners --------------------------------------
+Brute-force (password cracking) for crypto wallets (Metamask, Exodus, .dat files, and others)
+
+• We have been withdrawing cryptocurrency from logs for over 4 years, with a total amount withdrawn exceeding $15.000.000
+• Our total deposit on forums exceeds 5 BTC (over $500.000), which confirms our reliability, while feedback from satisfied clients confirms successful cases.
+• In addition to manual work, we use a powerful ML model we created and trained as an auxiliary tool. It has been trained on over 1.000.000 logs, allowing us to speed up the process and improve the accuracy of password cracking.
+
+Telegram: @m2fa_brute
+Channel with contacts: @maife2fa
+----------------------------------------------------------------------------
+
+Operation ID: 3a19ad4e-2453-2ed7-7be8-6b0ac23dff363a19f2d2-4197-308b-9771-72d956abcc9e
+
+IP: <redacted>
+Country: US (United States)
+Operating System: Windows 11
+Username: <redacted>
+Computer Name: <redacted>
+Hardware ID: <redacted>
+CPU (Processor): AMD Ryzen 5 7600 6-Core Processor
+GPU (Display Devices): Radeon RX 5500 XT
+RAM (Memory): 
+Screens: 3840x2160
+Desktop Screenshot Taken: Yes
+
+Windows Processes [
+   System
+   Secure System
+   Registry
+[... truncated; full sample at ``sample.txt`` (approx. 194 more lines) ...]
+```
+
 ### `cystack_7098e015`
 
 **Attribution confidence:** `high`
@@ -243,6 +298,61 @@ Windows Processes [
 [... truncated; full sample at ``sample.txt`` (approx. 286 more lines) ...]
 ```
 
+### `cystack_9b8ee162`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU (Processor)`, `Computer Name`, `Country`, `Desktop Screenshot Taken`, `GPU (Display Devices)`, `Hardware ID`, `IP`, `Jabber`, `Operating System`, `Operation ID`, `RAM (Memory)`, `Screens`, `Telegram`, `Username`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+██╗  ██╗███████╗██╗██╗     ███████╗███████╗
+╚██╗██╔╝██╔════╝██║██║     ██╔════╝██╔════╝
+ ╚███╔╝ █████╗  ██║██║     █████╗  ███████╗
+ ██╔██╗ ██╔══╝  ██║██║     ██╔══╝  ╚════██║
+██╔╝ ██╗██║     ██║███████╗███████╗███████║
+╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝
+* Official Support Links
+* TOX ——————— C96EA8DFB780D9053728816F20901315F6284CB73B735559100696FB30B31364CE0AD357E634
+* Jabber ———— <email>
+* Links ————— <url>
+
+===== ПОДБОР ПАРОЛЕЙ К КОШЕЛЬКАМ / CRYPTO BRUTE-FORCE EXPERT =====
+
+- Brute-force (password cracking) for crypto wallets (MetaMask, Trust Wallet, cold wallets, and more). 70/30 %
+
+- 5 years of experience.
+
+- Using my own trained neural network for faster and more efficient password recovery.
+
+- Cold wallet processing with guaranteed confidentiality.
+
+- I take on wallets that others couldn’t crack.
+
+Telegram: @bcstg  <url>
+Jabber:   <email>
+
+=====================================
+
+
+Operation ID: 3a19ad4e-2453-2ed7-7be8-6b0ac23dff363a1a2ec6-91f3-77f1-eaf0-e9d6296e3a3d
+
+IP: <redacted>
+Country: AR (Argentina)
+Operating System: Windows 11
+Username: <redacted>
+Computer Name: <redacted>
+Hardware ID: <redacted>
+CPU (Processor): Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz
+GPU (Display Devices): Intel(R) UHD Graphics
+RAM (Memory): 
+[... truncated; full sample at ``sample.txt`` (approx. 319 more lines) ...]
+```
+
 ### `cystack_a4048dad`
 
 **Attribution confidence:** `high`
@@ -351,6 +461,116 @@ Windows Processes [
    svchost.exe
    svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 243 more lines) ...]
+```
+
+### `cystack_f0d30fc2`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU (Processor)`, `Computer Name`, `Country`, `Desktop Screenshot Taken`, `GPU (Display Devices)`, `Hardware ID`, `IP`, `Jabber`, `Operating System`, `Operation ID`, `Processed parts`, `RAM (Memory)`, `Screens`, `Telegram`, `Username`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+██╗  ██╗███████╗██╗██╗     ███████╗███████╗
+╚██╗██╔╝██╔════╝██║██║     ██╔════╝██╔════╝
+ ╚███╔╝ █████╗  ██║██║     █████╗  ███████╗
+ ██╔██╗ ██╔══╝  ██║██║     ██╔══╝  ╚════██║
+██╔╝ ██╗██║     ██║███████╗███████╗███████║
+╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝
+* Official Support Links
+* TOX ——————— C96EA8DFB780D9053728816F20901315F6284CB73B735559100696FB30B31364CE0AD357E634
+* Jabber ———— <email>
+* Links ————— <url>
+
+===== ПОДБОР ПАРОЛЕЙ К КОШЕЛЬКАМ / CRYPTO BRUTE-FORCE EXPERT =====
+
+- Brute-force (password cracking) for crypto wallets (MetaMask, Trust Wallet, cold wallets, and more). 70/30 %
+
+- 5 years of experience.
+
+- Using my own trained neural network for faster and more efficient password recovery.
+
+- Cold wallet processing with guaranteed confidentiality.
+
+- I take on wallets that others couldn’t crack.
+
+Telegram: @bcstg  <url>
+Jabber:   <email>
+
+=====================================
+
+
+Operation ID: 3a19ad4e-2453-2ed7-7be8-6b0ac23dff363a1a2ec6-91f3-77f1-eaf0-e9d6296e3a3d
+
+IP: <redacted>
+Country: HU (Hungary)
+Operating System: Windows 10
+Username: <redacted>
+Computer Name: <redacted>
+Hardware ID: <redacted>
+CPU (Processor): Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz
+GPU (Display Devices): Intel(R) HD Graphics 5500
+RAM (Memory): 1966.9375
+[... truncated; full sample at ``sample.txt`` (approx. 221 more lines) ...]
+```
+
+### `cystack_fc2b93d4`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU (Processor)`, `Channel with contacts`, `Computer Name`, `Country`, `Desktop Screenshot Taken`, `GPU (Display Devices)`, `Hardware ID`, `IP`, `Operating System`, `Operation ID`, `RAM (Memory)`, `Screens`, `Telegram`, `Username`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+██╗  ██╗███████╗██╗██╗     ███████╗███████╗
+╚██╗██╔╝██╔════╝██║██║     ██╔════╝██╔════╝
+ ╚███╔╝ █████╗  ██║██║     █████╗  ███████╗
+ ██╔██╗ ██╔══╝  ██║██║     ██╔══╝  ╚════██║
+██╔╝ ██╗██║     ██║███████╗███████╗███████║
+╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝
+* Official Support Links
+* TOX ——————— C96EA8DFB780D9053728816F20901315F6284CB73B735559100696FB30B31364CE0AD357E634
+* Jabber ———— <email>
+* Links ————— <url>
+
+------------------- Official Partners --------------------------------------
+Brute-force (password cracking) for crypto wallets (Metamask, Exodus, .dat files, and others)
+
+• We have been withdrawing cryptocurrency from logs for over 4 years, with a total amount withdrawn exceeding $15.000.000
+• Our total deposit on forums exceeds 5 BTC (over $500.000), which confirms our reliability, while feedback from satisfied clients confirms successful cases.
+• In addition to manual work, we use a powerful ML model we created and trained as an auxiliary tool. It has been trained on over 1.000.000 logs, allowing us to speed up the process and improve the accuracy of password cracking.
+
+Telegram: @m2fa_brute
+Channel with contacts: @maife2fa
+----------------------------------------------------------------------------
+
+Operation ID: 3a19ad4e-2453-2ed7-7be8-6b0ac23dff363a19f2d2-4197-308b-9771-72d956abcc9e
+
+IP: <redacted>
+Country: US (United States)
+Operating System: Windows 11
+Username: <redacted>
+Computer Name: <redacted>
+Hardware ID: <redacted>
+CPU (Processor): 13th Gen Intel(R) Core(TM) i5-13400F
+GPU (Display Devices): NVIDIA GeForce RTX 3050
+RAM (Memory): 
+Screens: 1920x1080
+Desktop Screenshot Taken: Yes
+
+Windows Processes [
+   System
+   Secure System
+   Registry
+[... truncated; full sample at ``sample.txt`` (approx. 214 more lines) ...]
 ```
 
 ## Detection

@@ -1,15 +1,44 @@
-Operation ID: 3a1b0807-9710-4e49-3ecf-15d29caf161f/3a1e1069-b1b7-7b83-d388-1a36f6319473
+██╗  ██╗███████╗██╗██╗     ███████╗███████╗
+╚██╗██╔╝██╔════╝██║██║     ██╔════╝██╔════╝
+ ╚███╔╝ █████╗  ██║██║     █████╗  ███████╗
+ ██╔██╗ ██╔══╝  ██║██║     ██╔══╝  ╚════██║
+██╔╝ ██╗██║     ██║███████╗███████╗███████║
+╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝
+* Official Support Links
+* TOX ——————— C96EA8DFB780D9053728816F20901315F6284CB73B735559100696FB30B31364CE0AD357E634
+* Jabber ———— <email>
+* Links ————— <url>
+
+===== ПОДБОР ПАРОЛЕЙ К КОШЕЛЬКАМ / CRYPTO BRUTE-FORCE EXPERT =====
+
+- Brute-force (password cracking) for crypto wallets (MetaMask, Trust Wallet, cold wallets, and more). 70/30 %
+
+- 5 years of experience.
+
+- Using my own trained neural network for faster and more efficient password recovery.
+
+- Cold wallet processing with guaranteed confidentiality.
+
+- I take on wallets that others couldn’t crack.
+
+Telegram: @bcstg  <url>
+Jabber:   <email>
+
+=====================================
+
+
+Operation ID: 3a19ad4e-2453-2ed7-7be8-6b0ac23dff363a1a2ec6-91f3-77f1-eaf0-e9d6296e3a3d
 
 IP: <redacted>
-Country: AE (United Arab Emirates)
+Country: HU (Hungary)
 Operating System: Windows 10
 Username: <redacted>
 Computer Name: <redacted>
 Hardware ID: <redacted>
-CPU (Processor): Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
-GPU (Display Devices): AMD Radeon HD 6800 Series
-RAM (Memory): 
-Screens: 1920x1080
+CPU (Processor): Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz
+GPU (Display Devices): Intel(R) HD Graphics 5500
+RAM (Memory): 1966.9375
+Screens: 1366x768
 Desktop Screenshot Taken: Yes
 
 Windows Processes [
@@ -17,23 +46,15 @@ Windows Processes [
    Registry
    smss.exe
    csrss.exe
-   csrss.exe
    wininit.exe
-   winlogon.exe
    services.exe
    lsass.exe
    svchost.exe
    fontdrvhost.exe
-   fontdrvhost.exe
    svchost.exe
    svchost.exe
    svchost.exe
    svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   dwm.exe
    svchost.exe
    svchost.exe
    svchost.exe
@@ -42,6 +63,17 @@ Windows Processes [
    svchost.exe
    atiesrxx.exe
    svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   Memory Compression
+   svchost.exe
+   svchost.exe
+   igfxCUIService.exe
    svchost.exe
    svchost.exe
    svchost.exe
@@ -59,225 +91,171 @@ Windows Processes [
    svchost.exe
    svchost.exe
    svchost.exe
+   ETDService.exe
    svchost.exe
    svchost.exe
+   inPixioService.exe
    svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   nssm.exe
-   JetBrains.Etw.Collector.Host.exe
-   MsMpEng.exe
-   sqlwriter.exe
    MpDefenderCoreService.exe
    svchost.exe
+   RtkBtManServ.exe
    svchost.exe
    svchost.exe
+   MsMpEng.exe
    svchost.exe
-   conhost.exe
-   sqlceip.exe
-   sqlservr.exe
-   AggregatorHost.exe
+   svchost.exe
+   dasHost.exe
+   svchost.exe
+   svchost.exe
    dllhost.exe
-   v2ray.exe
    svchost.exe
-   SQLAGENT.EXE
-   fdlauncher.exe
-   fdhost.exe
-   conhost.exe
-   conhost.exe
-   atieclxx.exe
+   svchost.exe
+   AggregatorHost.exe
+   svchost.exe
+   PresentationFontCache.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
    NisSrv.exe
+   svchost.exe
+   SecurityHealthService.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   OfficeClickToRun.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   updater.exe
+   updater.exe
+   csrss.exe
+   winlogon.exe
+   fontdrvhost.exe
+   dwm.exe
+   atieclxx.exe
+   updater.exe
+   updater.exe
+   svchost.exe
+   svchost.exe
+   ETDCtrl.exe
    sihost.exe
    svchost.exe
    svchost.exe
+   MicrosoftEdgeUpdate.exe
    taskhostw.exe
-   svchost.exe
+   igfxEM.exe
+   igfxHK.exe
+   igfxTray.exe
+   ETDCtrlHelper.exe
+   explorer.exe
    ctfmon.exe
    svchost.exe
-   svchost.exe
-   svchost.exe
-   explorer.exe
    StartMenuExperienceHost.exe
-   TextInputHost.exe
    RuntimeBroker.exe
-   svchost.exe
-   RuntimeBroker.exe
-   svchost.exe
-   msdtc.exe
-   svchost.exe
-   cnext.exe
-   svchost.exe
-   svchost.exe
-   TfsJobAgent.exe
-   svchost.exe
-   svchost.exe
-   ShellExperienceHost.exe
-   RuntimeBroker.exe
-   w3wp.exe
-   LockApp.exe
-   RuntimeBroker.exe
-   svchost.exe
-   svchost.exe
-   MusNotifyIcon.exe
-   SecurityHealthService.exe
-   dllhost.exe
-   WINWORD.EXE
-   WINWORD.EXE
-   WINWORD.EXE
-   WINWORD.EXE
-   WINWORD.EXE
-   WINWORD.EXE
-   WINWORD.EXE
-   WINWORD.EXE
-   WINWORD.EXE
-   taskhostw.exe
    SearchApp.exe
-   mstsc.exe
    RuntimeBroker.exe
-   notepad.exe
-   SSMS.exe
-   DevHub.exe
-   svchost.exe
-   SystemSettingsBroker.exe
-   rider64.exe
-   StandardCollector.Service.exe
-   Rider.Backend.exe
-   conhost.exe
-   fsnotifier.exe
-   conhost.exe
-   dotnet.exe
-   conhost.exe
-   dotnet.exe
-   conhost.exe
-   JetBrains.DPA.Protocol.Backend.exe
-   conhost.exe
-   JetBrains.Dpa.Collector.exe
-   conhost.exe
-   JetBrains.ProcessEnumerator.Worker.exe
-   conhost.exe
-   JetBrains.ProcessEnumerator.Worker32.exe
-   devenv.exe
-   PerfWatson2.exe
-   ServiceHub.RoslynCodeAnalysisService.exe
-   Microsoft.WebTools.Languages.LanguageServer.Host.exe
-   conhost.exe
-   node.exe
-   conhost.exe
-   DevHub.exe
-   node.exe
-   node.exe
-   conhost.exe
-   conhost.exe
-   node.exe
-   ServiceHub.IntellicodeModelService.exe
-   Microsoft.WebTools.Languages.LanguageServer.Host.exe
-   conhost.exe
-   node.exe
-   conhost.exe
-   symsrvhost.exe
-   conhost.exe
-   devenv.exe
-   PerfWatson2.exe
-   ServiceHub.RoslynCodeAnalysisService.exe
-   DevHub.exe
-   Microsoft.WebTools.Languages.LanguageServer.Host.exe
-   node.exe
-   conhost.exe
-   conhost.exe
-   node.exe
-   node.exe
-   conhost.exe
-   conhost.exe
-   node.exe
-   Microsoft.WebTools.Languages.LanguageServer.Host.exe
-   conhost.exe
-   node.exe
-   conhost.exe
-   VsDebugConsole.exe
-   conhost.exe
-   ServiceHub.DataWarehouseHost.exe
-   svchost.exe
-   svchost.exe
-   nssm.exe
-   conhost.exe
-   bedrock_server.exe
-   dotnet.exe
-   conhost.exe
-   chrome.exe
-   chrome.exe
-   chrome.exe
-   chrome.exe
-   chrome.exe
-   ServiceHub.IntellicodeModelService.exe
-   dotnet.exe
-   conhost.exe
-   chrome.exe
-   VBCSCompiler.exe
-   conhost.exe
-   dotnet.exe
-   conhost.exe
-   OpenConsole.exe
-   dotnet.exe
-   chrome.exe
-   chrome.exe
+   RuntimeBroker.exe
+   TextInputHost.exe
    smartscreen.exe
    chrome.exe
+   chrome.exe
+   chrome.exe
+   chrome.exe
+   chrome.exe
+   chrome.exe
+   SecurityHealthSystray.exe
+   RAVCpl64.exe
+   FMAPP.exe
+   RAVBg64.exe
+   RAVBg64.exe
+   RAVBg64.exe
+   OneDrive.exe
+   chrome.exe
+   terminal.exe
+   msedge.exe
+   msedge.exe
+   msedge.exe
+   msedge.exe
+   msedge.exe
+   audiodg.exe
+   firefox.exe
+   crashhelper.exe
+   firefox.exe
+   firefox.exe
+   firefox.exe
+   firefox.exe
+   NortonBrowser.exe
+   NortonBrowser.exe
+   firefox.exe
+   firefox.exe
+   firefox.exe
+   NortonBrowser.exe
+   NortonBrowser.exe
+   NortonBrowser.exe
+   NortonBrowser.exe
+   NortonBrowser.exe
+   NortonBrowser.exe
+   NortonBrowser.exe
+   NortonBrowser.exe
+   taskhostw.exe
+   BingSvc.exe
+   Copilot.exe
    svchost.exe
-   API.exe
+   CacheAggregato.exe
+   chrome.exe
+   TqCObniadkm29RkE.exe
+   _is6A70.exe
+   OfficeClickToRun.exe
    svchost.exe
+   SearchApp.exe
    msedgewebview2.exe
    msedgewebview2.exe
    msedgewebview2.exe
    msedgewebview2.exe
    msedgewebview2.exe
    msedgewebview2.exe
-   msedgewebview2.exe
-   msedge.exe
-   msedge.exe
-   msedge.exe
-   msedge.exe
-   msedge.exe
-   msedge.exe
-   msedge.exe
+   WmiPrvSE.exe
+   OfficeClickToRun.exe
+   AppVShNotify.exe
+   updater.exe
+   updater.exe
+   NortonBrowser.exe
    svchost.exe
-   Na-Toolkit16.exe
-   VsDebugConsole.exe
+   lync.exe
+   Integrator.exe
    conhost.exe
-   ServiceHub.DataWarehouseHost.exe
-   API.exe
-   msedge.exe
-   CasHarvester.exe
-   XPFix.exe
-   msedge.exe
-   msedgewebview2.exe
-   msedgewebview2.exe
-   msedgewebview2.exe
-   msedgewebview2.exe
-   msedgewebview2.exe
-   msedgewebview2.exe
-   msedgewebview2.exe
-   msedge.exe
+   svchost.exe
+   RuntimeBroker.exe
+   msiexec.exe
+   MoUsoCoreWorker.exe
+   SearchIndexer.exe
+   SearchProtocolHost.exe
+   SearchFilterHost.exe
+   backgroundTaskHost.exe
+   backgroundTaskHost.exe
+   backgroundTaskHost.exe
+   backgroundTaskHost.exe
+   RuntimeBroker.exe
 ]
 Processed parts: [
-   Total Time to process: <ip>.1200041
-   Wallets: <ip>.0001761
-   Ftp: <ip>.0002807
-   Messengers: <ip>.0003646
-   Games: <ip>.0003427
-   Vpn: <ip>.0002691
-   Vnc: <ip>.0002733
-   GeckoBrowsers: <ip>.0007571
-   ChromiumBrowsers: <ip>.0918971
-   EmailClients: <ip>.0001981
-   RemoteAdminControl: <ip>.0110004
-   FileGrabber: <ip>.0103482
-   Hardware: <ip>.0040967
+   Total Time to process: <ip>.4018556
+   Wallets: <ip>.0000768
+   Games: <ip>.0000783
+   Ftp: <ip>.0000776
+   Vpn: <ip>.0000789
+   Vnc: <ip>.0000748
+   ChromiumBrowsers: <ip>.1715995
+   GeckoBrowsers: <ip>.1983567
+   RemoteAdminControl: <ip>.0000561
+   EmailClients: <ip>.0007545
+   Messengers: <ip>.0051321
+   Hardware: <ip>.0013719
+   FileGrabber: <ip>.0241984
 ]

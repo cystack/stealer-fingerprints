@@ -1,120 +1,135 @@
+
+ㅤ______     ______   ______     ______     __         ______
+/\  ___\   /\__  _\ /\  ___\   /\  __ \   /\ \       /\  ___\
+\ \___  \  \/_/\ \/ \ \  __\   \ \  __ \  \ \ \____  \ \ \____
+ \/\_____\    \ \_\  \ \_____\  \ \_\ \_\  \ \_____\  \ \_____\
+  \/_____/     \/_/   \/_____/   \/_/\/_/   \/_____/   \/_____/
+
+                       stealc stealer
+
+powerful native stealer based on C lang
+
+forum topics:
+	- <url>
+	- <url>
+
+buy:
+	- jabber: <email>
+        - tox: 1FCCEA0D37D99894B958C0FCEAC66034FE3580B193C335745D632A19F8E6053C34DFEAAE2538
+
+----------------------------------------------------------------
+
+.--------------. .--------------. .--------------. .--------------. .--------------. 
+| ____    ____ | |      __      | |     _____    | |  _________   | |  _________   | 
+||_   \  /   _|| |     /  \     | |    |_   _|   | | |_   ___  |  | | |_   ___  |  | 
+|  |   \/   |  | |    / /\ \    | |      | |     | |   | |_  \_|  | |   | |_  \_|  | 
+|  | |\  /| |  | |   / ____ \   | |      | |     | |   |  _|      | |   |  _|  _   | 
+| _| |_\/_| |_ | | _/ /    \ \_ | |     _| |_    | |  _| |_       | |  _| |___/ |  | 
+||_____||_____|| ||____|  |____|| |    |_____|   | | |_____|      | | |_________|  | 
+|              | |              | |              | |              | |              | 
+'--------------' '--------------' '--------------' '--------------' '--------------' 
+Brute-force (password cracking) for crypto wallets (Metamask, Exodus, .dat files, and others)
+
+• We have been withdrawing cryptocurrency from logs for over 4 years, with a total amount withdrawn exceeding $15.000.000
+• Our total deposit on forums exceeds 5 BTC (over $300.000), which confirms our reliability, while feedback from satisfied clients confirms successful cases.
+• In addition to manual work, we use a powerful ML model we created and trained as an auxiliary tool. It has been trained on over 1.000.000 logs, allowing us to speed up the process and improve the accuracy of password cracking.
+
+Commission split: 70/30 in your favor
+Wallets accepted with a balance of at least $10.000
+
+Telegram: @m2fa_brute
+Channel with contacts: @maife2fa
+<url> | (3 BTC DEP)
+<url> | (2 BTC DEP)
+<url> | (2.000$ DEP)
+
+----------------------------------------------------------------
 Network Info:
 	- IP: <ip>
-	- Country: BD
+	- Country: AE
 
 System Summary:
-	- HWID: FB25AF6279E5845770397
-	- OS: Windows 10 Home Single Language
+	- HWID: M13MASW3JEG1KFDXVRTZX2
+	- OS: Windows 11
 	- Architecture: x64
-	- UserName: HUAWEI
-	- Computer Name: LAPTOP-IQN95I2F
-	- Local Time: 2024/3/18 <ip>
-	- UTC: 6
+	- UserName: HP
+	- Computer Name: DESKTOP-946CS9H
+	- Local Time: 2025/7/13 <ip>
+	- UTC: 4
 	- Language: en-US
 	- Keyboards: English (United States)
-	- Laptop: TRUE
-	- Running Path: C:\Users\<user>\Mp3tag.exe
-	- CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+	- Laptop: FALSE
+	- Running Path: C:\Windows\Microsoft.NET\Framework\v4.0.30319\BRADLOGS.exe
+	- CPU: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
 	- Cores: 4
 	- Threads: 8
-	- RAM: 7991 MB
-	- Display Resolution: 1920x1080
+	- RAM: 8094 MB
+	- Display Resolution: 1536x864
 	- GPU:
-		-Intel(R) Iris(R) Xe Graphics
-		-Intel(R) Iris(R) Xe Graphics
-		-Intel(R) Iris(R) Xe Graphics
-		-Intel(R) Iris(R) Xe Graphics
-		-Virtual Display Device
-
-User Agents:
-	Google Chrome - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.129 Safari/537.36
+		-Intel(R) UHD Graphics 620
 
 Installed Apps:
 All Users:
-	Adobe Creative Cloud - <ip>
-	Adobe Genuine Service - <ip>
-	Avro Keyboard 5.6.0 - 5.6.0
-	Brave - <ip>
-	Link Now - <ip>
-	FastStone Image Viewer 7.7 - 7.7
-	Google Chrome - 122.0.6261.129
-	Internet Download Manager - 6.41.2
-	IObit Uninstaller 12 - <ip>
-	Microsoft Edge - 122.0.2365.92
-	Microsoft Edge Update - <ip>
-	Microsoft Edge WebView2 Runtime - 122.0.2365.92
-	MKVToolNix 71.1.0 (64-bit) - 71.1.0
-	UXP WebView Support - 1.1.0
-	VLC media player - 2.2.8
-	SHAREit - <ip>
-	Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40664 - 12.0.40664.0
-	Microsoft_VC90_CRT_x86 - 1.00.0000
-	XiaoMiFlash - 1.1.4
-	Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.4148 - 9.0.30729.4148
-	Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.32.31326 - 14.32.31326.0
-	Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030 - 11.0.61030.0
-	Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.32.31326 - 14.32.31326
-	Intel(R) Dynamic Tuning - 8.7.10400.15556
-	Microsoft Visual C++ 2005 Redistributable - 8.0.61001
-	Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.40664 - 12.0.40664
-	Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.32.31326 - 14.32.31326.0
-	Microsoft_VC80_CRT_x86 - 8.0.50727.4053
-	Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40664 - 12.0.40664.0
-	Microsoft Visual C++ 2022 X86 Additional Runtime - 14.32.31326 - 14.32.31326
-	Intel(R) Chipset Device Software - 10.1.18460.8229
-	Adobe Refresh Manager - 1.8.0
-	Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61030 - 11.0.61030
-	Intel(R) Dynamic Tuning Technology - 8.7.10400.15556
-	Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61030 - 11.0.61030
-	PDF Settings CS6 - 11.0
-	Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030 - 11.0.61030.0
-	Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.40664 - 12.0.40664
-	Qualcomm USB Drivers For Windows - 1.00.57
-	Adobe Creative Suite 6 Master Collection - 6
-	Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219 - 10.0.40219
+	Microsoft Edge - 138.0.3351.83
+	Microsoft Edge WebView2 Runtime - 138.0.3351.83
+	Windows TubeMate 5
+	SanDisk Security - <ip>
+	Microsoft Visual C++ 2010  x86 Redistributable - 10.0.30319 - 10.0.30319
+	Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.28.29914 - 14.28.29914.0
+	Microsoft Bing Service - <ip>
+	SanDisk Security - <ip>
+	Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.28.29914 - 14.28.29914
+	Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.28.29914 - 14.28.29914.0
+	Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161 - 9.0.30729.6161
+	Microsoft Visual C++ 2019 X86 Additional Runtime - 14.28.29914 - 14.28.29914
+	AVG Update Helper - 1.8.1693.6
+	Office Tab - 6.00
+	Microsoft OneDrive - 25.110.0608.0002
 Current User:
-	YouTube - 1.0
-	Gmail - 1.0
-	Gmail - 1.0
-	Docs - 1.0
-	Slides - 1.0
-	YouTube - 1.0
-	Google Drive - 1.0
-	Sheets - 1.0
-	BlueStacks X - 10.10.6.1001
-	BlueStacks Services - 3.0.8
-	YouTube - 1.0
-	Slides - 1.0
-	Sheets - 1.0
-	Google Drive - 1.0
-	Docs - 1.0
-	Microsoft OneDrive - 24.040.0225.0003
-	µTorrent - 3.6.0.46984
-	Zoom - 5.8.0 (1324)
+	Adobe Genuine Service - <ip>
+	FM PDF To JPG Converter Pro 4.82 - 4.82
+	IDM 6.39 build 5 6.39.5 - 6.39.5
+	Internet Download Manager - 6.39.5
+	Need For Speed Most Wanted Black Edition version <ip> - <ip>
+	Longman Dictionary of Contemporary English 5th Edition
+	Oxford Advanced Learner's Dictionary - 8th Edition
+	Power Ge'ez 2010 - 10.0.0
+	QUICKfind server v1.1
+	Macromedia Flash Player 8 - 8
+	USB Drive Antivirus 3.03
+	WinRAR 5.91 (32-bit) - 5.91.0
+	WebAdvisor by McAfee - 4.1.1.1056
+	InventoryPlus version <ip> - <ip>
+	AutoCAD 2007 - English - <ip>
+	Power Ge'ez 2010 - 10.0.0
+	Wondershare Recoverit(Build <ip>) - <ip>
+	SMADAV version 15.4.0 - 15.4.0
+	Adobe Refresh Manager - 1.8.0
+	Adobe Acrobat XI Pro - 11.0.23
+	AD9G.COM Games - 1.0
+	Conflict Desert.Storm II {Dotcom1}
+	Opera Stable 119.0.5497.141 - 119.0.5497.141
+	Quick Explorer Lib 6.12.5.4671
+	uTorrent Web - 1.4.0
+	Telegram Desktop - 5.12.2
 
 Process List:
 	System
-	Secure System
 	Registry
 	smss.exe
 	csrss.exe
 	wininit.exe
+	csrss.exe
+	winlogon.exe
 	services.exe
-	LsaIso.exe
 	lsass.exe
 	svchost.exe
-	WUDFHost.exe
 	fontdrvhost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
+	fontdrvhost.exe
 	WUDFHost.exe
 	svchost.exe
+	svchost.exe
+	dwm.exe
 	svchost.exe
 	svchost.exe
 	svchost.exe
@@ -125,21 +140,29 @@ Process List:
 	svchost.exe
 	svchost.exe
 	svchost.exe
-	WUDFHost.exe
 	svchost.exe
 	svchost.exe
+	IntelCpHeciSvc.exe
 	svchost.exe
 	svchost.exe
+	SynTPEnhService.exe
+	helperservice.exe
+	svchost.exe
+	svchost.exe
+	NVDisplay.Container.exe
+	svchost.exe
+	dasHost.exe
 	svchost.exe
 	svchost.exe
 	svchost.exe
 	svchost.exe
 	Memory Compression
-	WUDFHost.exe
+	svchost.exe
+	igfxCUIService.exe
 	svchost.exe
 	svchost.exe
 	svchost.exe
-	igfxCUIServiceN.exe
+	svchost.exe
 	svchost.exe
 	svchost.exe
 	svchost.exe
@@ -150,186 +173,212 @@ Process List:
 	svchost.exe
 	spoolsv.exe
 	svchost.exe
-	svchost.exe
-	wlanext.exe
-	conhost.exe
-	Intel_PIE_Service.exe
-	WUCSProxyService.exe
-	svchost.exe
-	PresentationFontCache.exe
+	NVDisplay.Container.exe
 	svchost.exe
 	svchost.exe
 	svchost.exe
 	svchost.exe
 	svchost.exe
+	CxAudioSvc.exe
 	svchost.exe
-	AdobeUpdateService.exe
 	svchost.exe
 	svchost.exe
-	OfficeClickToRun.exe
-	AGMService.exe
 	svchost.exe
-	HiConnectivityService.exe
-	HwDistributedMainService.exe
-	osdservice.exe
-	HWVEAudioService.exe
+	svchost.exe
 	OneApp.IGCC.WinService.exe
-	BasicService.exe
-	svchost.exe
+	armsvc.exe
+	QuickExplorerLib.exe
+	SynAudSrv.exe
+	XtuService.exe
+	RtkBtManServ.exe
+	RtkAudUService64.exe
+	RstMwService.exe
+	SECOMN64.exe
 	esif_uf.exe
-	IntelAudioService.exe
-	svchost.exe
-	LCD_Service.exe
-	LMS.exe
-	MateBookService.exe
-	NahimicService.exe
-	qcmtusvc.exe
-	SessionService.exe
-	svchost.exe
-	svchost.exe
-	MsMpEng.exe
+	TenorshareUpdateAssistantService.exe
+	TeraCopyService.exe
+	WDDriveService.exe
+	CptService.exe
+	TeamViewer_Service.exe
 	svchost.exe
 	svchost.exe
 	jhi_service.exe
-	WUDFHost.exe
-	unsecapp.exe
-	WmiPrvSE.exe
+	svchost.exe
+	svchost.exe
+	crashpad_handler.exe
+	conhost.exe
+	svchost.exe
+	svchost.exe
+	gamingservices.exe
+	gamingservicesnet.exe
+	cmd.exe
+	wlanext.exe
+	conhost.exe
+	TenorshareUpdateAssistant.exe
 	AggregatorHost.exe
-	WmiPrvSE.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	NisSrv.exe
-	SecurityHealthService.exe
 	svchost.exe
 	svchost.exe
 	svchost.exe
 	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	GoogleCrashHandler.exe
-	GoogleCrashHandler64.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	SearchIndexer.exe
-	armsvc.exe
-	svchost.exe
-	urbanvpnserv.exe
-	svchost.exe
-	audiodg.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	csrss.exe
-	winlogon.exe
-	fontdrvhost.exe
-	dwm.exe
-	svchost.exe
-	MoUsoCoreWorker.exe
 	svchost.exe
 	svchost.exe
 	sihost.exe
 	svchost.exe
-	svchost.exe
-	igfxEMN.exe
-	svchost.exe
-	svchost.exe
-	taskhostw.exe
-	explorer.exe
+	PresentationFontCache.exe
 	svchost.exe
 	svchost.exe
 	taskhostw.exe
-	StartMenuExperienceHost.exe
+	SM?RTP.exe
+	svchost.exe
+	svchost.exe
+	SearchIndexer.exe
+	SynTPEnh.exe
+	BRADLOGS.exe
+	igfxEM.exe
+	TeamViewer.exe
+	ShellHost.exe
+	SECOCL64.exe
+	conhost.exe
+	svchost.exe
+	CrossDeviceResume.exe
+	svchost.exe
+	svchost.exe
 	SearchHost.exe
+	StartMenuExperienceHost.exe
 	RuntimeBroker.exe
+	svchost.exe
 	RuntimeBroker.exe
 	Widgets.exe
-	svchost.exe
-	svchost.exe
-	dllhost.exe
-	smartscreen.exe
-	SecurityHealthSystray.exe
-	svchost.exe
-	svchost.exe
-	NahimicSvc64.exe
-	NahimicSvc32.exe
+	WidgetService.exe
+	tv_w32.exe
+	tv_x64.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	crashpad_handler.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
 	ctfmon.exe
-	MBAMessageCenter.exe
-	HWVEAudioSession.exe
-	HwMdcCenter.exe
-	conhost.exe
-	unsecapp.exe
-	HiviewService.exe
-	HwMdcUI.exe
-	MessageCenterUI.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	PhoneExperienceHost.exe
 	TextInputHost.exe
+	CastSrv.exe
 	svchost.exe
-	OneDrive.exe
-	Avro Keyboard.exe
-	IDMan.exe
-	urbanvpn-gui.exe
-	BlueStacksServices.exe
-	client32.exe
-	BlueStacksServices.exe
-	WmiPrvSE.exe
-	BlueStacksServices.exe
-	BlueStacksServices.exe
-	msedge.exe
-	msedge.exe
-	msedge.exe
-	msedge.exe
-	msedge.exe
-	msedge.exe
-	msedge.exe
-	chrome.exe
-	msedge.exe
-	msedge.exe
-	chrome.exe
-	chrome.exe
-	chrome.exe
-	chrome.exe
-	chrome.exe
-	chrome.exe
-	chrome.exe
-	chrome.exe
-	chrome.exe
-	chrome.exe
-	chrome.exe
-	chrome.exe
-	chrome.exe
-	chrome.exe
-	chrome.exe
 	svchost.exe
-	Mp3tag.exe
-	msteams.exe
+	RtkAudUService64.exe
+	BRADLOGS.exe
 	ShellExperienceHost.exe
 	RuntimeBroker.exe
-	RuntimeBroker.exe
-	msteamsupdate.exe
 	svchost.exe
-	SystemSettingsBroker.exe
+	svchost.exe
+	svchost.exe
+	fdm.exe
+	ms-teams.exe
+	RuntimeBroker.exe
 	msedgewebview2.exe
 	msedgewebview2.exe
 	msedgewebview2.exe
 	msedgewebview2.exe
 	msedgewebview2.exe
 	msedgewebview2.exe
+	taskhostw.exe
+	ms-teams.exe
+	svchost.exe
+	msedgewebview2.exe
+	YourPhoneAppProxy.exe
+	svchost.exe
+	svchost.exe
+	RuntimeBroker.exe
 	svchost.exe
 	CrossDeviceService.exe
-	msedge.exe
-	svchost.exe
 	RuntimeBroker.exe
+	svchost.exe
+	acrotray.exe
+	pg2010.exe
+	USBAntivirus.exe
+	FileCoAuth.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	WhatsApp.exe
+	backgroundTaskHost.exe
+	RuntimeBroker.exe
+	RuntimeBroker.exe
+	Qpgvp.exe
+	suker.exe
+	svchost.exe
+	haHVBay.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	6rQdNSV.exe
+	svchost.exe
+	WRQVZVJc3rW9.exe
+	WRQVZVJc3rW9.tmp
+	quickexplorerlib.exe
+	QvG0bbo.exe
+	elevation_service.exe
+	ecbiw4ohdt.exe
+	KIFHWV.exe
+	LSYMVT.exe
+	PorArray32.exe
+	Jackes.exe
+	glxbsr9zuk.exe
+	JTA6cYY.exe
+	audiodg.exe
+	IDMIntegrator64.exe
+	SystemSettings.exe
 	ApplicationFrameHost.exe
-	Nahimic3.exe
+	svchost.exe
+	UserOOBEBroker.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	IDMan.exe
+	svchost.exe
+	svchost.exe
+	backgroundTaskHost.exe
 	RuntimeBroker.exe
+	msedge.exe
+	msedge.exe
+	msedge.exe
+	msedge.exe
+	msedge.exe
+	msedge.exe
+	msedge.exe
+	msedge.exe
+	msedge.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
 	chrome.exe
 	chrome.exe
 	svchost.exe
 	chrome.exe
+	chrome.exe
+	chrome.exe
+	bQEip14.exe
+	FrameworFusion.exe
+	XPFix.exe
+	chrome.exe
+	BRADLOGS.exe
+	6rQdNSV.exe
+	HZhaduP.exe
+	a9RD5LI.exe
+	BCobalt.exe
 	msedge.exe
+	chrome.exe

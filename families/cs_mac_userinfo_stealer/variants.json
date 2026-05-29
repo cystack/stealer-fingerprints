@@ -1,0 +1,30 @@
+{
+  "family": "CSMacUserinfoStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "City",
+        "Country",
+        "Country Code",
+        "Graphics/Displays",
+        "Hardware",
+        "IP",
+        "Latitude",
+        "Longitude",
+        "Region",
+        "Software",
+        "Timezone",
+        "Zipcode"
+      ],
+      "filenames": [
+        "userinfo.txt"
+      ],
+      "fingerprint_id": "cystack_e6b74373",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

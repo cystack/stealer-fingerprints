@@ -1,0 +1,67 @@
+IP: <redacted>
+Country: United Arab Emirates
+Country Code: AE
+Region: Dubayy
+City: <redacted>
+Latitude: <redacted>
+Longitude: <redacted>
+Zipcode: -
+Timezone: +04:00
+
+Software:
+
+    System Software Overview:
+
+      System Version: macOS 14.7.6 (23H626)
+      Kernel Version: Darwin 23.6.0
+      Boot Volume: Macintosh HD
+      Boot Mode: Normal
+      Computer Name: <redacted>
+      User Name: <redacted>
+      Secure Virtual Memory: Enabled
+      System Integrity Protection: Enabled
+      Time since boot: 21 minutes, 42 seconds
+
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: MacBook Air
+      Model Identifier: MacBookAir8,1
+      Processor Name: Dual-Core Intel Core i5
+      Processor Speed: 1.6 GHz
+      Number of Processors: 1
+      Total Number of Cores: 2
+      L2 Cache (per Core): 256 KB
+      L3 Cache: 4 MB
+      Hyper-Threading Technology: Enabled
+      Memory: 8 GB
+      System Firmware Version: 2075.<ip> (iBridge: 22.16.15072.0.0,0)
+      OS Loader Version: 580.140.1~51
+      Serial Number (system): FVFY90N8JK78
+      Hardware UUID: 85B18722-7CDB-54AC-9E87-CB54A7D2B6F1
+      Provisioning UDID: 85B18722-7CDB-54AC-9E87-CB54A7D2B6F1
+      Activation Lock Status: Disabled
+
+Graphics/Displays:
+
+    Intel UHD Graphics 617:
+
+      Chipset Model: Intel UHD Graphics 617
+      Type: GPU
+      Bus: Built-In
+      VRAM (Dynamic, Max): 1536 MB
+      Vendor: Intel
+      Device ID: 0x87c0
+      Revision ID: 0x0002
+      Metal Support: Metal 3
+      Displays:
+        Color LCD:
+          Display Type: Built-In Retina LCD
+          Resolution: 2560 x 1600 Retina
+          Framebuffer Depth: 24-Bit Color (ARGB8888)
+          Main Display: Yes
+          Mirror: Off
+          Online: Yes
+          Automatically Adjust Brightness: Yes
+          Connection Type: Internal

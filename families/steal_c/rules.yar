@@ -3,6 +3,42 @@
 // observed field-key set. Tune false-positive thresholds at use
 // site, especially for variants relying on field combinations.
 
+rule StealC_cystack_1f8e4d74
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_1f8e4d74"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Installed Apps:" ascii
+        $key_2 = "Network Info:" ascii
+        $key_3 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_27cecfc2
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_27cecfc2"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Channel with contacts:" ascii
+        $key_2 = "Commission split:" ascii
+        $key_3 = "Current User:" ascii
+        $key_4 = "Installed Apps:" ascii
+        $key_5 = "Network Info:" ascii
+        $key_6 = "System Summary:" ascii
+        $key_7 = "Telegram:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule StealC_cystack_2eb9685e
 {
     meta:
@@ -46,6 +82,27 @@ rule StealC_cystack_3028b0ca
         $key_2 = "Process List:" ascii
         $key_3 = "Process count:" ascii
         $key_4 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_678bd448
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_678bd448"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Channel with contacts:" ascii
+        $key_2 = "Commission split:" ascii
+        $key_3 = "Current User:" ascii
+        $key_4 = "Installed Apps:" ascii
+        $key_5 = "Network Info:" ascii
+        $key_6 = "Process List:" ascii
+        $key_7 = "System Summary:" ascii
+        $key_8 = "Telegram:" ascii
 
     condition:
         all of ($key_*)
@@ -137,6 +194,25 @@ rule StealC_cystack_7a949b1d
         all of ($key_*)
 }
 
+rule StealC_cystack_a52d3ec9
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_a52d3ec9"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Channel with contacts:" ascii
+        $key_2 = "Commission split:" ascii
+        $key_3 = "Installed Apps:" ascii
+        $key_4 = "Network Info:" ascii
+        $key_5 = "System Summary:" ascii
+        $key_6 = "Telegram:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule StealC_cystack_a867f3f5
 {
     meta:
@@ -156,6 +232,23 @@ rule StealC_cystack_a867f3f5
         all of ($key_*)
 }
 
+rule StealC_cystack_b76da4f7
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_b76da4f7"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Current User:" ascii
+        $key_2 = "Installed Apps:" ascii
+        $key_3 = "Network Info:" ascii
+        $key_4 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule StealC_cystack_b7b299ef
 {
     meta:
@@ -168,6 +261,24 @@ rule StealC_cystack_b7b299ef
         $key_2 = "Installed Apps:" ascii
         $key_3 = "Process List:" ascii
         $key_4 = "Process count:" ascii
+        $key_5 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_b8ed4e31
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_b8ed4e31"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Current User:" ascii
+        $key_2 = "Installed Apps:" ascii
+        $key_3 = "Network Info:" ascii
+        $key_4 = "Process List:" ascii
         $key_5 = "System Summary:" ascii
 
     condition:

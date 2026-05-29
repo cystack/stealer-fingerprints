@@ -20,6 +20,44 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "All Users",
+        "Installed Apps",
+        "Network Info",
+        "System Summary"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_1f8e4d74",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
+        "Channel with contacts",
+        "Commission split",
+        "Current User",
+        "Installed Apps",
+        "Network Info",
+        "System Summary",
+        "Telegram"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_27cecfc2",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "Installed Apps",
         "Network Info",
         "Process List",
@@ -63,6 +101,28 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_3028b0ca",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
+        "Channel with contacts",
+        "Commission split",
+        "Current User",
+        "Installed Apps",
+        "Network Info",
+        "Process List",
+        "System Summary",
+        "Telegram"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_678bd448",
       "panel_brand": null,
       "synthetic": true
     },
@@ -163,6 +223,26 @@
       "distribution_channel": null,
       "field_keys": [
         "All Users",
+        "Channel with contacts",
+        "Commission split",
+        "Installed Apps",
+        "Network Info",
+        "System Summary",
+        "Telegram"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_a52d3ec9",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
         "Current User",
         "Installed Apps",
         "Network Info",
@@ -185,6 +265,24 @@
         "All Users",
         "Current User",
         "Installed Apps",
+        "Network Info",
+        "System Summary"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_b76da4f7",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
+        "Current User",
+        "Installed Apps",
         "Process List",
         "Process count",
         "System Summary"
@@ -193,6 +291,25 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_b7b299ef",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
+        "Current User",
+        "Installed Apps",
+        "Network Info",
+        "Process List",
+        "System Summary"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_b8ed4e31",
       "panel_brand": null,
       "synthetic": true
     },

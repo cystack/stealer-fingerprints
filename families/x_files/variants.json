@@ -55,6 +55,34 @@
       "distribution_channel": null,
       "field_keys": [
         "CPU (Processor)",
+        "Channel with contacts",
+        "Computer Name",
+        "Country",
+        "Desktop Screenshot Taken",
+        "GPU (Display Devices)",
+        "Hardware ID",
+        "IP",
+        "Operating System",
+        "Operation ID",
+        "Processed parts",
+        "RAM (Memory)",
+        "Screens",
+        "Telegram",
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_534fb995",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU (Processor)",
         "Computer Name",
         "Country",
         "Desktop Screenshot Taken",
@@ -96,6 +124,33 @@
         "Information.txt"
       ],
       "fingerprint_id": "cystack_779697d2",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU (Processor)",
+        "Computer Name",
+        "Country",
+        "Desktop Screenshot Taken",
+        "GPU (Display Devices)",
+        "Hardware ID",
+        "IP",
+        "Jabber",
+        "Operating System",
+        "Operation ID",
+        "RAM (Memory)",
+        "Screens",
+        "Telegram",
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_9b8ee162",
       "panel_brand": null,
       "synthetic": true
     },
@@ -147,6 +202,61 @@
         "Information.txt"
       ],
       "fingerprint_id": "cystack_c10789f1",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU (Processor)",
+        "Computer Name",
+        "Country",
+        "Desktop Screenshot Taken",
+        "GPU (Display Devices)",
+        "Hardware ID",
+        "IP",
+        "Jabber",
+        "Operating System",
+        "Operation ID",
+        "Processed parts",
+        "RAM (Memory)",
+        "Screens",
+        "Telegram",
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_f0d30fc2",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU (Processor)",
+        "Channel with contacts",
+        "Computer Name",
+        "Country",
+        "Desktop Screenshot Taken",
+        "GPU (Display Devices)",
+        "Hardware ID",
+        "IP",
+        "Operating System",
+        "Operation ID",
+        "RAM (Memory)",
+        "Screens",
+        "Telegram",
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_fc2b93d4",
       "panel_brand": null,
       "synthetic": true
     }
