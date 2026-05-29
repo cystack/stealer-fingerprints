@@ -45,7 +45,7 @@ threat-intel mapping for this layout.
 **Field keys:**
 `City`, `Country`, `Country Code`, `Graphics/Displays`, `Hardware`, `IP`, `Latitude`, `Longitude`, `Region`, `Software`, `Timezone`, `Zipcode`
 
-**Filenames:** `userinfo.txt`
+**Filenames:** `UserInformation.txt`, `userinfo.txt`
 
 **Sample (sanitized):**
 

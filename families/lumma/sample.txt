@@ -1,58 +1,28 @@
-- LummaC2 Build: Feb 23 2025
-- @MAXERSTE (BRADMAX) / <url>
-- Configuration: 
-- Path: C:\WINDOWS\SysWOW64\explorer.exe
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+-- <url> | <url> |@BRADMAXCLOUD_BOT
 
-- OS Version: Windows 10 Home Single Language (10.0.19045) x64
-- Local Date: 03.03.2025 <ip>
-- Time Zone: UTC+4
-- Install Date: 01.08.2020 <ip>
-- Elevated: false
-- Computer: AISON
-- User: AIS�N
-- Domain: 
-- Hostname: Aison
-- NetBIOS: AISON
-- Language: en-US
-- Anti Virus:
-	- Norton 360
-- HWID: 2BB1CAF18934E4DD8E7A5F48C2665F48
-- RAM Size: 8192MB
-- CPU Vendor: GenuineIntel
-- CPU Name: Intel(R) Core(TM) i5-4570T CPU @ 2.90GHz
-- CPU Threads: 4
-- CPU Cores: 2
-- GPU:
-	- Intel(R) HD Graphics 4600
-- Display resolution: 1920x1080
+LummaC2 Build: Jun 11 2025
+Path: <redacted>
+OS Version: Windows 11 Pro (10.0.22631) x64
+Local Date: 16.06.2025 <ip>
+Time Zone: UTC+4
+Install Date: 05.10.2023 <ip>
+Elevated: false
+Computer: DESKTOP-TVPSAF8
+User: User
+Hostname: <redacted>
+NetBIOS: DESKTOP-TVPSAF8
+Language: en-AE
+HWID: <redacted>
+RAM Size: 16384MB
+CPU Vendor: AuthenticAMD
+CPU Name: AMD Ryzen 5 5600X 6-Core Processor             
+CPU Threads: 12
+CPU Cores: 6
+Display resolution: 2560x1440
+IP Address: <redacted>
+Time: 16.06.2025 <ip> (sig:1750080426.1e13882fa064badf1bcdf155530f6200)
+Country: <ip>
+LID: yau6Na--1378348465
 
-- IP Address: <ip>
-- Time: 03.03.2025 <ip> (sig:1741006955.06e122ce556622a5d752de1af3bbe448)
-- Country: AE
-
-------------------------------------
-
-Automated log store >> t.me/lummamarketplace_bot
-Tens of thousands of logs for sale, rating system, search by filters and countries, hundreds of sellers with their own storefronts. Unique development based on MaaS from LummaC2.
-Purchase quality material right now - t.me/lummamarketplace_bot
-
-------------------------------------
-
-Куплю ваши YouTube каналы в больших объемах!
-Работая в данной сфере больше 6 лет  и могу с уверенностью сказать, что только работая с нами вы сможете  реализовать ваши YouTube каналы и получить максимальную выгоду.
-
-Постоянным продавцам мы предоставляем лучшую цену на рынке за любой канал + % со стрима.
-Наша команда на находится на связи 24/7.
-
-TG: <url>
-
-------------------------------------
-
-#1 Cервис по подобору паролей (MetaMask, Phantom, Exodus и множество других)
-
-Применяем широкий спектр атак для подбора паролей. Большой опыт в области криптографии и взлома паролей.
-Работаем с кошельками от $5,000
-
-Процент: 70/30 или 60/40 в вашу пользу (зависит от сложности подобранного пароля)
-
-Контакты - <url>

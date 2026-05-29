@@ -9,7 +9,7 @@ signature on the `Time:` line. Build banners reference the
 
 **Also known as:** `LummaC2`, `Lumma Stealer`
 
-**Variants observed:** 3
+**Variants observed:** 4
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -122,6 +122,47 @@ Purchase quality material right now - t.me/lummamarketplace_bot
 - Time: 18.03.2025 <ip> (sig:1742307760.8839f447a216b645675b3fa5b6cf834c)
 - Country: JM
 LID: FATE99--Main
+```
+
+### `cystack_b2f2fa78`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Elevated`, `HWID`, `Hostname`, `IP Address`, `Install Date`, `LID`, `Language`, `Local Date`, `LummaC2 Build`, `NetBIOS`, `OS Version`, `Path`, `RAM Size`, `Time`, `Time Zone`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+
+LummaC2 Build: Jun 11 2025
+Path: <redacted>
+OS Version: Windows 11 Pro (10.0.22631) x64
+Local Date: 16.06.2025 <ip>
+Time Zone: UTC+4
+Install Date: 05.10.2023 <ip>
+Elevated: false
+Computer: DESKTOP-TVPSAF8
+User: User
+Hostname: <redacted>
+NetBIOS: DESKTOP-TVPSAF8
+Language: en-AE
+HWID: <redacted>
+RAM Size: 16384MB
+CPU Vendor: AuthenticAMD
+CPU Name: AMD Ryzen 5 5600X 6-Core Processor             
+CPU Threads: 12
+CPU Cores: 6
+Display resolution: 2560x1440
+IP Address: <redacted>
+Time: 16.06.2025 <ip> (sig:1750080426.1e13882fa064badf1bcdf155530f6200)
+Country: <ip>
+LID: yau6Na--1378348465
 ```
 
 ### `cystack_c65f37b2`

@@ -20,6 +20,7 @@
         "Zipcode"
       ],
       "filenames": [
+        "UserInformation.txt",
         "userinfo.txt"
       ],
       "fingerprint_id": "cystack_e6b74373",

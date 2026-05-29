@@ -1,0 +1,17 @@
+{
+  "family": "Arcane",
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": "https://t.me/+0IAf5VIrl_EzNWRi",
+      "field_keys": [],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "bradlogs_bradmax",
+      "panel_brand": "@BRADLOGS (BRADMAX)",
+      "synthetic": false
+    }
+  ]
+}
