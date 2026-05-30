@@ -7,7 +7,8 @@
       "distribution_channel": null,
       "field_keys": [],
       "filenames": [
-        "pc_info.json"
+        "pc_info.json",
+        "pc_info.txt"
       ],
       "fingerprint_id": "cystack_c65f37b2",
       "panel_brand": null,

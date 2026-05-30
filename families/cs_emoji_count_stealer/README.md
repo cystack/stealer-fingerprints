@@ -24,7 +24,7 @@ intel mapping for this layout.
 
 **Also known as:** `Dash-section emoji-count Information.txt panel`, `4-section ✅/❌ checkmark stealer`
 
-**Variants observed:** 3
+**Variants observed:** 4
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -189,6 +189,61 @@ Credit Cards: ❌
 Servers FTP/SSH: ❌
 Discord Tokens: ✅ 1
 Others: ❌
+```
+
+### `cystack_fef48703`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Antivirus`, `Build`, `CPU`, `City`, `Cookies`, `Country`, `Credit Cards`, `Current Language`, `Discord Tokens`, `FileLocation`, `Files`, `GPU`, `HWID`, `IP`, `ISP`, `Is Elevated`, `OS`, `Passwords`, `Postal`, `Servers FTP/SSH`, `Tagged Cookies`, `Tagged URLs`, `Tags Cookies`, `Tags Passwords`, `Timezone`, `Username`, `Wallets`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+- IP Info -
+
+IP: <redacted>
+Country: Brazil
+City: <redacted>
+Postal: 57055-902
+ISP: BRISANET SERVICOS DE TELECOMUNICACOES S.A - A28126
+Timezone: -03:00
+
+- PC Info -
+
+Username: <redacted>
+OS: Microsoft Windows 10 Pro
+CPU: Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
+GPU: Intel(R) HD Graphics (1920, 1080)VirtualMonitor Device
+HWID: <redacted>
+Current Language: Português (Brasil)
+FileLocation: <redacted>
+Is Elevated: true
+
+- Other Info -
+
+Antivirus: 
+    - Windows Defender
+
+- Log Info -
+
+Build:_____
+
+Passwords: ✅ 34
+Cookies: ✅ 14
+Wallets: ✅ 1
+Files: ✅ 2
+Credit Cards: ❌
+Servers FTP/SSH: ❌
+Discord Tokens: ❌
+
+Tagged URLs: ❌
+Tagged Cookies: ❌
+
+[... truncated; full sample at ``sample.txt`` (approx. 3 more lines) ...]
 ```
 
 ## Detection

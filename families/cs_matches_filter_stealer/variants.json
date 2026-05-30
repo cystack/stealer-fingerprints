@@ -1,0 +1,22 @@
+{
+  "family": "CSMatchesFilterStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Country",
+        "IP",
+        "Matches",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_7cf7a69f",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

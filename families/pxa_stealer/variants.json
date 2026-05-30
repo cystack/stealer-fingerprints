@@ -46,7 +46,8 @@
         "User"
       ],
       "filenames": [
-        "Information.txt"
+        "Information.txt",
+        "information.txt"
       ],
       "fingerprint_id": "cystack_6077fd6c",
       "panel_brand": null,

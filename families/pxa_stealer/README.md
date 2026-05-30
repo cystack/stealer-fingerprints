@@ -65,7 +65,7 @@ Data Information: CK:1046|PW:10|AF:90|CC:0|TK:0|FB:0|Sites:2|Wallets:0|Apps:0
 **Field keys:**
 `AntiVirus`, `Data Information`, `IP`, `User`
 
-**Filenames:** `Information.txt`
+**Filenames:** `Information.txt`, `information.txt`
 
 **Sample (sanitized):**
 

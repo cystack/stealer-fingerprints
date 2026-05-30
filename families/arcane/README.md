@@ -56,7 +56,7 @@ the subsection body.
 **Attribution confidence:** `high`
 
 **Field keys:**
-`Unhandled Exception`
+`ADMH`, `Anime Eyes`, `Broken Glasses`, `CEP`, `CNPJ`, `Cidade`, `Dados para faturamento`, `Disguise`, `Eye Patch`, `FUNDO`, `HITS`, `Inverted Eyes`, `Realistic Eyes`, `Ribbon Bow`, `Stuck Out Tongue`, `Unhandled Exception`, `Vampire Fangs`
 
 **Filenames:** `Information.txt`
 

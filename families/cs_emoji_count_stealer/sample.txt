@@ -1,20 +1,20 @@
-    - IP Info -
+- IP Info -
 
 IP: <redacted>
-Country: Nigeria
+Country: Brazil
 City: <redacted>
-Postal: 
-ISP: Mtn Nigeria Communication Limited - A29465
-Timezone:  01:00
+Postal: 57055-902
+ISP: BRISANET SERVICOS DE TELECOMUNICACOES S.A - A28126
+Timezone: -03:00
 
 - PC Info -
 
-OS: Microsoft Windows 8.1
-CPU: Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz
-GPU: 
-    - Intel(R) HD Graphics 520 (1366, 768)
+Username: <redacted>
+OS: Microsoft Windows 10 Pro
+CPU: Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
+GPU: Intel(R) HD Graphics (1920, 1080)VirtualMonitor Device
 HWID: <redacted>
-Current Language: English (United States)
+Current Language: Português (Brasil)
 FileLocation: <redacted>
 Is Elevated: true
 
@@ -22,18 +22,22 @@ Is Elevated: true
 
 Antivirus: 
     - Windows Defender
-    - Avast Antivirus
 
 - Log Info -
 
-
 Build:_____
 
-Passwords: ✅ 229
-Cookies: ✅ 5222
-Wallets: ✅ 2
-Files: ✅ 33
+Passwords: ✅ 34
+Cookies: ✅ 14
+Wallets: ✅ 1
+Files: ✅ 2
 Credit Cards: ❌
 Servers FTP/SSH: ❌
-Discord Tokens: ✅ 1
-Others: ❌
+Discord Tokens: ❌
+
+Tagged URLs: ❌
+Tagged Cookies: ❌
+
+Tags Passwords: SOCIAL, SENSITIVE
+
+Tags Cookies:

@@ -64,6 +64,37 @@
       "distribution_channel": null,
       "field_keys": [
         "Anti-Viruses",
+        "Available KeyboardLayouts",
+        "Build ID",
+        "Country",
+        "Current Language",
+        "FileLocation",
+        "Hardwares",
+        "IP",
+        "Location",
+        "Log date",
+        "Name",
+        "Operation System",
+        "Process Elevation",
+        "ScreenSize",
+        "TimeZone",
+        "UAC",
+        "UserName",
+        "Zip Code"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_60a96ef0",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Anti-Viruses",
         "Build ID",
         "Country",
         "Current Language",

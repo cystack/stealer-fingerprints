@@ -1,5 +1,7 @@
+NguyenBang Stealer
 IP: <redacted>
-Country: 🇧🇩 BD - Bangladesh
-User: hp
-AntiVirus: Windows Defender
-Browser Data: CK:3325|PW:43|AF:416|CC:0|FB:2|GADS:False
+Country: EG - Egypt
+User: Dr Mahmoud Sabry
+Antivirus: Windows Defender
+Browser Data: CK: 262|PW: 14|AF: 31|CC: 0
+RuntimeExecption: 0

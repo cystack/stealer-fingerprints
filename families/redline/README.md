@@ -8,7 +8,7 @@ the field block.
 
 **Also known as:** `RedLine`, `RedLineStealer`
 
-**Variants observed:** 18
+**Variants observed:** 19
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -100,6 +100,58 @@ Hardwares:
 Name: Total of RAM, 3982.49 MB or 4175945728 bytes
 Name: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, 4 Cores
 Name: Intel(R) HD Graphics, 1886646272 bytes
+
+
+Anti-Viruses: 
+Windows Defender
+```
+
+### `cystack_60a96ef0`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Anti-Viruses`, `Available KeyboardLayouts`, `Build ID`, `Country`, `Current Language`, `FileLocation`, `Hardwares`, `IP`, `Location`, `Log date`, `Name`, `Operation System`, `Process Elevation`, `ScreenSize`, `TimeZone`, `UAC`, `UserName`, `Zip Code`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+***********************************************
+*                                             *
+*   ____  _____ ____  _     ___ _   _ _____   *
+*  |  _ \| ____|  _ \| |   |_ _| \ | | ____|  *
+*  | |_) |  _| | | | | |    | ||  \| |  _|    *
+*  |  _ <| |___| |_| | |___ | || |\  | |___   *
+*  |_| \_|_____|____/|_____|___|_| \_|_____|  *
+*                                             *
+*  Telegram: <url>  *
+***********************************************
+
+Build ID: @BRADLOGS (BRADMAX) / <url>
+IP: <redacted>
+FileLocation: <redacted>
+UserName: <redacted>
+Country: BD
+Zip Code: <redacted>
+Location: Khulna, Khulna
+Current Language: English (United States)
+ScreenSize: {Width=1440, Height=900}
+TimeZone: (UTC+06:00) Dhaka
+Operation System: Windows 10 Enterprise x64
+UAC: AllowAll
+Process Elevation: False
+Log date: 12/25/2023 <ip> AM
+
+Available KeyboardLayouts: 
+English (United States)
+
+
+Hardwares: 
+Name: Intel(R) Core(TM) i3-6100T CPU @ 3.20GHz, 2 Cores
+Name: Intel(R) HD Graphics 530, 1073741824 bytes
+Name: Total of RAM, 3967.33 MB or 4160045056 bytes
 
 
 Anti-Viruses: 

@@ -23,7 +23,7 @@ keys (`PcName`, `Os`, `Cpu`, etc.).
 
 **Attribution confidence:** `high`
 
-**Filenames:** `pc_info.json`
+**Filenames:** `pc_info.json`, `pc_info.txt`
 
 **Sample (sanitized):**
 

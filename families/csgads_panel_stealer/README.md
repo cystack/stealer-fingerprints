@@ -31,7 +31,7 @@ threat-intel mapping for this exact panel-summary layout.
 
 **Also known as:** `!! 2026 JAN aggregator panel summary`
 
-**Variants observed:** 6
+**Variants observed:** 7
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -132,6 +132,27 @@ IP: <redacted>
 User: WISEDON COMPUTERS EN
 AntiVirus: Windows Defender
 Browser Data: CK:18469|PW:69|AF:745|CC:0|FB:52|GADS:False
+```
+
+### `cystack_b723275e`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Antivirus`, `Browser Data`, `Country`, `IP`, `RuntimeExecption`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+NguyenBang Stealer
+IP: <redacted>
+Country: EG - Egypt
+User: Dr Mahmoud Sabry
+Antivirus: Windows Defender
+Browser Data: CK: 262|PW: 14|AF: 31|CC: 0
+RuntimeExecption: 0
 ```
 
 ### `cystack_e76892c4`

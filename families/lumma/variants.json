@@ -32,6 +32,75 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "LID",
+        "Language",
+        "LummaC2 Build",
+        "NetBIOS",
+        "Path",
+        "RAM Size",
+        "Time",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_1989fd30",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "Domain",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "Install Date",
+        "LID",
+        "Language",
+        "Local Date",
+        "LummaC2 Build",
+        "NetBIOS",
+        "OS Version",
+        "Path",
+        "RAM Size",
+        "Time",
+        "Time Zone",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_4a2e376b",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "Click here"
       ],
       "filenames": [
@@ -133,6 +202,7 @@
       "field_keys": [],
       "filenames": [
         "System.txt",
+        "UserInformation.txt",
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_c65f37b2",

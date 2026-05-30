@@ -2,27 +2,28 @@
 -- <url> | <url> |@BRADMAXCLOUD_BOT
 -- <url> | <url> |@BRADMAXCLOUD_BOT
 
-LummaC2 Build: Jun 11 2025
+LummaC2 Build: Jun  8 2025
 Path: <redacted>
-OS Version: Windows 11 Pro (10.0.22631) x64
-Local Date: 16.06.2025 <ip>
-Time Zone: UTC+4
-Install Date: 05.10.2023 <ip>
+OS Version: Windows 10 Home (10.0.19045) x64
+Local Date: 10.06.2025 <ip>
+Time Zone: UTC+2
+Install Date: 01.01.1970 <ip>
 Elevated: false
-Computer: DESKTOP-TVPSAF8
-User: User
+Computer: 4915
+User: meas
+Domain: <redacted>
 Hostname: <redacted>
-NetBIOS: DESKTOP-TVPSAF8
-Language: en-AE
+NetBIOS: 4915
+Language: de-DE
 HWID: <redacted>
 RAM Size: 16384MB
 CPU Vendor: AuthenticAMD
-CPU Name: AMD Ryzen 5 5600X 6-Core Processor             
-CPU Threads: 12
-CPU Cores: 6
-Display resolution: 2560x1440
+CPU Name: AMD Ryzen 5 3400G with Radeon Vega Graphics    
+CPU Threads: 8
+CPU Cores: 1
+Display resolution: 1920x1080
 IP Address: <redacted>
-Time: 16.06.2025 <ip> (sig:1750080426.1e13882fa064badf1bcdf155530f6200)
+Time: 10.06.2025 <ip> (sig:1749573020.9c760aa202579f611827fbfbb7cd1140)
 Country: <ip>
-LID: yau6Na--1378348465
+LID: yau6Na--7411681655
 

@@ -9,7 +9,7 @@ signature on the `Time:` line. Build banners reference the
 
 **Also known as:** `LummaC2`, `Lumma Stealer`
 
-**Variants observed:** 8
+**Variants observed:** 10
 **Top attribution confidence:** `high`
 **Operator panel brands:** `BRADMAX`, `Deimos Golang Stealer`
 **Distribution channels:** `@BRADLOGS`, `@ft7links`
@@ -124,6 +124,85 @@ Purchase quality material right now - t.me/lummamarketplace_bot
 ------------------------------------
 
 [... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
+```
+
+### `cystack_1989fd30`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Elevated`, `HWID`, `Hostname`, `IP Address`, `LID`, `Language`, `LummaC2 Build`, `NetBIOS`, `Path`, `RAM Size`, `Time`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+
+LummaC2 Build: Jun  8 2025
+Path: <redacted>
+Elevated: false
+Computer: SecHex-OZLFWJQ
+User: Lucas
+Hostname: <redacted>
+NetBIOS: SecHex-OZLFWJQ
+Language: pt-BR
+HWID: <redacted>
+RAM Size: 16384MB
+CPU Vendor: AuthenticAMD
+CPU Name: AMD Ryzen 5 3400G with Radeon Vega Graphics    
+CPU Threads: 8
+CPU Cores: 1
+Display resolution: 1920x1080
+IP Address: <redacted>
+Time: 14.06.2025 <ip> (sig:1749868793.760d1b04b3c03bccbd0bb80348934c6c)
+Country: <ip>
+LID: yau6Na--7400515879
+```
+
+### `cystack_4a2e376b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Domain`, `Elevated`, `HWID`, `Hostname`, `IP Address`, `Install Date`, `LID`, `Language`, `Local Date`, `LummaC2 Build`, `NetBIOS`, `OS Version`, `Path`, `RAM Size`, `Time`, `Time Zone`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+
+LummaC2 Build: Jun  8 2025
+Path: <redacted>
+OS Version: Windows 10 Home (10.0.19045) x64
+Local Date: 10.06.2025 <ip>
+Time Zone: UTC+2
+Install Date: 01.01.1970 <ip>
+Elevated: false
+Computer: 4915
+User: meas
+Domain: <redacted>
+Hostname: <redacted>
+NetBIOS: 4915
+Language: de-DE
+HWID: <redacted>
+RAM Size: 16384MB
+CPU Vendor: AuthenticAMD
+CPU Name: AMD Ryzen 5 3400G with Radeon Vega Graphics    
+CPU Threads: 8
+CPU Cores: 1
+Display resolution: 1920x1080
+IP Address: <redacted>
+Time: 10.06.2025 <ip> (sig:1749573020.9c760aa202579f611827fbfbb7cd1140)
+Country: <ip>
+LID: yau6Na--7411681655
 ```
 
 ### `cystack_65a205e6`
@@ -313,7 +392,7 @@ LID: yau6Na--7400515879
 
 **Attribution confidence:** `high`
 
-**Filenames:** `System.txt`, `system_info.txt`
+**Filenames:** `System.txt`, `UserInformation.txt`, `system_info.txt`
 
 **Sample (sanitized):**
 
