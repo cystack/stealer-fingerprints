@@ -4,6 +4,18 @@
     {
       "attribution_confidence": "high",
       "banner_strings": [],
+      "distribution_channel": "@BRADLOGS",
+      "field_keys": [],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "bradmax",
+      "panel_brand": "BRADMAX",
+      "synthetic": false
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
         "TG"

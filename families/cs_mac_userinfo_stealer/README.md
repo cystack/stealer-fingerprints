@@ -25,7 +25,7 @@ threat-intel mapping for this layout.
 
 **Also known as:** `Bare macOS userinfo.txt panel`, `No-BuildID Cthulhu-shape macOS log`
 
-**Variants observed:** 1
+**Variants observed:** 2
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -37,6 +37,61 @@ threat-intel mapping for this layout.
 - Display configuration (Chipset Model, VRAM, resolution)
 
 ## Variants
+
+### `cystack_5d07c49b`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Board-ID`, `City`, `Country`, `Country Code`, `Graphics/Displays`, `Hardware`, `IP`, `Latitude`, `Longitude`, `Region`, `Software`, `Timezone`, `Zipcode`
+
+**Filenames:** `userinfo.txt`
+
+**Sample (sanitized):**
+
+```
+IP: <redacted>
+Country: Argentina
+Country Code: AR
+Region: Tucuman
+City: <redacted>
+Latitude: <redacted>
+Longitude: <redacted>
+Zipcode: T4000
+Timezone: -03:00
+
+Software:
+
+    System Software Overview:
+
+      System Version: macOS 11.7.10 (20G1427)
+      Kernel Version: Darwin 20.6.0
+      Boot Volume: kingOSX
+      Boot Mode: Normal
+      Computer Name: <redacted>
+      User Name: <redacted>
+      Secure Virtual Memory: Enabled
+      System Integrity Protection: Disabled
+      Time since boot: 14 minutes
+
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: iMac
+      Model Identifier: iMac14,4
+      Processor Name: Quad-Core Intel Core i3
+      Processor Speed: 3,6 GHz
+      Number of Processors: 1
+      Total Number of Cores: 4
+      L2 Cache (per Core): 256 KB
+      L3 Cache: 6 MB
+      Hyper-Threading Technology: Enabled
+      Memory: 8 GB
+      System Firmware Version: <ip>.0
+      Apple ROM Info: Apple ROM Version.
+[... truncated; full sample at ``sample.txt`` (approx. 33 more lines) ...]
+```
 
 ### `cystack_e6b74373`
 

@@ -9,10 +9,10 @@ signature on the `Time:` line. Build banners reference the
 
 **Also known as:** `LummaC2`, `Lumma Stealer`
 
-**Variants observed:** 7
+**Variants observed:** 8
 **Top attribution confidence:** `high`
-**Operator panel brands:** `Deimos Golang Stealer`
-**Distribution channels:** `@ft7links`
+**Operator panel brands:** `BRADMAX`, `Deimos Golang Stealer`
+**Distribution channels:** `@BRADLOGS`, `@ft7links`
 
 ## Targets
 
@@ -23,6 +23,53 @@ signature on the `Time:` line. Build banners reference the
 - Cryptocurrency seed phrases harvested from text files
 
 ## Variants
+
+### `BRADMAX`
+
+**Fingerprint id:** `bradmax`
+
+**Distribution channel:** `@BRADLOGS`
+
+**Attribution confidence:** `high`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+@BRADLOGS (BRADMAX) / <url>
+- Date : Build: Jun  3 2025
+- Configuration:
+- Path: C:\Users\<user>\AppData\Local\Temp\BRADLOGS.exe
+
+- OS Version: Windows 11 Pro (10.0.22631) x64
+- Local Date: 13.07.2025 <ip>
+- Time Zone: UTC+2
+- Install Date: 09.05.2025 <ip>
+- Elevated: false
+- Computer: DESKTOP-0UKU5EL
+- User: ARSENIO
+- Domain: 
+- Hostname: DESKTOP-0UKU5EL
+- NetBIOS: DESKTOP-0UKU5EL
+- Language: id-ID
+- Anti Virus:
+	- Windows Defender
+- HWID: 15338345EDAB91D64DE6BDB7967BA1F9
+- RAM Size: 4096MB
+- CPU Vendor: GenuineIntel
+- CPU Name: Intel(R) Celeron(R) CPU 1007U @ 1.50GHz
+- CPU Threads: 2
+- CPU Cores: 2
+- GPU:
+	- Intel(R) HD Graphics
+- Display resolution: 1366x768
+
+- IP Address: <ip>
+- Time: 13.07.2025 <ip>
+- Country: <ip>
+- @BRADLOGS (BRADMAX) / <url>
+```
 
 ### `cystack_0df566a5`
 

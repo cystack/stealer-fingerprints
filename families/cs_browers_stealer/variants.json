@@ -11,6 +11,27 @@
         "Browers",
         "Country",
         "Extensions",
+        "IP",
+        "Username",
+        "Wallets"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_128633b4",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Antivirus",
+        "Applications",
+        "Browers",
+        "Country",
+        "Extensions",
         "Facebook",
         "Username",
         "Wallets"

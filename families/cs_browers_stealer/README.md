@@ -28,7 +28,7 @@ published threat-intel mapping for this exact panel layout.
 
 **Also known as:** `!! 2025 OCT aggregator panel summary`
 
-**Variants observed:** 2
+**Variants observed:** 3
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -43,6 +43,28 @@ published threat-intel mapping for this exact panel layout.
 - Installed applications of interest (per-victim list)
 
 ## Variants
+
+### `cystack_128633b4`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Antivirus`, `Applications`, `Browers`, `Country`, `Extensions`, `IP`, `Username`, `Wallets`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+IP: <redacted>
+Country: 🇦🇷 AR - Argentina
+Username: <redacted>
+Antivirus: Avast Antivirus
+Extensions: None
+Wallets: None
+Applications: None
+Browers: CK:1911|PW:49|AF:1397|CC:0|GG:2|TT:1|FB:1
+```
 
 ### `cystack_4fdd346f`
 

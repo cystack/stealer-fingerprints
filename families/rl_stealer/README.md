@@ -23,8 +23,10 @@ builder-code confirmation.
 
 **Also known as:** `Ades`, `44Caliber variant`, `StormKitty variant`
 
-**Variants observed:** 1
+**Variants observed:** 2
 **Top attribution confidence:** `medium`
+**Operator panel brands:** `==== RL STEALER ====`
+**Distribution channels:** `@BRADLOGS`
 
 ## Targets
 
@@ -69,6 +71,52 @@ builder-code confirmation.
  MAC: <redacted>
  BIOS caption: Default System BIOS
 ==============================================
+```
+
+### `==== RL STEALER ====`
+
+**Fingerprint id:** `rl_stealer`
+
+**Distribution channel:** `@BRADLOGS`
+
+**Attribution confidence:** `medium`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+==== RL STEALER ==== 
+⏰ Date => 07-23-2025 7:44
+💻System => Windows 10 Pro (64 Bit)
+👤 User => Admin
+🆔 PC => DESKTOP-E8RLH9T
+🏴 Country => [India]
+🔍 IP => <ip>
+📝 Language => 🇮🇳 en-IN
+🔓 Antivirus => Windows Defender.
+ ===={ User Data }====
+📂 FileGrabber => 17
+📦 Telegram => ✅
+💸 Wallets => ❌
+💬 Discord => ❌
+📡 FileZilla: ❌
+ VimeWorld => ❌
+ ===={ VPN }====
+ ∟ NordVPN => ❌
+ ∟ OpenVPN => ❌
+ ∟ ProtonVPN => ❌
+ ===={ Browsers Data }====
+🗝 Passwords => 341
+🕑 History => 1583
+🍪 Cookies => 1049
+📝 AutoFills => 453
+💳 CC => 0
+ ===={ Gaming }====
+ 🎮 Steam => ❌
+ ==================
+ DOMAINS DETECTED:
+ - github.com
 ```
 
 ## Detection

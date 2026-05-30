@@ -1,67 +1,73 @@
 IP: <redacted>
-Country: United Arab Emirates
-Country Code: AE
-Region: Dubayy
+Country: Argentina
+Country Code: AR
+Region: Tucuman
 City: <redacted>
 Latitude: <redacted>
 Longitude: <redacted>
-Zipcode: -
-Timezone: +04:00
+Zipcode: T4000
+Timezone: -03:00
 
 Software:
 
     System Software Overview:
 
-      System Version: macOS 14.7.6 (23H626)
-      Kernel Version: Darwin 23.6.0
-      Boot Volume: Macintosh HD
+      System Version: macOS 11.7.10 (20G1427)
+      Kernel Version: Darwin 20.6.0
+      Boot Volume: kingOSX
       Boot Mode: Normal
       Computer Name: <redacted>
       User Name: <redacted>
       Secure Virtual Memory: Enabled
-      System Integrity Protection: Enabled
-      Time since boot: 21 minutes, 42 seconds
+      System Integrity Protection: Disabled
+      Time since boot: 14 minutes
 
 Hardware:
 
     Hardware Overview:
 
-      Model Name: MacBook Air
-      Model Identifier: MacBookAir8,1
-      Processor Name: Dual-Core Intel Core i5
-      Processor Speed: 1.6 GHz
+      Model Name: iMac
+      Model Identifier: iMac14,4
+      Processor Name: Quad-Core Intel Core i3
+      Processor Speed: 3,6 GHz
       Number of Processors: 1
-      Total Number of Cores: 2
+      Total Number of Cores: 4
       L2 Cache (per Core): 256 KB
-      L3 Cache: 4 MB
+      L3 Cache: 6 MB
       Hyper-Threading Technology: Enabled
       Memory: 8 GB
-      System Firmware Version: 2075.<ip> (iBridge: 22.16.15072.0.0,0)
-      OS Loader Version: 580.140.1~51
-      Serial Number (system): FVFY90N8JK78
-      Hardware UUID: 85B18722-7CDB-54AC-9E87-CB54A7D2B6F1
-      Provisioning UDID: 85B18722-7CDB-54AC-9E87-CB54A7D2B6F1
-      Activation Lock Status: Disabled
+      System Firmware Version: <ip>.0
+      Apple ROM Info: Apple ROM Version.
+Board-ID : Mac-81E3E92DD6088272
+?  Powered by Clover revision: 5132 (master, commit 0035ed3c0)
+      SMC Version (system): 2.21f92
+      Serial Number (system): D25LHACKFY0T
+      Hardware UUID: 813DBB75-0CDE-521D-9AC8-011A1CEB883B
+      Provisioning UDID: 813DBB75-0CDE-521D-9AC8-011A1CEB883B
 
 Graphics/Displays:
 
-    Intel UHD Graphics 617:
+    NVIDIA GeForce GT 710:
 
-      Chipset Model: Intel UHD Graphics 617
+      Chipset Model: NVIDIA GeForce GT 710
       Type: GPU
-      Bus: Built-In
-      VRAM (Dynamic, Max): 1536 MB
-      Vendor: Intel
-      Device ID: 0x87c0
-      Revision ID: 0x0002
-      Metal Support: Metal 3
+      Bus: PCIe
+      Slot: Slot-1
+      PCIe Lane Width: x8
+      VRAM (Total): 1023 MB
+      Vendor: NVIDIA (0x10de)
+      Device ID: 0x128b
+      Revision ID: 0x00a1
+      ROM Revision: VBIOS 80.28.a6.00.35
+      Metal Family: Supported, Metal GPUFamily macOS 1
       Displays:
-        Color LCD:
-          Display Type: Built-In Retina LCD
-          Resolution: 2560 x 1600 Retina
+        DELL 2707WFP:
+          Resolution: 1920 x 1200 (WUXGA - Widescreen Ultra eXtended Graphics Array)
+          UI Looks like: 1920 x 1200 @ 60.00Hz
           Framebuffer Depth: 24-Bit Color (ARGB8888)
+          Display Serial Number: RJ49078S05LS
           Main Display: Yes
           Mirror: Off
           Online: Yes
+          Rotation: Supported
           Automatically Adjust Brightness: Yes
-          Connection Type: Internal
