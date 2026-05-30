@@ -29,7 +29,7 @@ the subsection body.
 
 **Also known as:** `Arcane Stealer`, `VGS Stealer (predecessor)`
 
-**Variants observed:** 1
+**Variants observed:** 2
 **Top attribution confidence:** `high`
 **Operator panel brands:** `@BRADLOGS (BRADMAX)`
 **Distribution channels:** `https://t.me/+0IAf5VIrl_EzNWRi`
@@ -54,6 +54,9 @@ the subsection body.
 **Distribution channel:** `https://t.me/+0IAf5VIrl_EzNWRi`
 
 **Attribution confidence:** `high`
+
+**Field keys:**
+`Unhandled Exception`
 
 **Filenames:** `Information.txt`
 
@@ -101,6 +104,20 @@ the subsection body.
 		MACAddress: <ip>
 		Name: WAN Miniport (IP)
 [... truncated; full sample at ``sample.txt`` (approx. 641 more lines) ...]
+```
+
+### `cystack_c65f37b2`
+
+**Attribution confidence:** `high`
+
+**Filenames:** `Information.txt`, `information.txt`
+
+**Sample (sanitized):**
+
+```
+藃蓂쌟枬甥䈮쉯䪌铃쉏쎿䦴裂Ԇꃂ수슜쎳슲쎍箖跂ꋃꏂ屙숒Ɛ듃鏂냃ⱆ嵞軃藃뫂鏃숄嶀뫃黃飃쌖墦铃菂䌡≨铃彍ꃂꏃ❓ἁ럃ꇂ᝭ॢ䨖ꏂ썣쎮쎺碈ꛂ썌ᾈ㉃맃곃쉄쎎瞁쌂䖶듂駃숤쎺슌슗຺n썅ল썷㲿䀒諂挹鋂蛃⬔돂숊슨쎹ᖲ眵맂맂썒슂슂슣쎷쎶䆣戆晤쉜悮郂鷂鏂곃賂귂썞슦슎쎓슧슖㺱㭾닃伶썷֫ꃃ听雃쉋᪹畏鯂썲슏璶藂썛½쉃䆚곂ᠢ扩뫂┌뿂썸嚏鷂蛃믃鯂쌤䞙胂숅⦠숎쎊ᆝ썾슖쎫㚯㙵賂썴઒ⴊⴭ獕牥䤠普ⵯⴭਊ圉牯敫㩲┠潗歲牥ਥ䐉瑡⁥湉瑳污㩬㜠ㄯ⼴〲㔲ㄠ㨰㤳㐺‰䵁ऊ卉⁏敋㩹攠੮䌉楬扰慯摲›ऊ硅整湲污䤠㩐ㄠㄵ㈮㌵㈮㌴㈮㈲ऊ湉整湲污䤠㩐ㄠ㈹ㄮ㠶㈮⸰㌲ਲ䜉瑡睥祡䤠㩐ㄠ㈹ㄮ㠶㈮⸰਱ⴊⴭ畆汬倠⁣湉潦ⴭਭऊ㴽‽偃⁕湉潦浲瑡潩⁮㴽਽उ慍䍸潬正灓敥㩤ㄠ〳രऊ三浡㩥ㄠ琳⁨敇⁮湉整⡬⥒䌠牯⡥䵔
+㕩ㄭ㌳唴਍उ畎扭牥晏潃敲㩳ㄠരഊਊ㴉㴽䜠啐䤠普牯慭楴湯㴠㴽ऊ䄉慤瑰牥䅒㩍㈠㐱㐷㤷㔵ലऊ三浡㩥䤠瑮汥刨
+[... truncated; full sample at ``sample.txt`` (approx. 1 more lines) ...]
 ```
 
 ## Detection

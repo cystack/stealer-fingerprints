@@ -12,10 +12,11 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Acreed`](families/acreed/) | 1 | 0 | `high` |
 | [`Aetheris Stealer`](families/aetheris_stealer/) | 7 | 0 | `high` |
 | [`Ailurophile`](families/ailurophile/) | 1 | 1 | `high` |
-| [`Arcane`](families/arcane/) | 1 | 1 | `high` |
+| [`Arcane`](families/arcane/) | 2 | 1 | `high` |
 | [`AuraStealer`](families/aura_stealer/) | 2 | 0 | `high` |
 | [`Blank Grabber`](families/blank_grabber/) | 12 | 0 | `high` |
 | [`BracketSection Stealer`](families/bracket_section_stealer/) | 1 | 0 | `unknown` |
+| [`CSAzureBuildStealer`](families/cs_azure_build_stealer/) | 1 | 0 | `unknown` |
 | [`CSBareVersionStealer`](families/cs_bare_version_stealer/) | 1 | 1 | `unknown` |
 | [`CSBinaryGarbageStealer`](families/cs_binary_garbage_stealer/) | 1 | 1 | `unknown` |
 | [`CSBitArchStealer`](families/cs_bit_arch_stealer/) | 1 | 0 | `unknown` |
@@ -45,11 +46,11 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSWmicDumpStealer`](families/cs_wmic_dump_stealer/) | 1 | 0 | `unknown` |
 | [`Category Stealer`](families/category_stealer/) | 3 | 0 | `unknown` |
 | [`Cthulhu Stealer`](families/cthulhu_stealer/) | 26 | 0 | `high` |
-| [`Lumma`](families/lumma/) | 4 | 0 | `high` |
+| [`Lumma`](families/lumma/) | 7 | 1 | `high` |
 | [`MacSync`](families/mac_sync/) | 2 | 0 | `high` |
 | [`Millenium RAT`](families/millenium_rat/) | 1 | 0 | `-` |
 | [`NotMalware`](families/not_malware/) | 1 | 1 | `benign` |
-| [`PXA Stealer`](families/pxa_stealer/) | 6 | 0 | `high` |
+| [`PXA Stealer`](families/pxa_stealer/) | 7 | 0 | `high` |
 | [`Phantom Stealer`](families/phantom_stealer/) | 1 | 1 | `high` |
 | [`PureLogs`](families/pure_logs/) | 1 | 0 | `high` |
 | [`RL Stealer`](families/rl_stealer/) | 1 | 0 | `medium` |
@@ -57,7 +58,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Redline`](families/redline/) | 18 | 0 | `high` |
 | [`RedlineLike Stealer`](families/redline_like_stealer/) | 17 | 0 | `unknown` |
 | [`StealC`](families/steal_c/) | 20 | 0 | `high` |
-| [`Vidar`](families/vidar/) | 3845 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 3846 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 5 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 10 | 0 | `high` |
 

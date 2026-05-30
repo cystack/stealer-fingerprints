@@ -1,0 +1,24 @@
+- Azure Build: 27.05.2025
+- Worker Tag: XwormExp
+- Configuration: 
+
+- OS Version: Windows 10 Pro (10.0.26100) x64
+- Local Date: 18.06.2025 <ip>
+- Time Zone: UTC4
+- Computer: AYAAN-ROCKS
+- User: Ayaan Rocks
+- Language: en-AE
+
+- Anti Virus: Windows Defender
+- HWID: 0494e865
+- RAM Size: 16 GB
+- CPU Name: 13th Gen Intel(R) Core(TM) i7-13620H
+- CPU Threads: 16
+- CPU Cores: 10
+- GPU: Intel(R) UHD Graphics
+- Display resolution: 1920x1080
+
+- IP Address: <ip>
+- Time Save Log: 18.06.2025 <ip>
+- Country: AE
+

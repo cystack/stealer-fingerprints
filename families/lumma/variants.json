@@ -20,6 +20,20 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Click here"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_65a205e6",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "LID"
       ],
       "filenames": [
@@ -69,6 +83,41 @@
       "attribution_confidence": "high",
       "banner_strings": [],
       "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "LID",
+        "Language",
+        "Local Date",
+        "LummaC2 Build",
+        "NetBIOS",
+        "OS Version",
+        "Path",
+        "RAM Size",
+        "Time",
+        "Time Zone",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_bc15a086",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
       "field_keys": [],
       "filenames": [
         "System.txt",
@@ -77,6 +126,18 @@
       "fingerprint_id": "cystack_c65f37b2",
       "panel_brand": null,
       "synthetic": true
+    },
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": "@ft7links",
+      "field_keys": [],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "deimos_golang_stealer",
+      "panel_brand": "Deimos Golang Stealer",
+      "synthetic": false
     }
   ]
 }

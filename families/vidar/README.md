@@ -8,7 +8,7 @@ high-volume infostealer family in 2025+.
 
 **Also known as:** `VidarStealer`
 
-**Variants observed:** 3845
+**Variants observed:** 3846
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -16244,6 +16244,61 @@ svchost.exe
 svchost.exe
 WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 322 more lines) ...]
+```
+
+### `cystack_119902b5`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Tg`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `Information.txt`, `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+MetaMask, Phantom, Tonkeeper, Electrum, Exodus, Coinomi, Daedalus, TrustWallet, Atomic, Unisat, Rabby, Keplr, Tronlink, MagicEden
+Задействую более 15 разных направлений
+Среднее время брута 4-5 дней
+Баланс от 10к$
+% 70/30
+Tg: @brute_meta
+Депозит 10к$ <url>
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: AE
+Version: 14.6
+
+Date: 09/7/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States) / Arabic (Syria)
+Local Time: 09/7/2025 <ip>
+TimeZone: 4
+
+[Hardware]
+Processor: 13th Gen Intel(R) Core(TM) i7-13700F
+Cores: 16
+Threads: 24
+[... truncated; full sample at ``sample.txt`` (approx. 302 more lines) ...]
 ```
 
 ### `cystack_11a01cc7`
