@@ -1,8 +1,10 @@
+@BRADLOGS (BRADMAX) / <url>
+[... 3 blank lines ...]
 Ip: <redacted>
-Country: PH
-Version: 16.5
+Country: EG
+Version: 14.6
 
-Date: 11/11/2025 <ip>
+Date: 13/7/2025 <ip>
 MachineID: <redacted>
 GUID: <redacted>
 HWID: <redacted>
@@ -10,22 +12,22 @@ HWID: <redacted>
 Path: <redacted>
 Work Dir: In memory
 
-Windows: Windows 10 Pro
-Install Date: 24/11/2023 <ip>
-AV: Windows Defender
+Windows: Windows 10 Pro N
+Install Date: Disabled
+AV: Disabled
 Computer Name: <redacted>
 User Name: <redacted>
 Display Resolution: 1920x1080
-Keyboard Languages: English English
-Local Time: 11/11/2025 <ip>
-TimeZone: 8
+Keyboard Languages: English (United States) / Arabic (Egypt)
+Local Time: 13/7/2025 <ip>
+TimeZone: 2
 
 [Hardware]
-Processor: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
-Cores: 4
-Threads: 4
-RAM: 12252 MB
-VideoCard: NVIDIA GeForce GTX 1050 Ti
+Processor: AMD Ryzen 5 PRO 4650G with Radeon Graphics
+Cores: 6
+Threads: 12
+RAM: 15759 MB
+VideoCard: NVIDIA GeForce GTX 1660 Ti
 
 [Processes]
 System
@@ -43,6 +45,10 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
 dwm.exe
 svchost.exe
 svchost.exe
@@ -54,34 +60,22 @@ svchost.exe
 svchost.exe
 svchost.exe
 svchost.exe
-svchost.exe
 NVDisplay.Container.exe
 svchost.exe
+helperservice.exe
+amdfendrsr.exe
+atiesrxx.exe
 svchost.exe
 svchost.exe
 svchost.exe
+atieclxx.exe
 svchost.exe
 svchost.exe
-svchost.exe
-Memory Compression
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-spoolsv.exe
 svchost.exe
 NVDisplay.Container.exe
+conhost.exe
+svchost.exe
+WmiPrvSE.exe
 svchost.exe
 svchost.exe
 svchost.exe
@@ -89,283 +83,326 @@ svchost.exe
 svchost.exe
 svchost.exe
 svchost.exe
-jhi_service.exe
 svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+HPSIsvc.exe
+vgc.exe
+svchost.exe
+IDRService.exe
+agent_ovpnconnect_1675786017207.exe
+QuickExplorerLib.exe
+IUService.exe
+HidHideWatchdog.exe
+SecurityHealthService.exe
+ovpnhelper_service.exe
 nvcontainer.exe
-CCleaner_service.exe
-wallpaperservice32_c.exe
-MsMpEng.exe
-WMIRegistrationService.exe
+WindscribeService.exe
+FCUpdateService.exe
 MpDefenderCoreService.exe
-RstMwService.exe
+MsMpEng.exe
 svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-svchost.exe
+OfficeClickToRun.exe
 dasHost.exe
-SearchIndexer.exe
+svchost.exe
+svchost.exe
+svchost.exe
+warp-svc.exe
+svchost.exe
 dllhost.exe
-svchost.exe
 nvcontainer.exe
-AggregatorHost.exe
-svchost.exe
-svchost.exe
-svchost.exe
-wallpaper32.exe
+WmiPrvSE.exe
 nvcontainer.exe
+nvcontainer.exe
+svchost.exe
+MSPCManagerService.exe
+gamingservicesnet.exe
+gamingservices.exe
+svchost.exe
+SearchIndexer.exe
 sihost.exe
-nvcontainer.exe
 svchost.exe
 svchost.exe
 taskhostw.exe
-CCleaner.exe
 svchost.exe
-ctfmon.exe
-svchost.exe
-explorer.exe
-svchost.exe
-svchost.exe
+MSIAfterburner.exe
 nvsphelper64.exe
 NVIDIA Overlay.exe
 svchost.exe
-NisSrv.exe
-StartMenuExperienceHost.exe
 svchost.exe
+BRADLOGS.exe
+svchost.exe
+NVIDIA Overlay.exe
+NVIDIA Overlay.exe
+NVIDIA Overlay.exe
+NVIDIA Overlay.exe
+StartMenuExperienceHost.exe
+RuntimeBroker.exe
+TrustedInstaller.exe
+TiWorker.exe
+svchost.exe
+svchost.exe
+SearchApp.exe
+RuntimeBroker.exe
 svchost.exe
 RuntimeBroker.exe
-NVIDIA Overlay.exe
-NVIDIA Overlay.exe
-NVIDIA Overlay.exe
-NVIDIA Overlay.exe
-UserOOBEBroker.exe
 svchost.exe
-SecurityHealthSystray.exe
-SecurityHealthService.exe
-RtkNGUI64.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+taskhostw.exe
+RTSS.exe
+EncoderServer.exe
+RTSSHooksLoader64.exe
+TextInputHost.exe
+smartscreen.exe
+vgtray.exe
+wallpaper32.exe
+QuickExplorerLib.exe
+audiodg.exe
+svchost.exe
+MSPCManager.exe
+Rainmeter.exe
+suker.exe
+RDCfg.exe
+RuntimeBroker.exe
+MSPCManagerCore.exe
+RadeonSoftware.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+svchost.exe
+dllhost.exe
+cncmd.exe
+ovpnhelper_service.exe
 svchost.exe
 steam.exe
-Discord.exe
-Discord.exe
-Discord.exe
-Discord.exe
-CompPkgSrv.exe
 steamwebhelper.exe
 steamservice.exe
-Discord.exe
 steamwebhelper.exe
 steamwebhelper.exe
-steamwebhelper.exe
-Discord.exe
-steamwebhelper.exe
-steamwebhelper.exe
-TextInputHost.exe
-RiotClientServices.exe
-teraboxwebservice.exe
-MEGAsync.exe
-mega-desktop-app-gfxworker.exe
-RiotClientCrashHandler.exe
-svchost.exe
-RuntimeBroker.exe
-SearchApp.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-msedgewebview2.exe
-svchost.exe
-ShellExperienceHost.exe
-RuntimeBroker.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-svchost.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-SystemSettings.exe
-ApplicationFrameHost.exe
-svchost.exe
-SearchApp.exe
-RuntimeBroker.exe
-svchost.exe
-svchost.exe
-audiodg.exe
-steamwebhelper.exe
-OneDrive.Sync.Service.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-WmiPrvSE.exe
-steamwebhelper.exe
-svchost.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-chrome.exe
-taskhostw.exe
-svchost.exe
-chrome.exe
-chrome.exe
-svchost.exe
-chrome.exe
-smartscreen.exe
 powershell.exe
+steamwebhelper.exe
 conhost.exe
-svchost.exe
-chrome.exe
-WmiPrvSE.exe
-svchost.exe
-HgRfzRGTFYyIO.exe
-Gko5Kmkos4n.exe
-consent.exe
-msiexec.exe
-msiexec.exe
+steamwebhelper.exe
+steamwebhelper.exe
+mOctYvD.exe
+6rQdNSV.exe
+cmd.exe
+conhost.exe
+timeout.exe
+steamwebhelper.exe
+MarvelRivals_Launcher.exe
+BRADLOGS.exe
 
 [Software]
-BlueStacks App Player - 4.240.30.1002
-CCleaner 7 - 7.0.1010.1196
-CPUID CPU-Z 2.06 - 2.06
-CrystalDiskInfo 9.1.1 - 9.1.1
-AIShoujo AI
-SMPlayer 24.5.0 (x64) - 24.5.0
-Star Rail - <ip>
-GRANDIA HD Remaster
-Ultimate Zombie Defense
-Project Zomboid
-Herd is Coming Demo
-Stay Out
-Nexomon: Extinction
-Loop Hero
-Eternal Dreamers
-Angel Legion: LSP Idle RPG
-ENDER LILIES: Quietus of the Knights
-Dire Destiny :Time Travel
-Bail or Jail Demo
-Zumbi Blocks 2 Open Alpha
-Lethal Company
-Backpack Hero
-CounterSide
-Withering Rooms
-Zold:out
-TRIBE NINE
-Wizardry Variants Daphne
-HoloCure - Save the Fans!
-The Killing Antidote Playtest
-Backpack Battles Demo
-DRACOMATON
-Shadowverse: Worlds Beyond
-Atelier Resleriana: Forgotten Alchemy and the Polar Night Liberator
-Astral Party 
-Drive Beyond Horizons
-Species: Unknown
-Kamikaze Lassplanes Demo
-Blood Typers
-100% Orange Juice
-Blood Typers Demo
-The Walking Dead: No Man's Land
-He is Coming Demo
-THE SPIRIT LIFT Demo
-Morimens
-Reverse: 1999
-Zombieville USA 3D Demo
-Into the Dead: Our Darkest Days Demo
-UNLOVED
-Umamusume: Pretty Derby
-R.E.P.O.
-UNLIGHT:Revive
-CloverPit Demo
-Fogpiercer Demo
-iDigging
-A Simple Life with My Unobtrusive Sister Demo
-Menherarium Demo
-gogh: Focus with Your Avatar Demo
-The Demons Told Me to Make This Game Demo
-Apokerlypse Demo
-Beneath Playtest
-Slot or Not Demo
-SANGRA Demo
-SKYHILL
-Dead In Bermuda
-N.O.X. Demo
-Species: Unknown Demo
-A Game of D.I.C.E. Demo
-Wallpaper Engine
-Shadowverse
-Zomborg
-Scheming Through The Zombie Apocalypse: The Beginning
-Unlight:SchizoChronicle
-Scheming Through The Zombie Apocalypse Ep2: Caged
-Synaptics Pointing Device Driver - <ip>
-WinRAR 6.23 (64-bit) - 6.23.0
-Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219 - 10.0.40219
-Microsoft Update Health Tools - <ip>
-Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030 - 11.0.61030
-Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.44.35211 - 14.44.35211
-Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161 - 9.0.30729.6161
-Microsoft Visual C++ 2022 X64 Additional Runtime - 14.44.35211 - 14.44.35211
-Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.21005 - 12.0.21005
-Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.21005 - 12.0.21005
-Microsoft Visual C++ 2005 Redistributable (x64) - 8.0.61000
-NVIDIA Graphics Driver 581.57 - 581.57
-NVIDIA App <ip> - <ip>
-NVIDIA MessageBus 3 for NvApp - 3.16
-NVIDIA Backend - <ip>
-NvCpl - 1.0
-NVIDIA PhysX System Software 9.23.1019 - 9.23.1019
-NVIDIA FrameView SDK 1.5.11504.36206172 - 1.5.11504.36206172
-NVIDIA HD Audio Driver <ip> - <ip>
-NVIDIA Install Application - 2.1002.438.0
-NVIDIA Container - 1.44
-NVIDIA AIUser Container - 1.44
-NVIDIA LocalSystem Container - 1.44
-NVIDIA Session Container - 1.44
-NVIDIA User Container - 1.44
-NVIDIA NvDLISR - 1.0
-NVIDIA Watchdog Plugin for NvContainer - 1.44
-NVIDIA Telemetry Client - <ip>
-NVIDIA ShadowPlay <ip> - <ip>
-NVIDIA Virtual Audio <ip> - <ip>
-Update for x64-based Windows Systems (KB5001716) - <ip>
-Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030 - 11.0.61030
-Discord - 1.0.9163
-Etheria Restart - <ip>
-Microsoft OneDrive - 25.194.1005.0003
-Riot Client 
+Moonlighter - 1.14.37
+A Plague Tale - Requiem
+A Plague Tale: Innocence
+MSI Afterburner 4.6.5 - 4.6.5
+AI LIMIT
+AMD Chipset Software - <ip>
+Assassin's Creed Mirage
+Assassin's Creed: Origins
+Banishers: Ghosts of New Eden
+Batman: Arkham Knight
+Battle.net
+Bendy and the Dark Revival
+Beyond: Two Souls
+Blasphemous - 0.0.0
+Blue Prince
+Brave - <ip>
+Call of Duty
+Cats and the Other Lives
+Clair Obscur: Expedition 33
+Cuphead
+Cyberpunk 2077
+Dark Souls 3
+Deadpool
+Detroit: Become Human
+DOOM Eternal
+Dragon Ball Sparking ZERO - 0.0.0
+ELDEN RING NIGHTREIGN
+ELDEN RING
+Evil West
+Foxit Reader - <ip>
+Ghost of Tsushima DC
+Ghostrunner 2 - 0.0.0
+Ghostrunner
+God of War: Ragnarok
+Google Chrome - 138.0.7204.101
+High on Life
+Hitman 3
+Hollow Knight
+IObit Uninstaller 13 - <ip>
+It Takes Two
+iTop Data Recovery - <ip>
+JDownloader 2 - 2.0.1
+Kena: Bridge of Spirits
+Lies of P
+Life is Strange: Before the Storm
+Marvel's Spider-Man 2
+Marvels SpiderMan Miles Morales - 0.0.0
+Microsoft Edge - 138.0.3351.83
+Microsoft Edge WebView2 Runtime - 138.0.3351.83
+Mortal Kombat XL
+Mortal Kombat X
+Mortal Shell
+NieR: Automata
+Nioh 2: Complete Edition
+Microsoft Office Professional Plus 2010 - 14.0.4734.1000
+Only Up!
+OpenAL
+Outlast
+Overwatch
+Palworld - 0.0.0
+PC HelpSoft Driver Updater v6.3.939 - 6.3.939
+Poppy Playtime
+POPUCOM
+PowerISO - 7.2
+Prince of Persia: The Lost Crown
+PROJECT 13
+Rainmeter - 4.5.23
+Resident Evil 2
+Resident Evil 4 Remake - 0.0.0
+Resident Evil Village - 0.0.0
+Resident Evil: Village
+RivaTuner Statistics Server 7.3.4 - 7.3.4
+Shadow of the Tomb Raider
+Shinkansen 0
+SIFU
+Silent Hill 2
+Steam - <ip>
+The Last of Us: Part I
+The Witcher 3: GotY Edition
+Heaven Benchmark version 4.0 - 4.0
+Ubisoft Connect - 152.0.11052
+XDefiant - 
+Trackmania - 
+The Amazing Spider-Man 2 - 1
+VLC media player - 3.0.4
+Watch Dogs - 0.0.0
+Wise Disk Cleaner - 11.1.8
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40664 - 12.0.40664.0
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.30501 - 12.0.30501.0
+Microsoft Windows Desktop Runtime - 6.0.36 (x64) - 6.0.36.34217
+Microsoft Windows Desktop Runtime - 5.0.17 (x86) - 5.0.17.31219
+Microsoft Windows Desktop Runtime - 5.0.17 (x86) - 40.68.31219
+It Takes Two
+Microsoft GameInput - 10.1.22621.3036
+Microsoft Windows Desktop Runtime - 5.0.17 (x64) - 5.0.17.31219
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030 - 11.0.61030.0
+Foxit Cloud - <ip>
+Launcher Prerequisites (x64) - <ip>
+NetMod version 5.0.3 - 5.0.3
+Microsoft Windows Desktop Runtime - 8.0.18 (x64) - 8.0.18.35017
+Microsoft .NET Host - 5.0.17 (x86) - 40.68.31213
+Epic Online Services - <ip>
+Microsoft .NET Runtime - 5.0.17 (x86) - 40.68.31213
+Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.42.34438 - 14.42.34438
+REDRAGON Gaming Mouse - 1.0.12
+Flawless Widescreen version 1.0.15 - 1.0.15
+Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.40664 - 12.0.40664
+Microsoft Office Professional Plus 2010 - 14.0.4734.1000
+Update for Microsoft Office 2010 (KB2760631) 32-Bit Edition
+Update for Microsoft Office 2010 (KB2494150)
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Update for Microsoft Office 2010 (KB2825640) 32-Bit Edition
+Definition Update for Microsoft Office 2010 (KB3115475) 32-Bit Edition
+Microsoft Office Access MUI (English) 2010 - 14.0.4734.1000
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Microsoft Office Excel MUI (English) 2010 - 14.0.4734.1000
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Microsoft Office PowerPoint MUI (English) 2010 - 14.0.4734.1000
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Microsoft Office Publisher MUI (English) 2010 - 14.0.4734.1000
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Microsoft Office Outlook MUI (English) 2010 - 14.0.4734.1000
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Microsoft Office Word MUI (English) 2010 - 14.0.4734.1000
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Microsoft Office Proof (English) 2010 - 14.0.4734.1000
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Microsoft Office Proof (French) 2010 - 14.0.4734.1000
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Microsoft Office Proof (Spanish) 2010 - 14.0.4734.1000
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Microsoft Office Proofing (English) 2010 - 14.0.4734.1000
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Microsoft Office InfoPath MUI (English) 2010 - 14.0.4734.1000
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Microsoft Office Shared MUI (English) 2010 - 14.0.4734.1000
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Microsoft Office OneNote MUI (English) 2010 - 14.0.4734.1000
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Microsoft Office Groove MUI (English) 2010 - 14.0.4734.1000
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Microsoft Office Shared Setup Metadata MUI (English) 2010 - 14.0.4734.1000
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Microsoft Office Access Setup Metadata MUI (English) 2010 - 14.0.4734.1000
+Update for Microsoft Office 2010 (KB2553347) 32-Bit Edition
+Office 16 Click-to-Run Extensibility Component - 16.0.18925.20158
+osu! - latest
+AMD PSP Driver - <ip>
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161 - 9.0.30729.6161
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40664 - 12.0.40664.0
+AMD Ryzen Balanced Driver - <ip>
+Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030 - 11.0.61030.0
+Microsoft Visual C++ 2022 X86 Additional Runtime - 14.42.34438 - 14.42.34438
+AMD SBxxx SMBus Driver - <ip>
+Microsoft .NET Host FX Resolver - 5.0.17 (x86) - 40.68.31213
+Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61030 - 11.0.61030
+UE Prerequisites (x64) - <ip>
+Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.42.34438 - 14.42.34438.0
+Promontory_GPIO Driver - <ip>
+Epic Games Launcher - <ip>
+Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.42.34438 - 14.42.34438.0
+Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61030 - 11.0.61030
+StopUpdates10 version 4.6.2024.0403 - 4.6.2024.0403
+Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030 - 11.0.61030.0
+Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.40664 - 12.0.40664
+Microsoft XNA Framework Redistributable 4.0 Refresh - 4.0.30901.0
+AMD GPIO2 Driver - <ip>
+JoyToKey version 6.9.3 - 6.9.3
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030 - 11.0.61030.0
+Microsoft Visual C++ 2010 Redistributable - x86 10.0.40219 - 10.0.40219
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.30501 - 12.0.30501.0
+Batman Arkham Origins - 6.0
+AMD_Chipset_Drivers - <ip>
+Discord - 1.0.9177
+DLSS Swapper - <ip>
+Google Chrome - 117.0.5938.152
+Medal - 4.1769.0
+Proton Pass - 1.32.0
+Proton Mail - 1.8.0
+Quick Explorer Lib 6.12.5.4671
+League of Legends
+VALORANT
+Roblox Player for RC
+Spotify - <ip>.g46a15f6b
+Telegram Desktop - 5.8.1
+

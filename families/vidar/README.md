@@ -8,7 +8,7 @@ high-volume infostealer family in 2025+.
 
 **Also known as:** `VidarStealer`
 
-**Variants observed:** 3879
+**Variants observed:** 3884
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -10964,6 +10964,61 @@ svchost.exe
 fontdrvhost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 289 more lines) ...]
+```
+
+### `cystack_0c43e5bc`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`A Plague Tale`, `AV`, `Banishers`, `Batman`, `Beyond`, `Clair Obscur`, `Computer Name`, `Cores`, `Country`, `Date`, `Detroit`, `Display Resolution`, `GUID`, `God of War`, `HWID`, `Install Date`, `Ip`, `Kena`, `Keyboard Languages`, `Life is Strange`, `Local Time`, `MachineID`, `NieR`, `Nioh 2`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+@BRADLOGS (BRADMAX) / <url>
+
+Ip: <redacted>
+Country: EG
+Version: 14.6
+
+Date: 13/7/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro N
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States) / Arabic (Egypt)
+Local Time: 13/7/2025 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: AMD Ryzen 5 PRO 4650G with Radeon Graphics
+Cores: 6
+Threads: 12
+RAM: 15759 MB
+VideoCard: NVIDIA GeForce GTX 1660 Ti
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+services.exe
+lsass.exe
+[... truncated; full sample at ``sample.txt`` (approx. 389 more lines) ...]
 ```
 
 ### `cystack_0c490f17`
@@ -38411,6 +38466,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 356 more lines) ...]
 ```
 
+### `cystack_2df7eb6b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Microsoft Age of Empires II`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+
+Ip: <redacted>
+Country: ES
+Version: 13.2
+
+Date: 21/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Espa?ol (Espa?a, internacional)
+Local Time: 21/3/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz
+Cores: 6
+Threads: 12
+RAM: 16318 MB
+VideoCard: NVIDIA GeForce GTX 1070 Ti
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+services.exe
+[... truncated; full sample at ``sample.txt`` (approx. 305 more lines) ...]
+```
+
 ### `cystack_2dfa3758`
 
 **Attribution confidence:** `high`
@@ -46824,6 +46934,61 @@ services.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 208 more lines) ...]
+```
+
+### `cystack_393bb611`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`A Plague Tale`, `AV`, `Banishers`, `Batman`, `Beyond`, `Clair Obscur`, `Computer Name`, `Cores`, `Country`, `Date`, `Detroit`, `Display Resolution`, `GUID`, `God of War`, `HWID`, `Install Date`, `Ip`, `Kena`, `Keyboard Languages`, `Life is Strange`, `Local Time`, `MachineID`, `NieR`, `Nioh 2`, `Path`, `Prince of Persia`, `Processor`, `RAM`, `Resident Evil`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+@BRADLOGS (BRADMAX) / <url>
+[... 3 blank lines ...]
+Ip: <redacted>
+Country: EG
+Version: 14.6
+
+Date: 13/7/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro N
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States) / Arabic (Egypt)
+Local Time: 13/7/2025 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: AMD Ryzen 5 PRO 4650G with Radeon Graphics
+Cores: 6
+Threads: 12
+RAM: 15759 MB
+VideoCard: NVIDIA GeForce GTX 1660 Ti
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+services.exe
+lsass.exe
+[... truncated; full sample at ``sample.txt`` (approx. 367 more lines) ...]
 ```
 
 ### `cystack_39401f93`
@@ -164141,6 +164306,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 195 more lines) ...]
 ```
 
+### `cystack_c610bbd9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `WireGuard Installer`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+
+Ip: <redacted>
+Country: EG
+Version: 14.4
+
+Date: 4/7/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English (United States) / Arabic (Egypt)
+Local Time: 4/7/2025 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz
+Cores: 2
+Threads: 4
+RAM: 3836 MB
+VideoCard: Intel(R) UHD Graphics
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+services.exe
+[... truncated; full sample at ``sample.txt`` (approx. 245 more lines) ...]
+```
+
 ### `cystack_c617ac8c`
 
 **Attribution confidence:** `high`
@@ -192914,6 +193134,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 259 more lines) ...]
+```
+
+### `cystack_e88ff9ed`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Tg`, `The Witcher`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+MetaMask, Phantom, Tonkeeper, Electrum, Exodus, Coinomi, Daedalus, TrustWallet, Atomic, Unisat, Rabby, Keplr, Tronlink, MagicEden
+Задействую более 15 разных направлений
+Среднее время брута 4-5 дней
+Баланс от 10к$
+% 70/30
+Tg: @brute_meta
+Депозит 10к$ <url>
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: EG
+Version: 14.6
+
+Date: 09/7/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English (United States) / Arabic (Egypt)
+Local Time: 09/7/2025 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 283 more lines) ...]
 ```
 
 ### `cystack_e895ea21`
