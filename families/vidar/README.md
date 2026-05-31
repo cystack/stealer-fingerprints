@@ -8,7 +8,7 @@ high-volume infostealer family in 2025+.
 
 **Also known as:** `VidarStealer`
 
-**Variants observed:** 3886
+**Variants observed:** 3887
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -81749,6 +81749,61 @@ services.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 353 more lines) ...]
+```
+
+### `cystack_63e71f3b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `The Legend of Zelda`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+
+Ip: <redacted>
+Country: GY
+Version: 14.4
+
+Date: 4/7/2025 <ip>
+MachineID: 	<redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English (United States)
+Local Time: 4/7/2025 <ip>
+TimeZone: -5
+
+[Hardware]
+Processor: AMD Ryzen 7 5800X 8-Core Processor             
+Cores: 8
+Threads: 16
+RAM: 32672 MB
+VideoCard: AMD Radeon RX 6600
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+[... truncated; full sample at ``sample.txt`` (approx. 289 more lines) ...]
 ```
 
 ### `cystack_640eaf9d`

@@ -1,0 +1,31 @@
+{
+  "family": "CSOneGoStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Build Name",
+        "CPU",
+        "Computer Name",
+        "Country ISO2",
+        "Date",
+        "Elevated",
+        "Enviromental Variables",
+        "Execute Path",
+        "GPU",
+        "IP",
+        "Operation System",
+        "Screen Resolution",
+        "User Name"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "one_go",
+      "panel_brand": "One-Go",
+      "synthetic": false
+    }
+  ]
+}
