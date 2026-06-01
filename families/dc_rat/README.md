@@ -53,7 +53,7 @@ European format.
 **Field keys:**
 `Antivirus`, `BIOS`, `CPU Cores`, `CPU Name`, `City`, `Country`, `Firewall`, `GPU Mode`, `GPU Name`, `IP`, `LANIP`, `Location`, `Monitors`, `Motherboard`, `PC Name`, `Path`, `RAM`, `Save Time`, `User Name`, `Windows`
 
-**Filenames:** `Information [ID, Batam].txt`, `Information [ID].txt`
+**Filenames:** `Information [ID, Batam].txt`, `Information [ID].txt`, `Information [IN, Sibsu0101gar].txt`, `Information [IN].txt`
 
 **Sample (sanitized):**
 
