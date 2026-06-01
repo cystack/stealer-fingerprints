@@ -2,6 +2,18 @@
   "family": "Lumma",
   "variants": [
     {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": "t.me/additionallibraries",
+      "field_keys": [],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "al_stealer",
+      "panel_brand": "AL Stealer",
+      "synthetic": false
+    },
+    {
       "attribution_confidence": "high",
       "banner_strings": [],
       "distribution_channel": "@BRADLOGS",

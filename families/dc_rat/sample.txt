@@ -1,0 +1,32 @@
+  ___           _      ___             _        _   ___    _ _____ 
+ |   \ __ _ _ _| |__  / __|_ _ _  _ __| |_ __ _| | | _ \  /_\_   _|
+ | |) / _` | '_| / / | (__| '_| || (_-<  _/ _` | | |   / / _ \| |  
+ |___/\__,_|_| |_\_\  \___|_|  \_, /__/\__\__,_|_| |_|_\/_/ \_\_|  
+                               |__/                                
+———————————————————————————————————————
+PC Name: GREDDY
+User Name: <redacted>
+Windows: Windows 10 Home 64 Bit
+CPU Name: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz (Intel64 Family 6 Model 141 Stepping 1)
+CPU Cores: 6 (12)
+GPU Name: NVIDIA GeForce RTX 2050 (4 GB)
+GPU Mode: 1920 x 1080 x 4294967296 colors
+Motherboard: ASUSTeK COMPUTER INC. FX506HF (R520NRCX005KXNMB)
+BIOS: FX506HF.312 (_ASUS_ - 1072009)
+Antivirus: Windows Defender
+Firewall: Unknown
+RAM: 15,74 GB
+LANIP: <ip>
+
+.NET Framework Version: 4.8+
+Path: <redacted>
+
+IP: <redacted>
+City: <redacted>
+Country: ID / Indonesia
+Location: 1.0265 / 103.9259
+
+Monitors: 
+Unknown
+
+Save Time: 21.06.2025 16:28

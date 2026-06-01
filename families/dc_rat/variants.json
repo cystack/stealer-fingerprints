@@ -1,0 +1,39 @@
+{
+  "family": "DCRat",
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Antivirus",
+        "BIOS",
+        "CPU Cores",
+        "CPU Name",
+        "City",
+        "Country",
+        "Firewall",
+        "GPU Mode",
+        "GPU Name",
+        "IP",
+        "LANIP",
+        "Location",
+        "Monitors",
+        "Motherboard",
+        "PC Name",
+        "Path",
+        "RAM",
+        "Save Time",
+        "User Name",
+        "Windows"
+      ],
+      "filenames": [
+        "Information [ID, Batam].txt",
+        "Information [ID].txt"
+      ],
+      "fingerprint_id": "cystack_874d2bb5",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

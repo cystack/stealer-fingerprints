@@ -9,10 +9,10 @@ signature on the `Time:` line. Build banners reference the
 
 **Also known as:** `LummaC2`, `Lumma Stealer`
 
-**Variants observed:** 10
+**Variants observed:** 11
 **Top attribution confidence:** `high`
-**Operator panel brands:** `BRADMAX`, `Deimos Golang Stealer`
-**Distribution channels:** `@BRADLOGS`, `@ft7links`
+**Operator panel brands:** `AL Stealer`, `BRADMAX`, `Deimos Golang Stealer`
+**Distribution channels:** `@BRADLOGS`, `@ft7links`, `t.me/additionallibraries`
 
 ## Targets
 
@@ -23,6 +23,55 @@ signature on the `Time:` line. Build banners reference the
 - Cryptocurrency seed phrases harvested from text files
 
 ## Variants
+
+### `AL Stealer`
+
+**Fingerprint id:** `al_stealer`
+
+**Distribution channel:** `t.me/additionallibraries`
+
+**Attribution confidence:** `medium`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+# Join now: t.me/additionallibraries
+# Best Hypixel Skyblock free rat
+- AL Stealer Build: May 17 2025
+
+- OS Version: Microsoft Windows 11 Home (10.0.22631) x64
+- Local Date: 21.06.2025 <ip>
+- Time Zone: UTC+00:00 Dublin, Edinburgh, Lisbon, London
+- Install Date: 11.04.2024 <ip>
+- Computer: Eric
+- User: ebouc
+- Domain: WORKGROUP
+- Hostname: Eric
+- Anti Virus:
+  - Windows Defender
+- HWID: 39373338383931616437373734663765
+- RAM Size: 16384MB
+- CPU Vendor: GenuineIntel
+- CPU Name: Intel(R) Core(TM) i9-14900HX
+- CPU Threads: 32
+- CPU Cores: 24
+- GPU: Meta Virtual Monitor
+- Display resolution: 2048x1280
+
+- Clipboard: 
+win+r appdata  → roaming  → .minecraft → mods
+
+- IP Address: <ip>
+- Time: 21.06.2025 <ip>
+- Country: NL
+
+------------------------------------
+Free/Best hypixel rat >> t.me/additionallibraries
+Free, discord bot, cookies, passwords, crypto wallets, non dhooked, more than 180 applications that can be stealed and much more.
+Become better right now - t.me/additionallibraries
+```
 
 ### `BRADMAX`
 
