@@ -1,0 +1,19 @@
+{
+  "family": "RMS",
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": "@BRADLOGS",
+      "field_keys": [
+        "RMS"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "bradmax",
+      "panel_brand": "BRADMAX",
+      "synthetic": false
+    }
+  ]
+}
