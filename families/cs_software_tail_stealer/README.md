@@ -49,7 +49,10 @@ could come from a Vidar fork or an unrelated builder.
 
 **Attribution confidence:** `unknown`
 
-**Filenames:** `information.txt`
+**Field keys:**
+`All Users`, `Color Depth`, `Device Name`, `Device String`, `Installed Apps`, `Network Info`, `Process List`, `Process count`, `Resolution`
+
+**Filenames:** `information.txt`, `system_info.txt`
 
 **Sample (sanitized):**
 

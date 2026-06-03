@@ -9,7 +9,7 @@ the underlying field layout intact.
 
 **Also known as:** `redline`, `redline-extended`
 
-**Variants observed:** 17
+**Variants observed:** 25
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -87,6 +87,36 @@ Keyboard Language: English
 Display Resolution: 1920x1080
 ```
 
+### `cystack_2b6c44c5`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Display Resolution`, `Domain Name`, `Graphics card`, `Integrity`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Product Key`, `TimeZone`, `Traffic`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 06 Jun 25 20:51 CEST
+Traffic: @BRADMAX_LOG (BRADMAX) / <url>
+Operation System: Windows 11 23H2 build 22631 (64 Bit)
+Graphics card: NVIDIA GeForce GTX 1070
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key:
+User Name: <redacted>
+Admin Group: TRUE
+Integrity: High
+TimeZone: UTC+2
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+Wallpaper Hash: 75fac2956852c4176f1a463aeb436451e3c40bfb
+```
+
 ### `cystack_2d2c7ce0`
 
 **Attribution confidence:** `unknown`
@@ -155,6 +185,36 @@ UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1920x1080
 Wallpaper Hash: 2a9dc3afc25ee3f465343d47108ab027bb519214
+```
+
+### `cystack_3ffbbc4b`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Display Resolution`, `Domain Name`, `Graphics card`, `Integrity`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 01 Jun 25 19:10 MSK
+Processor: AMD Ryzen 5 5600X 6-Core Processor
+Operation System: Windows 11 24H2 build 26100 (64 Bit)
+Graphics card: NVIDIA GeForce GTX 1070
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key:
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+4
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+Wallpaper Hash: fdf75faf77bd6876018383a7fbf3e182026fdb3e
 ```
 
 ### `cystack_47bdc5de`
@@ -292,6 +352,41 @@ Keyboard Language: English
 Display Resolution: 5120x1440
 ```
 
+### `cystack_5f7be6d7`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `Traffic`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 06 Jun 25 20:00 CEST
+Traffic: @BRADMAX_LOG (BRADMAX) / <url>
+Country: AR
+IP: <redacted>
+System Language: Spanish
+Processor: AMD Ryzen 5 4500 6-Core Processor
+Installed RAM: 40751 MB
+Operation System: Windows 11 24H2 build 26100 (64 Bit)
+Graphics card: NVIDIA GeForce RTX 3060
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key:
+User Name: <redacted>
+Admin Group: TRUE
+Integrity: High
+TimeZone: UTC-3
+UserLanguage: Spanish
+Keyboard Language: Spanish
+Display Resolution: 2560x1440
+Wallpaper Hash: 057c2a661c927407f659de4e8c8d30fc913acaa4
+```
+
 ### `cystack_60ccf6d5`
 
 **Attribution confidence:** `unknown`
@@ -324,6 +419,40 @@ UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1720x1080
 Wallpaper Hash: 4d10156e41790d76cd3e7133778b082af9242d78
+```
+
+### `cystack_64ab919a`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `Traffic`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 03 Jun 25 06:13 CEST
+Traffic: @BRADMAX_LOG (BRADMAX) / <url>
+Country: JP
+IP: <redacted>
+System Language: Japanese
+Processor: 12th Gen Intel(R) Core(TM) i5-12400
+Installed RAM: 16125 MB
+Operation System: Windows 11 24H2 build 26100 (64 Bit)
+Graphics card: NVIDIA GeForce RTX 3060
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key:
+Admin Group: TRUE
+Integrity: High
+TimeZone: UTC+9
+UserLanguage: Japanese
+Keyboard Language: Japanese
+Display Resolution: 1920x1080
+Wallpaper Hash: 0f8bee011383a069bd2d1fbd678fba86021b5036
 ```
 
 ### `cystack_655435f6`
@@ -395,6 +524,72 @@ Display Resolution: 1920x1200
 Wallpaper Hash: 32a4f2aead9726b13a6b06d1170070a036adac8e
 ```
 
+### `cystack_6f79d741`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Display Resolution`, `Domain Name`, `Graphics card`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `Traffic`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 26 May 25 17:48 UTC
+Traffic: @BRADMAX_LOG (BRADMAX) / <url>
+System Language: English
+Processor: Intel(R) Core(TM) i7-2630QM CPU @ 2.00GHz
+Installed RAM: 8152 MB
+Operation System: Windows 10 22H2 build 19045 (64 Bit)
+Graphics card: NVIDIA GeForce GT 555M
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key:
+User Name: <redacted>
+Admin Group: TRUE
+Integrity: High
+TimeZone: UTC+1
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+Wallpaper Hash: 92ada9d59909cfc574f7792feb6bb86d260f2183
+```
+
+### `cystack_9e96ff0e`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 01 Jun 25 20:48 MSK
+Country: AR
+System Language: Spanish
+Processor: Pentium(R) Dual-Core  CPU      E5400  @ 2.70GHz
+Installed RAM: 7391 MB
+Operation System: Windows 10 21H2 build 19044 (64 Bit)
+Graphics card: Intel(R) Q45/Q43 Express Chipset (Microsoft Corporation - WDDM 1.1)
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key:
+User Name: <redacted>
+Admin Group: TRUE
+Integrity: High
+TimeZone: UTC-3
+UserLanguage: Spanish
+Keyboard Language: Spanish
+Display Resolution: 1280x768
+Wallpaper Hash: 092de22a2e2a5929e32da3495acf45ed14ce9ec5
+```
+
 ### `cystack_ac5ebc70`
 
 **Attribution confidence:** `unknown`
@@ -428,6 +623,68 @@ UserLanguage: English
 Keyboard Language: French
 Display Resolution: 1366x768
 Wallpaper Hash: 9926b26bfb8ba791ca1b08e52dbcc60bd1daed78
+```
+
+### `cystack_b59e8be9`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Display Resolution`, `Domain Name`, `Graphics card`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Product Key`, `TimeZone`, `Traffic`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 03 Jun 25 14:27 CEST
+Traffic: @BRADMAX_LOG (BRADMAX) / <url>
+Installed RAM: 8062 MB
+Operation System: Windows 10 22H2 build 19045 (64 Bit)
+Graphics card: Intel(R) HD Graphics
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key:
+User Name: <redacted>
+Admin Group: TRUE
+Integrity: High
+TimeZone: UTC-3
+UserLanguage: Portuguese
+Keyboard Language: Portuguese
+Display Resolution: 1366x768
+Wallpaper Hash:
+```
+
+### `cystack_be979f63`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Display Resolution`, `Domain Name`, `Graphics card`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 02 Jun 25 14:53 MSK
+System Language: English
+Installed RAM: 65219 MB
+Operation System: Windows 11 24H2 build 26100 (64 Bit)
+Graphics card: NVIDIA RTX A5000
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key:
+User Name: <redacted>
+Admin Group: TRUE
+Integrity: High
+TimeZone: UTC+1
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 2560x1440
+Wallpaper Hash: 0b18218a3d98e5d4a1e126f6aaad589b23e4d426
 ```
 
 ### `cystack_c47c7f16`

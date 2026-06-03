@@ -5,9 +5,20 @@
       "attribution_confidence": "unknown",
       "banner_strings": [],
       "distribution_channel": "@BRADLOGS",
-      "field_keys": [],
+      "field_keys": [
+        "All Users",
+        "Color Depth",
+        "Device Name",
+        "Device String",
+        "Installed Apps",
+        "Network Info",
+        "Process List",
+        "Process count",
+        "Resolution"
+      ],
       "filenames": [
-        "information.txt"
+        "information.txt",
+        "system_info.txt"
       ],
       "fingerprint_id": "bradmax",
       "panel_brand": "BRADMAX",

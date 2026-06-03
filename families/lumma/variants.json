@@ -30,12 +30,74 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "LID",
+        "Language",
+        "NetBIOS",
+        "Path",
+        "RAM Size",
+        "Time",
+        "Time Zone",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_0b22cc29",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "TG"
       ],
       "filenames": [
         "System.txt"
       ],
       "fingerprint_id": "cystack_0df566a5",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Country",
+        "Display resolution",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "LID",
+        "Language",
+        "NetBIOS",
+        "OS Version",
+        "Path",
+        "RAM Size",
+        "Time",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_17440144",
       "panel_brand": null,
       "synthetic": true
     },
@@ -83,6 +145,37 @@
         "Computer",
         "Country",
         "Display resolution",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "Install Date",
+        "LID",
+        "Language",
+        "NetBIOS",
+        "Path",
+        "RAM Size",
+        "Time",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_38ce40fc",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
         "Domain",
         "Elevated",
         "HWID",
@@ -113,6 +206,102 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Country",
+        "Display resolution",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "LID",
+        "Language",
+        "NetBIOS",
+        "Path",
+        "RAM Size",
+        "Time",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_4d2e6c3b",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "Install Date",
+        "LID",
+        "Language",
+        "Local Date",
+        "LummaC2 Build",
+        "NetBIOS",
+        "Path",
+        "RAM Size",
+        "Time Zone",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_5178f185",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "LID",
+        "Language",
+        "NetBIOS",
+        "OS Version",
+        "Path",
+        "RAM Size",
+        "Time",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_642a0aa1",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "Click here"
       ],
       "filenames": [
@@ -127,12 +316,241 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "Domain",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "LID",
+        "Language",
+        "NetBIOS",
+        "Path",
+        "RAM Size",
+        "Time",
+        "Time Zone",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_67f302a7",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Country",
+        "Display resolution",
+        "Domain",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "LID",
+        "Language",
+        "NetBIOS",
+        "Path",
+        "RAM Size",
+        "Time",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_70df1596",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "Domain",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "Install Date",
+        "LID",
+        "Language",
+        "Local Date",
+        "LummaC2 Build",
+        "NetBIOS",
+        "OS Version",
+        "RAM Size",
+        "Time",
+        "Time Zone",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_78a2bec1",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "LID",
+        "Language",
+        "NetBIOS",
+        "Path",
+        "RAM Size",
+        "Time Zone",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_7c2f44f2",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "LID"
       ],
       "filenames": [
         "System.txt"
       ],
       "fingerprint_id": "cystack_802420de",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "LID",
+        "Language",
+        "Local Date",
+        "LummaC2 Build",
+        "NetBIOS",
+        "OS Version",
+        "RAM Size",
+        "Time",
+        "Time Zone",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_86f8cf79",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "Install Date",
+        "LID",
+        "Language",
+        "Local Date",
+        "LummaC2 Build",
+        "NetBIOS",
+        "Path",
+        "RAM Size",
+        "Time",
+        "Time Zone",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_a2cb2029",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "LID",
+        "Language",
+        "LummaC2 Build",
+        "NetBIOS",
+        "RAM Size",
+        "Time"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_a33378ed",
       "panel_brand": null,
       "synthetic": true
     },
@@ -169,6 +587,36 @@
         "Information.txt"
       ],
       "fingerprint_id": "cystack_b2f2fa78",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Country",
+        "Display resolution",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "LID",
+        "Language",
+        "LummaC2 Build",
+        "NetBIOS",
+        "RAM Size",
+        "Time",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_b7e3e9f5",
       "panel_brand": null,
       "synthetic": true
     },
@@ -218,6 +666,200 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_c65f37b2",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "Install Date",
+        "LID",
+        "Language",
+        "Local Date",
+        "LummaC2 Build",
+        "NetBIOS",
+        "OS Version",
+        "RAM Size",
+        "Time",
+        "Time Zone",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_c8acc99b",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "LID",
+        "Language",
+        "LummaC2 Build",
+        "NetBIOS",
+        "Path",
+        "RAM Size",
+        "Time",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_cd164f31",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "Install Date",
+        "LID",
+        "Language",
+        "Local Date",
+        "LummaC2 Build",
+        "NetBIOS",
+        "OS Version",
+        "RAM Size",
+        "Time Zone",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_d9beb4e5",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Country",
+        "Display resolution",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "LID",
+        "Language",
+        "LummaC2 Build",
+        "NetBIOS",
+        "RAM Size",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_e4df1ff8",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "Install Date",
+        "LID",
+        "Language",
+        "Local Date",
+        "LummaC2 Build",
+        "NetBIOS",
+        "OS Version",
+        "RAM Size",
+        "Time",
+        "Time Zone"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_ee2649ee",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "LID",
+        "Language",
+        "NetBIOS",
+        "Path",
+        "RAM Size",
+        "Time",
+        "Time Zone",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_f3c7371d",
       "panel_brand": null,
       "synthetic": true
     },

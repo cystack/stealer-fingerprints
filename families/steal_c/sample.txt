@@ -1,384 +1,203 @@
-
-ㅤ______     ______   ______     ______     __         ______
-/\  ___\   /\__  _\ /\  ___\   /\  __ \   /\ \       /\  ___\
-\ \___  \  \/_/\ \/ \ \  __\   \ \  __ \  \ \ \____  \ \ \____
- \/\_____\    \ \_\  \ \_____\  \ \_\ \_\  \ \_____\  \ \_____\
-  \/_____/     \/_/   \/_____/   \/_/\/_/   \/_____/   \/_____/
-
-                       stealc stealer
-
-powerful native stealer based on C lang
-
-forum topics:
-	- <url>
-	- <url>
-
-buy:
-	- jabber: <email>
-        - tox: 1FCCEA0D37D99894B958C0FCEAC66034FE3580B193C335745D632A19F8E6053C34DFEAAE2538
-
-----------------------------------------------------------------
-
-.--------------. .--------------. .--------------. .--------------. .--------------. 
-| ____    ____ | |      __      | |     _____    | |  _________   | |  _________   | 
-||_   \  /   _|| |     /  \     | |    |_   _|   | | |_   ___  |  | | |_   ___  |  | 
-|  |   \/   |  | |    / /\ \    | |      | |     | |   | |_  \_|  | |   | |_  \_|  | 
-|  | |\  /| |  | |   / ____ \   | |      | |     | |   |  _|      | |   |  _|  _   | 
-| _| |_\/_| |_ | | _/ /    \ \_ | |     _| |_    | |  _| |_       | |  _| |___/ |  | 
-||_____||_____|| ||____|  |____|| |    |_____|   | | |_____|      | | |_________|  | 
-|              | |              | |              | |              | |              | 
-'--------------' '--------------' '--------------' '--------------' '--------------' 
-Brute-force (password cracking) for crypto wallets (Metamask, Exodus, .dat files, and others)
-
-• We have been withdrawing cryptocurrency from logs for over 4 years, with a total amount withdrawn exceeding $15.000.000
-• Our total deposit on forums exceeds 5 BTC (over $300.000), which confirms our reliability, while feedback from satisfied clients confirms successful cases.
-• In addition to manual work, we use a powerful ML model we created and trained as an auxiliary tool. It has been trained on over 1.000.000 logs, allowing us to speed up the process and improve the accuracy of password cracking.
-
-Commission split: 70/30 in your favor
-Wallets accepted with a balance of at least $10.000
-
-Telegram: @m2fa_brute
-Channel with contacts: @maife2fa
-<url> | (3 BTC DEP)
-<url> | (2 BTC DEP)
-<url> | (2.000$ DEP)
-
-----------------------------------------------------------------
 Network Info:
-	- IP: <ip>
-	- Country: AE
-
+- Country: BR
 System Summary:
-	- HWID: M13MASW3JEG1KFDXVRTZX2
-	- OS: Windows 11
-	- Architecture: x64
-	- UserName: HP
-	- Computer Name: DESKTOP-946CS9H
-	- Local Time: 2025/7/13 <ip>
-	- UTC: 4
-	- Language: en-US
-	- Keyboards: English (United States)
-	- Laptop: FALSE
-	- Running Path: C:\Windows\Microsoft.NET\Framework\v4.0.30319\BRADLOGS.exe
-	- CPU: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
-	- Cores: 4
-	- Threads: 8
-	- RAM: 8094 MB
-	- Display Resolution: 1536x864
-	- GPU:
-		-Intel(R) UHD Graphics 620
-
+- HWID: 3B3843C8-CC47-86BC-C310-5FC41BD8F74C
+- OS: Windows 10
+- Architecture: x64
+- UserName: Pichau
+- Computer Name: DESKTOP-BEHLR5Q
+- Local Time: 2025-05-20 <ip>
+- UTC: -3
+- Language: pt-BR
+- Keyboards: Português (Brasil)
+- Laptop: FALSE
+- Running Path: C:\Users\<user>\Downloads\QuantumHacks\QuantumHacks\QuantumLoader v3.82.exe
+- CPU: Intel(R) Core(TM) i3-8100T CPU @ 3.10GHz
+- Cores: 4
+- Threads: 4
+- RAM: 16 GB
+- Display Resolution:
+Device Name: \\.\DISPLAY1
+Device String: Radeon RX550/550 Series
+Resolution: 1024x768
+Color Depth: 32 bits per pixel
+- GPU:
+Process count: 141
+Process List:
+[System Process] [0]
+System [4]
+Registry [108]
+smss.exe [448]
+csrss.exe [636]
+wininit.exe [776]
+csrss.exe [784]
+services.exe [848]
+lsass.exe [856]
+svchost.exe [980]
+fontdrvhost.exe [1008]
+svchost.exe [500]
+svchost.exe [708]
+winlogon.exe [368]
+fontdrvhost.exe [1072]
+svchost.exe [1168]
+svchost.exe [1228]
+svchost.exe [1252]
+svchost.exe [1260]
+dwm.exe [1372]
+svchost.exe [1468]
+svchost.exe [1528]
+svchost.exe [1588]
+svchost.exe [1660]
+atiesrxx.exe [1668]
+svchost.exe [1728]
+svchost.exe [1744]
+svchost.exe [1796]
+svchost.exe [1840]
+svchost.exe [1896]
+svchost.exe [1956]
+svchost.exe [1964]
+wsc_proxy.exe [1988]
+atieclxx.exe [2008]
+svchost.exe [2068]
+svchost.exe [2076]
+svchost.exe [2208]
+svchost.exe [2260]
+svchost.exe [2268]
+svchost.exe [2476]
+svchost.exe [2556]
+svchost.exe [2784]
+svchost.exe [2848]
+svchost.exe [2928]
+svchost.exe [2936]
+svchost.exe [2952]
+svchost.exe [3004]
+svchost.exe [3012]
+AvastSvc.exe [2884]
+aswToolsSvc.exe [3172]
+svchost.exe [3220]
+svchost.exe [3372]
+afwServ.exe [3584]
+svchost.exe [3820]
+svchost.exe [3832]
+svchost.exe [3852]
+mDNSResponder.exe [3880]
+AppleMobileDeviceService.exe [3896]
+svchost.exe [3940]
+svchost.exe [3968]
+jhi_service.exe [3976]
+WsNativePushService.exe [3992]
+svchost.exe [4044]
+WMIRegistrationService.exe [3124]
+svchost.exe [4144]
+svchost.exe [4284]
+svchost.exe [4304]
+sihost.exe [4980]
+svchost.exe [5012]
+svchost.exe [5072]
+taskhostw.exe [4472]
+taskhostw.exe [4688]
+svchost.exe [892]
+ctfmon.exe [5132]
+svchost.exe [5196]
+svchost.exe [5416]
+explorer.exe [5484]
+svchost.exe [5716]
+aswEngSrv.exe [5900]
+svchost.exe [6008]
+StartMenuExperienceHost.exe [6720]
+RuntimeBroker.exe [6932]
+svchost.exe [7148]
+SearchApp.exe [7124]
+RuntimeBroker.exe [7460]
+RuntimeBroker.exe [8224]
+TextInputHost.exe [9200]
+RAVCpl64.exe [3024]
+AvastUI.exe [6264]
+WsToastNotification.exe [3192]
+conhost.exe [2996]
+svchost.exe [5988]
+svchost.exe [4796]
+svchost.exe [7648]
+SecurityHealthService.exe [4364]
+ShellExperienceHost.exe [6788]
+RuntimeBroker.exe [8336]
+audiodg.exe [7852]
+steam.exe [2044]
+steamwebhelper.exe [6560]
+steamwebhelper.exe [2660]
+steamwebhelper.exe [1152]
+steamservice.exe [1144]
+steamwebhelper.exe [5152]
+steamwebhelper.exe [8136]
+CompPkgSrv.exe [3244]
+steamwebhelper.exe [5288]
+svchost.exe [8784]
+dllhost.exe [7324]
+steamwebhelper.exe [5912]
+steamwebhelper.exe [7140]
+AvastUI.exe [2544]
+AvastUI.exe [3580]
+UserOOBEBroker.exe [2284]
+msedge.exe [8852]
+msedge.exe [4720]
+msedge.exe [9192]
+msedge.exe [8552]
+msedge.exe [6292]
+msedge.exe [3300]
+msedge.exe [6396]
+svchost.exe [6460]
+svchost.exe [9672]
+msedge.exe [9876]
+msedge.exe [9964]
+msedge.exe [9472]
+steam.exe [7296]
+msedge.exe [9792]
+msedge.exe [9572]
+msedge.exe [10108]
+msedge.exe [9428]
+msedge.exe [6388]
+msedge.exe [4156]
+msedge.exe [2988]
+msedge.exe [9612]
+WinRAR.exe [2224]
+WinRAR.exe [2456]
+dllhost.exe [1404]
+smartscreen.exe [2624]
+RuntimeBroker.exe [2968]
+QuantumLoader v3.82.exe [10216]
 Installed Apps:
 All Users:
-	Microsoft Edge - 138.0.3351.83
-	Microsoft Edge WebView2 Runtime - 138.0.3351.83
-	Windows TubeMate 5
-	SanDisk Security - <ip>
-	Microsoft Visual C++ 2010  x86 Redistributable - 10.0.30319 - 10.0.30319
-	Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.28.29914 - 14.28.29914.0
-	Microsoft Bing Service - <ip>
-	SanDisk Security - <ip>
-	Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.28.29914 - 14.28.29914
-	Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.28.29914 - 14.28.29914.0
-	Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161 - 9.0.30729.6161
-	Microsoft Visual C++ 2019 X86 Additional Runtime - 14.28.29914 - 14.28.29914
-	AVG Update Helper - 1.8.1693.6
-	Office Tab - 6.00
-	Microsoft OneDrive - 25.110.0608.0002
+Google Chrome - 136.0.7103.114
+Microsoft Edge - 136.0.3240.76
+Microsoft Edge WebView2 Runtime - 136.0.3240.76
+MTA:SA v1.6.0 - v1.6.0
+OBS Studio - 31.0.2
+Rockstar Games Launcher - 1.0.102.2459
+Rockstar Games SDK - <ip>
+Steam - <ip>
+Ubisoft Connect - 160.0.11552
+VOIP NP 0.1 - 0.1
+Microsoft Windows Desktop Runtime - 8.0.8 (x64) - 8.0.8.33916
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030 - 11.0.61030.0
+Launcher Prerequisites (x64) - <ip>
+Wondershare Helper Compact 2.6.0 - 2.6.0
+Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.42.34438 - 14.42.34438
+Microsoft ASP.NET Core 8.0.8 - Shared Framework (x64) - 8.0.8.24369
+Microsoft Visual C++ 2022 X86 Additional Runtime - 14.42.34438 - 14.42.34438
+Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61030 - 11.0.61030
+Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.42.34438 - 14.42.34438.0
+Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.42.34438 - 14.42.34438.0
+Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61030 - 11.0.61030
+Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030 - 11.0.61030.0
+CCleaner Update Helper - 1.8.1990.6
+Realtek High Definition Audio Driver - 6.0.1.6873
+Intel(R) Chipset Device Software - 10.1.18243.8188
+Epic Games Launcher - <ip>
 Current User:
-	Adobe Genuine Service - <ip>
-	FM PDF To JPG Converter Pro 4.82 - 4.82
-	IDM 6.39 build 5 6.39.5 - 6.39.5
-	Internet Download Manager - 6.39.5
-	Need For Speed Most Wanted Black Edition version <ip> - <ip>
-	Longman Dictionary of Contemporary English 5th Edition
-	Oxford Advanced Learner's Dictionary - 8th Edition
-	Power Ge'ez 2010 - 10.0.0
-	QUICKfind server v1.1
-	Macromedia Flash Player 8 - 8
-	USB Drive Antivirus 3.03
-	WinRAR 5.91 (32-bit) - 5.91.0
-	WebAdvisor by McAfee - 4.1.1.1056
-	InventoryPlus version <ip> - <ip>
-	AutoCAD 2007 - English - <ip>
-	Power Ge'ez 2010 - 10.0.0
-	Wondershare Recoverit(Build <ip>) - <ip>
-	SMADAV version 15.4.0 - 15.4.0
-	Adobe Refresh Manager - 1.8.0
-	Adobe Acrobat XI Pro - 11.0.23
-	AD9G.COM Games - 1.0
-	Conflict Desert.Storm II {Dotcom1}
-	Opera Stable 119.0.5497.141 - 119.0.5497.141
-	Quick Explorer Lib 6.12.5.4671
-	uTorrent Web - 1.4.0
-	Telegram Desktop - 5.12.2
-
-Process List:
-	System
-	Registry
-	smss.exe
-	csrss.exe
-	wininit.exe
-	csrss.exe
-	winlogon.exe
-	services.exe
-	lsass.exe
-	svchost.exe
-	fontdrvhost.exe
-	fontdrvhost.exe
-	WUDFHost.exe
-	svchost.exe
-	svchost.exe
-	dwm.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	IntelCpHDCPSvc.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	IntelCpHeciSvc.exe
-	svchost.exe
-	svchost.exe
-	SynTPEnhService.exe
-	helperservice.exe
-	svchost.exe
-	svchost.exe
-	NVDisplay.Container.exe
-	svchost.exe
-	dasHost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	Memory Compression
-	svchost.exe
-	igfxCUIService.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	spoolsv.exe
-	svchost.exe
-	NVDisplay.Container.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	CxAudioSvc.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	OneApp.IGCC.WinService.exe
-	armsvc.exe
-	QuickExplorerLib.exe
-	SynAudSrv.exe
-	XtuService.exe
-	RtkBtManServ.exe
-	RtkAudUService64.exe
-	RstMwService.exe
-	SECOMN64.exe
-	esif_uf.exe
-	TenorshareUpdateAssistantService.exe
-	TeraCopyService.exe
-	WDDriveService.exe
-	CptService.exe
-	TeamViewer_Service.exe
-	svchost.exe
-	svchost.exe
-	jhi_service.exe
-	svchost.exe
-	svchost.exe
-	crashpad_handler.exe
-	conhost.exe
-	svchost.exe
-	svchost.exe
-	gamingservices.exe
-	gamingservicesnet.exe
-	cmd.exe
-	wlanext.exe
-	conhost.exe
-	TenorshareUpdateAssistant.exe
-	AggregatorHost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	sihost.exe
-	svchost.exe
-	PresentationFontCache.exe
-	svchost.exe
-	svchost.exe
-	taskhostw.exe
-	SM?RTP.exe
-	svchost.exe
-	svchost.exe
-	SearchIndexer.exe
-	SynTPEnh.exe
-	BRADLOGS.exe
-	igfxEM.exe
-	TeamViewer.exe
-	ShellHost.exe
-	SECOCL64.exe
-	conhost.exe
-	svchost.exe
-	CrossDeviceResume.exe
-	svchost.exe
-	svchost.exe
-	SearchHost.exe
-	StartMenuExperienceHost.exe
-	RuntimeBroker.exe
-	svchost.exe
-	RuntimeBroker.exe
-	Widgets.exe
-	WidgetService.exe
-	tv_w32.exe
-	tv_x64.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	crashpad_handler.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	ctfmon.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	PhoneExperienceHost.exe
-	TextInputHost.exe
-	CastSrv.exe
-	svchost.exe
-	svchost.exe
-	RtkAudUService64.exe
-	BRADLOGS.exe
-	ShellExperienceHost.exe
-	RuntimeBroker.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	fdm.exe
-	ms-teams.exe
-	RuntimeBroker.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	taskhostw.exe
-	ms-teams.exe
-	svchost.exe
-	msedgewebview2.exe
-	YourPhoneAppProxy.exe
-	svchost.exe
-	svchost.exe
-	RuntimeBroker.exe
-	svchost.exe
-	CrossDeviceService.exe
-	RuntimeBroker.exe
-	svchost.exe
-	acrotray.exe
-	pg2010.exe
-	USBAntivirus.exe
-	FileCoAuth.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	msedgewebview2.exe
-	WhatsApp.exe
-	backgroundTaskHost.exe
-	RuntimeBroker.exe
-	RuntimeBroker.exe
-	Qpgvp.exe
-	suker.exe
-	svchost.exe
-	haHVBay.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	6rQdNSV.exe
-	svchost.exe
-	WRQVZVJc3rW9.exe
-	WRQVZVJc3rW9.tmp
-	quickexplorerlib.exe
-	QvG0bbo.exe
-	elevation_service.exe
-	ecbiw4ohdt.exe
-	KIFHWV.exe
-	LSYMVT.exe
-	PorArray32.exe
-	Jackes.exe
-	glxbsr9zuk.exe
-	JTA6cYY.exe
-	audiodg.exe
-	IDMIntegrator64.exe
-	SystemSettings.exe
-	ApplicationFrameHost.exe
-	svchost.exe
-	UserOOBEBroker.exe
-	svchost.exe
-	svchost.exe
-	svchost.exe
-	IDMan.exe
-	svchost.exe
-	svchost.exe
-	backgroundTaskHost.exe
-	RuntimeBroker.exe
-	msedge.exe
-	msedge.exe
-	msedge.exe
-	msedge.exe
-	msedge.exe
-	msedge.exe
-	msedge.exe
-	msedge.exe
-	msedge.exe
-	chrome.exe
-	chrome.exe
-	chrome.exe
-	chrome.exe
-	chrome.exe
-	svchost.exe
-	chrome.exe
-	chrome.exe
-	chrome.exe
-	bQEip14.exe
-	FrameworFusion.exe
-	XPFix.exe
-	chrome.exe
-	BRADLOGS.exe
-	6rQdNSV.exe
-	HZhaduP.exe
-	a9RD5LI.exe
-	BCobalt.exe
-	msedge.exe
-	chrome.exe
+CrossOver 3.1.5 - 3.1.5
+CrossOver 3.3.4 - 3.3.4
+FiveM
+RedM
+Microsoft OneDrive - 25.046.0310.0005
+Wondershare Filmora 14(Build 14.4.3.11809)
+Wondershare NativePush(Build <ip>)

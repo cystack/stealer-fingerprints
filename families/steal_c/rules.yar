@@ -3,6 +3,30 @@
 // observed field-key set. Tune false-positive thresholds at use
 // site, especially for variants relying on field combinations.
 
+rule StealC_cystack_0092c07b
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_0092c07b"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Color Depth:" ascii
+        $key_2 = "Current User:" ascii
+        $key_3 = "Device Name:" ascii
+        $key_4 = "Device String:" ascii
+        $key_5 = "Installed Apps:" ascii
+        $key_6 = "MTA:" ascii
+        $key_7 = "Network Info:" ascii
+        $key_8 = "Process List:" ascii
+        $key_9 = "Process count:" ascii
+        $key_10 = "Resolution:" ascii
+        $key_11 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule StealC_cystack_1f8e4d74
 {
     meta:
@@ -14,6 +38,28 @@ rule StealC_cystack_1f8e4d74
         $key_1 = "Installed Apps:" ascii
         $key_2 = "Network Info:" ascii
         $key_3 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_2301cf8a
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_2301cf8a"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Color Depth:" ascii
+        $key_2 = "Device Name:" ascii
+        $key_3 = "Device String:" ascii
+        $key_4 = "Installed Apps:" ascii
+        $key_5 = "Network Info:" ascii
+        $key_6 = "Process List:" ascii
+        $key_7 = "Process count:" ascii
+        $key_8 = "Resolution:" ascii
+        $key_9 = "System Summary:" ascii
 
     condition:
         all of ($key_*)
@@ -82,6 +128,29 @@ rule StealC_cystack_3028b0ca
         $key_2 = "Process List:" ascii
         $key_3 = "Process count:" ascii
         $key_4 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_4b30cd7a
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_4b30cd7a"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Color Depth:" ascii
+        $key_2 = "Device Name:" ascii
+        $key_3 = "Device String:" ascii
+        $key_4 = "Installed Apps:" ascii
+        $key_5 = "MTA:" ascii
+        $key_6 = "Network Info:" ascii
+        $key_7 = "Process List:" ascii
+        $key_8 = "Process count:" ascii
+        $key_9 = "Resolution:" ascii
+        $key_10 = "System Summary:" ascii
 
     condition:
         all of ($key_*)
@@ -194,6 +263,28 @@ rule StealC_cystack_7a949b1d
         all of ($key_*)
 }
 
+rule StealC_cystack_7ecc3719
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_7ecc3719"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Channel with contacts:" ascii
+        $key_2 = "Commission split:" ascii
+        $key_3 = "Current User:" ascii
+        $key_4 = "Installed Apps:" ascii
+        $key_5 = "Network Info:" ascii
+        $key_6 = "Process List:" ascii
+        $key_7 = "System Summary:" ascii
+        $key_8 = "Telegram:" ascii
+        $key_9 = "User Agents:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule StealC_cystack_a52d3ec9
 {
     meta:
@@ -227,6 +318,29 @@ rule StealC_cystack_a867f3f5
         $key_4 = "Process List:" ascii
         $key_5 = "Process count:" ascii
         $key_6 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_aac2df00
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_aac2df00"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Color Depth:" ascii
+        $key_2 = "Current User:" ascii
+        $key_3 = "Device Name:" ascii
+        $key_4 = "Device String:" ascii
+        $key_5 = "Installed Apps:" ascii
+        $key_6 = "Network Info:" ascii
+        $key_7 = "Process List:" ascii
+        $key_8 = "Process count:" ascii
+        $key_9 = "Resolution:" ascii
+        $key_10 = "System Summary:" ascii
 
     condition:
         all of ($key_*)
@@ -280,6 +394,26 @@ rule StealC_cystack_b8ed4e31
         $key_3 = "Network Info:" ascii
         $key_4 = "Process List:" ascii
         $key_5 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_d8d785c2
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_d8d785c2"
+
+    strings:
+        $key_0 = "Color Depth:" ascii
+        $key_1 = "Device Name:" ascii
+        $key_2 = "Device String:" ascii
+        $key_3 = "Network Info:" ascii
+        $key_4 = "Process List:" ascii
+        $key_5 = "Process count:" ascii
+        $key_6 = "Resolution:" ascii
+        $key_7 = "System Summary:" ascii
 
     condition:
         all of ($key_*)

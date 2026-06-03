@@ -1,682 +1,119 @@
-
-                                    
-     @BRADLOGS (BRADMAX) / <url>
-
-
----User Info---
-
-	Worker: %Worker%
-	Date Install: 7/14/2025 <ip> PM
-	ISO Key: en
-	Clipboard: 
-	External IP: <redacted>
-	Internal IP: <ip>
-	Gateway IP: <ip>
-
+Worker: %Worker%
+Date Install: 05/06/2025 <ip>
+Clipboard: Segue:
+Quarto individual 1: Gonzaga Ribeiro Pires
+Quarto individual 2: João Paulo Gehlen
+Quarto individual  3: Giovanni Pegoraro
+Data Check-in: 09/06/2025
+Data Check-out: 13/06/2025
+Diária em quarto individual superior: R$170,00
+Cobrar no cartão abaixo, somente diárias.
+VL 0429. Seg 861
+KATIA R KOERICH
+NF em nome do hóspede
+Aguardo confirmação.
+External IP: <redacted>
+Internal IP: <ip>
+Gateway IP: <ip>
 ---Full Pc Info---
-
-	=== CPU Information ===
-		MaxClockSpeed: 2112
-		Name: Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
-		NumberOfCores: 4
-
-
-	=== GPU Information ===
-		AdapterRAM: 1073741824
-		Name: Intel(R) UHD Graphics
-
-
-	=== RAM Information ===
-		Capacity: 8589934592
-
-
-	=== Disk Information ===
-		Model: INTEL SSDPEKNW512G8H
-		Size: 512105932800
-
-
-	=== Network Adapter Information ===
-		MACAddress: <ip>
-		Name: WAN Miniport (IP)
-		Speed: 
-
-		MACAddress: <ip>
-		Name: WAN Miniport (IPv6)
-		Speed: 
-
-		MACAddress: <ip>
-		Name: WAN Miniport (Network Monitor)
-		Speed: 
-
-		MACAddress: <ip>
-		Name: Bluetooth Device (Personal Area Network)
-		Speed: 3000000
-
-		MACAddress: <ip>
-		Name: Realtek RTL8822CE 802.11ac PCIe Adapter
-		Speed: 300000000
-
-		MACAddress: <ip>
-		Name: Realtek RTL8188EU Wireless LAN 802.11n USB 2.0 Network Adapter
-		Speed: 9223372036854775807
-
-		MACAddress: <ip>
-		Name: Microsoft Wi-Fi Direct Virtual Adapter #3
-		Speed: 9223372036854775807
-
-		MACAddress: <ip>
-		Name: Microsoft Wi-Fi Direct Virtual Adapter #4
-		Speed: 9223372036854775807
-
-
-	=== Windows Version Information ===
-		Caption: Microsoft Windows 10 Pro
-		OSArchitecture: 64-bit
-		Version: 10.0.19045
-
-
-	=== Motherboard Information ===
-		Manufacturer: HP
-		Product: 866E
-		SerialNumber: PJHKH1B0GDG8ES
-
-
-	=== BIOS Information ===
-		Manufacturer: Insyde
-		ReleaseDate: 20191203000000.000000+000
-		SMBIOSBIOSVersion: F.06
-
-
-	=== User Account Information ===
-		FullName: Admin
-		Name: Admin
-
-		FullName: 
-		Name: Administrator
-
-		FullName: 
-		Name: DefaultAccount
-
-		FullName: 
-		Name: Guest
-
-		FullName: 
-		Name: WDAGUtilityAccount
-
-
-	=== Battery Information ===
-		BatteryStatus: 2
-		EstimatedChargeRemaining: 100
-
-
-	=== USB Devices Information ===
-Произошла ошибка: Invalid query 
-	=== Sound Device Information ===
-		Name: Intel(R) Display Audio
-
-		Name: Realtek High Definition Audio
-
-
-	=== Keyboard Information ===
-		Name: Enhanced (101- or 102-key)
-
-		Name: Enhanced (101- or 102-key)
-
-		Name: Enhanced (101- or 102-key)
-
-		Name: Enhanced (101- or 102-key)
-
-		Name: Enhanced (101- or 102-key)
-
-
-	=== Pointing Device Information ===
-		Name: HID-compliant mouse
-
-		Name: USB Input Device
-
-
-	=== System Enclosure Information ===
-		ChassisTypes: System.UInt16[]
-		Manufacturer: HP
-
-
-	=== Logical Disk Information ===
-		DeviceID: C:
-		FileSystem: NTFS
-		FreeSpace: 423324450816
-		Size: 501080072192
-
-		DeviceID: D:
-		FileSystem: NTFS
-		FreeSpace: 2569486336
-		Size: 7338979328
-
-
-	=== Printer Information ===
-Произошла ошибка: Generic failure 
-	=== Time Zone Information ===
-		Caption: (UTC-08:00) Pacific Time (US & Canada)
-
-
-	=== Network Information ===
-		Description: Realtek RTL8822CE 802.11ac PCIe Adapter
-		IPEnabled: True
-		MACAddress: <ip>
-
-
-	=== OS Architecture Information ===
-		OSArchitecture: 64-bit
-
-
-	=== System Uptime Information ===
-		LastBootUpTime: 20250714141213.500000-420
-
-
-	=== Processors Information ===
-		NumberOfCores: 4
-		NumberOfLogicalProcessors: 8
-
-
-	=== Disk Partitions Information ===
-Произошла ошибка: Invalid query 
-	=== IP Configuration Information ===
-Произошла ошибка: Invalid query 
-	=== System Drivers Information ===
-Произошла ошибка: Invalid query 
-	=== Computer System Information ===
-		Manufacturer: HP
-		Model: HP Pavilion x360 Convertible 14-dh1xxx
-		Name: DESKTOP-PLB6P49
-		NumberOfLogicalProcessors: 8
-
-
-	=== Battery Status Information ===
-		BatteryStatus: 2
-
-
-	=== Logical Processes Information ===
-		Description: System Idle Process
-		HandleCount: 0
-		Name: System Idle Process
-
-		Description: System
-		HandleCount: 3103
-		Name: System
-
-		Description: Registry
-		HandleCount: 0
-		Name: Registry
-
-		Description: smss.exe
-		HandleCount: 53
-		Name: smss.exe
-
-		Description: csrss.exe
-		HandleCount: 563
-		Name: csrss.exe
-
-		Description: wininit.exe
-		HandleCount: 163
-		Name: wininit.exe
-
-		Description: csrss.exe
-		HandleCount: 512
-		Name: csrss.exe
-
-		Description: services.exe
-		HandleCount: 492
-		Name: services.exe
-
-		Description: winlogon.exe
-		HandleCount: 273
-		Name: winlogon.exe
-
-		Description: lsass.exe
-		HandleCount: 1157
-		Name: lsass.exe
-
-		Description: svchost.exe
-		HandleCount: 1018
-		Name: svchost.exe
-
-		Description: fontdrvhost.exe
-		HandleCount: 50
-		Name: fontdrvhost.exe
-
-		Description: fontdrvhost.exe
-		HandleCount: 50
-		Name: fontdrvhost.exe
-
-		Description: svchost.exe
-		HandleCount: 979
-		Name: svchost.exe
-
-		Description: svchost.exe
-		HandleCount: 1107
-		Name: svchost.exe
-
-		Description: svchost.exe
-		HandleCount: 937
-		Name: svchost.exe
-
-		Description: svchost.exe
-		HandleCount: 701
-		Name: svchost.exe
-
-		Description: dwm.exe
-		HandleCount: 1105
-		Name: dwm.exe
-
-		Description: IntelCpHDCPSvc.exe
-		HandleCount: 303
-		Name: IntelCpHDCPSvc.exe
-
-		Description: svchost.exe
-		HandleCount: 1725
-		Name: svchost.exe
-
-		Description: igfxCUIService.exe
-		HandleCount: 221
-		Name: igfxCUIService.exe
-
-		Description: WUDFHost.exe
-		HandleCount: 1200
-		Name: WUDFHost.exe
-
-		Description: IntelCpHeciSvc.exe
-		HandleCount: 201
-		Name: IntelCpHeciSvc.exe
-
-		Description: svchost.exe
-		HandleCount: 712
-		Name: svchost.exe
-
-		Description: svchost.exe
-		HandleCount: 232
-		Name: svchost.exe
-
-		Description: svchost.exe
-		HandleCount: 158
-		Name: svchost.exe
-
-		Description: NetworkCap.exe
-		HandleCount: 316
-		Name: NetworkCap.exe
-
-		Description: DiagsCap.exe
-		HandleCount: 367
-		Name: DiagsCap.exe
-
-		Description: SysInfoCap.exe
-		HandleCount: 465
-		Name: SysInfoCap.exe
-
-		Description: AppHelperCap.exe
-		HandleCount: 373
-		Name: AppHelperCap.exe
-
-		Description: TouchpointAnalyticsClientService.exe
-		HandleCount: 758
-		Name: TouchpointAnalyticsClientService.exe
-
-		Description: svchost.exe
-		HandleCount: 383
-		Name: svchost.exe
-
-		Description: svchost.exe
-		HandleCount: 201
-		Name: svchost.exe
-
-		Description: WUDFHost.exe
-		HandleCount: 372
-		Name: WUDFHost.exe
-
-		Description: svchost.exe
-		HandleCount: 250
-		Name: svchost.exe
-
-		Description: WmiPrvSE.exe
-		HandleCount: 301
-		Name: WmiPrvSE.exe
-
-		Description: unsecapp.exe
-		HandleCount: 137
-		Name: unsecapp.exe
-
-		Description: WmiPrvSE.exe
-		HandleCount: 216
-		Name: WmiPrvSE.exe
-
-		Description: svchost.exe
-		HandleCount: 423
-		Name: svchost.exe
-
-		Description: svchost.exe
-		HandleCount: 226
-		Name: svchost.exe
-
-		Description: sihost.exe
-		HandleCount: 530
-		Name: sihost.exe
-
-		Description: svchost.exe
-		HandleCount: 620
-		Name: svchost.exe
-
-		Description: igfxEM.exe
-		HandleCount: 301
-		Name: igfxEM.exe
-
-		Description: taskhostw.exe
-		HandleCount: 260
-		Name: taskhostw.exe
-
-		Description: mppr.exe
-		HandleCount: 853
-		Name: mppr.exe
-
-		Description: taskhostw.exe
-		HandleCount: 440
-		Name: taskhostw.exe
-
-		Description: BRADLOGS.exe
-		HandleCount: 2072
-		Name: BRADLOGS.exe
-
-		Description: svchost.exe
-		HandleCount: 396
-		Name: svchost.exe
-
-		Description: svchost.exe
-		HandleCount: 158
-		Name: svchost.exe
-
-		Description: svchost.exe
-		HandleCount: 555
-		Name: svchost.exe
-
-		Description: alg.exe
-		HandleCount: 168
-		Name: alg.exe
-
-		Description: dllhost.exe
-		HandleCount: 231
-		Name: dllhost.exe
-
-		Description: GameInputSvc.exe
-		HandleCount: 112
-		Name: GameInputSvc.exe
-
-		Description: OneApp.IGCC.WinService.exe
-		HandleCount: 355
-		Name: OneApp.IGCC.WinService.exe
-
-		Description: IntelAudioService.exe
-		HandleCount: 390
-		Name: IntelAudioService.exe
-
-		Description: elevation_service.exe
-		HandleCount: 173
-		Name: elevation_service.exe
-
-		Description: jhi_service.exe
-		HandleCount: 204
-		Name: jhi_service.exe
-
-		Description: LMS.exe
-		HandleCount: 212
-		Name: LMS.exe
-
-		Description: perfhost.exe
-		HandleCount: 76
-		Name: perfhost.exe
-
-		Description: PerceptionSimulationService.exe
-		HandleCount: 157
-		Name: PerceptionSimulationService.exe
-
-		Description: Locator.exe
-		HandleCount: 112
-		Name: Locator.exe
-
-		Description: GameInputSvc.exe
-		HandleCount: 378
-		Name: GameInputSvc.exe
-
-		Description: RtkAudUService64.exe
-		HandleCount: 351
-		Name: RtkAudUService64.exe
-
-		Description: RtkBtManServ.exe
-		HandleCount: 185
-		Name: RtkBtManServ.exe
-
-		Description: SECOMN64.exe
-		HandleCount: 197
-		Name: SECOMN64.exe
-
-		Description: Spectrum.exe
-		HandleCount: 232
-		Name: Spectrum.exe
-
-		Description: snmptrap.exe
-		HandleCount: 165
-		Name: snmptrap.exe
-
-		Description: SystemDiagnosticsHost.exe
-		HandleCount: 258
-		Name: SystemDiagnosticsHost.exe
-
-		Description: ssh-agent.exe
-		HandleCount: 130
-		Name: ssh-agent.exe
-
-		Description: TieringEngineService.exe
-		HandleCount: 188
-		Name: TieringEngineService.exe
-
-		Description: VSSVC.exe
-		HandleCount: 214
-		Name: VSSVC.exe
-
-		Description: wbengine.exe
-		HandleCount: 205
-		Name: wbengine.exe
-
-		Description: vds.exe
-		HandleCount: 181
-		Name: vds.exe
-
-		Description: WmiApSrv.exe
-		HandleCount: 202
-		Name: WmiApSrv.exe
-
-		Description: SearchIndexer.exe
-		HandleCount: 674
-		Name: SearchIndexer.exe
-
-		Description: svchost.exe
-		HandleCount: 396
-		Name: svchost.exe
-
-		Description: svchost.exe
-		HandleCount: 244
-		Name: svchost.exe
-
-		Description: wmpnetwk.exe
-		HandleCount: 237
-		Name: wmpnetwk.exe
-
-		Description: StartMenuExperienceHost.exe
-		HandleCount: 640
-		Name: StartMenuExperienceHost.exe
-
-		Description: RuntimeBroker.exe
-		HandleCount: 237
-		Name: RuntimeBroker.exe
-
-		Description: SearchApp.exe
-		HandleCount: 979
-		Name: SearchApp.exe
-
-		Description: PowerToys.exe
-		HandleCount: 544
-		Name: PowerToys.exe
-
-		Description: RuntimeBroker.exe
-		HandleCount: 394
-		Name: RuntimeBroker.exe
-
-		Description: BlueStacksServices.exe
-		HandleCount: 794
-		Name: BlueStacksServices.exe
-
-		Description: BlueStacksServices.exe
-		HandleCount: 446
-		Name: BlueStacksServices.exe
-
-		Description: WmiPrvSE.exe
-		HandleCount: 207
-		Name: WmiPrvSE.exe
-
-		Description: BlueStacksServices.exe
-		HandleCount: 310
-		Name: BlueStacksServices.exe
-
-		Description: BlueStacksServices.exe
-		HandleCount: 301
-		Name: BlueStacksServices.exe
-
-		Description: PowerToys.KeyboardManagerEngine.exe
-		HandleCount: 193
-		Name: PowerToys.KeyboardManagerEngine.exe
-
-		Description: taskhostw.exe
-		HandleCount: 128
-		Name: taskhostw.exe
-
-		Description: Microsoft Network Realtime Inspection Service.exe
-		HandleCount: 550
-		Name: Microsoft Network Realtime Inspection Service.exe
-
-		Description: BRADLOGS.exe
-		HandleCount: 60832
-		Name: BRADLOGS.exe
-
-		Description: svchost.exe
-		HandleCount: 60774
-		Name: svchost.exe
-
-		Description: Microsoft Windows Search protocol Host.exe
-		HandleCount: 550
-		Name: Microsoft Windows Search protocol Host.exe
-
-		Description: mppr.exe
-		HandleCount: 729
-		Name: mppr.exe
-
-		Description: RtkAudUService64.exe
-		HandleCount: 361
-		Name: RtkAudUService64.exe
-
-		Description: HD-Player.exe
-		HandleCount: 2777
-		Name: HD-Player.exe
-
-		Description: BstkSVC.exe
-		HandleCount: 1460
-		Name: BstkSVC.exe
-
-		Description: audiodg.exe
-		HandleCount: 739
-		Name: audiodg.exe
-
-		Description: Taskmgr.exe
-		HandleCount: 690
-		Name: Taskmgr.exe
-
-		Description: svchost.exe
-		HandleCount: 388
-		Name: svchost.exe
-
-		Description: SearchApp.exe
-		HandleCount: 820
-		Name: SearchApp.exe
-
-		Description: ShellExperienceHost.exe
-		HandleCount: 640
-		Name: ShellExperienceHost.exe
-
-		Description: RuntimeBroker.exe
-		HandleCount: 246
-		Name: RuntimeBroker.exe
-
-		Description: aesm_service.exe
-		HandleCount: 277
-		Name: aesm_service.exe
-
-		Description: SocketHeciServer.exe
-		HandleCount: 173
-		Name: SocketHeciServer.exe
-
-		Description: BRADLOGS.exe
-		HandleCount: 185
-		Name: BRADLOGS.exe
-
-		Description: xaitx.exe
-		HandleCount: 127
-		Name: xaitx.exe
-
-		Description: conhost.exe
-		HandleCount: 131
-		Name: conhost.exe
-
-		Description: conhost.exe
-		HandleCount: 112
-		Name: conhost.exe
-
-		Description: chrome.exe
-		HandleCount: 161
-		Name: chrome.exe
-
-		Description: cmd.exe
-		HandleCount: 89
-		Name: cmd.exe
-
-		Description: conhost.exe
-		HandleCount: 110
-		Name: conhost.exe
-
-		Description: netsh.exe
-		HandleCount: 306
-		Name: netsh.exe
-
-		Description: chrome.exe
-		HandleCount: 143
-		Name: chrome.exe
-
-
-	=== Memory Modules Information ===
-Произошла ошибка: Invalid query 
-	=== OS Details Information ===
-		BuildNumber: 19045
-		Caption: Microsoft Windows 10 Pro
-		Manufacturer: Microsoft Corporation
-		ProductType: 1
-
-
-	=== Serial Numbers Information ===
-		SerialNumber: 0000_0000_0100_0000_E4D2_5C15_DBD2_5101.
-
-
-	=== Screen Information ===
-		1280x720
-
-	=== AntiVirus Information ===
-		displayName: Windows Defender
-		instanceGuid: {D68DDC3A-831F-4fae-9E44-DA132C1ACF46}
-		pathToSignedProductExe: windowsdefender://
-		pathToSignedReportingExe: %ProgramFiles%\Windows Defender\MsMpeng.exe
-		productState: 401664
-		timestamp: Fri, 17 Nov 2023 <ip> GMT
-
+=== CPU Information ===
+MaxClockSpeed: 3193
+Name: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+NumberOfCores: 4
+=== GPU Information ===
+AdapterRAM: 2214592512
+Name: Intel(R) HD Graphics
+=== RAM Information ===
+Capacity: 8589934592
+=== Disk Information ===
+Model: SSD NTC 120GB
+Size: 120031511040
+Model: ST1000VM002-1SD102
+Size: 1000202273280
+Model: SanDisk Cruzer Blade USB Device
+Size: 3997486080
+=== Network Adapter Information ===
+MACAddress: <ip>
+Name: Realtek PCIe GbE Family Controller
+Speed: 1000000000
+MACAddress: <ip>
+Name: WAN Miniport (IP)
+Speed:
+MACAddress: <ip>
+Name: WAN Miniport (IPv6)
+Speed:
+MACAddress: <ip>
+Name: WAN Miniport (Network Monitor)
+Speed:
+=== Windows Version Information ===
+Caption: Microsoft Windows 10 Pro
+OSArchitecture: 64 bits
+Version: 10.0.19045
+Manufacturer:
+Product:
+SerialNumber: To be filled by O.E.M.
+=== BIOS Information ===
+Manufacturer: American Megatrends Inc.
+ReleaseDate: 20231016000000.000000+000
+SMBIOSBIOSVersion: 4.6.5
+=== User Account Information ===
+FullName:
+Name: Administrador
+FullName:
+Name: Convidado
+FullName:
+Name: DefaultAccount
+FullName:
+Name: Hotel Cattoni
+FullName:
+Name: WDAGUtilityAccount
+=== Battery Information ===
+=== USB Devices Information ===
+????????? ??????: Consulta inválida
+=== Sound Device Information ===
+Name: Dispositivo de High Definition Audio
+Name: Dispositivo de High Definition Audio
+=== Keyboard Information ===
+Name: Aperfeiçoado (101 ou 102 teclas)
+=== Pointing Device Information ===
+Name: Dispositivo de Entrada USB
+=== System Enclosure Information ===
+ChassisTypes: System.UInt16[]
+Manufacturer: To Be Filled By O.E.M.
+=== Logical Disk Information ===
+DeviceID: C:
+FileSystem: NTFS
+FreeSpace: 69507665920
+Size: 119326392320
+DeviceID: D:
+FileSystem: NTFS
+FreeSpace: 974229143552
+Size: 1000148561920
+=== Printer Information ===
+Default: False
+Name: OneNote for Windows 10
+Default: False
+Name: Microsoft XPS Document Writer
+Default: False
+Name: Microsoft Print to PDF
+Default: True
+Name: HP LaserJet P1005
+Default: False
+Name: Fax
+Default: False
+Name: Enviar para o OneNote 2013
+=== Time Zone Information ===
+Caption: (UTC-03:00) Brasília
+=== Network Information ===
+Description: Realtek PCIe GbE Family Controller
+IPEnabled: True
+MACAddress: <ip>
+=== Screen Information ===
+1366x768
+=== AntiVirus Information ===
+displayName: Windows Defender
+instanceGuid: {D68DDC3A-831F-4fae-9E44-DA132C1ACF46}
+pathToSignedProductExe: windowsdefender://
+pathToSignedReportingExe: %ProgramFiles%\Windows Defender\MsMpeng.exe
+productState: 397568
+timestamp: Thu, 05 Jun 2025 <ip> GMT

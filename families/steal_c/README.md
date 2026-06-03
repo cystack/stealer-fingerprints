@@ -8,7 +8,7 @@ with the v2 rewrite tracked through 2024.
 
 **Also known as:** `StealC v1`, `StealC v2`
 
-**Variants observed:** 20
+**Variants observed:** 26
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -20,6 +20,61 @@ with the v2 rewrite tracked through 2024.
 - Custom file grabber configurable per-build
 
 ## Variants
+
+### `cystack_0092c07b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Color Depth`, `Current User`, `Device Name`, `Device String`, `Installed Apps`, `MTA`, `Network Info`, `Process List`, `Process count`, `Resolution`, `System Summary`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+Network Info:
+- Country: BR
+System Summary:
+- HWID: 3B3843C8-CC47-86BC-C310-5FC41BD8F74C
+- OS: Windows 10
+- Architecture: x64
+- UserName: Pichau
+- Computer Name: DESKTOP-BEHLR5Q
+- Local Time: 2025-05-20 <ip>
+- UTC: -3
+- Language: pt-BR
+- Keyboards: Português (Brasil)
+- Laptop: FALSE
+- Running Path: C:\Users\<user>\Downloads\QuantumHacks\QuantumHacks\QuantumLoader v3.82.exe
+- CPU: Intel(R) Core(TM) i3-8100T CPU @ 3.10GHz
+- Cores: 4
+- Threads: 4
+- RAM: 16 GB
+- Display Resolution:
+Device Name: \\.\DISPLAY1
+Device String: Radeon RX550/550 Series
+Resolution: 1024x768
+Color Depth: 32 bits per pixel
+- GPU:
+Process count: 141
+Process List:
+[System Process] [0]
+System [4]
+Registry [108]
+smss.exe [448]
+csrss.exe [636]
+wininit.exe [776]
+csrss.exe [784]
+services.exe [848]
+lsass.exe [856]
+svchost.exe [980]
+fontdrvhost.exe [1008]
+svchost.exe [500]
+svchost.exe [708]
+winlogon.exe [368]
+[... truncated; full sample at ``sample.txt`` (approx. 163 more lines) ...]
+```
 
 ### `cystack_1a6c3169`
 
@@ -102,6 +157,61 @@ All Users:
 	Microsoft Office Professional Plus 2010 - 14.0.7015.1000
 	Security Update for Microsoft Office 2010 (KB2956063) 32-Bit Edition
 [... truncated; full sample at ``sample.txt`` (approx. 350 more lines) ...]
+```
+
+### `cystack_2301cf8a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Color Depth`, `Device Name`, `Device String`, `Installed Apps`, `Network Info`, `Process List`, `Process count`, `Resolution`, `System Summary`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+Network Info:
+- IP: <ip>
+System Summary:
+- HWID: F891CA52-7235-31F6-417A-EDDE39222546
+- OS: Windows 11
+- Architecture: x64
+- UserName: wathu
+- Computer Name: DESKTOP-APCQR2V
+- Local Time: 2025-05-20 <ip>
+- UTC: 1
+- Language: fr-BE
+- Keyboards: Français (France) / Anglais (États-Unis)
+- Laptop: FALSE
+- Running Path: C:\Users\<user>\Downloads\QuantumHacks\QuantumLoader v3.82.exe
+- CPU: AMD Ryzen 5 5600 6-Core Processor
+- Cores: 6
+- Threads: 12
+- RAM: 16 GB
+- Display Resolution:
+Device Name: \\.\DISPLAY1
+Device String: NVIDIA GeForce RTX 4060 Ti
+Resolution: 1920x1080
+Color Depth: 32 bits per pixel
+- GPU:
+Process count: 201
+Process List:
+[System Process] [0]
+System [4]
+Secure System [188]
+Registry [232]
+smss.exe [688]
+csrss.exe [952]
+wininit.exe [716]
+csrss.exe [712]
+services.exe [956]
+LsaIso.exe [1040]
+lsass.exe [1048]
+winlogon.exe [1120]
+svchost.exe [1252]
+fontdrvhost.exe [1284]
+[... truncated; full sample at ``sample.txt`` (approx. 245 more lines) ...]
 ```
 
 ### `cystack_27cecfc2`
@@ -318,6 +428,61 @@ Process List:
 	services.exe [836]
 	lsass.exe [844]
 [... truncated; full sample at ``sample.txt`` (approx. 286 more lines) ...]
+```
+
+### `cystack_4b30cd7a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Color Depth`, `Device Name`, `Device String`, `Installed Apps`, `MTA`, `Network Info`, `Process List`, `Process count`, `Resolution`, `System Summary`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+Network Info:
+System Summary:
+- HWID: 7A1434DB-4118-9EB7-8CB3-60CF940B2867
+- OS: Windows 11
+- Architecture: x64
+- UserName: Usuario
+- Computer Name: DESKTOP-QUI1CNM
+- Local Time: 2025-05-19 <ip>
+- UTC: -3
+- Language: pt-BR
+- Keyboards: Português (Brasil) / Português (Brasil)
+- Laptop: FALSE
+- Running Path: C:\Users\<user>\AppData\Local\Temp\Rar$EXb13440.1669.rartemp\QuantumHacks\QuantumLoader v3.82.exe
+- CPU: AMD Ryzen 5 4600G with Radeon Graphics
+- Cores: 6
+- Threads: 12
+- RAM: 15 GB
+- Display Resolution:
+Device Name: \\.\DISPLAY1
+Device String: AMD Radeon(TM) Graphics
+Resolution: 1920x1080
+Color Depth: 32 bits per pixel
+- GPU:
+-AMD Radeon(TM) Graphics
+Process count: 186
+Process List:
+[System Process] [0]
+System [4]
+Registry [172]
+smss.exe [632]
+csrss.exe [884]
+wininit.exe [1016]
+csrss.exe [376]
+services.exe [1028]
+winlogon.exe [1060]
+lsass.exe [1120]
+svchost.exe [1248]
+fontdrvhost.exe [1276]
+fontdrvhost.exe [1284]
+svchost.exe [1384]
+[... truncated; full sample at ``sample.txt`` (approx. 233 more lines) ...]
 ```
 
 ### `cystack_678bd448`
@@ -646,6 +811,61 @@ Process List:
 [... truncated; full sample at ``sample.txt`` (approx. 278 more lines) ...]
 ```
 
+### `cystack_7ecc3719`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Channel with contacts`, `Commission split`, `Current User`, `Installed Apps`, `Network Info`, `Process List`, `System Summary`, `Telegram`, `User Agents`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+powerful native stealer based on C lang
+forum topics:
+- jabber: <email>
+- tox: 1FCCEA0D37D99894B958C0FCEAC66034FE3580B193C335745D632A19F8E6053C34DFEAAE2538
+Brute-force (password cracking) for crypto wallets (Metamask, Exodus, .dat files, and others)
+â¢ Our total deposit on forums exceeds 5 BTC (over $300.000), which confirms our reliability, while feedback from satisfied clients confirms successful cases.
+Commission split: 70/30 in your favor
+Wallets accepted with a balance of at least $10.000
+Telegram: @m2fa_brute
+Channel with contacts: @maife2fa
+<url> | (3 BTC DEP)
+<url> | (2 BTC DEP)
+<url> | (2.000$ DEP)
+Network Info:
+- Country: BR
+System Summary:
+- HWID: E9BCF30F89543207603164
+- OS: Windows 10 Pro
+- Architecture: x64
+- UserName: joao
+- Computer Name: DESKTOP-V4981QE
+- Local Time: 2025/3/14 <ip>
+- UTC: -3
+- Language: pt-BR
+- Keyboards: Português (Brasil)
+- Laptop: FALSE
+- Running Path: C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe
+- CPU: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+- Cores: 4
+- Threads: 4
+- RAM: 8068 MB
+- Display Resolution: 1280x1024
+- GPU:
+-Intel(R) HD Graphics
+-Intel(R) HD Graphics
+-Intel(R) HD Graphics
+User Agents:
+Google Chrome - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.89 Safari/537.36
+Installed Apps:
+All Users:
+[... truncated; full sample at ``sample.txt`` (approx. 253 more lines) ...]
+```
+
 ### `cystack_a52d3ec9`
 
 **Attribution confidence:** `high`
@@ -750,6 +970,61 @@ Process List:
 	winlogon.exe [852]
 	services.exe [892]
 [... truncated; full sample at ``sample.txt`` (approx. 176 more lines) ...]
+```
+
+### `cystack_aac2df00`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Color Depth`, `Current User`, `Device Name`, `Device String`, `Installed Apps`, `Network Info`, `Process List`, `Process count`, `Resolution`, `System Summary`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+Network Info:
+- IP: <ip>
+System Summary:
+- HWID: 5DDF2051-812A-D57D-0E49-D2B576C1FA6D
+- OS: Windows 10
+- Architecture: x64
+- UserName: Xenon
+- Computer Name: DESKTOP-ET58Q4F
+- Local Time: 2025-05-20 <ip>
+- UTC: 6
+- Language: en-US
+- Keyboards: English (United States)
+- Laptop: FALSE
+- Running Path: C:\Users\<user>\Downloads\QuantumHacks\QuantumLoader v3.82.exe
+- CPU: AMD Ryzen 5 8500G w/ Radeon 740M Graphics
+- Cores: 6
+- Threads: 12
+- RAM: 15 GB
+- Display Resolution:
+Device Name: \\.\DISPLAY1
+Device String: Ryzen 5
+Resolution: 1366x768
+Color Depth: 32 bits per pixel
+- GPU:
+-Ryzen 5
+Process count: 101
+Process List:
+[System Process] [0]
+System [4]
+Registry [148]
+smss.exe [444]
+csrss.exe [620]
+wininit.exe [100]
+csrss.exe [472]
+services.exe [692]
+lsass.exe [776]
+svchost.exe [912]
+fontdrvhost.exe [932]
+svchost.exe [524]
+winlogon.exe [1084]
+[... truncated; full sample at ``sample.txt`` (approx. 126 more lines) ...]
 ```
 
 ### `cystack_b76da4f7`
@@ -915,6 +1190,61 @@ All Users:
 	Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161 - 9.0.30729.6161
 	Microsoft Visual C++ 2019 X86 Additional Runtime - 14.28.29914 - 14.28.29914
 [... truncated; full sample at ``sample.txt`` (approx. 300 more lines) ...]
+```
+
+### `cystack_d8d785c2`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Color Depth`, `Device Name`, `Device String`, `Network Info`, `Process List`, `Process count`, `Resolution`, `System Summary`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+Network Info:
+- IP: <ip>
+System Summary:
+- HWID: 449F535A-6D8D-06BE-D902-C526512A7D0E
+- OS: Windows 10
+- Architecture: x64
+- UserName: Pichau
+- Computer Name: DESKTOP-M81U9SG
+- Local Time: 2025-05-19 <ip>
+- UTC: -3
+- Language: pt-BR
+- Keyboards: Português (Brasil) / Português (Brasil)
+- Laptop: FALSE
+- Running Path: C:\Users\<user>\Downloads\QuantumHacks\QuantumHacks\QuantumLoader v3.82.exe
+- CPU: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+- Cores: 4
+- Threads: 8
+- RAM: 15 GB
+- Display Resolution:
+Device Name: \\.\DISPLAY1
+Device String: NVIDIA GeForce GT 730
+Resolution: 1280x882
+Color Depth: 32 bits per pixel
+Device Name: \\.\DISPLAY2
+Device String: NVIDIA GeForce GT 730
+Resolution: 1280x1024
+Color Depth: 32 bits per pixel
+- GPU:
+Process count: 246
+Process List:
+[System Process] [0]
+System [4]
+Registry [124]
+smss.exe [436]
+csrss.exe [608]
+wininit.exe [816]
+csrss.exe [828]
+services.exe [900]
+lsass.exe [908]
+winlogon.exe [632]
+[... truncated; full sample at ``sample.txt`` (approx. 311 more lines) ...]
 ```
 
 ### `cystack_da422d08`

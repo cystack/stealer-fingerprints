@@ -6,6 +6,31 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "All Users",
+        "Color Depth",
+        "Current User",
+        "Device Name",
+        "Device String",
+        "Installed Apps",
+        "MTA",
+        "Network Info",
+        "Process List",
+        "Process count",
+        "Resolution",
+        "System Summary"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_0092c07b",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "System Summary"
       ],
       "filenames": [
@@ -29,6 +54,29 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_1f8e4d74",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
+        "Color Depth",
+        "Device Name",
+        "Device String",
+        "Installed Apps",
+        "Network Info",
+        "Process List",
+        "Process count",
+        "Resolution",
+        "System Summary"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_2301cf8a",
       "panel_brand": null,
       "synthetic": true
     },
@@ -101,6 +149,30 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_3028b0ca",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
+        "Color Depth",
+        "Device Name",
+        "Device String",
+        "Installed Apps",
+        "MTA",
+        "Network Info",
+        "Process List",
+        "Process count",
+        "Resolution",
+        "System Summary"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_4b30cd7a",
       "panel_brand": null,
       "synthetic": true
     },
@@ -225,6 +297,29 @@
         "All Users",
         "Channel with contacts",
         "Commission split",
+        "Current User",
+        "Installed Apps",
+        "Network Info",
+        "Process List",
+        "System Summary",
+        "Telegram",
+        "User Agents"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_7ecc3719",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
+        "Channel with contacts",
+        "Commission split",
         "Installed Apps",
         "Network Info",
         "System Summary",
@@ -254,6 +349,30 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_a867f3f5",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
+        "Color Depth",
+        "Current User",
+        "Device Name",
+        "Device String",
+        "Installed Apps",
+        "Network Info",
+        "Process List",
+        "Process count",
+        "Resolution",
+        "System Summary"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_aac2df00",
       "panel_brand": null,
       "synthetic": true
     },
@@ -310,6 +429,27 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_b8ed4e31",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Color Depth",
+        "Device Name",
+        "Device String",
+        "Network Info",
+        "Process List",
+        "Process count",
+        "Resolution",
+        "System Summary"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_d8d785c2",
       "panel_brand": null,
       "synthetic": true
     },
