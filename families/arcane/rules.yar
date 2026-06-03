@@ -509,6 +509,54 @@ rule Arcane_cystack_40dc705d
         all of ($key_*)
 }
 
+rule Arcane_cystack_503a7665
+{
+    meta:
+        family = "Arcane"
+        fingerprint_id = "cystack_503a7665"
+
+    strings:
+        $key_0 = "BatteryStatus:" ascii
+        $key_1 = "Capacity:" ascii
+        $key_2 = "Caption:" ascii
+        $key_3 = "ChassisTypes:" ascii
+        $key_4 = "Clipboard:" ascii
+        $key_5 = "Date Install:" ascii
+        $key_6 = "Default:" ascii
+        $key_7 = "Description:" ascii
+        $key_8 = "DeviceID:" ascii
+        $key_9 = "EstimatedChargeRemaining:" ascii
+        $key_10 = "External IP:" ascii
+        $key_11 = "FileSystem:" ascii
+        $key_12 = "FreeSpace:" ascii
+        $key_13 = "FullName:" ascii
+        $key_14 = "Gateway IP:" ascii
+        $key_15 = "HandleCount:" ascii
+        $key_16 = "IPEnabled:" ascii
+        $key_17 = "ISO Key:" ascii
+        $key_18 = "Internal IP:" ascii
+        $key_19 = "LastBootUpTime:" ascii
+        $key_20 = "MACAddress:" ascii
+        $key_21 = "Manufacturer:" ascii
+        $key_22 = "MaxClockSpeed:" ascii
+        $key_23 = "Model:" ascii
+        $key_24 = "Name:" ascii
+        $key_25 = "NumberOfCores:" ascii
+        $key_26 = "NumberOfLogicalProcessors:" ascii
+        $key_27 = "OSArchitecture:" ascii
+        $key_28 = "Product:" ascii
+        $key_29 = "ReleaseDate:" ascii
+        $key_30 = "SMBIOSBIOSVersion:" ascii
+        $key_31 = "SerialNumber:" ascii
+        $key_32 = "Size:" ascii
+        $key_33 = "Speed:" ascii
+        $key_34 = "Version:" ascii
+        $key_35 = "Worker:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Arcane_cystack_5119e83c
 {
     meta:
@@ -771,6 +819,55 @@ rule Arcane_cystack_8729d4c3
         $key_27 = "Speed:" ascii
         $key_28 = "Version:" ascii
         $key_29 = "Worker:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Arcane_cystack_8c7dcc2b
+{
+    meta:
+        family = "Arcane"
+        fingerprint_id = "cystack_8c7dcc2b"
+
+    strings:
+        $key_0 = "AdapterRAM:" ascii
+        $key_1 = "Capacity:" ascii
+        $key_2 = "Caption:" ascii
+        $key_3 = "ChassisTypes:" ascii
+        $key_4 = "Clipboard:" ascii
+        $key_5 = "Data Check-in:" ascii
+        $key_6 = "Data Check-out:" ascii
+        $key_7 = "Date Install:" ascii
+        $key_8 = "Default:" ascii
+        $key_9 = "Description:" ascii
+        $key_10 = "DeviceID:" ascii
+        $key_11 = "External IP:" ascii
+        $key_12 = "FileSystem:" ascii
+        $key_13 = "FreeSpace:" ascii
+        $key_14 = "FullName:" ascii
+        $key_15 = "Gateway IP:" ascii
+        $key_16 = "IPEnabled:" ascii
+        $key_17 = "ISO Key:" ascii
+        $key_18 = "Internal IP:" ascii
+        $key_19 = "MACAddress:" ascii
+        $key_20 = "Manufacturer:" ascii
+        $key_21 = "MaxClockSpeed:" ascii
+        $key_22 = "Model:" ascii
+        $key_23 = "Name:" ascii
+        $key_24 = "NumberOfCores:" ascii
+        $key_25 = "OSArchitecture:" ascii
+        $key_26 = "Product:" ascii
+        $key_27 = "Quarto individual 1:" ascii
+        $key_28 = "Quarto individual 2:" ascii
+        $key_29 = "Quarto individual 3:" ascii
+        $key_30 = "ReleaseDate:" ascii
+        $key_31 = "SMBIOSBIOSVersion:" ascii
+        $key_32 = "SerialNumber:" ascii
+        $key_33 = "Size:" ascii
+        $key_34 = "Speed:" ascii
+        $key_35 = "Version:" ascii
+        $key_36 = "Worker:" ascii
 
     condition:
         all of ($key_*)
@@ -1329,6 +1426,48 @@ rule Arcane_cystack_c003336d
         all of ($key_*)
 }
 
+rule Arcane_cystack_c8278fe6
+{
+    meta:
+        family = "Arcane"
+        fingerprint_id = "cystack_c8278fe6"
+
+    strings:
+        $key_0 = "AdapterRAM:" ascii
+        $key_1 = "Capacity:" ascii
+        $key_2 = "Caption:" ascii
+        $key_3 = "ChassisTypes:" ascii
+        $key_4 = "Date Install:" ascii
+        $key_5 = "Description:" ascii
+        $key_6 = "DeviceID:" ascii
+        $key_7 = "External IP:" ascii
+        $key_8 = "FileSystem:" ascii
+        $key_9 = "FreeSpace:" ascii
+        $key_10 = "FullName:" ascii
+        $key_11 = "Gateway IP:" ascii
+        $key_12 = "IPEnabled:" ascii
+        $key_13 = "ISO Key:" ascii
+        $key_14 = "Internal IP:" ascii
+        $key_15 = "MACAddress:" ascii
+        $key_16 = "Manufacturer:" ascii
+        $key_17 = "MaxClockSpeed:" ascii
+        $key_18 = "Model:" ascii
+        $key_19 = "Name:" ascii
+        $key_20 = "NumberOfCores:" ascii
+        $key_21 = "OSArchitecture:" ascii
+        $key_22 = "Product:" ascii
+        $key_23 = "ReleaseDate:" ascii
+        $key_24 = "SMBIOSBIOSVersion:" ascii
+        $key_25 = "SerialNumber:" ascii
+        $key_26 = "Size:" ascii
+        $key_27 = "Speed:" ascii
+        $key_28 = "Version:" ascii
+        $key_29 = "Worker:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Arcane_cystack_d061dd05
 {
     meta:
@@ -1499,6 +1638,49 @@ rule Arcane_cystack_e1e902cd
         $key_30 = "Speed:" ascii
         $key_31 = "Version:" ascii
         $key_32 = "Worker:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Arcane_cystack_e3a59380
+{
+    meta:
+        family = "Arcane"
+        fingerprint_id = "cystack_e3a59380"
+
+    strings:
+        $key_0 = "AdapterRAM:" ascii
+        $key_1 = "Capacity:" ascii
+        $key_2 = "Caption:" ascii
+        $key_3 = "ChassisTypes:" ascii
+        $key_4 = "Date Install:" ascii
+        $key_5 = "Default:" ascii
+        $key_6 = "Description:" ascii
+        $key_7 = "DeviceID:" ascii
+        $key_8 = "External IP:" ascii
+        $key_9 = "FileSystem:" ascii
+        $key_10 = "FreeSpace:" ascii
+        $key_11 = "FullName:" ascii
+        $key_12 = "Gateway IP:" ascii
+        $key_13 = "IPEnabled:" ascii
+        $key_14 = "ISO Key:" ascii
+        $key_15 = "Internal IP:" ascii
+        $key_16 = "MACAddress:" ascii
+        $key_17 = "Manufacturer:" ascii
+        $key_18 = "MaxClockSpeed:" ascii
+        $key_19 = "Model:" ascii
+        $key_20 = "Name:" ascii
+        $key_21 = "NumberOfCores:" ascii
+        $key_22 = "OSArchitecture:" ascii
+        $key_23 = "Product:" ascii
+        $key_24 = "ReleaseDate:" ascii
+        $key_25 = "SMBIOSBIOSVersion:" ascii
+        $key_26 = "SerialNumber:" ascii
+        $key_27 = "Size:" ascii
+        $key_28 = "Speed:" ascii
+        $key_29 = "Version:" ascii
+        $key_30 = "Worker:" ascii
 
     condition:
         all of ($key_*)

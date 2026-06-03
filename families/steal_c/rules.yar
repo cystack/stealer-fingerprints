@@ -27,6 +27,29 @@ rule StealC_cystack_0092c07b
         all of ($key_*)
 }
 
+rule StealC_cystack_067d56e3
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_067d56e3"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Color Depth:" ascii
+        $key_2 = "Device Name:" ascii
+        $key_3 = "Device String:" ascii
+        $key_4 = "Installed Apps:" ascii
+        $key_5 = "Kingdom Come:" ascii
+        $key_6 = "Network Info:" ascii
+        $key_7 = "Process List:" ascii
+        $key_8 = "Process count:" ascii
+        $key_9 = "Resolution:" ascii
+        $key_10 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule StealC_cystack_1f8e4d74
 {
     meta:
@@ -169,6 +192,29 @@ rule StealC_cystack_51a2d2fa
         $key_3 = "Device String:" ascii
         $key_4 = "Imperator:" ascii
         $key_5 = "Installed Apps:" ascii
+        $key_6 = "Network Info:" ascii
+        $key_7 = "Process List:" ascii
+        $key_8 = "Process count:" ascii
+        $key_9 = "Resolution:" ascii
+        $key_10 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_5b246782
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_5b246782"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Color Depth:" ascii
+        $key_2 = "Device Name:" ascii
+        $key_3 = "Device String:" ascii
+        $key_4 = "Installed Apps:" ascii
+        $key_5 = "Microsoft Age of Empires II:" ascii
         $key_6 = "Network Info:" ascii
         $key_7 = "Process List:" ascii
         $key_8 = "Process count:" ascii
@@ -580,6 +626,29 @@ rule StealC_cystack_e1caec1c
         $key_3 = "Network Info:" ascii
         $key_4 = "System Summary:" ascii
         $key_5 = "User Agents:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_e1cdaf8a
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_e1cdaf8a"
+
+    strings:
+        $key_0 = "Age of Empires II:" ascii
+        $key_1 = "All Users:" ascii
+        $key_2 = "Channel with contacts:" ascii
+        $key_3 = "Commission split:" ascii
+        $key_4 = "Current User:" ascii
+        $key_5 = "Installed Apps:" ascii
+        $key_6 = "Network Info:" ascii
+        $key_7 = "Process List:" ascii
+        $key_8 = "System Summary:" ascii
+        $key_9 = "Telegram:" ascii
+        $key_10 = "WireGuard Installer:" ascii
 
     condition:
         all of ($key_*)

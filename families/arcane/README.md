@@ -29,7 +29,7 @@ the subsection body.
 
 **Also known as:** `Arcane Stealer`, `VGS Stealer (predecessor)`
 
-**Variants observed:** 38
+**Variants observed:** 42
 **Top attribution confidence:** `high`
 **Operator panel brands:** `@BRADLOGS (BRADMAX)`
 **Distribution channels:** `https://t.me/+0IAf5VIrl_EzNWRi`
@@ -711,6 +711,61 @@ SerialNumber: Default string
 [... truncated; full sample at ``sample.txt`` (approx. 49 more lines) ...]
 ```
 
+### `cystack_503a7665`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`BatteryStatus`, `Capacity`, `Caption`, `ChassisTypes`, `Clipboard`, `Date Install`, `Default`, `Description`, `DeviceID`, `EstimatedChargeRemaining`, `External IP`, `FileSystem`, `FreeSpace`, `FullName`, `Gateway IP`, `HandleCount`, `IPEnabled`, `ISO Key`, `Internal IP`, `LastBootUpTime`, `MACAddress`, `Manufacturer`, `MaxClockSpeed`, `Model`, `Name`, `NumberOfCores`, `NumberOfLogicalProcessors`, `OSArchitecture`, `Product`, `ReleaseDate`, `SMBIOSBIOSVersion`, `SerialNumber`, `Size`, `Speed`, `Version`, `Worker`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+---User Info---
+Worker: %Worker%
+Date Install: 29/05/2025 <ip>
+ISO Key: fr
+Clipboard: <email>
+External IP: <redacted>
+Internal IP: <ip>
+Gateway IP: <ip>
+---Full Pc Info---
+=== CPU Information ===
+MaxClockSpeed: 2201
+Name: Intel(R) Core(TM) i7-4702MQ CPU @ 2.20GHz
+NumberOfCores: 4
+=== GPU Information ===
+=== RAM Information ===
+Capacity: 4294967296
+Capacity: 4294967296
+Capacity: 4294967296
+Capacity: 4294967296
+=== Disk Information ===
+Model: WDC WD5000LPVX-75V0TT0
+Size: 500105249280
+=== Network Adapter Information ===
+MACAddress: <ip>
+Name: Qualcomm Atheros AR5BWB222 Wireless Network Adapter
+Speed: 144400000
+MACAddress: <ip>
+Name: Bluetooth Device (Personal Area Network)
+Speed: 3000000
+MACAddress: <ip>
+Name: Broadcom NetLink (TM) Gigabit Ethernet
+MACAddress: <ip>
+Name: Microsoft Wi-Fi Direct Virtual Adapter
+MACAddress: <ip>
+Name: Microsoft Wi-Fi Direct Virtual Adapter #2
+MACAddress: <ip>
+Name: WAN Miniport (IP)
+Speed:
+MACAddress: <ip>
+Name: WAN Miniport (IPv6)
+[... truncated; full sample at ``sample.txt`` (approx. 627 more lines) ...]
+```
+
 ### `cystack_5119e83c`
 
 **Attribution confidence:** `high`
@@ -1039,6 +1094,61 @@ Name: WAN Miniport (IPv6)
 Speed:
 MACAddress: <ip>
 [... truncated; full sample at ``sample.txt`` (approx. 64 more lines) ...]
+```
+
+### `cystack_8c7dcc2b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AdapterRAM`, `Capacity`, `Caption`, `ChassisTypes`, `Clipboard`, `Data Check-in`, `Data Check-out`, `Date Install`, `Default`, `Description`, `DeviceID`, `External IP`, `FileSystem`, `FreeSpace`, `FullName`, `Gateway IP`, `IPEnabled`, `ISO Key`, `Internal IP`, `MACAddress`, `Manufacturer`, `MaxClockSpeed`, `Model`, `Name`, `NumberOfCores`, `OSArchitecture`, `Product`, `Quarto individual 1`, `Quarto individual 2`, `Quarto individual 3`, `ReleaseDate`, `SMBIOSBIOSVersion`, `SerialNumber`, `Size`, `Speed`, `Version`, `Worker`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+---User Info---
+Worker: %Worker%
+Date Install: 05/06/2025 <ip>
+ISO Key: pt
+Clipboard: Segue:
+Quarto individual 1: Gonzaga Ribeiro Pires
+Quarto individual 2: João Paulo Gehlen
+Quarto individual  3: Giovanni Pegoraro
+Data Check-in: 09/06/2025
+Data Check-out: 13/06/2025
+Diária em quarto individual superior: R$170,00
+Cobrar no cartão abaixo, somente diárias.
+VL 0429. Seg 861
+KATIA R KOERICH
+NF em nome do hóspede
+Aguardo confirmação.
+External IP: <redacted>
+Internal IP: <ip>
+Gateway IP: <ip>
+---Full Pc Info---
+=== CPU Information ===
+MaxClockSpeed: 3193
+Name: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+NumberOfCores: 4
+=== GPU Information ===
+AdapterRAM: 2214592512
+Name: Intel(R) HD Graphics
+=== RAM Information ===
+Capacity: 8589934592
+=== Disk Information ===
+Model: SSD NTC 120GB
+Size: 120031511040
+Model: ST1000VM002-1SD102
+Size: 1000202273280
+Model: SanDisk Cruzer Blade USB Device
+Size: 3997486080
+=== Network Adapter Information ===
+MACAddress: <ip>
+Name: Realtek PCIe GbE Family Controller
+Speed: 1000000000
+[... truncated; full sample at ``sample.txt`` (approx. 82 more lines) ...]
 ```
 
 ### `cystack_8cd26306`
@@ -1770,6 +1880,61 @@ SMBIOSBIOSVersion: 1656
 [... truncated; full sample at ``sample.txt`` (approx. 1 more lines) ...]
 ```
 
+### `cystack_c8278fe6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AdapterRAM`, `Capacity`, `Caption`, `ChassisTypes`, `Date Install`, `Description`, `DeviceID`, `External IP`, `FileSystem`, `FreeSpace`, `FullName`, `Gateway IP`, `IPEnabled`, `ISO Key`, `Internal IP`, `MACAddress`, `Manufacturer`, `MaxClockSpeed`, `Model`, `Name`, `NumberOfCores`, `OSArchitecture`, `Product`, `ReleaseDate`, `SMBIOSBIOSVersion`, `SerialNumber`, `Size`, `Speed`, `Version`, `Worker`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+---User Info---
+Worker: %Worker%
+Date Install: 05-06-2025 <ip>
+ISO Key: ar
+External IP: <redacted>
+Internal IP: <ip>
+Gateway IP: <ip>
+---Full Pc Info---
+=== CPU Information ===
+MaxClockSpeed: 3001
+Name: Intel(R) Core(TM) i5-4430 CPU @ 3.00GHz
+NumberOfCores: 4
+=== GPU Information ===
+AdapterRAM: 1073741824
+Name: Intel(R) HD Graphics 4600
+=== RAM Information ===
+Capacity: 4294967296
+Capacity: 4294967296
+=== Disk Information ===
+Model: ST3250318AS
+Size: 250056737280
+=== Network Adapter Information ===
+MACAddress: <ip>
+Name: 802.11n USB Wireless LAN Card
+Speed: 312000000
+MACAddress: <ip>
+Name: Realtek PCIe GbE Family Controller
+MACAddress: <ip>
+Name: Microsoft Wi-Fi Direct Virtual Adapter
+MACAddress: <ip>
+Name: Microsoft Wi-Fi Direct Virtual Adapter #2
+MACAddress: <ip>
+Name: WAN Miniport (IP)
+Speed:
+MACAddress: <ip>
+Name: WAN Miniport (IPv6)
+Speed:
+MACAddress: <ip>
+Name: WAN Miniport (Network Monitor)
+Speed:
+[... truncated; full sample at ``sample.txt`` (approx. 61 more lines) ...]
+```
+
 ### `cystack_d061dd05`
 
 **Attribution confidence:** `high`
@@ -1988,6 +2153,61 @@ Speed:
 === Windows Version Information ===
 Caption: Microsoft Windows 11 Pro
 [... truncated; full sample at ``sample.txt`` (approx. 74 more lines) ...]
+```
+
+### `cystack_e3a59380`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AdapterRAM`, `Capacity`, `Caption`, `ChassisTypes`, `Date Install`, `Default`, `Description`, `DeviceID`, `External IP`, `FileSystem`, `FreeSpace`, `FullName`, `Gateway IP`, `IPEnabled`, `ISO Key`, `Internal IP`, `MACAddress`, `Manufacturer`, `MaxClockSpeed`, `Model`, `Name`, `NumberOfCores`, `OSArchitecture`, `Product`, `ReleaseDate`, `SMBIOSBIOSVersion`, `SerialNumber`, `Size`, `Speed`, `Version`, `Worker`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+---User Info---
+Worker: %Worker%
+Date Install: 05/06/2025 <ip>
+ISO Key: ar
+External IP: <redacted>
+Internal IP: <ip>
+Gateway IP: fe80::<ip>%3
+---Full Pc Info---
+=== CPU Information ===
+MaxClockSpeed: 3600
+Name: Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz
+NumberOfCores: 4
+=== GPU Information ===
+AdapterRAM: 1073741824
+Name: Intel(R) UHD Graphics 630
+=== RAM Information ===
+Capacity: 4294967296
+=== Disk Information ===
+Model: KingFast
+Size: 128034708480
+Model: WDC WD5000AZLX-60K2TA0
+Size: 500105249280
+=== Network Adapter Information ===
+MACAddress: <ip>
+Name: Realtek Gaming GbE Family Controller
+Speed: 100000000
+MACAddress: <ip>
+Name: WAN Miniport (IP)
+Speed:
+MACAddress: <ip>
+Name: WAN Miniport (IPv6)
+Speed:
+MACAddress: <ip>
+Name: WAN Miniport (Network Monitor)
+Speed:
+=== Windows Version Information ===
+Caption: Microsoft Windows 10 Pro
+OSArchitecture: 64 bits
+Version: 10.0.17763
+=== Motherboard Information ===
+[... truncated; full sample at ``sample.txt`` (approx. 67 more lines) ...]
 ```
 
 ### `cystack_f7f66d05`

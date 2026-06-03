@@ -31,6 +31,30 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "All Users",
+        "Color Depth",
+        "Device Name",
+        "Device String",
+        "Installed Apps",
+        "Kingdom Come",
+        "Network Info",
+        "Process List",
+        "Process count",
+        "Resolution",
+        "System Summary"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_067d56e3",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "System Summary"
       ],
       "filenames": [
@@ -197,6 +221,30 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_51a2d2fa",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
+        "Color Depth",
+        "Device Name",
+        "Device String",
+        "Installed Apps",
+        "Microsoft Age of Empires II",
+        "Network Info",
+        "Process List",
+        "Process count",
+        "Resolution",
+        "System Summary"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_5b246782",
       "panel_brand": null,
       "synthetic": true
     },
@@ -624,6 +672,30 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_e1caec1c",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Age of Empires II",
+        "All Users",
+        "Channel with contacts",
+        "Commission split",
+        "Current User",
+        "Installed Apps",
+        "Network Info",
+        "Process List",
+        "System Summary",
+        "Telegram",
+        "WireGuard Installer"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_e1cdaf8a",
       "panel_brand": null,
       "synthetic": true
     },

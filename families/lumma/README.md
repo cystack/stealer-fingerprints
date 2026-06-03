@@ -9,7 +9,7 @@ signature on the `Time:` line. Build banners reference the
 
 **Also known as:** `LummaC2`, `Lumma Stealer`
 
-**Variants observed:** 42
+**Variants observed:** 47
 **Top attribution confidence:** `high`
 **Operator panel brands:** `AL Stealer`, `BRADMAX`, `Deimos Golang Stealer`
 **Distribution channels:** `@BRADLOGS`, `@ft7links`, `t.me/additionallibraries`
@@ -169,6 +169,55 @@ IP Address: <redacted>
 Time: 25.05.2025 <ip> (sig:1748178833.900ff7d8a5e6e988fc9c5fa37a62d73a)
 Country: DE
 LID: @BRADMAX_LOG (BRADMAX) / <url>
+```
+
+### `cystack_086b58ca`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Exploit`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+- OS Version: Windows 10 Entreprise N (10.0.19045) x64
+- Local Date: 24.02.2025 <ip>
+- Time Zone: UTC+1
+- Install Date: 01.01.1970 <ip>
+- Elevated: false
+- Computer: DESKTOP-HEUP714
+- User: Gege
+- Domain:
+- Hostname: DESKTOP-HEUP714
+- NetBIOS: DESKTOP-HEUP714
+- Language: fr-FR
+- Anti Virus:
+- Windows Defender
+- HWID: 7B5903829E6CB491DCC0C509824AA8E1
+- RAM Size: 16384MB
+- CPU Vendor: GenuineIntel
+- CPU Name: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+- CPU Threads: 12
+- CPU Cores: 6
+- GPU:
+- NVIDIA GeForce GTX 1660
+- Display resolution: 1920x1080
+- IP Address: <ip>
+- Time: 24.02.2025 <ip> (sig:1740352266.0a81f18f235776a21df83a97b367dbf6)
+- Country: FR
+Куплю ваши YouTube каналы в больших объемах!
+Работая в данной сфере больше 6 лет  и могу с уверенностью сказать, что только работая с нами вы сможете  реализовать ваши YouTube каналы и получить максимальную выгоду.
+Постоянным продавцам мы предоставляем лучшую цену на рынке за любой канал + % со стрима.
+Наша команда на находится на связи 24/7.
+Exploit: <url>
+#1 Cервис по подобору паролей (MetaMask, Phantom, Exodus и множество других)
+Применяем широкий спектр атак для подбора паролей. Большой опыт в области криптографии и взлома паролей.
+Работаем с кошельками от $5,000
+Процент: 70/30 или 60/40 в вашу пользу (зависит от сложности подобранного пароля)
+Контакты - <url>
 ```
 
 ### `cystack_0b22cc29`
@@ -414,6 +463,44 @@ Country: VE
 LID: @BRADMAX_LOG (BRADMAX) / <url>
 ```
 
+### `cystack_353a363d`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Domain`, `Elevated`, `HWID`, `Hostname`, `IP Address`, `Language`, `Local Date`, `LummaC2 Build`, `NetBIOS`, `OS Version`, `Path`, `RAM Size`, `Time`, `Time Zone`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+LummaC2 Build: May 30 2025
+Path: <redacted>
+OS Version: Windows 10 Home (10.0.19045) x64
+Local Date: 02.06.2025 <ip>
+Time Zone: UTC+2
+Elevated: true
+Computer: 7932C1
+User: MK
+Domain: <redacted>
+Hostname: <redacted>
+NetBIOS: 7932C1
+Language: de-CH
+HWID: <redacted>
+RAM Size: 32768MB
+CPU Vendor: GenuineIntel
+CPU Name: 11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz
+CPU Threads: 16
+CPU Cores: 8
+Display resolution: 3440x1440
+IP Address: <redacted>
+Time: 02.06.2025 <ip> (sig:1748873486.db1b731ec4f8f08ff5dd083b8b801a19)
+Country: CH
+- LID: @BRADMAX_LOG (BRADMAX) / <url>
+BEST LOGS => @BRADMAX_LOG
+```
+
 ### `cystack_38ce40fc`
 
 **Attribution confidence:** `high`
@@ -622,6 +709,43 @@ Display resolution: 1920x1080
 IP Address: <redacted>
 Country: AT
 LID: @BRADMAX_LOG (BRADMAX) / <url>
+```
+
+### `cystack_5492ae4d`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Elevated`, `HWID`, `Hostname`, `IP Address`, `Language`, `Local Date`, `LummaC2 Build`, `NetBIOS`, `OS Version`, `Path`, `RAM Size`, `Time`, `Time Zone`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+LummaC2 Build: May 30 2025
+Path: <redacted>
+OS Version: Windows 11 Home (10.0.22621) x64
+Local Date: 02.06.2025 <ip>
+Time Zone: UTC+2
+Elevated: true
+Computer: DESKTOP-MA46R3
+User: Eli�ka O�merov�
+Hostname: <redacted>
+NetBIOS: DESKTOP-MA46R3
+Language: cs-CZ
+HWID: <redacted>
+RAM Size: 16384MB
+CPU Vendor: GenuineIntel
+CPU Name: 11th Gen Intel(R) Core(TM) i7-11700F @ 2.50GHz
+CPU Threads: 16
+CPU Cores: 8
+Display resolution: 1600x1024
+IP Address: <redacted>
+Time: 02.06.2025 <ip> (sig:1748883146.a7ad7e6de6128bb241b54edfd5c47bb4)
+Country: CZ
+- LID: @BRADMAX_LOG (BRADMAX) / <url>
+BEST LOGS => @BRADMAX_LOG
 ```
 
 ### `cystack_642a0aa1`
@@ -962,6 +1086,45 @@ LID: @BRADMAX_LOG (BRADMAX) / <url>
 - Time: 18.03.2025 <ip> (sig:1742307760.8839f447a216b645675b3fa5b6cf834c)
 - Country: JM
 LID: FATE99--Main
+```
+
+### `cystack_8176e468`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Domain`, `Elevated`, `HWID`, `Hostname`, `IP Address`, `Install Date`, `Language`, `Local Date`, `LummaC2 Build`, `NetBIOS`, `OS Version`, `Path`, `RAM Size`, `Time`, `Time Zone`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+LummaC2 Build: May 30 2025
+Path: <redacted>
+OS Version: Windows 11 Home (10.0.26100) x64
+Local Date: 31.05.2025 <ip>
+Time Zone: UTC-4
+Install Date: 31.12.1969 <ip>
+Elevated: false
+Computer: TS-eac31862
+User: jsavo
+Domain: <redacted>
+Hostname: <redacted>
+NetBIOS: TS-eac31862
+Language: en-CA
+HWID: <redacted>
+RAM Size: 16384MB
+CPU Vendor: AuthenticAMD
+CPU Name: AMD Ryzen 9 3900X 12-Core Processor
+CPU Threads: 24
+CPU Cores: 12
+Display resolution: 1680x1080
+IP Address: <redacted>
+Time: 31.05.2025 <ip> (sig:1748683211.ccbf36f2cbcd14e4a82cb47a33d9843b)
+Country: CA
+- LID: @BRADMAX_LOG (BRADMAX) / <url>
+BEST LOGS => @BRADMAX_LOG
 ```
 
 ### `cystack_86f8cf79`
@@ -1567,6 +1730,54 @@ IP Address: <redacted>
 Time: 28.05.2025 <ip> (sig:1748447320.66f1e213aa3a3e6f2a9e7c6f9fbbc47a)
 Country: AR
 LID: @BRADMAX_LOG (BRADMAX) / <url>
+```
+
+### `cystack_f7d74e23`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Telegram`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+- OS Version: Windows 10 Home (10.0.19045) x64
+- Local Date: 22.08.2024 <ip>
+- Time Zone: UTC+2
+- Install Date: 06.11.2023 <ip>
+- Elevated: false
+- Computer: DESKTOP-A3AG368
+- User: lopez
+- Domain:
+- Hostname: DESKTOP-A3AG368
+- NetBIOS: DESKTOP-A3AG368
+- Language: es-ES
+- Anti Virus:
+- Windows Defender [ON]
+- HWID: 573553C7444086B62E0D69219EF937F8
+- RAM Size: 8192MB
+- CPU Vendor: GenuineIntel
+- CPU Name: Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+- CPU Threads: 6
+- CPU Cores: 6
+- GPU: NVIDIA GeForce GTX 1050
+- Display resolution: 1920x1080
+- IP Address: <ip>
+- Country: ES
+Подбор паролей и отработка кошельков >> t.me/Cashoutmeta
+Подбор паролей к Phantom / Metamask / Electrum / Atomic / Wallet.dat / Exodus
+Минимальная сумма подбора от 3.000$
+Беру после любых других брутеров
+Процент: 70/30 на любые балансы (70% вам)
+Депозит: ~3.2 BTC
+Telegram: @cashoutmeta
+- IP Address: <ip>
+- Time: 06.06.2025 <ip> (sig:1749232130.84ecfad149f0343efb6c0f00fdadbd56)
+- Country: UNK
+- LID: @BRADMAX_LOG (BRADMAX) / <url>
 ```
 
 ### `Deimos Golang Stealer`

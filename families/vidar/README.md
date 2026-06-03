@@ -8,7 +8,7 @@ high-volume infostealer family in 2025+.
 
 **Also known as:** `VidarStealer`
 
-**Variants observed:** 4023
+**Variants observed:** 4033
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -42591,6 +42591,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 330 more lines) ...]
 ```
 
+### `cystack_31c90726`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Disney Epic Mickey`, `Display Resolution`, `GUID`, `God of War`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+BEST LOGS => @BRADMAX_LOG
+Ip: <redacted>
+Country: ID
+Version: 13.2
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Work Dir: In memory
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States) / Indonesian (Indonesia) / English (Indonesia)
+Local Time: 23/3/2025 <ip>
+TimeZone: 7
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+Cores: 6
+Threads: 12
+RAM: 32638 MB
+VideoCard: NVIDIA GeForce RTX 3050
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+services.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+winlogon.exe
+fontdrvhost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 452 more lines) ...]
+```
+
 ### `cystack_31e47f01`
 
 **Attribution confidence:** `high`
@@ -43689,6 +43744,61 @@ lsass.exe
 winlogon.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 346 more lines) ...]
+```
+
+### `cystack_33127396`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `CONTROL`, `Computer Name`, `Cores`, `Country`, `Crisis Core`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+BEST LOGS => @BRADMAX_LOG
+Ip: <redacted>
+Country: BR
+Version: 13.5
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Work Dir: In memory
+Windows: Windows 10 Home Single Language
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portugu?s (Brasil)
+Local Time: 29/5/2025 <ip>
+TimeZone: -3
+[Hardware]
+Processor: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+Cores: 4
+Threads: 8
+RAM: 16272 MB
+VideoCard: AMD Radeon RX 580 2048SP
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+services.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+winlogon.exe
+fontdrvhost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 203 more lines) ...]
 ```
 
 ### `cystack_331d1b30`
@@ -54029,6 +54139,61 @@ WUDFHost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 253 more lines) ...]
+```
+
+### `cystack_404d01ef`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Display Resolution`, `GUID`, `HWID`, `HoneyCome`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Mafia`, `Path`, `Processor`, `RAM`, `Sekiro`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+BEST LOGS => @BRADMAX_LOG
+Ip: <redacted>
+Country: ID
+Version: 13.8
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Work Dir: In memory
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: English (United States)
+Local Time: 23/5/2025 <ip>
+TimeZone: 7
+[Hardware]
+Processor: Intel(R) Core(TM) i3-N305
+Cores: 8
+Threads: 8
+RAM: 7865 MB
+VideoCard: Intel(R) UHD Graphics
+[Processes]
+System
+Secure System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+services.exe
+LsaIso.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+WUDFHost.exe
+svchost.exe
+svchost.exe
+WUDFHost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 290 more lines) ...]
 ```
 
 ### `cystack_4059ebb3`
@@ -79276,6 +79441,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 352 more lines) ...]
 ```
 
+### `cystack_5d1b7d29`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MTA`, `MachineID`, `NARUTO SHIPPUDEN`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+@BRADMAX_LOG (BRADMAX) / <url>
+
+Ip: <redacted>
+Country: CO
+Version: 13.2
+
+Date: 24/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1360x768
+Keyboard Languages: Espa?ol (Espa?a, internacional) / Espa?ol (Colombia) / Espa?ol (M?xico)
+Local Time: 24/3/2025 <ip>
+TimeZone: -5
+
+[Hardware]
+Processor: Intel(R) Celeron(R) J4005 CPU @ 2.00GHz
+Cores: 2
+Threads: 2
+RAM: 3916 MB
+VideoCard: Intel(R) UHD Graphics 600
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+services.exe
+lsass.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 338 more lines) ...]
+```
+
 ### `cystack_5d2f7202`
 
 **Attribution confidence:** `high`
@@ -85709,6 +85929,61 @@ svchost.exe
 svchost.exe
 dwm.exe
 [... truncated; full sample at ``sample.txt`` (approx. 187 more lines) ...]
+```
+
+### `cystack_64ec32db`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `NSUNS 3`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+@BRADMAX_LOG (BRADMAX) / <url>
+
+Ip: <redacted>
+Country: BR
+Version: 13.2
+
+Date: 24/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portugu?s (Brasil)
+Local Time: 24/3/2025 <ip>
+TimeZone: -3
+
+[Hardware]
+Processor: AMD Ryzen 5 5600G with Radeon Graphics         
+Cores: 6
+Threads: 12
+RAM: 15763 MB
+VideoCard: AMD Radeon(TM) Graphics
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+winlogon.exe
+services.exe
+[... truncated; full sample at ``sample.txt`` (approx. 126 more lines) ...]
 ```
 
 ### `cystack_6512b5f2`
@@ -101771,6 +102046,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 328 more lines) ...]
 ```
 
+### `cystack_796e73e9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `DQM`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+@BRADMAX_LOG (BRADMAX) / <url>
+
+Ip: <redacted>
+Country: BR
+Version: 13.2
+
+Date: 22/3/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portugu?s (Brasil) / Ingl?s (Estados Unidos) / Japon?s (Jap?o)
+Local Time: 22/3/2025 <ip>
+TimeZone: -3
+
+[Hardware]
+Processor: AMD Ryzen 7 5700                               
+Cores: 8
+Threads: 16
+RAM: 32563 MB
+VideoCard: NVIDIA GeForce RTX 3060
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+services.exe
+lsass.exe
+[... truncated; full sample at ``sample.txt`` (approx. 369 more lines) ...]
+```
+
 ### `cystack_798ce066`
 
 **Attribution confidence:** `high`
@@ -109359,6 +109689,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 299 more lines) ...]
+```
+
+### `cystack_82633733`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Diablo III`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+@BRADMAX_LOG (BRADMAX) / <url>
+
+Ip: <redacted>
+Country: BR
+Version: 13.8
+
+Date: 25/5/2025 <ip>
+MachineID: 
+<redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: Portugu?s (Brasil)
+Local Time: 25/5/2025 <ip>
+TimeZone: -3
+
+[Hardware]
+Processor: Intel(R) Core(TM)2 Quad CPU    Q9400  @ 2.66GHz
+Cores: 4
+Threads: 4
+RAM: 8180 MB
+VideoCard: NVIDIA GeForce GT 630
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+services.exe
+lsass.exe
+[... truncated; full sample at ``sample.txt`` (approx. 94 more lines) ...]
 ```
 
 ### `cystack_826f85f6`
@@ -156826,6 +157211,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 241 more lines) ...]
 ```
 
+### `cystack_b709e9d4`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Cyberpunk 2077`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+BEST LOGS => @BRADMAX_LOG
+Ip: <redacted>
+Country: CO
+Version: 13.8
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Work Dir: In memory
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Espa?ol (M?xico) / Espa?ol (Colombia) / Espa?ol (M?xico)
+Local Time: 24/5/2025 <ip>
+TimeZone: -5
+[Hardware]
+Processor: AMD Ryzen 5 7600 6-Core Processor
+Cores: 6
+Threads: 12
+RAM: 15465 MB
+VideoCard: NVIDIA GeForce RTX 4060
+[Processes]
+System
+Secure System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+services.exe
+LsaIso.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 276 more lines) ...]
+```
+
 ### `cystack_b7181300`
 
 **Attribution confidence:** `high`
@@ -162654,6 +163094,61 @@ Processor: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
 Cores: 4
 Threads: 4
 [... truncated; full sample at ``sample.txt`` (approx. 272 more lines) ...]
+```
+
+### `cystack_bd781174`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Display Resolution`, `Fire Emblem`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Monster Hunter World`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+BEST LOGS => @BRADMAX_LOG
+Ip: <redacted>
+Country: ID
+Version: 13.8
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Work Dir: In memory
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States)
+Local Time: 25/5/2025 <ip>
+TimeZone: 7
+[Hardware]
+Processor: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+Cores: 4
+Threads: 8
+RAM: 16024 MB
+VideoCard: Intel(R) HD Graphics 630
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+services.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+WUDFHost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 330 more lines) ...]
 ```
 
 ### `cystack_bd90ea39`
@@ -209414,6 +209909,61 @@ svchost.exe
 fontdrvhost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 201 more lines) ...]
+```
+
+### `cystack_f3aadcba`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Jurassic World`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+BEST LOGS => @BRADMAX_LOG
+Ip: <redacted>
+Country: BR
+Version: 13.2
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Work Dir: In memory
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: Ingl?s (Estados Unidos)
+Local Time: 20/3/2025 <ip>
+TimeZone: -3
+[Hardware]
+Processor: Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+Cores: 4
+Threads: 4
+RAM: 8149 MB
+VideoCard: NVIDIA GeForce GTX 1060 6GB
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+services.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 399 more lines) ...]
 ```
 
 ### `cystack_f3e0b56a`

@@ -8,7 +8,7 @@ with the v2 rewrite tracked through 2024.
 
 **Also known as:** `StealC v1`, `StealC v2`
 
-**Variants observed:** 32
+**Variants observed:** 35
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -74,6 +74,61 @@ svchost.exe [500]
 svchost.exe [708]
 winlogon.exe [368]
 [... truncated; full sample at ``sample.txt`` (approx. 163 more lines) ...]
+```
+
+### `cystack_067d56e3`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Color Depth`, `Device Name`, `Device String`, `Installed Apps`, `Kingdom Come`, `Network Info`, `Process List`, `Process count`, `Resolution`, `System Summary`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+Network Info:
+- IP: <ip>
+- Country: ES
+System Summary:
+- HWID: EAECA037-720C-1533-E04F-148BA8E79C63
+- OS: Windows 11
+- Architecture: x64
+- UserName: desktop
+- Computer Name: DESKTOP-6QB6031
+- Local Time: 2025-05-26 <ip>
+- UTC: 1
+- Language: es-ES
+- Keyboards: Spanish (Spain, International Sort) / English (United States)
+- Laptop: FALSE
+- Running Path: C:\Users\<user>\AppData\Local\fdrjr7jh6466wgwtredyh5t6qehi5w5h4t39tjdakdh2juwkhu.exe
+- CPU: 12th Gen Intel(R) Core(TM) i7-12700H
+- Cores: 14
+- Threads: 20
+- RAM: 32 GB
+- Display Resolution:
+Monitor 1
+Device Name: \\.\DISPLAY1
+Device String: NVIDIA GeForce RTX 3080
+Resolution: 3840x2160
+Color Depth: 32 bits per pixel
+- GPU:
+-NVIDIA GeForce RTX 3080
+Process count: 190
+Process List:
+[System Process] [0]
+System [4]
+Registry [320]
+smss.exe [860]
+csrss.exe [1084]
+wininit.exe [1180]
+services.exe [1256]
+lsass.exe [1276]
+svchost.exe [1408]
+WUDFHost.exe [1440]
+fontdrvhost.exe [1448]
+[... truncated; full sample at ``sample.txt`` (approx. 355 more lines) ...]
 ```
 
 ### `cystack_1a6c3169`
@@ -538,6 +593,61 @@ winlogon.exe [1200]
 lsass.exe [1264]
 svchost.exe [1392]
 [... truncated; full sample at ``sample.txt`` (approx. 213 more lines) ...]
+```
+
+### `cystack_5b246782`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Color Depth`, `Device Name`, `Device String`, `Installed Apps`, `Microsoft Age of Empires II`, `Network Info`, `Process List`, `Process count`, `Resolution`, `System Summary`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+Network Info:
+- IP: <ip>
+- Country: HR
+System Summary:
+- HWID: 726DBAC8-E947-C5BC-C310-5FC41BD8F74C
+- OS: Windows 10
+- Architecture: x64
+- UserName: mcepu
+- Computer Name: DESKTOP-7PF5044
+- Local Time: 2025-06-08 <ip>
+- UTC: 1
+- Language: hr-HR
+- Keyboards: Croatian (Croatia) / English (United States)
+- Laptop: FALSE
+- Running Path: C:\ProgramData\driver1.exe
+- CPU: AMD Ryzen 3 2200G with Radeon Vega Graphics
+- Cores: 4
+- Threads: 4
+- RAM: 7 GB
+- Display Resolution:
+Monitor 1
+Device Name: \\.\DISPLAY1
+Device String: AMD Radeon(TM) Vega 8 Graphics
+Resolution: 1680x1050
+Color Depth: 32 bits per pixel
+- GPU:
+-AMD Radeon(TM) Vega 8 Graphics
+Process count: 183
+Process List:
+[System Process] [0]
+System [4]
+Registry [108]
+smss.exe [928]
+csrss.exe [892]
+wininit.exe [1108]
+services.exe [1256]
+lsass.exe [1264]
+svchost.exe [1396]
+fontdrvhost.exe [1428]
+svchost.exe [1524]
+[... truncated; full sample at ``sample.txt`` (approx. 252 more lines) ...]
 ```
 
 ### `cystack_678bd448`
@@ -1685,6 +1795,61 @@ All Users:
 	AnyDesk - ad 8.0.10
 	Brave - <ip>
 [... truncated; full sample at ``sample.txt`` (approx. 345 more lines) ...]
+```
+
+### `cystack_e1cdaf8a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Age of Empires II`, `All Users`, `Channel with contacts`, `Commission split`, `Current User`, `Installed Apps`, `Network Info`, `Process List`, `System Summary`, `Telegram`, `WireGuard Installer`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+stealc stealer
+powerful native stealer based on C lang
+forum topics:
+- <url>
+- <url>
+buy:
+- jabber: <email>
+- tox: 1FCCEA0D37D99894B958C0FCEAC66034FE3580B193C335745D632A19F8E6053C34DFEAAE2538
+Brute-force (password cracking) for crypto wallets (Metamask, Exodus, .dat files, and others)
+• We have been withdrawing cryptocurrency from logs for over 4 years, with a total amount withdrawn exceeding $15.000.000
+• Our total deposit on forums exceeds 5 BTC (over $300.000), which confirms our reliability, while feedback from satisfied clients confirms successful cases.
+• In addition to manual work, we use a powerful ML model we created and trained as an auxiliary tool. It has been trained on over 1.000.000 logs, allowing us to speed up the process and improve the accuracy of password cracking.
+Commission split: 70/30 in your favor
+Wallets accepted with a balance of at least $10.000
+Telegram: @m2fa_brute
+Channel with contacts: @maife2fa
+<url> | (3 BTC DEP)
+<url> | (2 BTC DEP)
+<url> | (2.000$ DEP)
+Network Info:
+- IP: <ip>
+- Country: ZA
+System Summary:
+- HWID: OV62TND8PVH9SMR3L337FM
+- OS: Windows 11
+- Architecture: x64
+- UserName: louis
+- Computer Name: LAPTOP-KHFN6VIB
+- Local Time: 2025/5/28 <ip>
+- UTC: 2
+- Language: en-US
+- Keyboards: English (South Africa) / English (United States) / English (United Kingdom) / English (Australia)
+- Laptop: FALSE
+- Running Path: C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe
+- CPU: Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
+- Cores: 4
+- Threads: 8
+- RAM: 16258 MB
+- Display Resolution: 1536x864
+- GPU:
+[... truncated; full sample at ``sample.txt`` (approx. 361 more lines) ...]
 ```
 
 ### `cystack_e460e932`
