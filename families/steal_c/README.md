@@ -8,7 +8,7 @@ with the v2 rewrite tracked through 2024.
 
 **Also known as:** `StealC v1`, `StealC v2`
 
-**Variants observed:** 26
+**Variants observed:** 32
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -485,6 +485,61 @@ svchost.exe [1384]
 [... truncated; full sample at ``sample.txt`` (approx. 233 more lines) ...]
 ```
 
+### `cystack_51a2d2fa`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Color Depth`, `Device Name`, `Device String`, `Imperator`, `Installed Apps`, `Network Info`, `Process List`, `Process count`, `Resolution`, `System Summary`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+Network Info:
+- IP: <ip>
+- Country: BE
+System Summary:
+- HWID: 277ED79D-C56E-1069-32D5-D6E15A8DBED9
+- OS: Windows 11
+- Architecture: x64
+- UserName: idris
+- Computer Name: WO6YE2LD
+- Local Time: 2025-05-22 <ip>
+- UTC: 1
+- Language: fr-BE
+- Keyboards: Français (France) / Français (France)
+- Laptop: FALSE
+- Running Path: C:\Users\<user>\AppData\Local\Temp\tgihtesi1d2tdr5894qu1eywgkgu2aii9feqe7ktie3hejt663.exe
+- CPU: AMD Ryzen 7 5800X 8-Core Processor
+- Cores: 8
+- Threads: 16
+- RAM: 32 GB
+- Display Resolution:
+Monitor 1
+Device Name: \\.\DISPLAY1
+Device String: AMD Radeon RX 6700 XT
+Resolution: 3840x1200
+Color Depth: 32 bits per pixel
+- GPU:
+-AMD Radeon RX 6700 XT
+Process count: 159
+Process List:
+[System Process] [0]
+System [4]
+Registry [204]
+smss.exe [644]
+csrss.exe [980]
+wininit.exe [1088]
+csrss.exe [1096]
+services.exe [1192]
+winlogon.exe [1200]
+lsass.exe [1264]
+svchost.exe [1392]
+[... truncated; full sample at ``sample.txt`` (approx. 213 more lines) ...]
+```
+
 ### `cystack_678bd448`
 
 **Attribution confidence:** `high`
@@ -866,6 +921,116 @@ All Users:
 [... truncated; full sample at ``sample.txt`` (approx. 253 more lines) ...]
 ```
 
+### `cystack_8a9e646a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Call of Duty`, `Color Depth`, `Device Name`, `Device String`, `Installed Apps`, `Network Info`, `Process List`, `Process count`, `Resolution`, `System Summary`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+Network Info:
+- Country: PK
+System Summary:
+- HWID: 877BACE3-8170-6A7F-243B-3817AC13802F
+- OS: Windows 10
+- Architecture: x64
+- UserName: ASAD ARSLAN
+- Computer Name: DESKTOP-2U5QJQJ
+- Local Time: 2025-05-20 <ip>
+- UTC: 5
+- Language: en-US
+- Keyboards: English (United States)
+- Laptop: FALSE
+- Running Path: C:\Users\<user>\AppData\Local\Temp\Rar$EXb9620.32820\QuantumHacks\QuantumLoader v3.82.exe
+- CPU: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+- Cores: 4
+- Threads: 4
+- RAM: 8 GB
+- Display Resolution:
+Device Name: \\.\DISPLAY1
+Device String: NVIDIA Quadro K620
+Resolution: 1600x900
+Color Depth: 32 bits per pixel
+- GPU:
+Process count: 192
+Process List:
+[System Process] [0]
+System [4]
+Registry [108]
+smss.exe [404]
+csrss.exe [584]
+wininit.exe [672]
+csrss.exe [684]
+services.exe [748]
+lsass.exe [764]
+winlogon.exe [820]
+svchost.exe [972]
+fontdrvhost.exe [996]
+fontdrvhost.exe [1000]
+svchost.exe [8]
+[... truncated; full sample at ``sample.txt`` (approx. 339 more lines) ...]
+```
+
+### `cystack_9adca1a9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Color Depth`, `Device Name`, `Device String`, `Installed Apps`, `Network Info`, `Process List`, `Process count`, `Resolution`, `System Summary`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+Network Info:
+- Country: DZ
+System Summary:
+- HWID: 20757F7C-F903-26D0-9F84-5B98370C33E0
+- OS: Windows 11
+- Architecture: x64
+- UserName: بنادم
+- Computer Name: DESKTOP-0NLUSSE
+- Local Time: 2025-06-02 <ip>
+- UTC: 1
+- Language: en-US
+- Keyboards: English (United States) / English (United States) / French (France) / Arabic (Algeria)
+- Laptop: FALSE
+- Running Path: C:\Users\<user>\AppData\Local\Microsoft\ryryqdg91e14awyjrrei7jrd9utka6dafh8g723dujytreyfj4.exe
+- CPU: Intel(R) Core(TM) i3-6100 CPU @ 3.70GHz
+- Cores: 2
+- Threads: 4
+- RAM: 8 GB
+- Display Resolution:
+Device Name: \\.\DISPLAY1
+Device String: Intel(R) HD Graphics 530
+Resolution: 1366x768
+Color Depth: 32 bits per pixel
+- GPU:
+-Intel(R) HD Graphics 530
+Process count: 201
+Process List:
+[System Process] [0]
+System [4]
+Registry [124]
+smss.exe [496]
+csrss.exe [816]
+csrss.exe [896]
+wininit.exe [920]
+winlogon.exe [996]
+services.exe [800]
+lsass.exe [900]
+svchost.exe [1060]
+WUDFHost.exe [1104]
+svchost.exe [1160]
+[... truncated; full sample at ``sample.txt`` (approx. 223 more lines) ...]
+```
+
 ### `cystack_a52d3ec9`
 
 **Attribution confidence:** `high`
@@ -915,6 +1080,116 @@ Brute-force (password cracking) for crypto wallets (Metamask, Exodus, .dat files
 • In addition to manual work, we use a powerful ML model we created and trained as an auxiliary tool. It has been trained on over 1.000.000 logs, allowing us to speed up the process and improve the accuracy of password cracking.
 
 [... truncated; full sample at ``sample.txt`` (approx. 295 more lines) ...]
+```
+
+### `cystack_a7a7748a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Channel with contacts`, `Commission split`, `Installed Apps`, `MTA`, `Network Info`, `System Summary`, `Telegram`, `User Agents`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+powerful native stealer based on C lang
+forum topics:
+- jabber: <email>
+- tox: 1FCCEA0D37D99894B958C0FCEAC66034FE3580B193C335745D632A19F8E6053C34DFEAAE2538
+Brute-force (password cracking) for crypto wallets (Metamask, Exodus, .dat files, and others)
+â¢ Our total deposit on forums exceeds 5 BTC (over $300.000), which confirms our reliability, while feedback from satisfied clients confirms successful cases.
+Commission split: 70/30 in your favor
+Wallets accepted with a balance of at least $10.000
+Telegram: @m2fa_brute
+Channel with contacts: @maife2fa
+<url> | (3 BTC DEP)
+<url> | (2 BTC DEP)
+<url> | (2.000$ DEP)
+Network Info:
+- IP: <ip>
+- Country: DE
+System Summary:
+- HWID: B61FD3D9D0021225686314
+- OS: Windows 10 Home
+- Architecture: x64
+- UserName: eviny
+- Computer Name: DESKTOP-C9LDU22
+- Local Time: 2025/3/15 <ip>
+- UTC: 1
+- Language: de-DE
+- Keyboards: Deutsch (Deutschland)
+- Laptop: FALSE
+- Running Path: C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe
+- CPU: AMD Ryzen 5 3600 6-Core Processor
+- Cores: 6
+- Threads: 12
+- RAM: 16285 MB
+- Display Resolution: 1920x1080
+- GPU:
+User Agents:
+Google Chrome - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.205 Safari/537.36
+Installed Apps:
+All Users:
+60 Seconds <ip> - <ip>
+AirDroid <ip> - <ip>
+[... truncated; full sample at ``sample.txt`` (approx. 351 more lines) ...]
+```
+
+### `cystack_a7c37e02`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Color Depth`, `Detroit`, `Device Name`, `Device String`, `Installed Apps`, `Network Info`, `Process List`, `Process count`, `Resolution`, `System Summary`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+Network Info:
+- IP: <ip>
+- Country: BR
+System Summary:
+- HWID: 10E686BB-65B8-1197-2C93-00AF34EBC847
+- OS: Windows 10
+- Architecture: x64
+- UserName: elpic
+- Computer Name: DESKTOP-JL66IMT
+- Local Time: 2025-05-31 <ip>
+- UTC: -3
+- Language: pt-BR
+- Keyboards: Português (Brasil)
+- Laptop: FALSE
+- Running Path: C:\Users\<user>\AppData\Local\Microsoft\e91st7djjs291h21f8rh14rwrt15sr5f5kfrj49wj8kq5e6gti.exe
+- CPU: Intel(R) Pentium(R) CPU G4560 @ 3.50GHz
+- Cores: 2
+- Threads: 4
+- RAM: 12 GB
+- Display Resolution:
+Monitor 1
+Device Name: \\.\DISPLAY1
+Device String: NVIDIA GeForce GTX 950
+Resolution: 1920x1080
+Color Depth: 32 bits per pixel
+- GPU:
+-NVIDIA GeForce GTX 950
+Process count: 169
+Process List:
+[System Process] [0]
+System [4]
+Registry [100]
+smss.exe [424]
+csrss.exe [604]
+wininit.exe [700]
+services.exe [772]
+lsass.exe [780]
+svchost.exe [988]
+fontdrvhost.exe [1020]
+svchost.exe [712]
+[... truncated; full sample at ``sample.txt`` (approx. 230 more lines) ...]
 ```
 
 ### `cystack_a867f3f5`
@@ -1190,6 +1465,61 @@ All Users:
 	Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161 - 9.0.30729.6161
 	Microsoft Visual C++ 2019 X86 Additional Runtime - 14.28.29914 - 14.28.29914
 [... truncated; full sample at ``sample.txt`` (approx. 300 more lines) ...]
+```
+
+### `cystack_c06bf4de`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Channel with contacts`, `Commission split`, `Installed Apps`, `Network Info`, `System Summary`, `Telegram`, `User Agents`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+powerful native stealer based on C lang
+forum topics:
+buy:
+- jabber: <email>
+- tox: 1FCCEA0D37D99894B958C0FCEAC66034FE3580B193C335745D632A19F8E6053C34DFEAAE2538
+Brute-force (password cracking) for crypto wallets (Metamask, Exodus, .dat files, and others)
+â¢ Our total deposit on forums exceeds 5 BTC (over $300.000), which confirms our reliability, while feedback from satisfied clients confirms successful cases.
+Commission split: 70/30 in your favor
+Wallets accepted with a balance of at least $10.000
+Telegram: @m2fa_brute
+Channel with contacts: @maife2fa
+<url> | (3 BTC DEP)
+<url> | (2 BTC DEP)
+<url> | (2.000$ DEP)
+Network Info:
+- IP: <ip>
+- Country: SG
+System Summary:
+- HWID: 04B7E3A278A51915334237
+- OS: Windows 11
+- Architecture: x64
+- UserName: Varian Tan
+- Computer Name: DESKTOP-2PD7EPK
+- Local Time: 2025/3/13 <ip>
+- UTC: 8
+- Language: en-SG
+- Keyboards: English (United States) / Chinese (Simplified, China) / English (Singapore)
+- Laptop: TRUE
+- Running Path: C:\Users\<user>\AppData\Local\Temp\831991\Thirty.com
+- CPU: Intel(R) Core(TM) i7-14700HX
+- Cores: 20
+- Threads: 28
+- RAM: 16087 MB
+- Display Resolution: 1707x960
+- GPU:
+-Intel(R) UHD Graphics
+-Intel(R) UHD Graphics
+-Intel(R) UHD Graphics
+-Intel(R) UHD Graphics
+User Agents:
+[... truncated; full sample at ``sample.txt`` (approx. 392 more lines) ...]
 ```
 
 ### `cystack_d8d785c2`

@@ -182,6 +182,30 @@
       "distribution_channel": null,
       "field_keys": [
         "All Users",
+        "Color Depth",
+        "Device Name",
+        "Device String",
+        "Imperator",
+        "Installed Apps",
+        "Network Info",
+        "Process List",
+        "Process count",
+        "Resolution",
+        "System Summary"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_51a2d2fa",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
         "Channel with contacts",
         "Commission split",
         "Current User",
@@ -318,6 +342,52 @@
       "distribution_channel": null,
       "field_keys": [
         "All Users",
+        "Call of Duty",
+        "Color Depth",
+        "Device Name",
+        "Device String",
+        "Installed Apps",
+        "Network Info",
+        "Process List",
+        "Process count",
+        "Resolution",
+        "System Summary"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_8a9e646a",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Color Depth",
+        "Device Name",
+        "Device String",
+        "Installed Apps",
+        "Network Info",
+        "Process List",
+        "Process count",
+        "Resolution",
+        "System Summary"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_9adca1a9",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
         "Channel with contacts",
         "Commission split",
         "Installed Apps",
@@ -329,6 +399,52 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_a52d3ec9",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
+        "Channel with contacts",
+        "Commission split",
+        "Installed Apps",
+        "MTA",
+        "Network Info",
+        "System Summary",
+        "Telegram",
+        "User Agents"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_a7a7748a",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
+        "Color Depth",
+        "Detroit",
+        "Device Name",
+        "Device String",
+        "Installed Apps",
+        "Network Info",
+        "Process List",
+        "Process count",
+        "Resolution",
+        "System Summary"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_a7c37e02",
       "panel_brand": null,
       "synthetic": true
     },
@@ -429,6 +545,27 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_b8ed4e31",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
+        "Channel with contacts",
+        "Commission split",
+        "Installed Apps",
+        "Network Info",
+        "System Summary",
+        "Telegram",
+        "User Agents"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_c06bf4de",
       "panel_brand": null,
       "synthetic": true
     },

@@ -9,7 +9,7 @@ the underlying field layout intact.
 
 **Also known as:** `redline`, `redline-extended`
 
-**Variants observed:** 25
+**Variants observed:** 27
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -352,6 +352,40 @@ Keyboard Language: English
 Display Resolution: 5120x1440
 ```
 
+### `cystack_5542c850`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 27 May 25 22:10 CEST
+HWID: <redacted>
+Country: EG
+IP: <redacted>
+System Language: English
+Processor: AMD Ryzen 5 2600 Six-Core Processor
+Installed RAM: 32698 MB
+Operation System: Windows 10 22H2 build 19045 (64 Bit)
+Graphics card: Radeon RX 580 Series
+Computer Name: <redacted>
+Domain Name: <redacted>
+Product Key:
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+2
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+Wallpaper Hash: a8b77af6840c868ba701807d079bf95db7f03e63
+```
+
 ### `cystack_5f7be6d7`
 
 **Attribution confidence:** `unknown`
@@ -685,6 +719,40 @@ UserLanguage: English
 Keyboard Language: English
 Display Resolution: 2560x1440
 Wallpaper Hash: 0b18218a3d98e5d4a1e126f6aaad589b23e4d426
+```
+
+### `cystack_c1e6a3a7`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 03 May 25 10:43 CEST
+HWID: <redacted>
+Country: CZ
+IP: <redacted>
+System Language: Czech
+Processor: 13th Gen Intel(R) Core(TM) i5-13400F
+Installed RAM: 32607 MB
+Operation System: Windows 11 24H2 build 26100 (64 Bit)
+Graphics card: NVIDIA GeForce RTX 4060
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key:
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+1
+UserLanguage: Czech
+Keyboard Language: Czech
+Display Resolution: 1920x1080
+Wallpaper Hash: 63b94c518cd103b16216bd134ce8d4b010f52292
 ```
 
 ### `cystack_c47c7f16`

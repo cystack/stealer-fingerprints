@@ -3,6 +3,41 @@
 // observed field-key set. Tune false-positive thresholds at use
 // site, especially for variants relying on field combinations.
 
+rule Lumma_cystack_033e06aa
+{
+    meta:
+        family = "Lumma"
+        fingerprint_id = "cystack_033e06aa"
+
+    strings:
+        $key_0 = "CPU Cores:" ascii
+        $key_1 = "CPU Name:" ascii
+        $key_2 = "CPU Threads:" ascii
+        $key_3 = "CPU Vendor:" ascii
+        $key_4 = "Computer:" ascii
+        $key_5 = "Country:" ascii
+        $key_6 = "Display resolution:" ascii
+        $key_7 = "Domain:" ascii
+        $key_8 = "Elevated:" ascii
+        $key_9 = "HWID:" ascii
+        $key_10 = "Hostname:" ascii
+        $key_11 = "IP Address:" ascii
+        $key_12 = "LID:" ascii
+        $key_13 = "Language:" ascii
+        $key_14 = "Local Date:" ascii
+        $key_15 = "LummaC2 Build:" ascii
+        $key_16 = "NetBIOS:" ascii
+        $key_17 = "OS Version:" ascii
+        $key_18 = "Path:" ascii
+        $key_19 = "RAM Size:" ascii
+        $key_20 = "Time:" ascii
+        $key_21 = "Time Zone:" ascii
+        $key_22 = "User:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Lumma_cystack_0b22cc29
 {
     meta:
@@ -29,6 +64,39 @@ rule Lumma_cystack_0b22cc29
         $key_16 = "Time:" ascii
         $key_17 = "Time Zone:" ascii
         $key_18 = "User:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Lumma_cystack_0e7834a9
+{
+    meta:
+        family = "Lumma"
+        fingerprint_id = "cystack_0e7834a9"
+
+    strings:
+        $key_0 = "CPU Cores:" ascii
+        $key_1 = "CPU Name:" ascii
+        $key_2 = "CPU Threads:" ascii
+        $key_3 = "CPU Vendor:" ascii
+        $key_4 = "Computer:" ascii
+        $key_5 = "Country:" ascii
+        $key_6 = "Display resolution:" ascii
+        $key_7 = "Elevated:" ascii
+        $key_8 = "HWID:" ascii
+        $key_9 = "Hostname:" ascii
+        $key_10 = "IP Address:" ascii
+        $key_11 = "Install Date:" ascii
+        $key_12 = "Language:" ascii
+        $key_13 = "Local Date:" ascii
+        $key_14 = "LummaC2 Build:" ascii
+        $key_15 = "NetBIOS:" ascii
+        $key_16 = "OS Version:" ascii
+        $key_17 = "Path:" ascii
+        $key_18 = "RAM Size:" ascii
+        $key_19 = "Time Zone:" ascii
+        $key_20 = "User:" ascii
 
     condition:
         all of ($key_*)
@@ -94,6 +162,40 @@ rule Lumma_cystack_1989fd30
         all of ($key_*)
 }
 
+rule Lumma_cystack_30e46fb7
+{
+    meta:
+        family = "Lumma"
+        fingerprint_id = "cystack_30e46fb7"
+
+    strings:
+        $key_0 = "CPU Cores:" ascii
+        $key_1 = "CPU Name:" ascii
+        $key_2 = "CPU Threads:" ascii
+        $key_3 = "CPU Vendor:" ascii
+        $key_4 = "Computer:" ascii
+        $key_5 = "Country:" ascii
+        $key_6 = "Display resolution:" ascii
+        $key_7 = "Elevated:" ascii
+        $key_8 = "HWID:" ascii
+        $key_9 = "Hostname:" ascii
+        $key_10 = "IP Address:" ascii
+        $key_11 = "Install Date:" ascii
+        $key_12 = "LID:" ascii
+        $key_13 = "Local Date:" ascii
+        $key_14 = "LummaC2 Build:" ascii
+        $key_15 = "NetBIOS:" ascii
+        $key_16 = "OS Version:" ascii
+        $key_17 = "Path:" ascii
+        $key_18 = "RAM Size:" ascii
+        $key_19 = "Time:" ascii
+        $key_20 = "Time Zone:" ascii
+        $key_21 = "User:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Lumma_cystack_38ce40fc
 {
     meta:
@@ -119,6 +221,40 @@ rule Lumma_cystack_38ce40fc
         $key_15 = "RAM Size:" ascii
         $key_16 = "Time:" ascii
         $key_17 = "User:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Lumma_cystack_40fa2320
+{
+    meta:
+        family = "Lumma"
+        fingerprint_id = "cystack_40fa2320"
+
+    strings:
+        $key_0 = "CPU Cores:" ascii
+        $key_1 = "CPU Name:" ascii
+        $key_2 = "CPU Threads:" ascii
+        $key_3 = "CPU Vendor:" ascii
+        $key_4 = "Computer:" ascii
+        $key_5 = "Country:" ascii
+        $key_6 = "Display resolution:" ascii
+        $key_7 = "Domain:" ascii
+        $key_8 = "Elevated:" ascii
+        $key_9 = "HWID:" ascii
+        $key_10 = "Hostname:" ascii
+        $key_11 = "IP Address:" ascii
+        $key_12 = "Install Date:" ascii
+        $key_13 = "LID:" ascii
+        $key_14 = "Language:" ascii
+        $key_15 = "Local Date:" ascii
+        $key_16 = "LummaC2 Build:" ascii
+        $key_17 = "NetBIOS:" ascii
+        $key_18 = "OS Version:" ascii
+        $key_19 = "RAM Size:" ascii
+        $key_20 = "Time Zone:" ascii
+        $key_21 = "User:" ascii
 
     condition:
         all of ($key_*)
@@ -184,6 +320,38 @@ rule Lumma_cystack_4d2e6c3b
         $key_14 = "RAM Size:" ascii
         $key_15 = "Time:" ascii
         $key_16 = "User:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Lumma_cystack_501a4d38
+{
+    meta:
+        family = "Lumma"
+        fingerprint_id = "cystack_501a4d38"
+
+    strings:
+        $key_0 = "CPU Cores:" ascii
+        $key_1 = "CPU Name:" ascii
+        $key_2 = "CPU Threads:" ascii
+        $key_3 = "CPU Vendor:" ascii
+        $key_4 = "Computer:" ascii
+        $key_5 = "Country:" ascii
+        $key_6 = "Display resolution:" ascii
+        $key_7 = "Elevated:" ascii
+        $key_8 = "HWID:" ascii
+        $key_9 = "IP Address:" ascii
+        $key_10 = "Install Date:" ascii
+        $key_11 = "LID:" ascii
+        $key_12 = "Language:" ascii
+        $key_13 = "Local Date:" ascii
+        $key_14 = "LummaC2 Build:" ascii
+        $key_15 = "NetBIOS:" ascii
+        $key_16 = "OS Version:" ascii
+        $key_17 = "RAM Size:" ascii
+        $key_18 = "Time Zone:" ascii
+        $key_19 = "User:" ascii
 
     condition:
         all of ($key_*)
@@ -315,6 +483,40 @@ rule Lumma_cystack_70df1596
         all of ($key_*)
 }
 
+rule Lumma_cystack_75f6591e
+{
+    meta:
+        family = "Lumma"
+        fingerprint_id = "cystack_75f6591e"
+
+    strings:
+        $key_0 = "CPU Cores:" ascii
+        $key_1 = "CPU Name:" ascii
+        $key_2 = "CPU Threads:" ascii
+        $key_3 = "CPU Vendor:" ascii
+        $key_4 = "Computer:" ascii
+        $key_5 = "Country:" ascii
+        $key_6 = "Display resolution:" ascii
+        $key_7 = "Elevated:" ascii
+        $key_8 = "HWID:" ascii
+        $key_9 = "Hostname:" ascii
+        $key_10 = "IP Address:" ascii
+        $key_11 = "Install Date:" ascii
+        $key_12 = "Language:" ascii
+        $key_13 = "Local Date:" ascii
+        $key_14 = "LummaC2 Build:" ascii
+        $key_15 = "NetBIOS:" ascii
+        $key_16 = "OS Version:" ascii
+        $key_17 = "Path:" ascii
+        $key_18 = "RAM Size:" ascii
+        $key_19 = "Time:" ascii
+        $key_20 = "Time Zone:" ascii
+        $key_21 = "User:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Lumma_cystack_78a2bec1
 {
     meta:
@@ -380,6 +582,36 @@ rule Lumma_cystack_7c2f44f2
         all of ($key_*)
 }
 
+rule Lumma_cystack_7ea45bcd
+{
+    meta:
+        family = "Lumma"
+        fingerprint_id = "cystack_7ea45bcd"
+
+    strings:
+        $key_0 = "CPU Cores:" ascii
+        $key_1 = "CPU Name:" ascii
+        $key_2 = "CPU Threads:" ascii
+        $key_3 = "CPU Vendor:" ascii
+        $key_4 = "Computer:" ascii
+        $key_5 = "Country:" ascii
+        $key_6 = "Display resolution:" ascii
+        $key_7 = "Elevated:" ascii
+        $key_8 = "HWID:" ascii
+        $key_9 = "Hostname:" ascii
+        $key_10 = "IP Address:" ascii
+        $key_11 = "LID:" ascii
+        $key_12 = "Language:" ascii
+        $key_13 = "LummaC2 Build:" ascii
+        $key_14 = "NetBIOS:" ascii
+        $key_15 = "RAM Size:" ascii
+        $key_16 = "Time:" ascii
+        $key_17 = "User:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Lumma_cystack_86f8cf79
 {
     meta:
@@ -404,6 +636,39 @@ rule Lumma_cystack_86f8cf79
         $key_14 = "LummaC2 Build:" ascii
         $key_15 = "NetBIOS:" ascii
         $key_16 = "OS Version:" ascii
+        $key_17 = "RAM Size:" ascii
+        $key_18 = "Time:" ascii
+        $key_19 = "Time Zone:" ascii
+        $key_20 = "User:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Lumma_cystack_a1eca2c0
+{
+    meta:
+        family = "Lumma"
+        fingerprint_id = "cystack_a1eca2c0"
+
+    strings:
+        $key_0 = "CPU Cores:" ascii
+        $key_1 = "CPU Name:" ascii
+        $key_2 = "CPU Threads:" ascii
+        $key_3 = "CPU Vendor:" ascii
+        $key_4 = "Computer:" ascii
+        $key_5 = "Country:" ascii
+        $key_6 = "Display resolution:" ascii
+        $key_7 = "Elevated:" ascii
+        $key_8 = "HWID:" ascii
+        $key_9 = "IP Address:" ascii
+        $key_10 = "Install Date:" ascii
+        $key_11 = "Language:" ascii
+        $key_12 = "Local Date:" ascii
+        $key_13 = "LummaC2 Build:" ascii
+        $key_14 = "NetBIOS:" ascii
+        $key_15 = "OS Version:" ascii
+        $key_16 = "Path:" ascii
         $key_17 = "RAM Size:" ascii
         $key_18 = "Time:" ascii
         $key_19 = "Time Zone:" ascii
@@ -470,6 +735,39 @@ rule Lumma_cystack_a33378ed
         $key_13 = "NetBIOS:" ascii
         $key_14 = "RAM Size:" ascii
         $key_15 = "Time:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Lumma_cystack_a373b677
+{
+    meta:
+        family = "Lumma"
+        fingerprint_id = "cystack_a373b677"
+
+    strings:
+        $key_0 = "CPU Cores:" ascii
+        $key_1 = "CPU Name:" ascii
+        $key_2 = "CPU Threads:" ascii
+        $key_3 = "CPU Vendor:" ascii
+        $key_4 = "Computer:" ascii
+        $key_5 = "Country:" ascii
+        $key_6 = "Display resolution:" ascii
+        $key_7 = "Elevated:" ascii
+        $key_8 = "HWID:" ascii
+        $key_9 = "IP Address:" ascii
+        $key_10 = "Install Date:" ascii
+        $key_11 = "LID:" ascii
+        $key_12 = "Language:" ascii
+        $key_13 = "Local Date:" ascii
+        $key_14 = "LummaC2 Build:" ascii
+        $key_15 = "NetBIOS:" ascii
+        $key_16 = "OS Version:" ascii
+        $key_17 = "RAM Size:" ascii
+        $key_18 = "Time:" ascii
+        $key_19 = "Time Zone:" ascii
+        $key_20 = "User:" ascii
 
     condition:
         all of ($key_*)
@@ -670,6 +968,36 @@ rule Lumma_cystack_d9beb4e5
         all of ($key_*)
 }
 
+rule Lumma_cystack_e2af0132
+{
+    meta:
+        family = "Lumma"
+        fingerprint_id = "cystack_e2af0132"
+
+    strings:
+        $key_0 = "CPU Cores:" ascii
+        $key_1 = "CPU Name:" ascii
+        $key_2 = "CPU Threads:" ascii
+        $key_3 = "CPU Vendor:" ascii
+        $key_4 = "Computer:" ascii
+        $key_5 = "Country:" ascii
+        $key_6 = "Display resolution:" ascii
+        $key_7 = "Elevated:" ascii
+        $key_8 = "HWID:" ascii
+        $key_9 = "Hostname:" ascii
+        $key_10 = "IP Address:" ascii
+        $key_11 = "Language:" ascii
+        $key_12 = "LummaC2 Build:" ascii
+        $key_13 = "NetBIOS:" ascii
+        $key_14 = "Path:" ascii
+        $key_15 = "RAM Size:" ascii
+        $key_16 = "Time:" ascii
+        $key_17 = "User:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Lumma_cystack_e4df1ff8
 {
     meta:
@@ -693,6 +1021,40 @@ rule Lumma_cystack_e4df1ff8
         $key_13 = "NetBIOS:" ascii
         $key_14 = "RAM Size:" ascii
         $key_15 = "User:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Lumma_cystack_e841a58c
+{
+    meta:
+        family = "Lumma"
+        fingerprint_id = "cystack_e841a58c"
+
+    strings:
+        $key_0 = "CPU Cores:" ascii
+        $key_1 = "CPU Name:" ascii
+        $key_2 = "CPU Threads:" ascii
+        $key_3 = "CPU Vendor:" ascii
+        $key_4 = "Computer:" ascii
+        $key_5 = "Country:" ascii
+        $key_6 = "Display resolution:" ascii
+        $key_7 = "Domain:" ascii
+        $key_8 = "Elevated:" ascii
+        $key_9 = "HWID:" ascii
+        $key_10 = "Hostname:" ascii
+        $key_11 = "IP Address:" ascii
+        $key_12 = "LID:" ascii
+        $key_13 = "Language:" ascii
+        $key_14 = "Local Date:" ascii
+        $key_15 = "LummaC2 Build:" ascii
+        $key_16 = "NetBIOS:" ascii
+        $key_17 = "OS Version:" ascii
+        $key_18 = "RAM Size:" ascii
+        $key_19 = "Time:" ascii
+        $key_20 = "Time Zone:" ascii
+        $key_21 = "User:" ascii
 
     condition:
         all of ($key_*)

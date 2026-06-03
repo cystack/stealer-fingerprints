@@ -1,119 +1,713 @@
+---User Info---
 Worker: %Worker%
-Date Install: 05/06/2025 <ip>
-Clipboard: Segue:
-Quarto individual 1: Gonzaga Ribeiro Pires
-Quarto individual 2: João Paulo Gehlen
-Quarto individual  3: Giovanni Pegoraro
-Data Check-in: 09/06/2025
-Data Check-out: 13/06/2025
-Diária em quarto individual superior: R$170,00
-Cobrar no cartão abaixo, somente diárias.
-VL 0429. Seg 861
-KATIA R KOERICH
-NF em nome do hóspede
-Aguardo confirmação.
+Date Install: 29/05/2025 <ip>
+ISO Key: en
+Clipboard:
 External IP: <redacted>
 Internal IP: <ip>
 Gateway IP: <ip>
 ---Full Pc Info---
 === CPU Information ===
-MaxClockSpeed: 3193
-Name: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
-NumberOfCores: 4
+MaxClockSpeed: 2100
+Name: 13th Gen Intel(R) Core(TM) i7-13700HX
+NumberOfCores: 16
 === GPU Information ===
-AdapterRAM: 2214592512
-Name: Intel(R) HD Graphics
+AdapterRAM: 4293918720
+Name: NVIDIA RTX 2000 Ada Generation Laptop GPU
+AdapterRAM: 2147479552
+Name: Intel(R) UHD Graphics
 === RAM Information ===
-Capacity: 8589934592
+Capacity: 17179869184
+Capacity: 17179869184
 === Disk Information ===
-Model: SSD NTC 120GB
-Size: 120031511040
-Model: ST1000VM002-1SD102
-Size: 1000202273280
-Model: SanDisk Cruzer Blade USB Device
-Size: 3997486080
+Model: SAMSUNG MZVL21T0HDLU-00BH1
+Size: 1024203640320
+Model: ADATA USB Flash Drive USB Device
+Size: 15512878080
 === Network Adapter Information ===
 MACAddress: <ip>
-Name: Realtek PCIe GbE Family Controller
-Speed: 1000000000
+Name: Bluetooth Device (Personal Area Network)
+Speed: 3000000
 MACAddress: <ip>
-Name: WAN Miniport (IP)
-Speed:
+Name: Intel(R) Wi-Fi 6E AX211 160MHz
+Speed: 362000000
 MACAddress: <ip>
-Name: WAN Miniport (IPv6)
-Speed:
+Name: Intel(R) Ethernet Connection (22) I219-V
 MACAddress: <ip>
-Name: WAN Miniport (Network Monitor)
-Speed:
+Name: Microsoft Wi-Fi Direct Virtual Adapter
+MACAddress: <ip>
+Name: Microsoft Wi-Fi Direct Virtual Adapter #2
 === Windows Version Information ===
-Caption: Microsoft Windows 10 Pro
-OSArchitecture: 64 bits
-Version: 10.0.19045
-Manufacturer:
-Product:
-SerialNumber: To be filled by O.E.M.
+Caption: Microsoft Windows 11 Pro
+OSArchitecture: 64-bit
+Version: 10.0.26100
+=== Motherboard Information ===
+Manufacturer: HP
+Product: 8B92
+SerialNumber: PSBKL00WBJ402E
 === BIOS Information ===
-Manufacturer: American Megatrends Inc.
-ReleaseDate: 20231016000000.000000+000
-SMBIOSBIOSVersion: 4.6.5
+Manufacturer: HP
+ReleaseDate: 20241204000000.000000+000
+SMBIOSBIOSVersion: V96 Ver. 01.07.01
 === User Account Information ===
 FullName:
-Name: Administrador
-FullName:
-Name: Convidado
+Name: Administrator
 FullName:
 Name: DefaultAccount
 FullName:
-Name: Hotel Cattoni
+Name: Guest
+FullName: Reik Kurtalić
+Name: reikd
 FullName:
 Name: WDAGUtilityAccount
 === Battery Information ===
+BatteryStatus: 2
+EstimatedChargeRemaining: 84
 === USB Devices Information ===
-????????? ??????: Consulta inválida
+Произошла ошибка: Invalid query
 === Sound Device Information ===
-Name: Dispositivo de High Definition Audio
-Name: Dispositivo de High Definition Audio
+Name: Intel® Smart Sound Technology for USB Audio
+Name: Intel® Smart Sound Technology for Digital Microphones
+Name: Realtek High Definition Audio
+Name: NVIDIA High Definition Audio
+Name: Intel® Smart Sound Technology for Bluetooth® Audio
 === Keyboard Information ===
-Name: Aperfeiçoado (101 ou 102 teclas)
+Name: Enhanced (101- or 102-key)
+Name: Enhanced (101- or 102-key)
+Name: Enhanced (101- or 102-key)
+Name: Enhanced (101- or 102-key)
 === Pointing Device Information ===
-Name: Dispositivo de Entrada USB
+Name: HID-compliant mouse
+Name: HID-compliant mouse
+Name: HID-compliant mouse
 === System Enclosure Information ===
 ChassisTypes: System.UInt16[]
-Manufacturer: To Be Filled By O.E.M.
+Manufacturer: HP
 === Logical Disk Information ===
 DeviceID: C:
 FileSystem: NTFS
-FreeSpace: 69507665920
-Size: 119326392320
+FreeSpace: 368048869376
+Size: 484789186560
 DeviceID: D:
 FileSystem: NTFS
-FreeSpace: 974229143552
-Size: 1000148561920
+FreeSpace: 529834377216
+Size: 536870907904
 === Printer Information ===
 Default: False
-Name: OneNote for Windows 10
+Name: OneNote (Desktop)
 Default: False
-Name: Microsoft XPS Document Writer
+Name: NPID190A9 (HP LaserJet MFP M28w)
 Default: False
 Name: Microsoft Print to PDF
 Default: True
-Name: HP LaserJet P1005
-Default: False
-Name: Fax
-Default: False
-Name: Enviar para o OneNote 2013
+Name: Canon iP8700 series WS
 === Time Zone Information ===
-Caption: (UTC-03:00) Brasília
+Caption: (UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb
 === Network Information ===
-Description: Realtek PCIe GbE Family Controller
+Description: Intel(R) Wi-Fi 6E AX211 160MHz
 IPEnabled: True
 MACAddress: <ip>
-=== Screen Information ===
-1366x768
-=== AntiVirus Information ===
-displayName: Windows Defender
-instanceGuid: {D68DDC3A-831F-4fae-9E44-DA132C1ACF46}
-pathToSignedProductExe: windowsdefender://
-pathToSignedReportingExe: %ProgramFiles%\Windows Defender\MsMpeng.exe
-productState: 397568
-timestamp: Thu, 05 Jun 2025 <ip> GMT
+=== OS Architecture Information ===
+OSArchitecture: 64-bit
+=== System Uptime Information ===
+LastBootUpTime: 20250529154850.500000+120
+=== Processors Information ===
+NumberOfCores: 16
+NumberOfLogicalProcessors: 24
+=== Disk Partitions Information ===
+Произошла ошибка: Invalid query
+=== IP Configuration Information ===
+Произошла ошибка: Invalid query
+=== System Drivers Information ===
+Произошла ошибка: Invalid query
+=== Computer System Information ===
+Manufacturer: HP
+Model: HP ZBook Fury 16 G10 Mobile Workstation PC
+Name: REIKDESIGN
+NumberOfLogicalProcessors: 24
+=== Battery Status Information ===
+BatteryStatus: 2
+=== Logical Processes Information ===
+Description: System Idle Process
+HandleCount: 0
+Name: System Idle Process
+Description: System
+HandleCount: 5269
+Name: System
+Description: Secure System
+HandleCount: 0
+Name: Secure System
+Description: Registry
+HandleCount: 0
+Name: Registry
+Description: smss.exe
+HandleCount: 58
+Name: smss.exe
+Description: csrss.exe
+HandleCount: 970
+Name: csrss.exe
+Description: wininit.exe
+HandleCount: 160
+Name: wininit.exe
+Description: csrss.exe
+HandleCount: 863
+Name: csrss.exe
+Description: services.exe
+HandleCount: 891
+Name: services.exe
+Description: LsaIso.exe
+HandleCount: 61
+Name: LsaIso.exe
+Description: lsass.exe
+HandleCount: 1692
+Name: lsass.exe
+Description: winlogon.exe
+HandleCount: 469
+Name: winlogon.exe
+Description: svchost.exe
+HandleCount: 1428
+Name: svchost.exe
+Description: fontdrvhost.exe
+HandleCount: 42
+Name: fontdrvhost.exe
+Description: fontdrvhost.exe
+HandleCount: 42
+Name: fontdrvhost.exe
+Description: WUDFHost.exe
+HandleCount: 525
+Name: WUDFHost.exe
+Description: svchost.exe
+HandleCount: 1470
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 358
+Name: svchost.exe
+Description: WUDFHost.exe
+HandleCount: 313
+Name: WUDFHost.exe
+Description: WUDFHost.exe
+HandleCount: 706
+Name: WUDFHost.exe
+Description: svchost.exe
+HandleCount: 277
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 130
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 194
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 204
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 232
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 325
+Name: svchost.exe
+Description: dwm.exe
+HandleCount: 1513
+Name: dwm.exe
+Description: svchost.exe
+HandleCount: 266
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 330
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 361
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 291
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 208
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 444
+Name: svchost.exe
+Description: WUDFHost.exe
+HandleCount: 235
+Name: WUDFHost.exe
+Description: svchost.exe
+HandleCount: 224
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 285
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 524
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 165
+Name: svchost.exe
+Description: IntelCpHDCPSvc.exe
+HandleCount: 170
+Name: IntelCpHDCPSvc.exe
+Description: svchost.exe
+HandleCount: 678
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 187
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 978
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 169
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 312
+Name: svchost.exe
+Description: WUDFHost.exe
+HandleCount: 447
+Name: WUDFHost.exe
+Description: svchost.exe
+HandleCount: 288
+Name: svchost.exe
+Description: ICS.exe
+HandleCount: 240
+Name: ICS.exe
+Description: conhost.exe
+HandleCount: 160
+Name: conhost.exe
+Description: svchost.exe
+HandleCount: 455
+Name: svchost.exe
+Description: dasHost.exe
+HandleCount: 386
+Name: dasHost.exe
+Description: WUDFHost.exe
+HandleCount: 282
+Name: WUDFHost.exe
+Description: svchost.exe
+HandleCount: 321
+Name: svchost.exe
+Description: NVDisplay.Container.exe
+HandleCount: 590
+Name: NVDisplay.Container.exe
+Description: svchost.exe
+HandleCount: 498
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 148
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 270
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 192
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 305
+Name: svchost.exe
+Description: Memory Compression
+HandleCount: 0
+Name: Memory Compression
+Description: svchost.exe
+HandleCount: 193
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 203
+Name: svchost.exe
+Description: TouchpointAnalyticsClientService.exe
+HandleCount: 960
+Name: TouchpointAnalyticsClientService.exe
+Description: DiagsCap.exe
+HandleCount: 386
+Name: DiagsCap.exe
+Description: AppHelperCap.exe
+HandleCount: 426
+Name: AppHelperCap.exe
+Description: NetworkCap.exe
+HandleCount: 420
+Name: NetworkCap.exe
+Description: svchost.exe
+HandleCount: 264
+Name: svchost.exe
+Description: SysInfoCap.exe
+HandleCount: 683
+Name: SysInfoCap.exe
+Description: hpsvcsscan.exe
+HandleCount: 613
+Name: hpsvcsscan.exe
+Description: svchost.exe
+HandleCount: 421
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 438
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 332
+Name: svchost.exe
+Description: NVDisplay.Container.exe
+HandleCount: 677
+Name: NVDisplay.Container.exe
+Description: dasHost.exe
+HandleCount: 141
+Name: dasHost.exe
+Description: svchost.exe
+HandleCount: 253
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 202
+Name: svchost.exe
+Description: unsecapp.exe
+HandleCount: 154
+Name: unsecapp.exe
+Description: svchost.exe
+HandleCount: 235
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 443
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 502
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 408
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 184
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 254
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 190
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 226
+Name: svchost.exe
+Description: NgcIso.exe
+HandleCount: 49
+Name: NgcIso.exe
+Description: svchost.exe
+HandleCount: 298
+Name: svchost.exe
+Description: HotKeyServiceUWP.exe
+HandleCount: 458
+Name: HotKeyServiceUWP.exe
+Description: svchost.exe
+HandleCount: 186
+Name: svchost.exe
+Description: hpqwmiex.exe
+HandleCount: 245
+Name: hpqwmiex.exe
+Description: svchost.exe
+HandleCount: 193
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 152
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 576
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 389
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 161
+Name: svchost.exe
+Description: spoolsv.exe
+HandleCount: 668
+Name: spoolsv.exe
+Description: wlanext.exe
+HandleCount: 161
+Name: wlanext.exe
+Description: svchost.exe
+HandleCount: 208
+Name: svchost.exe
+Description: FNPLicensingService64.exe
+HandleCount: 202
+Name: FNPLicensingService64.exe
+Description: svchost.exe
+HandleCount: 772
+Name: svchost.exe
+Description: ipfsvc.exe
+HandleCount: 163
+Name: ipfsvc.exe
+Description: OneApp.IGCC.WinService.exe
+HandleCount: 686
+Name: OneApp.IGCC.WinService.exe
+Description: HPCommRecovery.exe
+HandleCount: 333
+Name: HPCommRecovery.exe
+Description: IntelAudioService.exe
+HandleCount: 420
+Name: IntelAudioService.exe
+Description: ipf_uf.exe
+HandleCount: 165
+Name: ipf_uf.exe
+Description: svchost.exe
+HandleCount: 428
+Name: svchost.exe
+Description: nvWmi64.exe
+HandleCount: 172
+Name: nvWmi64.exe
+Description: ScreenConnect.ClientService.exe
+HandleCount: 553
+Name: ScreenConnect.ClientService.exe
+Description: svchost.exe
+HandleCount: 153
+Name: svchost.exe
+Description: OfficeClickToRun.exe
+HandleCount: 720
+Name: OfficeClickToRun.exe
+Description: SDriveImage.exe
+HandleCount: 397
+Name: SDriveImage.exe
+Description: ScreenConnect.ClientService.exe
+HandleCount: 541
+Name: ScreenConnect.ClientService.exe
+Description: LensUpdateService.exe
+HandleCount: 201
+Name: LensUpdateService.exe
+Description: AdskLicensingService.exe
+HandleCount: 173
+Name: AdskLicensingService.exe
+Description: jhi_service.exe
+HandleCount: 162
+Name: jhi_service.exe
+Description: TbtP2pShortcutService.exe
+HandleCount: 151
+Name: TbtP2pShortcutService.exe
+Description: ThunderboltService.exe
+HandleCount: 313
+Name: ThunderboltService.exe
+Description: RtkAudUService64.exe
+HandleCount: 509
+Name: RtkAudUService64.exe
+Description: SECOMN64.exe
+HandleCount: 378
+Name: SECOMN64.exe
+Description: HpSfuService.exe
+HandleCount: 161
+Name: HpSfuService.exe
+Description: CptService.exe
+HandleCount: 142
+Name: CptService.exe
+Description: register-service.exe
+HandleCount: 247
+Name: register-service.exe
+Description: WMIRegistrationService.exe
+HandleCount: 275
+Name: WMIRegistrationService.exe
+Description: svchost.exe
+HandleCount: 291
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 448
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 169
+Name: svchost.exe
+Description: AdskAccessServiceHost.exe
+HandleCount: 438
+Name: AdskAccessServiceHost.exe
+Description: LanWlanWwanSwitchingServiceUWP.exe
+HandleCount: 260
+Name: LanWlanWwanSwitchingServiceUWP.exe
+Description: svchost.exe
+HandleCount: 191
+Name: svchost.exe
+Description: lmgrd.exe
+HandleCount: 156
+Name: lmgrd.exe
+Description: conhost.exe
+HandleCount: 152
+Name: conhost.exe
+Description: lmgrd.exe
+HandleCount: 199
+Name: lmgrd.exe
+Description: AggregatorHost.exe
+HandleCount: 170
+Name: AggregatorHost.exe
+Description: svchost.exe
+HandleCount: 161
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 228
+Name: svchost.exe
+Description: swrm.exe
+HandleCount: 251
+Name: swrm.exe
+Description: conhost.exe
+HandleCount: 160
+Name: conhost.exe
+Description: RtkAudUService64.exe
+HandleCount: 360
+Name: RtkAudUService64.exe
+Description: adskflex.exe
+HandleCount: 278
+Name: adskflex.exe
+Description: svchost.exe
+HandleCount: 205
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 143
+Name: svchost.exe
+Description: ipf_helper.exe
+HandleCount: 205
+Name: ipf_helper.exe
+Description: ScreenConnect.WindowsClient.exe
+HandleCount: 421
+Name: ScreenConnect.WindowsClient.exe
+Description: ScreenConnect.WindowsClient.exe
+HandleCount: 373
+Name: ScreenConnect.WindowsClient.exe
+Description: HPAudioAnalytics.exe
+HandleCount: 219
+Name: HPAudioAnalytics.exe
+Description: sihost.exe
+HandleCount: 677
+Name: sihost.exe
+Description: svchost.exe
+HandleCount: 169
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 452
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 410
+Name: svchost.exe
+Description: taskhostw.exe
+HandleCount: 335
+Name: taskhostw.exe
+Description: hh.exe
+HandleCount: 693
+Name: hh.exe
+Description: svchost.exe
+HandleCount: 272
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 276
+Name: svchost.exe
+Description: explorer.exe
+HandleCount: 4876
+Name: explorer.exe
+Description: ShellHost.exe
+HandleCount: 515
+Name: ShellHost.exe
+Description: svchost.exe
+HandleCount: 391
+Name: svchost.exe
+Description: SECOCL64.exe
+HandleCount: 320
+Name: SECOCL64.exe
+Description: conhost.exe
+HandleCount: 117
+Name: conhost.exe
+Description: svchost.exe
+HandleCount: 246
+Name: svchost.exe
+Description: nvWmi64.exe
+HandleCount: 219
+Name: nvWmi64.exe
+Description: SearchHost.exe
+HandleCount: 1108
+Name: SearchHost.exe
+Description: StartMenuExperienceHost.exe
+HandleCount: 1046
+Name: StartMenuExperienceHost.exe
+Description: Widgets.exe
+HandleCount: 869
+Name: Widgets.exe
+Description: RuntimeBroker.exe
+HandleCount: 725
+Name: RuntimeBroker.exe
+Description: svchost.exe
+HandleCount: 280
+Name: svchost.exe
+Description: RuntimeBroker.exe
+HandleCount: 411
+Name: RuntimeBroker.exe
+Description: ctfmon.exe
+HandleCount: 505
+Name: ctfmon.exe
+Description: PhoneExperienceHost.exe
+HandleCount: 1195
+Name: PhoneExperienceHost.exe
+Description: svchost.exe
+HandleCount: 212
+Name: svchost.exe
+Description: SearchIndexer.exe
+HandleCount: 793
+Name: SearchIndexer.exe
+Description: RtkAudUService64.exe
+HandleCount: 420
+Name: RtkAudUService64.exe
+Description: regsvr32.exe
+HandleCount: 122
+Name: regsvr32.exe
+Description: regsvr32.exe
+HandleCount: 376
+Name: regsvr32.exe
+Description: AdskAccessService.exe
+HandleCount: 311
+Name: AdskAccessService.exe
+Description: svchost.exe
+HandleCount: 332
+Name: svchost.exe
+Description: svchost.exe
+HandleCount: 255
+Name: svchost.exe
+Description: AdskAccessCore.exe
+HandleCount: 462
+Name: AdskAccessCore.exe
+Description: AdskIdentityManager.exe
+HandleCount: 473
+Name: AdskIdentityManager.exe
+Description: AdskAccessUIHost.exe
+HandleCount: 990
+Name: AdskAccessUIHost.exe
+Description: AdskAccessUIHost.exe
+HandleCount: 522
+Name: AdskAccessUIHost.exe
+Description: AdskAccessUIHost.exe
+HandleCount: 346
+Name: AdskAccessUIHost.exe
+Description: AdskAccessUIHost.exe
+HandleCount: 430
+Name: AdskAccessUIHost.exe
+Description: OneDrive.exe
+HandleCount: 1023
+Name: OneDrive.exe
+Description: Viber.exe
+HandleCount: 2929
+Name: Viber.exe
+Description: saren.exe
+HandleCount: 292
+Name: saren.exe
+Description: ramez.exe
+HandleCount: 416
+Name: ramez.exe
+Description: AdvancedWindowsManager.exe
+HandleCount: 319
+Name: AdvancedWindowsManager.exe
+Description: AdvancedWindowsManager.exe
+HandleCount: 319
+Name: AdvancedWindowsManager.exe
+Description: AdvancedWindowsManager.exe
+HandleCount: 319
+Name: AdvancedWindowsManager.exe
+Description: AdvancedWindowsManager.exe
+HandleCount: 323
+Name: AdvancedWindowsManager.exe
+Description: AdvancedWindowsManager.exe
+HandleCount: 319
+Name: AdvancedWindowsManager.exe
+Description: conhost.exe
+HandleCount: 160
+Name: conhost.exe
+Description: conhost.exe
+HandleCount: 160
+Name: conhost.exe
+Description: conhost.exe
+HandleCount: 160
+Name: conhost.exe
+Description: conhost.exe
+HandleCount: 160
+Name: con
+<truncated>

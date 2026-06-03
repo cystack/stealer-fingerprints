@@ -156,6 +156,29 @@ rule StealC_cystack_4b30cd7a
         all of ($key_*)
 }
 
+rule StealC_cystack_51a2d2fa
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_51a2d2fa"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Color Depth:" ascii
+        $key_2 = "Device Name:" ascii
+        $key_3 = "Device String:" ascii
+        $key_4 = "Imperator:" ascii
+        $key_5 = "Installed Apps:" ascii
+        $key_6 = "Network Info:" ascii
+        $key_7 = "Process List:" ascii
+        $key_8 = "Process count:" ascii
+        $key_9 = "Resolution:" ascii
+        $key_10 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule StealC_cystack_678bd448
 {
     meta:
@@ -285,6 +308,50 @@ rule StealC_cystack_7ecc3719
         all of ($key_*)
 }
 
+rule StealC_cystack_8a9e646a
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_8a9e646a"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Call of Duty:" ascii
+        $key_2 = "Color Depth:" ascii
+        $key_3 = "Device Name:" ascii
+        $key_4 = "Device String:" ascii
+        $key_5 = "Installed Apps:" ascii
+        $key_6 = "Network Info:" ascii
+        $key_7 = "Process List:" ascii
+        $key_8 = "Process count:" ascii
+        $key_9 = "Resolution:" ascii
+        $key_10 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_9adca1a9
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_9adca1a9"
+
+    strings:
+        $key_0 = "Color Depth:" ascii
+        $key_1 = "Device Name:" ascii
+        $key_2 = "Device String:" ascii
+        $key_3 = "Installed Apps:" ascii
+        $key_4 = "Network Info:" ascii
+        $key_5 = "Process List:" ascii
+        $key_6 = "Process count:" ascii
+        $key_7 = "Resolution:" ascii
+        $key_8 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule StealC_cystack_a52d3ec9
 {
     meta:
@@ -299,6 +366,50 @@ rule StealC_cystack_a52d3ec9
         $key_4 = "Network Info:" ascii
         $key_5 = "System Summary:" ascii
         $key_6 = "Telegram:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_a7a7748a
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_a7a7748a"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Channel with contacts:" ascii
+        $key_2 = "Commission split:" ascii
+        $key_3 = "Installed Apps:" ascii
+        $key_4 = "MTA:" ascii
+        $key_5 = "Network Info:" ascii
+        $key_6 = "System Summary:" ascii
+        $key_7 = "Telegram:" ascii
+        $key_8 = "User Agents:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_a7c37e02
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_a7c37e02"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Color Depth:" ascii
+        $key_2 = "Detroit:" ascii
+        $key_3 = "Device Name:" ascii
+        $key_4 = "Device String:" ascii
+        $key_5 = "Installed Apps:" ascii
+        $key_6 = "Network Info:" ascii
+        $key_7 = "Process List:" ascii
+        $key_8 = "Process count:" ascii
+        $key_9 = "Resolution:" ascii
+        $key_10 = "System Summary:" ascii
 
     condition:
         all of ($key_*)
@@ -394,6 +505,26 @@ rule StealC_cystack_b8ed4e31
         $key_3 = "Network Info:" ascii
         $key_4 = "Process List:" ascii
         $key_5 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_c06bf4de
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_c06bf4de"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Channel with contacts:" ascii
+        $key_2 = "Commission split:" ascii
+        $key_3 = "Installed Apps:" ascii
+        $key_4 = "Network Info:" ascii
+        $key_5 = "System Summary:" ascii
+        $key_6 = "Telegram:" ascii
+        $key_7 = "User Agents:" ascii
 
     condition:
         all of ($key_*)

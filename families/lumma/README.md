@@ -9,7 +9,7 @@ signature on the `Time:` line. Build banners reference the
 
 **Also known as:** `LummaC2`, `Lumma Stealer`
 
-**Variants observed:** 31
+**Variants observed:** 42
 **Top attribution confidence:** `high`
 **Operator panel brands:** `AL Stealer`, `BRADMAX`, `Deimos Golang Stealer`
 **Distribution channels:** `@BRADLOGS`, `@ft7links`, `t.me/additionallibraries`
@@ -120,6 +120,57 @@ Become better right now - t.me/additionallibraries
 - @BRADLOGS (BRADMAX) / <url>
 ```
 
+### `cystack_033e06aa`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Domain`, `Elevated`, `HWID`, `Hostname`, `IP Address`, `LID`, `Language`, `Local Date`, `LummaC2 Build`, `NetBIOS`, `OS Version`, `Path`, `RAM Size`, `Time`, `Time Zone`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                       t.me/BRADMAX_LOG                     *
+**************************************************************
+
+LummaC2 Build: May 19 2025
+Path: <redacted>
+OS Version: Windows 10 Pro (10.0.19044) x64
+Local Date: 25.05.2025 <ip>
+Time Zone: UTC+0
+Elevated: true
+Computer: F3C0-9FCL
+User: User
+Domain: <redacted>
+Hostname: <redacted>
+NetBIOS: F3C0-9FCL
+Language: de-DE
+HWID: <redacted>
+RAM Size: 16384MB
+CPU Vendor: GenuineIntel
+CPU Name: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+CPU Threads: 12
+CPU Cores: 6
+Display resolution: 1920x1080
+IP Address: <redacted>
+Time: 25.05.2025 <ip> (sig:1748178833.900ff7d8a5e6e988fc9c5fa37a62d73a)
+Country: DE
+LID: @BRADMAX_LOG (BRADMAX) / <url>
+```
+
 ### `cystack_0b22cc29`
 
 **Attribution confidence:** `high`
@@ -160,7 +211,7 @@ LID: @BRADMAX_LOG (BRADMAX) / <url>
 **Field keys:**
 `TG`
 
-**Filenames:** `System.txt`
+**Filenames:** `System.txt`, `UserInformation.txt`
 
 **Sample (sanitized):**
 
@@ -206,6 +257,43 @@ Purchase quality material right now - t.me/lummamarketplace_bot
 ------------------------------------
 
 [... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
+```
+
+### `cystack_0e7834a9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Elevated`, `HWID`, `Hostname`, `IP Address`, `Install Date`, `Language`, `Local Date`, `LummaC2 Build`, `NetBIOS`, `OS Version`, `Path`, `RAM Size`, `Time Zone`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+LummaC2 Build: May 30 2025
+Path: <redacted>
+OS Version: Windows 11 Home Single Language (10.0.26100) x64
+Local Date: 31.05.2025 <ip>
+Time Zone: UTC-3
+Install Date: 17.01.2025 <ip>
+Elevated: false
+Computer: ANTORENA
+User: Usuario
+Hostname: <redacted>
+NetBIOS: ANTORENA
+Language: es-CL
+HWID: <redacted>
+RAM Size: 16384MB
+CPU Vendor: AuthenticAMD
+CPU Name: AMD Ryzen 5 7535HS with Radeon Graphics
+CPU Threads: 12
+CPU Cores: 6
+Display resolution: 1920x1080
+IP Address: <redacted>
+Country: AR
+- LID: @BRADMAX_LOG (BRADMAX) / <url>
+BEST LOGS => @BRADMAX_LOG
 ```
 
 ### `cystack_17440144`
@@ -276,6 +364,56 @@ Country: <ip>
 LID: yau6Na--7400515879
 ```
 
+### `cystack_30e46fb7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Elevated`, `HWID`, `Hostname`, `IP Address`, `Install Date`, `LID`, `Local Date`, `LummaC2 Build`, `NetBIOS`, `OS Version`, `Path`, `RAM Size`, `Time`, `Time Zone`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                       t.me/BRADMAX_LOG                     *
+**************************************************************
+
+LummaC2 Build: May 19 2025
+Path: <redacted>
+OS Version: Windows 10 Pro (10.0.19045) x64
+Local Date: 20.05.2025 <ip>
+Time Zone: UTC-4
+Install Date: 29.11.2023 <ip>
+Elevated: false
+Computer: DESKTOP-U5RC80T
+User: usuario
+Hostname: <redacted>
+NetBIOS: DESKTOP-U5RC80T
+HWID: <redacted>
+RAM Size: 8192MB
+CPU Vendor: GenuineIntel
+CPU Name: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+CPU Threads: 4
+CPU Cores: 4
+Display resolution: 1440x900
+IP Address: <redacted>
+Time: 20.05.2025 <ip> (sig:1747754872.4ed1b6540f0081a1dc3398cd6cb62bcd)
+Country: VE
+LID: @BRADMAX_LOG (BRADMAX) / <url>
+```
+
 ### `cystack_38ce40fc`
 
 **Attribution confidence:** `high`
@@ -305,6 +443,42 @@ Display resolution: 1920x1080
 IP Address: <redacted>
 Time: 25.05.2025 <ip> (sig:1748136939.81cad37db8fbdf9d9c842e7da2ec6ee1)
 Country: AR
+LID: @BRADMAX_LOG (BRADMAX) / <url>
+```
+
+### `cystack_40fa2320`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Domain`, `Elevated`, `HWID`, `Hostname`, `IP Address`, `Install Date`, `LID`, `Language`, `Local Date`, `LummaC2 Build`, `NetBIOS`, `OS Version`, `RAM Size`, `Time Zone`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+LummaC2 Build: May 25 2025
+OS Version: Windows 11 Pro (10.0.22621) x64
+Local Date: 26.05.2025 <ip>
+Time Zone: UTC-4
+Install Date: 16.03.2023 <ip>
+Elevated: false
+Computer: COMPRAS06
+User: Compras06
+Domain: <redacted>
+Hostname: <redacted>
+NetBIOS: COMPRAS06
+Language: es-VE
+HWID: <redacted>
+RAM Size: 8192MB
+CPU Vendor: GenuineIntel
+CPU Name: Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz
+CPU Threads: 4
+CPU Cores: 2
+Display resolution: 1366x768
+IP Address: <redacted>
+Country: VE
 LID: @BRADMAX_LOG (BRADMAX) / <url>
 ```
 
@@ -378,6 +552,40 @@ Display resolution: 1920x1080
 IP Address: <redacted>
 Time: 27.05.2025 <ip> (sig:1748344043.aaa8f657b8daa2ede34127e0ea05baac)
 Country: AL
+LID: @BRADMAX_LOG (BRADMAX) / <url>
+```
+
+### `cystack_501a4d38`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Elevated`, `HWID`, `IP Address`, `Install Date`, `LID`, `Language`, `Local Date`, `LummaC2 Build`, `NetBIOS`, `OS Version`, `RAM Size`, `Time Zone`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+LummaC2 Build: May 19 2025
+OS Version: Windows 10 Professionnel (10.0.19045) x64
+Local Date: 26.05.2025 <ip>
+Time Zone: UTC+1
+Install Date: 01.01.1970 <ip>
+Elevated: false
+Computer: 25210
+User: trax
+NetBIOS: 25210
+Language: fr-FR
+HWID: <redacted>
+RAM Size: 16384MB
+CPU Vendor: GenuineIntel
+CPU Name: 13th Gen Intel(R) Core(TM) i5-13400F
+CPU Threads: 16
+CPU Cores: 8
+Display resolution: 1920x1080
+IP Address: <redacted>
+Country: TN
 LID: @BRADMAX_LOG (BRADMAX) / <url>
 ```
 
@@ -570,6 +778,44 @@ Country: AR
 LID: @BRADMAX_LOG (BRADMAX) / <url>
 ```
 
+### `cystack_75f6591e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Elevated`, `HWID`, `Hostname`, `IP Address`, `Install Date`, `Language`, `Local Date`, `LummaC2 Build`, `NetBIOS`, `OS Version`, `Path`, `RAM Size`, `Time`, `Time Zone`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+LummaC2 Build: May 24 2025
+Path: <redacted>
+OS Version: Windows 11 Pro (10.0.26100) x64
+Local Date: 29.05.2025 <ip>
+Time Zone: UTC+2
+Install Date: 16.01.2025 <ip>
+Elevated: false
+Computer: NAYER
+User: betat
+Hostname: <redacted>
+NetBIOS: NAYER
+Language: es-ES
+HWID: <redacted>
+RAM Size: 16384MB
+CPU Vendor: GenuineIntel
+CPU Name: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+CPU Threads: 12
+CPU Cores: 6
+Display resolution: 1920x1080
+IP Address: <redacted>
+Time: 29.05.2025 <ip> (sig:1748474723.97f7c8834af3be68129fa331b98ff126)
+Country: AD
+- LID: @BRADMAX_LOG (BRADMAX) / <url>
+BEST LOGS => @BRADMAX_LOG
+```
+
 ### `cystack_78a2bec1`
 
 **Attribution confidence:** `high`
@@ -636,6 +882,38 @@ CPU Cores: 4
 Display resolution: 1360x768
 IP Address: <redacted>
 Country: AR
+LID: @BRADMAX_LOG (BRADMAX) / <url>
+```
+
+### `cystack_7ea45bcd`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Elevated`, `HWID`, `Hostname`, `IP Address`, `LID`, `Language`, `LummaC2 Build`, `NetBIOS`, `RAM Size`, `Time`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+LummaC2 Build: May 24 2025
+Elevated: false
+Computer: DESKTOP-SC4V462
+User: Gaming PC
+Hostname: <redacted>
+NetBIOS: DESKTOP-SC4V462
+Language: en-US
+HWID: <redacted>
+RAM Size: 8192MB
+CPU Vendor: GenuineIntel
+CPU Name: Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+CPU Threads: 8
+CPU Cores: 4
+Display resolution: 1920x1080
+IP Address: <redacted>
+Time: 28.05.2025 <ip> (sig:1748463978.c104d596e4cfb7ba8637c0a0b0a34786)
+Country: CW
 LID: @BRADMAX_LOG (BRADMAX) / <url>
 ```
 
@@ -721,6 +999,43 @@ Country: CA
 LID: @BRADMAX_LOG (BRADMAX) / <url>
 ```
 
+### `cystack_a1eca2c0`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Elevated`, `HWID`, `IP Address`, `Install Date`, `Language`, `Local Date`, `LummaC2 Build`, `NetBIOS`, `OS Version`, `Path`, `RAM Size`, `Time`, `Time Zone`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+LummaC2 Build: May 30 2025
+Path: <redacted>
+OS Version: Windows 11 Home (10.0.26100) x64
+Local Date: 01.06.2025 <ip>
+Time Zone: UTC+12
+Install Date: 23.02.2025 <ip>
+Elevated: false
+Computer: 30293
+User: lamar
+NetBIOS: 30293
+Language: en-AT
+HWID: <redacted>
+RAM Size: 32768MB
+CPU Vendor: GenuineIntel
+CPU Name: 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz
+CPU Threads: 12
+CPU Cores: 6
+Display resolution: 1920x1080
+IP Address: <redacted>
+Time: 31.05.2025 <ip> (sig:1748697772.ceb2efb0542fa276e80dc52173e46caf)
+Country: AT
+- LID: @BRADMAX_LOG (BRADMAX) / <url>
+BEST LOGS => @BRADMAX_LOG
+```
+
 ### `cystack_a2cb2029`
 
 **Attribution confidence:** `high`
@@ -784,6 +1099,41 @@ Display resolution: 1920x1080
 IP Address: <redacted>
 Time: 27.05.2025 <ip> (sig:1748323609.25f4a69aab3bed154871e883de4b7428)
 Country: AE
+LID: @BRADMAX_LOG (BRADMAX) / <url>
+```
+
+### `cystack_a373b677`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Elevated`, `HWID`, `IP Address`, `Install Date`, `LID`, `Language`, `Local Date`, `LummaC2 Build`, `NetBIOS`, `OS Version`, `RAM Size`, `Time`, `Time Zone`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+LummaC2 Build: May 19 2025
+OS Version: Windows 10 Famille (10.0.19045) x64
+Local Date: 25.05.2025 <ip>
+Time Zone: UTC+2
+Install Date: 22.03.2025 <ip>
+Elevated: false
+Computer: DESKTOP-L3GU121
+User: yyouyou
+NetBIOS: DESKTOP-L3GU121
+Language: fr-FR
+HWID: <redacted>
+RAM Size: 16384MB
+CPU Vendor: AuthenticAMD
+CPU Name: AMD Ryzen 7 5700X3D 8-Core Processor
+CPU Threads: 16
+CPU Cores: 8
+Display resolution: 1920x1080
+IP Address: <redacted>
+Time: 25.05.2025 <ip> (sig:1748200499.41aee482cb68dc75f91031ceb9ac61d0)
+Country: FR
 LID: @BRADMAX_LOG (BRADMAX) / <url>
 ```
 
@@ -1038,6 +1388,54 @@ Country: BR
 LID: @BRADMAX_LOG (BRADMAX) / <url>
 ```
 
+### `cystack_e2af0132`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Elevated`, `HWID`, `Hostname`, `IP Address`, `Language`, `LummaC2 Build`, `NetBIOS`, `Path`, `RAM Size`, `Time`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                       t.me/BRADMAX_LOG                     *
+**************************************************************
+
+LummaC2 Build: May 24 2025
+Path: <redacted>
+Elevated: false
+Computer: CARTERS-DESKTOP
+User: Cj Herreen
+Hostname: <redacted>
+NetBIOS: CARTERS-DESKTOP
+Language: en-AU
+HWID: <redacted>
+RAM Size: 16384MB
+CPU Vendor: GenuineIntel
+CPU Name: Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+CPU Threads: 6
+CPU Cores: 6
+Display resolution: 2560x1440
+IP Address: <redacted>
+Time: 28.05.2025 <ip> (sig:1748414189.1a2eb483ef5f6c5b16d2a2187eee416f)
+Country: AU
+[... 3 blank lines ...]
+```
+
 ### `cystack_e4df1ff8`
 
 **Attribution confidence:** `high`
@@ -1065,6 +1463,42 @@ CPU Cores: 6
 Display resolution: 1920x1080
 IP Address: <redacted>
 Country: AE
+LID: @BRADMAX_LOG (BRADMAX) / <url>
+```
+
+### `cystack_e841a58c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Domain`, `Elevated`, `HWID`, `Hostname`, `IP Address`, `LID`, `Language`, `Local Date`, `LummaC2 Build`, `NetBIOS`, `OS Version`, `RAM Size`, `Time`, `Time Zone`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+LummaC2 Build: May 19 2025
+OS Version: Windows 10 Enterprise (10.0.19045) x64
+Local Date: 25.05.2025 <ip>
+Time Zone: UTC+0
+Elevated: true
+Computer: Windows User
+User: neaf
+Domain: <redacted>
+Hostname: <redacted>
+NetBIOS: Windows User
+Language: en-US
+HWID: <redacted>
+RAM Size: 16384MB
+CPU Vendor: AuthenticAMD
+CPU Name: AMD Ryzen 5 3400G with Radeon Vega Graphics
+CPU Threads: 8
+CPU Cores: 1
+Display resolution: 1920x1080
+IP Address: <redacted>
+Time: 25.05.2025 <ip> (sig:1748191945.b3c74c75b36a5826e88bfd73ab7b30a6)
+Country: QA
 LID: @BRADMAX_LOG (BRADMAX) / <url>
 ```
 
