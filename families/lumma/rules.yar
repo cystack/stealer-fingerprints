@@ -679,6 +679,39 @@ rule Lumma_cystack_7ea45bcd
         all of ($key_*)
 }
 
+rule Lumma_cystack_7fc55edb
+{
+    meta:
+        family = "Lumma"
+        fingerprint_id = "cystack_7fc55edb"
+
+    strings:
+        $key_0 = "CPU Cores:" ascii
+        $key_1 = "CPU Name:" ascii
+        $key_2 = "CPU Threads:" ascii
+        $key_3 = "CPU Vendor:" ascii
+        $key_4 = "Computer:" ascii
+        $key_5 = "Country:" ascii
+        $key_6 = "Display resolution:" ascii
+        $key_7 = "Domain:" ascii
+        $key_8 = "Elevated:" ascii
+        $key_9 = "HWID:" ascii
+        $key_10 = "Hostname:" ascii
+        $key_11 = "IP Address:" ascii
+        $key_12 = "Language:" ascii
+        $key_13 = "Local Date:" ascii
+        $key_14 = "LummaC2 Build:" ascii
+        $key_15 = "NetBIOS:" ascii
+        $key_16 = "OS Version:" ascii
+        $key_17 = "Path:" ascii
+        $key_18 = "RAM Size:" ascii
+        $key_19 = "Time Zone:" ascii
+        $key_20 = "User:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Lumma_cystack_8176e468
 {
     meta:
@@ -1032,6 +1065,35 @@ rule Lumma_cystack_cd164f31
         $key_15 = "RAM Size:" ascii
         $key_16 = "Time:" ascii
         $key_17 = "User:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Lumma_cystack_d660d304
+{
+    meta:
+        family = "Lumma"
+        fingerprint_id = "cystack_d660d304"
+
+    strings:
+        $key_0 = "CPU Cores:" ascii
+        $key_1 = "CPU Name:" ascii
+        $key_2 = "CPU Threads:" ascii
+        $key_3 = "CPU Vendor:" ascii
+        $key_4 = "Computer:" ascii
+        $key_5 = "Country:" ascii
+        $key_6 = "Display resolution:" ascii
+        $key_7 = "Elevated:" ascii
+        $key_8 = "HWID:" ascii
+        $key_9 = "Hostname:" ascii
+        $key_10 = "IP Address:" ascii
+        $key_11 = "Language:" ascii
+        $key_12 = "LummaC2 Build:" ascii
+        $key_13 = "NetBIOS:" ascii
+        $key_14 = "Path:" ascii
+        $key_15 = "RAM Size:" ascii
+        $key_16 = "User:" ascii
 
     condition:
         all of ($key_*)

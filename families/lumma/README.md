@@ -9,7 +9,7 @@ signature on the `Time:` line. Build banners reference the
 
 **Also known as:** `LummaC2`, `Lumma Stealer`
 
-**Variants observed:** 47
+**Variants observed:** 49
 **Top attribution confidence:** `high`
 **Operator panel brands:** `AL Stealer`, `BRADMAX`, `Deimos Golang Stealer`
 **Distribution channels:** `@BRADLOGS`, `@ft7links`, `t.me/additionallibraries`
@@ -1041,6 +1041,43 @@ Country: CW
 LID: @BRADMAX_LOG (BRADMAX) / <url>
 ```
 
+### `cystack_7fc55edb`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Domain`, `Elevated`, `HWID`, `Hostname`, `IP Address`, `Language`, `Local Date`, `LummaC2 Build`, `NetBIOS`, `OS Version`, `Path`, `RAM Size`, `Time Zone`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+LummaC2 Build: May 30 2025
+Path: <redacted>
+OS Version: Windows 10 Famille (10.0.19045) x64
+Local Date: 01.06.2025 <ip>
+Time Zone: UTC+2
+Elevated: false
+Computer: 17266-5FAA
+User: zenkaW
+Domain: <redacted>
+Hostname: <redacted>
+NetBIOS: 17266-5FAA
+Language: fr-FR
+HWID: <redacted>
+RAM Size: 16384MB
+CPU Vendor: GenuineIntel
+CPU Name: 12th Gen Intel(R) Core(TM) i7-12700F
+CPU Threads: 20
+CPU Cores: 10
+Display resolution: 1920x1080
+IP Address: <redacted>
+Country: NL
+- LID: @BRADMAX_LOG (BRADMAX) / <url>
+BEST LOGS => @BRADMAX_LOG
+```
+
 ### `cystack_802420de`
 
 **Attribution confidence:** `high`
@@ -1514,6 +1551,39 @@ IP Address: <redacted>
 Time: 28.05.2025 <ip> (sig:1748414189.1a2eb483ef5f6c5b16d2a2187eee416f)
 Country: AU
 LID: @BRADMAX_LOG (BRADMAX) / <url>
+```
+
+### `cystack_d660d304`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Elevated`, `HWID`, `Hostname`, `IP Address`, `Language`, `LummaC2 Build`, `NetBIOS`, `Path`, `RAM Size`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+LummaC2 Build: May 30 2025
+Path: <redacted>
+Elevated: false
+Computer: DESKTOP-OSHK8QF
+User: Hari
+Hostname: <redacted>
+NetBIOS: DESKTOP-OSHK8QF
+Language: en-US
+HWID: <redacted>
+RAM Size: 4096MB
+CPU Vendor: GenuineIntel
+CPU Name: Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz
+CPU Threads: 4
+CPU Cores: 2
+Display resolution: 1366x768
+IP Address: <redacted>
+Country: IN
+- LID: @BRADMAX_LOG (BRADMAX) / <url>
+BEST LOGS => @BRADMAX_LOG
 ```
 
 ### `cystack_d9beb4e5`

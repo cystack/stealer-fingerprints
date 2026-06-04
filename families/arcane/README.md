@@ -29,7 +29,7 @@ the subsection body.
 
 **Also known as:** `Arcane Stealer`, `VGS Stealer (predecessor)`
 
-**Variants observed:** 42
+**Variants observed:** 43
 **Top attribution confidence:** `high`
 **Operator panel brands:** `@BRADLOGS (BRADMAX)`
 **Distribution channels:** `https://t.me/+0IAf5VIrl_EzNWRi`
@@ -1988,6 +1988,61 @@ Speed: 2500000000
 MACAddress: <ip>
 Name: Intel(R) Ethernet Controller (3) I225-V #2
 [... truncated; full sample at ``sample.txt`` (approx. 110 more lines) ...]
+```
+
+### `cystack_d88f8bcc`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AdapterRAM`, `Capacity`, `Caption`, `ChassisTypes`, `Clipboard`, `Date Install`, `Default`, `Description`, `DeviceID`, `External IP`, `FileSystem`, `FreeSpace`, `FullName`, `Gateway IP`, `IPEnabled`, `ISO Key`, `Internal IP`, `MACAddress`, `Manufacturer`, `MaxClockSpeed`, `Model`, `Name`, `NumberOfCores`, `OSArchitecture`, `Pass`, `Product`, `ReleaseDate`, `SMBIOSBIOSVersion`, `SerialNumber`, `Size`, `Speed`, `Version`, `Worker`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+---User Info---
+Worker: %Worker%
+Date Install: 6/5/2025 <ip> AM
+ISO Key: en
+Clipboard: <email>
+Pass: devilhere47k
+External IP: <redacted>
+Internal IP: <ip>
+Gateway IP: <ip>
+---Full Pc Info---
+=== CPU Information ===
+MaxClockSpeed: 3700
+Name: Intel(R) Core(TM) i3-4170 CPU @ 3.70GHz
+NumberOfCores: 2
+=== GPU Information ===
+AdapterRAM: 1073741824
+Name: Intel(R) HD Graphics 4400
+=== RAM Information ===
+Capacity: 4294967296
+Capacity: 4294967296
+=== Disk Information ===
+Model: LITEON CV8-8E128-11 SATA 128GB
+Size: 128034708480
+=== Network Adapter Information ===
+MACAddress: <ip>
+Name: Realtek PCIe GBE Family Controller
+MACAddress: <ip>
+Name: WAN Miniport (IP)
+Speed:
+MACAddress: <ip>
+Name: WAN Miniport (IPv6)
+Speed:
+MACAddress: <ip>
+Name: WAN Miniport (Network Monitor)
+Speed:
+MACAddress: <ip>
+Name: 4G MIFI USB Ethernet/RNDIS
+Speed: 425984000
+=== Windows Version Information ===
+Caption: Microsoft Windows 10 Pro
+[... truncated; full sample at ``sample.txt`` (approx. 62 more lines) ...]
 ```
 
 ### `cystack_daec173d`
