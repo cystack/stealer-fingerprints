@@ -29,7 +29,7 @@ the subsection body.
 
 **Also known as:** `Arcane Stealer`, `VGS Stealer (predecessor)`
 
-**Variants observed:** 43
+**Variants observed:** 44
 **Top attribution confidence:** `high`
 **Operator panel brands:** `@BRADLOGS (BRADMAX)`
 **Distribution channels:** `https://t.me/+0IAf5VIrl_EzNWRi`
@@ -1039,6 +1039,61 @@ MACAddress: <ip>
 Name: WAN Miniport (IP)
 Speed:
 [... truncated; full sample at ``sample.txt`` (approx. 80 more lines) ...]
+```
+
+### `cystack_80c77f85`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AdapterRAM`, `BatteryStatus`, `Capacity`, `Caption`, `ChassisTypes`, `Date Install`, `Default`, `Description`, `DeviceID`, `EstimatedChargeRemaining`, `External IP`, `FileSystem`, `FreeSpace`, `FullName`, `Gateway IP`, `IPEnabled`, `ISO Key`, `Internal IP`, `MACAddress`, `Manufacturer`, `MaxClockSpeed`, `Model`, `Name`, `NumberOfCores`, `OSArchitecture`, `Product`, `ReleaseDate`, `SMBIOSBIOSVersion`, `SerialNumber`, `Size`, `Speed`, `Version`, `Worker`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+---User Info---
+Worker: %Worker%
+Date Install: 05.06.2025 <ip>
+ISO Key: en
+External IP: <redacted>
+Internal IP: <ip>
+Gateway IP: <ip>
+---Full Pc Info---
+=== CPU Information ===
+MaxClockSpeed: 2688
+Name: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+NumberOfCores: 6
+=== GPU Information ===
+AdapterRAM: 4293918720
+Name: NVIDIA GeForce RTX 3050 Laptop GPU
+AdapterRAM: 134217728
+Name: Intel(R) UHD Graphics
+=== RAM Information ===
+Capacity: 8589934592
+Capacity: 8589934592
+=== Disk Information ===
+Model: INTEL SSDPEKNU512GZ
+Size: 512105932800
+=== Network Adapter Information ===
+MACAddress: <ip>
+Name: Realtek Gaming GbE Family Controller
+Speed: 0
+MACAddress: <ip>
+Name: WAN Miniport (IP)
+Speed:
+MACAddress: <ip>
+Name: WAN Miniport (IPv6)
+Speed:
+MACAddress: <ip>
+Name: WAN Miniport (Network Monitor)
+Speed:
+MACAddress: <ip>
+Name: MediaTek Wi-Fi 6 MT7921 Wireless LAN Card
+Speed: 100750000
+MACAddress: <ip>
+[... truncated; full sample at ``sample.txt`` (approx. 83 more lines) ...]
 ```
 
 ### `cystack_8729d4c3`

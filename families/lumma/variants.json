@@ -17,7 +17,9 @@
       "attribution_confidence": "high",
       "banner_strings": [],
       "distribution_channel": "@BRADLOGS",
-      "field_keys": [],
+      "field_keys": [
+        "TG"
+      ],
       "filenames": [
         "System.txt"
       ],
@@ -215,6 +217,39 @@
         "Information.txt"
       ],
       "fingerprint_id": "cystack_1989fd30",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "Language",
+        "Local Date",
+        "LummaC2 Build",
+        "NetBIOS",
+        "OS Version",
+        "Path",
+        "RAM Size",
+        "Time Zone",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_29df2c86",
       "panel_brand": null,
       "synthetic": true
     },
@@ -880,6 +915,56 @@
         "Information.txt"
       ],
       "fingerprint_id": "cystack_86f8cf79",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Country",
+        "Display resolution",
+        "Elevated",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "Install Date",
+        "Language",
+        "Local Date",
+        "LummaC2 Build",
+        "OS Version",
+        "Path",
+        "RAM Size",
+        "Time",
+        "Time Zone",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_9329a751",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Boot Time 2025-02-26 13",
+        "Installation Time 2022-07-02 13",
+        "Key Type Volume",
+        "OS Root C"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_9c2cb21e",
       "panel_brand": null,
       "synthetic": true
     },

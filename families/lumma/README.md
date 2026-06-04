@@ -9,7 +9,7 @@ signature on the `Time:` line. Build banners reference the
 
 **Also known as:** `LummaC2`, `Lumma Stealer`
 
-**Variants observed:** 49
+**Variants observed:** 52
 **Top attribution confidence:** `high`
 **Operator panel brands:** `AL Stealer`, `BRADMAX`, `Deimos Golang Stealer`
 **Distribution channels:** `@BRADLOGS`, `@ft7links`, `t.me/additionallibraries`
@@ -80,6 +80,9 @@ Become better right now - t.me/additionallibraries
 **Distribution channel:** `@BRADLOGS`
 
 **Attribution confidence:** `high`
+
+**Field keys:**
+`TG`
 
 **Filenames:** `System.txt`
 
@@ -411,6 +414,42 @@ IP Address: <redacted>
 Time: 14.06.2025 <ip> (sig:1749868793.760d1b04b3c03bccbd0bb80348934c6c)
 Country: <ip>
 LID: yau6Na--7400515879
+```
+
+### `cystack_29df2c86`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Elevated`, `HWID`, `Hostname`, `IP Address`, `Language`, `Local Date`, `LummaC2 Build`, `NetBIOS`, `OS Version`, `Path`, `RAM Size`, `Time Zone`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+LummaC2 Build: May 19 2025
+Path: <redacted>
+OS Version: Windows 11 Pro (10.0.26100) x64
+Local Date: 29.05.2025 <ip>
+Time Zone: UTC+3
+Elevated: false
+Computer: JCAOK90D
+User: arday
+Hostname: <redacted>
+NetBIOS: JCAOK90D
+Language: tr-TR
+HWID: <redacted>
+RAM Size: 16384MB
+CPU Vendor: AuthenticAMD
+CPU Name: AMD Ryzen 5 5500
+CPU Threads: 12
+CPU Cores: 6
+Display resolution: 1920x1080
+IP Address: <redacted>
+Country: TR
+- LID: @BRADMAX_LOG (BRADMAX) / <url>
+BEST LOGS => @BRADMAX_LOG
 ```
 
 ### `cystack_30e46fb7`
@@ -1197,6 +1236,97 @@ IP Address: <redacted>
 Time: 27.05.2025 <ip> (sig:1748324371.cfdcf86d9851a3dd3d6c975f8989b9cb)
 Country: CA
 LID: @BRADMAX_LOG (BRADMAX) / <url>
+```
+
+### `cystack_9329a751`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Country`, `Display resolution`, `Elevated`, `HWID`, `Hostname`, `IP Address`, `Install Date`, `Language`, `Local Date`, `LummaC2 Build`, `OS Version`, `Path`, `RAM Size`, `Time`, `Time Zone`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+LummaC2 Build: May 30 2025
+Path: <redacted>
+OS Version: Windows 10 Pro (10.0.19045) x64
+Local Date: 01.06.2025 <ip>
+Time Zone: UTC+3
+Install Date: 02.11.2024 <ip>
+Elevated: false
+User: menfi
+Hostname: <redacted>
+Language: tr-TR
+HWID: <redacted>
+RAM Size: 16384MB
+CPU Vendor: GenuineIntel
+CPU Name: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+CPU Threads: 4
+CPU Cores: 4
+Display resolution: 1920x1080
+IP Address: <redacted>
+Time: 02.06.2025 <ip> (sig:1748888089.ad62f7e93fae05ebd0bdbef3cdae4171)
+Country: TR
+- LID: @BRADMAX_LOG (BRADMAX) / <url>
+BEST LOGS => @BRADMAX_LOG
+```
+
+### `cystack_9c2cb21e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Boot Time 2025-02-26 13`, `Installation Time 2022-07-02 13`, `Key Type Volume`, `OS Root C`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+---------- [Operating System] ----------------------------------
+Property                  Value
+Windows 10
+Emulated Operating System Windows 10 Pro x64, version 2009 (Fall Creators Update)
+Version                   2009 (OS Build 19041.5555)
+Product Name              Windows 10 Pro
+Code Name                 Redstone 3
+Features                  64 Bit Edition, Terminal Services in Remote Admin Mode, Multiprocessor Free
+Edition Type              Professional
+Edition ID                [TH]X19-98795
+Key Type                  Volume:GVLK
+EULA                      Volume
+SKU                       0x30 Windows 10 Pro
+Windows Insider Program   Disabled
+Language                  Turkish
+Safe Mode                 No
+Activation Status         Required
+License Status            Notification [Windows(R) Operating System, VOLUME_KMSCLIENT channel]
+Genuine                   No
+Checked Build             No
+UAC Enabled               Yes
+OS Root                   C:\Windows\
+Boot Device               \Device\HarddiskVolume1
+System Device             \Device\HarddiskVolume3
+Kernel Version            10.0.19041.5438
+Build Branch              vb_release
+Build Lab                 19041.vb_release.191206-1406
+Build Lab Ex              19041.1.amd64fre.vb_release.191206-1406
+Security                  256 bits
+MMC Version               3.0
+Hardware DEP Available    Yes
+Automatic Updates         Enabled
+Automatic Updates         Enabled
+Registration
+Windows To Go             No
+Installation Time         2022-07-02 <ip>
+Boot Time                 2025-02-26 <ip>
+Up Time                   1 Hour 18 Minutes 10 seconds
+System Restore            Enabled
+[... 3 blank lines ...]
+[... truncated; full sample at ``sample.txt`` (approx. 4 more lines) ...]
 ```
 
 ### `cystack_a1eca2c0`
