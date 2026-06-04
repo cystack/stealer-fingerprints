@@ -9,7 +9,7 @@ signature on the `Time:` line. Build banners reference the
 
 **Also known as:** `LummaC2`, `Lumma Stealer`
 
-**Variants observed:** 52
+**Variants observed:** 53
 **Top attribution confidence:** `high`
 **Operator panel brands:** `AL Stealer`, `BRADMAX`, `Deimos Golang Stealer`
 **Distribution channels:** `@BRADLOGS`, `@ft7links`, `t.me/additionallibraries`
@@ -785,6 +785,45 @@ Time: 02.06.2025 <ip> (sig:1748883146.a7ad7e6de6128bb241b54edfd5c47bb4)
 Country: CZ
 - LID: @BRADMAX_LOG (BRADMAX) / <url>
 BEST LOGS => @BRADMAX_LOG
+```
+
+### `cystack_553c80df`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`LID(Lumma ID)`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+LummaC2, Build Sep 28 2023
+LID(Lumma ID): 
+
+- PC: LAPTOP-OJ378JSI
+- User: shams
+- Domain: 
+- Workgroup: LAPTOP-OJ378JSI
+- ComputerNameDnsHostname: LAPTOP-OJ378JSI
+- ComputerNameNetBIOS: LAPTOP-OJ378JSI
+- OS Version: Windows 10 (10.0.22621)
+- HWID: A124F0934A284B7FDF160EE0D5443E425004C8D4
+- Screen Resoluton: 1920x1080
+- Language: en-US
+- CPU Name: Intel(R) Core(TM) i3-10110U CPU @ 2.10GHz
+- GPU: Intel(R) UHD Graphics
+- Physical Installed Memory: 8192MB
+
+- IP Address: <ip>
+- Country: IN
+
+
+Брут и отработка крипты 70/30 > <url>
+
+Депозит на форумах 5BTC. Берем балансы от 1000$. За время работы снято более 5.000.000$
+Brute and withdraw cryptowallets 70/30
 ```
 
 ### `cystack_642a0aa1`

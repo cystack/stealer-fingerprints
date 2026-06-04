@@ -50,7 +50,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Category Stealer`](families/category_stealer/) | 3 | 0 | `unknown` |
 | [`Cthulhu Stealer`](families/cthulhu_stealer/) | 26 | 0 | `high` |
 | [`DCRat`](families/dc_rat/) | 1 | 0 | `high` |
-| [`Lumma`](families/lumma/) | 52 | 3 | `high` |
+| [`Lumma`](families/lumma/) | 53 | 3 | `high` |
 | [`MacSync`](families/mac_sync/) | 2 | 0 | `high` |
 | [`Millenium RAT`](families/millenium_rat/) | 1 | 0 | `-` |
 | [`NotMalware`](families/not_malware/) | 2 | 2 | `benign` |
@@ -63,7 +63,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Redline`](families/redline/) | 19 | 0 | `high` |
 | [`RedlineLike Stealer`](families/redline_like_stealer/) | 27 | 0 | `unknown` |
 | [`StealC`](families/steal_c/) | 35 | 0 | `high` |
-| [`Vidar`](families/vidar/) | 4047 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 4051 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 5 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 10 | 0 | `high` |
 

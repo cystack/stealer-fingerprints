@@ -8,7 +8,7 @@ high-volume infostealer family in 2025+.
 
 **Also known as:** `VidarStealer`
 
-**Variants observed:** 4047
+**Variants observed:** 4051
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -43251,6 +43251,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 315 more lines) ...]
 ```
 
+### `cystack_3275f2d5`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Metal Gear Rising`, `Path`, `Processor`, `RAM`, `Tg`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `WireGuard Installer`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+MetaMask, Phantom, Tonkeeper, Electrum, Exodus, Coinomi, Daedalus, TrustWallet, Atomic, Unisat, Rabby, Keplr, Tronlink, MagicEden
+Задействую более 15 разных направлений
+Среднее время брута 4-5 дней
+Баланс от 10к$
+% 70/30
+Tg: @brute_meta
+Депозит 10к$ <url>
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: IN
+Version: 14.6
+
+Date: 09/7/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English (India) / English (United States)
+Local Time: 09/7/2025 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 237 more lines) ...]
+```
+
 ### `cystack_32800034`
 
 **Attribution confidence:** `high`
@@ -56616,6 +56671,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 313 more lines) ...]
 ```
 
+### `cystack_432fe133`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Tg`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+MetaMask, Phantom, Tonkeeper, Electrum, Exodus, Coinomi, Daedalus, TrustWallet, Atomic, Unisat, Rabby, Keplr, Tronlink, MagicEden
+Задействую более 15 разных направлений
+Среднее время брута 4-5 дней
+Баланс от 10к$
+% 70/30
+Tg: @brute_meta
+Депозит 10к$ <url>
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: IN
+Version: 14.6
+
+Date: 09/7/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States) / English (India)
+Local Time: 09/7/2025 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-10100 CPU @ 3.60GHz
+Cores: 4
+Threads: 8
+[... truncated; full sample at ``sample.txt`` (approx. 261 more lines) ...]
+```
+
 ### `cystack_4337b408`
 
 **Attribution confidence:** `high`
@@ -66514,6 +66624,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 322 more lines) ...]
+```
+
+### `cystack_4edd870a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Spec Ops`, `Tg`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+MetaMask, Phantom, Tonkeeper, Electrum, Exodus, Coinomi, Daedalus, TrustWallet, Atomic, Unisat, Rabby, Keplr, Tronlink, MagicEden
+Задействую более 15 разных направлений
+Среднее время брута 4-5 дней
+Баланс от 10к$
+% 70/30
+Tg: @brute_meta
+Депозит 10к$ <url>
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: IN
+Version: 14.6
+
+Date: 09/7/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (India) / English (United States)
+Local Time: 09/7/2025 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: AMD Ryzen 5 5600G with Radeon Graphics         
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 312 more lines) ...]
 ```
 
 ### `cystack_4eeb6186`
@@ -168924,6 +169089,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 247 more lines) ...]
+```
+
+### `cystack_c2da5c5c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `Ghost Recon`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Nymphomaniac`, `Path`, `Processor`, `RAM`, `Tg`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+MetaMask, Phantom, Tonkeeper, Electrum, Exodus, Coinomi, Daedalus, TrustWallet, Atomic, Unisat, Rabby, Keplr, Tronlink, MagicEden
+Задействую более 15 разных направлений
+Среднее время брута 4-5 дней
+Баланс от 10к$
+% 70/30
+Tg: @brute_meta
+Депозит 10к$ <url>
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: IN
+Version: 14.6
+
+Date: 09/7/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: Disabled
+AV: Disabled
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English (United States) / English (India)
+Local Time: 09/7/2025 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: AMD Ryzen 5 5600 6-Core Processor              
+Cores: 6
+Threads: 12
+[... truncated; full sample at ``sample.txt`` (approx. 243 more lines) ...]
 ```
 
 ### `cystack_c2e859b1`
