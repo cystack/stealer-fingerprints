@@ -18,6 +18,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`BracketSection Stealer`](families/bracket_section_stealer/) | 1 | 0 | `unknown` |
 | [`CSAzureBuildStealer`](families/cs_azure_build_stealer/) | 1 | 0 | `unknown` |
 | [`CSBareVersionStealer`](families/cs_bare_version_stealer/) | 1 | 1 | `unknown` |
+| [`CSBestPrivateLoggerStealer`](families/cs_best_private_logger_stealer/) | 1 | 0 | `unknown` |
 | [`CSBinaryGarbageStealer`](families/cs_binary_garbage_stealer/) | 1 | 1 | `unknown` |
 | [`CSBitArchStealer`](families/cs_bit_arch_stealer/) | 1 | 0 | `unknown` |
 | [`CSBrowersStealer`](families/cs_browers_stealer/) | 3 | 0 | `unknown` |
@@ -46,6 +47,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSPyHostTimeStealer`](families/cs_py_host_time_stealer/) | 1 | 1 | `unknown` |
 | [`CSSigInfoStealer`](families/cs_sig_info_stealer/) | 1 | 1 | `low` |
 | [`CSSoftwareTailStealer`](families/cs_software_tail_stealer/) | 1 | 1 | `unknown` |
+| [`CSTxtFilesPartStealer`](families/cs_txt_files_part_stealer/) | 1 | 0 | `unknown` |
 | [`CSWmicDumpStealer`](families/cs_wmic_dump_stealer/) | 1 | 0 | `unknown` |
 | [`Category Stealer`](families/category_stealer/) | 3 | 0 | `unknown` |
 | [`Cthulhu Stealer`](families/cthulhu_stealer/) | 26 | 0 | `high` |
@@ -63,6 +65,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Redline`](families/redline/) | 19 | 0 | `high` |
 | [`RedlineLike Stealer`](families/redline_like_stealer/) | 27 | 0 | `unknown` |
 | [`StealC`](families/steal_c/) | 35 | 0 | `high` |
+| [`Stealerium`](families/stealerium/) | 1 | 1 | `high` |
 | [`Vidar`](families/vidar/) | 4051 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 5 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 10 | 0 | `high` |

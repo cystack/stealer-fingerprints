@@ -1,0 +1,33 @@
+{
+  "family": "Stealerium",
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": "@BRADLOGS",
+      "field_keys": [
+        "Antivirus",
+        "CPU",
+        "CompName",
+        "Date",
+        "External IP",
+        "GPU",
+        "Gateway IP",
+        "Internal IP",
+        "Language",
+        "Power",
+        "RAM",
+        "Screen",
+        "System",
+        "Username",
+        "Webcams count"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "stealerium_v3_5_2",
+      "panel_brand": "Stealerium v3.5.2",
+      "synthetic": false
+    }
+  ]
+}

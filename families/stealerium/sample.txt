@@ -1,0 +1,46 @@
+😹 *Stealerium v3.5.2 - Report:*
+Date: 2025-07-23 <ip> PM
+System: Microsoft Windows 11 Pro (64 Bit)
+Username: <redacted>
+CompName: DESKTOP-B6MCDPQ
+Language: 🇺🇸 es-US
+Antivirus: Windows Defender
+
+💻 *Hardware:*
+CPU: AMD Ryzen 7 5700G with Radeon Graphics         
+GPU: AMD Radeon(TM) Graphics
+RAM: 14229MB
+Power: NoSystemBattery (100%)
+Screen: 1440x900
+Webcams count: 0
+
+📡 *Network:* 
+Gateway IP: <ip>
+Internal IP: <ip>
+External IP: <redacted>
+
+💸 *Domains info:*
+   - 🏦 *Banking services* (No data)
+   - 💰 *Cryptocurrency services* (No data)
+   - 🍓 *Porn websites* (No data)
+
+🌐 *Browsers:*
+   ∟ 📂 AutoFill: 4
+   ∟ ⏳ History: 136
+
+🗃 *Software:*
+
+🧭 *Device:*
+   ∟ 🗝 Windows product key
+   ∟ 🌃 Desktop screenshot
+
+🦠 *Installation:*
+   ∟ ⛔️ Startup disabled
+   ∟ ⛔️ Clipper not installed
+   ∟ ⛔️ Keylogger not installed
+
+📄 *File Grabber:*
+   ∟ 📂 Documents: 1
+
+🔗 [Archive download link](<url>
+🔐 Archive password is: "909fedda44b04dc5703b3a2945f1dd1f"

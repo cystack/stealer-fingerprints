@@ -1,0 +1,28 @@
+{
+  "family": "CSBestPrivateLoggerStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [
+        "==========PC INFO=========="
+      ],
+      "distribution_channel": null,
+      "field_keys": [
+        "Application",
+        "Client Name",
+        "Country",
+        "FullDate",
+        "IP",
+        "Password",
+        "URL",
+        "Username"
+      ],
+      "filenames": [
+        "bot-6543948489-5764705714576562428-Userdata.txt"
+      ],
+      "fingerprint_id": "best_private_logger",
+      "panel_brand": "Best Private LOGGER",
+      "synthetic": false
+    }
+  ]
+}
