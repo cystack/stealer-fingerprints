@@ -1,0 +1,6 @@
+=== SYSTEM INFORMATION ===
+User: JOHN-PC\John
+Computer: JOHN-PC
+OS: windows amd64
+Directory: C:\Users\<user>\AppData\Local\Temp
+========================

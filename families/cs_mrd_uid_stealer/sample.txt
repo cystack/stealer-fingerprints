@@ -1,0 +1,278 @@
+UID: mrd-E7B27F68D05C6948
+UserName: <redacted>
+ComputerName: DESKTOP-47OU7GF
+OS: Windows 10 Home x64
+DateTime: 04.05.2023 || Registration:  21.12.2022 <ip>
+UserAgent: 
+Keyboard Languages: French
+Display Resolution: 1024 x 768
+CPU: AMD Ryzen 5 PRO 4650G with Radeon Graphics core 12
+RAM: physical 2047MB , virtual 2047MB
+GPU: AMD Radeon(TM) Graphics
+isGodMod: no
+isAdmin: yes
+
+Installed software:
+Windows Driver Package - Advanced Micro Devices, Inc. AMD-RAID Config Device (09/10/2020 9.3.0.00221) [09/10/2020 9.3.0.00221]
+Windows Driver Package - Advanced Micro Devices, Inc. (rcbottom) SCSIAdapter  (09/10/2020 9.3.0.00221) [09/10/2020 9.3.0.00221]
+Windows Driver Package - Advanced Micro Devices, Inc. (rcraid) SCSIAdapter  (09/10/2020 9.3.0.00221) [09/10/2020 9.3.0.00221]
+Windows Driver Package - Advanced Micro Devices, Inc. (rcbottom) SCSIAdapter  (09/10/2020 9.3.0.00221) [09/10/2020 9.3.0.00221]
+AMD Software [22.5.1]
+Windows Driver Package - Advanced Micro Devices, Inc. (rcbottom) SCSIAdapter  (09/10/2020 9.3.0.00221) [09/10/2020 9.3.0.00221]
+Git [2.38.1]
+HWiNFO64 Version 7.26 [7.26]
+Microsoft Visual J# 2.0 Redistributable Package - SE (x64) []
+Notepad++ (64-bit x64) [8.4.6]
+WinRAR 6.11 (64-bit) [6.11.0]
+Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664 [12.0.40664]
+AMD WVR64 [1.0.2]
+Documentation Manager [<ip>]
+Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219 [10.0.40219]
+Allgemeine Runtime Files (x86) [<ip>]
+Java 8 Update 251 (64-bit) [8.0.2510.8]
+Branding64 [1.00.0009]
+AMD Settings [2022.0428.0341.6645]
+Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61135 [11.0.61135]
+Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664 [12.0.40664]
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.7523 [9.0.30729.7523]
+Microsoft Visual C++ 2019 X64 Additional Runtime - 14.28.29913 [14.28.29913]
+Microsoft Update Health Tools [<ip>]
+Node.js [18.12.1]
+DirectX 9.0c Extra Files (x86, x64) [<ip>]
+Microsoft Silverlight [5.1.50918.0]
+Adobe Acrobat (64-bit) [22.003.20282]
+Microsoft Visual C++ 2005 Redistributable (x64) [8.0.61186]
+Microsoft Visual J# 2.0 Redistributable Package - SE (x64) [2.0.50728]
+AMD DVR64 [1.0.2]
+Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61135 [11.0.61135]
+Microsoft Visual C++ 2019 X64 Minimum Runtime - 14.28.29913 [14.28.29913]
+RyzenMasterSDK [<ip>]
+Epic Games Launcher Prerequisites (x64) [<ip>]
+MSI Afterburner 4.6.4 [4.6.4]
+AMD Chipset Software [<ip>]
+Google Chrome [108.0.5359.125]
+Microsoft Edge [108.0.1462.54]
+Microsoft Edge Update [<ip>]
+Microsoft Edge WebView2 Runtime [108.0.1462.54]
+Overwolf [<ip>]
+RivaTuner Statistics Server 7.3.3 [7.3.3]
+WinPcap 4.1.3 [4.1.0.2980]
+Intel(R) Wireless Bluetooth(R) [<ip>]
+Microsoft Visual C++ 2019 X86 Additional Runtime - 14.25.28508 [14.25.28508]
+Epic Games Launcher [<ip>]
+Java 8 Update 251 [8.0.2510.8]
+Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.25.28508 [14.25.28508]
+Launcher Prerequisites (x64) [<ip>]
+Java Auto Updater [<ip>]
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40664 [12.0.40664.0]
+Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.25.28508 [14.25.28508.3]
+Microsoft Visual C++ 2005 Redistributable [8.0.61187]
+Intel® Software Installer [<ip>]
+Epic Online Services [<ip>]
+Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.40664 [12.0.40664]
+Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.28.29913 [14.28.29913.0]
+Realtek Ethernet Controller Driver [10.56.119.2022]
+AMD PSP Driver [<ip>]
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.7523 [9.0.30729.7523]
+AMD Ryzen Balanced Driver [<ip>]
+AMD SBxxx SMBus Driver [<ip>]
+Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61135 [11.0.61135]
+Promontory_GPIO Driver [<ip>]
+Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61135 [11.0.61135]
+AMD_Chipset_Drivers [<ip>]
+Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.40664 [12.0.40664]
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40664 [12.0.40664.0]
+AMD GPIO2 Driver [<ip>]
+Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219 [10.0.40219]
+Realtek Audio Driver [6.0.9235.1]
+Discord [1.0.9005]
+Microsoft OneDrive [22.238.1114.0002]
+Opera GX Stable 93.0.4585.72 [93.0.4585.72]
+Porofessor.gg [2.7.268]
+Roblox Player for StephenBSK []
+Microsoft Visual Studio Code (User) [1.74.1]
+
+Disk:
+C:\ type: local disk, total: 228294MB, space: 141478MB
+D:\ type: local disk, total: 548MB, space: 512MB
+F:\ type: local disk, total: 952786MB, space: 899936MB
+
+Process:
+[System Process]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+services.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+amdfendrsr.exe
+atiesrxx.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+Memory Compression
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+spoolsv.exe
+wlanext.exe
+conhost.exe
+svchost.exe
+svchost.exe
+Intel_PIE_Service.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+armsvc.exe
+RtkAudUService64.exe
+MsMpEng.exe
+svchost.exe
+dasHost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+NisSrv.exe
+svchost.exe
+SearchIndexer.exe
+svchost.exe
+SecurityHealthService.exe
+svchost.exe
+svchost.exe
+MpCopyAccelerator.exe
+svchost.exe
+svchost.exe
+SgrmBroker.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+audiodg.exe
+svchost.exe
+csrss.exe
+winlogon.exe
+fontdrvhost.exe
+dwm.exe
+atieclxx.exe
+svchost.exe
+sihost.exe
+svchost.exe
+svchost.exe
+taskhostw.exe
+explorer.exe
+svchost.exe
+StartMenuExperienceHost.exe
+RuntimeBroker.exe
+SearchApp.exe
+RuntimeBroker.exe
+ctfmon.exe
+RuntimeBroker.exe
+LockApp.exe
+RuntimeBroker.exe
+taskhostw.exe
+HWiNFO64.EXE
+TextInputHost.exe
+smartscreen.exe
+SecurityHealthSystray.exe
+RtkAudUService64.exe
+Overwolf.exe
+OverwolfBrowser.exe
+OverwolfBrowser.exe
+OverwolfBrowser.exe
+OverwolfHelper.exe
+OverwolfHelper64.exe
+RadeonSoftware.exe
+CPUMetricsServer.exe
+WmiPrvSE.exe
+cncmd.exe
+AMDRSServ.exe
+ApplicationFrameHost.exe
+AcrobatNotificationClient.exe
+RuntimeBroker.exe
+svchost.exe
+svchost.exe
+dllhost.exe
+AMDRSSrcExt.exe
+QtWebEngineProcess.exe
+RiotClientServices.exe
+RiotClientCrashHandler.exe
+LeagueClient.exe
+LeagueCrashHandler.exe
+Porofessor.gg.exe
+OverwolfBrowser.exe
+GameBarPresenceWriter.exe
+svchost.exe
+LeagueClientUx.exe
+LeagueClientUxRender.exe
+LeagueClientUxRender.exe
+LeagueClientUxRender.exe
+LeagueClientUxRender.exe
+LeagueClientUxRender.exe
+UserOOBEBroker.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+svchost.exe
+ShellExperienceHost.exe
+svchost.exe
+chrome.exe
+chrome.exe
+SearchProtocolHost.exe
+WinRAR.exe
+SearchProtocolHost.exe
+powershell.exe
+conhost.exe
+KMSpico.exe
+KMSpico.tmp
+SearchFilterHost.exe
+svchost.exe
+aspnet_compiler.exe
+

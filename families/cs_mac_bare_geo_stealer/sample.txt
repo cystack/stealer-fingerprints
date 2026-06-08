@@ -1,0 +1,53 @@
+IP: <redacted>
+Country: Argentina
+
+Software:
+
+    System Software Overview:
+
+      System Version: macOS 26.1 (25B78)
+      Kernel Version: Darwin 25.1.0
+      Boot Volume: Macintosh HD
+      Boot Mode: Normal
+      Computer Name: <redacted>
+      User Name: <redacted>
+      Secure Virtual Memory: Enabled
+      System Integrity Protection: Enabled
+      Time since boot: 40 minutes, 11 seconds
+
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: MacBook Pro
+      Model Identifier: Mac14,9
+      Model Number: MPHH3LL/A
+      Chip: Apple M2 Pro
+      Total Number of Cores: 10 (6 performance and 4 efficiency)
+      Memory: 16 GB
+      System Firmware Version: 13822.41.1
+      OS Loader Version: 13822.41.1
+      Serial Number (system): C3RQ1CJP7C
+      Hardware UUID: 3AFDF2D4-639A-5FDC-9B16-3EA2BCD522F6
+      Provisioning UDID: 00006020-000628C60C87401E
+      Activation Lock Status: Enabled
+
+Graphics/Displays:
+
+    Apple M2 Pro:
+
+      Chipset Model: Apple M2 Pro
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 16
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 4
+      Displays:
+        Color LCD:
+          Display Type: Built-in Liquid Retina XDR Display
+          Resolution: 3024 x 1964 Retina
+          Main Display: Yes
+          Mirror: Off
+          Online: Yes
+          Automatically Adjust Brightness: No
+          Connection Type: Internal

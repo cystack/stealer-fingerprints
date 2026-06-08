@@ -14,6 +14,18 @@
       "fingerprint_id": "cystack_a7412858",
       "panel_brand": null,
       "synthetic": true
+    },
+    {
+      "attribution_confidence": "low",
+      "banner_strings": [],
+      "distribution_channel": "@aesxor",
+      "field_keys": [],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_c65f37b2",
+      "panel_brand": null,
+      "synthetic": true
     }
   ]
 }

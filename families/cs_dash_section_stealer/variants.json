@@ -1,0 +1,56 @@
+{
+  "family": "CSDashSectionStealer",
+  "variants": [
+    {
+      "attribution_confidence": "low",
+      "banner_strings": [],
+      "distribution_channel": "@stealerboss",
+      "field_keys": [
+        "Arch",
+        "CPU",
+        "Cat Purrtrol",
+        "Cats and Seek",
+        "City",
+        "Counter-Strike",
+        "Country",
+        "Deep Rock Galactic",
+        "Eronoctosis",
+        "GPU",
+        "Gas Station Simulator",
+        "HWID",
+        "HerrAnwalt",
+        "IP",
+        "Liftoff",
+        "Locale",
+        "OS",
+        "PUBG",
+        "Quarantine Zone",
+        "RAM",
+        "RE",
+        "RISK",
+        "Region",
+        "STALCRAFT",
+        "Schedule I",
+        "Serious Sam Classic",
+        "Serious Sam Classics",
+        "Size",
+        "Sky",
+        "Sonic Racing",
+        "Supermarket Simulator",
+        "The Elder Scrolls V",
+        "Timezone",
+        "Uncrashed",
+        "Username",
+        "Watch Dogs",
+        "Zombie Army 4",
+        "Zoo 2"
+      ],
+      "filenames": [
+        "SystemInfo.txt"
+      ],
+      "fingerprint_id": "system_info_5_dash_sections",
+      "panel_brand": "----- System info: 5-dash sections",
+      "synthetic": false
+    }
+  ]
+}

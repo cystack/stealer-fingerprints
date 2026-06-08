@@ -1,0 +1,21 @@
+{
+  "family": "CSUsersListStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": "@BRADLOGS",
+      "field_keys": [
+        "HWID",
+        "IP",
+        "Users"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "bradmax",
+      "panel_brand": "BRADMAX",
+      "synthetic": false
+    }
+  ]
+}

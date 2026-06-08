@@ -26,9 +26,9 @@ family attribution stays CyStack-coined.
 
 **Also known as:** `BRADMAX sparkle-banner notification panel`, `@VerifiedThief Telegram-bot Main Loot / Additional Data log`
 
-**Variants observed:** 1
+**Variants observed:** 2
 **Top attribution confidence:** `low`
-**Distribution channels:** `@VerifiedThief`
+**Distribution channels:** `@VerifiedThief`, `@aesxor`
 
 ## Targets
 
@@ -75,6 +75,37 @@ family attribution stays CyStack-coined.
 
 
 Support: @VerifiedThief
+```
+
+### `cystack_c65f37b2`
+
+**Distribution channel:** `@aesxor`
+
+**Attribution confidence:** `low`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+✨ New Log Received ✨
+
+💻 User: Shiva@AK_MALHOTRA
+🌍 IP: <ip>
+
+📊 Main Loot:
+🔑 Passwords: 125
+🍪 Cookies: 3035
+💰 Wallets: 0
+
+📦 Additional Data:
+💬 Messengers: 2
+🎮 Games: 7
+🗄️ Servers: 1
+🎣 Grabbers: 43
+
+
+👨‍💻 Developer: @aesxor
 ```
 
 ## Detection

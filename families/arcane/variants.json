@@ -7,19 +7,35 @@
       "distribution_channel": "https://t.me/+0IAf5VIrl_EzNWRi",
       "field_keys": [
         "ADMH",
+        "AI Prompt for Business Model Exploration",
+        "AI Prompt for Your Unique Intersection",
+        "AI Prompt to Help You Map Your Passions",
         "Anime Eyes",
         "Broken Glasses",
         "CEP",
         "CNPJ",
         "Cidade",
         "Dados para faturamento",
+        "Destinatar",
         "Disguise",
+        "EXERCISE 1",
+        "EXERCISE 2",
+        "EXERCISE 3",
+        "EXERCISE 4",
+        "EXERCISE 5",
         "Eye Patch",
         "FUNDO",
         "HITS",
+        "ICU data directory was not discovered",
+        "Instructions",
         "Inverted Eyes",
+        "Mesaj",
         "Realistic Eyes",
+        "Rendering thread exception",
         "Ribbon Bow",
+        "SECTION 1",
+        "SECTION 2",
+        "SECTION 3",
         "Stuck Out Tongue",
         "Unhandled Exception",
         "Vampire Fangs"
@@ -433,6 +449,20 @@
         "Information.txt"
       ],
       "fingerprint_id": "cystack_1ece189c",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "More details"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_30393955",
       "panel_brand": null,
       "synthetic": true
     },
@@ -884,6 +914,21 @@
         "Information.txt"
       ],
       "fingerprint_id": "cystack_8729d4c3",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Rendering thread exception",
+        "Unhandled Exception"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_8a8f8267",
       "panel_brand": null,
       "synthetic": true
     },
@@ -1500,6 +1545,21 @@
         "Information.txt"
       ],
       "fingerprint_id": "cystack_c003336d",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Destinatar",
+        "Mesaj"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_c527b366",
       "panel_brand": null,
       "synthetic": true
     },

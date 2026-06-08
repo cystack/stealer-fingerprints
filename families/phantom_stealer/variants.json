@@ -12,6 +12,18 @@
       "fingerprint_id": "phantom_stealer_v2_0",
       "panel_brand": "Phantom stealer v2.0",
       "synthetic": false
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "sys_root_v_200",
+      "panel_brand": "Sys_root v-200",
+      "synthetic": false
     }
   ]
 }

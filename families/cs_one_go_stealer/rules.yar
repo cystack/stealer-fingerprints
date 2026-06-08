@@ -19,10 +19,11 @@ rule CSOneGoStealer_one_go
         $key_6 = "Enviromental Variables:" ascii
         $key_7 = "Execute Path:" ascii
         $key_8 = "GPU:" ascii
-        $key_9 = "IP:" ascii
-        $key_10 = "Operation System:" ascii
-        $key_11 = "Screen Resolution:" ascii
-        $key_12 = "User Name:" ascii
+        $key_9 = "HWID:" ascii
+        $key_10 = "IP:" ascii
+        $key_11 = "Operation System:" ascii
+        $key_12 = "Screen Resolution:" ascii
+        $key_13 = "User Name:" ascii
 
     condition:
         all of ($key_*)

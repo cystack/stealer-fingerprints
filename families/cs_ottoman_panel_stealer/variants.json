@@ -1,0 +1,34 @@
+{
+  "family": "CSOttomanPanelStealer",
+  "variants": [
+    {
+      "attribution_confidence": "low",
+      "banner_strings": [],
+      "distribution_channel": "@OttoSup",
+      "field_keys": [
+        "CPU",
+        "City",
+        "Computer name",
+        "Country",
+        "GPU",
+        "HWID",
+        "IP",
+        "Installed antivirus",
+        "Internet provider",
+        "RAM",
+        "Region",
+        "Started as admin",
+        "System",
+        "System time",
+        "User name"
+      ],
+      "filenames": [
+        "Information.txt",
+        "PC_info.txt"
+      ],
+      "fingerprint_id": "ottoman",
+      "panel_brand": "Ottoman",
+      "synthetic": false
+    }
+  ]
+}

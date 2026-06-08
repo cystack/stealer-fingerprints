@@ -8,7 +8,7 @@ the field block.
 
 **Also known as:** `RedLine`, `RedLineStealer`
 
-**Variants observed:** 19
+**Variants observed:** 22
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -20,6 +20,50 @@ the field block.
 - Discord and Telegram session tokens
 
 ## Variants
+
+### `cystack_113448bf`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Anti-Viruses`, `Available KeyboardLayouts`, `Country`, `Current Language`, `FileLocation`, `HWID`, `Hardwares`, `IP`, `Location`, `Log date`, `Name`, `Operation System`, `Process Elevation`, `ScreenSize`, `TimeZone`, `UAC`, `UserName`, `Zip Code`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+
+
+IP: <redacted>
+FileLocation: <redacted>
+UserName: <redacted>
+Country: AR
+Zip Code: <redacted>
+Location: Jose C. Paz, Buenos Aires
+HWID: <redacted>
+Current Language: Spanish (Mexico)
+ScreenSize: {Width=1600, Height=900}
+TimeZone: (UTC-03:00) Ciudad de Buenos Aires
+Operation System: Windows 10 Enterprise x64
+UAC: AllowAll
+Process Elevation: False
+Log date: 8/30/2022 <ip> AM
+
+Available KeyboardLayouts: 
+Spanish (Argentina)
+Spanish (Mexico)
+
+
+Hardwares: 
+Name: AMD Ryzen 5 2400G with Radeon Vega Graphics    , 2 Cores
+Name: AMD Radeon(TM) RX Vega 11 Graphics, 2147483648 bytes
+Name: Total of RAM, 14267.02 MB or 14960050176 bytes
+
+
+Anti-Viruses: 
+Windows Defender
+```
 
 ### `cystack_4ec8e352`
 
@@ -525,6 +569,95 @@ Hardwares:
 Name: Intel(R) Core(TM)2 Duo CPU     E8500  @ 3.16GHz, 2 Cores
 Name: Intel(R) Q45/Q43 Express Chipset (Microsoft Corporation - WDDM 1.1), 2899097600 bytes
 Name: Total of RAM, 5977.59 MB or 6267957248 bytes
+```
+
+### `cystack_8c0e4616`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Anti-Viruses`, `Available KeyboardLayouts`, `Build ID`, `Country`, `Current Language`, `FileLocation`, `HWID`, `Hardwares`, `IP`, `Location`, `Name`, `Operation System`, `Process Elevation`, `ScreenSize`, `TimeZone`, `UAC`, `UserName`, `Zip Code`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+
+Build ID: 20k#4343
+IP: <redacted>
+FileLocation: <redacted>
+UserName: <redacted>
+Country: ID
+Zip Code: <redacted>
+Location: Waingapu, Nusa Tenggara Timur
+HWID: <redacted>
+Current Language: Indonesian (Indonesia)
+ScreenSize: {Width=1366, Height=768}
+TimeZone: (UTC+08:00) Kuala Lumpur, Singapore
+Operation System: Windows 10 Home x64
+UAC: AllowAll
+Process Elevation: FalseLog date: 16.04.2022 <ip>
+
+Available KeyboardLayouts: 
+Indonesian (Indonesia)
+English (United States)
+English (Indonesia)
+
+
+Hardwares: 
+Name: Intel(R) Celeron(R) CPU  N3060  @ 1.60GHz, 2 Cores
+Name: Intel(R) HD Graphics, 1073741824 bytes
+Name: Total of RAM, 4001.58 MB or 4195958784 bytes
+
+
+Anti-Viruses: 
+Windows Defender
+360 Total Security
+```
+
+### `cystack_ad806f89`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Anti-Viruses`, `Available KeyboardLayouts`, `Country`, `Current Language`, `FileLocation`, `Hardwares`, `IP`, `Location`, `Log date`, `Name`, `Operation System`, `Process Elevation`, `ScreenSize`, `TimeZone`, `UserName`, `Zip Code`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+
+
+IP: <redacted>
+FileLocation: <redacted>
+UserName: <redacted>
+Country: CI
+Zip Code: <redacted>
+Location: UNKNOWNHWID: 1528A7CB3327E5CD342F61F14E29CC78
+Current Language: French (France)
+ScreenSize: {Width=1366, Height=768}
+TimeZone: (UTC+00:00) Monrovia, Reykjavik
+Operation System: Windows 10 Home x64
+Process Elevation: False
+Log date: 27.03.2023 <ip>
+
+Available KeyboardLayouts: 
+French (France)
+English (United States)
+English (United States)
+
+
+Hardwares: 
+Name: Total of RAM, 3463.83 MB or 3632091136 bytes
+Name: AMD Athlon Silver 3050U with Radeon Graphics   , 2 Cores
+Name: AMD Radeon(TM) Graphics, 536870912 bytes
+
+
+Anti-Viruses: 
+Windows Defender
+Kaspersky Internet Security
 ```
 
 ### `cystack_b95b940e`

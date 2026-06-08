@@ -108,6 +108,27 @@ rule StealC_cystack_27cecfc2
         all of ($key_*)
 }
 
+rule StealC_cystack_28e64ef1
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_28e64ef1"
+
+    strings:
+        $key_0 = "All Users:" ascii
+        $key_1 = "Channel with contacts:" ascii
+        $key_2 = "Commission split:" ascii
+        $key_3 = "Current User:" ascii
+        $key_4 = "Installed Apps:" ascii
+        $key_5 = "Network Info:" ascii
+        $key_6 = "System Summary:" ascii
+        $key_7 = "Telegram:" ascii
+        $key_8 = "User Agents:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule StealC_cystack_2eb9685e
 {
     meta:
@@ -151,6 +172,20 @@ rule StealC_cystack_3028b0ca
         $key_2 = "Process List:" ascii
         $key_3 = "Process count:" ascii
         $key_4 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule StealC_cystack_361f1a5b
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_361f1a5b"
+
+    strings:
+        $key_0 = "Network Info:" ascii
+        $key_1 = "System Summary:" ascii
 
     condition:
         all of ($key_*)

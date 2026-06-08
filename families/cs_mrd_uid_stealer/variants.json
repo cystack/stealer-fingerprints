@@ -1,0 +1,83 @@
+{
+  "family": "CSMrdUidStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU",
+        "ComputerName",
+        "DateTime",
+        "Disk",
+        "Display Resolution",
+        "GPU",
+        "Installed software",
+        "Keyboard Languages",
+        "OS",
+        "Process",
+        "RAM",
+        "UID",
+        "UserAgent",
+        "UserName"
+      ],
+      "filenames": [
+        "_Information.txt"
+      ],
+      "fingerprint_id": "cystack_7c108e60",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU",
+        "ComputerName",
+        "DateTime",
+        "Disk",
+        "Display Resolution",
+        "GPU",
+        "Installed software",
+        "Keyboard Languages",
+        "OS",
+        "Process",
+        "RAM",
+        "UID",
+        "UserName"
+      ],
+      "filenames": [
+        "_Information.txt"
+      ],
+      "fingerprint_id": "cystack_a2d5a331",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU",
+        "ComputerName",
+        "DateTime",
+        "Display Resolution",
+        "GPU",
+        "Installed software",
+        "Keyboard Languages",
+        "OS",
+        "RAM",
+        "UID",
+        "UserAgent",
+        "UserName"
+      ],
+      "filenames": [
+        "_Information.txt"
+      ],
+      "fingerprint_id": "cystack_c4068d09",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

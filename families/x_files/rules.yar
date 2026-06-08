@@ -3,6 +3,28 @@
 // observed field-key set. Tune false-positive thresholds at use
 // site, especially for variants relying on field combinations.
 
+rule XFiles_cystack_0f754c78
+{
+    meta:
+        family = "XFiles"
+        fingerprint_id = "cystack_0f754c78"
+
+    strings:
+        $key_0 = "Computer Name:" ascii
+        $key_1 = "Country:" ascii
+        $key_2 = "Desktop Screenshot Taken:" ascii
+        $key_3 = "GPU (Display Devices):" ascii
+        $key_4 = "Hardware ID:" ascii
+        $key_5 = "IP:" ascii
+        $key_6 = "Operating System:" ascii
+        $key_7 = "RAM (Memory):" ascii
+        $key_8 = "Screens:" ascii
+        $key_9 = "Username:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule XFiles_cystack_1a8fdd10
 {
     meta:
@@ -247,6 +269,29 @@ rule XFiles_cystack_fc2b93d4
         $key_11 = "Screens:" ascii
         $key_12 = "Telegram:" ascii
         $key_13 = "Username:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule XFiles_cystack_fda4f08d
+{
+    meta:
+        family = "XFiles"
+        fingerprint_id = "cystack_fda4f08d"
+
+    strings:
+        $key_0 = "Computer Name:" ascii
+        $key_1 = "Country:" ascii
+        $key_2 = "Desktop Screenshot Taken:" ascii
+        $key_3 = "GPU (Display Devices):" ascii
+        $key_4 = "Hardware ID:" ascii
+        $key_5 = "IP:" ascii
+        $key_6 = "Operating System:" ascii
+        $key_7 = "Processed parts:" ascii
+        $key_8 = "RAM (Memory):" ascii
+        $key_9 = "Screens:" ascii
+        $key_10 = "Username:" ascii
 
     condition:
         all of ($key_*)

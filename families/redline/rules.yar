@@ -3,6 +3,36 @@
 // observed field-key set. Tune false-positive thresholds at use
 // site, especially for variants relying on field combinations.
 
+rule Redline_cystack_113448bf
+{
+    meta:
+        family = "Redline"
+        fingerprint_id = "cystack_113448bf"
+
+    strings:
+        $key_0 = "Anti-Viruses:" ascii
+        $key_1 = "Available KeyboardLayouts:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Current Language:" ascii
+        $key_4 = "FileLocation:" ascii
+        $key_5 = "HWID:" ascii
+        $key_6 = "Hardwares:" ascii
+        $key_7 = "IP:" ascii
+        $key_8 = "Location:" ascii
+        $key_9 = "Log date:" ascii
+        $key_10 = "Name:" ascii
+        $key_11 = "Operation System:" ascii
+        $key_12 = "Process Elevation:" ascii
+        $key_13 = "ScreenSize:" ascii
+        $key_14 = "TimeZone:" ascii
+        $key_15 = "UAC:" ascii
+        $key_16 = "UserName:" ascii
+        $key_17 = "Zip Code:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Redline_cystack_4ec8e352
 {
     meta:
@@ -314,6 +344,64 @@ rule Redline_cystack_84cd011a
         $key_15 = "UAC:" ascii
         $key_16 = "UserName:" ascii
         $key_17 = "Zip Code:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Redline_cystack_8c0e4616
+{
+    meta:
+        family = "Redline"
+        fingerprint_id = "cystack_8c0e4616"
+
+    strings:
+        $key_0 = "Anti-Viruses:" ascii
+        $key_1 = "Available KeyboardLayouts:" ascii
+        $key_2 = "Build ID:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Current Language:" ascii
+        $key_5 = "FileLocation:" ascii
+        $key_6 = "HWID:" ascii
+        $key_7 = "Hardwares:" ascii
+        $key_8 = "IP:" ascii
+        $key_9 = "Location:" ascii
+        $key_10 = "Name:" ascii
+        $key_11 = "Operation System:" ascii
+        $key_12 = "Process Elevation:" ascii
+        $key_13 = "ScreenSize:" ascii
+        $key_14 = "TimeZone:" ascii
+        $key_15 = "UAC:" ascii
+        $key_16 = "UserName:" ascii
+        $key_17 = "Zip Code:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Redline_cystack_ad806f89
+{
+    meta:
+        family = "Redline"
+        fingerprint_id = "cystack_ad806f89"
+
+    strings:
+        $key_0 = "Anti-Viruses:" ascii
+        $key_1 = "Available KeyboardLayouts:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Current Language:" ascii
+        $key_4 = "FileLocation:" ascii
+        $key_5 = "Hardwares:" ascii
+        $key_6 = "IP:" ascii
+        $key_7 = "Location:" ascii
+        $key_8 = "Log date:" ascii
+        $key_9 = "Name:" ascii
+        $key_10 = "Operation System:" ascii
+        $key_11 = "Process Elevation:" ascii
+        $key_12 = "ScreenSize:" ascii
+        $key_13 = "TimeZone:" ascii
+        $key_14 = "UserName:" ascii
+        $key_15 = "Zip Code:" ascii
 
     condition:
         all of ($key_*)

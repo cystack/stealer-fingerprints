@@ -6,6 +6,29 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Computer Name",
+        "Country",
+        "Desktop Screenshot Taken",
+        "GPU (Display Devices)",
+        "Hardware ID",
+        "IP",
+        "Operating System",
+        "RAM (Memory)",
+        "Screens",
+        "Username"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_0f754c78",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "CPU (Processor)",
         "Country",
         "Desktop Screenshot Taken",
@@ -43,7 +66,8 @@
         "Username"
       ],
       "filenames": [
-        "Information.txt"
+        "Information.txt",
+        "System.txt"
       ],
       "fingerprint_id": "cystack_4007d694",
       "panel_brand": null,
@@ -96,7 +120,8 @@
         "Username"
       ],
       "filenames": [
-        "Information.txt"
+        "Information.txt",
+        "System.txt"
       ],
       "fingerprint_id": "cystack_7098e015",
       "panel_brand": null,
@@ -121,7 +146,8 @@
         "Username"
       ],
       "filenames": [
-        "Information.txt"
+        "Information.txt",
+        "information.txt"
       ],
       "fingerprint_id": "cystack_779697d2",
       "panel_brand": null,
@@ -199,7 +225,8 @@
         "Username"
       ],
       "filenames": [
-        "Information.txt"
+        "Information.txt",
+        "information.txt"
       ],
       "fingerprint_id": "cystack_c10789f1",
       "panel_brand": null,
@@ -257,6 +284,30 @@
         "Information.txt"
       ],
       "fingerprint_id": "cystack_fc2b93d4",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Computer Name",
+        "Country",
+        "Desktop Screenshot Taken",
+        "GPU (Display Devices)",
+        "Hardware ID",
+        "IP",
+        "Operating System",
+        "Processed parts",
+        "RAM (Memory)",
+        "Screens",
+        "Username"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_fda4f08d",
       "panel_brand": null,
       "synthetic": true
     }

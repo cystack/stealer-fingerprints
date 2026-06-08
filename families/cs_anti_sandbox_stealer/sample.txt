@@ -1,0 +1,45 @@
+    === System Information ===
+
+Hostname: <redacted>
+Username: <redacted>
+OS: Windows 10.0.19045
+
+=== Network ===
+
+=== Hardware ===
+Processors: 2
+Architecture: x64
+Total RAM: 4095 MB (3 GB)
+Available RAM: 2179 MB
+
+=== Disk ===
+C: Total: 749 GB
+C: Free: 716 GB
+
+=== Anti-Sandbox Diagnostics ===
+This section shows environment checks for sandbox detection debugging.
+
+--- Hardware Checks ---
+RAM: 3 GB (threshold: 8 GB) -> FAIL
+CPU Cores: 2 (threshold: 4) -> FAIL
+Disk Size: 749 GB (threshold: 250 GB) -> PASS
+
+--- Timing Checks ---
+System Uptime: 487 minutes (threshold: 10 min) -> PASS
+Sleep(100ms) actual: 125 ms -> PASS
+
+--- Environment Checks ---
+Process Count: 121 (threshold: 30) -> PASS
+Recent Files: 68 (threshold: 5) -> PASS
+Visible Windows: 11 (threshold: 5) -> PASS
+
+--- Security Checks ---
+IsDebuggerPresent: NO (PASS)
+Hypervisor Bit (CPUID): CLEAR (PASS)
+
+--- Display ---
+Screen Resolution: 1440x900 -> PASS
+
+=== Summary ===
+Anti-Sandbox: ENABLED
+Mode: V2 (Evasive)

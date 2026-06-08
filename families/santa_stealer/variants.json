@@ -1,0 +1,17 @@
+{
+  "family": "SantaStealer",
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": "t.me/SantaStealer",
+      "field_keys": [],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_c65f37b2",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

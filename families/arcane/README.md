@@ -29,7 +29,7 @@ the subsection body.
 
 **Also known as:** `Arcane Stealer`, `VGS Stealer (predecessor)`
 
-**Variants observed:** 44
+**Variants observed:** 47
 **Top attribution confidence:** `high`
 **Operator panel brands:** `@BRADLOGS (BRADMAX)`
 **Distribution channels:** `https://t.me/+0IAf5VIrl_EzNWRi`
@@ -56,7 +56,7 @@ the subsection body.
 **Attribution confidence:** `high`
 
 **Field keys:**
-`ADMH`, `Anime Eyes`, `Broken Glasses`, `CEP`, `CNPJ`, `Cidade`, `Dados para faturamento`, `Disguise`, `Eye Patch`, `FUNDO`, `HITS`, `Inverted Eyes`, `Realistic Eyes`, `Ribbon Bow`, `Stuck Out Tongue`, `Unhandled Exception`, `Vampire Fangs`
+`ADMH`, `AI Prompt for Business Model Exploration`, `AI Prompt for Your Unique Intersection`, `AI Prompt to Help You Map Your Passions`, `Anime Eyes`, `Broken Glasses`, `CEP`, `CNPJ`, `Cidade`, `Dados para faturamento`, `Destinatar`, `Disguise`, `EXERCISE 1`, `EXERCISE 2`, `EXERCISE 3`, `EXERCISE 4`, `EXERCISE 5`, `Eye Patch`, `FUNDO`, `HITS`, `ICU data directory was not discovered`, `Instructions`, `Inverted Eyes`, `Mesaj`, `Realistic Eyes`, `Rendering thread exception`, `Ribbon Bow`, `SECTION 1`, `SECTION 2`, `SECTION 3`, `Stuck Out Tongue`, `Unhandled Exception`, `Vampire Fangs`
 
 **Filenames:** `Information.txt`
 
@@ -599,6 +599,61 @@ Version: 10.0.19044
 === Motherboard Information ===
 === BIOS Information ===
 [... truncated; full sample at ``sample.txt`` (approx. 393 more lines) ...]
+```
+
+### `cystack_30393955`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`More details`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+01.07.2025 <ip> PL Windows 10 NewLogs 1 2 3 4 5 
+[... 3 blank lines ...]
+---User Info---
+
+	Worker: %Worker%
+	Date Install: 01.07.2025 <ip>
+	ISO Key: ru
+	Clipboard: Incompatible mods found!
+net.fabricmc.loader.impl.FormattedException: Some of your mods are incompatible with the game or each other!
+A potential solution has been determined, this may resolve your problem:
+	 - Install fabric, any version.
+	 - Install fabric-api-base, any version.
+	 - Replace mod 'Sodium Extras' (sodiumextras) 1.0.5 with any version that is compatible with:
+		 - minecraft 1.21.5
+More details:
+	 - Mod 'Collective' (collective) 7.87 requires any version of fabric, which is missing!
+	 - Mod 'Snowballs Freeze Mobs' (snowballsfreezemobs) 3.7 requires any version of fabric, which is missing!
+	 - Mod 'Sodium Extras' (sodiumextras) 1.0.5 requires version [1.20.1] of 'Minecraft' (minecraft), but only the wrong version is present: 1.21.5!
+	 - Mod 'Sodium Extras' (sodiumextras) 1.0.5 requires any version of fabric-api, which is missing!
+	 - Mod 'Terralith' (terralith) 2.5.4 requires any version of fabric-api-base, which is missing!
+	at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:51)
+	at net.fabricmc.loader.impl.FabricLoaderImpl.load(FabricLoaderImpl.java:196)
+	at net.fabricmc.loader.impl.launch.knot.Knot.init(Knot.java:146)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:68)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+
+	External IP: <redacted>
+	Internal IP: <ip>
+	Gateway IP: <ip>
+
+---Full Pc Info---
+
+	=== CPU Information ===
+		MaxClockSpeed: 3101
+		Name: Intel(R) Core(TM) i7-4770S CPU @ 3.10GHz
+		NumberOfCores: 4
+
+
+	=== GPU Information ===
+		AdapterRAM: 4293918720
+[... truncated; full sample at ``sample.txt`` (approx. 122 more lines) ...]
 ```
 
 ### `cystack_3bd693b6`
@@ -1149,6 +1204,61 @@ Name: WAN Miniport (IPv6)
 Speed:
 MACAddress: <ip>
 [... truncated; full sample at ``sample.txt`` (approx. 64 more lines) ...]
+```
+
+### `cystack_8a8f8267`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Rendering thread exception`, `Unhandled Exception`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+
+                                    
+     /\                             
+    /  \   _ __ ___ __ _ _ __   ___ 
+   / /\ \ | '__/ __/ _` | '_ \ / _ \
+  / ____ \| | | (_| (_| | | | |  __/
+ /_/    \_\_|  \___\__,_|_| |_|\___|
+
+
+---User Info---
+
+	Worker: %Worker%
+	Date Install: 7/14/2025 <ip> AM
+	ISO Key: en
+	Clipboard: LowLevelFatalError [File:Unknown] [Line: 902] 
+Rendering thread exception:
+Fatal error!
+
+Unhandled Exception: 0xe06d7363
+
+0x00007ffdc8477f9a KERNELBASE.dll!UnknownFunction []
+0x00007ffd8bc95267 VCRUNTIME140.dll!UnknownFunction []
+0x00007ff6f6c62684 SixDays-Win64-Shipping.exe!UnknownFunction []
+0x00007ff6f6c61754 SixDays-Win64-Shipping.exe!UnknownFunction []
+0x00007ff6f6c5e22e SixDays-Win64-Shipping.exe!UnknownFunction []
+0x00007ff6f6c74ed7 SixDays-Win64-Shipping.exe!UnknownFunction []
+0x00007ff6f84eed3b SixDays-Win64-Shipping.exe!UnknownFunction []
+0x00007ff6f82b2e7c SixDays-Win64-Shipping.exe!UnknownFunction []
+0x00007ff6f860680f SixDays-Win64-Shipping.exe!UnknownFunction []
+0x00007ff6f85f92fe SixDays-Win64-Shipping.exe!UnknownFunction []
+0x00007ff6f8600329 SixDays-Win64-Shipping.exe!UnknownFunction []
+0x00007ff6f7bcca2b SixDays-Win64-Shipping.exe!UnknownFunction []
+0x00007ff6f8e92f12 SixDays-Win64-Shipping.exe!UnknownFunction []
+0x00007ff6f8e93f13 SixDays-Win64-Shipping.exe!UnknownFunction []
+0x00007ff6f7d23187 SixDays-Win64-Shipping.exe!UnknownFunction []
+0x00007ff6f7d1d3a1 SixDays-Win64-Shipping.exe!UnknownFunction []
+0x00007ffdc971e8d7 KERNEL32.DLL!UnknownFunction []
+0x00007ffdcaebc34c ntdll.dll!UnknownFunction []
+[... 4 blank lines ...]
+	External IP: <redacted>
+[... truncated; full sample at ``sample.txt`` (approx. 822 more lines) ...]
 ```
 
 ### `cystack_8c7dcc2b`
@@ -1919,6 +2029,61 @@ Manufacturer: American Megatrends Inc.
 ReleaseDate: 20240418000000.000000+000
 SMBIOSBIOSVersion: 1656
 [... truncated; full sample at ``sample.txt`` (approx. 54 more lines) ...]
+```
+
+### `cystack_c527b366`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Destinatar`, `Mesaj`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+
+                                    
+     /\                             
+    /  \   _ __ ___ __ _ _ __   ___ 
+   / /\ \ | '__/ __/ _` | '_ \ / _ \
+  / ____ \| | | (_| (_| | | | |  __/
+ /_/    \_\_|  \___\__,_|_| |_|\___|
+
+
+---User Info---
+
+	Worker: %Worker%
+	Date Install: 7/14/2025 <ip> PM
+	ISO Key: en
+	Clipboard: Expeditor : @Ghita Cristiana 
+Mesaj : Sa traiti, dragi colegi! In aceasta seara se va organiza o PATRULA de camp NOCTURNA. Cine doreste sa participe este rugat sa semneze aceasta telegrama si sa vina echipat cu toate cele necesare la ora 21:45, langa balonul din Saint Denis. Spor in continuare!
+Destinatar : @👮ST
+	External IP: <redacted>
+	Internal IP: <ip>
+	Gateway IP: <ip>
+
+---Full Pc Info---
+
+	=== CPU Information ===
+		MaxClockSpeed: 2904
+		Name: Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+		NumberOfCores: 6
+
+
+	=== GPU Information ===
+		AdapterRAM: 4293918720
+		Name: NVIDIA GeForce GTX 1650
+
+
+	=== RAM Information ===
+		Capacity: 8589934592
+
+		Capacity: 8589934592
+
+
+[... truncated; full sample at ``sample.txt`` (approx. 848 more lines) ...]
 ```
 
 ### `cystack_c65f37b2`

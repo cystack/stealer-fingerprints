@@ -9,8 +9,10 @@ banner, captured account credentials, and the verbatim output of
 
 **Also known as:** `Mac.c`, `MacSync Stealer`
 
-**Variants observed:** 2
+**Variants observed:** 3
 **Top attribution confidence:** `high`
+**Operator panel brands:** `mac.c`
+**Distribution channels:** `@mentalpositive`
 
 ## Targets
 
@@ -132,6 +134,65 @@ Graphics/Displays:
 [... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
 ```
 
+### `mac.c`
+
+**Fingerprint id:** `mac_c`
+
+**Distribution channel:** `@mentalpositive`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Build Tag`, `Graphics/Displays`, `Hardware`, `Password`, `Software`, `Username`, `Version`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+mac.c macOS Stealer by mentalpositive
+
+Build Tag: GETWELL
+Version: 1.3.1_release (x64_86 & ARM)
+
+Username: <redacted>
+Password: 2810
+
+Software:
+
+    System Software Overview:
+
+      System Version: macOS 26.0 (25A354)
+      Kernel Version: Darwin 25.0.0
+      Boot Volume: Macintosh HD
+      Boot Mode: Normal
+      Computer Name: <redacted>
+      User Name: <redacted>
+      Secure Virtual Memory: Enabled
+      System Integrity Protection: Enabled
+      Time since boot: 9 hours, 50 minutes
+
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: MacBook Air
+      Model Identifier: Mac14,2
+      Model Number: MLY33B/A
+      Chip: Apple M2
+      Total Number of Cores: 8 (4 performance and 4 efficiency)
+      Memory: 8 GB
+      System Firmware Version: 13822.1.2
+      OS Loader Version: 13822.1.2
+      Serial Number (system): JQHLXNHQY4
+      Hardware UUID: E7A2DC50-3643-5C39-9D60-D1BD427FD8AF
+      Provisioning UDID: 00008112-001970922288C01E
+      Activation Lock Status: Enabled
+
+Graphics/Displays:
+[... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
+```
+
 ## Detection
 
 The `Information.txt` containing both a banner and verbatim
@@ -151,3 +212,5 @@ confirm.
 
 - https://www.cisecurity.org/insights/blog/macsync-stealer-campaign-impacting-us-sltt-macos-users
 - https://www.jamf.com/blog/macsync-stealer-evolution-code-signed-swift-malware-analysis/
+- https://moonlock.com/new-mac-stealer-spreading
+- https://malware.news/t/mentalpositive-s-new-macos-stealer-amos-repackaged-or-a-new-cyber-threat/96207

@@ -3,6 +3,126 @@
 // observed field-key set. Tune false-positive thresholds at use
 // site, especially for variants relying on field combinations.
 
+rule Blank_Grabber_amnesia
+{
+    meta:
+        family = "Blank Grabber"
+        fingerprint_id = "amnesia"
+
+    strings:
+        $key_0 = "Amnesia got a new victim:" ascii
+        $key_1 = "Autofills:" ascii
+        $key_2 = "CPU:" ascii
+        $key_3 = "Cellular Network:" ascii
+        $key_4 = "Common Files:" ascii
+        $key_5 = "Computer Name:" ascii
+        $key_6 = "Computer OS:" ascii
+        $key_7 = "Cookies:" ascii
+        $key_8 = "Country:" ascii
+        $key_9 = "Discord Accounts:" ascii
+        $key_10 = "Epic Session:" ascii
+        $key_11 = "GPU:" ascii
+        $key_12 = "Growtopia Session:" ascii
+        $key_13 = "History:" ascii
+        $key_14 = "IP:" ascii
+        $key_15 = "Minecraft Sessions:" ascii
+        $key_16 = "Passwords:" ascii
+        $key_17 = "Product Key:" ascii
+        $key_18 = "Proxy/VPN:" ascii
+        $key_19 = "Region:" ascii
+        $key_20 = "Roblox Cookies:" ascii
+        $key_21 = "Screenshot:" ascii
+        $key_22 = "Steam Session:" ascii
+        $key_23 = "System Info:" ascii
+        $key_24 = "Telegram Sessions:" ascii
+        $key_25 = "Timezone:" ascii
+        $key_26 = "Total Memory:" ascii
+        $key_27 = "UUID:" ascii
+        $key_28 = "Uplay Session:" ascii
+        $key_29 = "Wallets:" ascii
+        $key_30 = "Webcam:" ascii
+        $key_31 = "Wifi Passwords:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Blank_Grabber_cystack_05506afb
+{
+    meta:
+        family = "Blank Grabber"
+        fingerprint_id = "cystack_05506afb"
+
+    strings:
+        $key_0 = "Autofills:" ascii
+        $key_1 = "Blank Grabber got a new victim:" ascii
+        $key_2 = "CPU:" ascii
+        $key_3 = "Cellular Network:" ascii
+        $key_4 = "Common Files:" ascii
+        $key_5 = "Computer Name:" ascii
+        $key_6 = "Computer OS:" ascii
+        $key_7 = "Cookies:" ascii
+        $key_8 = "Country:" ascii
+        $key_9 = "Discord Accounts:" ascii
+        $key_10 = "Epic Session:" ascii
+        $key_11 = "GPU:" ascii
+        $key_12 = "Growtopia Session:" ascii
+        $key_13 = "History:" ascii
+        $key_14 = "IP:" ascii
+        $key_15 = "Minecraft Sessions:" ascii
+        $key_16 = "Passwords:" ascii
+        $key_17 = "Region:" ascii
+        $key_18 = "Roblox Cookies:" ascii
+        $key_19 = "Screenshot:" ascii
+        $key_20 = "Steam Session:" ascii
+        $key_21 = "System Info:" ascii
+        $key_22 = "Timezone:" ascii
+        $key_23 = "Total Memory:" ascii
+        $key_24 = "Uplay Session:" ascii
+        $key_25 = "Webcam:" ascii
+        $key_26 = "Wifi Passwords:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Blank_Grabber_cystack_12bb25c3
+{
+    meta:
+        family = "Blank Grabber"
+        fingerprint_id = "cystack_12bb25c3"
+
+    strings:
+        $key_0 = "Autofills:" ascii
+        $key_1 = "Blank Grabber got a new victim:" ascii
+        $key_2 = "CPU:" ascii
+        $key_3 = "Common Files:" ascii
+        $key_4 = "Computer Name:" ascii
+        $key_5 = "Computer OS:" ascii
+        $key_6 = "Cookies:" ascii
+        $key_7 = "Discord Accounts:" ascii
+        $key_8 = "Epic Session:" ascii
+        $key_9 = "GPU:" ascii
+        $key_10 = "Growtopia Session:" ascii
+        $key_11 = "History:" ascii
+        $key_12 = "Minecraft Sessions:" ascii
+        $key_13 = "Passwords:" ascii
+        $key_14 = "Product Key:" ascii
+        $key_15 = "Roblox Cookies:" ascii
+        $key_16 = "Screenshot:" ascii
+        $key_17 = "Steam Session:" ascii
+        $key_18 = "System Info:" ascii
+        $key_19 = "Total Memory:" ascii
+        $key_20 = "UUID:" ascii
+        $key_21 = "Uplay Session:" ascii
+        $key_22 = "Wallets:" ascii
+        $key_23 = "Webcam:" ascii
+        $key_24 = "Wifi Passwords:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Blank_Grabber_cystack_22dec19e
 {
     meta:
@@ -215,6 +335,50 @@ rule Blank_Grabber_cystack_4ed137de
         all of ($key_*)
 }
 
+rule Blank_Grabber_cystack_531d6bd4
+{
+    meta:
+        family = "Blank Grabber"
+        fingerprint_id = "cystack_531d6bd4"
+
+    strings:
+        $key_0 = "Autofills:" ascii
+        $key_1 = "Blank Grabber got a new victim:" ascii
+        $key_2 = "CPU:" ascii
+        $key_3 = "Cellular Network:" ascii
+        $key_4 = "Common Files:" ascii
+        $key_5 = "Computer Name:" ascii
+        $key_6 = "Computer OS:" ascii
+        $key_7 = "Cookies:" ascii
+        $key_8 = "Country:" ascii
+        $key_9 = "Discord Accounts:" ascii
+        $key_10 = "Epic Session:" ascii
+        $key_11 = "GPU:" ascii
+        $key_12 = "Growtopia Session:" ascii
+        $key_13 = "History:" ascii
+        $key_14 = "IP:" ascii
+        $key_15 = "Minecraft Sessions:" ascii
+        $key_16 = "Passwords:" ascii
+        $key_17 = "Product Key:" ascii
+        $key_18 = "Proxy/VPN:" ascii
+        $key_19 = "Region:" ascii
+        $key_20 = "Reverse DNS:" ascii
+        $key_21 = "Roblox Cookies:" ascii
+        $key_22 = "Screenshot:" ascii
+        $key_23 = "Steam Session:" ascii
+        $key_24 = "System Info:" ascii
+        $key_25 = "Timezone:" ascii
+        $key_26 = "Total Memory:" ascii
+        $key_27 = "UUID:" ascii
+        $key_28 = "Uplay Session:" ascii
+        $key_29 = "Wallets:" ascii
+        $key_30 = "Webcam:" ascii
+        $key_31 = "Wifi Passwords:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Blank_Grabber_cystack_57d3f2a5
 {
     meta:
@@ -247,6 +411,49 @@ rule Blank_Grabber_cystack_57d3f2a5
         $key_22 = "Wallets:" ascii
         $key_23 = "Webcam:" ascii
         $key_24 = "Wifi Passwords:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Blank_Grabber_cystack_8547d387
+{
+    meta:
+        family = "Blank Grabber"
+        fingerprint_id = "cystack_8547d387"
+
+    strings:
+        $key_0 = "Autofills:" ascii
+        $key_1 = "Blank Grabber got a new victim:" ascii
+        $key_2 = "CPU:" ascii
+        $key_3 = "Cellular Network:" ascii
+        $key_4 = "Common Files:" ascii
+        $key_5 = "Computer Name:" ascii
+        $key_6 = "Computer OS:" ascii
+        $key_7 = "Cookies:" ascii
+        $key_8 = "Country:" ascii
+        $key_9 = "Discord Accounts:" ascii
+        $key_10 = "Epic Session:" ascii
+        $key_11 = "GPU:" ascii
+        $key_12 = "Growtopia Session:" ascii
+        $key_13 = "History:" ascii
+        $key_14 = "IP:" ascii
+        $key_15 = "Minecraft Sessions:" ascii
+        $key_16 = "Passwords:" ascii
+        $key_17 = "Product Key:" ascii
+        $key_18 = "Proxy/VPN:" ascii
+        $key_19 = "Region:" ascii
+        $key_20 = "Roblox Cookies:" ascii
+        $key_21 = "Screenshot:" ascii
+        $key_22 = "Steam Session:" ascii
+        $key_23 = "System Info:" ascii
+        $key_24 = "Timezone:" ascii
+        $key_25 = "Total Memory:" ascii
+        $key_26 = "UUID:" ascii
+        $key_27 = "Uplay Session:" ascii
+        $key_28 = "Wallets:" ascii
+        $key_29 = "Webcam:" ascii
+        $key_30 = "Wifi Passwords:" ascii
 
     condition:
         all of ($key_*)

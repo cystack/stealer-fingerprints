@@ -1,0 +1,10 @@
+=== SYSTEM INFO ===
+
+Computer: JACKSON
+User: jacks
+OS: Windows 10/11
+IP: <redacted>
+Country: The Netherlands (NL)
+CPU: 
+GPU: 
+RAM: 

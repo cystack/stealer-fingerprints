@@ -35,6 +35,30 @@
         "City",
         "Country",
         "Country Code",
+        "Hardware",
+        "IP",
+        "Latitude",
+        "Longitude",
+        "Region",
+        "Software",
+        "Timezone",
+        "Zipcode"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_92283eb3",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "City",
+        "Country",
+        "Country Code",
         "Graphics/Displays",
         "Hardware",
         "IP",

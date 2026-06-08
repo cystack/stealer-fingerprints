@@ -8,6 +8,25 @@
       "field_keys": [
         "Arch",
         "Count Core",
+        "Hostname",
+        "IP Address",
+        "User Info",
+        "Version"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_012b9023",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Arch",
+        "Count Core",
         "Cpu",
         "File Location",
         "Gpu",
@@ -24,6 +43,26 @@
         "Information.txt"
       ],
       "fingerprint_id": "cystack_58103687",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Arch",
+        "Count Core",
+        "File Location",
+        "Hostname",
+        "IP Address",
+        "User Info",
+        "Version"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_6e563a49",
       "panel_brand": null,
       "synthetic": true
     },

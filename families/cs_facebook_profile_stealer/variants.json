@@ -1,0 +1,17 @@
+{
+  "family": "CSFacebookProfileStealer",
+  "variants": [
+    {
+      "attribution_confidence": "low",
+      "banner_strings": [],
+      "distribution_channel": "@ft7links",
+      "field_keys": [],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "u_2013_en_dash_prefix_facebook_profile",
+      "panel_brand": "U+2013 EN-DASH prefix Facebook profile",
+      "synthetic": false
+    }
+  ]
+}

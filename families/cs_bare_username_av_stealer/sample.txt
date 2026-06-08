@@ -1,0 +1,3 @@
+IP: <redacted>
+Username: <redacted>
+AntiVirus: Windows Defender

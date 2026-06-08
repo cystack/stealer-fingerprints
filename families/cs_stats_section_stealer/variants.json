@@ -1,0 +1,25 @@
+{
+  "family": "CSStatsSectionStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Computer",
+        "Cookies",
+        "Credit Cards",
+        "OS",
+        "Passwords",
+        "Time",
+        "User"
+      ],
+      "filenames": [
+        "_INFO.txt"
+      ],
+      "fingerprint_id": "cystack_8e08a598",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

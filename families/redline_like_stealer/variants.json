@@ -9,6 +9,67 @@
         "Admin Group",
         "Computer Name",
         "Country",
+        "Domain Name",
+        "Graphics card",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "MachineID",
+        "Operation System",
+        "Processor",
+        "Product Key",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_072c723f",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "HWID",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Log date",
+        "Operation System",
+        "Processor",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage",
+        "Version Build"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_0f69a6b9",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Computer Name",
+        "Country",
         "Display Resolution",
         "Domain Name",
         "Graphics card",
@@ -58,6 +119,66 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_1863c96d",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Computer Name",
+        "Country",
+        "Domain Name",
+        "Graphics card",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Operation System",
+        "Processor",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_20220931",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "HWID",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "MachineID",
+        "Operation System",
+        "Processor",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_279e10c7",
       "panel_brand": null,
       "synthetic": true
     },
@@ -162,6 +283,68 @@
       "field_keys": [
         "Admin Group",
         "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "HWID",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Log date",
+        "Operation System",
+        "Product Key",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_36946d93",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Operation System",
+        "Processor",
+        "Product Key",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_3c5357c9",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Computer Name",
         "Display Resolution",
         "Domain Name",
         "Graphics card",
@@ -181,6 +364,37 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_3ffbbc4b",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "MachineID",
+        "Operation System",
+        "Processor",
+        "Product Key",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_42e7066c",
       "panel_brand": null,
       "synthetic": true
     },
@@ -243,6 +457,38 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_49f11599",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Log date",
+        "MachineID",
+        "Operation System",
+        "Processor",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_5064d0de",
       "panel_brand": null,
       "synthetic": true
     },
@@ -335,6 +581,7 @@
         "Wallpaper Hash"
       ],
       "filenames": [
+        "System.txt",
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_5542c850",
@@ -546,6 +793,71 @@
         "Display Resolution",
         "Domain Name",
         "Graphics card",
+        "HWID",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Log date",
+        "MachineID",
+        "Operation System",
+        "Processor",
+        "Product Key",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_7219389c",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "HWID",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Log date",
+        "MachineID",
+        "Operation System",
+        "Processor",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_83c06639",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
         "Installed RAM",
         "Integrity",
         "Keyboard Language",
@@ -564,6 +876,66 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_9e96ff0e",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "HWID",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Operation System",
+        "Processor",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_a0f3c667",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "MachineID",
+        "Operation System",
+        "Processor",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_a5858752",
       "panel_brand": null,
       "synthetic": true
     },
@@ -607,6 +979,36 @@
       "field_keys": [
         "Admin Group",
         "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Operation System",
+        "Product Key",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_b2032ab1",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Computer Name",
         "Display Resolution",
         "Domain Name",
         "Graphics card",
@@ -627,6 +1029,36 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_b59e8be9",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Computer Name",
+        "Country",
+        "Domain Name",
+        "Graphics card",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "MachineID",
+        "Operation System",
+        "Processor",
+        "Product Key",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_bc033686",
       "panel_brand": null,
       "synthetic": true
     },
@@ -751,6 +1183,7 @@
         "Wallpaper Hash"
       ],
       "filenames": [
+        "System.txt",
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_c6375578",
@@ -835,6 +1268,96 @@
         "Display Resolution",
         "Domain Name",
         "Graphics card",
+        "ID",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Operation System",
+        "Processor",
+        "Product Key",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_d9d3b27b",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "MachineID",
+        "Operation System",
+        "Processor",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_e5cf90e8",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Computer Name",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "MachineID",
+        "Operation System",
+        "Processor",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_ea2cf1f2",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Computer Name",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
         "IP",
         "Installed RAM",
         "Integrity",
@@ -853,6 +1376,98 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_ea6a2985",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "MachineID",
+        "Operation System",
+        "Processor",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_ee3d861c",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Computer Name",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "MachineID",
+        "Operation System",
+        "Processor",
+        "Product Key",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_ef4e0d1b",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "MachineID",
+        "Operation System",
+        "Processor",
+        "Product Key",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_fa688f82",
       "panel_brand": null,
       "synthetic": true
     }

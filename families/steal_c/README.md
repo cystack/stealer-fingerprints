@@ -8,7 +8,7 @@ with the v2 rewrite tracked through 2024.
 
 **Also known as:** `StealC v1`, `StealC v2`
 
-**Variants observed:** 35
+**Variants observed:** 37
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -320,6 +320,57 @@ Brute-force (password cracking) for crypto wallets (Metamask, Exodus, .dat files
 [... truncated; full sample at ``sample.txt`` (approx. 423 more lines) ...]
 ```
 
+### `cystack_28e64ef1`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Channel with contacts`, `Commission split`, `Current User`, `Installed Apps`, `Network Info`, `System Summary`, `Telegram`, `User Agents`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+
+ ______     ______   ______     ______     __         ______
+/\  ___\   /\__  _\ /\  ___\   /\  __ \   /\ \       /\  ___\
+\ \___  \  \/_/\ \/ \ \  __\   \ \  __ \  \ \ \____  \ \ \____
+ \/\_____\    \ \_\  \ \_____\  \ \_\ \_\  \ \_____\  \ \_____\
+  \/_____/     \/_/   \/_____/   \/_/\/_/   \/_____/   \/_____/
+
+                       stealc stealer
+
+powerful native stealer based on C lang
+
+forum topics:
+	- <url>
+	- <url>
+
+buy:
+	- jabber: <email>
+        - tox: 1FCCEA0D37D99894B958C0FCEAC66034FE3580B193C335745D632A19F8E6053C34DFEAAE2538
+
+----------------------------------------------------------------
+
+.--------------. .--------------. .--------------. .--------------. .--------------. 
+| ____    ____ | |      __      | |     _____    | |  _________   | |  _________   | 
+||_   \  /   _|| |     /  \     | |    |_   _|   | | |_   ___  |  | | |_   ___  |  | 
+|  |   \/   |  | |    / /\ \    | |      | |     | |   | |_  \_|  | |   | |_  \_|  | 
+|  | |\  /| |  | |   / ____ \   | |      | |     | |   |  _|      | |   |  _|  _   | 
+| _| |_\/_| |_ | | _/ /    \ \_ | |     _| |_    | |  _| |_       | |  _| |___/ |  | 
+||_____||_____|| ||____|  |____|| |    |_____|   | | |_____|      | | |_________|  | 
+|              | |              | |              | |              | |              | 
+'--------------' '--------------' '--------------' '--------------' '--------------' 
+Brute-force (password cracking) for crypto wallets (Metamask, Exodus, .dat files, and others)
+
+â¢ We have been withdrawing cryptocurrency from logs for over 4 years, with a total amount withdrawn exceeding $15.000.000
+â¢ Our total deposit on forums exceeds 5 BTC (over $300.000), which confirms our reliability, while feedback from satisfied clients confirms successful cases.
+â¢ In addition to manual work, we use a powerful ML model we created and trained as an auxiliary tool. It has been trained on over 1.000.000 logs, allowing us to speed up the process and improve the accuracy of password cracking.
+
+[... truncated; full sample at ``sample.txt`` (approx. 343 more lines) ...]
+```
+
 ### `cystack_2eb9685e`
 
 **Attribution confidence:** `high`
@@ -483,6 +534,47 @@ Process List:
 	services.exe [836]
 	lsass.exe [844]
 [... truncated; full sample at ``sample.txt`` (approx. 286 more lines) ...]
+```
+
+### `cystack_361f1a5b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Network Info`, `System Summary`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+│    [  CLÓUD @OttoSup - Buy daily fresh logs @OttoSup - Buy daily fresh logsuy daily fresh logs ]     [ SUPPORT - @OttoSup - Buy daily fresh logs Buy daily fresh logs ]                          │
+[... 3 blank lines ...]
+│    [  CLÓUD @OttoSup - Buy daily fresh logs @OttoSup - Buy daily fresh logsuy daily fresh logs ]     [ SUPPORT - @OttoSup - Buy daily fresh logs Buy daily fresh logs ]                          │
+
+  >=>>=>   >==>    >=>       >>       >===>>=====>     >=>    >=>    >=>          >>               
+>=>    >=> >> >=>  >=>      >>=>           >=>      >=>   >=> >=>    >=>        >=>>=>             
+ >=>       >=> >=> >=>     >> >=>          >=>     >=>        >=>    >=>       >=>                 
+   >=>     >=>  >=>>=>    >=>  >=>         >=>     >=>        >=====>>=>        >==>               
+      >=>  >=>   > >=>   >=====>>=>        >=>     >=>        >=>    >=>       >=>                 
+>=>    >=> >=>    >>=>  >=>      >=>       >=>      >=>   >=> >=>    >=>        >=>>=>             
+  >=>>=>   >=>     >=> >=>        >=>      >=>        >===>   >=>    >=>          >>               
+                                                                                                   
+>=>    >=> >=>     >=> >=>>=>                                                                      
+>=>    >=> >=>     >=> >>   >=>                                                                    
+>=>    >=> >=>     >=> >>    >=>                                                                   
+>=====>>=> >=>     >=> >==>>=>                                                                     
+[... truncated; full sample at ``sample.txt`` (approx. 397 more lines) ...]
 ```
 
 ### `cystack_4b30cd7a`

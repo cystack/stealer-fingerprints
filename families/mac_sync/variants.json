@@ -39,6 +39,26 @@
       "fingerprint_id": "cystack_c6bf9b88",
       "panel_brand": null,
       "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": "@mentalpositive",
+      "field_keys": [
+        "Build Tag",
+        "Graphics/Displays",
+        "Hardware",
+        "Password",
+        "Software",
+        "Username",
+        "Version"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "mac_c",
+      "panel_brand": "mac.c",
+      "synthetic": false
     }
   ]
 }

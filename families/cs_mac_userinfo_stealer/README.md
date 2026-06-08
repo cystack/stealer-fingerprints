@@ -25,7 +25,7 @@ threat-intel mapping for this layout.
 
 **Also known as:** `Bare macOS userinfo.txt panel`, `No-BuildID Cthulhu-shape macOS log`
 
-**Variants observed:** 2
+**Variants observed:** 3
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -91,6 +91,60 @@ Hardware:
       System Firmware Version: <ip>.0
       Apple ROM Info: Apple ROM Version.
 [... truncated; full sample at ``sample.txt`` (approx. 33 more lines) ...]
+```
+
+### `cystack_92283eb3`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`City`, `Country`, `Country Code`, `Hardware`, `IP`, `Latitude`, `Longitude`, `Region`, `Software`, `Timezone`, `Zipcode`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+IP: <redacted>
+Country: Pakistan
+Country Code: PK
+Region: Punjab
+City: <redacted>
+Latitude: <redacted>
+Longitude: <redacted>
+Zipcode: 43671
+Timezone: +05:00
+
+Software:
+
+    System Software Overview:
+
+      System Version: macOS 15.5 (24F74)
+      Kernel Version: Darwin 24.5.0
+      Boot Volume: Macintosh HD
+      Boot Mode: Normal
+      Computer Name: <redacted>
+      User Name: <redacted>
+      Secure Virtual Memory: Enabled
+      System Integrity Protection: Enabled
+      Time since boot: 13 minutes, 45 seconds
+
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: MacBook Air
+      Model Identifier: Mac14,2
+      Model Number: Z1610005ELL/A
+      Chip: Apple M2
+      Total Number of Cores: 8 (4 performance and 4 efficiency)
+      Memory: 16 GB
+      System Firmware Version: 11881.121.1
+      OS Loader Version: 11881.121.1
+      Serial Number (system): RQ5GW62KQ1
+      Hardware UUID: 106768E0-13BF-5776-8DFB-7324F0C6CA30
+      Provisioning UDID: 00008112-000048520E8B401E
+      Activation Lock Status: Enabled
 ```
 
 ### `cystack_e6b74373`

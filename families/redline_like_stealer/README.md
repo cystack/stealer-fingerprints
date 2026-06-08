@@ -9,7 +9,7 @@ the underlying field layout intact.
 
 **Also known as:** `redline`, `redline-extended`
 
-**Variants observed:** 27
+**Variants observed:** 47
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -21,6 +21,82 @@ the underlying field layout intact.
 - Discord and Telegram session tokens
 
 ## Variants
+
+### `cystack_072c723f`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+  >=>>=>   >==>    >=>       >>       >===>>=====>     >=>    >=>    >=>          >>               
+>=>    >=> >> >=>  >=>      >>=>           >=>      >=>   >=> >=>    >=>        >=>>=>             
+ >=>       >=> >=> >=>     >> >=>          >=>     >=>        >=>    >=>       >=>                 
+   >=>     >=>  >=>>=>    >=>  >=>         >=>     >=>        >=====>>=>        >==>               
+      >=>  >=>   > >=>   >=====>>=>        >=>     >=>        >=>    >=>       >=>                 
+>=>    >=> >=>    >>=>  >=>      >=>       >=>      >=>   >=> >=>    >=>        >=>>=>             
+  >=>>=>   >=>     >=> >=>        >=>      >=>        >===>   >=>    >=>          >>               
+                                                                                                   
+>=>    >=> >=>     >=> >=>>=>                                                                      
+>=>    >=> >=>     >=> >>   >=>                                                                    
+>=>    >=> >=>     >=> >>    >=>                                                                   
+>=====>>=> >=>     >=> >==>>=>                                                                     
+>=>    >=> >=>     >=> >>    >=>                                                                   
+>=>    >=> >=>     >=> >>     >>                                                                   
+>=>    >=>   >====>    >===>>=>                                                                    
+                                                                                                   
+[... truncated; full sample at ``sample.txt`` (approx. 41 more lines) ...]
+```
+
+### `cystack_0f69a6b9`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Version Build`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+
+Log date: 30 Nov 25 18:14
+Version Build: 1400
+HWID: <redacted>
+Country: Hungary
+IP: <redacted>
+System Language: Hungarian
+Processor: Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz (6 cores, 6 threads)
+Installed RAM: 31.94 GB
+Operation System: Windows 11 24H2 Pro (Build 26200) (64 Bit)
+Graphics card: NVIDIA GeForce RTX 2060
+Computer Name: <redacted>
+Domain Name: <redacted>
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+1
+UserLanguage: Hungarian
+Keyboard Language: Hungarian
+Display Resolution: 1440x1050
+```
 
 ### `cystack_10fe4746`
 
@@ -85,6 +161,81 @@ TimeZone: UTC+4
 UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1920x1080
+```
+
+### `cystack_20220931`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+│    [  CLÓUD @OttoSup - Buy daily fresh logs @OttoSup - Buy daily fresh logsuy daily fresh logs ]     [ SUPPORT - @OttoSup - Buy daily fresh logs Buy daily fresh logs ]                          │
+[... 3 blank lines ...]
+│    [  CLÓUD @OttoSup - Buy daily fresh logs @OttoSup - Buy daily fresh logsuy daily fresh logs ]     [ SUPPORT - @OttoSup - Buy daily fresh logs Buy daily fresh logs ]                          │
+
+  >=>>=>   >==>    >=>       >>       >===>>=====>     >=>    >=>    >=>          >>               
+>=>    >=> >> >=>  >=>      >>=>           >=>      >=>   >=> >=>    >=>        >=>>=>             
+ >=>       >=> >=> >=>     >> >=>          >=>     >=>        >=>    >=>       >=>                 
+   >=>     >=>  >=>>=>    >=>  >=>         >=>     >=>        >=====>>=>        >==>               
+      >=>  >=>   > >=>   >=====>>=>        >=>     >=>        >=>    >=>       >=>                 
+>=>    >=> >=>    >>=>  >=>      >=>       >=>      >=>   >=> >=>    >=>        >=>>=>             
+  >=>>=>   >=>     >=> >=>        >=>      >=>        >===>   >=>    >=>          >>               
+                                                                                                   
+>=>    >=> >=>     >=> >=>>=>                                                                      
+>=>    >=> >=>     >=> >>   >=>                                                                    
+>=>    >=> >=>     >=> >>    >=>                                                                   
+>=====>>=> >=>     >=> >==>>=>                                                                     
+[... truncated; full sample at ``sample.txt`` (approx. 39 more lines) ...]
+```
+
+### `cystack_279e10c7`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `MachineID`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+    Log date: 11 Dec 25 20:22 MSK
+HWID: <redacted>
+Country: CA
+IP: <redacted>
+System Language: English
+Processor: AMD Ryzen 5 PRO 7530U with Radeon Graphics     
+Installed RAM: 15681 MB
+Operation System: Windows 10 Pro build 26100 (64 Bit)
+Graphics card: AMD Radeon (TM) Graphics
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC-5
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1536x864
+Wallpaper Hash: d08c477d7682cd97be0a55cf613fdf56c9c08923
 ```
 
 ### `cystack_2b6c44c5`
@@ -187,6 +338,71 @@ Display Resolution: 1920x1080
 Wallpaper Hash: 2a9dc3afc25ee3f465343d47108ab027bb519214
 ```
 
+### `cystack_36946d93`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `Operation System`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 22 Oct 25
+HWID: <redacted>
+Country: DE
+IP: <redacted>
+System Language: German
+Installed RAM: 32694 MB
+Operation System: Windows 11 24H2 build 26200 (64 Bit)
+Graphics card: NVIDIA GeForce RTX 3060
+Computer Name: <redacted>
+Domain Name: <redacted>
+Product Key: 
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+1
+UserLanguage: German
+Keyboard Language: German
+Display Resolution: 1920x1080
+Wallpaper Hash: 25b17a70b148b221d1934a0536534cf974ba1aa6
+```
+
+### `cystack_3c5357c9`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Country: MX
+IP: <redacted>
+System Language: Spanish
+Processor: Intel(R) Core(TM) i3-3217U CPU @ 1.80GHz
+Installed RAM: 8067 MB
+Operation System: Windows 10 22H2 build 19045 (64 Bit)
+Graphics card: Intel(R) HD Graphics 4000
+Domain Name: <redacted>
+Product Key: 
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC-6
+UserLanguage: Spanish
+Keyboard Language: Spanish
+Display Resolution: 1366x768
+Wallpaper Hash: 9ba14c26fe5d0d2cf71bc09a782dd7ca246d212a
+```
+
 ### `cystack_3ffbbc4b`
 
 **Attribution confidence:** `unknown`
@@ -215,6 +431,50 @@ UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1920x1080
 Wallpaper Hash: fdf75faf77bd6876018383a7fbf3e182026fdb3e
+```
+
+### `cystack_42e7066c`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+Country: CN
+IP: <redacted>
+System Language: Chinese (Simplified)
+Processor: AMD Ryzen 5 5600 6-Core Processor              
+Installed RAM: 32708 MB
+Operation System: Windows 11 24H2 build 26100 (64 Bit)
+Graphics card: AMD Radeon RX 5600 XT
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key: 
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+8
+UserLanguage: Chinese (Simplified)
+Keyboard Language: Chinese (Simplified)
+Display Resolution: 2560x1440
+@OttoSup - Buy daily fresh logs: e17a2e2acd620b4f0c81674d1b3c51bf2e4ebc01
 ```
 
 ### `cystack_47bdc5de`
@@ -284,6 +544,39 @@ UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1920x1080
 Wallpaper Hash: 0825e886///  @ l o g s _ r u s s i a  ///4c47e6 cae75034d51d8ffe2fa03196d9a08f6958757be6
+```
+
+### `cystack_5064d0de`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 03 Dec 25 12:46 MSKHWID: LAPTOP-4Q4637J7
+Country: CL
+IP: <redacted>
+System Language: Spanish
+Processor: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz
+Installed RAM: 8077 MB
+Operation System: Windows 10 Home Single Language build 19045 (64 Bit)
+Graphics card: Unknown
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC-4
+UserLanguage: Spanish
+Keyboard Language: Spanish
+Display Resolution: 1366x768
+Wallpaper Hash: d08c477d7682cd97be0a55cf613fdf56c9c08923
 ```
 
 ### `cystack_5076fdca`
@@ -359,7 +652,7 @@ Display Resolution: 5120x1440
 **Field keys:**
 `Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
 
-**Filenames:** `UserInformation.txt`
+**Filenames:** `System.txt`, `UserInformation.txt`
 
 **Sample (sanitized):**
 
@@ -591,6 +884,86 @@ Display Resolution: 1920x1080
 Wallpaper Hash: 92ada9d59909cfc574f7792feb6bb86d260f2183
 ```
 
+### `cystack_7219389c`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+Log date: 08 Nov 25 22:32 CET
+@OttoSup - Buy daily fresh logs ilovepakistan
+HWID: <redacted>
+Country: JM
+IP: <redacted>
+System Language: English
+Processor: Intel(R) Core(TM) i3-7100U CPU @ 2.40GHz
+Installed RAM: 8060 MB
+Operation System: Windows 10 22H2 build 19045 (64 Bit)
+Graphics card: Intel(R) HD Graphics 620
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key: 
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC-5
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1366x768
+@OttoSup - Buy daily fresh logs:
+```
+
+### `cystack_83c06639`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 11 Dec 25 15:46 MSK
+HWID: <redacted>
+Country: CL
+IP: <redacted>
+System Language: Spanish
+Processor: Intel(R) Pentium(R) CPU G3220 @ 3.00GHz
+Installed RAM: 8009 MB
+Operation System: Windows 10 Pro build 19045 (64 Bit)
+Graphics card: Intel(R) HD Graphics
+Domain Name: <redacted>
+MachineID: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC-4
+UserLanguage: Spanish
+Keyboard Language: Spanish
+Display Resolution: 1920x1080
+Wallpaper Hash: d08c477d7682cd97be0a55cf613fdf56c9c08923
+```
+
 ### `cystack_9e96ff0e`
 
 **Attribution confidence:** `unknown`
@@ -622,6 +995,69 @@ UserLanguage: Spanish
 Keyboard Language: Spanish
 Display Resolution: 1280x768
 Wallpaper Hash: 092de22a2e2a5929e32da3495acf45ed14ce9ec5
+```
+
+### `cystack_a0f3c667`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+HWID: <redacted>
+Country: United Arab Emirates
+IP: <redacted>
+System Language: English
+Processor: Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz (6 cores, 6 threads)
+Installed RAM: 15.92 GB
+Operation System: Windows 10 22H2 Pro (Build 19045) (64 Bit)
+Graphics card: NVIDIA GeForce RTX 2060 SUPER
+Computer Name: <redacted>
+Domain Name: <redacted>
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+4
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+```
+
+### `cystack_a5858752`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `MachineID`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Country: BT
+IP: <redacted>
+System Language: English
+Processor: AMD Ryzen 7 5800H with Radeon Graphics 
+Installed RAM: 14188 MB
+Operation System: Windows 10 Home Single Language build 26200 (64 Bit)
+Graphics card: Unknown
+Domain Name: <redacted>
+MachineID: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+6
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+Wallpaper Hash: d08c477d7682cd97be0a55cf613fdf56c9c08923
 ```
 
 ### `cystack_ac5ebc70`
@@ -659,6 +1095,37 @@ Display Resolution: 1366x768
 Wallpaper Hash: 9926b26bfb8ba791ca1b08e52dbcc60bd1daed78
 ```
 
+### `cystack_b2032ab1`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+Country: EG
+IP: <redacted>
+System Language: English
+Installed RAM: 16274 MB
+Operation System: Windows 10 RS2 build 15063 (64 Bit)
+Graphics card: Intel(R) HD Graphics 4600
+Computer Name: <redacted>
+Domain Name: <redacted>
+Product Key: 
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+2
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1280x1024
+Wallpaper Hash: f0a7ac82ec1ed31217b95e848e2a95baebd6b991
+```
+
 ### `cystack_b59e8be9`
 
 **Attribution confidence:** `unknown`
@@ -688,6 +1155,47 @@ UserLanguage: Portuguese
 Keyboard Language: Portuguese
 Display Resolution: 1366x768
 Wallpaper Hash:
+```
+
+### `cystack_bc033686`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+  >=>>=>   >==>    >=>       >>       >===>>=====>     >=>    >=>    >=>          >>               
+>=>    >=> >> >=>  >=>      >>=>           >=>      >=>   >=> >=>    >=>        >=>>=>             
+ >=>       >=> >=> >=>     >> >=>          >=>     >=>        >=>    >=>       >=>                 
+   >=>     >=>  >=>>=>    >=>  >=>         >=>     >=>        >=====>>=>        >==>               
+      >=>  >=>   > >=>   >=====>>=>        >=>     >=>        >=>    >=>       >=>                 
+>=>    >=> >=>    >>=>  >=>      >=>       >=>      >=>   >=> >=>    >=>        >=>>=>             
+  >=>>=>   >=>     >=> >=>        >=>      >=>        >===>   >=>    >=>          >>               
+                                                                                                   
+>=>    >=> >=>     >=> >=>>=>                                                                      
+>=>    >=> >=>     >=> >>   >=>                                                                    
+>=>    >=> >=>     >=> >>    >=>                                                                   
+>=====>>=> >=>     >=> >==>>=>                                                                     
+>=>    >=> >=>     >=> >>    >=>                                                                   
+>=>    >=> >=>     >=> >>     >>                                                                   
+>=>    >=>   >====>    >===>>=>                                                                    
+                                                                                                   
+[... truncated; full sample at ``sample.txt`` (approx. 41 more lines) ...]
 ```
 
 ### `cystack_be979f63`
@@ -797,7 +1305,7 @@ Wallpaper Hash: 0f8bee011383a069bd2d1fbd678fba86021b5036
 **Field keys:**
 `Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
 
-**Filenames:** `UserInformation.txt`
+**Filenames:** `System.txt`, `UserInformation.txt`
 
 **Sample (sanitized):**
 
@@ -895,6 +1403,128 @@ Display Resolution: 1366x768
 Wallpaper Hash: 
 ```
 
+### `cystack_d9d3b27b`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Display Resolution`, `Domain Name`, `Graphics card`, `ID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+@OttoSup - Buy daily fresh logs
+FREE Cannel @OttoSup - Buy daily fresh logsuy daily fresh logs+bb05-sfS9ZdkMzEx  *
+@OttoSup - Buy daily fresh logs
+
+    Country: MX
+IP: <redacted>
+System Language: Spanish
+Processor: Intel(R) Core(TM) i3-3217U CPU @ 1.80GHz
+Installed RAM: 8067 MB
+Operation System: Windows 10 22H2 build 19045 (64 Bit)
+Graphics card: Intel(R) HD Graphics 4000
+Computer Name: <redacted>
+Domain Name: <redacted>
+ID: @logadm
+Product Key: 
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC-6
+UserLanguage: Spanish
+Keyboard Language: Spanish
+Display Resolution: 1366x768
+@OttoSup - Buy daily fresh logs: 9ba14c26fe5d0d2cf71bc09a782dd7ca246d212a
+```
+
+### `cystack_e5cf90e8`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `MachineID`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+Country: CO
+IP: <redacted>
+System Language: Spanish
+Processor: AMD Ryzen 7 4800H with Radeon Graphics         
+Installed RAM: 15791 MB
+Operation System: Windows 10 Home Single Language build 26200 (64 Bit)
+Graphics card: Unknown
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC-5
+UserLanguage: Spanish
+Keyboard Language: Spanish
+Display Resolution: 1536x864
+@OttoSup - Buy daily fresh logs: d08c477d7682cd97be0a55cf613fdf56c9c08923
+```
+
+### `cystack_ea2cf1f2`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `MachineID`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+    Country: AR
+IP: <redacted>
+System Language: Spanish
+Processor: AMD Ryzen 5 3400G with Radeon Vega Graphics    
+Installed RAM: 15293 MB
+Operation System: Windows 10 Enterprise build 19045 (64 Bit)
+Graphics card: Unknown
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC-3
+UserLanguage: Spanish
+Keyboard Language: Spanish
+Display Resolution: 1920x1080
+Wallpaper Hash: d08c477d7682cd97be0a55cf613fdf56c9c08923
+```
+
 ### `cystack_ea6a2985`
 
 **Attribution confidence:** `unknown`
@@ -927,6 +1557,115 @@ UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1920x1080
 Wallpaper Hash: 0825e886///  @ l o g s _ r u s s i a  ///4c47e6 49d8b8245dea194637ebc808ba25f0d3590f78be
+```
+
+### `cystack_ee3d861c`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `MachineID`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Country: AR
+IP: <redacted>
+System Language: Spanish
+Processor: AMD Ryzen 5 8600G w/ Radeon 760M Graphics      
+Installed RAM: 31943 MB
+Operation System: Windows 10 Pro build 26200 (64 Bit)
+Graphics card: Unknown
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+0
+UserLanguage: Spanish
+Keyboard Language: Spanish
+Display Resolution: 1920x1080
+Wallpaper Hash: d08c477d7682cd97be0a55cf613fdf56c9c08923
+```
+
+### `cystack_ef4e0d1b`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+    Country: KH
+IP: <redacted>
+System Language: English
+Processor: Intel(R) Core(TM) i5-10200H CPU @ 2.40GHz
+Installed RAM: 16291 MB
+Operation System: Windows 11 24H2 build 26200 (64 Bit)
+Graphics card: NVIDIA GeForce GTX 1650
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key: 
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+7
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+@OttoSup - Buy daily fresh logs: bd0557876e6e79441042633c4987486390b7bbcc
+```
+
+### `cystack_fa688f82`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Country: AE
+IP: <redacted>
+System Language: English
+Processor: AMD Ryzen 7 7735HS with Radeon Graphics
+Installed RAM: 15610 MB
+Operation System: Windows 11 24H2 build 26100 (64 Bit)
+Graphics card: NVIDIA GeForce RTX 4050 Laptop GPU
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key: 
+-------------
+User Name: <redacted>
+Admin Group: TRUE
+Integrity: High
+TimeZone: UTC+4
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+Wallpaper Hash: 6412be3b177b930d4013957d032f6022506f40ff
 ```
 
 ## Detection

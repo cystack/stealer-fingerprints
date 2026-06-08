@@ -98,6 +98,41 @@ rule Aetheris_Stealer_cystack_3e0869cd
         all of ($key_*)
 }
 
+rule Aetheris_Stealer_cystack_51d2539b
+{
+    meta:
+        family = "Aetheris Stealer"
+        fingerprint_id = "cystack_51d2539b"
+
+    strings:
+        $key_0 = "CPU Name:" ascii
+        $key_1 = "Clipboard:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Default Gateway:" ascii
+        $key_4 = "External IP:" ascii
+        $key_5 = "FileLocation:" ascii
+        $key_6 = "Hwid:" ascii
+        $key_7 = "Input ISO:" ascii
+        $key_8 = "Internal IP:" ascii
+        $key_9 = "Keyboard:" ascii
+        $key_10 = "Logical Cores:" ascii
+        $key_11 = "Look for:" ascii
+        $key_12 = "Machine:" ascii
+        $key_13 = "Now:" ascii
+        $key_14 = "OS Arch:" ascii
+        $key_15 = "OS Build:" ascii
+        $key_16 = "OS Product:" ascii
+        $key_17 = "RAM Available (MB):" ascii
+        $key_18 = "RAM Total (MB):" ascii
+        $key_19 = "Screensize:" ascii
+        $key_20 = "System Language:" ascii
+        $key_21 = "User:" ascii
+        $key_22 = "User Domain:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Aetheris_Stealer_cystack_5f8f9b68
 {
     meta:
@@ -122,6 +157,42 @@ rule Aetheris_Stealer_cystack_5f8f9b68
         $key_14 = "RAM Total (MB):" ascii
         $key_15 = "User:" ascii
         $key_16 = "User Domain:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Aetheris_Stealer_cystack_6a42be28
+{
+    meta:
+        family = "Aetheris Stealer"
+        fingerprint_id = "cystack_6a42be28"
+
+    strings:
+        $key_0 = "Buildtag:" ascii
+        $key_1 = "CPU Name:" ascii
+        $key_2 = "Clipboard:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Default Gateway:" ascii
+        $key_5 = "External IP:" ascii
+        $key_6 = "FileLocation:" ascii
+        $key_7 = "Hwid:" ascii
+        $key_8 = "Input ISO:" ascii
+        $key_9 = "Internal IP:" ascii
+        $key_10 = "Keyboard:" ascii
+        $key_11 = "Logical Cores:" ascii
+        $key_12 = "Look for:" ascii
+        $key_13 = "Machine:" ascii
+        $key_14 = "Now:" ascii
+        $key_15 = "OS Arch:" ascii
+        $key_16 = "OS Build:" ascii
+        $key_17 = "OS Product:" ascii
+        $key_18 = "RAM Available (MB):" ascii
+        $key_19 = "RAM Total (MB):" ascii
+        $key_20 = "Screensize:" ascii
+        $key_21 = "System Language:" ascii
+        $key_22 = "User:" ascii
+        $key_23 = "User Domain:" ascii
 
     condition:
         all of ($key_*)
@@ -189,6 +260,40 @@ rule Aetheris_Stealer_cystack_7d0668ba
         all of ($key_*)
 }
 
+rule Aetheris_Stealer_cystack_9a0496c3
+{
+    meta:
+        family = "Aetheris Stealer"
+        fingerprint_id = "cystack_9a0496c3"
+
+    strings:
+        $key_0 = "CPU Name:" ascii
+        $key_1 = "Clipboard:" ascii
+        $key_2 = "Country:" ascii
+        $key_3 = "Default Gateway:" ascii
+        $key_4 = "External IP:" ascii
+        $key_5 = "FileLocation:" ascii
+        $key_6 = "Hwid:" ascii
+        $key_7 = "Input ISO:" ascii
+        $key_8 = "Internal IP:" ascii
+        $key_9 = "Keyboard:" ascii
+        $key_10 = "Logical Cores:" ascii
+        $key_11 = "Machine:" ascii
+        $key_12 = "Now:" ascii
+        $key_13 = "OS Arch:" ascii
+        $key_14 = "OS Build:" ascii
+        $key_15 = "OS Product:" ascii
+        $key_16 = "RAM Available (MB):" ascii
+        $key_17 = "RAM Total (MB):" ascii
+        $key_18 = "Screensize:" ascii
+        $key_19 = "System Language:" ascii
+        $key_20 = "User:" ascii
+        $key_21 = "User Domain:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule Aetheris_Stealer_cystack_ae6f6dd2
 {
     meta:
@@ -215,6 +320,42 @@ rule Aetheris_Stealer_cystack_ae6f6dd2
         $key_16 = "Undertale au arena:" ascii
         $key_17 = "User:" ascii
         $key_18 = "User Domain:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule Aetheris_Stealer_cystack_fb506c2d
+{
+    meta:
+        family = "Aetheris Stealer"
+        fingerprint_id = "cystack_fb506c2d"
+
+    strings:
+        $key_0 = "Always support legal activities of Zeta:" ascii
+        $key_1 = "CPU Name:" ascii
+        $key_2 = "Clipboard:" ascii
+        $key_3 = "Country:" ascii
+        $key_4 = "Default Gateway:" ascii
+        $key_5 = "External IP:" ascii
+        $key_6 = "FileLocation:" ascii
+        $key_7 = "Hwid:" ascii
+        $key_8 = "Input ISO:" ascii
+        $key_9 = "Internal IP:" ascii
+        $key_10 = "Keyboard:" ascii
+        $key_11 = "Logical Cores:" ascii
+        $key_12 = "Machine:" ascii
+        $key_13 = "Now:" ascii
+        $key_14 = "OS Arch:" ascii
+        $key_15 = "OS Build:" ascii
+        $key_16 = "OS Product:" ascii
+        $key_17 = "RAM Available (MB):" ascii
+        $key_18 = "RAM Total (MB):" ascii
+        $key_19 = "Rules of Zeta:" ascii
+        $key_20 = "Screensize:" ascii
+        $key_21 = "System Language:" ascii
+        $key_22 = "User:" ascii
+        $key_23 = "User Domain:" ascii
 
     condition:
         all of ($key_*)

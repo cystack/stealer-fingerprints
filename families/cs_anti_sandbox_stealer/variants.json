@@ -1,0 +1,38 @@
+{
+  "family": "CSAntiSandboxStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Anti-Sandbox",
+        "Architecture",
+        "Available RAM",
+        "CPU Cores",
+        "Disk Size",
+        "Hostname",
+        "Hypervisor Bit (CPUID)",
+        "IsDebuggerPresent",
+        "Mode",
+        "OS",
+        "Process Count",
+        "Processors",
+        "RAM",
+        "Recent Files",
+        "Screen Resolution",
+        "Sleep(100ms) actual",
+        "System Uptime",
+        "Total RAM",
+        "Username",
+        "Visible Windows"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_a027ae7a",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

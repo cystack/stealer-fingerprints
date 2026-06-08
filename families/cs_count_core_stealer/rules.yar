@@ -3,6 +3,24 @@
 // observed field-key set. Tune false-positive thresholds at use
 // site, especially for variants relying on field combinations.
 
+rule CSCountCoreStealer_cystack_012b9023
+{
+    meta:
+        family = "CSCountCoreStealer"
+        fingerprint_id = "cystack_012b9023"
+
+    strings:
+        $key_0 = "Arch:" ascii
+        $key_1 = "Count Core:" ascii
+        $key_2 = "Hostname:" ascii
+        $key_3 = "IP Address:" ascii
+        $key_4 = "User Info:" ascii
+        $key_5 = "Version:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule CSCountCoreStealer_cystack_58103687
 {
     meta:
@@ -23,6 +41,25 @@ rule CSCountCoreStealer_cystack_58103687
         $key_10 = "User Info:" ascii
         $key_11 = "Uuid:" ascii
         $key_12 = "Version:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
+rule CSCountCoreStealer_cystack_6e563a49
+{
+    meta:
+        family = "CSCountCoreStealer"
+        fingerprint_id = "cystack_6e563a49"
+
+    strings:
+        $key_0 = "Arch:" ascii
+        $key_1 = "Count Core:" ascii
+        $key_2 = "File Location:" ascii
+        $key_3 = "Hostname:" ascii
+        $key_4 = "IP Address:" ascii
+        $key_5 = "User Info:" ascii
+        $key_6 = "Version:" ascii
 
     condition:
         all of ($key_*)

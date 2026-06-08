@@ -1,0 +1,48 @@
+਍ഀ
+UserName [ComputerName]:     Usuario 1 [DESKTOP-JR9QTGJ]਍ഀ
+Data [Time]:                 02.09.2023 [<ip>]   UTC: -07:00 Hora verano, Montañas (México)਍ഀ
+OS:                          Windows 10 Home Single Language [x64] ਍ഀ
+Keyboard Languages:          Español (México) | Español (España, internacional) | ਍ഀ
+਍ഀ
+CPU:                         AMD E1-2100 APU with Radeon(TM) HD Graphics    ਍ഀ
+RAM:                         3 Gb਍ഀ
+GPU:                         AMD Radeon HD 8210਍ഀ
+Display Resolution:          1366 x 768਍ഀ
+਍ഀ
+Installed software:਍ഀ
+Microsoft OneDrive [ Version: 23.169.0813.0001 ]਍ഀ
+Microsoft Office Professional Plus 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+WinRAR 6.23 (64-bit) [ Version: 6.23.0 ]਍ഀ
+Microsoft Office Professional Plus 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft Access MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft Excel MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft PowerPoint MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft Publisher MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft Outlook MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft Word MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+Eines de correcció del Microsoft Office 2016: català [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft Office Proofing Tools 2016 - English [ Version: 16.0.4266.1001 ]਍ഀ
+Revisores de Texto do Microsoft Office 2016 – Português (Brasil) [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft Office zuzenketa-tresnak 2016 - Euskara [ Version: 16.0.4266.1001 ]਍ഀ
+Ferramentas de verificación de Microsoft Office 2016 - Galego [ Version: 16.0.4266.1001 ]਍ഀ
+Herramientas de corrección de Microsoft Office 2016: español [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft Office Proofing (Spanish) 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft InfoPath MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft Office Shared MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft DCF MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft OneNote MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft Groove MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft Office 32-bit Components 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft Office Shared 32-bit MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft Office OSM MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft Office OSM UX MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+Microsoft Skype for Business MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]਍ഀ
+ALPS Touch Pad Driver [ Version: 8.1202.1711.103 ]਍ഀ
+Microsoft Update Health Tools [ Version: <ip> ]਍ഀ
+Google Chrome [ Version: 116.0.5845.141 ]਍ഀ
+Microsoft Edge [ Version: 116.0.1938.69 ]਍ഀ
+Microsoft Edge Update [ Version: <ip> ]਍ഀ
+WebView2 Runtime de Microsoft Edge [ Version: 116.0.1938.62 ]਍ഀ
+10.0.10240.31218 ]਍ഀ
+Realtek High Definition Audio Driver [ Version: 6.0.1.7634 ]਍ഀ
+਍ഀ

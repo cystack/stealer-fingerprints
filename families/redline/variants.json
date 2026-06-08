@@ -6,6 +6,37 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Anti-Viruses",
+        "Available KeyboardLayouts",
+        "Country",
+        "Current Language",
+        "FileLocation",
+        "HWID",
+        "Hardwares",
+        "IP",
+        "Location",
+        "Log date",
+        "Name",
+        "Operation System",
+        "Process Elevation",
+        "ScreenSize",
+        "TimeZone",
+        "UAC",
+        "UserName",
+        "Zip Code"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_113448bf",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "Available KeyboardLayouts",
         "Country",
         "Current Language",
@@ -325,6 +356,66 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_84cd011a",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Anti-Viruses",
+        "Available KeyboardLayouts",
+        "Build ID",
+        "Country",
+        "Current Language",
+        "FileLocation",
+        "HWID",
+        "Hardwares",
+        "IP",
+        "Location",
+        "Name",
+        "Operation System",
+        "Process Elevation",
+        "ScreenSize",
+        "TimeZone",
+        "UAC",
+        "UserName",
+        "Zip Code"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_8c0e4616",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Anti-Viruses",
+        "Available KeyboardLayouts",
+        "Country",
+        "Current Language",
+        "FileLocation",
+        "Hardwares",
+        "IP",
+        "Location",
+        "Log date",
+        "Name",
+        "Operation System",
+        "Process Elevation",
+        "ScreenSize",
+        "TimeZone",
+        "UserName",
+        "Zip Code"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_ad806f89",
       "panel_brand": null,
       "synthetic": true
     },

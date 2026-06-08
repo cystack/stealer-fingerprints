@@ -1,0 +1,27 @@
+{
+  "family": "CSAdminCoresStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "ADMIN",
+        "CORES",
+        "CPU",
+        "HWID",
+        "IP",
+        "LID",
+        "OS",
+        "RAM",
+        "USERNAME"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "cystack_d4351ed0",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

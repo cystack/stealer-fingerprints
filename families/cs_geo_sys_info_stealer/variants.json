@@ -1,0 +1,26 @@
+{
+  "family": "CSGeoSysInfoStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": "@BRADMAX",
+      "field_keys": [
+        "CPU",
+        "Computer",
+        "Country",
+        "GPU",
+        "IP",
+        "OS",
+        "RAM",
+        "User"
+      ],
+      "filenames": [
+        "system.txt"
+      ],
+      "fingerprint_id": "cystack_829961c1",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

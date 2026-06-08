@@ -31,7 +31,7 @@ threat-intel mapping for this exact panel-summary layout.
 
 **Also known as:** `!! 2026 JAN aggregator panel summary`
 
-**Variants observed:** 7
+**Variants observed:** 8
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -77,6 +77,25 @@ Browser Data: CK: 111|PW: 116|AF: 1067|CC: 0
 User: LENOVO
 AntiVirus: Windows Defender
 Browser Data: CK:3972|PW:210|AF:5243|CC:0|FB:0|GADS:False
+```
+
+### `cystack_17af0602`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`AntiVirus`, `Browser Data`, `Country`, `Ip`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+Ip: <redacted>
+Country: 🇩🇿 DZ - Algeria
+User: hp
+AntiVirus: Kaspersky Total Security, Windows Defender
+Browser Data: CK:4614|PW:3|AF:9|CC:0|FB:1|GADS:False
 ```
 
 ### `cystack_2ba34ed5`

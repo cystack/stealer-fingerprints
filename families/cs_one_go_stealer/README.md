@@ -58,7 +58,7 @@ known author.
 **Attribution confidence:** `unknown`
 
 **Field keys:**
-`Build Name`, `CPU`, `Computer Name`, `Country ISO2`, `Date`, `Elevated`, `Enviromental Variables`, `Execute Path`, `GPU`, `IP`, `Operation System`, `Screen Resolution`, `User Name`
+`Build Name`, `CPU`, `Computer Name`, `Country ISO2`, `Date`, `Elevated`, `Enviromental Variables`, `Execute Path`, `GPU`, `HWID`, `IP`, `Operation System`, `Screen Resolution`, `User Name`
 
 **Filenames:** `System.txt`
 

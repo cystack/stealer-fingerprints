@@ -1,0 +1,37 @@
+📋 MeltStealer - Report:
+📅 Date: 2025-12-01 <ip>
+💻 System: Microsoft Windows NT 6.2.9200.0
+👤 Username: Pixel
+🖥️ CompName: DESKTOP-9KA1BNT
+🧠 CPU: AMD Ryzen 3 3200G with Radeon Vega Graphics    
+💾 RAM: 6 GB
+🌐 IP: <ip>
+🗺️ Location: Buenos Aires, Buenos Aires, Argentina
+📮 Zip Code: 1772
+🧭 Coordinates: -36, -59,9964
+⏰ Timezone: America/Argentina/Buenos_Aires
+🔌 ISP: Telecom Argentina S.A.
+🏢 Organization: Telecom Argentina S.A
+🔧 AS: AS7303 Telecom Argentina S.A.
+
+🌐 Browsers:
+   ∟ Passwords: 209
+   ∟ Cookies: 42
+   ∟ AutoFill: 530
+   ∟ History: 21990
+   ∟ Bookmarks: 68
+   ∟ Downloads: 866
+   ∟ Extensions: 9
+💿 Software:
+🔌 Device:
+   ∟ Windows product key
+   ∟ Desktop screenshot
+📁 File Grabber:
+🔍 Domains info:
+   ∟ Banking services (No data)
+   ∟ Cryptocurrency services (No data)
+   ∟ Porn websites
+⚙️ Installation:
+   ∟ Startup disabled
+   ∟ Clipper not installed
+   ∟ Keylogger not installed

@@ -106,6 +106,42 @@
       "field_keys": [
         "CPU Name",
         "Clipboard",
+        "Country",
+        "Default Gateway",
+        "External IP",
+        "FileLocation",
+        "Hwid",
+        "Input ISO",
+        "Internal IP",
+        "Keyboard",
+        "Logical Cores",
+        "Look for",
+        "Machine",
+        "Now",
+        "OS Arch",
+        "OS Build",
+        "OS Product",
+        "RAM Available (MB)",
+        "RAM Total (MB)",
+        "Screensize",
+        "System Language",
+        "User",
+        "User Domain"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_51d2539b",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU Name",
+        "Clipboard",
         "Default Gateway",
         "External IP",
         "Hwid",
@@ -126,6 +162,43 @@
         "Information.txt"
       ],
       "fingerprint_id": "cystack_5f8f9b68",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Buildtag",
+        "CPU Name",
+        "Clipboard",
+        "Country",
+        "Default Gateway",
+        "External IP",
+        "FileLocation",
+        "Hwid",
+        "Input ISO",
+        "Internal IP",
+        "Keyboard",
+        "Logical Cores",
+        "Look for",
+        "Machine",
+        "Now",
+        "OS Arch",
+        "OS Build",
+        "OS Product",
+        "RAM Available (MB)",
+        "RAM Total (MB)",
+        "Screensize",
+        "System Language",
+        "User",
+        "User Domain"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_6a42be28",
       "panel_brand": null,
       "synthetic": true
     },
@@ -198,6 +271,41 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "CPU Name",
+        "Clipboard",
+        "Country",
+        "Default Gateway",
+        "External IP",
+        "FileLocation",
+        "Hwid",
+        "Input ISO",
+        "Internal IP",
+        "Keyboard",
+        "Logical Cores",
+        "Machine",
+        "Now",
+        "OS Arch",
+        "OS Build",
+        "OS Product",
+        "RAM Available (MB)",
+        "RAM Total (MB)",
+        "Screensize",
+        "System Language",
+        "User",
+        "User Domain"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_9a0496c3",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "CLR Version",
         "CPU Name",
         "Clipboard",
@@ -222,6 +330,43 @@
         "Information.txt"
       ],
       "fingerprint_id": "cystack_ae6f6dd2",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Always support legal activities of Zeta",
+        "CPU Name",
+        "Clipboard",
+        "Country",
+        "Default Gateway",
+        "External IP",
+        "FileLocation",
+        "Hwid",
+        "Input ISO",
+        "Internal IP",
+        "Keyboard",
+        "Logical Cores",
+        "Machine",
+        "Now",
+        "OS Arch",
+        "OS Build",
+        "OS Product",
+        "RAM Available (MB)",
+        "RAM Total (MB)",
+        "Rules of Zeta",
+        "Screensize",
+        "System Language",
+        "User",
+        "User Domain"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_fb506c2d",
       "panel_brand": null,
       "synthetic": true
     }

@@ -1,0 +1,22 @@
+{
+  "family": "CSGoRuntimeStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": "poopbandit",
+      "field_keys": [
+        "Computer",
+        "Directory",
+        "OS",
+        "User"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_68b1c634",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

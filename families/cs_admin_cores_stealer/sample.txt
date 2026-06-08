@@ -1,0 +1,9 @@
+OS: Windows
+LID: TINY-47F174B7
+HWID: <redacted>
+IP: <redacted>
+USERNAME: <redacted>
+CPU: AMD EPYC Processor (with IBPB)
+RAM: 18431 MB
+CORES: 6
+ADMIN: Yes

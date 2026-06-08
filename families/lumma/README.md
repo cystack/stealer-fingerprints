@@ -9,7 +9,7 @@ signature on the `Time:` line. Build banners reference the
 
 **Also known as:** `LummaC2`, `Lumma Stealer`
 
-**Variants observed:** 53
+**Variants observed:** 59
 **Top attribution confidence:** `high`
 **Operator panel brands:** `AL Stealer`, `BRADMAX`, `Deimos Golang Stealer`
 **Distribution channels:** `@BRADLOGS`, `@ft7links`, `t.me/additionallibraries`
@@ -540,6 +540,46 @@ Country: CH
 BEST LOGS => @BRADMAX_LOG
 ```
 
+### `cystack_383dbccb`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Computer`, `Country`, `Display resolution`, `Elevated`, `HWID`, `IP Address`, `Install Date`, `LID`, `Language`, `Local Date`, `LummaC2 Build`, `NetBIOS`, `OS Version`, `Path`, `RAM Size`, `Time`, `Time Zone`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+-- <url> | <url> |@BRADMAXCLOUD_BOT
+
+LummaC2 Build: Jun  3 2025
+Path: <redacted>
+OS Version: Windows 10 Enterprise (10.0.19045) x64
+Local Date: 10.06.2025 <ip>
+Time Zone: UTC+3
+Install Date: 08.06.2025 <ip>
+Elevated: true
+Computer: DESKTOP-NKGFNFQ
+User: 404
+NetBIOS: DESKTOP-NKGFNFQ
+Language: en-US
+HWID: <redacted>
+RAM Size: 16384MB
+CPU Vendor: GenuineIntel
+CPU Name: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+CPU Threads: 12
+CPU Cores: 6
+Display resolution: 1680x1050
+IP Address: <redacted>
+Time: 10.06.2025 <ip> (sig:1749520051.31c8812d8bd9ac38f0b990cb1efc74fd)
+Country: <ip>
+LID: yau6Na--5025373429
+```
+
 ### `cystack_38ce40fc`
 
 **Attribution confidence:** `high`
@@ -570,6 +610,61 @@ IP Address: <redacted>
 Time: 25.05.2025 <ip> (sig:1748136939.81cad37db8fbdf9d9c842e7da2ec6ee1)
 Country: AR
 LID: @BRADMAX_LOG (BRADMAX) / <url>
+```
+
+### `cystack_38fb12f5`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Configuration`, `TG`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+- LummaC2 Build: May 19 2025
+Configuration: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs
+- Path: C:\Users\<user>\AppData\Local\Temp\708099\AutoIt3.exe
+
+- OS Version: Windows 10 Enterprise (10.0.19045) x64
+- Local Date: 22.05.2025 <ip>
+- Time Zone: UTC-3
+- Install Date: 27.09.2024 <ip>
+- Elevated: false
+- Computer: DESKTOP-PM27KGF
+- User: Andrei Coutinho
+- Domain: 
+- Hostname: DESKTOP-PM27KGF
+- NetBIOS: DESKTOP-PM27KGF
+- Language: pt-BR
+- Anti Virus:
+	- Windows Defender [ON]
+- HWID: 92EC0B3B8FB4807B35626870EA0BE398
+- RAM Size: 4096MB
+- CPU Vendor: AuthenticAMD
+- CPU Name: AMD A4-3310MX APU with Radeon(tm) HD Graphics
+- CPU Threads: 2
+- CPU Cores: 1
+- GPU:
+	- AMD Radeon HD 6480G
+- Display resolution: 1366x768
+
+- IP Address: <ip>
+- Time: 22.05.2025 <ip> (sig:1747934025.31279f2a0593ce399a663db36ab5558a)
+- Country: BR
+[... truncated; full sample at ``sample.txt`` (approx. 27 more lines) ...]
 ```
 
 ### `cystack_40fa2320`
@@ -606,6 +701,46 @@ Display resolution: 1366x768
 IP Address: <redacted>
 Country: VE
 LID: @BRADMAX_LOG (BRADMAX) / <url>
+```
+
+### `cystack_4476ec73`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Exploit`, `LID(Lumma ID)`, `Telegram`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+LummaC2, Build Oct 10 2023
+LID(Lumma ID): Xm5JA7--crypterium15
+
+- PC: DESKTOP-6K1UHCG
+- User: Nathan
+- Domain: 
+- Workgroup: DESKTOP-6K1UHCG
+- ComputerNameDnsHostname: DESKTOP-6K1UHCG
+- ComputerNameNetBIOS: DESKTOP-6K1UHCG
+- OS Version: Windows 10 (10.0.17763)
+- HWID: CF12F1FE35EA31AC293CEF7566E2B02CF1E3B777
+- Screen Resoluton: 1920x1080
+- Language: en-US
+- CPU Name: AMD Ryzen 7 2700X Eight-Core Processor         
+- GPU: Radeon RX 570 Series
+- Physical Installed Memory: 16384MB
+
+- IP Address: <ip>
+- Country: PH
+
+
+Брут кошельков любой сложности с задействованием ИИ. [60/40]
+
+Exploit: <url> (Информация, отзывы клиентов)
+Telegram: <url>
+Минимальная сумма - $5k
 ```
 
 ### `cystack_4a2e376b`
@@ -1242,6 +1377,37 @@ Country: CA
 BEST LOGS => @BRADMAX_LOG
 ```
 
+### `cystack_84860f5a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`MY ADMIN ACCOUNT`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+(For User Log-in and Sign-Up)
+<url>
+[... 3 blank lines ...]
+(For Admin Log-in)
+<url>
+
+
+MY ADMIN ACCOUNT :
+
+admin
+Admin123
+[... 3 blank lines ...]
+- IP Address: <ip>
+- Time: 12.06.2025 <ip> (sig:1749726126.37b37bf2b272bd7e9a3096bd3806b503)
+- Country: <ip>
+- @BRADLOGS (BRADMAX) / <url>
+```
+
 ### `cystack_86f8cf79`
 
 **Attribution confidence:** `high`
@@ -1622,7 +1788,7 @@ LID: yau6Na--7400515879
 
 **Attribution confidence:** `high`
 
-**Filenames:** `System.txt`, `UserInformation.txt`, `system_info.txt`
+**Filenames:** `Information.txt`, `System.txt`, `UserInformation.txt`, `information.txt`, `system_info.txt`
 
 **Sample (sanitized):**
 
@@ -1720,6 +1886,61 @@ IP Address: <redacted>
 Time: 28.05.2025 <ip> (sig:1748414189.1a2eb483ef5f6c5b16d2a2187eee416f)
 Country: AU
 LID: @BRADMAX_LOG (BRADMAX) / <url>
+```
+
+### `cystack_ce7d07a2`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Configuration`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+- LummaC2 Build: Aug 21 2025
+Configuration: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs
+- Path: C:\Users\<user>\AppData\Local\Temp\819287\Bondage.pif
+
+- OS Version: Windows 11 Pro (10.0.22631) x64
+- Local Date: 25.08.2025 <ip>
+- Time Zone: UTC+3
+- Install Date: 26.11.2022 <ip>
+- Elevated: false
+- Computer: DESKTOP-JFTSP5R
+- User: arnau
+- Domain: 
+- Hostname: DESKTOP-JFTSP5R
+- NetBIOS: DESKTOP-JFTSP5R
+- Language: en-GB
+- Anti Virus:
+	- Windows Defender
+- HWID: A80198C7A82F3567B469FD9C836D7512
+- RAM Size: 16384MB
+- CPU Vendor: GenuineIntel
+- CPU Name: Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz
+- CPU Threads: 8
+- CPU Cores: 8
+- GPU:
+	- NVIDIA GeForce RTX 2060
+- Display resolution: 1920x1080
+
+- IP Address: <ip>
+- Time: 25.08.2025 <ip> (sig:1756098733.1ae97e80bb62d9ee1a5303cd60c6bd31)
+- Country: <ip>
+[... truncated; full sample at ``sample.txt`` (approx. 7 more lines) ...]
 ```
 
 ### `cystack_d660d304`
@@ -1904,6 +2125,34 @@ Country: QA
 LID: @BRADMAX_LOG (BRADMAX) / <url>
 ```
 
+### `cystack_eb33c583`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`SN`, `Service Tag`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+
+Green System 
+Dell PowerEdge R760xs Server
+Service Tag: 6BGG874
+16GB 5600MHZ
+MTC10F1084S1RC56BD1
+SN: 802C0F24474C449EE0
+1.2TB SAS
+WFKELEQ9
+
+- IP Address: <ip>
+- Time: 11.07.2025 <ip> (sig:1752241245.de4c7333e29e4a2d39a08a31bbd281dc)
+- Country: <ip>
+```
+
 ### `cystack_ee2649ee`
 
 **Attribution confidence:** `high`
@@ -1978,7 +2227,7 @@ LID: @BRADMAX_LOG (BRADMAX) / <url>
 **Field keys:**
 `Telegram`
 
-**Filenames:** `UserInformation.txt`
+**Filenames:** `System.txt`, `UserInformation.txt`
 
 **Sample (sanitized):**
 

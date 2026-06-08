@@ -18,9 +18,9 @@ Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 
 **Also known as:** `BlankGrabber`, `Blank-c/Blank-Grabber`
 
-**Variants observed:** 12
+**Variants observed:** 17
 **Top attribution confidence:** `high`
-**Operator panel brands:** `Dead`
+**Operator panel brands:** `Amnesia`, `Dead`
 
 ## Targets
 
@@ -33,6 +33,162 @@ Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 - Game launcher sessions (Epic, Steam, Uplay, Battle.net, Growtopia)
 
 ## Variants
+
+### `Amnesia`
+
+**Fingerprint id:** `amnesia`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Amnesia got a new victim`, `Autofills`, `CPU`, `Cellular Network`, `Common Files`, `Computer Name`, `Computer OS`, `Cookies`, `Country`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `IP`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Proxy/VPN`, `Region`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Telegram Sessions`, `Timezone`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+Amnesia got a new victim: HomePC
+
+IP Info
+
+IP: <redacted>
+Region: Lagos
+Country: Nigeria
+Timezone: Africa/Lagos
+
+Cellular Network:    ✅
+Proxy/VPN:           ❎
+
+System Info
+Computer Name: <redacted>
+Computer OS: Microsoft Windows 11 Pro
+Total Memory: 8 GB
+UUID: B7DEC4B0-3449-11E6-9360-9118E4020038
+CPU: Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
+GPU: Intel(R) HD Graphics 515
+Product Key: YC7N8-G7WR6-9WR4H-6Y2W4-KBT6X
+
+Grabbed Info
+Discord Accounts : 0
+Passwords : 2
+Cookies : 0
+History : 2089
+Autofills : 208
+Roblox Cookies : 0
+Telegram Sessions : 0
+Common Files : 1
+Wallets : 0
+Wifi Passwords : 17
+Webcam : 1
+Minecraft Sessions : 0
+Epic Session : No
+Steam Session : No
+Uplay Session : No
+Battle.Net Session : No
+Growtopia Session : No
+Screenshot : Yes
+[... truncated; full sample at ``sample.txt`` (approx. 1 more lines) ...]
+```
+
+### `cystack_05506afb`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Autofills`, `Blank Grabber got a new victim`, `CPU`, `Cellular Network`, `Common Files`, `Computer Name`, `Computer OS`, `Cookies`, `Country`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `IP`, `Minecraft Sessions`, `Passwords`, `Region`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Timezone`, `Total Memory`, `Uplay Session`, `Webcam`, `Wifi Passwords`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+Blank Grabber got a new victim: HTC
+IP Info
+IP: <redacted>
+Region: Cairo Governorate
+Country: Egypt
+Timezone: Africa/Cairo
+Cellular Network:    ❎
+System Info
+Computer Name: <redacted>
+Computer OS: ??Microsoft Windows 10 Pro
+Total Memory: 8 GB
+CPU: Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+GPU: NVIDIA GeForce GT 710
+Grabbed Info
+Discord Accounts : 0
+Passwords : 25
+Cookies : 534
+History : 0
+Autofills : 794
+Roblox Cookies : 0
+Common Files : 241
+Wifi Passwords : 7
+Webcam : 0
+Minecraft Sessions : 3
+Epic Session : Yes
+Steam Session : No
+Uplay Session : No
+Growtopia Session : No
+Screenshot : Yes
+System Info : Yes
+```
+
+### `cystack_12bb25c3`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Autofills`, `Blank Grabber got a new victim`, `CPU`, `Common Files`, `Computer Name`, `Computer OS`, `Cookies`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+Blank Grabber got a new victim: USUARIO
+
+IP Info
+(Unable to get IP info)
+
+System Info
+Computer Name: <redacted>
+Computer OS: Unable to detect OS
+Total Memory: Unable to detect total memory
+UUID: Unable to detect UUID
+CPU: Intel64 Family 6 Model 189 Stepping 1, GenuineIntel
+GPU: Unable to detect GPU
+Product Key: HBY4H-RNXB8-Y2YTR-443VB-MY6F8
+
+Grabbed Info
+Discord Accounts : 0
+Passwords : 57
+Cookies : 0
+History : 0
+Autofills : 0
+Roblox Cookies : 0
+@OttoSup - Buy daily fresh logs Sessions : 0
+Common Files : 31
+Wallets : 0
+Wifi Passwords : 0
+Webcam : 0
+Minecraft Sessions : 0
+Epic Session : No
+Steam Session : No
+Uplay Session : No
+[... truncated; full sample at ``sample.txt`` (approx. 4 more lines) ...]
+```
 
 ### `cystack_22dec19e`
 
@@ -294,6 +450,61 @@ Screenshot : Yes
 System Info : Yes
 ```
 
+### `cystack_531d6bd4`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Autofills`, `Blank Grabber got a new victim`, `CPU`, `Cellular Network`, `Common Files`, `Computer Name`, `Computer OS`, `Cookies`, `Country`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `IP`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Proxy/VPN`, `Region`, `Reverse DNS`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Timezone`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+Blank Grabber got a new victim: Mary
+
+IP Info
+
+IP: <redacted>
+Region: Bogota D.C.
+Country: Colombia
+Timezone: America/Bogota
+
+Cellular Network:    ❎
+Proxy/VPN:           ❎
+Reverse DNS: dynamic-ip-cr20011862179.cable.net.co
+
+System Info
+Computer Name: <redacted>
+Computer OS: Microsoft Windows 10 Pro
+Total Memory: 8 GB
+UUID: 03C00218-044D-0577-9706-B20700080009
+CPU: Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+GPU: USB Mobile Monitor Virtual Display
+Product Key: YC7N8-G7WR6-9WR4H-6Y2W4-KBT6X
+
+Grabbed Info
+Discord Accounts : 0
+Passwords : 3
+Cookies : 0
+History : 0
+Autofills : 0
+Roblox Cookies : 0
+@OttoSup - Buy daily fresh logs Sessions : 0
+[... truncated; full sample at ``sample.txt`` (approx. 11 more lines) ...]
+```
+
 ### `cystack_57d3f2a5`
 
 **Attribution confidence:** `high`
@@ -338,6 +549,61 @@ Uplay Session : No
 Growtopia Session : No
 Screenshot : Yes
 System Info : Yes
+```
+
+### `cystack_8547d387`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Autofills`, `Blank Grabber got a new victim`, `CPU`, `Cellular Network`, `Common Files`, `Computer Name`, `Computer OS`, `Cookies`, `Country`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `IP`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Proxy/VPN`, `Region`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Timezone`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+Blank Grabber got a new victim: SOPORTE ING
+
+IP Info
+
+IP: <redacted>
+Region: Bogota D.C.
+Country: Colombia
+Timezone: America/Bogota
+
+Cellular Network:    ❎
+Proxy/VPN:           ❎
+
+System Info
+Computer Name: <redacted>
+Computer OS: Microsoft Windows 10 Pro N
+Total Memory: 4 GB
+UUID: A140BB21-E5B2-BAF1-BD49-305A3A59331E
+CPU: Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+GPU: Intel(R) HD Graphics
+Product Key: 2B87N-8KFHP-DKV6R-Y2C8J-PKCKT
+
+Grabbed Info
+Discord Accounts : 0
+Passwords : 115
+Cookies : 0
+History : 0
+Autofills : 0
+Roblox Cookies : 0
+@OttoSup - Buy daily fresh logs Sessions : 0
+Common Files : 22
+[... truncated; full sample at ``sample.txt`` (approx. 11 more lines) ...]
 ```
 
 ### `cystack_abb02c93`

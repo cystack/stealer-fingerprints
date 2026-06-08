@@ -50,9 +50,9 @@ could come from a Vidar fork or an unrelated builder.
 **Attribution confidence:** `unknown`
 
 **Field keys:**
-`All Users`, `Color Depth`, `Device Name`, `Device String`, `Installed Apps`, `Network Info`, `Process List`, `Process count`, `Resolution`
+`All Users`, `CPU`, `Chrome Version`, `Color Depth`, `Computer Name`, `ComputerName`, `Country`, `DateTime`, `Device Name`, `Device String`, `Disk`, `Display Name`, `Display Resolution`, `Domain Name`, `Edge Version`, `GPU`, `HWID`, `IP`, `Install Date`, `Install Source`, `Installed Apps`, `Installed RAM`, `Installed software`, `KOPLAYER Pro version`, `Keyboard Language`, `Keyboard Languages`, `MachineID`, `Network Info`, `OS`, `Process`, `Process List`, `Process count`, `Processor`, `Publisher`, `RAM`, `Resolution`, `System Language`, `Time Zone`, `Traffic Name`, `UID`, `Unknown Version`, `User Language`, `User Name`, `UserName`, `Version`, `Video card`, `WallPaper Hash`
 
-**Filenames:** `information.txt`, `system_info.txt`
+**Filenames:** `_Information.txt`, `information.txt`, `system.txt`, `system_info.txt`
 
 **Sample (sanitized):**
 

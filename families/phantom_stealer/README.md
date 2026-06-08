@@ -32,9 +32,9 @@ parsers in this project:
 
 **Also known as:** `Phantom Stealer`, `Phantom stealer v2.0`
 
-**Variants observed:** 1
+**Variants observed:** 2
 **Top attribution confidence:** `high`
-**Operator panel brands:** `Phantom stealer v2.0`
+**Operator panel brands:** `Phantom stealer v2.0`, `Sys_root v-200`
 **Distribution channels:** `@Phantomsoftwares_bot`
 
 ## Targets
@@ -104,6 +104,60 @@ parsers in this project:
 *SOFTWARE & ACCOUNTS*
 ━━━━━━━━━━━━━━━━━━━━━━
 [... truncated; full sample at ``sample.txt`` (approx. 18 more lines) ...]
+```
+
+### `Sys_root v-200`
+
+**Fingerprint id:** `sys_root_v_200`
+
+**Attribution confidence:** `high`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+🔍 * Sys_root  v-200 Security is just an illusion $$$
+━━━━━━━━━━━━━━━━━━━━━━
+📅 Date: 2025-07-23 <ip> AM
+🖥️ System: Microsoft Windows 10 Pro Education (64 Bit)
+👤 Username: sys_root
+💻 CompName: DESKTOP-U6ED9SP
+🌐 Language: 🇺🇸 en-US
+🛡️ Antivirus: Windows Defender
+
+*HARDWARE INFORMATION*
+━━━━━━━━━━━━━━━━━━━━━━
+⚡ CPU: AMD Ryzen 5 PRO 2500U w/ Radeon Vega Mobile Gfx
+🎮 GPU: AMD Radeon(TM) Vega 8 Graphics
+📊 RAM: 15293MB
+🔋 Power: Low (17%)
+📺 Screen: 1920x1080
+📷 Webcams: 1
+
+*NETWORK INFORMATION*
+━━━━━━━━━━━━━━━━━━━━━━
+🌐 Gateway IP: <ip>
+🔒 Internal IP: <ip>
+🌍 External IP: <ip>
+
+*DETECTED DOMAINS*
+━━━━━━━━━━━━━━━━━━━━━━
+   - 🏦 Banking Services (No data)
+   - 💰 Crypto Services:
+  - Bmstrading.Ca
+  - Devshiltrade.Mn
+  - Meet - Eth-Broz-Bkt
+  - Prometheus.Ge
+  - Wallet EN
+   - 🔞 Adult Websites:
+  - Sexygirls39.Ru
+
+*BROWSER DATA*
+━━━━━━━━━━━━━━━━━━━━━━
+   ∟ 🔑 Passwords: 2964
+   ∟ 💳 Credit Cards: 2
+[... truncated; full sample at ``sample.txt`` (approx. 29 more lines) ...]
 ```
 
 ## Detection

@@ -10,7 +10,7 @@ VPN, FTP, RDP, and messenger client data.
 
 **Also known as:** `X-FILES`, `DeerStealer`, `X-Files Stealer`
 
-**Variants observed:** 10
+**Variants observed:** 12
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -22,6 +22,61 @@ VPN, FTP, RDP, and messenger client data.
 - Messenger session data (Telegram, Discord, Steam)
 
 ## Variants
+
+### `cystack_0f754c78`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Computer Name`, `Country`, `Desktop Screenshot Taken`, `GPU (Display Devices)`, `Hardware ID`, `IP`, `Operating System`, `RAM (Memory)`, `Screens`, `Username`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+IP: <redacted>
+Country: ES (Spain)
+Operating System: Windows 11
+Username: <redacted>
+Computer Name: <redacted>
+Hardware ID: <redacted>
+GPU (Display Devices): 
+RAM (Memory): 
+Screens: 1024x768
+Desktop Screenshot Taken: Yes
+Windows Processes [
+   System
+   Registry
+   smss.exe
+   csrss.exe
+   wininit.exe
+   csrss.exe
+   winlogon.exe
+   services.exe
+   lsass.exe
+   svchost.exe
+   WUDFHost.exe
+   fontdrvhost.exe
+   fontdrvhost.exe
+   svchost.exe
+   svchost.exe
+   WUDFHost.exe
+   WUDFHost.exe
+   dwm.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 278 more lines) ...]
+```
 
 ### `cystack_1a8fdd10`
 
@@ -85,7 +140,7 @@ Windows Processes [
 **Field keys:**
 `CPU (Processor)`, `Computer Name`, `Country`, `Desktop Screenshot Taken`, `GPU (Display Devices)`, `Hardware ID`, `IP`, `Operating System`, `RAM (Memory)`, `Screens`, `Username`
 
-**Filenames:** `Information.txt`
+**Filenames:** `Information.txt`, `System.txt`
 
 **Sample (sanitized):**
 
@@ -195,7 +250,7 @@ Windows Processes [
 **Field keys:**
 `CPU (Processor)`, `Computer Name`, `Country`, `Desktop Screenshot Taken`, `GPU (Display Devices)`, `Hardware ID`, `IP`, `Operating System`, `Processed parts`, `RAM (Memory)`, `Screens`, `Username`
 
-**Filenames:** `Information.txt`
+**Filenames:** `Information.txt`, `System.txt`
 
 **Sample (sanitized):**
 
@@ -250,7 +305,7 @@ Windows Processes [
 **Field keys:**
 `CPU (Processor)`, `Computer Name`, `Country`, `Desktop Screenshot Taken`, `GPU (Display Devices)`, `Hardware ID`, `IP`, `Operating System`, `Operation ID`, `RAM (Memory)`, `Screens`, `Username`
 
-**Filenames:** `Information.txt`
+**Filenames:** `Information.txt`, `information.txt`
 
 **Sample (sanitized):**
 
@@ -415,7 +470,7 @@ Windows Processes [
 **Field keys:**
 `CPU (Processor)`, `Computer Name`, `Country`, `Desktop Screenshot Taken`, `GPU (Display Devices)`, `Hardware ID`, `IP`, `Operating System`, `Operation ID`, `Processed parts`, `RAM (Memory)`, `Screens`, `Username`
 
-**Filenames:** `Information.txt`
+**Filenames:** `Information.txt`, `information.txt`
 
 **Sample (sanitized):**
 
@@ -571,6 +626,61 @@ Windows Processes [
    Secure System
    Registry
 [... truncated; full sample at ``sample.txt`` (approx. 214 more lines) ...]
+```
+
+### `cystack_fda4f08d`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Computer Name`, `Country`, `Desktop Screenshot Taken`, `GPU (Display Devices)`, `Hardware ID`, `IP`, `Operating System`, `Processed parts`, `RAM (Memory)`, `Screens`, `Username`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+IP: <redacted>
+Country: ET (Ethiopia)
+Operating System: Windows 11
+Username: <redacted>
+Computer Name: <redacted>
+Hardware ID: <redacted>
+GPU (Display Devices): Intel(R) Iris(R) Xe Graphics
+RAM (Memory): 
+Screens: 1366x768
+Desktop Screenshot Taken: Yes
+Windows Processes [
+   System
+   Secure System
+   Registry
+   smss.exe
+   csrss.exe
+   wininit.exe
+   services.exe
+   LsaIso.exe
+   lsass.exe
+   svchost.exe
+   fontdrvhost.exe
+   WUDFHost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   IntelCpHDCPSvc.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 209 more lines) ...]
 ```
 
 ## Detection

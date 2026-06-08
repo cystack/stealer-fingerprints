@@ -1,0 +1,48 @@
+    ███████╗ █████╗ ███╗   ██╗████████╗ █████╗      ███████╗████████╗███████╗ █████╗ ██╗     ███████╗██████╗    
+██╔════╝██╔══██╗████╗  ██║╚══██╔══╝██╔══██╗     ██╔════╝╚══██╔══╝██╔════╝██╔══██╗██║     ██╔════╝██╔══██╗   
+███████╗███████║██╔██╗ ██║   ██║   ███████║     ███████╗   ██║   █████╗  ███████║██║     █████╗  ██████╔╝   
+╚════██║██╔══██║██║╚██╗██║   ██║   ██╔══██║     ╚════██║   ██║   ██╔══╝  ██╔══██║██║     ██╔══╝  ██╔══██╗   
+███████║██║  ██║██║ ╚████║   ██║   ██║  ██║     ███████║   ██║   ███████╗██║  ██║███████╗███████╗██║  ██║   
+╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝     ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝   
+t.me/SantaStealer     t.me/SantaStealer     t.me/SantaStealer     t.me/SantaStealer     t.me/SantaStealer  
+[... 3 blank lines ...]
+Found 36 Sensitive files. Many of these will be false positives
+
+File Name                          | Size (bytes) | Full Path
+---------------------------------- | ------------ | --------------------------------------------------
+MOCK BRAND AND STYLE GUIDELINES_20 | 189974       | C:\Users\<user>\\Desktop\AmeriPrise\Assessment\MOCK BRAND AND STYLE GUIDELINES_2024.pdf
+ABC.pdf                            | 134676       | C:\Users\<user>\\Pictures\Mummy\Documents\ABC.pdf
+CEIR Request Details.pdf           | 377933       | C:\Users\<user>\\Pictures\Mummy\Documents\CEIR Request Details.pdf
+COOCKIE_labreport.pdf              | 184259       | C:\Users\<user>\\Pictures\Mummy\Documents\COOCKIE_labreport.pdf
+10th marksheet.pdf                 | 118354       | C:\Users\<user>\\Downloads\10th marksheet.pdf
+Adobe Scan 25 Jan 2025 (1).pdf     | 555532       | C:\Users\<user>\\Documents\Adobe Scan 25 Jan 2025 (1).pdf
+12th marksheeet.pdf                | 360267       | C:\Users\<user>\\Downloads\12th marksheeet.pdf
+2025710409_VIVEK KUMAR_MCA.pdf     | 154253       | C:\Users\<user>\\Downloads\2025710409_VIVEK KUMAR_MCA.pdf
+Adobe Scan 25 Jan 2025_compressed  | 326609       | C:\Users\<user>\\Downloads\Adobe Scan 25 Jan 2025_compressed (1).pdf
+Adobe Scan 25 Jan 2025.pdf         | 1395874      | C:\Users\<user>\\Documents\Adobe Scan 25 Jan 2025.pdf
+Amizone.pdf                        | 189669       | C:\Users\<user>\\Documents\Amizone.pdf
+anti-ragging affidavit .pdf        | 880653       | C:\Users\<user>\\Documents\anti-ragging affidavit .pdf
+HRBC_2024_240174 (1).pdf           | 181078       | C:\Users\<user>\\Documents\docs\HRBC_2024_240174 (1).pdf
+mark cards.pdf                     | 278476       | C:\Users\<user>\\Documents\docs\mark cards.pdf
+Megha (2) resumeee.pdf             | 44325        | C:\Users\<user>\\Documents\docs\Megha (2) resumeee.pdf
+NIMCET-Syllabus-2025.pdf           | 117896       | C:\Users\<user>\\Documents\docs\NIMCET-Syllabus-2025.pdf
+pass.pdf                           | 176200       | C:\Users\<user>\\Documents\docs\pass.pdf
+Downloadapplication (1).pdf        | 231442       | C:\Users\<user>\\Downloads\Downloadapplication (1).pdf
+Downloadapplication.pdf            | 231442       | C:\Users\<user>\\Downloads\Downloadapplication.pdf
+Downloadreceipt.pdf                | 230008       | C:\Users\<user>\\Downloads\Downloadreceipt.pdf
+HigherEdu_FormPreview_1AA7C883-3DD | 231599       | C:\Users\<user>\\Downloads\HigherEdu_FormPreview_1AA7C883-3DD7-4D95-83DD-7905AB8FD5DE.pdf
+HigherEdu_FormPreview_DAFDD094-8DD | 231362       | C:\Users\<user>\\Downloads\HigherEdu_FormPreview_DAFDD094-8DD3-4D09-AEC1-200612EC6DD6.pdf
+NIMCET 2025 vivek.pdf              | 349464       | C:\Users\<user>\\Downloads\NIMCET 2025 vivek.pdf
+NIT202508468.pdf                   | 86065        | C:\Users\<user>\\Downloads\NIT202508468.pdf
+FEE COPY.pdf                       | 61998        | C:\Users\<user>\\Documents\FEE COPY.pdf
+NoticeFiles_b9f7678f-02a5-4480-851 | 208830       | C:\Users\<user>\\Downloads\NoticeFiles_b9f7678f-02a5-4480-851d-77a2d4b3a597.pdf
+obc vivek.pdf                      | 135389       | C:\Users\<user>\\Downloads\obc vivek.pdf
+First year.pdf                     | 216591       | C:\Users\<user>\\Documents\First year.pdf
+registration form.pdf              | 316163       | C:\Users\<user>\\Downloads\registration form.pdf
+second year.pdf                    | 88116        | C:\Users\<user>\\Downloads\second year.pdf
+HigherEdu_AdmOfferLetter_127591350 | 380094       | C:\Users\<user>\\Documents\HigherEdu_AdmOfferLetter_12759135041018.pdf
+studentdocument_F3E9B651-8279-4F79 | 891847       | C:\Users\<user>\\Downloads\studentdocument_F3E9B651-8279-4F79-AA0C-937701161AD8_490952 (1).PDF
+Marksheets all sem.pdf             | 507904       | C:\Users\<user>\\Documents\Marksheets all sem.pdf
+Student Marks Card (1).pdf         | 128634       | C:\Users\<user>\\Documents\Student Marks Card (1).pdf
+Student Marks Card (5).pdf         | 128565       | C:\Users\<user>\\Documents\Student Marks Card (5).pdf
+Student Marks Card.pdf             | 128485       | C:\Users\<user>\\Documents\Student Marks Card.pdf

@@ -1,0 +1,37 @@
+{
+  "family": "CryptBot",
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU",
+        "Display Resolution",
+        "GPU",
+        "Installed software",
+        "Keyboard Languages",
+        "OS",
+        "RAM"
+      ],
+      "filenames": [
+        "_Information.txt"
+      ],
+      "fingerprint_id": "cystack_711e1005",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": "@OttoSup",
+      "field_keys": [],
+      "filenames": [
+        "_Information.txt"
+      ],
+      "fingerprint_id": "ottoman",
+      "panel_brand": "Ottoman",
+      "synthetic": false
+    }
+  ]
+}

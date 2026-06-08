@@ -30,7 +30,7 @@ publish a matching caption format in their write-ups.
 
 **Also known as:** `!! 2025 OCT aggregator NodeJS-os panel summary`
 
-**Variants observed:** 4
+**Variants observed:** 6
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -43,6 +43,27 @@ publish a matching caption format in their write-ups.
 - Stealer install path under `C:\WINDOWS\System32`
 
 ## Variants
+
+### `cystack_012b9023`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Arch`, `Count Core`, `Hostname`, `IP Address`, `User Info`, `Version`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+⚙ System Information:
+Hostname: <redacted>
+User Info: Nhật Vy
+IP Address: <redacted>
+Version: Windows 10 Home Single Language
+Arch: x64
+Count Core: 8
+```
 
 ### `cystack_58103687`
 
@@ -71,6 +92,28 @@ Type: Windows_NT
 Arch: x64
 Release: 10.0.26100
 Count Core: 16
+File Location: <redacted>
+```
+
+### `cystack_6e563a49`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Arch`, `Count Core`, `File Location`, `Hostname`, `IP Address`, `User Info`, `Version`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+⚙ System Information:
+Hostname: <redacted>
+User Info: Rei
+IP Address: <redacted>
+Version: Windows 10 Pro
+Arch: x64
+Count Core: 4
 File Location: <redacted>
 ```
 

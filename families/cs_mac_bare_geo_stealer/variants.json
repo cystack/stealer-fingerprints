@@ -1,0 +1,23 @@
+{
+  "family": "CSMacBareGeoStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Country",
+        "Graphics/Displays",
+        "Hardware",
+        "IP",
+        "Software"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_9e4fa79f",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}
