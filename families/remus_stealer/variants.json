@@ -1,0 +1,17 @@
+{
+  "family": "Remus Stealer",
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": "@UP_DAISYCLOUD",
+      "field_keys": [],
+      "filenames": [
+        "Info.txt"
+      ],
+      "fingerprint_id": "daisy_cloud",
+      "panel_brand": "Daisy Cloud",
+      "synthetic": false
+    }
+  ]
+}

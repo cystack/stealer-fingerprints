@@ -1,0 +1,24 @@
+{
+  "family": "DiskInfo Stealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Computer",
+        "Disk Capacity",
+        "Disk Free",
+        "Memory",
+        "OS",
+        "User"
+      ],
+      "filenames": [
+        "System_Info.txt"
+      ],
+      "fingerprint_id": "cystack_d665d19f",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

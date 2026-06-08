@@ -1,0 +1,12 @@
+❄ Antarctida Stealer ❄
+
+• OS: Windows 11
+• CPU: 12th Gen Intel(R) Core(TM) i7-12700
+• RAM: 16 GB
+• GPU: Intel(R) UHD Graphics 770
+• Disk: 476 GB
+• IP: <ip>
+• Username: CBE
+• Computer Name: DESKTOP-LPCSG1S
+• System Directory: C:\WINDOWS\system32
+

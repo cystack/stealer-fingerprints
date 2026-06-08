@@ -9,7 +9,7 @@ the underlying field layout intact.
 
 **Also known as:** `redline`, `redline-extended`
 
-**Variants observed:** 47
+**Variants observed:** 53
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -336,6 +336,45 @@ UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1920x1080
 Wallpaper Hash: 2a9dc3afc25ee3f465343d47108ab027bb519214
+```
+
+### `cystack_32be75b7`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`APPLE`, `Admin Group`, `BUILD NAME`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `Product Key`, `Router MAC Address`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+BUILD NAME: SoniYang
+HWID: <redacted>
+Country: PL
+IP: <redacted>
+TimeZone: +1
+System Language: Polish
+Processor: 12th Gen Intel(R) Core(TM) i3-12100F
+Installed RAM: 16220 MB
+Operation System: Windows 10-10.0.19045
+Graphics card: NVIDIA GeForce GTX 1660 SUPER
+Computer Name: <redacted>
+Router MAC Address: <ip>
+Domain Name: <redacted>
+Product Key: H2FN2-F294C-GWT3W-JPDF7-HXMWW
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+UserLanguage: Polish
+Keyboard Language: Polish
+Display Resolution: 1920x1080
+Wallpaper Hash: e1499c7fc36609a51ef4d5097dc8acd40458968a
+
+=== GEOLOCATION ===
+APPLE: 54.324276, 22.938889
 ```
 
 ### `cystack_36946d93`
@@ -679,6 +718,57 @@ Display Resolution: 1920x1080
 Wallpaper Hash: a8b77af6840c868ba701807d079bf95db7f03e63
 ```
 
+### `cystack_59125a87`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `Traffic`, `User Name`, `UserLanguage`, `Version Build`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+⣿⣿⣿⣿⡟⠛⠁⠄⠄⠄⠄⢀⣀⣀⠄⠄⠄⠄⣤⣽⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⡋⠁⠄⠄⠄⣠⣶⣾⣿⣿⣿⣿⠄⢦⡄⠐⠬⠛⢿⣿⣿⣿⣿⣿⣿
+⣿⡿⠇⠁⠄⠄⣠⣾⣿⣿⡿⠟⠋⠁⠄⠄⠈⠁⠄⠄⠄⠄⠙⢿⣿⣿⣿⣿
+⣿⠃⠄⠄⠄⠘⣿⣿⣿⣿⢀⣠⠄⠄⠄⠄⣰⣶⣀⠄⠄⠄⠄⠸⣿⣿⣿⣿
+⣏⠄⠄⠄⠄⠄⣿⣿⣿⡿⢟⣁⠄⣀⣠⣴⣿⣿⠿⠷⠶⠒⠄⠄⢹⣿⣿⣿
+⡏⠄⠄⠄⠄⢰⣿⣿⣿⣿⣿⣿⣿⣿⡟⠄⠛⠁⠄⠄⠄⠄⠄⠄⢠⣿⣿⣿
+⡇⠄⠄⠄⠄⠈⢿⣿⣿⣿⣿⣿⣿⣿⡇⠄⣼⣿⠇⠘⠄⠁⠄⠄⠄⢻⣿⣿ - Fucked by Boss Of This Gym
+⣇⠄⠄⠄⠄⠄⠸⢿⣿⣿⣿⣿⣿⣿⠁⠸⠟⠁⣠⣤⣤⣶⣤⠄⠄⠄⢻⣿
+⣿⡄⠄⡤⢤⣤⡀⠈⣿⣿⣿⣿⣿⣿⡆⠄⠄⠘⠋⠁⠄⠄⠈⠄⠄⠄⢸⣿ - You known number 8639479?
+⣿⣿⡜⢰⡾⢻⣧⣰⣿⣿⣿⣿⣿⣿⣷⠄⣼⣷⣶⣶⡆⠄⠄⠄⠄⠄⠄⣿
+⣿⣿⣧⢸⠄⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⠄⠄⠄⠄⠄⠄⠄⣿
+⣿⣿⣿⣿⡿⢿⡟⠉⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠄⠄⢀⡀⠄⠘⣿
+⣿⣿⣿⣿⣿⣆⢻⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠄⠄⠈⠁⠄⠄⣿
+⣿⣿⣿⣿⣿⣿⡆⢻⣿⣿⣿⣿⣿⣿⡿⠛⠛⠛⠃⠄⠄⠄⠄⠄⠄⠄⢀⣿
+⣿⣿⣿⣿⣿⣿⣿⣆⣻⣿⣿⣿⣿⣿⣷⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿
+
+Log date: 27 Dec 25 20:29
+Traffic: GithubGolderWork
+Version Build: Magnum Opus
+HWID: <redacted>
+Country: Türkiye
+IP: <redacted>
+System Language: Turkish
+Processor: AMD Ryzen 5 9600 6-Core Processor (6 cores, 12 threads)
+Installed RAM: 15.10 GB
+Operation System: Windows 10 22H2 Pro (Build 19045) (64 Bit)
+Graphics card: AMD Radeon(TM) Graphics + NVIDIA GeForce RTX 4060
+Computer Name: <redacted>
+Domain Name: <redacted>
+-------------
+User Name: <redacted>
+Admin Group: TRUE
+Integrity: High
+TimeZone: UTC+3
+UserLanguage: Turkish
+Keyboard Language: Turkish
+Display Resolution: 2560x1440
+```
+
 ### `cystack_5f7be6d7`
 
 **Attribution confidence:** `unknown`
@@ -931,6 +1021,50 @@ Display Resolution: 1366x768
 @OttoSup - Buy daily fresh logs:
 ```
 
+### `cystack_730f988c`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+Log date: 01 Dec 25 12:39 MSK
+HWID: <redacted>
+Country: BE
+IP: <redacted>
+System Language: French
+Processor: Intel(R) Core(TM) i3-10100 CPU @ 3.60GHz
+Installed RAM: 8035 MB
+Operation System: Windows 10 Home build 19045 (64 Bit)
+Graphics card: Unknown
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+1
+UserLanguage: French
+Keyboard Language: French
+Display Resolution: 1366x768
+@Ottohelp - Buy daily fresh logs: d08c477d7682cd97be0a55cf613fdf56c9c08923
+```
+
 ### `cystack_83c06639`
 
 **Attribution confidence:** `unknown`
@@ -962,6 +1096,42 @@ UserLanguage: Spanish
 Keyboard Language: Spanish
 Display Resolution: 1920x1080
 Wallpaper Hash: d08c477d7682cd97be0a55cf613fdf56c9c08923
+```
+
+### `cystack_93fee37c`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `BUILD NAME`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `Product Key`, `Router MAC Address`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+BUILD NAME: SoniYang
+HWID: <redacted>
+Country: AM
+IP: <redacted>
+TimeZone: +4
+System Language: English
+Processor: Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz
+Installed RAM: 8175 MB
+Operation System: Windows 10-10.0.19045
+Graphics card: Radeon(TM) RX 460 Graphics
+Computer Name: <redacted>
+Router MAC Address: <ip>
+Domain Name: <redacted>
+Product Key: 96YNV-9X4RP-2YYKB-RMQH4-6Q72D
+-------------
+User Name: <redacted>
+Admin Group: TRUE
+Integrity: High
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+Wallpaper Hash: Unknown
 ```
 
 ### `cystack_9e96ff0e`
@@ -1058,6 +1228,45 @@ UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1920x1080
 Wallpaper Hash: d08c477d7682cd97be0a55cf613fdf56c9c08923
+```
+
+### `cystack_ac3930f8`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `BUILD NAME`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `GOOGLE`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `Product Key`, `Router MAC Address`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+BUILD NAME: SoniYang
+HWID: <redacted>
+Country: DE
+IP: <redacted>
+TimeZone: +3
+System Language: Russian
+Processor: Intel(R) Core(TM) i7-9700F CPU @ 3.00GHz
+Installed RAM: 49070 MB
+Operation System: Windows 11-10.0.26100
+Graphics card: NVIDIA GeForce RTX 2070 SUPER
+Computer Name: <redacted>
+Router MAC Address: <ip>
+Domain Name: <redacted>
+Product Key: BT79Q-G7N6G-PGBYW-4YWX6-6F4BT
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+UserLanguage: Russian
+Keyboard Language: Russian
+Display Resolution: 1920x1080
+Wallpaper Hash: 7a5b520171c2c84594ec79ba42a9b35e7b4b55e1
+
+=== GEOLOCATION ===
+GOOGLE: 60.001051, 30.430933
 ```
 
 ### `cystack_ac5ebc70`
@@ -1633,6 +1842,46 @@ UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1920x1080
 @OttoSup - Buy daily fresh logs: bd0557876e6e79441042633c4987486390b7bbcc
+```
+
+### `cystack_f3954c4a`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`APPLE`, `Admin Group`, `BUILD NAME`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `GOOGLE`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `Product Key`, `Router MAC Address`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+BUILD NAME: bigdick
+HWID: <redacted>
+Country: HU
+IP: <redacted>
+TimeZone: +1
+System Language: Hungarian
+Processor: 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz
+Installed RAM: 16248 MB
+Operation System: Windows 11-10.0.22631
+Graphics card: NVIDIA GeForce GTX 1650
+Computer Name: <redacted>
+Router MAC Address: <ip>
+Domain Name: <redacted>
+Product Key: GNKHT-YC997-R8DK2-Q9X27-KHJVG
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+UserLanguage: Hungarian
+Keyboard Language: Hungarian
+Display Resolution: 1920x1080
+Wallpaper Hash: 8686086517fc6b01b38f06f528853cdbf7ab5694
+
+=== GEOLOCATION ===
+APPLE: 47.488346, 18.925955
+GOOGLE: 47.488052, 18.925849
 ```
 
 ### `cystack_fa688f82`

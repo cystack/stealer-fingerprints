@@ -1,0 +1,60 @@
+=== System Info ===
+SHub Stealer
+Build Tag: Crypto_Byte
+External IP: <redacted>
+
+System Info
+Username: <redacted>
+Password: 189293
+
+Software:
+
+    System Software Overview:
+
+      System Version: macOS 26.2 (25C56)
+      Kernel Version: Darwin 25.2.0
+      Boot Volume: Macintosh HD
+      Boot Mode: Normal
+      Computer Name: <redacted>
+      User Name: <redacted>
+      Secure Virtual Memory: Enabled
+      System Integrity Protection: Enabled
+      Time since boot: 11 days, 3 hours, 22 minutes
+
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: MacBook Air
+      Model Identifier: Mac16,13
+      Model Number: MW1M3LL/A
+      Chip: Apple M4
+      Total Number of Cores: 10 (4 performance and 6 efficiency)
+      Memory: 16 GB
+      System Firmware Version: 13822.61.10
+      OS Loader Version: 13822.61.10
+      Serial Number (system): M194352K7Y
+      Hardware UUID: D409CD9A-9748-5DEF-9460-9504C1201CB6
+      Provisioning UDID: 00008132-001C44A00AFB801C
+      Activation Lock Status: Enabled
+
+Graphics/Displays:
+
+    Apple M4:
+
+      Chipset Model: Apple M4
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 10
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 4
+      Displays:
+        Color LCD:
+          Display Type: Built-in Liquid Retina Display
+          Resolution: 2880 x 1864 Retina
+          Main Display: Yes
+          Mirror: Off
+          Online: Yes
+          Automatically Adjust Brightness: No
+          Connection Type: Internal
+

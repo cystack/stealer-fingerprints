@@ -1,0 +1,25 @@
+{
+  "family": "SHub Stealer",
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Build Tag",
+        "External IP",
+        "Graphics/Displays",
+        "Hardware",
+        "Password",
+        "Software",
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_aa3df1c7",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

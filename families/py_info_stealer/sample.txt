@@ -1,0 +1,58 @@
+Hostname: <redacted>
+User: hacker
+OS: Windows-7-6.1.7601-SP1
+Architecture: 32bit
+Processor: Intel64 Family 6 Model 190 Stepping 0, GenuineIntel
+IP: <redacted>
+Country: United States
+Region: California
+City: <redacted>
+ISP: Cloud Software - FZCO
+Org: EGIHosting
+
+--- Top Processes ---
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0         24 K
+System                           4 Services                   0      2,112 K
+smss.exe                       264 Services                   0      1,088 K
+csrss.exe                      344 Services                   0      3,880 K
+wininit.exe                    396 Services                   0      4,336 K
+csrss.exe                      408 Console                    1      6,460 K
+winlogon.exe                   460 Console                    1      6,728 K
+services.exe                   492 Services                   0      8,980 K
+lsass.exe                      516 Services                   0     10,292 K
+lsm.exe                        524 Services                   0      4,048 K
+svchost.exe                    628 Services                   0      8,856 K
+VBoxService.exe                692 Services                   0      5,136 K
+svchost.exe                    764 Services                   0      7,576 K
+svchost.exe                    852 Services                   0     19,708 K
+svchost.exe                    900 Services                   0     69,520 K
+svchost.exe                    932 Services                   0     30,980 K
+svchost.exe                    364 Services                   0     15,264 K
+svchost.exe                   1064 Services                   0     13,684 K
+spoolsv.exe                   1192 Services                   0     10,896 K
+svchost.exe                   1228 Services                   0     14,020 K
+taskhost.exe                  1340 Console                    1      8,568 K
+svchost.exe                   1468 Services                   0     13,220 K
+dwm.exe                       1480 Console                    1      5,896 K
+explorer.exe                  1500 Console                    1     68,280 K
+VBoxTray.exe                  1864 Console                    1      7,580 K
+SearchIndexer.exe             1844 Services                   0     21,212 K
+wmpnetwk.exe                  2056 Services                   0      7,280 K
+svchost.exe                   2400 Services                   0      7,184 K
+
+--- Installed Programs (top 50) ---
+Python 3.11.9 (32-bit)
+Python 3.11.9 Add to Path (32-bit)
+Python 3.11.9 C Runtime Library (32-bit)
+Python 3.11.9 Core Interpreter (32-bit)
+Python 3.11.9 Development Libraries (32-bit)
+Python 3.11.9 Documentation (32-bit)
+Python 3.11.9 Executables (32-bit)
+Python 3.11.9 Standard Library (32-bit)
+Python 3.11.9 Tcl/Tk Support (32-bit)
+Python 3.11.9 Test Suite (32-bit)
+Python 3.11.9 Utility Scripts (32-bit)
+Python 3.11.9 pip Bootstrap (32-bit)
+Python Launcher

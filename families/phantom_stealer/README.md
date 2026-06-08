@@ -32,7 +32,7 @@ parsers in this project:
 
 **Also known as:** `Phantom Stealer`, `Phantom stealer v2.0`
 
-**Variants observed:** 2
+**Variants observed:** 3
 **Top attribution confidence:** `high`
 **Operator panel brands:** `Phantom stealer v2.0`, `Sys_root v-200`
 **Distribution channels:** `@Phantomsoftwares_bot`
@@ -49,6 +49,30 @@ parsers in this project:
 - Network info (gateway, internal, external IP)
 
 ## Variants
+
+### `cystack_99a5bf98`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Admin rights`, `CPU`, `GPU`, `Ip`, `Location`, `PC-name`, `Ram`, `System`, `Username`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Username: <redacted>
+PC-name: vortexxx
+Ip: <redacted>
+Location: Romania
+System: Windows 10 Pro
+Admin rights: False
+CPU: AMD Ryzen 7 7735HS with Radeon Graphics
+GPU: AMD Radeon(TM) Graphics
+NVIDIA GeForce RTX 4060 Laptop GPU
+Ram: 16 GB
+```
 
 ### `Phantom stealer v2.0`
 

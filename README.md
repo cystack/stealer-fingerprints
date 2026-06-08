@@ -12,6 +12,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Acreed`](families/acreed/) | 1 | 0 | `high` |
 | [`Aetheris Stealer`](families/aetheris_stealer/) | 11 | 0 | `high` |
 | [`Ailurophile`](families/ailurophile/) | 1 | 1 | `high` |
+| [`Antarctida Stealer`](families/antarctida_stealer/) | 1 | 0 | `high` |
 | [`Arcane`](families/arcane/) | 47 | 1 | `high` |
 | [`AuraStealer`](families/aura_stealer/) | 2 | 0 | `high` |
 | [`Blank Grabber`](families/blank_grabber/) | 17 | 0 | `high` |
@@ -65,23 +66,27 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CryptBot`](families/crypt_bot/) | 2 | 1 | `high` |
 | [`Cthulhu Stealer`](families/cthulhu_stealer/) | 26 | 0 | `high` |
 | [`DCRat`](families/dc_rat/) | 3 | 0 | `high` |
+| [`DiskInfo Stealer`](families/disk_info_stealer/) | 1 | 0 | `unknown` |
 | [`Lumma`](families/lumma/) | 59 | 3 | `high` |
-| [`MacSync`](families/mac_sync/) | 3 | 1 | `high` |
+| [`MacSync`](families/mac_sync/) | 4 | 1 | `high` |
 | [`MeltStealer`](families/melt_stealer/) | 1 | 0 | `high` |
 | [`Millenium RAT`](families/millenium_rat/) | 1 | 0 | `-` |
 | [`NotMalware`](families/not_malware/) | 5 | 5 | `benign` |
 | [`PXA Stealer`](families/pxa_stealer/) | 7 | 0 | `high` |
-| [`Phantom Stealer`](families/phantom_stealer/) | 2 | 1 | `high` |
+| [`Phantom Stealer`](families/phantom_stealer/) | 3 | 1 | `high` |
 | [`PureLogs`](families/pure_logs/) | 1 | 0 | `high` |
+| [`PyInfo Stealer`](families/py_info_stealer/) | 1 | 0 | `unknown` |
 | [`RL Stealer`](families/rl_stealer/) | 2 | 1 | `medium` |
 | [`RMS`](families/rms/) | 1 | 1 | `high` |
 | [`Raccoon`](families/raccoon/) | 2 | 0 | `high` |
 | [`Redline`](families/redline/) | 22 | 0 | `high` |
-| [`RedlineLike Stealer`](families/redline_like_stealer/) | 47 | 0 | `unknown` |
+| [`RedlineLike Stealer`](families/redline_like_stealer/) | 53 | 0 | `unknown` |
+| [`Remus Stealer`](families/remus_stealer/) | 1 | 1 | `high` |
+| [`SHub Stealer`](families/s_hub_stealer/) | 1 | 0 | `high` |
 | [`SantaStealer`](families/santa_stealer/) | 1 | 1 | `high` |
 | [`StealC`](families/steal_c/) | 37 | 0 | `high` |
 | [`Stealerium`](families/stealerium/) | 1 | 1 | `high` |
-| [`Vidar`](families/vidar/) | 6700 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 7098 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 5 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 12 | 0 | `high` |
 

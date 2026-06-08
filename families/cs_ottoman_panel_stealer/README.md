@@ -52,7 +52,7 @@ brand `Ottoman` and the operator support handle
 **Field keys:**
 `CPU`, `City`, `Computer name`, `Country`, `GPU`, `HWID`, `IP`, `Installed antivirus`, `Internet provider`, `RAM`, `Region`, `Started as admin`, `System`, `System time`, `User name`
 
-**Filenames:** `Information.txt`, `PC_info.txt`
+**Filenames:** `Information.txt`, `PC_info.txt`, `System.txt`
 
 **Sample (sanitized):**
 

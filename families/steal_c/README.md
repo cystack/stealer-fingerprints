@@ -965,7 +965,7 @@ Process List:
 **Field keys:**
 `Network Info`, `Process List`, `Process count`, `System Summary`
 
-**Filenames:** `system_info.txt`
+**Filenames:** `System.txt`, `system_info.txt`
 
 **Sample (sanitized):**
 

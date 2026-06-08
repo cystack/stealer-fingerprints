@@ -281,6 +281,41 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "APPLE",
+        "Admin Group",
+        "BUILD NAME",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "HWID",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Operation System",
+        "Processor",
+        "Product Key",
+        "Router MAC Address",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_32be75b7",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "Admin Group",
         "Computer Name",
         "Country",
@@ -599,6 +634,39 @@
         "Display Resolution",
         "Domain Name",
         "Graphics card",
+        "HWID",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Log date",
+        "Operation System",
+        "Processor",
+        "System Language",
+        "TimeZone",
+        "Traffic",
+        "User Name",
+        "UserLanguage",
+        "Version Build"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_59125a87",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
         "IP",
         "Installed RAM",
         "Integrity",
@@ -821,6 +889,38 @@
       "distribution_channel": null,
       "field_keys": [
         "Admin Group",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "HWID",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Log date",
+        "MachineID",
+        "Operation System",
+        "Processor",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_730f988c",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
         "Country",
         "Display Resolution",
         "Domain Name",
@@ -844,6 +944,40 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_83c06639",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "BUILD NAME",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "HWID",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Operation System",
+        "Processor",
+        "Product Key",
+        "Router MAC Address",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_93fee37c",
       "panel_brand": null,
       "synthetic": true
     },
@@ -936,6 +1070,41 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_a5858752",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
+        "BUILD NAME",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "GOOGLE",
+        "Graphics card",
+        "HWID",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Operation System",
+        "Processor",
+        "Product Key",
+        "Router MAC Address",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_ac3930f8",
       "panel_brand": null,
       "synthetic": true
     },
@@ -1437,6 +1606,42 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_ef4e0d1b",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "APPLE",
+        "Admin Group",
+        "BUILD NAME",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "GOOGLE",
+        "Graphics card",
+        "HWID",
+        "IP",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Operation System",
+        "Processor",
+        "Product Key",
+        "Router MAC Address",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_f3954c4a",
       "panel_brand": null,
       "synthetic": true
     },

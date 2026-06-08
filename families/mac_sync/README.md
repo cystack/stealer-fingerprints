@@ -9,7 +9,7 @@ banner, captured account credentials, and the verbatim output of
 
 **Also known as:** `Mac.c`, `MacSync Stealer`
 
-**Variants observed:** 3
+**Variants observed:** 4
 **Top attribution confidence:** `high`
 **Operator panel brands:** `mac.c`
 **Distribution channels:** `@mentalpositive`
@@ -77,6 +77,61 @@ Hardware:
 Graphics/Displays:
 
 [... truncated; full sample at ``sample.txt`` (approx. 20 more lines) ...]
+```
+
+### `cystack_612c23b8`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Build Tag`, `Graphics/Displays`, `Hardware`, `IP`, `Password`, `Software`, `Username`, `Version`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+MacSync Stealer
+
+Build Tag: tgsoc
+Version: 1.1.2_release (x64_86 & ARM)
+IP: <redacted>
+
+Username: <redacted>
+Password: pop1
+
+Software:
+
+    System Software Overview:
+
+      System Version: macOS 15.3.1 (24D70)
+      Kernel Version: Darwin 24.3.0
+      Boot Volume: Macintosh HD
+      Boot Mode: Normal
+      Computer Name: <redacted>
+      User Name: <redacted>
+      Secure Virtual Memory: Enabled
+      System Integrity Protection: Enabled
+      Time since boot: 5 hours, 4 minutes
+
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: MacBook Air
+      Model Identifier: MacBookAir10,1
+      Model Number: MGNE3T/A
+      Chip: Apple M1
+      Total Number of Cores: 8 (4 performance and 4 efficiency)
+      Memory: 8 GB
+      System Firmware Version: 11881.81.4
+      OS Loader Version: 11881.81.4
+      Serial Number (system): C02DX0XUQ6LD
+      Hardware UUID: 0A4C607E-1D11-5DD3-9241-2A2A73606313
+      Provisioning UDID: 00008103-001E443C36D2001E
+      Activation Lock Status: Enabled
+
+[... truncated; full sample at ``sample.txt`` (approx. 19 more lines) ...]
 ```
 
 ### `cystack_c6bf9b88`

@@ -1,0 +1,29 @@
+{
+  "family": "PyInfo Stealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Architecture",
+        "City",
+        "Country",
+        "Hostname",
+        "IP",
+        "ISP",
+        "OS",
+        "Org",
+        "Processor",
+        "Region",
+        "User"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_824c4bdd",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

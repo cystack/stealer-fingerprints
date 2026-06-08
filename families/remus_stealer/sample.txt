@@ -1,0 +1,77 @@
+|______________________________________________________________________________________________________________________|
+| These logs belong to Daisy Cloud, if you see these logs elsewhere, you are being scammed and let us know immediately |
+|                                                                                                                      |
+| D           Join: <url>                      _..._             .-'''-.                        D |
+| A  _______  Join: <url>                   .-'_..._''. .---.   '   _    \       _______        A |
+| I  \  ___ `'.            .--.                                .' .'      '.\|   | /   /` '.   \      \  ___ `'.     I |
+| S   ' |--.\  \           |__|     .-.          .-           / .'           |   |.   |     \  '       ' |--.\  \    S |
+| Y   | |    \  '          .--.      \ \        / /          . '             |   ||   '      |  '      | |    \  '   Y |
+|     | |     |  '    __   |  |       \ \      / /           | |             |   |\    \     / /       | |     |  '    |
+| C   | |     |  | .:--.'. |  |     _  \ \    / /            | |             |   | `.   ` ..' /_    _  | |     |  |  C |
+| L   | |     ' .'/ |   \ ||  |   .' |  \ \  / /             . '             |   |    '-...-'`| '  / | | |     ' .'  L |
+| O   | |___.' /' `" __ | ||  |  .   | / \ `  /               \ '.          .|   |           .' | .' | | |___.' /'   O |
+| U  /_______.'/   .'.''| ||__|.'.'| |//  \  /                 '. `._____.-'/|   |           /  | /  |/_______.'/    U |
+| D  \_______|/   / /   | |_ .'.'.-'  /   / /                    `-.______ / '---'          |   `'.  |\_______|/     D |
+|                 \ \._,\ '/ .'   \_.'|`-' /                              `                 '   .'|  '/                |
+|                  `--'  `"            '..'                                                  `-'  `--'                 |
+|                                                  Daisy Private Cloud                                                 |
+|                                                      1 Week: $80                                                     |
+|                                                      2 Week: $120                                                    |
+| D                                                   1 Month: $200                                                  D |
+| A                                                   3 Month: $600                                                  A |
+| I                                                  LifeTime: $5000                                                 I |
+| S                                                                                                                  S |
+| Y                                 There are updates in the morning, noon and evening                               Y |
+|                                              Monthly 140k-700k PCS Logs                                              |
+| C                                             Weekly 35k-175k PCS Logs                                             C |
+| L                                              Daily 5k-25k PCS Logs                                               L |
+| O                                                                                                                  O |
+| U                           I don't upload logs like crap and garbage like other channels                          U |
+| D                                       100+ User reviews, Posts with #REF tags                                    D |
+|                                                                                                                      |
+|     DAISY CLOUD     DAISY CLOUD     DAISY CLOUD     DAISY  CLOUD     DAISY CLOUD     DAISY CLOUD     DAISY CLOUD     |
+|______________________________________________________________________________________________________________________|
+ 
+# BUY STEALER - <url>
+# REMUS LOG
+
+build:
+  date: 31.03.2026
+  tag: adan
+  path: <redacted>
+  elevated: true
+  ip-address: <ip>
+  country: PH
+  time: 04.04.2026, <ip>
+os:
+  version: Windows 10 Pro (10.0.19045) x64
+  time-zone: UTC+8
+  local-date: 04.04.2026 <ip>
+  install-date: 27.06.2025 <ip>
+  language: en-US
+  computer-name: GRUBI-PC
+  user-name: user
+  netbios: GRUBI-PC
+  domain: 
+  <redacted>
+  anti-virus:
+  - name: Windows Defender
+    state: active
+hardware:
+  motherboard:
+    manufacturer: Ramsta-
+    product:  
+  ram:
+  - product: M378B5173QH0-CK0  
+    size: 4096MB
+  - product: DSRU083DSA0ERRBH  
+    size: 8192MB
+  cpu:
+  - manufacturer: Intel(R) Corporation
+    product: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+    core count: 4
+    core enabled: 4
+    thread count: 4
+  gpu:
+  - Intel(R) HD Graphics
+  display: 1440x900

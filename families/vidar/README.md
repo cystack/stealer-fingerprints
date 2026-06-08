@@ -8,7 +8,7 @@ high-volume infostealer family in 2025+.
 
 **Also known as:** `VidarStealer`
 
-**Variants observed:** 6700
+**Variants observed:** 7098
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -294,6 +294,61 @@ Threads: 8
 RAM: 16190 MB
 VideoCard: Intel(R) UHD Graphics
 [... truncated; full sample at ``sample.txt`` (approx. 381 more lines) ...]
+```
+
+### `cystack_00489044`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: TR
+Version: 18.7
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 07/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: Turkish
+Local Time: 09/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i9-9900KF CPU @ 3.60GHz
+Cores: 16
+Threads: 16
+RAM: 98241 MB
+VideoCard: NVIDIA GeForce GTX 1080
+[... truncated; full sample at ``sample.txt`` (approx. 347 more lines) ...]
 ```
 
 ### `cystack_004b172e`
@@ -5246,6 +5301,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 323 more lines) ...]
 ```
 
+### `cystack_03288744`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `ONLY UP`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: DE
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 30/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 01/06/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1707x960
+Keyboard Languages: German
+Local Time: 30/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+Cores: 12
+Threads: 12
+RAM: 16151 MB
+VideoCard: Intel(R) UHD Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 276 more lines) ...]
+```
+
 ### `cystack_033509b9`
 
 **Attribution confidence:** `high`
@@ -5299,6 +5409,102 @@ Processor: AMD Ryzen 5 4500 6-Core Processor
 Cores: 6
 Threads: 12
 [... truncated; full sample at ``sample.txt`` (approx. 265 more lines) ...]
+```
+
+### `cystack_033b7e2a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hitman`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: SV
+
+Date: 15/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 23/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Spanish Spanish
+Local Time: 15/04/2026 <ip>
+TimeZone: 4294967290
+
+[Hardware]
+Processor: 13th Gen Intel(R) Core(TM) i5-13420H
+[... truncated; full sample at ``sample.txt`` (approx. 229 more lines) ...]
+```
+
+### `cystack_03453f66`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Display Resolution`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+Ip: <redacted>
+Country: BD
+Work Dir: In memory
+Windows: Windows 10 Pro
+Install Date: 26/04/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1024x768
+Keyboard Languages: English
+Local Time: 26/4/2026 <ip>
+TimeZone: 6
+[Hardware]
+Processor: AMD Ryzen 5 PRO 4650G with Radeon Graphics
+Cores: 12
+Threads: 12
+RAM: 7569 MB
+VideoCard: 
+[Processes]
+System
+Registry
+Memory Compression
+SystemSettingsBroker.exe
+UserOOBEBroker.exe
+SystemSettings.exe
+[Software]
+Update for x64-based Windows Systems (KB5001716) - <ip>
 ```
 
 ### `cystack_034e981b`
@@ -6291,6 +6497,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 296 more lines) ...]
 ```
 
+### `cystack_03f49759`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `NARUTO SHIPPUDEN`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: BR
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 25/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1360x768
+Keyboard Languages: Portuguese
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Xeon(R) CPU E5-2640 v3 @ 2.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 307 more lines) ...]
+```
+
 ### `cystack_03f4cdcd`
 
 **Attribution confidence:** `high`
@@ -6344,6 +6605,116 @@ Processor: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
 Cores: 2
 Threads: 4
 [... truncated; full sample at ``sample.txt`` (approx. 371 more lines) ...]
+```
+
+### `cystack_0400a06a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `NVIDIA Pilote audio HD`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+Беру логи с балансом более 10000$
+В распоряжении 150шт - rtx5090
+Депозит 2 btc /topic/232013/
+
+Telegram: @brute
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.4
+
+IP: <redacted>
+Country: FR
+
+Date: 27/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 10/04/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: French French
+Local Time: 27/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-2430M CPU @ 2.40GHz
+[... truncated; full sample at ``sample.txt`` (approx. 230 more lines) ...]
+```
+
+### `cystack_0400eafc`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Display Resolution`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+Ip: <redacted>
+Country: AO
+Work Dir: In memory
+Windows: Windows 11 Home Single Language
+Install Date: 25/04/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese
+Local Time: 25/4/2026 <ip>
+TimeZone: 1
+[Hardware]
+Cores: 8
+Threads: 8
+RAM: 7876 MB
+VideoCard: 
+[Processes]
+System
+Secure System
+Registry
+Memory Compression
+NetworkCap.exe
+DisplayControlService.exe
+SystemOptimizer.exe
+HPSystemEventUtilityBackground.exe
+HPMediaNetwork.exe
+HPSystemEventUtilityHost.exe
+DisplayControl.exe
+[Software]
+CorelDRAW Graphics Suite 2025 - IPM (x64) - 26.1
+CorelDRAW Graphics Suite 2025 - IPM Content RU (x64) - 26.1
+CorelDRAW Graphics Suite 2025 - IPM Content BR (x64) - 26.1
+HP Display Control Service - <ip>
+CorelDRAW Graphics Suite 2025 - IPM Content SV (x64) - 26.1
+CorelDRAW Graphics Suite 2025 - IPM Content DE (x64) - 26.1
+CorelDRAW Graphics Suite 2025 - IPM Content NL (x64) - 26.1
+CorelDRAW Graphics Suite 2025 - IPM Content TR (x64) - 26.1
+CorelDRAW Graphics Suite 2025 - IPM Content CT (x64) - 26.1
+CorelDRAW Graphics Suite 2025 - IPM Content ES (x64) - 26.1
+[... truncated; full sample at ``sample.txt`` (approx. 7 more lines) ...]
 ```
 
 ### `cystack_0401ae6c`
@@ -6839,6 +7210,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 244 more lines) ...]
+```
+
+### `cystack_0453835f`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ACD/Labs 2024 Freeware in C`, `AV`, `Computer Name`, `Cores`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+|  _____  _   _ __   __  _____  _   _  _____  _____  ___   _      _      _____  |
+| | ___ \| | | |\ \ / / |_   _|| \ | |/  ___||_   _|/ _ \ | |    | |    /  ___| |
+| | |_/ /| | | | \ V /    | |  |  \| |\ `--.   | | / /_\ \| |    | |    \ `--.  |
+| | ___ \| | | |  \ /     | |  | . ` | `--. \  | | |  _  || |    | |     `--. \ |
+| | |_/ /| |_| |  | |    _| |_ | |\  |/\__/ /  | | | | | || |____| |____/\__/ / |
+| \____/  \___/   \_/    \___/ \_| \_/\____/   \_/ \_| |_/\_____/\_____/\____/  |
+
+- WHERE BUY THE BEST INSTALLS ??
+
+
+**************************************************
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Enterprise
+Install Date: 21/05/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English English English
+Local Time: 10/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz
+Cores: 4
+Threads: 4
+RAM: 3970 MB
+VideoCard: Intel(R) HD Graphics
+
+[Processes]
+System
+Registry
+[... truncated; full sample at ``sample.txt`` (approx. 226 more lines) ...]
 ```
 
 ### `cystack_045b0d73`
@@ -9259,6 +9685,61 @@ lsass.exe
 winlogon.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 287 more lines) ...]
+```
+
+### `cystack_05d72327`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hollow Survivors`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 11/02/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x900
+Keyboard Languages: Portuguese
+Local Time: 11/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz
+[... truncated; full sample at ``sample.txt`` (approx. 210 more lines) ...]
 ```
 
 ### `cystack_05e4b70a`
@@ -11901,6 +12382,116 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 355 more lines) ...]
 ```
 
+### `cystack_07693420`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Mall Simulator`, `Nova-Life`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: FR
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 06/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: French
+Local Time: 16/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12600
+[... truncated; full sample at ``sample.txt`` (approx. 313 more lines) ...]
+```
+
+### `cystack_076a8ddf`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Solo Leveling`, `Telegram`, `The Seven Deadly Sins`, `The Witcher 3`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: JO
+
+Date: 15/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 21/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x900
+Keyboard Languages: English Arabic
+Local Time: 15/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-10100 CPU @ 3.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 234 more lines) ...]
+```
+
 ### `cystack_077854b1`
 
 **Attribution confidence:** `high`
@@ -12449,6 +13040,61 @@ svchost.exe
 dwm.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 325 more lines) ...]
+```
+
+### `cystack_082c8a6b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `DRAGON BALL Z`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hitman`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Nova-Life`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Warface`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: FR
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 28/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: French English
+Local Time: 28/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-8600K CPU @ 3.60GHz
+Cores: 6
+Threads: 6
+RAM: 16322 MB
+VideoCard: NVIDIA GeForce GTX 1070 Ti
+[... truncated; full sample at ``sample.txt`` (approx. 321 more lines) ...]
 ```
 
 ### `cystack_0833b27a`
@@ -13425,6 +14071,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 287 more lines) ...]
+```
+
+### `cystack_08cd444d`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hitman`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: US
+Version: 18.7
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 09/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 08/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: AMD Ryzen 5 5600X 6-Core Processor             
+Cores: 12
+Threads: 12
+RAM: 16297 MB
+VideoCard: NVIDIA GeForce RTX 3060
+[... truncated; full sample at ``sample.txt`` (approx. 247 more lines) ...]
 ```
 
 ### `cystack_08db8c20`
@@ -14857,6 +15558,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 321 more lines) ...]
 ```
 
+### `cystack_09a4f05d`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`, `Xilinx DocNav (E`, `Xilinx Information Center (E`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+|  _____  _   _ __   __  _____  _   _  _____  _____  ___   _      _      _____  |
+| | ___ \| | | |\ \ / / |_   _|| \ | |/  ___||_   _|/ _ \ | |    | |    /  ___| |
+| | |_/ /| | | | \ V /    | |  |  \| |\ `--.   | | / /_\ \| |    | |    \ `--.  |
+| | ___ \| | | |  \ /     | |  | . ` | `--. \  | | |  _  || |    | |     `--. \ |
+| | |_/ /| |_| |  | |    _| |_ | |\  |/\__/ /  | | | | | || |____| |____/\__/ / |
+| \____/  \___/   \_/    \___/ \_| \_/\____/   \_/ \_| |_/\_____/\_____/\____/  |
+
+- WHERE BUY THE BEST INSTALLS ??
+
+
+**************************************************
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home Single Language
+Install Date: 21/01/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English Malayalam English English
+Local Time: 10/04/2026 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx  
+Cores: 8
+Threads: 8
+RAM: 7061 MB
+VideoCard: AMD Radeon(TM) Vega 8 Graphics
+
+[Processes]
+System
+Registry
+[... truncated; full sample at ``sample.txt`` (approx. 268 more lines) ...]
+```
+
 ### `cystack_09a67dd9`
 
 **Attribution confidence:** `high`
@@ -15240,6 +15996,61 @@ services.exe
 LsaIso.exe
 lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 409 more lines) ...]
+```
+
+### `cystack_09e1e55d`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `Grand Theft Auto IV`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `We Were Here Expeditions`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: FR
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 29/03/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: French
+Local Time: 09/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 7 7700X 8-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 307 more lines) ...]
 ```
 
 ### `cystack_09e28c74`
@@ -16067,6 +16878,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 272 more lines) ...]
 ```
 
+### `cystack_0a9add9c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `SCP`, `Supermarket Simulator`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+Беру логи с балансом более 10000$
+В распоряжении 150шт - rtx5090
+Депозит 2 btc /topic/232013/
+
+Telegram: @brute
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.3
+
+IP: <redacted>
+Country: EC
+
+Date: 27/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 03/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish Spanish
+Local Time: 27/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: AMD Ryzen 3 3200G with Radeon Vega Graphics    
+[... truncated; full sample at ``sample.txt`` (approx. 179 more lines) ...]
+```
+
 ### `cystack_0aa48067`
 
 **Attribution confidence:** `high`
@@ -16892,6 +17758,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 286 more lines) ...]
 ```
 
+### `cystack_0b18504c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PUBG`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+|  _____  _   _ __   __  _____  _   _  _____  _____  ___   _      _      _____  |
+| | ___ \| | | |\ \ / / |_   _|| \ | |/  ___||_   _|/ _ \ | |    | |    /  ___| |
+| | |_/ /| | | | \ V /    | |  |  \| |\ `--.   | | / /_\ \| |    | |    \ `--.  |
+| | ___ \| | | |  \ /     | |  | . ` | `--. \  | | |  _  || |    | |     `--. \ |
+| | |_/ /| |_| |  | |    _| |_ | |\  |/\__/ /  | | | | | || |____| |____/\__/ / |
+| \____/  \___/   \_/    \___/ \_| \_/\____/   \_/ \_| |_/\_____/\_____/\____/  |
+
+- WHERE BUY THE BEST INSTALLS ??
+
+
+**************************************************
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home Single Language
+Install Date: 05/12/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English
+Local Time: 10/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i7-1260P
+Cores: 16
+Threads: 16
+RAM: 7860 MB
+VideoCard: Intel(R) Iris(R) Xe Graphics
+
+[Processes]
+System
+Registry
+[... truncated; full sample at ``sample.txt`` (approx. 291 more lines) ...]
+```
+
 ### `cystack_0b241eea`
 
 **Attribution confidence:** `high`
@@ -17660,6 +18581,61 @@ services.exe
 LsaIso.exe
 lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 331 more lines) ...]
+```
+
+### `cystack_0b954b20`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Bully`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: DE
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 20/01/2022 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: German
+Local Time: 11/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+[... truncated; full sample at ``sample.txt`` (approx. 440 more lines) ...]
 ```
 
 ### `cystack_0b98531d`
@@ -21072,6 +22048,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 339 more lines) ...]
 ```
 
+### `cystack_0ddb113e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `The Witcher 3`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 01/04/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese Portuguese
+Local Time: 12/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 7 5700X 8-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 263 more lines) ...]
+```
+
 ### `cystack_0de8411a`
 
 **Attribution confidence:** `high`
@@ -22104,6 +23135,61 @@ LsaIso.exe
 [... truncated; full sample at ``sample.txt`` (approx. 286 more lines) ...]
 ```
 
+### `cystack_0e7f4040`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `NARUTO TO BORUTO`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: US
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 29/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 11/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: AMD Ryzen 5 5500                               
+[... truncated; full sample at ``sample.txt`` (approx. 252 more lines) ...]
+```
+
 ### `cystack_0e80b515`
 
 **Attribution confidence:** `high`
@@ -22267,6 +23353,61 @@ Threads: 16
 RAM: 32691 MB
 VideoCard: AMD Radeon RX 6700 XT
 [... truncated; full sample at ``sample.txt`` (approx. 298 more lines) ...]
+```
+
+### `cystack_0e927114`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `RISK`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: AR
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 05/04/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish Spanish
+Local Time: 13/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 2600 Six-Core Processor            
+[... truncated; full sample at ``sample.txt`` (approx. 308 more lines) ...]
 ```
 
 ### `cystack_0e943371`
@@ -22542,6 +23683,61 @@ svchost.exe
 fontdrvhost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 288 more lines) ...]
+```
+
+### `cystack_0eac14c4`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `Tobacco Shop Simulator`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: TR
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 17/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Turkish
+Local Time: 10/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 197 more lines) ...]
 ```
 
 ### `cystack_0eb160c9`
@@ -23355,6 +24551,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 307 more lines) ...]
 ```
 
+### `cystack_0f1ba927`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Detroit`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Sea of Thieves`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: IT
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 03/06/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Italian
+Local Time: 12/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i9-14900K
+[... truncated; full sample at ``sample.txt`` (approx. 268 more lines) ...]
+```
+
 ### `cystack_0f1bbd2b`
 
 **Attribution confidence:** `high`
@@ -23518,6 +24769,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 256 more lines) ...]
+```
+
+### `cystack_0f286209`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `Dying Light`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Mafia III`, `Northgard`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: LT
+Version: 18.7
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 10/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Lithuanian
+Local Time: 08/04/2026 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: AMD Ryzen 5 3600 6-Core Processor              
+Cores: 12
+Threads: 12
+RAM: 32678 MB
+VideoCard: NVIDIA GeForce RTX 2060
+[... truncated; full sample at ``sample.txt`` (approx. 262 more lines) ...]
 ```
 
 ### `cystack_0f2c6158`
@@ -23903,6 +25209,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 283 more lines) ...]
+```
+
+### `cystack_0f68a4bc`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Arena Breakout`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `Umamusume`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: PH
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 18/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1680x1050
+Keyboard Languages: English English
+Local Time: 11/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-9100F CPU @ 3.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 273 more lines) ...]
 ```
 
 ### `cystack_0f70351c`
@@ -24343,6 +25704,61 @@ services.exe
 LsaIso.exe
 lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 325 more lines) ...]
+```
+
+### `cystack_0f93f5ee`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hotline Miami 2`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `Tunguska`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: US
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 12/06/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: English
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967288
+
+[Hardware]
+Processor: AMD Ryzen 7 5700X 8-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 307 more lines) ...]
 ```
 
 ### `cystack_0f98a7f4`
@@ -25500,6 +26916,61 @@ WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 307 more lines) ...]
 ```
 
+### `cystack_1018627a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Battle Realms`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: VN
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 29/07/2022 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 16/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+[... truncated; full sample at ``sample.txt`` (approx. 263 more lines) ...]
+```
+
 ### `cystack_1023b402`
 
 **Attribution confidence:** `high`
@@ -25663,6 +27134,61 @@ fontdrvhost.exe
 WUDFHost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 241 more lines) ...]
+```
+
+### `cystack_104482a2`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Pixel Gun 3D`, `Processor`, `RAM`, `TCG Card Shop Simulator`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: NL
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 17/07/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Dutch
+Local Time: 11/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-4150 CPU @ 3.50GHz
+[... truncated; full sample at ``sample.txt`` (approx. 279 more lines) ...]
 ```
 
 ### `cystack_1048b967`
@@ -26488,6 +28014,61 @@ services.exe
 LsaIso.exe
 lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 322 more lines) ...]
+```
+
+### `cystack_10f5e4a9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `Goat Simulator`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+Беру логи с балансом более 10000$
+В распоряжении 150шт - rtx5090
+Депозит 2 btc /topic/232013/
+
+Telegram: @brute
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.4
+
+IP: <redacted>
+Country: BR
+
+Date: 29/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 18/09/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1680x1050
+Keyboard Languages: Portuguese
+Local Time: 29/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+[... truncated; full sample at ``sample.txt`` (approx. 265 more lines) ...]
 ```
 
 ### `cystack_10f92154`
@@ -29130,6 +30711,61 @@ winlogon.exe
 [... truncated; full sample at ``sample.txt`` (approx. 284 more lines) ...]
 ```
 
+### `cystack_12b76b70`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Deconstruction Simulator`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Ocean World`, `Path`, `Processor`, `RAM`, `STALCRAFT`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 15/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home Single Language
+Install Date: 20/12/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Portuguese Portuguese
+Local Time: 15/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-8130U CPU @ 2.20GHz
+[... truncated; full sample at ``sample.txt`` (approx. 256 more lines) ...]
+```
+
 ### `cystack_12c5e457`
 
 **Attribution confidence:** `high`
@@ -30120,6 +31756,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 318 more lines) ...]
 ```
 
+### `cystack_138f0615`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Nightmare House`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+Беру логи с балансом более 10000$
+В распоряжении 150шт - rtx5090
+Депозит 2 btc /topic/232013/
+
+Telegram: @brute
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.4
+
+IP: <redacted>
+Country: CL
+
+Date: 27/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 25/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1360x768
+Keyboard Languages: Spanish
+Local Time: 27/04/2026 <ip>
+TimeZone: 4294967292
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-1005G1 CPU @ 1.20GHz
+[... truncated; full sample at ``sample.txt`` (approx. 289 more lines) ...]
+```
+
 ### `cystack_13a3ee1d`
 
 **Attribution confidence:** `high`
@@ -30173,6 +31864,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 359 more lines) ...]
+```
+
+### `cystack_13ab13ce`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Pixel Gun 3D`, `Processor`, `RAM`, `Schedule I`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PH
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home Single Language
+Install Date: 05/02/2022 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1360x768
+Keyboard Languages: English English
+Local Time: 14/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: Intel(R) Celeron(R) CPU J3455 @ 1.50GHz
+[... truncated; full sample at ``sample.txt`` (approx. 262 more lines) ...]
 ```
 
 ### `cystack_13c000db`
@@ -30833,6 +32579,61 @@ winlogon.exe
 services.exe
 LsaIso.exe
 [... truncated; full sample at ``sample.txt`` (approx. 333 more lines) ...]
+```
+
+### `cystack_141aab45`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Heroes of Newerth`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PH
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 21/11/2022 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 16/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-9100F CPU @ 3.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 176 more lines) ...]
 ```
 
 ### `cystack_14328844`
@@ -31990,6 +33791,116 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 283 more lines) ...]
 ```
 
+### `cystack_14f640c8`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Pixel Gun 3D`, `Processor`, `RAM`, `Schedule I`, `TCG Card Shop Simulator`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PH
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 31/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 16/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: AMD Ryzen 3 3200G with Radeon Vega Graphics    
+[... truncated; full sample at ``sample.txt`` (approx. 280 more lines) ...]
+```
+
+### `cystack_150d7709`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Pixel Gun 3D`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `Umamusume`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: DE
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 12/05/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1376x774
+Keyboard Languages: German English
+Local Time: 10/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Athlon 3000G with Radeon Vega Graphics     
+[... truncated; full sample at ``sample.txt`` (approx. 418 more lines) ...]
+```
+
 ### `cystack_1525c9a8`
 
 **Attribution confidence:** `high`
@@ -32194,6 +34105,61 @@ services.exe
 LsaIso.exe
 lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 250 more lines) ...]
+```
+
+### `cystack_1560f6c6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Blue Protocol`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: CL
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 18/08/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish Spanish
+Local Time: 10/04/2026 <ip>
+TimeZone: 4294967292
+
+[Hardware]
+Processor: AMD Ryzen 7 2700X Eight-Core Processor         
+[... truncated; full sample at ``sample.txt`` (approx. 277 more lines) ...]
 ```
 
 ### `cystack_1574a9af`
@@ -36748,6 +38714,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 291 more lines) ...]
 ```
 
+### `cystack_18a2b5ab`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Siren Head`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: PK
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Enterprise
+Install Date: 15/05/2022 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x900
+Keyboard Languages: English
+Local Time: 09/04/2026 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 217 more lines) ...]
+```
+
 ### `cystack_18b669fa`
 
 **Attribution confidence:** `high`
@@ -37131,6 +39152,61 @@ winlogon.exe
 services.exe
 LsaIso.exe
 [... truncated; full sample at ``sample.txt`` (approx. 326 more lines) ...]
+```
+
+### `cystack_18f738d3`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hollow Knight`, `Hotline Miami 2`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 15/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 20/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1360x768
+Keyboard Languages: Portuguese
+Local Time: 15/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 5600G with Radeon Graphics         
+[... truncated; full sample at ``sample.txt`` (approx. 309 more lines) ...]
 ```
 
 ### `cystack_18fe2f31`
@@ -37736,6 +39812,61 @@ svchost.exe
 fontdrvhost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 362 more lines) ...]
+```
+
+### `cystack_196012d9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PICO PARK`, `Path`, `Processor`, `RAM`, `Schedule I`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: DE
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 24/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: German
+Local Time: 12/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 299 more lines) ...]
 ```
 
 ### `cystack_1969a2dc`
@@ -40708,6 +42839,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 250 more lines) ...]
 ```
 
+### `cystack_1b1bd540`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Half-Life`, `Half-Life Deathmatch`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Rayman`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: AR
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 31/05/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1360x768
+Keyboard Languages: Spanish Spanish
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 3400G with Radeon Vega Graphics    
+[... truncated; full sample at ``sample.txt`` (approx. 276 more lines) ...]
+```
+
 ### `cystack_1b2d8a5c`
 
 **Attribution confidence:** `high`
@@ -41423,6 +43609,61 @@ WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 243 more lines) ...]
 ```
 
+### `cystack_1b8d2298`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `SCP`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: AR
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 24/10/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish Spanish
+Local Time: 16/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-7100 CPU @ 3.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 219 more lines) ...]
+```
+
 ### `cystack_1bb59d29`
 
 **Attribution confidence:** `high`
@@ -41751,6 +43992,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 329 more lines) ...]
+```
+
+### `cystack_1be173a8`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Dark Hours`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Magic`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: CL
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 27/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 14/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: Spanish Spanish
+Local Time: 27/11/2025 <ip>
+TimeZone: 4294967292
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+Cores: 8
+Threads: 8
+RAM: 16043 MB
+VideoCard: Intel(R) Iris(R) Xe Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 231 more lines) ...]
 ```
 
 ### `cystack_1be95406`
@@ -44600,6 +46896,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 237 more lines) ...]
 ```
 
+### `cystack_1de586b1`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `Umamusume`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: AR
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 04/01/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1680x1050
+Keyboard Languages: Spanish Spanish
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 3400G with Radeon Vega Graphics    
+[... truncated; full sample at ``sample.txt`` (approx. 224 more lines) ...]
+```
+
 ### `cystack_1de60186`
 
 **Attribution confidence:** `high`
@@ -46030,6 +48381,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 158 more lines) ...]
 ```
 
+### `cystack_1f0e36e4`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `Gold Rush`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: FR
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 17/03/2022 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: French
+Local Time: 14/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-4750HQ CPU @ 2.00GHz
+[... truncated; full sample at ``sample.txt`` (approx. 259 more lines) ...]
+```
+
 ### `cystack_1f1254ed`
 
 **Attribution confidence:** `high`
@@ -46360,6 +48766,61 @@ lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 275 more lines) ...]
 ```
 
+### `cystack_1f391b9c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `Truck World`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: GB
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 28/06/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 14/04/2026 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-4810MQ CPU @ 2.80GHz
+[... truncated; full sample at ``sample.txt`` (approx. 234 more lines) ...]
+```
+
 ### `cystack_1f4f3865`
 
 **Attribution confidence:** `high`
@@ -46413,6 +48874,61 @@ fontdrvhost.exe
 WUDFHost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 249 more lines) ...]
+```
+
+### `cystack_1f566b71`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Cities`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Feeding Frenzy 2`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Magic`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: JP
+
+Date: 17/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 05/12/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese
+Local Time: 17/04/2026 <ip>
+TimeZone: 9
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+[... truncated; full sample at ``sample.txt`` (approx. 271 more lines) ...]
 ```
 
 ### `cystack_1f5d850e`
@@ -46965,6 +49481,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 227 more lines) ...]
 ```
 
+### `cystack_1fd631f3`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Cities`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: EE
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 29/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English English Estonian
+Local Time: 11/04/2026 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: Intel(R) N97
+[... truncated; full sample at ``sample.txt`` (approx. 275 more lines) ...]
+```
+
 ### `cystack_1fe70b91`
 
 **Attribution confidence:** `high`
@@ -47293,6 +49864,61 @@ winlogon.exe
 services.exe
 lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 400 more lines) ...]
+```
+
+### `cystack_20117175`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Insurgency`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: US
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 25/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: English
+Local Time: 16/04/2026 <ip>
+TimeZone: 4294967290
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 236 more lines) ...]
 ```
 
 ### `cystack_202d2871`
@@ -48945,6 +51571,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 262 more lines) ...]
 ```
 
+### `cystack_213b9e0b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Arena Breakout`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `RISK`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: CA
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 10/01/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: English French English
+Local Time: 10/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz
+[... truncated; full sample at ``sample.txt`` (approx. 331 more lines) ...]
+```
+
 ### `cystack_214f1dd6`
 
 **Attribution confidence:** `high`
@@ -49163,6 +51844,61 @@ svchost.exe
 fontdrvhost.exe
 WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 296 more lines) ...]
+```
+
+### `cystack_2177986c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `NARAKA`, `PUBG`, `Path`, `Processor`, `RAM`, `Schedule I`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: TH
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 16/08/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English English Thai
+Local Time: 11/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: AMD Ryzen 5 4500 6-Core Processor              
+[... truncated; full sample at ``sample.txt`` (approx. 291 more lines) ...]
 ```
 
 ### `cystack_2183ccc2`
@@ -51145,6 +53881,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 397 more lines) ...]
 ```
 
+### `cystack_2287648e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Schedule I`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: AE
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 19/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x1024
+Keyboard Languages: English Arabic
+Local Time: 11/04/2026 <ip>
+TimeZone: 4
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 309 more lines) ...]
+```
+
 ### `cystack_2293061e`
 
 **Attribution confidence:** `high`
@@ -51253,6 +54044,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 293 more lines) ...]
+```
+
+### `cystack_22b076ee`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hollow Knight`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `NieR`, `Path`, `Processor`, `RAM`, `The Elder Scrolls V`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: BR
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 26/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 02/03/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese
+Local Time: 26/11/2025 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-3570 CPU @ 3.40GHz
+Cores: 4
+Threads: 4
+RAM: 16339 MB
+VideoCard: NVIDIA GeForce GT 1030
+[... truncated; full sample at ``sample.txt`` (approx. 309 more lines) ...]
 ```
 
 ### `cystack_22b4c80a`
@@ -52795,6 +55641,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 219 more lines) ...]
 ```
 
+### `cystack_23e91c9d`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Backrooms`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Schedule I`, `Sherlock Holmes`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: ES
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 28/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 28/12/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish
+Local Time: 28/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-9400 CPU @ 2.90GHz
+Cores: 6
+Threads: 6
+RAM: 8119 MB
+VideoCard: NVIDIA GeForce GTX 1050 Ti
+[... truncated; full sample at ``sample.txt`` (approx. 275 more lines) ...]
+```
+
 ### `cystack_23ea5eb3`
 
 **Attribution confidence:** `high`
@@ -53288,6 +56189,61 @@ fontdrvhost.exe
 winlogon.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 261 more lines) ...]
+```
+
+### `cystack_241e9bc9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `Arena Breakout`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: FR
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 28/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 17/06/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: English French
+Local Time: 28/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 7 9800X3D 8-Core Processor           
+Cores: 8
+Threads: 8
+RAM: 32425 MB
+VideoCard: NVIDIA GeForce RTX 5070 Ti
+[... truncated; full sample at ``sample.txt`` (approx. 444 more lines) ...]
 ```
 
 ### `cystack_24227e13`
@@ -54555,6 +57511,61 @@ winlogon.exe
 [... truncated; full sample at ``sample.txt`` (approx. 275 more lines) ...]
 ```
 
+### `cystack_2495ac61`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Feed and Grow`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: AT
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 21/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: German
+Local Time: 12/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 7500F 6-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 76 more lines) ...]
+```
+
 ### `cystack_249ecd64`
 
 **Attribution confidence:** `high`
@@ -55270,6 +58281,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 378 more lines) ...]
 ```
 
+### `cystack_25258b50`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `STALCRAFT`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: FI
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 12/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Russian
+Local Time: 11/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-10105 CPU @ 3.70GHz
+[... truncated; full sample at ``sample.txt`` (approx. 233 more lines) ...]
+```
+
 ### `cystack_252a1bd6`
 
 **Attribution confidence:** `high`
@@ -55708,6 +58774,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 260 more lines) ...]
+```
+
+### `cystack_25639a23`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `We Were Here Expeditions`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PH
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 16/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English English
+Local Time: 12/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-11400 @ 2.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 219 more lines) ...]
 ```
 
 ### `cystack_256526c8`
@@ -56258,6 +59379,61 @@ LsaIso.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 189 more lines) ...]
+```
+
+### `cystack_25f0f2ee`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Dark Hours`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BD
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 05/03/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 14/04/2026 <ip>
+TimeZone: 6
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12400
+[... truncated; full sample at ``sample.txt`` (approx. 271 more lines) ...]
 ```
 
 ### `cystack_25f4cc35`
@@ -57085,6 +60261,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 349 more lines) ...]
 ```
 
+### `cystack_26f3952a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Cataclysm`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `FTL`, `Fallout`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Nexomon`, `Path`, `Plague Inc`, `Processor`, `RAM`, `Rebuild 3`, `Telegram`, `The Binding of Isaac`, `Threads`, `TimeZone`, `Tower Tactics`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: US
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 04/12/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 08/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12450H
+[... truncated; full sample at ``sample.txt`` (approx. 404 more lines) ...]
+```
+
 ### `cystack_270ff37e`
 
 **Attribution confidence:** `high`
@@ -57358,6 +60589,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 399 more lines) ...]
+```
+
+### `cystack_2734e01f`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Bully`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: BR
+Version: 18.7
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 02/06/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese Portuguese
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz
+Cores: 6
+Threads: 6
+RAM: 8125 MB
+VideoCard: NVIDIA GeForce GTX 1660 SUPER
+[... truncated; full sample at ``sample.txt`` (approx. 186 more lines) ...]
 ```
 
 ### `cystack_2737329f`
@@ -60825,6 +64111,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 392 more lines) ...]
 ```
 
+### `cystack_29f2bf80`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MR DONALD`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: DE
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 24/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: English Russian
+Local Time: 16/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-11400 @ 2.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 246 more lines) ...]
+```
+
 ### `cystack_29f76174`
 
 **Attribution confidence:** `high`
@@ -61153,6 +64494,61 @@ services.exe
 LsaIso.exe
 lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 335 more lines) ...]
+```
+
+### `cystack_2a0e3f11`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Pixel Gun 3D`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: MX
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Enterprise
+Install Date: 11/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 08/04/2026 <ip>
+TimeZone: 4294967288
+
+[Hardware]
+Processor: AMD Ryzen 7 5700X 8-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 339 more lines) ...]
 ```
 
 ### `cystack_2a27c36e`
@@ -62475,6 +65871,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 181 more lines) ...]
 ```
 
+### `cystack_2b10c3c1`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `The Elder Scrolls V`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: CO
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 04/10/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish Spanish
+Local Time: 10/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-1235U
+[... truncated; full sample at ``sample.txt`` (approx. 258 more lines) ...]
+```
+
 ### `cystack_2b49b2e2`
 
 **Attribution confidence:** `high`
@@ -62638,6 +66089,116 @@ svchost.exe
 dwm.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 284 more lines) ...]
+```
+
+### `cystack_2b5e7476`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Ages of Conflict`, `Computer Name`, `Cores`, `Country`, `DRAGON BALL`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `The Seven Deadly Sins`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: BR
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Enterprise
+Install Date: 06/01/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese
+Local Time: 08/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 PRO 4650G with Radeon Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 293 more lines) ...]
+```
+
+### `cystack_2b60dbf8`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Depths Of Horror`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Kingdom`, `Local Time`, `MachineID`, `Mall Simulator`, `Path`, `Processor`, `RAM`, `RISK`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: NL
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 19/02/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x900
+Keyboard Languages: Arabic French Arabic
+Local Time: 11/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-4160 CPU @ 3.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 221 more lines) ...]
 ```
 
 ### `cystack_2b62ebb2`
@@ -63683,6 +67244,61 @@ svchost.exe
 fontdrvhost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 355 more lines) ...]
+```
+
+### `cystack_2bf093b6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Las Tortugas Ninja`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: AR
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 11/06/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish Spanish
+Local Time: 11/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 300 more lines) ...]
 ```
 
 ### `cystack_2bf1eeeb`
@@ -66050,6 +69666,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 254 more lines) ...]
 ```
 
+### `cystack_2d5f78cc`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Depths Of Horror`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: DK
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 14/11/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Danish English
+Local Time: 10/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 4600H with Radeon Graphics         
+[... truncated; full sample at ``sample.txt`` (approx. 387 more lines) ...]
+```
+
 ### `cystack_2d6f63d6`
 
 **Attribution confidence:** `high`
@@ -66213,6 +69884,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 356 more lines) ...]
+```
+
+### `cystack_2d865130`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IGTAP`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: DO
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 IoT Enterprise LTSC 2021
+Install Date: 28/03/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1440x900
+Keyboard Languages: Spanish
+Local Time: 13/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Pentium(R) CPU  J3710  @ 1.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 165 more lines) ...]
 ```
 
 ### `cystack_2d870a17`
@@ -67370,6 +71096,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 331 more lines) ...]
 ```
 
+### `cystack_2e82eced`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `STAR WARS Jedi`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: FR
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 14/08/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English French
+Local Time: 12/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+[... truncated; full sample at ``sample.txt`` (approx. 310 more lines) ...]
+```
+
 ### `cystack_2e844b23`
 
 **Attribution confidence:** `high`
@@ -67423,6 +71204,61 @@ winlogon.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 307 more lines) ...]
+```
+
+### `cystack_2e867857`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Beyond`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 14/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Portuguese
+Local Time: 13/04/2026 <ip>
+TimeZone: 4294967289
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz
+[... truncated; full sample at ``sample.txt`` (approx. 262 more lines) ...]
 ```
 
 ### `cystack_2e97b061`
@@ -67588,6 +71424,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 304 more lines) ...]
+```
+
+### `cystack_2ec9610a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Cities`, `Computer Name`, `Cores`, `Country`, `Date`, `Detroit`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: US
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 17/12/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 12/04/2026 <ip>
+TimeZone: 4294967290
+
+[Hardware]
+Processor: 13th Gen Intel(R) Core(TM) i3-13100F
+[... truncated; full sample at ``sample.txt`` (approx. 302 more lines) ...]
 ```
 
 ### `cystack_2ecdf88c`
@@ -68083,6 +71974,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 233 more lines) ...]
+```
+
+### `cystack_2ef9df71`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `The August Before`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: PH
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 01/12/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 26/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 01/12/2025 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: AMD A10-7860K Radeon R7, 12 Compute Cores 4C+8G
+Cores: 4
+Threads: 4
+RAM: 16327 MB
+VideoCard: AMD Radeon RX590 GME
+[... truncated; full sample at ``sample.txt`` (approx. 245 more lines) ...]
 ```
 
 ### `cystack_2f000015`
@@ -69513,6 +73459,61 @@ fontdrvhost.exe
 WUDFHost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 294 more lines) ...]
+```
+
+### `cystack_2ff59bc4`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Detroit`, `Display Resolution`, `GUID`, `Grand Theft Auto`, `Grand Theft Auto IV`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Sleeping Dogs`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+Беру логи с балансом более 10000$
+В распоряжении 150шт - rtx5090
+Депозит 2 btc /topic/232013/
+
+Telegram: @brute
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.4
+
+IP: <redacted>
+Country: IN
+
+Date: 28/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 14/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English English
+Local Time: 28/04/2026 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+[... truncated; full sample at ``sample.txt`` (approx. 267 more lines) ...]
 ```
 
 ### `cystack_2ff5f626`
@@ -71110,6 +75111,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 295 more lines) ...]
 ```
 
+### `cystack_31212e87`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `Quarantine Zone`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: DE
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 25/08/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: German
+Local Time: 13/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 7 3800X 8-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 304 more lines) ...]
+```
+
 ### `cystack_31239357`
 
 **Attribution confidence:** `high`
@@ -71438,6 +75494,61 @@ services.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 237 more lines) ...]
+```
+
+### `cystack_316aac96`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Arena Breakout`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: ES
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 30/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1440x1080
+Keyboard Languages: English Russian English
+Local Time: 13/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 255 more lines) ...]
 ```
 
 ### `cystack_317ac9af`
@@ -72208,6 +76319,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 182 more lines) ...]
+```
+
+### `cystack_32200e50`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `DRAGON BALL`, `Date`, `Depths Of Horror`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Pixel Gun 3D`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: AE
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 02/04/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Arabic English Arabic
+Local Time: 16/04/2026 <ip>
+TimeZone: 4
+
+[Hardware]
+Processor: AMD Ryzen 5 5600X 6-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 292 more lines) ...]
 ```
 
 ### `cystack_32241a4b`
@@ -73253,6 +77419,43 @@ lsass.exe
 svchost.exe
 WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 196 more lines) ...]
+```
+
+### `cystack_32a7a290`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Display Resolution`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+
+IP: <redacted>
+Country: BD
+Work Dir: In memory
+Windows: Windows 11 Pro
+Install Date: 10/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 23/04/2026 <ip>
+TimeZone: 6
+[Hardware]
+Processor: AMD Ryzen 7 5700G with Radeon Graphics         
+Cores: 16
+Threads: 16
+RAM: 15765 MB
+VideoCard: AMD Radeon(TM) Graphics
+[Processes][Software]
+CPUID CPU-Z MSI 2.18 - 2.18
+Meta Pixel Helper Pro
+AMD User Experience Program Installer - 2420.0.0.802
 ```
 
 ### `cystack_32b6d625`
@@ -74353,6 +78556,61 @@ LsaIso.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 291 more lines) ...]
+```
+
+### `cystack_339c3448`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `NARUTO SHIPPUDEN`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: BR
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 27/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x900
+Keyboard Languages: Portuguese Portuguese
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 5500                               
+[... truncated; full sample at ``sample.txt`` (approx. 218 more lines) ...]
 ```
 
 ### `cystack_33ad5b86`
@@ -79470,6 +83728,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 245 more lines) ...]
 ```
 
+### `cystack_37653951`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PUBG`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: BR
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 26/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese Portuguese
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD FX(tm)-8320 Eight-Core Processor           
+[... truncated; full sample at ``sample.txt`` (approx. 215 more lines) ...]
+```
+
 ### `cystack_3766d693`
 
 **Attribution confidence:** `high`
@@ -79688,6 +84001,61 @@ services.exe
 LsaIso.exe
 lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 320 more lines) ...]
+```
+
+### `cystack_377a5530`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Plague Inc`, `Prison Escape Simulator`, `Processor`, `RAM`, `TCG Card Shop Simulator`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: US
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 28/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 27/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 28/11/2025 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: AMD Ryzen 5 5500                               
+Cores: 12
+Threads: 12
+RAM: 16272 MB
+VideoCard: AMD Radeon RX 6600 LE
+[... truncated; full sample at ``sample.txt`` (approx. 325 more lines) ...]
 ```
 
 ### `cystack_378183ed`
@@ -83045,6 +87413,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 320 more lines) ...]
 ```
 
+### `cystack_3972081c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `NARAKA`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BD
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 06/06/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English
+Local Time: 14/04/2026 <ip>
+TimeZone: 6
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+[... truncated; full sample at ``sample.txt`` (approx. 304 more lines) ...]
+```
+
 ### `cystack_397b9451`
 
 **Attribution confidence:** `high`
@@ -83485,6 +87908,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 305 more lines) ...]
 ```
 
+### `cystack_39b1c201`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `The Seven Deadly Sins`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: RO
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 17/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 14/04/2026 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 292 more lines) ...]
+```
+
 ### `cystack_39c3961f`
 
 **Attribution confidence:** `high`
@@ -83923,6 +88401,61 @@ lsass.exe
 svchost.exe
 WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 359 more lines) ...]
+```
+
+### `cystack_3a13578a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Rustup`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: EG
+Version: 18.7
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 07/12/2019 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x1024
+Keyboard Languages: English Arabic
+Local Time: 09/04/2026 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz
+Cores: 4
+Threads: 4
+RAM: 7606 MB
+VideoCard: Intel(R) HD Graphics 520
+[... truncated; full sample at ``sample.txt`` (approx. 170 more lines) ...]
 ```
 
 ### `cystack_3a1ee65e`
@@ -86015,6 +90548,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 203 more lines) ...]
 ```
 
+### `cystack_3bca59d6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Pharaoh`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: US
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 16/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2048x1152
+Keyboard Languages: English
+Local Time: 10/04/2026 <ip>
+TimeZone: 4294967290
+
+[Hardware]
+Processor: AMD Ryzen 5 9600X 6-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 271 more lines) ...]
+```
+
 ### `cystack_3bd29c76`
 
 **Attribution confidence:** `high`
@@ -86178,6 +90766,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 308 more lines) ...]
+```
+
+### `cystack_3bde4dba`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Douluo Dalu`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `Punishing`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: TH
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 16/03/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x1024
+Keyboard Languages: English Thai
+Local Time: 16/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-4690S CPU @ 3.20GHz
+[... truncated; full sample at ``sample.txt`` (approx. 280 more lines) ...]
 ```
 
 ### `cystack_3bdf6fd7`
@@ -87101,6 +91744,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 301 more lines) ...]
 ```
 
+### `cystack_3c674660`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Fallout`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: GB
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 25/12/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: English
+Local Time: 14/04/2026 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: AMD Ryzen 5 7535HS with Radeon Graphics        
+[... truncated; full sample at ``sample.txt`` (approx. 309 more lines) ...]
+```
+
 ### `cystack_3c6fd76b`
 
 **Attribution confidence:** `high`
@@ -87706,6 +92404,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 297 more lines) ...]
 ```
 
+### `cystack_3d1427bc`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Dying Light`, `GUID`, `HWID`, `IP`, `Install Date`, `Jacksmith`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `Quarantine Zone`, `RAM`, `Telegram`, `The Binding of Isaac`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: NL
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 08/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: English
+Local Time: 16/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 3600 6-Core Processor              
+[... truncated; full sample at ``sample.txt`` (approx. 321 more lines) ...]
+```
+
 ### `cystack_3d162a21`
 
 **Attribution confidence:** `high`
@@ -87759,6 +92512,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 221 more lines) ...]
+```
+
+### `cystack_3d178dd1`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `SCP`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: BR
+Version: 18.7
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 01/01/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English Portuguese Portuguese
+Local Time: 08/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 5600 6-Core Processor              
+Cores: 12
+Threads: 12
+RAM: 16307 MB
+VideoCard: NVIDIA GeForce GTX 1630
+[... truncated; full sample at ``sample.txt`` (approx. 300 more lines) ...]
 ```
 
 ### `cystack_3d1e63df`
@@ -87924,6 +92732,116 @@ LsaIso.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 330 more lines) ...]
+```
+
+### `cystack_3d3a41bd`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `TCG Card Shop Simulator`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: TH
+Version: 18.7
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 24/01/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Thai
+Local Time: 09/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+Cores: 12
+Threads: 12
+RAM: 16292 MB
+VideoCard: NVIDIA GeForce GT 730
+[... truncated; full sample at ``sample.txt`` (approx. 270 more lines) ...]
+```
+
+### `cystack_3d447011`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Metro Conflict`, `Path`, `Processor`, `RAM`, `Telegram`, `The Witcher 3`, `Threads`, `TimeZone`, `Tobacco Shop Simulator`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: TR
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 17/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Turkish
+Local Time: 16/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 282 more lines) ...]
 ```
 
 ### `cystack_3d44a6f4`
@@ -90181,6 +95099,116 @@ Stronghold: Definitive Edition
 [... truncated; full sample at ``sample.txt`` (approx. 85 more lines) ...]
 ```
 
+### `cystack_3e5e0390`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `The Elder Scrolls II`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: CL
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 17/01/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Spanish Spanish
+Local Time: 13/04/2026 <ip>
+TimeZone: 4294967292
+
+[Hardware]
+Processor: AMD Ryzen 5 2400G with Radeon Vega Graphics    
+[... truncated; full sample at ``sample.txt`` (approx. 309 more lines) ...]
+```
+
+### `cystack_3e875b76`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Age of Empires IV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `NARUTO SHIPPUDEN`, `NARUTO TO BORUTO`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: FR
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 04/06/2021 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English French
+Local Time: 13/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 3600 6-Core Processor              
+[... truncated; full sample at ``sample.txt`` (approx. 332 more lines) ...]
+```
+
 ### `cystack_3e8acc3b`
 
 **Attribution confidence:** `high`
@@ -90731,6 +95759,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 346 more lines) ...]
 ```
 
+### `cystack_3ed86fd7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hellsplit`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: GB
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 26/07/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English English English
+Local Time: 12/04/2026 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+[... truncated; full sample at ``sample.txt`` (approx. 284 more lines) ...]
+```
+
 ### `cystack_3ee5d794`
 
 **Attribution confidence:** `high`
@@ -91169,6 +96252,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 365 more lines) ...]
+```
+
+### `cystack_3f347ed3`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `DPET`, `Date`, `Display Resolution`, `ENA`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `PUBG`, `Path`, `Pixel Gun 3D`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: PH
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 13/09/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English English
+Local Time: 29/11/2025 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: AMD Ryzen 5 2600 Six-Core Processor            
+Cores: 12
+Threads: 12
+RAM: 16316 MB
+VideoCard: AMD Radeon RX 580 2048SP
+[... truncated; full sample at ``sample.txt`` (approx. 376 more lines) ...]
 ```
 
 ### `cystack_3f3db8b0`
@@ -92216,6 +97354,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 306 more lines) ...]
 ```
 
+### `cystack_400c869f`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Obsessed`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PH
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 17/09/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English English
+Local Time: 12/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-3550 CPU @ 3.30GHz
+[... truncated; full sample at ``sample.txt`` (approx. 266 more lines) ...]
+```
+
 ### `cystack_40187b94`
 
 **Attribution confidence:** `high`
@@ -93039,6 +98232,61 @@ winlogon.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 301 more lines) ...]
+```
+
+### `cystack_40c0527f`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Nova-Life`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: FR
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 19/02/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English French
+Local Time: 09/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD FX(tm)-8350 Eight-Core Processor           
+[... truncated; full sample at ``sample.txt`` (approx. 192 more lines) ...]
 ```
 
 ### `cystack_40c304ee`
@@ -94801,6 +100049,61 @@ lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 283 more lines) ...]
 ```
 
+### `cystack_42301f93`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Mall Simulator`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: DE
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 01/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Russian
+Local Time: 10/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+[... truncated; full sample at ``sample.txt`` (approx. 223 more lines) ...]
+```
+
 ### `cystack_42302e7c`
 
 **Attribution confidence:** `high`
@@ -95956,6 +101259,61 @@ Threads: 4
 [... truncated; full sample at ``sample.txt`` (approx. 282 more lines) ...]
 ```
 
+### `cystack_42e10f1f`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Batman`, `Call of Duty`, `Chivalry`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Kung Fury`, `Local Time`, `MachineID`, `PUBG`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: FR
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 24/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: French
+Local Time: 16/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i7-12700K
+[... truncated; full sample at ``sample.txt`` (approx. 353 more lines) ...]
+```
+
 ### `cystack_42e6efe4`
 
 **Attribution confidence:** `high`
@@ -96174,6 +101532,61 @@ LsaIso.exe
 winlogon.exe
 lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 305 more lines) ...]
+```
+
+### `cystack_4313cfe9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Climber Animals`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Feed and Grow`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `The Elder Scrolls V`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: US
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 02/08/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Chinese (S
+Local Time: 12/04/2026 <ip>
+TimeZone: 4294967288
+
+[Hardware]
+Processor: 13th Gen Intel(R) Core(TM) i5-13400F
+[... truncated; full sample at ``sample.txt`` (approx. 275 more lines) ...]
 ```
 
 ### `cystack_43199e23`
@@ -98706,6 +104119,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 206 more lines) ...]
 ```
 
+### `cystack_44ac6686`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Slapshot`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: TR
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home Single Language
+Install Date: 15/03/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Turkish
+Local Time: 16/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+[... truncated; full sample at ``sample.txt`` (approx. 401 more lines) ...]
+```
+
 ### `cystack_44b685b7`
 
 **Attribution confidence:** `high`
@@ -99144,6 +104612,61 @@ winlogon.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 268 more lines) ...]
+```
+
+### `cystack_44ec0a4c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ACD/Labs 2023 Freeware in C`, `AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+Country: IN
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 24/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home Single Language
+Install Date: 11/01/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English English
+Local Time: 24/11/2025 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Cores: 8
+Threads: 8
+RAM: 8022 MB
+VideoCard: Intel(R) UHD Graphics
+
+[Processes]
+System
+[... truncated; full sample at ``sample.txt`` (approx. 304 more lines) ...]
 ```
 
 ### `cystack_44fada4f`
@@ -102611,6 +108134,171 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 288 more lines) ...]
 ```
 
+### `cystack_470b70a3`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Call of Duty`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Race`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: DE
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 23/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: German
+Local Time: 29/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-4710HQ CPU @ 2.50GHz
+Cores: 8
+Threads: 8
+RAM: 16303 MB
+VideoCard: NVIDIA GeForce GTX 870M
+[... truncated; full sample at ``sample.txt`` (approx. 268 more lines) ...]
+```
+
+### `cystack_470d32fb`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Solo Leveling`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+|  _____  _   _ __   __  _____  _   _  _____  _____  ___   _      _      _____  |
+| | ___ \| | | |\ \ / / |_   _|| \ | |/  ___||_   _|/ _ \ | |    | |    /  ___| |
+| | |_/ /| | | | \ V /    | |  |  \| |\ `--.   | | / /_\ \| |    | |    \ `--.  |
+| | ___ \| | | |  \ /     | |  | . ` | `--. \  | | |  _  || |    | |     `--. \ |
+| | |_/ /| |_| |  | |    _| |_ | |\  |/\__/ /  | | | | | || |____| |____/\__/ / |
+| \____/  \___/   \_/    \___/ \_| \_/\____/   \_/ \_| |_/\_____/\_____/\____/  |
+
+- WHERE BUY THE BEST INSTALLS ??
+
+
+**************************************************
+
+Date: 29/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home Single Language
+Install Date: 22/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x960
+Keyboard Languages: English English
+Local Time: 29/04/2026 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: AMD Ryzen 5 8540U w/ Radeon 740M Graphics      
+Cores: 12
+Threads: 12
+RAM: 15638 MB
+VideoCard: AMD Radeon TM Graphics
+
+[Processes]
+System
+Secure System
+[... truncated; full sample at ``sample.txt`` (approx. 243 more lines) ...]
+```
+
+### `cystack_47136a9f`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Half-Life 2`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 08/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Portuguese Portuguese
+Local Time: 12/04/2026 <ip>
+TimeZone: 4294967292
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-7100 CPU @ 3.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 340 more lines) ...]
+```
+
 ### `cystack_471d874a`
 
 **Attribution confidence:** `high`
@@ -104536,6 +110224,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 377 more lines) ...]
 ```
 
+### `cystack_486e4999`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Backrooms`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Ready or Not`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: SA
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 23/01/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1680x1050
+Keyboard Languages: Arabic English
+Local Time: 13/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: 13th Gen Intel(R) Core(TM) i5-1334U
+[... truncated; full sample at ``sample.txt`` (approx. 256 more lines) ...]
+```
+
 ### `cystack_487998eb`
 
 **Attribution confidence:** `high`
@@ -105251,6 +110994,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 269 more lines) ...]
 ```
 
+### `cystack_49101134`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `Grand Theft Auto IV`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: TR
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 14/06/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: Turkish
+Local Time: 09/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i7-12650H
+[... truncated; full sample at ``sample.txt`` (approx. 284 more lines) ...]
+```
+
 ### `cystack_4910587a`
 
 **Attribution confidence:** `high`
@@ -105581,6 +111379,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 335 more lines) ...]
 ```
 
+### `cystack_4944cddb`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `FreeStyle 2`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: VN
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 25/02/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Vietnamese
+Local Time: 10/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: AMD Ryzen 7 7800X3D 8-Core Processor           
+[... truncated; full sample at ``sample.txt`` (approx. 256 more lines) ...]
+```
+
 ### `cystack_494ee659`
 
 **Attribution confidence:** `high`
@@ -105634,6 +111487,61 @@ dwm.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 186 more lines) ...]
+```
+
+### `cystack_49538a54`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Bully`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `Grand Theft Auto`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Pixel Gun 3D`, `Processor`, `RAM`, `Sand`, `Telegram`, `The Binding of Isaac`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: DE
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 24/10/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: German German
+Local Time: 12/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12600KF
+[... truncated; full sample at ``sample.txt`` (approx. 346 more lines) ...]
 ```
 
 ### `cystack_495d5c5a`
@@ -106074,6 +111982,61 @@ services.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 225 more lines) ...]
+```
+
+### `cystack_4992234e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `Grand Theft Auto`, `HWID`, `Hitman`, `Install Date`, `Ip`, `Keyboard Languages`, `Kingdom Come`, `Local Time`, `MachineID`, `Mafia`, `Mafia II`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Wolfenstein`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: CZ
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 28/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 24/02/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Czech English
+Local Time: 28/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 5600G with Radeon Graphics         
+Cores: 12
+Threads: 12
+RAM: 15797 MB
+VideoCard: AMD Radeon(TM) Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 308 more lines) ...]
 ```
 
 ### `cystack_499711b4`
@@ -108166,6 +114129,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 358 more lines) ...]
 ```
 
+### `cystack_4b617ee9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Angel Legion`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: ID
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 02/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: English
+Local Time: 10/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz
+[... truncated; full sample at ``sample.txt`` (approx. 327 more lines) ...]
+```
+
 ### `cystack_4b61a361`
 
 **Attribution confidence:** `high`
@@ -108606,6 +114624,61 @@ LsaIso.exe
 [... truncated; full sample at ``sample.txt`` (approx. 336 more lines) ...]
 ```
 
+### `cystack_4ba236a4`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Caveman World`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: BR
+Version: 18.7
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 01/02/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: Portuguese Portuguese
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 5500                               
+Cores: 12
+Threads: 12
+RAM: 16274 MB
+VideoCard: AMD Radeon RX 580 2048SP
+[... truncated; full sample at ``sample.txt`` (approx. 291 more lines) ...]
+```
+
 ### `cystack_4ba35b43`
 
 **Attribution confidence:** `high`
@@ -108714,6 +114787,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 286 more lines) ...]
+```
+
+### `cystack_4bb6793b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Dark Hours`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Ocean World`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: BR
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 07/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese Portuguese
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 5500                               
+[... truncated; full sample at ``sample.txt`` (approx. 216 more lines) ...]
 ```
 
 ### `cystack_4bb84a10`
@@ -109596,6 +115724,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 325 more lines) ...]
 ```
 
+### `cystack_4c4d8aca`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `RISK`, `Telegram`, `The Elder Scrolls IV`, `The Elder Scrolls V`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: SI
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 28/12/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1440x1080
+Keyboard Languages: Greek English Slovenian Serbian (L Serbian (C
+Local Time: 08/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 3600 6-Core Processor              
+[... truncated; full sample at ``sample.txt`` (approx. 319 more lines) ...]
+```
+
 ### `cystack_4c4f9fc9`
 
 **Attribution confidence:** `high`
@@ -110366,6 +116549,116 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 261 more lines) ...]
 ```
 
+### `cystack_4ca429e2`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Schedule I`, `Telegram`, `The Seven Deadly Sins`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: PH
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 21/01/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 09/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 176 more lines) ...]
+```
+
+### `cystack_4cb0bab4`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Crowalt`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PH
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 28/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English English
+Local Time: 14/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: AMD Ryzen 7 5825U with Radeon Graphics         
+[... truncated; full sample at ``sample.txt`` (approx. 293 more lines) ...]
+```
+
 ### `cystack_4ce09332`
 
 **Attribution confidence:** `high`
@@ -110751,6 +117044,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 212 more lines) ...]
 ```
 
+### `cystack_4d44e9cf`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `SCP`, `Schedule I`, `Supermarket Simulator`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: CA
+Version: 18.7
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 15/11/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English English
+Local Time: 11/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+Cores: 8
+Threads: 8
+RAM: 16313 MB
+VideoCard: NVIDIA GeForce GTX 1070
+[... truncated; full sample at ``sample.txt`` (approx. 282 more lines) ...]
+```
+
 ### `cystack_4d53ff41`
 
 **Attribution confidence:** `high`
@@ -110859,6 +117207,61 @@ LsaIso.exe
 lsass.exe
 winlogon.exe
 [... truncated; full sample at ``sample.txt`` (approx. 298 more lines) ...]
+```
+
+### `cystack_4d935922`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Detroit`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PUBG`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: BR
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 17/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+[... truncated; full sample at ``sample.txt`` (approx. 252 more lines) ...]
 ```
 
 ### `cystack_4d9e990b`
@@ -112014,6 +118417,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 236 more lines) ...]
+```
+
+### `cystack_4e74190f`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Beyond`, `Burger Shift`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: UY
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 12/06/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish
+Local Time: 16/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 272 more lines) ...]
 ```
 
 ### `cystack_4e8118e6`
@@ -113224,6 +119682,116 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 280 more lines) ...]
+```
+
+### `cystack_4f282050`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Contraband Police`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: US
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 04/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 13/04/2026 <ip>
+TimeZone: 4294967288
+
+[Hardware]
+Processor: AMD Ryzen 5 5500                               
+[... truncated; full sample at ``sample.txt`` (approx. 335 more lines) ...]
+```
+
+### `cystack_4f2fb972`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Fallout`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `SCP`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Viscera Cleanup Detail`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: AR
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 28/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 16/07/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1360x768
+Keyboard Languages: Spanish Spanish
+Local Time: 28/11/2025 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+Cores: 8
+Threads: 8
+RAM: 8111 MB
+VideoCard: Intel(R) HD Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 232 more lines) ...]
 ```
 
 ### `cystack_4f49273c`
@@ -115133,6 +121701,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 339 more lines) ...]
 ```
 
+### `cystack_505fa6b6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Arena Breakout`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 03/06/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese Portuguese Portuguese Portuguese
+Local Time: 12/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz
+[... truncated; full sample at ``sample.txt`` (approx. 246 more lines) ...]
+```
+
 ### `cystack_506456ee`
 
 **Attribution confidence:** `high`
@@ -115298,6 +121921,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 254 more lines) ...]
 ```
 
+### `cystack_5070a6d2`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Etheria`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home Single Language
+Install Date: 16/01/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1360x768
+Keyboard Languages: Portuguese
+Local Time: 12/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz
+[... truncated; full sample at ``sample.txt`` (approx. 165 more lines) ...]
+```
+
 ### `cystack_5072ff21`
 
 **Attribution confidence:** `high`
@@ -115406,6 +122084,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 274 more lines) ...]
+```
+
+### `cystack_507b2312`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Arena Breakout`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Monster Hunter Stories 3`, `Nova-Life`, `Path`, `Pixel Gun 3D`, `Processor`, `RAM`, `SCP`, `Solo Leveling`, `Telegram`, `The Seven Deadly Sins`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: FR
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 21/06/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English French
+Local Time: 16/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 341 more lines) ...]
 ```
 
 ### `cystack_508c6a14`
@@ -116673,6 +123406,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 329 more lines) ...]
 ```
 
+### `cystack_51456824`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `DPET`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Pixel Gun 3D`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: TR
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 28/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 07/05/2022 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: Turkish
+Local Time: 28/11/2025 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+Cores: 8
+Threads: 8
+RAM: 16200 MB
+VideoCard: NVIDIA GeForce GTX 1660 Ti
+[... truncated; full sample at ``sample.txt`` (approx. 238 more lines) ...]
+```
+
 ### `cystack_514c3920`
 
 **Attribution confidence:** `high`
@@ -117111,6 +123899,61 @@ svchost.exe
 fontdrvhost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 291 more lines) ...]
+```
+
+### `cystack_51d72b94`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Car Dealer Simulator`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: NL
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home Single Language
+Install Date: 28/02/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: Turkish
+Local Time: 11/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[... truncated; full sample at ``sample.txt`` (approx. 256 more lines) ...]
 ```
 
 ### `cystack_51e80520`
@@ -118211,6 +125054,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 265 more lines) ...]
+```
+
+### `cystack_52665650`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Rising Storm 2`, `Telegram`, `Threads`, `TimeZone`, `Total War`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: US
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 11/04/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: English
+Local Time: 12/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: Intel(R) Core(TM) i9-14900K
+[... truncated; full sample at ``sample.txt`` (approx. 257 more lines) ...]
 ```
 
 ### `cystack_526852a3`
@@ -120232,6 +127130,61 @@ LsaIso.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 364 more lines) ...]
+```
+
+### `cystack_538ddbe7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Age of Empires II`, `Car Dealer Simulator`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: AR
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 15/11/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish Spanish
+Local Time: 29/11/2025 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+Cores: 12
+Threads: 12
+RAM: 16225 MB
+VideoCard: NVIDIA GeForce RTX 3060
+[... truncated; full sample at ``sample.txt`` (approx. 263 more lines) ...]
 ```
 
 ### `cystack_538fc7a4`
@@ -124084,6 +131037,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 261 more lines) ...]
 ```
 
+### `cystack_55dc277a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Sky`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: CO
+
+Date: 15/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 21/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English English Spanish
+Local Time: 15/04/2026 <ip>
+TimeZone: 4294967288
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 251 more lines) ...]
+```
+
 ### `cystack_55e2806c`
 
 **Attribution confidence:** `high`
@@ -124469,6 +131477,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 230 more lines) ...]
 ```
 
+### `cystack_5613d778`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Monster Hunter`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: DO
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 09/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Spanish Spanish
+Local Time: 14/04/2026 <ip>
+TimeZone: 4294967292
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-11500 @ 2.70GHz
+[... truncated; full sample at ``sample.txt`` (approx. 311 more lines) ...]
+```
+
 ### `cystack_56143c9a`
 
 **Attribution confidence:** `high`
@@ -124577,6 +131640,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 280 more lines) ...]
+```
+
+### `cystack_561ca5ec`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`, `Zefyr`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 09/08/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2480x1080
+Keyboard Languages: Portuguese
+Local Time: 13/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz
+[... truncated; full sample at ``sample.txt`` (approx. 205 more lines) ...]
 ```
 
 ### `cystack_562c8cee`
@@ -124797,6 +131915,61 @@ svchost.exe
 winlogon.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 342 more lines) ...]
+```
+
+### `cystack_5673ad22`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Asphalt 9`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: DE
+Version: 18.7
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 16/04/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1440x1080
+Keyboard Languages: German
+Local Time: 09/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i7-11700F @ 2.50GHz
+Cores: 16
+Threads: 16
+RAM: 16265 MB
+VideoCard: NVIDIA GeForce RTX 3060
+[... truncated; full sample at ``sample.txt`` (approx. 352 more lines) ...]
 ```
 
 ### `cystack_56765e83`
@@ -125679,6 +132852,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 201 more lines) ...]
 ```
 
+### `cystack_570eb013`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Ocean World`, `Path`, `Processor`, `RAM`, `Supermarket Simulator`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: TH
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 27/08/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English Thai
+Local Time: 29/11/2025 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
+Cores: 4
+Threads: 4
+RAM: 8107 MB
+VideoCard: Intel(R) HD Graphics 5500
+[... truncated; full sample at ``sample.txt`` (approx. 236 more lines) ...]
+```
+
 ### `cystack_570f9240`
 
 **Attribution confidence:** `high`
@@ -126158,6 +133386,61 @@ svchost.exe
 fontdrvhost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 180 more lines) ...]
+```
+
+### `cystack_57524728`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `DRAGON BALL`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Mafia III`, `Path`, `Processor`, `RAM`, `Sleeping Dogs`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+Беру логи с балансом более 10000$
+В распоряжении 150шт - rtx5090
+Депозит 2 btc /topic/232013/
+
+Telegram: @brute
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.4
+
+IP: <redacted>
+Country: ID
+
+Date: 28/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 12/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 28/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+[... truncated; full sample at ``sample.txt`` (approx. 227 more lines) ...]
 ```
 
 ### `cystack_5761b29f`
@@ -128910,6 +136193,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 179 more lines) ...]
 ```
 
+### `cystack_58f6ff41`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Metal Slug`, `NARUTO SHIPPUDEN`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 31/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese
+Local Time: 12/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 7 5700G with Radeon Graphics         
+[... truncated; full sample at ``sample.txt`` (approx. 245 more lines) ...]
+```
+
 ### `cystack_58fa0cf4`
 
 **Attribution confidence:** `high`
@@ -131440,6 +138778,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 384 more lines) ...]
 ```
 
+### `cystack_5aacf712`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Feed and Grow`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Sleeping Dogs`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 09/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x768
+Keyboard Languages: Portuguese
+Local Time: 13/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+[... truncated; full sample at ``sample.txt`` (approx. 237 more lines) ...]
+```
+
 ### `cystack_5aadb04b`
 
 **Attribution confidence:** `high`
@@ -131878,6 +139271,61 @@ svchost.exe
 fontdrvhost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 271 more lines) ...]
+```
+
+### `cystack_5ad8d126`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `Project Reality`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: MX
+Version: 18.7
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 25/12/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: Spanish
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967289
+
+[Hardware]
+Processor: Intel(R) Xeon(R) CPU E5-2666 v3 @ 2.90GHz
+Cores: 20
+Threads: 20
+RAM: 32672 MB
+VideoCard: NVIDIA GeForce RTX 2060 SUPER
+[... truncated; full sample at ``sample.txt`` (approx. 300 more lines) ...]
 ```
 
 ### `cystack_5ada1224`
@@ -132538,6 +139986,61 @@ services.exe
 winlogon.exe
 lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 398 more lines) ...]
+```
+
+### `cystack_5b830fcb`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Halo`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: GB
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 01/01/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 14/04/2026 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: Intel(R) Xeon(R) CPU E3-1241 v3 @ 3.50GHz
+[... truncated; full sample at ``sample.txt`` (approx. 233 more lines) ...]
 ```
 
 ### `cystack_5b9000fe`
@@ -133530,6 +141033,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 231 more lines) ...]
 ```
 
+### `cystack_5c166572`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Max Payne 2`, `Metro`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: RO
+
+Date: 15/05/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 11/04/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1440x1080
+Keyboard Languages: English
+Local Time: 15/05/2026 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-14400F
+[... truncated; full sample at ``sample.txt`` (approx. 166 more lines) ...]
+```
+
 ### `cystack_5c1b3dfa`
 
 **Attribution confidence:** `high`
@@ -134245,6 +141803,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 246 more lines) ...]
 ```
 
+### `cystack_5ca33b4a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `CRSED`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `Truck World`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: LK
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 20/08/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Sinhala Sinhala
+Local Time: 13/04/2026 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6400T CPU @ 2.20GHz
+[... truncated; full sample at ``sample.txt`` (approx. 253 more lines) ...]
+```
+
 ### `cystack_5ca55db0`
 
 **Attribution confidence:** `high`
@@ -134353,6 +141966,61 @@ services.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 233 more lines) ...]
+```
+
+### `cystack_5cb19cdb`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Saints Row`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: AE
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 03/01/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English
+Local Time: 10/04/2026 <ip>
+TimeZone: 4
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-10610U CPU @ 1.80GHz
+[... truncated; full sample at ``sample.txt`` (approx. 269 more lines) ...]
 ```
 
 ### `cystack_5cb3263f`
@@ -135343,6 +143011,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 254 more lines) ...]
+```
+
+### `cystack_5d55cc2b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PUBG`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `Unreal Development Kit`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: RO
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 19/02/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 14/04/2026 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 322 more lines) ...]
 ```
 
 ### `cystack_5d6107ad`
@@ -137325,6 +145048,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 314 more lines) ...]
 ```
 
+### `cystack_5e8c7223`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Ancestors`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: NO
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 20/01/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: Norwegian 
+Local Time: 10/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) Ultra 7 265KF
+[... truncated; full sample at ``sample.txt`` (approx. 291 more lines) ...]
+```
+
 ### `cystack_5e8d6aec`
 
 **Attribution confidence:** `high`
@@ -138205,6 +145983,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 257 more lines) ...]
 ```
 
+### `cystack_5f3f71a9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Reverse`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PH
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 10/04/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English
+Local Time: 14/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: AMD A8-7680 Radeon R7, 10 Compute Cores 4C+6G  
+[... truncated; full sample at ``sample.txt`` (approx. 207 more lines) ...]
+```
+
 ### `cystack_5f48b289`
 
 **Attribution confidence:** `high`
@@ -138478,6 +146311,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 238 more lines) ...]
+```
+
+### `cystack_5f749999`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PUBG`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: JP
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 17/11/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 3440x1440
+Keyboard Languages: Korean
+Local Time: 09/04/2026 <ip>
+TimeZone: 9
+
+[Hardware]
+Processor: AMD Ryzen 5 7500F 6-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 268 more lines) ...]
 ```
 
 ### `cystack_5f82cf46`
@@ -139195,6 +147083,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 247 more lines) ...]
 ```
 
+### `cystack_60214351`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Backrooms`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Ready or Not`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: SA
+Version: 18.7
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 23/01/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1200
+Keyboard Languages: Arabic English
+Local Time: 09/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: 13th Gen Intel(R) Core(TM) i5-1334U
+Cores: 12
+Threads: 12
+RAM: 16107 MB
+VideoCard: Intel(R) UHD Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 302 more lines) ...]
+```
+
 ### `cystack_602517e0`
 
 **Attribution confidence:** `high`
@@ -139525,6 +147468,61 @@ WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 238 more lines) ...]
 ```
 
+### `cystack_604bcc73`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hollow Knight`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `State of Decay`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+Беру логи с балансом более 10000$
+В распоряжении 150шт - rtx5090
+Депозит 2 btc /topic/232013/
+
+Telegram: @brute
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.4
+
+IP: <redacted>
+Country: PH
+
+Date: 30/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 08/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1680x1050
+Keyboard Languages: English English
+Local Time: 30/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz
+[... truncated; full sample at ``sample.txt`` (approx. 314 more lines) ...]
+```
+
 ### `cystack_60542f84`
 
 **Attribution confidence:** `high`
@@ -139578,6 +147576,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 239 more lines) ...]
+```
+
+### `cystack_606abf50`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Dying Light 2`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Warhammer`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: TH
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 27/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 14/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Thai
+Local Time: 27/11/2025 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i3-12100F
+Cores: 8
+Threads: 8
+RAM: 16220 MB
+VideoCard: NVIDIA GeForce GTX 1650
+[... truncated; full sample at ``sample.txt`` (approx. 260 more lines) ...]
 ```
 
 ### `cystack_606b034c`
@@ -140405,6 +148458,61 @@ lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 299 more lines) ...]
 ```
 
+### `cystack_6125a2b4`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Warhammer`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PH
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 21/08/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1440x900
+Keyboard Languages: English
+Local Time: 12/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: AMD Ryzen 3 2200G with Radeon Vega Graphics    
+[... truncated; full sample at ``sample.txt`` (approx. 251 more lines) ...]
+```
+
 ### `cystack_6132605a`
 
 **Attribution confidence:** `high`
@@ -140610,6 +148718,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 245 more lines) ...]
+```
+
+### `cystack_6166a0c4`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `SCP`, `Telegram`, `Threads`, `TimeZone`, `Umamusume`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: NL
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 31/01/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Turkish
+Local Time: 10/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: AMD Ryzen 5 7500F 6-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 400 more lines) ...]
 ```
 
 ### `cystack_617630bf`
@@ -141547,6 +149710,61 @@ VideoCard: AMD Radeon RX 580 2048SP
 [... truncated; full sample at ``sample.txt`` (approx. 269 more lines) ...]
 ```
 
+### `cystack_62362337`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Fun with Ragdolls`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: PH
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 16/04/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1440x900
+Keyboard Languages: English
+Local Time: 10/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: AMD Ryzen 5 3400G with Radeon Vega Graphics    
+[... truncated; full sample at ``sample.txt`` (approx. 244 more lines) ...]
+```
+
 ### `cystack_623964c6`
 
 **Attribution confidence:** `high`
@@ -141765,6 +149983,116 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 274 more lines) ...]
+```
+
+### `cystack_62760803`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Depths Of Horror`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Road Food Simulator`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: US
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 13/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Turkish
+Local Time: 16/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-14400F
+[... truncated; full sample at ``sample.txt`` (approx. 273 more lines) ...]
+```
+
+### `cystack_627bfc41`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Sector 13`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: TH
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 20/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Thai
+Local Time: 11/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: AMD Ryzen 5 4500 6-Core Processor              
+[... truncated; full sample at ``sample.txt`` (approx. 212 more lines) ...]
 ```
 
 ### `cystack_628a2834`
@@ -143142,6 +151470,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 161 more lines) ...]
 ```
 
+### `cystack_635d0835`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Pixel Gun 3D`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home Single Language
+Install Date: 07/12/2019 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Portuguese
+Local Time: 12/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
+[... truncated; full sample at ``sample.txt`` (approx. 289 more lines) ...]
+```
+
 ### `cystack_6364395a`
 
 **Attribution confidence:** `high`
@@ -143967,6 +152350,61 @@ VideoCard: AMD Radeon(TM) Graphics
 [... truncated; full sample at ``sample.txt`` (approx. 247 more lines) ...]
 ```
 
+### `cystack_64058df3`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Monster Hunter Stories 3`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: FR
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 10/03/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: French
+Local Time: 16/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 2600 Six-Core Processor            
+[... truncated; full sample at ``sample.txt`` (approx. 282 more lines) ...]
+```
+
 ### `cystack_640eaf9d`
 
 **Attribution confidence:** `high`
@@ -144790,6 +153228,61 @@ services.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 261 more lines) ...]
+```
+
+### `cystack_64731759`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Detroit`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Metro`, `Path`, `Processor`, `RAM`, `Sleeping Dogs`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Wolfenstein II`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PL
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 31/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Polish
+Local Time: 12/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx  
+[... truncated; full sample at ``sample.txt`` (approx. 227 more lines) ...]
 ```
 
 ### `cystack_647521e0`
@@ -145837,6 +154330,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 211 more lines) ...]
 ```
 
+### `cystack_65163708`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Dying Light 2`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 05/04/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1360x768
+Keyboard Languages: Portuguese
+Local Time: 12/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+[... truncated; full sample at ``sample.txt`` (approx. 213 more lines) ...]
+```
+
 ### `cystack_651eafe5`
 
 **Attribution confidence:** `high`
@@ -146165,6 +154713,61 @@ Threads: 12
 RAM: 16333 MB
 VideoCard: Radeon RX 570 Series
 [... truncated; full sample at ``sample.txt`` (approx. 292 more lines) ...]
+```
+
+### `cystack_6571e9e6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Mafia`, `Mafia II`, `Mafia III`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PH
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home Single Language
+Install Date: 31/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x900
+Keyboard Languages: English
+Local Time: 12/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-9400 CPU @ 2.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 282 more lines) ...]
 ```
 
 ### `cystack_6572b6be`
@@ -146825,6 +155428,61 @@ LsaIso.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 194 more lines) ...]
+```
+
+### `cystack_65feb417`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Apollo Justice`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Plague Inc`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PH
+
+Date: 15/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 22/08/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English English
+Local Time: 15/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: AMD Ryzen 5 5500GT with Radeon Graphics        
+[... truncated; full sample at ``sample.txt`` (approx. 293 more lines) ...]
 ```
 
 ### `cystack_6606a9f1`
@@ -148532,6 +157190,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 197 more lines) ...]
 ```
 
+### `cystack_66f8b8d9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`, `Wrap House Simulator`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: FR
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 07/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: French
+Local Time: 09/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 7 5700G with Radeon Graphics         
+[... truncated; full sample at ``sample.txt`` (approx. 244 more lines) ...]
+```
+
 ### `cystack_66fcb969`
 
 **Attribution confidence:** `high`
@@ -148862,6 +157575,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 312 more lines) ...]
 ```
 
+### `cystack_673c5875`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Crime Scene Cleaner`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: FR
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 02/03/2021 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: French Turkish
+Local Time: 10/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 7 3700X 8-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 331 more lines) ...]
+```
+
 ### `cystack_67404e7e`
 
 **Attribution confidence:** `high`
@@ -149080,6 +157848,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 298 more lines) ...]
+```
+
+### `cystack_677c11b7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hotline Miami 2`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: CO
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 17/01/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish Spanish
+Local Time: 13/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: AMD Ryzen 7 5700G with Radeon Graphics         
+[... truncated; full sample at ``sample.txt`` (approx. 305 more lines) ...]
 ```
 
 ### `cystack_679b1f0b`
@@ -151227,6 +160050,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 256 more lines) ...]
 ```
 
+### `cystack_68e71b96`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Arena Breakout`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hunt`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `PUBG`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: DZ
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 01/12/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 28/03/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English French Arabic
+Local Time: 01/12/2025 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: AMD Ryzen 7 5700X 8-Core Processor             
+Cores: 16
+Threads: 16
+RAM: 16311 MB
+VideoCard: AMD Radeon RX 6800 XT
+[... truncated; full sample at ``sample.txt`` (approx. 257 more lines) ...]
+```
+
 ### `cystack_68e95520`
 
 **Attribution confidence:** `high`
@@ -152217,6 +161095,61 @@ lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 285 more lines) ...]
 ```
 
+### `cystack_698d81ac`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PUBG`, `Path`, `Processor`, `RAM`, `SCP`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: DE
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 26/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: German
+Local Time: 12/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i7-12650H
+[... truncated; full sample at ``sample.txt`` (approx. 309 more lines) ...]
+```
+
 ### `cystack_6991919e`
 
 **Attribution confidence:** `high`
@@ -153040,6 +161973,61 @@ WUDFHost.exe [1040]
 svchost.exe [1100]
 svchost.exe [1164]
 [... truncated; full sample at ``sample.txt`` (approx. 155 more lines) ...]
+```
+
+### `cystack_6a3b4898`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `Granny`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: GB
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 17/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 16/04/2026 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+[... truncated; full sample at ``sample.txt`` (approx. 237 more lines) ...]
 ```
 
 ### `cystack_6a4bf481`
@@ -154857,6 +163845,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 275 more lines) ...]
 ```
 
+### `cystack_6bc52231`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Motor Town`, `Only Up`, `Path`, `Processor`, `RAM`, `Taxi Life`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: CA
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 28/04/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Russian
+Local Time: 10/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-11600K @ 3.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 371 more lines) ...]
+```
+
 ### `cystack_6bd8b169`
 
 **Attribution confidence:** `high`
@@ -155020,6 +164063,61 @@ winlogon.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 317 more lines) ...]
+```
+
+### `cystack_6bf5344f`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Avatar`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: NL
+Version: 18.7
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 14/03/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1707x1067
+Keyboard Languages: English Greek
+Local Time: 08/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-14650HX
+Cores: 24
+Threads: 24
+RAM: 14036 MB
+VideoCard: Intel(R) UHD Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 282 more lines) ...]
 ```
 
 ### `cystack_6c06641f`
@@ -156442,6 +165540,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 350 more lines) ...]
 ```
 
+### `cystack_6cecfbf2`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Stick Fight`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: NL
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 08/04/2022 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Turkish
+Local Time: 16/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+[... truncated; full sample at ``sample.txt`` (approx. 369 more lines) ...]
+```
+
 ### `cystack_6cf37cea`
 
 **Attribution confidence:** `high`
@@ -156662,6 +165815,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 364 more lines) ...]
 ```
 
+### `cystack_6d07135d`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PUBG`, `Path`, `Processor`, `Quarantine Zone`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: IN
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 29/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: English
+Local Time: 16/04/2026 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+[... truncated; full sample at ``sample.txt`` (approx. 241 more lines) ...]
+```
+
 ### `cystack_6d0ef718`
 
 **Attribution confidence:** `high`
@@ -156770,6 +165978,61 @@ winlogon.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 317 more lines) ...]
+```
+
+### `cystack_6d2c1398`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PUBG`, `Path`, `Processor`, `RAM`, `Telegram`, `The Seven Deadly Sins`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: IS
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 22/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 12/04/2026 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: Intel(R) Core(TM) i9-14900KF
+[... truncated; full sample at ``sample.txt`` (approx. 311 more lines) ...]
 ```
 
 ### `cystack_6d324828`
@@ -158530,6 +167793,61 @@ svchost.exe
 fontdrvhost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 264 more lines) ...]
+```
+
+### `cystack_6e55d48c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Display Resolution`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+IP: <redacted>
+Country: AR
+Work Dir: In memory
+Windows: Windows 11 Pro
+Install Date: 24/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish Spanish
+Local Time: 25/04/2026 <ip>
+TimeZone: 4294967293
+[Hardware]
+Cores: 12
+Threads: 12
+RAM: 32690 MB
+VideoCard: AMD Radeon RX 6700 XT
+[Processes]
+System
+Registry
+Memory Compression
+SystemSettings.exe
+CPUMetricsServer.exe
+[Software]
+Call of Duty
+Resident Evil 4
+Tom Clancy's The Division 2
+Resident Evil
+Resident Evil 0
+Megabonk
+Zomborg
+Resident Evil 2
+CorelDRAW Graphics Suite 2024 - IPM Content CT (x64) - 25.1
+CorelDRAW Graphics Suite 2024 - IPM Content FR (x64) - 25.1
+CorelDRAW Graphics Suite 2024 - IPM Content RU (x64) - 25.1
+CorelDRAW Graphics Suite 2024 - IPM Content PL (x64) - 25.1
+CorelDRAW Graphics Suite 2024 - IPM Content ES (x64) - 25.1
+[... truncated; full sample at ``sample.txt`` (approx. 12 more lines) ...]
 ```
 
 ### `cystack_6e565874`
@@ -162932,6 +172250,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 355 more lines) ...]
 ```
 
+### `cystack_70f15aa4`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Subnautica`, `Telegram`, `The Dishwasher`, `The Spotter`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: US
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 04/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967288
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz
+[... truncated; full sample at ``sample.txt`` (approx. 282 more lines) ...]
+```
+
 ### `cystack_71259d48`
 
 **Attribution confidence:** `high`
@@ -163315,6 +172688,61 @@ fontdrvhost.exe
 WUDFHost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 283 more lines) ...]
+```
+
+### `cystack_7156d4eb`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `Grand Theft Auto`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 31/05/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese Portuguese
+Local Time: 11/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 7 5700X 8-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 277 more lines) ...]
 ```
 
 ### `cystack_715ccad9`
@@ -163812,6 +173240,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 288 more lines) ...]
 ```
 
+### `cystack_71f6ac17`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Silent Hill`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: ES
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 01/04/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish
+Local Time: 08/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 7 5700X 8-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 312 more lines) ...]
+```
+
 ### `cystack_71f98243`
 
 **Attribution confidence:** `high`
@@ -163865,6 +173348,61 @@ services.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 252 more lines) ...]
+```
+
+### `cystack_71ff17ad`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `The Planet Crafter`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: SA
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 12/10/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Arabic English
+Local Time: 12/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 267 more lines) ...]
 ```
 
 ### `cystack_71ff571e`
@@ -164417,6 +173955,61 @@ VideoCard: NVIDIA GeForce GTX 1060 6GB
 [... truncated; full sample at ``sample.txt`` (approx. 300 more lines) ...]
 ```
 
+### `cystack_725a153e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Bum`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Money Simulator`, `Path`, `Police Shootout`, `Processor`, `RAM`, `Schedule I`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: RO
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 05/10/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 16/04/2026 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+[... truncated; full sample at ``sample.txt`` (approx. 303 more lines) ...]
+```
+
 ### `cystack_72644cfc`
 
 **Attribution confidence:** `high`
@@ -164525,6 +174118,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 308 more lines) ...]
+```
+
+### `cystack_726c39f6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BE
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 24/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Dutch
+Local Time: 13/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-9700F CPU @ 3.00GHz
+[... truncated; full sample at ``sample.txt`` (approx. 321 more lines) ...]
 ```
 
 ### `cystack_72a15ada`
@@ -165185,6 +174833,61 @@ winlogon.exe
 services.exe
 LsaIso.exe
 [... truncated; full sample at ``sample.txt`` (approx. 224 more lines) ...]
+```
+
+### `cystack_7354e083`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Backrooms`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: TR
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 12/04/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Turkish
+Local Time: 11/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: AMD Ryzen 5 5600 6-Core Processor              
+[... truncated; full sample at ``sample.txt`` (approx. 301 more lines) ...]
 ```
 
 ### `cystack_7358abc8`
@@ -166548,6 +176251,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 278 more lines) ...]
 ```
 
+### `cystack_744d4c7a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `NieR`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 29/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese Portuguese
+Local Time: 16/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 9 7900X 12-Core Processor            
+[... truncated; full sample at ``sample.txt`` (approx. 273 more lines) ...]
+```
+
 ### `cystack_7453b96f`
 
 **Attribution confidence:** `high`
@@ -167371,6 +177129,61 @@ svchost.exe
 winlogon.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 291 more lines) ...]
+```
+
+### `cystack_75099c5e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Minecraft`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home Single Language
+Install Date: 31/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Portuguese Portuguese
+Local Time: 11/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz
+[... truncated; full sample at ``sample.txt`` (approx. 183 more lines) ...]
 ```
 
 ### `cystack_750ef9ad`
@@ -168308,6 +178121,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 286 more lines) ...]
 ```
 
+### `cystack_75bc0727`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Contraband Police`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `Truck World`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: NO
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 31/01/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English English Russian
+Local Time: 16/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+[... truncated; full sample at ``sample.txt`` (approx. 269 more lines) ...]
+```
+
 ### `cystack_75d9e7cf`
 
 **Attribution confidence:** `high`
@@ -168526,6 +178394,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 291 more lines) ...]
+```
+
+### `cystack_75f13f1d`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Black Myth`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: FR
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 19/05/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English French
+Local Time: 13/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 7 5700X3D 8-Core Processor           
+[... truncated; full sample at ``sample.txt`` (approx. 205 more lines) ...]
 ```
 
 ### `cystack_760aca13`
@@ -169021,6 +178944,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 369 more lines) ...]
+```
+
+### `cystack_763ed089`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Bramble`, `Bully`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: BR
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 12/03/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1080
+Keyboard Languages: Portuguese
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 7 5700X 8-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 332 more lines) ...]
 ```
 
 ### `cystack_76442150`
@@ -169903,6 +179881,61 @@ WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 337 more lines) ...]
 ```
 
+### `cystack_76ffdcd5`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Just Move`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Pixel Gun 3D`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 22/02/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese Portuguese
+Local Time: 12/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD FX(tm)-6300 Six-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 191 more lines) ...]
+```
+
 ### `cystack_7708707b`
 
 **Attribution confidence:** `high`
@@ -170506,6 +180539,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 128 more lines) ...]
+```
+
+### `cystack_775359b8`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `Gatekeeper`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: US
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 15/02/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 29/11/2025 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: AMD Ryzen 5 5500                               
+Cores: 12
+Threads: 12
+RAM: 16257 MB
+VideoCard: AMD Radeon(TM) RX 6400
+[... truncated; full sample at ``sample.txt`` (approx. 292 more lines) ...]
 ```
 
 ### `cystack_77541395`
@@ -171991,6 +182079,61 @@ Threads: 8
 RAM: 32696 MB
 VideoCard: NVIDIA GeForce GTX 1070 Ti
 [... truncated; full sample at ``sample.txt`` (approx. 241 more lines) ...]
+```
+
+### `cystack_78b5d9b7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Cafe Owner Simulator`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `Gas Station Simulator`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PUBG`, `Path`, `Processor`, `RAM`, `Saloon Simulator`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PH
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 27/06/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English English
+Local Time: 11/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz
+[... truncated; full sample at ``sample.txt`` (approx. 306 more lines) ...]
 ```
 
 ### `cystack_78b635fb`
@@ -176063,6 +186206,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 253 more lines) ...]
 ```
 
+### `cystack_7b77f3fc`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `PUBG`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: KR
+Version: 18.7
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 24/11/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Korean
+Local Time: 10/04/2026 <ip>
+TimeZone: 9
+
+[Hardware]
+Processor: AMD Ryzen 5 5600X 6-Core Processor             
+Cores: 12
+Threads: 12
+RAM: 32678 MB
+VideoCard: NVIDIA GeForce RTX 3060
+[... truncated; full sample at ``sample.txt`` (approx. 323 more lines) ...]
+```
+
 ### `cystack_7b7abbb8`
 
 **Attribution confidence:** `high`
@@ -176336,6 +186534,61 @@ Processor: Intel(R) Core(TM) i3-8130U CPU @ 2.20GHz
 Cores: 2
 Threads: 4
 [... truncated; full sample at ``sample.txt`` (approx. 397 more lines) ...]
+```
+
+### `cystack_7be793f3`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Knightfall`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PE
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home Single Language
+Install Date: 17/04/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: Spanish Spanish
+Local Time: 10/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: AMD Ryzen 7 5700U with Radeon Graphics         
+[... truncated; full sample at ``sample.txt`` (approx. 293 more lines) ...]
 ```
 
 ### `cystack_7be9d701`
@@ -179180,6 +189433,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 214 more lines) ...]
 ```
 
+### `cystack_7e0e9fcf`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Police Shootout`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PH
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 25/05/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 13/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: AMD Athlon 3000G with Radeon Vega Graphics     
+[... truncated; full sample at ``sample.txt`` (approx. 243 more lines) ...]
+```
+
 ### `cystack_7e18e02c`
 
 **Attribution confidence:** `high`
@@ -179288,6 +189596,61 @@ winlogon.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 343 more lines) ...]
+```
+
+### `cystack_7e328743`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Dark Hours`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Riot Control Simulator`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: DE
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 14/06/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English Russian
+Local Time: 29/11/2025 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz
+Cores: 4
+Threads: 4
+RAM: 7886 MB
+VideoCard: Intel(R) UHD Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 276 more lines) ...]
 ```
 
 ### `cystack_7e34bc1c`
@@ -180115,6 +190478,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 322 more lines) ...]
 ```
 
+### `cystack_7ea81488`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hotline Miami 2`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home Single Language
+Install Date: 16/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Portuguese Portuguese
+Local Time: 14/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz
+[... truncated; full sample at ``sample.txt`` (approx. 245 more lines) ...]
+```
+
 ### `cystack_7ea9b3ec`
 
 **Attribution confidence:** `high`
@@ -180278,6 +190696,61 @@ fontdrvhost.exe
 WUDFHost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 258 more lines) ...]
+```
+
+### `cystack_7ec9334d`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Douluo Dalu`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: TH
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 01/12/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home Single Language
+Install Date: 30/01/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Thai
+Local Time: 01/12/2025 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+Cores: 8
+Threads: 8
+RAM: 8067 MB
+VideoCard: Intel(R) UHD Graphics 620
+[... truncated; full sample at ``sample.txt`` (approx. 270 more lines) ...]
 ```
 
 ### `cystack_7ed1f752`
@@ -181270,6 +191743,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 182 more lines) ...]
 ```
 
+### `cystack_7f32ad02`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Schedule I`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: HN
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 28/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 02/06/2022 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Spanish Spanish
+Local Time: 28/11/2025 <ip>
+TimeZone: 4294967290
+
+[Hardware]
+Processor: AMD Ryzen 3 3200U with Radeon Vega Mobile Gfx  
+Cores: 4
+Threads: 4
+RAM: 14250 MB
+VideoCard: AMD Radeon(TM) Vega 3 Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 259 more lines) ...]
+```
+
 ### `cystack_7f3d96d5`
 
 **Attribution confidence:** `high`
@@ -181323,6 +191851,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 238 more lines) ...]
+```
+
+### `cystack_7f4dac01`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Metal Slug`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+Беру логи с балансом более 10000$
+В распоряжении 150шт - rtx5090
+Депозит 2 btc /topic/232013/
+
+Telegram: @brute
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.4
+
+IP: <redacted>
+Country: JO
+
+Date: 27/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 10/04/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Arabic
+Local Time: 27/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: AMD Ryzen 7 3700X 8-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 288 more lines) ...]
 ```
 
 ### `cystack_7f6cd6f9`
@@ -185230,6 +195813,61 @@ VideoCard: Intel(R) HD Graphics 630
 [... truncated; full sample at ``sample.txt`` (approx. 240 more lines) ...]
 ```
 
+### `cystack_81f61683`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Star Wars`, `Telegram`, `The Elder Scrolls V`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: US
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 09/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 16/04/2026 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-14700KF
+[... truncated; full sample at ``sample.txt`` (approx. 315 more lines) ...]
+```
+
 ### `cystack_82090935`
 
 **Attribution confidence:** `high`
@@ -185503,6 +196141,61 @@ winlogon.exe
 LsaIso.exe
 lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 353 more lines) ...]
+```
+
+### `cystack_823bac32`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Alien Swarm`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: AR
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 03/05/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish Spanish
+Local Time: 14/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 PRO 2400G with Radeon Vega Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 250 more lines) ...]
 ```
 
 ### `cystack_823db5be`
@@ -187265,6 +197958,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 247 more lines) ...]
 ```
 
+### `cystack_8362adc5`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `ENA`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: AR
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 10/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish
+Local Time: 11/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 4600G with Radeon Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 291 more lines) ...]
+```
+
 ### `cystack_836835f2`
 
 **Attribution confidence:** `high`
@@ -188585,6 +199333,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 315 more lines) ...]
 ```
 
+### `cystack_844ad9b4`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Plague Inc`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 25/07/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1024x768
+Keyboard Languages: Portuguese
+Local Time: 12/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+[... truncated; full sample at ``sample.txt`` (approx. 189 more lines) ...]
+```
+
 ### `cystack_844fee8d`
 
 **Attribution confidence:** `high`
@@ -188803,6 +199606,61 @@ svchost.exe
 fontdrvhost.exe
 winlogon.exe
 [... truncated; full sample at ``sample.txt`` (approx. 245 more lines) ...]
+```
+
+### `cystack_84982546`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `Total War`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: FR
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 11/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x960
+Keyboard Languages: French French
+Local Time: 14/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: 13th Gen Intel(R) Core(TM) i7-13650HX
+[... truncated; full sample at ``sample.txt`` (approx. 284 more lines) ...]
 ```
 
 ### `cystack_84b50269`
@@ -191720,6 +202578,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 293 more lines) ...]
 ```
 
+### `cystack_8637cc6b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Call to Arms - Gates of Hell`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Stronghold Crusader`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: AT
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 25/01/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Bosnian (L Serbian (C
+Local Time: 29/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 9 7950X3D 16-Core Processor          
+Cores: 32
+Threads: 32
+RAM: 31860 MB
+VideoCard: AMD Radeon RX 7900 XTX
+[... truncated; full sample at ``sample.txt`` (approx. 237 more lines) ...]
+```
+
 ### `cystack_8646a3a8`
 
 **Attribution confidence:** `high`
@@ -193590,6 +204503,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 343 more lines) ...]
 ```
 
+### `cystack_878e720f`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `DRAGON BALL Z`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 27/04/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Portuguese Portuguese
+Local Time: 13/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz
+[... truncated; full sample at ``sample.txt`` (approx. 255 more lines) ...]
+```
+
 ### `cystack_8791945e`
 
 **Attribution confidence:** `high`
@@ -193808,6 +204776,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 222 more lines) ...]
+```
+
+### `cystack_87b17d13`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Bad Parenting 1`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: MA
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 06/04/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: English French Arabic
+Local Time: 16/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10310U CPU @ 1.70GHz
+[... truncated; full sample at ``sample.txt`` (approx. 262 more lines) ...]
 ```
 
 ### `cystack_87b7a90c`
@@ -194745,6 +205768,116 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 278 more lines) ...]
 ```
 
+### `cystack_8870ea20`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: US
+Version: 18.7
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 20/08/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 10/04/2026 <ip>
+TimeZone: 4294967290
+
+[Hardware]
+Processor: AMD Ryzen 7 5700                               
+Cores: 16
+Threads: 16
+RAM: 32641 MB
+VideoCard: NVIDIA GeForce RTX 5060
+[... truncated; full sample at ``sample.txt`` (approx. 295 more lines) ...]
+```
+
+### `cystack_887c133b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `SCP`, `STALCRAFT`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: IT
+
+Date: 15/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro N
+Install Date: 12/03/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Italian Russian Ukrainian Arabic
+Local Time: 15/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD FX(tm)-6300 Six-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 257 more lines) ...]
+```
+
 ### `cystack_888397a7`
 
 **Attribution confidence:** `high`
@@ -194853,6 +205986,61 @@ services.exe
 LsaIso.exe
 lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 359 more lines) ...]
+```
+
+### `cystack_889fc8bc`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `DRAGON BALL Z`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hollow Knight`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: CO
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home Single Language
+Install Date: 09/09/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x800
+Keyboard Languages: Spanish Spanish
+Local Time: 11/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 283 more lines) ...]
 ```
 
 ### `cystack_88ad3308`
@@ -195018,6 +206206,61 @@ services.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 279 more lines) ...]
+```
+
+### `cystack_88b94f83`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Thief Simulator 2`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: US
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 31/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 11/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: AMD Ryzen 7 5700X 8-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 246 more lines) ...]
 ```
 
 ### `cystack_88c1caeb`
@@ -195348,6 +206591,61 @@ svchost.exe
 fontdrvhost.exe
 WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 270 more lines) ...]
+```
+
+### `cystack_890a0da9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `My Femboy Roommate`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+|  _____  _   _ __   __  _____  _   _  _____  _____  ___   _      _      _____  |
+| | ___ \| | | |\ \ / / |_   _|| \ | |/  ___||_   _|/ _ \ | |    | |    /  ___| |
+| | |_/ /| | | | \ V /    | |  |  \| |\ `--.   | | / /_\ \| |    | |    \ `--.  |
+| | ___ \| | | |  \ /     | |  | . ` | `--. \  | | |  _  || |    | |     `--. \ |
+| | |_/ /| |_| |  | |    _| |_ | |\  |/\__/ /  | | | | | || |____| |____/\__/ / |
+| \____/  \___/   \_/    \___/ \_| \_/\____/   \_/ \_| |_/\_____/\_____/\____/  |
+
+- WHERE BUY THE BEST INSTALLS ??
+
+
+**************************************************
+
+Date: 27/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home Single Language
+Install Date: 14/04/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x800
+Keyboard Languages: English Vietnamese
+Local Time: 27/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: AMD Ryzen 5 5600H with Radeon Graphics         
+Cores: 12
+Threads: 12
+RAM: 7583 MB
+VideoCard: AMD Radeon(TM) Graphics
+
+[Processes]
+System
+Registry
+[... truncated; full sample at ``sample.txt`` (approx. 291 more lines) ...]
 ```
 
 ### `cystack_8912b949`
@@ -196008,6 +207306,61 @@ lsass.exe
 winlogon.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 374 more lines) ...]
+```
+
+### `cystack_89685d89`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `After Inc`, `Black Myth`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: DK
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 30/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 21/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Danish English
+Local Time: 30/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-9600KF CPU @ 3.70GHz
+Cores: 6
+Threads: 6
+RAM: 16300 MB
+VideoCard: NVIDIA GeForce GTX 1660 SUPER
+[... truncated; full sample at ``sample.txt`` (approx. 291 more lines) ...]
 ```
 
 ### `cystack_896b371d`
@@ -198375,6 +209728,61 @@ LsaIso.exe
 [... truncated; full sample at ``sample.txt`` (approx. 337 more lines) ...]
 ```
 
+### `cystack_8a862463`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Dune`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PL
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 19/01/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 3440x1440
+Keyboard Languages: English English English
+Local Time: 14/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 7 7700X 8-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 339 more lines) ...]
+```
+
 ### `cystack_8a8a10a7`
 
 **Attribution confidence:** `high`
@@ -199145,6 +210553,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 316 more lines) ...]
 ```
 
+### `cystack_8b0df235`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Dying Light 2`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Kingdom Come`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: US
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 12/06/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 13/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: AMD Ryzen 5 5500                               
+[... truncated; full sample at ``sample.txt`` (approx. 340 more lines) ...]
+```
+
 ### `cystack_8b12d241`
 
 **Attribution confidence:** `high`
@@ -199748,6 +211211,61 @@ winlogon.exe
 fontdrvhost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 201 more lines) ...]
+```
+
+### `cystack_8b4dfca0`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HER TREES`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: VN
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 28/06/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 16/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Pentium(R) CPU G4560 @ 3.50GHz
+[... truncated; full sample at ``sample.txt`` (approx. 386 more lines) ...]
 ```
 
 ### `cystack_8b528064`
@@ -201070,6 +212588,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 338 more lines) ...]
 ```
 
+### `cystack_8c363a58`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Banker Simulator`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: ID
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 16/05/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English English
+Local Time: 13/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: AMD A8-7600 Radeon R7, 10 Compute Cores 4C+6G  
+[... truncated; full sample at ``sample.txt`` (approx. 279 more lines) ...]
+```
+
 ### `cystack_8c37756c`
 
 **Attribution confidence:** `high`
@@ -201233,6 +212806,61 @@ svchost.exe
 fontdrvhost.exe
 WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 345 more lines) ...]
+```
+
+### `cystack_8c3def76`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Black Myth`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `ONE PIECE`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: VN
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 11/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English
+Local Time: 16/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: 13th Gen Intel(R) Core(TM) i5-13420H
+[... truncated; full sample at ``sample.txt`` (approx. 324 more lines) ...]
 ```
 
 ### `cystack_8c79960a`
@@ -201618,6 +213246,61 @@ svchost.exe
 fontdrvhost.exe
 WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 331 more lines) ...]
+```
+
+### `cystack_8ca46195`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `Grand Theft Auto IV`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `SCP`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: PL
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 30/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 07/11/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Polish
+Local Time: 30/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 3400G with Radeon Vega Graphics    
+Cores: 8
+Threads: 8
+RAM: 16332 MB
+VideoCard: Radeon RX 570 Series
+[... truncated; full sample at ``sample.txt`` (approx. 283 more lines) ...]
 ```
 
 ### `cystack_8ca868f2`
@@ -203215,6 +214898,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 286 more lines) ...]
 ```
 
+### `cystack_8daa254b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Sky`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: US
+Version: 18.7
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 01/02/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 08/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: Intel(R) N95
+Cores: 4
+Threads: 4
+RAM: 7968 MB
+VideoCard: Intel(R) UHD Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 242 more lines) ...]
+```
+
 ### `cystack_8db721f5`
 
 **Attribution confidence:** `high`
@@ -203378,6 +215116,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 279 more lines) ...]
+```
+
+### `cystack_8dd84b0b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `Quarantine Zone`, `RAM`, `SCP`, `Stormworks`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PT
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 24/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese
+Local Time: 14/04/2026 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-14400F
+[... truncated; full sample at ``sample.txt`` (approx. 305 more lines) ...]
 ```
 
 ### `cystack_8dec0356`
@@ -203710,6 +215503,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 295 more lines) ...]
 ```
 
+### `cystack_8e14cd4e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `DRAGON BALL`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `NARUTO TO BORUTO`, `Path`, `Processor`, `RAM`, `Solo Leveling`, `Telegram`, `The Seven Deadly Sins`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 19/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese Portuguese
+Local Time: 11/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 4500 6-Core Processor              
+[... truncated; full sample at ``sample.txt`` (approx. 309 more lines) ...]
+```
+
 ### `cystack_8e1ed46c`
 
 **Attribution confidence:** `high`
@@ -203983,6 +215831,61 @@ services.exe
 winlogon.exe
 LsaIso.exe
 [... truncated; full sample at ``sample.txt`` (approx. 290 more lines) ...]
+```
+
+### `cystack_8e58163b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `BACKROOMS NO RETURN`, `Call of the Wild`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: LV
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 23/11/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English Latvian
+Local Time: 14/04/2026 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i3-12100F
+[... truncated; full sample at ``sample.txt`` (approx. 284 more lines) ...]
 ```
 
 ### `cystack_8e5b7cb5`
@@ -205138,6 +217041,61 @@ winlogon.exe
 LsaIso.exe
 lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 269 more lines) ...]
+```
+
+### `cystack_8f48f50e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `TCG Card Shop Simulator`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Watchmen`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: DE
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 03/10/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: German English Russian
+Local Time: 29/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 3350G with Radeon Vega Graphics    
+Cores: 8
+Threads: 8
+RAM: 16332 MB
+VideoCard: NVIDIA GeForce GTX 1650
+[... truncated; full sample at ``sample.txt`` (approx. 307 more lines) ...]
 ```
 
 ### `cystack_8f519d96`
@@ -208165,6 +220123,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 246 more lines) ...]
 ```
 
+### `cystack_9131391a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `The Escapists`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+Беру логи с балансом более 10000$
+В распоряжении 150шт - rtx5090
+Депозит 2 btc /topic/232013/
+
+Telegram: @brute
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.4
+
+IP: <redacted>
+Country: LA
+
+Date: 30/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 07/05/2022 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English Thai Lao
+Local Time: 30/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz
+[... truncated; full sample at ``sample.txt`` (approx. 259 more lines) ...]
+```
+
 ### `cystack_913f1ffe`
 
 **Attribution confidence:** `high`
@@ -208768,6 +220781,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 203 more lines) ...]
+```
+
+### `cystack_91c809c6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Mall Simulator`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+|  _____  _   _ __   __  _____  _   _  _____  _____  ___   _      _      _____  |
+| | ___ \| | | |\ \ / / |_   _|| \ | |/  ___||_   _|/ _ \ | |    | |    /  ___| |
+| | |_/ /| | | | \ V /    | |  |  \| |\ `--.   | | / /_\ \| |    | |    \ `--.  |
+| | ___ \| | | |  \ /     | |  | . ` | `--. \  | | |  _  || |    | |     `--. \ |
+| | |_/ /| |_| |  | |    _| |_ | |\  |/\__/ /  | | | | | || |____| |____/\__/ / |
+| \____/  \___/   \_/    \___/ \_| \_/\____/   \_/ \_| |_/\_____/\_____/\____/  |
+
+- WHERE BUY THE BEST INSTALLS ??
+
+
+**************************************************
+
+Date: 29/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 02/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English
+Local Time: 29/04/2026 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6440HQ CPU @ 2.60GHz
+Cores: 4
+Threads: 4
+RAM: 8053 MB
+VideoCard: Intel(R) HD Graphics 530
+
+[Processes]
+System
+Secure System
+[... truncated; full sample at ``sample.txt`` (approx. 289 more lines) ...]
 ```
 
 ### `cystack_91e08120`
@@ -209485,6 +221553,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 251 more lines) ...]
 ```
 
+### `cystack_9238aaa0`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Bully`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Sleeping Dogs`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: AR
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 10/12/2020 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: Spanish Spanish
+Local Time: 16/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 3400G with Radeon Vega Graphics    
+[... truncated; full sample at ``sample.txt`` (approx. 290 more lines) ...]
+```
+
 ### `cystack_92399a14`
 
 **Attribution confidence:** `high`
@@ -209593,6 +221716,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 273 more lines) ...]
+```
+
+### `cystack_92443e6a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Ancient Wars`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+Беру логи с балансом более 10000$
+В распоряжении 150шт - rtx5090
+Депозит 2 btc /topic/232013/
+
+Telegram: @brute
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.4
+
+IP: <redacted>
+Country: AR
+
+Date: 27/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 11/02/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: Spanish Spanish
+Local Time: 27/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 5500                               
+[... truncated; full sample at ``sample.txt`` (approx. 266 more lines) ...]
 ```
 
 ### `cystack_9259f208`
@@ -211410,6 +223588,61 @@ LsaIso.exe
 [... truncated; full sample at ``sample.txt`` (approx. 321 more lines) ...]
 ```
 
+### `cystack_938a87a4`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Rising Storm 2`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: VN
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 07/04/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Vietnamese
+Local Time: 16/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 219 more lines) ...]
+```
+
 ### `cystack_93933a46`
 
 **Attribution confidence:** `high`
@@ -211905,6 +224138,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 269 more lines) ...]
 ```
 
+### `cystack_93f348de`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Black Myth`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Dying Light`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: MY
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 13/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Chinese (S English
+Local Time: 10/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+[... truncated; full sample at ``sample.txt`` (approx. 339 more lines) ...]
+```
+
 ### `cystack_93f3577e`
 
 **Attribution confidence:** `high`
@@ -212343,6 +224631,61 @@ fontdrvhost.exe
 svchost.exe
 winlogon.exe
 [... truncated; full sample at ``sample.txt`` (approx. 143 more lines) ...]
+```
+
+### `cystack_943ef655`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Dying Light`, `GUID`, `HWID`, `Hunt`, `INAZUMA ELEVEN`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `The Seven Deadly Sins`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: ES
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 01/04/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish
+Local Time: 13/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 9 5900X 12-Core Processor            
+[... truncated; full sample at ``sample.txt`` (approx. 326 more lines) ...]
 ```
 
 ### `cystack_94413997`
@@ -214475,6 +226818,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 229 more lines) ...]
 ```
 
+### `cystack_95a77709`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Ready or Not`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: TR
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 03/10/2022 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: German
+Local Time: 29/11/2025 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: AMD Athlon(tm) X4 950 Quad Core Processor      
+Cores: 4
+Threads: 4
+RAM: 16080 MB
+VideoCard: NVIDIA GeForce GTX 1050 Ti
+[... truncated; full sample at ``sample.txt`` (approx. 266 more lines) ...]
+```
+
 ### `cystack_95ad4eac`
 
 **Attribution confidence:** `high`
@@ -214528,6 +226926,116 @@ svchost.exe
 fontdrvhost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 383 more lines) ...]
+```
+
+### `cystack_95b2d1c1`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `Date`, `Depths Of Horror`, `Display Resolution`, `GUID`, `HWID`, `Holyday City`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: US
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 08/02/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 12/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: AMD Ryzen 7 5700X 8-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 327 more lines) ...]
+```
+
+### `cystack_95b469cd`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Juno`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: BR
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 28/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 28/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese
+Local Time: 28/11/2025 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-9100F CPU @ 3.60GHz
+Cores: 4
+Threads: 4
+RAM: 16301 MB
+VideoCard: Radeon RX 580 Series
+[... truncated; full sample at ``sample.txt`` (approx. 122 more lines) ...]
 ```
 
 ### `cystack_95b5e903`
@@ -215850,6 +228358,61 @@ lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 275 more lines) ...]
 ```
 
+### `cystack_966eaad8`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Supermarket Simulator`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: GB
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 22/09/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 14/04/2026 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: AMD A6-7400K Radeon R5, 6 Compute Cores 2C+4G  
+[... truncated; full sample at ``sample.txt`` (approx. 281 more lines) ...]
+```
+
 ### `cystack_9673e15c`
 
 **Attribution confidence:** `high`
@@ -216125,6 +228688,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 277 more lines) ...]
 ```
 
+### `cystack_96acaed3`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Clair Obscur`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: CL
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home Single Language
+Install Date: 01/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish Spanish
+Local Time: 13/04/2026 <ip>
+TimeZone: 4294967292
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+[... truncated; full sample at ``sample.txt`` (approx. 312 more lines) ...]
+```
+
 ### `cystack_96b733eb`
 
 **Attribution confidence:** `high`
@@ -216345,6 +228963,61 @@ Microsoft Visual Studio 2010 Tools for Office Runtime (x64) - 10.0.60910
 [... truncated; full sample at ``sample.txt`` (approx. 189 more lines) ...]
 ```
 
+### `cystack_96e5965e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `Transmissions`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: TR
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 18/01/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Turkish
+Local Time: 10/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz
+[... truncated; full sample at ``sample.txt`` (approx. 211 more lines) ...]
+```
+
 ### `cystack_96e96415`
 
 **Attribution confidence:** `high`
@@ -216398,6 +229071,61 @@ svchost.exe
 fontdrvhost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 262 more lines) ...]
+```
+
+### `cystack_96ebf788`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `ONE PIECE`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: DE
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 13/04/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: German English
+Local Time: 13/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Xeon(R) CPU E3-1231 v3 @ 3.40GHz
+[... truncated; full sample at ``sample.txt`` (approx. 242 more lines) ...]
 ```
 
 ### `cystack_96f8d51c`
@@ -217280,6 +230008,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 251 more lines) ...]
 ```
 
+### `cystack_976edc4c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Sky`, `Stick Fight`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PS
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 10/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English English Arabic Arabic
+Local Time: 14/04/2026 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 272 more lines) ...]
+```
+
 ### `cystack_9781571d`
 
 **Attribution confidence:** `high`
@@ -218048,6 +230831,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 358 more lines) ...]
+```
+
+### `cystack_983b67e6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Sacred of Gates`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: US
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 23/11/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 08/04/2026 <ip>
+TimeZone: 4294967288
+
+[Hardware]
+Processor: AMD Ryzen 5 5600X 6-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 251 more lines) ...]
 ```
 
 ### `cystack_984f66f8`
@@ -220415,6 +233253,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 310 more lines) ...]
 ```
 
+### `cystack_9a152029`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Age of Empires II`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Stick Fight`, `The Elder Scrolls V`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: TR
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 15/08/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Turkish
+Local Time: 29/11/2025 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: AMD Ryzen 5 3500X 6-Core Processor             
+Cores: 6
+Threads: 6
+RAM: 16319 MB
+VideoCard: NVIDIA GeForce RTX 2060
+[... truncated; full sample at ``sample.txt`` (approx. 311 more lines) ...]
+```
+
 ### `cystack_9a1c5a81`
 
 **Attribution confidence:** `high`
@@ -220688,6 +233581,61 @@ winlogon.exe
 services.exe
 LsaIso.exe
 [... truncated; full sample at ``sample.txt`` (approx. 373 more lines) ...]
+```
+
+### `cystack_9a37cfb5`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Online Shopping site in India`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+|  _____  _   _ __   __  _____  _   _  _____  _____  ___   _      _      _____  |
+| | ___ \| | | |\ \ / / |_   _|| \ | |/  ___||_   _|/ _ \ | |    | |    /  ___| |
+| | |_/ /| | | | \ V /    | |  |  \| |\ `--.   | | / /_\ \| |    | |    \ `--.  |
+| | ___ \| | | |  \ /     | |  | . ` | `--. \  | | |  _  || |    | |     `--. \ |
+| | |_/ /| |_| |  | |    _| |_ | |\  |/\__/ /  | | | | | || |____| |____/\__/ / |
+| \____/  \___/   \_/    \___/ \_| \_/\____/   \_/ \_| |_/\_____/\_____/\____/  |
+
+- WHERE BUY THE BEST INSTALLS ??
+
+
+**************************************************
+
+Date: 29/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 08/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English English
+Local Time: 29/04/2026 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-6100U CPU @ 2.30GHz
+Cores: 4
+Threads: 4
+RAM: 4001 MB
+VideoCard: Intel(R) HD Graphics 520
+
+[Processes]
+System
+Registry
+[... truncated; full sample at ``sample.txt`` (approx. 232 more lines) ...]
 ```
 
 ### `cystack_9a475b44`
@@ -224087,6 +237035,61 @@ LsaIso.exe
 [... truncated; full sample at ``sample.txt`` (approx. 312 more lines) ...]
 ```
 
+### `cystack_9c2de0f6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `Garten of Banban 8`, `HWID`, `Haunted Room`, `Hollow Knight`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `The Complex`, `Threads`, `TimeZone`, `Trapped`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: CL
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 09/01/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x1080
+Keyboard Languages: Spanish Spanish
+Local Time: 16/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+[... truncated; full sample at ``sample.txt`` (approx. 305 more lines) ...]
+```
+
 ### `cystack_9c2f30c3`
 
 **Attribution confidence:** `high`
@@ -224470,6 +237473,61 @@ svchost.exe
 svchost.exe
 dwm.exe
 [... truncated; full sample at ``sample.txt`` (approx. 357 more lines) ...]
+```
+
+### `cystack_9c698f44`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Nickelodeon Kart Racers 2`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 30/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese Portuguese
+Local Time: 11/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 5500X3D 6-Core Processor           
+[... truncated; full sample at ``sample.txt`` (approx. 300 more lines) ...]
 ```
 
 ### `cystack_9c6e9d7a`
@@ -225242,6 +238300,61 @@ lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 418 more lines) ...]
 ```
 
+### `cystack_9d0659e2`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `CASE 2`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Life is Strange`, `Local Time`, `MachineID`, `PICO PARK`, `Path`, `Processor`, `RAM`, `Sword Art Online`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: ES
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 28/01/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Spanish
+Local Time: 09/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 7 7840HS w/ Radeon 780M Graphics     
+[... truncated; full sample at ``sample.txt`` (approx. 154 more lines) ...]
+```
+
 ### `cystack_9d06b268`
 
 **Attribution confidence:** `high`
@@ -225462,6 +238575,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 218 more lines) ...]
 ```
 
+### `cystack_9d21afa7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PICO PARK`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: AR
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home Single Language
+Install Date: 04/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Spanish Spanish
+Local Time: 10/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Celeron(R) N4020 CPU @ 1.10GHz
+[... truncated; full sample at ``sample.txt`` (approx. 259 more lines) ...]
+```
+
 ### `cystack_9d2eda21`
 
 **Attribution confidence:** `high`
@@ -225515,6 +238683,116 @@ services.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 311 more lines) ...]
+```
+
+### `cystack_9d396b50`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `SWAT Commander`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: ES
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 29/01/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: Ukrainian Spanish
+Local Time: 12/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-14700KF
+[... truncated; full sample at ``sample.txt`` (approx. 307 more lines) ...]
+```
+
+### `cystack_9d398648`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Batman`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `NARAKA`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: US
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 16/03/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 29/11/2025 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: Intel(R) Xeon(R) CPU E5-1650 v2 @ 3.50GHz
+Cores: 12
+Threads: 12
+RAM: 32696 MB
+VideoCard: NVIDIA GeForce GTX 980 Ti
+[... truncated; full sample at ``sample.txt`` (approx. 261 more lines) ...]
 ```
 
 ### `cystack_9d57feeb`
@@ -225845,6 +239123,116 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 189 more lines) ...]
+```
+
+### `cystack_9d720e19`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Draw a Stickman`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Need for Speed`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: GB
+Version: 18.7
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 26/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1707x960
+Keyboard Languages: German English
+Local Time: 08/04/2026 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: AMD Ryzen 7 5800H with Radeon Graphics         
+Cores: 16
+Threads: 16
+RAM: 16285 MB
+VideoCard: NVIDIA GeForce RTX 3070 Laptop GPU
+[... truncated; full sample at ``sample.txt`` (approx. 326 more lines) ...]
+```
+
+### `cystack_9d7eba9c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Bully`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PUBG`, `Path`, `Processor`, `RAM`, `Sleeping Dogs`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: ID
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 17/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 13/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 313 more lines) ...]
 ```
 
 ### `cystack_9d862e66`
@@ -228487,6 +241875,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 382 more lines) ...]
 ```
 
+### `cystack_9effa1e9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Operation Lovecraft`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: CO
+
+Date: 15/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 06/12/2019 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x1024
+Keyboard Languages: Spanish Spanish Spanish
+Local Time: 15/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-3570 CPU @ 3.40GHz
+[... truncated; full sample at ``sample.txt`` (approx. 279 more lines) ...]
+```
+
 ### `cystack_9f003ceb`
 
 **Attribution confidence:** `high`
@@ -228762,6 +242205,116 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 314 more lines) ...]
 ```
 
+### `cystack_9f1727ac`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Cube Escape`, `Date`, `Depths Of Horror`, `Display Resolution`, `GUID`, `HWID`, `IP`, `In Sink`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PL
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 17/02/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: English Polish
+Local Time: 13/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+[... truncated; full sample at ``sample.txt`` (approx. 280 more lines) ...]
+```
+
+### `cystack_9f1846ab`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Rock of Ages III`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: RO
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 07/11/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 11/04/2026 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+[... truncated; full sample at ``sample.txt`` (approx. 318 more lines) ...]
+```
+
 ### `cystack_9f2154ad`
 
 **Attribution confidence:** `high`
@@ -229035,6 +242588,61 @@ svchost.exe
 fontdrvhost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 297 more lines) ...]
+```
+
+### `cystack_9f50acca`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Sokpop S06`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: KR
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 11/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: Korean
+Local Time: 14/04/2026 <ip>
+TimeZone: 9
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[... truncated; full sample at ``sample.txt`` (approx. 327 more lines) ...]
 ```
 
 ### `cystack_9f52d51e`
@@ -230907,6 +244515,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 236 more lines) ...]
 ```
 
+### `cystack_a05a64a7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Deconstruction Simulator`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Motorcycle Mechanic Simulator 2021`, `Path`, `Processor`, `RAM`, `Supermarket Simulator`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: US
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 27/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 08/05/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 27/11/2025 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+Cores: 4
+Threads: 4
+RAM: 16263 MB
+VideoCard: Intel(R) HD Graphics 530
+[... truncated; full sample at ``sample.txt`` (approx. 332 more lines) ...]
+```
+
 ### `cystack_a065aedd`
 
 **Attribution confidence:** `high`
@@ -231897,6 +245560,61 @@ lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 337 more lines) ...]
 ```
 
+### `cystack_a0c5cbe6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Subnautica`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 15/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English English Portuguese
+Local Time: 14/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 5600GT with Radeon Graphics        
+[... truncated; full sample at ``sample.txt`` (approx. 393 more lines) ...]
+```
+
 ### `cystack_a0c8624b`
 
 **Attribution confidence:** `high`
@@ -232445,6 +246163,116 @@ services.exe
 lsass.exe
 winlogon.exe
 [... truncated; full sample at ``sample.txt`` (approx. 338 more lines) ...]
+```
+
+### `cystack_a13749bb`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: AR
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 24/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1360x768
+Keyboard Languages: Spanish Spanish
+Local Time: 08/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 7 5700G with Radeon Graphics         
+[... truncated; full sample at ``sample.txt`` (approx. 206 more lines) ...]
+```
+
+### `cystack_a13a5f30`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Kebab Simulator`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `Truck World`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: IT
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 17/06/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: Italian
+Local Time: 29/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 7 5700U with Radeon Graphics         
+Cores: 16
+Threads: 16
+RAM: 15706 MB
+VideoCard: AMD Radeon(TM) Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 269 more lines) ...]
 ```
 
 ### `cystack_a141461a`
@@ -233050,6 +246878,61 @@ lsass.exe
 winlogon.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 312 more lines) ...]
+```
+
+### `cystack_a1c677b6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Half-Life 2`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `PICO PARK`, `Path`, `Processor`, `RAM`, `SCP`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: PL
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 30/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 26/12/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Polish
+Local Time: 30/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 1600X Six-Core Processor           
+Cores: 12
+Threads: 12
+RAM: 16313 MB
+VideoCard: NVIDIA GeForce GTX 1650
+[... truncated; full sample at ``sample.txt`` (approx. 263 more lines) ...]
 ```
 
 ### `cystack_a1ca8e92`
@@ -233985,6 +247868,61 @@ services.exe
 LsaIso.exe
 lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 275 more lines) ...]
+```
+
+### `cystack_a241b3b9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MU`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: AE
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 23/05/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Arabic English
+Local Time: 10/04/2026 <ip>
+TimeZone: 4
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 233 more lines) ...]
 ```
 
 ### `cystack_a246bbe1`
@@ -235637,6 +249575,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 277 more lines) ...]
 ```
 
+### `cystack_a359d46f`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hunt`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: FI
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 10/04/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: Swedish
+Local Time: 13/04/2026 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: AMD Ryzen 7 5700G with Radeon Graphics         
+[... truncated; full sample at ``sample.txt`` (approx. 284 more lines) ...]
+```
+
 ### `cystack_a37f485a`
 
 **Attribution confidence:** `high`
@@ -236077,6 +250070,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 305 more lines) ...]
 ```
 
+### `cystack_a3d8d295`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `DRAGON BALL`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: AR
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro for Workstations
+Install Date: 16/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1408x792
+Keyboard Languages: Spanish Spanish
+Local Time: 14/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 8600G w/ Radeon 760M Graphics      
+[... truncated; full sample at ``sample.txt`` (approx. 180 more lines) ...]
+```
+
 ### `cystack_a3e6f863`
 
 **Attribution confidence:** `high`
@@ -236295,6 +250343,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 272 more lines) ...]
+```
+
+### `cystack_a419bcd8`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Metro`, `Operation`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PH
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 28/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 14/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: AMD Ryzen 5 5600X 6-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 292 more lines) ...]
 ```
 
 ### `cystack_a41bec95`
@@ -237120,6 +251223,61 @@ svchost.exe
 svchost.exe
 dwm.exe
 [... truncated; full sample at ``sample.txt`` (approx. 287 more lines) ...]
+```
+
+### `cystack_a4901e14`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PUBG`, `Path`, `Pixel Gun 3D`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: NL
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 05/03/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Dutch
+Local Time: 12/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12600KF
+[... truncated; full sample at ``sample.txt`` (approx. 336 more lines) ...]
 ```
 
 ### `cystack_a49a2203`
@@ -238772,6 +252930,61 @@ VideoCard: NVIDIA GeForce GTX 1660 SUPER
 [... truncated; full sample at ``sample.txt`` (approx. 243 more lines) ...]
 ```
 
+### `cystack_a63e23f3`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Motor Town`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 09/07/2021 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1680x1050
+Keyboard Languages: Portuguese Portuguese
+Local Time: 16/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 3 2200G with Radeon Vega Graphics    
+[... truncated; full sample at ``sample.txt`` (approx. 317 more lines) ...]
+```
+
 ### `cystack_a64c2aeb`
 
 **Attribution confidence:** `high`
@@ -239155,6 +253368,61 @@ svchost.exe
 fontdrvhost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 325 more lines) ...]
+```
+
+### `cystack_a679647d`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Spore`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: US
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 30/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 18/04/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English
+Local Time: 30/11/2025 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx  
+Cores: 8
+Threads: 8
+RAM: 6090 MB
+VideoCard: AMD Radeon(TM) Vega 8 Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 282 more lines) ...]
 ```
 
 ### `cystack_a682d880`
@@ -242677,6 +256945,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 217 more lines) ...]
 ```
 
+### `cystack_a9197a08`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Pixel Gun 3D`, `Processor`, `RAM`, `Serious Sam 3`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: TR
+Version: 18.7
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 08/04/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: Turkish
+Local Time: 09/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+Cores: 8
+Threads: 8
+RAM: 7963 MB
+VideoCard: Intel(R) UHD Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 264 more lines) ...]
+```
+
 ### `cystack_a92b8519`
 
 **Attribution confidence:** `high`
@@ -244657,6 +258980,47 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 304 more lines) ...]
 ```
 
+### `cystack_aa192558`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `HWID`, `IP`, `Integrity`, `Keyboard Languages`, `LocalIPv4`, `MachineID`, `Path`, `Processor`, `RAM`, `SystemTimestamp`, `SystemUptime`, `TAG`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Wallpaper Hash`, `Windows`
+
+**Filenames:** `systeminfo.txt`
+
+**Sample (sanitized):**
+
+```
+IP: <redacted>
+Country: Austria
+
+=== SYSTEM DATA LOG ===
+TAG: e3fupum14o
+LocalIPv4: <ip>
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Windows: Windows 11 10.0 build 26200 (64 Bit)
+Computer Name: <redacted>
+User Name: <redacted>
+Integrity: Medium
+Admin Group: FALSE
+TimeZone: UTC+1
+Wallpaper Hash: 634a6f390e30f481acee6a83629ae063
+SystemUptime: 0 hours
+SystemTimestamp: 04/03/2026 <ip>
+Display Resolution: 1920x1080
+Keyboard Languages: Deutsch (Österreich) / Deutsch (Deutschland)
+[Hardware]
+Processor: AMD Ryzen 5 5600XT 6-Core Processor
+Cores: 6
+Threads: 12
+RAM: 16264 MB
+VideoCard: NVIDIA GeForce RTX 2060
+```
+
 ### `cystack_aa193d64`
 
 **Attribution confidence:** `high`
@@ -245205,6 +259569,61 @@ svchost.exe
 fontdrvhost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 255 more lines) ...]
+```
+
+### `cystack_aa688e2c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Arena Breakout`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PUBG`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: BR
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 IoT Enterprise LTSC 2024
+Install Date: 17/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 3440x1440
+Keyboard Languages: Portuguese
+Local Time: 10/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 8500G w/ Radeon 740M Graphics      
+[... truncated; full sample at ``sample.txt`` (approx. 206 more lines) ...]
 ```
 
 ### `cystack_aa6cb660`
@@ -246692,6 +261111,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 335 more lines) ...]
 ```
 
+### `cystack_ab2e19e3`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Rise of Nations`, `Solo Leveling`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: US
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 30/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 01/04/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 30/11/2025 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: AMD Ryzen 5 9600X 6-Core Processor             
+Cores: 12
+Threads: 12
+RAM: 31801 MB
+VideoCard: AMD Radeon RX 9060 XT
+[... truncated; full sample at ``sample.txt`` (approx. 186 more lines) ...]
+```
+
 ### `cystack_ab399fba`
 
 **Attribution confidence:** `high`
@@ -247517,6 +261991,61 @@ Threads: 12
 [... truncated; full sample at ``sample.txt`` (approx. 188 more lines) ...]
 ```
 
+### `cystack_aba9742b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Monster Hunter`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 15/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 29/10/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese
+Local Time: 15/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+[... truncated; full sample at ``sample.txt`` (approx. 268 more lines) ...]
+```
+
 ### `cystack_abad35d1`
 
 **Attribution confidence:** `high`
@@ -248120,6 +262649,61 @@ services.exe
 LsaIso.exe
 lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 307 more lines) ...]
+```
+
+### `cystack_ac13a1a7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hollow Knight`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `The Binding of Isaac`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: CO
+Version: 18.7
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 06/05/2022 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish Spanish
+Local Time: 08/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: AMD Ryzen 5 5600G with Radeon Graphics         
+Cores: 12
+Threads: 12
+RAM: 46975 MB
+VideoCard: AMD Radeon(TM) Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 334 more lines) ...]
 ```
 
 ### `cystack_ac170509`
@@ -248780,6 +263364,61 @@ svchost.exe
 dwm.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 256 more lines) ...]
+```
+
+### `cystack_ac89a1be`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `The Catch`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: GB
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 16/01/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: English English
+Local Time: 29/11/2025 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: AMD Ryzen 7 2700X Eight-Core Processor         
+Cores: 16
+Threads: 16
+RAM: 16333 MB
+VideoCard: NVIDIA GeForce RTX 3060
+[... truncated; full sample at ``sample.txt`` (approx. 312 more lines) ...]
 ```
 
 ### `cystack_ac908a8e`
@@ -249880,6 +264519,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 300 more lines) ...]
+```
+
+### `cystack_ad7c3c8e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Microsoft Flight Simulator X`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: BR
+Version: 18.7
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 01/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese Portuguese
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+Cores: 8
+Threads: 8
+RAM: 16338 MB
+VideoCard: Radeon RX550/550 Series
+[... truncated; full sample at ``sample.txt`` (approx. 245 more lines) ...]
 ```
 
 ### `cystack_ad905762`
@@ -254282,6 +268976,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 289 more lines) ...]
 ```
 
+### `cystack_b0853492`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Fallout`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Subnautica`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: AR
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 28/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 29/11/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1360x768
+Keyboard Languages: Spanish Spanish
+Local Time: 28/11/2025 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Phenom(tm) II X6 1090T Processor
+Cores: 6
+Threads: 6
+RAM: 16382 MB
+VideoCard: NVIDIA GeForce GTX 650
+[... truncated; full sample at ``sample.txt`` (approx. 265 more lines) ...]
+```
+
 ### `cystack_b08ac968`
 
 **Attribution confidence:** `high`
@@ -255547,6 +270296,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 318 more lines) ...]
 ```
 
+### `cystack_b13ac470`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Max Payne 2`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: CO
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 21/01/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish Spanish
+Local Time: 10/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: AMD Ryzen 5 5600G with Radeon Graphics         
+[... truncated; full sample at ``sample.txt`` (approx. 242 more lines) ...]
+```
+
 ### `cystack_b13b996e`
 
 **Attribution confidence:** `high`
@@ -256260,6 +271064,61 @@ svchost.exe
 fontdrvhost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 193 more lines) ...]
+```
+
+### `cystack_b1e40810`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Backrooms`, `Computer Name`, `Cores`, `Country`, `Dark Hours`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `SCP`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: SK
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 06/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Slovak Slovak
+Local Time: 08/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 7 3700X 8-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 293 more lines) ...]
 ```
 
 ### `cystack_b1ec545d`
@@ -259342,6 +274201,61 @@ Migration Toolkit 55.7.0-1 - 55.7.0-1
 [... truncated; full sample at ``sample.txt`` (approx. 155 more lines) ...]
 ```
 
+### `cystack_b3d60a6c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Cities`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `Granny`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `The Escape`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: DE
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 28/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 18/01/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: German
+Local Time: 28/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 8400F 6-Core Processor             
+Cores: 12
+Threads: 12
+RAM: 15993 MB
+VideoCard: AMD Radeon RX 7600
+[... truncated; full sample at ``sample.txt`` (approx. 286 more lines) ...]
+```
+
 ### `cystack_b3dfb8cf`
 
 **Attribution confidence:** `high`
@@ -260387,6 +275301,116 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 386 more lines) ...]
 ```
 
+### `cystack_b48d4853`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Skyrim Special Edition`, `Telegram`, `The Elder Scrolls V`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+Беру логи с балансом более 10000$
+В распоряжении 150шт - rtx5090
+Депозит 2 btc /topic/232013/
+
+Telegram: @brute
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.4
+
+IP: <redacted>
+Country: US
+
+Date: 27/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 26/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: English
+Local Time: 27/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: 13th Gen Intel(R) Core(TM) i7-1370P
+[... truncated; full sample at ``sample.txt`` (approx. 292 more lines) ...]
+```
+
+### `cystack_b48df762`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: TH
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home Single Language
+Install Date: 06/09/2022 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: English Thai
+Local Time: 14/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz
+[... truncated; full sample at ``sample.txt`` (approx. 276 more lines) ...]
+```
+
 ### `cystack_b494278c`
 
 **Attribution confidence:** `high`
@@ -261102,6 +276126,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 185 more lines) ...]
 ```
 
+### `cystack_b5047a72`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Depths Of Horror`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Roody`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: IQ
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 05/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English Arabic
+Local Time: 09/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
+[... truncated; full sample at ``sample.txt`` (approx. 251 more lines) ...]
+```
+
 ### `cystack_b5075445`
 
 **Attribution confidence:** `high`
@@ -261320,6 +276399,61 @@ svchost.exe
 fontdrvhost.exe
 WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 235 more lines) ...]
+```
+
+### `cystack_b52c212c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `NARAKA`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Warhammer`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: TH
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 04/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Thai
+Local Time: 29/11/2025 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+Cores: 12
+Threads: 12
+RAM: 32608 MB
+VideoCard: NVIDIA GeForce RTX 2060
+[... truncated; full sample at ``sample.txt`` (approx. 252 more lines) ...]
 ```
 
 ### `cystack_b5377890`
@@ -261650,6 +276784,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 239 more lines) ...]
+```
+
+### `cystack_b559ee3e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Dead Rising 2`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Koloboke`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Saints Row`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: NL
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 19/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Russian
+Local Time: 16/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+[... truncated; full sample at ``sample.txt`` (approx. 284 more lines) ...]
 ```
 
 ### `cystack_b567861a`
@@ -262807,6 +277996,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 405 more lines) ...]
 ```
 
+### `cystack_b6516b93`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Taxi Life`, `The Catch`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: GB
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 16/01/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: English English
+Local Time: 29/11/2025 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: AMD Ryzen 7 2700X Eight-Core Processor         
+Cores: 16
+Threads: 16
+RAM: 16333 MB
+VideoCard: NVIDIA GeForce RTX 3060
+[... truncated; full sample at ``sample.txt`` (approx. 298 more lines) ...]
+```
+
 ### `cystack_b656d623`
 
 **Attribution confidence:** `high`
@@ -263575,6 +278819,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 270 more lines) ...]
+```
+
+### `cystack_b6d5c027`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Ages of Conflict`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: DE
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 08/01/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: German
+Local Time: 16/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 2400G with Radeon Vega Graphics    
+[... truncated; full sample at ``sample.txt`` (approx. 236 more lines) ...]
 ```
 
 ### `cystack_b6dce860`
@@ -264620,6 +279919,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 363 more lines) ...]
+```
+
+### `cystack_b7b5493c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Drifter Star`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: KR
+Version: 18.7
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 04/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Korean
+Local Time: 10/04/2026 <ip>
+TimeZone: 9
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i7-12700KF
+Cores: 20
+Threads: 20
+RAM: 32598 MB
+VideoCard: NVIDIA GeForce RTX 4060 Ti
+[... truncated; full sample at ``sample.txt`` (approx. 260 more lines) ...]
 ```
 
 ### `cystack_b7c5ec4b`
@@ -267317,6 +282671,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 350 more lines) ...]
 ```
 
+### `cystack_b9538573`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `First Date`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: TR
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 22/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Turkish
+Local Time: 11/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Pentium(R) CPU 2117U @ 1.80GHz
+[... truncated; full sample at ``sample.txt`` (approx. 180 more lines) ...]
+```
+
 ### `cystack_b956d63e`
 
 **Attribution confidence:** `high`
@@ -268417,6 +283826,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 203 more lines) ...]
 ```
 
+### `cystack_ba331d24`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+Version: @UP_DAISYCLOUD TELEGRAM
+
+IP: <redacted>
+Country: BD
+
+Date: 28/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home Single Language
+Install Date: 08/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English
+Local Time: 28/04/2026 <ip>
+TimeZone: 6
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+Cores: 8
+Threads: 8
+RAM: 8066 MB
+VideoCard: Intel(R) UHD Graphics 620
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+services.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 283 more lines) ...]
+```
+
 ### `cystack_ba379602`
 
 **Attribution confidence:** `high`
@@ -268855,6 +284319,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 317 more lines) ...]
+```
+
+### `cystack_ba58c9a0`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `SPLITGATE`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: CA
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 09/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 3440x1440
+Keyboard Languages: English
+Local Time: 10/04/2026 <ip>
+TimeZone: 4294967290
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-14400F
+[... truncated; full sample at ``sample.txt`` (approx. 296 more lines) ...]
 ```
 
 ### `cystack_ba724df2`
@@ -270067,6 +285586,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 215 more lines) ...]
 ```
 
+### `cystack_bb1dc2d8`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Monster Hunter Stories 2`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: NP
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 08/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: English
+Local Time: 12/04/2026 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: AMD Ryzen 5 5500U with Radeon Graphics         
+[... truncated; full sample at ``sample.txt`` (approx. 294 more lines) ...]
+```
+
 ### `cystack_bb249861`
 
 **Attribution confidence:** `high`
@@ -271167,6 +286741,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 239 more lines) ...]
 ```
 
+### `cystack_bbe4d7d3`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `An Eggstremely Hard Game`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: TR
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 09/04/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Turkish
+Local Time: 16/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: AMD Ryzen 5 5600H with Radeon Graphics         
+[... truncated; full sample at ``sample.txt`` (approx. 288 more lines) ...]
+```
+
 ### `cystack_bbf2541b`
 
 **Attribution confidence:** `high`
@@ -271992,6 +287621,61 @@ LsaIso.exe
 [... truncated; full sample at ``sample.txt`` (approx. 296 more lines) ...]
 ```
 
+### `cystack_bc757e94`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Arena Breakout`, `Computer Name`, `Cores`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+|  _____  _   _ __   __  _____  _   _  _____  _____  ___   _      _      _____  |
+| | ___ \| | | |\ \ / / |_   _|| \ | |/  ___||_   _|/ _ \ | |    | |    /  ___| |
+| | |_/ /| | | | \ V /    | |  |  \| |\ `--.   | | / /_\ \| |    | |    \ `--.  |
+| | ___ \| | | |  \ /     | |  | . ` | `--. \  | | |  _  || |    | |     `--. \ |
+| | |_/ /| |_| |  | |    _| |_ | |\  |/\__/ /  | | | | | || |____| |____/\__/ / |
+| \____/  \___/   \_/    \___/ \_| \_/\____/   \_/ \_| |_/\_____/\_____/\____/  |
+
+- WHERE BUY THE BEST INSTALLS ??
+
+
+**************************************************
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 01/04/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 12/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: AMD Ryzen 5 5600X 6-Core Processor             
+Cores: 12
+Threads: 12
+RAM: 16294 MB
+VideoCard: NVIDIA GeForce GTX 1080
+
+[Processes]
+System
+Registry
+[... truncated; full sample at ``sample.txt`` (approx. 291 more lines) ...]
+```
+
 ### `cystack_bc7754e0`
 
 **Attribution confidence:** `high`
@@ -272652,6 +288336,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 182 more lines) ...]
 ```
 
+### `cystack_bd0a6ec6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `My Femboy Roommate`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: BR
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home Single Language
+Install Date: 16/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese
+Local Time: 10/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 284 more lines) ...]
+```
+
 ### `cystack_bd0b0333`
 
 **Attribution confidence:** `high`
@@ -273257,6 +288996,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 263 more lines) ...]
 ```
 
+### `cystack_bd8ee47a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `Unreal Development Kit`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 15/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 08/01/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese
+Local Time: 15/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 4600G with Radeon Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 292 more lines) ...]
+```
+
 ### `cystack_bd90ea39`
 
 **Attribution confidence:** `high`
@@ -273365,6 +289159,61 @@ lsass.exe
 winlogon.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 279 more lines) ...]
+```
+
+### `cystack_bdabb5cf`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Cores`, `Keyboard Languages`, `Local Time`, `Processor`, `RAM`, `Threads`, `TimeZone`, `VideoCard`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+Keyboard Languages: English English English English
+Local Time: 27/04/2026 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Xeon(R) CPU E3-1245 v5 @ 3.50GHz
+Cores: 8
+Threads: 8
+RAM: 16275 MB
+VideoCard: NVIDIA Quadro K1200
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+services.exe
+lsass.exe
+winlogon.exe
+svchost.exe
+fontdrvhost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+dwm.exe
+IntelCpHDCPSvc.exe
+svchost.exe
+svchost.exe
+svchost.exe
+IntelCpHeciSvc.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+igfxCUIService.exe
+[... truncated; full sample at ``sample.txt`` (approx. 300 more lines) ...]
 ```
 
 ### `cystack_bdaebf02`
@@ -275457,6 +291306,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 305 more lines) ...]
 ```
 
+### `cystack_be93c7dc`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Surgeon Simulator`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: SA
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 16/05/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Arabic English
+Local Time: 29/11/2025 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz
+Cores: 8
+Threads: 8
+RAM: 8092 MB
+VideoCard: NVIDIA GeForce GTX 750 Ti
+[... truncated; full sample at ``sample.txt`` (approx. 255 more lines) ...]
+```
+
 ### `cystack_be94aca8`
 
 **Attribution confidence:** `high`
@@ -275895,6 +291799,61 @@ svchost.exe
 fontdrvhost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 295 more lines) ...]
+```
+
+### `cystack_bed7ef0e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hollow Knight`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Monmusu Girls`, `PICO PARK`, `Path`, `Processor`, `RAM`, `The Binding of Isaac`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: ID
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 27/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 25/08/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English
+Local Time: 27/11/2025 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-7300 CPU @ 4.00GHz
+Cores: 4
+Threads: 4
+RAM: 8078 MB
+VideoCard: Intel(R) HD Graphics 630
+[... truncated; full sample at ``sample.txt`` (approx. 157 more lines) ...]
 ```
 
 ### `cystack_bedd1839`
@@ -276390,6 +292349,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 273 more lines) ...]
+```
+
+### `cystack_bf20085d`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Depths Of Horror`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `The Binding of Isaac`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PL
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 20/10/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Polish
+Local Time: 12/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 371 more lines) ...]
 ```
 
 ### `cystack_bf2273be`
@@ -277160,6 +293174,116 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 205 more lines) ...]
+```
+
+### `cystack_bfade46f`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Dark Hours`, `Date`, `Display Resolution`, `GUID`, `Ghostbane`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: US
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 13/02/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 10/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i7-12700F
+[... truncated; full sample at ``sample.txt`` (approx. 334 more lines) ...]
+```
+
+### `cystack_bfae7f30`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Mini World`, `Path`, `Processor`, `RAM`, `TCG Card Shop Simulator`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: TH
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 30/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 16/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x900
+Keyboard Languages: English Thai
+Local Time: 30/11/2025 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz
+Cores: 4
+Threads: 4
+RAM: 8137 MB
+VideoCard: NVIDIA GeForce GT 240
+[... truncated; full sample at ``sample.txt`` (approx. 254 more lines) ...]
 ```
 
 ### `cystack_bfb62d01`
@@ -278977,6 +295101,61 @@ winlogon.exe
 [... truncated; full sample at ``sample.txt`` (approx. 295 more lines) ...]
 ```
 
+### `cystack_c11bcb71`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Knightfall`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: EG
+Version: 18.7
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 01/04/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: English Arabic
+Local Time: 08/04/2026 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: AMD Ryzen 5 3600 6-Core Processor              
+Cores: 12
+Threads: 12
+RAM: 32675 MB
+VideoCard: NVIDIA GeForce RTX 4060 Ti
+[... truncated; full sample at ``sample.txt`` (approx. 303 more lines) ...]
+```
+
 ### `cystack_c11c8e39`
 
 **Attribution confidence:** `high`
@@ -280077,6 +296256,61 @@ lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 245 more lines) ...]
 ```
 
+### `cystack_c1ac9d39`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Arena Breakout`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PAYDAY`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 16/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese Portuguese
+Local Time: 16/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 5500                               
+[... truncated; full sample at ``sample.txt`` (approx. 190 more lines) ...]
+```
+
 ### `cystack_c1acb4f5`
 
 **Attribution confidence:** `high`
@@ -280240,6 +296474,61 @@ svchost.exe [756]
 svchost.exe [792]
 dwm.exe [888]
 [... truncated; full sample at ``sample.txt`` (approx. 139 more lines) ...]
+```
+
+### `cystack_c1adeadd`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Siren Head`, `Telegram`, `The Backrooms`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: US
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 04/12/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English
+Local Time: 14/04/2026 <ip>
+TimeZone: 4294967290
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-10110U CPU @ 2.10GHz
+[... truncated; full sample at ``sample.txt`` (approx. 252 more lines) ...]
 ```
 
 ### `cystack_c1ae4e4d`
@@ -281067,6 +297356,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 287 more lines) ...]
 ```
 
+### `cystack_c287ce1d`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BE
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 21/01/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2048x1152
+Keyboard Languages: Dutch
+Local Time: 14/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz
+[... truncated; full sample at ``sample.txt`` (approx. 284 more lines) ...]
+```
+
 ### `cystack_c2948a8c`
 
 **Attribution confidence:** `high`
@@ -281892,6 +298236,116 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 284 more lines) ...]
 ```
 
+### `cystack_c3166d60`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `NARAKA`, `Path`, `Pixel Gun 3D`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: RE
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 17/12/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1300x1080
+Keyboard Languages: English French French
+Local Time: 29/11/2025 <ip>
+TimeZone: 4
+
+[Hardware]
+Processor: AMD Ryzen 5 5500                               
+Cores: 12
+Threads: 12
+RAM: 16179 MB
+VideoCard: NVIDIA GeForce RTX 3050
+[... truncated; full sample at ``sample.txt`` (approx. 324 more lines) ...]
+```
+
+### `cystack_c3183233`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `DRAGON BALL`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: US
+Version: 18.7
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 23/01/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 08/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: 13th Gen Intel(R) Core(TM) i7-13700F
+Cores: 24
+Threads: 24
+RAM: 16094 MB
+VideoCard: NVIDIA GeForce RTX 4060 Ti
+[... truncated; full sample at ``sample.txt`` (approx. 289 more lines) ...]
+```
+
 ### `cystack_c31a0abf`
 
 **Attribution confidence:** `high`
@@ -282607,6 +299061,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 334 more lines) ...]
 ```
 
+### `cystack_c36bcf8e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Half-Life`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: RO
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 18/02/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 10/04/2026 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-9100 CPU @ 3.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 263 more lines) ...]
+```
+
 ### `cystack_c3779bee`
 
 **Attribution confidence:** `high`
@@ -282715,6 +299224,61 @@ fontdrvhost.exe
 svchost.exe
 WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 308 more lines) ...]
+```
+
+### `cystack_c3abfa15`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `NARUTO SHIPPUDEN`, `Path`, `Processor`, `RAM`, `Telegram`, `The Seven Deadly Sins`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: BR
+Version: 18.7
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 10/09/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Portuguese
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
+Cores: 24
+Threads: 24
+RAM: 16290 MB
+VideoCard: AMD Radeon RX 580 2048SP
+[... truncated; full sample at ``sample.txt`` (approx. 213 more lines) ...]
 ```
 
 ### `cystack_c3c03a6c`
@@ -282935,6 +299499,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 177 more lines) ...]
+```
+
+### `cystack_c3e44a79`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Detroit`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: AE
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 28/03/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Arabic
+Local Time: 11/04/2026 <ip>
+TimeZone: 4
+
+[Hardware]
+Processor: Intel(R) Core(TM) Ultra 9 285K
+[... truncated; full sample at ``sample.txt`` (approx. 310 more lines) ...]
 ```
 
 ### `cystack_c3ed4614`
@@ -284145,6 +300764,61 @@ svchost.exe
 winlogon.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 409 more lines) ...]
+```
+
+### `cystack_c4a7f8ca`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Age of Empires III`, `Computer Name`, `Cores`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+|  _____  _   _ __   __  _____  _   _  _____  _____  ___   _      _      _____  |
+| | ___ \| | | |\ \ / / |_   _|| \ | |/  ___||_   _|/ _ \ | |    | |    /  ___| |
+| | |_/ /| | | | \ V /    | |  |  \| |\ `--.   | | / /_\ \| |    | |    \ `--.  |
+| | ___ \| | | |  \ /     | |  | . ` | `--. \  | | |  _  || |    | |     `--. \ |
+| | |_/ /| |_| |  | |    _| |_ | |\  |/\__/ /  | | | | | || |____| |____/\__/ / |
+| \____/  \___/   \_/    \___/ \_| \_/\____/   \_/ \_| |_/\_____/\_____/\____/  |
+
+- WHERE BUY THE BEST INSTALLS ??
+
+
+**************************************************
+
+Date: 29/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 02/12/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x900
+Keyboard Languages: English
+Local Time: 29/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-3570 CPU @ 3.40GHz
+Cores: 4
+Threads: 4
+RAM: 8078 MB
+VideoCard: Intel(R) HD Graphics
+
+[Processes]
+System
+Registry
+[... truncated; full sample at ``sample.txt`` (approx. 215 more lines) ...]
 ```
 
 ### `cystack_c4a92c60`
@@ -286237,6 +302911,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 209 more lines) ...]
 ```
 
+### `cystack_c62cff3a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Cities`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Schedule I`, `Taxi Life`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: RO
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 30/01/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Romanian
+Local Time: 16/04/2026 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 119 more lines) ...]
+```
+
 ### `cystack_c642475e`
 
 **Attribution confidence:** `high`
@@ -286632,6 +303361,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 304 more lines) ...]
 ```
 
+### `cystack_c6883218`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Half-Life 2`, `Hollow Knight`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `NARUTO`, `Path`, `Processor`, `RAM`, `The Binding of Isaac`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: GB
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 28/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 07/08/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: English
+Local Time: 28/11/2025 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+Cores: 4
+Threads: 4
+RAM: 16323 MB
+VideoCard: NVIDIA GeForce GTX 1070
+[... truncated; full sample at ``sample.txt`` (approx. 308 more lines) ...]
+```
+
 ### `cystack_c695b7e2`
 
 **Attribution confidence:** `high`
@@ -286852,6 +303636,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 284 more lines) ...]
 ```
 
+### `cystack_c6a83d67`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Sniper 3D Assassin`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: EC
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 16/09/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish Spanish
+Local Time: 13/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+[... truncated; full sample at ``sample.txt`` (approx. 323 more lines) ...]
+```
+
 ### `cystack_c6a9df0e`
 
 **Attribution confidence:** `high`
@@ -287017,6 +303856,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 278 more lines) ...]
 ```
 
+### `cystack_c6c022db`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Mafia`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+Беру логи с балансом более 10000$
+В распоряжении 150шт - rtx5090
+Депозит 2 btc /topic/232013/
+
+Telegram: @brute
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.4
+
+IP: <redacted>
+Country: ZM
+
+Date: 30/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 08/04/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 30/04/2026 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz
+[... truncated; full sample at ``sample.txt`` (approx. 279 more lines) ...]
+```
+
 ### `cystack_c6c941da`
 
 **Attribution confidence:** `high`
@@ -287070,6 +303964,116 @@ fontdrvhost.exe
 WUDFHost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 280 more lines) ...]
+```
+
+### `cystack_c6cfa95f`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Bob Esponja`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hollow Knight`, `INAZUMA ELEVEN`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PICO PARK`, `Path`, `Processor`, `RAM`, `Taxi Life`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 15/05/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x900
+Keyboard Languages: Portuguese Portuguese
+Local Time: 13/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz
+[... truncated; full sample at ``sample.txt`` (approx. 309 more lines) ...]
+```
+
+### `cystack_c6dc14bc`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `DRAGON BALL`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Police Simulator`, `Processor`, `RAM`, `Schedule I`, `Stick Fight`, `Subnautica`, `Surgeon Simulator`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: US
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 04/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 29/11/2025 <ip>
+TimeZone: 4294967288
+
+[Hardware]
+Processor: 13th Gen Intel(R) Core(TM) i9-13900K
+Cores: 32
+Threads: 32
+RAM: 98044 MB
+VideoCard: NVIDIA GeForce RTX 4070 Ti
+[... truncated; full sample at ``sample.txt`` (approx. 172 more lines) ...]
 ```
 
 ### `cystack_c6ebe123`
@@ -288117,6 +305121,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 338 more lines) ...]
 ```
 
+### `cystack_c7e0498f`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Solo Leveling`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: BE
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 10/05/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Romanian Romanian
+Local Time: 11/04/2026 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i7-11700K @ 3.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 280 more lines) ...]
+```
+
 ### `cystack_c7ef81ee`
 
 **Attribution confidence:** `high`
@@ -288170,6 +305229,61 @@ csrss.exe
 services.exe
 winlogon.exe
 [... truncated; full sample at ``sample.txt`` (approx. 194 more lines) ...]
+```
+
+### `cystack_c7f141bf`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `KOPLAYER Pro version`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: MA
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 10/04/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Arabic
+Local Time: 16/04/2026 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: AMD Ryzen 7 5700X 8-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 422 more lines) ...]
 ```
 
 ### `cystack_c7f22975`
@@ -289435,6 +306549,116 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 375 more lines) ...]
+```
+
+### `cystack_c8eb0bd6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Money Simulator`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: TR
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 31/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Turkish
+Local Time: 09/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: AMD Ryzen 5 7500F 6-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 294 more lines) ...]
+```
+
+### `cystack_c8f5dd35`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Evony`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: PH
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 23/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x900
+Keyboard Languages: English
+Local Time: 08/04/2026 <ip>
+TimeZone: 4294967288
+
+[Hardware]
+Processor: AMD Ryzen 5 5600 6-Core Processor              
+[... truncated; full sample at ``sample.txt`` (approx. 232 more lines) ...]
 ```
 
 ### `cystack_c916f1cb`
@@ -290867,6 +308091,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 283 more lines) ...]
 ```
 
+### `cystack_ca0bab29`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`, `Zero Stress King`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 28/01/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese Portuguese
+Local Time: 12/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 5600GT with Radeon Graphics        
+[... truncated; full sample at ``sample.txt`` (approx. 211 more lines) ...]
+```
+
 ### `cystack_ca122dc1`
 
 **Attribution confidence:** `high`
@@ -290975,6 +308254,61 @@ LsaIso.exe
 lsass.exe
 winlogon.exe
 [... truncated; full sample at ``sample.txt`` (approx. 269 more lines) ...]
+```
+
+### `cystack_ca32235e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Monster Hunter`, `Path`, `Processor`, `RAM`, `SCP`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: BR
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 05/05/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Portuguese Portuguese
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 7 5800XT 8-Core Processor            
+[... truncated; full sample at ``sample.txt`` (approx. 308 more lines) ...]
 ```
 
 ### `cystack_ca43bb09`
@@ -292352,6 +309686,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 288 more lines) ...]
 ```
 
+### `cystack_cb0cd69c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Alien Swarm`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Supermarket Simulator`, `TCG Card Shop Simulator`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: TH
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 12/08/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Thai
+Local Time: 16/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: AMD Ryzen 5 4600G with Radeon Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 348 more lines) ...]
+```
+
 ### `cystack_cb1075ba`
 
 **Attribution confidence:** `high`
@@ -292460,6 +309849,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 207 more lines) ...]
+```
+
+### `cystack_cb1b93d7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hollow Knight`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: BR
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 08/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x900
+Keyboard Languages: Portuguese
+Local Time: 10/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+[... truncated; full sample at ``sample.txt`` (approx. 309 more lines) ...]
 ```
 
 ### `cystack_cb1f56d1`
@@ -293879,6 +311323,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 278 more lines) ...]
 ```
 
+### `cystack_cc57b5a1`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Pawn Planet`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PH
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 31/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: English English
+Local Time: 14/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: AMD Athlon 3000G with Radeon Vega Graphics     
+[... truncated; full sample at ``sample.txt`` (approx. 223 more lines) ...]
+```
+
 ### `cystack_cc58f211`
 
 **Attribution confidence:** `high`
@@ -293932,6 +311431,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 299 more lines) ...]
+```
+
+### `cystack_cc5a625f`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `Uncrashed`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: FR
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 21/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: French English
+Local Time: 10/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 7 5700X 8-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 178 more lines) ...]
 ```
 
 ### `cystack_cc5d4161`
@@ -296299,6 +313853,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 361 more lines) ...]
 ```
 
+### `cystack_cd8c8f91`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Kebab Simulator`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: AT
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 22/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: German German
+Local Time: 09/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 7 3700X 8-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 313 more lines) ...]
+```
+
 ### `cystack_cd8e778c`
 
 **Attribution confidence:** `high`
@@ -296517,6 +314126,61 @@ svchost.exe
 fontdrvhost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 183 more lines) ...]
+```
+
+### `cystack_cdb0a4a7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hitman`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Watchmen`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: BR
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 27/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Enterprise
+Install Date: 28/03/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English Portuguese Portuguese
+Local Time: 27/11/2025 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+Cores: 4
+Threads: 4
+RAM: 15313 MB
+VideoCard: Intel(R) HD Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 263 more lines) ...]
 ```
 
 ### `cystack_cdb5e94b`
@@ -297397,6 +315061,116 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 235 more lines) ...]
+```
+
+### `cystack_ce16f8a6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Mini World`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: ID
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 14/01/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 11/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+[... truncated; full sample at ``sample.txt`` (approx. 277 more lines) ...]
+```
+
+### `cystack_ce1fcfde`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Kebab Simulator`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `SCP`, `Stellar Mess`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: CZ
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 15/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Czech
+Local Time: 29/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 4500 6-Core Processor              
+Cores: 12
+Threads: 12
+RAM: 16172 MB
+VideoCard: AMD Radeon RX 6600
+[... truncated; full sample at ``sample.txt`` (approx. 322 more lines) ...]
 ```
 
 ### `cystack_ce247d19`
@@ -300094,6 +317868,61 @@ lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 317 more lines) ...]
 ```
 
+### `cystack_cfb22604`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PUBG`, `Path`, `Pixel Gun 3D`, `Processor`, `RAM`, `Schedule I`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: US
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 27/12/2021 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English English
+Local Time: 13/04/2026 <ip>
+TimeZone: 4294967290
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 323 more lines) ...]
+```
+
 ### `cystack_cfb61d69`
 
 **Attribution confidence:** `high`
@@ -301909,6 +319738,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 359 more lines) ...]
 ```
 
+### `cystack_d11ee5cc`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `Cities`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: SA
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 07/05/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: Arabic English
+Local Time: 13/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i7-12700F
+[... truncated; full sample at ``sample.txt`` (approx. 288 more lines) ...]
+```
+
 ### `cystack_d128faff`
 
 **Attribution confidence:** `high`
@@ -302624,6 +320508,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 310 more lines) ...]
 ```
 
+### `cystack_d1d933b9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `Bad Parenting 1`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Resident Evil 7 Teaser`, `Schedule I`, `Stick Fight`, `TCG Card Shop Simulator`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+Беру логи с балансом более 10000$
+В распоряжении 150шт - rtx5090
+Депозит 2 btc /topic/232013/
+
+Telegram: @brute
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.4
+
+IP: <redacted>
+Country: RS
+
+Date: 27/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 09/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Serbian (L Serbian (C Spanish Serbian (C
+Local Time: 27/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD FX(tm)-8350 Eight-Core Processor           
+[... truncated; full sample at ``sample.txt`` (approx. 356 more lines) ...]
+```
+
 ### `cystack_d1ed6b84`
 
 **Attribution confidence:** `high`
@@ -302787,6 +320726,116 @@ lsass.exe
 winlogon.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 270 more lines) ...]
+```
+
+### `cystack_d21de938`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hitman`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `The Seven Deadly Sins`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: BR
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 19/02/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese Portuguese
+Local Time: 12/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 226 more lines) ...]
+```
+
+### `cystack_d2245766`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PICO PARK`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `Umamusume`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: LK
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 10/04/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English Sinhala
+Local Time: 14/04/2026 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Celeron(R) 2957U @ 1.40GHz
+[... truncated; full sample at ``sample.txt`` (approx. 252 more lines) ...]
 ```
 
 ### `cystack_d23d4b08`
@@ -304439,6 +322488,61 @@ winlogon.exe
 [... truncated; full sample at ``sample.txt`` (approx. 343 more lines) ...]
 ```
 
+### `cystack_d378eedb`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hotline Miami 2`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Prison Escape Simulator`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: TR
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 16/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: Turkish
+Local Time: 11/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+[... truncated; full sample at ``sample.txt`` (approx. 302 more lines) ...]
+```
+
 ### `cystack_d37debd1`
 
 **Attribution confidence:** `high`
@@ -305207,6 +323311,61 @@ svchost.exe
 fontdrvhost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 366 more lines) ...]
+```
+
+### `cystack_d3ea8610`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Camper Van`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: PH
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 28/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 26/05/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English English
+Local Time: 28/11/2025 <ip>
+TimeZone: 4294967288
+
+[Hardware]
+Processor: AMD Ryzen 5 3600 6-Core Processor              
+Cores: 12
+Threads: 12
+RAM: 16328 MB
+VideoCard: AMD Radeon RX 5600 XT
+[... truncated; full sample at ``sample.txt`` (approx. 201 more lines) ...]
 ```
 
 ### `cystack_d3f1be10`
@@ -306144,6 +324303,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 358 more lines) ...]
 ```
 
+### `cystack_d4a3f2b2`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Schedule I`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: DE
+Version: 18.7
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 11/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: German Albanian
+Local Time: 09/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 3400G with Radeon Vega Graphics    
+Cores: 8
+Threads: 8
+RAM: 12210 MB
+VideoCard: AMD Radeon(TM) RX Vega 11 Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 295 more lines) ...]
+```
+
 ### `cystack_d4aa5b30`
 
 **Attribution confidence:** `high`
@@ -306857,6 +325071,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 340 more lines) ...]
+```
+
+### `cystack_d4f99606`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `Torchlight`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: BG
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Enterprise
+Install Date: 25/12/2020 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2048x1152
+Keyboard Languages: Bulgarian Bulgarian English
+Local Time: 10/04/2026 <ip>
+TimeZone: 2
+
+[Hardware]
+Processor: AMD Ryzen 5 5600X 6-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 328 more lines) ...]
 ```
 
 ### `cystack_d4fbcf3d`
@@ -308839,6 +327108,61 @@ lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 318 more lines) ...]
 ```
 
+### `cystack_d675cf70`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Avatar`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+Беру логи с балансом более 10000$
+В распоряжении 150шт - rtx5090
+Депозит 2 btc /topic/232013/
+
+Telegram: @brute
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.4
+
+IP: <redacted>
+Country: BR
+
+Date: 27/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 11/04/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese
+Local Time: 27/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
+[... truncated; full sample at ``sample.txt`` (approx. 236 more lines) ...]
+```
+
 ### `cystack_d683ab12`
 
 **Attribution confidence:** `high`
@@ -309609,6 +327933,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 310 more lines) ...]
 ```
 
+### `cystack_d6dfd1b1`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Schedule I`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: FR
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 23/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: French
+Local Time: 13/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 7 5700X 8-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 323 more lines) ...]
+```
+
 ### `cystack_d6e12ff3`
 
 **Attribution confidence:** `high`
@@ -310377,6 +328756,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 178 more lines) ...]
+```
+
+### `cystack_d73d1c8e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `COMBAT ARMS`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: BR
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 20/02/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Portuguese
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 5600X 6-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 312 more lines) ...]
 ```
 
 ### `cystack_d743b81b`
@@ -313734,6 +332168,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 354 more lines) ...]
 ```
 
+### `cystack_d99a2aca`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Chivalry`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: DE
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 11/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: English Arabic
+Local Time: 14/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-6600U CPU @ 2.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 274 more lines) ...]
+```
+
 ### `cystack_d9a1ddf4`
 
 **Attribution confidence:** `high`
@@ -314174,6 +332663,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 343 more lines) ...]
 ```
 
+### `cystack_da0f511c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Fallout`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `Quarantine Zone`, `RAM`, `Schedule I`, `TCG Card Shop Simulator`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: FR
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 10/04/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English French
+Local Time: 10/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: 13th Gen Intel(R) Core(TM) i5-13400F
+[... truncated; full sample at ``sample.txt`` (approx. 336 more lines) ...]
+```
+
 ### `cystack_da19c7f0`
 
 **Attribution confidence:** `high`
@@ -314282,6 +332826,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 228 more lines) ...]
+```
+
+### `cystack_da27d611`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Keyboard Languages`, `Local Time`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 23/06/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: English
+Local Time: 26/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz
+Cores: 4
+Threads: 4
+RAM: 8030 MB
+VideoCard: Intel(R) HD Graphics 520
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+services.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+WUDFHost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 256 more lines) ...]
 ```
 
 ### `cystack_da319c71`
@@ -316429,6 +335028,61 @@ winlogon.exe
 [... truncated; full sample at ``sample.txt`` (approx. 322 more lines) ...]
 ```
 
+### `cystack_dba82bae`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Car Dealer Simulator`, `Computer Name`, `Contraband Police`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Resident Evil 3`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+Беру логи с балансом более 10000$
+В распоряжении 150шт - rtx5090
+Депозит 2 btc /topic/232013/
+
+Telegram: @brute
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.4
+
+IP: <redacted>
+Country: MA
+
+Date: 28/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 16/10/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English French Arabic Arabic
+Local Time: 28/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz
+[... truncated; full sample at ``sample.txt`` (approx. 258 more lines) ...]
+```
+
 ### `cystack_dbb061c0`
 
 **Attribution confidence:** `high`
@@ -316537,6 +335191,52 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 297 more lines) ...]
+```
+
+### `cystack_dbc10c6c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Display Resolution`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+IP: <redacted>
+Country: AR
+HWID: <redacted>
+Work Dir: In memory
+Windows: Windows 10 Enterprise LTSC 2019
+Install Date: 15/09/2018 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Spanish
+Local Time: 17/04/2026 <ip>
+TimeZone: 4294967293
+[Hardware]
+Cores: 4
+Threads: 4
+RAM: 7971 MB
+VideoCard: Intel(R) HD Graphics 3000
+[Processes]
+System
+Registry
+Memory Compression
+[Software]
+VRoid Studio
+Stumble Guys
+Baldi's Basics Classic Remastered
+BioniX Wallpaper Changer
+Roblox Player for DYLAN
+Microsoft Visual Studio Code (User) - 1.114.0
 ```
 
 ### `cystack_dbc22f58`
@@ -318519,6 +337219,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 216 more lines) ...]
 ```
 
+### `cystack_dd2c6357`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Open Library`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+|  _____  _   _ __   __  _____  _   _  _____  _____  ___   _      _      _____  |
+| | ___ \| | | |\ \ / / |_   _|| \ | |/  ___||_   _|/ _ \ | |    | |    /  ___| |
+| | |_/ /| | | | \ V /    | |  |  \| |\ `--.   | | / /_\ \| |    | |    \ `--.  |
+| | ___ \| | | |  \ /     | |  | . ` | `--. \  | | |  _  || |    | |     `--. \ |
+| | |_/ /| |_| |  | |    _| |_ | |\  |/\__/ /  | | | | | || |____| |____/\__/ / |
+| \____/  \___/   \_/    \___/ \_| \_/\____/   \_/ \_| |_/\_____/\_____/\____/  |
+
+- WHERE BUY THE BEST INSTALLS ??
+
+
+**************************************************
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 23/05/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English
+Local Time: 14/04/2026 <ip>
+TimeZone: 4294967288
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-10110U CPU @ 2.10GHz
+Cores: 4
+Threads: 4
+RAM: 7953 MB
+VideoCard: Intel(R) UHD Graphics
+
+[Processes]
+System
+Registry
+[... truncated; full sample at ``sample.txt`` (approx. 217 more lines) ...]
+```
+
 ### `cystack_dd36fc32`
 
 **Attribution confidence:** `high`
@@ -318737,6 +337492,61 @@ Threads: 16
 RAM: 14224 MB
 VideoCard: NVIDIA GeForce GTX 1660 Ti
 [... truncated; full sample at ``sample.txt`` (approx. 242 more lines) ...]
+```
+
+### `cystack_dd727c84`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Arena Breakout`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `FreeStyle 2`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: CA
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 02/01/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1720x1080
+Keyboard Languages: English French English
+Local Time: 11/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: Intel(R) Xeon(R) CPU           W3690  @ 3.47GHz
+[... truncated; full sample at ``sample.txt`` (approx. 272 more lines) ...]
 ```
 
 ### `cystack_dd9d92d8`
@@ -319179,6 +337989,61 @@ lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 356 more lines) ...]
 ```
 
+### `cystack_dde4fd62`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Watch Dogs`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 15/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 16/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 4096x2160
+Keyboard Languages: Portuguese
+Local Time: 15/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+[... truncated; full sample at ``sample.txt`` (approx. 295 more lines) ...]
+```
+
 ### `cystack_ddf136b9`
 
 **Attribution confidence:** `high`
@@ -319232,6 +338097,61 @@ Threads: 16
 RAM: 32547 MB
 VideoCard: Intel(R) UHD Graphics
 [... truncated; full sample at ``sample.txt`` (approx. 293 more lines) ...]
+```
+
+### `cystack_ddf6634d`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Car Detailing Simulator`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Mafia II`, `Path`, `Processor`, `RAM`, `Schedule I`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: CZ
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 19/07/2020 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Czech
+Local Time: 29/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz
+Cores: 4
+Threads: 4
+RAM: 16299 MB
+VideoCard: Radeon RX550/550 Series
+[... truncated; full sample at ``sample.txt`` (approx. 296 more lines) ...]
 ```
 
 ### `cystack_ddf6c966`
@@ -321709,6 +340629,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 312 more lines) ...]
 ```
 
+### `cystack_df5af1c5`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Age of Empires II`, `Bully`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hotline Miami 2`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `The Elder Scrolls V`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: AR
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 28/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 31/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish Spanish
+Local Time: 28/11/2025 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 3 3200G with Radeon Vega Graphics    
+Cores: 4
+Threads: 4
+RAM: 13242 MB
+VideoCard: AMD Radeon(TM) Vega 8 Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 264 more lines) ...]
+```
+
 ### `cystack_df621841`
 
 **Attribution confidence:** `high`
@@ -321927,6 +340902,61 @@ svchost.exe
 fontdrvhost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 267 more lines) ...]
+```
+
+### `cystack_df83655d`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `The Seven Deadly Sins`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.0
+
+IP: <redacted>
+Country: BR
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 11/11/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x900
+Keyboard Languages: Portuguese Portuguese
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 5 3400G with Radeon Vega Graphics    
+[... truncated; full sample at ``sample.txt`` (approx. 331 more lines) ...]
 ```
 
 ### `cystack_df89b6cd`
@@ -323799,6 +342829,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 212 more lines) ...]
 ```
 
+### `cystack_e1155873`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Ant Colony`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `Lonely Mountains`, `MachineID`, `Microtopia`, `Money Simulator`, `Path`, `Processor`, `RAM`, `RISK`, `Slapshot`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: GB
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 27/01/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 09/04/2026 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: AMD Ryzen 5 5500                               
+[... truncated; full sample at ``sample.txt`` (approx. 366 more lines) ...]
+```
+
 ### `cystack_e12b48a5`
 
 **Attribution confidence:** `high`
@@ -324127,6 +343212,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 174 more lines) ...]
+```
+
+### `cystack_e16d183e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Batman`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Slapshot`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: CH
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 30/05/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2300x1440
+Keyboard Languages: French
+Local Time: 29/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 5600 6-Core Processor              
+Cores: 12
+Threads: 12
+RAM: 16309 MB
+VideoCard: NVIDIA GeForce RTX 4060
+[... truncated; full sample at ``sample.txt`` (approx. 321 more lines) ...]
 ```
 
 ### `cystack_e172a5aa`
@@ -324624,6 +343764,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 312 more lines) ...]
 ```
 
+### `cystack_e1e74aec`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `Game of Thrones`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: SA
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 31/12/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Arabic English English
+Local Time: 09/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 277 more lines) ...]
+```
+
 ### `cystack_e1ea4084`
 
 **Attribution confidence:** `high`
@@ -324732,6 +343927,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 262 more lines) ...]
+```
+
+### `cystack_e1ef2e27`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Seven Knights Re`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: TH
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 07/12/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Thai
+Local Time: 16/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+[... truncated; full sample at ``sample.txt`` (approx. 271 more lines) ...]
 ```
 
 ### `cystack_e1f4b7d4`
@@ -325064,6 +344314,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 256 more lines) ...]
 ```
 
+### `cystack_e246f744`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Entropy`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: TR
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 22/09/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Turkish
+Local Time: 14/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 234 more lines) ...]
+```
+
 ### `cystack_e265d45e`
 
 **Attribution confidence:** `high`
@@ -325337,6 +344642,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 245 more lines) ...]
+```
+
+### `cystack_e295b31c`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Black Myth`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Vampire`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: IQ
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 21/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: English English Spanish
+Local Time: 13/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i3-12100F
+[... truncated; full sample at ``sample.txt`` (approx. 206 more lines) ...]
 ```
 
 ### `cystack_e29b398f`
@@ -325667,6 +345027,61 @@ Processor: AMD Ryzen 5 5500
 Cores: 6
 Threads: 12
 [... truncated; full sample at ``sample.txt`` (approx. 300 more lines) ...]
+```
+
+### `cystack_e2d02b55`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Styx`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: BE
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 13/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: French French
+Local Time: 29/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-14600KF
+Cores: 20
+Threads: 20
+RAM: 32606 MB
+VideoCard: NVIDIA GeForce GTX 960
+[... truncated; full sample at ``sample.txt`` (approx. 263 more lines) ...]
 ```
 
 ### `cystack_e2d50ff0`
@@ -326769,6 +346184,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 298 more lines) ...]
 ```
 
+### `cystack_e3ae1f5b`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Spider-Man`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PT
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 25/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English Portuguese
+Local Time: 14/04/2026 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: AMD Ryzen 5 5600G with Radeon Graphics         
+[... truncated; full sample at ``sample.txt`` (approx. 278 more lines) ...]
+```
+
 ### `cystack_e3c7b10e`
 
 **Attribution confidence:** `high`
@@ -327702,6 +347172,61 @@ svchost.exe
 fontdrvhost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 364 more lines) ...]
+```
+
+### `cystack_e4506497`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Rent A Car Simulator 24`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: TR
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 05/03/2022 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x900
+Keyboard Languages: Turkish
+Local Time: 11/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz
+[... truncated; full sample at ``sample.txt`` (approx. 190 more lines) ...]
 ```
 
 ### `cystack_e453a577`
@@ -329737,6 +349262,61 @@ services.exe
 LsaIso.exe
 lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 221 more lines) ...]
+```
+
+### `cystack_e5666347`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Favela Kick`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Plague Inc`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 26/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Portuguese
+Local Time: 16/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-3570 CPU @ 3.40GHz
+[... truncated; full sample at ``sample.txt`` (approx. 230 more lines) ...]
 ```
 
 ### `cystack_e56f756e`
@@ -332214,6 +351794,61 @@ lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 326 more lines) ...]
 ```
 
+### `cystack_e6d62a6e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hobo`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Soccer Online`, `Telegram`, `The Binding of Isaac`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PL
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 07/08/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Polish
+Local Time: 16/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 375 more lines) ...]
+```
+
 ### `cystack_e6d7a9df`
 
 **Attribution confidence:** `high`
@@ -333259,6 +352894,61 @@ fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 314 more lines) ...]
 ```
 
+### `cystack_e7cb723a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+Беру логи с балансом более 10000$
+В распоряжении 150шт - rtx5090
+Депозит 2 btc /topic/232013/
+
+Telegram: @brute
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.4
+
+IP: <redacted>
+Country: FR
+
+Date: 27/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 25/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: French
+Local Time: 27/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-14700F
+[... truncated; full sample at ``sample.txt`` (approx. 307 more lines) ...]
+```
+
 ### `cystack_e7dbec1a`
 
 **Attribution confidence:** `high`
@@ -333312,6 +353002,61 @@ LsaIso.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 299 more lines) ...]
+```
+
+### `cystack_e7dffc98`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `TCG Card Shop Simulator`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: EC
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home Single Language
+Install Date: 23/12/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Spanish Spanish
+Local Time: 08/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: AMD Athlon Silver 3050U with Radeon Graphics   
+[... truncated; full sample at ``sample.txt`` (approx. 221 more lines) ...]
 ```
 
 ### `cystack_e7e43881`
@@ -333587,6 +353332,61 @@ svchost.exe
 WUDFHost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 350 more lines) ...]
+```
+
+### `cystack_e8203fa4`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `The Binding of Isaac`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: US
+
+Date: 15/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 24/01/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: English
+Local Time: 15/04/2026 <ip>
+TimeZone: 4294967288
+
+[Hardware]
+Processor: AMD Ryzen 5 5500U with Radeon Graphics         
+[... truncated; full sample at ``sample.txt`` (approx. 219 more lines) ...]
 ```
 
 ### `cystack_e822870f`
@@ -333974,6 +353774,61 @@ WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 307 more lines) ...]
 ```
 
+### `cystack_e84eb964`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `The Witcher 3`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: BR
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 25/03/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x900
+Keyboard Languages: Portuguese
+Local Time: 09/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz
+[... truncated; full sample at ``sample.txt`` (approx. 300 more lines) ...]
+```
+
 ### `cystack_e8526eb7`
 
 **Attribution confidence:** `high`
@@ -334247,6 +354102,61 @@ services.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 234 more lines) ...]
+```
+
+### `cystack_e86991eb`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Clair Obscur`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Hollow Knight`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Subnautica`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: VE
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 18/08/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1680x1050
+Keyboard Languages: Japanese Spanish Spanish
+Local Time: 08/04/2026 <ip>
+TimeZone: 4294967292
+
+[Hardware]
+Processor: AMD Ryzen 5 5600GT with Radeon Graphics        
+[... truncated; full sample at ``sample.txt`` (approx. 309 more lines) ...]
 ```
 
 ### `cystack_e87c0a5d`
@@ -335017,6 +354927,61 @@ LsaIso.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 253 more lines) ...]
+```
+
+### `cystack_e8da7dbc`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Dying Light`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: PL
+Version: 18.7
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 08/04/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Polish
+Local Time: 09/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: 13th Gen Intel(R) Core(TM) i5-13400F
+Cores: 16
+Threads: 16
+RAM: 32581 MB
+VideoCard: NVIDIA GeForce RTX 4060
+[... truncated; full sample at ``sample.txt`` (approx. 209 more lines) ...]
 ```
 
 ### `cystack_e8dffa41`
@@ -336614,6 +356579,61 @@ lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 352 more lines) ...]
 ```
 
+### `cystack_e9e6ec0e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Siren Head`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: PK
+Version: 18.7
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Enterprise
+Install Date: 15/05/2022 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x900
+Keyboard Languages: English
+Local Time: 10/04/2026 <ip>
+TimeZone: 5
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
+Cores: 8
+Threads: 8
+RAM: 16259 MB
+VideoCard: NVIDIA GeForce GT 730
+[... truncated; full sample at ``sample.txt`` (approx. 200 more lines) ...]
+```
+
 ### `cystack_e9fa979c`
 
 **Attribution confidence:** `high`
@@ -336777,6 +356797,61 @@ svchost.exe
 fontdrvhost.exe
 WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 262 more lines) ...]
+```
+
+### `cystack_ea1e3969`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `The Binding of Isaac`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: US
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 28/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 01/04/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2560x1440
+Keyboard Languages: English
+Local Time: 28/11/2025 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: AMD Ryzen 5 8500G w/ Radeon 740M Graphics      
+Cores: 12
+Threads: 12
+RAM: 63067 MB
+VideoCard: NVIDIA GeForce RTX 5060
+[... truncated; full sample at ``sample.txt`` (approx. 309 more lines) ...]
 ```
 
 ### `cystack_ea2edef5`
@@ -337437,6 +357512,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 314 more lines) ...]
+```
+
+### `cystack_eab399b0`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Aperture Tag`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Portal`, `Portal Stories`, `Processor`, `RAM`, `SuchArt`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: CA
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 24/05/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English English
+Local Time: 11/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: AMD Ryzen 5 2600X Six-Core Processor           
+[... truncated; full sample at ``sample.txt`` (approx. 288 more lines) ...]
 ```
 
 ### `cystack_eabb40e3`
@@ -338539,6 +358669,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 261 more lines) ...]
 ```
 
+### `cystack_eb7d93a6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Age of Empires II`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: AR
+
+Date: 15/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 07/04/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Spanish Spanish Spanish
+Local Time: 15/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: AMD Ryzen 7 5700G with Radeon Graphics         
+[... truncated; full sample at ``sample.txt`` (approx. 274 more lines) ...]
+```
+
 ### `cystack_eba96314`
 
 **Attribution confidence:** `high`
@@ -339089,6 +359274,44 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 279 more lines) ...]
 ```
 
+### `cystack_ebf5f347`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Cores`, `Date`, `Display Resolution`, `HWID`, `Integrity`, `Keyboard Languages`, `LocalIPv4`, `MachineID`, `Path`, `Processor`, `RAM`, `SystemTimestamp`, `SystemUptime`, `TAG`, `Threads`, `TimeZone`, `User Name`, `VideoCard`, `Wallpaper Hash`, `Windows`
+
+**Filenames:** `systeminfo.txt`
+
+**Sample (sanitized):**
+
+```
+=== SYSTEM DATA LOG ===
+TAG: e3fupum14o
+LocalIPv4: <ip>
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+HWID: <redacted>
+Path: <redacted>
+Windows: Windows 11 10.0 build 26200 (64 Bit)
+Computer Name: <redacted>
+User Name: <redacted>
+Integrity: Medium
+Admin Group: FALSE
+TimeZone: UTC+1
+Wallpaper Hash: Unknown
+SystemUptime: 2 hours
+SystemTimestamp: 13/09/2025 <ip>
+Display Resolution: 1920x1080
+Keyboard Languages: Nederlands (Nederland) / Nederlands (Nederland)
+[Hardware]
+Processor: AMD Ryzen 5 9600X 6-Core Processor
+Cores: 6
+Threads: 12
+RAM: 31913 MB
+VideoCard: NVIDIA GeForce RTX 5060
+```
+
 ### `cystack_ec0401eb`
 
 **Attribution confidence:** `high`
@@ -339582,6 +359805,61 @@ winlogon.exe
 LsaIso.exe
 lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 381 more lines) ...]
+```
+
+### `cystack_ec787ad1`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Angel Legion`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `SWAT Commander`, `Stick Fight`, `Telegram`, `The Seven Deadly Sins`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: DE
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 28/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2752x1152
+Keyboard Languages: German
+Local Time: 16/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 5600X 6-Core Processor             
+[... truncated; full sample at ``sample.txt`` (approx. 128 more lines) ...]
 ```
 
 ### `cystack_ec790a3f`
@@ -340629,6 +360907,61 @@ winlogon.exe
 [... truncated; full sample at ``sample.txt`` (approx. 331 more lines) ...]
 ```
 
+### `cystack_ed3a1e2a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `SCP`, `Stick Fight`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: TR
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 24/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Turkish
+Local Time: 14/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+[... truncated; full sample at ``sample.txt`` (approx. 293 more lines) ...]
+```
+
 ### `cystack_ed458bca`
 
 **Attribution confidence:** `high`
@@ -341067,6 +361400,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 245 more lines) ...]
+```
+
+### `cystack_ed8aca60`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Alien`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: GB
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 17/04/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 11/04/2026 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: AMD Ryzen 5 PRO 4655G with Radeon Graphics     
+[... truncated; full sample at ``sample.txt`` (approx. 304 more lines) ...]
 ```
 
 ### `cystack_ed8c45a6`
@@ -341947,6 +362335,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 231 more lines) ...]
+```
+
+### `cystack_ee2ad946`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Ark Re`, `Computer Name`, `Cores`, `Country`, `Crystal Maidens`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: JO
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 25/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English Arabic
+Local Time: 29/11/2025 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz
+Cores: 8
+Threads: 8
+RAM: 16178 MB
+VideoCard: NVIDIA GeForce GTX 560
+[... truncated; full sample at ``sample.txt`` (approx. 296 more lines) ...]
 ```
 
 ### `cystack_ee2f33cc`
@@ -343489,6 +363932,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 328 more lines) ...]
 ```
 
+### `cystack_ef23cbd2`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Battlefield`, `Beyond`, `Call of Duty`, `Call of Duty 4`, `Call to Arms - Gates of Hell`, `Computer Name`, `Cores`, `Country`, `Date`, `Detroit`, `Display Resolution`, `Draft Day Sports`, `Empire`, `Feed and Grow`, `Football Coach`, `GUID`, `HWID`, `Homefront`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Men of War`, `NASCAR 21`, `Napoleon`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `Total Conflict`, `Total War`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: US
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 29/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 25/06/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1707x1067
+Keyboard Languages: English
+Local Time: 29/11/2025 <ip>
+TimeZone: 4294967290
+
+[Hardware]
+Processor: Intel(R) Core(TM) Ultra 9 275HX
+Cores: 24
+Threads: 24
+RAM: 64980 MB
+VideoCard: NVIDIA GeForce RTX 5080 Laptop GPU
+[... truncated; full sample at ``sample.txt`` (approx. 142 more lines) ...]
+```
+
 ### `cystack_ef300094`
 
 **Attribution confidence:** `high`
@@ -344147,6 +364645,116 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 352 more lines) ...]
+```
+
+### `cystack_ef681854`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Idle Monster TD`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Supermarket Simulator`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: ID
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 29/08/2021 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x768
+Keyboard Languages: English
+Local Time: 16/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: AMD Ryzen 7 2700X Eight-Core Processor         
+[... truncated; full sample at ``sample.txt`` (approx. 395 more lines) ...]
+```
+
+### `cystack_ef6b0cdb`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `ENDER LILIES`, `GUID`, `HWID`, `Hollow Knight`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: SA
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 08/12/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 2048x1152
+Keyboard Languages: Arabic English
+Local Time: 13/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-10100F CPU @ 3.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 351 more lines) ...]
 ```
 
 ### `cystack_ef6b9fb8`
@@ -345194,6 +365802,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 184 more lines) ...]
 ```
 
+### `cystack_f02e1575`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Miscrits`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: PH
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 17/01/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 16/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 280 more lines) ...]
+```
+
 ### `cystack_f02ed1aa`
 
 **Attribution confidence:** `high`
@@ -345962,6 +366625,171 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 278 more lines) ...]
+```
+
+### `cystack_f0837c4e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `STAR WARS Jedi`, `Sniper Elite`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: GB
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 11/02/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English English
+Local Time: 09/04/2026 <ip>
+TimeZone: 0
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz
+[... truncated; full sample at ``sample.txt`` (approx. 253 more lines) ...]
+```
+
+### `cystack_f08743b0`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `Uncanny Tales`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к криптокошелькам
+Беру логи с балансом более 10000$
+В распоряжении 150шт - rtx5090
+Депозит 2 btc /topic/232013/
+
+Telegram: @brute
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.4
+
+IP: <redacted>
+Country: TH
+
+Date: 30/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home Single Language
+Install Date: 02/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: English Thai
+Local Time: 30/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-1005G1 CPU @ 1.20GHz
+[... truncated; full sample at ``sample.txt`` (approx. 254 more lines) ...]
+```
+
+### `cystack_f090bfb7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `FreeStyle 2`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `PUBG`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: PH
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 17/01/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 09/04/2026 <ip>
+TimeZone: 8
+
+[Hardware]
+Processor: AMD Ryzen 5 5600G with Radeon Graphics         
+[... truncated; full sample at ``sample.txt`` (approx. 110 more lines) ...]
 ```
 
 ### `cystack_f0926d8e`
@@ -347889,6 +368717,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 292 more lines) ...]
 ```
 
+### `cystack_f240a115`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Alice`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Metal Slug`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: MX
+
+Date: 15/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home Single Language
+Install Date: 31/12/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1600x900
+Keyboard Languages: Spanish
+Local Time: 15/04/2026 <ip>
+TimeZone: 4294967290
+
+[Hardware]
+Processor: Intel(R) Celeron(R) CPU G1620 @ 2.70GHz
+[... truncated; full sample at ``sample.txt`` (approx. 210 more lines) ...]
+```
+
 ### `cystack_f2441a2c`
 
 **Attribution confidence:** `high`
@@ -348879,6 +369762,61 @@ winlogon.exe
 [... truncated; full sample at ``sample.txt`` (approx. 350 more lines) ...]
 ```
 
+### `cystack_f3118dfc`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Car Detailing Simulator`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Motorcycle Mechanic Simulator 2021`, `Path`, `Pixel Gun 3D`, `Processor`, `RAM`, `RISK`, `Space Hulk`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: DK
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 28/01/2021 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Danish English English
+Local Time: 11/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+[... truncated; full sample at ``sample.txt`` (approx. 357 more lines) ...]
+```
+
 ### `cystack_f312dd72`
 
 **Attribution confidence:** `high`
@@ -349812,6 +370750,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 244 more lines) ...]
+```
+
+### `cystack_f3da2db8`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Caveman World`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `It Works`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: TR
+
+Date: 14/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 24/02/2026 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1080x1080
+Keyboard Languages: English
+Local Time: 14/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: AMD Ryzen 7 5700                               
+[... truncated; full sample at ``sample.txt`` (approx. 303 more lines) ...]
 ```
 
 ### `cystack_f3e0b56a`
@@ -350749,6 +371742,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 234 more lines) ...]
 ```
 
+### `cystack_f470e256`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Solo Leveling`, `Stick Fight`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: US
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 26/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 27/04/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x800
+Keyboard Languages: English
+Local Time: 26/11/2025 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz
+Cores: 12
+Threads: 12
+RAM: 16237 MB
+VideoCard: NVIDIA GeForce GTX 1650
+[... truncated; full sample at ``sample.txt`` (approx. 305 more lines) ...]
+```
+
 ### `cystack_f4711f20`
 
 **Attribution confidence:** `high`
@@ -351407,6 +372455,61 @@ svchost.exe
 fontdrvhost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 259 more lines) ...]
+```
+
+### `cystack_f4dd92ea`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Cities`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `SCP`, `Schedule I`, `Threads`, `TimeZone`, `Tobacco Shop Simulator`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: DE
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 27/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 27/08/2023 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: German English
+Local Time: 27/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+Cores: 8
+Threads: 8
+RAM: 16336 MB
+VideoCard: NVIDIA GeForce GTX 1060 6GB
+[... truncated; full sample at ``sample.txt`` (approx. 239 more lines) ...]
 ```
 
 ### `cystack_f4ea5c12`
@@ -353994,6 +375097,61 @@ VideoCard: NVIDIA GeForce RTX 5060
 [... truncated; full sample at ``sample.txt`` (approx. 242 more lines) ...]
 ```
 
+### `cystack_f6a87fc9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Call of Duty`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Insurgency`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `The Elder Scrolls V`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: US
+
+Date: 12/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 08/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 12/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-4770K CPU @ 3.50GHz
+[... truncated; full sample at ``sample.txt`` (approx. 280 more lines) ...]
+```
+
 ### `cystack_f6af3dc5`
 
 **Attribution confidence:** `high`
@@ -355092,6 +376250,61 @@ fontdrvhost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 171 more lines) ...]
+```
+
+### `cystack_f77469bf`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Bum`, `Computer Name`, `Contraband Police`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Pixel Gun 3D`, `Prison Simulator`, `Processor`, `RAM`, `Schedule I`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: DE
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 27/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 21/12/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1652x1080
+Keyboard Languages: German
+Local Time: 27/11/2025 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 5600 6-Core Processor              
+Cores: 12
+Threads: 12
+RAM: 16310 MB
+VideoCard: AMD Radeon RX 6700 XT
+[... truncated; full sample at ``sample.txt`` (approx. 217 more lines) ...]
 ```
 
 ### `cystack_f77a8795`
@@ -357404,6 +378617,61 @@ WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 204 more lines) ...]
 ```
 
+### `cystack_f8c0e3f7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `Grand Theft Auto`, `HWID`, `Hollow Knight`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `SpongeBob SquarePants`, `Teenage Mutant Ninja Turtles Arcade`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: BR
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 25/11/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 10/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1280x720
+Keyboard Languages: Portuguese
+Local Time: 25/11/2025 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
+Cores: 24
+Threads: 24
+RAM: 32608 MB
+VideoCard: AMD Radeon RX 580 2048SP
+[... truncated; full sample at ``sample.txt`` (approx. 209 more lines) ...]
+```
+
 ### `cystack_f8cad99a`
 
 **Attribution confidence:** `high`
@@ -358875,6 +380143,61 @@ WUDFHost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 322 more lines) ...]
 ```
 
+### `cystack_f9ac6e0d`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Supermarket Simulator`, `TCG Card Shop Simulator`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+-- Контакты для связи: <url>
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Ip: <redacted>
+Country: ID
+Version: 18.7
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 17/10/2022 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1360x768
+Keyboard Languages: English
+Local Time: 09/04/2026 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz
+Cores: 8
+Threads: 8
+RAM: 16375 MB
+VideoCard: NVIDIA GeForce GTX 1650
+[... truncated; full sample at ``sample.txt`` (approx. 398 more lines) ...]
+```
+
 ### `cystack_f9afefeb`
 
 **Attribution confidence:** `high`
@@ -359148,6 +380471,61 @@ svchost.exe
 fontdrvhost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 318 more lines) ...]
+```
+
+### `cystack_f9c10596`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Eyes`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Stick Fight`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: RO
+
+Date: 08/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 21/01/2022 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English
+Local Time: 08/04/2026 <ip>
+TimeZone: 4294967288
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-10700KF CPU @ 3.80GHz
+[... truncated; full sample at ``sample.txt`` (approx. 359 more lines) ...]
 ```
 
 ### `cystack_f9d07321`
@@ -359478,6 +380856,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 232 more lines) ...]
+```
+
+### `cystack_f9ebe40a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Injustice`, `Install Date`, `Ip`, `Keyboard Languages`, `Local Time`, `MachineID`, `PICO PARK`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+-- VIDAR STEALER - ЛУЧШИЙ STEALER НА РЫНКЕ!!!!
+
+Ip: <redacted>
+Country: TR
+Version: @Ott@Ottohelp - Buy daily fresh logs - Buy daily fresh logs @Ottohelp - Buy daily fresh logs
+
+Date: 01/12/2025 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 19/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: Turkish
+Local Time: 01/12/2025 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+Cores: 8
+Threads: 8
+RAM: 7886 MB
+VideoCard: Intel(R) Iris(R) Xe Graphics
+[... truncated; full sample at ``sample.txt`` (approx. 280 more lines) ...]
 ```
 
 ### `cystack_f9fe5b9c`
@@ -360578,6 +382011,61 @@ svchost.exe
 svchost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 249 more lines) ...]
+```
+
+### `cystack_facdac29`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `The Seven Deadly Sins`, `Threads`, `TimeZone`, `Umamusume`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: BR
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 27/07/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1366x768
+Keyboard Languages: Portuguese Portuguese
+Local Time: 13/04/2026 <ip>
+TimeZone: 4294967293
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz
+[... truncated; full sample at ``sample.txt`` (approx. 306 more lines) ...]
 ```
 
 ### `cystack_fad91a1c`
@@ -363935,6 +385423,61 @@ LsaIso.exe
 [... truncated; full sample at ``sample.txt`` (approx. 292 more lines) ...]
 ```
 
+### `cystack_fd25eddc`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Life is Strange`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: US
+
+Date: 13/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 22/02/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 3440x1440
+Keyboard Languages: English
+Local Time: 13/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: AMD Ryzen 7 7800X3D 8-Core Processor           
+[... truncated; full sample at ``sample.txt`` (approx. 325 more lines) ...]
+```
+
 ### `cystack_fd2a8132`
 
 **Attribution confidence:** `high`
@@ -364100,6 +385643,61 @@ svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 204 more lines) ...]
 ```
 
+### `cystack_fd3810f6`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `Half-Life`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: NL
+
+Date: 16/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 01/05/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Turkish
+Local Time: 16/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-9100F CPU @ 3.60GHz
+[... truncated; full sample at ``sample.txt`` (approx. 286 more lines) ...]
+```
+
 ### `cystack_fd4bd999`
 
 **Attribution confidence:** `high`
@@ -364153,6 +385751,61 @@ LsaIso.exe
 lsass.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 349 more lines) ...]
+```
+
+### `cystack_fd4c3805`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`ARK`, `AV`, `Ant Colony`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: CA
+
+Date: 10/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 07/03/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: English French English
+Local Time: 10/04/2026 <ip>
+TimeZone: 4294967291
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+[... truncated; full sample at ``sample.txt`` (approx. 330 more lines) ...]
 ```
 
 ### `cystack_fd567ff7`
@@ -364648,6 +386301,61 @@ fontdrvhost.exe
 fontdrvhost.exe
 svchost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 144 more lines) ...]
+```
+
+### `cystack_fd939b33`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Counter-Strike`, `Country`, `Date`, `Display Resolution`, `GUID`, `HAM`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: PL
+
+Date: 11/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home
+Install Date: 30/10/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1920x1080
+Keyboard Languages: Polish
+Local Time: 11/04/2026 <ip>
+TimeZone: 1
+
+[Hardware]
+Processor: AMD Ryzen 5 3400G with Radeon Vega Graphics    
+[... truncated; full sample at ``sample.txt`` (approx. 275 more lines) ...]
 ```
 
 ### `cystack_fd992b00`
@@ -365575,6 +387283,61 @@ lsass.exe
 [... truncated; full sample at ``sample.txt`` (approx. 289 more lines) ...]
 ```
 
+### `cystack_fe60c398`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `Dying Light 2`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Schedule I`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.1
+
+IP: <redacted>
+Country: IL
+
+Date: 09/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 30/09/2025 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1760x990
+Keyboard Languages: English Hebrew
+Local Time: 09/04/2026 <ip>
+TimeZone: 3
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+[... truncated; full sample at ``sample.txt`` (approx. 191 more lines) ...]
+```
+
 ### `cystack_fe641128`
 
 **Attribution confidence:** `high`
@@ -365779,6 +387542,61 @@ lsass.exe
 svchost.exe
 fontdrvhost.exe
 [... truncated; full sample at ``sample.txt`` (approx. 216 more lines) ...]
+```
+
+### `cystack_fe7e3c3a`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`AV`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Install Date`, `Keyboard Languages`, `Local Time`, `MachineID`, `Path`, `Processor`, `RAM`, `Sleeping Dogs`, `Telegram`, `Threads`, `TimeZone`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+------------STEALER-VIDAR 2.0-------------
+Новая версия уникального продукта на рынке! 
+Стабильная работа с 2018 года! 
+Хотите разместить рекламу? Пишите нам!
+-------------------------------------------
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Брут криптокошельков 24/7
+депозит 3 btc на exploit.
+более 6 лет на рынке.
+/topic/219028
+
+Telegram: @crack_exp
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: 1.2
+
+IP: <redacted>
+Country: MX
+
+Date: 15/04/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Home Single Language
+Install Date: 31/08/2024 <ip>
+AV: Windows Defender
+Computer Name: <redacted>
+User Name: <redacted>
+Display Resolution: 1536x864
+Keyboard Languages: Spanish
+Local Time: 15/04/2026 <ip>
+TimeZone: 4294967290
+
+[Hardware]
+Processor: AMD Ryzen 5 4600H with Radeon Graphics         
+[... truncated; full sample at ``sample.txt`` (approx. 349 more lines) ...]
 ```
 
 ### `cystack_fe87e617`

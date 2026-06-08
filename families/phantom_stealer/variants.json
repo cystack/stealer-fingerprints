@@ -4,6 +4,28 @@
     {
       "attribution_confidence": "high",
       "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin rights",
+        "CPU",
+        "GPU",
+        "Ip",
+        "Location",
+        "PC-name",
+        "Ram",
+        "System",
+        "Username"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_99a5bf98",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
       "distribution_channel": "@Phantomsoftwares_bot",
       "field_keys": [],
       "filenames": [
