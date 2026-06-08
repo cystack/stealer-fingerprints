@@ -1,0 +1,48 @@
+{
+  "family": "PCInfo Stealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU",
+        "Country",
+        "HWID",
+        "IP",
+        "MAC",
+        "PC Name",
+        "PC Username",
+        "RAM",
+        "Resolution"
+      ],
+      "filenames": [
+        "System_Info.txt"
+      ],
+      "fingerprint_id": "cystack_47382a1a",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU",
+        "HWID",
+        "IP",
+        "MAC",
+        "PC Name",
+        "PC Username",
+        "RAM",
+        "Resolution"
+      ],
+      "filenames": [
+        "System_Info.txt"
+      ],
+      "fingerprint_id": "cystack_b27f73d9",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

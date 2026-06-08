@@ -8,7 +8,7 @@ sections.
 
 **Also known as:** `Aetheris Stealer`
 
-**Variants observed:** 11
+**Variants observed:** 12
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -18,6 +18,61 @@ sections.
 - System hardware and locale inventory
 
 ## Variants
+
+### `cystack_026d1c92`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Clipboard`, `Hwid`, `Input ISO`, `Machine`, `Now`, `User`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+PDRstealer
+                               Code by @saved_messenges
+[User Info]
+User: PC
+Machine: DESKTOP-JROLK7M
+Now: 2026-05-06 <ip>
+Input ISO: ja
+Hwid: <redacted>
+Clipboard: pcall(function()
+	if rconsoleclear then rconsoleclear() end
+	if rconsoleprint then rconsoleprint("Welcome To BOPOLARIS V1.0.0!\n") end
+end)
+
+task.delay(4, function()
+	pcall(function()
+		if rconsolewarn then
+			rconsolewarn("FilteringEnabled violation detected\n")
+		elseif warn then
+			warn("FilteringEnabled violation detected")
+		end
+	end)
+end)
+
+local Players = game:GetService("Players")
+local UIS = game:GetService("UserInputService")
+local lp = Players.LocalPlayer
+
+local gui = Instance.new("ScreenGui")
+gui.Name = "serverSide"
+gui.ResetOnSpawn = false
+gui.Parent = lp:WaitForChild("PlayerGui")
+
+local main = Instance.new("Frame", gui)
+main.Size = UDim2.fromScale(0.6, 0.6)
+main.Position = UDim2.fromScale(0.2, 0.2)
+main.BackgroundColor3 = Color3.fromRGB(0,0,0)
+main.BorderColor3 = Color3.fromRGB(0,255,140)
+main.BorderSizePixel = 3
+main.Active = true
+main.Selectable = true
+[... truncated; full sample at ``sample.txt`` (approx. 172 more lines) ...]
+```
 
 ### `cystack_0f67ab2e`
 

@@ -16,6 +16,20 @@
     {
       "attribution_confidence": "high",
       "banner_strings": [],
+      "distribution_channel": "@Xavier_Log",
+      "field_keys": [
+        "Configuration"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "fingerprint_id": "b_a_b_a",
+      "panel_brand": ".B.A.B.A.",
+      "synthetic": false
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
       "distribution_channel": "@BRADLOGS",
       "field_keys": [
         "TG"
@@ -1655,6 +1669,34 @@
       ],
       "fingerprint_id": "deimos_golang_stealer",
       "panel_brand": "Deimos Golang Stealer",
+      "synthetic": false
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": "russia34.com",
+      "field_keys": [
+        "Cores",
+        "Country",
+        "Date",
+        "GUID",
+        "HWID",
+        "Ip",
+        "Lurk in the Dark",
+        "MachineID",
+        "Max Payne 2",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "Version",
+        "VideoCard"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "russia34_com_lumma_russia_34_bullet",
+      "panel_brand": "russia34.com (Lumma 'Russia 34' bullet)",
       "synthetic": false
     }
   ]

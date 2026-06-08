@@ -8,7 +8,7 @@ with the v2 rewrite tracked through 2024.
 
 **Also known as:** `StealC v1`, `StealC v2`
 
-**Variants observed:** 37
+**Variants observed:** 41
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -129,6 +129,116 @@ svchost.exe [1408]
 WUDFHost.exe [1440]
 fontdrvhost.exe [1448]
 [... truncated; full sample at ``sample.txt`` (approx. 355 more lines) ...]
+```
+
+### `cystack_0b0d0cfe`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Current User`, `Installed Apps`, `Process List`, `Process count`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+	- UTC: -6
+	- Language: es-MX
+	- Keyboards: Español (México)
+	- Laptop: FALSE
+	- Running Path: C:\Users\<user>\Desktop\Licence_Version_Loader.exe
+	- CPU: Intel(R) Pentium(R) Dual  CPU  E2180  @ 2.00GHz
+	- Cores: 2
+	- Threads: 2
+	- RAM: 6 GB
+	- Display Resolution: 
+		Monitor 1
+			Device Name: \\.\DISPLAY1
+			Device String: Intel(R) G33/G31 Express Chipset Family (Microsoft Corporation - WDDM 1.0)
+			Resolution: 1360x768
+			Color Depth: 32 bits per pixel
+	- GPU:
+		-Intel(R) G33/G31 Express Chipset Family (Microsoft Corporation - WDDM 1.0)
+
+Process count: 79
+Process List: 
+	[System Process] [0]
+	System [4]
+	Registry [92]
+	smss.exe [352]
+	csrss.exe [508]
+	csrss.exe [596]
+	wininit.exe [620]
+	winlogon.exe [664]
+	services.exe [736]
+	lsass.exe [756]
+	svchost.exe [868]
+	fontdrvhost.exe [888]
+	fontdrvhost.exe [892]
+	svchost.exe [980]
+	dwm.exe [460]
+	svchost.exe [712]
+	svchost.exe [588]
+	svchost.exe [1184]
+	WUDFHost.exe [1268]
+	svchost.exe [1320]
+[... truncated; full sample at ``sample.txt`` (approx. 75 more lines) ...]
+```
+
+### `cystack_11aa8cef`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Installed Apps`, `Process List`, `Process count`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+	- UTC: -3
+	- Language: es-AR
+	- Keyboards: Español (España, internacional) / Español (Argentina)
+	- Laptop: TRUE
+	- Running Path: D:\Software\Adoba Reader\Licеnce.Lоadеr(РA$$.- 2025)\Licence_Version_Loader.exe
+	- CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+	- Cores: 4
+	- Threads: 8
+	- RAM: 7 GB
+	- Display Resolution: 
+		Monitor 1
+			Device Name: \\.\DISPLAY1
+			Device String: Intel(R) Iris(R) Xe Graphics
+			Resolution: 1366x768
+			Color Depth: 32 bits per pixel
+	- GPU:
+		-Intel(R) Iris(R) Xe Graphics
+
+Process count: 180
+Process List: 
+	[System Process] [0]
+	System [4]
+	Secure System [104]
+	Registry [168]
+	smss.exe [472]
+	csrss.exe [728]
+	wininit.exe [812]
+	csrss.exe [824]
+	services.exe [888]
+	LsaIso.exe [908]
+	lsass.exe [916]
+	svchost.exe [428]
+	fontdrvhost.exe [600]
+	WUDFHost.exe [552]
+	svchost.exe [1048]
+	svchost.exe [1096]
+	WUDFHost.exe [1164]
+	winlogon.exe [1244]
+	fontdrvhost.exe [1300]
+	svchost.exe [1404]
+[... truncated; full sample at ``sample.txt`` (approx. 191 more lines) ...]
 ```
 
 ### `cystack_1a6c3169`
@@ -742,6 +852,61 @@ svchost.exe [1524]
 [... truncated; full sample at ``sample.txt`` (approx. 252 more lines) ...]
 ```
 
+### `cystack_5e7036c7`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Process List`, `Process count`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+	- UTC: 6
+	- Language: en-US
+	- Keyboards: English (United Kingdom) / English (United Kingdom)
+	- Laptop: FALSE
+	- Running Path: E:\downloaded softwares\Licеnce.Lоadеr(РA$$.- 2025)\Licence_Version_Loader.exe
+	- CPU: Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+	- Cores: 6
+	- Threads: 12
+	- RAM: 8 GB
+	- Display Resolution: 
+		Monitor 1
+			Device Name: \\.\DISPLAY1
+			Device String: Intel(R) UHD Graphics 630
+			Resolution: 1920x1080
+			Color Depth: 32 bits per pixel
+	- GPU:
+		-Intel(R) UHD Graphics 630
+
+Process count: 215
+Process List: 
+	[System Process] [0]
+	System [4]
+	Secure System [188]
+	Registry [232]
+	smss.exe [676]
+	csrss.exe [916]
+	csrss.exe [996]
+	wininit.exe [1016]
+	winlogon.exe [812]
+	services.exe [988]
+	LsaIso.exe [1044]
+	lsass.exe [1052]
+	svchost.exe [1212]
+	fontdrvhost.exe [1244]
+	fontdrvhost.exe [1248]
+	svchost.exe [1340]
+	svchost.exe [1400]
+	dwm.exe [1464]
+	svchost.exe [1556]
+	svchost.exe [1660]
+[... truncated; full sample at ``sample.txt`` (approx. 245 more lines) ...]
+```
+
 ### `cystack_678bd448`
 
 **Attribution confidence:** `high`
@@ -1020,7 +1185,7 @@ Process List:
 **Field keys:**
 `All Users`, `Installed Apps`, `Network Info`, `Process List`, `Process count`, `System Summary`
 
-**Filenames:** `system_info.txt`
+**Filenames:** `System.txt`, `system_info.txt`
 
 **Sample (sanitized):**
 
@@ -1121,6 +1286,61 @@ Google Chrome - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KH
 Installed Apps:
 All Users:
 [... truncated; full sample at ``sample.txt`` (approx. 253 more lines) ...]
+```
+
+### `cystack_81f28654`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Current User`, `Installed Apps`, `Jabber`, `Network Info`, `System Summary`, `Telegram`, `User Agents`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+
+ ______     __    __     __     ______     ______     ______   ______     ______        ______   ______     ______     __    __    
+/\  ___\   /\ "-./  \   /\ \   /\  == \   /\  __ \   /\__  _\ /\  ___\   /\  ___\      /\__  _\ /\  ___\   /\  __ \   /\ "-./  \   
+\ \  __\   \ \ \-./\ \  \ \ \  \ \  __<   \ \  __ \  \/_/\ \/ \ \  __\   \ \___  \     \/_/\ \/ \ \  __\   \ \  __ \  \ \ \-./\ \  
+ \ \_____\  \ \_\ \ \_\  \ \_\  \ \_\ \_\  \ \_\ \_\    \ \_\  \ \_____\  \/\_____\       \ \_\  \ \_____\  \ \_\ \_\  \ \_\ \ \_\ 
+  \/_____/   \/_/  \/_/   \/_/   \/_/ /_/   \/_/\/_/     \/_/   \/_____/   \/_____/        \/_/   \/_____/   \/_/\/_/   \/_/  \/_/ 
+          CHANNEL:t.me/+F61qGRd_ic1jZjAy    ADMIN:t.me/Emirates_Cloud  EMIRATES LINK:t.me/Emirates_Admin
+
+
+ ______     ______   ______     ______     __         ______
+/\  ___\   /\__  _\ /\  ___\   /\  __ \   /\ \       /\  ___\
+\ \___  \  \/_/\ \/ \ \  __\   \ \  __ \  \ \ \____  \ \ \____
+ \/\_____\    \ \_\  \ \_____\  \ \_\ \_\  \ \_____\  \ \_____\
+  \/_____/     \/_/   \/_____/   \/_/\/_/   \/_____/   \/_____/
+
+                       stealc stealer
+
+powerful native stealer based on C lang
+
+forum topics:
+	- <url>
+	- <url>
+	- <url>
+
+buy:
+	- telegram: t.me/plym0uth
+
+----------------------------------------------------------------
+Подбор паролей к криптокошелькам:
+Metamask, Ronin, Phantom, Daedalus Mainnet, Nami, Exodus, Electrum
+Беру логи с балансом от 3000$
+
+Общий процент:
+До 10000$ - 70/30
+От 10001$ и более - 60/40
+
+Telegram: @brute
+Jabber: <email>
+
+Темы:
+[... truncated; full sample at ``sample.txt`` (approx. 359 more lines) ...]
 ```
 
 ### `cystack_8a9e646a`
@@ -1401,7 +1621,7 @@ svchost.exe [712]
 **Field keys:**
 `All Users`, `Current User`, `Installed Apps`, `Network Info`, `Process List`, `Process count`, `System Summary`
 
-**Filenames:** `system_info.txt`
+**Filenames:** `System.txt`, `system_info.txt`
 
 **Sample (sanitized):**
 

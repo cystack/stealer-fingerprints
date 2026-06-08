@@ -9,7 +9,7 @@ the underlying field layout intact.
 
 **Also known as:** `redline`, `redline-extended`
 
-**Variants observed:** 53
+**Variants observed:** 65
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -132,6 +132,46 @@ Display Resolution: 1920x1080
 Wallpaper Hash: 423295216c266958ef6cb2d6bc8eeea7f491ef75
 ```
 
+### `cystack_133f0f19`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`APPLE`, `Admin Group`, `BUILD NAME`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `GOOGLE`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `Product Key`, `Router MAC Address`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+BUILD NAME: bigdick
+HWID: <redacted>
+Country: CA
+IP: <redacted>
+TimeZone: -3
+System Language: English
+Processor: AMD Ryzen 5 7600 6-Core Processor
+Installed RAM: 31902 MB
+Operation System: Windows 11-10.0.26200
+Graphics card: AMD Radeon RX 7600 XT
+Computer Name: <redacted>
+Router MAC Address: <ip>
+Domain Name: <redacted>
+Product Key: VK7JG-NPHTM-C97JM-9MPGT-3V66T
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+@stealerboss - Buy daily fresh logs: 41e8c2b506390bcdab59b9cb3fc1222c78d4aefa
+
+=== GEOLOCATION ===
+APPLE: 47.592857, -52.735085
+GOOGLE: 47.592955, -52.73486
+```
+
 ### `cystack_1863c96d`
 
 **Attribution confidence:** `unknown`
@@ -161,6 +201,34 @@ TimeZone: UTC+4
 UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1920x1080
+```
+
+### `cystack_1ed0fd47`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`BUILD NAME`, `Computer Name`, `Country`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Operation System`, `Processor`, `Product Key`, `Router MAC Address`, `System Language`, `TimeZone`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+BUILD NAME: Kassay
+HWID: <redacted>
+Country: AM
+IP: <redacted>
+TimeZone: +4
+System Language: English
+Processor: Intel(R) Core(TM) i3-2130 CPU @ 3.40GHz
+Installed RAM: 16347 MB
+Operation System: Windows 11-10.0.26200
+Graphics card: NVIDIA GeForce GT 610
+Computer Name: <redacted>
+Router MAC Address: <ip>
+Domain Name: <redacted>
+Product Key: YTMG3-N6DKC-DKB77-7M9GH-8HVX7
 ```
 
 ### `cystack_20220931`
@@ -202,6 +270,45 @@ Display Resolution: 1920x1080
 >=>    >=> >=>     >=> >>    >=>                                                                   
 >=====>>=> >=>     >=> >==>>=>                                                                     
 [... truncated; full sample at ``sample.txt`` (approx. 39 more lines) ...]
+```
+
+### `cystack_2176857a`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Antivirus`, `City`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP Address`, `Integrity`, `Keyboard Language`, `Operation System`, `Postal Code`, `Region`, `TimeZone`, `Timezone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Operation System: Windows 10 Pro build 19045 (64 Bit)
+Graphics card: Intel(R) HD Graphics
+Antivirus: Windows Defender
+Computer Name: <redacted>
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: TRUE
+Integrity: Medium
+TimeZone: UTC-5
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+@stealerboss - Buy daily fresh logs: cc7004c97e8a14ae8609fc739d8acc6a242abd07
+
+
+                        IP GEOLOCATION DATA
+
+IP Address:      <redacted>
+Country:         United States (US)
+Region:          South Carolina
+City:            <redacted>
+Postal Code:     <redacted>
+
+
+Timezone:        America/Adak (UTC)
 ```
 
 ### `cystack_279e10c7`
@@ -585,6 +692,26 @@ Display Resolution: 1920x1080
 Wallpaper Hash: 0825e886///  @ l o g s _ r u s s i a  ///4c47e6 cae75034d51d8ffe2fa03196d9a08f6958757be6
 ```
 
+### `cystack_4d65acc2`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Display Resolution`, `Integrity`, `Keyboard Language`, `TimeZone`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Admin Group: TRUE
+Integrity: High
+TimeZone: UTC+2
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1536x864
+```
+
 ### `cystack_5064d0de`
 
 **Attribution confidence:** `unknown`
@@ -660,7 +787,7 @@ Wallpaper Hash: bacd46dd2134fea31c6a5f275c21c01507f209e7
 **Field keys:**
 `Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
 
-**Filenames:** `UserInformation.txt`
+**Filenames:** `System.txt`, `UserInformation.txt`
 
 **Sample (sanitized):**
 
@@ -908,6 +1035,47 @@ Display Resolution: 3440x1440
 Wallpaper Hash: db91794afafc7b32b6d71b9561e067f72ceb4e16
 ```
 
+### `cystack_67d5e1ab`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Antivirus`, `City`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP Address`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Postal Code`, `Processor`, `Region`, `TimeZone`, `Timezone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+Installed RAM: 16169 MB
+Operation System: Windows 10 Pro build 26200 (64 Bit)
+Graphics card: NVIDIA GeForce RTX 3050
+Antivirus: None
+Computer Name: <redacted>
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: TRUE
+Integrity: Medium
+TimeZone: UTC+3
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+@stealerboss - Buy daily fresh logs: no_wallpaper
+
+
+                        IP GEOLOCATION DATA
+
+IP Address:      <redacted>
+Country:         Saudi Arabia (SA)
+Region:          Riyadh Region
+City:            <redacted>
+Postal Code:     <redacted>
+
+
+Timezone:        Asia/Riyadh (UTC)
+```
+
 ### `cystack_6d229675`
 
 **Attribution confidence:** `unknown`
@@ -1063,6 +1231,76 @@ UserLanguage: French
 Keyboard Language: French
 Display Resolution: 1366x768
 @Ottohelp - Buy daily fresh logs: d08c477d7682cd97be0a55cf613fdf56c9c08923
+```
+
+### `cystack_7a2d1647`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+1234
+HWID: <redacted>
+Country: KR
+IP: <redacted>
+System Language: Korean
+Installed RAM: 31.63 GB
+Operation System: Windows 11 (Build 26200) (64 Bit)
+Graphics card: Intel(R) UHD Graphics
+Computer Name: <redacted>
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+9
+UserLanguage: Korean
+Keyboard Language: Korean
+Display Resolution: 2048x1152
+```
+
+### `cystack_7cd05ed9`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`APPLE`, `Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `GOOGLE`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `Product Key`, `Router MAC Address`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+HWID: <redacted>
+Country: FR
+IP: <redacted>
+TimeZone: +1
+System Language: French
+Processor: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+Installed RAM: 16112 MB
+Operation System: Windows 10-10.0.19045
+Graphics card: Intel(R) Iris(R) Xe Graphics
+Computer Name: <redacted>
+Router MAC Address: <ip>
+Domain Name: <redacted>
+Product Key: VK7JG-NPHTM-C97JM-9MPGT-3V66T
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+UserLanguage: French
+Keyboard Language: French
+Display Resolution: 1280x720
+@stealerboss - Buy daily fresh logs: 92073779a1fec9d53c640a8f513324f484bf5879
+
+=== GEOLOCATION ===
+APPLE: 48.881622, 2.394148
+GOOGLE: 48.881633, 2.394072
 ```
 
 ### `cystack_83c06639`
@@ -1304,6 +1542,48 @@ Display Resolution: 1366x768
 Wallpaper Hash: 9926b26bfb8ba791ca1b08e52dbcc60bd1daed78
 ```
 
+### `cystack_ae1e54a0`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+⣿⣿⣿⣿⡟⠛⠁⠄⠄⠄⠄⢀⣀⣀⠄⠄⠄⠄⣤⣽⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⡋⠁⠄⠄⠄⣠⣶⣾⣿⣿⣿⣿⠄⢦⡄⠐⠬⠛⢿⣿⣿⣿⣿⣿⣿
+⣿⡿⠇⠁⠄⠄⣠⣾⣿⣿⡿⠟⠋⠁⠄⠄⠈⠁⠄⠄⠄⠄⠙⢿⣿⣿⣿⣿
+⣿⠃⠄⠄⠄⠘⣿⣿⣿⣿⢀⣠⠄⠄⠄⠄⣰⣶⣀⠄⠄⠄⠄⠸⣿⣿⣿⣿
+⣏⠄⠄⠄⠄⠄⣿⣿⣿⡿⢟⣁⠄⣀⣠⣴⣿⣿⠿⠷⠶⠒⠄⠄⢹⣿⣿⣿
+⡏⠄⠄⠄⠄⢰⣿⣿⣿⣿⣿⣿⣿⣿⡟⠄⠛⠁⠄⠄⠄⠄⠄⠄⢠⣿⣿⣿
+⣇⠄⠄⠄⠄⠄⠸⢿⣿⣿⣿⣿⣿⣿⠁⠸⠟⠁⣠⣤⣤⣶⣤⠄⠄⠄⢻⣿
+⣿⣿⡜⢰⡾⢻⣧⣰⣿⣿⣿⣿⣿⣿⣷⠄⣼⣷⣶⣶⡆⠄⠄⠄⠄⠄⠄⣿
+⣿⣿⣧⢸⠄⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⠄⠄⠄⠄⠄⠄⠄⣿
+⣿⣿⣿⣿⡿⢿⡟⠉⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠄⠄⢀⡀⠄⠘⣿
+⣿⣿⣿⣿⣿⣆⢻⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠄⠄⠈⠁⠄⠄⣿
+⣿⣿⣿⣿⣿⣿⡆⢻⣿⣿⣿⣿⣿⣿⡿⠛⠛⠛⠃⠄⠄⠄⠄⠄⠄⠄⢀⣿
+⣿⣿⣿⣿⣿⣿⣿⣆⣻⣿⣿⣿⣿⣿⣷⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿
+Country: Poland
+IP: <redacted>
+System Language: Polish
+Installed RAM: 16.00 GB
+Operation System: Windows 10 (Build 19045) (64 Bit)
+Graphics card: AMD Radeon RX 7600
+Computer Name: <redacted>
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+1
+UserLanguage: Polish
+Keyboard Language: Polish
+Display Resolution: 1920x1080
+```
+
 ### `cystack_b2032ab1`
 
 **Attribution confidence:** `unknown`
@@ -1541,6 +1821,37 @@ Display Resolution: 1920x1080
 Wallpaper Hash: 028f4ff456fd2615687e34bf4043bdbe5364a42e
 ```
 
+### `cystack_cfd0ac77`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`City`, `Country`, `Display Resolution`, `IP Address`, `Keyboard Language`, `Postal Code`, `Region`, `TimeZone`, `Timezone`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+TimeZone: UTC+1
+UserLanguage: French
+Keyboard Language: French
+Display Resolution: 1920x1080
+@stealerboss - Buy daily fresh logs: 06910c4592a8cbd656c109559b3e4ceaccd62148
+
+
+                        IP GEOLOCATION DATA
+
+IP Address:      <redacted>
+Country:         France (FR)
+Region:          Hauts-de-France
+City:            <redacted>
+Postal Code:     <redacted>
+
+
+Timezone:        Europe/Paris (UTC)
+```
+
 ### `cystack_d377db09`
 
 **Attribution confidence:** `unknown`
@@ -1612,6 +1923,41 @@ Display Resolution: 1366x768
 Wallpaper Hash: 
 ```
 
+### `cystack_d7d05872`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `Product Key`, `Router MAC Address`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+HWID: <redacted>
+Country: LU
+IP: <redacted>
+TimeZone: +1
+System Language: German
+Processor: Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+Installed RAM: 16299 MB
+Operation System: Windows 11-10.0.26200
+Graphics card: NVIDIA GeForce GTX 1660 Ti
+Computer Name: <redacted>
+Router MAC Address: <ip>
+Domain Name: <redacted>
+Product Key: 37GNV-YCQVD-38XP9-T848R-FC2HD
+-------------
+User Name: <redacted>
+Admin Group: TRUE
+Integrity: High
+UserLanguage: German
+Keyboard Language: English
+Display Resolution: 1920x1080
+@stealerboss - Buy daily fresh logs: 7edf68c495f6fe8b8001a36c9ea0b65040a2d0a7
+```
+
 ### `cystack_d9d3b27b`
 
 **Attribution confidence:** `unknown`
@@ -1658,6 +2004,42 @@ UserLanguage: Spanish
 Keyboard Language: Spanish
 Display Resolution: 1366x768
 @OttoSup - Buy daily fresh logs: 9ba14c26fe5d0d2cf71bc09a782dd7ca246d212a
+```
+
+### `cystack_dfdae098`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `BUILD NAME`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Processor`, `Product Key`, `Router MAC Address`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+BUILD NAME: bigdick
+HWID: <redacted>
+Country: LT
+IP: <redacted>
+TimeZone: +2
+System Language: Lithuanian
+Processor: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+Installed RAM: 16085 MB
+Operation System: Windows 11-10.0.26200
+Graphics card: Intel(R) UHD Graphics
+Computer Name: <redacted>
+Router MAC Address: <ip>
+Domain Name: <redacted>
+Product Key: YC7N8-G7WR6-9WR4H-6Y2W4-KBT6X
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+UserLanguage: Lithuanian
+Keyboard Language: English
+Display Resolution: 1536x864
+@stealerboss - Buy daily fresh logs: 796700034cea479d51a9e6e33dad79adf168bafd
 ```
 
 ### `cystack_e5cf90e8`
@@ -1915,6 +2297,38 @@ UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1920x1080
 Wallpaper Hash: 6412be3b177b930d4013957d032f6022506f40ff
+```
+
+### `cystack_fddd76ee`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `BUILD NAME`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Operation System`, `Router MAC Address`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+BUILD NAME: bigdick
+Country: PL
+IP: <redacted>
+TimeZone: +1
+System Language: Polish
+Installed RAM: 16280 MB
+Operation System: Windows 11-10.0.22631
+Graphics card: NVIDIA GeForce GTX 1650
+Computer Name: <redacted>
+Router MAC Address: Unknown
+Domain Name: <redacted>
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+UserLanguage: Polish
+Keyboard Language: Polish
+Display Resolution: 1920x1080
+Wallpaper Hash: f92cc32710e53b9bc7093103923e1c2ac1eff6e4
 ```
 
 ## Detection

@@ -8,7 +8,7 @@ divider, with column-aligned key/value records under each.
 Family attribution is provisional pending a published
 threat-intel mapping for this layout.
 
-**Variants observed:** 3
+**Variants observed:** 4
 **Top attribution confidence:** `unknown`
 
 ## Variants
@@ -157,6 +157,28 @@ Cores/Threads: 6 / 12
 RAM: 7.4 GB
 GPU: AMD Radeon(TM) Graphics, NVIDIA GeForce GTX 1650
 Displays: 1920x1080
+```
+
+### `cystack_f7ecb916`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Category`, `Country`, `IP`, `Path`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+   
+
+Category: User
+IP:            <redacted>
+Country:       CH
+Path:          <redacted>
+
+Category: System
 ```
 
 ## Detection

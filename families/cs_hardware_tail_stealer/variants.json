@@ -1,0 +1,17 @@
+{
+  "family": "CSHardwareTailStealer",
+  "variants": [
+    {
+      "attribution_confidence": "low",
+      "banner_strings": [],
+      "distribution_channel": "@STEALERBOSS",
+      "field_keys": [],
+      "filenames": [
+        "Info.txt"
+      ],
+      "fingerprint_id": "stealercloud",
+      "panel_brand": "STEALERCLOUD",
+      "synthetic": false
+    }
+  ]
+}

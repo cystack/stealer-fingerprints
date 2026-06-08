@@ -96,6 +96,23 @@
       "fingerprint_id": "cystack_f2e27cfe",
       "panel_brand": null,
       "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Category",
+        "Country",
+        "IP",
+        "Path"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_f7ecb916",
+      "panel_brand": null,
+      "synthetic": true
     }
   ]
 }

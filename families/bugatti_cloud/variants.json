@@ -1,0 +1,111 @@
+{
+  "family": "Bugatti Cloud",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Age of Empires III",
+        "Cores",
+        "Processor",
+        "RAM",
+        "Threads",
+        "VideoCard"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_1aa0f2d0",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Cores",
+        "Processor",
+        "RAM",
+        "Threads",
+        "VideoCard"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_4b5f63c8",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Cores",
+        "Evony",
+        "Processor",
+        "RAM",
+        "Threads",
+        "VideoCard"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_58e9d59c",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Cores",
+        "PUBG",
+        "Processor",
+        "RAM",
+        "Threads",
+        "VideoCard"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_7557887c",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Cores",
+        "Processor",
+        "RAM",
+        "Threads",
+        "Umamusume",
+        "VideoCard"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_7d394cf9",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "cystack_c65f37b2",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

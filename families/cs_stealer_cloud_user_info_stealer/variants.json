@@ -1,0 +1,26 @@
+{
+  "family": "CSStealerCloudUserInfoStealer",
+  "variants": [
+    {
+      "attribution_confidence": "low",
+      "banner_strings": [],
+      "distribution_channel": "@STEALERBOSS",
+      "field_keys": [
+        "City",
+        "Country",
+        "Display Resolution",
+        "IP Address",
+        "Keyboard Language",
+        "Postal Code",
+        "Region",
+        "Timezone"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "stealercloud",
+      "panel_brand": "STEALERCLOUD",
+      "synthetic": false
+    }
+  ]
+}

@@ -4,6 +4,18 @@
     {
       "attribution_confidence": "high",
       "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [],
+      "filenames": [
+        "Info.txt"
+      ],
+      "fingerprint_id": "cystack_c65f37b2",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
       "distribution_channel": "@UP_DAISYCLOUD",
       "field_keys": [],
       "filenames": [

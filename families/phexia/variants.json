@@ -1,0 +1,25 @@
+{
+  "family": "Phexia",
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Build",
+        "Graphics/Displays",
+        "Hardware",
+        "IP Address",
+        "Password",
+        "Software",
+        "Username"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_9f0a6be5",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

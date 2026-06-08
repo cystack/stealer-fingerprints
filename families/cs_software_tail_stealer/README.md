@@ -50,7 +50,7 @@ could come from a Vidar fork or an unrelated builder.
 **Attribution confidence:** `unknown`
 
 **Field keys:**
-`All Users`, `CPU`, `Chrome Version`, `Color Depth`, `Computer Name`, `ComputerName`, `Country`, `DateTime`, `Device Name`, `Device String`, `Disk`, `Display Name`, `Display Resolution`, `Domain Name`, `Edge Version`, `GPU`, `HWID`, `IP`, `Install Date`, `Install Source`, `Installed Apps`, `Installed RAM`, `Installed software`, `KOPLAYER Pro version`, `Keyboard Language`, `Keyboard Languages`, `MachineID`, `Network Info`, `OS`, `Process`, `Process List`, `Process count`, `Processor`, `Publisher`, `RAM`, `Resolution`, `System Language`, `Time Zone`, `Traffic Name`, `UID`, `Unknown Version`, `User Language`, `User Name`, `UserName`, `Version`, `Video card`, `WallPaper Hash`
+`All Users`, `CPU`, `Chrome Version`, `Color Depth`, `Computer Name`, `ComputerName`, `Cores`, `Country`, `Date`, `DateTime`, `Device Name`, `Device String`, `Disk`, `Display Name`, `Display Resolution`, `Domain Name`, `Edge Version`, `GPU`, `GUID`, `HWID`, `IP`, `Install Date`, `Install Source`, `Installed Apps`, `Installed RAM`, `Installed software`, `KOPLAYER Pro version`, `Keyboard Language`, `Keyboard Languages`, `MachineID`, `Network Info`, `OS`, `Path`, `Process`, `Process List`, `Process count`, `Processor`, `Publisher`, `RAM`, `Resolution`, `System Language`, `Threads`, `Time Zone`, `Traffic Name`, `UID`, `Unknown Version`, `User Language`, `User Name`, `UserName`, `Version`, `Video card`, `VideoCard`, `WallPaper Hash`
 
 **Filenames:** `_Information.txt`, `information.txt`, `system.txt`, `system_info.txt`
 

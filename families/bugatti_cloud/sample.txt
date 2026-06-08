@@ -1,0 +1,324 @@
+|  _____  _   _ __   __  _____  _   _  _____  _____  ___   _      _      _____  |
+Processor: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+Cores: 12
+Threads: 12
+RAM: 8032 MB
+VideoCard: Intel(R) UHD Graphics 630
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+services.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+WUDFHost.exe
+svchost.exe
+svchost.exe
+WUDFHost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+IntelCpHDCPSvc.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+IntelCpHeciSvc.exe
+svchost.exe
+svchost.exe
+OmenCap.exe
+svchost.exe
+svchost.exe
+svchost.exe
+NVDisplay.Container.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+Memory Compression
+svchost.exe
+igfxCUIService.exe
+svchost.exe
+svchost.exe
+TouchpointAnalyticsClientService.exe
+AppHelperCap.exe
+SysInfoCap.exe
+DiagsCap.exe
+NetworkCap.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+spoolsv.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+ETDService.exe
+svchost.exe
+AnyDesk.exe
+svchost.exe
+armsvc.exe
+GameInputRedistService.exe
+HPPrintScanDoctorService.exe
+OneApp.IGCC.WinService.exe
+FNPLicensingService64.exe
+ibtsiva.exe
+OfficeClickToRun.exe
+RstMwService.exe
+mysqld.exe
+esif_uf.exe
+pg_ctl.exe
+RtkAudUService64.exe
+NvTelemetryContainer.exe
+SECOMN64.exe
+svchost.exe
+WildTangentHelperService.exe
+LMS.exe
+svchost.exe
+svchost.exe
+svchost.exe
+XtuService.exe
+jhi_service.exe
+svchost.exe
+WmiPrvSE.exe
+WmiPrvSE.exe
+mysqld.exe
+conhost.exe
+postgres.exe
+conhost.exe
+unsecapp.exe
+postgres.exe
+postgres.exe
+postgres.exe
+postgres.exe
+postgres.exe
+postgres.exe
+svchost.exe
+gamingservicesnet.exe
+gamingservices.exe
+wlanext.exe
+AggregatorHost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+PresentationFontCache.exe
+svchost.exe
+svchost.exe
+BraveCrashHandler.exe
+BraveCrashHandler64.exe
+svchost.exe
+svchost.exe
+SearchIndexer.exe
+svchost.exe
+svchost.exe
+RuntimeBroker.exe
+SearchProtocolHost.exe
+SearchFilterHost.exe
+taskhostw.exe
+sihost.exe
+svchost.exe
+HPCommRecovery.exe
+HPJumpStartBridge.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+MoUsoCoreWorker.exe
+svchost.exe
+svchost.exe
+svchost.exe
+audiodg.exe
+svchost.exe
+svchost.exe
+csrss.exe
+winlogon.exe
+fontdrvhost.exe
+dwm.exe
+svchost.exe
+NVDisplay.Container.exe
+GameInputRedistService.exe
+ETDCtrl.exe
+sihost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+igfxEM.exe
+MicrosoftEdgeUpdate.exe
+taskhostw.exe
+HPJumpStartLaunch.exe
+BraveUpdate.exe
+Chrome.exe
+svchost.exe
+explorer.exe
+ShellHost.exe
+CrossDeviceResume.exe
+svchost.exe
+svchost.exe
+svchost.exe
+StartMenuExperienceHost.exe
+SearchHost.exe
+Widgets.exe
+svchost.exe
+RuntimeBroker.exe
+RuntimeBroker.exe
+svchost.exe
+WmiPrvSE.exe
+wermgr.exe
+svchost.exe
+msedgewebview2.exe
+msedgewebview2.exe
+ctfmon.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+backgroundTaskHost.exe
+RuntimeBroker.exe
+TextInputHost.exe
+RtkAudUService64.exe
+dasHost.exe
+dasHost.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+TrustedInstaller.exe
+TiWorker.exe
+SearchProtocolHost.exe
+chrome.exe
+HPSystemEventUtilityBackground.exe
+unsecapp.exe
+HPMediaNetwork.exe
+HPSystemEventUtilityHost.exe
+chrome.exe
+AdobeCollabSync.exe
+AdobeCollabSync.exe
+chrome.exe
+msiexec.exe
+HPAudioSwitch.exe
+GfxDownloadWrapper.exe
+conhost.exe
+chrome.exe
+ms-teams.exe
+RuntimeBroker.exe
+AppActions.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+BlueStacksServices.exe
+BlueStacksServices.exe
+BlueStacksServices.exe
+BlueStacksServices.exe
+svchost.exe
+eb3d29fcbe.exe
+Server.exe
+
+[Software]
+BlueStacks - 5.22.167.1006
+HP Documentation - <ip>
+Meta Pixel Helper Pro
+Microsoft Visual J# 2.0 Redistributable Package - SE (x64)
+Migration Toolkit 55.7.0-1 - 55.7.0-1
+Microsoft OneDrive - 26.051.0316.0004
+PostgreSQL 13  - 13.21-1
+PostgreSQL 17  - 17.5-1
+Microsoft Office LTSC Professional Plus 2021 (SPLA) - en-us - 16.0.14334.20570
+Age of Empires III: Definitive Edition
+StarCraft II Legacy of the Void - 1
+WinRAR 7.13 (64-bit) - 7.13.0
+Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664 - 12.0.40664
+Intel(R) Chipset Device Software - 10.1.17903.8106
+Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219 - 10.0.40219
+Allgemeine Runtime Files (x86) - <ip>
+Tableau 2025.1 (20251.25.0415.1018) - 25.1.613
+Java 8 Update 251 (64-bit) - 8.0.2510.8
+Microsoft Power BI Desktop (x64) - 2.139.2054.0
+MySQL Shell - 8.0.42
+Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.42.34438 - 14.42.34438
+Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61135 - 11.0.61135
+Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664 - 12.0.40664
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161 - 9.0.30729.6161
+Intel® Software Installer - <ip>
+Java SE Development Kit 8 Update 202 (64-bit) - 8.0.2020.8
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.17 - 9.0.30729
+Microsoft Silverlight - 5.1.50918.0
+Tableau 2025.3 (20253.25.1210.1815) - 25.3.888
+Office 16 Click-to-Run Licensing Component - 16.0.14334.20570
+Office 16 Click-to-Run Extensibility Component - 16.0.14334.20570
+MySQL Server 8.0 - 8.0.42
+MySQL Router 8.0 - 8.0.42
+Microsoft Teams Meeting Add-in for Microsoft Office - 1.24.05401
+Microsoft GameInput - <ip>
+Adobe Acrobat (64-bit) - 26.001.21431
+Microsoft Visual C++ 2005 Redistributable (x64) - 8.0.61186
+Microsoft Visual J# 2.0 Redistributable Package - SE (x64) - 2.0.50728
+NVIDIA Control Panel 419.71 - 419.71
+NVIDIA Graphics Driver 577.03 - 577.03
+NVIDIA GeForce Experience <ip> - <ip>
+NVIDIA Optimus Update <ip> - <ip>
+NVIDIA PhysX System Software 9.19.0218 - 9.19.0218
+NVIDIA Update <ip> - <ip>
+NVIDIA SHIELD Streaming - 7.1.0413
+NVIDIA Install Application - 2.1002.427.0
+NVIDIA NGX <ip> - <ip>
+NVIDIA ABHub - <ip>
+NVIDIA Backend - <ip>
+NVIDIA Container - 1.13
+NVIDIA TelemetryApi helper for NvContainer - 1.13
+NVIDIA LocalSystem Container - 1.13
+NVIDIA Message Bus for NvContainer - 1.13
+NVIDIA NetworkService Container - 1.13
+NVAPI Monitor plugin for NvContainer - 1.13
+NVIDIA Session Container - 1.13
+NVIDIA User Container - 1.13
+NVIDIA Display Container - 1.11
+NVIDIA Display Container LS - 1.11
+NVIDIA Display Watchdog Plugin - 1.11
+NVIDIA Display Session Container - 1.11
+NVIDIA NodeJS - <ip>
+NVIDIA Watchdog Plugin for NvContainer - 1.13
+NVIDIA Telemetry Client - <ip>
+NVIDIA Telemetry Container - <ip>
+NVIDIA Virtual Host Controller - <ip>
+Nvidia Share - <ip>
+NVIDIA ShadowPlay <ip> - <ip>
+NVIDIA SHIELD Wireless Controller Driver - <ip>
+NVIDIA Update Core - <ip>
+NVIDIA Virtual Audio 4.11.1 - 4.11.1
+Microsoft Update Health Tools - <ip>
+MySQL Workbench 8.0 CE - 8.0.42
+Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61135 - 11.0.61135
+Documentation Manager - <ip>
+OSFMount - 3.1.1003.0
+Microsoft Visual C++ 2022 X64 Additional Runtime - 14.42.34438 - 14.42.34438
+Intel® Optane™ Pinning Explorer Extensions - 17.2.0.1009
+BlueStacks Services - 3.0.9
+Kindle Create - <ip>
+Kindle Previewer 3 - 3.96.0
+Stellaris Ancient Relics
+Zoom Workplace - 6.1.12 (46889)

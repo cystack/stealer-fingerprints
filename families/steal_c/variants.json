@@ -55,6 +55,41 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "All Users",
+        "Current User",
+        "Installed Apps",
+        "Process List",
+        "Process count"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_0b0d0cfe",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
+        "Installed Apps",
+        "Process List",
+        "Process count"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_11aa8cef",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "System Summary"
       ],
       "filenames": [
@@ -290,6 +325,21 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Process List",
+        "Process count"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_5e7036c7",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "All Users",
         "Channel with contacts",
         "Commission split",
@@ -393,6 +443,7 @@
         "System Summary"
       ],
       "filenames": [
+        "System.txt",
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_7a949b1d",
@@ -419,6 +470,27 @@
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_7ecc3719",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
+        "Current User",
+        "Installed Apps",
+        "Jabber",
+        "Network Info",
+        "System Summary",
+        "Telegram",
+        "User Agents"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_81f28654",
       "panel_brand": null,
       "synthetic": true
     },
@@ -548,6 +620,7 @@
         "System Summary"
       ],
       "filenames": [
+        "System.txt",
         "system_info.txt"
       ],
       "fingerprint_id": "cystack_a867f3f5",

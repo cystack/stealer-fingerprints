@@ -10,13 +10,14 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 |---|---|---|---|
 | [`AMOS Stealer`](families/amos_stealer/) | 74 | 0 | `medium` |
 | [`Acreed`](families/acreed/) | 1 | 0 | `high` |
-| [`Aetheris Stealer`](families/aetheris_stealer/) | 11 | 0 | `high` |
+| [`Aetheris Stealer`](families/aetheris_stealer/) | 12 | 0 | `high` |
 | [`Ailurophile`](families/ailurophile/) | 1 | 1 | `high` |
 | [`Antarctida Stealer`](families/antarctida_stealer/) | 1 | 0 | `high` |
 | [`Arcane`](families/arcane/) | 47 | 1 | `high` |
 | [`AuraStealer`](families/aura_stealer/) | 2 | 0 | `high` |
 | [`Blank Grabber`](families/blank_grabber/) | 17 | 0 | `high` |
-| [`BracketSection Stealer`](families/bracket_section_stealer/) | 1 | 0 | `unknown` |
+| [`BracketSection Stealer`](families/bracket_section_stealer/) | 3 | 0 | `unknown` |
+| [`Bugatti Cloud`](families/bugatti_cloud/) | 6 | 0 | `unknown` |
 | [`CSAdminCoresStealer`](families/cs_admin_cores_stealer/) | 1 | 0 | `unknown` |
 | [`CSAntiSandboxStealer`](families/cs_anti_sandbox_stealer/) | 1 | 0 | `unknown` |
 | [`CSAzureBuildStealer`](families/cs_azure_build_stealer/) | 1 | 0 | `unknown` |
@@ -42,6 +43,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSGADSPanelStealer`](families/csgads_panel_stealer/) | 8 | 0 | `unknown` |
 | [`CSGeoSysInfoStealer`](families/cs_geo_sys_info_stealer/) | 1 | 1 | `unknown` |
 | [`CSGoRuntimeStealer`](families/cs_go_runtime_stealer/) | 1 | 1 | `unknown` |
+| [`CSHardwareTailStealer`](families/cs_hardware_tail_stealer/) | 1 | 1 | `low` |
 | [`CSInzExtStealer`](families/cs_inz_ext_stealer/) | 1 | 0 | `unknown` |
 | [`CSLoaderReadyStealer`](families/cs_loader_ready_stealer/) | 1 | 1 | `unknown` |
 | [`CSMSKDateStealer`](families/csmsk_date_stealer/) | 1 | 0 | `unknown` |
@@ -56,37 +58,44 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSOttomanPanelStealer`](families/cs_ottoman_panel_stealer/) | 1 | 1 | `low` |
 | [`CSPcNameSnakeStealer`](families/cs_pc_name_snake_stealer/) | 1 | 1 | `unknown` |
 | [`CSPyHostTimeStealer`](families/cs_py_host_time_stealer/) | 1 | 1 | `unknown` |
+| [`CSRussia34Stealer`](families/cs_russia34_stealer/) | 1 | 1 | `unknown` |
 | [`CSSigInfoStealer`](families/cs_sig_info_stealer/) | 1 | 1 | `low` |
 | [`CSSoftwareTailStealer`](families/cs_software_tail_stealer/) | 1 | 1 | `unknown` |
 | [`CSStatsSectionStealer`](families/cs_stats_section_stealer/) | 1 | 0 | `unknown` |
+| [`CSStealerCloudInfoStealer`](families/cs_stealer_cloud_info_stealer/) | 1 | 1 | `low` |
+| [`CSStealerCloudUserInfoStealer`](families/cs_stealer_cloud_user_info_stealer/) | 1 | 1 | `low` |
+| [`CSSystemSummaryStealer`](families/cs_system_summary_stealer/) | 1 | 0 | `unknown` |
 | [`CSTxtFilesPartStealer`](families/cs_txt_files_part_stealer/) | 1 | 0 | `unknown` |
 | [`CSUsersListStealer`](families/cs_users_list_stealer/) | 1 | 1 | `unknown` |
 | [`CSWmicDumpStealer`](families/cs_wmic_dump_stealer/) | 1 | 0 | `unknown` |
-| [`Category Stealer`](families/category_stealer/) | 3 | 0 | `unknown` |
+| [`Category Stealer`](families/category_stealer/) | 4 | 0 | `unknown` |
 | [`CryptBot`](families/crypt_bot/) | 2 | 1 | `high` |
 | [`Cthulhu Stealer`](families/cthulhu_stealer/) | 26 | 0 | `high` |
 | [`DCRat`](families/dc_rat/) | 3 | 0 | `high` |
 | [`DiskInfo Stealer`](families/disk_info_stealer/) | 1 | 0 | `unknown` |
-| [`Lumma`](families/lumma/) | 59 | 3 | `high` |
+| [`Lumma`](families/lumma/) | 61 | 5 | `high` |
 | [`MacSync`](families/mac_sync/) | 4 | 1 | `high` |
 | [`MeltStealer`](families/melt_stealer/) | 1 | 0 | `high` |
 | [`Millenium RAT`](families/millenium_rat/) | 1 | 0 | `-` |
+| [`Nexus`](families/nexus/) | 1 | 0 | `medium` |
 | [`NotMalware`](families/not_malware/) | 5 | 5 | `benign` |
+| [`PCInfo Stealer`](families/pc_info_stealer/) | 2 | 0 | `unknown` |
 | [`PXA Stealer`](families/pxa_stealer/) | 7 | 0 | `high` |
 | [`Phantom Stealer`](families/phantom_stealer/) | 3 | 1 | `high` |
+| [`Phexia`](families/phexia/) | 1 | 0 | `high` |
 | [`PureLogs`](families/pure_logs/) | 1 | 0 | `high` |
 | [`PyInfo Stealer`](families/py_info_stealer/) | 1 | 0 | `unknown` |
 | [`RL Stealer`](families/rl_stealer/) | 2 | 1 | `medium` |
 | [`RMS`](families/rms/) | 1 | 1 | `high` |
 | [`Raccoon`](families/raccoon/) | 2 | 0 | `high` |
 | [`Redline`](families/redline/) | 22 | 0 | `high` |
-| [`RedlineLike Stealer`](families/redline_like_stealer/) | 53 | 0 | `unknown` |
-| [`Remus Stealer`](families/remus_stealer/) | 1 | 1 | `high` |
+| [`RedlineLike Stealer`](families/redline_like_stealer/) | 65 | 0 | `unknown` |
+| [`Remus Stealer`](families/remus_stealer/) | 2 | 1 | `high` |
 | [`SHub Stealer`](families/s_hub_stealer/) | 1 | 0 | `high` |
 | [`SantaStealer`](families/santa_stealer/) | 1 | 1 | `high` |
-| [`StealC`](families/steal_c/) | 37 | 0 | `high` |
+| [`StealC`](families/steal_c/) | 41 | 0 | `high` |
 | [`Stealerium`](families/stealerium/) | 1 | 1 | `high` |
-| [`Vidar`](families/vidar/) | 7098 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 7927 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 5 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 12 | 0 | `high` |
 

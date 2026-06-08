@@ -1,0 +1,34 @@
+{
+  "family": "Nexus",
+  "variants": [
+    {
+      "attribution_confidence": "medium",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU name",
+        "CPU vendor",
+        "Country",
+        "GPU",
+        "HWID",
+        "Hostname",
+        "IP Address",
+        "JABBER",
+        "Language",
+        "NetBIOS",
+        "OS Version",
+        "PC",
+        "RAM size",
+        "Screen resolution",
+        "TOX",
+        "User"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_abc79f27",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

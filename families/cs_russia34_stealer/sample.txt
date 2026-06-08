@@ -1,0 +1,263 @@
+030b.                 w         d00b   d0 
+0  .0 0   3 d00b d00b w .d00     wwP  dP0 
+3wwK' 0b d3 `Yb. `Yb. 0 0  0       0 dPw0 
+0  Yb `Y0P0 Y00P Y00P 0 `Y00    Y00P    0
+==========<url>
+Processor: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+Cores: 8
+Threads: 8
+RAM: 16064 MB
+VideoCard: Intel(R) Iris(R) Xe Graphics
+
+[Processes]
+System
+Secure System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+winlogon.exe
+services.exe
+LsaIso.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+fontdrvhost.exe
+svchost.exe
+WUDFHost.exe
+svchost.exe
+svchost.exe
+dwm.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+IntelCpHDCPSvc.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+WUDFHost.exe
+igfxCUIServiceN.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+AppHelperCap.exe
+DiagsCap.exe
+svchost.exe
+SysInfoCap.exe
+TouchpointAnalyticsClientService.exe
+Memory Compression
+NetworkCap.exe
+svchost.exe
+hpsvcsscan.exe
+svchost.exe
+svchost.exe
+svchost.exe
+audiodg.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+HPAudioAnalytics.exe
+sihost.exe
+svchost.exe
+svchost.exe
+igfxEMN.exe
+svchost.exe
+svchost.exe
+svchost.exe
+taskhostw.exe
+TouchpointAnalyticsClientService.exe
+Chrome.exe
+svchost.exe
+NgcIso.exe
+svchost.exe
+explorer.exe
+ShellHost.exe
+svchost.exe
+svchost.exe
+CrossDeviceResume.exe
+svchost.exe
+CrossDeviceService.exe
+RuntimeBroker.exe
+svchost.exe
+svchost.exe
+SearchHost.exe
+StartMenuExperienceHost.exe
+Widgets.exe
+svchost.exe
+RuntimeBroker.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+svchost.exe
+PhoneExperienceHost.exe
+ctfmon.exe
+RtkAudUService64.exe
+ImoDesktopApp.exe
+TextInputHost.exe
+crashpad_handler.exe
+ABDownloadManager.exe
+ABDownloadManager.exe
+MuMuNxMain.exe
+crashpad_handler.exe
+Canva.exe
+Canva.exe
+runtimehost.exe
+ms-teams.exe
+RuntimeBroker.exe
+AppActions.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+update.exe
+Google.exe
+Server.exe
+WmiPrvSE.exe
+unsecapp.exe
+svchost.exe
+svchost.exe
+WmiPrvSE.exe
+ms-teams.exe
+RuntimeBroker.exe
+SearchProtocolHost.exe
+SearchFilterHost.exe
+taskhostw.exe
+msedgewebview2.exe
+sihost.exe
+HotKeyServiceUWP.exe
+svchost.exe
+svchost.exe
+spoolsv.exe
+svchost.exe
+svchost.exe
+IntelAudioService.exe
+FMService64.exe
+jhi_service.exe
+svchost.exe
+svchost.exe
+OfficeClickToRun.exe
+VpnSvc.exe
+RstMwService.exe
+PlanetVPNService.exe
+SNAPOSS64.exe
+svchost.exe
+RtkAudUService64.exe
+svchost.exe
+TunnelBear.Maintenance.exe
+svchost.exe
+svchost.exe
+WMIRegistrationService.exe
+esif_uf.exe
+SNAPOS64.exe
+conhost.exe
+IntelGraphicsSoftware.Service.exe
+svchost.exe
+LanWlanWwanSwitchingServiceUWP.exe
+svchost.exe
+wlanext.exe
+RtkAudUService64.exe
+AggregatorHost.exe
+PresentMonService.exe
+conhost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+rufus-4.13.exe
+svchost.exe
+taskhostw.exe
+svchost.exe
+YeaRfLx9o3v1.exe
+I5oRcbiA1wcJ.exe
+vds.exe
+WUDFHost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+SearchIndexer.exe
+BkdPDHTZGA44.exe
+g874OY8PJiK5.exe
+LzuOwZV.exe
+WMIADAP.exe
+svchost.exe
+dh9skIh.exe
+cgZt6lZqJupH.exe
+WreIjAKEjvI2.exe
+svchost.exe
+W1YGWrY3+lyc.exe
+UEfN9vl8d0Bw.exe
+yJAv5GRAcyb8.exe
+nStzZR2nUZFk.exe
+RuntimeBroker.exe
+e3894a5593.exe
+q82PtF+WhmB.exe
+ksTT2UqnEVkl.exe
+svchost.exe
+msedge.exe
+msedge.exe
+msedge.exe
+msedge.exe
+msedge.exe
+msedge.exe
+msedge.exe
+FnHotkeyUtility.exe
+svchost.exe
+
+[Software]
+Windows Driver Package - Silicon Laboratories Inc. (silabser) Ports  (05/23/2018 6.7.6.2130) - 05/23/2018 6.7.6.2130
+Meta Pixel Helper Pro
+MuMuPlayer - 5.24.2.3266
+HMA VPN - 26.3.12228.16046
+Microsoft Office LTSC Professional Plus 2021 - en-us - 16.0.14334.20624
+VLC media player - 3.0.23
+WinRAR 7.13 (64-bit) - 7.13.0
+LocalSend version 1.17.0 - 1.17.0
+Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664 - 12.0.40664
+Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219 - 10.0.40219
+Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030 - 11.0.61030
+Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664 - 12.0.40664
+Microsoft Visual C++ 2022 X64 Additional Runtime - 14.40.33810 - 14.40.33810
+UsbDk Runtime Libraries - 1.0.22
+Office 16 Click-to-Run Licensing Component - 16.0.14334.20624
+Office 16 Click-to-Run Extensibility Component - 16.0.14334.20624
+Microsoft Teams Meeting Add-in for Microsoft Office - 1.25.18302
+Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.40.33810 - 14.40.33810
+Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030 - 11.0.61030
+Node.js - 22.14.0
+Lightshot - 1.0
+Sheets - 1.0
+Canva - 1.121.0
+AB Download Manager - 1.8.6
+Microsoft PowerPoint - 1.0

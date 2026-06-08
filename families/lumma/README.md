@@ -9,10 +9,10 @@ signature on the `Time:` line. Build banners reference the
 
 **Also known as:** `LummaC2`, `Lumma Stealer`
 
-**Variants observed:** 59
+**Variants observed:** 61
 **Top attribution confidence:** `high`
-**Operator panel brands:** `AL Stealer`, `BRADMAX`, `Deimos Golang Stealer`
-**Distribution channels:** `@BRADLOGS`, `@ft7links`, `t.me/additionallibraries`
+**Operator panel brands:** `.B.A.B.A.`, `AL Stealer`, `BRADMAX`, `Deimos Golang Stealer`, `russia34.com (Lumma 'Russia 34' bullet)`
+**Distribution channels:** `@BRADLOGS`, `@Xavier_Log`, `@ft7links`, `russia34.com`, `t.me/additionallibraries`
 
 ## Targets
 
@@ -71,6 +71,57 @@ win+r appdata  → roaming  → .minecraft → mods
 Free/Best hypixel rat >> t.me/additionallibraries
 Free, discord bot, cookies, passwords, crypto wallets, non dhooked, more than 180 applications that can be stealed and much more.
 Become better right now - t.me/additionallibraries
+```
+
+### `.B.A.B.A.`
+
+**Fingerprint id:** `b_a_b_a`
+
+**Distribution channel:** `@Xavier_Log`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Configuration`
+
+**Filenames:** `System.txt`
+
+**Sample (sanitized):**
+
+```
+# Buy Now Logs : @BabaCloudNew { Admin - @baba_admin_ghost} *
+# Buy Now ULP : @BabaUlpNew { Admin - @baba_admin_ghost} *
+- .B.A.B.A. Build : May 05 2026
+Configuration :
+- Path: 
+- OS Version: 
+- Local Date : 05.05.2026 <ip>
+
+- Time Zone: 7
+- Install Date: 
+- Elevated: 
+- Computer: WINDOWS-10
+- User: Administrator
+- Domain: 
+- Hostname: 
+- NetBIOS: 
+- Language: English
+- Anti Virus:
+    - 
+- HWID: C027AA59D61E91B81B2A-2ed94040-b93f
+- RAM Size: 
+- CPU Vendor: 
+- CPU Name: 
+- CPU Threads: 
+- CPU Cores: 
+- GPU:
+    - 
+- Display resolution: 
+- IP Address: 
+- Country: VN
+
+- Time: 05.05.2026 <ip> (sig: auto )
+- LID: @BabaCloudNew { Admin - @baba_admin_ghost} TELEGRAM
 ```
 
 ### `BRADMAX`
@@ -2301,6 +2352,65 @@ Telegram: @cashoutmeta
 - GPU:
 - NVIDIA GeForce GTX 1660
 - Display resolution: 1920x1080
+```
+
+### `russia34.com (Lumma 'Russia 34' bullet)`
+
+**Fingerprint id:** `russia34_com_lumma_russia_34_bullet`
+
+**Distribution channel:** `russia34.com`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Cores`, `Country`, `Date`, `GUID`, `HWID`, `Ip`, `Lurk in the Dark`, `MachineID`, `Max Payne 2`, `Path`, `Processor`, `RAM`, `Threads`, `Version`, `VideoCard`
+
+**Filenames:** `information.txt`
+
+**Sample (sanitized):**
+
+```
+686b.                 w         d68b   d6 
+6  .8 6   8 d86b d86b w .d86     wwP  dP6 
+8wwK' 6b d8 `Yb. `Yb. 6 6  6       6 dPw6 
+6  Yb `Y6P8 Y66P Y86P 8 `Y66    Y68P    6
+==========<url>
+Ip: <redacted>
+Country: AE
+Version: Russia 34
+
+Date: 17/03/2026 <ip>
+MachineID: <redacted>
+GUID: <redacted>
+HWID: <redacted>
+
+Path: <redacted>
+Processor: Intel(R) Core(TM) i7-4790S CPU @ 3.20GHz
+Cores: 8
+Threads: 8
+RAM: 16324 MB
+VideoCard: AMD Radeon(TM) HD 7650A Graphics
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+winlogon.exe
+services.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+[... truncated; full sample at ``sample.txt`` (approx. 171 more lines) ...]
 ```
 
 ## Detection

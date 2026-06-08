@@ -1,0 +1,420 @@
+	- IP: <ip>
+	- Country: ID
+System Summary:
+	- OS: Windows 11
+	- Architecture: x64
+	- UserName: User
+	- Computer Name: LAPTOP-URHOPCJ1
+	- Local Time: 2026-04-15 <ip>
+	- UTC: 9
+	- Language: en-ID
+	- Keyboards: English (United States)
+	- Laptop: TRUE
+	- Cores: 6
+	- Threads: 12
+	- RAM: 16 GB
+	- Display Resolution:
+		Monitor 1
+			Device Name: \\.\DISPLAY4
+			Device String: NVIDIA GeForce GTX 1060
+			Resolution: 1366x768
+			Color Depth: 32 bits per pixel
+	- GPU:
+		-Intel(R) UHD Graphics 630
+		-NVIDIA GeForce GTX 1060
+Process count: 308
+Process List:
+	System
+	Secure System
+	Registry
+	smss.exe
+	csrss.exe
+	wininit.exe
+	csrss.exe
+	winlogon.exe
+	services.exe
+	LsaIso.exe
+	lsass.exe
+	svchost.exe
+	WUDFHost.exe
+	fontdrvhost.exe
+	fontdrvhost.exe
+	svchost.exe
+	svchost.exe
+	dwm.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	igfxCUIService.exe
+	WUDFHost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	dasHost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	NVDisplay.Container.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	Memory Compression
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	ctfmon.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	NVDisplay.Container.exe
+	svchost.exe
+	AsLdrSrv64.exe
+	spoolsv.exe
+	sihost.exe
+	AsMonStartupTask64.exe
+	svchost.exe
+	PresentationFontCache.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	DCAgent.exe
+	AsHidSrv64.exe
+	svchost.exe
+	svchost.exe
+	AsusOptimization.exe
+	svchost.exe
+	AsusSystemAnalysis.exe
+	EDUSBAgent.exe
+	AsusSoftwareManager.exe
+	AsusSystemDiagnosis.exe
+	AsusSwitch.exe
+	IntelCpHDCPSvc.exe
+	AsusAppService.exe
+	DTSAPO3Service.exe
+	svchost.exe
+	taskhostw.exe
+	DSAUpdateService.exe
+	DSAService.exe
+	AdobeUpdateService.exe
+	E_S60RPB.EXE
+	GiftBoxService.exe
+	OfficeClickToRun.exe
+	ASUSHelloBG.exe
+	esif_uf.exe
+	ASUS_FRQ_Control.exe
+	svchost.exe
+	WsNativePushService.exe
+	NitroPDFDriverService10x64.exe
+	nvcontainer.exe
+	Nitro_UpdateService.exe
+	ASUSPowerScheme.exe
+	NvTelemetryContainer.exe
+	svchost.exe
+	rsClientSvc.exe
+	rsEDRSvc.exe
+	SurSvc.exe
+	RstMwService.exe
+	RtkAudUService64.exe
+	rsSyncSvc.exe
+	rsWSC.exe
+	svchost.exe
+	servicehost.exe
+	vMixService.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	rsEngineSvc.exe
+	IntelCpHeciSvc.exe
+	svchost.exe
+	svchost.exe
+	wlanext.exe
+	WmiPrvSE.exe
+	igfxEM.exe
+	Intel_PIE_Service.exe
+	svchost.exe
+	explorer.exe
+	uihost.exe
+	svchost.exe
+	CrossDeviceResume.exe
+	svchost.exe
+	nvcontainer.exe
+	svchost.exe
+	AggregatorHost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	SearchHost.exe
+	StartMenuExperienceHost.exe
+	Widgets.exe
+	svchost.exe
+	WidgetService.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	SearchIndexer.exe
+	NVIDIA Web Helper.exe
+	conhost.exe
+	svchost.exe
+	TextInputHost.exe
+	svchost.exe
+	CrossDeviceService.exe
+	RuntimeBroker.exe
+	rsHelper.exe
+	rsAppUI.exe
+	DSATray.exe
+	rsAppUI.exe
+	rsAppUI.exe
+	rsAppUI.exe
+	SecurityHealthSystray.exe
+	SecurityHealthService.exe
+	EPPCCMON.EXE
+	splwow64.exe
+	DataCollectionAgentController.exe
+	RtkAudUService64.exe
+	Focusrite Notifier.exe
+	OneDrive.exe
+	svchost.exe
+	svchost.exe
+	IDMan.exe
+	ms-teams.exe
+	Discord.exe
+	Discord.exe
+	Discord.exe
+	Discord.exe
+	RuntimeBroker.exe
+	AppActions.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	Discord.exe
+	Discord.exe
+	WsToastNotification.exe
+	conhost.exe
+	taskhostw.exe
+	HControl.exe
+	Copilot.exe
+	PushNotificationsLongRunningTask.exe
+	dllhost.exe
+	WhatsApp.Root.exe
+	RuntimeBroker.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	ShellExperienceHost.exe
+	RuntimeBroker.exe
+	RuntimeBroker.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	ATKOSD2.exe
+	svchost.exe
+	jhi_service.exe
+	LMS.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	EEventManager.exe
+	dllhost.exe
+	CCXProcess.exe
+	node.exe
+	conhost.exe
+	svchost.exe
+	AdobeIPCBroker.exe
+	Creative Cloud.exe
+	Creative Cloud UI Helper.exe
+	Creative Cloud UI Helper.exe
+	Creative Cloud UI Helper.exe
+	Creative Cloud UI Helper.exe
+	Adobe Desktop Service.exe
+	Creative Cloud Helper.exe
+	CoreSync.exe
+	AdobeNotificationClient.exe
+	RuntimeBroker.exe
+	Adobe Crash Processor.exe
+	CCLibrary.exe
+	node.exe
+	conhost.exe
+	backgroundTaskHost.exe
+	backgroundTaskHost.exe
+	FileCoAuth.exe
+	AsusSoftwareManagerAgent.exe
+	svchost.exe
+	RuntimeBroker.exe
+	svchost.exe
+	ApplicationFrameHost.exe
+	svchost.exe
+	wpscloudsvr.exe
+	M365Copilot.exe
+	RuntimeBroker.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	GiftBox.Agent.exe
+	backgroundTaskHost.exe
+	RuntimeBroker.exe
+	backgroundTaskHost.exe
+	esrv_svc.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	audiodg.exe
+	MidiSrv.exe
+	DataExchangeHost.exe
+	msedgewebview2.exe
+	ShellHost.exe
+	Microsoft.Media.Player.exe
+	RuntimeBroker.exe
+	backgroundTaskHost.exe
+	svchost.exe
+	smartscreen.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	chrome.exe
+	cmd.exe
+	conhost.exe
+	browserhost.exe
+	chrome.exe
+	chrome.exe
+	svchost.exe
+	svchost.exe
+	svchost.exe
+	Creative Cloud UI Helper.exe
+	chrome.exe
+	msedge.exe
+	msedge.exe
+	msedge.exe
+	msedge.exe
+	msedge.exe
+	CHXSmartScreen.exe
+	RuntimeBroker.exe
+	chrome.exe
+	msedgewebview2.exe
+	msedgewebview2.exe
+	chrome.exe
+	chrome.exe
+	Licence_Version_Loader.exe
+Installed Apps:
+All Users:
+	EPSON L120 Series Printer Uninstall
+	EPSON L1300 Series Printer Uninstall
+	EPSON L3110 Series Printer Uninstall
+	Penghapusan Instalan Printer EPSON L3210 Series
+	EPSON L380 Series Printer Uninstall
+	EPSON L4150 Series Printer Uninstall
+	Microsoft Office Professional Plus 2019 - en-us - 16.0.19127.20302
+	Microsoft Office Professional Plus 2019 - id-id - 16.0.19127.20302
+	Microsoft Office Professional Plus 2019 - sv-se - 16.0.19127.20302
+	RAV Endpoint Protection - 6.4.2
+	XAMPP - 8.0.30-0
+	Canon iP2700 series Printer Driver
+	Intel(R) Management Engine Components - 1823.12.0.1137
+	Intelﾮ Optaneﾙ Pinning Explorer Extensions - 16.8.0.1000
+	Update for Windows 10 for x64-based Systems (KB4023057) - <ip>
+	Update for Windows 10 for x64-based Systems (KB4480730) - <ip>
+	Intel(R) Rapid Storage Technology - 16.5.0.1027
+	Intel(R) Rapid Storage Technology - 16.5.0.1027
+	Intel(R) Chipset Device Software - 10.1.17695.8086
+	Nitro Pro 10 - <ip>
+	ESET Security - <ip>
+	Microsoft Visual Studio Installer - 3.7.2181.36443
+	Intel(R) Serial IO - 30.100.1727.1
+	Intel(R) Computing Improvement Program - 2.4.11118
+	Asus Power Scheme - 1.0.0
+	Office 16 Click-to-Run Licensing Component - 16.0.19127.20302
+	Intel(R) Serial IO - 30.100.1727.1
+	Microsoft Teams Meeting Add-in for Microsoft Office - 1.25.24601
+	DSB Notification - 1.2.0
+	Windows PC Health Check - 3.2.2110.14001
+	NVIDIA Ansel - <ip>
+	NVIDIA Control Panel 398.35 - 398.35
+	NVIDIA Graphics Driver 457.63 - 457.63
+	NVIDIA SHIELD Streaming - 7.1.0406
+	NVIDIA Install Application - 2.1002.346.0
+	NVIDIA Backend - <ip>
+	NVIDIA Container - 1.11
+	NVIDIA TelemetryApi helper for NvContainer - 1.11
+	NVIDIA LocalSystem Container - 1.11
+	NVIDIA Message Bus for NvContainer - 1.11
+	NVIDIA NetworkService Container - 1.11
+	NVIDIA Session Container - 1.11
+	NVIDIA User Container - 1.11
+	NVIDIA Display Container - 1.11
+	NVIDIA Display Container LS - 1.11
+	NVIDIA Display Watchdog Plugin - 1.11
+	NVIDIA Display Session Container - 1.11
+	NVIDIA NodeJS - <ip>
+	NVIDIA Watchdog Plugin for NvContainer - 1.11
+	NVIDIA Telemetry Client - <ip>
+	NVIDIA Telemetry Container - <ip>
+	NVIDIA Virtual Host Controller - <ip>
+	Nvidia Share - <ip>
+	NVIDIA SHIELD Wireless Controller Driver - <ip>
+	NVIDIA Update Core - <ip>
+	Intel(R) Management Engine Components - <ip>
+	Meta Spark Studio - 181.1.49
+	Intel(R) Management Engine Driver - <ip>
+	Epson Device USB Agent - 5.0.0
+	IBM SPSS Statistics 25 - <ip>
+	Microsoft Update Health Tools - <ip>
+	Intel(R) Trusted Connect Service Client x64 - <ip>
+	Intel(R) Management Engine Components - <ip>
+	Intelﾮ PROSet/Wireless WiFi Software - 20.70.0.1716
+	Epson Data Collection Agent - 7.1
+	UpdateAssistant - <ip>
+Current User:
+	Gmail - 1.0
+	Google Drive - 1.0
+	Google Drive - 1.0
+	Dokumen - 1.0
+	Slides - 1.0
+	Sheets - 1.0
+	Gmail - 1.0
+	Docs - 1.0
+	CapCut - 8.2.0.3462
+	Discord - 1.0.9232
+	Sheets - 1.0
+	Docs - 1.0
+	Slides - 1.0
+	Microsoft OneDrive - 26.051.0316.0004
+	Wondershare Filmora 12(Build 12.3.7.2586)
+	Wondershare NativePush(Build <ip>)
+	Zoom Workplace - 6.7.8 (32670)
+	Microsoft Visual Studio Code (User) - 1.101.0

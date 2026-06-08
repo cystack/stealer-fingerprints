@@ -1,0 +1,2 @@
+GPU:           NVIDIA GeForce GTX 1060 with Max-Q Design
+Displays:      1920x1080

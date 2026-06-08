@@ -1,0 +1,30 @@
+{
+  "family": "CSRussia34Stealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": "russia34.com",
+      "field_keys": [
+        "Age of Empires III",
+        "Batman",
+        "Call of Duty",
+        "Cores",
+        "Grand Theft Auto IV",
+        "PUBG",
+        "Processor",
+        "Project Reality",
+        "RAM",
+        "Threads",
+        "Umamusume",
+        "VideoCard"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "russia34_com_aggregator_legacy_mixed_sha",
+      "panel_brand": "russia34.com aggregator (legacy mixed-shape)",
+      "synthetic": false
+    }
+  ]
+}

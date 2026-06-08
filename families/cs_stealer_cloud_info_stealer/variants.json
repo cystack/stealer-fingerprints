@@ -1,0 +1,27 @@
+{
+  "family": "CSStealerCloudInfoStealer",
+  "variants": [
+    {
+      "attribution_confidence": "low",
+      "banner_strings": [],
+      "distribution_channel": "@STEALERBOSS",
+      "field_keys": [
+        "CPU",
+        "Category",
+        "Cores/Threads",
+        "Country",
+        "Displays",
+        "GPU",
+        "IP",
+        "Path",
+        "RAM"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "stealercloud",
+      "panel_brand": "STEALERCLOUD",
+      "synthetic": false
+    }
+  ]
+}

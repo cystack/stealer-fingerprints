@@ -1,0 +1,25 @@
+╔╗─╔╗╔═══╗╔══╗╔══╗╔╗╔╗╔══╗
+║╚═╝║║╔══╝╚═╗║║╔═╝║║║║║╔═╝
+║╔╗─║║╚══╗──║╚╝║──║║║║║╚═╗
+║║╚╗║║╔══╝──║╔╗║──║║║║╚═╗║
+║║─║║║╚══╗╔═╝║║╚═╗║╚╝║╔═╝║
+╚╝─╚╝╚═══╝╚══╝╚══╝╚══╝╚══╝
+
+PC: DRQYH
+User: NHU QUYNH
+Hostname: <redacted>
+NetBIOS: DRQYH
+OS Version: Windows 11 (10.0.22621) x64
+Language: en-US
+HWID: <redacted>
+CPU vendor: GenuineIntel
+CPU name: Intel(R) Core(TM) i5-1035G4 CPU @ 1.10GHz
+GPU: Intel(R) Iris(R) Plus Graphics
+RAM size: 8192MB
+Screen resolution: 2736x1824
+IP Address: <redacted>
+Country: VN
+Тема с отзывами: zelenka.guru/threads/3534749
+
+TOX: DAA5A865F91C41B3C0698680BEB7412BDD125A794B562DB9FA6522E1A456D33C24875A5D4FAA
+JABBER: <email> / <email>

@@ -9,7 +9,7 @@ a different banner and distribution channel.
 
 **Also known as:** `Remus`
 
-**Variants observed:** 1
+**Variants observed:** 2
 **Top attribution confidence:** `high`
 **Operator panel brands:** `Daisy Cloud`
 **Distribution channels:** `@UP_DAISYCLOUD`
@@ -21,6 +21,58 @@ a different banner and distribution channel.
 - System hardware and locale inventory
 
 ## Variants
+
+### `cystack_c65f37b2`
+
+**Attribution confidence:** `high`
+
+**Filenames:** `Info.txt`
+
+**Sample (sanitized):**
+
+```
+|                                                                                                                      |
+|     @stealerboss - Buy daily fresh logslerboss - Buy daily fresh logs     @stealerboss - Buy daily fresh logslerboss - Buy daily fresh logs     @stealerboss - Buy daily fresh logslerboss - Buy daily fresh logs     @stealerboss - Buy daily fresh logs  CLOUD     @stealerboss - Buy daily fresh logslerboss - Buy daily fresh logs     @stealerboss - Buy daily fresh logslerboss - Buy daily fresh logs     @stealerboss - Buy daily fresh logslerboss - Buy daily fresh logs     |
+|______________________________________________________________________________________________________________________|
+ 
+# REMUS LOG
+
+build:
+  date: 12.04.2026
+  path: <redacted>
+  elevated: true
+  ip-address: <ip>
+  country: VE
+  time: 17.04.2026, <ip>
+os:
+  version: Windows 10 Home Single Language (10.0.19045) x64
+  time-zone: UTC-4
+  local-date: 17.04.2026 <ip>
+  install-date: 29.01.2026 <ip>
+  language: es-SV
+  computer-name: DESKTOP-UDVVIKD
+  user-name: lenovo
+  netbios: DESKTOP-UDVVIKD
+  domain: 
+  <redacted>
+  anti-virus:
+  - name: Windows Defender
+    state: active
+hardware:
+  motherboard:
+    manufacturer: LENOVO
+    product: VIUS3
+  cpu:
+  - manufacturer: Intel(R) Corporation
+    product: Intel(R) Core(TM) i3-2377M CPU @ 1.50GHz
+    core count: 2
+    core enabled: 2
+    thread count: 4
+  ram:
+  - product: LN-SD304160011SA7L
+    size: 4096MB
+[... truncated; full sample at ``sample.txt`` (approx. 3 more lines) ...]
+```
 
 ### `Daisy Cloud`
 
