@@ -8,7 +8,7 @@ sections.
 
 **Also known as:** `Aetheris Stealer`
 
-**Variants observed:** 12
+**Variants observed:** 14
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -338,6 +338,56 @@ NVIDIA GeForce RTX 2060
 User Domain: DESKTOP-GC2KJGF
 ```
 
+### `cystack_64d3057e`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CLR Version`, `CPU Name`, `Clipboard`, `Default Gateway`, `External IP`, `Hwid`, `Input ISO`, `Internal IP`, `Logical Cores`, `Machine`, `Now`, `OS Arch`, `OS Build`, `OS Product`, `RAM Available (MB)`, `RAM Total (MB)`, `Tags`, `User`, `User Domain`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+    ____      __       _______  __
+User: pc
+Machine: DESKTOP-2RK2BED
+Now: 2026-03-23 <ip>
+Input ISO: tr
+Hwid: <redacted>
+Clipboard: VALORANT cheats 2026 | Cheat valorant | Valorant hacks
+
+Need a Valorant cheat that delivers real results? This in-depth review puts the leading Valorant cheat through its paces in high-stakes Radiant lobbies to verify its safety and power. We provide a complete breakdown of this Valorant cheat's setup, showcase uncut live gameplay, and analyze why this Valorant hack outperforms other Valorant cheats on the market. Discover the proof and decide if this elite Valorant cheat is the ultimate solution for you. Learn everything about configuring this top Valorant cheat system for maximum performance.
+
+Tags:
+valorant cheat,valorant cheats,valorant hack,cheat valorant,valorant free hack,valorant esp hack,valorant hacks download,valorant wall hack,valorant esp,valorant aimbot,valorant hacker,valorant cheat download,valorant aimbot download,valorant wallhack,how to hack valorant,valorant hack esp,free valorant hack,valorant hack free,hack valorant,valorant hack download,valorant hack download free,valorant hack pc,valorant undetected hack
+
+[Network]
+External IP: <redacted>
+Internal IP: <ip>
+Default Gateway: <ip>
+
+[System]
+OS Product: Windows 10 Enterprise 2009
+OS Build: 19045
+OS Arch: x64
+CPU Name: AMD Ryzen 5 5600X 6-Core Processor             
+Logical Cores: 12
+RAM Total (MB): 32694
+RAM Available (MB): 22860
+
+[Drives]
+C: Fixed FS:NTFS Size:465GB Free:124GB
+
+[GPU]
+NVIDIA GeForce RTX 4060
+
+[Basic]
+User Domain: DESKTOP-2RK2BED
+CLR Version: 4.0.30319.42000
+```
+
 ### `cystack_6a42be28`
 
 **Attribution confidence:** `high`
@@ -490,6 +540,51 @@ Intel(R) UHD Graphics 620
 
 [Basic]
 User Domain: SAGAR
+```
+
+### `cystack_8a71bd70`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`CLR Version`, `CPU Name`, `Default Gateway`, `External IP`, `Hwid`, `Input ISO`, `Internal IP`, `Logical Cores`, `Machine`, `Now`, `OS Arch`, `OS Build`, `OS Product`, `RAM Available (MB)`, `RAM Total (MB)`, `User`, `User Domain`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+    ____      __       _______  __
+User: Пользователь
+Machine: PC
+Now: 2026-03-13 <ip>
+Input ISO: en
+Hwid: <redacted>
+External IP: <redacted>
+Internal IP: <ip>
+Default Gateway: <ip>
+
+[System]
+OS Product: Windows 10 Enterprise 2009
+OS Build: 22631
+OS Arch: x64
+CPU Name: AMD Ryzen 3 PRO 3200GE w/ Radeon Vega Graphics 
+Logical Cores: 4
+RAM Total (MB): 14269
+RAM Available (MB): 4606
+
+[Drives]
+C: Fixed FS:NTFS Size:222GB Free:62GB
+D: Fixed FS:NTFS Size:984GB Free:982GB
+E: Fixed FS:NTFS Size:878GB Free:878GB
+
+[GPU]
+AMD Radeon(TM) Vega 8 Graphics
+NVIDIA GeForce GTX 1650
+
+[Basic]
+User Domain: PC
+CLR Version: 4.0.30319.42000
 ```
 
 ### `cystack_9a0496c3`

@@ -599,6 +599,21 @@ rule StealC_cystack_a867f3f5
         all of ($key_*)
 }
 
+rule StealC_cystack_a9f45237
+{
+    meta:
+        family = "StealC"
+        fingerprint_id = "cystack_a9f45237"
+
+    strings:
+        $key_0 = "Current User:" ascii
+        $key_1 = "Network Info:" ascii
+        $key_2 = "System Summary:" ascii
+
+    condition:
+        all of ($key_*)
+}
+
 rule StealC_cystack_aac2df00
 {
     meta:

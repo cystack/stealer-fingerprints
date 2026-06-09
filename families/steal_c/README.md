@@ -8,7 +8,7 @@ with the v2 rewrite tracked through 2024.
 
 **Also known as:** `StealC v1`, `StealC v2`
 
-**Variants observed:** 42
+**Variants observed:** 43
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -1722,6 +1722,38 @@ Process List:
 	winlogon.exe [852]
 	services.exe [892]
 [... truncated; full sample at ``sample.txt`` (approx. 176 more lines) ...]
+```
+
+### `cystack_a9f45237`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Current User`, `Network Info`, `System Summary`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+Network Info:
+	- IP: <ip>
+	- Country: ET
+
+System Summary:
+	- HWID: D5B04049-C8D2-E1B5-76C1-FA6D5EB9A2A5
+	- OS: Windows 11
+	- Architecture: x64
+	- UserName: Getiye
+	- Computer Name: DESKTOP-38TG0CR
+	- Local Time: 2026-03-17 <ip>
+	- UTC: 3
+	- Language: en-US
+Current User:
+	Brave - <ip>
+	MP3 DJ Remix 4.8.3.3926
+	Microsoft OneDrive - 26.032.0217.0003
+	Opera Stable 128.0.5807.77 - 128.0.5807.77
 ```
 
 ### `cystack_aac2df00`

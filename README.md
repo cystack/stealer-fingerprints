@@ -10,7 +10,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 |---|---|---|---|
 | [`AMOS Stealer`](families/amos_stealer/) | 74 | 0 | `medium` |
 | [`Acreed`](families/acreed/) | 1 | 0 | `high` |
-| [`Aetheris Stealer`](families/aetheris_stealer/) | 12 | 0 | `high` |
+| [`Aetheris Stealer`](families/aetheris_stealer/) | 14 | 0 | `high` |
 | [`Ailurophile`](families/ailurophile/) | 1 | 1 | `high` |
 | [`Antarctida Stealer`](families/antarctida_stealer/) | 1 | 0 | `high` |
 | [`Arcane`](families/arcane/) | 47 | 1 | `high` |
@@ -97,9 +97,9 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`SHub Stealer`](families/s_hub_stealer/) | 1 | 0 | `high` |
 | [`SantaStealer`](families/santa_stealer/) | 1 | 1 | `high` |
 | [`Snake Stealer`](families/snake_stealer/) | 3 | 0 | `high` |
-| [`StealC`](families/steal_c/) | 42 | 0 | `high` |
+| [`StealC`](families/steal_c/) | 43 | 0 | `high` |
 | [`Stealerium`](families/stealerium/) | 1 | 1 | `high` |
-| [`Vidar`](families/vidar/) | 8151 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 8255 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 5 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 12 | 0 | `high` |
 
