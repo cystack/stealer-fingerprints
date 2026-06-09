@@ -6,6 +6,20 @@
       "banner_strings": [],
       "distribution_channel": "@BRADLOGS",
       "field_keys": [
+        "PLEASE NOTE"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "fingerprint_id": "cystack_1b08183d",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "low",
+      "banner_strings": [],
+      "distribution_channel": "@BRADLOGS",
+      "field_keys": [
         "Antivirus",
         "Build Date",
         "Computer Name",
@@ -35,6 +49,103 @@
         "Info.txt"
       ],
       "fingerprint_id": "cystack_6efeb6b8",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "low",
+      "banner_strings": [],
+      "distribution_channel": "@BRADLOGS",
+      "field_keys": [
+        "Country",
+        "IP Address",
+        "Time",
+        "User"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "fingerprint_id": "cystack_7304a1d1",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "low",
+      "banner_strings": [],
+      "distribution_channel": "@BRADLOGS",
+      "field_keys": [
+        "Antivirus",
+        "Build Date",
+        "Computer Name",
+        "Configuration",
+        "Country",
+        "Display Resolution",
+        "Elevated",
+        "Execution Path",
+        "Graphics Card",
+        "HWID",
+        "IP Address",
+        "Installed RAM",
+        "Netbios",
+        "Processor",
+        "Processor Cores",
+        "Processor Threads",
+        "Time",
+        "User",
+        "User Language",
+        "User Name"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "fingerprint_id": "cystack_8fc6858f",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "low",
+      "banner_strings": [],
+      "distribution_channel": "@BRADLOGS",
+      "field_keys": [
+        "Book",
+        "Country",
+        "Date",
+        "IP Address",
+        "Language",
+        "Location",
+        "Lyrics",
+        "Music",
+        "Performers",
+        "Show",
+        "Time",
+        "Tracks",
+        "Translation",
+        "User"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "fingerprint_id": "cystack_bd7c60ba",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "low",
+      "banner_strings": [],
+      "distribution_channel": "@BRADLOGS",
+      "field_keys": [
+        "Country",
+        "Database Name",
+        "IP Address",
+        "Project Name",
+        "Time",
+        "User",
+        "User Name"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "fingerprint_id": "cystack_d41e9f17",
       "panel_brand": null,
       "synthetic": true
     }

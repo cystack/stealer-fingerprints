@@ -6,18 +6,10 @@ stripped hardware-only `Info.txt` shipped through the
 `STEALERCLOUD#<N>` per-victim-folder watermark. The body
 carries the canonical Remus Stealer YAML hardware-block
 keys (`product:`, `core count:`, `thread count:`, `ram:`,
-`gpu:`, `display:`). The `build:` and `os:` parent blocks
+`gpu:`, `display:`) plus a new `core enabled:` field that
+mirrors `core count:`. The `build:` and `os:` parent blocks
 and every identification field (banner, IP, country, time,
 user, hostname, install path, antivirus) are absent.
-
-Two truncation variants ship in the same broker pack.
-Variant A keeps the CPU block intact and adds a new
-`core enabled:` field that mirrors `core count:`. Variant
-B strips the CPU block down to a bare `thread count:`
-line and instead ships a `motherboard:` block carrying
-Win32_BaseBoard `manufacturer:` and `product:` values.
-Both variants share the same `ram:` / `gpu:` / `display:`
-tail.
 
 The broker likely repackages hardware fragments as a sample
 preview before charging buyers for the full log. Family
@@ -51,6 +43,9 @@ attribution surfaces.
 **Distribution channel:** `@STEALERBOSS`
 
 **Attribution confidence:** `low`
+
+**Field keys:**
+`Buy`, `New channel`, `Reserve Link`
 
 **Filenames:** `Info.txt`
 

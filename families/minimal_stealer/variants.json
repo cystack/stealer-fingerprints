@@ -1,0 +1,25 @@
+{
+  "family": "Minimal Stealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "CPU",
+        "Computer",
+        "GPU",
+        "OS",
+        "RAM",
+        "Resolution",
+        "User"
+      ],
+      "filenames": [
+        "System_Info.txt"
+      ],
+      "fingerprint_id": "cystack_11d74302",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

@@ -1228,6 +1228,43 @@
       "distribution_channel": null,
       "field_keys": [
         "Admin Group",
+        "Antivirus",
+        "City",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "HWID",
+        "IP Address",
+        "Installed RAM",
+        "Integrity",
+        "Keyboard Language",
+        "Log date",
+        "Operation System",
+        "Postal Code",
+        "Processor",
+        "Region",
+        "System Language",
+        "TimeZone",
+        "Timezone",
+        "User Name",
+        "UserLanguage",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_a06e8d9d",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Admin Group",
         "Computer Name",
         "Country",
         "Display Resolution",
@@ -1817,6 +1854,30 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Country",
+        "Graphics card",
+        "HWID",
+        "IP",
+        "Installed RAM",
+        "Log date",
+        "Operation System",
+        "Processor",
+        "System Language",
+        "Traffic",
+        "Version Build"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_e9c9d718",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "Admin Group",
         "Computer Name",
         "Display Resolution",
@@ -1998,6 +2059,32 @@
         "UserInformation.txt"
       ],
       "fingerprint_id": "cystack_fa688f82",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Computer Name",
+        "Country",
+        "Domain Name",
+        "Graphics card",
+        "HWID",
+        "IP",
+        "Installed RAM",
+        "Log date",
+        "Operation System",
+        "Processor",
+        "System Language",
+        "Traffic",
+        "Version Build"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_fc732c97",
       "panel_brand": null,
       "synthetic": true
     },

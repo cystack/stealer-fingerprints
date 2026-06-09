@@ -5,7 +5,11 @@
       "attribution_confidence": "low",
       "banner_strings": [],
       "distribution_channel": "@STEALERBOSS",
-      "field_keys": [],
+      "field_keys": [
+        "Buy",
+        "New channel",
+        "Reserve Link"
+      ],
       "filenames": [
         "Info.txt"
       ],

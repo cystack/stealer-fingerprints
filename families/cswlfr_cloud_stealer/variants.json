@@ -1,0 +1,20 @@
+{
+  "family": "CSWLFRCloudStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": "@WichLoveFromR",
+      "field_keys": [
+        "Buy",
+        "Reserve Link"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "fingerprint_id": "the_best_fresh_logs_and_ulp_cloud",
+      "panel_brand": "The Best fresh logs and ULP Cloud",
+      "synthetic": false
+    }
+  ]
+}

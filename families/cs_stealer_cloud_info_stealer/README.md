@@ -41,7 +41,7 @@ a curated CTI report.
 **Attribution confidence:** `low`
 
 **Field keys:**
-`CPU`, `Category`, `Cores/Threads`, `Country`, `Displays`, `GPU`, `IP`, `Path`, `RAM`
+`Build ID`, `CPU`, `Category`, `Computer`, `Cores/Threads`, `Country`, `Displays`, `GPU`, `HWID`, `IP`, `Keyboards`, `Language`, `Local Time`, `OS`, `Path`, `RAM`, `Reserve link`, `System`, `Timezone`, `UTC Time`, `Username`
 
 **Filenames:** `Information.txt`
 

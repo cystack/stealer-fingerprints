@@ -8,7 +8,7 @@ with the v2 rewrite tracked through 2024.
 
 **Also known as:** `StealC v1`, `StealC v2`
 
-**Variants observed:** 41
+**Variants observed:** 42
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -589,6 +589,61 @@ Process List:
 	msedgewebview2.exe [12300]
 	msedgewebview2.exe [6508]
 [... truncated; full sample at ``sample.txt`` (approx. 135 more lines) ...]
+```
+
+### `cystack_2f4aa4ef`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Current User`, `Network Info`, `Process List`, `Process count`, `System Summary`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+Network Info:
+	- IP: <ip>
+	- Country: AE
+
+System Summary:
+	- HWID: B613C4C5-6E26-7851-2A7D-0E49D2B576C1
+	- OS: Windows 11
+	- Architecture: x64
+	- UserName: sujan
+	- Computer Name: SUJANTAMANG
+	- Local Time: 2026-03-25 <ip>
+	- UTC: 4
+	- Language: en-AE
+	- Keyboards: English (United States)
+	- Laptop: TRUE
+	- Running Path: C:\Users\<user>\OneDrive\Desktop\Loader.exe
+	- CPU: 13th Gen Intel(R) Core(TM) i5-13420H
+	- Cores: 8
+	- Threads: 12
+	- RAM: 16 GB
+	- Display Resolution: 
+		Monitor 1
+			Device Name: \\.\DISPLAY1
+			Device String: Intel(R) UHD Graphics
+			Resolution: 1920x1080
+			Color Depth: 32 bits per pixel
+	- GPU:
+		-Intel(R) UHD Graphics
+		-NVIDIA GeForce RTX 3050 6GB Laptop GPU
+
+Process count: 324
+Process List: 
+	[System Process] [0]
+	System [4]
+	Secure System [188]
+	Registry [232]
+	smss.exe [668]
+	csrss.exe [1104]
+	wininit.exe [1212]
+	csrss.exe [1220]
+[... truncated; full sample at ``sample.txt`` (approx. 180 more lines) ...]
 ```
 
 ### `cystack_3028b0ca`

@@ -6,15 +6,27 @@
       "banner_strings": [],
       "distribution_channel": "@STEALERBOSS",
       "field_keys": [
+        "Build ID",
         "CPU",
         "Category",
+        "Computer",
         "Cores/Threads",
         "Country",
         "Displays",
         "GPU",
+        "HWID",
         "IP",
+        "Keyboards",
+        "Language",
+        "Local Time",
+        "OS",
         "Path",
-        "RAM"
+        "RAM",
+        "Reserve link",
+        "System",
+        "Timezone",
+        "UTC Time",
+        "Username"
       ],
       "filenames": [
         "Information.txt"

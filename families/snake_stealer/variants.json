@@ -1,0 +1,110 @@
+{
+  "family": "Snake Stealer",
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Adapter",
+        "Build",
+        "CPU",
+        "CPU Cores",
+        "CPU Threads",
+        "Computer Name",
+        "Current Time",
+        "GPU(s)",
+        "OS Version",
+        "Processor Count",
+        "Product Name",
+        "SearchIndexer (PID",
+        "Sysmon64 (PID",
+        "System Directory",
+        "Time Zone",
+        "Total RAM",
+        "Uptime",
+        "User Domain",
+        "User Name",
+        "Version",
+        "WinSAT (PID",
+        "WmiPrvSE (PID"
+      ],
+      "filenames": [
+        "Systeminfo.txt"
+      ],
+      "fingerprint_id": "cystack_2eae82db",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Adapter",
+        "Build",
+        "CPU",
+        "CPU Cores",
+        "CPU Threads",
+        "Computer Name",
+        "Current Time",
+        "GPU(s)",
+        "OS Version",
+        "OSPPSVC (PID",
+        "Processor Count",
+        "Product Name",
+        "Sysmon64 (PID",
+        "System Directory",
+        "Time Zone",
+        "Total RAM",
+        "Uptime",
+        "User Domain",
+        "User Name",
+        "Version",
+        "WmiPrvSE (PID"
+      ],
+      "filenames": [
+        "Systeminfo.txt"
+      ],
+      "fingerprint_id": "cystack_39d2da82",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Adapter",
+        "Build",
+        "CPU",
+        "CPU Cores",
+        "CPU Threads",
+        "Computer Name",
+        "Current Time",
+        "GPU(s)",
+        "OS Version",
+        "OSPPSVC (PID",
+        "Processor Count",
+        "Product Name",
+        "SearchIndexer (PID",
+        "Sysmon64 (PID",
+        "System Directory",
+        "Time Zone",
+        "Total RAM",
+        "Uptime",
+        "User Domain",
+        "User Name",
+        "Version",
+        "WinSAT (PID",
+        "WmiPrvSE (PID"
+      ],
+      "filenames": [
+        "Systeminfo.txt"
+      ],
+      "fingerprint_id": "cystack_fbdfb631",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

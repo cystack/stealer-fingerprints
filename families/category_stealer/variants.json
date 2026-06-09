@@ -37,6 +37,22 @@
       "banner_strings": [],
       "distribution_channel": null,
       "field_keys": [
+        "Category",
+        "Country",
+        "IP"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_c6900358",
+      "panel_brand": null,
+      "synthetic": true
+    },
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
         "Build ID",
         "CPU",
         "Category",

@@ -1,0 +1,45 @@
+IP: <redacted>
+
+Username: <redacted>
+Password: 1058
+
+Software:
+
+    System Software Overview:
+
+      System Version: macOS 26.3.1 (a) (25D771280a)
+      Kernel Version: Darwin 25.3.0
+      Boot Volume: Macintosh HD
+      Boot Mode: Normal
+      Computer Name: <redacted>
+      User Name: <redacted>
+      Secure Virtual Memory: Enabled
+      System Integrity Protection: Enabled
+      Time since boot: 6 days, 15 hours, 6 minutes
+
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: MacBook Air
+      Model Identifier: Mac15,13
+      Model Number: MC9G4LL/A
+      Chip: Apple M3
+      Total Number of Cores: 8 (4 Performance and 4 Efficiency)
+      Memory: 16 GB
+      System Firmware Version: 13822.81.10
+      OS Loader Version: 13822.81.10
+      Serial Number (system): D343VJM2Y9
+      Hardware UUID: A956AF20-52DE-5E08-9336-5B5DFE0099C1
+      Provisioning UDID: 00008122-001241340A11001C
+      Activation Lock Status: Enabled
+
+Graphics/Displays:
+
+    Apple M3:
+
+      Chipset Model: Apple M3
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 10
+      Vendor: Apple (0x106b)

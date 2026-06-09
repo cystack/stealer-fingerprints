@@ -1,0 +1,24 @@
+{
+  "family": "CSMacKeychainPassStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Graphics/Displays",
+        "Hardware",
+        "IP",
+        "Password",
+        "Software",
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "fingerprint_id": "cystack_009c8f5c",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

@@ -9,7 +9,7 @@ the underlying field layout intact.
 
 **Also known as:** `redline`, `redline-extended`
 
-**Variants observed:** 65
+**Variants observed:** 68
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -1405,6 +1405,52 @@ Display Resolution: 1280x768
 Wallpaper Hash: 092de22a2e2a5929e32da3495acf45ed14ce9ec5
 ```
 
+### `cystack_a06e8d9d`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Antivirus`, `City`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP Address`, `Installed RAM`, `Integrity`, `Keyboard Language`, `Log date`, `Operation System`, `Postal Code`, `Processor`, `Region`, `System Language`, `TimeZone`, `Timezone`, `User Name`, `UserLanguage`, `Wallpaper Hash`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+Log date: 19 Mar 26 21:51
+HWID: <redacted>
+System Language: Bulgarian
+Processor: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+Installed RAM: 16292 MB
+Operation System: Windows 10 Enterprise build 19045 (64 Bit)
+Graphics card: NVIDIA GeForce GTX 1650
+Antivirus: Avast
+Computer Name: <redacted>
+Domain Name: <redacted>
+User Name: 
+<redacted>
+Integrity: Medium
+TimeZone: UTC+2
+UserLanguage: Bulgarian
+Keyboard Language: Bulgarian
+Display Resolution: 1920x1080
+Wallpaper Hash: 56986185af209b182164a6758c8747683988febc
+
+═══════════════════════════════════════════════════════════════════
+                        IP GEOLOCATION DATA
+═══════════════════════════════════════════════════════════════════
+
+IP Address:      <redacted>
+Country:         Bulgaria (BG)
+Region:          Pazardzhik
+City:            <redacted>
+Postal Code:     <redacted>
+
+Timezone:        Europe/Sofia (UTC)
+
+═══════════════════════════════════════════════════════════════════
+```
+
 ### `cystack_a0f3c667`
 
 **Attribution confidence:** `unknown`
@@ -2084,6 +2130,33 @@ Display Resolution: 1536x864
 @OttoSup - Buy daily fresh logs: d08c477d7682cd97be0a55cf613fdf56c9c08923
 ```
 
+### `cystack_e9c9d718`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Country`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Log date`, `Operation System`, `Processor`, `System Language`, `Traffic`, `Version Build`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+1234
+
+Log date: 14/03/26 17:31
+Traffic: jakoer228
+Version Build: 1.0
+HWID: <redacted>
+Country: PL
+IP: <redacted>
+System Language: Polish
+Processor: 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz (6 cores, 12 threads)
+Installed RAM: 15.86 GB
+Operation System: Windows 11 (Build 26200) (64 Bit)
+Graphics card: NVIDIA GeForce RTX 3060
+```
+
 ### `cystack_ea2cf1f2`
 
 **Attribution confidence:** `unknown`
@@ -2297,6 +2370,35 @@ UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1920x1080
 Wallpaper Hash: 6412be3b177b930d4013957d032f6022506f40ff
+```
+
+### `cystack_fc732c97`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Computer Name`, `Country`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Log date`, `Operation System`, `Processor`, `System Language`, `Traffic`, `Version Build`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+1234
+
+Log date: 22/03/26 22:08
+Traffic: arlekin
+Version Build: 1.0
+HWID: <redacted>
+Country: US
+IP: <redacted>
+System Language: English
+Processor: Intel(R) N100 (4 cores, 4 threads)
+Installed RAM: 11.78 GB
+Operation System: Windows 11 (Build 26200) (64 Bit)
+Graphics card: Intel(R) UHD Graphics
+Computer Name: <redacted>
+Domain Name: <redacted>
 ```
 
 ### `cystack_fddd76ee`

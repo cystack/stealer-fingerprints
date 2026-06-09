@@ -1,26 +1,32 @@
-BUILD NAME: bigdick
+Log date: 19 Mar 26 21:51
 HWID: <redacted>
-Country: HU
-IP: <redacted>
-TimeZone: +1
-System Language: Hungarian
-Processor: 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz
-Installed RAM: 16248 MB
-Operation System: Windows 11-10.0.22631
+System Language: Bulgarian
+Processor: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+Installed RAM: 16292 MB
+Operation System: Windows 10 Enterprise build 19045 (64 Bit)
 Graphics card: NVIDIA GeForce GTX 1650
+Antivirus: Avast
 Computer Name: <redacted>
-Router MAC Address: <ip>
 Domain Name: <redacted>
-Product Key: GNKHT-YC997-R8DK2-Q9X27-KHJVG
--------------
-User Name: <redacted>
-Admin Group: FALSE
+User Name: 
+<redacted>
 Integrity: Medium
-UserLanguage: Hungarian
-Keyboard Language: Hungarian
+TimeZone: UTC+2
+UserLanguage: Bulgarian
+Keyboard Language: Bulgarian
 Display Resolution: 1920x1080
-Wallpaper Hash: 8686086517fc6b01b38f06f528853cdbf7ab5694
+Wallpaper Hash: 56986185af209b182164a6758c8747683988febc
 
-=== GEOLOCATION ===
-APPLE: 47.488346, 18.925955
-GOOGLE: 47.488052, 18.925849
+═══════════════════════════════════════════════════════════════════
+                        IP GEOLOCATION DATA
+═══════════════════════════════════════════════════════════════════
+
+IP Address:      <redacted>
+Country:         Bulgaria (BG)
+Region:          Pazardzhik
+City:            <redacted>
+Postal Code:     <redacted>
+
+Timezone:        Europe/Sofia (UTC)
+
+═══════════════════════════════════════════════════════════════════

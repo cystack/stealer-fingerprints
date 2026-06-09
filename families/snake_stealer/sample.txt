@@ -1,0 +1,66 @@
+
+░██████╗███╗░░██╗░█████╗░██╗░░██╗███████╗
+██╔════╝████╗░██║██╔══██╗██║░██╔╝██╔════╝
+╚█████╗░██╔██╗██║███████║█████═╝░█████╗░░
+░╚═══██╗██║╚████║██╔══██║██╔═██╗░██╔══╝░░
+██████╔╝██║░╚███║██║░░██║██║░╚██╗███████╗
+╚═════╝░╚═╝░░╚══╝╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝
+
+=== INFO ===
+Computer Name: <redacted>
+User Name: <redacted>
+OS Version: Microsoft Windows NT 6.1.7601 Service Pack 1
+64-bit OS: True
+64-bit Process: False
+Processor Count: 4
+System Directory: C:\Windows\system32
+User Domain: vault
+
+=== WINDOWS VERSION ===
+Product Name: Windows 7 Professional
+Version: Unknown
+Build: 7601
+
+=== HARDWARE INFORMATION ===
+CPU: AMD EPYC-Milan Processor
+CPU Cores: 2
+CPU Threads: 2
+Total RAM: 1 GB
+GPU(s): Standard VGA Graphics Adapter
+
+=== NETWORK INFORMATION ===
+Adapter: Local Area Connection
+  IP Address: <redacted>
+  Subnet Mask: <ip>
+  MAC Address: <redacted>
+
+=== RUNNING PROCESSES (Top 20) ===
+svchost (PID: 868, Memory: 67 MB)
+WinSAT (PID: 1540, Memory: 48 MB)
+explorer (PID: 1948, Memory: 43 MB)
+cuckoo-2aaaba3552a662b72 (PID: 408, Memory: 36 MB)
+svchost (PID: 924, Memory: 23 MB)
+svchost (PID: 2448, Memory: 21 MB)
+svchost (PID: 776, Memory: 16 MB)
+svchost (PID: 648, Memory: 15 MB)
+sppsvc (PID: 2936, Memory: 13 MB)
+svchost (PID: 1064, Memory: 13 MB)
+taskhost (PID: 2180, Memory: 13 MB)
+WmiPrvSE (PID: 1312, Memory: 12 MB)
+OSPPSVC (PID: 2584, Memory: 12 MB)
+audiodg (PID: 1004, Memory: 11 MB)
+Sysmon64 (PID: 1428, Memory: 11 MB)
+lsass (PID: 480, Memory: 11 MB)
+svchost (PID: 1208, Memory: 10 MB)
+taskhost (PID: 2216, Memory: 10 MB)
+svchost (PID: 2248, Memory: 9 MB)
+SearchIndexer (PID: 2348, Memory: 9 MB)
+
+=== INSTALLED BROWSERS ===
+chrome: C:\Program Files\Google\Chrome\Application\chrome.exe
+
+=== TIME INFORMATION ===
+Current Time: 5/5/2026 <ip> PM
+Time Zone: (UTC-08:00) Pacific Time (US & Canada)
+Uptime: <ip>.1820000
+

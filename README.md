@@ -48,6 +48,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSLoaderReadyStealer`](families/cs_loader_ready_stealer/) | 1 | 1 | `unknown` |
 | [`CSMSKDateStealer`](families/csmsk_date_stealer/) | 1 | 0 | `unknown` |
 | [`CSMacBareGeoStealer`](families/cs_mac_bare_geo_stealer/) | 1 | 0 | `unknown` |
+| [`CSMacKeychainPassStealer`](families/cs_mac_keychain_pass_stealer/) | 1 | 0 | `unknown` |
 | [`CSMacUserinfoStealer`](families/cs_mac_userinfo_stealer/) | 3 | 0 | `unknown` |
 | [`CSMainLootStealer`](families/cs_main_loot_stealer/) | 2 | 2 | `low` |
 | [`CSMatchesFilterStealer`](families/cs_matches_filter_stealer/) | 1 | 0 | `unknown` |
@@ -59,7 +60,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSPcNameSnakeStealer`](families/cs_pc_name_snake_stealer/) | 1 | 1 | `unknown` |
 | [`CSPyHostTimeStealer`](families/cs_py_host_time_stealer/) | 1 | 1 | `unknown` |
 | [`CSRussia34Stealer`](families/cs_russia34_stealer/) | 1 | 1 | `unknown` |
-| [`CSSigInfoStealer`](families/cs_sig_info_stealer/) | 1 | 1 | `low` |
+| [`CSSigInfoStealer`](families/cs_sig_info_stealer/) | 6 | 1 | `low` |
 | [`CSSoftwareTailStealer`](families/cs_software_tail_stealer/) | 1 | 1 | `unknown` |
 | [`CSStatsSectionStealer`](families/cs_stats_section_stealer/) | 1 | 0 | `unknown` |
 | [`CSStealerCloudInfoStealer`](families/cs_stealer_cloud_info_stealer/) | 1 | 1 | `low` |
@@ -67,8 +68,9 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSSystemSummaryStealer`](families/cs_system_summary_stealer/) | 1 | 0 | `unknown` |
 | [`CSTxtFilesPartStealer`](families/cs_txt_files_part_stealer/) | 1 | 0 | `unknown` |
 | [`CSUsersListStealer`](families/cs_users_list_stealer/) | 1 | 1 | `unknown` |
+| [`CSWLFRCloudStealer`](families/cswlfr_cloud_stealer/) | 1 | 1 | `unknown` |
 | [`CSWmicDumpStealer`](families/cs_wmic_dump_stealer/) | 1 | 0 | `unknown` |
-| [`Category Stealer`](families/category_stealer/) | 4 | 0 | `unknown` |
+| [`Category Stealer`](families/category_stealer/) | 5 | 0 | `unknown` |
 | [`CryptBot`](families/crypt_bot/) | 2 | 1 | `high` |
 | [`Cthulhu Stealer`](families/cthulhu_stealer/) | 26 | 0 | `high` |
 | [`DCRat`](families/dc_rat/) | 3 | 0 | `high` |
@@ -77,6 +79,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`MacSync`](families/mac_sync/) | 4 | 1 | `high` |
 | [`MeltStealer`](families/melt_stealer/) | 1 | 0 | `high` |
 | [`Millenium RAT`](families/millenium_rat/) | 1 | 0 | `-` |
+| [`Minimal Stealer`](families/minimal_stealer/) | 1 | 0 | `unknown` |
 | [`Nexus`](families/nexus/) | 1 | 0 | `medium` |
 | [`NotMalware`](families/not_malware/) | 5 | 5 | `benign` |
 | [`PCInfo Stealer`](families/pc_info_stealer/) | 2 | 0 | `unknown` |
@@ -89,13 +92,14 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`RMS`](families/rms/) | 1 | 1 | `high` |
 | [`Raccoon`](families/raccoon/) | 2 | 0 | `high` |
 | [`Redline`](families/redline/) | 22 | 0 | `high` |
-| [`RedlineLike Stealer`](families/redline_like_stealer/) | 65 | 0 | `unknown` |
+| [`RedlineLike Stealer`](families/redline_like_stealer/) | 68 | 0 | `unknown` |
 | [`Remus Stealer`](families/remus_stealer/) | 2 | 1 | `high` |
 | [`SHub Stealer`](families/s_hub_stealer/) | 1 | 0 | `high` |
 | [`SantaStealer`](families/santa_stealer/) | 1 | 1 | `high` |
-| [`StealC`](families/steal_c/) | 41 | 0 | `high` |
+| [`Snake Stealer`](families/snake_stealer/) | 3 | 0 | `high` |
+| [`StealC`](families/steal_c/) | 42 | 0 | `high` |
 | [`Stealerium`](families/stealerium/) | 1 | 1 | `high` |
-| [`Vidar`](families/vidar/) | 7927 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 8151 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 5 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 12 | 0 | `high` |
 

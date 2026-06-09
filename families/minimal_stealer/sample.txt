@@ -1,0 +1,7 @@
+User: WDAGUtilityAccount
+Computer: WIN-2LFPFCN9295
+CPU: Intel(R) Xeon(R) Gold 6133 CPU @ 2.50GHz
+GPU: Microsoft Basic Render Driver
+OS: Windows Server 2019 Standard Evaluation
+RAM: 3 GB
+Resolution: 1536x864
