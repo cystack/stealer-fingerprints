@@ -8,6 +8,7 @@
       "field_keys": [
         "CPU",
         "City",
+        "Computer",
         "Computer name",
         "Country",
         "GPU",
@@ -25,7 +26,9 @@
       "filenames": [
         "Information.txt",
         "PC_info.txt",
-        "System.txt"
+        "System.txt",
+        "UserInformation.txt",
+        "information.txt"
       ],
       "fingerprint_id": "ottoman",
       "panel_brand": "Ottoman",

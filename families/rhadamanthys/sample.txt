@@ -1,0 +1,19 @@
+Log date: 23 Oct 24 00:36 UTC
+Traffic: @BradMax_CLOUD
+HWID: <redacted>
+Country: CO
+IP: <redacted>
+TimeZone: UTC-5
+User Language: Spanish
+System Language: Spanish
+Keyboard Language: Spanish
+Processor: AMD Athlon 3000G with Radeon Vega Graphics     
+Installed RAM: 5596 MB
+Operation System: Windows 10 build 19045 (64 Bit)
+Video card: AMD Radeon(TM) Vega 3 Graphics
+Display Resolution: 1366x768
+Computer Name: <redacted>
+User Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Wallpaper Hash: c657abafdc1d4b498461d712447663868eae3afb

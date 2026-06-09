@@ -18,7 +18,7 @@ Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 
 **Also known as:** `BlankGrabber`, `Blank-c/Blank-Grabber`
 
-**Variants observed:** 17
+**Variants observed:** 19
 **Top attribution confidence:** `high`
 **Operator panel brands:** `Amnesia`, `Dead`
 
@@ -347,6 +347,60 @@ Screenshot : Yes
 System Info : Yes
 ```
 
+### `cystack_3251e7a5`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Autofills`, `CPU`, `Cellular Network`, `Common Files`, `Computer Name`, `Computer OS`, `Cookies`, `Country`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `IP`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Proxy/VPN`, `Region`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Timezone`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+    Blank Grabber got a new victim: Abshalon
+
+IP Info
+
+IP: <redacted>
+Region: Salta
+Country: Argentina
+Timezone: America/Argentina/Salta
+
+Cellular Network:    ❎
+Proxy/VPN:           ❎
+
+System Info
+Computer Name: <redacted>
+Computer OS: Unable to detect OS
+Total Memory: Unable to detect total memory
+UUID: Unable to detect UUID
+CPU: AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+GPU: Unable to detect GPU
+Product Key: VK7JG-NPHTM-C97JM-9MPGT-3V66T
+
+Grabbed Info
+Discord Accounts : 0
+Passwords : 94
+Cookies : 0
+History : 0
+Autofills : 0
+Roblox Cookies : 0
+@Ottohelp - Buy daily fresh logs Sessions : 0
+Common Files : 0
+Wallets : 0
+Wifi Passwords : 0
+Webcam : 0
+Minecraft Sessions : 0
+Epic Session : No
+Steam Session : No
+Uplay Session : No
+Growtopia Session : No
+Screenshot : Yes
+System Info : Yes
+```
+
 ### `cystack_3db9f760`
 
 **Attribution confidence:** `high`
@@ -400,6 +454,61 @@ Uplay Session : No
 Battle.Net Session : No
 Growtopia Session : No
 [... truncated; full sample at ``sample.txt`` (approx. 2 more lines) ...]
+```
+
+### `cystack_3ed08ab3`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Autofills`, `CPU`, `Cellular Network`, `Common Files`, `Computer Name`, `Computer OS`, `Cookies`, `Country`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `IP`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Proxy/VPN`, `Region`, `Reverse DNS`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Timezone`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+    Blank Grabber got a new victim: Alirio
+
+IP Info
+
+IP: <redacted>
+Region: Bogota D.C.
+Country: Colombia
+Timezone: America/Bogota
+
+Cellular Network:    ❎
+Proxy/VPN:           ❎
+Reverse DNS: static-186-31-118-189.static.etb.net.co
+
+System Info
+Computer Name: <redacted>
+Computer OS: Microsoft Windows 10 Pro
+Total Memory: 8 GB
+UUID: 24168AE0-D7DA-11DD-A2B3-60A44CCF2DD2
+CPU: Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+GPU: Intel(R) HD Graphics
+Product Key: VK7JG-NPHTM-C97JM-9MPGT-3V66T
+
+Grabbed Info
+Discord Accounts : 0
+Passwords : 214
+Cookies : 0
+History : 0
+Autofills : 0
+Roblox Cookies : 0
+@Ottohelp - Buy daily fresh logs Sessions : 0
+[... truncated; full sample at ``sample.txt`` (approx. 11 more lines) ...]
 ```
 
 ### `cystack_4ed137de`
@@ -874,7 +983,7 @@ System Info : Yes
 **Attribution confidence:** `high`
 
 **Field keys:**
-`Autofills`, `CPU`, `Cellular Network`, `Common Files`, `Computer Name`, `Computer OS`, `Cookies`, `Country`, `Dead got a new victim`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `IP`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Region`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Telegram Sessions`, `Timezone`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
+`Autofills`, `CPU`, `Cellular Network`, `Common Files`, `Computer Name`, `Computer OS`, `Cookies`, `Country`, `Dead got a new victim`, `Discord Accounts`, `Epic Session`, `GPU`, `Growtopia Session`, `History`, `IP`, `Minecraft Sessions`, `Passwords`, `Product Key`, `Proxy/VPN`, `Region`, `Reverse DNS`, `Roblox Cookies`, `Screenshot`, `Steam Session`, `System Info`, `Telegram Sessions`, `Timezone`, `Total Memory`, `UUID`, `Uplay Session`, `Wallets`, `Webcam`, `Wifi Passwords`
 
 **Filenames:** `Information.txt`
 

@@ -8,7 +8,7 @@ with the v2 rewrite tracked through 2024.
 
 **Also known as:** `StealC v1`, `StealC v2`
 
-**Variants observed:** 43
+**Variants observed:** 44
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -2304,6 +2304,61 @@ Process List:
 	winlogon.exe [720]
 	services.exe [764]
 [... truncated; full sample at ``sample.txt`` (approx. 310 more lines) ...]
+```
+
+### `cystack_f63054c9`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`All Users`, `Channel with contacts`, `Commission split`, `Installed Apps`, `Network Info`, `System Summary`
+
+**Filenames:** `system_info.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+[... 17 blank lines ...]
+ㅤ______     ______   ______     ______     __         ______
+/\  ___\   /\__  _\ /\  ___\   /\  __ \   /\ \       /\  ___\
+\ \___  \  \/_/\ \/ \ \  __\   \ \  __ \  \ \ \____  \ \ \____
+ \/\_____\    \ \_\  \ \_____\  \ \_\ \_\  \ \_____\  \ \_____\
+
+@Ottohelp - Buy daily fresh logs
+
+@Ottohelp - Buy daily fresh logs
+
+@Ottohelp - Buy daily fresh logs
+- @Ottohelp - Buy daily fresh logs
+- @Ottohelp - Buy daily fresh logs
+
+@Ottohelp - Buy daily fresh logs
+- @Ottohelp - Buy daily fresh logs <email>
+- @Ottohelp - Buy daily fresh logs 1FCCEA0D37D99894B958C0FCEAC66034FE3580B193C335745D632A19F8E6053C34DFEAAE2538
+
+----------------------------------------------------------------
+
+.--------------. .--------------. .--------------. .--------------. .--------------. 
+| ____    ____ | |      __      | |     _____    | |  _________   | |  _________   | 
+||_   \  /   _|| |     /  \     | |    |_   _|   | | |_   ___  |  | | |_   ___  |  | 
+|  |   \/   |  | |    / /\ \    | |      | |     | |   | |_  \_|  | |   | |_  \_|  | 
+|  | |\  /| |  | |   / ____ \   | |      | |     | |   |  _|      | |   |  _|  _   | 
+| _| |_\/_| |_ | | _/ /    \ \_ | |     _| |_    | |  _| |_       | |  _| |___/ |  | 
+||_____||_____|| ||____|  |____|| |    |_____|   | | |_____|      | | |_________|  | 
+|              | |              | |              | |              | |              | 
+'--------------' '--------------' '--------------' '--------------' '--------------' 
+Brute-force (password cracking) for crypto wallets (Metamask, Exodus, .dat files, and others)
+
+[... truncated; full sample at ``sample.txt`` (approx. 401 more lines) ...]
 ```
 
 ## Detection

@@ -15,7 +15,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Antarctida Stealer`](families/antarctida_stealer/) | 1 | 0 | `high` |
 | [`Arcane`](families/arcane/) | 47 | 1 | `high` |
 | [`AuraStealer`](families/aura_stealer/) | 2 | 0 | `high` |
-| [`Blank Grabber`](families/blank_grabber/) | 17 | 0 | `high` |
+| [`Blank Grabber`](families/blank_grabber/) | 19 | 0 | `high` |
 | [`BracketSection Stealer`](families/bracket_section_stealer/) | 3 | 0 | `unknown` |
 | [`Bugatti Cloud`](families/bugatti_cloud/) | 6 | 0 | `unknown` |
 | [`CSAdminCoresStealer`](families/cs_admin_cores_stealer/) | 1 | 0 | `unknown` |
@@ -31,6 +31,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`CSCountCoreStealer`](families/cs_count_core_stealer/) | 6 | 0 | `unknown` |
 | [`CSCountRunsStealer`](families/cs_count_runs_stealer/) | 1 | 1 | `unknown` |
 | [`CSCrownBuildStealer`](families/cs_crown_build_stealer/) | 1 | 0 | `unknown` |
+| [`CSDaisyBonusProcSoftStealer`](families/cs_daisy_bonus_proc_soft_stealer/) | 1 | 1 | `unknown` |
 | [`CSDaisyCloudStealer`](families/cs_daisy_cloud_stealer/) | 1 | 1 | `low` |
 | [`CSDashPlusSepStealer`](families/cs_dash_plus_sep_stealer/) | 1 | 1 | `unknown` |
 | [`CSDashSectionStealer`](families/cs_dash_section_stealer/) | 1 | 1 | `low` |
@@ -83,7 +84,7 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`Nexus`](families/nexus/) | 1 | 0 | `medium` |
 | [`NotMalware`](families/not_malware/) | 5 | 5 | `benign` |
 | [`PCInfo Stealer`](families/pc_info_stealer/) | 2 | 0 | `unknown` |
-| [`PXA Stealer`](families/pxa_stealer/) | 7 | 0 | `high` |
+| [`PXA Stealer`](families/pxa_stealer/) | 8 | 0 | `high` |
 | [`Phantom Stealer`](families/phantom_stealer/) | 3 | 1 | `high` |
 | [`Phexia`](families/phexia/) | 1 | 0 | `high` |
 | [`PureLogs`](families/pure_logs/) | 1 | 0 | `high` |
@@ -92,14 +93,15 @@ Each row in the table below summarises the operator-rebrand footprint observed f
 | [`RMS`](families/rms/) | 1 | 1 | `high` |
 | [`Raccoon`](families/raccoon/) | 2 | 0 | `high` |
 | [`Redline`](families/redline/) | 22 | 0 | `high` |
-| [`RedlineLike Stealer`](families/redline_like_stealer/) | 68 | 0 | `unknown` |
+| [`RedlineLike Stealer`](families/redline_like_stealer/) | 72 | 0 | `unknown` |
 | [`Remus Stealer`](families/remus_stealer/) | 2 | 1 | `high` |
+| [`Rhadamanthys`](families/rhadamanthys/) | 1 | 0 | `high` |
 | [`SHub Stealer`](families/s_hub_stealer/) | 1 | 0 | `high` |
 | [`SantaStealer`](families/santa_stealer/) | 1 | 1 | `high` |
 | [`Snake Stealer`](families/snake_stealer/) | 3 | 0 | `high` |
-| [`StealC`](families/steal_c/) | 43 | 0 | `high` |
+| [`StealC`](families/steal_c/) | 44 | 0 | `high` |
 | [`Stealerium`](families/stealerium/) | 1 | 1 | `high` |
-| [`Vidar`](families/vidar/) | 8255 | 0 | `high` |
+| [`Vidar`](families/vidar/) | 8722 | 0 | `high` |
 | [`WhiteSnake`](families/white_snake/) | 5 | 0 | `high` |
 | [`XFiles`](families/x_files/) | 12 | 0 | `high` |
 

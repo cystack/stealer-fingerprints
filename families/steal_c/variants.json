@@ -860,6 +860,25 @@
       "fingerprint_id": "cystack_e460e932",
       "panel_brand": null,
       "synthetic": true
+    },
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "All Users",
+        "Channel with contacts",
+        "Commission split",
+        "Installed Apps",
+        "Network Info",
+        "System Summary"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "fingerprint_id": "cystack_f63054c9",
+      "panel_brand": null,
+      "synthetic": true
     }
   ]
 }

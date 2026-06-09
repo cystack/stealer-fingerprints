@@ -1,0 +1,37 @@
+{
+  "family": "Rhadamanthys",
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "banner_strings": [],
+      "distribution_channel": null,
+      "field_keys": [
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "HWID",
+        "IP",
+        "Installed RAM",
+        "Keyboard Language",
+        "Log date",
+        "MachineID",
+        "Operation System",
+        "Processor",
+        "System Language",
+        "TimeZone",
+        "Traffic",
+        "User Language",
+        "User Name",
+        "Video card",
+        "Wallpaper Hash"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "fingerprint_id": "cystack_05ddd107",
+      "panel_brand": null,
+      "synthetic": true
+    }
+  ]
+}

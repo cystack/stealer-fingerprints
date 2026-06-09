@@ -9,7 +9,7 @@ the underlying field layout intact.
 
 **Also known as:** `redline`, `redline-extended`
 
-**Variants observed:** 68
+**Variants observed:** 72
 **Top attribution confidence:** `unknown`
 
 ## Targets
@@ -549,6 +549,42 @@ Display Resolution: 1366x768
 Wallpaper Hash: 9ba14c26fe5d0d2cf71bc09a782dd7ca246d212a
 ```
 
+### `cystack_3e6f8831`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `IP`, `Installed RAM`, `Integrity`, `Keyboard Language`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+    Log date: 09 Nov 25 09:14 CET
+HWID: <redacted>
+Country: PH
+IP: <redacted>
+System Language: English
+Processor: Intel(R) Core(TM) i5-4300M CPU @ 2.60GHz
+Installed RAM: 8097 MB
+Operation System: Windows 10 22H2 build 19045 (64 Bit)
+Graphics card: Intel(R) HD Graphics 4600
+Computer Name: <redacted>
+Domain Name: <redacted>
+MachineID: <redacted>
+Product Key: 
+-------------
+User Name: <redacted>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+8
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1366x768
+@Ottohelp - Buy daily fresh logs:
+```
+
 ### `cystack_3ffbbc4b`
 
 **Attribution confidence:** `unknown`
@@ -929,6 +965,47 @@ UserLanguage: Spanish
 Keyboard Language: Spanish
 Display Resolution: 2560x1440
 Wallpaper Hash: 057c2a661c927407f659de4e8c8d30fc913acaa4
+```
+
+### `cystack_5fc739a4`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Computer Name`, `Country`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `MachineID`, `Operation System`, `Processor`, `System Language`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+  >=>>=>   >==>    >=>       >>       >===>>=====>     >=>    >=>    >=>          >>               
+>=>    >=> >> >=>  >=>      >>=>           >=>      >=>   >=> >=>    >=>        >=>>=>             
+ >=>       >=> >=> >=>     >> >=>          >=>     >=>        >=>    >=>       >=>                 
+   >=>     >=>  >=>>=>    >=>  >=>         >=>     >=>        >=====>>=>        >==>               
+      >=>  >=>   > >=>   >=====>>=>        >=>     >=>        >=>    >=>       >=>                 
+>=>    >=> >=>    >>=>  >=>      >=>       >=>      >=>   >=> >=>    >=>        >=>>=>             
+  >=>>=>   >=>     >=> >=>        >=>      >=>        >===>   >=>    >=>          >>               
+                                                                                                   
+>=>    >=> >=>     >=> >=>>=>                                                                      
+>=>    >=> >=>     >=> >>   >=>                                                                    
+>=>    >=> >=>     >=> >>    >=>                                                                   
+>=====>>=> >=>     >=> >==>>=>                                                                     
+>=>    >=> >=>     >=> >>    >=>                                                                   
+>=>    >=> >=>     >=> >>     >>                                                                   
+>=>    >=>   >====>    >===>>=>                                                                    
+                                                                                                   
+[... truncated; full sample at ``sample.txt`` (approx. 43 more lines) ...]
 ```
 
 ### `cystack_60ccf6d5`
@@ -1336,6 +1413,47 @@ Display Resolution: 1920x1080
 Wallpaper Hash: d08c477d7682cd97be0a55cf613fdf56c9c08923
 ```
 
+### `cystack_852cc8d8`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Computer Name`, `Country`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`, `User Name`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+  >=>>=>   >==>    >=>       >>       >===>>=====>     >=>    >=>    >=>          >>               
+>=>    >=> >> >=>  >=>      >>=>           >=>      >=>   >=> >=>    >=>        >=>>=>             
+ >=>       >=> >=> >=>     >> >=>          >=>     >=>        >=>    >=>       >=>                 
+   >=>     >=>  >=>>=>    >=>  >=>         >=>     >=>        >=====>>=>        >==>               
+      >=>  >=>   > >=>   >=====>>=>        >=>     >=>        >=>    >=>       >=>                 
+>=>    >=> >=>    >>=>  >=>      >=>       >=>      >=>   >=> >=>    >=>        >=>>=>             
+  >=>>=>   >=>     >=> >=>        >=>      >=>        >===>   >=>    >=>          >>               
+                                                                                                   
+>=>    >=> >=>     >=> >=>>=>                                                                      
+>=>    >=> >=>     >=> >>   >=>                                                                    
+>=>    >=> >=>     >=> >>    >=>                                                                   
+>=====>>=> >=>     >=> >==>>=>                                                                     
+>=>    >=> >=>     >=> >>    >=>                                                                   
+>=>    >=> >=>     >=> >>     >>                                                                   
+>=>    >=>   >====>    >===>>=>                                                                    
+                                                                                                   
+[... truncated; full sample at ``sample.txt`` (approx. 43 more lines) ...]
+```
+
 ### `cystack_93fee37c`
 
 **Attribution confidence:** `unknown`
@@ -1370,6 +1488,47 @@ UserLanguage: English
 Keyboard Language: English
 Display Resolution: 1920x1080
 Wallpaper Hash: Unknown
+```
+
+### `cystack_98fabc58`
+
+**Attribution confidence:** `unknown`
+
+**Field keys:**
+`Computer Name`, `Country`, `Domain Name`, `Graphics card`, `IP`, `Installed RAM`, `MachineID`, `Operation System`, `Processor`, `Product Key`, `System Language`
+
+**Filenames:** `UserInformation.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+  >=>>=>   >==>    >=>       >>       >===>>=====>     >=>    >=>    >=>          >>               
+>=>    >=> >> >=>  >=>      >>=>           >=>      >=>   >=> >=>    >=>        >=>>=>             
+ >=>       >=> >=> >=>     >> >=>          >=>     >=>        >=>    >=>       >=>                 
+   >=>     >=>  >=>>=>    >=>  >=>         >=>     >=>        >=====>>=>        >==>               
+      >=>  >=>   > >=>   >=====>>=>        >=>     >=>        >=>    >=>       >=>                 
+>=>    >=> >=>    >>=>  >=>      >=>       >=>      >=>   >=> >=>    >=>        >=>>=>             
+  >=>>=>   >=>     >=> >=>        >=>      >=>        >===>   >=>    >=>          >>               
+                                                                                                   
+>=>    >=> >=>     >=> >=>>=>                                                                      
+>=>    >=> >=>     >=> >>   >=>                                                                    
+>=>    >=> >=>     >=> >>    >=>                                                                   
+>=====>>=> >=>     >=> >==>>=>                                                                     
+>=>    >=> >=>     >=> >>    >=>                                                                   
+>=>    >=> >=>     >=> >>     >>                                                                   
+>=>    >=>   >====>    >===>>=>                                                                    
+                                                                                                   
+[... truncated; full sample at ``sample.txt`` (approx. 43 more lines) ...]
 ```
 
 ### `cystack_9e96ff0e`

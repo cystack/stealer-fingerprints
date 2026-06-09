@@ -1,0 +1,17 @@
+{
+  "family": "CSDaisyBonusProcSoftStealer",
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "banner_strings": [],
+      "distribution_channel": "@UP_DAISYCLOUD",
+      "field_keys": [],
+      "filenames": [
+        "information.txt"
+      ],
+      "fingerprint_id": "daisy_private_cloud_bonus",
+      "panel_brand": "Daisy Private Cloud Bonus",
+      "synthetic": false
+    }
+  ]
+}

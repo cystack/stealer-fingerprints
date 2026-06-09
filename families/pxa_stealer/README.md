@@ -8,7 +8,7 @@ even before content matches.
 
 **Also known as:** `PXAStealer`
 
-**Variants observed:** 7
+**Variants observed:** 8
 **Top attribution confidence:** `high`
 
 ## Targets
@@ -38,6 +38,43 @@ Country: 🇧🇷 BR - Brazil
 User: ruann
 AntiVirus: Windows Defender, Kaspersky, Reason Cybersecurity
 Data Information: CK:16204|PW:650|AF:9749|CC:1|TK:37|FB:9|Sites:25|Wallets:3|Apps:0
+```
+
+### `cystack_43090513`
+
+**Attribution confidence:** `high`
+
+**Field keys:**
+`Country`, `IP`
+
+**Filenames:** `Information.txt`
+
+**Sample (sanitized):**
+
+```
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+|______________________________________________________________________________________________________________________|
+| These logs belong to @Ottohelp - Buy daily fresh logshelp - Buy daily fresh logs, if you see these logs elsewhere, you are being scammed and let us know immediately |
+|                                                                                                                      |
+| D           Join: @Ottohelp - Buy daily fresh logsBuy daily fresh logsUP_@Ottohelp - Buy daily fresh logsCLOUD                      _..._             .-'''-.                        D |
+| A  _______  Join: @Ottohelp - Buy daily fresh logsBuy daily fresh logsUP_@Ottohelp - Buy daily fresh logsCLOUD                   .-'_..._''. .---.   '   _    \       _______        A |
+| I  \  ___ `'.            .--.                                .' .'      '.\|   | /   /` '.   \      \  ___ `'.     I |
+| S   ' |--.\  \           |__|     .-.          .-           / .'           |   |.   |     \  '       ' |--.\  \    S |
+| Y   | |    \  '          .--.      \ \        / /          . '             |   ||   '      |  '      | |    \  '   Y |
+|     | |     |  '    __   |  |       \ \      / /           | |             |   |\    \     / /       | |     |  '    |
+| C   | |     |  | .:--.'. |  |     _  \ \    / /            | |             |   | `.   ` ..' /_    _  | |     |  |  C |
+| L   | |     ' .'/ |   \ ||  |   .' |  \ \  / /             . '             |   |    '-...-'`| '  / | | |     ' .'  L |
+| O   | |___.' /' `" __ | ||  |  .   | / \ `  /               \ '.          .|   |           .' | .' | | |___.' /'   O |
+[... truncated; full sample at ``sample.txt`` (approx. 27 more lines) ...]
 ```
 
 ### `cystack_51cd69b2`
