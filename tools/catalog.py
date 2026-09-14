@@ -442,16 +442,17 @@ def validate_catalog(check_generated: bool = True) -> dict[str, int]:
         _validate_family(family_doc, family_path / "family.json")
         family_count += 1
         fp_dir = family_path / "fingerprints"
-        if not fp_dir.is_dir():
-            raise CatalogError("layout", f"{family_path.name} has no fingerprints directory")
-        files = sorted(fp_dir.glob("*.json"))
+        if fp_dir.exists() and not fp_dir.is_dir():
+            raise CatalogError("layout", f"{family_path.name}/fingerprints is not a directory")
+        entries = sorted(fp_dir.iterdir()) if fp_dir.is_dir() else []
+        files = [path for path in entries if path.is_file() and path.suffix == ".json"]
         if not files and family_doc["classification"] == "provisional_cluster":
             raise CatalogError("layout", f"{family_path.name} has no usable fingerprints")
         if family_doc["classification"] == "provisional_cluster" and len(files) != 1:
             raise CatalogError(
                 "layout", f"{family_path.name} must contain exactly one provisional fingerprint"
             )
-        unexpected = [p for p in fp_dir.iterdir() if not p.is_file() or p.suffix != ".json"]
+        unexpected = [p for p in entries if not p.is_file() or p.suffix != ".json"]
         if unexpected:
             raise CatalogError(
                 "layout", f"unexpected fingerprint entry: {unexpected[0].relative_to(ROOT)}"

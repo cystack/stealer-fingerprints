@@ -6,6 +6,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
@@ -14,6 +15,15 @@ import catalog  # noqa: E402
 
 
 class CatalogTests(unittest.TestCase):
+    def zero_fingerprint_known_family(self) -> dict:
+        for family_path in sorted((ROOT / "families").glob("*/family.json")):
+            fingerprints = family_path.parent / "fingerprints"
+            if not any(fingerprints.glob("*.json")):
+                family = catalog.load_json(family_path)
+                if family["classification"] == "known_family":
+                    return family
+        self.fail("catalog contains no known family with zero fingerprints")
+
     def existing_candidate(self) -> dict:
         for family_path in sorted((ROOT / "families").glob("*/family.json")):
             fingerprint_paths = sorted((family_path.parent / "fingerprints").glob("*.json"))
@@ -153,6 +163,67 @@ class CatalogTests(unittest.TestCase):
         counts = catalog.validate_catalog()
         self.assertGreater(counts["families"], 20)
         self.assertGreater(counts["fingerprints"], counts["families"])
+
+    def test_fresh_checkout_without_empty_fingerprint_directory(self) -> None:
+        family = self.zero_fingerprint_known_family()
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            family_path = root / "families" / family["id"]
+            family_path.mkdir(parents=True)
+            (family_path / "family.json").write_text(
+                catalog.dump_json(family), encoding="utf-8"
+            )
+            fingerprint_dir = family_path / "fingerprints"
+            self.assertFalse(fingerprint_dir.exists())
+
+            with mock.patch.multiple(catalog, ROOT=root, FAMILIES=root / "families"):
+                self.assertEqual(
+                    catalog.validate_catalog(check_generated=False),
+                    {"families": 1, "fingerprints": 0},
+                )
+                catalog.build()
+                event = {
+                    "event_type": "catalog_candidate",
+                    "schema_version": "1.0",
+                    "family": {
+                        key: family[key]
+                        for key in (
+                            "id",
+                            "name",
+                            "classification",
+                            "attribution_confidence",
+                        )
+                    },
+                    "fingerprint": {
+                        "panel_brand": "Synthetic catalog regression marker",
+                        "banner_strings": [],
+                        "field_keys": ["hardware id", "operating system", "user name"],
+                        "filenames": [],
+                    },
+                }
+                event_path = root / "candidate.jsonl"
+                event_path.write_text(json.dumps(event) + "\n", encoding="utf-8")
+                result = catalog.ingest(str(event_path))
+
+            self.assertEqual(result["status"], "changed")
+            self.assertEqual(result["added"], 1)
+            self.assertEqual(len(list(fingerprint_dir.glob("*.json"))), 1)
+
+    def test_fingerprints_path_must_be_a_directory_when_present(self) -> None:
+        family = self.zero_fingerprint_known_family()
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            family_path = root / "families" / family["id"]
+            family_path.mkdir(parents=True)
+            (family_path / "family.json").write_text(
+                catalog.dump_json(family), encoding="utf-8"
+            )
+            (family_path / "fingerprints").write_text("invalid", encoding="utf-8")
+
+            with mock.patch.multiple(catalog, ROOT=root, FAMILIES=root / "families"):
+                with self.assertRaises(catalog.CatalogError) as raised:
+                    catalog.validate_catalog(check_generated=False)
+            self.assertEqual(raised.exception.code, "layout")
 
     def test_all_existing_fingerprints_are_idempotent_candidates(self) -> None:
         events = []
