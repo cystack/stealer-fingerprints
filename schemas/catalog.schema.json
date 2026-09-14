@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/cystack/stealer-fingerprints/schemas/catalog.schema.json",
+  "title": "Generated stealer fingerprint catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "schema_version", "families", "fingerprints"],
+  "properties": {
+    "$schema": {"const": "../schemas/catalog.schema.json"},
+    "schema_version": {"const": "1.0"},
+    "families": {"type": "array", "items": {"$ref": "family.schema.json"}},
+    "fingerprints": {"type": "array", "items": {"$ref": "fingerprint.schema.json"}}
+  }
+}

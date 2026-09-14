@@ -1,0 +1,66 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "unattributed-11402ef2470edc70f723adf2ad7cfbb8",
+  "id": "fp_b0661c0af6c2e97221c63493a96745b8",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "build id",
+      "category",
+      "computer",
+      "country",
+      "cpu",
+      "gpu",
+      "hwid",
+      "ip",
+      "language",
+      "local time",
+      "os",
+      "path",
+      "ram",
+      "reserve link",
+      "system",
+      "timezone",
+      "utc time"
+    ],
+    "filenames": [
+      "information.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "build id: <synthetic-value>",
+      "category: <synthetic-value>",
+      "computer: <synthetic-value>",
+      "country: <synthetic-value>",
+      "cpu: <synthetic-value>",
+      "gpu: <synthetic-value>",
+      "hwid: <synthetic-value>",
+      "ip: <synthetic-value>",
+      "language: <synthetic-value>",
+      "local time: <synthetic-value>",
+      "os: <synthetic-value>",
+      "path: <synthetic-value>",
+      "ram: <synthetic-value>",
+      "reserve link: <synthetic-value>",
+      "system: <synthetic-value>",
+      "timezone: <synthetic-value>",
+      "[synthetic filename: information.txt]"
+    ]
+  }
+}

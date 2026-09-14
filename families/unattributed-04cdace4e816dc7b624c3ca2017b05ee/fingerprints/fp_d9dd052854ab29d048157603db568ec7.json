@@ -1,0 +1,65 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "unattributed-04cdace4e816dc7b624c3ca2017b05ee",
+  "id": "fp_d9dd052854ab29d048157603db568ec7",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "antivirus",
+      "build",
+      "city",
+      "country",
+      "cpu",
+      "credit cards",
+      "current language",
+      "discord tokens",
+      "gpu",
+      "hwid",
+      "ip",
+      "is elevated",
+      "isp",
+      "os",
+      "postal",
+      "timezone"
+    ],
+    "filenames": [
+      "information.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "antivirus: <synthetic-value>",
+      "build: <synthetic-value>",
+      "city: <synthetic-value>",
+      "country: <synthetic-value>",
+      "cpu: <synthetic-value>",
+      "credit cards: <synthetic-value>",
+      "current language: <synthetic-value>",
+      "discord tokens: <synthetic-value>",
+      "gpu: <synthetic-value>",
+      "hwid: <synthetic-value>",
+      "ip: <synthetic-value>",
+      "is elevated: <synthetic-value>",
+      "isp: <synthetic-value>",
+      "os: <synthetic-value>",
+      "postal: <synthetic-value>",
+      "timezone: <synthetic-value>",
+      "[synthetic filename: information.txt]"
+    ]
+  }
+}

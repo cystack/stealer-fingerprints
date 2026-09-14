@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [],
+  "attribution_confidence": "unknown",
+  "classification": "provisional_cluster",
+  "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+  "external_references": [],
+  "id": "unattributed-d4ea9a8e4ab11dbd3fe7e0a75ec00f2c",
+  "name": "Unattributed cluster d4ea9a8e4ab11dbd3fe7e0a75ec00f2c",
+  "schema_version": "1.0",
+  "targets": [],
+  "tracking_labels": [
+    "BracketSection Stealer"
+  ]
+}

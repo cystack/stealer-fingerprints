@@ -1,0 +1,68 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "unattributed-2bf71d96ef3cdc621a6a180099124b5c",
+  "id": "fp_1de3b943d4ee6c0446db868fc38d6b31",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "admin group",
+      "computer name",
+      "country",
+      "display resolution",
+      "domain name",
+      "graphics card",
+      "installed ram",
+      "integrity",
+      "ip",
+      "keyboard language",
+      "operation system",
+      "processor",
+      "product key",
+      "system language",
+      "timezone",
+      "user name",
+      "wallpaper hash"
+    ],
+    "filenames": [
+      "system.txt",
+      "userinformation.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "admin group: <synthetic-value>",
+      "computer name: <synthetic-value>",
+      "country: <synthetic-value>",
+      "display resolution: <synthetic-value>",
+      "domain name: <synthetic-value>",
+      "graphics card: <synthetic-value>",
+      "installed ram: <synthetic-value>",
+      "integrity: <synthetic-value>",
+      "ip: <synthetic-value>",
+      "keyboard language: <synthetic-value>",
+      "operation system: <synthetic-value>",
+      "processor: <synthetic-value>",
+      "product key: <synthetic-value>",
+      "system language: <synthetic-value>",
+      "timezone: <synthetic-value>",
+      "user name: <synthetic-value>",
+      "[synthetic filename: system.txt]",
+      "[synthetic filename: userinformation.txt]"
+    ]
+  }
+}

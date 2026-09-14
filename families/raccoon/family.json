@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "Raccoon is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.raccoon"
+    }
+  ],
+  "id": "raccoon",
+  "name": "Raccoon",
+  "schema_version": "1.0",
+  "targets": [],
+  "tracking_labels": []
+}

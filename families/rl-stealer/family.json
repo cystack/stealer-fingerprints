@@ -1,0 +1,34 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "44Caliber variant",
+    "Ades",
+    "StormKitty variant"
+  ],
+  "attribution_confidence": "medium",
+  "classification": "known_family",
+  "description": "RL Stealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://github.com/MalBeacon/what-is-this-stealer"
+    },
+    {
+      "url": "https://github.com/razexgod/44CALIBER"
+    },
+    {
+      "url": "https://www.pcrisk.com/removal-guides/25759-rl-stealer-malware"
+    }
+  ],
+  "id": "rl-stealer",
+  "name": "RL Stealer",
+  "schema_version": "1.0",
+  "targets": [
+    "Browser saved credentials, cookies, autofill, history",
+    "Clipboard contents",
+    "Crypto wallet extensions and desktop clients",
+    "Desktop screenshot",
+    "Discord, Telegram, Steam, Minecraft session data",
+    "FTP and VPN client credentials"
+  ],
+  "tracking_labels": []
+}

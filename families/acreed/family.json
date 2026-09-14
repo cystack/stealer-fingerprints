@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "Acreed Stealer"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "Acreed is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://www.kaspersky.com/blog/acreed-stealer/"
+    }
+  ],
+  "id": "acreed",
+  "name": "Acreed",
+  "schema_version": "1.0",
+  "targets": [
+    "Browser saved credentials, cookies, autofill",
+    "Crypto wallet extensions and desktop clients",
+    "Discord and Telegram session data",
+    "Document grabber for sensitive file types"
+  ],
+  "tracking_labels": []
+}

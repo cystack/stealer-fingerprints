@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "VidarStealer"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "Vidar is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://usrlnk.io/vidar"
+    },
+    {
+      "url": "https://www.kaspersky.com/resource-center/threats/vidar-stealer"
+    }
+  ],
+  "id": "vidar",
+  "name": "Vidar",
+  "schema_version": "1.0",
+  "targets": [
+    "Browser saved credentials, cookies, autofill, history",
+    "Crypto wallet extensions and desktop clients",
+    "Documents and screenshots from the desktop",
+    "FTP, email, and VPN client configurations",
+    "Telegram and Discord session data"
+  ],
+  "tracking_labels": []
+}

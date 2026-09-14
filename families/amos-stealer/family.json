@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "AMOS",
+    "Atomic Mac",
+    "Atomic Stealer",
+    "Atomic macOS Stealer"
+  ],
+  "attribution_confidence": "medium",
+  "classification": "known_family",
+  "description": "AMOS Stealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://cyble.com/blog/threat-actor-selling-new-atomic-macos-amos-stealer-on-telegram/"
+    },
+    {
+      "url": "https://github.com/MalBeacon/what-is-this-stealer"
+    },
+    {
+      "url": "https://moonlock.com/atomic-macos-stealer"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/new-atomic-macos-info-stealing-malware-targets-50-crypto-wallets/"
+    },
+    {
+      "url": "https://www.esentire.com/blog/fake-deepseek-site-infects-mac-users-with-atomic-stealer"
+    },
+    {
+      "url": "https://www.picussecurity.com/resource/blog/atomic-stealer-amos-macos-threat-analysis"
+    },
+    {
+      "url": "https://www.sentinelone.com/blog/atomic-stealer-threat-actor-spawns-second-variant-of-macos-malware-sold-on-telegram/"
+    }
+  ],
+  "id": "amos-stealer",
+  "name": "AMOS Stealer",
+  "schema_version": "1.0",
+  "targets": [
+    "Apple Notes content and Telegram session files",
+    "Browser saved credentials, cookies, autofill, history",
+    "Crypto wallet extensions (MetaMask, Phantom, Coin98, Trust Wallet, 50+ targeted)",
+    "Desktop crypto wallets (Electrum, Exodus, Atomic, Wasabi, Ledger Live, Trezor Suite)",
+    "Documents and Desktop file grabber (.txt, .pdf, .docx, .wallet, .key)",
+    "macOS Keychain database and login password (AppleScript prompt)"
+  ],
+  "tracking_labels": []
+}

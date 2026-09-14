@@ -1,0 +1,25 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "Cthulhu macOS Stealer"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "Cthulhu Stealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://www.darktrace.com/blog/from-the-depths-analyzing-the-cthulhu-stealer-malware-for-macos"
+    }
+  ],
+  "id": "cthulhu-stealer",
+  "name": "Cthulhu Stealer",
+  "schema_version": "1.0",
+  "targets": [
+    "Browser saved credentials on macOS",
+    "Crypto wallet desktop clients",
+    "System inventory and hardware fingerprint",
+    "Telegram session data",
+    "macOS Keychain entries"
+  ],
+  "tracking_labels": []
+}

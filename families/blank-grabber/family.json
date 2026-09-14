@@ -1,0 +1,34 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "Blank-c/Blank-Grabber",
+    "BlankGrabber"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "Blank Grabber is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://any.run/malware-trends/blankgrabber/"
+    },
+    {
+      "url": "https://github.com/Blank-c/Blank-Grabber"
+    },
+    {
+      "url": "https://www.splunk.com/en_us/blog/security/blankgrabber-trojan-stealer-analysis-detection.html"
+    }
+  ],
+  "id": "blank-grabber",
+  "name": "Blank Grabber",
+  "schema_version": "1.0",
+  "targets": [
+    "Browser saved credentials, cookies, history, autofill",
+    "Crypto wallet desktop clients (Bitcoin, Ethereum, Exodus, others)",
+    "Discord and Telegram session tokens",
+    "Game launcher sessions (Epic, Steam, Uplay, Battle.net, Growtopia)",
+    "Roblox cookies and Minecraft sessions",
+    "System hardware and locale inventory",
+    "Wifi passwords and webcam captures"
+  ],
+  "tracking_labels": []
+}

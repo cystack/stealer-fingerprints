@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "DeerStealer",
+    "X-FILES",
+    "X-Files Stealer"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "XFiles is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://any.run/malware-trends/xfiles/"
+    },
+    {
+      "url": "https://cyberint.com/blog/research/xfiles-stealer-campaign-abusing-follina/"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/xfiles-info-stealing-malware-adds-support-for-follina-delivery/"
+    },
+    {
+      "url": "https://www.esentire.com/blog/dont-get-caught-in-the-headlights-deerstealer-analysis"
+    },
+    {
+      "url": "https://www.zscaler.com/blogs/security-research/x-files-stealer-evolution-analysis-and-comparison-study"
+    }
+  ],
+  "id": "x-files",
+  "name": "XFiles",
+  "schema_version": "1.0",
+  "targets": [
+    "80+ browser-based crypto wallet extensions",
+    "Browser saved credentials and cookies (Chromium and Gecko)",
+    "Crypto wallet desktop clients",
+    "Messenger session data (Telegram, Discord, Steam)",
+    "VPN, FTP, RDP client configs"
+  ],
+  "tracking_labels": []
+}

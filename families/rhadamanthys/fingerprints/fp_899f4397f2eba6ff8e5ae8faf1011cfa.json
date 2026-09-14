@@ -1,0 +1,67 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "rhadamanthys",
+  "id": "fp_899f4397f2eba6ff8e5ae8faf1011cfa",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "computer name",
+      "country",
+      "display resolution",
+      "domain name",
+      "hwid",
+      "installed ram",
+      "ip",
+      "keyboard language",
+      "log date",
+      "operation system",
+      "processor",
+      "system language",
+      "timezone",
+      "traffic",
+      "user language",
+      "user name",
+      "video card",
+      "wallpaper hash"
+    ],
+    "filenames": [
+      "userinformation.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "computer name: <synthetic-value>",
+      "country: <synthetic-value>",
+      "display resolution: <synthetic-value>",
+      "domain name: <synthetic-value>",
+      "hwid: <synthetic-value>",
+      "installed ram: <synthetic-value>",
+      "ip: <synthetic-value>",
+      "keyboard language: <synthetic-value>",
+      "log date: <synthetic-value>",
+      "operation system: <synthetic-value>",
+      "processor: <synthetic-value>",
+      "system language: <synthetic-value>",
+      "timezone: <synthetic-value>",
+      "traffic: <synthetic-value>",
+      "user language: <synthetic-value>",
+      "user name: <synthetic-value>",
+      "[synthetic filename: userinformation.txt]"
+    ]
+  }
+}

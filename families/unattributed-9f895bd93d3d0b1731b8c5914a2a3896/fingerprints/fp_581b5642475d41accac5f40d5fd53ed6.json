@@ -1,0 +1,63 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "unattributed-9f895bd93d3d0b1731b8c5914a2a3896",
+  "id": "fp_581b5642475d41accac5f40d5fd53ed6",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "admin rights",
+      "build comment",
+      "build id",
+      "build path",
+      "build version",
+      "cpu",
+      "geo",
+      "gpu",
+      "hwid",
+      "ip",
+      "memory",
+      "os",
+      "pc name",
+      "user name",
+      "user time"
+    ],
+    "filenames": [
+      "userinformation.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "admin rights: <synthetic-value>",
+      "build comment: <synthetic-value>",
+      "build id: <synthetic-value>",
+      "build path: <synthetic-value>",
+      "build version: <synthetic-value>",
+      "cpu: <synthetic-value>",
+      "geo: <synthetic-value>",
+      "gpu: <synthetic-value>",
+      "hwid: <synthetic-value>",
+      "ip: <synthetic-value>",
+      "memory: <synthetic-value>",
+      "os: <synthetic-value>",
+      "pc name: <synthetic-value>",
+      "user name: <synthetic-value>",
+      "user time: <synthetic-value>",
+      "[synthetic filename: userinformation.txt]"
+    ]
+  }
+}

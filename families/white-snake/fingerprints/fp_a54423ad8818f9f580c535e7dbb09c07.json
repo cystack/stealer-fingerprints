@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "white-snake",
+  "id": "fp_a54423ad8818f9f580c535e7dbb09c07",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "city",
+      "country",
+      "cpu",
+      "gpu",
+      "hwid",
+      "installed antivirus",
+      "internet provider",
+      "ip",
+      "ram",
+      "region",
+      "started as admin",
+      "system",
+      "system time",
+      "user name"
+    ],
+    "filenames": [
+      "pc_info.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "city: <synthetic-value>",
+      "country: <synthetic-value>",
+      "cpu: <synthetic-value>",
+      "gpu: <synthetic-value>",
+      "hwid: <synthetic-value>",
+      "installed antivirus: <synthetic-value>",
+      "internet provider: <synthetic-value>",
+      "ip: <synthetic-value>",
+      "ram: <synthetic-value>",
+      "region: <synthetic-value>",
+      "started as admin: <synthetic-value>",
+      "system: <synthetic-value>",
+      "system time: <synthetic-value>",
+      "user name: <synthetic-value>",
+      "[synthetic filename: pc_info.txt]"
+    ]
+  }
+}

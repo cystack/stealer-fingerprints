@@ -1,0 +1,57 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "stealerium",
+  "id": "fp_0957e539a23ad945cb46ab9402087266",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "antivirus",
+      "cpu",
+      "date",
+      "external ip",
+      "gateway ip",
+      "gpu",
+      "internal ip",
+      "language",
+      "power",
+      "ram",
+      "screen",
+      "system"
+    ],
+    "filenames": [
+      "information.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "antivirus: <synthetic-value>",
+      "cpu: <synthetic-value>",
+      "date: <synthetic-value>",
+      "external ip: <synthetic-value>",
+      "gateway ip: <synthetic-value>",
+      "gpu: <synthetic-value>",
+      "internal ip: <synthetic-value>",
+      "language: <synthetic-value>",
+      "power: <synthetic-value>",
+      "ram: <synthetic-value>",
+      "screen: <synthetic-value>",
+      "system: <synthetic-value>",
+      "[synthetic filename: information.txt]"
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "unattributed-5fde45ff48ac01ea618406464031a9e2",
+  "id": "fp_d7e870827e553c18be30d4363b64f417",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "clipboard",
+      "cpu name",
+      "default gateway",
+      "external ip",
+      "hwid",
+      "input iso",
+      "internal ip",
+      "logical cores",
+      "machine",
+      "os arch",
+      "os build",
+      "os product",
+      "ram available (mb)",
+      "ram total (mb)",
+      "user",
+      "user domain"
+    ],
+    "filenames": [
+      "information.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "clipboard: <synthetic-value>",
+      "cpu name: <synthetic-value>",
+      "default gateway: <synthetic-value>",
+      "external ip: <synthetic-value>",
+      "hwid: <synthetic-value>",
+      "input iso: <synthetic-value>",
+      "internal ip: <synthetic-value>",
+      "logical cores: <synthetic-value>",
+      "machine: <synthetic-value>",
+      "os arch: <synthetic-value>",
+      "os build: <synthetic-value>",
+      "os product: <synthetic-value>",
+      "ram available (mb): <synthetic-value>",
+      "ram total (mb): <synthetic-value>",
+      "user: <synthetic-value>",
+      "user domain: <synthetic-value>",
+      "[synthetic filename: information.txt]"
+    ]
+  }
+}

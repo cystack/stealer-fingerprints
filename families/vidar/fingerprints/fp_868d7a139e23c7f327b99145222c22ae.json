@@ -1,0 +1,67 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "vidar",
+  "id": "fp_868d7a139e23c7f327b99145222c22ae",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "av",
+      "computer name",
+      "country",
+      "date",
+      "display resolution",
+      "guid",
+      "hwid",
+      "install date",
+      "ip",
+      "keyboard languages",
+      "local time",
+      "path",
+      "processor",
+      "ram",
+      "timezone",
+      "user name",
+      "windows",
+      "work dir"
+    ],
+    "filenames": [
+      "system.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "av: <synthetic-value>",
+      "computer name: <synthetic-value>",
+      "country: <synthetic-value>",
+      "date: <synthetic-value>",
+      "display resolution: <synthetic-value>",
+      "guid: <synthetic-value>",
+      "hwid: <synthetic-value>",
+      "install date: <synthetic-value>",
+      "ip: <synthetic-value>",
+      "keyboard languages: <synthetic-value>",
+      "local time: <synthetic-value>",
+      "path: <synthetic-value>",
+      "processor: <synthetic-value>",
+      "ram: <synthetic-value>",
+      "timezone: <synthetic-value>",
+      "user name: <synthetic-value>",
+      "[synthetic filename: system.txt]"
+    ]
+  }
+}

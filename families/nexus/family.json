@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "Nexus Stealer"
+  ],
+  "attribution_confidence": "medium",
+  "classification": "known_family",
+  "description": "Nexus is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://flare.io/learn/resources/cybercrime-favorite-target-gamers"
+    },
+    {
+      "url": "https://fr3d.hk/blog/nexus-just-another-stealer"
+    }
+  ],
+  "id": "nexus",
+  "name": "Nexus",
+  "schema_version": "1.0",
+  "targets": [
+    "CPU, GPU, and memory inventory",
+    "IP address and country geolocation",
+    "Username, hostname, and machine identifiers",
+    "Windows version and OS language"
+  ],
+  "tracking_labels": []
+}

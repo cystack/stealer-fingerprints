@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "PXAStealer"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "PXA Stealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://blog.talosintelligence.com/pxa-stealer/"
+    },
+    {
+      "url": "https://socradar.io/threat-actor-spotlight-pxa-stealer/"
+    }
+  ],
+  "id": "pxa-stealer",
+  "name": "PXA Stealer",
+  "schema_version": "1.0",
+  "targets": [
+    "Browser saved credentials and cookies",
+    "Crypto wallet extensions and desktop clients",
+    "Documents matching specific filename patterns",
+    "Telegram, Discord, Steam session tokens",
+    "VPN and FTP client configurations"
+  ],
+  "tracking_labels": []
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "Ailurophile Stealer"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "Ailurophile is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://blog.gdatasoftware.com/2024/08/38005-ailurophile-infostealer"
+    },
+    {
+      "url": "https://github.com/ail-project/ail-yara-rules/blob/master/rules/stealer/ailurophile.yara"
+    },
+    {
+      "url": "https://www.cyfirma.com/research/ailurophile-stealer/"
+    }
+  ],
+  "id": "ailurophile",
+  "name": "Ailurophile",
+  "schema_version": "1.0",
+  "targets": [
+    "Browser saved credentials, cookies, autofill, history",
+    "Credit card data from browser autofill",
+    "Crypto wallet extensions and desktop clients",
+    "Generic file grabber driven by configurable keyword and extension lists"
+  ],
+  "tracking_labels": []
+}

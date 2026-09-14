@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "SHub",
+    "SHub Reaper"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "SHub Stealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://securitylabs.datadoghq.com/articles/tech-impersonators-clickfix-and-macos-infostealers/"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/shub-macos-infostealer-variant-spoofs-apple-security-updates/"
+    },
+    {
+      "url": "https://www.helpnetsecurity.com/2026/05/19/shub-reaper-macos-infostealer-apple-google-microsoft/"
+    },
+    {
+      "url": "https://www.malwarebytes.com/blog/threat-intel/2026/03/fake-cleanmymac-site-installs-shub-stealer-and-backdoors-crypto-wallets"
+    },
+    {
+      "url": "https://www.sentinelone.com/blog/shub-reaper-macos-stealer-spoofs-apple-google-and-microsoft-in-a-single-attack-chain/"
+    }
+  ],
+  "id": "s-hub-stealer",
+  "name": "SHub Stealer",
+  "schema_version": "1.0",
+  "targets": [
+    "Browser saved credentials, cookies, autofill",
+    "Cryptocurrency wallet apps and browser extensions",
+    "Developer configuration files and Notes",
+    "On-screen prompted login credentials (osascript dialog)",
+    "Telegram session files",
+    "iCloud session data",
+    "macOS Keychain entries"
+  ],
+  "tracking_labels": []
+}

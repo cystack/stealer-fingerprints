@@ -1,0 +1,35 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "Mac.c",
+    "MacSync Stealer"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "MacSync is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://malware.news/t/mentalpositive-s-new-macos-stealer-amos-repackaged-or-a-new-cyber-threat/96207"
+    },
+    {
+      "url": "https://moonlock.com/new-mac-stealer-spreading"
+    },
+    {
+      "url": "https://www.cisecurity.org/insights/blog/macsync-stealer-campaign-impacting-us-sltt-macos-users"
+    },
+    {
+      "url": "https://www.jamf.com/blog/macsync-stealer-evolution-code-signed-swift-malware-analysis/"
+    }
+  ],
+  "id": "mac-sync",
+  "name": "MacSync",
+  "schema_version": "1.0",
+  "targets": [
+    "Browser saved credentials (Chrome, Safari, Firefox)",
+    "Crypto wallet desktop clients (Electrum, Exodus, etc.)",
+    "System profile information for victim fingerprinting",
+    "Telegram and Discord session data on macOS",
+    "macOS Keychain entries"
+  ],
+  "tracking_labels": []
+}

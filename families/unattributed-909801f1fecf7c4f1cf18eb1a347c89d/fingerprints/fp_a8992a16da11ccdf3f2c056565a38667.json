@@ -1,0 +1,49 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "unattributed-909801f1fecf7c4f1cf18eb1a347c89d",
+  "id": "fp_a8992a16da11ccdf3f2c056565a38667",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "city",
+      "country",
+      "display resolution",
+      "ip address",
+      "keyboard language",
+      "postal code",
+      "region",
+      "timezone"
+    ],
+    "filenames": [
+      "userinformation.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "city: <synthetic-value>",
+      "country: <synthetic-value>",
+      "display resolution: <synthetic-value>",
+      "ip address: <synthetic-value>",
+      "keyboard language: <synthetic-value>",
+      "postal code: <synthetic-value>",
+      "region: <synthetic-value>",
+      "timezone: <synthetic-value>",
+      "[synthetic filename: userinformation.txt]"
+    ]
+  }
+}

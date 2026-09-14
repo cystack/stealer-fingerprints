@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "RedLine",
+    "RedLineStealer"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "Redline is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://flare.io/learn/resources/blog/redline-stealer-malware/"
+    }
+  ],
+  "id": "redline",
+  "name": "Redline",
+  "schema_version": "1.0",
+  "targets": [
+    "Browser cookies and session storage",
+    "Browser saved credentials",
+    "Crypto wallet desktop clients and browser extensions",
+    "Discord and Telegram session tokens",
+    "FTP and VPN client configs"
+  ],
+  "tracking_labels": []
+}

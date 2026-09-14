@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "unattributed-6d0336d10095a3b6f19dde58e263b6bb",
+  "id": "fp_3055766f04fff20af4568a5b47b89e9d",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "anti-sandbox",
+      "available ram",
+      "cpu cores",
+      "disk size",
+      "hypervisor bit (cpuid)",
+      "mode",
+      "os",
+      "process count",
+      "ram",
+      "recent files",
+      "screen resolution",
+      "system uptime",
+      "total ram",
+      "visible windows"
+    ],
+    "filenames": [
+      "system_info.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "anti-sandbox: <synthetic-value>",
+      "available ram: <synthetic-value>",
+      "cpu cores: <synthetic-value>",
+      "disk size: <synthetic-value>",
+      "hypervisor bit (cpuid): <synthetic-value>",
+      "mode: <synthetic-value>",
+      "os: <synthetic-value>",
+      "process count: <synthetic-value>",
+      "ram: <synthetic-value>",
+      "recent files: <synthetic-value>",
+      "screen resolution: <synthetic-value>",
+      "system uptime: <synthetic-value>",
+      "total ram: <synthetic-value>",
+      "visible windows: <synthetic-value>",
+      "[synthetic filename: system_info.txt]"
+    ]
+  }
+}

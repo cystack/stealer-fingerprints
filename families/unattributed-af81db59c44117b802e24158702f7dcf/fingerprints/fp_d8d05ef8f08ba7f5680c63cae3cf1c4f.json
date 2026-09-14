@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "unattributed-af81db59c44117b802e24158702f7dcf",
+  "id": "fp_d8d05ef8f08ba7f5680c63cae3cf1c4f",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "country",
+      "graphics/displays",
+      "hardware",
+      "ip",
+      "software"
+    ],
+    "filenames": [
+      "userinformation.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "country: <synthetic-value>",
+      "graphics/displays: <synthetic-value>",
+      "hardware: <synthetic-value>",
+      "ip: <synthetic-value>",
+      "software: <synthetic-value>",
+      "[synthetic filename: userinformation.txt]"
+    ]
+  }
+}

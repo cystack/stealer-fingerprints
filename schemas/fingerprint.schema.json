@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/cystack/stealer-fingerprints/schemas/fingerprint.schema.json",
+  "title": "Immutable structural log-format fingerprint",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "schema_version", "id", "family_id", "status", "scope", "sharing", "quality", "signature", "synthetic_example"],
+  "properties": {
+    "$schema": {"const": "../../../schemas/fingerprint.schema.json"},
+    "schema_version": {"const": "1.0"},
+    "id": {"type": "string", "pattern": "^fp_[0-9a-f]{32}$"},
+    "family_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "status": {"const": "active"},
+    "scope": {"const": "exported_log_format"},
+    "sharing": {"const": "TLP:CLEAR"},
+    "quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["independent_signal_types", "independent_signal_count", "yara_eligible"],
+      "properties": {
+        "independent_signal_types": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"enum": ["marker", "field_keys", "filenames"]}
+        },
+        "independent_signal_count": {"type": "integer", "minimum": 1, "maximum": 3},
+        "yara_eligible": {"type": "boolean"}
+      }
+    },
+    "signature": {"$ref": "#/$defs/signature"},
+    "synthetic_example": {"$ref": "#/$defs/syntheticExample"}
+  },
+  "$defs": {
+    "stringSet": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1, "maxLength": 240, "pattern": "^[^\\r\\n\\u0000]+$"}
+    },
+    "signature": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["panel_brand", "banner_strings", "field_keys", "filenames"],
+      "properties": {
+        "panel_brand": {"type": ["string", "null"], "minLength": 1, "maxLength": 120},
+        "banner_strings": {"$ref": "#/$defs/stringSet"},
+        "field_keys": {
+          "allOf": [{"$ref": "#/$defs/stringSet"}],
+          "description": "Canonical case-folded structural labels."
+        },
+        "filenames": {
+          "allOf": [{"$ref": "#/$defs/stringSet"}],
+          "description": "Canonical case-insensitive filename patterns; dynamic values are forbidden."
+        }
+      },
+      "anyOf": [
+        {
+          "properties": {
+            "panel_brand": {"type": "string"},
+            "field_keys": {"minItems": 3}
+          }
+        },
+        {
+          "properties": {
+            "banner_strings": {"minItems": 1},
+            "field_keys": {"minItems": 3}
+          }
+        },
+        {
+          "properties": {
+            "panel_brand": {"type": "null"},
+            "banner_strings": {"maxItems": 0},
+            "field_keys": {"minItems": 5},
+            "filenames": {"minItems": 1}
+          }
+        }
+      ]
+    },
+    "syntheticExample": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["declaration", "kind", "lines"],
+      "properties": {
+        "declaration": {"const": "SYNTHETIC"},
+        "kind": {"const": "structure_only"},
+        "lines": {
+          "type": "array",
+          "maxItems": 22,
+          "items": {"type": "string", "pattern": "^[^\\r\\n\\u0000]*$"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "ailurophile",
+  "id": "fp_49e3c5d055e0c56ff92ebe8672c5cc26",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "chrome default - version",
+      "country",
+      "edge default - version",
+      "file path",
+      "ip",
+      "mac address",
+      "main path",
+      "pc type",
+      "screen resolution"
+    ],
+    "filenames": [
+      "info.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "chrome default - version: <synthetic-value>",
+      "country: <synthetic-value>",
+      "edge default - version: <synthetic-value>",
+      "file path: <synthetic-value>",
+      "ip: <synthetic-value>",
+      "mac address: <synthetic-value>",
+      "main path: <synthetic-value>",
+      "pc type: <synthetic-value>",
+      "screen resolution: <synthetic-value>",
+      "[synthetic filename: info.txt]"
+    ]
+  }
+}

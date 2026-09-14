@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this catalog, please cite the repository and the exact commit you used."
+title: "Stealer Fingerprints"
+type: dataset
+authors:
+  - name: "CyStack Threat Intelligence"
+repository-code: "https://github.com/cystack/stealer-fingerprints"
+url: "https://github.com/cystack/stealer-fingerprints"
+license: Apache-2.0
+version: 1.0.0
+date-released: 2026-09-14
+keywords:
+  - threat-intelligence
+  - information-stealer
+  - structural-fingerprint

@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "Dark Crystal RAT",
+    "DarkCrystal RAT",
+    "dcRAT"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "DCRat is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://any.run/malware-trends/dcrat/"
+    },
+    {
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/analyzing-dark-crystal-rat-backdoor"
+    },
+    {
+      "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.dcrat"
+    },
+    {
+      "url": "https://thehackernews.com/2025/03/cert-ua-warns-dark-crystal-rat-targets.html"
+    },
+    {
+      "url": "https://www.splunk.com/en_us/blog/security/dark-crystal-rat-agent-deep-dive.html"
+    }
+  ],
+  "id": "dc-rat",
+  "name": "DCRat",
+  "schema_version": "1.0",
+  "targets": [
+    "Browser saved credentials and cookies (plugin modules: Plugin_AutoStealer)",
+    "Clipboard contents",
+    "Installed antivirus and firewall product detection",
+    "Keystroke capture (Plugin_AutoKeylogger)",
+    "Remote shell command execution",
+    "WMI-enumerated machine fingerprint (motherboard, BIOS, monitors)"
+  ],
+  "tracking_labels": []
+}

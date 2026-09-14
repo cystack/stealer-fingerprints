@@ -1,0 +1,53 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "unattributed-3229b5d7426a10b0114f25c37776325d",
+  "id": "fp_f45f38a94073069e50bffa90b58cc817",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "cpu",
+      "disk",
+      "display resolution",
+      "gpu",
+      "installed software",
+      "keyboard languages",
+      "os",
+      "process",
+      "ram",
+      "uid"
+    ],
+    "filenames": [
+      "_information.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "cpu: <synthetic-value>",
+      "disk: <synthetic-value>",
+      "display resolution: <synthetic-value>",
+      "gpu: <synthetic-value>",
+      "installed software: <synthetic-value>",
+      "keyboard languages: <synthetic-value>",
+      "os: <synthetic-value>",
+      "process: <synthetic-value>",
+      "ram: <synthetic-value>",
+      "uid: <synthetic-value>",
+      "[synthetic filename: _information.txt]"
+    ]
+  }
+}

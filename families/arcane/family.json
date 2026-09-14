@@ -1,0 +1,38 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "Arcane Stealer",
+    "VGS Stealer (predecessor)"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "Arcane is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://cyberinsider.com/new-arcane-stealer-malware-targets-vpn-accounts-via-youtube-cheats/"
+    },
+    {
+      "url": "https://securelist.com/arcane-stealer/115919/"
+    },
+    {
+      "url": "https://thehackernews.com/2025/03/youtube-game-cheats-spread-arcane.html"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/new-arcane-infostealer-infects-youtube-discord-users-via-game-cheats/"
+    }
+  ],
+  "id": "arcane",
+  "name": "Arcane",
+  "schema_version": "1.0",
+  "targets": [
+    "Browser DPAPI keys cracked via embedded xaitax utility",
+    "Browser saved credentials, cookies, autofill, history (Chromium and Gecko)",
+    "Cryptocurrency wallets",
+    "Gaming client tokens (Riot Client, Epic, Steam, Ubisoft Connect, Roblox, Battle.net)",
+    "Network utility configs (ngrok, Playit, Cyberduck, FileZilla, DynDNS)",
+    "System hardware inventory and saved Wi-Fi networks",
+    "Telegram and Discord session data",
+    "VPN client configs (OpenVPN, Mullvad, NordVPN, IPVanish, Surfshark, Proton, hide.me, PIA, CyberGhost, ExpressVPN)"
+  ],
+  "tracking_labels": []
+}

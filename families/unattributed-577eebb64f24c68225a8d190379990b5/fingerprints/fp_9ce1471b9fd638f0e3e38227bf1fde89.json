@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "unattributed-577eebb64f24c68225a8d190379990b5",
+  "id": "fp_9ce1471b9fd638f0e3e38227bf1fde89",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "antivirus",
+      "browser data",
+      "country",
+      "ip",
+      "user"
+    ],
+    "filenames": [
+      "information.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "antivirus: <synthetic-value>",
+      "browser data: <synthetic-value>",
+      "country: <synthetic-value>",
+      "ip: <synthetic-value>",
+      "user: <synthetic-value>",
+      "[synthetic filename: information.txt]"
+    ]
+  }
+}

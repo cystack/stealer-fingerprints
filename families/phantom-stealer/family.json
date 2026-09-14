@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "Phantom Stealer",
+    "Phantom stealer v2.0"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "Phantom Stealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://darkatlas.io/blog/phantom-stealer-analysis-inside-the-two-layer-attack-chain-hidden-behind-a-windows-dll"
+    },
+    {
+      "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.phantom_stealer"
+    },
+    {
+      "url": "https://www.group-ib.com/blog/phantom-stealer-credential-theft/"
+    },
+    {
+      "url": "https://www.phantomsoftwares.site/home"
+    },
+    {
+      "url": "https://www.proofpoint.com/us/blog/threat-insight/not-safe-work-tracking-and-investigating-stealerium-and-phantom-infostealers"
+    }
+  ],
+  "id": "phantom-stealer",
+  "name": "Phantom Stealer",
+  "schema_version": "1.0",
+  "targets": [
+    "Banking / crypto / adult site domain detection summary",
+    "Browser saved credentials, cookies, autofill, history, bookmarks",
+    "Crypto wallet extensions and desktop wallet clients",
+    "Desktop screenshot capture",
+    "Discord and Telegram session data (Tdata)",
+    "Network info (gateway, internal, external IP)",
+    "System hardware (CPU, GPU, RAM, screen, webcam, power) inventory",
+    "Windows product key extraction"
+  ],
+  "tracking_labels": []
+}

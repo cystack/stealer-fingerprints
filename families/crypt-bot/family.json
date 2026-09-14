@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "Crypt Bot",
+    "CryptBot Stealer"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "CryptBot is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://any.run/malware-trends/cryptbot/"
+    },
+    {
+      "url": "https://fr3d.hk/blog/cryptbot-too-good-to-be-true"
+    },
+    {
+      "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.cryptbot"
+    },
+    {
+      "url": "https://research.openanalysis.net/cryptbot/botnet/yara/config/2024/12/06/cryptbot2.html"
+    },
+    {
+      "url": "https://www.deepinstinct.com/blog/cryptbot-how-free-becomes-a-high-price-to-pay"
+    }
+  ],
+  "id": "crypt-bot",
+  "name": "CryptBot",
+  "schema_version": "1.0",
+  "targets": [
+    "Browser cookies and autofill data",
+    "Browser saved credentials (Chromium and Gecko)",
+    "Cryptocurrency wallet files and browser extensions",
+    "Saved form data",
+    "Screenshot of the desktop",
+    "System hardware and locale inventory"
+  ],
+  "tracking_labels": []
+}

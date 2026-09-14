@@ -1,0 +1,37 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "PureLog Stealer",
+    "PureLogStealer",
+    "win.purelogs"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "PureLogs is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://any.run/malware-trends/purelogs/"
+    },
+    {
+      "url": "https://flashpoint.io/blog/purelogs-low-cost-infostealer-high-impact-threat/"
+    },
+    {
+      "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.purelogs"
+    },
+    {
+      "url": "https://www.swisspost-cybersecurity.ch/news/purelogs-infostealer-analysis-dont-judge-a-png-by-its-header"
+    }
+  ],
+  "id": "pure-logs",
+  "name": "PureLogs",
+  "schema_version": "1.0",
+  "targets": [
+    "Browser extension list and metadata",
+    "Browser saved credentials, cookies, autofill, history",
+    "Clipboard contents",
+    "Crypto wallet extensions and desktop clients",
+    "Outlook and other application data",
+    "System hardware and locale inventory"
+  ],
+  "tracking_labels": []
+}

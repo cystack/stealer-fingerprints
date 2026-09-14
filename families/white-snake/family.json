@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "WhiteSnake Stealer"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "WhiteSnake is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://socradar.io/whitesnake-stealer-malware-analysis/"
+    },
+    {
+      "url": "https://www.cyfirma.com/research/whitesnake-stealer/"
+    }
+  ],
+  "id": "white-snake",
+  "name": "WhiteSnake",
+  "schema_version": "1.0",
+  "targets": [
+    "2FA codes from authenticator apps",
+    "Browser saved credentials and cookies",
+    "Crypto wallet extensions and desktop clients",
+    "Discord, Telegram, Steam session data",
+    "Email and FTP client credentials"
+  ],
+  "tracking_labels": []
+}

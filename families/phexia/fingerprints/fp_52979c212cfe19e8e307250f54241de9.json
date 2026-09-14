@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "phexia",
+  "id": "fp_52979c212cfe19e8e307250f54241de9",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "build",
+      "graphics/displays",
+      "hardware",
+      "ip address",
+      "password",
+      "software"
+    ],
+    "filenames": [
+      "userinformation.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "build: <synthetic-value>",
+      "graphics/displays: <synthetic-value>",
+      "hardware: <synthetic-value>",
+      "ip address: <synthetic-value>",
+      "password: <synthetic-value>",
+      "software: <synthetic-value>",
+      "[synthetic filename: userinformation.txt]"
+    ]
+  }
+}

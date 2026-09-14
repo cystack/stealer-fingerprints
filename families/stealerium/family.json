@@ -1,0 +1,38 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "Stealerium v3.5.2"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "Stealerium is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.stealerium"
+    },
+    {
+      "url": "https://securityscorecard.com/wp-content/uploads/2024/01/Whitepaper-A-Detailed-Analysis-Of-A-New-Stealer-Called-Stealerium-.pdf"
+    },
+    {
+      "url": "https://www.proofpoint.com/us/blog/threat-insight/not-safe-work-tracking-and-investigating-stealerium-and-phantom-infostealers"
+    },
+    {
+      "url": "https://www.uptycs.com/blog/threat-research-report-team/understanding-stealerium-malware-and-its-evasion-techniques"
+    }
+  ],
+  "id": "stealerium",
+  "name": "Stealerium",
+  "schema_version": "1.0",
+  "targets": [
+    "Browser saved credentials, cookies, autofill, history",
+    "Crypto wallet desktop clients and browser extensions",
+    "Desktop and webcam screenshot capture",
+    "Discord, Telegram, Skype, Pidgin, Outlook, Element, Signal, Tox session data",
+    "File grabber configurable by extension and folder",
+    "Steam, Minecraft, Epic, Uplay, Growtopia session tokens",
+    "VPN client configurations",
+    "Wi-Fi profiles and saved passwords via netsh",
+    "Windows product key extraction"
+  ],
+  "tracking_labels": []
+}

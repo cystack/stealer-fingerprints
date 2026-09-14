@@ -1,0 +1,34 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "Aura Stealer",
+    "AuraStealer"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "AuraStealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.aurastealer"
+    },
+    {
+      "url": "https://www.gendigital.com/blog/insights/research/defeating-aurastealer-obfuscation"
+    },
+    {
+      "url": "https://www.intrinsec.com/en/analysis-of-aurastealer-an-emerging-infostealer/"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Trojan:MSIL/AuraStealer.AUKB!MTB&ThreatID=2147957435"
+    }
+  ],
+  "id": "aura-stealer",
+  "name": "AuraStealer",
+  "schema_version": "1.0",
+  "targets": [
+    "Authenticator and 2FA app data (70+ apps)",
+    "Browser saved credentials, cookies, autofill (110+ browsers)",
+    "Crypto wallet extensions and desktop clients (250+ extensions)",
+    "System hardware and installed-software inventory"
+  ],
+  "tracking_labels": []
+}

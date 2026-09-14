@@ -1,0 +1,31 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "Rhadamanthys Stealer"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "Rhadamanthys is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://any.run/malware-trends/rhadamanthys/"
+    },
+    {
+      "url": "https://research.checkpoint.com/2025/rhadamanthys-0-9-x-walk-through-the-updates/"
+    },
+    {
+      "url": "https://thehackernews.com/2025/10/rhadamanthys-stealer-evolves-adds.html"
+    }
+  ],
+  "id": "rhadamanthys",
+  "name": "Rhadamanthys",
+  "schema_version": "1.0",
+  "targets": [
+    "2FA codes from authenticator browser extensions",
+    "Browser saved credentials, cookies, history",
+    "Crypto wallet extensions and desktop clients",
+    "Messenger and email clients",
+    "PDF, Office, and other document grabber"
+  ],
+  "tracking_labels": []
+}

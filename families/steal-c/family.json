@@ -1,0 +1,29 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "StealC v1",
+    "StealC v2"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "StealC is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://mssplab.github.io/threat-hunting/2023/11/23/malware-analysis-stealc-2.html"
+    },
+    {
+      "url": "https://www.zscaler.com/blogs/security-research/i-stealc-you-tracking-rapid-changes-stealc"
+    }
+  ],
+  "id": "steal-c",
+  "name": "StealC",
+  "schema_version": "1.0",
+  "targets": [
+    "Browser saved credentials and cookies",
+    "Crypto wallet extensions and desktop clients",
+    "Custom file grabber configurable per-build",
+    "Discord and Telegram session data",
+    "FTP, email, VPN, RDP client configs"
+  ],
+  "tracking_labels": []
+}

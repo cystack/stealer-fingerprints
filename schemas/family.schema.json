@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/cystack/stealer-fingerprints/schemas/family.schema.json",
+  "title": "Stealer fingerprint family metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schema_version",
+    "id",
+    "name",
+    "classification",
+    "attribution_confidence",
+    "aliases",
+    "tracking_labels",
+    "description",
+    "targets",
+    "external_references"
+  ],
+  "properties": {
+    "$schema": {"const": "../../schemas/family.schema.json"},
+    "schema_version": {"const": "1.0"},
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "name": {"type": "string", "minLength": 1, "maxLength": 120},
+    "classification": {"enum": ["known_family", "provisional_cluster"]},
+    "attribution_confidence": {"enum": ["high", "medium", "low", "unknown"]},
+    "aliases": {"$ref": "#/$defs/stringSet"},
+    "tracking_labels": {"$ref": "#/$defs/stringSet"},
+    "description": {"type": "string", "minLength": 1, "maxLength": 1000},
+    "targets": {"$ref": "#/$defs/stringSet"},
+    "external_references": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["url"],
+        "properties": {
+          "url": {"type": "string", "format": "uri", "pattern": "^https://"},
+          "title": {"type": "string", "minLength": 1, "maxLength": 200}
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"classification": {"const": "known_family"}}},
+      "then": {
+        "properties": {
+          "attribution_confidence": {"enum": ["high", "medium"]},
+          "external_references": {"minItems": 1}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"classification": {"const": "provisional_cluster"}}},
+      "then": {
+        "properties": {
+          "id": {"pattern": "^unattributed-[0-9a-f]{32}$"},
+          "name": {"pattern": "^Unattributed cluster [0-9a-f]{32}$"},
+          "attribution_confidence": {"enum": ["low", "unknown"]}
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "stringSet": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1, "maxLength": 160}
+    }
+  }
+}

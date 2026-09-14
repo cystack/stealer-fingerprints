@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "mac-sync",
+  "id": "fp_ccb564eba89a41f894ab13acb8b34093",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "build tag",
+      "graphics/displays",
+      "hardware",
+      "password",
+      "software"
+    ],
+    "filenames": [
+      "information.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "build tag: <synthetic-value>",
+      "graphics/displays: <synthetic-value>",
+      "hardware: <synthetic-value>",
+      "password: <synthetic-value>",
+      "software: <synthetic-value>",
+      "[synthetic filename: information.txt]"
+    ]
+  }
+}

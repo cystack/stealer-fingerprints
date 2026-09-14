@@ -1,0 +1,34 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [
+    "BluelineStealer",
+    "Santa Stealer"
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "SantaStealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "external_references": [
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/new-santastealer-malware-steals-data-from-browsers-crypto-wallets/"
+    },
+    {
+      "url": "https://www.rapid7.com/blog/post/tr-santastealer-is-coming-to-town-a-new-ambitious-infostealer-advertised-on-underground-forums/"
+    },
+    {
+      "url": "https://www.theregister.com/2025/12/16/santastealer_stuffs_users_credentials_crypto"
+    }
+  ],
+  "id": "santa-stealer",
+  "name": "SantaStealer",
+  "schema_version": "1.0",
+  "targets": [
+    "Browser cookies, history, autofill",
+    "Browser saved credentials (Chromium and Gecko)",
+    "Cryptocurrency wallet apps and browser extensions",
+    "Desktop screenshots",
+    "Documents matching the file-grabber filter list",
+    "Saved credit card data from browsers",
+    "Telegram, Discord, and Steam session data"
+  ],
+  "tracking_labels": []
+}

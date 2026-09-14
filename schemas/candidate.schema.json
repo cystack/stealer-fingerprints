@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/cystack/stealer-fingerprints/schemas/candidate.schema.json",
+  "title": "Safe catalog candidate event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_type", "schema_version", "family", "fingerprint"],
+  "properties": {
+    "event_type": {"const": "catalog_candidate"},
+    "schema_version": {"const": "1.0"},
+    "family": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "classification", "attribution_confidence"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "name": {"type": "string", "minLength": 1, "maxLength": 120},
+        "classification": {"enum": ["known_family", "provisional_cluster"]},
+        "attribution_confidence": {"enum": ["high", "medium", "low", "unknown"]}
+      }
+    },
+    "fingerprint": {
+      "$ref": "fingerprint.schema.json#/$defs/signature",
+      "description": "Structure only. panel_brand/banner_strings are verified literals in exported text, never analyst/operator/channel labels."
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"family": {"properties": {"classification": {"const": "known_family"}}}}},
+      "then": {"properties": {"family": {"properties": {"attribution_confidence": {"enum": ["high", "medium"]}}}}}
+    },
+    {
+      "if": {"properties": {"family": {"properties": {"classification": {"const": "provisional_cluster"}}}}},
+      "then": {
+        "properties": {
+          "family": {
+            "properties": {
+              "id": {"pattern": "^unattributed-[0-9a-f]{32}$"},
+              "name": {"pattern": "^Unattributed cluster [0-9a-f]{32}$"},
+              "attribution_confidence": {"enum": ["low", "unknown"]}
+            }
+          }
+        }
+      }
+    }
+  ]
+}

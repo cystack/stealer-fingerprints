@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "raccoon",
+  "id": "fp_aea2443273ce558b371bcdffb882b698",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "build",
+      "build compile date",
+      "ip info",
+      "system information",
+      "user id"
+    ],
+    "filenames": [
+      "system info.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "build: <synthetic-value>",
+      "build compile date: <synthetic-value>",
+      "ip info: <synthetic-value>",
+      "system information: <synthetic-value>",
+      "user id: <synthetic-value>",
+      "[synthetic filename: system info.txt]"
+    ]
+  }
+}

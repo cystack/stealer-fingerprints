@@ -1,0 +1,5440 @@
+{
+  "$schema": "../schemas/catalog.schema.json",
+  "families": [
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "Acreed Stealer"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "Acreed is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://www.kaspersky.com/blog/acreed-stealer/"
+        }
+      ],
+      "id": "acreed",
+      "name": "Acreed",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser saved credentials, cookies, autofill",
+        "Crypto wallet extensions and desktop clients",
+        "Discord and Telegram session data",
+        "Document grabber for sensitive file types"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "Ailurophile Stealer"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "Ailurophile is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://blog.gdatasoftware.com/2024/08/38005-ailurophile-infostealer"
+        },
+        {
+          "url": "https://github.com/ail-project/ail-yara-rules/blob/master/rules/stealer/ailurophile.yara"
+        },
+        {
+          "url": "https://www.cyfirma.com/research/ailurophile-stealer/"
+        }
+      ],
+      "id": "ailurophile",
+      "name": "Ailurophile",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser saved credentials, cookies, autofill, history",
+        "Credit card data from browser autofill",
+        "Crypto wallet extensions and desktop clients",
+        "Generic file grabber driven by configurable keyword and extension lists"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "AMOS",
+        "Atomic Mac",
+        "Atomic Stealer",
+        "Atomic macOS Stealer"
+      ],
+      "attribution_confidence": "medium",
+      "classification": "known_family",
+      "description": "AMOS Stealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://cyble.com/blog/threat-actor-selling-new-atomic-macos-amos-stealer-on-telegram/"
+        },
+        {
+          "url": "https://github.com/MalBeacon/what-is-this-stealer"
+        },
+        {
+          "url": "https://moonlock.com/atomic-macos-stealer"
+        },
+        {
+          "url": "https://www.bleepingcomputer.com/news/security/new-atomic-macos-info-stealing-malware-targets-50-crypto-wallets/"
+        },
+        {
+          "url": "https://www.esentire.com/blog/fake-deepseek-site-infects-mac-users-with-atomic-stealer"
+        },
+        {
+          "url": "https://www.picussecurity.com/resource/blog/atomic-stealer-amos-macos-threat-analysis"
+        },
+        {
+          "url": "https://www.sentinelone.com/blog/atomic-stealer-threat-actor-spawns-second-variant-of-macos-malware-sold-on-telegram/"
+        }
+      ],
+      "id": "amos-stealer",
+      "name": "AMOS Stealer",
+      "schema_version": "1.0",
+      "targets": [
+        "Apple Notes content and Telegram session files",
+        "Browser saved credentials, cookies, autofill, history",
+        "Crypto wallet extensions (MetaMask, Phantom, Coin98, Trust Wallet, 50+ targeted)",
+        "Desktop crypto wallets (Electrum, Exodus, Atomic, Wasabi, Ledger Live, Trezor Suite)",
+        "Documents and Desktop file grabber (.txt, .pdf, .docx, .wallet, .key)",
+        "macOS Keychain database and login password (AppleScript prompt)"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "Arcane Stealer",
+        "VGS Stealer (predecessor)"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "Arcane is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://cyberinsider.com/new-arcane-stealer-malware-targets-vpn-accounts-via-youtube-cheats/"
+        },
+        {
+          "url": "https://securelist.com/arcane-stealer/115919/"
+        },
+        {
+          "url": "https://thehackernews.com/2025/03/youtube-game-cheats-spread-arcane.html"
+        },
+        {
+          "url": "https://www.bleepingcomputer.com/news/security/new-arcane-infostealer-infects-youtube-discord-users-via-game-cheats/"
+        }
+      ],
+      "id": "arcane",
+      "name": "Arcane",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser DPAPI keys cracked via embedded xaitax utility",
+        "Browser saved credentials, cookies, autofill, history (Chromium and Gecko)",
+        "Cryptocurrency wallets",
+        "Gaming client tokens (Riot Client, Epic, Steam, Ubisoft Connect, Roblox, Battle.net)",
+        "Network utility configs (ngrok, Playit, Cyberduck, FileZilla, DynDNS)",
+        "System hardware inventory and saved Wi-Fi networks",
+        "Telegram and Discord session data",
+        "VPN client configs (OpenVPN, Mullvad, NordVPN, IPVanish, Surfshark, Proton, hide.me, PIA, CyberGhost, ExpressVPN)"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "Aura Stealer",
+        "AuraStealer"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "AuraStealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.aurastealer"
+        },
+        {
+          "url": "https://www.gendigital.com/blog/insights/research/defeating-aurastealer-obfuscation"
+        },
+        {
+          "url": "https://www.intrinsec.com/en/analysis-of-aurastealer-an-emerging-infostealer/"
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Trojan:MSIL/AuraStealer.AUKB!MTB&ThreatID=2147957435"
+        }
+      ],
+      "id": "aura-stealer",
+      "name": "AuraStealer",
+      "schema_version": "1.0",
+      "targets": [
+        "Authenticator and 2FA app data (70+ apps)",
+        "Browser saved credentials, cookies, autofill (110+ browsers)",
+        "Crypto wallet extensions and desktop clients (250+ extensions)",
+        "System hardware and installed-software inventory"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "Blank-c/Blank-Grabber",
+        "BlankGrabber"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "Blank Grabber is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://any.run/malware-trends/blankgrabber/"
+        },
+        {
+          "url": "https://github.com/Blank-c/Blank-Grabber"
+        },
+        {
+          "url": "https://www.splunk.com/en_us/blog/security/blankgrabber-trojan-stealer-analysis-detection.html"
+        }
+      ],
+      "id": "blank-grabber",
+      "name": "Blank Grabber",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser saved credentials, cookies, history, autofill",
+        "Crypto wallet desktop clients (Bitcoin, Ethereum, Exodus, others)",
+        "Discord and Telegram session tokens",
+        "Game launcher sessions (Epic, Steam, Uplay, Battle.net, Growtopia)",
+        "Roblox cookies and Minecraft sessions",
+        "System hardware and locale inventory",
+        "Wifi passwords and webcam captures"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "Crypt Bot",
+        "CryptBot Stealer"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "CryptBot is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://any.run/malware-trends/cryptbot/"
+        },
+        {
+          "url": "https://fr3d.hk/blog/cryptbot-too-good-to-be-true"
+        },
+        {
+          "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.cryptbot"
+        },
+        {
+          "url": "https://research.openanalysis.net/cryptbot/botnet/yara/config/2024/12/06/cryptbot2.html"
+        },
+        {
+          "url": "https://www.deepinstinct.com/blog/cryptbot-how-free-becomes-a-high-price-to-pay"
+        }
+      ],
+      "id": "crypt-bot",
+      "name": "CryptBot",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser cookies and autofill data",
+        "Browser saved credentials (Chromium and Gecko)",
+        "Cryptocurrency wallet files and browser extensions",
+        "Saved form data",
+        "Screenshot of the desktop",
+        "System hardware and locale inventory"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "Cthulhu macOS Stealer"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "Cthulhu Stealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://www.darktrace.com/blog/from-the-depths-analyzing-the-cthulhu-stealer-malware-for-macos"
+        }
+      ],
+      "id": "cthulhu-stealer",
+      "name": "Cthulhu Stealer",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser saved credentials on macOS",
+        "Crypto wallet desktop clients",
+        "System inventory and hardware fingerprint",
+        "Telegram session data",
+        "macOS Keychain entries"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "Dark Crystal RAT",
+        "DarkCrystal RAT",
+        "dcRAT"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "DCRat is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://any.run/malware-trends/dcrat/"
+        },
+        {
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/analyzing-dark-crystal-rat-backdoor"
+        },
+        {
+          "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.dcrat"
+        },
+        {
+          "url": "https://thehackernews.com/2025/03/cert-ua-warns-dark-crystal-rat-targets.html"
+        },
+        {
+          "url": "https://www.splunk.com/en_us/blog/security/dark-crystal-rat-agent-deep-dive.html"
+        }
+      ],
+      "id": "dc-rat",
+      "name": "DCRat",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser saved credentials and cookies (plugin modules: Plugin_AutoStealer)",
+        "Clipboard contents",
+        "Installed antivirus and firewall product detection",
+        "Keystroke capture (Plugin_AutoKeylogger)",
+        "Remote shell command execution",
+        "WMI-enumerated machine fingerprint (motherboard, BIOS, monitors)"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "Lumma Stealer",
+        "LummaC2"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "Lumma is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://www.cloudflare.com/cloudforce-one/research/loot-load-repeat-dissecting-the-lumma-stealer-playbook/"
+        }
+      ],
+      "id": "lumma",
+      "name": "Lumma",
+      "schema_version": "1.0",
+      "targets": [
+        "2FA seeds from Authy and similar desktop clients",
+        "Browser saved credentials, cookies, autofill",
+        "Crypto wallet extensions (focus on MetaMask, Phantom, and similar)",
+        "Cryptocurrency seed phrases harvested from text files",
+        "Steam, Telegram, Discord session tokens"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "Mac.c",
+        "MacSync Stealer"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "MacSync is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://malware.news/t/mentalpositive-s-new-macos-stealer-amos-repackaged-or-a-new-cyber-threat/96207"
+        },
+        {
+          "url": "https://moonlock.com/new-mac-stealer-spreading"
+        },
+        {
+          "url": "https://www.cisecurity.org/insights/blog/macsync-stealer-campaign-impacting-us-sltt-macos-users"
+        },
+        {
+          "url": "https://www.jamf.com/blog/macsync-stealer-evolution-code-signed-swift-malware-analysis/"
+        }
+      ],
+      "id": "mac-sync",
+      "name": "MacSync",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser saved credentials (Chrome, Safari, Firefox)",
+        "Crypto wallet desktop clients (Electrum, Exodus, etc.)",
+        "System profile information for victim fingerprinting",
+        "Telegram and Discord session data on macOS",
+        "macOS Keychain entries"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "Melt Stealer",
+        "melt-stealer"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "MeltStealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://any.run/report/a934dc7424ecc3d0e20848f36e44d1473b1908761cd41a4021d31f6d91c5ee34/ea0e35cd-70cc-4c19-aa20-532f49f278c7"
+        },
+        {
+          "url": "https://github.com/Vorolski/melt-stealer"
+        }
+      ],
+      "id": "melt-stealer",
+      "name": "MeltStealer",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser cookies, autofill, history, bookmarks, downloads,",
+        "Credit card data",
+        "Cryptocurrency wallets and seed-phrase mnemonics",
+        "Discord tokens",
+        "Process lists and selected registry values",
+        "Steam and Minecraft session data",
+        "System fingerprint (CPU, RAM, OS version, IP, ISP, ASN)",
+        "VPN client configurations",
+        "Wi-Fi network credentials",
+        "Windows product key, screenshots, webcam captures"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "Nexus Stealer"
+      ],
+      "attribution_confidence": "medium",
+      "classification": "known_family",
+      "description": "Nexus is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://flare.io/learn/resources/cybercrime-favorite-target-gamers"
+        },
+        {
+          "url": "https://fr3d.hk/blog/nexus-just-another-stealer"
+        }
+      ],
+      "id": "nexus",
+      "name": "Nexus",
+      "schema_version": "1.0",
+      "targets": [
+        "CPU, GPU, and memory inventory",
+        "IP address and country geolocation",
+        "Username, hostname, and machine identifiers",
+        "Windows version and OS language"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "Phantom Stealer",
+        "Phantom stealer v2.0"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "Phantom Stealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://darkatlas.io/blog/phantom-stealer-analysis-inside-the-two-layer-attack-chain-hidden-behind-a-windows-dll"
+        },
+        {
+          "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.phantom_stealer"
+        },
+        {
+          "url": "https://www.group-ib.com/blog/phantom-stealer-credential-theft/"
+        },
+        {
+          "url": "https://www.phantomsoftwares.site/home"
+        },
+        {
+          "url": "https://www.proofpoint.com/us/blog/threat-insight/not-safe-work-tracking-and-investigating-stealerium-and-phantom-infostealers"
+        }
+      ],
+      "id": "phantom-stealer",
+      "name": "Phantom Stealer",
+      "schema_version": "1.0",
+      "targets": [
+        "Banking / crypto / adult site domain detection summary",
+        "Browser saved credentials, cookies, autofill, history, bookmarks",
+        "Crypto wallet extensions and desktop wallet clients",
+        "Desktop screenshot capture",
+        "Discord and Telegram session data (Tdata)",
+        "Network info (gateway, internal, external IP)",
+        "System hardware (CPU, GPU, RAM, screen, webcam, power) inventory",
+        "Windows product key extraction"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "Phexia Stealer",
+        "Phexia macOS Stealer"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "Phexia is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://cookie.engineer/weblog/articles/malware-insights-macos-phexia-stealer.html"
+        },
+        {
+          "url": "https://g0njxa.medium.com/approaching-stealers-devs-a-brief-interview-with-phexia-38ad3772dbcd"
+        },
+        {
+          "url": "https://www.pcrisk.com/removal-guides/34957-phexia-stealer-mac"
+        }
+      ],
+      "id": "phexia",
+      "name": "Phexia",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser saved credentials, cookies, web data, login data, and history from Chromium-based browsers",
+        "Chromium browser extension data and local extension settings",
+        "Crypto wallet desktop clients and browser extensions",
+        "Notes.app passwords and small files in `~/Downloads`",
+        "Telegram session data on macOS",
+        "macOS Keychain (`/Library/Keychains/login.keychain-db`)",
+        "macOS login credentials (captured at the panel prompt)"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "PureLog Stealer",
+        "PureLogStealer",
+        "win.purelogs"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "PureLogs is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://any.run/malware-trends/purelogs/"
+        },
+        {
+          "url": "https://flashpoint.io/blog/purelogs-low-cost-infostealer-high-impact-threat/"
+        },
+        {
+          "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.purelogs"
+        },
+        {
+          "url": "https://www.swisspost-cybersecurity.ch/news/purelogs-infostealer-analysis-dont-judge-a-png-by-its-header"
+        }
+      ],
+      "id": "pure-logs",
+      "name": "PureLogs",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser extension list and metadata",
+        "Browser saved credentials, cookies, autofill, history",
+        "Clipboard contents",
+        "Crypto wallet extensions and desktop clients",
+        "Outlook and other application data",
+        "System hardware and locale inventory"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "PXAStealer"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "PXA Stealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://blog.talosintelligence.com/pxa-stealer/"
+        },
+        {
+          "url": "https://socradar.io/threat-actor-spotlight-pxa-stealer/"
+        }
+      ],
+      "id": "pxa-stealer",
+      "name": "PXA Stealer",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser saved credentials and cookies",
+        "Crypto wallet extensions and desktop clients",
+        "Documents matching specific filename patterns",
+        "Telegram, Discord, Steam session tokens",
+        "VPN and FTP client configurations"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "Raccoon is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.raccoon"
+        }
+      ],
+      "id": "raccoon",
+      "name": "Raccoon",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "RedLine",
+        "RedLineStealer"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "Redline is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://flare.io/learn/resources/blog/redline-stealer-malware/"
+        }
+      ],
+      "id": "redline",
+      "name": "Redline",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser cookies and session storage",
+        "Browser saved credentials",
+        "Crypto wallet desktop clients and browser extensions",
+        "Discord and Telegram session tokens",
+        "FTP and VPN client configs"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "Rhadamanthys Stealer"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "Rhadamanthys is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://any.run/malware-trends/rhadamanthys/"
+        },
+        {
+          "url": "https://research.checkpoint.com/2025/rhadamanthys-0-9-x-walk-through-the-updates/"
+        },
+        {
+          "url": "https://thehackernews.com/2025/10/rhadamanthys-stealer-evolves-adds.html"
+        }
+      ],
+      "id": "rhadamanthys",
+      "name": "Rhadamanthys",
+      "schema_version": "1.0",
+      "targets": [
+        "2FA codes from authenticator browser extensions",
+        "Browser saved credentials, cookies, history",
+        "Crypto wallet extensions and desktop clients",
+        "Messenger and email clients",
+        "PDF, Office, and other document grabber"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "44Caliber variant",
+        "Ades",
+        "StormKitty variant"
+      ],
+      "attribution_confidence": "medium",
+      "classification": "known_family",
+      "description": "RL Stealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://github.com/MalBeacon/what-is-this-stealer"
+        },
+        {
+          "url": "https://github.com/razexgod/44CALIBER"
+        },
+        {
+          "url": "https://www.pcrisk.com/removal-guides/25759-rl-stealer-malware"
+        }
+      ],
+      "id": "rl-stealer",
+      "name": "RL Stealer",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser saved credentials, cookies, autofill, history",
+        "Clipboard contents",
+        "Crypto wallet extensions and desktop clients",
+        "Desktop screenshot",
+        "Discord, Telegram, Steam, Minecraft session data",
+        "FTP and VPN client credentials"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "SHub",
+        "SHub Reaper"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "SHub Stealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://securitylabs.datadoghq.com/articles/tech-impersonators-clickfix-and-macos-infostealers/"
+        },
+        {
+          "url": "https://www.bleepingcomputer.com/news/security/shub-macos-infostealer-variant-spoofs-apple-security-updates/"
+        },
+        {
+          "url": "https://www.helpnetsecurity.com/2026/05/19/shub-reaper-macos-infostealer-apple-google-microsoft/"
+        },
+        {
+          "url": "https://www.malwarebytes.com/blog/threat-intel/2026/03/fake-cleanmymac-site-installs-shub-stealer-and-backdoors-crypto-wallets"
+        },
+        {
+          "url": "https://www.sentinelone.com/blog/shub-reaper-macos-stealer-spoofs-apple-google-and-microsoft-in-a-single-attack-chain/"
+        }
+      ],
+      "id": "s-hub-stealer",
+      "name": "SHub Stealer",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser saved credentials, cookies, autofill",
+        "Cryptocurrency wallet apps and browser extensions",
+        "Developer configuration files and Notes",
+        "On-screen prompted login credentials (osascript dialog)",
+        "Telegram session files",
+        "iCloud session data",
+        "macOS Keychain entries"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "BluelineStealer",
+        "Santa Stealer"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "SantaStealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://www.bleepingcomputer.com/news/security/new-santastealer-malware-steals-data-from-browsers-crypto-wallets/"
+        },
+        {
+          "url": "https://www.rapid7.com/blog/post/tr-santastealer-is-coming-to-town-a-new-ambitious-infostealer-advertised-on-underground-forums/"
+        },
+        {
+          "url": "https://www.theregister.com/2025/12/16/santastealer_stuffs_users_credentials_crypto"
+        }
+      ],
+      "id": "santa-stealer",
+      "name": "SantaStealer",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser cookies, history, autofill",
+        "Browser saved credentials (Chromium and Gecko)",
+        "Cryptocurrency wallet apps and browser extensions",
+        "Desktop screenshots",
+        "Documents matching the file-grabber filter list",
+        "Saved credit card data from browsers",
+        "Telegram, Discord, and Steam session data"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "StealC v1",
+        "StealC v2"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "StealC is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://mssplab.github.io/threat-hunting/2023/11/23/malware-analysis-stealc-2.html"
+        },
+        {
+          "url": "https://www.zscaler.com/blogs/security-research/i-stealc-you-tracking-rapid-changes-stealc"
+        }
+      ],
+      "id": "steal-c",
+      "name": "StealC",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser saved credentials and cookies",
+        "Crypto wallet extensions and desktop clients",
+        "Custom file grabber configurable per-build",
+        "Discord and Telegram session data",
+        "FTP, email, VPN, RDP client configs"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "Stealerium v3.5.2"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "Stealerium is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.stealerium"
+        },
+        {
+          "url": "https://securityscorecard.com/wp-content/uploads/2024/01/Whitepaper-A-Detailed-Analysis-Of-A-New-Stealer-Called-Stealerium-.pdf"
+        },
+        {
+          "url": "https://www.proofpoint.com/us/blog/threat-insight/not-safe-work-tracking-and-investigating-stealerium-and-phantom-infostealers"
+        },
+        {
+          "url": "https://www.uptycs.com/blog/threat-research-report-team/understanding-stealerium-malware-and-its-evasion-techniques"
+        }
+      ],
+      "id": "stealerium",
+      "name": "Stealerium",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser saved credentials, cookies, autofill, history",
+        "Crypto wallet desktop clients and browser extensions",
+        "Desktop and webcam screenshot capture",
+        "Discord, Telegram, Skype, Pidgin, Outlook, Element, Signal, Tox session data",
+        "File grabber configurable by extension and folder",
+        "Steam, Minecraft, Epic, Uplay, Growtopia session tokens",
+        "VPN client configurations",
+        "Wi-Fi profiles and saved passwords via netsh",
+        "Windows product key extraction"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-04cdace4e816dc7b624c3ca2017b05ee",
+      "name": "Unattributed cluster 04cdace4e816dc7b624c3ca2017b05ee",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSEmojiCountStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-0cf0d3ec47cc5e965f59d4c9138e4bb5",
+      "name": "Unattributed cluster 0cf0d3ec47cc5e965f59d4c9138e4bb5",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSOneGoStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "low",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-11402ef2470edc70f723adf2ad7cfbb8",
+      "name": "Unattributed cluster 11402ef2470edc70f723adf2ad7cfbb8",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSStealerCloudInfoStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-1747ea0efa83f0624b1c67c8c9389549",
+      "name": "Unattributed cluster 1747ea0efa83f0624b1c67c8c9389549",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSAdminCoresStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-1a1a74b98f6bbeb7db8d741942d20ab1",
+      "name": "Unattributed cluster 1a1a74b98f6bbeb7db8d741942d20ab1",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "PCInfo Stealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-1d1fb21a3451e7323d52d912940702b9",
+      "name": "Unattributed cluster 1d1fb21a3451e7323d52d912940702b9",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSCountCoreStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-1dd6736a5360932cae50b2ddc61117c6",
+      "name": "Unattributed cluster 1dd6736a5360932cae50b2ddc61117c6",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSMacUserinfoStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-1e61c1f281349b0aeb5680a1bb87a6d3",
+      "name": "Unattributed cluster 1e61c1f281349b0aeb5680a1bb87a6d3",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "BracketSection Stealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-26c3c3b53ec7589dbb98ffb92823aa93",
+      "name": "Unattributed cluster 26c3c3b53ec7589dbb98ffb92823aa93",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSEnvVarDumpStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-2bf71d96ef3cdc621a6a180099124b5c",
+      "name": "Unattributed cluster 2bf71d96ef3cdc621a6a180099124b5c",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "RedlineLike Stealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-3229b5d7426a10b0114f25c37776325d",
+      "name": "Unattributed cluster 3229b5d7426a10b0114f25c37776325d",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSMrdUidStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-379e337109ba0180ce889a649cad31e4",
+      "name": "Unattributed cluster 379e337109ba0180ce889a649cad31e4",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "DiskInfo Stealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-41de085de609b1945685675bd7e6550c",
+      "name": "Unattributed cluster 41de085de609b1945685675bd7e6550c",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "Category Stealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-42afdacc7cf09270fbae373201bb629e",
+      "name": "Unattributed cluster 42afdacc7cf09270fbae373201bb629e",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSGeoSysInfoStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "low",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-444b05c99a19350d143681c4acb53846",
+      "name": "Unattributed cluster 444b05c99a19350d143681c4acb53846",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSOttomanPanelStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-4aaeab405c70b1a4977aa5689291d9b6",
+      "name": "Unattributed cluster 4aaeab405c70b1a4977aa5689291d9b6",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSBitArchStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-577eebb64f24c68225a8d190379990b5",
+      "name": "Unattributed cluster 577eebb64f24c68225a8d190379990b5",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSGADSPanelStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-57b440dfb8287104b2b740725cab9342",
+      "name": "Unattributed cluster 57b440dfb8287104b2b740725cab9342",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "RedlineLike Stealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-58d1d7e3d4348cb9a01ee1ec2cde70b8",
+      "name": "Unattributed cluster 58d1d7e3d4348cb9a01ee1ec2cde70b8",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSBestPrivateLoggerStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-5fde45ff48ac01ea618406464031a9e2",
+      "name": "Unattributed cluster 5fde45ff48ac01ea618406464031a9e2",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "Aetheris Stealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-6d0336d10095a3b6f19dde58e263b6bb",
+      "name": "Unattributed cluster 6d0336d10095a3b6f19dde58e263b6bb",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSAntiSandboxStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-8dabc4758f9b98fbf6b151380414080a",
+      "name": "Unattributed cluster 8dabc4758f9b98fbf6b151380414080a",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSCountCoreStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "low",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-909801f1fecf7c4f1cf18eb1a347c89d",
+      "name": "Unattributed cluster 909801f1fecf7c4f1cf18eb1a347c89d",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSStealerCloudUserInfoStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "low",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-9cf3daccf4cf63bf8fff470f099dcf37",
+      "name": "Unattributed cluster 9cf3daccf4cf63bf8fff470f099dcf37",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSDashSectionStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-9f895bd93d3d0b1731b8c5914a2a3896",
+      "name": "Unattributed cluster 9f895bd93d3d0b1731b8c5914a2a3896",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSBuildBlockStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-a6da7072a334e8c4bd75282e15b63af3",
+      "name": "Unattributed cluster a6da7072a334e8c4bd75282e15b63af3",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "Snake Stealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-ad27c7cb6822fee6af5c4f3b19f3ee7a",
+      "name": "Unattributed cluster ad27c7cb6822fee6af5c4f3b19f3ee7a",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSBareVersionStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-ad4802c6f25bb31f6ae11eaaea3dcad8",
+      "name": "Unattributed cluster ad4802c6f25bb31f6ae11eaaea3dcad8",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "RedlineLike Stealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-af81db59c44117b802e24158702f7dcf",
+      "name": "Unattributed cluster af81db59c44117b802e24158702f7dcf",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSMacBareGeoStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-cae1e491530bee83c37550af945dc95c",
+      "name": "Unattributed cluster cae1e491530bee83c37550af945dc95c",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSMacUserinfoStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-ccc0131fe7b87e71e345dc3e5226bbd7",
+      "name": "Unattributed cluster ccc0131fe7b87e71e345dc3e5226bbd7",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSMacKeychainPassStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "low",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-cf4d4b2b1fb07476894f382450f840a8",
+      "name": "Unattributed cluster cf4d4b2b1fb07476894f382450f840a8",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSSigInfoStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-d4ea9a8e4ab11dbd3fe7e0a75ec00f2c",
+      "name": "Unattributed cluster d4ea9a8e4ab11dbd3fe7e0a75ec00f2c",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "BracketSection Stealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-d763e48ac5c9218c98f81268e7ad6110",
+      "name": "Unattributed cluster d763e48ac5c9218c98f81268e7ad6110",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSMSKDateStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-d9938fd793e400a2aa53521d4441e50d",
+      "name": "Unattributed cluster d9938fd793e400a2aa53521d4441e50d",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "Minimal Stealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-dc0f622e026b076d25a111a8871fd2ae",
+      "name": "Unattributed cluster dc0f622e026b076d25a111a8871fd2ae",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSMacUserinfoStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-e79fc654aa18e3e1b24125fdd34a233b",
+      "name": "Unattributed cluster e79fc654aa18e3e1b24125fdd34a233b",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "PyInfo Stealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-eed7f6d6f951d7ce81b6c69003e3dcad",
+      "name": "Unattributed cluster eed7f6d6f951d7ce81b6c69003e3dcad",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSSoftwareTailStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [],
+      "attribution_confidence": "unknown",
+      "classification": "provisional_cluster",
+      "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+      "external_references": [],
+      "id": "unattributed-f2f4eef752652c8db06b83bee6ecad5f",
+      "name": "Unattributed cluster f2f4eef752652c8db06b83bee6ecad5f",
+      "schema_version": "1.0",
+      "targets": [],
+      "tracking_labels": [
+        "CSStatsSectionStealer"
+      ]
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "VidarStealer"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "Vidar is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://usrlnk.io/vidar"
+        },
+        {
+          "url": "https://www.kaspersky.com/resource-center/threats/vidar-stealer"
+        }
+      ],
+      "id": "vidar",
+      "name": "Vidar",
+      "schema_version": "1.0",
+      "targets": [
+        "Browser saved credentials, cookies, autofill, history",
+        "Crypto wallet extensions and desktop clients",
+        "Documents and screenshots from the desktop",
+        "FTP, email, and VPN client configurations",
+        "Telegram and Discord session data"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "WhiteSnake Stealer"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "WhiteSnake is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://socradar.io/whitesnake-stealer-malware-analysis/"
+        },
+        {
+          "url": "https://www.cyfirma.com/research/whitesnake-stealer/"
+        }
+      ],
+      "id": "white-snake",
+      "name": "WhiteSnake",
+      "schema_version": "1.0",
+      "targets": [
+        "2FA codes from authenticator apps",
+        "Browser saved credentials and cookies",
+        "Crypto wallet extensions and desktop clients",
+        "Discord, Telegram, Steam session data",
+        "Email and FTP client credentials"
+      ],
+      "tracking_labels": []
+    },
+    {
+      "$schema": "../../schemas/family.schema.json",
+      "aliases": [
+        "DeerStealer",
+        "X-FILES",
+        "X-Files Stealer"
+      ],
+      "attribution_confidence": "high",
+      "classification": "known_family",
+      "description": "XFiles is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+      "external_references": [
+        {
+          "url": "https://any.run/malware-trends/xfiles/"
+        },
+        {
+          "url": "https://cyberint.com/blog/research/xfiles-stealer-campaign-abusing-follina/"
+        },
+        {
+          "url": "https://www.bleepingcomputer.com/news/security/xfiles-info-stealing-malware-adds-support-for-follina-delivery/"
+        },
+        {
+          "url": "https://www.esentire.com/blog/dont-get-caught-in-the-headlights-deerstealer-analysis"
+        },
+        {
+          "url": "https://www.zscaler.com/blogs/security-research/x-files-stealer-evolution-analysis-and-comparison-study"
+        }
+      ],
+      "id": "x-files",
+      "name": "XFiles",
+      "schema_version": "1.0",
+      "targets": [
+        "80+ browser-based crypto wallet extensions",
+        "Browser saved credentials and cookies (Chromium and Gecko)",
+        "Crypto wallet desktop clients",
+        "Messenger session data (Telegram, Discord, Steam)",
+        "VPN, FTP, RDP client configs"
+      ],
+      "tracking_labels": []
+    }
+  ],
+  "fingerprints": [
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "ailurophile",
+      "id": "fp_49e3c5d055e0c56ff92ebe8672c5cc26",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "chrome default - version",
+          "country",
+          "edge default - version",
+          "file path",
+          "ip",
+          "mac address",
+          "main path",
+          "pc type",
+          "screen resolution"
+        ],
+        "filenames": [
+          "info.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "chrome default - version: <synthetic-value>",
+          "country: <synthetic-value>",
+          "edge default - version: <synthetic-value>",
+          "file path: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "mac address: <synthetic-value>",
+          "main path: <synthetic-value>",
+          "pc type: <synthetic-value>",
+          "screen resolution: <synthetic-value>",
+          "[synthetic filename: info.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "arcane",
+      "id": "fp_c590c3f50dd1a92c4b4e45e2d21f8e2a",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "capacity",
+          "caption",
+          "clipboard",
+          "date install",
+          "default",
+          "external ip",
+          "fullname",
+          "gateway ip",
+          "internal ip",
+          "manufacturer",
+          "model",
+          "name",
+          "product",
+          "size",
+          "speed",
+          "worker"
+        ],
+        "filenames": [
+          "information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "capacity: <synthetic-value>",
+          "caption: <synthetic-value>",
+          "clipboard: <synthetic-value>",
+          "date install: <synthetic-value>",
+          "default: <synthetic-value>",
+          "external ip: <synthetic-value>",
+          "fullname: <synthetic-value>",
+          "gateway ip: <synthetic-value>",
+          "internal ip: <synthetic-value>",
+          "manufacturer: <synthetic-value>",
+          "model: <synthetic-value>",
+          "name: <synthetic-value>",
+          "product: <synthetic-value>",
+          "size: <synthetic-value>",
+          "speed: <synthetic-value>",
+          "worker: <synthetic-value>",
+          "[synthetic filename: information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "blank-grabber",
+      "id": "fp_65418459a7e5c1eace3a73cd90d899cb",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "cellular network",
+          "computer name",
+          "computer os",
+          "country",
+          "cpu",
+          "discord accounts",
+          "epic session",
+          "gpu",
+          "growtopia session",
+          "history",
+          "ip",
+          "minecraft sessions",
+          "product key",
+          "proxy/vpn",
+          "region",
+          "roblox cookies",
+          "screenshot",
+          "steam session",
+          "system info",
+          "telegram sessions",
+          "timezone",
+          "total memory",
+          "uplay session",
+          "uuid",
+          "webcam",
+          "wifi passwords"
+        ],
+        "filenames": [
+          "information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "cellular network: <synthetic-value>",
+          "computer name: <synthetic-value>",
+          "computer os: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "discord accounts: <synthetic-value>",
+          "epic session: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "growtopia session: <synthetic-value>",
+          "history: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "minecraft sessions: <synthetic-value>",
+          "product key: <synthetic-value>",
+          "proxy/vpn: <synthetic-value>",
+          "region: <synthetic-value>",
+          "roblox cookies: <synthetic-value>",
+          "[synthetic filename: information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "blank-grabber",
+      "id": "fp_db3c62d8e50d545fe50c339d7ebf043e",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "cellular network",
+          "computer name",
+          "computer os",
+          "country",
+          "cpu",
+          "discord accounts",
+          "epic session",
+          "gpu",
+          "growtopia session",
+          "history",
+          "ip",
+          "minecraft sessions",
+          "product key",
+          "proxy/vpn",
+          "region",
+          "roblox cookies",
+          "screenshot",
+          "steam session",
+          "system info",
+          "telegram sessions",
+          "timezone",
+          "total memory",
+          "uplay session",
+          "uuid",
+          "webcam",
+          "wifi passwords"
+        ],
+        "filenames": [
+          "system.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "cellular network: <synthetic-value>",
+          "computer name: <synthetic-value>",
+          "computer os: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "discord accounts: <synthetic-value>",
+          "epic session: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "growtopia session: <synthetic-value>",
+          "history: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "minecraft sessions: <synthetic-value>",
+          "product key: <synthetic-value>",
+          "proxy/vpn: <synthetic-value>",
+          "region: <synthetic-value>",
+          "roblox cookies: <synthetic-value>",
+          "[synthetic filename: system.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "crypt-bot",
+      "id": "fp_5889e02b3fd53c8f52657eae14701658",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "cpu",
+          "display resolution",
+          "gpu",
+          "installed software",
+          "keyboard languages",
+          "os",
+          "ram"
+        ],
+        "filenames": [
+          "_information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "cpu: <synthetic-value>",
+          "display resolution: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "installed software: <synthetic-value>",
+          "keyboard languages: <synthetic-value>",
+          "os: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "[synthetic filename: _information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "dc-rat",
+      "id": "fp_a561ae13f523bb270a11df86615a85d6",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "antivirus",
+          "bios",
+          "city",
+          "cpu cores",
+          "cpu name",
+          "firewall",
+          "gpu mode",
+          "gpu name",
+          "ip",
+          "location",
+          "motherboard",
+          "path",
+          "pc name",
+          "ram",
+          "save time",
+          "user name",
+          "windows"
+        ],
+        "filenames": [
+          "information [<locale>].txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "antivirus: <synthetic-value>",
+          "bios: <synthetic-value>",
+          "city: <synthetic-value>",
+          "cpu cores: <synthetic-value>",
+          "cpu name: <synthetic-value>",
+          "firewall: <synthetic-value>",
+          "gpu mode: <synthetic-value>",
+          "gpu name: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "location: <synthetic-value>",
+          "motherboard: <synthetic-value>",
+          "path: <synthetic-value>",
+          "pc name: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "save time: <synthetic-value>",
+          "user name: <synthetic-value>",
+          "[synthetic filename: information [<locale>].txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "lumma",
+      "id": "fp_75cbc6ca4c1b01992c9d4614360f1754",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "computer",
+          "country",
+          "cpu cores",
+          "cpu name",
+          "cpu threads",
+          "cpu vendor",
+          "display resolution",
+          "elevated",
+          "hwid",
+          "ip address",
+          "language",
+          "lid",
+          "lummac2 build",
+          "netbios",
+          "path",
+          "ram size",
+          "time",
+          "user"
+        ],
+        "filenames": [
+          "information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "computer: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu cores: <synthetic-value>",
+          "cpu name: <synthetic-value>",
+          "cpu threads: <synthetic-value>",
+          "cpu vendor: <synthetic-value>",
+          "display resolution: <synthetic-value>",
+          "elevated: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "ip address: <synthetic-value>",
+          "language: <synthetic-value>",
+          "lid: <synthetic-value>",
+          "lummac2 build: <synthetic-value>",
+          "netbios: <synthetic-value>",
+          "path: <synthetic-value>",
+          "ram size: <synthetic-value>",
+          "[synthetic filename: information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "lumma",
+      "id": "fp_e3d4ba009c46959ab424284aa14b6949",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "computer",
+          "country",
+          "cpu cores",
+          "cpu name",
+          "cpu threads",
+          "cpu vendor",
+          "display resolution",
+          "elevated",
+          "hwid",
+          "ip address",
+          "language",
+          "lid",
+          "lummac2 build",
+          "netbios",
+          "path",
+          "ram size",
+          "time",
+          "user"
+        ],
+        "filenames": [
+          "userinformation.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "computer: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu cores: <synthetic-value>",
+          "cpu name: <synthetic-value>",
+          "cpu threads: <synthetic-value>",
+          "cpu vendor: <synthetic-value>",
+          "display resolution: <synthetic-value>",
+          "elevated: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "ip address: <synthetic-value>",
+          "language: <synthetic-value>",
+          "lid: <synthetic-value>",
+          "lummac2 build: <synthetic-value>",
+          "netbios: <synthetic-value>",
+          "path: <synthetic-value>",
+          "ram size: <synthetic-value>",
+          "[synthetic filename: userinformation.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "lumma",
+      "id": "fp_e67de057f154d3c65ecddb7b7c5a594b",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "computer",
+          "country",
+          "cpu cores",
+          "cpu name",
+          "cpu threads",
+          "cpu vendor",
+          "display resolution",
+          "elevated",
+          "hwid",
+          "ip address",
+          "language",
+          "lid",
+          "lummac2 build",
+          "netbios",
+          "path",
+          "ram size",
+          "time",
+          "user"
+        ],
+        "filenames": [
+          "system.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "computer: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu cores: <synthetic-value>",
+          "cpu name: <synthetic-value>",
+          "cpu threads: <synthetic-value>",
+          "cpu vendor: <synthetic-value>",
+          "display resolution: <synthetic-value>",
+          "elevated: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "ip address: <synthetic-value>",
+          "language: <synthetic-value>",
+          "lid: <synthetic-value>",
+          "lummac2 build: <synthetic-value>",
+          "netbios: <synthetic-value>",
+          "path: <synthetic-value>",
+          "ram size: <synthetic-value>",
+          "[synthetic filename: system.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "lumma",
+      "id": "fp_e6e9e670038c310c8eb0e9857867e6ed",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "computer",
+          "country",
+          "cpu cores",
+          "cpu name",
+          "cpu threads",
+          "cpu vendor",
+          "display resolution",
+          "elevated",
+          "hwid",
+          "ip address",
+          "language",
+          "lid",
+          "lummac2 build",
+          "netbios",
+          "path",
+          "ram size",
+          "time",
+          "user"
+        ],
+        "filenames": [
+          "information.txt",
+          "system.txt",
+          "system_info.txt",
+          "userinformation.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "computer: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu cores: <synthetic-value>",
+          "cpu name: <synthetic-value>",
+          "cpu threads: <synthetic-value>",
+          "cpu vendor: <synthetic-value>",
+          "display resolution: <synthetic-value>",
+          "elevated: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "ip address: <synthetic-value>",
+          "language: <synthetic-value>",
+          "lid: <synthetic-value>",
+          "lummac2 build: <synthetic-value>",
+          "netbios: <synthetic-value>",
+          "path: <synthetic-value>",
+          "ram size: <synthetic-value>",
+          "[synthetic filename: information.txt]",
+          "[synthetic filename: system.txt]",
+          "[synthetic filename: system_info.txt]",
+          "[synthetic filename: userinformation.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "lumma",
+      "id": "fp_f8f239ea36b6e77e37525aa13259467a",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "computer",
+          "country",
+          "cpu cores",
+          "cpu name",
+          "cpu threads",
+          "cpu vendor",
+          "display resolution",
+          "elevated",
+          "hwid",
+          "ip address",
+          "language",
+          "lid",
+          "lummac2 build",
+          "netbios",
+          "path",
+          "ram size",
+          "time",
+          "user"
+        ],
+        "filenames": [
+          "system.txt",
+          "userinformation.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "computer: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu cores: <synthetic-value>",
+          "cpu name: <synthetic-value>",
+          "cpu threads: <synthetic-value>",
+          "cpu vendor: <synthetic-value>",
+          "display resolution: <synthetic-value>",
+          "elevated: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "ip address: <synthetic-value>",
+          "language: <synthetic-value>",
+          "lid: <synthetic-value>",
+          "lummac2 build: <synthetic-value>",
+          "netbios: <synthetic-value>",
+          "path: <synthetic-value>",
+          "ram size: <synthetic-value>",
+          "[synthetic filename: system.txt]",
+          "[synthetic filename: userinformation.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "mac-sync",
+      "id": "fp_ccb564eba89a41f894ab13acb8b34093",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "build tag",
+          "graphics/displays",
+          "hardware",
+          "password",
+          "software"
+        ],
+        "filenames": [
+          "information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "build tag: <synthetic-value>",
+          "graphics/displays: <synthetic-value>",
+          "hardware: <synthetic-value>",
+          "password: <synthetic-value>",
+          "software: <synthetic-value>",
+          "[synthetic filename: information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "nexus",
+      "id": "fp_b805ae0a005bf130ec266c926251be23",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "country",
+          "cpu name",
+          "cpu vendor",
+          "gpu",
+          "hwid",
+          "ip address",
+          "jabber",
+          "language",
+          "netbios",
+          "os version",
+          "pc",
+          "ram size",
+          "screen resolution",
+          "user"
+        ],
+        "filenames": [
+          "information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "country: <synthetic-value>",
+          "cpu name: <synthetic-value>",
+          "cpu vendor: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "ip address: <synthetic-value>",
+          "jabber: <synthetic-value>",
+          "language: <synthetic-value>",
+          "netbios: <synthetic-value>",
+          "os version: <synthetic-value>",
+          "pc: <synthetic-value>",
+          "ram size: <synthetic-value>",
+          "screen resolution: <synthetic-value>",
+          "user: <synthetic-value>",
+          "[synthetic filename: information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "phantom-stealer",
+      "id": "fp_2e6f0f0f14fa4833371bd09a8207bf23",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "admin rights",
+          "cpu",
+          "gpu",
+          "ip",
+          "location",
+          "pc-name",
+          "ram",
+          "system"
+        ],
+        "filenames": [
+          "userinformation.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "admin rights: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "location: <synthetic-value>",
+          "pc-name: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "system: <synthetic-value>",
+          "[synthetic filename: userinformation.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "phantom-stealer",
+      "id": "fp_61c4c9da4e206093361c22babc95e549",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "admin rights",
+          "cpu",
+          "gpu",
+          "ip",
+          "location",
+          "pc-name",
+          "ram",
+          "system"
+        ],
+        "filenames": [
+          "information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "admin rights: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "location: <synthetic-value>",
+          "pc-name: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "system: <synthetic-value>",
+          "[synthetic filename: information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "phexia",
+      "id": "fp_52979c212cfe19e8e307250f54241de9",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "build",
+          "graphics/displays",
+          "hardware",
+          "ip address",
+          "password",
+          "software"
+        ],
+        "filenames": [
+          "userinformation.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "build: <synthetic-value>",
+          "graphics/displays: <synthetic-value>",
+          "hardware: <synthetic-value>",
+          "ip address: <synthetic-value>",
+          "password: <synthetic-value>",
+          "software: <synthetic-value>",
+          "[synthetic filename: userinformation.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "raccoon",
+      "id": "fp_aea2443273ce558b371bcdffb882b698",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "build",
+          "build compile date",
+          "ip info",
+          "system information",
+          "user id"
+        ],
+        "filenames": [
+          "system info.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "build: <synthetic-value>",
+          "build compile date: <synthetic-value>",
+          "ip info: <synthetic-value>",
+          "system information: <synthetic-value>",
+          "user id: <synthetic-value>",
+          "[synthetic filename: system info.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "redline",
+      "id": "fp_747654f35df827fd4eaae4e6672d8d4b",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "anti-viruses",
+          "build id",
+          "country",
+          "current language",
+          "hwid",
+          "ip",
+          "location",
+          "log date",
+          "name",
+          "operation system",
+          "process elevation",
+          "timezone",
+          "uac",
+          "zip code"
+        ],
+        "filenames": [
+          "userinformation.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "anti-viruses: <synthetic-value>",
+          "build id: <synthetic-value>",
+          "country: <synthetic-value>",
+          "current language: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "location: <synthetic-value>",
+          "log date: <synthetic-value>",
+          "name: <synthetic-value>",
+          "operation system: <synthetic-value>",
+          "process elevation: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "uac: <synthetic-value>",
+          "zip code: <synthetic-value>",
+          "[synthetic filename: userinformation.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "rhadamanthys",
+      "id": "fp_899f4397f2eba6ff8e5ae8faf1011cfa",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "computer name",
+          "country",
+          "display resolution",
+          "domain name",
+          "hwid",
+          "installed ram",
+          "ip",
+          "keyboard language",
+          "log date",
+          "operation system",
+          "processor",
+          "system language",
+          "timezone",
+          "traffic",
+          "user language",
+          "user name",
+          "video card",
+          "wallpaper hash"
+        ],
+        "filenames": [
+          "userinformation.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "computer name: <synthetic-value>",
+          "country: <synthetic-value>",
+          "display resolution: <synthetic-value>",
+          "domain name: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "installed ram: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "keyboard language: <synthetic-value>",
+          "log date: <synthetic-value>",
+          "operation system: <synthetic-value>",
+          "processor: <synthetic-value>",
+          "system language: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "traffic: <synthetic-value>",
+          "user language: <synthetic-value>",
+          "user name: <synthetic-value>",
+          "[synthetic filename: userinformation.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "s-hub-stealer",
+      "id": "fp_9e8e2f08ded6678918a20247e774e3c9",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "build tag",
+          "external ip",
+          "graphics/displays",
+          "hardware",
+          "password",
+          "software"
+        ],
+        "filenames": [
+          "information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "build tag: <synthetic-value>",
+          "external ip: <synthetic-value>",
+          "graphics/displays: <synthetic-value>",
+          "hardware: <synthetic-value>",
+          "password: <synthetic-value>",
+          "software: <synthetic-value>",
+          "[synthetic filename: information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "stealerium",
+      "id": "fp_0957e539a23ad945cb46ab9402087266",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "antivirus",
+          "cpu",
+          "date",
+          "external ip",
+          "gateway ip",
+          "gpu",
+          "internal ip",
+          "language",
+          "power",
+          "ram",
+          "screen",
+          "system"
+        ],
+        "filenames": [
+          "information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "antivirus: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "date: <synthetic-value>",
+          "external ip: <synthetic-value>",
+          "gateway ip: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "internal ip: <synthetic-value>",
+          "language: <synthetic-value>",
+          "power: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "screen: <synthetic-value>",
+          "system: <synthetic-value>",
+          "[synthetic filename: information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-04cdace4e816dc7b624c3ca2017b05ee",
+      "id": "fp_d9dd052854ab29d048157603db568ec7",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "antivirus",
+          "build",
+          "city",
+          "country",
+          "cpu",
+          "credit cards",
+          "current language",
+          "discord tokens",
+          "gpu",
+          "hwid",
+          "ip",
+          "is elevated",
+          "isp",
+          "os",
+          "postal",
+          "timezone"
+        ],
+        "filenames": [
+          "information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "antivirus: <synthetic-value>",
+          "build: <synthetic-value>",
+          "city: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "credit cards: <synthetic-value>",
+          "current language: <synthetic-value>",
+          "discord tokens: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "is elevated: <synthetic-value>",
+          "isp: <synthetic-value>",
+          "os: <synthetic-value>",
+          "postal: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "[synthetic filename: information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-0cf0d3ec47cc5e965f59d4c9138e4bb5",
+      "id": "fp_4ce419f2bbffcde67cfb5079cd4a3cc5",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "build name",
+          "computer name",
+          "country iso2",
+          "cpu",
+          "date",
+          "elevated",
+          "execute path",
+          "gpu",
+          "hwid",
+          "ip",
+          "operation system",
+          "screen resolution",
+          "user name"
+        ],
+        "filenames": [
+          "system.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "build name: <synthetic-value>",
+          "computer name: <synthetic-value>",
+          "country iso2: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "date: <synthetic-value>",
+          "elevated: <synthetic-value>",
+          "execute path: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "operation system: <synthetic-value>",
+          "screen resolution: <synthetic-value>",
+          "user name: <synthetic-value>",
+          "[synthetic filename: system.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-11402ef2470edc70f723adf2ad7cfbb8",
+      "id": "fp_b0661c0af6c2e97221c63493a96745b8",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "build id",
+          "category",
+          "computer",
+          "country",
+          "cpu",
+          "gpu",
+          "hwid",
+          "ip",
+          "language",
+          "local time",
+          "os",
+          "path",
+          "ram",
+          "reserve link",
+          "system",
+          "timezone",
+          "utc time"
+        ],
+        "filenames": [
+          "information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "build id: <synthetic-value>",
+          "category: <synthetic-value>",
+          "computer: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "language: <synthetic-value>",
+          "local time: <synthetic-value>",
+          "os: <synthetic-value>",
+          "path: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "reserve link: <synthetic-value>",
+          "system: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "[synthetic filename: information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-1747ea0efa83f0624b1c67c8c9389549",
+      "id": "fp_055708411e522bc989240330afd18de1",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "admin",
+          "cpu",
+          "hwid",
+          "ip",
+          "lid",
+          "os",
+          "ram"
+        ],
+        "filenames": [
+          "system.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "admin: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "lid: <synthetic-value>",
+          "os: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "[synthetic filename: system.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-1a1a74b98f6bbeb7db8d741942d20ab1",
+      "id": "fp_fd03e9a62dc3f222b9a9a163b6cc05c4",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "country",
+          "cpu",
+          "hwid",
+          "ip",
+          "mac",
+          "pc name",
+          "pc username",
+          "ram",
+          "resolution"
+        ],
+        "filenames": [
+          "system_info.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "country: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "mac: <synthetic-value>",
+          "pc name: <synthetic-value>",
+          "pc username: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "resolution: <synthetic-value>",
+          "[synthetic filename: system_info.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-1d1fb21a3451e7323d52d912940702b9",
+      "id": "fp_fc2a374cc061dde90ce28d75140ddab8",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "arch",
+          "count core",
+          "file location",
+          "ip address",
+          "release",
+          "type",
+          "user info"
+        ],
+        "filenames": [
+          "system.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "arch: <synthetic-value>",
+          "count core: <synthetic-value>",
+          "file location: <synthetic-value>",
+          "ip address: <synthetic-value>",
+          "release: <synthetic-value>",
+          "type: <synthetic-value>",
+          "user info: <synthetic-value>",
+          "[synthetic filename: system.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-1dd6736a5360932cae50b2ddc61117c6",
+      "id": "fp_20313c79e6701702d01edbf81d4b4aa9",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "city",
+          "country",
+          "country code",
+          "graphics/displays",
+          "hardware",
+          "ip",
+          "latitude",
+          "longitude",
+          "region",
+          "software",
+          "timezone"
+        ],
+        "filenames": [
+          "userinfo.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "city: <synthetic-value>",
+          "country: <synthetic-value>",
+          "country code: <synthetic-value>",
+          "graphics/displays: <synthetic-value>",
+          "hardware: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "latitude: <synthetic-value>",
+          "longitude: <synthetic-value>",
+          "region: <synthetic-value>",
+          "software: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "[synthetic filename: userinfo.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-1e61c1f281349b0aeb5680a1bb87a6d3",
+      "id": "fp_b883e84f458985aafa9e03bd6648ea6e",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "city",
+          "country",
+          "cpu",
+          "gpu",
+          "hwid",
+          "ip",
+          "keyboard",
+          "os product",
+          "ram",
+          "system language",
+          "timezone"
+        ],
+        "filenames": [
+          "userinformation.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "city: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "keyboard: <synthetic-value>",
+          "os product: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "system language: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "[synthetic filename: userinformation.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-26c3c3b53ec7589dbb98ffb92823aa93",
+      "id": "fp_d3a58abb7f18cfaebd0fa8b88b8fb001",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "antivirus",
+          "clr version",
+          "computer name",
+          "cpu",
+          "default gateway",
+          "gpu",
+          "local ip",
+          "os version",
+          "processor count",
+          "ram",
+          "screen",
+          "system directory",
+          "system version",
+          "user name"
+        ],
+        "filenames": [
+          "system_info.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "antivirus: <synthetic-value>",
+          "clr version: <synthetic-value>",
+          "computer name: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "default gateway: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "local ip: <synthetic-value>",
+          "os version: <synthetic-value>",
+          "processor count: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "screen: <synthetic-value>",
+          "system directory: <synthetic-value>",
+          "system version: <synthetic-value>",
+          "user name: <synthetic-value>",
+          "[synthetic filename: system_info.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-2bf71d96ef3cdc621a6a180099124b5c",
+      "id": "fp_1de3b943d4ee6c0446db868fc38d6b31",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "admin group",
+          "computer name",
+          "country",
+          "display resolution",
+          "domain name",
+          "graphics card",
+          "installed ram",
+          "integrity",
+          "ip",
+          "keyboard language",
+          "operation system",
+          "processor",
+          "product key",
+          "system language",
+          "timezone",
+          "user name",
+          "wallpaper hash"
+        ],
+        "filenames": [
+          "system.txt",
+          "userinformation.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "admin group: <synthetic-value>",
+          "computer name: <synthetic-value>",
+          "country: <synthetic-value>",
+          "display resolution: <synthetic-value>",
+          "domain name: <synthetic-value>",
+          "graphics card: <synthetic-value>",
+          "installed ram: <synthetic-value>",
+          "integrity: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "keyboard language: <synthetic-value>",
+          "operation system: <synthetic-value>",
+          "processor: <synthetic-value>",
+          "product key: <synthetic-value>",
+          "system language: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "user name: <synthetic-value>",
+          "[synthetic filename: system.txt]",
+          "[synthetic filename: userinformation.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-3229b5d7426a10b0114f25c37776325d",
+      "id": "fp_f45f38a94073069e50bffa90b58cc817",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "cpu",
+          "disk",
+          "display resolution",
+          "gpu",
+          "installed software",
+          "keyboard languages",
+          "os",
+          "process",
+          "ram",
+          "uid"
+        ],
+        "filenames": [
+          "_information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "cpu: <synthetic-value>",
+          "disk: <synthetic-value>",
+          "display resolution: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "installed software: <synthetic-value>",
+          "keyboard languages: <synthetic-value>",
+          "os: <synthetic-value>",
+          "process: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "uid: <synthetic-value>",
+          "[synthetic filename: _information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-379e337109ba0180ce889a649cad31e4",
+      "id": "fp_7edc2b5b5c5e584b0e9dcc7c28c53c24",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "computer",
+          "disk capacity",
+          "disk free",
+          "memory",
+          "os",
+          "user"
+        ],
+        "filenames": [
+          "system_info.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "computer: <synthetic-value>",
+          "disk capacity: <synthetic-value>",
+          "disk free: <synthetic-value>",
+          "memory: <synthetic-value>",
+          "os: <synthetic-value>",
+          "user: <synthetic-value>",
+          "[synthetic filename: system_info.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-41de085de609b1945685675bd7e6550c",
+      "id": "fp_2a546c85fbf20c12ac3b69cf482f017e",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "category",
+          "computer",
+          "country",
+          "cpu",
+          "gpu",
+          "hwid",
+          "ip",
+          "language",
+          "local time",
+          "os",
+          "path",
+          "ram",
+          "timezone",
+          "utc time"
+        ],
+        "filenames": [
+          "information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "category: <synthetic-value>",
+          "computer: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "language: <synthetic-value>",
+          "local time: <synthetic-value>",
+          "os: <synthetic-value>",
+          "path: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "utc time: <synthetic-value>",
+          "[synthetic filename: information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-42afdacc7cf09270fbae373201bb629e",
+      "id": "fp_9c863430066d3c3f5bf420be0d1cf163",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "computer",
+          "country",
+          "cpu",
+          "gpu",
+          "ip",
+          "os",
+          "ram",
+          "user"
+        ],
+        "filenames": [
+          "system.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "computer: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "os: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "user: <synthetic-value>",
+          "[synthetic filename: system.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-444b05c99a19350d143681c4acb53846",
+      "id": "fp_fc060f8391afcec1a0e58095715cc00d",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "city",
+          "computer",
+          "computer name",
+          "country",
+          "cpu",
+          "gpu",
+          "hwid",
+          "installed antivirus",
+          "internet provider",
+          "ip",
+          "ram",
+          "region",
+          "started as admin",
+          "system",
+          "system time",
+          "user name"
+        ],
+        "filenames": [
+          "information.txt",
+          "pc_info.txt",
+          "system.txt",
+          "userinformation.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "city: <synthetic-value>",
+          "computer: <synthetic-value>",
+          "computer name: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "installed antivirus: <synthetic-value>",
+          "internet provider: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "region: <synthetic-value>",
+          "started as admin: <synthetic-value>",
+          "system: <synthetic-value>",
+          "system time: <synthetic-value>",
+          "user name: <synthetic-value>",
+          "[synthetic filename: information.txt]",
+          "[synthetic filename: pc_info.txt]",
+          "[synthetic filename: system.txt]",
+          "[synthetic filename: userinformation.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-4aaeab405c70b1a4977aa5689291d9b6",
+      "id": "fp_bc47329a67691c3ac4b8e6f6325579c5",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "antivirus",
+          "city",
+          "country",
+          "cpu",
+          "date",
+          "gpu",
+          "ip",
+          "ram",
+          "region",
+          "timezone",
+          "zip"
+        ],
+        "filenames": [
+          "info.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "antivirus: <synthetic-value>",
+          "city: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "date: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "region: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "zip: <synthetic-value>",
+          "[synthetic filename: info.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-577eebb64f24c68225a8d190379990b5",
+      "id": "fp_9ce1471b9fd638f0e3e38227bf1fde89",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "antivirus",
+          "browser data",
+          "country",
+          "ip",
+          "user"
+        ],
+        "filenames": [
+          "information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "antivirus: <synthetic-value>",
+          "browser data: <synthetic-value>",
+          "country: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "user: <synthetic-value>",
+          "[synthetic filename: information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-57b440dfb8287104b2b740725cab9342",
+      "id": "fp_287beeb708dbc3dc84266f60510a47dd",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "admin group",
+          "computer name",
+          "country",
+          "display resolution",
+          "domain name",
+          "graphics card",
+          "installed ram",
+          "integrity",
+          "ip",
+          "keyboard language",
+          "operation system",
+          "processor",
+          "product key",
+          "system language",
+          "timezone",
+          "user name",
+          "wallpaper hash"
+        ],
+        "filenames": [
+          "userinformation.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "admin group: <synthetic-value>",
+          "computer name: <synthetic-value>",
+          "country: <synthetic-value>",
+          "display resolution: <synthetic-value>",
+          "domain name: <synthetic-value>",
+          "graphics card: <synthetic-value>",
+          "installed ram: <synthetic-value>",
+          "integrity: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "keyboard language: <synthetic-value>",
+          "operation system: <synthetic-value>",
+          "processor: <synthetic-value>",
+          "product key: <synthetic-value>",
+          "system language: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "user name: <synthetic-value>",
+          "[synthetic filename: userinformation.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-58d1d7e3d4348cb9a01ee1ec2cde70b8",
+      "id": "fp_2e114b8662fbd7d9d37691ec3efa1e6e",
+      "quality": {
+        "independent_signal_count": 3,
+        "independent_signal_types": [
+          "marker",
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": true
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [
+          "==========PC INFO=========="
+        ],
+        "field_keys": [
+          "application",
+          "client name",
+          "country",
+          "ip",
+          "password",
+          "url"
+        ],
+        "filenames": [
+          "bot-<id>-<id>-userdata.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "[synthetic banner marker]",
+          "application: <synthetic-value>",
+          "client name: <synthetic-value>",
+          "country: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "password: <synthetic-value>",
+          "url: <synthetic-value>",
+          "[synthetic filename: bot-<id>-<id>-userdata.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-5fde45ff48ac01ea618406464031a9e2",
+      "id": "fp_d7e870827e553c18be30d4363b64f417",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "clipboard",
+          "cpu name",
+          "default gateway",
+          "external ip",
+          "hwid",
+          "input iso",
+          "internal ip",
+          "logical cores",
+          "machine",
+          "os arch",
+          "os build",
+          "os product",
+          "ram available (mb)",
+          "ram total (mb)",
+          "user",
+          "user domain"
+        ],
+        "filenames": [
+          "information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "clipboard: <synthetic-value>",
+          "cpu name: <synthetic-value>",
+          "default gateway: <synthetic-value>",
+          "external ip: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "input iso: <synthetic-value>",
+          "internal ip: <synthetic-value>",
+          "logical cores: <synthetic-value>",
+          "machine: <synthetic-value>",
+          "os arch: <synthetic-value>",
+          "os build: <synthetic-value>",
+          "os product: <synthetic-value>",
+          "ram available (mb): <synthetic-value>",
+          "ram total (mb): <synthetic-value>",
+          "user: <synthetic-value>",
+          "user domain: <synthetic-value>",
+          "[synthetic filename: information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-6d0336d10095a3b6f19dde58e263b6bb",
+      "id": "fp_3055766f04fff20af4568a5b47b89e9d",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "anti-sandbox",
+          "available ram",
+          "cpu cores",
+          "disk size",
+          "hypervisor bit (cpuid)",
+          "mode",
+          "os",
+          "process count",
+          "ram",
+          "recent files",
+          "screen resolution",
+          "system uptime",
+          "total ram",
+          "visible windows"
+        ],
+        "filenames": [
+          "system_info.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "anti-sandbox: <synthetic-value>",
+          "available ram: <synthetic-value>",
+          "cpu cores: <synthetic-value>",
+          "disk size: <synthetic-value>",
+          "hypervisor bit (cpuid): <synthetic-value>",
+          "mode: <synthetic-value>",
+          "os: <synthetic-value>",
+          "process count: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "recent files: <synthetic-value>",
+          "screen resolution: <synthetic-value>",
+          "system uptime: <synthetic-value>",
+          "total ram: <synthetic-value>",
+          "visible windows: <synthetic-value>",
+          "[synthetic filename: system_info.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-8dabc4758f9b98fbf6b151380414080a",
+      "id": "fp_67c83ea5d642eeba00e7892b9aee9af4",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "arch",
+          "count core",
+          "file location",
+          "ip address",
+          "release",
+          "type",
+          "user info"
+        ],
+        "filenames": [
+          "information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "arch: <synthetic-value>",
+          "count core: <synthetic-value>",
+          "file location: <synthetic-value>",
+          "ip address: <synthetic-value>",
+          "release: <synthetic-value>",
+          "type: <synthetic-value>",
+          "user info: <synthetic-value>",
+          "[synthetic filename: information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-909801f1fecf7c4f1cf18eb1a347c89d",
+      "id": "fp_a8992a16da11ccdf3f2c056565a38667",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "city",
+          "country",
+          "display resolution",
+          "ip address",
+          "keyboard language",
+          "postal code",
+          "region",
+          "timezone"
+        ],
+        "filenames": [
+          "userinformation.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "city: <synthetic-value>",
+          "country: <synthetic-value>",
+          "display resolution: <synthetic-value>",
+          "ip address: <synthetic-value>",
+          "keyboard language: <synthetic-value>",
+          "postal code: <synthetic-value>",
+          "region: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "[synthetic filename: userinformation.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-9cf3daccf4cf63bf8fff470f099dcf37",
+      "id": "fp_076452db354cb43ac4857ab749fba937",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "arch",
+          "city",
+          "country",
+          "cpu",
+          "gpu",
+          "hwid",
+          "ip",
+          "locale",
+          "os",
+          "quarantine zone",
+          "ram",
+          "region",
+          "risk",
+          "size",
+          "timezone"
+        ],
+        "filenames": [
+          "systeminfo.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "arch: <synthetic-value>",
+          "city: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "locale: <synthetic-value>",
+          "os: <synthetic-value>",
+          "quarantine zone: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "region: <synthetic-value>",
+          "risk: <synthetic-value>",
+          "size: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "[synthetic filename: systeminfo.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-9f895bd93d3d0b1731b8c5914a2a3896",
+      "id": "fp_581b5642475d41accac5f40d5fd53ed6",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "admin rights",
+          "build comment",
+          "build id",
+          "build path",
+          "build version",
+          "cpu",
+          "geo",
+          "gpu",
+          "hwid",
+          "ip",
+          "memory",
+          "os",
+          "pc name",
+          "user name",
+          "user time"
+        ],
+        "filenames": [
+          "userinformation.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "admin rights: <synthetic-value>",
+          "build comment: <synthetic-value>",
+          "build id: <synthetic-value>",
+          "build path: <synthetic-value>",
+          "build version: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "geo: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "memory: <synthetic-value>",
+          "os: <synthetic-value>",
+          "pc name: <synthetic-value>",
+          "user name: <synthetic-value>",
+          "user time: <synthetic-value>",
+          "[synthetic filename: userinformation.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-a6da7072a334e8c4bd75282e15b63af3",
+      "id": "fp_04ec15bf1b6cf36513d25ad5680cf829",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "build",
+          "computer name",
+          "cpu",
+          "cpu cores",
+          "cpu threads",
+          "current time",
+          "gpu(s)",
+          "os version",
+          "processor count",
+          "product name",
+          "system directory",
+          "time zone",
+          "total ram",
+          "uptime",
+          "user domain",
+          "user name"
+        ],
+        "filenames": [
+          "systeminfo.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "build: <synthetic-value>",
+          "computer name: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "cpu cores: <synthetic-value>",
+          "cpu threads: <synthetic-value>",
+          "current time: <synthetic-value>",
+          "gpu(s): <synthetic-value>",
+          "os version: <synthetic-value>",
+          "processor count: <synthetic-value>",
+          "product name: <synthetic-value>",
+          "system directory: <synthetic-value>",
+          "time zone: <synthetic-value>",
+          "total ram: <synthetic-value>",
+          "uptime: <synthetic-value>",
+          "user domain: <synthetic-value>",
+          "user name: <synthetic-value>",
+          "[synthetic filename: systeminfo.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-ad27c7cb6822fee6af5c4f3b19f3ee7a",
+      "id": "fp_0d35cc2791e70cd9c2eb5d1eaff9ea66",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "admin rights",
+          "build comment",
+          "cpu",
+          "geo",
+          "gpu",
+          "hwid",
+          "ip",
+          "memory",
+          "os",
+          "pc name",
+          "user name"
+        ],
+        "filenames": [
+          "userinformation.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "admin rights: <synthetic-value>",
+          "build comment: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "geo: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "memory: <synthetic-value>",
+          "os: <synthetic-value>",
+          "pc name: <synthetic-value>",
+          "user name: <synthetic-value>",
+          "[synthetic filename: userinformation.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-ad4802c6f25bb31f6ae11eaaea3dcad8",
+      "id": "fp_a8d182f1860736d9d9aaf3c59d62ab03",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "admin group",
+          "computer name",
+          "country",
+          "display resolution",
+          "domain name",
+          "graphics card",
+          "installed ram",
+          "integrity",
+          "ip",
+          "keyboard language",
+          "operation system",
+          "processor",
+          "product key",
+          "system language",
+          "timezone",
+          "user name",
+          "wallpaper hash"
+        ],
+        "filenames": [
+          "system.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "admin group: <synthetic-value>",
+          "computer name: <synthetic-value>",
+          "country: <synthetic-value>",
+          "display resolution: <synthetic-value>",
+          "domain name: <synthetic-value>",
+          "graphics card: <synthetic-value>",
+          "installed ram: <synthetic-value>",
+          "integrity: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "keyboard language: <synthetic-value>",
+          "operation system: <synthetic-value>",
+          "processor: <synthetic-value>",
+          "product key: <synthetic-value>",
+          "system language: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "user name: <synthetic-value>",
+          "[synthetic filename: system.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-af81db59c44117b802e24158702f7dcf",
+      "id": "fp_d8d05ef8f08ba7f5680c63cae3cf1c4f",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "country",
+          "graphics/displays",
+          "hardware",
+          "ip",
+          "software"
+        ],
+        "filenames": [
+          "userinformation.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "country: <synthetic-value>",
+          "graphics/displays: <synthetic-value>",
+          "hardware: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "software: <synthetic-value>",
+          "[synthetic filename: userinformation.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-cae1e491530bee83c37550af945dc95c",
+      "id": "fp_3e829ad4790c973ba9c6bce2abe6b1ea",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "city",
+          "country",
+          "country code",
+          "graphics/displays",
+          "hardware",
+          "ip",
+          "latitude",
+          "longitude",
+          "region",
+          "software",
+          "timezone"
+        ],
+        "filenames": [
+          "userinfo.txt",
+          "userinformation.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "city: <synthetic-value>",
+          "country: <synthetic-value>",
+          "country code: <synthetic-value>",
+          "graphics/displays: <synthetic-value>",
+          "hardware: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "latitude: <synthetic-value>",
+          "longitude: <synthetic-value>",
+          "region: <synthetic-value>",
+          "software: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "[synthetic filename: userinfo.txt]",
+          "[synthetic filename: userinformation.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-ccc0131fe7b87e71e345dc3e5226bbd7",
+      "id": "fp_a76907fa3ef046fcde9748a7c80103ec",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "graphics/displays",
+          "hardware",
+          "ip",
+          "password",
+          "software"
+        ],
+        "filenames": [
+          "information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "graphics/displays: <synthetic-value>",
+          "hardware: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "password: <synthetic-value>",
+          "software: <synthetic-value>",
+          "[synthetic filename: information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-cf4d4b2b1fb07476894f382450f840a8",
+      "id": "fp_1fd2ba3849f56cb33e2d08e8175ade6f",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "country",
+          "ip address",
+          "time",
+          "user",
+          "user name"
+        ],
+        "filenames": [
+          "info.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "country: <synthetic-value>",
+          "ip address: <synthetic-value>",
+          "time: <synthetic-value>",
+          "user: <synthetic-value>",
+          "user name: <synthetic-value>",
+          "[synthetic filename: info.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-d4ea9a8e4ab11dbd3fe7e0a75ec00f2c",
+      "id": "fp_b43a84c37ba36b5449d83a84613cbf9e",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "city",
+          "country",
+          "cpu",
+          "gpu",
+          "hwid",
+          "ip",
+          "keyboard",
+          "os product",
+          "ram",
+          "system language",
+          "timezone"
+        ],
+        "filenames": [
+          "system.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "city: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "keyboard: <synthetic-value>",
+          "os product: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "system language: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "[synthetic filename: system.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-d763e48ac5c9218c98f81268e7ad6110",
+      "id": "fp_f9fef64965c93897dd382be2e9f1b5a5",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "city",
+          "country",
+          "date",
+          "gpu",
+          "ip",
+          "ip timezone",
+          "local time",
+          "mac",
+          "machine",
+          "machine uuid",
+          "processor",
+          "ram",
+          "region name",
+          "windows",
+          "zip"
+        ],
+        "filenames": [
+          "information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "city: <synthetic-value>",
+          "country: <synthetic-value>",
+          "date: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "ip timezone: <synthetic-value>",
+          "local time: <synthetic-value>",
+          "mac: <synthetic-value>",
+          "machine: <synthetic-value>",
+          "machine uuid: <synthetic-value>",
+          "processor: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "region name: <synthetic-value>",
+          "windows: <synthetic-value>",
+          "zip: <synthetic-value>",
+          "[synthetic filename: information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-d9938fd793e400a2aa53521d4441e50d",
+      "id": "fp_1fcbbbfb2719808180393f11c95767a3",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "computer",
+          "cpu",
+          "gpu",
+          "os",
+          "ram",
+          "resolution",
+          "user"
+        ],
+        "filenames": [
+          "system_info.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "computer: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "os: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "resolution: <synthetic-value>",
+          "user: <synthetic-value>",
+          "[synthetic filename: system_info.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-dc0f622e026b076d25a111a8871fd2ae",
+      "id": "fp_a6729724534fb6b6dc0c537082a6fcef",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "city",
+          "country",
+          "country code",
+          "graphics/displays",
+          "hardware",
+          "ip",
+          "latitude",
+          "longitude",
+          "region",
+          "software",
+          "timezone"
+        ],
+        "filenames": [
+          "userinformation.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "city: <synthetic-value>",
+          "country: <synthetic-value>",
+          "country code: <synthetic-value>",
+          "graphics/displays: <synthetic-value>",
+          "hardware: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "latitude: <synthetic-value>",
+          "longitude: <synthetic-value>",
+          "region: <synthetic-value>",
+          "software: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "[synthetic filename: userinformation.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-e79fc654aa18e3e1b24125fdd34a233b",
+      "id": "fp_ccc494ef845c802cc834820bd201b185",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "city",
+          "country",
+          "ip",
+          "isp",
+          "org",
+          "os",
+          "processor",
+          "region",
+          "user"
+        ],
+        "filenames": [
+          "system_info.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "city: <synthetic-value>",
+          "country: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "isp: <synthetic-value>",
+          "org: <synthetic-value>",
+          "os: <synthetic-value>",
+          "processor: <synthetic-value>",
+          "region: <synthetic-value>",
+          "user: <synthetic-value>",
+          "[synthetic filename: system_info.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-eed7f6d6f951d7ce81b6c69003e3dcad",
+      "id": "fp_eb90f795720b4fb9abf1fab01be19386",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "chrome version",
+          "color depth",
+          "computer name",
+          "country",
+          "cpu",
+          "date",
+          "device name",
+          "device string",
+          "disk",
+          "display name",
+          "display resolution",
+          "domain name",
+          "edge version",
+          "gpu",
+          "guid",
+          "hwid",
+          "install date",
+          "install source",
+          "installed ram",
+          "installed software",
+          "ip",
+          "keyboard language",
+          "keyboard languages",
+          "network info",
+          "os",
+          "path",
+          "process",
+          "process count",
+          "process list",
+          "processor",
+          "publisher",
+          "ram",
+          "resolution",
+          "system language",
+          "time zone",
+          "traffic name",
+          "uid",
+          "user language",
+          "user name",
+          "video card",
+          "wallpaper hash"
+        ],
+        "filenames": [
+          "_information.txt",
+          "information.txt",
+          "system.txt",
+          "system_info.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "chrome version: <synthetic-value>",
+          "color depth: <synthetic-value>",
+          "computer name: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "date: <synthetic-value>",
+          "device name: <synthetic-value>",
+          "device string: <synthetic-value>",
+          "disk: <synthetic-value>",
+          "display name: <synthetic-value>",
+          "display resolution: <synthetic-value>",
+          "domain name: <synthetic-value>",
+          "edge version: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "guid: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "[synthetic filename: _information.txt]",
+          "[synthetic filename: information.txt]",
+          "[synthetic filename: system.txt]",
+          "[synthetic filename: system_info.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "unattributed-f2f4eef752652c8db06b83bee6ecad5f",
+      "id": "fp_1277f611843d9e5207c7df0c3db81a80",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "computer",
+          "credit cards",
+          "os",
+          "time",
+          "user"
+        ],
+        "filenames": [
+          "_info.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "computer: <synthetic-value>",
+          "credit cards: <synthetic-value>",
+          "os: <synthetic-value>",
+          "time: <synthetic-value>",
+          "user: <synthetic-value>",
+          "[synthetic filename: _info.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "vidar",
+      "id": "fp_0a0f5ac4f547f1da8a08efda747918a4",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "av",
+          "computer name",
+          "country",
+          "date",
+          "display resolution",
+          "guid",
+          "hwid",
+          "install date",
+          "ip",
+          "keyboard languages",
+          "local time",
+          "path",
+          "processor",
+          "ram",
+          "timezone",
+          "user name",
+          "windows",
+          "work dir"
+        ],
+        "filenames": [
+          "information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "av: <synthetic-value>",
+          "computer name: <synthetic-value>",
+          "country: <synthetic-value>",
+          "date: <synthetic-value>",
+          "display resolution: <synthetic-value>",
+          "guid: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "install date: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "keyboard languages: <synthetic-value>",
+          "local time: <synthetic-value>",
+          "path: <synthetic-value>",
+          "processor: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "user name: <synthetic-value>",
+          "[synthetic filename: information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "vidar",
+      "id": "fp_6d6f956a8f1f322a1242e25c068ecc2a",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "av",
+          "computer name",
+          "country",
+          "date",
+          "display resolution",
+          "guid",
+          "hwid",
+          "install date",
+          "ip",
+          "keyboard languages",
+          "local time",
+          "path",
+          "processor",
+          "ram",
+          "timezone",
+          "user name",
+          "windows",
+          "work dir"
+        ],
+        "filenames": [
+          "information.txt",
+          "system.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "av: <synthetic-value>",
+          "computer name: <synthetic-value>",
+          "country: <synthetic-value>",
+          "date: <synthetic-value>",
+          "display resolution: <synthetic-value>",
+          "guid: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "install date: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "keyboard languages: <synthetic-value>",
+          "local time: <synthetic-value>",
+          "path: <synthetic-value>",
+          "processor: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "user name: <synthetic-value>",
+          "[synthetic filename: information.txt]",
+          "[synthetic filename: system.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "vidar",
+      "id": "fp_868d7a139e23c7f327b99145222c22ae",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "av",
+          "computer name",
+          "country",
+          "date",
+          "display resolution",
+          "guid",
+          "hwid",
+          "install date",
+          "ip",
+          "keyboard languages",
+          "local time",
+          "path",
+          "processor",
+          "ram",
+          "timezone",
+          "user name",
+          "windows",
+          "work dir"
+        ],
+        "filenames": [
+          "system.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "av: <synthetic-value>",
+          "computer name: <synthetic-value>",
+          "country: <synthetic-value>",
+          "date: <synthetic-value>",
+          "display resolution: <synthetic-value>",
+          "guid: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "install date: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "keyboard languages: <synthetic-value>",
+          "local time: <synthetic-value>",
+          "path: <synthetic-value>",
+          "processor: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "user name: <synthetic-value>",
+          "[synthetic filename: system.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "vidar",
+      "id": "fp_ad9887a2bc191d61023f90f29f4a95f5",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "av",
+          "computer name",
+          "country",
+          "date",
+          "display resolution",
+          "guid",
+          "hwid",
+          "install date",
+          "ip",
+          "keyboard languages",
+          "local time",
+          "path",
+          "processor",
+          "ram",
+          "timezone",
+          "user name",
+          "windows",
+          "work dir"
+        ],
+        "filenames": [
+          "systeminfo.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "av: <synthetic-value>",
+          "computer name: <synthetic-value>",
+          "country: <synthetic-value>",
+          "date: <synthetic-value>",
+          "display resolution: <synthetic-value>",
+          "guid: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "install date: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "keyboard languages: <synthetic-value>",
+          "local time: <synthetic-value>",
+          "path: <synthetic-value>",
+          "processor: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "timezone: <synthetic-value>",
+          "user name: <synthetic-value>",
+          "[synthetic filename: systeminfo.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "white-snake",
+      "id": "fp_a54423ad8818f9f580c535e7dbb09c07",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "city",
+          "country",
+          "cpu",
+          "gpu",
+          "hwid",
+          "installed antivirus",
+          "internet provider",
+          "ip",
+          "ram",
+          "region",
+          "started as admin",
+          "system",
+          "system time",
+          "user name"
+        ],
+        "filenames": [
+          "pc_info.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "city: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu: <synthetic-value>",
+          "gpu: <synthetic-value>",
+          "hwid: <synthetic-value>",
+          "installed antivirus: <synthetic-value>",
+          "internet provider: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "ram: <synthetic-value>",
+          "region: <synthetic-value>",
+          "started as admin: <synthetic-value>",
+          "system: <synthetic-value>",
+          "system time: <synthetic-value>",
+          "user name: <synthetic-value>",
+          "[synthetic filename: pc_info.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "x-files",
+      "id": "fp_14154cb32bc13c099af646f1b985ec02",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "computer name",
+          "country",
+          "cpu (processor)",
+          "desktop screenshot taken",
+          "gpu (display devices)",
+          "hardware id",
+          "ip",
+          "operating system",
+          "operation id",
+          "ram (memory)"
+        ],
+        "filenames": [
+          "information.txt",
+          "system.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "computer name: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu (processor): <synthetic-value>",
+          "desktop screenshot taken: <synthetic-value>",
+          "gpu (display devices): <synthetic-value>",
+          "hardware id: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "operating system: <synthetic-value>",
+          "operation id: <synthetic-value>",
+          "ram (memory): <synthetic-value>",
+          "[synthetic filename: information.txt]",
+          "[synthetic filename: system.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "x-files",
+      "id": "fp_83db5f4e48dff6c7a28f15cf843c3fc8",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "computer name",
+          "country",
+          "cpu (processor)",
+          "desktop screenshot taken",
+          "gpu (display devices)",
+          "hardware id",
+          "ip",
+          "operating system",
+          "operation id",
+          "ram (memory)"
+        ],
+        "filenames": [
+          "information.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "computer name: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu (processor): <synthetic-value>",
+          "desktop screenshot taken: <synthetic-value>",
+          "gpu (display devices): <synthetic-value>",
+          "hardware id: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "operating system: <synthetic-value>",
+          "operation id: <synthetic-value>",
+          "ram (memory): <synthetic-value>",
+          "[synthetic filename: information.txt]"
+        ]
+      }
+    },
+    {
+      "$schema": "../../../schemas/fingerprint.schema.json",
+      "family_id": "x-files",
+      "id": "fp_af4599ab2e724657ea8d4bb07b0c15c3",
+      "quality": {
+        "independent_signal_count": 2,
+        "independent_signal_types": [
+          "field_keys",
+          "filenames"
+        ],
+        "yara_eligible": false
+      },
+      "schema_version": "1.0",
+      "scope": "exported_log_format",
+      "sharing": "TLP:CLEAR",
+      "signature": {
+        "banner_strings": [],
+        "field_keys": [
+          "computer name",
+          "country",
+          "cpu (processor)",
+          "desktop screenshot taken",
+          "gpu (display devices)",
+          "hardware id",
+          "ip",
+          "operating system",
+          "operation id",
+          "ram (memory)"
+        ],
+        "filenames": [
+          "system.txt"
+        ],
+        "panel_brand": null
+      },
+      "status": "active",
+      "synthetic_example": {
+        "declaration": "SYNTHETIC",
+        "kind": "structure_only",
+        "lines": [
+          "computer name: <synthetic-value>",
+          "country: <synthetic-value>",
+          "cpu (processor): <synthetic-value>",
+          "desktop screenshot taken: <synthetic-value>",
+          "gpu (display devices): <synthetic-value>",
+          "hardware id: <synthetic-value>",
+          "ip: <synthetic-value>",
+          "operating system: <synthetic-value>",
+          "operation id: <synthetic-value>",
+          "ram (memory): <synthetic-value>",
+          "[synthetic filename: system.txt]"
+        ]
+      }
+    }
+  ],
+  "schema_version": "1.0"
+}

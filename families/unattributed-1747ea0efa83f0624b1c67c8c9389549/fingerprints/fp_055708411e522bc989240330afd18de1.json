@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "unattributed-1747ea0efa83f0624b1c67c8c9389549",
+  "id": "fp_055708411e522bc989240330afd18de1",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "admin",
+      "cpu",
+      "hwid",
+      "ip",
+      "lid",
+      "os",
+      "ram"
+    ],
+    "filenames": [
+      "system.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "admin: <synthetic-value>",
+      "cpu: <synthetic-value>",
+      "hwid: <synthetic-value>",
+      "ip: <synthetic-value>",
+      "lid: <synthetic-value>",
+      "os: <synthetic-value>",
+      "ram: <synthetic-value>",
+      "[synthetic filename: system.txt]"
+    ]
+  }
+}

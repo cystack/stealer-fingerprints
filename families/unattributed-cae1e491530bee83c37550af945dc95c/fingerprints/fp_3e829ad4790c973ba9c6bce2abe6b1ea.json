@@ -1,0 +1,57 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "unattributed-cae1e491530bee83c37550af945dc95c",
+  "id": "fp_3e829ad4790c973ba9c6bce2abe6b1ea",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "city",
+      "country",
+      "country code",
+      "graphics/displays",
+      "hardware",
+      "ip",
+      "latitude",
+      "longitude",
+      "region",
+      "software",
+      "timezone"
+    ],
+    "filenames": [
+      "userinfo.txt",
+      "userinformation.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active",
+  "synthetic_example": {
+    "declaration": "SYNTHETIC",
+    "kind": "structure_only",
+    "lines": [
+      "city: <synthetic-value>",
+      "country: <synthetic-value>",
+      "country code: <synthetic-value>",
+      "graphics/displays: <synthetic-value>",
+      "hardware: <synthetic-value>",
+      "ip: <synthetic-value>",
+      "latitude: <synthetic-value>",
+      "longitude: <synthetic-value>",
+      "region: <synthetic-value>",
+      "software: <synthetic-value>",
+      "timezone: <synthetic-value>",
+      "[synthetic filename: userinfo.txt]",
+      "[synthetic filename: userinformation.txt]"
+    ]
+  }
+}
