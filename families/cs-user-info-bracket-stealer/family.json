@@ -46,7 +46,7 @@
   "variants": [
     {
       "id": "v_fdb74de9cb4f98c742de98b53c54eb33",
-      "parser": "logmine.ioc.parsers.cs_user_info_bracket_stealer.CSUserInfoBracketStealerParser",
+      "format_id": "cs-user-info-bracket-stealer",
       "filenames": [
         "Information.txt"
       ],
@@ -63,14 +63,14 @@
       "sample": {
         "path": "samples/v_fdb74de9cb4f98c742de98b53c54eb33/sample.txt",
         "sha256": "66b39fbd37357f589ba2e807edd7500ac9b026e0aa802afd53d6fbc4cc077884",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "basic-user-domain"
     },
     {
       "id": "v_e4ecc884d733c891238731a7465cfa26",
-      "parser": "logmine.ioc.parsers.cs_user_info_bracket_stealer.CSUserInfoBracketStealerParser",
+      "format_id": "cs-user-info-bracket-stealer",
       "filenames": [
         "Information.txt"
       ],
@@ -88,14 +88,14 @@
       "sample": {
         "path": "samples/v_e4ecc884d733c891238731a7465cfa26/sample.txt",
         "sha256": "70a0251c7ad29e86b811aad4b29c76ca4c340a5488f8e6b75bcd0194e6d21968",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "user-info-input-iso"
     },
     {
       "id": "v_b5830fa7c4f172950304e99c5fa7d4ad",
-      "parser": "logmine.ioc.parsers.cs_user_info_bracket_stealer.CSUserInfoBracketStealerParser",
+      "format_id": "cs-user-info-bracket-stealer",
       "filenames": [
         "Information.txt"
       ],
@@ -113,7 +113,7 @@
       "sample": {
         "path": "samples/v_b5830fa7c4f172950304e99c5fa7d4ad/sample.txt",
         "sha256": "3a4f453b631ec4229f975817dde22f10f0a70a0f8865bb56ea652392a6387318",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "user-info-input-iso"

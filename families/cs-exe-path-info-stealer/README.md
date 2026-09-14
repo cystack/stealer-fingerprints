@@ -6,13 +6,11 @@ distinctive ``EXE_PATH:`` uppercase-underscore header field.
 Observed inside the ``5,6 APRIL - 10250 LOGS.part1.rar``
 aggregator pack at ``<32-char>_<TIMESTAMP>/system_info.txt``
 victim folders where the archive-name convention with
-comma-separated dates mirrors iter #23
-``CSStartBuildInfoStealer`` (``4,5 MAY``).
+comma-separated dates mirrors ``CSStartBuildInfoStealer`` (``4,5 MAY``).
 
 Third variant of a common panel-builder family sharing the
 paren-annotated ``UserName`` / ``Username`` and heavy
-column-alignment style with iter #23
-``CSStartBuildInfoStealer`` and iter #26
+column-alignment style with ``CSStartBuildInfoStealer`` and
 ``CSInfoNetworkSectionStealer``, but each variant emits a
 distinct field-key spelling convention. This variant uses
 ``Operating system:`` (verbose lowercase-after-first-word),
@@ -47,16 +45,16 @@ section with per-program version tags)
 Fingerprint requires four line-anchored anchors:
 ``EXE_PATH:``, ``Operating system:``, ``Memory ram:``, and
 ``Username (Computername):``. The four-anchor combination
-is distinctive across the registry and disjoint from the
-sibling iter #23 ``CSStartBuildInfoStealer`` and iter #26
-``CSInfoNetworkSectionStealer`` parsers which each require
+is distinctive across this catalog and disjoint from the
+sibling ``CSStartBuildInfoStealer`` and
+``CSInfoNetworkSectionStealer`` formats which each require
 different key-spelling anchors. During triage, correlate
 the ``EXE_PATH:`` value with a TMP IXP subdirectory to
 identify the harvester process path.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

@@ -1,9 +1,8 @@
 # CSParsedUnknownStealer
 
 CSParsedUnknownStealer is a CyStack-coined identifier for
-a banner-less variant of the parser-tool normalized log
-wrapper that the CSBradMaxCloudParsedStealer sibling also
-claims. The wrapper is an in-house Python normalizer that a
+a banner-less variant of the normalization-tool output log
+wrapper that the CSBradMaxCloudParsedStealer sibling also represents. The wrapper is an in-house Python normalizer that a
 Telegram log broker runs over raw stealer output before
 redistribution: leading-space `Key: Value` fields, a pipe-joined `Single-line params:` hardware summary, an `Original
 file: C:\Users\admin\Desktop\<workdir>\...` reference to
@@ -15,7 +14,7 @@ This variant carries `Stealer: Unknown` (the tool ran but
 could not fingerprint the underlying stealer family) and
 ships without the `https://t.me/BRADMAX_CLOUD` banner that
 scopes the CSBradMaxCloudParsedStealer sibling. The
-`<workdir> = 2` operator ships all three sibling parser
+`<workdir> = 2` operator ships all three sibling format
 shapes seen so far (RisePro, Rhadamanthys, Unknown) without
 a channel banner, so `panel_brand` and
 `distribution_channel` stay unset.
@@ -49,7 +48,7 @@ the source family.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

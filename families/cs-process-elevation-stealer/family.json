@@ -14,7 +14,7 @@
     "System hardware, locale, and timezone inventory",
     "Anti-virus product enumeration"
   ],
-  "detection_notes": "The `Process Elevation:` line plus the joined\n`ScreenSize: {Width = X,Height = Y}TimeZone: ...` emission\n(spaces around the `=`, no separator before `TimeZone:`) is\nunique to this panel among the Redline-shape rebrands in\nthis catalog. The `UNKNOWN` literal recurs in `Country:`\nand `Zip Code:` for bogon-IP victims, so triage should\ntreat those values as missing rather than as a real country\nor postal code. False-positive risk is low: no other\nparser fingerprints on `Process Elevation:`, and the\nco-required `Operation System:` typo confirms the\nRedline-derived body shape.",
+  "detection_notes": "The `Process Elevation:` line plus the joined\n`ScreenSize: {Width = X,Height = Y}TimeZone: ...` emission\n(spaces around the `=`, no separator before `TimeZone:`) is\nunique to this panel among the Redline-shape rebrands in\nthis catalog. The `UNKNOWN` literal recurs in `Country:`\nand `Zip Code:` for bogon-IP victims, so triage should\ntreat those values as missing rather than as a real country\nor postal code. False-positive risk is low: no other\nformat fingerprints on `Process Elevation:`, and the\nco-required `Operation System:` typo confirms the\nRedline-derived body shape.",
   "attack_techniques": [
     {
       "id": "T1555",

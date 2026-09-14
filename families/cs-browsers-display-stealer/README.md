@@ -11,7 +11,7 @@ credential. No `Information.txt`, no `System.txt`, no
 
 The 2-dir layout sits below the 4-dir
 `Browsers/Discord/Files/System` layout that
-`CSBradmaxCategoryStealer` claims. The underlying builder is
+is represented by `CSBradmaxCategoryStealer`. The underlying builder is
 unidentified from the root listing alone: BRADMAX
 redistribution strips per-builder branding before repacking.
 Family attribution is provisional pending a published mapping
@@ -36,12 +36,12 @@ The strict 2-or-3 entry root with `Browsers/` and
 fingerprint. Richer Stealerium-fork layouts would add
 `Discord/`, `Files/`, `System/`, etc.; canonical family
 folders would add `Information.txt` or similar text
-dumps at root. The detector is the labelling fall-back
-for the most-stripped BRADMAX panel-build variant.
+dumps at root. This profile records the most-stripped BRADMAX panel-build
+variant.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

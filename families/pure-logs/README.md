@@ -20,7 +20,7 @@ path begins with `C:\PureLogs v4\Logs\<COUNTRY>\`.
 - Attribution confidence: **high**
 - Aliases: `PureLog Stealer`, `PureLogStealer`, `win.purelogs`
 - Variants observed: **1**
-- Historical Logmine records represented: **4,180**
+- CyStack observations represented: **4,180**
 
 ## What it targets
 
@@ -45,7 +45,7 @@ check during triage.
 
 ### `v_d9e2bb74fa7cf17912df704a74ceef77`
 
-- Parser: `logmine.ioc.parsers.purelogs.PureLogsParser`
+- Format ID: `purelogs`
 - Observed filenames: `log.json`
 - Panel brand: -
 - Distribution channel: -
@@ -53,7 +53,7 @@ check during triage.
 - Historical records represented: **4,180**
 - Representative sample: [open sample](samples/v_d9e2bb74fa7cf17912df704a74ceef77/sample.txt)
 - Sample SHA-256: `75548851886dcc2cb5b6f01b793f80d67b95c5a13aa54672fb53e591edf4d065`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

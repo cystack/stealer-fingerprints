@@ -41,10 +41,10 @@ layout.
 Fingerprint is the mixed-script `Сores:` bracket literal
 (Cyrillic Es prefix + Latin `ores:`) plus line-anchored
 `UserName (ComputerName):` paren-composite key plus line-anchored bare `Software:` section header. The Cyrillic
-prefix is the discriminator: no other registered parser
+prefix is the discriminator: no other cataloged format
 emits a `Сores` mixed-script bracket, and the combination
 with the paren-composite user key and the bare `Software:`
-header is disjoint from every sibling fixed-width parser
+header is disjoint from every sibling fixed-width format
 (CSStartBuildInfoStealer uses `[Installed software]`,
 CSInfoNetworkSectionStealer uses `[Info_Software]`,
 CSExePathInfoStealer uses `[Software]`). During triage,
@@ -55,7 +55,7 @@ per-victim asset inventory.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

@@ -52,9 +52,9 @@ Fingerprint requires seven line-anchored column-0 keys:
 `ram:` AND `gpu:`. The column-0 requirement distinguishes from
 canonical Remus (children indented 2 spaces under `build:` /
 `os:` / `hardware:` block wrappers) and from every other
-registered parser. During triage, treat the sample as weak
+cataloged format. During triage, treat the sample as weak
 attribution to Remus Stealer via the BRADMAX aggregator
-channel; rename the family constant to `Remus Stealer` if a
+channel; update this tracking profile to `Remus Stealer` if a
 public writeup later publishes a sample of this exact
 flattened variant. The empty hardware-field values in the
 observed sample suggest a panel-side WMI-collection failure
@@ -63,7 +63,7 @@ path, country, OS, and language fields.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

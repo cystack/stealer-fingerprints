@@ -46,7 +46,7 @@ Fingerprint requires 3+ 4-line blocks in the `URL:` /
 where the `Browser:` value opens with an uppercase
 browser-name prefix from a curated list (CHROME / EDGE /
 FIREFOX / BRAVE / OPERA / VIVALDI / YANDEX / MOZILLA /
-CHROMIUM / SAFARI / TOR / IE). Gating on the known-browser prefix keeps the sniffer off arbitrary text that
+CHROMIUM / SAFARI / TOR / IE). Gating on the known-browser prefix excludes arbitrary text that
 happens to include a `Browser:` line. During triage,
 the `<Browser>_<Profile>` value is the per-entry source-profile hint that lets analysts pivot to the specific
 Chromium Login Data / Firefox signons SQLite file the
@@ -54,7 +54,7 @@ stealer read from.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

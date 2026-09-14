@@ -18,7 +18,7 @@ Documented macOS stealers either ship a richer geo block
 (Cthulhu's 9-field block, AMOS's 3-field block) or serialise
 system info to JSON (Banshee). The flat-key text shape plus
 the missing country-code sibling field rules out all four
-registered macOS parsers (Cthulhu, MacSync, AMOS,
+registered macOS formats (Cthulhu, MacSync, AMOS,
 CSMacUserinfo).
 
 Family attribution is provisional. Public reporting and the
@@ -58,7 +58,7 @@ Cthulhu and CSMacUserinfo) AND absence of `BuildID:`
 (rules out AMOS) AND absence of `MacSync Stealer` (rules
 out MacSync). The positive anchors confirm a macOS
 `system_profiler` body; the negative anchors defer to the
-four richer-geo macOS parsers when their banners or
+four richer-geo macOS formats when their banners or
 fields are present. During triage, the `Country:` value
 carries the full English country name (not the 2-letter
 ISO code), so downstream country-based filters need a
@@ -66,7 +66,7 @@ name-to-ISO lookup.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

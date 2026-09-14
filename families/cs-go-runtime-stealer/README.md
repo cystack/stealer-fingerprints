@@ -29,8 +29,8 @@ execution path; the observed sample ran out of `%TEMP%`. The
 path-side `<operator-handle>/` segment between the victim
 folder and the `system_info.txt` file exposes the operator's
 panel-side identifier (`poopbandit` in the observed sample);
-the parser routes this through `malware.distribution_channel`
-so the operator handle travels with the IOC.
+the operator handle is retained as distribution-channel
+evidence in this catalog.
 
 Public reporting and the public stealer-format catalogues do
 not document a family that emits exactly this minimal
@@ -44,7 +44,7 @@ published mapping.
 - Attribution confidence: **unknown**
 - Aliases: `Go-runtime minimal stealer panel`, `poopbandit Information.txt`
 - Variants observed: **1**
-- Historical Logmine records represented: **3**
+- CyStack observations represented: **3**
 
 ## What it targets
 
@@ -74,7 +74,7 @@ distribution.
 
 ### `v_5ea325f8d303821fabff4fe14535f995`
 
-- Parser: `logmine.ioc.parsers.cs_go_runtime_stealer.CSGoRuntimeStealerParser`
+- Format ID: `cs-go-runtime-stealer`
 - Observed filenames: `system_info.txt`
 - Panel brand: -
 - Distribution channel: `poopbandit`
@@ -82,7 +82,7 @@ distribution.
 - Historical records represented: **3**
 - Representative sample: [open sample](samples/v_5ea325f8d303821fabff4fe14535f995/sample.txt)
 - Sample SHA-256: `d607cdbe5aa335eacb986db240a008540ba753990b7faf158ebc9a26b8f0e7dc`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

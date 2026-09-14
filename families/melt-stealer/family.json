@@ -74,7 +74,7 @@
   "variants": [
     {
       "id": "v_209de6a8e4756161ea71c25d62594571",
-      "parser": "logmine.ioc.parsers.melt_stealer.MeltStealerParser",
+      "format_id": "melt-stealer",
       "filenames": [
         "Information.txt"
       ],
@@ -90,7 +90,7 @@
       "sample": {
         "path": "samples/v_209de6a8e4756161ea71c25d62594571/sample.txt",
         "sha256": "063e49dcad7f0ab2bfa94158a5346a9a37d17883637a6cf6f23f460349dd7390",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

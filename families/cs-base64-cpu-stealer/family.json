@@ -17,7 +17,7 @@
     "Installed antivirus product list",
     "Log render time and grab start time"
   ],
-  "detection_notes": "Fingerprint requires all five line-anchored keys: `L_HWID:`\nAND `CPU Name Base64:` AND `Grab Start Date:` AND `IP Country\nCode:` AND `IP Location:`. The combination is unique across\nthe registry because no other parser emits the lowercase-HWID\nduplicate, the base64-serialised CPU name, or the split\nhuman-vs-ISO2 geolocation pair. During triage, treat the\nsample as weak attribution to an unnamed private stealer that\nborrows Redline's `Operation System:` field name; if a public\nwriteup later identifies the underlying builder, rename the\nfamily constant rather than adding a duplicate parser. The\n`L_HWID` and `CPU Name Base64` duplicates are lossless copies\nof the paired plain field, so ignoring them during IOC\ncomposition loses no information.",
+  "detection_notes": "Fingerprint requires all five line-anchored keys: `L_HWID:`\nAND `CPU Name Base64:` AND `Grab Start Date:` AND `IP Country\nCode:` AND `IP Location:`. The combination is unique across\nthe registry because no other format emits the lowercase-HWID\nduplicate, the base64-serialised CPU name, or the split\nhuman-vs-ISO2 geolocation pair. During triage, treat the\nsample as weak attribution to an unnamed private stealer that\nborrows Redline's `Operation System:` field name; if a public\nwriteup later identifies the underlying builder, update this\ntracking profile rather than adding a duplicate record. The\n`L_HWID` and `CPU Name Base64` duplicates are lossless copies\nof the paired plain field, so ignoring them during IOC\ncomposition loses no information.",
   "attack_techniques": [
     {
       "id": "T1082",

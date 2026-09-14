@@ -7,8 +7,7 @@ MaaS through the `phantomsoftwares.site` storefront and the
 as active since February 2025 with a NativeAOT `pdh.dll` outer
 loader plus a .NET inner payload (two-layer attack chain).
 
-Two `Information.txt` panel shapes are claimed by separate
-parsers in this project:
+This catalog documents two distinct `Information.txt` panel shapes:
 
 - v2 emoji-section panel (canonical, publicly confirmed):
 banner `*Phantom stealer v2.0 - Report:*` with `📅 Date:`, `🖥️
@@ -25,7 +24,7 @@ operator-attribution block carries `contact` / `marketplace` /
 was originally flagged as provisionally-attributed Phantom;
 the v2 emoji-panel research has not directly confirmed the v1
 key-value shape, so v1 attribution remains tentative even
-though it is claimed under the same canonical family literal
+though it is retained under the same canonical family
 pending a published mapping.
 
 ## Research status
@@ -34,7 +33,7 @@ pending a published mapping.
 - Attribution confidence: **high**
 - Aliases: `Phantom Stealer`, `Phantom stealer v2.0`
 - Variants observed: **3**
-- Historical Logmine records represented: **42**
+- CyStack observations represented: **42**
 
 ## What it targets
 
@@ -53,24 +52,19 @@ v2 fingerprint requires the literal `Phantom stealer v2.0`
 banner substring AND the `HARDWARE INFORMATION` section header
 AND the `External IP:` field name. The three-anchor
 combination is the panel self-banner plus structural
-confirmation. v2 `Date:` values use 12-hour `AM/PM` format
-with no explicit timezone marker, so log_time is normalised to
-UTC via strptime rather than the to_iso_time dateparser
-fallback (which would re-tag with the running host's local
-offset).
+confirmation. v2 `Date:` values use 12-hour `AM/PM` format with no explicit timezone marker; analysts should treat the timezone as unknown rather than infer it from the processing host.
 
 v1 fingerprint requires the `PC-name:` (hyphenated) and `Admin
 rights:` keys together. The v1 attribution to Phantom Stealer
 is provisional - the v1 layout is structurally distinct from
 the publicly confirmed v2 panel and may represent a look-alike
-Russian stealer that was originally misattributed. Treat
-v1-shape Phantom claims with caution during triage.
+Russian stealer that was originally misattributed. Treat v1-shape Phantom attribution with caution during triage.
 
 ## Observed log variants
 
 ### `v_44219ba58866514b6fc62b29339a973e`
 
-- Parser: `logmine.ioc.parsers.cs_sys_root_stealer.CSSysRootStealerParser`
+- Format ID: `cs-sys-root-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: `Sys_root v-200`
 - Distribution channel: -
@@ -78,7 +72,7 @@ v1-shape Phantom claims with caution during triage.
 - Historical records represented: **1**
 - Representative sample: [open sample](samples/v_44219ba58866514b6fc62b29339a973e/sample.txt)
 - Sample SHA-256: `f96fd47319862d1e47d6f98acdabde745c985b1371333bd266baa94f92aaaa0b`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -87,7 +81,7 @@ Recognition anchors:
 
 ### `v_644d60f850bf17ab715debd34be84482`
 
-- Parser: `logmine.ioc.parsers.phantom_v2.PhantomV2Parser`
+- Format ID: `phantom-v2`
 - Observed filenames: `Information.txt`
 - Panel brand: `Phantom stealer v2.0`
 - Distribution channel: `@Phantomsoftwares_bot`
@@ -95,7 +89,7 @@ Recognition anchors:
 - Historical records represented: **36**
 - Representative sample: [open sample](samples/v_644d60f850bf17ab715debd34be84482/sample.txt)
 - Sample SHA-256: `394d2a403b0b34802ee996ad7edbf8c397b56c87d1b135c51ed808f3f0844719`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -104,7 +98,7 @@ Recognition anchors:
 
 ### `v_c63d4009bb81da5cdadc47965e2d193d`
 
-- Parser: `logmine.ioc.parsers.phantom.PhantomParser`
+- Format ID: `phantom`
 - Observed filenames: `UserInformation.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -112,7 +106,7 @@ Recognition anchors:
 - Historical records represented: **5**
 - Representative sample: [open sample](samples/v_c63d4009bb81da5cdadc47965e2d193d/sample.txt)
 - Sample SHA-256: `5f8862643abbd18cfac5a58a9b2d6a6bc2a86f7351c86e1fdaf879f0ad81de92`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

@@ -28,7 +28,7 @@
   "variants": [
     {
       "id": "v_04bcb3b8fdb3ba04fb2e9c8bdfbf63bd",
-      "parser": "logmine.ioc.parsers.antarctida.AntarctidaParser",
+      "format_id": "antarctida",
       "filenames": [
         "Information.txt"
       ],
@@ -43,7 +43,7 @@
       "sample": {
         "path": "samples/v_04bcb3b8fdb3ba04fb2e9c8bdfbf63bd/sample.txt",
         "sha256": "ed5cf23778fb0d49a3f4fb3a8bad55d5dc53f377421473ad086773dba95a4830",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

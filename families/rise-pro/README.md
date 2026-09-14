@@ -10,7 +10,7 @@ Telegram bot channels. Functionally it resembles Vidar:
 browser credential grab, wallet grab, and a `brute.txt`
 password aggregate for downstream brute-forcing.
 
-The log this parser claims is not native RisePro output. It is
+The log documented here is not native RisePro output. It is
 emitted by an in-house Python normalizer that a Telegram log
 broker runs over raw stealer output before redistribution. The
 tool writes leading-space `Key: Value` fields, a pipe-joined
@@ -18,7 +18,7 @@ tool writes leading-space `Key: Value` fields, a pipe-joined
 reference to the operator working folder, and a `Source:
 IP-API (https://ip-api.com/)` geolocation attribution line.
 The tool self-declares the family via a `Stealer:` field; here
-it points at RisePro. The BRADMAX_CLOUD sibling parser handles
+it points at RisePro. The BRADMAX_CLOUD sibling format handles
 the same wrapper when the tool cannot fingerprint the
 underlying stealer (`Stealer: Unknown`).
 
@@ -50,7 +50,7 @@ line is the wrapper-tool tell.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

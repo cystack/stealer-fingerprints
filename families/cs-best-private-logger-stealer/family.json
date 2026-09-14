@@ -44,7 +44,7 @@
   "variants": [
     {
       "id": "v_8ed58f5f3aef8144b0c675eacfba6344",
-      "parser": "logmine.ioc.parsers.cs_best_private_logger_stealer.CSBestPrivateLoggerStealerParser",
+      "format_id": "cs-best-private-logger-stealer",
       "filenames": [
         "bot-<bot-id>-<chat-id>-Userdata.txt"
       ],
@@ -60,7 +60,7 @@
       "sample": {
         "path": "samples/v_8ed58f5f3aef8144b0c675eacfba6344/sample.txt",
         "sha256": "02454f5061b7243f4647864a3295ef0d0ffa6b63aa1e6a6483ba31a399e9ce26",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

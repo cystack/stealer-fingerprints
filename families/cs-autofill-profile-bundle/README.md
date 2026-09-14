@@ -45,8 +45,7 @@ Fingerprint requires `system_path` to be a folder, its
 id to contain `/Autofill/` (case-sensitive), its
 basename to match a lowercase-alphanumeric 4-30 char
 shape, and the folder root to contain `autofill.txt`.
-The four-anchor combination keeps the detector off
-random or spaced folder names that happen to live
+The four-anchor combination excludes random or spaced folder names that happen to live
 under any `Autofill/` parent. False-positive risk is
 low because the strict basename guard rules out the
 spaced or bracket-suffixed naming used by documented
@@ -57,7 +56,7 @@ to the operator pack.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

@@ -15,7 +15,7 @@
     "System locale (`fr-FR` / `en-US` / etc.)",
     "Windows domain / netbios name (empty in observed sample)"
   ],
-  "detection_notes": "Fingerprint requires seven line-anchored column-0 keys:\n`path:` AND `country:` AND `os:` AND `version:` AND `cpu:` AND\n`ram:` AND `gpu:`. The column-0 requirement distinguishes from\ncanonical Remus (children indented 2 spaces under `build:` /\n`os:` / `hardware:` block wrappers) and from every other\nregistered parser. During triage, treat the sample as weak\nattribution to Remus Stealer via the BRADMAX aggregator\nchannel; rename the family constant to `Remus Stealer` if a\npublic writeup later publishes a sample of this exact\nflattened variant. The empty hardware-field values in the\nobserved sample suggest a panel-side WMI-collection failure\nthat stripped most identity data, so the IOC carries only\npath, country, OS, and language fields.",
+  "detection_notes": "Fingerprint requires seven line-anchored column-0 keys:\n`path:` AND `country:` AND `os:` AND `version:` AND `cpu:` AND\n`ram:` AND `gpu:`. The column-0 requirement distinguishes from\ncanonical Remus (children indented 2 spaces under `build:` /\n`os:` / `hardware:` block wrappers) and from every other\ncataloged format. During triage, treat the sample as weak\nattribution to Remus Stealer via the BRADMAX aggregator\nchannel; update this tracking profile to `Remus Stealer` if a\npublic writeup later publishes a sample of this exact\nflattened variant. The empty hardware-field values in the\nobserved sample suggest a panel-side WMI-collection failure\nthat stripped most identity data, so the IOC carries only\npath, country, OS, and language fields.",
   "attack_techniques": [
     {
       "id": "T1082",

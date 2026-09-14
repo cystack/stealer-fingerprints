@@ -29,7 +29,7 @@ mapping for this layout.
 - Attribution confidence: **unknown**
 - Aliases: `Bare macOS userinfo.txt panel`, `No-BuildID Cthulhu-shape macOS log`
 - Variants observed: **1**
-- Historical Logmine records represented: **1**
+- CyStack observations represented: **1**
 
 ## What it targets
 
@@ -47,9 +47,7 @@ specific because `Country Code:` (separate from
 `Country:`) plus `Zipcode:` (one word) is the geo-block
 opener documented for Cthulhu, and `Hardware Overview:` is
 the macOS-specific `system_profiler SPHardwareDataType`
-header. CthulhuParser runs ahead and claims any sample
-that also carries `BuildID:`, so this parser only sees
-the BuildID-less variant. AMOSParser uses `Country:` (not
+header. Samples that also carry `BuildID:` match the Cthulhu profile; this profile covers the BuildID-less variant. AMOS uses `Country:` (not
 `Country Code:`) plus the `MetaMask Info:` / `Debanks:` /
 `Userinfo:` section header triple - no overlap. MacSync
 requires the `MacSync Stealer` banner - absent here.
@@ -61,7 +59,7 @@ keychain dumps, wallet folders) in the same victim folder.
 
 ### `v_ab5581abd38bf0fcdf843171df456903`
 
-- Parser: `logmine.ioc.parsers.cs_mac_userinfo_stealer.CSMacUserinfoStealerParser`
+- Format ID: `cs-mac-userinfo-stealer`
 - Observed filenames: `UserInformation.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -69,7 +67,7 @@ keychain dumps, wallet folders) in the same victim folder.
 - Historical records represented: **1**
 - Representative sample: [open sample](samples/v_ab5581abd38bf0fcdf843171df456903/sample.txt)
 - Sample SHA-256: `bc9690044f983ca1ac45b631b2d97f6548e94ae1d0d59269fa0c77be33baef85`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

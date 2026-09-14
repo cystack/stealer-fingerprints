@@ -14,7 +14,7 @@
     "System hardware and locale fingerprint",
     "Discord token folder (per the @DataMonk_file Application/Discord layout)"
   ],
-  "detection_notes": "The `#BUY NOW: TG @` panel banner plus the mixed-case\n`=== System Information ===` header is the cleanest\nfingerprint pair. PCInfoStealer uses the uppercase\nheader variant and emits `PC Username:` / `PC Name:` keys\ninstead of `Computer Name:`, so the two parsers do not\ncollide. The `Build:` value (`test_00` in surveyed\nsamples) suggests an early or test-phase builder; later\nproduction samples may emit a different value. The\nbanner-line handles vary by distributor, so triage based\non the channel handles in the banner rather than\nassuming a single source.",
+  "detection_notes": "The `#BUY NOW: TG @` panel banner plus the mixed-case\n`=== System Information ===` header is the cleanest\nfingerprint pair. PCInfoStealer uses the uppercase\nheader variant and emits `PC Username:` / `PC Name:` keys\ninstead of `Computer Name:`, so the two formats do not\ncollide. The `Build:` value (`test_00` in surveyed\nsamples) suggests an early or test-phase builder; later\nproduction samples may emit a different value. The\nbanner-line handles vary by distributor, so triage based\non the channel handles in the banner rather than\nassuming a single source.",
   "attack_techniques": [
     {
       "id": "T1555",

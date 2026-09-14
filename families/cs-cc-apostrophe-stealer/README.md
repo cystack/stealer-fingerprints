@@ -53,17 +53,16 @@ Month  |  Expiration Year  |  Card Number  |  Date
 Modified` pipe-header literal in the `cc's.txt` body.
 The header anchor fires even on victims with no saved
 cards because the panel writes the header row
-unconditionally. The 3-file root-entry cap keeps the
-claim off larger Lumma-shaped folders (which require
+unconditionally. The 3-file root-entry cap distinguishes larger Lumma-shaped folders (which require
 `All_Passwords.txt` + `passwords.txt` + `cookies.txt` +
-`history.txt` per the Lumma detector). During triage,
+`history.txt` as documented in the Lumma profile). During triage,
 treat the family attribution as unknown: the underlying
 stealer builder cannot be identified from the 3-file
 shape plus pipe-header alone.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

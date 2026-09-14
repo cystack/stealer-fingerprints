@@ -18,11 +18,7 @@ friends count, business-account flag, and account country),
 but no public writeup shows a sample log with this exact
 en-dash-prefixed label set, so the format-to-family mapping
 remains provisional and the `CS` prefix is retained pending a
-published confirmation. The parser is registered late as a
-labeling parser: it emits a minimal IOC (country plus the
-family label) so the strict-mode "no family parser claimed
-system file content" alert stops firing on every per-victim
-copy of the format across the parent log pack.
+published confirmation. This catalog retains the structure as a labeling-only profile: country and the tracking label are recoverable, while the available evidence does not support a stronger family attribution.
 
 ## Research status
 
@@ -30,7 +26,7 @@ copy of the format across the parent log pack.
 - Attribution confidence: **low**
 - Aliases: `NodeStealer (provisional)`, `SYS01 (provisional)`
 - Variants observed: **1**
-- Historical Logmine records represented: **2**
+- CyStack observations represented: **2**
 
 ## What it targets
 
@@ -44,7 +40,7 @@ copy of the format across the parent log pack.
 The U+2013 en-dash (`-`) line prefix combined with the
 `Friends:` / `Business:` / `Marketplace:` Facebook-Graph-API
 field trio is unique to this artifact: every other dash-prefix family in this catalog uses the ASCII hyphen-minus
-or em-dash glyph, and no malware-family parser carries
+or em-dash glyph, and no malware-family format carries
 this Facebook-specific field set. False-positive risk is
 low because the trio of keys is too specific to overlap
 with any system-info format. Triage: any IOC tagged with
@@ -56,7 +52,7 @@ no other system-info file is present in the victim folder.
 
 ### `v_17c4049d7ffc5b0cf40d59a6aebc00d8`
 
-- Parser: `logmine.ioc.parsers.cs_facebook_profile_stealer.CSFacebookProfileStealerParser`
+- Format ID: `cs-facebook-profile-stealer`
 - Observed filenames: `System.txt`
 - Panel brand: `U+2013 EN-DASH prefix Facebook profile`
 - Distribution channel: `@ft7links`
@@ -64,7 +60,7 @@ no other system-info file is present in the victim folder.
 - Historical records represented: **2**
 - Representative sample: [open sample](samples/v_17c4049d7ffc5b0cf40d59a6aebc00d8/sample.txt)
 - Sample SHA-256: `4754a3e6c93bb601300321aa73f6e79423c37bb3d99f568ad7c26dde73fd16bb`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

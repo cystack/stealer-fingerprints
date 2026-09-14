@@ -43,12 +43,11 @@ During triage, treat the underlying stealer family as
 unattributable and rely on the channel + panel_brand metadata
 to bucket samples for analyst review. Companion files in the
 victim folder (browser exports, wallet artifacts, cookie
-dumps) may trigger more confident attributions through their
-own family detectors.
+dumps) may provide more confident family attribution.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

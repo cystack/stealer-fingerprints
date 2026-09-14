@@ -3,7 +3,7 @@
   "name": "CSFacebookProfileStealer",
   "classification": "cystack_named",
   "attribution_confidence": "low",
-  "description": "CSFacebookProfileStealer is a CyStack-coined identifier for a\nFacebook-account-profile summary that the `@ft7links-lumma`\npanel writes into a file named `System.txt` instead of\ncanonical stealer system info. Each line uses a U+2013 en-dash\n(not the ASCII hyphen-minus) as the prefix glyph and lists\nfour fields lifted directly from the Facebook Graph API:\n`Friends` (account friend count), `Business` (Business Manager\nflag), `Marketplace` (Marketplace access flag), and `Country`\n(Facebook account country, empty for bogon-IP victims where\nthe panel could not resolve geo-IP).\n\nThe format matches what public reporting documents for\nNodeStealer 2.0 and for SYS01 stealer (both query the Facebook\nGraph API after exfiltrating a session cookie to enumerate\nfriends count, business-account flag, and account country),\nbut no public writeup shows a sample log with this exact\nen-dash-prefixed label set, so the format-to-family mapping\nremains provisional and the `CS` prefix is retained pending a\npublished confirmation. The parser is registered late as a\nlabeling parser: it emits a minimal IOC (country plus the\nfamily label) so the strict-mode \"no family parser claimed\nsystem file content\" alert stops firing on every per-victim\ncopy of the format across the parent log pack.",
+  "description": "CSFacebookProfileStealer is a CyStack-coined identifier for a\nFacebook-account-profile summary that the `@ft7links-lumma`\npanel writes into a file named `System.txt` instead of\ncanonical stealer system info. Each line uses a U+2013 en-dash\n(not the ASCII hyphen-minus) as the prefix glyph and lists\nfour fields lifted directly from the Facebook Graph API:\n`Friends` (account friend count), `Business` (Business Manager\nflag), `Marketplace` (Marketplace access flag), and `Country`\n(Facebook account country, empty for bogon-IP victims where\nthe panel could not resolve geo-IP).\n\nThe format matches what public reporting documents for\nNodeStealer 2.0 and for SYS01 stealer (both query the Facebook\nGraph API after exfiltrating a session cookie to enumerate\nfriends count, business-account flag, and account country),\nbut no public writeup shows a sample log with this exact\nen-dash-prefixed label set, so the format-to-family mapping\nremains provisional and the `CS` prefix is retained pending a\npublished confirmation. This catalog retains the structure as a labeling-only profile: country and the tracking label are recoverable, while the available evidence does not support a stronger family attribution.",
   "aliases": [
     "NodeStealer (provisional)",
     "SYS01 (provisional)"
@@ -14,7 +14,7 @@
     "Facebook Marketplace listing access",
     "Facebook account profile metadata (friends count, country)"
   ],
-  "detection_notes": "The U+2013 en-dash (`-`) line prefix combined with the\n`Friends:` / `Business:` / `Marketplace:` Facebook-Graph-API\nfield trio is unique to this artifact: every other dash-prefix family in this catalog uses the ASCII hyphen-minus\nor em-dash glyph, and no malware-family parser carries\nthis Facebook-specific field set. False-positive risk is\nlow because the trio of keys is too specific to overlap\nwith any system-info format. Triage: any IOC tagged with\nthis family means the victim had a Facebook session\ncompromised by a Facebook-targeting infostealer, even when\nno other system-info file is present in the victim folder.",
+  "detection_notes": "The U+2013 en-dash (`-`) line prefix combined with the\n`Friends:` / `Business:` / `Marketplace:` Facebook-Graph-API\nfield trio is unique to this artifact: every other dash-prefix family in this catalog uses the ASCII hyphen-minus\nor em-dash glyph, and no malware-family format carries\nthis Facebook-specific field set. False-positive risk is\nlow because the trio of keys is too specific to overlap\nwith any system-info format. Triage: any IOC tagged with\nthis family means the victim had a Facebook session\ncompromised by a Facebook-targeting infostealer, even when\nno other system-info file is present in the victim folder.",
   "attack_techniques": [
     {
       "id": "T1539",
@@ -40,7 +40,7 @@
   "variants": [
     {
       "id": "v_17c4049d7ffc5b0cf40d59a6aebc00d8",
-      "parser": "logmine.ioc.parsers.cs_facebook_profile_stealer.CSFacebookProfileStealerParser",
+      "format_id": "cs-facebook-profile-stealer",
       "filenames": [
         "System.txt"
       ],
@@ -57,7 +57,7 @@
       "sample": {
         "path": "samples/v_17c4049d7ffc5b0cf40d59a6aebc00d8/sample.txt",
         "sha256": "4754a3e6c93bb601300321aa73f6e79423c37bb3d99f568ad7c26dde73fd16bb",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

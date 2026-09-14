@@ -45,7 +45,7 @@
   "variants": [
     {
       "id": "v_a444692e5322bf7078e22c40d1da2e8c",
-      "parser": "logmine.ioc.parsers.white_snake.WhiteSnakeParser",
+      "format_id": "white-snake",
       "filenames": [
         "PC_info.txt"
       ],
@@ -62,7 +62,7 @@
       "sample": {
         "path": "samples/v_a444692e5322bf7078e22c40d1da2e8c/sample.txt",
         "sha256": "8e011db24c8e96dce15461840be9f153bf4fd75cf5a7870f24332f7ee5b10fa9",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

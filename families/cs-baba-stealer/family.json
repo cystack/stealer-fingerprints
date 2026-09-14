@@ -9,7 +9,7 @@
     "Baba Logs"
   ],
   "typical_targets": [],
-  "detection_notes": "The `.B.A.B.A. Build :` literal (note the dotted spelling and\nthe space before the colon) is the unambiguous trigger.\nDistributed alongside Lumma proper; presence of either\nparser's claim does not exclude the other.",
+  "detection_notes": "The `.B.A.B.A. Build :` literal (note the dotted spelling and\nthe space before the colon) is the unambiguous trigger.\nThis profile and canonical Lumma may coexist in the same\ndistribution.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -41,7 +41,7 @@
   "variants": [
     {
       "id": "v_63cd49f8bebd918e6de1394bbce58a3d",
-      "parser": "logmine.ioc.parsers.cs_baba_stealer.CSBabaStealerParser",
+      "format_id": "cs-baba-stealer",
       "filenames": [
         "System.txt"
       ],
@@ -56,7 +56,7 @@
       "sample": {
         "path": "samples/v_63cd49f8bebd918e6de1394bbce58a3d/sample.txt",
         "sha256": "6fa8895ded0e8ba56db4c36e66660d54e11d185d6ed088c74f9601593a8f991d",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

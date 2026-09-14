@@ -13,7 +13,7 @@ NETWORK INFORMATION ===`, `=== RUNNING PROCESSES (Top 20)
 
 The parenthesised `(Top 20)` qualifier on the RUNNING
 PROCESSES section header is the most distinctive marker: no
-other registered parser or documented family emits this exact
+other cataloged format or documented family emits this exact
 literal. The panel then lists at most 20 processes in `<Name>
 (PID: <int>, Memory: <int> MB)` format ranked by working-set
 memory descending.
@@ -66,7 +66,7 @@ Fingerprint requires line-anchored
 `=== SYSTEM INFORMATION ===` AND
 `=== RUNNING PROCESSES (Top 20) ===`. The
 parenthesised `(Top 20)` qualifier is the strongest
-single anchor: no other registered parser or
+single anchor: no other cataloged format or
 documented family emits this exact literal. During
 triage, treat the sample as weak attribution to a
 private .NET stealer. Suspicious process names in
@@ -80,7 +80,7 @@ dump.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

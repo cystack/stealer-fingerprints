@@ -13,9 +13,7 @@ dumps, `Directories` carries walked-directory listings, and
 `System` carries the text system-info dumps.
 
 Observed inside `MAY 02 - 8230 LOGS2` aggregator packs that
-also carry the TikTok-account harvest folders claimed by
-CSTikTokAccountStealer. The category naming is the panel's
-private builder choice rather than a documented stealer
+also carry the TikTok-account harvest folders represented by CSTikTokAccountStealer. The category naming is the panel's undocumented builder choice rather than a documented stealer
 convention. Family attribution is provisional pending a
 published mapping for this layout.
 
@@ -47,7 +45,7 @@ than embedding the IP in brackets. Triage by walking
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

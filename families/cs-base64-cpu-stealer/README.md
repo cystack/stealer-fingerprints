@@ -63,20 +63,20 @@ Marco Stealer, Raven Stealer.
 Fingerprint requires all five line-anchored keys: `L_HWID:`
 AND `CPU Name Base64:` AND `Grab Start Date:` AND `IP Country
 Code:` AND `IP Location:`. The combination is unique across
-the registry because no other parser emits the lowercase-HWID
+the registry because no other format emits the lowercase-HWID
 duplicate, the base64-serialised CPU name, or the split
 human-vs-ISO2 geolocation pair. During triage, treat the
 sample as weak attribution to an unnamed private stealer that
 borrows Redline's `Operation System:` field name; if a public
-writeup later identifies the underlying builder, rename the
-family constant rather than adding a duplicate parser. The
+writeup later identifies the underlying builder, update this
+tracking profile rather than adding a duplicate record. The
 `L_HWID` and `CPU Name Base64` duplicates are lossless copies
 of the paired plain field, so ignoring them during IOC
 composition loses no information.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

@@ -14,7 +14,7 @@ cover.
 - Canonical family: [lumma](../lumma/)
 - Aliases: `.B.A.B.A.`, `Baba Logs`
 - Variants observed: **1**
-- Historical Logmine records represented: **365**
+- CyStack observations represented: **365**
 
 ## What it targets
 
@@ -24,14 +24,14 @@ cover.
 
 The `.B.A.B.A. Build :` literal (note the dotted spelling and
 the space before the colon) is the unambiguous trigger.
-Distributed alongside Lumma proper; presence of either
-parser's claim does not exclude the other.
+This profile and canonical Lumma may coexist in the same
+distribution.
 
 ## Observed log variants
 
 ### `v_63cd49f8bebd918e6de1394bbce58a3d`
 
-- Parser: `logmine.ioc.parsers.cs_baba_stealer.CSBabaStealerParser`
+- Format ID: `cs-baba-stealer`
 - Observed filenames: `System.txt`
 - Panel brand: `.B.A.B.A.`
 - Distribution channel: `@Xavier_Log`
@@ -39,7 +39,7 @@ parser's claim does not exclude the other.
 - Historical records represented: **365**
 - Representative sample: [open sample](samples/v_63cd49f8bebd918e6de1394bbce58a3d/sample.txt)
 - Sample SHA-256: `6fa8895ded0e8ba56db4c36e66660d54e11d185d6ed088c74f9601593a8f991d`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

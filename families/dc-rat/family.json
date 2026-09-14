@@ -17,7 +17,7 @@
     "WMI-enumerated machine fingerprint (motherboard, BIOS, monitors)",
     "Installed antivirus and firewall product detection"
   ],
-  "detection_notes": "The Figlet `small`-font `Dark Crystal RAT` ASCII banner is the\ncleanest fingerprint. The detector class\n`logmine.detection.rats.DCRat` and the parser share the banner\nliteral as their anchor so attribution stays consistent across\nboth layers. The .NET / WMI enumeration profile plus the\n`MsHyperserverBrokersvc` style fake-service install path is\nthe secondary confidence signal. Public analyses note plugin\nidentifiers like `DCRatBuild`, `DCStlr`, `Plugin_AutoStealer`,\nand `Plugin_AutoKeylogger` in the binary; defenders triaging a\nvictim host should hunt for those strings in process memory or\non disk to confirm the family.",
+  "detection_notes": "The Figlet `small`-font `Dark Crystal RAT` ASCII banner is the\ncleanest fingerprint. CyStack Threat Intelligence uses the same banner literal as the\nprimary structural anchor, keeping family attribution consistent\nacross collection and analysis. The .NET / WMI enumeration profile plus the\n`MsHyperserverBrokersvc` style fake-service install path is\nthe secondary confidence signal. Public analyses note plugin\nidentifiers like `DCRatBuild`, `DCStlr`, `Plugin_AutoStealer`,\nand `Plugin_AutoKeylogger` in the binary; defenders triaging a\nvictim host should hunt for those strings in process memory or\non disk to confirm the family.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -67,7 +67,7 @@
   "variants": [
     {
       "id": "v_c05affb578cdd7ad283bd765c0f9cc1c",
-      "parser": "logmine.ioc.parsers.dcrat.DCRatParser",
+      "format_id": "dcrat",
       "filenames": [
         "Information [ID].txt",
         "Information [IN].txt"
@@ -90,7 +90,7 @@
       "sample": {
         "path": "samples/v_c05affb578cdd7ad283bd765c0f9cc1c/sample.txt",
         "sha256": "80541f90621ee53219173218c227126bbe60ecf769d3369b2a0ced1b8af26355",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "gpu-mode"

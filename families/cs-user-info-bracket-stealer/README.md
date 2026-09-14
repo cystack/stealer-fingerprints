@@ -15,7 +15,7 @@ pack. These labels are retained only as per-variant panel brands.
 - Attribution confidence: **unknown**
 - Aliases: `Aetheris Stealer (observed self-label)`, `Banshee v1.4 (observed self-label)`, `PDRstealer (observed self-label)`, `User Info / Input ISO bracket template`
 - Variants observed: **3**
-- Historical Logmine records represented: **5,373**
+- CyStack observations represented: **5,373**
 
 ## What it targets
 
@@ -40,7 +40,7 @@ documented macOS malware named Banshee.
 
 ### `v_b5830fa7c4f172950304e99c5fa7d4ad`
 
-- Parser: `logmine.ioc.parsers.cs_user_info_bracket_stealer.CSUserInfoBracketStealerParser`
+- Format ID: `cs-user-info-bracket-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: `Banshee v1.4`
 - Distribution channel: -
@@ -49,7 +49,7 @@ documented macOS malware named Banshee.
 - Historical records represented: **613**
 - Representative sample: [open sample](samples/v_b5830fa7c4f172950304e99c5fa7d4ad/sample.txt)
 - Sample SHA-256: `3a4f453b631ec4229f975817dde22f10f0a70a0f8865bb56ea652392a6387318`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -58,7 +58,7 @@ Recognition anchors:
 
 ### `v_e4ecc884d733c891238731a7465cfa26`
 
-- Parser: `logmine.ioc.parsers.cs_user_info_bracket_stealer.CSUserInfoBracketStealerParser`
+- Format ID: `cs-user-info-bracket-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: `PDRstealer`
 - Distribution channel: -
@@ -67,7 +67,7 @@ Recognition anchors:
 - Historical records represented: **4,755**
 - Representative sample: [open sample](samples/v_e4ecc884d733c891238731a7465cfa26/sample.txt)
 - Sample SHA-256: `70a0251c7ad29e86b811aad4b29c76ca4c340a5488f8e6b75bcd0194e6d21968`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -76,7 +76,7 @@ Recognition anchors:
 
 ### `v_fdb74de9cb4f98c742de98b53c54eb33`
 
-- Parser: `logmine.ioc.parsers.cs_user_info_bracket_stealer.CSUserInfoBracketStealerParser`
+- Format ID: `cs-user-info-bracket-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -85,7 +85,7 @@ Recognition anchors:
 - Historical records represented: **5**
 - Representative sample: [open sample](samples/v_fdb74de9cb4f98c742de98b53c54eb33/sample.txt)
 - Sample SHA-256: `66b39fbd37357f589ba2e807edd7500ac9b026e0aa802afd53d6fbc4cc077884`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

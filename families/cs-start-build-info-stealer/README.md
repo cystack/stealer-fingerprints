@@ -44,7 +44,7 @@ software]`` section with per-program version tags)
 Fingerprint requires four line-anchored anchors: ``Start
 Build:``, ``UserName (ComputerName):``, ``Total RAM:``, and
 the ``[Installed software]`` bracketed section header. The
-four-anchor combination is unique across the registry.
+four-anchor combination is unique across this catalog.
 During triage, correlate the ``Start Build:`` value with the
 stealer process-hollow target (a Windows built-in exe path
 like ``nslookup.exe`` is a strong process-hollow indicator).
@@ -54,7 +54,7 @@ does not emit IP or country fields.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

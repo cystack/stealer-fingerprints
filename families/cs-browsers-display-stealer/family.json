@@ -3,13 +3,13 @@
   "name": "CSBrowsersDisplayStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSBrowsersDisplayStealer is a CyStack-coined identifier for\nthe most-stripped BRADMAX-redistributed per-victim folder\nlayout: a root with exactly two named subdirs, `Browsers/` and\n`Display/`, optionally with a packer empty-name DIR sibling.\nCred files live under `Browsers/<browser>/Passwords.txt` with\na simple three-line `URL:` / `Login:` / `Password:` block per\ncredential. No `Information.txt`, no `System.txt`, no\n`Cookies/` or `Wallets/` sibling dirs.\n\nThe 2-dir layout sits below the 4-dir\n`Browsers/Discord/Files/System` layout that\n`CSBradmaxCategoryStealer` claims. The underlying builder is\nunidentified from the root listing alone: BRADMAX\nredistribution strips per-builder branding before repacking.\nFamily attribution is provisional pending a published mapping\nfor this exact layout.",
+  "description": "CSBrowsersDisplayStealer is a CyStack-coined identifier for\nthe most-stripped BRADMAX-redistributed per-victim folder\nlayout: a root with exactly two named subdirs, `Browsers/` and\n`Display/`, optionally with a packer empty-name DIR sibling.\nCred files live under `Browsers/<browser>/Passwords.txt` with\na simple three-line `URL:` / `Login:` / `Password:` block per\ncredential. No `Information.txt`, no `System.txt`, no\n`Cookies/` or `Wallets/` sibling dirs.\n\nThe 2-dir layout sits below the 4-dir\n`Browsers/Discord/Files/System` layout that\nis represented by `CSBradmaxCategoryStealer`. The underlying builder is\nunidentified from the root listing alone: BRADMAX\nredistribution strips per-builder branding before repacking.\nFamily attribution is provisional pending a published mapping\nfor this exact layout.",
   "aliases": [],
   "typical_targets": [
     "Browser saved credentials",
     "Display info or screenshot"
   ],
-  "detection_notes": "The strict 2-or-3 entry root with `Browsers/` and\n`Display/` plus the BRADMAX path token is the\nfingerprint. Richer Stealerium-fork layouts would add\n`Discord/`, `Files/`, `System/`, etc.; canonical family\nfolders would add `Information.txt` or similar text\ndumps at root. The detector is the labelling fall-back\nfor the most-stripped BRADMAX panel-build variant.",
+  "detection_notes": "The strict 2-or-3 entry root with `Browsers/` and\n`Display/` plus the BRADMAX path token is the\nfingerprint. Richer Stealerium-fork layouts would add\n`Discord/`, `Files/`, `System/`, etc.; canonical family\nfolders would add `Information.txt` or similar text\ndumps at root. This profile records the most-stripped BRADMAX panel-build\nvariant.",
   "attack_techniques": [
     {
       "id": "T1555",

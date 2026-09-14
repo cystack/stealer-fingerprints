@@ -16,7 +16,7 @@
     "System hardware and locale inventory",
     "Screenshot of the desktop"
   ],
-  "detection_notes": "The `_Information.txt` filename is the strongest folder-level signal: paired with the `_AllPasswords_list.txt` /\n`_AllCookies_list.txt` / `_AllForms_list.txt` sibling\nset, no other family in the registry uses this exact\nnaming. Content-level fingerprint anchors on the\nbracket-suffixed `UserName [ComputerName]:` and\n`Data [Time]:` keys plus `Keyboard Languages:`; the\nno-space `UserName` spelling distinguishes CryptBot from\nVidar / StealC / Mars (which use `User Name:`).",
+  "detection_notes": "The `_Information.txt` filename is the strongest folder-level signal: paired with the `_AllPasswords_list.txt` /\n`_AllCookies_list.txt` / `_AllForms_list.txt` sibling\nset, no other family in this catalog uses this exact\nnaming. Content-level fingerprint anchors on the\nbracket-suffixed `UserName [ComputerName]:` and\n`Data [Time]:` keys plus `Keyboard Languages:`; the\nno-space `UserName` spelling distinguishes CryptBot from\nVidar / StealC / Mars (which use `User Name:`).",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -54,7 +54,7 @@
   "variants": [
     {
       "id": "v_ab2260210a1222f2c7c15c25c8251227",
-      "parser": "logmine.ioc.parsers.cryptbot.CryptBotParser",
+      "format_id": "cryptbot",
       "filenames": [
         "_Information.txt"
       ],
@@ -73,14 +73,14 @@
       "sample": {
         "path": "samples/v_ab2260210a1222f2c7c15c25c8251227/sample.txt",
         "sha256": "090c3bba8e01bf881bd061fb18d3c0a591a57433376c133a38838a3bb6eec86d",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "bracket-user-host"
     },
     {
       "id": "v_cbcdfdbccf53d49530cd7b152470af8a",
-      "parser": "logmine.ioc.parsers.cryptbot.CryptBotParser",
+      "format_id": "cryptbot",
       "filenames": [
         "_Information.txt"
       ],
@@ -99,7 +99,7 @@
       "sample": {
         "path": "samples/v_cbcdfdbccf53d49530cd7b152470af8a/sample.txt",
         "sha256": "967be06238c92a4ffb1e3b21a0ce1d53ba66ecb9ccf7dc9f921eab0e605576e8",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "bracket-user-host"

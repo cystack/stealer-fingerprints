@@ -21,7 +21,7 @@ because the panel app-bound-encryption bypass returned the
 encrypted PAN but could not decrypt it on Chrome builds
 shipping hardware-bound session keys.
 
-A public stealer-log parser writeup documents the sibling
+A public stealer-log format writeup documents the sibling
 `Autofills/Google_[Chrome]_Default.txt` /
 `Autofills/Microsoft_[Edge]_Default.txt` bracketed-vendor
 convention as a generic Chromium-credential-extract shape used
@@ -51,21 +51,20 @@ whose basename matches the regex
 `^CreditCards_\[[^\]]+\]_[^.]+\.txt$` (case-insensitive).
 The `CreditCards_` prefix, square-bracketed vendor token,
 underscore separator, profile name, and `.txt` suffix is
-unique enough across the registry that one match is
-sufficient to claim. Folder root may also carry an
+unique enough across this catalog that one match is
+sufficient for a structural match. Folder root may also carry an
 empty-named packer DIR artifact, which the fingerprint
 ignores. During triage, treat the family attribution as
 unknown: the underlying Chromium-credential extractor
 lineage (RedLine / META / Raccoon / Stealc / fork) cannot
 be pinned from the filename alone. Many cred files carry
 only an `Exp:` expiry line because the panel bypass
-failed to decrypt the PAN, so a victim flagged by this
-detector may have no recoverable card numbers but still
+failed to decrypt the PAN, so an observed victim may have no recoverable card numbers but still
 attests browser-stored card presence.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

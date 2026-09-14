@@ -15,7 +15,7 @@
     "Host fingerprint (CPU, GPU with embedded resolution,\nHWID, OS, current language, admin flag)",
     "Geo enrichment (IP, country, city, postal code, ISP\nwith autonomous system number, timezone offset)"
   ],
-  "detection_notes": "Fingerprint requires four line-anchored anchors: ``- IP Info\n-``, ``- PC Info -``, ``- Log Info -``, and ``Tags\nPasswords:``. The dash-bordered section headers plus the\ncategorization key together are unique across the registry.\nDuring triage, correlate the sample with sibling LOGS-pack\nvariants (John Doe Project, Slurm Cloud) shipping in the same\narchive to identify shared operator infrastructure. The\nRedline-derivative body vocabulary means the underlying\nbuilder could be a Redline fork with an added categorization\npanel layer, but no published mapping confirms this.",
+  "detection_notes": "Fingerprint requires four line-anchored anchors: ``- IP Info\n-``, ``- PC Info -``, ``- Log Info -``, and ``Tags\nPasswords:``. The dash-bordered section headers plus the\ncategorization key together are unique across this catalog.\nDuring triage, correlate the sample with sibling LOGS-pack\nvariants (John Doe Project, Slurm Cloud) shipping in the same\narchive to identify shared operator infrastructure. The\nRedline-derivative body vocabulary means the underlying\nbuilder could be a Redline fork with an added categorization\npanel layer, but no published mapping confirms this.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -50,7 +50,7 @@
   "variants": [
     {
       "id": "v_d522c2ef9147f26c4d0f1a60ec97fcbd",
-      "parser": "logmine.ioc.parsers.cs_tagged_info_stealer.CSTaggedInfoStealerParser",
+      "format_id": "cs-tagged-info-stealer",
       "filenames": [
         "Information.txt"
       ],
@@ -69,7 +69,7 @@
       "sample": {
         "path": "samples/v_d522c2ef9147f26c4d0f1a60ec97fcbd/sample.txt",
         "sha256": "965cb66d0e3e1f37e871eb94de9df4ebc4aae708f37f253a9fe910aa72353d43",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

@@ -18,7 +18,7 @@ file body is a boto-style AWS credentials INI file (with
 token file. The stealer's harvest routine likely grabbed
 ``%USERPROFILE%\.aws\credentials`` and dropped it under an
 ``Azure/`` subdir because both cloud vendors share the
-"cloud" category slot in the panel harvest dispatch table.
+"cloud" category slot in the panel harvest configuration.
 Multiple stealer families target subsets of this application
 set (Redline, Vidar, Lumma, StealC, Meta all harvest
 FileZilla / Discord / Telegram / Steam), so the underlying
@@ -62,7 +62,7 @@ analyst should rotate immediately.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

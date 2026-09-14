@@ -28,7 +28,7 @@ exactly this 5-field shape with the specific key spellings
 above. Candidates ruled out include Raven Stealer,
 SamsStealer, PupkinStealer, XillenStealer, Braodo, and
 BoryptGrab (all documented body shapes are richer or differ in
-field-key spelling). Rename the family constant if a public
+field-key spelling). Update this tracking profile if a public
 writeup later identifies the underlying builder.
 
 ## Research status
@@ -54,15 +54,15 @@ Version:`, `Antivirus:`) PLUS absence of every richer-body anchor (`HWID:`, `PC 
 form, `Computer Name:`, `Build:`, `Build ID:`,
 `Hostname:`, CamelCase `AntiVirus:`). During triage, the
 body carries no cred count, hardware inventory, or
-timestamp, so the IOC only pins victim identity, geo,
+timestamp, so the public record retains victim identity, geo,
 OS, and installed AV. The folder-name Python-timestamp
 shape (`<ID>_YYYY_MM_DDTHH_MM_SS_micros`) is a useful
-secondary signal but is not part of the parser
-fingerprint (parsers dispatch on content only).
+secondary signal but is not part of the format
+fingerprint (the content fingerprint uses the body only).
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

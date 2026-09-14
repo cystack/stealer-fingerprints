@@ -17,10 +17,7 @@ and `Layouts`), the `Hardwares:` block header with `Name:
 dual-serialisation `<N.NN> Mb or <bytes> bytes` format, GPU
 rows use `<vendor> <model>, <bytes> bytes`), plus a bare
 `Windows Defender` line at the tail with no `AV:` /
-`Antivirus:` key prefix. The `FileLocation:` field that
-canonical `Redline` `UserInformation.txt` panels emit is
-absent from this variant, so the canonical `Redline` parser
-declines and the body falls through to this CS-coined parser.
+`Antivirus:` key prefix. The `FileLocation:` field emitted by canonical Redline `UserInformation.txt` panels is absent, distinguishing this preamble-stripped variant from the canonical layout.
 
 The same underlying panel-render lineage appears in the Daisy
 Cloud reseller output handled by `CSDaisyBlockCloudStealer`
@@ -63,9 +60,7 @@ Fingerprint requires (a) line-anchored `Operation System:`
 `Hardwares:` (Redline-canonical plural block header) AND
 (c) `Name: Total of RAM,` substring (Redline-specific
 dual-serialisation RAM entry) AND (d) `@BRADMAX` in the
-archive-path preamble (aggregator scope gate). Five
-negative anchors defer to higher-precedence sibling
-parsers: `FileLocation:` (canonical `Redline`),
+archive-path preamble (aggregator scope gate). Five negative anchors distinguish sibling formats: `FileLocation:` (canonical `Redline`),
 `t.me/UP_DAISYCLOUD` (`CSDaisyBlockCloudStealer`), the
 per-line watermark scramble regex (`CSDaisyCloudStealer`),
 `cheshire_aurora` (`CSDaisyAuroraStealer`), and
@@ -78,13 +73,13 @@ confirmed as stock Redline without a `FileLocation:` or
 ASCII banner. The `Country:` value that the canonical
 panel would emit is absent from the body; the archive-path folder-prefix (`[<CC>]<IPv4>/`) carries a country
 tag but the aggregator sometimes ships an incorrect tag
-(the sample folder `[DE]<IPv4>` claims Germany
+(the sample folder `[DE]<IPv4>` indicates Germany
 while the IP is ARIN-registered in the US and the
 `Location:` field says Pontiac, Michigan).
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

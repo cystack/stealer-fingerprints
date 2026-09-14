@@ -13,7 +13,7 @@ redistributors) and via a MaaS subscription model.
 - Attribution confidence: **high**
 - Aliases: `WhiteSnake Stealer`
 - Variants observed: **1**
-- Historical Logmine records represented: **105,983**
+- CyStack observations represented: **105,983**
 
 ## What it targets
 
@@ -34,7 +34,7 @@ unambiguous WhiteSnake content.
 
 ### `v_a444692e5322bf7078e22c40d1da2e8c`
 
-- Parser: `logmine.ioc.parsers.white_snake.WhiteSnakeParser`
+- Format ID: `white-snake`
 - Observed filenames: `PC_info.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -42,7 +42,7 @@ unambiguous WhiteSnake content.
 - Historical records represented: **105,983**
 - Representative sample: [open sample](samples/v_a444692e5322bf7078e22c40d1da2e8c/sample.txt)
 - Sample SHA-256: `8e011db24c8e96dce15461840be9f153bf4fd75cf5a7870f24332f7ee5b10fa9`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

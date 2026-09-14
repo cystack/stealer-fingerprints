@@ -28,7 +28,7 @@ provisional pending a published mapping.
 - Attribution confidence: **unknown**
 - Aliases: `Dash-section Info-tagged stealer`, `- IP Info - / - PC Info - sectioned Information.txt`
 - Variants observed: **1**
-- Historical Logmine records represented: **30**
+- CyStack observations represented: **30**
 
 ## What it targets
 
@@ -47,7 +47,7 @@ with autonomous system number, timezone offset)
 Fingerprint requires four line-anchored anchors: ``- IP Info
 -``, ``- PC Info -``, ``- Log Info -``, and ``Tags
 Passwords:``. The dash-bordered section headers plus the
-categorization key together are unique across the registry.
+categorization key together are unique across this catalog.
 During triage, correlate the sample with sibling LOGS-pack
 variants (John Doe Project, Slurm Cloud) shipping in the same
 archive to identify shared operator infrastructure. The
@@ -59,7 +59,7 @@ panel layer, but no published mapping confirms this.
 
 ### `v_d522c2ef9147f26c4d0f1a60ec97fcbd`
 
-- Parser: `logmine.ioc.parsers.cs_tagged_info_stealer.CSTaggedInfoStealerParser`
+- Format ID: `cs-tagged-info-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -67,7 +67,7 @@ panel layer, but no published mapping confirms this.
 - Historical records represented: **30**
 - Representative sample: [open sample](samples/v_d522c2ef9147f26c4d0f1a60ec97fcbd/sample.txt)
 - Sample SHA-256: `965cb66d0e3e1f37e871eb94de9df4ebc4aae708f37f253a9fe910aa72353d43`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

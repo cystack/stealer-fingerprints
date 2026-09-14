@@ -27,7 +27,7 @@ artifact the malware writes.
 - Attribution confidence: **high**
 - Aliases: `Santa Stealer`, `BluelineStealer`
 - Variants observed: **1**
-- Historical Logmine records represented: **2**
+- CyStack observations represented: **2**
 
 ## What it targets
 
@@ -56,7 +56,7 @@ literal rather than the banner text itself.
 
 ### `v_e8de83dfb299d4ae3148727b940ff625`
 
-- Parser: `logmine.ioc.parsers.santastealer.SantaStealerParser`
+- Format ID: `santastealer`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: `t.me/SantaStealer`
@@ -64,7 +64,7 @@ literal rather than the banner text itself.
 - Historical records represented: **2**
 - Representative sample: [open sample](samples/v_e8de83dfb299d4ae3148727b940ff625/sample.txt)
 - Sample SHA-256: `b73d51ba290606d47b2533020499dfb471a5d4fa39dd55b0562058503c306f66`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

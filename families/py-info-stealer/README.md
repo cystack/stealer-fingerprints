@@ -13,7 +13,7 @@ threat-intel name.
 - Attribution confidence: **unknown**
 - Aliases: -
 - Variants observed: **1**
-- Historical Logmine records represented: **2**
+- CyStack observations represented: **2**
 
 ## What it targets
 
@@ -31,7 +31,7 @@ explicit banner.
 
 ### `v_a3b2ccd87ba2430c6dde5f31bb7f6a42`
 
-- Parser: `logmine.ioc.parsers.pyinfo_stealer.PyInfoStealerParser`
+- Format ID: `pyinfo-stealer`
 - Observed filenames: `system_info.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -39,7 +39,7 @@ explicit banner.
 - Historical records represented: **2**
 - Representative sample: [open sample](samples/v_a3b2ccd87ba2430c6dde5f31bb7f6a42/sample.txt)
 - Sample SHA-256: `6c9f1c74223a815f4a5a14e070d86056cd05134534c8321127f6cf02da556ce4`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

@@ -17,7 +17,7 @@ LazyScripter. Public IOC feeds track current campaign
 indicators under the same `win.rms` identifier with the RuRAT
 alias.
 
-The harvested log this parser claims is not RMS's own writer
+The harvested log documented here is not RMS's own writer
 output. It is a single-line caption produced by the @BRADLOGS
 / BRADMAX Telegram broker advertising RMS-bound victim
 sessions to buyers. The line carries the victim's RMS Internet
@@ -55,7 +55,7 @@ though the tool itself is signed by TektonIT.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

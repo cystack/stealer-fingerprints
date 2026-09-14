@@ -40,18 +40,15 @@ Fingerprint requires the ``John Doe Project`` banner
 substring, the ``t.me/JohnDoeProject`` URL literal, and a
 line-anchored ``CLR Version:`` field key. The banner plus URL
 form the operator self-id; pairing them with the
-.NET-canonical ``CLR Version:`` keeps the claim off public
-writeups that might quote the banner or URL in prose. During
+.NET-canonical ``CLR Version:`` distinguishes public writeups that might quote the banner or URL in prose. During
 triage, treat the underlying stealer family as unattributable
 and rely on the channel plus panel_brand metadata to bucket
 samples for analyst review. Companion files in the victim
-folder (browser exports, cookie dumps, wallet artifacts) may
-trigger more confident attributions through their own family
-detectors.
+folder (browser exports, cookie dumps, wallet artifacts) may provide more confident family attribution.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

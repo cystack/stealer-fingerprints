@@ -26,7 +26,7 @@ builder-code confirmation.
 - Attribution confidence: **medium**
 - Aliases: `Ades`, `44Caliber variant`, `StormKitty variant`
 - Variants observed: **2**
-- Historical Logmine records represented: **197**
+- CyStack observations represented: **197**
 
 ## What it targets
 
@@ -46,17 +46,17 @@ across observed samples (the upstream's string
 `"\n PC user: "` concatenation produces it). The base
 44CALIBER builder emits five sections; the RL panel
 extension appends a sixth carrying `HDD:` / `MAC:` /
-`BIOS caption:`, but the parser tolerates either count.
+`BIOS caption:`, but the fingerprint covers either section count.
 BlackGuard Stealer is also a 44CALIBER fork; both share
 the credential-collection method but emit different
-log formats so they do not collide with this parser's
+log formats so they do not collide with this format's
 fingerprint.
 
 ## Observed log variants
 
 ### `v_1c8a415ef2a9f5b685b573ec7b10c602`
 
-- Parser: `logmine.ioc.parsers.cs_rl_panel_stealer.CSRLPanelStealerParser`
+- Format ID: `cs-rl-panel-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: `==== RL STEALER ====`
 - Distribution channel: `@BRADLOGS`
@@ -64,7 +64,7 @@ fingerprint.
 - Historical records represented: **36**
 - Representative sample: [open sample](samples/v_1c8a415ef2a9f5b685b573ec7b10c602/sample.txt)
 - Sample SHA-256: `036cf7de6574dbefbbe8241c2adce9b08567ab90410c31bbb83b83f943589314`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -73,7 +73,7 @@ Recognition anchors:
 
 ### `v_48d2f4aed8930a82db85d16176d3d75f`
 
-- Parser: `logmine.ioc.parsers.rl_stealer.RLStealerParser`
+- Format ID: `rl-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -81,7 +81,7 @@ Recognition anchors:
 - Historical records represented: **161**
 - Representative sample: [open sample](samples/v_48d2f4aed8930a82db85d16176d3d75f/sample.txt)
 - Sample SHA-256: `75f23d19d1f2a8300b762a7cd58d72872f59669ac6e9fdf1571c5fc5b554f053`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

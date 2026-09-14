@@ -51,7 +51,7 @@
   "variants": [
     {
       "id": "v_436a2a6dd26480ac96afbce620412cb2",
-      "parser": "logmine.ioc.parsers.redline.RedlineParser",
+      "format_id": "redline",
       "filenames": [
         "UserInformation.txt"
       ],
@@ -67,14 +67,14 @@
       "sample": {
         "path": "samples/v_436a2a6dd26480ac96afbce620412cb2/sample.txt",
         "sha256": "154e3ee6d7f08d47dd27169d6db791bef28822a96a089d10cfb1682802954acb",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "operation-system-file-location"
     },
     {
       "id": "v_9ff2932c65398ba0ef8bad9c6465381a",
-      "parser": "logmine.ioc.parsers.redline.RedlineParser",
+      "format_id": "redline",
       "filenames": [
         "UserInformation.txt"
       ],
@@ -91,7 +91,7 @@
       "sample": {
         "path": "samples/v_9ff2932c65398ba0ef8bad9c6465381a/sample.txt",
         "sha256": "9623f948a384209925e8c624313e13a6a7b10bb96620b17a18546847ca68599a",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "build-id-banner"

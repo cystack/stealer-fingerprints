@@ -26,7 +26,7 @@ public writeup.
 - Attribution confidence: **low**
 - Aliases: -
 - Variants observed: **1**
-- Historical Logmine records represented: **1**
+- CyStack observations represented: **1**
 
 ## What it targets
 
@@ -49,7 +49,7 @@ the same victim folder for the full per-victim summary.
 
 ### `v_8e55366401da27155e33a5b4b0980965`
 
-- Parser: `logmine.ioc.parsers.cs_stealer_cloud_user_info_stealer.CSStealerCloudUserInfoStealerParser`
+- Format ID: `cs-stealer-cloud-user-info-stealer`
 - Observed filenames: `UserInformation.txt`
 - Panel brand: `STEALERCLOUD`
 - Distribution channel: `@STEALERBOSS`
@@ -57,7 +57,7 @@ the same victim folder for the full per-victim summary.
 - Historical records represented: **1**
 - Representative sample: [open sample](samples/v_8e55366401da27155e33a5b4b0980965/sample.txt)
 - Sample SHA-256: `2ab648084d61be75caa12336c62e8927bf2920ef5e0a93d8062466ad83832624`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

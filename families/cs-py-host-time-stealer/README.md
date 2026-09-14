@@ -45,12 +45,12 @@ Triple-guard fingerprint: all four line-anchored keys
 value must match the dash-joined `platform.platform()` shape
 (`Windows-<n>-...`), and the `Time:` value must carry six-digit microsecond precision (`.\d{6}`). The microsecond-precision Time field is the strongest single signal that
 rules out non-Python builders. False-positive risk is low
-because no other registered parser uses `Host:` as a bare
+because no other cataloged format uses `Host:` as a bare
 key with this exact Time-value shape.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

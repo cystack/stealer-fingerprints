@@ -27,12 +27,8 @@ Cloud / `@WichLoveFromR` channel as a stealer-log distribution
 cloud, but none of those writeups attribute the specific
 lowercase-terse panel layout to a known underlying builder. A
 community stealer-format catalogue identifies the same
-channel's XFiles-shaped redistribution branch (handled
-separately by `XFilesStealerParser`) but does not document
-this distinct lowercase format. The `CSWLFRCloudStealer`
-literal captures the discovery while the docstring's research
-trail lets a future maintainer rename the family constant if a
-published mapping later surfaces.
+channel's XFiles-shaped redistribution branch (documented separately by the `XFiles` profile) but does not document
+this distinct lowercase format. The `CSWLFRCloudStealer` tracking name preserves the discovery and can be revised if published evidence later establishes the underlying family.
 
 ## Research status
 
@@ -40,7 +36,7 @@ published mapping later surfaces.
 - Attribution confidence: **unknown**
 - Aliases: `WLFR Cloud`, `@WichLoveFromR`, `WLFRcloud`
 - Variants observed: **1**
-- Historical Logmine records represented: **17**
+- CyStack observations represented: **17**
 
 ## What it targets
 
@@ -55,12 +51,12 @@ Confidence anchors: the `fresh logs and ULP Cloud` banner
 literal AND the `t.me/WichLoveFromR` channel watermark
 plus line-anchored lowercase `date:` and `language:`
 keys. The banner literal is the strongest signal - no
-other format in the registry carries it. False-positive
+other format in this catalog carries it. False-positive
 risk is low because the four anchors together cannot
 plausibly co-occur in unrelated content. The same
 `@WichLoveFromR` channel resells multiple underlying
-panel shapes (XFiles-derived bodies are claimed by
-`XFilesStealerParser`); triage logs from this family at
+panel shapes (XFiles-derived bodies are documented in the
+`XFiles` profile); triage logs from this family at
 the panel-brand level rather than assuming a single
 underlying stealer.
 
@@ -68,7 +64,7 @@ underlying stealer.
 
 ### `v_fc94bc1c6b7f5025bc62dabd8131bdaa`
 
-- Parser: `logmine.ioc.parsers.cs_wlfr_cloud_stealer.CSWLFRCloudStealerParser`
+- Format ID: `cs-wlfr-cloud-stealer`
 - Observed filenames: `Info.txt`
 - Panel brand: `The Best fresh logs and ULP Cloud`
 - Distribution channel: `@WichLoveFromR`
@@ -76,7 +72,7 @@ underlying stealer.
 - Historical records represented: **17**
 - Representative sample: [open sample](samples/v_fc94bc1c6b7f5025bc62dabd8131bdaa/sample.txt)
 - Sample SHA-256: `053f43a583298fab0ea807084e05eb2738be4671a847641875f923522a53898b`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

@@ -10,7 +10,7 @@
     "System hardware and locale inventory",
     "Antivirus product enumeration"
   ],
-  "detection_notes": "High-confidence trigger: line-anchored `Operation System:`\n(Redline-canonical typo) plus line-anchored\n`ComputerName:` (fork rename of `MachineName:`) plus\nline-anchored `GUID:` (fork rename of `HWID:`). The\nthree-anchor combination is disjoint from canonical\nRedline (which uses `MachineName:` + `HWID:`),\nMetaStealer (which requires `Log from:` +\n`File Location:` and uses `OS:` without the typo), and\nRedlineLikeStealer (which uses `Processor:` /\n`Installed RAM:` / `Graphics card:` / `Computer Name:`\nwith a space). During triage, the `GUID:` UUID matches\nthe first bracketed segment of the victim folder name,\nso the folder path parser can cross-check per-victim\nidentity.",
+  "detection_notes": "High-confidence trigger: line-anchored `Operation System:`\n(Redline-canonical typo) plus line-anchored\n`ComputerName:` (fork rename of `MachineName:`) plus\nline-anchored `GUID:` (fork rename of `HWID:`). The\nthree-anchor combination is disjoint from canonical\nRedline (which uses `MachineName:` + `HWID:`),\nMetaStealer (which requires `Log from:` +\n`File Location:` and uses `OS:` without the typo), and\nRedlineLikeStealer (which uses `Processor:` /\n`Installed RAM:` / `Graphics card:` / `Computer Name:`\nwith a space). During triage, the `GUID:` UUID matches\nthe first bracketed segment of the victim folder name,\nso the folder path format can cross-check per-victim\nidentity.",
   "attack_techniques": [
     {
       "id": "T1555",

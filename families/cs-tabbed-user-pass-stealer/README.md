@@ -46,7 +46,7 @@ two tab-padded lines (`\AUsername\t+:\S[^\n]*\n`
 `Pass\t+:\S[^\n]*\s*\Z`) with no additional content
 before or after. The strict `\A` / `\Z` anchors keep a
 longer victim-curated note that happens to contain these
-two lines somewhere in the body from mis-claiming. During
+two lines somewhere in the body from producing a false match. During
 triage, treat the credentials as real (the email and
 password values are the victim's actual account, not
 placeholder text), but treat the family attribution as
@@ -55,7 +55,7 @@ not identifiable from this body alone.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

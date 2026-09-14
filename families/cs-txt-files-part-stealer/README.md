@@ -27,7 +27,7 @@ ties the Arabic file-count literal and the `TXT Files | Part
 - Attribution confidence: **unknown**
 - Aliases: `Arabic TXT Files Part Telegram manifest`, `عدد الملفات file-count emoji panel`
 - Variants observed: **1**
-- Historical Logmine records represented: **5**
+- CyStack observations represented: **5**
 
 ## What it targets
 
@@ -53,7 +53,7 @@ Telegram-channel upload history.
 
 ### `v_3d2b0177a66777ae6136d20f2e9eee98`
 
-- Parser: `logmine.ioc.parsers.cs_txt_files_part_stealer.CSTxtFilesPartStealerParser`
+- Format ID: `cs-txt-files-part-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -61,7 +61,7 @@ Telegram-channel upload history.
 - Historical records represented: **5**
 - Representative sample: [open sample](samples/v_3d2b0177a66777ae6136d20f2e9eee98/sample.txt)
 - Sample SHA-256: `6871422d1afc975686552e273267158de7757bc9f2a37780a387dae69d5b4aa9`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

@@ -33,7 +33,7 @@ marketplace listing shape.
 - Attribution confidence: **unknown**
 - Aliases: `BRADMAX Facebook account marketplace listing`, `Crown-emoji Facebook resale Information.txt`
 - Variants observed: **1**
-- Historical Logmine records represented: **925**
+- CyStack observations represented: **925**
 
 ## What it targets
 
@@ -47,7 +47,7 @@ marketplace listing shape.
 
 Fingerprint requires U+1F451 `👑` crown glyph AND `c_user=` AND
 `xs=` AND `datr=` cookie-name substrings. Four anchors
-together cannot collide with any other registered parser: the
+together cannot collide with any other cataloged format: the
 crown glyph alone rules out every system-info shape, and the
 three Facebook session-cookie name substrings rule out any
 non-Facebook artifact that happens to carry a crown emoji.
@@ -62,7 +62,7 @@ public reporting.
 
 ### `v_cd44448921562de22da01df5270af56b`
 
-- Parser: `logmine.ioc.parsers.cs_facebook_market_stealer.CSFacebookMarketStealerParser`
+- Format ID: `cs-facebook-market-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: `BRADMAX`
 - Distribution channel: `@BRADLOGS`
@@ -70,7 +70,7 @@ public reporting.
 - Historical records represented: **925**
 - Representative sample: [open sample](samples/v_cd44448921562de22da01df5270af56b/sample.txt)
 - Sample SHA-256: `c631122ad6230c405c5e4d526c8b5869185f87f579e7c9c59eaee9e715d6f7ad`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

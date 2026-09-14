@@ -49,7 +49,7 @@
   "variants": [
     {
       "id": "v_0d792db01a0756f7e24d1c85651bfea1",
-      "parser": "logmine.ioc.parsers.cs_emoji_info_stealer.CSEmojiInfoStealerParser",
+      "format_id": "cs-emoji-info-stealer",
       "filenames": [
         "Information.txt",
         "System.txt"
@@ -69,7 +69,7 @@
       "sample": {
         "path": "samples/v_0d792db01a0756f7e24d1c85651bfea1/sample.txt",
         "sha256": "00c1d34544696aa93c8919692d5f642d64d15d0456cf894b1ef25537032dadef",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

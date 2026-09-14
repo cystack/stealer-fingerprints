@@ -37,7 +37,7 @@ Source:`), and a flat `KEY = value` environment-variable dump.
 - Attribution confidence: **medium**
 - Aliases: `Mars`, `MarsStealer`, `Mars Stealer family`
 - Variants observed: **1**
-- Historical Logmine records represented: **3**
+- CyStack observations represented: **3**
 
 ## What it targets
 
@@ -65,7 +65,7 @@ fork is rarely identifiable from the panel output alone.
 
 ### `v_8de2e373e826d69cbb04e67395a898f1`
 
-- Parser: `logmine.ioc.parsers.cs_bradmax_cloud_mars.CSBradMaxCloudMarsParser`
+- Format ID: `cs-bradmax-cloud-mars`
 - Observed filenames: `UserInformation.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -73,7 +73,7 @@ fork is rarely identifiable from the panel output alone.
 - Historical records represented: **3**
 - Representative sample: [open sample](samples/v_8de2e373e826d69cbb04e67395a898f1/sample.txt)
 - Sample SHA-256: `0734e805c81bd842b214ec522243587bd305c7d319a7dc3ae94b2f57d5252ed1`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

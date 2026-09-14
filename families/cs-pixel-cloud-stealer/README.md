@@ -20,7 +20,7 @@ lines arranged in a 3-row by 4-column block.
 
 ## Detection notes
 
-Docstring: body shape 'structurally identical to CSRussia34StealerParser variant 1 / CSEnchantCloudStealerParser variant 1'; @ft7links labels the archive 'lumma' but body is canonical Redline-derivative for variant 1. Four variants emit different underlying families.
+The body shape matches the first documented variants of CSRussia34Stealer and CSEnchantCloudStealer; @ft7links labels the archive 'lumma' but body is canonical Redline-derivative for variant 1. Four variants emit different underlying families.
 
 ## Families seen in this aggregator
 
@@ -31,7 +31,7 @@ Docstring: body shape 'structurally identical to CSRussia34StealerParser variant
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

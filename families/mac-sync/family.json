@@ -48,7 +48,7 @@
   "variants": [
     {
       "id": "v_8ded840da2979d9deb0176880e86b1e9",
-      "parser": "logmine.ioc.parsers.macsync.MacSyncParser",
+      "format_id": "macsync",
       "filenames": [
         "Information.txt"
       ],
@@ -63,7 +63,7 @@
       "sample": {
         "path": "samples/v_8ded840da2979d9deb0176880e86b1e9/sample.txt",
         "sha256": "0aca96c813ce5d994169a53f223ccb8bf66b719140d69aeaf25abc113dcafbe0",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

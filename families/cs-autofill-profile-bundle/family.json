@@ -11,7 +11,7 @@
   "typical_targets": [
     "Chromium browser autofill entries from the\n`autofill_entries` SQLite table (form field names\nand saved values)"
   ],
-  "detection_notes": "Fingerprint requires `system_path` to be a folder, its\nid to contain `/Autofill/` (case-sensitive), its\nbasename to match a lowercase-alphanumeric 4-30 char\nshape, and the folder root to contain `autofill.txt`.\nThe four-anchor combination keeps the detector off\nrandom or spaced folder names that happen to live\nunder any `Autofill/` parent. False-positive risk is\nlow because the strict basename guard rules out the\nspaced or bracket-suffixed naming used by documented\nstealer-family autofill layouts. During triage, the\nparent victim folder convention (`-[<32-hex-md5>]`)\nplus the LOGS2 archive name help bucket victims back\nto the operator pack.",
+  "detection_notes": "Fingerprint requires `system_path` to be a folder, its\nid to contain `/Autofill/` (case-sensitive), its\nbasename to match a lowercase-alphanumeric 4-30 char\nshape, and the folder root to contain `autofill.txt`.\nThe four-anchor combination excludes random or spaced folder names that happen to live\nunder any `Autofill/` parent. False-positive risk is\nlow because the strict basename guard rules out the\nspaced or bracket-suffixed naming used by documented\nstealer-family autofill layouts. During triage, the\nparent victim folder convention (`-[<32-hex-md5>]`)\nplus the LOGS2 archive name help bucket victims back\nto the operator pack.",
   "attack_techniques": [
     {
       "id": "T1005",

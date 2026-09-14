@@ -13,7 +13,7 @@ microsecond precision.
 
 The LOGS pack ships multiple stealer families (canonical
 Lumma, StealC, Mars-fork, AMOS, Cthulhu per prior LOGS-pack
-parser research), so the minimal cookies-plus-exception-log
+format research), so the minimal cookies-plus-exception-log
 layout carries no remaining family signal beyond ``cookie-jar exporter with .NET / Python exception traceback dump``.
 The label exists to attribute the artifact by its fingerprint
 rather than guessing which stealer harvested the cookie jar.
@@ -47,7 +47,7 @@ alone.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

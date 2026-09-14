@@ -68,7 +68,7 @@ Fingerprint requires line-anchored `System Region:` AND
 `MAC Address(es):` AND `Local Date:` AND `PC name:`
 (lowercase-`n`). The `(es)` plural marker on
 `MAC Address(es):` and the `System Region:` field are
-both unique across the registered parsers, and the
+both unique across the cataloged formats, and the
 lowercase-`name` `PC name:` spelling rules out DCRat /
 CSBuildBlock / CSDataMonk which all use `PC Name:` with
 capital-N. During triage, the split `Country:` /
@@ -82,7 +82,7 @@ key is in English.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

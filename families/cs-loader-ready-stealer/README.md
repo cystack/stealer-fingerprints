@@ -29,7 +29,7 @@ PrivateLoader / GCleaner lineage of loader services) but no
 specific brand markers appear in the body. The first observed
 host `dungeonteamreborn.sbs` was not documented in any public
 sandbox, URL-scanning, or malware-tracking database at the
-time the parser was written.
+time the format was written.
 
 ## Research status
 
@@ -55,13 +55,12 @@ phrases together are rare outside this template, and the
 operator's counter endpoint. During triage, treat this
 label as a "loader payload was packaged and announced"
 marker. The actual stealer / RAT family that the loader
-drops is identified separately by whichever family
-parser claims the sibling per-victim folders inside the
-same aggregator pack.
+drops must be identified separately using evidence in sibling
+per-victim folders from the same aggregator pack.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

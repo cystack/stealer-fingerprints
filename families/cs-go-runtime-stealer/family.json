@@ -3,7 +3,7 @@
   "name": "CSGoRuntimeStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSGoRuntimeStealer is a CyStack-coined identifier for a bare\n4-field `system_info.txt` panel observed inside `!! 2025\nDEC.part01.rar` aggregator packs at\n`[<CC>]<IPv4>/<operator-handle>/system_info.txt` victim\nfolders (e.g. `[UN]<IPv4>/poopbandit/system_info.txt`).\nThe body is a 5-line minimal panel: an ALL CAPS triple-equals\n`=== SYSTEM INFORMATION ===` section header, four flat\nkey-value lines (`User: <Computer>\\<Username>` / `Computer:` /\n`OS: <goos> <goarch>` / `Directory:`), and a closing\ntriple-equals rule.\n\nThe strongest single fingerprint is the `OS:` value: Go\nbinaries emit `runtime.GOOS + \" \" + runtime.GOARCH` which\nproduces strings like `windows amd64`, `linux 386`, or `darwin\narm64`. The bare lowercase two-token shape does not appear in\nany other surveyed stealer-builder runtime: .NET emits\n`Microsoft Windows <version>`, Python emits\n`Windows-<release>-<build>`, Lumma emits `Windows <version>\n<edition> (<build>)`. The Go runtime shape is the panel's\nclearest builder-attribution signal.\n\nThe `User:` line carries a `<Computer>\\<Username>`\nbackslash-separated identity (the panel's preferred shape over\n`os/user.Current().Username` which would return just the\nusername on Unix). The `Directory:` line carries the malware's\nexecution path; the observed sample ran out of `%TEMP%`. The\npath-side `<operator-handle>/` segment between the victim\nfolder and the `system_info.txt` file exposes the operator's\npanel-side identifier (`poopbandit` in the observed sample);\nthe parser routes this through `malware.distribution_channel`\nso the operator handle travels with the IOC.\n\nPublic reporting and the public stealer-format catalogues do\nnot document a family that emits exactly this minimal\nGo-runtime panel shape. The `poopbandit` operator handle is\nunattested. Family attribution is provisional pending a\npublished mapping.",
+  "description": "CSGoRuntimeStealer is a CyStack-coined identifier for a bare\n4-field `system_info.txt` panel observed inside `!! 2025\nDEC.part01.rar` aggregator packs at\n`[<CC>]<IPv4>/<operator-handle>/system_info.txt` victim\nfolders (e.g. `[UN]<IPv4>/poopbandit/system_info.txt`).\nThe body is a 5-line minimal panel: an ALL CAPS triple-equals\n`=== SYSTEM INFORMATION ===` section header, four flat\nkey-value lines (`User: <Computer>\\<Username>` / `Computer:` /\n`OS: <goos> <goarch>` / `Directory:`), and a closing\ntriple-equals rule.\n\nThe strongest single fingerprint is the `OS:` value: Go\nbinaries emit `runtime.GOOS + \" \" + runtime.GOARCH` which\nproduces strings like `windows amd64`, `linux 386`, or `darwin\narm64`. The bare lowercase two-token shape does not appear in\nany other surveyed stealer-builder runtime: .NET emits\n`Microsoft Windows <version>`, Python emits\n`Windows-<release>-<build>`, Lumma emits `Windows <version>\n<edition> (<build>)`. The Go runtime shape is the panel's\nclearest builder-attribution signal.\n\nThe `User:` line carries a `<Computer>\\<Username>`\nbackslash-separated identity (the panel's preferred shape over\n`os/user.Current().Username` which would return just the\nusername on Unix). The `Directory:` line carries the malware's\nexecution path; the observed sample ran out of `%TEMP%`. The\npath-side `<operator-handle>/` segment between the victim\nfolder and the `system_info.txt` file exposes the operator's\npanel-side identifier (`poopbandit` in the observed sample);\nthe operator handle is retained as distribution-channel\nevidence in this catalog.\n\nPublic reporting and the public stealer-format catalogues do\nnot document a family that emits exactly this minimal\nGo-runtime panel shape. The `poopbandit` operator handle is\nunattested. Family attribution is provisional pending a\npublished mapping.",
   "aliases": [
     "Go-runtime minimal stealer panel",
     "poopbandit Information.txt"
@@ -37,7 +37,7 @@
   "variants": [
     {
       "id": "v_5ea325f8d303821fabff4fe14535f995",
-      "parser": "logmine.ioc.parsers.cs_go_runtime_stealer.CSGoRuntimeStealerParser",
+      "format_id": "cs-go-runtime-stealer",
       "filenames": [
         "system_info.txt"
       ],
@@ -55,7 +55,7 @@
       "sample": {
         "path": "samples/v_5ea325f8d303821fabff4fe14535f995/sample.txt",
         "sha256": "d607cdbe5aa335eacb986db240a008540ba753990b7faf158ebc9a26b8f0e7dc",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

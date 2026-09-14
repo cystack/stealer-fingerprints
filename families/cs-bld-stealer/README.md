@@ -40,17 +40,16 @@ labels together: ``BLD:``, ``System lang:``, and
 ``System TimeZone:``. The three abbreviations rarely
 co-occur outside this panel template; requiring all
 three keeps a stray document mentioning only ``BLD:``
-in prose from mis-claiming. During triage, treat the
+in prose from producing a false match. During triage, treat the
 underlying stealer family as unattributable and rely
 on the parent-folder shape (``<CC> <IPv4> <YYYY-MM-DD>
 <HH-MM-SS>``) as the correlation anchor. Companion
 files (browser exports, wallet artifacts, cookie dumps)
-may trigger more confident attributions through their
-own family detectors.
+may provide more confident family attribution.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

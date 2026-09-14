@@ -48,7 +48,7 @@ addresses, magnet links, other high-value clipboard data)
 
 Fingerprint requires the ``Is Evelated:`` typo substring
 and a line-anchored ``Graphical Adapter:`` field. The typo
-is uniquely this panel across the registry: no canonical
+is uniquely this panel across this catalog: no canonical
 Redline / Lumma / Vidar / StealC / Rhadamanthys /
 MetaStealer emits the admin flag with the ``Evelated``
 misspelling. The ``Clipboard Text:`` field can carry
@@ -58,7 +58,7 @@ value alongside browser credential exports.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

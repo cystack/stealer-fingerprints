@@ -13,13 +13,11 @@ inventory followed by an identity plus geolocation block.
 
 The panel emits no ASCII-art banner and no watermark. The `tag
 :` field carries the operator affiliate or build identifier
-when set (empty in the sample that produced this parser,
+when set (empty in the retained sample,
 indicating a default no-tag build). The `region :` field
 carries a slash-separated `Country/Subdivision/City` triple
 with the full country name (not ISO 3166-1 alpha-2) as the
-first token; the schema drops the country slot rather than
-emit a bogus ISO code because the project does not maintain a
-name-to-code mapping table.
+first token; the full-name country value should not be treated as an ISO country code.
 
 Observed inside a generic `<N MONTH> - <count> LOGS`
 aggregator archive with victim folders shaped as
@@ -30,9 +28,7 @@ Family attribution is provisional pending a published
 threat-intel mapping for this layout. Public reporting and
 community catalogues return no hits for the `Core:` / `Video:`
 / `Screen:` label combination or for the space-around-colon
-lowercase `tag :` / `region :` pair. Rename the family
-constant when a public writeup identifies the underlying
-builder.
+lowercase `tag :` / `region :` pair. The CyStack tracking name can be revised when published evidence identifies the underlying builder.
 
 ## Research status
 
@@ -45,9 +41,7 @@ builder.
 
 - System hardware and geolocation fingerprint (CPU, GPU,
 RAM, screen resolution, OS, hostname, IP, region)
-- The parser only extracts the summary system.txt fields;
-sibling parsers claim any credential files in the
-victim folder
+- Credential artifacts in sibling files within the victim folder
 
 ## Detection notes
 
@@ -64,7 +58,7 @@ suitable for coarse geolocation correlation.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

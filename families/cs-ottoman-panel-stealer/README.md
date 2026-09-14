@@ -26,7 +26,7 @@ support handle `@OttoSup` are preserved as taxonomy fields.
 - Attribution confidence: **low**
 - Aliases: `Ottoman Cloud`, `Ottoman Stealer`, `Ottoman Stealer v2.0`
 - Variants observed: **1**
-- Historical Logmine records represented: **160**
+- CyStack observations represented: **160**
 
 ## What it targets
 
@@ -54,7 +54,7 @@ Titan / Vidar) from sibling files when possible.
 
 ### `v_1f914efc1a8e43b713cc64606c2bb0e8`
 
-- Parser: `logmine.ioc.parsers.cs_ottoman_panel_stealer.CSOttomanPanelStealerParser`
+- Format ID: `cs-ottoman-panel-stealer`
 - Observed filenames: `information.txt`, `PC_info.txt`, `System.txt`, `UserInformation.txt`
 - Panel brand: `Ottoman`
 - Distribution channel: `@OttoSup`
@@ -62,7 +62,7 @@ Titan / Vidar) from sibling files when possible.
 - Historical records represented: **160**
 - Representative sample: [open sample](samples/v_1f914efc1a8e43b713cc64606c2bb0e8/sample.txt)
 - Sample SHA-256: `173225065f85e58a00257fef0638b70c37c98dc6e7de465b6e97e889c3a024ec`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

@@ -14,7 +14,7 @@ hardware records.
 - Attribution confidence: **low**
 - Aliases: `@stealerboss dash-section variant`
 - Variants observed: **1**
-- Historical Logmine records represented: **254**
+- CyStack observations represented: **254**
 
 ## What it targets
 
@@ -23,7 +23,7 @@ hardware records.
 ## Detection notes
 
 The `----- System info:` literal (five dashes, space, colon)
-is unique to this format among parsers in this catalog. Pair
+is unique to this format among formats in this catalog. Pair
 with `HWID:` GUID-shaped value and the `@stealerboss` channel
 reference in the buy-now banner to confirm.
 
@@ -31,7 +31,7 @@ reference in the buy-now banner to confirm.
 
 ### `v_f82ff4bbec34c0df923d22ca12f55d1f`
 
-- Parser: `logmine.ioc.parsers.cs_dash_section_stealer.CSDashSectionStealerParser`
+- Format ID: `cs-dash-section-stealer`
 - Observed filenames: `SystemInfo.txt`
 - Panel brand: `----- System info: 5-dash sections`
 - Distribution channel: `@stealerboss`
@@ -39,7 +39,7 @@ reference in the buy-now banner to confirm.
 - Historical records represented: **254**
 - Representative sample: [open sample](samples/v_f82ff4bbec34c0df923d22ca12f55d1f/sample.txt)
 - Sample SHA-256: `cfa3dcedb24a2af71c15134dcdda6969674bcd3529250e9004d85898c2ec6ea0`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

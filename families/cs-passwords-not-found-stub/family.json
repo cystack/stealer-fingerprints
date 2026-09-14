@@ -12,7 +12,7 @@
   "typical_targets": [
     "Browser-saved credentials (attempted, none found)"
   ],
-  "detection_notes": "Fingerprint requires the cred-file body to be exactly one\nof `Passwords not found.`, `No passwords found.`, or the\nliteral 32-character MD5 hex of the empty byte string\n(`d41d8cd98f00b204e9800998ecf8427e`), after whitespace\nstrip. Real cred files that mention either phrase or carry\nthe empty-MD5 hex inside a longer body do not match.\nDuring triage, treat this label as a \"victim infected but\nno credentials harvested\" marker: the IOC still indicates\nan infection occurred but the cred-dump payload is empty.\nThe underlying stealer family is unknown; if the same\nvictim folder later ships a system-info file, the\nmalware-family detector chain will overwrite this label\nwith the canonical family.",
+  "detection_notes": "Fingerprint requires the cred-file body to be exactly one\nof `Passwords not found.`, `No passwords found.`, or the\nliteral 32-character MD5 hex of the empty byte string\n(`d41d8cd98f00b204e9800998ecf8427e`), after whitespace\nstrip. Real cred files that mention either phrase or carry\nthe empty-MD5 hex inside a longer body do not match.\nDuring triage, treat this label as a \"victim infected but\nno credentials harvested\" marker: the sample still indicates an infection occurred but the cred-dump payload is empty.\nThe underlying stealer family is unknown; if the same\nvictim folder later ships a system-info file, the additional evidence can support canonical family\nattribution.",
   "attack_techniques": [
     {
       "id": "T1555",

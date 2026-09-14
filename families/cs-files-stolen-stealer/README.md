@@ -16,7 +16,7 @@ The body ships ten flush-left `Key: Value` lines: PC Name,
 Desktop Name, Windows Version, Files Stolen, IP Address, MAC
 Address, GPU, RAM, Public IP, Antivirus. No bracketed section
 headers, no banner, no trailing sections. Four features
-distinguish this panel from every other registered format:
+distinguish this panel from every other cataloged format:
 
 1. `PC Name:` plus `Desktop Name:` sibling pair with both
 fields taking the same value on typical single-user Windows
@@ -29,8 +29,8 @@ summary section or not at all - in-body counter fields are
 rare across surveyed families. 3. Dual IP fields side by side:
 `IP Address:` carries the RFC-1918 LAN value (192.168.x.x,
 10.x.x.x, 172.16-31.x.x) and `Public IP:` carries the WAN
-routable value. The IOC schema emits the routable value; the
-LAN value is retained in the source panel for triage. 4. `MAC
+routable value. The routable value is the primary network IOC; the LAN
+value remains useful for host-level triage. 4. `MAC
 Address:` value uses hyphen byte separators (Windows ipconfig
 style) rather than the more common colon-separated form.
 `RAM:` value uses comma thousands separator (`18,308 MB`).
@@ -38,8 +38,8 @@ style) rather than the more common colon-separated form.
 The `Windows Version:` value carries a trailing `- ` sentinel
 with no product-name text after it (as if the panel builder
 intended to append a Windows edition string but the resolver
-returned an empty value on the observed sample). The parser
-strips the tail and emits the bare NT version.
+returned an empty value on the observed sample). The bare NT version before that sentinel is the reliable OS
+value.
 
 Family attribution is provisional. The ten-field combination
 is unattested in public reporting and is also absent from the
@@ -47,8 +47,8 @@ community stealer-format catalogues. Multiple open-source
 Python stealer builders (XillenStealer, Trap Stealer,
 SPYSTEALER, py-stealer-builder) publish plain-text system
 reports but none of the surveyed writeups document this exact
-ten-field key spelling. Rename the family constant if a public
-writeup later maps this layout to a known builder.
+ten-field key spelling. Update this tracking profile if a public writeup later maps
+this layout to a known builder.
 
 ## Research status
 
@@ -80,7 +80,7 @@ Fingerprint requires the four line-prefix anchors
 `Public IP: ` all present in the same body. The
 `Desktop Name:` + `Files Stolen:` pair is itself rare
 enough that this triplet-plus-one cannot collide with
-any other registered parser fingerprint. During
+any other cataloged format fingerprint. During
 triage, the `Files Stolen:` value is a useful sanity
 check: values much lower than a typical Documents /
 Desktop harvest (single digits) suggest a targeted
@@ -95,7 +95,7 @@ any future variants of this panel.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

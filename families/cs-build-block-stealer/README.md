@@ -26,7 +26,7 @@ log-template level - none match.
 - Attribution confidence: **unknown**
 - Aliases: -
 - Variants observed: **1**
-- Historical Logmine records represented: **369**
+- CyStack observations represented: **369**
 
 ## What it targets
 
@@ -39,8 +39,8 @@ log-template level - none match.
 Requires all five line-anchored keys: `Build Path:`,
 `Build ID:`, `Build Version:`, `Build Comment:`, and
 `Active window:`. The five-key combo is unique across
-the parser registry; a stray document quoting one or two
-of the field names cannot accidentally claim the content.
+the catalog; a stray document quoting one or two
+of the field names cannot produce a false match.
 Treat the family attribution as provisional during triage
 - the aggregator labels the pack `redline` but the body
 lacks every canonical Redline anchor.
@@ -49,7 +49,7 @@ lacks every canonical Redline anchor.
 
 ### `v_bf1a41ea43d38a0ab65502c1f7d81936`
 
-- Parser: `logmine.ioc.parsers.cs_build_block_stealer.CSBuildBlockStealerParser`
+- Format ID: `cs-build-block-stealer`
 - Observed filenames: `UserInformation.txt`
 - Panel brand: `4-key Build block (Path/ID/Version/Comment)`
 - Distribution channel: `@ft7links`
@@ -57,7 +57,7 @@ lacks every canonical Redline anchor.
 - Historical records represented: **369**
 - Representative sample: [open sample](samples/v_bf1a41ea43d38a0ab65502c1f7d81936/sample.txt)
 - Sample SHA-256: `4d700e61e5c0fcc1772af67f8b8ee8b2c058923251721b03102aca4b369a7e9d`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

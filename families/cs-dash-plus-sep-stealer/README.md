@@ -33,7 +33,7 @@ exact label set or the `---+---+---` rule.
 - Attribution confidence: **unknown**
 - Aliases: `BRADMAX dash-plus separator panel summary`, `@BRADLOGS Facebook-ID panel summary`
 - Variants observed: **1**
-- Historical Logmine records represented: **120**
+- CyStack observations represented: **120**
 
 ## What it targets
 
@@ -50,7 +50,7 @@ exact label set or the `---+---+---` rule.
 Fingerprint requires the `---+---+---+---+---+---+---`
 dash-plus rule AND `country :` (with space before the colon)
 AND `CK:` AND `| Card:`. Four anchors together cannot collide
-with any other registered parser. During triage, treat the
+with any other cataloged format. During triage, treat the
 family attribution as unknown: the panel summary is the
 metadata view of an underlying stealer whose canonical name
 has not been mapped to this layout in any public reporting.
@@ -63,7 +63,7 @@ source confirms the mapping.
 
 ### `v_229be1e07e9e623014faf573e5ca36b7`
 
-- Parser: `logmine.ioc.parsers.cs_dash_plus_sep_stealer.CSDashPlusSepStealerParser`
+- Format ID: `cs-dash-plus-sep-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: `BRADMAX`
 - Distribution channel: `@BRADLOGS`
@@ -72,7 +72,7 @@ source confirms the mapping.
 - Historical records represented: **120**
 - Representative sample: [open sample](samples/v_229be1e07e9e623014faf573e5ca36b7/sample.txt)
 - Sample SHA-256: `a73abf8cf6019727813bc41124b5ddb46d42519fba783916f286eb99aeb0ae42`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

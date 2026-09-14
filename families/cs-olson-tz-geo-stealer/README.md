@@ -35,16 +35,14 @@ ZIP / postal code, IANA timezone name
 Fingerprint requires four line-anchored no-space-after-colon
 anchors: ``City:``, ``Region:``, ``ZIP:``, and ``TimeZone:``
 followed by an Olson-format value. The combination is
-distinctive across the registry. During triage, correlate with
+distinctive across this catalog. During triage, correlate with
 companion files in the victim folder (browser exports,
 wallet artifacts, cookie dumps, credential stores) to identify
-the underlying stealer family. This parser only extracts the
-geo block from the info.txt; the folder-level detector and
-sibling parsers handle the credential inventory.
+the underlying stealer family. The `info.txt` contributes only the geo block; use companion credential artifacts to establish the underlying family.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

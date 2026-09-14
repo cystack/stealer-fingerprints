@@ -15,7 +15,7 @@
     "Current clipboard content at capture time (crypto\naddresses, magnet links, other high-value clipboard data)",
     "Installed software inventory and running process list"
   ],
-  "detection_notes": "Fingerprint requires the ``Is Evelated:`` typo substring\nand a line-anchored ``Graphical Adapter:`` field. The typo\nis uniquely this panel across the registry: no canonical\nRedline / Lumma / Vidar / StealC / Rhadamanthys /\nMetaStealer emits the admin flag with the ``Evelated``\nmisspelling. The ``Clipboard Text:`` field can carry\nhigh-value tokens (crypto wallet addresses, magnet links,\nsession tokens) so triage should review the clipboard\nvalue alongside browser credential exports.",
+  "detection_notes": "Fingerprint requires the ``Is Evelated:`` typo substring\nand a line-anchored ``Graphical Adapter:`` field. The typo\nis uniquely this panel across this catalog: no canonical\nRedline / Lumma / Vidar / StealC / Rhadamanthys /\nMetaStealer emits the admin flag with the ``Evelated``\nmisspelling. The ``Clipboard Text:`` field can carry\nhigh-value tokens (crypto wallet addresses, magnet links,\nsession tokens) so triage should review the clipboard\nvalue alongside browser credential exports.",
   "attack_techniques": [
     {
       "id": "T1082",

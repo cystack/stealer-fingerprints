@@ -24,7 +24,7 @@ Family attribution is provisional pending a public writeup.
 - Attribution confidence: **low**
 - Aliases: -
 - Variants observed: **2**
-- Historical Logmine records represented: **2,160**
+- CyStack observations represented: **2,160**
 
 ## What it targets
 
@@ -34,7 +34,7 @@ Family attribution is provisional pending a public writeup.
 ## Detection notes
 
 The line-anchored `GPU:` plus line-anchored `Displays:`
-(plural) fingerprint is unique across the registry. The
+(plural) fingerprint is unique across this catalog. The
 plural `Displays:` form rules out sibling panels that
 emit singular `Display:` or `Display Resolution:`. Pair
 this label with CSHardwareTailStealer Info.txt and
@@ -46,7 +46,7 @@ full per-victim summary.
 
 ### `v_1bdd89ba317526aee7eba31023ec3ca7`
 
-- Parser: `logmine.ioc.parsers.cs_stealer_cloud_info_stealer.CSStealerCloudInfoStealerParser`
+- Format ID: `cs-stealer-cloud-info-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: `STEALERCLOUD`
 - Distribution channel: `@STEALERBOSS`
@@ -54,7 +54,7 @@ full per-victim summary.
 - Historical records represented: **298**
 - Representative sample: [open sample](samples/v_1bdd89ba317526aee7eba31023ec3ca7/sample.txt)
 - Sample SHA-256: `297314c85c3b72f3a2204e78a3fa68a27536509f24f3c3ee8e8d494d3c5ba18f`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -63,7 +63,7 @@ Recognition anchors:
 
 ### `v_37cf42da017bf5a1efd7e81fa6f57304`
 
-- Parser: `logmine.ioc.parsers.cs_stealer_cloud_info_stealer.CSStealerCloudInfoStealerParser`
+- Format ID: `cs-stealer-cloud-info-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: `@STEALERBOSS`
@@ -71,7 +71,7 @@ Recognition anchors:
 - Historical records represented: **1,862**
 - Representative sample: [open sample](samples/v_37cf42da017bf5a1efd7e81fa6f57304/sample.txt)
 - Sample SHA-256: `cce24ebd2450b80bb74a3ff079522b5093cd05ac388e7639267524b7e7502a54`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

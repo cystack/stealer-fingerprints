@@ -17,7 +17,7 @@
     "System hardware and locale inventory",
     "Game launcher sessions (Epic, Steam, Uplay, Battle.net, Growtopia)"
   ],
-  "detection_notes": "The banner literal `Blank Grabber got a new victim:` is\nunique across the registry and unique to this codebase, so\na single substring check is sufficient to claim. Forks\n(notably AK-grabber) reuse the same banner verbatim, which\nis a feature for triage: the fork still maps to the\nBlank Grabber family. The `Grabbed Info` per-category counts\nare the cleanest indicator of which artifact subfolders the\narchive contains for evidence collection.",
+  "detection_notes": "The banner literal `Blank Grabber got a new victim:` is\nunique across this catalog and absent from other retained formats, so\na single substring check is sufficient for a structural match. Forks\n(notably AK-grabber) reuse the same banner verbatim, which\nis a feature for triage: the fork still maps to the\nBlank Grabber family. The `Grabbed Info` per-category counts\nare the cleanest indicator of which artifact subfolders the\narchive contains for evidence collection.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -60,7 +60,7 @@
   "variants": [
     {
       "id": "v_b1e576b5520c49a68172676d7c72c40a",
-      "parser": "logmine.ioc.parsers.blank_grabber.BlankGrabberParser",
+      "format_id": "blank-grabber",
       "filenames": [
         "Information.txt"
       ],
@@ -80,13 +80,13 @@
       "sample": {
         "path": "samples/v_b1e576b5520c49a68172676d7c72c40a/sample.txt",
         "sha256": "bc59a06e31f57a4950bb04b1ef23c863ade1d494018e47f4ad086cb56b50e0ab",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     },
     {
       "id": "v_ccdf4b8e3fbd1fec812ef139238867e6",
-      "parser": "logmine.ioc.parsers.blank_grabber.BlankGrabberParser",
+      "format_id": "blank-grabber",
       "filenames": [
         "Information.txt",
         "System.txt"
@@ -106,13 +106,13 @@
       "sample": {
         "path": "samples/v_ccdf4b8e3fbd1fec812ef139238867e6/sample.txt",
         "sha256": "c72b2968115f628d1cbda5507729dc54e4445f7f3f3386be0cff7055fc999fa5",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     },
     {
       "id": "v_d1192221791366c31e6fcf477e55b52b",
-      "parser": "logmine.ioc.parsers.blank_grabber.BlankGrabberParser",
+      "format_id": "blank-grabber",
       "filenames": [
         "Information.txt"
       ],
@@ -132,7 +132,7 @@
       "sample": {
         "path": "samples/v_d1192221791366c31e6fcf477e55b52b/sample.txt",
         "sha256": "23cb51a4c2b4ebe3cd524606bc06c9e6498e1e41f9de8de3c4e16e475921f890",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

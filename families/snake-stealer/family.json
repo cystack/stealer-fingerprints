@@ -13,7 +13,7 @@
     "Network adapter configuration",
     "Running processes and installed browser inventory"
   ],
-  "detection_notes": "The registered parser requires the structural `=== INFO ===`,\n`=== HARDWARE INFORMATION ===`, and `=== INSTALLED BROWSERS ===`\nsection triple. The observed SNAKE label names this profile but\ndoes not independently establish payload lineage, so family\nattribution remains unknown.",
+  "detection_notes": "The cataloged format requires the structural `=== INFO ===`,\n`=== HARDWARE INFORMATION ===`, and `=== INSTALLED BROWSERS ===`\nsection triple. The observed SNAKE label names this profile but\ndoes not independently establish payload lineage, so family\nattribution remains unknown.",
   "attack_techniques": [
     {
       "id": "T1082",
@@ -45,7 +45,7 @@
   "variants": [
     {
       "id": "v_dcee825c24d303631633c51dc93685fe",
-      "parser": "logmine.ioc.parsers.snake.SnakeParser",
+      "format_id": "snake",
       "filenames": [
         "Systeminfo.txt"
       ],
@@ -62,7 +62,7 @@
       "sample": {
         "path": "samples/v_dcee825c24d303631633c51dc93685fe/sample.txt",
         "sha256": "7059e7c60b57393f53c5bd6280315ad6c912969ed7ab7f0e6da0f3c738004afe",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

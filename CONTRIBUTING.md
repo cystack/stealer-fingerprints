@@ -8,9 +8,9 @@ field order, spelling, separators, and useful malware or panel markers. Remove l
 cookies, tokens, wallet secrets, and direct victim identifiers.
 
 Do not create a placeholder variant or synthetic sample just to make a profile look complete. A
-documented research profile may keep an empty `variants` array until Logmine retains a real sample.
-When a sample is present, it must still satisfy the parser and detection anchors named by the
-variant.
+documented research profile may keep an empty `variants` array until CyStack Threat Intelligence
+retains a real sample. When a sample is present, it must still satisfy the format and detection
+anchors named by the variant.
 
 The five classifications have deliberately different meanings:
 

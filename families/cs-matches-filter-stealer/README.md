@@ -9,7 +9,7 @@ buyers can rank logs before purchase. The body is `IP:` /
 `Country:` / `User:` / `Matches:`, no banner, no section
 dividers, no trailing footer. The `Country:` value follows the
 dual-token `ISO2 - Name` form (`BD - Bangladesh`), which is
-the parser's narrowest disambiguator across flat-key shapes.
+the format's narrowest disambiguator across flat-key shapes.
 
 The format is a broker-side caption rather than a stealer
 family's own writer output, so the underlying family for any
@@ -17,7 +17,7 @@ given log is not recoverable from this panel alone: multiple
 stealers can feed into the broker's pre-scan pipeline. The
 `Matches:` enrichment list (per-domain or per-keyword counts)
 is panel-side metadata, not victim-side data, so it is
-intentionally not surfaced as IOC fields. Observed targets in
+intentionally not retained as victim observables. Observed targets in
 the rollup line include freelancer / payment platforms
 (`payoneer.com`, `upwork.com`, `gumroad.com`), social-network
 accounts (`facebook.com`, `studio.youtube.com`), and free-form
@@ -35,7 +35,7 @@ emits this exact four-line `IP` / `Country` / `User` /
 - Attribution confidence: **unknown**
 - Aliases: `Broker pre-scan caption`, `Matches rollup filter bot`
 - Variants observed: **1**
-- Historical Logmine records represented: **9**
+- CyStack observations represented: **9**
 
 ## What it targets
 
@@ -67,7 +67,7 @@ preserve the original writer's family signature.
 
 ### `v_e969c3c4ba0bb12611cb41de10a5c23f`
 
-- Parser: `logmine.ioc.parsers.cs_matches_filter_stealer.CSMatchesFilterStealerParser`
+- Format ID: `cs-matches-filter-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -75,7 +75,7 @@ preserve the original writer's family signature.
 - Historical records represented: **9**
 - Representative sample: [open sample](samples/v_e969c3c4ba0bb12611cb41de10a5c23f/sample.txt)
 - Sample SHA-256: `21f0660b9ade211b7833f67f3471828a5adc27506e0b063ac6f9f85a0cffcdaa`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

@@ -1,8 +1,8 @@
 # Stealer Fingerprints
 
-CyStack's public research catalog of information-stealer log formats found while processing real-world data with Logmine. It distinguishes publicly attributed malware families, observed self-labels, and the stable tracking names created by CyStack for formats that do not yet have a defensible public attribution.
+An independent public research catalog maintained by CyStack Threat Intelligence. It documents information-stealer log formats observed in real-world collections and distinguishes publicly attributed malware families, observed self-labels, and stable CyStack tracking names for formats without defensible public attribution.
 
-Every observed variant has exactly one representative text sample derived from Logmine runtime output. Profiles without a retained runtime sample remain visible as research records; the repository does not fill those gaps with synthetic samples.
+Every retained variant has exactly one representative text sample from the CyStack Threat Intelligence collection. Profiles without a retained sample remain visible as research records; the repository does not fill those gaps with synthetic samples.
 
 > This catalog describes exported stealer logs, not malware binaries. A structural match is an analyst lead, not proof of infection or final attribution.
 
@@ -15,7 +15,7 @@ Every observed variant has exactly one representative text sample derived from L
 - **9** CyStack names mapped to a known parent family
 - **5** log aggregators
 - **124** observed log variants and **124** samples
-- **8,052,878** historical Logmine records consolidated into the retained sample set
+- **8,052,878** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -259,16 +259,18 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 
 An **observed self-label** is a name printed by a log or its panel that has not yet been established as a canonical family by independent research. A **CyStack tracking name** denotes a repeatable, useful log structure for which public attribution is not yet strong enough. A **family variant** is a CyStack name that has since been linked to a known parent. An **aggregator** describes a distribution or panel grouping that can contain multiple families.
 
-Family descriptions and detection notes come from Logmine's maintained research metadata. Samples retain useful layout, spelling, separators, field order, and malware/panel markers while direct victim secrets are scrubbed.
+Family descriptions and detection notes are maintained by CyStack Threat Intelligence. Samples retain useful layout, spelling, separators, field order, and malware/panel markers while direct victim secrets are scrubbed.
 Repository sample files use the stable name `sample.txt`; the original artifact basename patterns remain in each variant's **Observed filenames** field.
 
-## How updates arrive
+## Research process
 
-New variants come directly from Logmine through deterministic Python and Git: the runtime sample is scrubbed, matched again, deduplicated against the latest catalog, validated, and published. No language model is used in that path.
+CyStack Threat Intelligence adds a variant only after its structure has been confirmed, its representative sample has been scrubbed, and the record has been deduplicated and validated against the current catalog.
 
 ## Working with the data
 
 The machine-readable source for each profile is its `family.json`; the adjacent README and this index are generated from those records. See [CONTRIBUTING.md](CONTRIBUTING.md) for corrections or new evidence.
+
+`format_id` is a catalog-wide stable public identifier for a log structure; each `v_...` value is an opaque catalog-wide stable variant identifier and should not be recalculated. A sample with `source: cystack_collection` was retained from the CyStack Threat Intelligence research collection and scrubbed before publication.
 
 ```console
 python tools/catalog.py validate

@@ -60,7 +60,7 @@
   "variants": [
     {
       "id": "v_e8de83dfb299d4ae3148727b940ff625",
-      "parser": "logmine.ioc.parsers.santastealer.SantaStealerParser",
+      "format_id": "santastealer",
       "filenames": [
         "Information.txt"
       ],
@@ -76,7 +76,7 @@
       "sample": {
         "path": "samples/v_e8de83dfb299d4ae3148727b940ff625/sample.txt",
         "sha256": "b73d51ba290606d47b2533020499dfb471a5d4fa39dd55b0562058503c306f66",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

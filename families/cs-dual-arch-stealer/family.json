@@ -16,7 +16,7 @@
     "Process bitness (Environment.Is64BitProcess)",
     "OS bitness (Environment.Is64BitOperatingSystem)"
   ],
-  "detection_notes": "Fingerprint requires five line-anchored keys:\n`System Information:` bare section header AND\n`Machine Name:` AND `Current Directory:` AND\n`Process Architecture:` AND `OS Architecture:`. The\ndual architecture pair with these exact key spellings\nis unique across the registered parsers. During\ntriage, the `Current Directory` value often carries\nthe dropper execution context (PowerShell interpreter\ndirectory in the observed sample); pivot to that path\nto identify the parent process. The sibling\n`CSTop20ProcStealer` (iter #11) also uses .NET\n`Environment` class properties but emits them as\n`64-bit OS: True` / `64-bit Process: False` boolean\nform under different section headers.",
+  "detection_notes": "Fingerprint requires five line-anchored keys:\n`System Information:` bare section header AND\n`Machine Name:` AND `Current Directory:` AND\n`Process Architecture:` AND `OS Architecture:`. The\ndual architecture pair with these exact key spellings\nis unique across the cataloged formats. During\ntriage, the `Current Directory` value often carries\nthe dropper execution context (PowerShell interpreter\ndirectory in the observed sample); pivot to that path\nto identify the parent process. The sibling\n`CSTop20ProcStealer` also uses .NET\n`Environment` class properties but emits them as\n`64-bit OS: True` / `64-bit Process: False` boolean\nform under different section headers.",
   "attack_techniques": [
     {
       "id": "T1082",

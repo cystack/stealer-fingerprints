@@ -12,7 +12,7 @@ the field block.
 - Attribution confidence: **high**
 - Aliases: `RedLine`, `RedLineStealer`
 - Variants observed: **2**
-- Historical Logmine records represented: **31,304**
+- CyStack observations represented: **31,304**
 
 ## What it targets
 
@@ -32,7 +32,7 @@ paired with `FileLocation:`. Stripped variants without
 
 ### `v_436a2a6dd26480ac96afbce620412cb2`
 
-- Parser: `logmine.ioc.parsers.redline.RedlineParser`
+- Format ID: `redline`
 - Observed filenames: `UserInformation.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -41,7 +41,7 @@ paired with `FileLocation:`. Stripped variants without
 - Historical records represented: **31,303**
 - Representative sample: [open sample](samples/v_436a2a6dd26480ac96afbce620412cb2/sample.txt)
 - Sample SHA-256: `154e3ee6d7f08d47dd27169d6db791bef28822a96a089d10cfb1682802954acb`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -50,7 +50,7 @@ Recognition anchors:
 
 ### `v_9ff2932c65398ba0ef8bad9c6465381a`
 
-- Parser: `logmine.ioc.parsers.redline.RedlineParser`
+- Format ID: `redline`
 - Observed filenames: `UserInformation.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -59,7 +59,7 @@ Recognition anchors:
 - Historical records represented: **1**
 - Representative sample: [open sample](samples/v_9ff2932c65398ba0ef8bad9c6465381a/sample.txt)
 - Sample SHA-256: `9623f948a384209925e8c624313e13a6a7b10bb96620b17a18546847ca68599a`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

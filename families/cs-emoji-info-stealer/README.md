@@ -32,7 +32,7 @@ here.
 - Attribution confidence: **unknown**
 - Aliases: `!! 2025 OCT aggregator emoji-prefixed panel summary`
 - Variants observed: **1**
-- Historical Logmine records represented: **5,414**
+- CyStack observations represented: **5,414**
 
 ## What it targets
 
@@ -61,7 +61,7 @@ cannot be identified from the summary fields alone.
 
 ### `v_0d792db01a0756f7e24d1c85651bfea1`
 
-- Parser: `logmine.ioc.parsers.cs_emoji_info_stealer.CSEmojiInfoStealerParser`
+- Format ID: `cs-emoji-info-stealer`
 - Observed filenames: `Information.txt`, `System.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -69,7 +69,7 @@ cannot be identified from the summary fields alone.
 - Historical records represented: **5,414**
 - Representative sample: [open sample](samples/v_0d792db01a0756f7e24d1c85651bfea1/sample.txt)
 - Sample SHA-256: `00c1d34544696aa93c8919692d5f642d64d15d0456cf894b1ef25537032dadef`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

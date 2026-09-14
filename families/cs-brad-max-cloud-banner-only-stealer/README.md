@@ -9,7 +9,7 @@ The file ships the aBradMax Figlet banner inside a
 nothing else: no `Key: Value` field block, no section
 separators, no installed-software inventory or environment-variable dump. The underlying stealer panel template
 emitted the header but the field-population step failed
-(operator-side parser crash, anti-leech truncation, or
+(operator-side normalization failure, anti-leech truncation, or
 the source log was captured mid-write).
 
 Observed inside `!! 2024 MAY.part01.rar` packs at
@@ -22,9 +22,9 @@ between the date and time components. The file basename
 `system_info.txt` (underscore + lowercase) is distinct
 from the `system.txt` / `System.txt` / `Information.txt`
 filenames the other four BRADMAX_CLOUD slices use, but
-the parser keys on body content rather than file basename
+the fingerprint relies on body content rather than the filename
 so that variant filenames carrying the same banner-only
-body still claim correctly.
+body remains identifiable.
 
 ## Research status
 
@@ -44,7 +44,7 @@ Fingerprint requires both the
 `Telegram: https://t.me/BRADMAX_CLOUD` watermark AND that
 the file content (after rstrip) ends with at least 20
 consecutive `*` characters - the closing banner border.
-Body-bearing siblings (DCRat, Lumma, parser-normalized,
+Body-bearing siblings (DCRat, Lumma, normalizer-generated,
 Mars-fork) all end with a field line that does not
 satisfy the asterisk-tail check, so the disambiguator is
 unambiguous. During triage, treat the underlying stealer
@@ -57,7 +57,7 @@ stub.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

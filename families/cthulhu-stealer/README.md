@@ -12,7 +12,7 @@ Observed in `@bugatti_cloud` aggregator packs.
 - Attribution confidence: **high**
 - Aliases: `Cthulhu macOS Stealer`
 - Variants observed: **1**
-- Historical Logmine records represented: **5,450**
+- CyStack observations represented: **5,450**
 
 ## What it targets
 
@@ -32,7 +32,7 @@ origin shows up in stable field ordering across builds.
 
 ### `v_1e1c8707a36b7f85a5633c78674b0d78`
 
-- Parser: `logmine.ioc.parsers.cthulhu.CthulhuParser`
+- Format ID: `cthulhu`
 - Observed filenames: `UserInformation.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -40,7 +40,7 @@ origin shows up in stable field ordering across builds.
 - Historical records represented: **5,450**
 - Representative sample: [open sample](samples/v_1e1c8707a36b7f85a5633c78674b0d78/sample.txt)
 - Sample SHA-256: `f86d1d768943f3ef56910c53097a0e39d5e5fbaee351ec58406c821f221609f1`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

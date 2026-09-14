@@ -13,7 +13,7 @@
     "Discord and Telegram session data",
     "Document grabber for sensitive file types"
   ],
-  "detection_notes": "Structured JSON shape with a top-level `PcName` key (PascalCase,\nno spaces) is unique among the families this catalog tracks; no\nother parser claims `pc_info.json` content.",
+  "detection_notes": "Structured JSON shape with a top-level `PcName` key (PascalCase,\nno spaces) is unique among the families this catalog tracks; no\nother retained format uses this `pc_info.json` shape.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -43,7 +43,7 @@
   "variants": [
     {
       "id": "v_02aba0afc027e0ffde6554b29031e0b1",
-      "parser": "logmine.ioc.parsers.acreed.AcreedParser",
+      "format_id": "acreed",
       "filenames": [
         "pc_info.json",
         "pc_info.txt"
@@ -60,7 +60,7 @@
       "sample": {
         "path": "samples/v_02aba0afc027e0ffde6554b29031e0b1/sample.txt",
         "sha256": "b8f16d760313ebd4003085217477561045790d3303b9e579b81cbc88983ae551",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

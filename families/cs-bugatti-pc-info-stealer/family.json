@@ -13,7 +13,7 @@
     "Network identity (IP address, country)",
     "Account identity (Windows username, computer name)"
   ],
-  "detection_notes": "Fingerprint requires four bare-key line-anchored labels\ntogether: ``UserName:``, ``Architecture:``, ``Cores:``,\nand ``Local Time:``. The combination is disjoint from\nPyInfoStealer (which pairs ``Architecture:`` with\n``Processor:`` and ``ISP:`` / ``Org:`` ip-api.com keys)\nand from CSRussia34StealerParser (which pairs\n``Architecture:`` with ``Laptop:`` and the\n``russia34.com`` channel substring). During triage,\ntreat the underlying stealer family as unattributable\nand rely on the channel + panel_brand metadata to bucket\nsamples for analyst review. Companion files in the\nvictim folder (browser exports, wallet artifacts) may\ntrigger more confident attributions through their own\nfamily detectors.",
+  "detection_notes": "Fingerprint requires four bare-key line-anchored labels\ntogether: ``UserName:``, ``Architecture:``, ``Cores:``,\nand ``Local Time:``. The combination is disjoint from\nPyInfoStealer (which pairs ``Architecture:`` with\n``Processor:`` and ``ISP:`` / ``Org:`` ip-api.com keys)\nand from CSRussia34Stealer (which pairs\n``Architecture:`` with ``Laptop:`` and the\n``russia34.com`` channel substring). During triage,\ntreat the underlying stealer family as unattributable\nand rely on the channel + panel_brand metadata to bucket\nsamples for analyst review. Companion files in the\nvictim folder (browser exports, wallet artifacts) may provide more confident family attribution.",
   "attack_techniques": [
     {
       "id": "T1082",

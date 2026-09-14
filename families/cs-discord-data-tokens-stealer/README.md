@@ -56,11 +56,11 @@ Fingerprint requires (a) the IOC folder basename equals
 folder root, (c) every other root entry is one of the
 allowed siblings (`leveldb` subdirectory or the empty-named packer DIR artifact), and (d) the system_path id
 contains a `BRADLOGS` or `BRADMAX` token. The allowlist
-(rather than a count cap) keeps the detector tight as
+(rather than a count cap) keeps the fingerprint specific as
 new wrapper-side artifacts surface without dropping the
 constraint that no unrelated cred / system file appears
 at root. The folder-name plus path-side BRADMAX anchor
-keeps this off generic Discord-loot folders distributed
+distinguishes generic Discord-loot folders distributed
 through unrelated channels.
 
 During triage, treat this label as a "BRADMAX victim where
@@ -75,7 +75,7 @@ incident responder would handle a stolen `*.ldb` file.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

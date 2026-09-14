@@ -18,7 +18,7 @@
     "Discord tokens",
     "Per-victim IP / country / city / ISP geolocation"
   ],
-  "detection_notes": "Fingerprint requires three section-header substrings\n(`- IP Info -`, `- PC Info -`, `- Log Info -`) plus at\nleast one emoji count indicator (U+2705 ✅ or U+274C ❌).\nThe three-section trio is unique across the registry, and\nthe emoji confirmation rejects unrelated text that uses\nthe dash-delimited captions for prose section markers.\nDuring triage, treat the family attribution as unknown:\nthe `FileLocation:` and `Current Language:` Redline-canonical field names suggest Redline lineage but the\noverall body shape does not match Redline canonical.",
+  "detection_notes": "Fingerprint requires three section-header substrings\n(`- IP Info -`, `- PC Info -`, `- Log Info -`) plus at\nleast one emoji count indicator (U+2705 ✅ or U+274C ❌).\nThe three-section trio is unique across this catalog, and\nthe emoji confirmation rejects unrelated text that uses\nthe dash-delimited captions for prose section markers.\nDuring triage, treat the family attribution as unknown:\nthe `FileLocation:` and `Current Language:` Redline-canonical field names suggest Redline lineage but the\noverall body shape does not match Redline canonical.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -50,7 +50,7 @@
   "variants": [
     {
       "id": "v_74aa5cc181db85383521d875e06d07c2",
-      "parser": "logmine.ioc.parsers.cs_emoji_count_stealer.CSEmojiCountStealerParser",
+      "format_id": "cs-emoji-count-stealer",
       "filenames": [
         "Information.txt"
       ],
@@ -67,7 +67,7 @@
       "sample": {
         "path": "samples/v_74aa5cc181db85383521d875e06d07c2/sample.txt",
         "sha256": "52b51535eda98f0e3714e37c99a9fb70d530a76a007280af9f45f223f2aab0ed",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

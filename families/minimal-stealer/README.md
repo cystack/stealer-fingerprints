@@ -13,7 +13,7 @@ sandbox VMs.
 - Attribution confidence: **unknown**
 - Aliases: -
 - Variants observed: **1**
-- Historical Logmine records represented: **2**
+- CyStack observations represented: **2**
 
 ## What it targets
 
@@ -30,7 +30,7 @@ other family in this catalog.
 
 ### `v_289e675ff30a29b1a1292c77b54489e5`
 
-- Parser: `logmine.ioc.parsers.minimal_stealer.MinimalStealerParser`
+- Format ID: `minimal-stealer`
 - Observed filenames: `System_Info.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -38,7 +38,7 @@ other family in this catalog.
 - Historical records represented: **2**
 - Representative sample: [open sample](samples/v_289e675ff30a29b1a1292c77b54489e5/sample.txt)
 - Sample SHA-256: `995594618cd831da529b69edf7f0372c94e7a63849cdd39ca4cd3cde3b866bf0`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

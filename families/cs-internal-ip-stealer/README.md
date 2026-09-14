@@ -62,19 +62,19 @@ Fingerprint requires line-anchored `Ip:` AND `Internal IP:`
 AND `HWID:` PLUS at least two of the four bracket-section
 markers (`[Basic]` / `[Network]` / `[Drives]` / `[GPU]`)
 present anywhere in the body. The `Internal IP:` field is
-unique across the registered parsers - no other family emits
+unique across the cataloged formats - no other family emits
 both an external and internal IP as separate fields. The four-section bracket-header set differs from every existing
-bracket-section parser (`BracketSectionStealer` uses
+bracket-section format (`BracketSectionStealer` uses
 `[System]` + `[Hardware]`; AMOS uses `[System Info]` +
 `[Hardware]`). During triage, the SHA256 HWID length and the
 dual-IP shape point at a newer stealer build; the specific
 builder is not yet mapped in public reporting, so treat the
-family label as a placeholder. Rename the family constant if a
-public writeup later publishes this exact layout.
+family label as a placeholder. Update this tracking profile if a public writeup later
+publishes this exact layout.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

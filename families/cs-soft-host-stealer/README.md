@@ -15,7 +15,7 @@ title-cased 4-line block matches neither family canonically.
 Redlines native cred output is `URL: / Username: / Password: /
 Application:` and Raccoons is a tab-or pipe-separated row
 layout; the `Soft:` keyword with title-case capitalisation
-does not appear in either. A public stealer-log parser writeup
+does not appear in either. A public stealer-log format writeup
 records this exact 4-line shape as one of five common
 credential formats but does not attribute it to a specific
 malware family.
@@ -55,7 +55,7 @@ blank credentials.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

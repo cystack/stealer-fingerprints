@@ -29,7 +29,7 @@ no hits for a ``Plutus Stealer`` name paired with an
 infostealer format. Community catalogues also carry no
 attestation. The operator self-brand is preserved verbatim in
 ``panel_brand`` but not trusted as an attribution mapping.
-Rename the family constant when a public writeup identifies
+Update this tracking profile when a public writeup identifies
 the underlying builder.
 
 The single observed pack was delivered through the
@@ -77,7 +77,7 @@ for correlating across families).
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

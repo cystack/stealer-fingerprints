@@ -15,7 +15,7 @@
     "Public-IP geolocation (country, city, latitude / longitude, zipcode, timezone)",
     "Display configuration (Chipset Model, VRAM, resolution)"
   ],
-  "detection_notes": "Line-anchored `Country Code:` AND `Zipcode:` AND\n`Hardware Overview:` is the fingerprint. The triple is\nspecific because `Country Code:` (separate from\n`Country:`) plus `Zipcode:` (one word) is the geo-block\nopener documented for Cthulhu, and `Hardware Overview:` is\nthe macOS-specific `system_profiler SPHardwareDataType`\nheader. CthulhuParser runs ahead and claims any sample\nthat also carries `BuildID:`, so this parser only sees\nthe BuildID-less variant. AMOSParser uses `Country:` (not\n`Country Code:`) plus the `MetaMask Info:` / `Debanks:` /\n`Userinfo:` section header triple - no overlap. MacSync\nrequires the `MacSync Stealer` banner - absent here.\nDuring triage, treat this label as a macOS infostealer\nsystem summary and look for sibling files (browser data,\nkeychain dumps, wallet folders) in the same victim folder.",
+  "detection_notes": "Line-anchored `Country Code:` AND `Zipcode:` AND\n`Hardware Overview:` is the fingerprint. The triple is\nspecific because `Country Code:` (separate from\n`Country:`) plus `Zipcode:` (one word) is the geo-block\nopener documented for Cthulhu, and `Hardware Overview:` is\nthe macOS-specific `system_profiler SPHardwareDataType`\nheader. Samples that also carry `BuildID:` match the Cthulhu profile; this profile covers the BuildID-less variant. AMOS uses `Country:` (not\n`Country Code:`) plus the `MetaMask Info:` / `Debanks:` /\n`Userinfo:` section header triple - no overlap. MacSync\nrequires the `MacSync Stealer` banner - absent here.\nDuring triage, treat this label as a macOS infostealer\nsystem summary and look for sibling files (browser data,\nkeychain dumps, wallet folders) in the same victim folder.",
   "attack_techniques": [
     {
       "id": "T1082",
@@ -43,7 +43,7 @@
   "variants": [
     {
       "id": "v_ab5581abd38bf0fcdf843171df456903",
-      "parser": "logmine.ioc.parsers.cs_mac_userinfo_stealer.CSMacUserinfoStealerParser",
+      "format_id": "cs-mac-userinfo-stealer",
       "filenames": [
         "UserInformation.txt"
       ],
@@ -61,7 +61,7 @@
       "sample": {
         "path": "samples/v_ab5581abd38bf0fcdf843171df456903/sample.txt",
         "sha256": "bc9690044f983ca1ac45b631b2d97f6548e94ae1d0d59269fa0c77be33baef85",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

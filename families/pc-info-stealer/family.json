@@ -22,7 +22,7 @@
   "variants": [
     {
       "id": "v_b9fc8961d3b757934ac79ac1f776b15e",
-      "parser": "logmine.ioc.parsers.pcinfo_stealer.PCInfoStealerParser",
+      "format_id": "pcinfo-stealer",
       "filenames": [
         "System_Info.txt"
       ],
@@ -41,7 +41,7 @@
       "sample": {
         "path": "samples/v_b9fc8961d3b757934ac79ac1f776b15e/sample.txt",
         "sha256": "cd2523aa9a43cacfe86e70cb0acf8791d1b0037d783fd1a3134c8a067f1fed8b",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

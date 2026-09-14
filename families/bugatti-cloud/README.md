@@ -15,7 +15,7 @@ identity preamble.
 - Attribution confidence: **unknown**
 - Aliases: -
 - Variants observed: **1**
-- Historical Logmine records represented: **2**
+- CyStack observations represented: **2**
 
 ## What it targets
 
@@ -56,7 +56,7 @@ channel-specific layouts.
 
 ### `v_c12f9b157d6a74710a1e1e9ebc1ecea7`
 
-- Parser: `logmine.ioc.parsers.bugatti_cloud_banner.BugattiCloudBannerParser`
+- Format ID: `bugatti-cloud-banner`
 - Observed filenames: `information.txt`
 - Panel brand: -
 - Distribution channel: `@bugatti_cloud`
@@ -64,7 +64,7 @@ channel-specific layouts.
 - Historical records represented: **2**
 - Representative sample: [open sample](samples/v_c12f9b157d6a74710a1e1e9ebc1ecea7/sample.txt)
 - Sample SHA-256: `c0827f757e129b9667c320a2ae7552ff7172bdbf4444d32e87abc8817ecb677b`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

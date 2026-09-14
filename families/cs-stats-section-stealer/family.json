@@ -49,7 +49,7 @@
   "variants": [
     {
       "id": "v_2d9836c148a6f62643de95589335158d",
-      "parser": "logmine.ioc.parsers.cs_stats_section_stealer.CSStatsSectionStealerParser",
+      "format_id": "cs-stats-section-stealer",
       "filenames": [
         "_INFO.txt"
       ],
@@ -65,7 +65,7 @@
       "sample": {
         "path": "samples/v_2d9836c148a6f62643de95589335158d/sample.txt",
         "sha256": "7182c2461e4a3e8d04ed7e31be7453ccfab1e6c5c9c8d40b751975ce654c2449",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

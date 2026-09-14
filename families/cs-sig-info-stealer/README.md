@@ -26,7 +26,7 @@ threat-intel mapping for this exact bare-KV layout.
 - Attribution confidence: **low**
 - Aliases: `BRADMAX Info.txt with Lumma sig watermark`, `Bare-KV Redline-style panel with Lumma sig suffix`
 - Variants observed: **1**
-- Historical Logmine records represented: **10,811**
+- CyStack observations represented: **10,811**
 
 ## What it targets
 
@@ -56,7 +56,7 @@ the Lumma sig signature into a different panel template.
 
 ### `v_571b9735a207cab65f14c48899af7f62`
 
-- Parser: `logmine.ioc.parsers.cs_sig_info_stealer.CSSigInfoStealerParser`
+- Format ID: `cs-sig-info-stealer`
 - Observed filenames: `Info.txt`
 - Panel brand: -
 - Distribution channel: `@BRADLOGS`
@@ -65,7 +65,7 @@ the Lumma sig signature into a different panel template.
 - Historical records represented: **10,811**
 - Representative sample: [open sample](samples/v_571b9735a207cab65f14c48899af7f62/sample.txt)
 - Sample SHA-256: `1bbeb3f129bbe42254b047579474031831d7cbe84247a277455362e72692b982`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

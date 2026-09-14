@@ -10,7 +10,7 @@
     "Crypto wallet extensions and desktop clients",
     "System hardware and locale inventory"
   ],
-  "detection_notes": "Requires all five line-anchored keys: `Build Path:`,\n`Build ID:`, `Build Version:`, `Build Comment:`, and\n`Active window:`. The five-key combo is unique across\nthe parser registry; a stray document quoting one or two\nof the field names cannot accidentally claim the content.\nTreat the family attribution as provisional during triage\n- the aggregator labels the pack `redline` but the body\nlacks every canonical Redline anchor.",
+  "detection_notes": "Requires all five line-anchored keys: `Build Path:`,\n`Build ID:`, `Build Version:`, `Build Comment:`, and\n`Active window:`. The five-key combo is unique across\nthe catalog; a stray document quoting one or two\nof the field names cannot produce a false match.\nTreat the family attribution as provisional during triage\n- the aggregator labels the pack `redline` but the body\nlacks every canonical Redline anchor.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -44,7 +44,7 @@
   "variants": [
     {
       "id": "v_bf1a41ea43d38a0ab65502c1f7d81936",
-      "parser": "logmine.ioc.parsers.cs_build_block_stealer.CSBuildBlockStealerParser",
+      "format_id": "cs-build-block-stealer",
       "filenames": [
         "UserInformation.txt"
       ],
@@ -62,7 +62,7 @@
       "sample": {
         "path": "samples/v_bf1a41ea43d38a0ab65502c1f7d81936/sample.txt",
         "sha256": "4d700e61e5c0fcc1772af67f8b8ee8b2c058923251721b03102aca4b369a7e9d",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

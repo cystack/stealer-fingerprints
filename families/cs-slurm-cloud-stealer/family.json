@@ -14,7 +14,7 @@
     "Account identity (Windows username, computer name)",
     "Full Windows Environment Variables dump"
   ],
-  "detection_notes": "Fingerprint requires the ``Slurm Cloud | Private`` banner\nsubstring and a line-anchored ``CLR Version:`` field key.\nThe pipe-separated banner phrase is the operator self-id\nno other channel in the surveyed corpus uses it. Pair the\npanel_brand with the sibling ``CSJohnDoeProject`` metadata\nwhen triaging: both channels appear to resell a common\nunderlying builder, so overlap in victim hardware fingerprints\nacross the two panels is expected. Companion files in the\nvictim folder (browser exports, cookie dumps, wallet\nartifacts) may trigger more confident attributions through\ntheir own family detectors.",
+  "detection_notes": "Fingerprint requires the ``Slurm Cloud | Private`` banner\nsubstring and a line-anchored ``CLR Version:`` field key.\nThe pipe-separated banner phrase is the operator self-id\nno other channel in the surveyed corpus uses it. Pair the\npanel_brand with the sibling ``CSJohnDoeProject`` metadata\nwhen triaging: both channels appear to resell a common\nunderlying builder, so overlap in victim hardware fingerprints\nacross the two panels is expected. Companion files in the\nvictim folder (browser exports, cookie dumps, wallet\nartifacts) may provide more confident family attribution.",
   "attack_techniques": [
     {
       "id": "T1082",

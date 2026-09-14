@@ -27,7 +27,7 @@ to disambiguate.
 - Attribution confidence: **high**
 - Aliases: `Stealerium v3.5.2`
 - Variants observed: **1**
-- Historical Logmine records represented: **4**
+- CyStack observations represented: **4**
 
 ## What it targets
 
@@ -62,7 +62,7 @@ exfiltration but is not victim infrastructure.
 
 ### `v_fea267824fe0c63f2704a2f713a8b5fc`
 
-- Parser: `logmine.ioc.parsers.stealerium.StealeriumParser`
+- Format ID: `stealerium`
 - Observed filenames: `Information.txt`
 - Panel brand: `Stealerium v3.5.2`
 - Distribution channel: `@BRADLOGS`
@@ -70,7 +70,7 @@ exfiltration but is not victim infrastructure.
 - Historical records represented: **4**
 - Representative sample: [open sample](samples/v_fea267824fe0c63f2704a2f713a8b5fc/sample.txt)
 - Sample SHA-256: `e3531ea1de20061e3a974888e95d7ee570781c278652e02ff783f076a1d6e504`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

@@ -26,7 +26,7 @@ attribution is provisional pending a published threat-intel mapping for this lay
 - Attribution confidence: **unknown**
 - Aliases: `Dash-section emoji-count Information.txt panel`, `4-section ✅/❌ checkmark stealer`
 - Variants observed: **1**
-- Historical Logmine records represented: **119**
+- CyStack observations represented: **119**
 
 ## What it targets
 
@@ -44,7 +44,7 @@ attribution is provisional pending a published threat-intel mapping for this lay
 Fingerprint requires three section-header substrings
 (`- IP Info -`, `- PC Info -`, `- Log Info -`) plus at
 least one emoji count indicator (U+2705 ✅ or U+274C ❌).
-The three-section trio is unique across the registry, and
+The three-section trio is unique across this catalog, and
 the emoji confirmation rejects unrelated text that uses
 the dash-delimited captions for prose section markers.
 During triage, treat the family attribution as unknown:
@@ -55,7 +55,7 @@ overall body shape does not match Redline canonical.
 
 ### `v_74aa5cc181db85383521d875e06d07c2`
 
-- Parser: `logmine.ioc.parsers.cs_emoji_count_stealer.CSEmojiCountStealerParser`
+- Format ID: `cs-emoji-count-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -63,7 +63,7 @@ overall body shape does not match Redline canonical.
 - Historical records represented: **119**
 - Representative sample: [open sample](samples/v_74aa5cc181db85383521d875e06d07c2/sample.txt)
 - Sample SHA-256: `52b51535eda98f0e3714e37c99a9fb70d530a76a007280af9f45f223f2aab0ed`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

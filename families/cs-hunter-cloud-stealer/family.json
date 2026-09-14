@@ -3,7 +3,7 @@
   "name": "CSHunterCloudStealer",
   "classification": "family_variant",
   "attribution_confidence": "high",
-  "description": "CSHunterCloudStealer is a CyStack-coined identifier for the\n`HUNTER CLOUD` watermarked Redline-derivative\n`UserInformation.txt` observed inside `@ft7links`-distributed\npacks. The `HUNTER_CLOUD` Telegram channel re-distributes\nRedline-derivative logs (the same shape as\nRedlineLikeStealer variant 4: `BUILD NAME:` plus extended\nblock) under a per-line anti-scrape watermark that prevents\nthe line-anchored `RedlineLikeStealer` parser from claiming\nthe content.",
+  "description": "CSHunterCloudStealer is a CyStack-coined identifier for the\n`HUNTER CLOUD` watermarked Redline-derivative\n`UserInformation.txt` observed inside `@ft7links`-distributed\npacks. The `HUNTER_CLOUD` Telegram channel re-distributes\nRedline-derivative logs (the same shape as\nRedlineLikeStealer variant 4: `BUILD NAME:` plus extended\nblock) under a per-line anti-scrape watermark that prevents the line-anchored RedlineLike fingerprint from\nmatching the content.",
   "aliases": [
     "HUNTER CLOUD",
     "HUNTER_CLOUD"

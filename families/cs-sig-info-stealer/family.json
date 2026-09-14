@@ -53,7 +53,7 @@
   "variants": [
     {
       "id": "v_571b9735a207cab65f14c48899af7f62",
-      "parser": "logmine.ioc.parsers.cs_sig_info_stealer.CSSigInfoStealerParser",
+      "format_id": "cs-sig-info-stealer",
       "filenames": [
         "Info.txt"
       ],
@@ -73,7 +73,7 @@
       "sample": {
         "path": "samples/v_571b9735a207cab65f14c48899af7f62/sample.txt",
         "sha256": "1bbeb3f129bbe42254b047579474031831d7cbe84247a277455362e72692b982",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "full-device-os"

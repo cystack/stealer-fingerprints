@@ -11,7 +11,7 @@
   "typical_targets": [
     "Random victim-Documents / Desktop text notes swept by\nthe underlying stealer's file-grabber module"
   ],
-  "detection_notes": "Fingerprint requires three conditions: (1) root\ncontains an ``Important Files`` directory, (2) the\nonly other root entry is the BRADMAX packer empty-name\nDIR artifact (strict 1-or-2 entry root), and (3) the\nsystem_path ID carries a ``BRADMAX`` or ``BRADLOGS``\ntoken. The path-side anchor keeps the detector off\ngeneric ``Important Files/``-only folders distributed\nthrough other channels. During triage, treat the\nunderlying stealer family as unattributable and rely\non the channel + panel_brand metadata to bucket samples\nfor analyst review.",
+  "detection_notes": "Fingerprint requires three conditions: (1) root\ncontains an ``Important Files`` directory, (2) the\nonly other root entry is the BRADMAX packer empty-name\nDIR artifact (strict 1-or-2 entry root), and (3) the\nsystem_path ID carries a ``BRADMAX`` or ``BRADLOGS``\ntoken. The path-side anchor excludes generic ``Important Files/``-only folders distributed\nthrough other channels. During triage, treat the\nunderlying stealer family as unattributable and rely\non the channel + panel_brand metadata to bucket samples\nfor analyst review.",
   "attack_techniques": [
     {
       "id": "T1005",

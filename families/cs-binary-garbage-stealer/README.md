@@ -14,14 +14,12 @@ high-entropy bytes form valid 3-byte UTF-8 sequences in
 the CJK-ideograph range, so random data decodes to a
 wall of CJK characters.
 
-The label exists to stop the strict-mode alert from firing
-on every per-victim copy of these binary-garbage files
-across the parent log pack. The body carries no
+The label groups repeated per-victim copies of these binary-garbage files across the parent log pack. The body carries no
 extractable victim or device fields. Family attribution
 is provisional pending a published threat-intel mapping
 for the underlying stealer family that emits these files,
-or a reverse-engineering of the encoding scheme that
-would let the parser extract real fields.
+or reverse-engineering of the encoding scheme that would expose
+structured fields.
 
 ## Research status
 
@@ -39,9 +37,8 @@ would let the parser extract real fields.
 Fingerprint requires file size > 50 KB AND CJK-range
 (U+3000-U+9FFF) character density > 20% in the first
 10 KB AND a BRADMAX archive-root path gate
-(`!! YYYY MON` pattern). The BRADMAX path gate keeps
-this fallback off legitimate CJK-language documents
-from non-BRADMAX archives. During triage, treat this
+(`!! YYYY MON` pattern). The BRADMAX anchor prevents confusion with legitimate
+CJK-language documents from other archives. During triage, treat this
 label as "victim infected but info.txt body is
 unparseable": the infection is confirmed via the parent
 archive context, but the per-victim metadata is missing
@@ -51,7 +48,7 @@ files.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

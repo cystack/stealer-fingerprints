@@ -29,7 +29,7 @@ exposed as a top-level field.
 - Attribution confidence: **unknown**
 - Aliases: `3-line preamble macOS Information.txt with cleartext password`, `IP + Username + Password macOS panel`
 - Variants observed: **1**
-- Historical Logmine records represented: **1**
+- CyStack observations represented: **1**
 
 ## What it targets
 
@@ -52,7 +52,7 @@ AND `Password:` AND `System Software Overview:` AND
 MacSync) AND absence of `Country Code:` (rules out
 Cthulhu and CSMacUserinfo). The positive anchors confirm
 a macOS `system_profiler` body with a cleartext-password
-preamble; the negative anchors defer to the five richer-geo macOS parsers when their geo fields are present.
+preamble; the negative anchors defer to the five richer-geo macOS formats when their geo fields are present.
 During triage, the `Password:` value is the victim's
 cleartext login or keychain password and should be
 treated as a high-priority remediation indicator.
@@ -61,7 +61,7 @@ treated as a high-priority remediation indicator.
 
 ### `v_8fb0dfa34c44e8492fb4af61d80eddea`
 
-- Parser: `logmine.ioc.parsers.cs_mac_keychain_pass_stealer.CSMacKeychainPassStealerParser`
+- Format ID: `cs-mac-keychain-pass-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -69,7 +69,7 @@ treated as a high-priority remediation indicator.
 - Historical records represented: **1**
 - Representative sample: [open sample](samples/v_8fb0dfa34c44e8492fb4af61d80eddea/sample.txt)
 - Sample SHA-256: `815c1774c393562a2cf1801750a44176d858ec6cc38cb6e2c29bfaf3ecd8d7cc`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

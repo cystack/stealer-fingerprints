@@ -48,13 +48,13 @@ this catalog. The `UNKNOWN` literal recurs in `Country:`
 and `Zip Code:` for bogon-IP victims, so triage should
 treat those values as missing rather than as a real country
 or postal code. False-positive risk is low: no other
-parser fingerprints on `Process Elevation:`, and the
+format fingerprints on `Process Elevation:`, and the
 co-required `Operation System:` typo confirms the
 Redline-derived body shape.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

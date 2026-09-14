@@ -8,7 +8,7 @@ signatures catalogue it under the detection name
 list it as `win.aurastealer`.
 
 The on-wire exfil is JSON, GZIP-compressed and Base64-encoded
-to the C2. The artifact this parser claims is the operator-facing panel render written as `System.txt` inside each per-victim folder. The render opens with an `AURA v<x.y.z>` build
+to the C2. The artifact documented here is the operator-facing panel render written as `System.txt` inside each per-victim folder. The render opens with an `AURA v<x.y.z>` build
 banner, then a top block of identity fields (`HWID:`, the
 `Launched at:` local/UTC pair, `Location:`, the elevation
 flags), then four square-bracket sections in order: `[System
@@ -24,7 +24,7 @@ per the publicly documented injection chain.
 - Attribution confidence: **high**
 - Aliases: `Aura Stealer`, `AuraStealer`
 - Variants observed: **1**
-- Historical Logmine records represented: **3,537**
+- CyStack observations represented: **3,537**
 
 ## What it targets
 
@@ -44,7 +44,7 @@ bracket-section + `HWID:` guard.
 
 When triaging a panel-render log, treat `Location:` ending in
 `RegAsm.exe` as the injection-host signal. The on-wire JSON
-transport is not captured by this parser; pair host telemetry
+transport is not represented by this artifact; pair host telemetry
 on RegAsm.exe outbound HTTPS with the published Aura C2 domain
 list.
 
@@ -52,7 +52,7 @@ list.
 
 ### `v_97204ede3c0a7a80adbe42a20d7509b3`
 
-- Parser: `logmine.ioc.parsers.aura_stealer.AuraStealerParser`
+- Format ID: `aura-stealer`
 - Observed filenames: `System.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -60,7 +60,7 @@ list.
 - Historical records represented: **3,537**
 - Representative sample: [open sample](samples/v_97204ede3c0a7a80adbe42a20d7509b3/sample.txt)
 - Sample SHA-256: `30d64ac0e523bea150efddfa0d23068ef181f08d4d13250e20ba3b71dd1a7cc8`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

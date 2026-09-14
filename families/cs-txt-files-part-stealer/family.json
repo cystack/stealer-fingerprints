@@ -33,7 +33,7 @@
   "variants": [
     {
       "id": "v_3d2b0177a66777ae6136d20f2e9eee98",
-      "parser": "logmine.ioc.parsers.cs_txt_files_part_stealer.CSTxtFilesPartStealerParser",
+      "format_id": "cs-txt-files-part-stealer",
       "filenames": [
         "Information.txt"
       ],
@@ -49,7 +49,7 @@
       "sample": {
         "path": "samples/v_3d2b0177a66777ae6136d20f2e9eee98/sample.txt",
         "sha256": "6871422d1afc975686552e273267158de7757bc9f2a37780a387dae69d5b4aa9",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

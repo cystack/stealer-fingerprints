@@ -16,7 +16,7 @@ primary self-identification.
 - Canonical family: [lumma](../lumma/)
 - Aliases: `Deimos Golang Stealer`, `Deimos`
 - Variants observed: **1**
-- Historical Logmine records represented: **1,058**
+- CyStack observations represented: **1,058**
 
 ## What it targets
 
@@ -33,7 +33,7 @@ ordering across builds.
 
 ### `v_0db166abde7c3b7da1e04e5d3ff74795`
 
-- Parser: `logmine.ioc.parsers.cs_deimos_stealer.CSDeimosStealerParser`
+- Format ID: `cs-deimos-stealer`
 - Observed filenames: `System.txt`
 - Panel brand: `Deimos Golang Stealer`
 - Distribution channel: `@ft7links`
@@ -41,7 +41,7 @@ ordering across builds.
 - Historical records represented: **1,058**
 - Representative sample: [open sample](samples/v_0db166abde7c3b7da1e04e5d3ff74795/sample.txt)
 - Sample SHA-256: `a83fccfacb06f4fbe761e09d8b9ff8fc419a3f5e4ab52498f360f848ba9b9926`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

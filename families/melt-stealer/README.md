@@ -29,7 +29,7 @@ sub-items per section.
 - Attribution confidence: **high**
 - Aliases: `melt-stealer`, `Melt Stealer`
 - Variants observed: **1**
-- Historical Logmine records represented: **5**
+- CyStack observations represented: **5**
 
 ## What it targets
 
@@ -65,7 +65,7 @@ on this specific victim.
 
 ### `v_209de6a8e4756161ea71c25d62594571`
 
-- Parser: `logmine.ioc.parsers.melt_stealer.MeltStealerParser`
+- Format ID: `melt-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -73,7 +73,7 @@ on this specific victim.
 - Historical records represented: **5**
 - Representative sample: [open sample](samples/v_209de6a8e4756161ea71c25d62594571/sample.txt)
 - Sample SHA-256: `063e49dcad7f0ab2bfa94158a5346a9a37d17883637a6cf6f23f460349dd7390`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

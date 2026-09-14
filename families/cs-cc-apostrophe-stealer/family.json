@@ -13,7 +13,7 @@
     "Browser cookies",
     "Browser history"
   ],
-  "detection_notes": "Fingerprint requires (a) `cc's.txt` AND `cookies.txt`\nAND `history.txt` in the folder root, (b) root-entry\ncount <= 4 (the optional fourth entry is an empty-named\npacker DIR), and (c) the `Name on Card  |  Expiration\nMonth  |  Expiration Year  |  Card Number  |  Date\nModified` pipe-header literal in the `cc's.txt` body.\nThe header anchor fires even on victims with no saved\ncards because the panel writes the header row\nunconditionally. The 3-file root-entry cap keeps the\nclaim off larger Lumma-shaped folders (which require\n`All_Passwords.txt` + `passwords.txt` + `cookies.txt` +\n`history.txt` per the Lumma detector). During triage,\ntreat the family attribution as unknown: the underlying\nstealer builder cannot be identified from the 3-file\nshape plus pipe-header alone.",
+  "detection_notes": "Fingerprint requires (a) `cc's.txt` AND `cookies.txt`\nAND `history.txt` in the folder root, (b) root-entry\ncount <= 4 (the optional fourth entry is an empty-named\npacker DIR), and (c) the `Name on Card  |  Expiration\nMonth  |  Expiration Year  |  Card Number  |  Date\nModified` pipe-header literal in the `cc's.txt` body.\nThe header anchor fires even on victims with no saved\ncards because the panel writes the header row\nunconditionally. The 3-file root-entry cap distinguishes larger Lumma-shaped folders (which require\n`All_Passwords.txt` + `passwords.txt` + `cookies.txt` +\n`history.txt` as documented in the Lumma profile). During triage,\ntreat the family attribution as unknown: the underlying\nstealer builder cannot be identified from the 3-file\nshape plus pipe-header alone.",
   "attack_techniques": [
     {
       "id": "T1555",

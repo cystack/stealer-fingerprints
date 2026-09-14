@@ -41,7 +41,7 @@
   "variants": [
     {
       "id": "v_8e55366401da27155e33a5b4b0980965",
-      "parser": "logmine.ioc.parsers.cs_stealer_cloud_user_info_stealer.CSStealerCloudUserInfoStealerParser",
+      "format_id": "cs-stealer-cloud-user-info-stealer",
       "filenames": [
         "UserInformation.txt"
       ],
@@ -58,7 +58,7 @@
       "sample": {
         "path": "samples/v_8e55366401da27155e33a5b4b0980965/sample.txt",
         "sha256": "2ab648084d61be75caa12336c62e8927bf2920ef5e0a93d8062466ad83832624",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

@@ -44,7 +44,7 @@ canonical `SOFT/URL/USER/PASS` 4-line shape.
 Fingerprint requires 3+ consecutive 4-line blocks matching
 `URL: / Username: / Password: / Application: Browser/Logins/`.
 The `Application: Browser/Logins/` prefix is the
-disambiguator: `CSAppProfileStealer` (iter#15) requires the
+disambiguator: `CSAppProfileStealer` requires the
 `Application: <Browser> [Profile:` bracket annotation instead.
 During triage, treat the family attribution as unknown: the
 per-profile `<Browser>_<Profile>[<hex>]` naming convention
@@ -54,7 +54,7 @@ public source confirms the mapping.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

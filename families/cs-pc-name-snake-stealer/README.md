@@ -31,7 +31,7 @@ threat-intel mapping for this layout.
 - Attribution confidence: **unknown**
 - Aliases: `BRADMAX minimal snake_case system_info.txt`, `11-field pc_name/mac/hwid snake_case panel`
 - Variants observed: **1**
-- Historical Logmine records represented: **23**
+- CyStack observations represented: **23**
 
 ## What it targets
 
@@ -48,7 +48,7 @@ Fingerprint requires all four line-anchored short-form keys:
 lowercase snake_case keys with these short-form abbreviations
 (no `_address` suffix on `mac`, no `_id` suffix on `hwid`, no
 `computer_` prefix on `pc_name`) cannot collide with any other
-registered parser. During triage, treat the family attribution
+cataloged format. During triage, treat the family attribution
 as unknown: the format is structurally a Python-builder panel
 (`platform.platform()` OS shape) but no public source maps the
 11-key layout to a specific named family. Geo-IP placeholders
@@ -59,7 +59,7 @@ firewall during panel exfiltration.
 
 ### `v_a518f20e8beffe929060e8d959b2b01c`
 
-- Parser: `logmine.ioc.parsers.cs_pc_name_snake_stealer.CSPcNameSnakeStealerParser`
+- Format ID: `cs-pc-name-snake-stealer`
 - Observed filenames: `system_info.txt`
 - Panel brand: `BRADMAX`
 - Distribution channel: `@BRADLOGS`
@@ -67,7 +67,7 @@ firewall during panel exfiltration.
 - Historical records represented: **23**
 - Representative sample: [open sample](samples/v_a518f20e8beffe929060e8d959b2b01c/sample.txt)
 - Sample SHA-256: `c593944d228fcb55426fd7148086fb0bab573ca48d15be120a47c8bec8eef293`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

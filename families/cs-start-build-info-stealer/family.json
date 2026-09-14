@@ -13,7 +13,7 @@
     "Account identity (user name + computer name from the paren-annotated ``UserName (ComputerName)`` field)",
     "Installed software inventory (bracketed ``[Installed\nsoftware]`` section with per-program version tags)"
   ],
-  "detection_notes": "Fingerprint requires four line-anchored anchors: ``Start\nBuild:``, ``UserName (ComputerName):``, ``Total RAM:``, and\nthe ``[Installed software]`` bracketed section header. The\nfour-anchor combination is unique across the registry.\nDuring triage, correlate the ``Start Build:`` value with the\nstealer process-hollow target (a Windows built-in exe path\nlike ``nslookup.exe`` is a strong process-hollow indicator).\nThe path-embedded HWID and country code fall out of the\n``[<CC>][<HWID>]`` folder name convention; the body itself\ndoes not emit IP or country fields.",
+  "detection_notes": "Fingerprint requires four line-anchored anchors: ``Start\nBuild:``, ``UserName (ComputerName):``, ``Total RAM:``, and\nthe ``[Installed software]`` bracketed section header. The\nfour-anchor combination is unique across this catalog.\nDuring triage, correlate the ``Start Build:`` value with the\nstealer process-hollow target (a Windows built-in exe path\nlike ``nslookup.exe`` is a strong process-hollow indicator).\nThe path-embedded HWID and country code fall out of the\n``[<CC>][<HWID>]`` folder name convention; the body itself\ndoes not emit IP or country fields.",
   "attack_techniques": [
     {
       "id": "T1082",

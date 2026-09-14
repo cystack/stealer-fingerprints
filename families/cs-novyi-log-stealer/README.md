@@ -17,9 +17,9 @@ name), `🍪 Куков` (cookies count), `🔐 Паролей` (passwords
 count), `💳 Карт` (cards count), `📥 Загрузок` (downloads
 count), `📚 Истории` (history count), `🎫 Токенов` (tokens
 count), `👛 Кошельков` (wallets count), `📱 Tdata` (Telegram
-tdata count). The IOC schema does not carry per-category
-count metrics so the parser surfaces only the build id, public
-IP, ISO2 country, and OS string.
+tdata count). The retained research record focuses on the build ID, public
+IP, ISO2 country, and OS string; the raw sample preserves the
+per-category counts for analyst review.
 
 Family attribution is provisional pending a published
 threat-intel mapping for this layout. Public reporting and
@@ -38,7 +38,7 @@ per-build operator tag, not a family brand.
 - Attribution confidence: **unknown**
 - Aliases: `Novyi log info.txt Russian emoji panel`, `BRADMAX Temp/info.txt 10-field Cyrillic count panel`
 - Variants observed: **1**
-- Historical Logmine records represented: **26**
+- CyStack observations represented: **26**
 
 ## What it targets
 
@@ -57,7 +57,7 @@ per-build operator tag, not a family brand.
 Fingerprint requires the literal `Новый лог!` Cyrillic banner
 AND the `Build ID:` key AND the Cyrillic `Страна:` field name.
 The three-anchor combination cannot collide with any other
-registered parser: `Новый лог!` is the operator's Telegram bot
+cataloged format: `Новый лог!` is the operator's Telegram bot
 notification text and only appears in this panel template;
 `Страна:` is the Russian noun for country and is rare outside
 Russian-localised stealer output. During triage, treat the
@@ -73,7 +73,7 @@ files inside the same per-victim folder.
 
 ### `v_f5261d16e45e2fc5a86962a5fdbe680c`
 
-- Parser: `logmine.ioc.parsers.cs_novyi_log_stealer.CSNovyiLogStealerParser`
+- Format ID: `cs-novyi-log-stealer`
 - Observed filenames: `info.txt`
 - Panel brand: `Новый лог!`
 - Distribution channel: `@BRADLOGS`
@@ -81,7 +81,7 @@ files inside the same per-victim folder.
 - Historical records represented: **26**
 - Representative sample: [open sample](samples/v_f5261d16e45e2fc5a86962a5fdbe680c/sample.txt)
 - Sample SHA-256: `8974ce614c995e809cb7acfca2c0a1c3ff193e7dc91fbfc20178d78c9ab31959`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

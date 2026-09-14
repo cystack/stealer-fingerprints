@@ -21,7 +21,7 @@ Resolution:`.
 - Attribution confidence: **high**
 - Aliases: `Ailurophile Stealer`
 - Variants observed: **1**
-- Historical Logmine records represented: **66**
+- CyStack observations represented: **66**
 
 ## What it targets
 
@@ -46,7 +46,7 @@ paired `Allowed Extensions:` / `Folders to Search:` keys.
 
 ### `v_775f61d0716a746c69c9f5e6fd0c575f`
 
-- Parser: `logmine.ioc.parsers.ailurophile.AilurophileParser`
+- Format ID: `ailurophile`
 - Observed filenames: `info.txt`
 - Panel brand: `HORUS B13`
 - Distribution channel: `@HORUS B13`
@@ -54,7 +54,7 @@ paired `Allowed Extensions:` / `Folders to Search:` keys.
 - Historical records represented: **66**
 - Representative sample: [open sample](samples/v_775f61d0716a746c69c9f5e6fd0c575f/sample.txt)
 - Sample SHA-256: `bb2884c73df79e130973e24e6fc3a5840a192edc7bc8f6ce207f9d5a778007af`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

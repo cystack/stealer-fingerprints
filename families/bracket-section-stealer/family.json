@@ -37,7 +37,7 @@
   "variants": [
     {
       "id": "v_516063da5807a1399ea249ebe8f60e04",
-      "parser": "logmine.ioc.parsers.bracket_section_stealer.BracketSectionStealerParser",
+      "format_id": "bracket-section-stealer",
       "filenames": [
         "System.txt",
         "UserInformation.txt"
@@ -56,7 +56,7 @@
       "sample": {
         "path": "samples/v_516063da5807a1399ea249ebe8f60e04/sample.txt",
         "sha256": "d2b797c2c1bdd70b592fa28112165e11e0771335756c9f8f390412be2fea2708",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "system-hardware-buildtag"

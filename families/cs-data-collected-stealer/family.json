@@ -11,7 +11,7 @@
     "Browser saved credentials and cookies (in sibling cred files)",
     "System hostname and public IP for victim fingerprinting"
   ],
-  "detection_notes": "Fingerprint requires the literal `Data collected\nsuccessfully` substring (the panel-unique ack message)\nplus line-anchored `Computer:` and `IP:` keys as cross-confirmation. The ack literal alone is enough to\ndiscriminate against any currently-registered parser, but\nthe two-key pair guards against prose that quotes the\nphrase out of context. During triage, treat family\nattribution as unknown: this file is a notification stub\nwith no harvested credential body, and the underlying\nstealer cannot be identified from the host + IP + ack\ntriple alone.",
+  "detection_notes": "Fingerprint requires the literal `Data collected\nsuccessfully` substring (the panel-unique ack message)\nplus line-anchored `Computer:` and `IP:` keys as cross-confirmation. The ack literal alone is enough to\ndiscriminate against any currently cataloged format, but\nthe two-key pair guards against prose that quotes the\nphrase out of context. During triage, treat family\nattribution as unknown: this file is a notification stub\nwith no harvested credential body, and the underlying\nstealer cannot be identified from the host + IP + ack\ntriple alone.",
   "attack_techniques": [
     {
       "id": "T1082",
@@ -38,7 +38,7 @@
   "variants": [
     {
       "id": "v_1629258e7c5a7787a73c5a354e94dde4",
-      "parser": "logmine.ioc.parsers.cs_data_collected_stealer.CSDataCollectedStealerParser",
+      "format_id": "cs-data-collected-stealer",
       "filenames": [
         "Information.txt"
       ],
@@ -56,7 +56,7 @@
       "sample": {
         "path": "samples/v_1629258e7c5a7787a73c5a354e94dde4/sample.txt",
         "sha256": "61904a4cfa2b6411cc121a3b1a4f0619cdb2f41568575bccba79fca87e9a60a0",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

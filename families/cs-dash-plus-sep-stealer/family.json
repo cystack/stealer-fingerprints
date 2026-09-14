@@ -17,7 +17,7 @@
     "Windows username",
     "Victim country (ISO 3166-1 alpha-2)"
   ],
-  "detection_notes": "Fingerprint requires the `---+---+---+---+---+---+---`\ndash-plus rule AND `country :` (with space before the colon)\nAND `CK:` AND `| Card:`. Four anchors together cannot collide\nwith any other registered parser. During triage, treat the\nfamily attribution as unknown: the panel summary is the\nmetadata view of an underlying stealer whose canonical name\nhas not been mapped to this layout in any public reporting.\nThe Facebook user ID plus T-prefixed ad-account ID strongly\nsuggest a Facebook-business-account targeting family in the\nNodeStealer / SYS01 / Album-Stealer lineage, but no public\nsource confirms the mapping.",
+  "detection_notes": "Fingerprint requires the `---+---+---+---+---+---+---`\ndash-plus rule AND `country :` (with space before the colon)\nAND `CK:` AND `| Card:`. Four anchors together cannot collide\nwith any other cataloged format. During triage, treat the\nfamily attribution as unknown: the panel summary is the\nmetadata view of an underlying stealer whose canonical name\nhas not been mapped to this layout in any public reporting.\nThe Facebook user ID plus T-prefixed ad-account ID strongly\nsuggest a Facebook-business-account targeting family in the\nNodeStealer / SYS01 / Album-Stealer lineage, but no public\nsource confirms the mapping.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -56,7 +56,7 @@
   "variants": [
     {
       "id": "v_229be1e07e9e623014faf573e5ca36b7",
-      "parser": "logmine.ioc.parsers.cs_dash_plus_sep_stealer.CSDashPlusSepStealerParser",
+      "format_id": "cs-dash-plus-sep-stealer",
       "filenames": [
         "Information.txt"
       ],
@@ -77,7 +77,7 @@
       "sample": {
         "path": "samples/v_229be1e07e9e623014faf573e5ca36b7/sample.txt",
         "sha256": "a73abf8cf6019727813bc41124b5ddb46d42519fba783916f286eb99aeb0ae42",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "rich-summary-tail"

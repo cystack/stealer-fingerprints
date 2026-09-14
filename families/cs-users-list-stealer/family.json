@@ -3,7 +3,7 @@
   "name": "CSUsersListStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSUsersListStealer is a CyStack-coined identifier for a\nfive-line minimal `Information.txt` panel distributed through\nthe `@BRADLOGS` Telegram channel (active mirror of the\n`@BRADMAX` / `t.me/bradmax_cloud` aggregator that public\nchannel catalogues list as a \"Redline and Raccoon Data Logs\"\nreseller). Observed at `[<TAG>]@BRADLOGS (BRADMAX)\n(<NN>)/Information.txt` victim folders inside `!! 2025\nJULY.part001.rar` packs.\n\nThe body is three space-before-colon header lines (`HWID :\n<uuid>`, `IP : <ipv4>`, `Users : <comma-list>`) followed by\ntwo emoji-prefixed per-category count lines (`🔑 Passwords:\n<n>`, `🍪 Cookies: <n>`) separated from the header block by\nblank-line padding. No hostname, OS, build label, timestamp,\ncountry, or antivirus field is emitted.\n\nThe plural `Users :` line carries every Windows user profile\nenumerated from `C:\\Users\\`, including the real victim plus\nstale `TEMP` / `TEMP.DESKTOP-XXXX` / `TEMP.DESKTOP-XXXX.000`\nremnants left behind when `LoadUserProfile` failed and the OS\ncreated a throwaway profile directory. The multi-profile\nenumeration is unique to this panel across the parser\nregistry; canonical stealers ship only the current\n`Environment.UserName` value. The plural form points at a\nPython builder calling `os.listdir(r\"C:\\Users\")` rather than a\n.NET runtime API.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping. Community stealer-format catalogues do\nnot document a family that emits this exact five-line\nspace-before-colon shape with a plural-profile `Users :` line\nand `🔑` / `🍪` per-category count tail. The closest documented\nrelative is LucaStealer, whose summary format uses `✅`/`❌`\ncount indicators rather than the `🔑` / `🍪` category emoji used\nhere, and which ships no plural-profile `Users :` enumeration.\nThe aggregator self-label (Redline / Raccoon) cannot be\ntrusted because the body lacks every Redline canonical anchor\n(`Operation System:` typo, `Hardwares:` block) and every\nRaccoon canonical anchor (`User ID:` UUID, `Last seen:`\nJS-date).",
+  "description": "CSUsersListStealer is a CyStack-coined identifier for a\nfive-line minimal `Information.txt` panel distributed through\nthe `@BRADLOGS` Telegram channel (active mirror of the\n`@BRADMAX` / `t.me/bradmax_cloud` aggregator that public\nchannel catalogues list as a \"Redline and Raccoon Data Logs\"\nreseller). Observed at `[<TAG>]@BRADLOGS (BRADMAX)\n(<NN>)/Information.txt` victim folders inside `!! 2025\nJULY.part001.rar` packs.\n\nThe body is three space-before-colon header lines (`HWID :\n<uuid>`, `IP : <ipv4>`, `Users : <comma-list>`) followed by\ntwo emoji-prefixed per-category count lines (`🔑 Passwords:\n<n>`, `🍪 Cookies: <n>`) separated from the header block by\nblank-line padding. No hostname, OS, build label, timestamp,\ncountry, or antivirus field is emitted.\n\nThe plural `Users :` line carries every Windows user profile\nenumerated from `C:\\Users\\`, including the real victim plus\nstale `TEMP` / `TEMP.DESKTOP-XXXX` / `TEMP.DESKTOP-XXXX.000`\nremnants left behind when `LoadUserProfile` failed and the OS\ncreated a throwaway profile directory. The multi-profile\nenumeration is unique to this panel across the catalog; canonical stealers ship only the current\n`Environment.UserName` value. The plural form points at a\nPython builder calling `os.listdir(r\"C:\\Users\")` rather than a\n.NET runtime API.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping. Community stealer-format catalogues do\nnot document a family that emits this exact five-line\nspace-before-colon shape with a plural-profile `Users :` line\nand `🔑` / `🍪` per-category count tail. The closest documented\nrelative is LucaStealer, whose summary format uses `✅`/`❌`\ncount indicators rather than the `🔑` / `🍪` category emoji used\nhere, and which ships no plural-profile `Users :` enumeration.\nThe aggregator self-label (Redline / Raccoon) cannot be\ntrusted because the body lacks every Redline canonical anchor\n(`Operation System:` typo, `Hardwares:` block) and every\nRaccoon canonical anchor (`User ID:` UUID, `Last seen:`\nJS-date).",
   "aliases": [
     "@BRADLOGS five-line HWID-IP-Users panel",
     "BRADMAX minimal Information.txt with emoji counts"
@@ -15,7 +15,7 @@
     "Public IPv4 address (`IP :` line)",
     "Full Windows user-profile enumeration (`Users :` plural list)"
   ],
-  "detection_notes": "Fingerprint requires line-anchored `HWID :` AND `IP :` AND\n`Users :` (all three with the space-before-colon separator)\nAND the `🔑 Passwords:` substring AND the `🍪 Cookies:`\nsubstring. The five-anchor combo is unique across the\nregistry: the space-before-colon trio on the header lines\nis the panel's developer-side quirk, and pairing with both\nemoji count labels rules out canonical Redline (which uses\n`Field : value` space-colon-space but ships an\n`Operation System:` typo and `Hardwares:` / `Anti-Viruses:`\nblocks not present here). During triage, treat this label\nas a panel-side summary view (counts only): the actual\nharvested credentials live in sibling files in the\noperator's archive, not in this Information.txt body. The\nunderlying builder is unidentified.",
+  "detection_notes": "Fingerprint requires line-anchored `HWID :` AND `IP :` AND\n`Users :` (all three with the space-before-colon separator)\nAND the `🔑 Passwords:` substring AND the `🍪 Cookies:`\nsubstring. The five-anchor combo is unique across the catalog: the space-before-colon trio on the header lines\nis the panel's developer-side quirk, and pairing with both\nemoji count labels rules out canonical Redline (which uses\n`Field : value` space-colon-space but ships an\n`Operation System:` typo and `Hardwares:` / `Anti-Viruses:`\nblocks not present here). During triage, treat this label\nas a panel-side summary view (counts only): the actual\nharvested credentials live in sibling files in the\noperator's archive, not in this Information.txt body. The\nunderlying builder is unidentified.",
   "attack_techniques": [
     {
       "id": "T1082",
@@ -52,7 +52,7 @@
   "variants": [
     {
       "id": "v_4618db1ec0f8f014785fce65677a7e47",
-      "parser": "logmine.ioc.parsers.cs_users_list_stealer.CSUsersListStealerParser",
+      "format_id": "cs-users-list-stealer",
       "filenames": [
         "Information.txt"
       ],
@@ -71,7 +71,7 @@
       "sample": {
         "path": "samples/v_4618db1ec0f8f014785fce65677a7e47/sample.txt",
         "sha256": "9a6deeaa39cd89ff434b1a5989eaeba3b052ebd39feb577225e9852efec04d60",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

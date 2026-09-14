@@ -11,7 +11,7 @@ present but typically empty on observed bodies; the
 rather than a real version string.
 
 The format shares the `=== SYSTEM INFO ===` header with
-CSStatsSectionStealer (iteration #34) but ships an
+CSStatsSectionStealer but ships an
 entirely different field set and no second STATS
 section. Same operator channel `@BRADMAX` but a
 different builder.
@@ -22,7 +22,7 @@ different builder.
 - Attribution confidence: **unknown**
 - Aliases: -
 - Variants observed: **1**
-- Historical Logmine records represented: **2**
+- CyStack observations represented: **2**
 
 ## What it targets
 
@@ -45,7 +45,7 @@ version, useful as a triage signal.
 
 ### `v_bfb272d1a685583ab75ebac60c4da8f2`
 
-- Parser: `logmine.ioc.parsers.cs_geo_sys_info_stealer.CSGeoSysInfoStealerParser`
+- Format ID: `cs-geo-sys-info-stealer`
 - Observed filenames: `system.txt`
 - Panel brand: -
 - Distribution channel: `@BRADMAX`
@@ -53,7 +53,7 @@ version, useful as a triage signal.
 - Historical records represented: **2**
 - Representative sample: [open sample](samples/v_bfb272d1a685583ab75ebac60c4da8f2/sample.txt)
 - Sample SHA-256: `d397ccf04a3f36789d00fe08ba92e011b18eed591bf5ee3ab386487c43b47471`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

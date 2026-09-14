@@ -49,21 +49,17 @@ Fingerprint requires all three dashed section headers
 (`----- Geolocation Data -----`,
 `----- Hardware Info -----`,
 `----- Miscellaneous -----`) line-anchored. The triple
-anchor is unique to Phemedrone across the registry: Arcane
+anchor is unique to Phemedrone across this catalog: Arcane
 uses triple-dash `---User Info---` / `---Full Pc Info---`
-with no spaces around the section name, and every bracket-section canonical parser (Aura, Vidar) uses `[Section]`
-square brackets. During triage, cross-check the folder for
-a `moi.jpg` selfie screenshot (the folder-level detector
-anchor for Phemedrone) and a `passwords.txt` opening with
-`PASSWORDS FROM: <browser path>` header (the content-only
-fallback). Clipboard content in the Miscellaneous block
+with no spaces around the section name, and canonical bracket-section formats such as Aura and Vidar use `[Section]`
+square brackets. During triage, corroborate the profile with a sibling `moi.jpg` selfie screenshot and a `passwords.txt` file opening with `PASSWORDS FROM: <browser path>`. Clipboard content in the Miscellaneous block
 sometimes carries other stealers' banners as unrelated
 strings the victim happened to copy; do not use that field
 to reassign family attribution.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

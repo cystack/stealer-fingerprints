@@ -49,7 +49,7 @@ author.
 Fingerprint requires three line-anchored anchor keys:
 mixed-case `Build Name:` (rules out RedlineLikeStealer's
 all-caps `BUILD NAME:`), `Country ISO2:` (the Go-idiomatic
-ISO 3166-1 alpha-2 field name, unique across the registry),
+ISO 3166-1 alpha-2 field name, unique across this catalog),
 and the misspelled `Enviromental Variables:` (rules out
 CSEnvVarDumpStealer's correctly-spelled `=== ENVIRONMENT
 VARIABLES ===` triple-equals header). The Go-runtime `+0000
@@ -62,7 +62,7 @@ writeup ties the layout to a named author.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

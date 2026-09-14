@@ -10,7 +10,7 @@
     "Crypto wallet browser extensions (MetaMask, Phantom, ...)",
     "System hardware and locale inventory"
   ],
-  "detection_notes": "The MSK-suffixed `Date:` opener is the single most\ndistinctive marker: no other family in this catalog emits a\ntimezone abbreviation on its Date line (Lumma uses dotted\nDD.MM.YYYY without trailing abbreviation, .B.A.B.A. uses\nDD/MM/YYYY, Snake Stealer uses M/D/YYYY with AM/PM). The\n`Machine UUID:` co-requirement closes the loop against a\nstray readme that mentions an MSK-suffixed date by\ncoincidence. If a published threat-intel report later\nattributes this format to a known stealer family, rename\nthe `family` constant on the parser rather than adding a\nsecond parser.",
+  "detection_notes": "The MSK-suffixed `Date:` opener is the single most\ndistinctive marker: no other family in this catalog emits a\ntimezone abbreviation on its Date line (Lumma uses dotted\nDD.MM.YYYY without trailing abbreviation, .B.A.B.A. uses\nDD/MM/YYYY, Snake Stealer uses M/D/YYYY with AM/PM). The\n`Machine UUID:` co-requirement closes the loop against a\nstray readme that mentions an MSK-suffixed date by\ncoincidence. If published threat intelligence later attributes this format to a known family, update this tracking profile rather than creating a duplicate record.",
   "attack_techniques": [
     {
       "id": "T1555",

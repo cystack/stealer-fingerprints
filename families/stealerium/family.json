@@ -78,7 +78,7 @@
   "variants": [
     {
       "id": "v_fea267824fe0c63f2704a2f713a8b5fc",
-      "parser": "logmine.ioc.parsers.stealerium.StealeriumParser",
+      "format_id": "stealerium",
       "filenames": [
         "Information.txt"
       ],
@@ -94,7 +94,7 @@
       "sample": {
         "path": "samples/v_fea267824fe0c63f2704a2f713a8b5fc/sample.txt",
         "sha256": "e3531ea1de20061e3a974888e95d7ee570781c278652e02ff783f076a1d6e504",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

@@ -11,9 +11,7 @@ SQLite `credit_cards` table columns. The `Date Modified` 5th
 column is the panel's distinguishing serialisation choice over
 canonical Raccoon / Redline / Stealc card formats.
 
-Observed inside `MAY 02 - 8230 LOGS` aggregator packs (the
-`LOGS` sibling of `LOGS2` claimed by iter #49 / #53 / #54 /
-#57 / #58 detectors). The 32-hex MD5 parent convention matches
+Observed inside `MAY 02 - 8230 LOGS` aggregator packs (the `LOGS` sibling of `LOGS2`). The 32-hex MD5 parent convention matches
 the same family of aggregator layouts. Family attribution is
 provisional pending a published mapping for this exact layout.
 
@@ -43,7 +41,7 @@ card-theft incident requiring issuer notification.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

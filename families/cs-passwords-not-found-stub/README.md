@@ -53,16 +53,14 @@ literal 32-character MD5 hex of the empty byte string
 strip. Real cred files that mention either phrase or carry
 the empty-MD5 hex inside a longer body do not match.
 During triage, treat this label as a "victim infected but
-no credentials harvested" marker: the IOC still indicates
-an infection occurred but the cred-dump payload is empty.
+no credentials harvested" marker: the sample still indicates an infection occurred but the cred-dump payload is empty.
 The underlying stealer family is unknown; if the same
-victim folder later ships a system-info file, the
-malware-family detector chain will overwrite this label
-with the canonical family.
+victim folder later ships a system-info file, the additional evidence can support canonical family
+attribution.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

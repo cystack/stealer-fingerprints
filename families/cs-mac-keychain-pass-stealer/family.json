@@ -16,7 +16,7 @@
     "macOS hardware fingerprint (Chip, Hardware UUID, Serial\nNumber, Memory)",
     "macOS version + kernel version (`System Version:` /\n`Kernel Version:`)"
   ],
-  "detection_notes": "Fingerprint requires line-anchored `IP:` AND `Username:`\nAND `Password:` AND `System Software Overview:` AND\n`Hardware Overview:` substrings PLUS absence of\n`Country:` (rules out CSMacBareGeo / Cthulhu / AMOS /\nMacSync) AND absence of `Country Code:` (rules out\nCthulhu and CSMacUserinfo). The positive anchors confirm\na macOS `system_profiler` body with a cleartext-password\npreamble; the negative anchors defer to the five richer-geo macOS parsers when their geo fields are present.\nDuring triage, the `Password:` value is the victim's\ncleartext login or keychain password and should be\ntreated as a high-priority remediation indicator.",
+  "detection_notes": "Fingerprint requires line-anchored `IP:` AND `Username:`\nAND `Password:` AND `System Software Overview:` AND\n`Hardware Overview:` substrings PLUS absence of\n`Country:` (rules out CSMacBareGeo / Cthulhu / AMOS /\nMacSync) AND absence of `Country Code:` (rules out\nCthulhu and CSMacUserinfo). The positive anchors confirm\na macOS `system_profiler` body with a cleartext-password\npreamble; the negative anchors defer to the five richer-geo macOS formats when their geo fields are present.\nDuring triage, the `Password:` value is the victim's\ncleartext login or keychain password and should be\ntreated as a high-priority remediation indicator.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -53,7 +53,7 @@
   "variants": [
     {
       "id": "v_8fb0dfa34c44e8492fb4af61d80eddea",
-      "parser": "logmine.ioc.parsers.cs_mac_keychain_pass_stealer.CSMacKeychainPassStealerParser",
+      "format_id": "cs-mac-keychain-pass-stealer",
       "filenames": [
         "Information.txt"
       ],
@@ -73,7 +73,7 @@
       "sample": {
         "path": "samples/v_8fb0dfa34c44e8492fb4af61d80eddea/sample.txt",
         "sha256": "815c1774c393562a2cf1801750a44176d858ec6cc38cb6e2c29bfaf3ecd8d7cc",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

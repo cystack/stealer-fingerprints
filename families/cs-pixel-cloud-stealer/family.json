@@ -9,7 +9,7 @@
     "OBSCLOUD"
   ],
   "typical_targets": [],
-  "detection_notes": "Docstring: body shape 'structurally identical to CSRussia34StealerParser variant 1 / CSEnchantCloudStealerParser variant 1'; @ft7links labels the archive 'lumma' but body is canonical Redline-derivative for variant 1. Four variants emit different underlying families.",
+  "detection_notes": "The body shape matches the first documented variants of CSRussia34Stealer and CSEnchantCloudStealer; @ft7links labels the archive 'lumma' but body is canonical Redline-derivative for variant 1. Four variants emit different underlying families.",
   "attack_techniques": [],
   "related_families": [
     "redline",

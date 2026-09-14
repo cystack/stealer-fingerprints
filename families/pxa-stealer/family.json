@@ -45,7 +45,7 @@
   "variants": [
     {
       "id": "v_fb40413b70aabfded7e83dc45324181f",
-      "parser": "logmine.ioc.parsers.pxa_caption.PXACaptionParser",
+      "format_id": "pxa-caption",
       "filenames": [
         "Information.txt"
       ],
@@ -64,13 +64,13 @@
       "sample": {
         "path": "samples/v_fb40413b70aabfded7e83dc45324181f/sample.txt",
         "sha256": "0ab2118e99c70b06a86332550d95db9fd363dd959c30ffe27428c3001412ff1c",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     },
     {
       "id": "v_ffefe59bb73c8a386d24c645d4405857",
-      "parser": "logmine.ioc.parsers.pxa.PXAParser",
+      "format_id": "pxa",
       "filenames": [
         "system_info.txt"
       ],
@@ -88,7 +88,7 @@
       "sample": {
         "path": "samples/v_ffefe59bb73c8a386d24c645d4405857/sample.txt",
         "sha256": "69381bc169c48f7dbdb2483dad88c4746f626167ace43dcd6c7e9c33e030ef83",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "full-wmi"

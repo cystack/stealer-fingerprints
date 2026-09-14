@@ -56,19 +56,19 @@ Fingerprint requires five line-anchored keys:
 `Machine Name:` AND `Current Directory:` AND
 `Process Architecture:` AND `OS Architecture:`. The
 dual architecture pair with these exact key spellings
-is unique across the registered parsers. During
+is unique across the cataloged formats. During
 triage, the `Current Directory` value often carries
 the dropper execution context (PowerShell interpreter
 directory in the observed sample); pivot to that path
 to identify the parent process. The sibling
-`CSTop20ProcStealer` (iter #11) also uses .NET
+`CSTop20ProcStealer` also uses .NET
 `Environment` class properties but emits them as
 `64-bit OS: True` / `64-bit Process: False` boolean
 form under different section headers.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

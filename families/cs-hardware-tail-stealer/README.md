@@ -33,7 +33,7 @@ surfaces.
 - Attribution confidence: **low**
 - Aliases: `STEALERCLOUD`, `STEALERBOSS hardware tail`
 - Variants observed: **1**
-- Historical Logmine records represented: **5,951**
+- CyStack observations represented: **5,951**
 
 ## What it targets
 
@@ -50,16 +50,14 @@ line-anchored `  display:` line at 2-space indent carrying
 a `<W>x<H>` scalar, and the absence of a top-level
 `build:` key at column 0. The triple rules out canonical
 Remus (which always opens at column 0 with `build:`) and
-documents the disjoint claim region from
-`RemusParser`. The body ships no victim-identifying fields,
-so any IOC produced from this layout carries only the
-hardware inventory.
+documents its structural distinction from Remus. The body ships no victim-identifying fields,
+so the retained evidence carries only the hardware inventory.
 
 ## Observed log variants
 
 ### `v_e32e486c362d196da51fec0543f79f1f`
 
-- Parser: `logmine.ioc.parsers.cs_hardware_tail_stealer.CSHardwareTailStealerParser`
+- Format ID: `cs-hardware-tail-stealer`
 - Observed filenames: `Info.txt`
 - Panel brand: `STEALERCLOUD`
 - Distribution channel: `@STEALERBOSS`
@@ -68,7 +66,7 @@ hardware inventory.
 - Historical records represented: **5,951**
 - Representative sample: [open sample](samples/v_e32e486c362d196da51fec0543f79f1f/sample.txt)
 - Sample SHA-256: `f0063db91b68b4751f0ff84af633bec21c68c23cc65f3e158834e05053b25b5b`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

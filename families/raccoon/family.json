@@ -65,7 +65,7 @@
   "variants": [
     {
       "id": "v_35981cb9ad7bbc2326661a3e2f019f55",
-      "parser": "logmine.ioc.parsers.raccoon.RaccoonStealerParser",
+      "format_id": "raccoon",
       "filenames": [
         "System Info.txt"
       ],
@@ -85,14 +85,14 @@
       "sample": {
         "path": "samples/v_35981cb9ad7bbc2326661a3e2f019f55/sample.txt",
         "sha256": "c5d3d1edc84c6feeb7db5208b4c367dd6bf9839fb869468ef5787260f00cba85",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "panel-export-v1"
     },
     {
       "id": "v_69fc6a9bafa5557076540aa275f3124f",
-      "parser": "logmine.ioc.parsers.raccoon.RaccoonStealerParser",
+      "format_id": "raccoon",
       "filenames": [
         "System Info.txt"
       ],
@@ -112,7 +112,7 @@
       "sample": {
         "path": "samples/v_69fc6a9bafa5557076540aa275f3124f/sample.txt",
         "sha256": "a1f2514c030c612051fff1c8e733a80714411d8090ba055be29059d67f23aaf8",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "panel-export-v2"

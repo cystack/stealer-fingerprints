@@ -13,7 +13,7 @@ format has not been mapped to a published threat-intel name.
 - Attribution confidence: **unknown**
 - Aliases: -
 - Variants observed: **1**
-- Historical Logmine records represented: **893**
+- CyStack observations represented: **893**
 
 ## What it targets
 
@@ -30,7 +30,7 @@ aggregator channel.
 
 ### `v_516063da5807a1399ea249ebe8f60e04`
 
-- Parser: `logmine.ioc.parsers.bracket_section_stealer.BracketSectionStealerParser`
+- Format ID: `bracket-section-stealer`
 - Observed filenames: `System.txt`, `UserInformation.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -39,7 +39,7 @@ aggregator channel.
 - Historical records represented: **893**
 - Representative sample: [open sample](samples/v_516063da5807a1399ea249ebe8f60e04/sample.txt)
 - Sample SHA-256: `d2b797c2c1bdd70b592fa28112165e11e0771335756c9f8f390412be2fea2708`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

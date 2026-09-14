@@ -12,12 +12,9 @@ Steam JWT auth tokens that grant the operator access to the
 victim's Steam account without password or 2FA.
 
 Observed inside `MAY 02 - 8230 LOGS2` aggregator packs that
-also carry the 32-hex-MD5 victim folders claimed by
-CSTikTokAccountStealer (iteration #49),
-CSNetflixCookiesStealer (iteration #53), and
-CSBrowserCategoryDumpStealer (iteration #54), plus the
-`[<IPv4>]-<HOSTNAME>` victim folders claimed by
-CSCommonFilesCategoryStealer (iterations #50 / #51). The
+also carry the 32-hex-MD5 victim folders represented by CSTikTokAccountStealer,
+CSNetflixCookiesStealer, and CSBrowserCategoryDumpStealer, plus the
+`[<IPv4>]-<HOSTNAME>` victim folders represented by CSCommonFilesCategoryStealer. The
 `[<ISO2>]<IPv4>` country-coded shape is yet another
 per-source-stealer naming convention the aggregator preserved
 during repacking. Family attribution is provisional pending a
@@ -41,8 +38,7 @@ published mapping for this specific 2-dir + country-IP layout.
 
 The `[<ISO2>]<IPv4>` parent folder name plus the strict
 `{cookies, soft, ""}` root subset is the fingerprint.
-Distinguishes from the iter #50 / #51
-`[<IPv4>]-<HOSTNAME>` shape via the country-code
+Distinguishes from the `[<IPv4>]-<HOSTNAME>` sibling shape via the country-code
 prefix and the absent hyphen-hostname suffix. Steam
 token files inside `Soft/Steam_<id>_<id>/tokens.txt`
 carry JWT auth tokens whose `sub` field is the
@@ -52,7 +48,7 @@ triage.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

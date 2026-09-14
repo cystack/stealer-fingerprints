@@ -41,7 +41,7 @@ rather than this bare-key flat shape.
 - Attribution confidence: **unknown**
 - Aliases: `mrd-UID Information.txt panel`, `Dual-date Registration stealer log`
 - Variants observed: **2**
-- Historical Logmine records represented: **14**
+- CyStack observations represented: **14**
 
 ## What it targets
 
@@ -56,22 +56,22 @@ enumeration but the surveyed sample has the section empty)
 
 Fingerprint requires `UID: mrd-` substring AND
 `|| Registration:` substring. Both anchors are unique
-across the registry: the `mrd-` UID prefix is not
+across this catalog: the `mrd-` UID prefix is not
 documented by any surveyed stealer family, and the
 pipe-pipe-separated dual-date line on a single key value
 is the panel's developer-side quirk. During triage, treat
 the `DateTime:` half as the panel-side log-emission
 timestamp (recent) and the `Registration:` half as the
 first-seen / account-creation timestamp (often years
-older). The `CPU:` value carries a trailing `core <N>`
-count that the parser strips; the bare model name is
-emitted as `device.cpu`.
+older). The `CPU:` value combines the model and a trailing `core <N>`
+count; analysts can treat the preceding text as the bare CPU
+model.
 
 ## Observed log variants
 
 ### `v_29dd7a8b55e27e9bd3046f3426e477ee`
 
-- Parser: `logmine.ioc.parsers.cs_mrd_uid_stealer.CSMrdUidStealerParser`
+- Format ID: `cs-mrd-uid-stealer`
 - Observed filenames: `_Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -80,7 +80,7 @@ emitted as `device.cpu`.
 - Historical records represented: **13**
 - Representative sample: [open sample](samples/v_29dd7a8b55e27e9bd3046f3426e477ee/sample.txt)
 - Sample SHA-256: `6e89035b208ab576f5cbc1eca23ac13607b01251add2fbeddd638707caa52e15`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -89,7 +89,7 @@ Recognition anchors:
 
 ### `v_cee5eaed2d3cc06a5ee54cd77a385fde`
 
-- Parser: `logmine.ioc.parsers.cs_mrd_uid_stealer.CSMrdUidStealerParser`
+- Format ID: `cs-mrd-uid-stealer`
 - Observed filenames: `_Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -98,7 +98,7 @@ Recognition anchors:
 - Historical records represented: **1**
 - Representative sample: [open sample](samples/v_cee5eaed2d3cc06a5ee54cd77a385fde/sample.txt)
 - Sample SHA-256: `aa18adf5157d3e54be3485b631d645e5544c92eb6e1f78291e6db3fe374a73f8`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

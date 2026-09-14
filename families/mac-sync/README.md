@@ -13,7 +13,7 @@ banner, captured account credentials, and the verbatim output of
 - Attribution confidence: **high**
 - Aliases: `Mac.c`, `MacSync Stealer`
 - Variants observed: **1**
-- Historical Logmine records represented: **75,488**
+- CyStack observations represented: **75,488**
 
 ## What it targets
 
@@ -34,7 +34,7 @@ confirm.
 
 ### `v_8ded840da2979d9deb0176880e86b1e9`
 
-- Parser: `logmine.ioc.parsers.macsync.MacSyncParser`
+- Format ID: `macsync`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -42,7 +42,7 @@ confirm.
 - Historical records represented: **75,488**
 - Representative sample: [open sample](samples/v_8ded840da2979d9deb0176880e86b1e9/sample.txt)
 - Sample SHA-256: `0aca96c813ce5d994169a53f223ccb8bf66b719140d69aeaf25abc113dcafbe0`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

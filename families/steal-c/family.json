@@ -50,7 +50,7 @@
   "variants": [
     {
       "id": "v_078dda10ae3264ed2b51d559017ac685",
-      "parser": "logmine.ioc.parsers.stealc.StealCParser",
+      "format_id": "stealc",
       "filenames": [
         "System.txt",
         "system_info.txt"
@@ -67,14 +67,14 @@
       "sample": {
         "path": "samples/v_078dda10ae3264ed2b51d559017ac685/sample.txt",
         "sha256": "f5a0773995f4020e4e275701e8f3d3e858111ea7a2784bc8350eef7f5cef19f1",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "network-info-system-summary"
     },
     {
       "id": "v_176158076f220af65d5f14c6593efde1",
-      "parser": "logmine.ioc.parsers.stealc.StealCParser",
+      "format_id": "stealc",
       "filenames": [
         "System.txt",
         "system_info.txt"
@@ -92,7 +92,7 @@
       "sample": {
         "path": "samples/v_176158076f220af65d5f14c6593efde1/sample.txt",
         "sha256": "f504e0db01d2a3b1132ecc7ce12765f38eca2f6f90bf187acb9c6ab6557ae80b",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "installed-apps-users-processes"

@@ -19,8 +19,7 @@ no other Vidar fingerprint field (no `VideoCard:`, `Work
 Dir:`, `Keyboard Languages:`, `Local Time:`, `Windows:` /
 `AV:` pair). Family attribution is provisional pending a
 published threat-intel mapping for this layout. The structural
-similarity to Vidar is suggestive but not sufficient to claim
-Vidar directly: the BRADMAX aggregator resells multiple
+similarity to Vidar is suggestive but not sufficient for direct Vidar attribution: the BRADMAX aggregator resells multiple
 stealer families under a shared redistribution shell, and any
 panel that emits a Vidar-style section marker as the only
 signal could come from a Vidar fork or an unrelated builder.
@@ -31,7 +30,7 @@ signal could come from a Vidar fork or an unrelated builder.
 - Attribution confidence: **unknown**
 - Aliases: `BRADMAX heavily-stripped information.txt tail`, `Bare-exe + `[Software]` marker labeling artifact`
 - Variants observed: **1**
-- Historical Logmine records represented: **301**
+- CyStack observations represented: **301**
 
 ## What it targets
 
@@ -42,14 +41,10 @@ signal could come from a Vidar fork or an unrelated builder.
 
 Fingerprint requires the `[Software]` substring AND 5+
 bare `<exe>.exe` lines (line-anchored, no tab indent, no
-`[<PID>]` bracket) AND 3+ `<Name> - <Version>` versioned-app lines. The three-anchor combination cannot collide
-with canonical Vidar / StealC / Aura or the user-info bracket
-profile because each claims via its own structural anchors
-anchors before this fallback runs. During triage, treat
+`[<PID>]` bracket) AND 3+ `<Name> - <Version>` versioned-app lines. The three-anchor combination remains distinct from canonical Vidar, StealC, Aura, and the user-info bracket profile because each uses mutually exclusive structural anchors. During triage, treat
 this label as a "victim infected but system-info
-truncated" marker: the IOC carries no extractable
-victim or device fields, only the family literal and
-distribution metadata. The underlying stealer family is
+truncated" marker: the sample carries no extractable victim or device fields,
+only the tracking label and distribution metadata. The underlying stealer family is
 unknown; the Vidar-canonical `[Software]` section marker
 suggests but does not confirm Vidar lineage.
 
@@ -57,7 +52,7 @@ suggests but does not confirm Vidar lineage.
 
 ### `v_6923df9abcd89eb0b9f2e37b9e74a64d`
 
-- Parser: `logmine.ioc.parsers.cs_software_tail_stealer.CSSoftwareTailStealerParser`
+- Format ID: `cs-software-tail-stealer`
 - Observed filenames: `_Information.txt`, `information.txt`, `system.txt`, `system_info.txt`
 - Panel brand: `BRADMAX`
 - Distribution channel: `@BRADLOGS`
@@ -66,7 +61,7 @@ suggests but does not confirm Vidar lineage.
 - Historical records represented: **301**
 - Representative sample: [open sample](samples/v_6923df9abcd89eb0b9f2e37b9e74a64d/sample.txt)
 - Sample SHA-256: `0d74054a5b0903cd3288dad368cbdf7771c9675934070d6a26a0f04ddf2c0b2b`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

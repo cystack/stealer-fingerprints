@@ -61,7 +61,7 @@
   "variants": [
     {
       "id": "v_8de2e373e826d69cbb04e67395a898f1",
-      "parser": "logmine.ioc.parsers.cs_bradmax_cloud_mars.CSBradMaxCloudMarsParser",
+      "format_id": "cs-bradmax-cloud-mars",
       "filenames": [
         "UserInformation.txt"
       ],
@@ -81,7 +81,7 @@
       "sample": {
         "path": "samples/v_8de2e373e826d69cbb04e67395a898f1/sample.txt",
         "sha256": "0734e805c81bd842b214ec522243587bd305c7d319a7dc3ae94b2f57d5252ed1",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

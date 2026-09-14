@@ -13,7 +13,7 @@ Keylogger, which use different formats and filenames.
 - Attribution confidence: **unknown**
 - Aliases: `Snake Stealer`
 - Variants observed: **1**
-- Historical Logmine records represented: **16**
+- CyStack observations represented: **16**
 
 ## What it targets
 
@@ -24,7 +24,7 @@ Keylogger, which use different formats and filenames.
 
 ## Detection notes
 
-The registered parser requires the structural `=== INFO ===`,
+The cataloged format requires the structural `=== INFO ===`,
 `=== HARDWARE INFORMATION ===`, and `=== INSTALLED BROWSERS ===`
 section triple. The observed SNAKE label names this profile but
 does not independently establish payload lineage, so family
@@ -34,7 +34,7 @@ attribution remains unknown.
 
 ### `v_dcee825c24d303631633c51dc93685fe`
 
-- Parser: `logmine.ioc.parsers.snake.SnakeParser`
+- Format ID: `snake`
 - Observed filenames: `Systeminfo.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -42,7 +42,7 @@ attribution remains unknown.
 - Historical records represented: **16**
 - Representative sample: [open sample](samples/v_dcee825c24d303631633c51dc93685fe/sample.txt)
 - Sample SHA-256: `7059e7c60b57393f53c5bd6280315ad6c912969ed7ab7f0e6da0f3c738004afe`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

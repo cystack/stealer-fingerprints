@@ -31,7 +31,7 @@ published threat-intel mapping for this exact panel layout.
 - Attribution confidence: **unknown**
 - Aliases: `!! 2025 OCT aggregator panel summary`
 - Variants observed: **1**
-- Historical Logmine records represented: **15,869**
+- CyStack observations represented: **15,869**
 
 ## What it targets
 
@@ -50,11 +50,9 @@ Fingerprint requires the `Browers: CK:` substring (the
 developer typo plus the leading count column) plus
 line-anchored `IP:`, `Country:`, `Username:`, and
 `Antivirus:` keys. The misspelling of `Browers` is the
-disambiguator: no other registered parser keys on the
-typo. The lowercase-v `Antivirus:` distinguishes the
-format from PXA's caption shape (`AntiVirus:`, claimed by
-`PXACaptionParser`) and the GADS panel-summary shape
-(also `AntiVirus:`, claimed by `CSGADSPanelStealerParser`).
+disambiguator: no other cataloged format uses the typo. The lowercase-v `Antivirus:` distinguishes the
+format from PXA's caption shape (`AntiVirus:`, as seen in the PXA caption) and the GADS panel-summary shape
+(also `AntiVirus:`, as seen in CSGADSPanelStealer).
 During triage, treat the family attribution as unknown:
 the panel summary lacks the harvested credential bodies
 that would allow follow-on family fingerprinting, and the
@@ -65,7 +63,7 @@ summary fields alone.
 
 ### `v_5d3e7c5ff44f847c51a6ef2713ecb340`
 
-- Parser: `logmine.ioc.parsers.cs_browers_stealer.CSBrowersStealerParser`
+- Format ID: `cs-browers-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -73,7 +71,7 @@ summary fields alone.
 - Historical records represented: **15,869**
 - Representative sample: [open sample](samples/v_5d3e7c5ff44f847c51a6ef2713ecb340/sample.txt)
 - Sample SHA-256: `505d4712952f10ce4695ac9bae96401d5784539458b4d739f8cb6ef082a41c40`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

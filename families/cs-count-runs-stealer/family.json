@@ -51,7 +51,7 @@
   "variants": [
     {
       "id": "v_e5b07600b730bdb57cd9363fc77e23db",
-      "parser": "logmine.ioc.parsers.cs_count_runs_stealer.CSCountRunsStealerParser",
+      "format_id": "cs-count-runs-stealer",
       "filenames": [
         "Information.txt"
       ],
@@ -67,7 +67,7 @@
       "sample": {
         "path": "samples/v_e5b07600b730bdb57cd9363fc77e23db/sample.txt",
         "sha256": "311b49be46062d3264464794a1e7ff623313f365a9656639596a354846eab194",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

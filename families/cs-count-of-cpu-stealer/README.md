@@ -63,7 +63,7 @@ Name:` + `Total Memory:` + `UUID:` rather than `PC Name:`
 
 Fingerprint requires both line-anchored keys `Count of
 CPU cores:` and `Count of CPU threads:`. The verbose
-`Count of` key prefix is unique in the parser registry:
+`Count of` key prefix is unique in the catalog:
 canonical Lumma uses `- CPU Cores:` / `- CPU Threads:`
 with the dash bullet, DataMonk uses bare `CPU Cores:` /
 `CPU Threads:`, CSCountCoreStealer uses the transposed
@@ -80,7 +80,7 @@ Stealer` family literal to segregate the discovery.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

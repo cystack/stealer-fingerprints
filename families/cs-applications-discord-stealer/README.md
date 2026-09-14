@@ -11,9 +11,7 @@ base64 segment encodes the user's Discord snowflake ID,
 followed by dotted timestamp / signature parts (3-part form
 for standard auth tokens, 2-part for refresh / MFA tokens).
 
-Observed inside `MAY 02 - 8230 LOGS` aggregator packs (the
-`LOGS` sibling of `LOGS2` claimed by CSCookiesSoftStealer iter
-#55 / #56 / #58). Same `[<ISO2>]<IPv4>` parent-folder
+Observed inside `MAY 02 - 8230 LOGS` aggregator packs (the `LOGS` sibling of `LOGS2` also associated with CSCookiesSoftStealer). Same `[<ISO2>]<IPv4>` parent-folder
 convention, but a different categorical subdir name
 (`Applications/` vs `Soft/`) and a different per-app harvest
 convention (Discord auth tokens vs Steam JWT sessions). Family
@@ -48,7 +46,7 @@ Discord snowflake ID for cluster tracking.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

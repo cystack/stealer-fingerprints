@@ -15,7 +15,7 @@
     "Card numbers stored by browsers",
     "Game client sessions and small file grabber"
   ],
-  "detection_notes": "High-confidence trigger: the `t.me/erbium_support` URL\nliteral in the banner block plus line-anchored `[BUILD]`\nand `[PC INFO]` bracketed section headers. Both\nsignatures are Erbium-canonical panel emissions; no\nother family in this catalog uses the `erbium_support`\nhandle or the `[BUILD]` + `[PC INFO]` section pair.\nNote that Erbium has been observed inside the\n`@bugatti_cloud` Telegram aggregator (per this parser),\nso the outer archive may attribute to a redistributor\neven when the panel body is canonical Erbium output.",
+  "detection_notes": "High-confidence trigger: the `t.me/erbium_support` URL\nliteral in the banner block plus line-anchored `[BUILD]`\nand `[PC INFO]` bracketed section headers. Both\nsignatures are Erbium-canonical panel emissions; no\nother family in this catalog uses the `erbium_support`\nhandle or the `[BUILD]` + `[PC INFO]` section pair.\nNote that Erbium has been observed inside the\n`@bugatti_cloud` Telegram aggregator (in this catalog record),\nso the outer archive may attribute to a redistributor\neven when the panel body is canonical Erbium output.",
   "attack_techniques": [
     {
       "id": "T1555",

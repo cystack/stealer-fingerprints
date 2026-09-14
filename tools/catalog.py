@@ -2,9 +2,9 @@
 """Small, dependency-free catalog helper for stealer-fingerprints.
 
 The public data model is deliberately simple: one ``family.json`` per family,
-with its observed variants and one Logmine sample for every variant. This
-module validates that source data, renders the human-facing README files, and
-accepts one deterministic Logmine candidate at a time.
+with its observed variants and one CyStack research sample for every variant.
+This module validates that source data, renders the human-facing README files,
+and accepts one deterministic research candidate at a time.
 """
 
 from __future__ import annotations
@@ -49,7 +49,7 @@ FAMILY_CORE = {
 }
 VARIANT_CORE = {
     "id",
-    "parser",
+    "format_id",
     "filenames",
     "panel_brand",
     "distribution_channel",
@@ -221,6 +221,16 @@ def _identity_text(value: str | None) -> str:
     return " ".join(unicodedata.normalize("NFKC", value or "").casefold().split())
 
 
+def _variant_identity(value: dict[str, Any]) -> tuple[str, str, str]:
+    """Return the public structural identity independent of its opaque stable ID."""
+
+    return (
+        value["format_id"],
+        _identity_text(value.get("panel_brand")),
+        _identity_text(value.get("layout_id")),
+    )
+
+
 def _family_slug(name: str) -> str:
     value = unicodedata.normalize("NFKC", name)
     value = re.sub(r"(.)([A-Z][a-z]+)", r"\1-\2", value)
@@ -232,26 +242,6 @@ def _family_slug(name: str) -> str:
 def _reference_key(value: str) -> str:
     normalized = unicodedata.normalize("NFKC", value).casefold()
     return "".join(character for character in normalized if character.isalnum())
-
-
-def _expected_variant_id(parser: str, panel_brand: str | None, layout_id: str | None) -> str:
-    try:
-        parser_module, parser_class = parser.rsplit(".", 1)
-    except ValueError as exc:
-        raise CatalogError("shape", "variant parser must be a fully qualified class name") from exc
-    if not parser_module or not parser_class:
-        raise CatalogError("shape", "variant parser must be a fully qualified class name")
-    material = (
-        "logmine-variant-v1\0"
-        + parser_module
-        + "\0"
-        + parser_class
-        + "\0"
-        + _identity_text(panel_brand)
-        + "\0"
-        + _identity_text(layout_id)
-    )
-    return "v_" + hashlib.sha256(material.encode("utf-8")).hexdigest()[:32]
 
 
 def _has_benign_identity(*values: str) -> bool:
@@ -350,8 +340,8 @@ def _validate_sample(
     if not SHA256_RE.fullmatch(expected_hash):
         raise CatalogError("shape", f"{context}.sha256 must be lowercase SHA-256")
     source = _canonical_text(value["source"], f"{context}.source")
-    if source != "logmine_runtime":
-        raise CatalogError("provenance", f"{context}.source must be logmine_runtime")
+    if source != "cystack_collection":
+        raise CatalogError("provenance", f"{context}.source must be cystack_collection")
     if value["sanitized"] is not True:
         raise CatalogError("shape", f"{context}.sanitized must be true")
     sample_path = _safe_existing_file(family_dir, relative)
@@ -424,8 +414,10 @@ def _validate_variant(
     variant_id = _canonical_text(value["id"], f"{context}.id")
     if not VARIANT_ID_RE.fullmatch(variant_id):
         raise CatalogError("shape", f"{context}.id must be a lowercase portable identifier")
-    parser = _canonical_text(value["parser"], f"{context}.parser")
-    if _has_benign_identity(variant_id, parser):
+    format_id = _canonical_text(value["format_id"], f"{context}.format_id")
+    if not SLUG_RE.fullmatch(format_id):
+        raise CatalogError("shape", f"{context}.format_id must be a lowercase public identifier")
+    if _has_benign_identity(variant_id, format_id):
         raise CatalogError("benign", f"{context} identifies benign/NotMalware data")
     filenames = _string_list(value["filenames"], f"{context}.filenames", sort=True)
     if not filenames:
@@ -434,23 +426,16 @@ def _validate_variant(
         raise CatalogError("shape", f"{context}.filenames contains too many patterns")
     for index, filename in enumerate(filenames):
         _validate_filename_pattern(filename, f"{context}.filenames[{index}]")
-    panel_brand = _canonical_text(
-        value["panel_brand"], f"{context}.panel_brand", nullable=True
-    )
+    _canonical_text(value["panel_brand"], f"{context}.panel_brand", nullable=True)
     _canonical_text(
         value["distribution_channel"], f"{context}.distribution_channel", nullable=True
     )
-    layout_id = _canonical_text(value.get("layout_id"), f"{context}.layout_id", nullable=True)
+    _canonical_text(value.get("layout_id"), f"{context}.layout_id", nullable=True)
     confidence = _canonical_text(
         value["attribution_confidence"], f"{context}.attribution_confidence"
     )
     if confidence not in CONFIDENCE:
         raise CatalogError("shape", f"{context}.attribution_confidence is invalid")
-    expected_id = _expected_variant_id(parser, panel_brand, layout_id)
-    if variant_id != expected_id:
-        raise CatalogError(
-            "variant_id", f"{context}.id must be {expected_id} for its parser/panel/layout"
-        )
     markers = _string_list(value["markers"], f"{context}.markers", sort=True)
     fields = _string_list(value["fields"], f"{context}.fields", sort=True)
     if len(markers) > 32 or any(len(marker) > 500 for marker in markers):
@@ -509,6 +494,10 @@ def validate_catalog(root: Path = ROOT) -> dict[str, int]:
     related_links: list[tuple[Path, str]] = []
     external_links: list[tuple[Path, str]] = []
     sample_paths: dict[str, Path] = {}
+    sample_hashes: dict[str, tuple[str, str]] = {}
+    variant_ids: dict[str, tuple[str, str]] = {}
+    variant_identities: dict[tuple[str, str, str], tuple[str, str]] = {}
+    format_families: dict[str, str] = {}
     class_counts: Counter[str] = Counter()
     variant_count = sample_bytes = observation_count = 0
 
@@ -635,7 +624,6 @@ def validate_catalog(root: Path = ROOT) -> dict[str, int]:
         if not isinstance(variants, list):
             raise CatalogError("shape", f"{context}.variants must be an array")
         family_samples: set[str] = set()
-        family_variant_ids: set[str] = set()
         for index, variant in enumerate(variants):
             variant_id, sample_path, observations, size = _validate_variant(
                 variant, f"{context}.variants[{index}]", path.parent
@@ -648,16 +636,44 @@ def validate_catalog(root: Path = ROOT) -> dict[str, int]:
                     f"{context}.variants[{index}].attribution_confidence must be low or unknown "
                     "for an observed self-label",
                 )
-            if variant_id in family_variant_ids:
+            if variant_id in variant_ids:
+                other_family, _ = variant_ids[variant_id]
                 raise CatalogError(
-                    "duplicate", f"variant id {variant_id} appears more than once in {family_id}"
+                    "duplicate",
+                    f"variant id {variant_id} is shared by {other_family} and {family_id}",
+                )
+            identity = _variant_identity(variant)
+            if identity in variant_identities:
+                other_family, _ = variant_identities[identity]
+                raise CatalogError(
+                    "duplicate",
+                    "format/panel/layout identity is shared by "
+                    f"{other_family} and {family_id}",
+                )
+            format_id = variant["format_id"]
+            format_family = format_families.get(format_id)
+            if format_family is not None and format_family != family_id:
+                raise CatalogError(
+                    "duplicate",
+                    f"format id {format_id} is shared by {format_family} and {family_id}",
                 )
             qualified_sample = f"families/{family_id}/{sample_path}"
             portable_sample_key = unicodedata.normalize("NFC", qualified_sample).casefold()
             if portable_sample_key in sample_paths:
                 raise CatalogError("duplicate", f"sample path {qualified_sample} is reused")
-            family_variant_ids.add(variant_id)
+            sample_hash = variant["sample"]["sha256"]
+            if sample_hash in sample_hashes:
+                other_family, other_variant = sample_hashes[sample_hash]
+                raise CatalogError(
+                    "duplicate",
+                    f"sample SHA-256 is shared by {other_family}/{other_variant} and "
+                    f"{family_id}/{variant_id}",
+                )
+            variant_ids[variant_id] = (family_id, variant_id)
+            variant_identities[identity] = (family_id, variant_id)
+            format_families[format_id] = family_id
             sample_paths[portable_sample_key] = path
+            sample_hashes[sample_hash] = (family_id, variant_id)
             family_samples.add(sample_path)
             variant_count += 1
             observation_count += observations
@@ -763,7 +779,7 @@ def _family_readme(
     )
     if family["variants"]:
         lines.append(
-            "- Historical Logmine records represented: "
+            "- CyStack observations represented: "
             f"**{sum(v.get('observations', 1) for v in family['variants']):,}**"
         )
     lines.extend(["", "## What it targets", ""])
@@ -782,8 +798,9 @@ def _family_readme(
     if not family["variants"]:
         lines.extend(
             [
-                "No representative Logmine sample has been retained for this profile yet. "
-                "The catalog does not publish placeholder variants or synthetic samples.",
+                "No representative sample has been retained by CyStack Threat Intelligence "
+                "for this profile yet. The catalog does not publish placeholder variants or "
+                "synthetic samples.",
             ]
         )
     for variant in sorted(family["variants"], key=lambda item: item["id"]):
@@ -799,7 +816,7 @@ def _family_readme(
             [
                 f"### `{variant['id']}`",
                 "",
-                f"- Parser: `{_md(variant['parser'])}`",
+                f"- Format ID: `{_md(variant['format_id'])}`",
                 f"- Observed filenames: {_inline_list(variant['filenames'])}",
                 f"- Panel brand: {panel}",
                 f"- Distribution channel: {channel}",
@@ -813,7 +830,8 @@ def _family_readme(
                 f"- Historical records represented: **{variant.get('observations', 1):,}**",
                 f"- Representative sample: [open sample]({sample_link})",
                 f"- Sample SHA-256: `{sample['sha256']}`",
-                "- Sample provenance: Logmine runtime output, scrubbed for public use",
+                "- Sample provenance: CyStack Threat Intelligence collection, scrubbed for "
+                "public research",
                 "",
                 "Recognition anchors:",
                 "",
@@ -880,13 +898,13 @@ def _root_readme(families: list[dict[str, Any]], stats: dict[str, int]) -> str:
     lines = [
         "# Stealer Fingerprints",
         "",
-        "CyStack's public research catalog of information-stealer log formats found while "
-        "processing real-world data with Logmine. It distinguishes publicly attributed malware "
-        "families, observed self-labels, and the stable tracking names created by CyStack for "
-        "formats that do not yet have a defensible public attribution.",
+        "An independent public research catalog maintained by CyStack Threat Intelligence. "
+        "It documents information-stealer log formats observed in real-world collections and "
+        "distinguishes publicly attributed malware families, observed self-labels, and stable "
+        "CyStack tracking names for formats without defensible public attribution.",
         "",
-        "Every observed variant has exactly one representative text sample derived from "
-        "Logmine runtime output. Profiles without a retained runtime sample remain visible as "
+        "Every retained variant has exactly one representative text sample from the CyStack "
+        "Threat Intelligence collection. Profiles without a retained sample remain visible as "
         "research records; the repository does not fill those gaps with synthetic samples.",
         "",
         "> This catalog describes exported stealer logs, not malware binaries. A structural "
@@ -902,8 +920,8 @@ def _root_readme(families: list[dict[str, Any]], stats: dict[str, int]) -> str:
         f"- **{stats['family_variants']:,}** CyStack names mapped to a known parent family",
         f"- **{stats['aggregators']:,}** log aggregators",
         f"- **{stats['variants']:,}** observed log variants and **{stats['samples']:,}** samples",
-        f"- **{stats['observations']:,}** historical Logmine records consolidated into the "
-        "retained sample set",
+        f"- **{stats['observations']:,}** CyStack observations represented by the retained "
+        "sample set",
         "",
         "The historical-record count is a cumulative lower bound attached to the retained "
         "samples, not a live telemetry counter.",
@@ -982,23 +1000,29 @@ def _root_readme(families: list[dict[str, Any]], stats: dict[str, int]) -> str:
             "has since been linked to a known parent. An **aggregator** describes a distribution "
             "or panel grouping that can contain multiple families.",
             "",
-            "Family descriptions and detection notes come from Logmine's maintained research "
-            "metadata. Samples retain useful layout, spelling, separators, field order, and "
-            "malware/panel markers while direct victim secrets are scrubbed.",
+            "Family descriptions and detection notes are maintained by CyStack Threat "
+            "Intelligence. Samples retain useful layout, spelling, separators, field order, "
+            "and malware/panel markers while direct victim secrets are scrubbed.",
             "Repository sample files use the stable name `sample.txt`; the original artifact "
             "basename patterns remain in each variant's **Observed filenames** field.",
             "",
-            "## How updates arrive",
+            "## Research process",
             "",
-            "New variants come directly from Logmine through deterministic Python and Git: "
-            "the runtime sample is scrubbed, matched again, deduplicated against the latest "
-            "catalog, validated, and published. No language model is used in that path.",
+            "CyStack Threat Intelligence adds a variant only after its structure has been "
+            "confirmed, its representative sample has been scrubbed, and the record has been "
+            "deduplicated and validated against the current catalog.",
             "",
             "## Working with the data",
             "",
             "The machine-readable source for each profile is its `family.json`; the adjacent "
             "README and this index are generated from those records. See [CONTRIBUTING.md]"
             "(CONTRIBUTING.md) for corrections or new evidence.",
+            "",
+            "`format_id` is a catalog-wide stable public identifier for a log structure; each "
+            "`v_...` value is an opaque catalog-wide stable variant identifier and should not "
+            "be recalculated. A sample "
+            "with `source: cystack_collection` was retained from the CyStack Threat "
+            "Intelligence research collection and scrubbed before publication.",
             "",
             "```console",
             "python tools/catalog.py validate",
@@ -1047,24 +1071,24 @@ def _normalise_family_candidate(raw: Any, existing: dict[str, Any] | None) -> di
         raise CatalogError(
             "candidate", "candidate.family has unknown fields: " + ", ".join(sorted(unknown))
         )
-    if existing is None:
-        missing = (FAMILY_CORE - {"variants"}) - raw.keys()
-        if missing:
+    if existing is not None:
+        family_id = _text(raw.get("id"), "candidate.family.id")
+        name = _text(raw.get("name"), "candidate.family.name")
+        if family_id != existing["id"] or name.casefold() != existing["name"].casefold():
             raise CatalogError(
-                "candidate", "new family metadata is missing: " + ", ".join(sorted(missing))
+                "collision", f"family id {family_id} does not identify {existing['name']}"
             )
-        family: dict[str, Any] = {}
-    else:
-        family = {key: value for key, value in existing.items() if key != "variants"}
-    accepted = allowed
-    for key, value in raw.items():
-        if key in accepted:
-            if existing is not None and key in family and family[key] != value:
-                raise CatalogError(
-                    "metadata_conflict",
-                    f"candidate family metadata conflicts with existing field {key}",
-                )
-            family[key] = value
+        # Once published, the catalog's researched narrative is authoritative.
+        # An incoming variant may carry older metadata without
+        # overwriting public descriptions, attribution, links, or sources.
+        return {key: value for key, value in existing.items() if key != "variants"}
+
+    missing = (FAMILY_CORE - {"variants"}) - raw.keys()
+    if missing:
+        raise CatalogError(
+            "candidate", "new family metadata is missing: " + ", ".join(sorted(missing))
+        )
+    family = {key: value for key, value in raw.items() if key in allowed}
     family_id = _text(family.get("id"), "candidate.family.id")
     name = _text(family.get("name"), "candidate.family.name")
     classification = _text(family.get("classification"), "candidate.family.classification")
@@ -1074,10 +1098,6 @@ def _normalise_family_candidate(raw: Any, existing: dict[str, Any] | None) -> di
         raise CatalogError("candidate", "candidate family id is not the canonical name slug")
     if _has_benign_identity(family_id, name) or family_id.startswith("unattributed-"):
         raise CatalogError("candidate", "benign and unattributed-hash families are not publishable")
-    if existing is not None and existing["name"].casefold() != name.casefold():
-        raise CatalogError(
-            "collision", f"family id {family_id} already belongs to {existing['name']}"
-        )
     return family
 
 
@@ -1097,7 +1117,11 @@ def _normalise_variant_candidate(raw: Any) -> dict[str, Any]:
         raise CatalogError(
             "candidate", "candidate.variant is missing: " + ", ".join(sorted(missing))
         )
-    variant["parser"] = _text(variant["parser"], "candidate.variant.parser")
+    variant["format_id"] = _text(variant["format_id"], "candidate.variant.format_id")
+    if not SLUG_RE.fullmatch(variant["format_id"]):
+        raise CatalogError(
+            "candidate", "candidate.variant.format_id must be a lowercase public identifier"
+        )
     variant["filenames"] = _string_list(
         variant["filenames"], "candidate.variant.filenames", sort=True, canonical=False
     )
@@ -1142,11 +1166,6 @@ def _normalise_variant_candidate(raw: Any) -> dict[str, Any]:
     variant["id"] = _text(variant["id"], "candidate.variant.id")
     if not VARIANT_ID_RE.fullmatch(variant["id"]):
         raise CatalogError("candidate", "candidate.variant.id is invalid")
-    expected = _expected_variant_id(
-        variant["parser"], variant["panel_brand"], variant["layout_id"]
-    )
-    if variant["id"] != expected:
-        raise CatalogError("candidate", f"candidate.variant.id must be {expected}")
     if variant["layout_id"] is None:
         variant.pop("layout_id")
     return variant
@@ -1249,19 +1268,24 @@ def ingest(candidate_path: Path, root: Path = ROOT) -> dict[str, Any]:
     existing = _load_json(family_path) if family_path.is_file() else None
     if existing is not None and not isinstance(existing, dict):
         raise CatalogError("shape", f"{family_path} must contain an object")
+    family = _normalise_family_candidate(raw_family, existing)
     variant = _normalise_variant_candidate(raw_variant)
-    existing_variants = list(existing.get("variants", [])) if existing else []
-    by_id = {item.get("id"): item for item in existing_variants if isinstance(item, dict)}
-    matched = by_id.get(variant["id"])
-    if matched is not None:
-        identity_keys = ("parser", "panel_brand", "layout_id")
-        if any(matched.get(key) != variant.get(key) for key in identity_keys):
+    filename, sample_data, sanitized = _candidate_sample(raw_sample)
+    sample_hash = hashlib.sha256(sample_data).hexdigest()
+    catalog_variants = [
+        (catalog_family["id"], catalog_variant)
+        for _, catalog_family in _load_families(root)
+        for catalog_variant in catalog_family["variants"]
+    ]
+    for catalog_family_id, catalog_variant in catalog_variants:
+        if catalog_variant["sample"]["sha256"] != sample_hash:
+            continue
+        if catalog_family_id != family_id:
             raise CatalogError(
-                "collision", f"variant id {variant['id']} already has a different identity"
+                "collision",
+                "candidate sample already belongs to "
+                f"{catalog_family_id}/{catalog_variant['id']}",
             )
-        candidate_name = _text(raw_family.get("name"), "candidate.family.name")
-        if existing is None or existing["name"].casefold() != candidate_name.casefold():
-            raise CatalogError("collision", f"family id {family_id} has a different name")
         return {
             "status": "no_change",
             "accepted": 1,
@@ -1270,13 +1294,81 @@ def ingest(candidate_path: Path, root: Path = ROOT) -> dict[str, Any]:
             "samples_added": 0,
             "updated": 0,
             "family_id": family_id,
-            "variant_id": variant["id"],
+            "variant_id": catalog_variant["id"],
+            "changed_paths": [],
+        }
+
+    existing_variants = list(existing.get("variants", [])) if existing else []
+    by_id = {
+        item.get("id"): (catalog_family_id, item)
+        for catalog_family_id, item in catalog_variants
+        if isinstance(item, dict)
+    }
+    by_identity = {
+        _variant_identity(item): (catalog_family_id, item)
+        for catalog_family_id, item in catalog_variants
+        if isinstance(item, dict)
+    }
+    matched_id_record = by_id.get(variant["id"])
+    matched_identity_record = by_identity.get(_variant_identity(variant))
+    if matched_id_record is not None and matched_id_record[0] != family_id:
+        raise CatalogError(
+            "collision",
+            f"variant id {variant['id']} already belongs to {matched_id_record[0]}",
+        )
+    if matched_identity_record is not None and matched_identity_record[0] != family_id:
+        raise CatalogError(
+            "collision",
+            "candidate format/panel/layout identity already belongs to "
+            f"{matched_identity_record[0]}/{matched_identity_record[1]['id']}",
+        )
+    format_owner = next(
+        (
+            catalog_family_id
+            for catalog_family_id, item in catalog_variants
+            if item["format_id"] == variant["format_id"]
+        ),
+        None,
+    )
+    if format_owner is not None and format_owner != family_id:
+        raise CatalogError(
+            "collision",
+            f"format id {variant['format_id']} already belongs to {format_owner}",
+        )
+    matched_by_id = matched_id_record[1] if matched_id_record is not None else None
+    matched_by_identity = (
+        matched_identity_record[1] if matched_identity_record is not None else None
+    )
+    if (
+        matched_by_id is not None
+        and _variant_identity(matched_by_id) != _variant_identity(variant)
+    ):
+        raise CatalogError(
+            "collision", f"variant id {variant['id']} already has a different identity"
+        )
+    if (
+        matched_by_id is not None
+        and matched_by_identity is not None
+        and matched_by_id is not matched_by_identity
+    ):
+        raise CatalogError(
+            "collision", "candidate variant id and format identity refer to different records"
+        )
+    matched = matched_by_id or matched_by_identity
+    if matched is not None:
+        return {
+            "status": "no_change",
+            "accepted": 1,
+            "added": 0,
+            "duplicates": 1,
+            "samples_added": 0,
+            "updated": 0,
+            "family_id": family_id,
+            "variant_id": matched["id"],
             "changed_paths": [],
         }
 
     original_family = _json_bytes(existing) if existing is not None else None
-    family = _normalise_family_candidate(raw_family, existing)
-    filename, sample_data, sanitized = _candidate_sample(raw_sample)
     if not any(_filename_matches(pattern, filename) for pattern in variant["filenames"]):
         raise CatalogError(
             "candidate", "candidate.sample.filename does not match candidate.variant.filenames"
@@ -1291,8 +1383,8 @@ def ingest(candidate_path: Path, root: Path = ROOT) -> dict[str, Any]:
     sample_relative = PurePosixPath("samples", variant["id"], filename)
     variant["sample"] = {
         "path": sample_relative.as_posix(),
-        "sha256": hashlib.sha256(sample_data).hexdigest(),
-        "source": "logmine_runtime",
+        "sha256": sample_hash,
+        "source": "cystack_collection",
         "sanitized": sanitized,
     }
     existing_variants.append(variant)
@@ -1670,7 +1762,7 @@ def main(argv: list[str] | None = None) -> int:
     build_parser = commands.add_parser("build", help="regenerate README files")
     build_parser.add_argument("--check", action="store_true")
     build_parser.add_argument("root", nargs="?", type=Path, default=ROOT)
-    ingest_parser = commands.add_parser("ingest", help="ingest one Logmine candidate JSON")
+    ingest_parser = commands.add_parser("ingest", help="ingest one CyStack research candidate")
     ingest_parser.add_argument("candidate", type=Path)
     ingest_parser.add_argument("root", nargs="?", type=Path, default=ROOT)
     identify_parser = commands.add_parser("identify", help="rank a local log against the catalog")

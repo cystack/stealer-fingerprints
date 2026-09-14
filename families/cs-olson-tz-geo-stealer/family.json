@@ -11,7 +11,7 @@
   "typical_targets": [
     "Geo-IP enrichment only: victim IP, city, region name,\nZIP / postal code, IANA timezone name"
   ],
-  "detection_notes": "Fingerprint requires four line-anchored no-space-after-colon\nanchors: ``City:``, ``Region:``, ``ZIP:``, and ``TimeZone:``\nfollowed by an Olson-format value. The combination is\ndistinctive across the registry. During triage, correlate with\ncompanion files in the victim folder (browser exports,\nwallet artifacts, cookie dumps, credential stores) to identify\nthe underlying stealer family. This parser only extracts the\ngeo block from the info.txt; the folder-level detector and\nsibling parsers handle the credential inventory.",
+  "detection_notes": "Fingerprint requires four line-anchored no-space-after-colon\nanchors: ``City:``, ``Region:``, ``ZIP:``, and ``TimeZone:``\nfollowed by an Olson-format value. The combination is\ndistinctive across this catalog. During triage, correlate with\ncompanion files in the victim folder (browser exports,\nwallet artifacts, cookie dumps, credential stores) to identify\nthe underlying stealer family. The `info.txt` contributes only the geo block; use companion credential artifacts to establish the underlying family.",
   "attack_techniques": [
     {
       "id": "T1082",

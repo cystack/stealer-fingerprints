@@ -16,7 +16,7 @@ identifier, ``Chrome Profile <N> (<version>)``), ``URL:``
 ``android://<b64hash>@<pkg>/``), ``USER:`` (account handle),
 and ``PASS:`` (stored credential). Records are separated by
 blank lines. The SOFT/URL/USER/PASS block layout is common
-across multiple stealers per a public stealer-log parser
+across multiple stealers per a public stealer-log format
 writeup (one of five documented Passwords.txt shapes) and
 cannot be uniquely mapped to a specific underlying builder
 from format alone. Family attribution is provisional pending a
@@ -45,7 +45,7 @@ Fingerprint requires four line-anchored anchors, all four
 in the same body: ``SOFT: ``, ``URL: ``, ``USER: ``, and
 ``PASS: ``. The four-anchor combination is exclusive to
 Passwords.txt-shaped content: no canonical system-info
-panel across the registry carries all four spelling
+panel across this catalog carries all four spelling
 variants at line start. During incident response, treat
 the file as a credentials dump: pull each URL / USER /
 PASS triple as a leaked-credential IOC and correlate the
@@ -54,7 +54,7 @@ victim identification.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

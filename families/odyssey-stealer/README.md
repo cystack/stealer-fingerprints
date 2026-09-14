@@ -44,7 +44,7 @@ The `Is CIS: true` / `Is CIS: false` boolean field is
 the strongest single anchor. Combined with `External IP:`
 and the macOS `Software:` + `Hardware:` +
 `Graphics/Displays:` `system_profiler` section headers,
-the fingerprint is unique across the registered parser
+the fingerprint is unique across the cataloged format
 corpus. During triage, treat any log with the `Is CIS:`
 field as Odyssey; the corresponding `Password:` line
 holds the victim login credential the AppleScript grabbed
@@ -53,12 +53,12 @@ compromised. Odyssey samples redistributed through the
 BRADMAX Telegram aggregator strip the `SHub Stealer`
 banner (present in the sibling SHub family) but preserve
 the `Is CIS:` + `External IP:` + `system_profiler` triple
-verbatim, so the same parser fingerprint claims both
+verbatim, so the same structural fingerprint covers both
 direct-C2 and aggregator-redistributed samples.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

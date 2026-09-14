@@ -15,7 +15,7 @@
     "Account display name and date of birth",
     "Related Facebook page IDs"
   ],
-  "detection_notes": "Fingerprint requires U+1F451 `👑` crown glyph AND `c_user=` AND\n`xs=` AND `datr=` cookie-name substrings. Four anchors\ntogether cannot collide with any other registered parser: the\ncrown glyph alone rules out every system-info shape, and the\nthree Facebook session-cookie name substrings rule out any\nnon-Facebook artifact that happens to carry a crown emoji.\nDuring triage, treat the raw `c_user`, `xs`, and `datr` cookie\nvalues as exfiltrated session secrets that grant attacker-side\nFacebook account takeover. Family attribution is unknown: the\nunderlying stealer that scraped the original cookie dump has\nnot been mapped to this marketplace-listing layout in any\npublic reporting.",
+  "detection_notes": "Fingerprint requires U+1F451 `👑` crown glyph AND `c_user=` AND\n`xs=` AND `datr=` cookie-name substrings. Four anchors\ntogether cannot collide with any other cataloged format: the\ncrown glyph alone rules out every system-info shape, and the\nthree Facebook session-cookie name substrings rule out any\nnon-Facebook artifact that happens to carry a crown emoji.\nDuring triage, treat the raw `c_user`, `xs`, and `datr` cookie\nvalues as exfiltrated session secrets that grant attacker-side\nFacebook account takeover. Family attribution is unknown: the\nunderlying stealer that scraped the original cookie dump has\nnot been mapped to this marketplace-listing layout in any\npublic reporting.",
   "attack_techniques": [
     {
       "id": "T1539",
@@ -49,7 +49,7 @@
   "variants": [
     {
       "id": "v_cd44448921562de22da01df5270af56b",
-      "parser": "logmine.ioc.parsers.cs_facebook_market_stealer.CSFacebookMarketStealerParser",
+      "format_id": "cs-facebook-market-stealer",
       "filenames": [
         "Information.txt"
       ],
@@ -66,7 +66,7 @@
       "sample": {
         "path": "samples/v_cd44448921562de22da01df5270af56b/sample.txt",
         "sha256": "c631122ad6230c405c5e4d526c8b5869185f87f579e7c9c59eaee9e715d6f7ad",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

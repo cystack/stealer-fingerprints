@@ -12,7 +12,7 @@
     "Browser saved credentials (URL, username, password)",
     "Browser name plus profile identifier per entry"
   ],
-  "detection_notes": "Fingerprint requires 3+ 4-line blocks in the `URL:` /\n`Username:` / `Password:` / `Browser: <NAME>_<...>` shape\nwhere the `Browser:` value opens with an uppercase\nbrowser-name prefix from a curated list (CHROME / EDGE /\nFIREFOX / BRAVE / OPERA / VIVALDI / YANDEX / MOZILLA /\nCHROMIUM / SAFARI / TOR / IE). Gating on the known-browser prefix keeps the sniffer off arbitrary text that\nhappens to include a `Browser:` line. During triage,\nthe `<Browser>_<Profile>` value is the per-entry source-profile hint that lets analysts pivot to the specific\nChromium Login Data / Firefox signons SQLite file the\nstealer read from.",
+  "detection_notes": "Fingerprint requires 3+ 4-line blocks in the `URL:` /\n`Username:` / `Password:` / `Browser: <NAME>_<...>` shape\nwhere the `Browser:` value opens with an uppercase\nbrowser-name prefix from a curated list (CHROME / EDGE /\nFIREFOX / BRAVE / OPERA / VIVALDI / YANDEX / MOZILLA /\nCHROMIUM / SAFARI / TOR / IE). Gating on the known-browser prefix excludes arbitrary text that\nhappens to include a `Browser:` line. During triage,\nthe `<Browser>_<Profile>` value is the per-entry source-profile hint that lets analysts pivot to the specific\nChromium Login Data / Firefox signons SQLite file the\nstealer read from.",
   "attack_techniques": [
     {
       "id": "T1555",

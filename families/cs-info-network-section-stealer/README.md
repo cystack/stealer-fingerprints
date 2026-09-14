@@ -17,7 +17,7 @@ paren-with-spaces annotation convention (``UTC ( TimeZone )
 :``, ``UserName ( ComputerName ) :``). The ``UTC ( TimeZone
 )`` value packs a bare 4-digit hhmm offset alongside an IANA
 Olson timezone name (``-0400 ( America/New_York )``). Related
-to the ``CSStartBuildInfoStealer`` iter #23 sibling by the
+to the ``CSStartBuildInfoStealer`` sibling by the
 shared ``_Info<...>.txt`` leading-underscore filename
 convention and paren-annotated UserName field, but the
 specific field-name spellings and bracketed-underscore section
@@ -45,16 +45,16 @@ section with per-program version tags)
 Fingerprint requires three line-anchored anchors:
 ``[Info_Network]``, ``[Info_Software]``, and the
 ``UserName ( ComputerName ) :`` paren-with-spaces literal.
-The bracketed-underscore section headers and the paren-with-spaces literal together are unique across the
-registry. During triage, correlate with the sibling
-``CSStartBuildInfoStealer`` variant (iter #23) which
+The bracketed-underscore section headers and the paren-with-spaces literal together are unique across this
+catalog. During triage, correlate with the sibling
+``CSStartBuildInfoStealer`` variant which
 shares the ``_Info<...>.txt`` filename convention but
 uses direct labels and tight parens instead of the
 underscored + spaced form observed here.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

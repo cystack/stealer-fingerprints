@@ -25,17 +25,15 @@ $300), and embeds the channel handle
 ## Detection notes
 
 The 28-character `===DARKSIDE_BRAND_BEGIN===` delimiter is
-the cleanest trigger; no other parser in the registry keys
-on it. Pair with at least one Redline-canonical body field
-(`User Name:` or `Display Resolution:`) to avoid claiming
-banner-only README artefacts the panel may also emit.
+the cleanest trigger; no other format in this catalog uses it. Pair with at least one Redline-canonical body field
+(`User Name:` or `Display Resolution:`) to distinguish banner-only README artefacts the panel may also emit.
 Note: unrelated to the Russia-affiliated DarkSide ransomware
 operation (Colonial Pipeline, May 2021); naming collision
 is incidental.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

@@ -17,7 +17,7 @@
     "HWID and Windows MachineID",
     "Wallpaper SHA-1 hash"
   ],
-  "detection_notes": "Fingerprint requires 3+ matches of the digit-interspersed\n`Daisy Private cloud` watermark regex AND the\n`Operation System:` Redline-canonical typo substring. The\n3-match threshold rejects unrelated text that happens to\nquote the channel name once; the OS typo confirms the\nunderlying body is Redline-shape rather than an arbitrary\nwatermarked file. During triage, the parser strips the\nper-line watermark before field extraction, then recovers\nthe standard Redline-shape IOC fields. Treat the\nattribution as low-confidence: the channel reportedly\nresells RedLine logs but the body could also come from a\nRedline fork or an unrelated stealer that adopted\nRedline's `UserInformation.txt` field layout.",
+  "detection_notes": "Fingerprint requires 3+ matches of the digit-interspersed\n`Daisy Private cloud` watermark regex AND the\n`Operation System:` Redline-canonical typo substring. The\n3-match threshold rejects unrelated text that happens to\nquote the channel name once; the OS typo confirms the\nunderlying body is Redline-shape rather than an arbitrary\nwatermarked file. During triage, strip the per-line watermark to recover the\nstandard Redline-shaped observable fields. Treat the\nattribution as low-confidence: the channel reportedly\nresells RedLine logs but the body could also come from a\nRedline fork or an unrelated stealer that adopted\nRedline's `UserInformation.txt` field layout.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -53,7 +53,7 @@
   "variants": [
     {
       "id": "v_7fbb06edb08e717aa0cd6e0ecc602229",
-      "parser": "logmine.ioc.parsers.cs_daisy_cloud_stealer.CSDaisyCloudStealerParser",
+      "format_id": "cs-daisy-cloud-stealer",
       "filenames": [
         "UserInformation.txt"
       ],
@@ -69,7 +69,7 @@
       "sample": {
         "path": "samples/v_7fbb06edb08e717aa0cd6e0ecc602229/sample.txt",
         "sha256": "9c2e50da54770183f2852eda98b311c4a1f7819af4ee6b04c0a9e459094d6e2e",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

@@ -3,13 +3,13 @@
   "name": "CSBitArchStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSBitArchStealer is a CyStack-coined identifier for a\ncolon-no-space `info.txt` panel observed inside `!! 2026\nJAN.part01.rar` aggregator packs distributed via Telegram log\nchannels. Per-victim folders follow a\n`<id>_<2-hex>_<ip>_<DD-MM-YY>/info.txt` layout. The body is a\nflat key/value block whose distinguishing markers are a\nparenthesised `BitArch:(x64 bit)` architecture field and a\n`WindowsVersion:` OS-name field, neither of which is used by\nany other family in the parser registry.\n\nThe panel writes literal `Unknown country` / `Unknown city` /\n`Unknown Region` / `Unknown IP` / `Unknown Timezone` /\n`Unknown Zip` placeholders when its IP-to-geo lookup fails.\nField-name semantics deviate from convention: the panel\nappears to source `Username` from Windows USERDOMAIN\n(workgroup label) and `DomainName` from the machine name, so\nthe values are essentially swapped relative to what the labels\nsuggest.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting plus\npublic stealer-format catalogues do not document a family\nusing this exact field set. The `CSBitArchStealer` literal\npreserves the panel's most distinctive marker as the suffix;\nrename the family constant if a public writeup later\nidentifies the underlying builder.",
+  "description": "CSBitArchStealer is a CyStack-coined identifier for a\ncolon-no-space `info.txt` panel observed inside `!! 2026\nJAN.part01.rar` aggregator packs distributed via Telegram log\nchannels. Per-victim folders follow a\n`<id>_<2-hex>_<ip>_<DD-MM-YY>/info.txt` layout. The body is a\nflat key/value block whose distinguishing markers are a\nparenthesised `BitArch:(x64 bit)` architecture field and a\n`WindowsVersion:` OS-name field, neither of which is used by\nany other family in the catalog.\n\nThe panel writes literal `Unknown country` / `Unknown city` /\n`Unknown Region` / `Unknown IP` / `Unknown Timezone` /\n`Unknown Zip` placeholders when its IP-to-geo lookup fails.\nField-name semantics deviate from convention: the panel\nappears to source `Username` from Windows USERDOMAIN\n(workgroup label) and `DomainName` from the machine name, so\nthe values are essentially swapped relative to what the labels\nsuggest.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting plus\npublic stealer-format catalogues do not document a family\nusing this exact field set. The `CSBitArchStealer` literal\npreserves the panel's most distinctive marker as the suffix;\nUpdate this tracking profile if a public writeup later\nidentifies the underlying builder.",
   "aliases": [],
   "typical_targets": [
     "Browser saved credentials and cookies",
     "System hardware and locale inventory"
   ],
-  "detection_notes": "Requires the `BitArch:(` parenthesised-value substring AND\nthe `WindowsVersion:` substring. Either alone is too weak\n(a stray document could mention `BitArch` without the\nparenthesis, or quote `WindowsVersion` in unrelated text);\nthe pair together is unique to this panel. The literal\n`Unknown <field>` placeholders for failed geolocation are\nstripped to null at IOC emission so triage queries on\n`country` / `city` / `ip` / `time_zone` / `zip_code`\nreflect actual information content rather than the\npanel's placeholder string.",
+  "detection_notes": "Requires the `BitArch:(` parenthesised-value substring AND\nthe `WindowsVersion:` substring. Either alone is too weak\n(a stray document could mention `BitArch` without the\nparenthesis, or quote `WindowsVersion` in unrelated text);\nthe pair together is unique to this panel. The literal\n`Unknown <field>` placeholders for failed geolocation represent missing data rather than usable evidence; triage on\n`country` / `city` / `ip` / `time_zone` / `zip_code`\nreflect actual information content rather than the\npanel's placeholder string.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -37,7 +37,7 @@
   "variants": [
     {
       "id": "v_969a7984a60742aead582cf696200347",
-      "parser": "logmine.ioc.parsers.cs_bit_arch_stealer.CSBitArchStealerParser",
+      "format_id": "cs-bit-arch-stealer",
       "filenames": [
         "info.txt"
       ],
@@ -54,7 +54,7 @@
       "sample": {
         "path": "samples/v_969a7984a60742aead582cf696200347/sample.txt",
         "sha256": "579f4f22fe68541d46e241ef2292428b2063306d08c43e3961bb2c382a8bcccb",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

@@ -13,7 +13,7 @@
     "Verbatim Win32 environment-variable dump",
     "Antivirus product enumeration"
   ],
-  "detection_notes": "Triple fingerprint: `=== SYSTEM INFORMATION ===` substring\nAND `=== ENVIRONMENT VARIABLES ===` substring AND\n`.NET Runtime:` substring. The `.NET Runtime:` key is unique\nacross the registry; the env-var section header excludes\nPCInfoStealer (which requires `=== NETWORK INFO ===`) and\nCSWmicDumpStealer (snake_case keys, no env-var dump). The\nfamily attribution is provisional pending a published\nthreat-intel mapping for this layout.",
+  "detection_notes": "Triple fingerprint: `=== SYSTEM INFORMATION ===` substring\nAND `=== ENVIRONMENT VARIABLES ===` substring AND\n`.NET Runtime:` substring. The `.NET Runtime:` key is unique\nacross this catalog; the env-var section header excludes\nPCInfoStealer (which requires `=== NETWORK INFO ===`) and\nCSWmicDumpStealer (snake_case keys, no env-var dump). The\nfamily attribution is provisional pending a published\nthreat-intel mapping for this layout.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -54,7 +54,7 @@
   "variants": [
     {
       "id": "v_7ba734c3d104f5d042e195feac7c49c7",
-      "parser": "logmine.ioc.parsers.cs_envvar_dump_stealer.CSEnvVarDumpStealerParser",
+      "format_id": "cs-envvar-dump-stealer",
       "filenames": [
         "system_info.txt"
       ],
@@ -72,7 +72,7 @@
       "sample": {
         "path": "samples/v_7ba734c3d104f5d042e195feac7c49c7/sample.txt",
         "sha256": "f199a9ebbc21066e827b992498d9b5daf2916bb2388bcca8c5857d92c653093c",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

@@ -13,7 +13,7 @@ signature on the `Time:` line. Build banners reference the
 - Attribution confidence: **high**
 - Aliases: `LummaC2`, `Lumma Stealer`
 - Variants observed: **6**
-- Historical Logmine records represented: **776,374**
+- CyStack observations represented: **776,374**
 
 ## What it targets
 
@@ -36,7 +36,7 @@ the signature; they should be tracked separately.
 
 ### `v_098b5cb9b92999ab2453a165215e61e1`
 
-- Parser: `logmine.ioc.parsers.cs_brad_logs_stealer.CSBradLogsStealerParser`
+- Format ID: `cs-brad-logs-stealer`
 - Observed filenames: `System.txt`
 - Panel brand: `BRADMAX`
 - Distribution channel: `@BRADLOGS`
@@ -44,7 +44,7 @@ the signature; they should be tracked separately.
 - Historical records represented: **7,369**
 - Representative sample: [open sample](samples/v_098b5cb9b92999ab2453a165215e61e1/sample.txt)
 - Sample SHA-256: `f6ae0c9fd19239a2f3275a95e5769ea0c26079b999e4d9cd37d23e5be2f84ea4`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -53,7 +53,7 @@ Recognition anchors:
 
 ### `v_41473f829c21e719f7d2c773a67ed897`
 
-- Parser: `logmine.ioc.parsers.cs_brad_logs_stealer.CSBradLogsStealerParser`
+- Format ID: `cs-brad-logs-stealer`
 - Observed filenames: `System.txt`
 - Panel brand: -
 - Distribution channel: `@BRADLOGS`
@@ -61,7 +61,7 @@ Recognition anchors:
 - Historical records represented: **206**
 - Representative sample: [open sample](samples/v_41473f829c21e719f7d2c773a67ed897/sample.txt)
 - Sample SHA-256: `d01c724db8109b2834104f87e4b4cd1ed91ce1208ebefc7cd4b1519f9787005f`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -70,7 +70,7 @@ Recognition anchors:
 
 ### `v_7682ef5532c87a9cc6598dd189ef2ae5`
 
-- Parser: `logmine.ioc.parsers.lumma.LummaParser`
+- Format ID: `lumma`
 - Observed filenames: `System.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -79,7 +79,7 @@ Recognition anchors:
 - Historical records represented: **3**
 - Representative sample: [open sample](samples/v_7682ef5532c87a9cc6598dd189ef2ae5/sample.txt)
 - Sample SHA-256: `e1ee50cd83e5e442a2a04894bed6f45d4cdd5a5d938c07c1b15cc1a164a96fc6`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -88,7 +88,7 @@ Recognition anchors:
 
 ### `v_a9b26efd5e8a2cd1d6caa141ff2fb418`
 
-- Parser: `logmine.ioc.parsers.lumma.LummaParser`
+- Format ID: `lumma`
 - Observed filenames: `Information.txt`, `System.txt`, `UserInformation.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -97,7 +97,7 @@ Recognition anchors:
 - Historical records represented: **30,637**
 - Representative sample: [open sample](samples/v_a9b26efd5e8a2cd1d6caa141ff2fb418/sample.txt)
 - Sample SHA-256: `38a2eaac0856758fb7c1c07750cd08f96c8dc746c93801a38a84b7185deefa76`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -106,7 +106,7 @@ Recognition anchors:
 
 ### `v_c533cdf8c3b19c2014faa1054388e8d3`
 
-- Parser: `logmine.ioc.parsers.lumma.LummaParser`
+- Format ID: `lumma`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -115,7 +115,7 @@ Recognition anchors:
 - Historical records represented: **110**
 - Representative sample: [open sample](samples/v_c533cdf8c3b19c2014faa1054388e8d3/sample.txt)
 - Sample SHA-256: `818614ea003ee14409b1ee491b0ba452f8c36ae21da4983e41f3b6b223dced8b`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -124,7 +124,7 @@ Recognition anchors:
 
 ### `v_db24fff43a757db95bdc275cd0470dea`
 
-- Parser: `logmine.ioc.parsers.lumma.LummaParser`
+- Format ID: `lumma`
 - Observed filenames: `Information.txt`, `System.txt`, `system_info.txt`, `UserInformation.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -133,7 +133,7 @@ Recognition anchors:
 - Historical records represented: **738,049**
 - Representative sample: [open sample](samples/v_db24fff43a757db95bdc275cd0470dea/sample.txt)
 - Sample SHA-256: `d34e235ef451070611fce20bf7cec44ef91798b69f201c5153a68fd7cd6e2ba3`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

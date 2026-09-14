@@ -59,7 +59,7 @@
   "variants": [
     {
       "id": "v_098b5cb9b92999ab2453a165215e61e1",
-      "parser": "logmine.ioc.parsers.cs_brad_logs_stealer.CSBradLogsStealerParser",
+      "format_id": "cs-brad-logs-stealer",
       "filenames": [
         "System.txt"
       ],
@@ -76,13 +76,13 @@
       "sample": {
         "path": "samples/v_098b5cb9b92999ab2453a165215e61e1/sample.txt",
         "sha256": "f6ae0c9fd19239a2f3275a95e5769ea0c26079b999e4d9cd37d23e5be2f84ea4",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     },
     {
       "id": "v_41473f829c21e719f7d2c773a67ed897",
-      "parser": "logmine.ioc.parsers.cs_brad_logs_stealer.CSBradLogsStealerParser",
+      "format_id": "cs-brad-logs-stealer",
       "filenames": [
         "System.txt"
       ],
@@ -97,13 +97,13 @@
       "sample": {
         "path": "samples/v_41473f829c21e719f7d2c773a67ed897/sample.txt",
         "sha256": "d01c724db8109b2834104f87e4b4cd1ed91ce1208ebefc7cd4b1519f9787005f",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     },
     {
       "id": "v_7682ef5532c87a9cc6598dd189ef2ae5",
-      "parser": "logmine.ioc.parsers.lumma.LummaParser",
+      "format_id": "lumma",
       "filenames": [
         "System.txt"
       ],
@@ -118,14 +118,14 @@
       "sample": {
         "path": "samples/v_7682ef5532c87a9cc6598dd189ef2ae5/sample.txt",
         "sha256": "e1ee50cd83e5e442a2a04894bed6f45d4cdd5a5d938c07c1b15cc1a164a96fc6",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "legacy-lummac2-build"
     },
     {
       "id": "v_a9b26efd5e8a2cd1d6caa141ff2fb418",
-      "parser": "logmine.ioc.parsers.lumma.LummaParser",
+      "format_id": "lumma",
       "filenames": [
         "Information.txt",
         "System.txt",
@@ -142,14 +142,14 @@
       "sample": {
         "path": "samples/v_a9b26efd5e8a2cd1d6caa141ff2fb418/sample.txt",
         "sha256": "38a2eaac0856758fb7c1c07750cd08f96c8dc746c93801a38a84b7185deefa76",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "lumma-build-banner"
     },
     {
       "id": "v_c533cdf8c3b19c2014faa1054388e8d3",
-      "parser": "logmine.ioc.parsers.lumma.LummaParser",
+      "format_id": "lumma",
       "filenames": [
         "Information.txt"
       ],
@@ -166,14 +166,14 @@
       "sample": {
         "path": "samples/v_c533cdf8c3b19c2014faa1054388e8d3/sample.txt",
         "sha256": "818614ea003ee14409b1ee491b0ba452f8c36ae21da4983e41f3b6b223dced8b",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "bare-hwid-cpu-display"
     },
     {
       "id": "v_db24fff43a757db95bdc275cd0470dea",
-      "parser": "logmine.ioc.parsers.lumma.LummaParser",
+      "format_id": "lumma",
       "filenames": [
         "Information.txt",
         "System.txt",
@@ -194,7 +194,7 @@
       "sample": {
         "path": "samples/v_db24fff43a757db95bdc275cd0470dea/sample.txt",
         "sha256": "d34e235ef451070611fce20bf7cec44ef91798b69f201c5153a68fd7cd6e2ba3",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "dash-hwid-cpu-ip-display"

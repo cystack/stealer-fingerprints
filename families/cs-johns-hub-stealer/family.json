@@ -13,7 +13,7 @@
     "Network identity (IP, country, language)",
     "Account identity (Windows username)"
   ],
-  "detection_notes": "Fingerprint requires both the ``https://t.me/johns_hub``\nchannel URL and the line-anchored ``Stealer version:`` field\nkey. Neither anchor alone is unique enough (the URL could\nappear in prose in a public writeup), so both are required.\nDuring triage, treat the underlying stealer family as\nunattributable and rely on the channel + panel_brand metadata\nto bucket samples for analyst review. Companion files in the\nvictim folder (browser exports, wallet artifacts, cookie\ndumps) may trigger more confident attributions through their\nown family detectors.",
+  "detection_notes": "Fingerprint requires both the ``https://t.me/johns_hub``\nchannel URL and the line-anchored ``Stealer version:`` field\nkey. Neither anchor alone is unique enough (the URL could\nappear in prose in a public writeup), so both are required.\nDuring triage, treat the underlying stealer family as\nunattributable and rely on the channel + panel_brand metadata\nto bucket samples for analyst review. Companion files in the\nvictim folder (browser exports, wallet artifacts, cookie\ndumps) may provide more confident family attribution.",
   "attack_techniques": [
     {
       "id": "T1082",

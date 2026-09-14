@@ -21,13 +21,7 @@ victim (`Time since boot: 23 ore e 4 minuti` collapsed to
 `Timesinceboot: 23oree4minuti`), Apple Silicon M2 Pro chip,
 MacBook Pro model.
 
-Distinct from the sibling `CSFlatMacProfilerStealer` (iter #14
-which handles the semi-flat variant where each field sits on
-its own line with space-preserved multi-word keys). The two
-shapes have completely different fingerprint signatures: iter
-#14 requires line-anchored space-preserving keys, iter #22
-(this parser) requires substring-match on the space-collapsed
-variants scoped to the BRADMAX archive.
+This layout is distinct from the sibling `CSFlatMacProfilerStealer`, where each field occupies its own line and multi-word keys retain spaces. Here, substring matches on collapsed keys plus BRADMAX archive context distinguish the aggressive-collapse variant.
 
 Family attribution is provisional pending a published
 threat-intel mapping. Multiple canonical macOS stealer
@@ -35,7 +29,7 @@ families (AMOS / Atomic, Banshee, Cthulhu, Poseidon, MacSync)
 shell out to the same `system_profiler` subcommands per public
 writeups. Without a family-specific banner surviving in this
 aggressive-collapse panel, attribution to any single canonical
-family is a guess. Rename the family constant if a public
+family is a guess. Rename the CyStack tracking name if a public
 writeup later publishes a sample of this exact aggressive-collapse variant.
 
 ## Research status
@@ -67,11 +61,9 @@ identifier)
 Fingerprint requires the four space-collapsed macOS
 key literals: `ChipsetModel:` AND `TotalNumberofCores:`
 AND (`HardwareUUID:` OR `ProvisioningUDID:`) AND the
-`@BRADMAX` substring in the archive path. The BRADMAX
-archive-path gate keeps the parser scoped to the
-observed distribution channel; the four space-collapsed macOS-specific keys are mutually exclusive
-with every Windows-panel parser and with the iter #14
-sibling `CSFlatMacProfilerStealer` which requires
+`@BRADMAX` substring in the archive path. The BRADMAX archive-path anchor scopes the fingerprint to
+the observed distribution channel; the four space-collapsed macOS-specific keys are mutually exclusive
+with every Windows-panel format and with the sibling `CSFlatMacProfilerStealer` which requires
 line-anchored space-preserving spellings. During
 triage, the space-collapsed keys are recovered by
 substring-search rather than full unflattening because
@@ -80,7 +72,7 @@ unreliable (values contain no whitespace at all).
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

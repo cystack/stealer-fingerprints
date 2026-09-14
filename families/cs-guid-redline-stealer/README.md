@@ -55,12 +55,12 @@ RedlineLikeStealer (which uses `Processor:` /
 `Installed RAM:` / `Graphics card:` / `Computer Name:`
 with a space). During triage, the `GUID:` UUID matches
 the first bracketed segment of the victim folder name,
-so the folder path parser can cross-check per-victim
+so the folder path format can cross-check per-victim
 identity.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

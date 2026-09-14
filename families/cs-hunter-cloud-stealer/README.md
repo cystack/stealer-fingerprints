@@ -6,9 +6,8 @@ CSHunterCloudStealer is a CyStack-coined identifier for the
 packs. The `HUNTER_CLOUD` Telegram channel re-distributes
 Redline-derivative logs (the same shape as
 RedlineLikeStealer variant 4: `BUILD NAME:` plus extended
-block) under a per-line anti-scrape watermark that prevents
-the line-anchored `RedlineLikeStealer` parser from claiming
-the content.
+block) under a per-line anti-scrape watermark that prevents the line-anchored RedlineLike fingerprint from
+matching the content.
 
 ## Research status
 
@@ -33,7 +32,7 @@ is preserved but spaced apart by the watermark.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

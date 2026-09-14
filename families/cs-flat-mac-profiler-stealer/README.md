@@ -25,8 +25,7 @@ Banshee, Cthulhu, Poseidon, MacSync) shell out to the same
 `system_profiler` subcommands per public writeups. Without a
 family-specific banner or section header surviving in this
 stripped panel, attribution to any single canonical family is
-a guess. Rename the family constant to the canonical family
-name if a public writeup later publishes a sample of this
+a guess. Replace this tracking name with the canonical family name when a public writeup later publishes a sample of this
 exact six-field stripped variant.
 
 ## Research status
@@ -35,7 +34,7 @@ exact six-field stripped variant.
 - Attribution confidence: **low**
 - Aliases: `Flat macOS system_profiler panel`, `BRADMAX macOS victim minimal Information.txt`
 - Variants observed: **3**
-- Historical Logmine records represented: **42,152**
+- CyStack observations represented: **42,152**
 
 ## What it targets
 
@@ -53,8 +52,8 @@ annotation
 Fingerprint requires three line-anchored macOS-canonical
 keys: `Model Name:` AND `Processor Name:` AND
 `Chipset Model:`. The three-anchor combination is
-mutually exclusive with every Windows-panel parser and
-with every existing macOS-family parser (AMOS /
+mutually exclusive with every Windows-panel format and
+with every existing macOS-family format (AMOS /
 Cthulhu / MacSync / Phexia / CSEssentialMac / CSMac*
 each require a different canonical anchor that this
 stripped body lacks). During triage, treat the sample
@@ -69,7 +68,7 @@ folder if the aggregator preserved them.
 
 ### `v_795d6c44a730d4d0894bf8294e2a524c`
 
-- Parser: `logmine.ioc.parsers.cs_flat_mac_profiler_stealer.CSFlatMacProfilerStealerParser`
+- Format ID: `cs-flat-mac-profiler-stealer`
 - Observed filenames: `userinfo.txt`, `UserInformation.txt`
 - Panel brand: -
 - Distribution channel: `@BRADMAX`
@@ -78,7 +77,7 @@ folder if the aggregator preserved them.
 - Historical records represented: **42,116**
 - Representative sample: [open sample](samples/v_795d6c44a730d4d0894bf8294e2a524c/sample.txt)
 - Sample SHA-256: `433655423ea928323c17433e763032c96d4109341eeacbe5317701fc7d4125cf`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -87,7 +86,7 @@ Recognition anchors:
 
 ### `v_94ff57251e89669ee573ff86ace30073`
 
-- Parser: `logmine.ioc.parsers.cs_flat_mac_profiler_stealer.CSFlatMacProfilerStealerParser`
+- Format ID: `cs-flat-mac-profiler-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: `mac.c`
 - Distribution channel: `@mentalpositive`
@@ -96,7 +95,7 @@ Recognition anchors:
 - Historical records represented: **1**
 - Representative sample: [open sample](samples/v_94ff57251e89669ee573ff86ace30073/sample.txt)
 - Sample SHA-256: `7844a84f6d9e8f76696838ca0855738018b7d41fb9e6186dad652154084084d7`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -105,7 +104,7 @@ Recognition anchors:
 
 ### `v_b5814736585d30db7e1caf91351dfb6b`
 
-- Parser: `logmine.ioc.parsers.cs_flat_mac_profiler_stealer.CSFlatMacProfilerStealerParser`
+- Format ID: `cs-flat-mac-profiler-stealer`
 - Observed filenames: `Information.txt`, `UserInformation.txt`
 - Panel brand: -
 - Distribution channel: `@BRADMAX`
@@ -114,7 +113,7 @@ Recognition anchors:
 - Historical records represented: **35**
 - Representative sample: [open sample](samples/v_b5814736585d30db7e1caf91351dfb6b/sample.txt)
 - Sample SHA-256: `73c682d7c0f7de79bf1cff4b673b0d30db8fccb5e6bd598af26a7d7cffd551c6`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

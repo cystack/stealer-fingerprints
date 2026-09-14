@@ -39,7 +39,7 @@ mapping.
 - Attribution confidence: **unknown**
 - Aliases: `SYSTEM INFO + STATS panel`, `Two-section _INFO.txt`
 - Variants observed: **1**
-- Historical Logmine records represented: **3**
+- CyStack observations represented: **3**
 
 ## What it targets
 
@@ -65,7 +65,7 @@ by prefix to detect campaign overlap.
 
 ### `v_2d9836c148a6f62643de95589335158d`
 
-- Parser: `logmine.ioc.parsers.cs_stats_section_stealer.CSStatsSectionStealerParser`
+- Format ID: `cs-stats-section-stealer`
 - Observed filenames: `_INFO.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -73,7 +73,7 @@ by prefix to detect campaign overlap.
 - Historical records represented: **3**
 - Representative sample: [open sample](samples/v_2d9836c148a6f62643de95589335158d/sample.txt)
 - Sample SHA-256: `7182c2461e4a3e8d04ed7e31be7453ccfab1e6c5c9c8d40b751975ce654c2449`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

@@ -42,8 +42,7 @@ contains an ``Important Files`` directory, (2) the
 only other root entry is the BRADMAX packer empty-name
 DIR artifact (strict 1-or-2 entry root), and (3) the
 system_path ID carries a ``BRADMAX`` or ``BRADLOGS``
-token. The path-side anchor keeps the detector off
-generic ``Important Files/``-only folders distributed
+token. The path-side anchor excludes generic ``Important Files/``-only folders distributed
 through other channels. During triage, treat the
 underlying stealer family as unattributable and rely
 on the channel + panel_brand metadata to bucket samples
@@ -51,7 +50,7 @@ for analyst review.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

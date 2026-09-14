@@ -13,7 +13,7 @@
     "Microsoft Office account credentials (observed sample)",
     "Any browser-or-app account whose username and password\nthe victim recorded in a plain-text reminder note"
   ],
-  "detection_notes": "Fingerprint requires the cred file body to match exactly\ntwo tab-padded lines (`\\AUsername\\t+:\\S[^\\n]*\\n`\n`Pass\\t+:\\S[^\\n]*\\s*\\Z`) with no additional content\nbefore or after. The strict `\\A` / `\\Z` anchors keep a\nlonger victim-curated note that happens to contain these\ntwo lines somewhere in the body from mis-claiming. During\ntriage, treat the credentials as real (the email and\npassword values are the victim's actual account, not\nplaceholder text), but treat the family attribution as\nunknown: the underlying stealer that swept the note is\nnot identifiable from this body alone.",
+  "detection_notes": "Fingerprint requires the cred file body to match exactly\ntwo tab-padded lines (`\\AUsername\\t+:\\S[^\\n]*\\n`\n`Pass\\t+:\\S[^\\n]*\\s*\\Z`) with no additional content\nbefore or after. The strict `\\A` / `\\Z` anchors keep a\nlonger victim-curated note that happens to contain these\ntwo lines somewhere in the body from producing a false match. During\ntriage, treat the credentials as real (the email and\npassword values are the victim's actual account, not\nplaceholder text), but treat the family attribution as\nunknown: the underlying stealer that swept the note is\nnot identifiable from this body alone.",
   "attack_techniques": [
     {
       "id": "T1552",

@@ -34,7 +34,7 @@ uppercase-noun layout.
 - Attribution confidence: **unknown**
 - Aliases: `TINY-affiliate Lumma-like minimal System.txt`, `Bare-key ADMIN/CORES panel`
 - Variants observed: **1**
-- Historical Logmine records represented: **5**
+- CyStack observations represented: **5**
 
 ## What it targets
 
@@ -50,9 +50,8 @@ system info; harvested credentials live in sibling files)
 Fingerprint requires line-anchored `LID:` AND `CORES:`
 AND `ADMIN:` keys plus a `LID:` value matching the
 `<name>-<hex>` affiliate-style format. The combination is
-unique across the registry: canonical Lumma uses `- LID:`
-with a leading dash (claimed by `LummaParser`), and no
-other registered parser uses bare `CORES:` or `ADMIN:`
+unique across this catalog: canonical Lumma uses `- LID:`
+with a leading dash, and no other cataloged format uses bare `CORES:` or `ADMIN:`
 uppercase keys. During triage, treat the `LID:` value as
 an operator affiliate / campaign identifier (parsable as
 two fields: name plus hex) so logs from the same
@@ -65,7 +64,7 @@ can filter on the loopback range.
 
 ### `v_b3b65e6d11f16cf0d060e57cd36b1d44`
 
-- Parser: `logmine.ioc.parsers.cs_admin_cores_stealer.CSAdminCoresStealerParser`
+- Format ID: `cs-admin-cores-stealer`
 - Observed filenames: `System.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -73,7 +72,7 @@ can filter on the loopback range.
 - Historical records represented: **5**
 - Representative sample: [open sample](samples/v_b3b65e6d11f16cf0d060e57cd36b1d44/sample.txt)
 - Sample SHA-256: `7ae71f6a6b8431aac51ba766aedbc92c867e932699a66aa00f8b1afc2cf26c4c`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

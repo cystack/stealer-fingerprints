@@ -45,7 +45,7 @@
   "variants": [
     {
       "id": "v_775f61d0716a746c69c9f5e6fd0c575f",
-      "parser": "logmine.ioc.parsers.ailurophile.AilurophileParser",
+      "format_id": "ailurophile",
       "filenames": [
         "info.txt"
       ],
@@ -63,7 +63,7 @@
       "sample": {
         "path": "samples/v_775f61d0716a746c69c9f5e6fd0c575f/sample.txt",
         "sha256": "bb2884c73df79e130973e24e6fc3a5840a192edc7bc8f6ce207f9d5a778007af",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

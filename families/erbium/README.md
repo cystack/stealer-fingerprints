@@ -44,13 +44,13 @@ signatures are Erbium-canonical panel emissions; no
 other family in this catalog uses the `erbium_support`
 handle or the `[BUILD]` + `[PC INFO]` section pair.
 Note that Erbium has been observed inside the
-`@bugatti_cloud` Telegram aggregator (per this parser),
+`@bugatti_cloud` Telegram aggregator (in this catalog record),
 so the outer archive may attribute to a redistributor
 even when the panel body is canonical Erbium output.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

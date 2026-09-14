@@ -21,9 +21,9 @@ upstream raw-cookie source (a Telegram stealer aggregator that
 footer as the Netflix-checker tool that processed the russia34
 cookies into per-account enriched dumps. The same `LOGS2`
 distribution pipeline also carries TikTok-account harvest
-folders (claimed by CSTikTokAccountStealer) and 4-category
-Windows-victim folders (claimed by
-CSCommonFilesCategoryStealer). Family attribution is
+folders represented by CSTikTokAccountStealer and 4-category
+Windows-victim folders represented by
+CSCommonFilesCategoryStealer. Family attribution is
 provisional pending a published mapping for this
 Netflix-checker tool.
 
@@ -53,7 +53,7 @@ upstream source the checker pulled from.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

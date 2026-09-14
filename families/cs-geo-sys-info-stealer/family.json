@@ -3,7 +3,7 @@
   "name": "CSGeoSysInfoStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSGeoSysInfoStealer is a CyStack-coined identifier for\na single-section `=== SYSTEM INFO ===` `system.txt` panel\ndistributed through the `@BRADMAX` Telegram channel.\nThe body carries 8 flat `Key: Value` lines under one\ntriple-equals header: `Computer`, `User`, `OS`, `IP`,\n`Country`, `CPU`, `GPU`, `RAM`. Hardware fields are\npresent but typically empty on observed bodies; the\n`OS` value is the literal placeholder `Windows 10/11`\nrather than a real version string.\n\nThe format shares the `=== SYSTEM INFO ===` header with\nCSStatsSectionStealer (iteration #34) but ships an\nentirely different field set and no second STATS\nsection. Same operator channel `@BRADMAX` but a\ndifferent builder.",
+  "description": "CSGeoSysInfoStealer is a CyStack-coined identifier for\na single-section `=== SYSTEM INFO ===` `system.txt` panel\ndistributed through the `@BRADMAX` Telegram channel.\nThe body carries 8 flat `Key: Value` lines under one\ntriple-equals header: `Computer`, `User`, `OS`, `IP`,\n`Country`, `CPU`, `GPU`, `RAM`. Hardware fields are\npresent but typically empty on observed bodies; the\n`OS` value is the literal placeholder `Windows 10/11`\nrather than a real version string.\n\nThe format shares the `=== SYSTEM INFO ===` header with\nCSStatsSectionStealer but ships an\nentirely different field set and no second STATS\nsection. Same operator channel `@BRADMAX` but a\ndifferent builder.",
   "aliases": [],
   "typical_targets": [
     "Browser saved credentials and cookies",
@@ -47,7 +47,7 @@
   "variants": [
     {
       "id": "v_bfb272d1a685583ab75ebac60c4da8f2",
-      "parser": "logmine.ioc.parsers.cs_geo_sys_info_stealer.CSGeoSysInfoStealerParser",
+      "format_id": "cs-geo-sys-info-stealer",
       "filenames": [
         "system.txt"
       ],
@@ -66,7 +66,7 @@
       "sample": {
         "path": "samples/v_bfb272d1a685583ab75ebac60c4da8f2/sample.txt",
         "sha256": "d397ccf04a3f36789d00fe08ba92e011b18eed591bf5ee3ab386487c43b47471",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

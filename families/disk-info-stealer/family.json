@@ -22,7 +22,7 @@
   "variants": [
     {
       "id": "v_3b0bf5da89b9f399b382ffe560a526ed",
-      "parser": "logmine.ioc.parsers.disk_info_stealer.DiskInfoStealerParser",
+      "format_id": "disk-info-stealer",
       "filenames": [
         "System_Info.txt"
       ],
@@ -42,7 +42,7 @@
       "sample": {
         "path": "samples/v_3b0bf5da89b9f399b382ffe560a526ed/sample.txt",
         "sha256": "41ad6b627f7bc2b4d753757541766f6028c5a6422f979ba4485a31c8d691ed57",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

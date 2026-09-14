@@ -19,7 +19,7 @@ exfiltration shape (`[CC_IPADDRESS]_HOSTNAME.zip`). The
 attribution is suggestive but not definitive: PXA's documented
 victim-side `system_info.txt` uses a verbose
 Vietnamese-headered `Thông tin hệ thống` block of WMI
-snake_case keys (claimed by `PXAParser`), and the trailing
+snake_case keys, as documented in the PXA profile, and the trailing
 `GADS` (Google Ads account flag) column plus the bare
 `AntiVirus:` line are not described in any public reporting.
 The format may be a panel-summary view from a PXA log-ingest
@@ -35,7 +35,7 @@ threat-intel mapping for this exact panel-summary layout.
 - Attribution confidence: **unknown**
 - Aliases: `!! 2026 JAN aggregator panel summary`
 - Variants observed: **1**
-- Historical Logmine records represented: **24,995**
+- CyStack observations represented: **24,995**
 
 ## What it targets
 
@@ -62,7 +62,7 @@ allow follow-on family fingerprinting.
 
 ### `v_edb227dfc327e94eb4f8726bf60b7c89`
 
-- Parser: `logmine.ioc.parsers.cs_gads_panel_stealer.CSGADSPanelStealerParser`
+- Format ID: `cs-gads-panel-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -70,7 +70,7 @@ allow follow-on family fingerprinting.
 - Historical records represented: **24,995**
 - Representative sample: [open sample](samples/v_edb227dfc327e94eb4f8726bf60b7c89/sample.txt)
 - Sample SHA-256: `1bcb7dc74275e6505415c7cafd443acd743af2b0240f8d8ea349a41ac45398d9`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

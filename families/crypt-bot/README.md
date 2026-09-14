@@ -24,7 +24,7 @@ archive to a hard-coded C2 gate.
 - Attribution confidence: **high**
 - Aliases: `CryptBot Stealer`, `Crypt Bot`
 - Variants observed: **2**
-- Historical Logmine records represented: **5**
+- CyStack observations represented: **5**
 
 ## What it targets
 
@@ -39,7 +39,7 @@ archive to a hard-coded C2 gate.
 
 The `_Information.txt` filename is the strongest folder-level signal: paired with the `_AllPasswords_list.txt` /
 `_AllCookies_list.txt` / `_AllForms_list.txt` sibling
-set, no other family in the registry uses this exact
+set, no other family in this catalog uses this exact
 naming. Content-level fingerprint anchors on the
 bracket-suffixed `UserName [ComputerName]:` and
 `Data [Time]:` keys plus `Keyboard Languages:`; the
@@ -50,7 +50,7 @@ Vidar / StealC / Mars (which use `User Name:`).
 
 ### `v_ab2260210a1222f2c7c15c25c8251227`
 
-- Parser: `logmine.ioc.parsers.cryptbot.CryptBotParser`
+- Format ID: `cryptbot`
 - Observed filenames: `_Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -59,7 +59,7 @@ Vidar / StealC / Mars (which use `User Name:`).
 - Historical records represented: **1**
 - Representative sample: [open sample](samples/v_ab2260210a1222f2c7c15c25c8251227/sample.txt)
 - Sample SHA-256: `090c3bba8e01bf881bd061fb18d3c0a591a57433376c133a38838a3bb6eec86d`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -68,7 +68,7 @@ Recognition anchors:
 
 ### `v_cbcdfdbccf53d49530cd7b152470af8a`
 
-- Parser: `logmine.ioc.parsers.cryptbot.CryptBotParser`
+- Format ID: `cryptbot`
 - Observed filenames: `_Information.txt`
 - Panel brand: `Ottoman`
 - Distribution channel: `@OttoSup`
@@ -77,7 +77,7 @@ Recognition anchors:
 - Historical records represented: **4**
 - Representative sample: [open sample](samples/v_cbcdfdbccf53d49530cd7b152470af8a/sample.txt)
 - Sample SHA-256: `967be06238c92a4ffb1e3b21a0ce1d53ba66ecb9ccf7dc9f921eab0e605576e8`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

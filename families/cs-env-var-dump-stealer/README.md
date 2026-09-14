@@ -29,7 +29,7 @@ relationship is at most a snippet lift, not a fork.
 - Attribution confidence: **unknown**
 - Aliases: `@BRADMAX system_info.txt`
 - Variants observed: **1**
-- Historical Logmine records represented: **875**
+- CyStack observations represented: **875**
 
 ## What it targets
 
@@ -43,7 +43,7 @@ relationship is at most a snippet lift, not a fork.
 Triple fingerprint: `=== SYSTEM INFORMATION ===` substring
 AND `=== ENVIRONMENT VARIABLES ===` substring AND
 `.NET Runtime:` substring. The `.NET Runtime:` key is unique
-across the registry; the env-var section header excludes
+across this catalog; the env-var section header excludes
 PCInfoStealer (which requires `=== NETWORK INFO ===`) and
 CSWmicDumpStealer (snake_case keys, no env-var dump). The
 family attribution is provisional pending a published
@@ -53,7 +53,7 @@ threat-intel mapping for this layout.
 
 ### `v_7ba734c3d104f5d042e195feac7c49c7`
 
-- Parser: `logmine.ioc.parsers.cs_envvar_dump_stealer.CSEnvVarDumpStealerParser`
+- Format ID: `cs-envvar-dump-stealer`
 - Observed filenames: `system_info.txt`
 - Panel brand: -
 - Distribution channel: `@BRADMAX`
@@ -61,7 +61,7 @@ threat-intel mapping for this layout.
 - Historical records represented: **875**
 - Representative sample: [open sample](samples/v_7ba734c3d104f5d042e195feac7c49c7/sample.txt)
 - Sample SHA-256: `f199a9ebbc21066e827b992498d9b5daf2916bb2388bcca8c5857d92c653093c`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

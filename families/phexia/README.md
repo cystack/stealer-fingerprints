@@ -25,7 +25,7 @@ build time. Captured macOS login credentials ship in the
 - Attribution confidence: **high**
 - Aliases: `Phexia Stealer`, `Phexia macOS Stealer`
 - Variants observed: **1**
-- Historical Logmine records represented: **1**
+- CyStack observations represented: **1**
 
 ## What it targets
 
@@ -43,10 +43,7 @@ The first-line `Phexia macOS Stealer` banner is the family's
 verbatim self-identification and is the cleanest single
 fingerprint. The `Build:` bare-key affiliate tag distinguishes
 this layout from the sibling MacSync `Build Tag:` form and
-from Cthulhu's no-space `BuildID:` form. The shared `system_profiler`
-body means folder-level macOS detectors may flash on the
-same artifact, but parser dispatch on file system paths runs
-only the parser chain so there is no collision in practice.
+from Cthulhu's no-space `BuildID:` form. The shared `system_profiler` body overlaps other macOS artifacts, but the first-line family banner, bare `Build:` key, and absence of sibling banners keep the structural fingerprint distinct.
 Triage logs from this family by collecting the captured
 macOS login credential pair, the affiliate `Build:` tag,
 and the Hardware UUID as the device identifier.
@@ -55,7 +52,7 @@ and the Hardware UUID as the device identifier.
 
 ### `v_b2acb2241dc6354d10e66ebb270d1fe7`
 
-- Parser: `logmine.ioc.parsers.phexia.PhexiaParser`
+- Format ID: `phexia`
 - Observed filenames: `UserInformation.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -63,7 +60,7 @@ and the Hardware UUID as the device identifier.
 - Historical records represented: **1**
 - Representative sample: [open sample](samples/v_b2acb2241dc6354d10e66ebb270d1fe7/sample.txt)
 - Sample SHA-256: `e0e91bf55260ae513ac6f5a4821eba27bdb9793aa06ca9c2c822f6f4d3b184c9`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

@@ -15,7 +15,7 @@
     "Privilege state (`ADMIN: Yes/No` flag)",
     "Affiliate / campaign identifier (`LID: <name>-<hex>`)"
   ],
-  "detection_notes": "Fingerprint requires line-anchored `LID:` AND `CORES:`\nAND `ADMIN:` keys plus a `LID:` value matching the\n`<name>-<hex>` affiliate-style format. The combination is\nunique across the registry: canonical Lumma uses `- LID:`\nwith a leading dash (claimed by `LummaParser`), and no\nother registered parser uses bare `CORES:` or `ADMIN:`\nuppercase keys. During triage, treat the `LID:` value as\nan operator affiliate / campaign identifier (parsable as\ntwo fields: name plus hex) so logs from the same\ndistribution channel cluster naturally. The `127.0.0.1`\nIP fallback marks the victim as either an offline\nmachine at exfil time or a sandbox; downstream consumers\ncan filter on the loopback range.",
+  "detection_notes": "Fingerprint requires line-anchored `LID:` AND `CORES:`\nAND `ADMIN:` keys plus a `LID:` value matching the\n`<name>-<hex>` affiliate-style format. The combination is\nunique across this catalog: canonical Lumma uses `- LID:`\nwith a leading dash, and no other cataloged format uses bare `CORES:` or `ADMIN:`\nuppercase keys. During triage, treat the `LID:` value as\nan operator affiliate / campaign identifier (parsable as\ntwo fields: name plus hex) so logs from the same\ndistribution channel cluster naturally. The `127.0.0.1`\nIP fallback marks the victim as either an offline\nmachine at exfil time or a sandbox; downstream consumers\ncan filter on the loopback range.",
   "attack_techniques": [
     {
       "id": "T1082",
@@ -47,7 +47,7 @@
   "variants": [
     {
       "id": "v_b3b65e6d11f16cf0d060e57cd36b1d44",
-      "parser": "logmine.ioc.parsers.cs_admin_cores_stealer.CSAdminCoresStealerParser",
+      "format_id": "cs-admin-cores-stealer",
       "filenames": [
         "System.txt"
       ],
@@ -64,7 +64,7 @@
       "sample": {
         "path": "samples/v_b3b65e6d11f16cf0d060e57cd36b1d44/sample.txt",
         "sha256": "7ae71f6a6b8431aac51ba766aedbc92c867e932699a66aa00f8b1afc2cf26c4c",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

@@ -15,7 +15,7 @@ poisoning of this corpus.
 - Attribution confidence: **unknown**
 - Aliases: -
 - Variants observed: **1**
-- Historical Logmine records represented: **1**
+- CyStack observations represented: **1**
 
 ## What it targets
 
@@ -32,7 +32,7 @@ without an explicit family banner.
 
 ### `v_3b0bf5da89b9f399b382ffe560a526ed`
 
-- Parser: `logmine.ioc.parsers.disk_info_stealer.DiskInfoStealerParser`
+- Format ID: `disk-info-stealer`
 - Observed filenames: `System_Info.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -40,7 +40,7 @@ without an explicit family banner.
 - Historical records represented: **1**
 - Representative sample: [open sample](samples/v_3b0bf5da89b9f399b382ffe560a526ed/sample.txt)
 - Sample SHA-256: `41ad6b627f7bc2b4d753757541766f6028c5a6422f979ba4485a31c8d691ed57`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

@@ -17,7 +17,7 @@
     "Clipboard contents",
     "Desktop screenshot"
   ],
-  "detection_notes": "Line-anchored ` PC user:`, ` Launch:`, and\n` IP Geolocation:` co-occurring is the cleanest trigger.\nThe leading-space prefix on each key line is invariant\nacross observed samples (the upstream's string\n`\"\\n PC user: \"` concatenation produces it). The base\n44CALIBER builder emits five sections; the RL panel\nextension appends a sixth carrying `HDD:` / `MAC:` /\n`BIOS caption:`, but the parser tolerates either count.\nBlackGuard Stealer is also a 44CALIBER fork; both share\nthe credential-collection method but emit different\nlog formats so they do not collide with this parser's\nfingerprint.",
+  "detection_notes": "Line-anchored ` PC user:`, ` Launch:`, and\n` IP Geolocation:` co-occurring is the cleanest trigger.\nThe leading-space prefix on each key line is invariant\nacross observed samples (the upstream's string\n`\"\\n PC user: \"` concatenation produces it). The base\n44CALIBER builder emits five sections; the RL panel\nextension appends a sixth carrying `HDD:` / `MAC:` /\n`BIOS caption:`, but the fingerprint covers either section count.\nBlackGuard Stealer is also a 44CALIBER fork; both share\nthe credential-collection method but emit different\nlog formats so they do not collide with this format's\nfingerprint.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -62,7 +62,7 @@
   "variants": [
     {
       "id": "v_1c8a415ef2a9f5b685b573ec7b10c602",
-      "parser": "logmine.ioc.parsers.cs_rl_panel_stealer.CSRLPanelStealerParser",
+      "format_id": "cs-rl-panel-stealer",
       "filenames": [
         "Information.txt"
       ],
@@ -77,13 +77,13 @@
       "sample": {
         "path": "samples/v_1c8a415ef2a9f5b685b573ec7b10c602/sample.txt",
         "sha256": "036cf7de6574dbefbbe8241c2adce9b08567ab90410c31bbb83b83f943589314",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     },
     {
       "id": "v_48d2f4aed8930a82db85d16176d3d75f",
-      "parser": "logmine.ioc.parsers.rl_stealer.RLStealerParser",
+      "format_id": "rl-stealer",
       "filenames": [
         "Information.txt"
       ],
@@ -100,7 +100,7 @@
       "sample": {
         "path": "samples/v_48d2f4aed8930a82db85d16176d3d75f/sample.txt",
         "sha256": "75f23d19d1f2a8300b762a7cd58d72872f59669ac6e9fdf1571c5fc5b554f053",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

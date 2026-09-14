@@ -3,7 +3,7 @@
   "name": "AuraStealer",
   "classification": "known_family",
   "attribution_confidence": "high",
-  "description": "Aura Stealer (a.k.a. AuraStealer) is a C++ infostealer-as-a-service advertised on underground forums from July 2025 by the\nthreat actor AuraCorp. Subscription tiers ship a builder plus\na web panel that aggregates harvested logs. Antivirus\nsignatures catalogue it under the detection name\n`Trojan:MSIL/AuraStealer.AUKB!MTB`; Public malware trackers\nlist it as `win.aurastealer`.\n\nThe on-wire exfil is JSON, GZIP-compressed and Base64-encoded\nto the C2. The artifact this parser claims is the operator-facing panel render written as `System.txt` inside each per-victim folder. The render opens with an `AURA v<x.y.z>` build\nbanner, then a top block of identity fields (`HWID:`, the\n`Launched at:` local/UTC pair, `Location:`, the elevation\nflags), then four square-bracket sections in order: `[System\nInfo]`, `[Hardware]`, `[Processes List]`, `[Installed\nSoftware]`. The `Location:` field carries the\nprocess-hollowing target, usually\n`C:\\\\Windows\\\\Microsoft.NET\\\\Framework\\\\v4.0.30319\\\\RegAsm.exe`\nper the publicly documented injection chain.",
+  "description": "Aura Stealer (a.k.a. AuraStealer) is a C++ infostealer-as-a-service advertised on underground forums from July 2025 by the\nthreat actor AuraCorp. Subscription tiers ship a builder plus\na web panel that aggregates harvested logs. Antivirus\nsignatures catalogue it under the detection name\n`Trojan:MSIL/AuraStealer.AUKB!MTB`; Public malware trackers\nlist it as `win.aurastealer`.\n\nThe on-wire exfil is JSON, GZIP-compressed and Base64-encoded\nto the C2. The artifact documented here is the operator-facing panel render written as `System.txt` inside each per-victim folder. The render opens with an `AURA v<x.y.z>` build\nbanner, then a top block of identity fields (`HWID:`, the\n`Launched at:` local/UTC pair, `Location:`, the elevation\nflags), then four square-bracket sections in order: `[System\nInfo]`, `[Hardware]`, `[Processes List]`, `[Installed\nSoftware]`. The `Location:` field carries the\nprocess-hollowing target, usually\n`C:\\\\Windows\\\\Microsoft.NET\\\\Framework\\\\v4.0.30319\\\\RegAsm.exe`\nper the publicly documented injection chain.",
   "aliases": [
     "Aura Stealer",
     "AuraStealer"
@@ -14,7 +14,7 @@
     "Authenticator and 2FA app data (70+ apps)",
     "System hardware and installed-software inventory"
   ],
-  "detection_notes": "The line-anchored `AURA v<digits>` banner on the opening line\nis the cleanest fingerprint and is the panel's own self-identifier. The `[System Info]` + `[Hardware]` + `[Processes\nList]` + `[Installed Software]` bracket-section quartet with\nthis exact spelling is unique to Aura. False-positive risk is\nnegligible: prose that quotes the banner phrase will fail the\nbracket-section + `HWID:` guard.\n\nWhen triaging a panel-render log, treat `Location:` ending in\n`RegAsm.exe` as the injection-host signal. The on-wire JSON\ntransport is not captured by this parser; pair host telemetry\non RegAsm.exe outbound HTTPS with the published Aura C2 domain\nlist.",
+  "detection_notes": "The line-anchored `AURA v<digits>` banner on the opening line\nis the cleanest fingerprint and is the panel's own self-identifier. The `[System Info]` + `[Hardware]` + `[Processes\nList]` + `[Installed Software]` bracket-section quartet with\nthis exact spelling is unique to Aura. False-positive risk is\nnegligible: prose that quotes the banner phrase will fail the\nbracket-section + `HWID:` guard.\n\nWhen triaging a panel-render log, treat `Location:` ending in\n`RegAsm.exe` as the injection-host signal. The on-wire JSON\ntransport is not represented by this artifact; pair host telemetry\non RegAsm.exe outbound HTTPS with the published Aura C2 domain\nlist.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -61,7 +61,7 @@
   "variants": [
     {
       "id": "v_97204ede3c0a7a80adbe42a20d7509b3",
-      "parser": "logmine.ioc.parsers.aura_stealer.AuraStealerParser",
+      "format_id": "aura-stealer",
       "filenames": [
         "System.txt"
       ],
@@ -77,7 +77,7 @@
       "sample": {
         "path": "samples/v_97204ede3c0a7a80adbe42a20d7509b3/sample.txt",
         "sha256": "30d64ac0e523bea150efddfa0d23068ef181f08d4d13250e20ba3b71dd1a7cc8",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

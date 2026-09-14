@@ -48,13 +48,11 @@ substring OR the generic Chromium `Unable to decrypt`
 failure-marker substring, AND 3+ 3-line
 `URL: / Username: / Password:` blocks, AND no
 `Application:` substring anywhere in the body. The
-`Application:` exclusion keeps the sniffer off 4-line
+`Application:` exclusion distinguishes 4-line
 `URL/Username/Password/Application` dumps whose first
-three lines also satisfy the 3-line block regex - those
-shapes are claimed by their own sniffers
+three lines also satisfy the 3-line block regex - those shapes have separate catalog profiles
 (CSAppProfileStealer, CSDateCreatedStealer,
-CSLoginsPathStealer) or by the Redline folder-level
-detector. During triage, this label marks the IOC as a
+CSLoginsPathStealer, and Redline). During triage, this label marks a
 Chromium victim whose passwords were partially or fully
 protected by app-bound encryption or Chrome 146+
 hardware-bound session keys: the stealer captured login-data rows but could not decrypt some or all of the
@@ -63,7 +61,7 @@ unknown.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

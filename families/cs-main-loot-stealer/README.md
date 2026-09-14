@@ -27,7 +27,7 @@ research, family attribution stays CyStack-coined.
 - Attribution confidence: **low**
 - Aliases: `BRADMAX sparkle-banner notification panel`, `@VerifiedThief Telegram-bot Main Loot / Additional Data log`
 - Variants observed: **1**
-- Historical Logmine records represented: **37**
+- CyStack observations represented: **37**
 
 ## What it targets
 
@@ -45,7 +45,7 @@ research, family attribution stays CyStack-coined.
 Fingerprint requires `New Log Received` substring AND `Main
 Loot:` substring AND `Additional Data:` substring AND
 `@VerifiedThief` substring. The four-anchor combo is unique
-across the registry: the `Main Loot:` and `Additional Data:`
+across this catalog: the `Main Loot:` and `Additional Data:`
 section-caption pair is the panel-side developer quirk, and
 the `@VerifiedThief` admin handle is unique to this
 distribution. During triage, treat this label as a panel-side
@@ -60,7 +60,7 @@ provisional pending published confirmation.
 
 ### `v_1be296dc8abcec6846b3e0b96b67534c`
 
-- Parser: `logmine.ioc.parsers.cs_main_loot_stealer.CSMainLootStealerParser`
+- Format ID: `cs-main-loot-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: `@VerifiedThief`
@@ -68,7 +68,7 @@ provisional pending published confirmation.
 - Historical records represented: **37**
 - Representative sample: [open sample](samples/v_1be296dc8abcec6846b3e0b96b67534c/sample.txt)
 - Sample SHA-256: `a110f0ef469c7621668043862d47db755c9fde386ef646394f081861d2ea3e23`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

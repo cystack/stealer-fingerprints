@@ -31,7 +31,7 @@ subsection body.
 - Attribution confidence: **high**
 - Aliases: `Arcane Stealer`, `VGS Stealer (predecessor)`
 - Variants observed: **3**
-- Historical Logmine records represented: **5,874**
+- CyStack observations represented: **5,874**
 
 ## What it targets
 
@@ -48,7 +48,7 @@ subsection body.
 
 Fingerprint: line-anchored `---User Info---` AND
 `---Full Pc Info---`. The triple-dash section pair is
-unique to Arcane's Information.txt across the registry.
+unique to Arcane's Information.txt across this catalog.
 Two strong triage signals on top: a Russian
 `Произошла ошибка` line where WMI subsections failed
 (targets are predominantly Russian-speaking), and a
@@ -63,7 +63,7 @@ collects each artifact class into a separate file.
 
 ### `v_19485e2d3464f1a74cdca2500ccf3e84`
 
-- Parser: `logmine.ioc.parsers.arcane.ArcaneParser`
+- Format ID: `arcane`
 - Observed filenames: `Information.txt`
 - Panel brand: `@BRADLOGS (BRADMAX)`
 - Distribution channel: `https://t.me/+0IAf5VIrl_EzNWRi`
@@ -72,7 +72,7 @@ collects each artifact class into a separate file.
 - Historical records represented: **1,865**
 - Representative sample: [open sample](samples/v_19485e2d3464f1a74cdca2500ccf3e84/sample.txt)
 - Sample SHA-256: `24f0266761c4632f0193bb3dbe0f7dc86e8663ac46b44a15480a7beab470b03f`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -81,7 +81,7 @@ Recognition anchors:
 
 ### `v_84d2bdd1450ee03b1b2ff559425b8999`
 
-- Parser: `logmine.ioc.parsers.arcane.ArcaneParser`
+- Format ID: `arcane`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -90,7 +90,7 @@ Recognition anchors:
 - Historical records represented: **61**
 - Representative sample: [open sample](samples/v_84d2bdd1450ee03b1b2ff559425b8999/sample.txt)
 - Sample SHA-256: `0fd16cf0e0aa38c2ddf07c36e415814e0f789197bf6bfb70dafbce7a57b6cc86`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -99,7 +99,7 @@ Recognition anchors:
 
 ### `v_bfc7cdab5eb8146d9a2c2a389822e6a7`
 
-- Parser: `logmine.ioc.parsers.arcane.ArcaneParser`
+- Format ID: `arcane`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -108,7 +108,7 @@ Recognition anchors:
 - Historical records represented: **3,948**
 - Representative sample: [open sample](samples/v_bfc7cdab5eb8146d9a2c2a389822e6a7/sample.txt)
 - Sample SHA-256: `1e43077bef0e93188a47aba5c2d7bb00535a4a016fe5707baa8f7f61dc211b41`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

@@ -11,7 +11,7 @@ keys (`PcName`, `Os`, `Cpu`, etc.).
 - Attribution confidence: **high**
 - Aliases: `Acreed Stealer`
 - Variants observed: **1**
-- Historical Logmine records represented: **224,616**
+- CyStack observations represented: **224,616**
 
 ## What it targets
 
@@ -24,13 +24,13 @@ keys (`PcName`, `Os`, `Cpu`, etc.).
 
 Structured JSON shape with a top-level `PcName` key (PascalCase,
 no spaces) is unique among the families this catalog tracks; no
-other parser claims `pc_info.json` content.
+other retained format uses this `pc_info.json` shape.
 
 ## Observed log variants
 
 ### `v_02aba0afc027e0ffde6554b29031e0b1`
 
-- Parser: `logmine.ioc.parsers.acreed.AcreedParser`
+- Format ID: `acreed`
 - Observed filenames: `pc_info.json`, `pc_info.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -38,7 +38,7 @@ other parser claims `pc_info.json` content.
 - Historical records represented: **224,616**
 - Representative sample: [open sample](samples/v_02aba0afc027e0ffde6554b29031e0b1/sample.txt)
 - Sample SHA-256: `b8f16d760313ebd4003085217477561045790d3303b9e579b81cbc88983ae551`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

@@ -17,7 +17,7 @@
     "Crypto wallet extensions and desktop clients (per-victim list)",
     "Installed applications of interest (per-victim list)"
   ],
-  "detection_notes": "Fingerprint requires the `Browers: CK:` substring (the\ndeveloper typo plus the leading count column) plus\nline-anchored `IP:`, `Country:`, `Username:`, and\n`Antivirus:` keys. The misspelling of `Browers` is the\ndisambiguator: no other registered parser keys on the\ntypo. The lowercase-v `Antivirus:` distinguishes the\nformat from PXA's caption shape (`AntiVirus:`, claimed by\n`PXACaptionParser`) and the GADS panel-summary shape\n(also `AntiVirus:`, claimed by `CSGADSPanelStealerParser`).\nDuring triage, treat the family attribution as unknown:\nthe panel summary lacks the harvested credential bodies\nthat would allow follow-on family fingerprinting, and the\npanel's underlying stealer cannot be identified from the\nsummary fields alone.",
+  "detection_notes": "Fingerprint requires the `Browers: CK:` substring (the\ndeveloper typo plus the leading count column) plus\nline-anchored `IP:`, `Country:`, `Username:`, and\n`Antivirus:` keys. The misspelling of `Browers` is the\ndisambiguator: no other cataloged format uses the typo. The lowercase-v `Antivirus:` distinguishes the\nformat from PXA's caption shape (`AntiVirus:`, as seen in the PXA caption) and the GADS panel-summary shape\n(also `AntiVirus:`, as seen in CSGADSPanelStealer).\nDuring triage, treat the family attribution as unknown:\nthe panel summary lacks the harvested credential bodies\nthat would allow follow-on family fingerprinting, and the\npanel's underlying stealer cannot be identified from the\nsummary fields alone.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -48,7 +48,7 @@
   "variants": [
     {
       "id": "v_5d3e7c5ff44f847c51a6ef2713ecb340",
-      "parser": "logmine.ioc.parsers.cs_browers_stealer.CSBrowersStealerParser",
+      "format_id": "cs-browers-stealer",
       "filenames": [
         "Information.txt"
       ],
@@ -68,7 +68,7 @@
       "sample": {
         "path": "samples/v_5d3e7c5ff44f847c51a6ef2713ecb340/sample.txt",
         "sha256": "505d4712952f10ce4695ac9bae96401d5784539458b4d739f8cb6ef082a41c40",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

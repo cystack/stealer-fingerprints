@@ -28,7 +28,7 @@ European format with a comma separating date and time.
 - Attribution confidence: **high**
 - Aliases: `Meduza Stealer`, `MeduzaStealer`
 - Variants observed: **1**
-- Historical Logmine records represented: **80**
+- CyStack observations represented: **80**
 
 ## What it targets
 
@@ -46,8 +46,8 @@ European format with a comma separating date and time.
 The MEDUZA ASCII-art banner is the family's verbatim
 self-identification; the bottom-feet row substring
 `██║░╚═╝░██║` is the cleanest fingerprint anchor and
-is shared with the folder-level
-`logmine.detection.stealers.Meduza` detector. Pair the
+is used as the primary CyStack Threat Intelligence detection
+anchor. Pair the
 banner anchor with the Meduza-specific `Build Name:`
 field key to avoid the residual collision risk against
 Redline (which also emits `Operation System:` sic).
@@ -59,7 +59,7 @@ high-signal for sandbox replay and host clean-up.
 
 ### `v_3c577d49d344f5721058cf29ee36de42`
 
-- Parser: `logmine.ioc.parsers.meduza.MeduzaParser`
+- Format ID: `meduza`
 - Observed filenames: `System.txt`
 - Panel brand: `One-Go`
 - Distribution channel: -
@@ -67,7 +67,7 @@ high-signal for sandbox replay and host clean-up.
 - Historical records represented: **80**
 - Representative sample: [open sample](samples/v_3c577d49d344f5721058cf29ee36de42/sample.txt)
 - Sample SHA-256: `1f0c3cbded5028c2a8cb14c58fb89b7902d2049506d1e9b59ff41a0f38ebdf22`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

@@ -49,7 +49,7 @@
   "variants": [
     {
       "id": "v_0b6a40975520ab343d4d6ad9a6073ea0",
-      "parser": "logmine.ioc.parsers.remus.RemusParser",
+      "format_id": "remus",
       "filenames": [
         "Info.txt"
       ],
@@ -69,14 +69,14 @@
       "sample": {
         "path": "samples/v_0b6a40975520ab343d4d6ad9a6073ea0/sample.txt",
         "sha256": "dc289702682a735f5566e6b52da1f22b3d99526d4f28c8409d75bd02dbb715ff",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "yaml-build-root"
     },
     {
       "id": "v_40b69f8215f8aad13e8f74334058d313",
-      "parser": "logmine.ioc.parsers.remus.RemusParser",
+      "format_id": "remus",
       "filenames": [
         "Info.txt"
       ],
@@ -97,7 +97,7 @@
       "sample": {
         "path": "samples/v_40b69f8215f8aad13e8f74334058d313/sample.txt",
         "sha256": "795a50c7235d2d0299b86b9589d8bcdd3446b0d9cd93c472cc5c8f1d3fc1d4b0",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "yaml-build-root"

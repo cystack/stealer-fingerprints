@@ -20,7 +20,7 @@
     "Public IPv4 and country name (from IP geolocation API)",
     "System locale hint separate from IP-based country"
   ],
-  "detection_notes": "Fingerprint requires line-anchored `System Region:` AND\n`MAC Address(es):` AND `Local Date:` AND `PC name:`\n(lowercase-`n`). The `(es)` plural marker on\n`MAC Address(es):` and the `System Region:` field are\nboth unique across the registered parsers, and the\nlowercase-`name` `PC name:` spelling rules out DCRat /\nCSBuildBlock / CSDataMonk which all use `PC Name:` with\ncapital-N. During triage, the split `Country:` /\n`System Region:` pair is useful: mismatch between the\ntwo (public IP resolves to one country, system locale\nto another) often flags a proxy or VPN user, or a\ntraveller whose device keeps a stale locale after a\nmove. The Russian ad-meme trailer is the strongest\ndeveloper-attribution signal even though every field\nkey is in English.",
+  "detection_notes": "Fingerprint requires line-anchored `System Region:` AND\n`MAC Address(es):` AND `Local Date:` AND `PC name:`\n(lowercase-`n`). The `(es)` plural marker on\n`MAC Address(es):` and the `System Region:` field are\nboth unique across the cataloged formats, and the\nlowercase-`name` `PC name:` spelling rules out DCRat /\nCSBuildBlock / CSDataMonk which all use `PC Name:` with\ncapital-N. During triage, the split `Country:` /\n`System Region:` pair is useful: mismatch between the\ntwo (public IP resolves to one country, system locale\nto another) often flags a proxy or VPN user, or a\ntraveller whose device keeps a stale locale after a\nmove. The Russian ad-meme trailer is the strongest\ndeveloper-attribution signal even though every field\nkey is in English.",
   "attack_techniques": [
     {
       "id": "T1082",

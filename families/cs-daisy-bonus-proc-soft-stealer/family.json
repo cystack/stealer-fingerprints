@@ -3,7 +3,7 @@
   "name": "CSDaisyBonusProcSoftStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSDaisyBonusProcSoftStealer is a CyStack-coined identifier for\na heavily-stripped `information.txt` panel observed inside\n`Daisy Private Cloud - <N> Pcs - <DD> <Mon> - Bonus.7z`\naggregator packs distributed by the `@UP_DAISYCLOUD` Telegram\nchannel. Per-victim folders follow a flat\n`<CC><HWID-30-CHARS>_<YYYY>_<MM>_<DD>T<HH>_<MM>_<XX>_<N>/`\nnaming convention (the country code is the leading two\nletters, the HWID is a 30-character alphanumeric block, and\nthe trailing segment encodes a timestamp).\n\nThe body ships only two surviving sections from the underlying\npanel: a 2-space-indented `[<PID>] <name>.exe` process list\nand a `[Software]` Vidar-style section header followed by a\n2-space-indented program inventory. No banner, no `IP /\nCountry / HWID / Computer Name` field block, and no Redline /\nLumma / Vidar canonical anchors survive. The\nleading-PID-bracket process-list shape is the reverse of Aura\nStealer and StealC, which emit process entries as `<name>.exe\n[<PID>]` (PID after the exe), so those parsers do not collide\non the same body.\n\nFamily attribution is provisional pending a published threat-intel mapping. Public reporting documents the `@UP_DAISYCLOUD`\nchannel as a Telegram credential-trading channel potentially\nlinked to RedLine Stealer, but the heavily-stripped Bonus-pack\nbody carries no Redline-canonical fields, so the Redline\nlineage claim that the sibling `CSDaisyCloudStealer`\nwatermarked-variant parser makes for canonical\n`UserInformation.txt` cannot be carried over. The Bonus pack\nmay ship victim records from a different underlying stealer\nthan the canonical Daisy Cloud channel, or the same stealer\nwith a different stripping configuration. The\n`CSDaisyBonusProcSoftStealer` literal captures the discovery;\nrename the family constant if a public writeup later\nidentifies the underlying builder.",
+  "description": "CSDaisyBonusProcSoftStealer is a CyStack-coined identifier for\na heavily-stripped `information.txt` panel observed inside\n`Daisy Private Cloud - <N> Pcs - <DD> <Mon> - Bonus.7z`\naggregator packs distributed by the `@UP_DAISYCLOUD` Telegram\nchannel. Per-victim folders follow a flat\n`<CC><HWID-30-CHARS>_<YYYY>_<MM>_<DD>T<HH>_<MM>_<XX>_<N>/`\nnaming convention (the country code is the leading two\nletters, the HWID is a 30-character alphanumeric block, and\nthe trailing segment encodes a timestamp).\n\nThe body ships only two surviving sections from the underlying\npanel: a 2-space-indented `[<PID>] <name>.exe` process list\nand a `[Software]` Vidar-style section header followed by a\n2-space-indented program inventory. No banner, no `IP /\nCountry / HWID / Computer Name` field block, and no Redline /\nLumma / Vidar canonical anchors survive. The\nleading-PID-bracket process-list shape is the reverse of Aura\nStealer and StealC, which emit process entries as `<name>.exe\n[<PID>]` (PID after the exe), so the two layouts remain structurally distinct.\n\nFamily attribution is provisional pending a published threat-intel mapping. Public reporting documents the `@UP_DAISYCLOUD`\nchannel as a Telegram credential-trading channel potentially\nlinked to RedLine Stealer, but the heavily-stripped Bonus-pack\nbody carries no Redline-canonical fields, so the Redline lineage evidence that the sibling `CSDaisyCloudStealer`\nwatermarked sibling supports for canonical\n`UserInformation.txt` cannot be carried over. The Bonus pack\nmay ship victim records from a different underlying stealer\nthan the canonical Daisy Cloud channel, or the same stealer\nwith a different stripping configuration. The\n`CSDaisyBonusProcSoftStealer` literal captures the discovery;\nupdate this tracking profile if a public writeup later\nidentifies the underlying builder.",
   "aliases": [
     "Daisy Private Cloud Bonus",
     "@UP_DAISYCLOUD"
@@ -12,7 +12,7 @@
     "Running-process inventory (PID-bracketed)",
     "Installed-software inventory"
   ],
-  "detection_notes": "Confidence anchors: line-anchored `[Software]` section\nheader AND 10+ 2-space-indented `[<PID>] <name>.exe`\nprocess-list lines. The leading-PID-bracket shape is the\nstrongest distinguishing signal: Aura and StealC emit\nprocess entries as `<name>.exe [<PID>]` (reversed order),\nand `CSSoftwareTailStealer` requires bare `<exe>.exe`\nlines with no PID bracket, so those parsers cleanly\ndecline. The 10-line process-count threshold rejects\nunrelated documents that mention a single `[123] foo.exe`\nsnippet in prose. The body carries no extractable victim\nor device fields: the parser is labeling-only. Triage\nlogs from this family by reading the per-victim folder\nname (`<CC><HWID>_<timestamp>`) for victim country, HWID,\nand log-time, then cross-reference cred files in the same\nfolder for accounts and tokens.",
+  "detection_notes": "Confidence anchors: line-anchored `[Software]` section\nheader AND 10+ 2-space-indented `[<PID>] <name>.exe`\nprocess-list lines. The leading-PID-bracket shape is the\nstrongest distinguishing signal: Aura and StealC emit\nprocess entries as `<name>.exe [<PID>]` (reversed order),\nand `CSSoftwareTailStealer` requires bare `<exe>.exe`\nlines with no PID bracket, so those formats remain structurally distinct. The 10-line process-count threshold rejects\nunrelated documents that mention a single `[123] foo.exe`\nsnippet in prose. The body carries no extractable victim\nor device fields: the profile is labeling-only. Triage\nlogs from this family by reading the per-victim folder\nname (`<CC><HWID>_<timestamp>`) for victim country, HWID,\nand log-time, then cross-reference cred files in the same\nfolder for accounts and tokens.",
   "attack_techniques": [
     {
       "id": "T1082",
@@ -38,7 +38,7 @@
   "variants": [
     {
       "id": "v_44894012b6fae08ebaab05100ae16b12",
-      "parser": "logmine.ioc.parsers.cs_daisy_bonus_proc_soft_stealer.CSDaisyBonusProcSoftStealerParser",
+      "format_id": "cs-daisy-bonus-proc-soft-stealer",
       "filenames": [
         "information.txt"
       ],
@@ -53,7 +53,7 @@
       "sample": {
         "path": "samples/v_44894012b6fae08ebaab05100ae16b12/sample.txt",
         "sha256": "5bb6d8cb7bbfb3b810686ed87f2e1ce3603083eb0efcd815bb24854e72051c32",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

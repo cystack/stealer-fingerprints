@@ -18,21 +18,19 @@ Country / HWID / Computer Name` field block, and no Redline /
 Lumma / Vidar canonical anchors survive. The
 leading-PID-bracket process-list shape is the reverse of Aura
 Stealer and StealC, which emit process entries as `<name>.exe
-[<PID>]` (PID after the exe), so those parsers do not collide
-on the same body.
+[<PID>]` (PID after the exe), so the two layouts remain structurally distinct.
 
 Family attribution is provisional pending a published threat-intel mapping. Public reporting documents the `@UP_DAISYCLOUD`
 channel as a Telegram credential-trading channel potentially
 linked to RedLine Stealer, but the heavily-stripped Bonus-pack
-body carries no Redline-canonical fields, so the Redline
-lineage claim that the sibling `CSDaisyCloudStealer`
-watermarked-variant parser makes for canonical
+body carries no Redline-canonical fields, so the Redline lineage evidence that the sibling `CSDaisyCloudStealer`
+watermarked sibling supports for canonical
 `UserInformation.txt` cannot be carried over. The Bonus pack
 may ship victim records from a different underlying stealer
 than the canonical Daisy Cloud channel, or the same stealer
 with a different stripping configuration. The
 `CSDaisyBonusProcSoftStealer` literal captures the discovery;
-rename the family constant if a public writeup later
+update this tracking profile if a public writeup later
 identifies the underlying builder.
 
 ## Research status
@@ -41,7 +39,7 @@ identifies the underlying builder.
 - Attribution confidence: **unknown**
 - Aliases: `Daisy Private Cloud Bonus`, `@UP_DAISYCLOUD`
 - Variants observed: **1**
-- Historical Logmine records represented: **729**
+- CyStack observations represented: **729**
 
 ## What it targets
 
@@ -56,11 +54,10 @@ process-list lines. The leading-PID-bracket shape is the
 strongest distinguishing signal: Aura and StealC emit
 process entries as `<name>.exe [<PID>]` (reversed order),
 and `CSSoftwareTailStealer` requires bare `<exe>.exe`
-lines with no PID bracket, so those parsers cleanly
-decline. The 10-line process-count threshold rejects
+lines with no PID bracket, so those formats remain structurally distinct. The 10-line process-count threshold rejects
 unrelated documents that mention a single `[123] foo.exe`
 snippet in prose. The body carries no extractable victim
-or device fields: the parser is labeling-only. Triage
+or device fields: the profile is labeling-only. Triage
 logs from this family by reading the per-victim folder
 name (`<CC><HWID>_<timestamp>`) for victim country, HWID,
 and log-time, then cross-reference cred files in the same
@@ -70,7 +67,7 @@ folder for accounts and tokens.
 
 ### `v_44894012b6fae08ebaab05100ae16b12`
 
-- Parser: `logmine.ioc.parsers.cs_daisy_bonus_proc_soft_stealer.CSDaisyBonusProcSoftStealerParser`
+- Format ID: `cs-daisy-bonus-proc-soft-stealer`
 - Observed filenames: `information.txt`
 - Panel brand: `Daisy Private Cloud Bonus`
 - Distribution channel: `@UP_DAISYCLOUD`
@@ -78,7 +75,7 @@ folder for accounts and tokens.
 - Historical records represented: **729**
 - Representative sample: [open sample](samples/v_44894012b6fae08ebaab05100ae16b12/sample.txt)
 - Sample SHA-256: `5bb6d8cb7bbfb3b810686ed87f2e1ce3603083eb0efcd815bb24854e72051c32`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

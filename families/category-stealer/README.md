@@ -14,7 +14,7 @@ threat-intel mapping for this layout.
 - Attribution confidence: **unknown**
 - Aliases: -
 - Variants observed: **2**
-- Historical Logmine records represented: **376**
+- CyStack observations represented: **376**
 
 ## What it targets
 
@@ -32,7 +32,7 @@ dropped.
 
 ### `v_6207ef922a5d4ce9cdbf6bc9de7c25e9`
 
-- Parser: `logmine.ioc.parsers.category_stealer.CategoryStealerParser`
+- Format ID: `category-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -41,7 +41,7 @@ dropped.
 - Historical records represented: **1**
 - Representative sample: [open sample](samples/v_6207ef922a5d4ce9cdbf6bc9de7c25e9/sample.txt)
 - Sample SHA-256: `f0205a7d51757b3c1fef49f00edac33c10336b44ff904dd5d9d86005d4ecc56e`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -50,7 +50,7 @@ Recognition anchors:
 
 ### `v_93495bf8f14283ee6d5b4a5905b5ece2`
 
-- Parser: `logmine.ioc.parsers.category_stealer.CategoryStealerParser`
+- Format ID: `category-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -59,7 +59,7 @@ Recognition anchors:
 - Historical records represented: **375**
 - Representative sample: [open sample](samples/v_93495bf8f14283ee6d5b4a5905b5ece2/sample.txt)
 - Sample SHA-256: `be55a1214cddcab3f472fe2e30d202cf727db2b36b0a3c52ed2d530043238d81`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

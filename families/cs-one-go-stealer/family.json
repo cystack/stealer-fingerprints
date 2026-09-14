@@ -14,7 +14,7 @@
     "System hardware and locale fingerprint",
     "Win32 environment variable dump (full PATH, USERPROFILE, TEMP, vendor-specific keys)"
   ],
-  "detection_notes": "Fingerprint requires three line-anchored anchor keys:\nmixed-case `Build Name:` (rules out RedlineLikeStealer's\nall-caps `BUILD NAME:`), `Country ISO2:` (the Go-idiomatic\nISO 3166-1 alpha-2 field name, unique across the registry),\nand the misspelled `Enviromental Variables:` (rules out\nCSEnvVarDumpStealer's correctly-spelled `=== ENVIRONMENT\nVARIABLES ===` triple-equals header). The Go-runtime `+0000\nUTC` timestamp suffix is an additional binary-lineage hint but\nis not part of the fingerprint. During triage, treat the\n`One-Go` build label as operator-controlled: other builds may\nuse different labels while keeping the same structural shape,\nso the family attribution should remain unknown until a public\nwriteup ties the layout to a named author.",
+  "detection_notes": "Fingerprint requires three line-anchored anchor keys:\nmixed-case `Build Name:` (rules out RedlineLikeStealer's\nall-caps `BUILD NAME:`), `Country ISO2:` (the Go-idiomatic\nISO 3166-1 alpha-2 field name, unique across this catalog),\nand the misspelled `Enviromental Variables:` (rules out\nCSEnvVarDumpStealer's correctly-spelled `=== ENVIRONMENT\nVARIABLES ===` triple-equals header). The Go-runtime `+0000\nUTC` timestamp suffix is an additional binary-lineage hint but\nis not part of the fingerprint. During triage, treat the\n`One-Go` build label as operator-controlled: other builds may\nuse different labels while keeping the same structural shape,\nso the family attribution should remain unknown until a public\nwriteup ties the layout to a named author.",
   "attack_techniques": [
     {
       "id": "T1555",

@@ -17,7 +17,7 @@
     "Notes.app passwords and small files in `~/Downloads`",
     "Telegram session data on macOS"
   ],
-  "detection_notes": "The first-line `Phexia macOS Stealer` banner is the family's\nverbatim self-identification and is the cleanest single\nfingerprint. The `Build:` bare-key affiliate tag distinguishes\nthis layout from the sibling MacSync `Build Tag:` form and\nfrom Cthulhu's no-space `BuildID:` form. The shared `system_profiler`\nbody means folder-level macOS detectors may flash on the\nsame artifact, but parser dispatch on file system paths runs\nonly the parser chain so there is no collision in practice.\nTriage logs from this family by collecting the captured\nmacOS login credential pair, the affiliate `Build:` tag,\nand the Hardware UUID as the device identifier.",
+  "detection_notes": "The first-line `Phexia macOS Stealer` banner is the family's\nverbatim self-identification and is the cleanest single\nfingerprint. The `Build:` bare-key affiliate tag distinguishes\nthis layout from the sibling MacSync `Build Tag:` form and\nfrom Cthulhu's no-space `BuildID:` form. The shared `system_profiler` body overlaps other macOS artifacts, but the first-line family banner, bare `Build:` key, and absence of sibling banners keep the structural fingerprint distinct.\nTriage logs from this family by collecting the captured\nmacOS login credential pair, the affiliate `Build:` tag,\nand the Hardware UUID as the device identifier.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -59,7 +59,7 @@
   "variants": [
     {
       "id": "v_b2acb2241dc6354d10e66ebb270d1fe7",
-      "parser": "logmine.ioc.parsers.phexia.PhexiaParser",
+      "format_id": "phexia",
       "filenames": [
         "UserInformation.txt"
       ],
@@ -74,7 +74,7 @@
       "sample": {
         "path": "samples/v_b2acb2241dc6354d10e66ebb270d1fe7/sample.txt",
         "sha256": "e0e91bf55260ae513ac6f5a4821eba27bdb9793aa06ca9c2c822f6f4d3b184c9",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

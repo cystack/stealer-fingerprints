@@ -15,7 +15,7 @@
     "Victim public IP",
     "Stealer install path under `C:\\WINDOWS\\System32`"
   ],
-  "detection_notes": "Fingerprint requires the line-anchored `Count Core:` key (the\ntransposed phrasing is the disambiguator - no other registered\nparser keys on it) plus the `Type: Windows_NT` NodeJS\n`os.type()` literal. Together the pair cannot collide with\nother registered formats. During triage, treat the family\nattribution as unknown: the panel summary is the metadata view\nof a JavaScript / NodeJS infostealer whose canonical name has\nnot been mapped to this caption layout in any public\nreporting.",
+  "detection_notes": "Fingerprint requires the line-anchored `Count Core:` key (the\ntransposed phrasing is the disambiguator - no other cataloged\nformat uses it) plus the `Type: Windows_NT` NodeJS\n`os.type()` literal. Together the pair cannot collide with\nother cataloged formats. During triage, treat the family\nattribution as unknown: the panel summary is the metadata view\nof a JavaScript / NodeJS infostealer whose canonical name has\nnot been mapped to this caption layout in any public\nreporting.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -49,7 +49,7 @@
   "variants": [
     {
       "id": "v_1021cf33442dd3c624bed4d2c8af05e8",
-      "parser": "logmine.ioc.parsers.cs_count_core_stealer.CSCountCoreStealerParser",
+      "format_id": "cs-count-core-stealer",
       "filenames": [
         "Information.txt",
         "System.txt"
@@ -66,7 +66,7 @@
       "sample": {
         "path": "samples/v_1021cf33442dd3c624bed4d2c8af05e8/sample.txt",
         "sha256": "080b0b0dc3db8d919c1b220daf009b2acf5aa9ffd0d0e64b9ebe91821f663870",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

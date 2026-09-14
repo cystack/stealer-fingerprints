@@ -14,7 +14,7 @@ VPN, FTP, RDP, and messenger client data.
 - Attribution confidence: **high**
 - Aliases: `X-FILES`, `DeerStealer`, `X-Files Stealer`
 - Variants observed: **2**
-- Historical Logmine records represented: **74,339**
+- CyStack observations represented: **74,339**
 
 ## What it targets
 
@@ -33,14 +33,14 @@ family rule covers both eras. An aggregator-stripped variant
 redistributed via the Cloud WLFR project (`t.me/WichLoveFromR`,
 `linktr.ee/WLFRcloud`, support `@AltairSupport`) drops the
 `Operation ID:` panel-run identifier but keeps the rest of the
-XFiles-canonical field set; the parser fingerprint covers both
+XFiles-canonical field set; the structural fingerprint covers both
 shapes.
 
 ## Observed log variants
 
 ### `v_696f8d4a627ea995706ebfc9ab448d36`
 
-- Parser: `logmine.ioc.parsers.xfiles.XFilesStealerParser`
+- Format ID: `xfiles`
 - Observed filenames: `System.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -49,7 +49,7 @@ shapes.
 - Historical records represented: **95**
 - Representative sample: [open sample](samples/v_696f8d4a627ea995706ebfc9ab448d36/sample.txt)
 - Sample SHA-256: `bdab8a2c2cbfd659c005dda07081848e8cd88ba461d8d89da08a0e66c41ba2f3`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -58,7 +58,7 @@ Recognition anchors:
 
 ### `v_7b67103a472b833b8edbbdb65216dad0`
 
-- Parser: `logmine.ioc.parsers.xfiles.XFilesStealerParser`
+- Format ID: `xfiles`
 - Observed filenames: `Information.txt`, `System.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -67,7 +67,7 @@ Recognition anchors:
 - Historical records represented: **74,244**
 - Representative sample: [open sample](samples/v_7b67103a472b833b8edbbdb65216dad0/sample.txt)
 - Sample SHA-256: `c407b8a84f11600db4c293b9631173e61d5dee1801972cffe5438adb67b3f6de`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

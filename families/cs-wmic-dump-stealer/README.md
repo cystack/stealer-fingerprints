@@ -29,7 +29,7 @@ public stealer-format catalogues do not document a family
 using this exact snake_case field set. The `CSWmicDumpStealer`
 literal preserves the panel's most distinctive trait (raw WMIC
 stdout dumped into snake_case fields) as the suffix; rename
-the family constant if a public writeup later identifies the
+the CyStack tracking name if a public writeup later identifies the
 underlying builder.
 
 ## Research status
@@ -38,7 +38,7 @@ underlying builder.
 - Attribution confidence: **unknown**
 - Aliases: -
 - Variants observed: **1**
-- Historical Logmine records represented: **148**
+- CyStack observations represented: **148**
 
 ## What it targets
 
@@ -52,8 +52,7 @@ Requires the `=== SYSTEM INFORMATION ===` uppercase header
 AND the `network_config_full:` snake_case key AND the
 `user_domain:` snake_case key. PCInfoStealer uses the same
 header but additionally requires `=== NETWORK INFO ===`
-and `PC Username:`, neither of which appears here, so the
-two parsers cannot collide. No other registered family
+and `PC Username:`, neither of which appears here, so the two structures remain distinct. No other cataloged family
 uses snake_case keys at all, so the snake_case markers
 are sufficient to reject unrelated content.
 
@@ -61,7 +60,7 @@ are sufficient to reject unrelated content.
 
 ### `v_b56df7c47c8dd6e3c8b68ae39e89c1c5`
 
-- Parser: `logmine.ioc.parsers.cs_wmic_dump_stealer.CSWmicDumpStealerParser`
+- Format ID: `cs-wmic-dump-stealer`
 - Observed filenames: `system_info.txt`
 - Panel brand: `snake_case wmic-dump system_info.txt`
 - Distribution channel: -
@@ -69,7 +68,7 @@ are sufficient to reject unrelated content.
 - Historical records represented: **148**
 - Representative sample: [open sample](samples/v_b56df7c47c8dd6e3c8b68ae39e89c1c5/sample.txt)
 - Sample SHA-256: `07f7e3b36590b5a1bcf82f8400b88dc18af3dca57c0224172d909aadf0b70811`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

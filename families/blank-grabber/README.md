@@ -22,7 +22,7 @@ Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 - Attribution confidence: **high**
 - Aliases: `BlankGrabber`, `Blank-c/Blank-Grabber`
 - Variants observed: **3**
-- Historical Logmine records represented: **12,773**
+- CyStack observations represented: **12,773**
 
 ## What it targets
 
@@ -37,8 +37,8 @@ Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 ## Detection notes
 
 The banner literal `Blank Grabber got a new victim:` is
-unique across the registry and unique to this codebase, so
-a single substring check is sufficient to claim. Forks
+unique across this catalog and absent from other retained formats, so
+a single substring check is sufficient for a structural match. Forks
 (notably AK-grabber) reuse the same banner verbatim, which
 is a feature for triage: the fork still maps to the
 Blank Grabber family. The `Grabbed Info` per-category counts
@@ -49,7 +49,7 @@ archive contains for evidence collection.
 
 ### `v_b1e576b5520c49a68172676d7c72c40a`
 
-- Parser: `logmine.ioc.parsers.blank_grabber.BlankGrabberParser`
+- Format ID: `blank-grabber`
 - Observed filenames: `Information.txt`
 - Panel brand: `Dead`
 - Distribution channel: -
@@ -57,7 +57,7 @@ archive contains for evidence collection.
 - Historical records represented: **65**
 - Representative sample: [open sample](samples/v_b1e576b5520c49a68172676d7c72c40a/sample.txt)
 - Sample SHA-256: `bc59a06e31f57a4950bb04b1ef23c863ade1d494018e47f4ad086cb56b50e0ab`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -66,7 +66,7 @@ Recognition anchors:
 
 ### `v_ccdf4b8e3fbd1fec812ef139238867e6`
 
-- Parser: `logmine.ioc.parsers.blank_grabber.BlankGrabberParser`
+- Format ID: `blank-grabber`
 - Observed filenames: `Information.txt`, `System.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -74,7 +74,7 @@ Recognition anchors:
 - Historical records represented: **12,707**
 - Representative sample: [open sample](samples/v_ccdf4b8e3fbd1fec812ef139238867e6/sample.txt)
 - Sample SHA-256: `c72b2968115f628d1cbda5507729dc54e4445f7f3f3386be0cff7055fc999fa5`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -83,7 +83,7 @@ Recognition anchors:
 
 ### `v_d1192221791366c31e6fcf477e55b52b`
 
-- Parser: `logmine.ioc.parsers.blank_grabber.BlankGrabberParser`
+- Format ID: `blank-grabber`
 - Observed filenames: `Information.txt`
 - Panel brand: `Amnesia`
 - Distribution channel: -
@@ -91,7 +91,7 @@ Recognition anchors:
 - Historical records represented: **1**
 - Representative sample: [open sample](samples/v_d1192221791366c31e6fcf477e55b52b/sample.txt)
 - Sample SHA-256: `23cb51a4c2b4ebe3cd524606bc06c9e6498e1e41f9de8de3c4e16e475921f890`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

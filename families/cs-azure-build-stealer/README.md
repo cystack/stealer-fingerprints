@@ -22,7 +22,7 @@ misleading.
 - Attribution confidence: **unknown**
 - Aliases: -
 - Variants observed: **1**
-- Historical Logmine records represented: **2,480**
+- CyStack observations represented: **2,480**
 
 ## What it targets
 
@@ -36,7 +36,7 @@ Line-anchored `- Azure Build:` plus `- Worker Tag:` plus
 `- HWID:` plus `- Time Save Log:` is the fingerprint. The
 `- ` dash prefix is part of every key literal so a bare
 `Azure Build` mention (Microsoft Azure DevOps build-task
-documentation uses that phrase) cannot false-claim.
+documentation uses that phrase) cannot produce a false match.
 Timestamps are in `DD.MM.YYYY HH:MM:SS` form and the
 `Time Zone` field is bare `UTC<N>` with no sign or minutes.
 
@@ -44,7 +44,7 @@ Timestamps are in `DD.MM.YYYY HH:MM:SS` form and the
 
 ### `v_6fc6c2fd95c996b3102846257cf1e256`
 
-- Parser: `logmine.ioc.parsers.cs_azure_build_stealer.CSAzureBuildStealerParser`
+- Format ID: `cs-azure-build-stealer`
 - Observed filenames: `System.txt`
 - Panel brand: `Azure Build`
 - Distribution channel: -
@@ -52,7 +52,7 @@ Timestamps are in `DD.MM.YYYY HH:MM:SS` form and the
 - Historical records represented: **2,480**
 - Representative sample: [open sample](samples/v_6fc6c2fd95c996b3102846257cf1e256/sample.txt)
 - Sample SHA-256: `ef9b784f4feede70941b4fe5cd457bf9e0b3165263ec9086304878fd6bc682ba`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

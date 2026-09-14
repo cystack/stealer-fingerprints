@@ -13,7 +13,7 @@
     "Network identity (IP address, country, language)",
     "Account identity (Windows username, computer name pair,\nworkgroup)"
   ],
-  "detection_notes": "Fingerprint requires both the\n`https://t.me/BRADMAX_CLOU` URL prefix (the loosened\nprefix tolerates the known panel-render bug that fuses\nthe URL with adjacent lines mid-word at the channel-name\nsuffix) and the line-anchored `Screen Resoluton:`\noperator-typo literal. The typo is the load-bearing\ndisambiguator: no other surveyed stealer family emits a\n`Resoluton` (sic) key, and the URL pin confirms the\nBRADMAX_CLOUD redistributor portfolio. During triage,\ntreat the underlying stealer family as unattributable\nand rely on the channel + panel_brand metadata to bucket\nsamples for analyst review. Companion files in the\nvictim folder (browser dumps, wallet exports) may\ntrigger more confident attributions through their own\nfamily detectors.",
+  "detection_notes": "Fingerprint requires both the\n`https://t.me/BRADMAX_CLOU` URL prefix (the loosened\nprefix tolerates the known panel-render bug that fuses\nthe URL with adjacent lines mid-word at the channel-name\nsuffix) and the line-anchored `Screen Resoluton:`\noperator-typo literal. The typo is the load-bearing\ndisambiguator: no other surveyed stealer family emits a\n`Resoluton` (sic) key, and the URL pin confirms the\nBRADMAX_CLOUD redistributor portfolio. During triage,\ntreat the underlying stealer family as unattributable\nand rely on the channel + panel_brand metadata to bucket\nsamples for analyst review. Companion files in the\nvictim folder (browser dumps, wallet exports) may provide more confident family attribution.",
   "attack_techniques": [
     {
       "id": "T1082",

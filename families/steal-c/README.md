@@ -12,7 +12,7 @@ with the v2 rewrite tracked through 2024.
 - Attribution confidence: **high**
 - Aliases: `StealC v1`, `StealC v2`
 - Variants observed: **2**
-- Historical Logmine records represented: **972,301**
+- CyStack observations represented: **972,301**
 
 ## What it targets
 
@@ -33,7 +33,7 @@ Distributed via multiple Telegram resellers; the
 
 ### `v_078dda10ae3264ed2b51d559017ac685`
 
-- Parser: `logmine.ioc.parsers.stealc.StealCParser`
+- Format ID: `stealc`
 - Observed filenames: `System.txt`, `system_info.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -42,7 +42,7 @@ Distributed via multiple Telegram resellers; the
 - Historical records represented: **972,136**
 - Representative sample: [open sample](samples/v_078dda10ae3264ed2b51d559017ac685/sample.txt)
 - Sample SHA-256: `f5a0773995f4020e4e275701e8f3d3e858111ea7a2784bc8350eef7f5cef19f1`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -51,7 +51,7 @@ Recognition anchors:
 
 ### `v_176158076f220af65d5f14c6593efde1`
 
-- Parser: `logmine.ioc.parsers.stealc.StealCParser`
+- Format ID: `stealc`
 - Observed filenames: `System.txt`, `system_info.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -60,7 +60,7 @@ Recognition anchors:
 - Historical records represented: **165**
 - Representative sample: [open sample](samples/v_176158076f220af65d5f14c6593efde1/sample.txt)
 - Sample SHA-256: `f504e0db01d2a3b1132ecc7ce12765f38eca2f6f90bf187acb9c6ab6557ae80b`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

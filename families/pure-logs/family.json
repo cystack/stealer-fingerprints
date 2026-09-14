@@ -62,7 +62,7 @@
   "variants": [
     {
       "id": "v_d9e2bb74fa7cf17912df704a74ceef77",
-      "parser": "logmine.ioc.parsers.purelogs.PureLogsParser",
+      "format_id": "purelogs",
       "filenames": [
         "log.json"
       ],
@@ -79,7 +79,7 @@
       "sample": {
         "path": "samples/v_d9e2bb74fa7cf17912df704a74ceef77/sample.txt",
         "sha256": "75548851886dcc2cb5b6f01b793f80d67b95c5a13aa54672fb53e591edf4d065",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

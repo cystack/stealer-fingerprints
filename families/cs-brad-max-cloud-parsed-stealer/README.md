@@ -1,14 +1,14 @@
 # CSBradMaxCloudParsedStealer
 
 CSBradMaxCloudParsedStealer is a CyStack-coined identifier for
-a parser-normalized `Information.txt` shape distributed
+a normalizer-generated `Information.txt` shape distributed
 through the @bradmax_cloud Telegram channel. The body is the
 output of an in-house Python script the operator runs over raw
 stealer logs before redistributing them: a leading-space
 `Key: Value` block format prefixed by an `aBradMax` Figlet
 banner and the literal `Telegram: https://t.me/BRADMAX_CLOUD`
 watermark. The first body field is `Stealer: Unknown`, which
-is the parser tool's own admission that it could not
+is the normalization tool's own admission that it could not
 fingerprint the underlying family that captured the source
 log.
 
@@ -27,7 +27,7 @@ stealer panel emits this credit.
 
 - Classification: **CyStack tracking name**
 - Attribution confidence: **unknown**
-- Aliases: `@BRADMAX_CLOUD parser-normalized Information.txt`, `BRADMAX_CLOUD Stealer:Unknown normalizer output`
+- Aliases: `@BRADMAX_CLOUD normalizer-generated Information.txt`, `BRADMAX_CLOUD Stealer:Unknown normalizer output`
 - Variants observed: **0**
 
 ## What it targets
@@ -43,21 +43,18 @@ analysis machine
 
 Fingerprint requires both the
 `Telegram: https://t.me/BRADMAX_CLOUD` watermark AND the
-line-anchored ` Stealer: Unknown` parser literal. The
-watermark anchor is shared with the sibling
-`CSBradMaxCloudDCRatParser` and `CSBradMaxCloudLummaParser`
-that claim the other two slices of the @bradmax_cloud
-channel portfolio; the ` Stealer: Unknown` second anchor
-disambiguates this parser-normalized variant from those
-native-shape siblings. During triage, treat the underlying
-stealer family as unattributable - the parser tool itself
-admits it could not fingerprint the source. The victim
+line-anchored ` Stealer: Unknown` normalizer literal. The
+watermark is shared with DCRat- and Lumma-shaped sibling
+profiles in the same @bradmax_cloud channel portfolio; the
+` Stealer: Unknown` field distinguishes this
+normalizer-generated variant. During triage, treat the underlying
+stealer family as unattributable - the normalization tool itself records it as unknown. The victim
 IP, country, and hardware summary are still real and
 indexable.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

@@ -32,7 +32,7 @@ format in their write-ups.
 - Attribution confidence: **unknown**
 - Aliases: `!! 2025 OCT aggregator NodeJS-os panel summary`
 - Variants observed: **1**
-- Historical Logmine records represented: **23,809**
+- CyStack observations represented: **23,809**
 
 ## What it targets
 
@@ -46,10 +46,10 @@ format in their write-ups.
 ## Detection notes
 
 Fingerprint requires the line-anchored `Count Core:` key (the
-transposed phrasing is the disambiguator - no other registered
-parser keys on it) plus the `Type: Windows_NT` NodeJS
+transposed phrasing is the disambiguator - no other cataloged
+format uses it) plus the `Type: Windows_NT` NodeJS
 `os.type()` literal. Together the pair cannot collide with
-other registered formats. During triage, treat the family
+other cataloged formats. During triage, treat the family
 attribution as unknown: the panel summary is the metadata view
 of a JavaScript / NodeJS infostealer whose canonical name has
 not been mapped to this caption layout in any public
@@ -59,7 +59,7 @@ reporting.
 
 ### `v_1021cf33442dd3c624bed4d2c8af05e8`
 
-- Parser: `logmine.ioc.parsers.cs_count_core_stealer.CSCountCoreStealerParser`
+- Format ID: `cs-count-core-stealer`
 - Observed filenames: `Information.txt`, `System.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -67,7 +67,7 @@ reporting.
 - Historical records represented: **23,809**
 - Representative sample: [open sample](samples/v_1021cf33442dd3c624bed4d2c8af05e8/sample.txt)
 - Sample SHA-256: `080b0b0dc3db8d919c1b220daf009b2acf5aa9ffd0d0e64b9ebe91821f663870`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

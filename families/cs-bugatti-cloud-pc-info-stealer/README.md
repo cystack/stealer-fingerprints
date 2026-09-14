@@ -46,7 +46,7 @@ literal AND line-anchored `Architecture:` AND line-anchored
 `HWID:` field keys. The `Local Time: null` literal is the
 load-bearing disambiguator: no surveyed canonical stealer
 emits the lowercase JSON-null placeholder for an unset
-value. The other two anchors narrow the claim to a system-info file shape rather than a code snippet or unrelated
+value. The other two anchors narrow the match to a system-info file shape rather than a code snippet or unrelated
 document. During triage, treat the underlying source-log
 family as unattributable and rely on the channel and panel
 brand metadata to bucket samples. Companion files in the
@@ -56,7 +56,7 @@ fingerprints when present.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

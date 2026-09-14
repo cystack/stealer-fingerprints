@@ -43,19 +43,17 @@ together: ``UserName:``, ``Architecture:``, ``Cores:``,
 and ``Local Time:``. The combination is disjoint from
 PyInfoStealer (which pairs ``Architecture:`` with
 ``Processor:`` and ``ISP:`` / ``Org:`` ip-api.com keys)
-and from CSRussia34StealerParser (which pairs
+and from CSRussia34Stealer (which pairs
 ``Architecture:`` with ``Laptop:`` and the
 ``russia34.com`` channel substring). During triage,
 treat the underlying stealer family as unattributable
 and rely on the channel + panel_brand metadata to bucket
 samples for analyst review. Companion files in the
-victim folder (browser exports, wallet artifacts) may
-trigger more confident attributions through their own
-family detectors.
+victim folder (browser exports, wallet artifacts) may provide more confident family attribution.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

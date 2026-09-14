@@ -35,7 +35,7 @@ panel template to a specific named family.
 - Attribution confidence: **unknown**
 - Aliases: `Best Private LOGGER Telegram-bot stealer`, `bot-<id>-<id>-Userdata.txt panel`, `==========PC INFO========== Userdata stealer`
 - Variants observed: **1**
-- Historical Logmine records represented: **2**
+- CyStack observations represented: **2**
 
 ## What it targets
 
@@ -64,7 +64,7 @@ every victim file that operator distributes.
 
 ### `v_8ed58f5f3aef8144b0c675eacfba6344`
 
-- Parser: `logmine.ioc.parsers.cs_best_private_logger_stealer.CSBestPrivateLoggerStealerParser`
+- Format ID: `cs-best-private-logger-stealer`
 - Observed filenames: `bot-<bot-id>-<chat-id>-Userdata.txt`
 - Panel brand: `Best Private LOGGER`
 - Distribution channel: -
@@ -72,7 +72,7 @@ every victim file that operator distributes.
 - Historical records represented: **2**
 - Representative sample: [open sample](samples/v_8ed58f5f3aef8144b0c675eacfba6344/sample.txt)
 - Sample SHA-256: `02454f5061b7243f4647864a3295ef0d0ffa6b63aa1e6a6483ba31a399e9ce26`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

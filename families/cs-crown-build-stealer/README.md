@@ -9,7 +9,7 @@ with an emoji glyph attached directly to the ASCII key with no
 separator space (`🚩IP:`, `👑Build:`, `🔑Passwords:`,
 `🍪Cookies:`, `💰Wallets:`, `📂Applications:`). The zero-space
 form is the panel quirk that distinguishes this layout from
-other emoji-prefixed parsers.
+other emoji-prefixed formats.
 
 The IP line carries a trailing `(<CC>)` two-letter ISO country
 code in parentheses after the IPv4. The Build line carries an
@@ -32,7 +32,7 @@ label slot.
 - Attribution confidence: **unknown**
 - Aliases: -
 - Variants observed: **1**
-- Historical Logmine records represented: **247**
+- CyStack observations represented: **247**
 
 ## What it targets
 
@@ -46,12 +46,12 @@ label slot.
 Fingerprint requires three line-anchored zero-space
 emoji-key literals: `👑Build:`, `🚩IP:`, and
 `📂Applications:`. The three-anchor combination is unique
-across the registry - no other parser emits any of the
+across this catalog - no other format emits any of the
 three forms (CSEmojiInfo / CSEmojiCount / CSMainLoot /
 CSRLPanel all separate the glyph from the ASCII key
 with a space). During triage, treat the family
 attribution as unknown: the compact six-line bot-caption shape ships only IP, country, and build-label
-as IOC fields, so per-victim hostname / username /
+as observable fields, so per-victim hostname / username /
 OS / HWID / timestamp cannot be recovered from this
 log alone. The `Build:` slot is operator-controlled, so
 one observed value (`STEAM`) does not represent the
@@ -61,7 +61,7 @@ full label space.
 
 ### `v_eae1f957793bebdb107bbdd9b20a5a3e`
 
-- Parser: `logmine.ioc.parsers.cs_crown_build_stealer.CSCrownBuildStealerParser`
+- Format ID: `cs-crown-build-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -69,7 +69,7 @@ full label space.
 - Historical records represented: **247**
 - Representative sample: [open sample](samples/v_eae1f957793bebdb107bbdd9b20a5a3e/sample.txt)
 - Sample SHA-256: `b85cbebdce04009c11d64d24c265852848495ce896f7ae4fc7bf657638570742`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

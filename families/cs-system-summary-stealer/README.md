@@ -16,7 +16,7 @@ Users:` and `Current User:` subsections.
 Observed inside `MAY 02 - 8230 LOGS2` aggregator packs at
 `[<ISO2>]<IPv4>/System.txt` victim folders, the same
 country-IPv4 victim-folder convention used by
-CSCookiesSoftStealer (iter #55 / #56). The field set overlaps
+CSCookiesSoftStealer. The field set overlaps
 an October 2023 Continental Stealer writeup but the exact
 panel layout is not documented in public reporting. Family
 attribution is provisional pending a public writeup that
@@ -31,7 +31,7 @@ confirms the panel format.
 
 ## What it targets
 
-- Browser saved credentials (system summary only - this parser claims the System.txt; credentials live in sibling files)
+- Browser saved credentials retained in sibling files
 - System fingerprint: hostname, IP, OS, CPU cores / threads, RAM, GPU list, display resolution per monitor
 - Locale: country, language, keyboard locale, UTC offset
 - Laptop boolean flag (TRUE / FALSE)
@@ -52,7 +52,7 @@ across stealer panels; most flatten the list.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

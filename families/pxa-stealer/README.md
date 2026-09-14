@@ -12,7 +12,7 @@ even before content matches.
 - Attribution confidence: **high**
 - Aliases: `PXAStealer`
 - Variants observed: **2**
-- Historical Logmine records represented: **108,969**
+- CyStack observations represented: **108,969**
 
 ## What it targets
 
@@ -32,7 +32,7 @@ with the snake_case key style (`computer_system`, `os`,
 
 ### `v_fb40413b70aabfded7e83dc45324181f`
 
-- Parser: `logmine.ioc.parsers.pxa_caption.PXACaptionParser`
+- Format ID: `pxa-caption`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -40,7 +40,7 @@ with the snake_case key style (`computer_system`, `os`,
 - Historical records represented: **108,363**
 - Representative sample: [open sample](samples/v_fb40413b70aabfded7e83dc45324181f/sample.txt)
 - Sample SHA-256: `0ab2118e99c70b06a86332550d95db9fd363dd959c30ffe27428c3001412ff1c`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -49,7 +49,7 @@ Recognition anchors:
 
 ### `v_ffefe59bb73c8a386d24c645d4405857`
 
-- Parser: `logmine.ioc.parsers.pxa.PXAParser`
+- Format ID: `pxa`
 - Observed filenames: `system_info.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -58,7 +58,7 @@ Recognition anchors:
 - Historical records represented: **606**
 - Representative sample: [open sample](samples/v_ffefe59bb73c8a386d24c645d4405857/sample.txt)
 - Sample SHA-256: `69381bc169c48f7dbdb2483dad88c4746f626167ace43dcd6c7e9c33e030ef83`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

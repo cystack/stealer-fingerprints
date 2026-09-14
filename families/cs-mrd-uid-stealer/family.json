@@ -15,7 +15,7 @@
     "Process snapshot (bare process names, no PID)",
     "Disk inventory (per-drive total / free space)"
   ],
-  "detection_notes": "Fingerprint requires `UID: mrd-` substring AND\n`|| Registration:` substring. Both anchors are unique\nacross the registry: the `mrd-` UID prefix is not\ndocumented by any surveyed stealer family, and the\npipe-pipe-separated dual-date line on a single key value\nis the panel's developer-side quirk. During triage, treat\nthe `DateTime:` half as the panel-side log-emission\ntimestamp (recent) and the `Registration:` half as the\nfirst-seen / account-creation timestamp (often years\nolder). The `CPU:` value carries a trailing `core <N>`\ncount that the parser strips; the bare model name is\nemitted as `device.cpu`.",
+  "detection_notes": "Fingerprint requires `UID: mrd-` substring AND\n`|| Registration:` substring. Both anchors are unique\nacross this catalog: the `mrd-` UID prefix is not\ndocumented by any surveyed stealer family, and the\npipe-pipe-separated dual-date line on a single key value\nis the panel's developer-side quirk. During triage, treat\nthe `DateTime:` half as the panel-side log-emission\ntimestamp (recent) and the `Registration:` half as the\nfirst-seen / account-creation timestamp (often years\nolder). The `CPU:` value combines the model and a trailing `core <N>`\ncount; analysts can treat the preceding text as the bare CPU\nmodel.",
   "attack_techniques": [
     {
       "id": "T1082",
@@ -53,7 +53,7 @@
   "variants": [
     {
       "id": "v_29dd7a8b55e27e9bd3046f3426e477ee",
-      "parser": "logmine.ioc.parsers.cs_mrd_uid_stealer.CSMrdUidStealerParser",
+      "format_id": "cs-mrd-uid-stealer",
       "filenames": [
         "_Information.txt"
       ],
@@ -69,14 +69,14 @@
       "sample": {
         "path": "samples/v_29dd7a8b55e27e9bd3046f3426e477ee/sample.txt",
         "sha256": "6e89035b208ab576f5cbc1eca23ac13607b01251add2fbeddd638707caa52e15",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "registration"
     },
     {
       "id": "v_cee5eaed2d3cc06a5ee54cd77a385fde",
-      "parser": "logmine.ioc.parsers.cs_mrd_uid_stealer.CSMrdUidStealerParser",
+      "format_id": "cs-mrd-uid-stealer",
       "filenames": [
         "_Information.txt"
       ],
@@ -93,7 +93,7 @@
       "sample": {
         "path": "samples/v_cee5eaed2d3cc06a5ee54cd77a385fde/sample.txt",
         "sha256": "aa18adf5157d3e54be3485b631d645e5544c92eb6e1f78291e6db3fe374a73f8",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       },
       "layout_id": "physical-virtual-ram"

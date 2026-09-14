@@ -27,7 +27,7 @@ is too minimal to attribute to a specific builder.
 - Attribution confidence: **unknown**
 - Aliases: `!! 2025 NOV aggregator notification stub`
 - Variants observed: **1**
-- Historical Logmine records represented: **265**
+- CyStack observations represented: **265**
 
 ## What it targets
 
@@ -39,7 +39,7 @@ is too minimal to attribute to a specific builder.
 Fingerprint requires the literal `Data collected
 successfully` substring (the panel-unique ack message)
 plus line-anchored `Computer:` and `IP:` keys as cross-confirmation. The ack literal alone is enough to
-discriminate against any currently-registered parser, but
+discriminate against any currently cataloged format, but
 the two-key pair guards against prose that quotes the
 phrase out of context. During triage, treat family
 attribution as unknown: this file is a notification stub
@@ -51,7 +51,7 @@ triple alone.
 
 ### `v_1629258e7c5a7787a73c5a354e94dde4`
 
-- Parser: `logmine.ioc.parsers.cs_data_collected_stealer.CSDataCollectedStealerParser`
+- Format ID: `cs-data-collected-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: `Data collected successfully ack`
 - Distribution channel: -
@@ -59,7 +59,7 @@ triple alone.
 - Historical records represented: **265**
 - Representative sample: [open sample](samples/v_1629258e7c5a7787a73c5a354e94dde4/sample.txt)
 - Sample SHA-256: `61904a4cfa2b6411cc121a3b1a4f0619cdb2f41568575bccba79fca87e9a60a0`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

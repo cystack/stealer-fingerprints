@@ -8,7 +8,7 @@ channels. Per-victim folders follow a
 flat key/value block whose distinguishing markers are a
 parenthesised `BitArch:(x64 bit)` architecture field and a
 `WindowsVersion:` OS-name field, neither of which is used by
-any other family in the parser registry.
+any other family in the catalog.
 
 The panel writes literal `Unknown country` / `Unknown city` /
 `Unknown Region` / `Unknown IP` / `Unknown Timezone` /
@@ -24,7 +24,7 @@ threat-intel mapping for this layout. Public reporting plus
 public stealer-format catalogues do not document a family
 using this exact field set. The `CSBitArchStealer` literal
 preserves the panel's most distinctive marker as the suffix;
-rename the family constant if a public writeup later
+Update this tracking profile if a public writeup later
 identifies the underlying builder.
 
 ## Research status
@@ -33,7 +33,7 @@ identifies the underlying builder.
 - Attribution confidence: **unknown**
 - Aliases: -
 - Variants observed: **1**
-- Historical Logmine records represented: **49**
+- CyStack observations represented: **49**
 
 ## What it targets
 
@@ -47,8 +47,7 @@ the `WindowsVersion:` substring. Either alone is too weak
 (a stray document could mention `BitArch` without the
 parenthesis, or quote `WindowsVersion` in unrelated text);
 the pair together is unique to this panel. The literal
-`Unknown <field>` placeholders for failed geolocation are
-stripped to null at IOC emission so triage queries on
+`Unknown <field>` placeholders for failed geolocation represent missing data rather than usable evidence; triage on
 `country` / `city` / `ip` / `time_zone` / `zip_code`
 reflect actual information content rather than the
 panel's placeholder string.
@@ -57,7 +56,7 @@ panel's placeholder string.
 
 ### `v_969a7984a60742aead582cf696200347`
 
-- Parser: `logmine.ioc.parsers.cs_bit_arch_stealer.CSBitArchStealerParser`
+- Format ID: `cs-bit-arch-stealer`
 - Observed filenames: `info.txt`
 - Panel brand: `BitArch:(x64 bit) info.txt`
 - Distribution channel: -
@@ -65,7 +64,7 @@ panel's placeholder string.
 - Historical records represented: **49**
 - Representative sample: [open sample](samples/v_969a7984a60742aead582cf696200347/sample.txt)
 - Sample SHA-256: `579f4f22fe68541d46e241ef2292428b2063306d08c43e3961bb2c382a8bcccb`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

@@ -12,7 +12,7 @@ follows the banner.
 - Attribution confidence: **unknown**
 - Aliases: `Antarctida Stealer`
 - Variants observed: **1**
-- Historical Logmine records represented: **33**
+- CyStack observations represented: **33**
 
 ## What it targets
 
@@ -32,7 +32,7 @@ the executable or output format.
 
 ### `v_04bcb3b8fdb3ba04fb2e9c8bdfbf63bd`
 
-- Parser: `logmine.ioc.parsers.antarctida.AntarctidaParser`
+- Format ID: `antarctida`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -40,7 +40,7 @@ the executable or output format.
 - Historical records represented: **33**
 - Representative sample: [open sample](samples/v_04bcb3b8fdb3ba04fb2e9c8bdfbf63bd/sample.txt)
 - Sample SHA-256: `ed5cf23778fb0d49a3f4fb3a8bad55d5dc53f377421473ad086773dba95a4830`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

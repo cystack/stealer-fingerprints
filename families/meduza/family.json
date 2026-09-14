@@ -17,7 +17,7 @@
     "Telegram session files",
     "System hardware and locale inventory"
   ],
-  "detection_notes": "The MEDUZA ASCII-art banner is the family's verbatim\nself-identification; the bottom-feet row substring\n`██║░╚═╝░██║` is the cleanest fingerprint anchor and\nis shared with the folder-level\n`logmine.detection.stealers.Meduza` detector. Pair the\nbanner anchor with the Meduza-specific `Build Name:`\nfield key to avoid the residual collision risk against\nRedline (which also emits `Operation System:` sic).\nDuring triage, the `Execute Path` value typically\npoints at the malware's installation location and is\nhigh-signal for sandbox replay and host clean-up.",
+  "detection_notes": "The MEDUZA ASCII-art banner is the family's verbatim\nself-identification; the bottom-feet row substring\n`██║░╚═╝░██║` is the cleanest fingerprint anchor and\nis used as the primary CyStack Threat Intelligence detection\nanchor. Pair the\nbanner anchor with the Meduza-specific `Build Name:`\nfield key to avoid the residual collision risk against\nRedline (which also emits `Operation System:` sic).\nDuring triage, the `Execute Path` value typically\npoints at the malware's installation location and is\nhigh-signal for sandbox replay and host clean-up.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -58,7 +58,7 @@
   "variants": [
     {
       "id": "v_3c577d49d344f5721058cf29ee36de42",
-      "parser": "logmine.ioc.parsers.meduza.MeduzaParser",
+      "format_id": "meduza",
       "filenames": [
         "System.txt"
       ],
@@ -76,7 +76,7 @@
       "sample": {
         "path": "samples/v_3c577d49d344f5721058cf29ee36de42/sample.txt",
         "sha256": "1f0c3cbded5028c2a8cb14c58fb89b7902d2049506d1e9b59ff41a0f38ebdf22",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

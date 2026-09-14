@@ -21,8 +21,7 @@ enumerated from `C:\Users\`, including the real victim plus
 stale `TEMP` / `TEMP.DESKTOP-XXXX` / `TEMP.DESKTOP-XXXX.000`
 remnants left behind when `LoadUserProfile` failed and the OS
 created a throwaway profile directory. The multi-profile
-enumeration is unique to this panel across the parser
-registry; canonical stealers ship only the current
+enumeration is unique to this panel across the catalog; canonical stealers ship only the current
 `Environment.UserName` value. The plural form points at a
 Python builder calling `os.listdir(r"C:\Users")` rather than a
 .NET runtime API.
@@ -47,7 +46,7 @@ JS-date).
 - Attribution confidence: **unknown**
 - Aliases: `@BRADLOGS five-line HWID-IP-Users panel`, `BRADMAX minimal Information.txt with emoji counts`
 - Variants observed: **1**
-- Historical Logmine records represented: **2**
+- CyStack observations represented: **2**
 
 ## What it targets
 
@@ -62,8 +61,7 @@ JS-date).
 Fingerprint requires line-anchored `HWID :` AND `IP :` AND
 `Users :` (all three with the space-before-colon separator)
 AND the `🔑 Passwords:` substring AND the `🍪 Cookies:`
-substring. The five-anchor combo is unique across the
-registry: the space-before-colon trio on the header lines
+substring. The five-anchor combo is unique across the catalog: the space-before-colon trio on the header lines
 is the panel's developer-side quirk, and pairing with both
 emoji count labels rules out canonical Redline (which uses
 `Field : value` space-colon-space but ships an
@@ -78,7 +76,7 @@ underlying builder is unidentified.
 
 ### `v_4618db1ec0f8f014785fce65677a7e47`
 
-- Parser: `logmine.ioc.parsers.cs_users_list_stealer.CSUsersListStealerParser`
+- Format ID: `cs-users-list-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: `BRADMAX`
 - Distribution channel: `@BRADLOGS`
@@ -86,7 +84,7 @@ underlying builder is unidentified.
 - Historical records represented: **2**
 - Representative sample: [open sample](samples/v_4618db1ec0f8f014785fce65677a7e47/sample.txt)
 - Sample SHA-256: `9a6deeaa39cd89ff434b1a5989eaeba3b052ebd39feb577225e9852efec04d60`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

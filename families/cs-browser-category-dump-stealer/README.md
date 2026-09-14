@@ -13,8 +13,7 @@ blank line, then one or more `key: value` records separated by
 50-character dashed lines.
 
 The 32-hex MD5 victim-folder convention matches
-CSTikTokAccountStealer (iteration #49) and
-CSNetflixCookiesStealer (iteration #53), confirming a shared
+CSTikTokAccountStealer and CSNetflixCookiesStealer, confirming a shared
 `MAY 02 - 8230 LOGS2` distribution pipeline. The leaf folder
 names span Chromium-derived browsers (Chrome / Edge / Brave /
 Opera / EpicPrivacyBrowser / Vivaldi / Yandex / CocCoc /
@@ -51,7 +50,7 @@ convention here is the panel's private choice.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

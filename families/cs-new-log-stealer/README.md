@@ -17,8 +17,7 @@ actual harvest inside the per-victim archive; this file is the
 panel's notification stub rather than the data itself.
 
 The `(NOT ENCRYPTED)` annotation is the panel's developer side
-quirk and serves as the disambiguating signal: no other
-registered parser keys on this literal. Family attribution is
+quirk and serves as the disambiguating signal: no other cataloged format uses this literal. Family attribution is
 provisional pending a published threat-intel mapping for this
 banner-plus-TOC layout. The closest documented candidates
 checked - Continental Stealer, AuraStealer, Mystic Stealer,
@@ -59,7 +58,7 @@ follow-on family fingerprinting should run.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

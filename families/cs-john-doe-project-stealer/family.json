@@ -14,7 +14,7 @@
     "Account identity (Windows username, computer name)",
     "Full Windows Environment Variables dump"
   ],
-  "detection_notes": "Fingerprint requires the ``John Doe Project`` banner\nsubstring, the ``t.me/JohnDoeProject`` URL literal, and a\nline-anchored ``CLR Version:`` field key. The banner plus URL\nform the operator self-id; pairing them with the\n.NET-canonical ``CLR Version:`` keeps the claim off public\nwriteups that might quote the banner or URL in prose. During\ntriage, treat the underlying stealer family as unattributable\nand rely on the channel plus panel_brand metadata to bucket\nsamples for analyst review. Companion files in the victim\nfolder (browser exports, cookie dumps, wallet artifacts) may\ntrigger more confident attributions through their own family\ndetectors.",
+  "detection_notes": "Fingerprint requires the ``John Doe Project`` banner\nsubstring, the ``t.me/JohnDoeProject`` URL literal, and a\nline-anchored ``CLR Version:`` field key. The banner plus URL\nform the operator self-id; pairing them with the\n.NET-canonical ``CLR Version:`` distinguishes public writeups that might quote the banner or URL in prose. During\ntriage, treat the underlying stealer family as unattributable\nand rely on the channel plus panel_brand metadata to bucket\nsamples for analyst review. Companion files in the victim\nfolder (browser exports, cookie dumps, wallet artifacts) may provide more confident family attribution.",
   "attack_techniques": [
     {
       "id": "T1082",

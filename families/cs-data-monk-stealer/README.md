@@ -51,7 +51,7 @@ The `#BUY NOW: TG @` panel banner plus the mixed-case
 `=== System Information ===` header is the cleanest
 fingerprint pair. PCInfoStealer uses the uppercase
 header variant and emits `PC Username:` / `PC Name:` keys
-instead of `Computer Name:`, so the two parsers do not
+instead of `Computer Name:`, so the two formats do not
 collide. The `Build:` value (`test_00` in surveyed
 samples) suggests an early or test-phase builder; later
 production samples may emit a different value. The
@@ -61,7 +61,7 @@ assuming a single source.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

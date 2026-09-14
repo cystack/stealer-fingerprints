@@ -30,7 +30,7 @@ canonical builder.
 - Attribution confidence: **low**
 - Aliases: `@UP_DAISYCLOUD obfuscated UserInformation.txt`, `Daisy Private cloud per-line watermark variant`
 - Variants observed: **1**
-- Historical Logmine records represented: **241**
+- CyStack observations represented: **241**
 
 ## What it targets
 
@@ -50,9 +50,8 @@ Fingerprint requires 3+ matches of the digit-interspersed
 3-match threshold rejects unrelated text that happens to
 quote the channel name once; the OS typo confirms the
 underlying body is Redline-shape rather than an arbitrary
-watermarked file. During triage, the parser strips the
-per-line watermark before field extraction, then recovers
-the standard Redline-shape IOC fields. Treat the
+watermarked file. During triage, strip the per-line watermark to recover the
+standard Redline-shaped observable fields. Treat the
 attribution as low-confidence: the channel reportedly
 resells RedLine logs but the body could also come from a
 Redline fork or an unrelated stealer that adopted
@@ -62,7 +61,7 @@ Redline's `UserInformation.txt` field layout.
 
 ### `v_7fbb06edb08e717aa0cd6e0ecc602229`
 
-- Parser: `logmine.ioc.parsers.cs_daisy_cloud_stealer.CSDaisyCloudStealerParser`
+- Format ID: `cs-daisy-cloud-stealer`
 - Observed filenames: `UserInformation.txt`
 - Panel brand: `Daisy Private cloud`
 - Distribution channel: `@UP_DAISYCLOUD`
@@ -70,7 +69,7 @@ Redline's `UserInformation.txt` field layout.
 - Historical records represented: **241**
 - Representative sample: [open sample](samples/v_7fbb06edb08e717aa0cd6e0ecc602229/sample.txt)
 - Sample SHA-256: `9c2e50da54770183f2852eda98b311c4a1f7819af4ee6b04c0a9e459094d6e2e`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

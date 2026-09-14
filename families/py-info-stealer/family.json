@@ -30,7 +30,7 @@
   "variants": [
     {
       "id": "v_a3b2ccd87ba2430c6dde5f31bb7f6a42",
-      "parser": "logmine.ioc.parsers.pyinfo_stealer.PyInfoStealerParser",
+      "format_id": "pyinfo-stealer",
       "filenames": [
         "system_info.txt"
       ],
@@ -49,7 +49,7 @@
       "sample": {
         "path": "samples/v_a3b2ccd87ba2430c6dde5f31bb7f6a42/sample.txt",
         "sha256": "6c9f1c74223a815f4a5a14e070d86056cd05134534c8321127f6cf02da556ce4",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

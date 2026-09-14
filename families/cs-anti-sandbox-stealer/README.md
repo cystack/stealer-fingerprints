@@ -39,7 +39,7 @@ mapping.
 - Attribution confidence: **unknown**
 - Aliases: `Anti-Sandbox Diagnostics V2 panel`, `Mode V2 Evasive stealer`
 - Variants observed: **1**
-- Historical Logmine records represented: **1**
+- CyStack observations represented: **1**
 
 ## What it targets
 
@@ -67,7 +67,7 @@ across samples to detect threshold tuning.
 
 ### `v_afd6a02604a11b541c94ed4334adccf3`
 
-- Parser: `logmine.ioc.parsers.cs_anti_sandbox_stealer.CSAntiSandboxStealerParser`
+- Format ID: `cs-anti-sandbox-stealer`
 - Observed filenames: `system_info.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -75,7 +75,7 @@ across samples to detect threshold tuning.
 - Historical records represented: **1**
 - Representative sample: [open sample](samples/v_afd6a02604a11b541c94ed4334adccf3/sample.txt)
 - Sample SHA-256: `741924979c4f544ca36d7af70d8d7e3ec6082d8f7fcede9ac7e8db220b47ae99`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

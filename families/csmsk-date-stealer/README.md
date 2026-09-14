@@ -41,14 +41,11 @@ DD.MM.YYYY without trailing abbreviation, .B.A.B.A. uses
 DD/MM/YYYY, Snake Stealer uses M/D/YYYY with AM/PM). The
 `Machine UUID:` co-requirement closes the loop against a
 stray readme that mentions an MSK-suffixed date by
-coincidence. If a published threat-intel report later
-attributes this format to a known stealer family, rename
-the `family` constant on the parser rather than adding a
-second parser.
+coincidence. If published threat intelligence later attributes this format to a known family, update this tracking profile rather than creating a duplicate record.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

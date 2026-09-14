@@ -33,7 +33,7 @@ format.
 - Attribution confidence: **high**
 - Aliases: `Dark Crystal RAT`, `DarkCrystal RAT`, `dcRAT`
 - Variants observed: **1**
-- Historical Logmine records represented: **177**
+- CyStack observations represented: **177**
 
 ## What it targets
 
@@ -47,10 +47,9 @@ format.
 ## Detection notes
 
 The Figlet `small`-font `Dark Crystal RAT` ASCII banner is the
-cleanest fingerprint. The detector class
-`logmine.detection.rats.DCRat` and the parser share the banner
-literal as their anchor so attribution stays consistent across
-both layers. The .NET / WMI enumeration profile plus the
+cleanest fingerprint. CyStack Threat Intelligence uses the same banner literal as the
+primary structural anchor, keeping family attribution consistent
+across collection and analysis. The .NET / WMI enumeration profile plus the
 `MsHyperserverBrokersvc` style fake-service install path is
 the secondary confidence signal. Public analyses note plugin
 identifiers like `DCRatBuild`, `DCStlr`, `Plugin_AutoStealer`,
@@ -62,7 +61,7 @@ on disk to confirm the family.
 
 ### `v_c05affb578cdd7ad283bd765c0f9cc1c`
 
-- Parser: `logmine.ioc.parsers.dcrat.DCRatParser`
+- Format ID: `dcrat`
 - Observed filenames: `Information [ID].txt`, `Information [IN].txt`
 - Panel brand: -
 - Distribution channel: -
@@ -71,7 +70,7 @@ on disk to confirm the family.
 - Historical records represented: **177**
 - Representative sample: [open sample](samples/v_c05affb578cdd7ad283bd765c0f9cc1c/sample.txt)
 - Sample SHA-256: `80541f90621ee53219173218c227126bbe60ecf769d3369b2a0ced1b8af26355`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

@@ -55,7 +55,7 @@
   "variants": [
     {
       "id": "v_1f914efc1a8e43b713cc64606c2bb0e8",
-      "parser": "logmine.ioc.parsers.cs_ottoman_panel_stealer.CSOttomanPanelStealerParser",
+      "format_id": "cs-ottoman-panel-stealer",
       "filenames": [
         "information.txt",
         "PC_info.txt",
@@ -73,7 +73,7 @@
       "sample": {
         "path": "samples/v_1f914efc1a8e43b713cc64606c2bb0e8/sample.txt",
         "sha256": "173225065f85e58a00257fef0638b70c37c98dc6e7de465b6e97e889c3a024ec",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

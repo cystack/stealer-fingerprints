@@ -16,8 +16,8 @@ the underlying family cannot be pinned from the root
 listing alone. The cred-file selector often picks an
 unrelated harvested file from inside `Files/` (e.g. a
 victim's pip `AUTHORS.txt` swept up alongside the real
-stealer drop) which leaves the folder-root IOC carrying
-no useful per-victim fields. Family attribution is
+stealer drop) so the folder root alone carries no useful per-victim
+fields. Family attribution is
 provisional pending a published threat-intel mapping
 for this BRADMAX-distributed layout.
 
@@ -40,8 +40,7 @@ for this BRADMAX-distributed layout.
 Fingerprint requires all four canonical subdirectory
 names (`Browsers`, `Discord`, `Files`, `System`) at
 folder root AND a `BRADLOGS` or `BRADMAX` token in the
-system_path. The path-side anchor keeps the detector
-off generic Stealerium-fork 4-category layouts
+system_path. The path-side anchor excludes generic Stealerium-fork 4-category layouts
 distributed through unrelated channels. During triage,
 inspect the `System/` subdirectory contents for the
 underlying stealer banner: canonical Lumma, Phantom,
@@ -53,7 +52,7 @@ fingerprint at the folder root.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

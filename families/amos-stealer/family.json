@@ -3,7 +3,7 @@
   "name": "AMOS Stealer",
   "classification": "known_family",
   "attribution_confidence": "high",
-  "description": "Atomic macOS Stealer (AMOS) is a Go and C++ macOS info-stealer\nsold as malware-as-a-service through private Telegram channels\nsince April 2023. The operator panel charges around $1000 per\nmonth and ships a builder, a victim web panel, a MetaMask\nbrute-forcer, and Telegram log delivery. Multiple public\nmalware writeups profile the family. AMOS spawned the Banshee,\nCthulhu, Poseidon, and Odyssey forks tracked separately in\nthis catalog.\n\nThe artifact this parser claims is the operator-facing summary\nwritten as `UserInformation.txt` inside per-victim folders of\nAMOS log aggregator packs. The file opens with four flush-left\npanel section headers in a fixed order (`MetaMask Info:`,\n`Debanks:`, `Userinfo:`, then `Software:` / `Hardware:` /\n`Graphics/Displays:` introducing the verbatim\n`system_profiler` output for the SPSoftwareDataType,\nSPHardwareDataType, and SPDisplaysDataType data types).\n`MetaMask Info` and `Debanks` sit empty in most samples\nbecause the panel surfaces wallet artifacts in sibling folders\n(`Wallets/`, `Keychain/`) rather than inlined into this\nsummary.",
+  "description": "Atomic macOS Stealer (AMOS) is a Go and C++ macOS info-stealer\nsold as malware-as-a-service through private Telegram channels\nsince April 2023. The operator panel charges around $1000 per\nmonth and ships a builder, a victim web panel, a MetaMask\nbrute-forcer, and Telegram log delivery. Multiple public\nmalware writeups profile the family. AMOS spawned the Banshee,\nCthulhu, Poseidon, and Odyssey forks tracked separately in\nthis catalog.\n\nThe artifact documented here is the operator-facing summary\nwritten as `UserInformation.txt` inside per-victim folders of\nAMOS log aggregator packs. The file opens with four flush-left\npanel section headers in a fixed order (`MetaMask Info:`,\n`Debanks:`, `Userinfo:`, then `Software:` / `Hardware:` /\n`Graphics/Displays:` introducing the verbatim\n`system_profiler` output for the SPSoftwareDataType,\nSPHardwareDataType, and SPDisplaysDataType data types).\n`MetaMask Info` and `Debanks` sit empty in most samples\nbecause the panel surfaces wallet artifacts in sibling folders\n(`Wallets/`, `Keychain/`) rather than inlined into this\nsummary.",
   "aliases": [
     "Atomic Stealer",
     "Atomic macOS Stealer",
@@ -18,7 +18,7 @@
     "Apple Notes content and Telegram session files",
     "Documents and Desktop file grabber (.txt, .pdf, .docx, .wallet, .key)"
   ],
-  "detection_notes": "The line-anchored `MetaMask Info:` + `Debanks:` + `Userinfo:`\ntriple is unique to this AMOS panel render and does not\ncollide with the Cthulhu (`BuildID:` + `Hardware Overview:`)\nor MacSync (`MacSync Stealer` banner) macOS forks the catalog\ntracks. Family attribution rests on a community stealer-format\ncatalog mapping this exact `UserInformation.txt` shape to\nAtomic Mac; the underlying AMOS family is publicly confirmed\nelsewhere but no public writeup shows a sample showing this\nspecific section-header layout, so the parser ships with\nmedium attribution confidence. Triaging an AMOS folder during\nincident response: check for sibling `FileGrabber/`,\n`BrowserVersion.txt`, `keychain.txt`, and `Passwords.txt`\nartifacts in the same victim directory - the folder-level AMOS\ndetector fires on those names.",
+  "detection_notes": "The line-anchored `MetaMask Info:` + `Debanks:` + `Userinfo:`\ntriple is unique to this AMOS panel render and does not\ncollide with the Cthulhu (`BuildID:` + `Hardware Overview:`)\nor MacSync (`MacSync Stealer` banner) macOS forks the catalog\ntracks. Family attribution rests on a community stealer-format\ncatalog mapping this exact `UserInformation.txt` shape to\nAtomic Mac; the underlying AMOS family is publicly confirmed\nelsewhere but no public writeup shows a sample showing this\nspecific section-header layout, so the profile carries\nmedium attribution confidence. During incident response, check for sibling `FileGrabber/`,\n`BrowserVersion.txt`, `keychain.txt`, and `Passwords.txt`\nartifacts in the same victim directory; those sibling\nfilenames corroborate AMOS attribution.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -70,7 +70,7 @@
   "variants": [
     {
       "id": "v_93dd7400af7f5eefc3087e22c6b99a1c",
-      "parser": "logmine.ioc.parsers.amos.AMOSParser",
+      "format_id": "amos",
       "filenames": [
         "UserInformation.txt"
       ],
@@ -87,7 +87,7 @@
       "sample": {
         "path": "samples/v_93dd7400af7f5eefc3087e22c6b99a1c/sample.txt",
         "sha256": "2356e0c8ea7177f7e7d33714b3b37bf74a3bbab1633e9f21b73d1d5fe30c7437",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

@@ -39,7 +39,7 @@
   "variants": [
     {
       "id": "v_c12f9b157d6a74710a1e1e9ebc1ecea7",
-      "parser": "logmine.ioc.parsers.bugatti_cloud_banner.BugattiCloudBannerParser",
+      "format_id": "bugatti-cloud-banner",
       "filenames": [
         "information.txt"
       ],
@@ -54,7 +54,7 @@
       "sample": {
         "path": "samples/v_c12f9b157d6a74710a1e1e9ebc1ecea7/sample.txt",
         "sha256": "c0827f757e129b9667c320a2ae7552ff7172bdbf4444d32e87abc8817ecb677b",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

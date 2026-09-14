@@ -9,7 +9,7 @@ malware writeups profile the family. AMOS spawned the Banshee,
 Cthulhu, Poseidon, and Odyssey forks tracked separately in
 this catalog.
 
-The artifact this parser claims is the operator-facing summary
+The artifact documented here is the operator-facing summary
 written as `UserInformation.txt` inside per-victim folders of
 AMOS log aggregator packs. The file opens with four flush-left
 panel section headers in a fixed order (`MetaMask Info:`,
@@ -28,7 +28,7 @@ summary.
 - Attribution confidence: **high**
 - Aliases: `Atomic Stealer`, `Atomic macOS Stealer`, `AMOS`, `Atomic Mac`
 - Variants observed: **1**
-- Historical Logmine records represented: **19,149**
+- CyStack observations represented: **19,149**
 
 ## What it targets
 
@@ -49,18 +49,17 @@ tracks. Family attribution rests on a community stealer-format
 catalog mapping this exact `UserInformation.txt` shape to
 Atomic Mac; the underlying AMOS family is publicly confirmed
 elsewhere but no public writeup shows a sample showing this
-specific section-header layout, so the parser ships with
-medium attribution confidence. Triaging an AMOS folder during
-incident response: check for sibling `FileGrabber/`,
+specific section-header layout, so the profile carries
+medium attribution confidence. During incident response, check for sibling `FileGrabber/`,
 `BrowserVersion.txt`, `keychain.txt`, and `Passwords.txt`
-artifacts in the same victim directory - the folder-level AMOS
-detector fires on those names.
+artifacts in the same victim directory; those sibling
+filenames corroborate AMOS attribution.
 
 ## Observed log variants
 
 ### `v_93dd7400af7f5eefc3087e22c6b99a1c`
 
-- Parser: `logmine.ioc.parsers.amos.AMOSParser`
+- Format ID: `amos`
 - Observed filenames: `UserInformation.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -68,7 +67,7 @@ detector fires on those names.
 - Historical records represented: **19,149**
 - Representative sample: [open sample](samples/v_93dd7400af7f5eefc3087e22c6b99a1c/sample.txt)
 - Sample SHA-256: `2356e0c8ea7177f7e7d33714b3b37bf74a3bbab1633e9f21b73d1d5fe30c7437`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

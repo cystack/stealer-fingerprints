@@ -15,7 +15,7 @@
     "Hardware inventory: CPU model, GPU model, RAM size",
     "Victim public IP plus country / city (placeholder Unknown when geo-IP fails)"
   ],
-  "detection_notes": "Fingerprint requires all four line-anchored short-form keys:\n`username:`, `pc_name:`, `mac:`, `hwid:`. The combination of\nlowercase snake_case keys with these short-form abbreviations\n(no `_address` suffix on `mac`, no `_id` suffix on `hwid`, no\n`computer_` prefix on `pc_name`) cannot collide with any other\nregistered parser. During triage, treat the family attribution\nas unknown: the format is structurally a Python-builder panel\n(`platform.platform()` OS shape) but no public source maps the\n11-key layout to a specific named family. Geo-IP placeholders\n(`Unknown`) indicate the victim was offline or behind a\nfirewall during panel exfiltration.",
+  "detection_notes": "Fingerprint requires all four line-anchored short-form keys:\n`username:`, `pc_name:`, `mac:`, `hwid:`. The combination of\nlowercase snake_case keys with these short-form abbreviations\n(no `_address` suffix on `mac`, no `_id` suffix on `hwid`, no\n`computer_` prefix on `pc_name`) cannot collide with any other\ncataloged format. During triage, treat the family attribution\nas unknown: the format is structurally a Python-builder panel\n(`platform.platform()` OS shape) but no public source maps the\n11-key layout to a specific named family. Geo-IP placeholders\n(`Unknown`) indicate the victim was offline or behind a\nfirewall during panel exfiltration.",
   "attack_techniques": [
     {
       "id": "T1082",
@@ -38,7 +38,7 @@
   "variants": [
     {
       "id": "v_a518f20e8beffe929060e8d959b2b01c",
-      "parser": "logmine.ioc.parsers.cs_pc_name_snake_stealer.CSPcNameSnakeStealerParser",
+      "format_id": "cs-pc-name-snake-stealer",
       "filenames": [
         "system_info.txt"
       ],
@@ -56,7 +56,7 @@
       "sample": {
         "path": "samples/v_a518f20e8beffe929060e8d959b2b01c/sample.txt",
         "sha256": "c593944d228fcb55426fd7148086fb0bab573ca48d15be120a47c8bec8eef293",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

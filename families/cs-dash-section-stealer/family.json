@@ -8,7 +8,7 @@
     "@stealerboss dash-section variant"
   ],
   "typical_targets": [],
-  "detection_notes": "The `----- System info:` literal (five dashes, space, colon)\nis unique to this format among parsers in this catalog. Pair\nwith `HWID:` GUID-shaped value and the `@stealerboss` channel\nreference in the buy-now banner to confirm.",
+  "detection_notes": "The `----- System info:` literal (five dashes, space, colon)\nis unique to this format among formats in this catalog. Pair\nwith `HWID:` GUID-shaped value and the `@stealerboss` channel\nreference in the buy-now banner to confirm.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -32,7 +32,7 @@
   "variants": [
     {
       "id": "v_f82ff4bbec34c0df923d22ca12f55d1f",
-      "parser": "logmine.ioc.parsers.cs_dash_section_stealer.CSDashSectionStealerParser",
+      "format_id": "cs-dash-section-stealer",
       "filenames": [
         "SystemInfo.txt"
       ],
@@ -49,7 +49,7 @@
       "sample": {
         "path": "samples/v_f82ff4bbec34c0df923d22ca12f55d1f/sample.txt",
         "sha256": "cfa3dcedb24a2af71c15134dcdda6969674bcd3529250e9004d85898c2ec6ea0",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

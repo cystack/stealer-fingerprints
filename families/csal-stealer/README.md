@@ -20,7 +20,7 @@ prefix.
 - Canonical family: [lumma](../lumma/)
 - Aliases: `AL Stealer`
 - Variants observed: **1**
-- Historical Logmine records represented: **26**
+- CyStack observations represented: **26**
 
 ## What it targets
 
@@ -39,7 +39,7 @@ strip the build banner.
 
 ### `v_acc2678339f8059055700c66f385f24d`
 
-- Parser: `logmine.ioc.parsers.cs_al_stealer.CSALStealerParser`
+- Format ID: `cs-al-stealer`
 - Observed filenames: `System.txt`
 - Panel brand: `AL Stealer`
 - Distribution channel: `t.me/additionallibraries`
@@ -47,7 +47,7 @@ strip the build banner.
 - Historical records represented: **26**
 - Representative sample: [open sample](samples/v_acc2678339f8059055700c66f385f24d/sample.txt)
 - Sample SHA-256: `f500fa816cbb77efa7222cdd89e3dbf77713cf65c9cdf9d5a5f658957689f41e`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

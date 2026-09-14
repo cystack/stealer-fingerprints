@@ -33,7 +33,7 @@ section captions (`----- Geolocation Data -----` /
 - Attribution confidence: **unknown**
 - Aliases: `BRADMAX aggregator box-drawing panel summary`, `!! 2025 NOV.part001 EXTRACTION RESULTS panel`
 - Variants observed: **1**
-- Historical Logmine records represented: **97**
+- CyStack observations represented: **97**
 
 ## What it targets
 
@@ -63,7 +63,7 @@ harvesting.
 
 ### `v_e5b07600b730bdb57cd9363fc77e23db`
 
-- Parser: `logmine.ioc.parsers.cs_count_runs_stealer.CSCountRunsStealerParser`
+- Format ID: `cs-count-runs-stealer`
 - Observed filenames: `Information.txt`
 - Panel brand: -
 - Distribution channel: `@BRADLOGS`
@@ -71,7 +71,7 @@ harvesting.
 - Historical records represented: **97**
 - Representative sample: [open sample](samples/v_e5b07600b730bdb57cd9363fc77e23db/sample.txt)
 - Sample SHA-256: `311b49be46062d3264464794a1e7ff623313f365a9656639596a354846eab194`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

@@ -14,7 +14,7 @@ a different banner and distribution channel.
 - Attribution confidence: **high**
 - Aliases: `Remus`
 - Variants observed: **2**
-- Historical Logmine records represented: **55**
+- CyStack observations represented: **55**
 
 ## What it targets
 
@@ -33,7 +33,7 @@ dash-prefix `- LummaC2 Build:` form instead.
 
 ### `v_0b6a40975520ab343d4d6ad9a6073ea0`
 
-- Parser: `logmine.ioc.parsers.remus.RemusParser`
+- Format ID: `remus`
 - Observed filenames: `Info.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -42,7 +42,7 @@ dash-prefix `- LummaC2 Build:` form instead.
 - Historical records represented: **46**
 - Representative sample: [open sample](samples/v_0b6a40975520ab343d4d6ad9a6073ea0/sample.txt)
 - Sample SHA-256: `dc289702682a735f5566e6b52da1f22b3d99526d4f28c8409d75bd02dbb715ff`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -51,7 +51,7 @@ Recognition anchors:
 
 ### `v_40b69f8215f8aad13e8f74334058d313`
 
-- Parser: `logmine.ioc.parsers.remus.RemusParser`
+- Format ID: `remus`
 - Observed filenames: `Info.txt`
 - Panel brand: `Daisy Cloud`
 - Distribution channel: `@UP_DAISYCLOUD`
@@ -60,7 +60,7 @@ Recognition anchors:
 - Historical records represented: **9**
 - Representative sample: [open sample](samples/v_40b69f8215f8aad13e8f74334058d313/sample.txt)
 - Sample SHA-256: `795a50c7235d2d0299b86b9589d8bcdd3446b0d9cd93c472cc5c8f1d3fc1d4b0`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

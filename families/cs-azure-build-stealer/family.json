@@ -10,7 +10,7 @@
     "Anti-virus product name (Windows Defender / installed AV)",
     "Geo-IP country code"
   ],
-  "detection_notes": "Line-anchored `- Azure Build:` plus `- Worker Tag:` plus\n`- HWID:` plus `- Time Save Log:` is the fingerprint. The\n`- ` dash prefix is part of every key literal so a bare\n`Azure Build` mention (Microsoft Azure DevOps build-task\ndocumentation uses that phrase) cannot false-claim.\nTimestamps are in `DD.MM.YYYY HH:MM:SS` form and the\n`Time Zone` field is bare `UTC<N>` with no sign or minutes.",
+  "detection_notes": "Line-anchored `- Azure Build:` plus `- Worker Tag:` plus\n`- HWID:` plus `- Time Save Log:` is the fingerprint. The\n`- ` dash prefix is part of every key literal so a bare\n`Azure Build` mention (Microsoft Azure DevOps build-task\ndocumentation uses that phrase) cannot produce a false match.\nTimestamps are in `DD.MM.YYYY HH:MM:SS` form and the\n`Time Zone` field is bare `UTC<N>` with no sign or minutes.",
   "attack_techniques": [
     {
       "id": "T1082",
@@ -34,7 +34,7 @@
   "variants": [
     {
       "id": "v_6fc6c2fd95c996b3102846257cf1e256",
-      "parser": "logmine.ioc.parsers.cs_azure_build_stealer.CSAzureBuildStealerParser",
+      "format_id": "cs-azure-build-stealer",
       "filenames": [
         "System.txt"
       ],
@@ -54,7 +54,7 @@
       "sample": {
         "path": "samples/v_6fc6c2fd95c996b3102846257cf1e256/sample.txt",
         "sha256": "ef9b784f4feede70941b4fe5cd457bf9e0b3165263ec9086304878fd6bc682ba",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

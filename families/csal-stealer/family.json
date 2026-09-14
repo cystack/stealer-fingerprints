@@ -46,7 +46,7 @@
   "variants": [
     {
       "id": "v_acc2678339f8059055700c66f385f24d",
-      "parser": "logmine.ioc.parsers.cs_al_stealer.CSALStealerParser",
+      "format_id": "cs-al-stealer",
       "filenames": [
         "System.txt"
       ],
@@ -64,7 +64,7 @@
       "sample": {
         "path": "samples/v_acc2678339f8059055700c66f385f24d/sample.txt",
         "sha256": "f500fa816cbb77efa7222cdd89e3dbf77713cf65c9cdf9d5a5f658957689f41e",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

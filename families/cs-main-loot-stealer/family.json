@@ -18,7 +18,7 @@
     "Grabbed files (count flag on `🎣 Grabbers:`)",
     "Combined OS username + hostname (user@host on the `💻 User:` line)"
   ],
-  "detection_notes": "Fingerprint requires `New Log Received` substring AND `Main\nLoot:` substring AND `Additional Data:` substring AND\n`@VerifiedThief` substring. The four-anchor combo is unique\nacross the registry: the `Main Loot:` and `Additional Data:`\nsection-caption pair is the panel-side developer quirk, and\nthe `@VerifiedThief` admin handle is unique to this\ndistribution. During triage, treat this label as a panel-side\nnotification view (counts only): the actual harvested\ncredentials live in sibling files the operator's archive\n(browser-data folders, cookie dumps, etc.) rather than in this\nnotification body. The underlying stealer family is unknown;\nthe Hexo Stealer attribution from that community source is\nprovisional pending published confirmation.",
+  "detection_notes": "Fingerprint requires `New Log Received` substring AND `Main\nLoot:` substring AND `Additional Data:` substring AND\n`@VerifiedThief` substring. The four-anchor combo is unique\nacross this catalog: the `Main Loot:` and `Additional Data:`\nsection-caption pair is the panel-side developer quirk, and\nthe `@VerifiedThief` admin handle is unique to this\ndistribution. During triage, treat this label as a panel-side\nnotification view (counts only): the actual harvested\ncredentials live in sibling files the operator's archive\n(browser-data folders, cookie dumps, etc.) rather than in this\nnotification body. The underlying stealer family is unknown;\nthe Hexo Stealer attribution from that community source is\nprovisional pending published confirmation.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -52,7 +52,7 @@
   "variants": [
     {
       "id": "v_1be296dc8abcec6846b3e0b96b67534c",
-      "parser": "logmine.ioc.parsers.cs_main_loot_stealer.CSMainLootStealerParser",
+      "format_id": "cs-main-loot-stealer",
       "filenames": [
         "Information.txt"
       ],
@@ -71,7 +71,7 @@
       "sample": {
         "path": "samples/v_1be296dc8abcec6846b3e0b96b67534c/sample.txt",
         "sha256": "a110f0ef469c7621668043862d47db755c9fde386ef646394f081861d2ea3e23",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

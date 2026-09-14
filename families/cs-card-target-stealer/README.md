@@ -28,8 +28,7 @@ the PAN and expiry, producing a 4-line block ending at
 published threat-intel mapping for this layout. The
 format is distinct from the Millenium RAT
 `CreditCards.txt` (``Browser/Name/Number/Expire``
-labels with the ``------ Credit Cards ------`` banner,
-iter#6/#13) and from the canonical PXA Stealer credit-card dump (per-browser JSON in the PXA Telegram
+labels with the ``------ Credit Cards ------`` banner) and from the canonical PXA Stealer credit-card dump (per-browser JSON in the PXA Telegram
 captions).
 
 ## Research status
@@ -56,7 +55,7 @@ line is optional: a 4-line block ending at `TARGET:`
 covers cards saved without a security code. One match
 is sufficient because each cred file holds exactly one
 card. The `CN:` + `TARGET:` label pair is unique
-across the registry: Millenium RAT uses
+across this catalog: Millenium RAT uses
 `Browser/Name/Number/Expire` and ships its dashed-banner header; canonical
 PXA Stealer ships cards as JSON in Telegram captions,
 not as 4- or 5-line text blocks. During triage, treat
@@ -70,7 +69,7 @@ directly usable for card-not-present fraud.
 
 ## Observed log variants
 
-No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 

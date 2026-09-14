@@ -12,7 +12,7 @@ and four distinctive `PC ...` field keys.
 - Attribution confidence: **unknown**
 - Aliases: -
 - Variants observed: **1**
-- Historical Logmine records represented: **4**
+- CyStack observations represented: **4**
 
 ## What it targets
 
@@ -29,7 +29,7 @@ signature.
 
 ### `v_b9fc8961d3b757934ac79ac1f776b15e`
 
-- Parser: `logmine.ioc.parsers.pcinfo_stealer.PCInfoStealerParser`
+- Format ID: `pcinfo-stealer`
 - Observed filenames: `System_Info.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -37,7 +37,7 @@ signature.
 - Historical records represented: **4**
 - Representative sample: [open sample](samples/v_b9fc8961d3b757934ac79ac1f776b15e/sample.txt)
 - Sample SHA-256: `cd2523aa9a43cacfe86e70cb0acf8791d1b0037d783fd1a3134c8a067f1fed8b`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

@@ -33,7 +33,7 @@ families publishes this exact JSON schema.
 - Attribution confidence: **unknown**
 - Aliases: `_info.json snake_case panel`
 - Variants observed: **1**
-- Historical Logmine records represented: **295**
+- CyStack observations represented: **295**
 
 ## What it targets
 
@@ -47,12 +47,12 @@ Fingerprint requires the `"inz_ext_count"` JSON-key
 substring (the panel-unique marker) plus the `"pc_login"`
 and `"client_utc"` snake_case keys as cross-confirmation.
 The marker alone is enough to discriminate against any
-currently-registered parser, but the snake_case pair
+currently cataloged format, but the snake_case pair
 guards against fragments that quote the marker name in
 prose (e.g. a write-up that references the field). All
 three together cannot collide with Acreed (PascalCase
 `PcName` / `IsElevator` shape) or any plain-text panel
-parser. During triage, treat family attribution as
+format. During triage, treat family attribution as
 unknown: the `_info.json` is panel metadata only, and
 the underlying stealer cannot be identified from these
 eleven fields alone. The per-victim folder ships sibling
@@ -63,7 +63,7 @@ fingerprinting should run.
 
 ### `v_c52c47cb76eaf34248ee6f663ac79205`
 
-- Parser: `logmine.ioc.parsers.cs_inz_ext_stealer.CSInzExtStealerParser`
+- Format ID: `cs-inz-ext-stealer`
 - Observed filenames: `_info.json`
 - Panel brand: `_info.json inz_ext_count schema`
 - Distribution channel: -
@@ -71,7 +71,7 @@ fingerprinting should run.
 - Historical records represented: **295**
 - Representative sample: [open sample](samples/v_c52c47cb76eaf34248ee6f663ac79205/sample.txt)
 - Sample SHA-256: `c0f891c635e29ba0908c8c9d920feaf518868b7c534b3f6179a63033d6e2ceba`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

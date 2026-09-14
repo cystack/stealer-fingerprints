@@ -8,7 +8,7 @@ Raccoon Stealer is a long-running malware-as-a-service infostealer also tracked 
 - Attribution confidence: **high**
 - Aliases: `Raccoon Stealer`, `Raccoon v2`, `RecordBreaker`, `Racc0_0n`
 - Variants observed: **2**
-- Historical Logmine records represented: **402**
+- CyStack observations represented: **402**
 
 ## What it targets
 
@@ -27,7 +27,7 @@ Treat the v1 and v2 panel exports as separate layouts. The v2 layout combines `U
 
 ### `v_35981cb9ad7bbc2326661a3e2f019f55`
 
-- Parser: `logmine.ioc.parsers.raccoon.RaccoonStealerParser`
+- Format ID: `raccoon`
 - Observed filenames: `System Info.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -36,7 +36,7 @@ Treat the v1 and v2 panel exports as separate layouts. The v2 layout combines `U
 - Historical records represented: **16**
 - Representative sample: [open sample](samples/v_35981cb9ad7bbc2326661a3e2f019f55/sample.txt)
 - Sample SHA-256: `c5d3d1edc84c6feeb7db5208b4c367dd6bf9839fb869468ef5787260f00cba85`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 
@@ -45,7 +45,7 @@ Recognition anchors:
 
 ### `v_69fc6a9bafa5557076540aa275f3124f`
 
-- Parser: `logmine.ioc.parsers.raccoon.RaccoonStealerParser`
+- Format ID: `raccoon`
 - Observed filenames: `System Info.txt`
 - Panel brand: -
 - Distribution channel: -
@@ -54,7 +54,7 @@ Recognition anchors:
 - Historical records represented: **386**
 - Representative sample: [open sample](samples/v_69fc6a9bafa5557076540aa275f3124f/sample.txt)
 - Sample SHA-256: `a1f2514c030c612051fff1c8e733a80714411d8090ba055be29059d67f23aaf8`
-- Sample provenance: Logmine runtime output, scrubbed for public use
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
 Recognition anchors:
 

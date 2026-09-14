@@ -16,13 +16,12 @@ ROOT = Path(__file__).resolve().parents[1]
 SAMPLE = "Fixture stealer marker\nMachine ID: <redacted>\n"
 
 
-def _variant_id(parser: str, panel: str | None = None, layout: str | None = None) -> str:
+def _variant_id(format_id: str, panel: str | None = None, layout: str | None = None) -> str:
     def identity(value: str | None) -> str:
         return " ".join(unicodedata.normalize("NFKC", value or "").casefold().split())
 
-    module, class_name = parser.rsplit(".", 1)
     material = "\0".join(
-        ("logmine-variant-v1", module, class_name, identity(panel), identity(layout))
+        ("test-fixture-variant-v1", format_id, identity(panel), identity(layout))
     )
     return "v_" + hashlib.sha256(material.encode()).hexdigest()[:32]
 
@@ -49,7 +48,7 @@ def _family(
 
 
 def _variant(
-    parser: str = "logmine.ioc.parsers.fixture.FixtureParser",
+    format_id: str = "fixture-format",
     filename: str = "system-info.txt",
     *,
     panel: str | None = None,
@@ -57,8 +56,8 @@ def _variant(
     field: str = "Machine ID",
 ) -> dict:
     return {
-        "id": _variant_id(parser, panel),
-        "parser": parser,
+        "id": _variant_id(format_id, panel),
+        "format_id": format_id,
         "filenames": [filename],
         "panel_brand": panel,
         "distribution_channel": None,
@@ -87,7 +86,7 @@ def _install_variant(root: Path, family: dict, variant: dict, content: str) -> N
     stored["sample"] = {
         "path": relative.as_posix(),
         "sha256": hashlib.sha256(data).hexdigest(),
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": True,
     }
     family["variants"].append(stored)
@@ -323,14 +322,17 @@ class CatalogTests(unittest.TestCase):
             self.assertEqual(raised.exception.code, "duplicate")
             self.assertIn("across sources and observed_channels", str(raised.exception))
 
-    def test_variant_id_uses_exact_stable_contract(self) -> None:
-        actual = catalog._expected_variant_id(
-            "logmine.ioc.parsers.redline.RedlineParser", "RedLine", None
-        )
-        self.assertEqual(actual, "v_5ab9d955c734184e707e1231cec208c5")
-        self.assertEqual(
-            actual, _variant_id("logmine.ioc.parsers.redline.RedlineParser", "RedLine")
-        )
+    def test_variant_id_is_an_opaque_stable_identifier(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            family = _family()
+            variant = _variant()
+            variant["id"] = "v_" + "a" * 32
+            _install_variant(root, family, variant, SAMPLE)
+
+            stats = catalog.validate_catalog(root)
+
+            self.assertEqual(stats["variants"], 1)
 
     def test_duplicate_ingest_is_a_no_op(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
@@ -349,6 +351,208 @@ class CatalogTests(unittest.TestCase):
             self.assertEqual(result["changed_paths"], [])
             self.assertEqual(family_path.read_bytes(), before)
             self.assertEqual(len(list((family_path.parent / "samples").rglob("*.*"))), 1)
+
+    def test_ingest_deduplicates_by_public_format_identity(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            family = _family()
+            stored_variant = _variant()
+            _install_variant(root, family, stored_variant, SAMPLE)
+            candidate_variant = dict(stored_variant)
+            candidate_variant["id"] = "v_" + "b" * 32
+            candidate = _write_candidate(
+                root,
+                family,
+                candidate_variant,
+                content=SAMPLE + "Distinct observation\n",
+            )
+
+            result = catalog.ingest(candidate, root)
+
+            self.assertEqual(result["status"], "no_change")
+            self.assertEqual(result["variant_id"], stored_variant["id"])
+            self.assertEqual(result["changed_paths"], [])
+
+    def test_ingest_deduplicates_same_family_sample_hash_after_identity_drift(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            family = _family()
+            stored_variant = _variant("first-format")
+            _install_variant(root, family, stored_variant, SAMPLE)
+            candidate_variant = _variant("second-format")
+            candidate = _write_candidate(root, family, candidate_variant)
+
+            result = catalog.ingest(candidate, root)
+            stored = json.loads(
+                (root / "families" / family["id"] / "family.json").read_text(encoding="utf-8")
+            )
+
+            self.assertEqual(result["status"], "no_change")
+            self.assertEqual(result["variant_id"], stored_variant["id"])
+            self.assertEqual([item["id"] for item in stored["variants"]], [stored_variant["id"]])
+            self.assertEqual(len(list((root / "families").glob("*/samples/*/*"))), 1)
+
+    def test_ingest_rejects_sample_hash_owned_by_another_family(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            first_family = _family()
+            _install_variant(root, first_family, _variant("first-format"), SAMPLE)
+            second_family = _family("second-family", "Second Family")
+            _write_family(root, second_family)
+            candidate = _write_candidate(
+                root,
+                second_family,
+                _variant("second-format"),
+            )
+            before = _tree_state(root)
+
+            with self.assertRaises(catalog.CatalogError) as raised:
+                catalog.ingest(candidate, root)
+
+            self.assertEqual(raised.exception.code, "collision")
+            self.assertIn("already belongs to fixture-family", str(raised.exception))
+            self.assertEqual(_tree_state(root), before)
+
+    def test_ingest_rejects_id_collision_with_different_format_identity(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            family = _family()
+            stored_variant = _variant()
+            _install_variant(root, family, stored_variant, SAMPLE)
+            candidate_variant = dict(stored_variant)
+            candidate_variant["format_id"] = "different-format"
+            candidate = _write_candidate(
+                root,
+                family,
+                candidate_variant,
+                content=SAMPLE + "Distinct observation\n",
+            )
+
+            with self.assertRaises(catalog.CatalogError) as raised:
+                catalog.ingest(candidate, root)
+
+            self.assertEqual(raised.exception.code, "collision")
+            self.assertIn("different identity", str(raised.exception))
+
+    def test_repository_rejects_duplicate_public_format_identity(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            family = _family()
+            first = _variant()
+            second = dict(first)
+            second["id"] = "v_" + "c" * 32
+            _install_variant(root, family, first, SAMPLE)
+            _install_variant(root, family, second, SAMPLE)
+
+            with self.assertRaises(catalog.CatalogError) as raised:
+                catalog.validate_catalog(root)
+
+            self.assertEqual(raised.exception.code, "duplicate")
+            self.assertIn("format/panel/layout identity", str(raised.exception))
+
+    def test_repository_rejects_variant_id_reused_across_families(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            first_family = _family()
+            second_family = _family("second-family", "Second Family")
+            first = _variant("first-format")
+            second = _variant("second-format")
+            second["id"] = first["id"]
+            _install_variant(root, first_family, first, SAMPLE)
+            _install_variant(root, second_family, second, SAMPLE + "Second sample\n")
+
+            with self.assertRaises(catalog.CatalogError) as raised:
+                catalog.validate_catalog(root)
+
+            self.assertEqual(raised.exception.code, "duplicate")
+            self.assertIn("variant id", str(raised.exception))
+            self.assertIn("shared by", str(raised.exception))
+
+    def test_repository_rejects_format_id_reused_across_families(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            first_family = _family()
+            second_family = _family("second-family", "Second Family")
+            _install_variant(
+                root,
+                first_family,
+                _variant("shared-format", panel="First Panel"),
+                SAMPLE,
+            )
+            _install_variant(
+                root,
+                second_family,
+                _variant("shared-format", panel="Second Panel"),
+                SAMPLE + "Second sample\n",
+            )
+
+            with self.assertRaises(catalog.CatalogError) as raised:
+                catalog.validate_catalog(root)
+
+            self.assertEqual(raised.exception.code, "duplicate")
+            self.assertIn("format id shared-format is shared", str(raised.exception))
+
+    def test_repository_rejects_duplicate_sample_hash_across_families(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            first_family = _family()
+            second_family = _family("second-family", "Second Family")
+            _install_variant(root, first_family, _variant("first-format"), SAMPLE)
+            _install_variant(root, second_family, _variant("second-format"), SAMPLE)
+
+            with self.assertRaises(catalog.CatalogError) as raised:
+                catalog.validate_catalog(root)
+
+            self.assertEqual(raised.exception.code, "duplicate")
+            self.assertIn("sample SHA-256 is shared", str(raised.exception))
+
+    def test_ingest_rejects_cross_family_variant_id_reuse(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            first_family = _family()
+            second_family = _family("second-family", "Second Family")
+            first = _variant("first-format")
+            _install_variant(root, first_family, first, SAMPLE)
+            _write_family(root, second_family)
+            second = _variant("second-format")
+            second["id"] = first["id"]
+            candidate = _write_candidate(
+                root,
+                second_family,
+                second,
+                content=SAMPLE + "Second sample\n",
+            )
+
+            with self.assertRaises(catalog.CatalogError) as raised:
+                catalog.ingest(candidate, root)
+
+            self.assertEqual(raised.exception.code, "collision")
+            self.assertIn("already belongs to fixture-family", str(raised.exception))
+
+    def test_ingest_rejects_cross_family_format_id_reuse(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            first_family = _family()
+            second_family = _family("second-family", "Second Family")
+            _install_variant(
+                root,
+                first_family,
+                _variant("shared-format", panel="First Panel"),
+                SAMPLE,
+            )
+            _write_family(root, second_family)
+            candidate = _write_candidate(
+                root,
+                second_family,
+                _variant("shared-format", panel="Second Panel"),
+                content=SAMPLE + "Second sample\n",
+            )
+
+            with self.assertRaises(catalog.CatalogError) as raised:
+                catalog.ingest(candidate, root)
+
+            self.assertEqual(raised.exception.code, "collision")
+            self.assertIn("format id shared-format already belongs", str(raised.exception))
 
     def test_new_ingest_adds_exactly_one_variant_and_sample(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
@@ -370,6 +574,37 @@ class CatalogTests(unittest.TestCase):
             self.assertEqual([item["id"] for item in stored["variants"]], [variant["id"]])
             self.assertEqual(len(list((root / "families").glob("*/samples/*/*"))), 1)
 
+    def test_existing_family_keeps_public_metadata_when_ingesting_new_variant(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            family = _family()
+            family["description"] = "Authoritative public research narrative."
+            _write_family(root, family)
+            incoming = json.loads(json.dumps(family))
+            incoming["description"] = "Older upstream narrative."
+            incoming["detection_notes"] = "Older upstream detection notes."
+            variant = _variant(
+                "second-format",
+                marker="Second stealer marker",
+                field="Second ID",
+            )
+            candidate = _write_candidate(
+                root,
+                incoming,
+                variant,
+                content="Second stealer marker\nSecond ID: <redacted>\n",
+            )
+
+            result = catalog.ingest(candidate, root)
+            stored = json.loads(
+                (root / "families" / family["id"] / "family.json").read_text(encoding="utf-8")
+            )
+
+            self.assertEqual(result["status"], "changed")
+            self.assertEqual(stored["description"], "Authoritative public research narrative.")
+            self.assertEqual(stored["detection_notes"], family["detection_notes"])
+            self.assertEqual([item["id"] for item in stored["variants"]], [variant["id"]])
+
     def test_ingest_preserves_observed_label_relationship_and_channel_fields(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
@@ -380,7 +615,7 @@ class CatalogTests(unittest.TestCase):
             family["related_external"] = ["External Research Name"]
             family["observed_channels"] = ["https://t.me/observed_channel"]
             family["sources"] = []
-            variant = _variant("logmine.ioc.parsers.fixture.ObservedBannerParser")
+            variant = _variant("observed-banner-format")
             variant["attribution_confidence"] = "unknown"
             candidate = _write_candidate(root, family, variant)
 
@@ -413,6 +648,38 @@ class CatalogTests(unittest.TestCase):
             self.assertIn("unknown fields: schema_version", str(raised.exception))
             self.assertEqual(_tree_state(root), before)
 
+    def test_ingest_rejects_internal_implementation_field(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            family = _family()
+            _write_family(root, family)
+            candidate = _write_candidate(root, family, _variant())
+            value = json.loads(candidate.read_text(encoding="utf-8"))
+            value["variant"]["parser"] = "internal.package.Detector"
+            candidate.write_text(json.dumps(value, indent=2), encoding="utf-8")
+
+            with self.assertRaises(catalog.CatalogError) as raised:
+                catalog.ingest(candidate, root)
+
+            self.assertEqual(raised.exception.code, "candidate")
+            self.assertIn("unknown fields: parser", str(raised.exception))
+
+    def test_existing_family_ingest_rejects_unknown_metadata_field(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            family = _family()
+            _write_family(root, family)
+            candidate = _write_candidate(root, family, _variant())
+            value = json.loads(candidate.read_text(encoding="utf-8"))
+            value["family"]["internal_note"] = "not part of the public record"
+            candidate.write_text(json.dumps(value, indent=2), encoding="utf-8")
+
+            with self.assertRaises(catalog.CatalogError) as raised:
+                catalog.ingest(candidate, root)
+
+            self.assertEqual(raised.exception.code, "candidate")
+            self.assertIn("unknown fields: internal_note", str(raised.exception))
+
     def test_ingest_requires_explicit_sanitized_provenance(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
@@ -438,7 +705,7 @@ class CatalogTests(unittest.TestCase):
             _install_variant(root, family, _variant(), SAMPLE)
             catalog.build(root)
             second = _variant(
-                "logmine.ioc.parsers.fixture.SecondParser",
+                "second-format",
                 marker="Second stealer marker",
                 field="Second ID",
             )
@@ -494,14 +761,12 @@ class CatalogTests(unittest.TestCase):
             self.assertEqual(raised.exception.code, "candidate")
             self.assertIn("not publishable", str(raised.exception))
 
-    def test_ingest_rejects_notmalware_parser_under_normal_family(self) -> None:
+    def test_ingest_rejects_benign_format_under_normal_family(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             family = _family()
             _write_family(root, family)
-            variant = _variant(
-                "logmine.ioc.parsers.not_malware.NotMalwareParser"
-            )
+            variant = _variant("not-malware-format")
             candidate = _write_candidate(root, family, variant)
 
             with self.assertRaises(catalog.CatalogError) as raised:
@@ -515,8 +780,8 @@ class CatalogTests(unittest.TestCase):
             root = Path(temporary)
             for suffix in ("Alpha", "Beta"):
                 family = _family(f"cs-{suffix.lower()}", f"CS{suffix}", "cystack_named")
-                parser = f"logmine.ioc.parsers.fixture.CS{suffix}Parser"
-                _install_variant(root, family, _variant(parser), SAMPLE)
+                format_id = f"cs-{suffix.lower()}-format"
+                _install_variant(root, family, _variant(format_id), SAMPLE)
             probe = root / "system-info.txt"
             probe.write_text("No structural anchors in this file.\n", encoding="utf-8")
 
@@ -539,13 +804,13 @@ class CatalogTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             generic = _family("generic-layout", "Generic Layout", "cystack_named")
-            generic_variant = _variant("logmine.ioc.parsers.fixture.GenericParser")
+            generic_variant = _variant("generic-format")
             generic_variant["markers"] = []
             generic_variant["fields"] = ["CPU", "IP"]
             _install_variant(root, generic, generic_variant, "CPU: x\nIP: <IP>\n")
 
             specific = _family("specific-stealer", "Specific Stealer")
-            specific_variant = _variant("logmine.ioc.parsers.fixture.SpecificParser")
+            specific_variant = _variant("specific-format")
             specific_variant["markers"] = ["Unique stealer banner"]
             specific_variant["fields"] = []
             _install_variant(
@@ -569,13 +834,13 @@ class CatalogTests(unittest.TestCase):
             root = Path(temporary)
             shared_content = "[Software]\nMicrosoft Visual C++\n"
             short = _family("short-signature", "Short Signature", "cystack_named")
-            short_variant = _variant("logmine.ioc.parsers.fixture.ShortParser")
+            short_variant = _variant("short-format")
             short_variant["markers"] = ["[Software]"]
             short_variant["fields"] = []
             _install_variant(root, short, short_variant, shared_content)
 
             long = _family("long-signature", "Long Signature", "cystack_named")
-            long_variant = _variant("logmine.ioc.parsers.fixture.LongParser")
+            long_variant = _variant("long-format")
             long_variant["markers"] = ["[Software]", "Microsoft Visual C++"]
             long_variant["fields"] = []
             _install_variant(root, long, long_variant, shared_content)
@@ -648,6 +913,22 @@ class CatalogTests(unittest.TestCase):
 
             self.assertEqual(raised.exception.code, "shape")
             self.assertIn("sanitized", str(raised.exception))
+
+    def test_repository_requires_cystack_collection_provenance(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            family = _family()
+            _install_variant(root, family, _variant(), SAMPLE)
+            family_path = root / "families" / family["id"] / "family.json"
+            stored = json.loads(family_path.read_text(encoding="utf-8"))
+            stored["variants"][0]["sample"]["source"] = "unknown_collection"
+            family_path.write_text(json.dumps(stored, indent=2) + "\n", encoding="utf-8")
+
+            with self.assertRaises(catalog.CatalogError) as raised:
+                catalog.validate_catalog(root)
+
+            self.assertEqual(raised.exception.code, "provenance")
+            self.assertIn("cystack_collection", str(raised.exception))
 
 
 if __name__ == "__main__":

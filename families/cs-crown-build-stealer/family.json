@@ -3,7 +3,7 @@
   "name": "CSCrownBuildStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSCrownBuildStealer is a CyStack-coined identifier for a\nsix-line `Information.txt` Telegram-bot caption observed\ninside `!! 2025 JULY.part001.rar` aggregator packs under\n`[<CC>]<IPv4>/Information.txt` victim folders. The panel is a\ncompact preview summary - one field per line, each line opens\nwith an emoji glyph attached directly to the ASCII key with no\nseparator space (`🚩IP:`, `👑Build:`, `🔑Passwords:`,\n`🍪Cookies:`, `💰Wallets:`, `📂Applications:`). The zero-space\nform is the panel quirk that distinguishes this layout from\nother emoji-prefixed parsers.\n\nThe IP line carries a trailing `(<CC>)` two-letter ISO country\ncode in parentheses after the IPv4. The Build line carries an\noperator-set build / affiliate label (`STEAM` in the observed\nsample, but the slot accepts arbitrary literals). The Wallets\nline names a single wallet brand (`MetaMask`) rather than\nemitting a count. The Applications line uses a literal `No No\n/ No` placeholder when the empty-bucket sentinel applies.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and the\npublic stealer-format catalogues do not document a family that\nemits this exact six-line zero-space emoji-key shape with the\ncountry-code-in-parens IP convention and the `Build:` operator\nlabel slot.",
+  "description": "CSCrownBuildStealer is a CyStack-coined identifier for a\nsix-line `Information.txt` Telegram-bot caption observed\ninside `!! 2025 JULY.part001.rar` aggregator packs under\n`[<CC>]<IPv4>/Information.txt` victim folders. The panel is a\ncompact preview summary - one field per line, each line opens\nwith an emoji glyph attached directly to the ASCII key with no\nseparator space (`🚩IP:`, `👑Build:`, `🔑Passwords:`,\n`🍪Cookies:`, `💰Wallets:`, `📂Applications:`). The zero-space\nform is the panel quirk that distinguishes this layout from\nother emoji-prefixed formats.\n\nThe IP line carries a trailing `(<CC>)` two-letter ISO country\ncode in parentheses after the IPv4. The Build line carries an\noperator-set build / affiliate label (`STEAM` in the observed\nsample, but the slot accepts arbitrary literals). The Wallets\nline names a single wallet brand (`MetaMask`) rather than\nemitting a count. The Applications line uses a literal `No No\n/ No` placeholder when the empty-bucket sentinel applies.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and the\npublic stealer-format catalogues do not document a family that\nemits this exact six-line zero-space emoji-key shape with the\ncountry-code-in-parens IP convention and the `Build:` operator\nlabel slot.",
   "aliases": [],
   "typical_targets": [
     "Browser saved credentials (count surfaced as `Passwords:`)",
@@ -11,7 +11,7 @@
     "Cryptocurrency wallet extensions (single brand surfaced as `Wallets:`)",
     "Application-data presence flag (`Applications:`)"
   ],
-  "detection_notes": "Fingerprint requires three line-anchored zero-space\nemoji-key literals: `👑Build:`, `🚩IP:`, and\n`📂Applications:`. The three-anchor combination is unique\nacross the registry - no other parser emits any of the\nthree forms (CSEmojiInfo / CSEmojiCount / CSMainLoot /\nCSRLPanel all separate the glyph from the ASCII key\nwith a space). During triage, treat the family\nattribution as unknown: the compact six-line bot-caption shape ships only IP, country, and build-label\nas IOC fields, so per-victim hostname / username /\nOS / HWID / timestamp cannot be recovered from this\nlog alone. The `Build:` slot is operator-controlled, so\none observed value (`STEAM`) does not represent the\nfull label space.",
+  "detection_notes": "Fingerprint requires three line-anchored zero-space\nemoji-key literals: `👑Build:`, `🚩IP:`, and\n`📂Applications:`. The three-anchor combination is unique\nacross this catalog - no other format emits any of the\nthree forms (CSEmojiInfo / CSEmojiCount / CSMainLoot /\nCSRLPanel all separate the glyph from the ASCII key\nwith a space). During triage, treat the family\nattribution as unknown: the compact six-line bot-caption shape ships only IP, country, and build-label\nas observable fields, so per-victim hostname / username /\nOS / HWID / timestamp cannot be recovered from this\nlog alone. The `Build:` slot is operator-controlled, so\none observed value (`STEAM`) does not represent the\nfull label space.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -44,7 +44,7 @@
   "variants": [
     {
       "id": "v_eae1f957793bebdb107bbdd9b20a5a3e",
-      "parser": "logmine.ioc.parsers.cs_crown_build_stealer.CSCrownBuildStealerParser",
+      "format_id": "cs-crown-build-stealer",
       "filenames": [
         "Information.txt"
       ],
@@ -61,7 +61,7 @@
       "sample": {
         "path": "samples/v_eae1f957793bebdb107bbdd9b20a5a3e/sample.txt",
         "sha256": "b85cbebdce04009c11d64d24c265852848495ce896f7ae4fc7bf657638570742",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }

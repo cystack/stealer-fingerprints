@@ -41,7 +41,7 @@
   "variants": [
     {
       "id": "v_0db166abde7c3b7da1e04e5d3ff74795",
-      "parser": "logmine.ioc.parsers.cs_deimos_stealer.CSDeimosStealerParser",
+      "format_id": "cs-deimos-stealer",
       "filenames": [
         "System.txt"
       ],
@@ -59,7 +59,7 @@
       "sample": {
         "path": "samples/v_0db166abde7c3b7da1e04e5d3ff74795/sample.txt",
         "sha256": "a83fccfacb06f4fbe761e09d8b9ff8fc419a3f5e4ab52498f360f848ba9b9926",
-        "source": "logmine_runtime",
+        "source": "cystack_collection",
         "sanitized": true
       }
     }
