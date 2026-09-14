@@ -159,6 +159,63 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(error["status"], "rejected")
         self.assertEqual(error["line"], 1)
 
+    def test_cli_planning_rejections_report_exact_multiline_source(self) -> None:
+        first = self.existing_candidate()
+
+        family_mismatch = json.loads(json.dumps(first))
+        family_mismatch["family"]["name"] += " mismatch"
+
+        manual_review = json.loads(json.dumps(first))
+        manual_review["family"] = {
+            "id": "new-known-family",
+            "name": "New Known Family",
+            "classification": "known_family",
+            "attribution_confidence": "high",
+        }
+
+        owner_id = first["family"]["id"]
+        for family_path in sorted((ROOT / "families").glob("*/family.json")):
+            other_family = catalog.load_json(family_path)
+            if other_family["id"] != owner_id and other_family["classification"] == "known_family":
+                break
+        else:
+            self.fail("catalog contains no second known family")
+        ambiguous = json.loads(json.dumps(first))
+        ambiguous["family"] = {
+            key: other_family[key]
+            for key in ("id", "name", "classification", "attribution_confidence")
+        }
+
+        cases = (
+            ("family_mismatch", family_mismatch),
+            ("manual_review_required", manual_review),
+            ("ambiguous_signature", ambiguous),
+        )
+        for expected_code, rejected in cases:
+            with self.subTest(code=expected_code):
+                process = subprocess.run(
+                    [
+                        sys.executable,
+                        str(ROOT / "tools" / "catalog.py"),
+                        "ingest",
+                        "--events",
+                        "-",
+                    ],
+                    input="\n" + json.dumps(first) + "\n" + json.dumps(rejected) + "\n",
+                    text=True,
+                    capture_output=True,
+                    cwd=ROOT,
+                    check=False,
+                )
+                self.assertEqual(process.returncode, 2)
+                self.assertEqual(process.stdout, "")
+                error = json.loads(process.stderr)
+                self.assertEqual(error["status"], "rejected")
+                self.assertEqual(error["code"], expected_code)
+                # Leading blank line is intentional: physical JSONL line 3,
+                # not merely the second parsed candidate.
+                self.assertEqual(error["line"], 3)
+
     def test_catalog_and_generated_outputs_validate(self) -> None:
         counts = catalog.validate_catalog()
         self.assertGreater(counts["families"], 20)

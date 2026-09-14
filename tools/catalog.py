@@ -711,13 +711,14 @@ def ingest(events_path: str) -> dict[str, Any]:
             lines = Path(events_path).read_text(encoding="utf-8").splitlines()
         except (OSError, UnicodeError) as exc:
             raise CatalogError("input", f"cannot read events: {exc}") from exc
-    candidates: list[tuple[dict[str, Any], dict[str, Any]]] = []
+    candidates: list[tuple[dict[str, Any], dict[str, Any], int]] = []
     for line_number, line in enumerate(lines, 1):
         if not line.strip():
             continue
         try:
             value = json.loads(line, object_pairs_hook=_json_object_no_duplicates)
-            candidates.append(_validate_candidate(value))
+            family, signature = _validate_candidate(value)
+            candidates.append((family, signature, line_number))
         except CatalogError as exc:
             exc.line = line_number
             raise
@@ -738,22 +739,30 @@ def ingest(events_path: str) -> dict[str, Any]:
     }
     ids: list[str] = []
     duplicates = 0
-    for family, signature in candidates:
+    for family, signature, source_line in candidates:
         existing = existing_families.get(family["id"])
         if existing:
             for key in ("name", "classification", "attribution_confidence"):
                 if family[key] != existing[key]:
                     raise CatalogError(
-                        "family_mismatch", f"candidate {family['id']} does not match catalog {key}"
+                        "family_mismatch",
+                        f"candidate {family['id']} does not match catalog {key}",
+                        source_line,
                     )
         elif family["classification"] == "known_family":
             raise CatalogError(
-                "manual_review_required", "new known families require a curated family.json review"
+                "manual_review_required",
+                "new known families require a curated family.json review",
+                source_line,
             )
         else:
             planned = planned_families.setdefault(family["id"], family)
             if planned != family:
-                raise CatalogError("family_mismatch", f"conflicting metadata for {family['id']}")
+                raise CatalogError(
+                    "family_mismatch",
+                    f"conflicting metadata for {family['id']}",
+                    source_line,
+                )
         fp = fingerprint_document(family["id"], signature)
         signature_key = canonical_bytes(signature)
         owner = signature_owners.get(signature_key)
@@ -761,6 +770,7 @@ def ingest(events_path: str) -> dict[str, Any]:
             raise CatalogError(
                 "ambiguous_signature",
                 f"candidate signature is already assigned to {owner}",
+                source_line,
             )
         signature_owners[signature_key] = family["id"]
         ids.append(fp["id"])
