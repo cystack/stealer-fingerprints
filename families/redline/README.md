@@ -1,86 +1,93 @@
 # Redline
 
-**Known malware family · high attribution confidence**
+Canonical Redline Stealer logs. UserInformation.txt files emitting
+the family's typo'd `Operation System:` field together with a full
+identity, locale, and hardware block. Build banners typically frame
+the panel name (Octopus Cloud Logs and similar resellers) above
+the field block.
 
-## At a glance
+## Research status
 
-- Aliases: <code>RedLine</code>, <code>RedLineStealer</code>
-- Typical filenames: <code>userinformation.txt</code>
-- Published formats: 1
-- Representative samples: 1
+- Classification: **Known malware family**
+- Attribution confidence: **high**
+- Aliases: `RedLine`, `RedLineStealer`
+- Variants observed: **2**
+- Historical Logmine records represented: **31,304**
 
-<p>RedLine exports <code>userinformation.txt</code> with identity, locale, and hardware fields. The misspelled <code>Operation System</code> label is a distinctive part of the layout.</p>
+## What it targets
 
-## How to recognize it
+- Browser saved credentials
+- Browser cookies and session storage
+- Crypto wallet desktop clients and browser extensions
+- FTP and VPN client configs
+- Discord and Telegram session tokens
 
-- No stable text banner is known; combine filename and field layout.
-- Recurring fields: <code>anti-viruses</code>, <code>build id</code>, <code>country</code>, <code>current language</code>, <code>hwid</code>, <code>ip</code>, <code>location</code>, <code>log date</code>, <code>name</code>, <code>operation system</code>, <code>process elevation</code>, <code>timezone</code>, <code>uac</code>, <code>zip code</code>
+## Detection notes
 
-## Formats
+High-confidence trigger: the typo'd `Operation System:` field
+paired with `FileLocation:`. Stripped variants without
+`FileLocation:` are tracked separately as `RedlineLike Stealer`.
 
-| Format | Evidence | Fingerprint |
-|---|---|---|
-| userinformation.txt - anti-viruses / build id | 14 fields, filename | [`fp_58def11db6c7e41c1cc58077791298c8`](fingerprints/fp_58def11db6c7e41c1cc58077791298c8.json) |
+## Observed log variants
 
-## Representative sample
+### `v_436a2a6dd26480ac96afbce620412cb2`
 
-Observed text sample. Placeholders mark values removed from the original log.
+- Parser: `logmine.ioc.parsers.redline.RedlineParser`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `operation-system-file-location`
+- Historical records represented: **31,303**
+- Representative sample: [open sample](samples/v_436a2a6dd26480ac96afbce620412cb2/sample.txt)
+- Sample SHA-256: `154e3ee6d7f08d47dd27169d6db791bef28822a96a089d10cfb1682802954acb`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-[<code>userinformation.txt</code>](samples/userinformation.txt)
+Recognition anchors:
 
-```text
-***********************************************
-*                                             *
-*   ____  _____ ____  _     ___ _   _ _____   *
-*  |  _ \| ____|  _ \| |   |_ _| \ | | ____|  *
-*  | |_) |  _| | | | | |    | ||  \| |  _|    *
-*  |  _ <| |___| |_| | |___ | || |\  | |___   *
-*  |_| \_|_____|____/|_____|___|_| \_|_____|  *
-*                                             *
-*                                             *
-***********************************************
+- Stable markers: -
+- Field labels: `FileLocation`, `Operation System`
 
-Build ID:
-IP: [redacted]
-FileLocation: [redacted]
-UserName: [redacted]
-Country: MA
-Zip Code: [redacted]
-Location: UNKNOWN
-HWID: [redacted]
-Current Language: French (France)
-ScreenSize: {Width=1440, Height=900}
-TimeZone: (UTC+01:00) Bruxelles, Copenhague, Madrid, Paris
-Operation System: Windows 10 Enterprise x64
-UAC: AllowAll
-Process Elevation: False
-Log date: 10/17/2023 [redacted] AM
+### `v_9ff2932c65398ba0ef8bad9c6465381a`
 
-Available KeyboardLayouts: 
-French (France)
-Arabic (Morocco)
+- Parser: `logmine.ioc.parsers.redline.RedlineParser`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `build-id-banner`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_9ff2932c65398ba0ef8bad9c6465381a/sample.txt)
+- Sample SHA-256: `9623f948a384209925e8c624313e13a6a7b10bb96620b17a18546847ca68599a`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
+Recognition anchors:
 
-Hardwares: 
-Name: Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz, 2 Cores
-Name: Intel(R) HD Graphics, 1877772288 bytes
-Name: Total of RAM, 3965.57 MB or 4158197760 bytes
+- Stable markers: `*  \|_\| \_\|_____\|____/\|_____\|___\|_\| \_\|_____\|  *`
+- Field labels: `Build ID`
 
 
-Anti-Viruses: 
-Windows Defender
-```
+## MITRE ATT&CK
 
-## References
+| Technique | Name |
+|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
 
-- [https://flare.io/learn/resources/blog/redline-stealer-malware/](https://flare.io/learn/resources/blog/redline-stealer-malware/)
+## Related catalog profiles
 
-## Try it locally
+- [RedlineLike Stealer](../redline-like-stealer/)
+- [MetaStealer](../meta-stealer/)
 
-```console
-python identify.py "families/redline/samples/userinformation.txt"
-```
+## Observed distribution channels
 
-The evidence score describes a structural comparison, not attribution certainty.
+- <https://t.me/redline_market_bot>
 
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+## Sources
+
+- <https://flare.io/learn/resources/blog/redline-stealer-malware/>
+
+Machine-readable record: [family.json](family.json)

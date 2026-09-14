@@ -1,0 +1,31 @@
+{
+  "id": "cs-parsed-unknown-stealer",
+  "name": "CSParsedUnknownStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSParsedUnknownStealer is a CyStack-coined identifier for\na banner-less variant of the parser-tool normalized log\nwrapper that the CSBradMaxCloudParsedStealer sibling also\nclaims. The wrapper is an in-house Python normalizer that a\nTelegram log broker runs over raw stealer output before\nredistribution: leading-space `Key: Value` fields, a pipe-joined `Single-line params:` hardware summary, an `Original\nfile: C:\\Users\\admin\\Desktop\\<workdir>\\...` reference to\nthe operator's analysis-machine working folder, and a\n`Source: IP-API (https://ip-api.com/)` geolocation\nattribution line.\n\nThis variant carries `Stealer: Unknown` (the tool ran but\ncould not fingerprint the underlying stealer family) and\nships without the `https://t.me/BRADMAX_CLOUD` banner that\nscopes the CSBradMaxCloudParsedStealer sibling. The\n`<workdir> = 2` operator ships all three sibling parser\nshapes seen so far (RisePro, Rhadamanthys, Unknown) without\na channel banner, so `panel_brand` and\n`distribution_channel` stay unset.",
+  "aliases": [],
+  "typical_targets": [
+    "Browser saved credentials, cookies, autofill (per underlying stealer)",
+    "Crypto wallet extensions and desktop clients (per underlying stealer)",
+    "System hardware, locale, and geolocation inventory (per wrapper output)"
+  ],
+  "detection_notes": "High-confidence trigger: line-anchored ` Stealer: Unknown`\n(leading space) plus ` Original file:` plus ` Source:\nIP-API (https://ip-api.com/)`, with no\n`https://t.me/BRADMAX_CLOUD` banner in the body. Attribution\nis intentionally CyStack-coined because the wrapper tool\nitself admits it could not fingerprint the source stealer.\nAnalysts triaging this variant should pivot on the raw log\nif the archive preserved it (the `Original file:` field\npoints at the source path on the operator machine), or\nmatch victim IPs against other stealer channels to guess\nthe source family.",
+  "attack_techniques": [
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-brad-max-cloud-parsed-stealer",
+    "rise-pro",
+    "rhadamanthys"
+  ],
+  "sources": [],
+  "variants": []
+}

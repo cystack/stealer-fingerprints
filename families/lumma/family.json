@@ -1,26 +1,203 @@
 {
-  "$schema": "../../schemas/family.schema.json",
-  "aliases": [
-    "Lumma Stealer",
-    "LummaC2"
-  ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "Lumma logs are recognized across `information.txt`, `system.txt`, `system_info.txt`, and `userinformation.txt` by shared fields including `LummaC2 Build`, `LID`, `HWID`, and CPU details. The observed `Time` value ends with a `(sig:<UNIX>.<hex>)` marker.",
-  "external_references": [
-    {
-      "url": "https://www.cloudflare.com/cloudforce-one/research/loot-load-repeat-dissecting-the-lumma-stealer-playbook/"
-    }
-  ],
   "id": "lumma",
   "name": "Lumma",
-  "schema_version": "1.0",
-  "targets": [
-    "2FA seeds from Authy and similar desktop clients",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "Lumma C2 (LummaC2) logs. The panel writes `System.txt` with a\nYAML-like dash-prefix list (`- LummaC2 Build:`,\n`- Configuration:`, etc.) and a distinctive `(sig:UNIX.HEX)`\nsignature on the `Time:` line. Build banners reference the\n`@lummanowork` channel; the panel is sold MaaS via\n`@lummamarketplace_bot`.",
+  "aliases": [
+    "LummaC2",
+    "Lumma Stealer"
+  ],
+  "typical_targets": [
     "Browser saved credentials, cookies, autofill",
     "Crypto wallet extensions (focus on MetaMask, Phantom, and similar)",
-    "Cryptocurrency seed phrases harvested from text files",
-    "Steam, Telegram, Discord session tokens"
+    "Steam, Telegram, Discord session tokens",
+    "2FA seeds from Authy and similar desktop clients",
+    "Cryptocurrency seed phrases harvested from text files"
   ],
-  "tracking_labels": []
+  "detection_notes": "High-confidence trigger: the `(sig:UNIX.HEX)` parenthesised\nsignature on the `- Time:` line. Together with the\n`- LummaC2 Build:` banner this is unambiguous Lumma. Several\nderivative families (Remus, AL Stealer, BabaStealer,\nArtHouseCloud, CashFlow) share the dash-prefix shape but lack\nthe signature; they should be tracked separately.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1119",
+      "name": "Automated Collection"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "remus-stealer",
+    "csal-stealer",
+    "cs-baba-stealer",
+    "cs-art-house-cloud-stealer",
+    "cs-cash-flow-stealer"
+  ],
+  "sources": [
+    "https://www.cloudflare.com/cloudforce-one/research/loot-load-repeat-dissecting-the-lumma-stealer-playbook/"
+  ],
+  "observed_channels": [
+    "https://t.me/lummanowork",
+    "https://t.me/lummamarketplace_bot"
+  ],
+  "variants": [
+    {
+      "id": "v_098b5cb9b92999ab2453a165215e61e1",
+      "parser": "logmine.ioc.parsers.cs_brad_logs_stealer.CSBradLogsStealerParser",
+      "filenames": [
+        "System.txt"
+      ],
+      "panel_brand": "BRADMAX",
+      "distribution_channel": "@BRADLOGS",
+      "attribution_confidence": "high",
+      "markers": [
+        "- @BRADLOGS",
+        "- Date : Build:",
+        "BRADMAX"
+      ],
+      "fields": [],
+      "observations": 7369,
+      "sample": {
+        "path": "samples/v_098b5cb9b92999ab2453a165215e61e1/sample.txt",
+        "sha256": "f6ae0c9fd19239a2f3275a95e5769ea0c26079b999e4d9cd37d23e5be2f84ea4",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    },
+    {
+      "id": "v_41473f829c21e719f7d2c773a67ed897",
+      "parser": "logmine.ioc.parsers.cs_brad_logs_stealer.CSBradLogsStealerParser",
+      "filenames": [
+        "System.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": "@BRADLOGS",
+      "attribution_confidence": "high",
+      "markers": [
+        "- @BRADLOGS"
+      ],
+      "fields": [],
+      "observations": 206,
+      "sample": {
+        "path": "samples/v_41473f829c21e719f7d2c773a67ed897/sample.txt",
+        "sha256": "d01c724db8109b2834104f87e4b4cd1ed91ce1208ebefc7cd4b1519f9787005f",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    },
+    {
+      "id": "v_7682ef5532c87a9cc6598dd189ef2ae5",
+      "parser": "logmine.ioc.parsers.lumma.LummaParser",
+      "filenames": [
+        "System.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "LummaC2, Build"
+      ],
+      "fields": [],
+      "observations": 3,
+      "sample": {
+        "path": "samples/v_7682ef5532c87a9cc6598dd189ef2ae5/sample.txt",
+        "sha256": "e1ee50cd83e5e442a2a04894bed6f45d4cdd5a5d938c07c1b15cc1a164a96fc6",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "legacy-lummac2-build"
+    },
+    {
+      "id": "v_a9b26efd5e8a2cd1d6caa141ff2fb418",
+      "parser": "logmine.ioc.parsers.lumma.LummaParser",
+      "filenames": [
+        "Information.txt",
+        "System.txt",
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "LummaC2 Build:"
+      ],
+      "fields": [],
+      "observations": 30637,
+      "sample": {
+        "path": "samples/v_a9b26efd5e8a2cd1d6caa141ff2fb418/sample.txt",
+        "sha256": "38a2eaac0856758fb7c1c07750cd08f96c8dc746c93801a38a84b7185deefa76",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "lumma-build-banner"
+    },
+    {
+      "id": "v_c533cdf8c3b19c2014faa1054388e8d3",
+      "parser": "logmine.ioc.parsers.lumma.LummaParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [],
+      "fields": [
+        "CPU Vendor",
+        "Display resolution",
+        "HWID"
+      ],
+      "observations": 110,
+      "sample": {
+        "path": "samples/v_c533cdf8c3b19c2014faa1054388e8d3/sample.txt",
+        "sha256": "818614ea003ee14409b1ee491b0ba452f8c36ae21da4983e41f3b6b223dced8b",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "bare-hwid-cpu-display"
+    },
+    {
+      "id": "v_db24fff43a757db95bdc275cd0470dea",
+      "parser": "logmine.ioc.parsers.lumma.LummaParser",
+      "filenames": [
+        "Information.txt",
+        "System.txt",
+        "system_info.txt",
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [],
+      "fields": [
+        "CPU Vendor",
+        "Display resolution",
+        "HWID",
+        "IP Address"
+      ],
+      "observations": 738049,
+      "sample": {
+        "path": "samples/v_db24fff43a757db95bdc275cd0470dea/sample.txt",
+        "sha256": "d34e235ef451070611fce20bf7cec44ef91798b69f201c5153a68fd7cd6e2ba3",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "dash-hwid-cpu-ip-display"
+    }
+  ]
 }

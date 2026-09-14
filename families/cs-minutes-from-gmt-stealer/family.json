@@ -1,0 +1,35 @@
+{
+  "id": "cs-minutes-from-gmt-stealer",
+  "name": "CSMinutesFromGmtStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSMinutesFromGmtStealer is a CyStack-coined identifier for\na `System Info.txt` panel whose timezone field is emitted\nas `+NNN minutes from GMT` (a signed integer minute\noffset with a trailing GMT literal). The format mirrors\nthe JavaScript `Date.prototype.getTimezoneOffset` semantics,\nhinting at a Node.js or Electron-based panel. Cyfirma's\nLTX Stealer writeup and Microsoft's Node.js-abuse guidance\nboth document Node.js-runtime stealers as a growing\ncategory, but no curated CTI vendor documents this exact\npanel layout.\n\nObserved inside `MARCH 15 - 3059 LOGS.part01.rar`\naggregator packs at\n`[<CC>]<32-hex-lowercase-HWID>/System Info.txt` victim\nfolders. The filename carries a literal ASCII space; the\nfolder shape uses lowercase 32-hex HWID with a bracketed\ncountry-code prefix. Body opens with a bare `IP info: <CC>\n<IPv4>` two-word first-line key that packs the country\ncode and IPv4 on one line, followed by a bare\n`System Information:` section header, tab-indented\n`- Key: Value` sub-fields (Locale, Time zone, OS,\nArchitecture, CPU, RAM, Display size, Display Devices\nnested numbered list), and a bare `Installed applications:`\nsection with tab-indented `<Name> <Version>` per-app\nentries. Family attribution is provisional pending a\npublished threat-intel mapping for this layout.",
+  "aliases": [],
+  "typical_targets": [
+    "Installed-software inventory (bare `Installed applications:` block)",
+    "System hardware and locale (`System Information:` block)",
+    "Geolocation (country code + IPv4 in `IP info:` composite)"
+  ],
+  "detection_notes": "High-confidence trigger: line-anchored `IP info:` key\nplus the `minutes from GMT` timezone-suffix literal plus\nline-anchored `Installed applications:` bare section\nheader. The `minutes from GMT` literal is the panel's\nunique developer-side quirk: no other family in this\ncatalog emits timezone as a signed integer minute count\nwith a `GMT` trailing literal. During triage, the\n`Installed applications:` block enumerates the victim's\ninstalled programs with a `<name> <version>` shape and\ncan be paired with the `IP info:` country + IPv4 pair\nfor per-victim asset inventory.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1518",
+      "name": "Software Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://github.com/fastfire/deepdarkCTI/blob/main/telegram_infostealer.md",
+    "https://github.com/MalBeacon/what-is-this-stealer",
+    "https://www.cyfirma.com/research/ltx-stealer-analysis-of-a-node-js-based-credential-stealer/"
+  ],
+  "variants": []
+}

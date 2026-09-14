@@ -1,0 +1,66 @@
+{
+  "id": "cs-stealer-cloud-user-info-stealer",
+  "name": "CSStealerCloudUserInfoStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "low",
+  "description": "CSStealerCloudUserInfoStealer is a CyStack-coined identifier\nfor the STEALERCLOUD broker's `UserInformation.txt` shape:\nthree flush-left `Key: Value` identity lines at the top\n(`Keyboard Language:`, `Display Resolution:`, an `@stealerboss\n- Buy daily fresh logs:` operator banner with a wallpaper-name\nvalue), then a centered `IP GEOLOCATION DATA` ASCII section\nheader, then six geo fields (`IP Address:`, `Country: <Name>\n(<ISO2>)`, `Region:`, `City:`, `Postal Code:`, `Timezone:\n<IANA-tz> (<UTC-offset>)`). The `IP Address:` slot accepts\nboth IPv4 and IPv6.\n\nSame broker as CSHardwareTailStealer: the STEALERCLOUD\naggregator pack splits the victim summary across two files,\nwith the YAML hardware tail in `Info.txt` and the locale plus\ngeo identity in `UserInformation.txt`. The `@STEALERBOSS`\nTelegram channel handle is the distribution channel. No public\nreporting attributes either file shape to a specific\nsource-stealer family, so attribution is provisional pending a\npublic writeup.",
+  "aliases": [],
+  "typical_targets": [
+    "Browser saved credentials and cookies (sibling files in the same victim folder; this file is identity / locale / geo only)",
+    "Victim locale (keyboard language, display resolution)",
+    "Victim geo (country, region, city, postal code, timezone) plus IPv4 / IPv6 address"
+  ],
+  "detection_notes": "The two-anchor fingerprint `@stealerboss - Buy daily\nfresh logs:` operator-handle banner plus the centered\n`IP GEOLOCATION DATA` section header is the cleanest\npanel signal. The IPv6 capability in the `IP Address:`\nslot is unusual across stealer panels (most ship IPv4\nonly via `ip-api.com`-shaped lookups). Pair with\nCSHardwareTailStealer hardware-tail Info.txt files in\nthe same victim folder for the full per-victim summary.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "cs-hardware-tail-stealer",
+    "cs-geo-sys-info-stealer",
+    "cs-ottoman-panel-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/STEALERBOSS"
+  ],
+  "variants": [
+    {
+      "id": "v_8e55366401da27155e33a5b4b0980965",
+      "parser": "logmine.ioc.parsers.cs_stealer_cloud_user_info_stealer.CSStealerCloudUserInfoStealerParser",
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "panel_brand": "STEALERCLOUD",
+      "distribution_channel": "@STEALERBOSS",
+      "attribution_confidence": "low",
+      "markers": [
+        "IP GEOLOCATION DATA"
+      ],
+      "fields": [
+        "@stealerboss - Buy daily fresh logs"
+      ],
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_8e55366401da27155e33a5b4b0980965/sample.txt",
+        "sha256": "2ab648084d61be75caa12336c62e8927bf2920ef5e0a93d8062466ad83832624",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

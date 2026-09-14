@@ -1,0 +1,81 @@
+{
+  "id": "cs-ottoman-panel-stealer",
+  "name": "CSOttomanPanelStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "low",
+  "description": "CSOttomanPanelStealer is a CyStack-coined identifier for the\nOttoman aggregator panel's `Information.txt` shape. Ottoman,\nself-styled as `Ottoman Cloud` or `Ottoman Stealer v2.0`, is a\npaid log-distribution service that resells stealer logs\nthrough the Telegram ecosystem. Per the operator's own\nmarketing site at ottomancloud.github.io, the service compiles\nharvested data from multiple source stealers, normalises the\noutput to a unified `Information.txt` shape, and sells 1500 to\n5000 records per day across tiered subscription plans ($75 to\n$600 per month).\n\nThe Ottoman panel appears in community catalogs but no public\nresearch publishes a primary analysis of the panel format. The\noperator admits Ottoman runs over multiple source malware\nfamilies (Redline, MetaStealer, Raccoon, AuraStealer,\nTitanStealer, Vidar), so the underlying family on any given\nvictim varies. The CS prefix marks the label as\nCyStack-coined; the panel brand `Ottoman` and the operator\nsupport handle `@OttoSup` are preserved as taxonomy fields.",
+  "aliases": [
+    "Ottoman Cloud",
+    "Ottoman Stealer",
+    "Ottoman Stealer v2.0"
+  ],
+  "typical_targets": [
+    "Browser saved credentials, cookies, autofill",
+    "Cryptocurrency wallet apps and browser extensions",
+    "Session tokens for Telegram, Steam, Discord",
+    "Documents matching the file-grabber filter list",
+    "Browser history, bookmarks, extensions",
+    "Credit card data stored in browsers"
+  ],
+  "detection_notes": "The parenthesized per-letter ASCII banner\n`( O | T | T | O | M | A | N )` plus the `@OttoSup`\noperator-support handle is the strongest fingerprint.\nThe `Telegram :` invite-link row inside the ASCII frame\nrotates per archive, so anchor rules should use the\nbanner literal and handle rather than the invite code.\nWhen triaging logs from this family, remember the\nunderlying malware varies per victim, so map back to\nthe source stealer (Redline / Meta / Raccoon / Aura /\nTitan / Vidar) from sibling files when possible.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1213",
+      "name": "Data from Information Repositories"
+    }
+  ],
+  "related_families": [
+    "redline",
+    "meta-stealer",
+    "raccoon",
+    "aura-stealer",
+    "vidar"
+  ],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_1f914efc1a8e43b713cc64606c2bb0e8",
+      "parser": "logmine.ioc.parsers.cs_ottoman_panel_stealer.CSOttomanPanelStealerParser",
+      "filenames": [
+        "information.txt",
+        "PC_info.txt",
+        "System.txt",
+        "UserInformation.txt"
+      ],
+      "panel_brand": "Ottoman",
+      "distribution_channel": "@OttoSup",
+      "attribution_confidence": "low",
+      "markers": [
+        "( O | T | T | O | M | A | N )"
+      ],
+      "fields": [],
+      "observations": 160,
+      "sample": {
+        "path": "samples/v_1f914efc1a8e43b713cc64606c2bb0e8/sample.txt",
+        "sha256": "173225065f85e58a00257fef0638b70c37c98dc6e7de465b6e97e889c3a024ec",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

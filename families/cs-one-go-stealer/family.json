@@ -1,0 +1,47 @@
+{
+  "id": "cs-one-go-stealer",
+  "name": "CSOneGoStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSOneGoStealer is a CyStack-coined identifier for a flat\nbare-key `System.txt` panel emitted by a Go-based stealer\nbinary. The body opens with `IP:` / `Execute Path:` / `Build\nName:` / `User Name:` / `Computer Name:` / `CPU:` / `GPU:`\n(repeated per adapter) / `Operation System:` / `Country ISO2:`\n/ `Elevated:` / `Screen Resolution:` / `Date:` lines, then a\nblank-line gap and a misspelled `Enviromental Variables:`\n(sic) section dumping the victim's Win32 environment as\n`KEY=VALUE` pairs. The observed `Build Name` value is the\nliteral `One-Go`, the operator's build / version label\nhardcoded into the panel.\n\nThe Go-runtime signature is the `Date:` value: Go's default\n`time.Time.String()` format with sub-second precision and a\ntrailing `+0000 UTC` token after the numeric offset\n(`2025-06-23 16:49:43.2152587 +0000 UTC`). Python\n`datetime.isoformat`, .NET, and Delphi all emit different\nshapes, so the trailing `UTC` keyword pins the underlying\nbinary to a Go build. The misspelled `Enviromental` section\nheader (missing the first `n`) is a stable panel-side bug\nhardcoded in the source.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting,\nincluding the Go-stealer writeups on Skuld, Salat Stealer,\nPentagon Stealer, macOS MetaStealer, and the 2019 Go-stealer\nfind, does not document a family that emits this exact field\nset. Rename if a later report attributes the layout to a known\nauthor.",
+  "aliases": [
+    "One-Go build label",
+    "Enviromental dump panel"
+  ],
+  "typical_targets": [
+    "Browser-saved credentials",
+    "Browser cookies and session tokens",
+    "System hardware and locale fingerprint",
+    "Win32 environment variable dump (full PATH, USERPROFILE, TEMP, vendor-specific keys)"
+  ],
+  "detection_notes": "Fingerprint requires three line-anchored anchor keys:\nmixed-case `Build Name:` (rules out RedlineLikeStealer's\nall-caps `BUILD NAME:`), `Country ISO2:` (the Go-idiomatic\nISO 3166-1 alpha-2 field name, unique across the registry),\nand the misspelled `Enviromental Variables:` (rules out\nCSEnvVarDumpStealer's correctly-spelled `=== ENVIRONMENT\nVARIABLES ===` triple-equals header). The Go-runtime `+0000\nUTC` timestamp suffix is an additional binary-lineage hint but\nis not part of the fingerprint. During triage, treat the\n`One-Go` build label as operator-controlled: other builds may\nuse different labels while keeping the same structural shape,\nso the family attribution should remain unknown until a public\nwriteup ties the layout to a named author.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-env-var-dump-stealer",
+    "cs-wmic-dump-stealer",
+    "redline"
+  ],
+  "sources": [],
+  "variants": []
+}

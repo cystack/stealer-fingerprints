@@ -1,0 +1,43 @@
+{
+  "id": "cs-kortex-stealer",
+  "name": "CSKortexStealer",
+  "classification": "family_variant",
+  "attribution_confidence": "low",
+  "description": "CSKortexStealer is a CyStack-coined identifier for the\n`KORTEX // STEAL` `System.txt` log observed inside the\n`APRIL 25 - 19977 LOGS` Telegram-pack distribution in\n`<CC>_<IP>_<DD-MM-YY>/` victim folders alongside XFiles and\nRedlineLikeStealer shapes. Format combines a dash-prefix\nidentity block with sectioned hardware records.",
+  "aliases": [
+    "KORTEX",
+    "KORTEX // STEAL"
+  ],
+  "typical_targets": [],
+  "detection_notes": "The `- KORTEX // STEAL` line-anchored banner with two\nforward slashes is the cleanest trigger. The dash-prefix\nfield opening (`- Path:`, `- ID:`, `- OS Version:`, etc.) is\nshared with Lumma-shape variants but the KORTEX banner is\nunique.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "lumma",
+    "x-files",
+    "redline-like-stealer"
+  ],
+  "sources": [],
+  "canonical_family": "lumma",
+  "variants": []
+}

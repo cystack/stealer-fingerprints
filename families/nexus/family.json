@@ -1,27 +1,41 @@
 {
-  "$schema": "../../schemas/family.schema.json",
+  "id": "nexus",
+  "name": "Nexus",
+  "classification": "known_family",
+  "attribution_confidence": "medium",
+  "description": "Nexus is a small C++ Windows info-stealer sold on the\nexploit.in Russian-language crime forum for around $100 per\nbuild with free updates. The first technical\nreverse-engineering write-up describes a stub of roughly 460\nKB that queries `SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion`\nfor the Windows version, and writes the small set of harvested\nattributes into a HWID-named staging directory before exfil.\n\nThe on-disk `Information.txt` carries a six-line box-drawing\nASCII banner spelling NEXUS, a flat `Key: Value` system block,\nand a trailer with the Russian `Тема с отзывами:` (\"Reviews\nthread:\") zelenka.guru / Lolzteam link plus the seller's TOX\nand JABBER contact addresses (`NEXUSDEVELOPER@EXPLOIT.IN` and\n`NEXUSSUPPORT@EXPLOIT.IN`).\n\nPublic infection-telemetry research counts Nexus as one of\nfour distinct families observed across a 50,000-device sample\nof 2025 infections, attributing roughly 2% of the sample to\nthis family. The specific `Information.txt` layout fingerprint\nis not yet directly quoted in any public deep-dive, so family\nattribution rests on the JABBER self-identification literal\nand an independent technical match.",
   "aliases": [
     "Nexus Stealer"
   ],
-  "attribution_confidence": "medium",
-  "classification": "known_family",
-  "description": "Nexus exports `information.txt` as a flat field list. Distinctive labels include `CPU Name`, `CPU Vendor`, `Jabber`, `NetBIOS`, and `RAM Size`.",
-  "external_references": [
+  "typical_targets": [
+    "Username, hostname, and machine identifiers",
+    "Windows version and OS language",
+    "CPU, GPU, and memory inventory",
+    "IP address and country geolocation"
+  ],
+  "detection_notes": "The `NEXUSDEVELOPER@EXPLOIT.IN` JABBER literal is the\nstrongest single fingerprint, since it carries the malware\nauthor's own seller-contact handle and is written into every\nlog by the panel. The six-line NEXUS box-drawing banner and\nthe Russian `Тема с отзывами:` zelenka.guru reviews-thread\nline provide secondary confirmation. Triage logs from this\nfamily by collecting the flat `Key: Value` system block plus\nthe HWID; the exfil set is small and contains no banking,\nwallet, or session-cookie data on its own (file-grabber\noutput ships in sibling files inside the same victim folder).",
+  "attack_techniques": [
     {
-      "url": "https://flare.io/learn/resources/cybercrime-favorite-target-gamers"
+      "id": "T1082",
+      "name": "System Information Discovery"
     },
     {
-      "url": "https://fr3d.hk/blog/nexus-just-another-stealer"
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1124",
+      "name": "System Time Discovery"
     }
   ],
-  "id": "nexus",
-  "name": "Nexus",
-  "schema_version": "1.0",
-  "targets": [
-    "CPU, GPU, and memory inventory",
-    "IP address and country geolocation",
-    "Username, hostname, and machine identifiers",
-    "Windows version and OS language"
+  "related_families": [],
+  "sources": [
+    "https://fr3d.hk/blog/nexus-just-another-stealer",
+    "https://flare.io/learn/resources/cybercrime-favorite-target-gamers"
   ],
-  "tracking_labels": []
+  "variants": []
 }

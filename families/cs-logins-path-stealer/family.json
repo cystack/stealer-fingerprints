@@ -1,0 +1,42 @@
+{
+  "id": "cs-logins-path-stealer",
+  "name": "CSLoginsPathStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSLoginsPathStealer is a CyStack-coined identifier for a\n4-line `URL/Username/Password/Application` cred-file shape\nwhere the `Application:` line carries a\n`Browser/Logins/<Browser>_<Profile>[<hex>].txt` source-file\npath. Records are separated by `===============` (15-equals)\nrule lines. Distributed inside `!! 2025 NOV.part001.rar`\n`@BRADLOGS / BRADMAX` aggregator packs at `[<TAG>]@BRADLOGS\n(BRADMAX) (<NN>)/All_Passwords.txt` victim folders that ship\nno companion system-info file.\n\nThe `Application: Browser/Logins/<Browser>_<Profile>[<hex>]\n.txt` path notation is the disambiguating signal. The\n`<Browser>_<Profile>` slug matches Lumma's per-profile\ncred-file naming convention (`Chrome_Default[<hex>].txt`,\n`Edge_Default[<hex>].txt`), and the `[<hex>]` suffix is a\nper-profile random hash that the panel template appends\n(likely a panel-side cache or upload identifier). Family\nattribution is provisional pending a published threat-intel\nmapping for this layout. The closest documented relative is\nLumma Stealer, which public analyses show writing\nper-browser-profile cred files with the same\n`<Browser>_<Profile>[<hex>]` naming convention, but the\nBRADMAX redistribution wraps the data into\n`URL/Username/Password/Application` blocks rather than Lumma's\ncanonical `SOFT/URL/USER/PASS` 4-line shape.",
+  "aliases": [
+    "BRADMAX All_Passwords.txt with Browser/Logins/ path",
+    "4-line URL/Username/Password/Application logins-path block"
+  ],
+  "typical_targets": [
+    "Browser-saved credentials (URL, username, password)",
+    "Source browser per-profile file path",
+    "Browser identity and profile slug from the source path"
+  ],
+  "detection_notes": "Fingerprint requires 3+ consecutive 4-line blocks matching\n`URL: / Username: / Password: / Application: Browser/Logins/`.\nThe `Application: Browser/Logins/` prefix is the\ndisambiguator: `CSAppProfileStealer` (iter#15) requires the\n`Application: <Browser> [Profile:` bracket annotation instead.\nDuring triage, treat the family attribution as unknown: the\nper-profile `<Browser>_<Profile>[<hex>]` naming convention\noverlaps with Lumma, but the surrounding 4-line block shape\ndoes not match Lumma canonical `SOFT/URL/USER/PASS` and no\npublic source confirms the mapping.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "lumma",
+    "cs-app-profile-stealer",
+    "cs-date-created-stealer",
+    "cs-soft-host-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": []
+}

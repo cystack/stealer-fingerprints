@@ -1,0 +1,34 @@
+{
+  "id": "cs-cyrillic-cores-stealer",
+  "name": "CSCyrillicCoresStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSCyrillicCoresStealer is a CyStack-coined identifier for a\nfixed-width `_Information.txt` panel whose CPU line carries a\nmixed-script `[ Сores: N ]` bracket where the first character\nis Cyrillic Es (U+0421) rather than Latin C (U+0043). Observed\ninside a @bugatti_cloud multi-family aggregator archive\ndelivered on 2022-05-09, with victim folders named\n`<CC>_<YYYY>_<MM>_<DD>_<HH>_<MM>_<6-char-id>`.\n\nThe panel is a sibling of the fixed-width column-aligned\nfamily that also emits CSStartBuildInfoStealer,\nCSInfoNetworkSectionStealer, and CSExePathInfoStealer; each\nvariant differs in its first-line field, section-header\nshape, and CPU-cores marker spelling. This variant uses a bare\n`OS:` first field, a composite `Local Date and Time: <ts> [\nUTC: (<offset>) <city list> ]` value that packs the timezone\ninto the date line, a lowercase `RAM: N Gb` unit, and a bare\n`Software:` section header (no brackets, no `Installed`\nqualifier). The Cyrillic quirk points at a Russian-speaking\ndeveloper whose panel template mixed scripts inadvertently,\nbut the specific builder identity is not attested in public\nreporting or community catalogues. Family attribution is\nprovisional pending a published threat-intel mapping for this\nlayout.",
+  "aliases": [],
+  "typical_targets": [
+    "Installed-software inventory (bare `Software:` block)",
+    "System hardware and locale (fixed-width identity block)"
+  ],
+  "detection_notes": "Fingerprint is the mixed-script `Сores:` bracket literal\n(Cyrillic Es prefix + Latin `ores:`) plus line-anchored\n`UserName (ComputerName):` paren-composite key plus line-anchored bare `Software:` section header. The Cyrillic\nprefix is the discriminator: no other registered parser\nemits a `Сores` mixed-script bracket, and the combination\nwith the paren-composite user key and the bare `Software:`\nheader is disjoint from every sibling fixed-width parser\n(CSStartBuildInfoStealer uses `[Installed software]`,\nCSInfoNetworkSectionStealer uses `[Info_Software]`,\nCSExePathInfoStealer uses `[Software]`). During triage,\nthe `Software:` block enumerates the victim's installed\nprograms with a `<name> [ <version> ]` shape and can be\npaired with the OS / user / hostname identity block for\nper-victim asset inventory.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1518",
+      "name": "Software Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "cs-start-build-info-stealer",
+    "cs-info-network-section-stealer",
+    "cs-exe-path-info-stealer"
+  ],
+  "sources": [],
+  "variants": []
+}

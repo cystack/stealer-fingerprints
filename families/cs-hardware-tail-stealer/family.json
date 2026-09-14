@@ -1,0 +1,57 @@
+{
+  "id": "cs-hardware-tail-stealer",
+  "name": "CSHardwareTailStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "low",
+  "description": "CSHardwareTailStealer is a CyStack-coined identifier for a\nstripped hardware-only `Info.txt` shipped through the\n`@STEALERBOSS` Telegram aggregator under the\n`STEALERCLOUD#<N>` per-victim-folder watermark. The body\ncarries the canonical Remus Stealer YAML hardware-block keys\n(`product:`, `core count:`, `thread count:`, `ram:`, `gpu:`,\n`display:`). The `build:` and `os:` parent blocks and every\nidentification field (banner, IP, country, time, user,\nhostname, install path, antivirus) are absent.\n\nTwo truncation variants ship in the same broker pack. Variant\nA keeps the CPU block intact and adds a new `core enabled:`\nfield that mirrors `core count:`. Variant B strips the CPU\nblock down to a bare `thread count:` line and instead ships a\n`motherboard:` block carrying Win32_BaseBoard `manufacturer:`\nand `product:` values. Both variants share the same `ram:` /\n`gpu:` / `display:` tail.\n\nThe broker likely repackages hardware fragments as a sample\npreview before charging buyers for the full log. Family\nattribution is provisional: the body is structurally Remus\nderived but the load-bearing identification fields that would\nconfirm Remus are all stripped, and no public reporting or\ncommunity catalogue documents a STEALERCLOUD or STEALERBOSS\nfamily layout. Rename this entry if a stronger attribution\nsurfaces.",
+  "aliases": [
+    "STEALERCLOUD",
+    "STEALERBOSS hardware tail"
+  ],
+  "typical_targets": [
+    "CPU model, core count, and thread count",
+    "RAM SPD product strings and per-stick capacity",
+    "GPU adapter names",
+    "Primary display resolution"
+  ],
+  "detection_notes": "Triple-anchor fingerprint: a line-anchored `core enabled:`\nkey (with leading whitespace and an integer value), a\nline-anchored `  display:` line at 2-space indent carrying\na `<W>x<H>` scalar, and the absence of a top-level\n`build:` key at column 0. The triple rules out canonical\nRemus (which always opens at column 0 with `build:`) and\ndocuments the disjoint claim region from\n`RemusParser`. The body ships no victim-identifying fields,\nso any IOC produced from this layout carries only the\nhardware inventory.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "remus-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/STEALERBOSS"
+  ],
+  "variants": [
+    {
+      "id": "v_e32e486c362d196da51fec0543f79f1f",
+      "parser": "logmine.ioc.parsers.cs_hardware_tail_stealer.CSHardwareTailStealerParser",
+      "filenames": [
+        "Info.txt"
+      ],
+      "panel_brand": "STEALERCLOUD",
+      "distribution_channel": "@STEALERBOSS",
+      "attribution_confidence": "low",
+      "markers": [],
+      "fields": [
+        "core enabled",
+        "display",
+        "gpu"
+      ],
+      "observations": 5951,
+      "sample": {
+        "path": "samples/v_e32e486c362d196da51fec0543f79f1f/sample.txt",
+        "sha256": "f0063db91b68b4751f0ff84af633bec21c68c23cc65f3e158834e05053b25b5b",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "core-enabled"
+    }
+  ]
+}

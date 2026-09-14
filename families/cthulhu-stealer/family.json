@@ -1,25 +1,69 @@
 {
-  "$schema": "../../schemas/family.schema.json",
+  "id": "cthulhu-stealer",
+  "name": "Cthulhu Stealer",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "Cthulhu Stealer is a Go-written macOS infostealer that\nexfiltrates a custom `Userinfo.txt` written to\n`/Users/Shared/NW/`. The body opens with `IP:` and `Country:`\nfields and continues with macOS hardware and account inventory.\nObserved in `@bugatti_cloud` aggregator packs.",
   "aliases": [
     "Cthulhu macOS Stealer"
   ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "The observed Cthulhu Stealer sample uses `userinformation.txt`. It opens with `MetaMask Info:`, `Debanks:`, and `BuildID:` before `Userinfo:` and macOS system and hardware sections.",
-  "external_references": [
-    {
-      "url": "https://www.darktrace.com/blog/from-the-depths-analyzing-the-cthulhu-stealer-malware-for-macos"
-    }
-  ],
-  "id": "cthulhu-stealer",
-  "name": "Cthulhu Stealer",
-  "schema_version": "1.0",
-  "targets": [
+  "typical_targets": [
     "Browser saved credentials on macOS",
     "Crypto wallet desktop clients",
-    "System inventory and hardware fingerprint",
+    "macOS Keychain entries",
     "Telegram session data",
-    "macOS Keychain entries"
+    "System inventory and hardware fingerprint"
   ],
-  "tracking_labels": []
+  "detection_notes": "macOS-specific path (`/Users/Shared/NW/Userinfo.txt`) plus the\nIP-then-country opening is the clean fingerprint. The Go\norigin shows up in stable field ordering across builds.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.001",
+      "name": "Keychain"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://www.darktrace.com/blog/from-the-depths-analyzing-the-cthulhu-stealer-malware-for-macos"
+  ],
+  "variants": [
+    {
+      "id": "v_1e1c8707a36b7f85a5633c78674b0d78",
+      "parser": "logmine.ioc.parsers.cthulhu.CthulhuParser",
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "Hardware Overview:"
+      ],
+      "fields": [
+        "BuildID"
+      ],
+      "observations": 5450,
+      "sample": {
+        "path": "samples/v_1e1c8707a36b7f85a5633c78674b0d78/sample.txt",
+        "sha256": "f86d1d768943f3ef56910c53097a0e39d5e5fbaee351ec58406c821f221609f1",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
 }

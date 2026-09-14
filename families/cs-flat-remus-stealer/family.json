@@ -1,0 +1,43 @@
+{
+  "id": "cs-flat-remus-stealer",
+  "name": "CSFlatRemusStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "low",
+  "description": "CSFlatRemusStealer is a CyStack-coined identifier for a\nheavily-stripped `Info.txt` panel whose Remus-vocabulary YAML\nkeys have been flattened to root level with no `build:` /\n`os:` / `hardware:` block wrappers. Observed inside `@BRADMAX\n14000 MARCH.part01.rar` Telegram aggregator packs at `@BRADMAX\n<count> <MONTH>/ [<CC>]<IPv4>/Info.txt` victim folders (e.g.\n`@BRADMAX 14000 MARCH/[DZ]<IPv4>/Info.txt`).\n\nThe nine root-level keys (`path`, `country`, `os`, `version`,\n`language`, `domain`, `cpu`, `ram`, `gpu`) match Remus\nStealer's YAML manifest vocabulary verbatim, but the panel\nwriter collapsed the canonical nested structure into a flat\nkey list. Both the block wrappers (`os`, `cpu`, `ram`, `gpu`)\nand their would-be children (`version`, `language`, `domain`)\nsit at column 0 as sibling root keys. Most values are empty\nbecause the panel-side collection failed for hardware fields,\nleaving only `path`, `country`, and `version` populated.\n\nPublic writeups confirm that Remus Stealer emits its victim\nmanifest as YAML with these exact key names, and public\nchannel catalogues attest BRADMAX as a Remus / Lumma / DCRat /\nMars redistribution channel. The field-vocabulary and\ndistribution-channel corroboration gives medium confidence in\nRemus lineage, but no Remus-canonical identity anchor (`\nip-address:`, ` elevated:`, `HWID:`, `Computer Name:`)\nsurvives in this flat variant to pin attribution. Family\nattribution stays CyStack-coined with `low` confidence pending\na published Remus sample of this exact flat serialisation.",
+  "aliases": [
+    "Flat-key Remus-vocabulary Info.txt panel",
+    "BRADMAX stripped Remus YAML variant"
+  ],
+  "typical_targets": [
+    "Malware install path (WinRAR temp-extraction `Rar$EX...`\nfolder in observed samples)",
+    "Country code (ISO 3166-1 alpha-2)",
+    "OS caption with build number",
+    "System locale (`fr-FR` / `en-US` / etc.)",
+    "Windows domain / netbios name (empty in observed sample)"
+  ],
+  "detection_notes": "Fingerprint requires seven line-anchored column-0 keys:\n`path:` AND `country:` AND `os:` AND `version:` AND `cpu:` AND\n`ram:` AND `gpu:`. The column-0 requirement distinguishes from\ncanonical Remus (children indented 2 spaces under `build:` /\n`os:` / `hardware:` block wrappers) and from every other\nregistered parser. During triage, treat the sample as weak\nattribution to Remus Stealer via the BRADMAX aggregator\nchannel; rename the family constant to `Remus Stealer` if a\npublic writeup later publishes a sample of this exact\nflattened variant. The empty hardware-field values in the\nobserved sample suggest a panel-side WMI-collection failure\nthat stripped most identity data, so the IOC carries only\npath, country, OS, and language fields.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "remus-stealer",
+    "lumma",
+    "cs-hardware-tail-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": []
+}

@@ -1,0 +1,53 @@
+{
+  "id": "cs-common-files-category-stealer",
+  "name": "CSCommonFilesCategoryStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSCommonFilesCategoryStealer is a CyStack-coined identifier\nfor a Windows-victim folder layout shipping a four-directory\ncategory split inside a per-victim folder named\n`[<IPv4>]-<HOSTNAME>`. The four root subdirectories are\n`Common Files`, `Credentials`, `Directories`, and `System`,\nwith a `Display (N).png` screenshot at root and an optional\npacker empty-name DIR sibling. `Common Files` carries the\nFileGrabber output (harvested user docs from Downloads /\nDocuments), `Credentials` ships the stealer-emitted credential\ndumps, `Directories` carries walked-directory listings, and\n`System` carries the text system-info dumps.\n\nObserved inside `MAY 02 - 8230 LOGS2` aggregator packs that\nalso carry the TikTok-account harvest folders claimed by\nCSTikTokAccountStealer. The category naming is the panel's\nprivate builder choice rather than a documented stealer\nconvention. Family attribution is provisional pending a\npublished mapping for this layout.",
+  "aliases": [],
+  "typical_targets": [
+    "Browser saved credentials and cookies",
+    "Harvested user documents from Downloads / Documents folders",
+    "Directory listings from the victim's drives",
+    "System info: hostname, IP, hardware fingerprint, installed software",
+    "Desktop screenshot (per-monitor, numbered `Display (N).png`)"
+  ],
+  "detection_notes": "The four-dir set `Common Files`, `Credentials`,\n`Directories`, `System` plus the `[<IPv4>]-<HOSTNAME>`\nparent folder name is the fingerprint. The IP-bracketed\nparent convention is distinctive: most stealer panels\nuse `<HOSTNAME>_<IPv4>_<date>` or `<CC>_<IPv4>` rather\nthan embedding the IP in brackets. Triage by walking\n`System/` first for the canonical Information.txt then\n`Credentials/` for stealer-emitted password files.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1113",
+      "name": "Screen Capture"
+    },
+    {
+      "id": "T1083",
+      "name": "File and Directory Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-tik-tok-account-stealer",
+    "cs-bradmax-category-stealer",
+    "cs-browsers-display-stealer"
+  ],
+  "sources": [],
+  "variants": []
+}

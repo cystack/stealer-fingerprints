@@ -1,0 +1,75 @@
+{
+  "id": "cs-emoji-count-stealer",
+  "name": "CSEmojiCountStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSEmojiCountStealer is a CyStack-coined identifier for an\n`Information.txt` panel divided into four `- IP Info -` /\n`- PC Info -` / `- Other Info -` / `- Log Info -` sections\nwith dash-space-name-space-dash captions. The Log Info\nsection ships a `Build:_____` placeholder and a per-category count line for each artifact type using ✅ (data\nharvested) or ❌ (category empty) emoji indicators. Eight\ncount categories are tracked: `Passwords:`, `Cookies:`,\n`Wallets:`, `Files:`, `Credit Cards:`, `Servers FTP/SSH:`,\n`Discord Tokens:`, `Others:`. Observed inside\n`!! 2025 NOV.part001.rar` aggregator packs in\n`[<CC>]<IP>/Information.txt` victim folders.\n\nThe body carries `FileLocation:` and `Current Language:`\nfield names that match Redline canonical, but the\nsurrounding section structure (dash-space captions, emoji\ncount indicators, `Build:_____` placeholder) does not\nmatch Redline canonical (no `Operation System:` typo, no\n`Hardwares:` block, no `Anti-Viruses:` block). Family\nattribution is provisional pending a published threat-intel mapping for this layout.",
+  "aliases": [
+    "Dash-section emoji-count Information.txt panel",
+    "4-section ✅/❌ checkmark stealer"
+  ],
+  "typical_targets": [
+    "Browser-saved credentials",
+    "Browser cookies and session tokens",
+    "Cryptocurrency wallets",
+    "Grabbed files",
+    "Credit cards",
+    "FTP and SSH server credentials",
+    "Discord tokens",
+    "Per-victim IP / country / city / ISP geolocation"
+  ],
+  "detection_notes": "Fingerprint requires three section-header substrings\n(`- IP Info -`, `- PC Info -`, `- Log Info -`) plus at\nleast one emoji count indicator (U+2705 ✅ or U+274C ❌).\nThe three-section trio is unique across the registry, and\nthe emoji confirmation rejects unrelated text that uses\nthe dash-delimited captions for prose section markers.\nDuring triage, treat the family attribution as unknown:\nthe `FileLocation:` and `Current Language:` Redline-canonical field names suggest Redline lineage but the\noverall body shape does not match Redline canonical.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "redline",
+    "redline-like-stealer",
+    "cs-emoji-info-stealer"
+  ],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_74aa5cc181db85383521d875e06d07c2",
+      "parser": "logmine.ioc.parsers.cs_emoji_count_stealer.CSEmojiCountStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "- IP Info -",
+        "- Log Info -",
+        "- PC Info -"
+      ],
+      "fields": [],
+      "observations": 119,
+      "sample": {
+        "path": "samples/v_74aa5cc181db85383521d875e06d07c2/sample.txt",
+        "sha256": "52b51535eda98f0e3714e37c99a9fb70d530a76a007280af9f45f223f2aab0ed",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

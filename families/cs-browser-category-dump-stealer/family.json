@@ -1,0 +1,48 @@
+{
+  "id": "cs-browser-category-dump-stealer",
+  "name": "CSBrowserCategoryDumpStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSBrowserCategoryDumpStealer is a CyStack-coined identifier\nfor a per-victim per-browser category dump layout shipping\nunder `[<32-hex>]/Browser/<BrowserName>/` leaf folders. Each\nleaf carries Pascal-case category files (`Autofill.txt`,\n`Passwords.txt`, `Cookies.txt`, `History.txt`,\n`Bookmarks.txt`, `CreditCards.txt`, `Downloads.txt`,\n`Extensions.txt`). Each file body opens with a triple-equals\nALL-CAPS section header mirroring the category name\n(`Autofill.txt` body opens with `=== AUTOFILL ===`), then a\nblank line, then one or more `key: value` records separated by\n50-character dashed lines.\n\nThe 32-hex MD5 victim-folder convention matches\nCSTikTokAccountStealer (iteration #49) and\nCSNetflixCookiesStealer (iteration #53), confirming a shared\n`MAY 02 - 8230 LOGS2` distribution pipeline. The leaf folder\nnames span Chromium-derived browsers (Chrome / Edge / Brave /\nOpera / EpicPrivacyBrowser / Vivaldi / Yandex / CocCoc /\nMaxthon / Comodo Dragon). Family attribution is provisional\npending a published mapping for this exact layout.",
+  "aliases": [],
+  "typical_targets": [
+    "Browser autofill data (names, addresses, phone numbers, emails)",
+    "Browser saved credentials (usernames, passwords, URLs)",
+    "Browser cookies and session data",
+    "Browser history, bookmarks, downloads",
+    "Saved credit card data",
+    "Browser extensions inventory"
+  ],
+  "detection_notes": "The `[<32-hex>]/Browser/<BrowserName>/` path token plus\nat least one canonical Pascal-case category filename\n(`Autofill.txt`, `Passwords.txt`, etc.) plus the\n`=== <CATEGORY> ===` ALL-CAPS triple-equals body header\nis the fingerprint. Sibling category-first layouts\n(`cookies_chrome_Default.txt` per\nCSPerProfileBrowserDumpBundle) ship the same data\ndifferently shaped; the browser-named-subdirectory\nconvention here is the panel's private choice.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1217",
+      "name": "Browser Information Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-tik-tok-account-stealer",
+    "cs-netflix-cookies-stealer"
+  ],
+  "sources": [],
+  "related_external": [
+    "csperprofilebrowserdumpbundle"
+  ],
+  "variants": []
+}

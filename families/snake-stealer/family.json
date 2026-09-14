@@ -1,0 +1,70 @@
+{
+  "id": "snake-stealer",
+  "name": "Snake Stealer",
+  "classification": "observed_self_label",
+  "attribution_confidence": "unknown",
+  "description": "Observed-self-label profile for a `Snake Stealer` system report\nredistributed inside `@BRADMAX` packs. The file has an ASCII-art\nSNAKE label and seven triple-equals-bracketed sections. No\nindependent analysis currently maps this exact format to a\ncanonical family. It is distinct from WhiteSnake and Snake\nKeylogger, which use different formats and filenames.",
+  "aliases": [
+    "Snake Stealer"
+  ],
+  "typical_targets": [
+    "System hardware, OS, and locale inventory",
+    "User and computer identity",
+    "Network adapter configuration",
+    "Running processes and installed browser inventory"
+  ],
+  "detection_notes": "The registered parser requires the structural `=== INFO ===`,\n`=== HARDWARE INFORMATION ===`, and `=== INSTALLED BROWSERS ===`\nsection triple. The observed SNAKE label names this profile but\ndoes not independently establish payload lineage, so family\nattribution remains unknown.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    },
+    {
+      "id": "T1057",
+      "name": "Process Discovery"
+    },
+    {
+      "id": "T1518",
+      "name": "Software Discovery"
+    },
+    {
+      "id": "T1124",
+      "name": "System Time Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_dcee825c24d303631633c51dc93685fe",
+      "parser": "logmine.ioc.parsers.snake.SnakeParser",
+      "filenames": [
+        "Systeminfo.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "=== HARDWARE INFORMATION ===",
+        "=== INFO ===",
+        "=== INSTALLED BROWSERS ==="
+      ],
+      "fields": [],
+      "observations": 16,
+      "sample": {
+        "path": "samples/v_dcee825c24d303631633c51dc93685fe/sample.txt",
+        "sha256": "7059e7c60b57393f53c5bd6280315ad6c912969ed7ab7f0e6da0f3c738004afe",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

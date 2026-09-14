@@ -1,0 +1,73 @@
+{
+  "id": "cs-stats-section-stealer",
+  "name": "CSStatsSectionStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSStatsSectionStealer is a CyStack-coined identifier for a\ntwo-section `_INFO.txt` panel observed inside `!! 2025\nDEC.part01.rar` aggregator packs at `[<CC>]<IPv4>/_INFO.txt`\nvictim folders. The body opens with `=== SYSTEM INFO ===` ALL\nCAPS triple-equals header (note the shorter `INFO` form, not\n`INFORMATION`), followed by four flat key-value lines\n(`Computer:`, `User:`, `OS:`, `Time:`), a blank-line\nseparator, then `=== STATS ===` ALL CAPS triple-equals header\nfollowed by three count lines (`Cookies:`, `Passwords:`,\n`Credit Cards:`).\n\nThe `OS:` value carries `Microsoft Windows NT\n<major>.<minor>.<build>.<rev>` shape, the verbatim .NET\n`Environment.OSVersion.VersionString` output. The `Time:`\nvalue is the naive `yyyy-MM-dd HH:mm:ss` form that\n`DateTime.Now.ToString` produces by default in .NET. Together\nthese point at a .NET-builder runtime.\n\nThe dedicated `=== STATS ===` section separated from the\nsystem block by a blank line is the panel's distinctive\ndeveloper-side quirk. Most other documented stealer panels\ninline harvest counts under a `Browser Data:` or `Main Loot:`\nblock (CSGADSPanel, CSMainLootStealer) or omit them entirely.\nThe shorter `=== SYSTEM INFO ===` header rules out\nCSEnvVarDumpStealer (which keys on the longer `=== SYSTEM\nINFORMATION ===` form) and CSAntiSandboxStealer (Title-case\nheader).\n\nPublic reporting and the public stealer-format catalogues do\nnot document a family that emits this exact two-section panel\nlayout. Family attribution is provisional pending a published\nmapping.",
+  "aliases": [
+    "SYSTEM INFO + STATS panel",
+    "Two-section _INFO.txt"
+  ],
+  "typical_targets": [
+    "Browser cookies (`Cookies:` count in STATS section)",
+    "Browser-saved credentials (`Passwords:` count)",
+    "Credit card data (`Credit Cards:` count)",
+    "Victim hostname (`Computer:` field)",
+    "Account shortname (`User:` field)",
+    "OS version (`Microsoft Windows NT <ver>` form)",
+    "Local log-emit timestamp (`Time:` ISO-shape value)"
+  ],
+  "detection_notes": "Fingerprint requires both `=== SYSTEM INFO ===` (ALL\nCAPS, short `INFO` form) AND `=== STATS ===` triple-equals headers. The shorter `SYSTEM INFO` form is the\ncleanest disambiguator from CSEnvVarDumpStealer (which\nuses the longer `SYSTEM INFORMATION` header). During\ntriage, the `Computer:` value may carry an operator-side prefix that identifies the build / affiliate (e.g.\n`RIVAHACK-8467` in the observed sample); cluster IOCs\nby prefix to detect campaign overlap.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    }
+  ],
+  "related_families": [
+    "cs-env-var-dump-stealer",
+    "cs-anti-sandbox-stealer",
+    "cs-go-runtime-stealer"
+  ],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_2d9836c148a6f62643de95589335158d",
+      "parser": "logmine.ioc.parsers.cs_stats_section_stealer.CSStatsSectionStealerParser",
+      "filenames": [
+        "_INFO.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "=== STATS ===",
+        "=== SYSTEM INFO ==="
+      ],
+      "fields": [],
+      "observations": 3,
+      "sample": {
+        "path": "samples/v_2d9836c148a6f62643de95589335158d/sample.txt",
+        "sha256": "7182c2461e4a3e8d04ed7e31be7453ccfab1e6c5c9c8d40b751975ce654c2449",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

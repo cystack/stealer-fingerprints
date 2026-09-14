@@ -11,25 +11,15 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
-      - name: Validate source and generated artifacts
+      - name: Validate catalog
         run: python tools/catalog.py validate
-      - name: Verify deterministic generation
+      - name: Check generated documentation
         run: python tools/catalog.py build --check
-      - name: Run standard-library tests
+      - name: Run catalog tests
         run: python -m unittest discover -s tests -v
-      - name: Scan checked-out files for secrets
-        run: >-
-          docker run --rm -v "$PWD:/repo"
-          ghcr.io/gitleaks/gitleaks:v8.28.0@sha256:cdbb7c955abce02001a9f6c9f602fb195b7fadc1e812065883f695d1eeaba854
-          detect --source=/repo --no-git --redact --exit-code=1 --no-banner
-      - name: Compile experimental YARA
-        run: |
-          sudo apt-get update
-          sudo apt-get install --no-install-recommends --yes yara
-          yara -w rules/experimental_log_formats.yar /dev/null

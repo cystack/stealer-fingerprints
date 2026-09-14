@@ -1,93 +1,128 @@
 # Blank Grabber
 
-**Known malware family · high attribution confidence**
+Blank Grabber is a Python-based open-source info-stealer
+hosted on GitHub (Blank-c/Blank-Grabber). Low-skill actors
+compile it with PyInstaller and distribute it via cracked
+software lures, weaponised PyPI packages, and Discord or
+Telegram dropper campaigns. Exfiltration goes through a
+Discord or Telegram webhook, so no dedicated C2 panel is
+needed.
 
-## At a glance
+The exfil archive contains a top-level `Information.txt`
+whose banner reads `Blank Grabber got a new victim: <name>`,
+followed by an `IP Info` block (ip-api.com data), a
+`System Info` block (Computer Name, OS, RAM, UUID, CPU,
+GPU, Product Key), and a `Grabbed Info` summary that counts
+each data category (Discord Accounts, Passwords, Cookies,
+Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 
-- Aliases: <code>Blank-c/Blank-Grabber</code>, <code>BlankGrabber</code>
-- Typical filenames: <code>information.txt</code>, <code>system.txt</code>
-- Published formats: 1
-- Representative samples: 2
+## Research status
 
-<p>Blank Grabber logs are recognized as <code>information.txt</code> or <code>system.txt</code> by fields such as <code>Cellular Network</code>, <code>Computer OS</code>, <code>Discord Accounts</code>, <code>Roblox Cookies</code>, and <code>Wifi Passwords</code>. The observed layout groups them under <code>IP Info</code>, <code>System Info</code>, and <code>Grabbed Info</code>.</p>
+- Classification: **Known malware family**
+- Attribution confidence: **high**
+- Aliases: `BlankGrabber`, `Blank-c/Blank-Grabber`
+- Variants observed: **3**
+- Historical Logmine records represented: **12,773**
 
-## How to recognize it
+## What it targets
 
-- No stable text banner is known; combine filename and field layout.
-- Recurring fields: <code>cellular network</code>, <code>computer name</code>, <code>computer os</code>, <code>country</code>, <code>cpu</code>, <code>discord accounts</code>, <code>epic session</code>, <code>gpu</code>, <code>growtopia session</code>, <code>history</code>, <code>ip</code>, <code>minecraft sessions</code>, <code>product key</code>, <code>proxy/vpn</code>, <code>region</code>, <code>roblox cookies</code>, <code>screenshot</code>, <code>steam session</code>, <code>system info</code>, <code>telegram sessions</code>, <code>timezone</code>, <code>total memory</code>, <code>uplay session</code>, <code>uuid</code>
+- Discord and Telegram session tokens
+- Browser saved credentials, cookies, history, autofill
+- Crypto wallet desktop clients (Bitcoin, Ethereum, Exodus, others)
+- Roblox cookies and Minecraft sessions
+- Wifi passwords and webcam captures
+- System hardware and locale inventory
+- Game launcher sessions (Epic, Steam, Uplay, Battle.net, Growtopia)
 
-## Formats
+## Detection notes
 
-| Format | Evidence | Fingerprint |
-|---|---|---|
-| information.txt - cellular network / computer name | 26 fields, filename | [`fp_438d72e22516746a8a42bc0654c93a49`](fingerprints/fp_438d72e22516746a8a42bc0654c93a49.json) |
+The banner literal `Blank Grabber got a new victim:` is
+unique across the registry and unique to this codebase, so
+a single substring check is sufficient to claim. Forks
+(notably AK-grabber) reuse the same banner verbatim, which
+is a feature for triage: the fork still maps to the
+Blank Grabber family. The `Grabbed Info` per-category counts
+are the cleanest indicator of which artifact subfolders the
+archive contains for evidence collection.
 
-## Representative sample
+## Observed log variants
 
-Some files below intentionally share the same sanitized body under different malware-visible names. They document filename variants, not independent payload observations.
+### `v_b1e576b5520c49a68172676d7c72c40a`
 
-Observed text sample. Placeholders mark values removed from the original log.
+- Parser: `logmine.ioc.parsers.blank_grabber.BlankGrabberParser`
+- Observed filenames: `Information.txt`
+- Panel brand: `Dead`
+- Distribution channel: -
+- Attribution confidence: **high**
+- Historical records represented: **65**
+- Representative sample: [open sample](samples/v_b1e576b5520c49a68172676d7c72c40a/sample.txt)
+- Sample SHA-256: `bc59a06e31f57a4950bb04b1ef23c863ade1d494018e47f4ad086cb56b50e0ab`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-[<code>information.txt</code>](samples/information.txt)
+Recognition anchors:
 
-```text
-Blank Grabber got a new victim: [redacted]
+- Stable markers: `Dead`, `Grabbed Info`, `IP Info`
+- Field labels: `Dead got a new victim`, `System Info`
 
-IP Info
+### `v_ccdf4b8e3fbd1fec812ef139238867e6`
 
-IP: [redacted]
-Region: Risaralda Department
-Country: Colombia
-Timezone: America/Bogota
+- Parser: `logmine.ioc.parsers.blank_grabber.BlankGrabberParser`
+- Observed filenames: `Information.txt`, `System.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Historical records represented: **12,707**
+- Representative sample: [open sample](samples/v_ccdf4b8e3fbd1fec812ef139238867e6/sample.txt)
+- Sample SHA-256: `c72b2968115f628d1cbda5507729dc54e4445f7f3f3386be0cff7055fc999fa5`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-Cellular Network:❎
-Proxy/VPN:   ❎
-Reverse DNS: [redacted]
+Recognition anchors:
 
-System Info
-Computer Name: [redacted]
-Computer OS: Microsoft Windows 10 Pro
-Total Memory: 4 GB
-UUID: [redacted-uuid]
-CPU: Intel64 Family 6 Model 142 Stepping 9, GenuineIntel
-GPU: Intel(R) HD Graphics 620
-Product Key: [redacted]
+- Stable markers: `Grabbed Info`, `IP Info`
+- Field labels: `Blank Grabber got a new victim`, `System Info`
 
-Grabbed Info
-Discord Accounts : 0
-Passwords : 0
-Cookies : 105
-History : 0
-Autofills : 0
-Roblox Cookies : 0
-Telegram Sessions : 0
-Common Files : 0
-Wallets : 0
-Wifi Passwords : 0
-Webcam : 0
-Minecraft Sessions : 0
-Epic Session : No
-Steam Session : No
-Uplay Session : No
-Battle.Net Session : No
-Growtopia Session : No
-Screenshot : Yes
-System Info : Yes
-```
+### `v_d1192221791366c31e6fcf477e55b52b`
 
-Other samples: [<code>system.txt</code>](samples/system.txt)
+- Parser: `logmine.ioc.parsers.blank_grabber.BlankGrabberParser`
+- Observed filenames: `Information.txt`
+- Panel brand: `Amnesia`
+- Distribution channel: -
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_d1192221791366c31e6fcf477e55b52b/sample.txt)
+- Sample SHA-256: `23cb51a4c2b4ebe3cd524606bc06c9e6498e1e41f9de8de3c4e16e475921f890`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-## References
+Recognition anchors:
 
-- [https://any.run/malware-trends/blankgrabber/](https://any.run/malware-trends/blankgrabber/)
-- [https://www.splunk.com/en_us/blog/security/blankgrabber-trojan-stealer-analysis-detection.html](https://www.splunk.com/en_us/blog/security/blankgrabber-trojan-stealer-analysis-detection.html)
+- Stable markers: `Amnesia`, `Grabbed Info`, `IP Info`
+- Field labels: `Amnesia got a new victim`, `System Info`
 
-## Try it locally
 
-```console
-python identify.py "families/blank-grabber/samples/information.txt"
-```
+## MITRE ATT&CK
 
-The evidence score describes a structural comparison, not attribution certainty.
+| Technique | Name |
+|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| [T1119](https://attack.mitre.org/techniques/T1119/) | Automated Collection |
+| [T1567](https://attack.mitre.org/techniques/T1567/) | Exfiltration Over Web Service |
 
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+## Related catalog profiles
+
+- None recorded.
+
+## Related external families
+
+- `akgrabber`
+
+## Sources
+
+- <https://any.run/malware-trends/blankgrabber/>
+- <https://www.splunk.com/en_us/blog/security/blankgrabber-trojan-stealer-analysis-detection.html>
+- <https://github.com/Blank-c/Blank-Grabber>
+
+Machine-readable record: [family.json](family.json)

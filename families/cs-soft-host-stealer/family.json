@@ -1,0 +1,44 @@
+{
+  "id": "cs-soft-host-stealer",
+  "name": "CSSoftHostStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSSoftHostStealer is a CyStack-coined identifier for a\ntitle-cased `Soft:` / `Host:` / `Login:` / `Password:` 4-line\ncredential block observed inside `@BRADMAX` aggregator-pack\nvictim folders that ship only a `Password.txt` with no\ncompanion system-info file. Folder layout in the wild is\n`[<CC>]@BRADMAX (<N>)/Original/... /Password.txt` with a\nsibling `Smart Checker/` directory that holds post-exfil\ncredential-validator output.\n\nPublic Telegram-channel catalogues label the BRADMAX channel\nas a redistributor of \"Redline and Raccoon Data Logs\", but the\ntitle-cased 4-line block matches neither family canonically.\nRedlines native cred output is `URL: / Username: / Password: /\nApplication:` and Raccoons is a tab-or pipe-separated row\nlayout; the `Soft:` keyword with title-case capitalisation\ndoes not appear in either. A public stealer-log parser writeup\nrecords this exact 4-line shape as one of five common\ncredential formats but does not attribute it to a specific\nmalware family.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting does\nnot document a stealer that emits exactly this title-cased\n4-line block. Treat the family attribution as unknown during\ntriage: the aggregator self-label is misleading because the\nbody lacks every canonical anchor for both named families.",
+  "aliases": [
+    "@BRADMAX Password.txt 4-line block",
+    "BradMax Cloud Soft/Host/Login/Password"
+  ],
+  "typical_targets": [
+    "Browser saved credentials (Chrome, Edge, Brave, Firefox, Opera, Vivaldi, Yandex)",
+    "Mobile-app credentials (`android://...` host scheme entries)"
+  ],
+  "detection_notes": "Fingerprint requires 3+ consecutive line-anchored\n`Soft: ... \\n Host: ... \\n Login: ... \\n Password: ...`\nblocks. The title-case capitalisation is the disambiguator\nfrom the Lumma-like uppercase `SOFT:/URL:/USER:/PASS:`\nfingerprint and from Redlines native `URL:/Username:/\nPassword:/Application:` cred shape. Detected only when the\ncred file basename contains `password`, so the regex never\nhas to discriminate against non-cred files. Empty `Login:`\nand `Password:` fields are routine and do not invalidate a\nblock - browser sync entries often store the host with\nblank credentials.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "cs-bare-version-stealer",
+    "redline",
+    "raccoon"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/bradmax_cloud"
+  ],
+  "variants": []
+}

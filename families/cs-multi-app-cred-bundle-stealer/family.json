@@ -1,0 +1,46 @@
+{
+  "id": "cs-multi-app-cred-bundle-stealer",
+  "name": "CSMultiAppCredBundleStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSMultiAppCredBundleStealer is a CyStack-coined identifier\nfor a per-victim application-loot bundle observed inside the\n``16,17 APRIL - 27206 LOGS.part01.rar`` aggregator pack at\n``<32-char alphanumeric>_<TIMESTAMP>/`` victim folders. The\npack ships an 11-application subdirectory tree covering the\ncredential-manager, VPN, FTP, chat, cloud, and gaming\napplication slots that stealer families commonly harvest:\n``AnyDesk``, ``Azure``, ``Bitwarden``, ``Discord``,\n``FileZilla``, ``FTPGetter``, ``OpenVPN``, ``ProtonVPN``,\n``Steam``, ``Telegram``, ``TotalCommander``.\n\nThe ``Azure/credentials`` filename is a panel mislabel: the\nfile body is a boto-style AWS credentials INI file (with\n``[default]`` block, ``aws_access_key_id``,\n``aws_secret_access_key``), not an Azure resource-manager\ntoken file. The stealer's harvest routine likely grabbed\n``%USERPROFILE%\\.aws\\credentials`` and dropped it under an\n``Azure/`` subdir because both cloud vendors share the\n\"cloud\" category slot in the panel harvest dispatch table.\nMultiple stealer families target subsets of this application\nset (Redline, Vidar, Lumma, StealC, Meta all harvest\nFileZilla / Discord / Telegram / Steam), so the underlying\nharvester could be any of them. Family attribution is\nprovisional pending a published threat-intel mapping.",
+  "aliases": [
+    "Multi-app credentials bundle",
+    "Cloud + VPN + FTP + chat + gaming loot bundle"
+  ],
+  "typical_targets": [
+    "Cloud provider credentials (AWS access key + secret from\n``~/.aws/credentials`` dropped under ``Azure/``)",
+    "Password manager vaults (Bitwarden)",
+    "VPN configurations and credentials (OpenVPN, ProtonVPN)",
+    "FTP client credentials (FileZilla sitemanager.xml,\nFTPGetter, TotalCommander wcx_ftp.ini)",
+    "Chat app session tokens (Discord Local Storage tokens,\nTelegram tdata session bundles)",
+    "Remote-desktop session identifiers (AnyDesk)",
+    "Gaming session tokens (Steam JWT session, config.vdf)"
+  ],
+  "detection_notes": "Fingerprint requires at least 5 of 11 known application-loot subdir names at root (``AnyDesk``, ``Azure``,\n``Bitwarden``, ``Discord``, ``FileZilla``, ``FTPGetter``,\n``OpenVPN``, ``ProtonVPN``, ``Steam``, ``Telegram``,\n``TotalCommander``) plus a strict allow-list rejecting\nany other content-carrying root entry. The 5-of-11\nminimum guards against generic 1-2-app folders that might\ntrigger on a single sibling category. During triage, the\n``Azure/credentials`` AWS INI file is a high-value pivot\npoint (cloud IAM credentials imply full account access).\nCompanion Discord tokens and Telegram tdata sessions in\nsibling subdirs offer account-takeover paths that the\nanalyst should rotate immediately.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1552.001",
+      "name": "Credentials in Files"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1552.004",
+      "name": "Private Keys"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "variants": []
+}

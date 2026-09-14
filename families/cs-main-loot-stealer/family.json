@@ -1,0 +1,79 @@
+{
+  "id": "cs-main-loot-stealer",
+  "name": "CSMainLootStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "low",
+  "description": "CSMainLootStealer is a CyStack-coined identifier for a\nTelegram-bot-notification `Information.txt` panel with a `✨\nNew Log Received ✨` sparkle-bracketed banner. The body ships a\n`💻 User: <user>@<host>` victim-identity line, a `🌍 IP:`\nplaceholder, two captioned sections (`📊 Main Loot:` for\npasswords / cookies / wallets, `📦 Additional Data:` for\nmessengers / games / servers / grabbers), each carrying\nper-category emoji-prefixed count lines, and a `Support:\n@VerifiedThief` admin contact footer. Observed inside `!! 2025\nNOV.part001.rar` BRADMAX aggregator packs at `[<TAG>]@BRADLOGS\n(BRADMAX) (<NN>)/Information.txt` victim folders.\n\nA single community source (March 2026) hints at Hexo Stealer\nattribution for the sparkle-banner + Main Loot + Additional\nData notification shape, but the article is paywalled and\ncould not be fetched verbatim. A public Hexon Stealer report\ndocuments a related (but distinct) rebrand of Stealit Stealer\nwithout publishing the exact notification format. With one\nunverifiable community source and no confirmation from public\nresearch, family attribution stays CyStack-coined.",
+  "aliases": [
+    "BRADMAX sparkle-banner notification panel",
+    "@VerifiedThief Telegram-bot Main Loot / Additional Data log"
+  ],
+  "typical_targets": [
+    "Browser-saved credentials (count flag on `🔑 Passwords:`)",
+    "Browser cookies (count flag on `🍪 Cookies:`)",
+    "Cryptocurrency wallets (count flag on `💰 Wallets:`)",
+    "Messenger sessions (count flag on `💬 Messengers:`)",
+    "Game launcher credentials (count flag on `🎮 Games:`)",
+    "Server / FTP / SSH credentials (count flag on `🗄️ Servers:`)",
+    "Grabbed files (count flag on `🎣 Grabbers:`)",
+    "Combined OS username + hostname (user@host on the `💻 User:` line)"
+  ],
+  "detection_notes": "Fingerprint requires `New Log Received` substring AND `Main\nLoot:` substring AND `Additional Data:` substring AND\n`@VerifiedThief` substring. The four-anchor combo is unique\nacross the registry: the `Main Loot:` and `Additional Data:`\nsection-caption pair is the panel-side developer quirk, and\nthe `@VerifiedThief` admin handle is unique to this\ndistribution. During triage, treat this label as a panel-side\nnotification view (counts only): the actual harvested\ncredentials live in sibling files the operator's archive\n(browser-data folders, cookie dumps, etc.) rather than in this\nnotification body. The underlying stealer family is unknown;\nthe Hexo Stealer attribution from that community source is\nprovisional pending published confirmation.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-new-log-stealer"
+  ],
+  "sources": [],
+  "related_external": [
+    "hexon-stealer",
+    "stealit-stealer"
+  ],
+  "variants": [
+    {
+      "id": "v_1be296dc8abcec6846b3e0b96b67534c",
+      "parser": "logmine.ioc.parsers.cs_main_loot_stealer.CSMainLootStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": "@VerifiedThief",
+      "attribution_confidence": "low",
+      "markers": [
+        "Additional Data:",
+        "Main Loot:",
+        "New Log Received"
+      ],
+      "fields": [
+        "Support"
+      ],
+      "observations": 37,
+      "sample": {
+        "path": "samples/v_1be296dc8abcec6846b3e0b96b67534c/sample.txt",
+        "sha256": "a110f0ef469c7621668043862d47db755c9fde386ef646394f081861d2ea3e23",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

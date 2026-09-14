@@ -1,0 +1,47 @@
+{
+  "id": "cs-bare-version-stealer",
+  "name": "CSBareVersionStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSBareVersionStealer is a CyStack-coined identifier for a\n`UserInformation.txt` shape observed inside `!! 2026\nJAN.part01.rar`-style aggregator packs in `[CC]@BRADMAX\n(<N>)/UserInformation.txt` victim folders. Public\nTelegram-channel catalogues list `t.me/bradmax_cloud` and the\nactive `t.me/+0IAf5VIrl_EzNWRi` mirror as a Telegram\naggregator the operator self-labels \"Redline and Raccoon Data\nLogs\", but the body lacks every Redline canonical anchor\n(`Operation System:` typo, `FileLocation:`, `Hardwares:`\nblock, `Anti-Viruses:` block) and every Raccoon canonical\nanchor (`User ID: <UUID>|<user>`, JS-date `Last seen:`, `IP\ninfo: <CC> <IPv4>`), so the operator label cannot be trusted.\n\nThe body is structurally a stripped sibling of\n`CSBuildBlockStealer`: same 12-field shape (`User time:`,\n`HWID:`, `PC Name:`, `User Name:`, `CPU:`, `GPU:`, `Memory:`,\n`OS:`, `Active window:`, `Admin rights:`, `IP:`, `GEO:`) but\nwith the four-line `Build Path:` / `Build ID:` / `Build\nVersion:` / `Build Comment:` group replaced by a single bare\n`Version` line (no colon, no value), and the trailing\n`Resolution:` line dropped. Empty `IP:` / `GEO:` values are\nroutine: the panel skips the geolocation lookup on bogon IPs\nrather than emit a placeholder string.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this stripped layout. Public\nreporting and community catalogues do not document a stealer\nthat emits exactly this stripped-Build / bare-`Version` field\nset.",
+  "aliases": [
+    "@BRADMAX stripped Build variant",
+    "BradMax Cloud"
+  ],
+  "typical_targets": [
+    "Browser saved credentials and cookies",
+    "System hardware and locale inventory",
+    "Active-window snapshot (foreground process title at exfil time)"
+  ],
+  "detection_notes": "Fingerprint requires line-anchored `Active window:`,\n`Admin rights:`, and `GEO:` keys plus a bare `Version`\nline (no colon, no value, optional leading whitespace).\nThe bare `Version` line is the disambiguator from\n`CSBuildBlockStealer`, which requires the full four-line\n`Build Path:` / `Build ID:` / `Build Version:` /\n`Build Comment:` group. The `GEO:` key (instead of\n`Country:`) further excludes unrelated formats. During\ntriage, treat the family attribution as unknown: the\naggregator self-label (`Redline and Raccoon Data Logs`)\nis misleading because the body lacks every canonical\nanchor for both families.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-build-block-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/bradmax_cloud"
+  ],
+  "variants": []
+}

@@ -1,0 +1,117 @@
+Worker: %Worker%
+Date Install: 5/6/2025 <ip>
+Gateway IP: <ip>
+---Full Pc Info---
+=== CPU Information ===
+MaxClockSpeed: 2801
+Name: Intel(R) Core(TM) i7-2640M CPU @ 2.80GHz
+NumberOfCores: 2
+=== GPU Information ===
+AdapterRAM: 2210398208
+Name: Intel(R) HD Graphics 3000
+=== RAM Information ===
+Capacity: 4294967296
+Capacity: 4294967296
+=== Disk Information ===
+Model: ADATA HD710M PRO USB Device
+Size: <CARD>
+Model: CT480BX500SSD1 ATA Device
+Size: 480101368320
+=== Network Adapter Information ===
+MACAddress: <MAC>
+Name: Intel(R) 82579LM Gigabit Network Connection
+MACAddress: <MAC>
+Name: Intel(R) Centrino(R) Advanced-N 6205
+Speed: 270000000
+MACAddress: <MAC>
+Name: Microsoft Wi-Fi Direct Virtual Adapter
+MACAddress: <MAC>
+Name: WAN Miniport (IP)
+Speed:
+MACAddress: <MAC>
+Name: WAN Miniport (IPv6)
+Speed:
+MACAddress: <MAC>
+Name: WAN Miniport (Network Monitor)
+Speed:
+MACAddress: <MAC>
+Name: Microsoft Wi-Fi Direct Virtual Adapter #2
+=== Windows Version Information ===
+Caption: Microsoft Windows 10 Pro
+OSArchitecture: 64 bits
+Version: 10.0.19045
+Manufacturer: LENOVO
+Product: 4236PLS
+SerialNumber: <SERIAL>
+=== BIOS Information ===
+Manufacturer: LENOVO
+ReleaseDate: <CARD>.000000+000
+SMBIOSBIOSVersion: 83ET67WW (1.37 )
+=== User Account Information ===
+FullName:
+Name: <USER>
+FullName:
+Name: <USER>
+FullName:
+Name: <USER>
+FullName:
+Name: <USER>
+FullName:
+Name: <USER>
+=== Battery Information ===
+BatteryStatus: 2
+EstimatedChargeRemaining: 97
+=== USB Devices Information ===
+????????? ??????: Consulta no vlida
+=== Sound Device Information ===
+Name: Dispositivo de High Definition Audio
+Name: Dispositivo de audio USB
+Name: Dispositivo de High Definition Audio
+Name: Dispositivo de audio USB
+=== Keyboard Information ===
+Name: Mejorado (101  102 teclas)
+=== Pointing Device Information ===
+Name: Dispositivo de entrada USB
+Name: Synaptics Pointing Device
+=== System Enclosure Information ===
+ChassisTypes: System.UInt16[]
+Manufacturer: LENOVO
+=== Logical Disk Information ===
+DeviceID: <HWID>
+FileSystem: NTFS
+FreeSpace: 55886204928
+Size: 112477081600
+DeviceID: <HWID>
+FileSystem: NTFS
+FreeSpace: 499933184
+Size: 367000547328
+DeviceID: <HWID>
+FileSystem: NTFS
+FreeSpace: 125194260480
+Size: <CARD>
+=== Printer Information ===
+Default: False
+Name: OneNote for Windows 10
+Default: False
+Name: OneNote (Desktop)
+Default: False
+Name: Microsoft XPS Document Writer
+Default: True
+Name: Microsoft Print to PDF
+Default: False
+Name: Fax
+=== Time Zone Information ===
+Caption: (UTC-05:00) Bogot, Lima, Quito, Rio Branco
+=== Network Information ===
+Description: Intel(R) Centrino(R) Advanced-N 6205
+IPEnabled: True
+MACAddress: <MAC>
+=== Screen Information ===
+1366x768
+=== AntiVirus Information ===
+displayName: <NAME>
+instanceGuid: {<HWID>}
+pathToSignedProductExe: windowsdefender://
+pathToSignedReportingExe: %ProgramFiles%\Windows Defender\MsMpeng.exe
+productState: 393472
+timestamp: Sat, 05 Apr 2025 <ip> GMT

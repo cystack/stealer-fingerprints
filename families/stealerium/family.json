@@ -1,38 +1,102 @@
 {
-  "$schema": "../../schemas/family.schema.json",
+  "id": "stealerium",
+  "name": "Stealerium",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "Stealerium is an open-source .NET info-stealer first published\non GitHub by user `kgnfth` in April 2022. The project ships as\na buildable C# solution rather than a paid MaaS, so anyone can\ncompile a private build and point it at their own Telegram\nbot, Discord webhook, SMTP relay, or Gofile upload endpoint.\nPublic reporting tracked a surge in Stealerium activity\nthrough 2025 and documents the panel-side summary report as\nopening with the literal `*Stealerium - Report:` Markdown-bold\nbanner. The v3.5.2 panel revision tags the banner with the\nbuild version (`*Stealerium v3.5.2 - Report:*`) and organises\noutput into emoji-prefixed `*Hardware:*` / `*Network:*` /\n`*Domains info:*` / `*Browsers:*` / `*Software:*` /\n`*Device:*` / `*Installation:*` / `*File Grabber:*` sections.\n\nStealerium is the upstream family for several documented\nforks: Phantom Stealer (sold as MaaS), Warp Stealer, and\nStealeriumPy (distributed via ClickFix). The forks rebrand the\nbanner while keeping the underlying data-collection layout, so\nanalysts triaging logs should check the banner literal first\nto disambiguate.",
   "aliases": [
     "Stealerium v3.5.2"
   ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "Stealerium exports `information.txt` with a flat system and network summary. The current fingerprint combines `Gateway IP`, `Internal IP`, `External IP`, `Power`, `Screen`, and hardware fields.",
-  "external_references": [
-    {
-      "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.stealerium"
-    },
-    {
-      "url": "https://securityscorecard.com/wp-content/uploads/2024/01/Whitepaper-A-Detailed-Analysis-Of-A-New-Stealer-Called-Stealerium-.pdf"
-    },
-    {
-      "url": "https://www.proofpoint.com/us/blog/threat-insight/not-safe-work-tracking-and-investigating-stealerium-and-phantom-infostealers"
-    },
-    {
-      "url": "https://www.uptycs.com/blog/threat-research-report-team/understanding-stealerium-malware-and-its-evasion-techniques"
-    }
-  ],
-  "id": "stealerium",
-  "name": "Stealerium",
-  "schema_version": "1.0",
-  "targets": [
+  "typical_targets": [
     "Browser saved credentials, cookies, autofill, history",
     "Crypto wallet desktop clients and browser extensions",
-    "Desktop and webcam screenshot capture",
     "Discord, Telegram, Skype, Pidgin, Outlook, Element, Signal, Tox session data",
-    "File grabber configurable by extension and folder",
     "Steam, Minecraft, Epic, Uplay, Growtopia session tokens",
-    "VPN client configurations",
     "Wi-Fi profiles and saved passwords via netsh",
-    "Windows product key extraction"
+    "Windows product key extraction",
+    "Desktop and webcam screenshot capture",
+    "VPN client configurations",
+    "File grabber configurable by extension and folder"
   ],
-  "tracking_labels": []
+  "detection_notes": "High-confidence trigger: the `*Stealerium` banner token inside\na Markdown-bold pair on the first line of `Information.txt`.\nThe v3.5.2 build adds the version string (`*Stealerium v3.5.2\n- Report:*`); earlier builds per public reporting use the\nversion-less `*Stealerium - Report:*` form. Disambiguate from\nPhantom (uses `*Phantom stealer v2.0`), Warp, and StealeriumPy\nforks by the banner literal rather than the field set, since\nall four families share the underlying section layout.\n\nDuring incident response, check the trailing archive block (`🔗\n[Archive download link]` plus `🔐 Archive password is:`) for\nthe operator-side staging URL; the URL identifies the\ncloud-hosting service (commonly Gofile) the operator chose for\nexfiltration but is not victim infrastructure.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1113",
+      "name": "Screen Capture"
+    },
+    {
+      "id": "T1125",
+      "name": "Video Capture"
+    },
+    {
+      "id": "T1083",
+      "name": "File and Directory Discovery"
+    },
+    {
+      "id": "T1217",
+      "name": "Browser Information Discovery"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    },
+    {
+      "id": "T1518.001",
+      "name": "Security Software Discovery"
+    }
+  ],
+  "related_families": [
+    "phantom-stealer",
+    "cs-bradmax-category-stealer"
+  ],
+  "sources": [
+    "https://malpedia.caad.fkie.fraunhofer.de/details/win.stealerium",
+    "https://www.proofpoint.com/us/blog/threat-insight/not-safe-work-tracking-and-investigating-stealerium-and-phantom-infostealers",
+    "https://www.uptycs.com/blog/threat-research-report-team/understanding-stealerium-malware-and-its-evasion-techniques",
+    "https://securityscorecard.com/wp-content/uploads/2024/01/Whitepaper-A-Detailed-Analysis-Of-A-New-Stealer-Called-Stealerium-.pdf"
+  ],
+  "variants": [
+    {
+      "id": "v_fea267824fe0c63f2704a2f713a8b5fc",
+      "parser": "logmine.ioc.parsers.stealerium.StealeriumParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": "Stealerium v3.5.2",
+      "distribution_channel": "@BRADLOGS",
+      "attribution_confidence": "high",
+      "markers": [
+        "*Stealerium v3.5.2 - Report:*",
+        "Stealerium v3.5.2"
+      ],
+      "fields": [],
+      "observations": 4,
+      "sample": {
+        "path": "samples/v_fea267824fe0c63f2704a2f713a8b5fc/sample.txt",
+        "sha256": "e3531ea1de20061e3a974888e95d7ee570781c278652e02ff783f076a1d6e504",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
 }

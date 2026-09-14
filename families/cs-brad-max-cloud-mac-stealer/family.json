@@ -1,0 +1,47 @@
+{
+  "id": "cs-brad-max-cloud-mac-stealer",
+  "name": "CSBradMaxCloudMacStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSBradMaxCloudMacStealer is a CyStack-coined identifier\nfor the macOS lane of the @BRADMAX_CLOUD Telegram\nchannel's stealer-log redistribution portfolio. The file\nopens with the aBradMax Figlet banner block inside a\n`*`-bordered frame carrying the\n`Telegram: https://t.me/BRADMAX_CLOUD` URL watermark, then\na flattened `system_profiler` dump covering the\nSPSoftwareDataType, SPHardwareDataType, and\nSPDisplaysDataType data types. The panel strips the\ncanonical section headers (`Software:` / `Hardware:` /\n`Graphics/Displays:`) and the nested 4-6 space indentation,\nso every field surfaces flush-left as a bare `Key: Value`\nline.\n\nNo underlying-family banner survives. Phexia, MacSync,\nSHub, and mac.c each prepend their own self-ID banner\nbefore piping the `system_profiler` body, but this slice\nships only the aBradMax block. Without the family banner\nthe macOS stealer that captured the original output\ncannot be attributed from the body alone. Family\nattribution is provisional pending a published\nthreat-intel mapping for this layout.",
+  "aliases": [
+    "BRADMAX_CLOUD macOS Information.txt slice",
+    "BRADMAX flattened system_profiler variant"
+  ],
+  "typical_targets": [
+    "Host hardware and OS fingerprint (Mac model, chip, RAM,\ndisplay, Hardware UUID, system firmware)",
+    "Account identity (login name, computer name)"
+  ],
+  "detection_notes": "Fingerprint requires both the `https://t.me/BRADMAX_CLOU`\nURL prefix (loosened to handle the known panel-render bug\nthat fuses the URL with adjacent lines) and the\nline-anchored `System Version: macOS` literal. The macOS\nversion prefix is the canonical first SPSoftwareDataType\nfield and disambiguates the slice from every Windows-shape\nBRADMAX_CLOUD sibling (DCRat, Lumma, Mars, parsed,\nbanner-only, PC, CpuVendor lanes). The body carries no\nIP address or country code, so the parent folder name\n(`<CC>_<32-hex>`) is the only victim-geo signal. During\ntriage, bucket samples by the channel + panel_brand\nmetadata and inspect companion files in the victim folder\n(keychain dumps, browser exports, wallet artifacts) for\nhigher-confidence Mac-family attribution.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    }
+  ],
+  "related_families": [
+    "dc-rat",
+    "lumma",
+    "mars-stealer",
+    "cs-brad-max-cloud-parsed-stealer",
+    "cs-brad-max-cloud-pc-stealer",
+    "cs-brad-max-cloud-banner-only-stealer",
+    "phexia",
+    "mac-sync",
+    "amos-stealer",
+    "cthulhu-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADMAX_CLOUD"
+  ],
+  "variants": []
+}

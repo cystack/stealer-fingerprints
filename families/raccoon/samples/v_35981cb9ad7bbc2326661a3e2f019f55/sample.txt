@@ -1,0 +1,141 @@
+Racc0_0n | 1.8.0
+
+Build compile date: Fri Aug 13 <ip> 2021
+
+Launched at: 1970.01.01 - 00:00:00 GMT
+
+Bot_ID: 00000000-0000-0000-0000-000000000000_<USER>
+
+Running on a laptop
+
+
+
+-------------
+
+
+
+  - Cookies: <SECRET>
+
+  - Passwords: <SECRET>
+
+  - Files: 117
+
+
+
+System Information:
+
+  - System Language: Polish
+
+  - System TimeZone: +1 hrs
+
+  - IP: <IP>
+
+  - Location: <LOCATION>
+
+  - ComputerName: <HOST>
+
+  - Username: <USER>
+
+  - Windows version: NT 10.0
+
+  - Product name: Windows 10 Pro
+
+  - System arch: x64
+
+  - CPU: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz (12 cores)
+
+  - RAM: 32687 MB (13787 MB used)
+
+  - Screen resolution: 1536x864
+
+  - Display devices:
+
+	0) NVIDIA GeForce GTX 1660 Ti
+
+
+
+-------------
+
+
+
+Installed Apps: 
+
+	Adobe Acrobat Reader DC - Polish (21.005.20060)
+
+	Adobe Creative Cloud (<ip>)
+
+	Adobe Genuine Service
+
+	Adobe Photoshop CC 2015 (16.0)
+
+	Adobe Refresh Manager (1.8.0)
+
+	Aplikacja na pulpit firmy Autodesk (<ip>)
+
+	Autodesk App Manager 2020 (3.0.0)
+
+	Autodesk Featured Apps 2020 (3.0.0)
+
+	Autodesk Genuine Service (3.2.18)
+
+	Autodesk Material Library 2020 (<ip>)
+
+	Autodesk Material Library Base Resolution Image Library 2020 (<ip>)
+
+	BIMestiMate4 (<ip>)
+
+	Cisco Webex Meetings (41.8.1)
+
+	Corel PaintShop Pro X8 (<ip>)
+
+	DIAL Communication Framework (<ip>)
+
+	DIAL Data Dispatcher (<ip>)
+
+	DIALux evo (x64) (5.9.1.51242)
+
+	Debut Video Capture Software (6.49)
+
+	Excel (1.0)
+
+	Google Chrome (92.0.4515.131)
+
+	HL-1210W series (<ip>)
+
+	ICA (<ip>)
+
+	Intel(R) C++ Redistributables on Intel(R) 64 (16.0.246)
+
+	K-Lite Codec Pack 15.9.5 Full (15.9.5)
+
+	Lenovo Vantage Service (<ip>)
+
+	Microsoft Edge (<ip>)
+
+	Microsoft Edge Update (<ip>)
+
+	Outlook (1.0)
+
+	PDF-XChange Editor (<ip>)
+
+	PSPPContent (<ip>)
+
+	PSPPHelp (<ip>)
+
+	PowerPoint (1.0)
+
+	Setup (<ip>)
+
+	Sharpener Pro 3.0 (<ip>)
+
+	Spotify (<ip>.g2d707698)
+
+	Viveza 2 (<ip>)
+
+	Word (1.0)
+
+	Zoom (5.3.2 (53291.1011))
+
+
+
+-------------

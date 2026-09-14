@@ -1,0 +1,55 @@
+{
+  "id": "cs-count-of-cpu-stealer",
+  "name": "CSCountOfCpuStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSCountOfCpuStealer is a CyStack-coined identifier for a\nPython-shaped `UserInformation.txt` panel observed inside\n`<MONTH DAY> - <count> LOGS.part<N>.rar` aggregator packs\nat `<30-char alphanum>-XT/UserInformation.txt` victim\nfolders. The body is a flat `Key: Value` block split into\nan identity header (`Timezone:`, `Time:`, `Username:`,\n`PC Name:`, `OS:`, `HWID:`), a hardware-identifier block\n(`BIOS Serial Number:`, `Machine GUID:`, `BaseBoard\nManufacturer:`), a `Network:` section with ipapi.co-style\ngeolocation (`IP:`, `Country:`, `Region:`, `City:`,\n`Postal:`), a `Hardwares:` section (`CPU:`, `Count of CPU\ncores:`, `Count of CPU threads:`, `GPU:`, `Screen\nResolution:`), and a bare RAM triple (`RAM:`, `RAM\nAvailable:`, `RAM Used:`).\n\nMultiple details in the format read as hand-rolled Python\nrather than a compiled C# or NodeJS panel. `Time:` is\nwritten in `time.asctime()` shape (`Sun Dec 17 11:24:02\n2023`). `Timezone:` uses the Olson (IANA) form\n(`Africa/Accra`) that `zoneinfo` / `time.tzname` return.\n`Postal: None` writes the Python `None` literal verbatim\nwhen the ipapi.co lookup returns no postal code. The\nverbose `Count of CPU cores:` and `Count of CPU threads:`\nkeys read like an f-string that composed the label from a\n`psutil.cpu_count(logical=False)` / `psutil.cpu_count()`\ncall. `RAM:` values use `X.XX GB` decimal-GB units, not\nthe `MB` or `bytes` shapes canonical C# panels emit.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this exact caption format.\nCurated CTI vendors (TrendMicro, SentinelOne Labs,\nKaspersky SecureList, Cyfirma, SOCRadar, Cloudflare\nCloudforce One, Talos, Unit 42, Microsoft TI, Mandiant,\nRecorded Future, eSentire, ANY.RUN) and community\ncatalogues (MalBeacon what-is-this-stealer, deepdarkCTI,\nMalpedia, lexfo/stealer-parser, thredb/sysinfo-parser)\ndo not document this exact `Count of CPU cores:` +\n`Postal: None` combination. The closest Python-hand-rolled candidates surveyed (Blank Grabber, XillenStealer,\nInf0s3c) either use a different filename\n(`Information.txt`), a different banner (`<name> got a\nnew victim:`), or different field vocabulary (`Computer\nName:` + `Total Memory:` + `UUID:` rather than `PC Name:`\n+ `RAM:` + `HWID:` + `Machine GUID:`).",
+  "aliases": [
+    "LOGS-pack Python-shaped UserInformation panel",
+    "Count-of-CPU verbose-key UserInformation panel"
+  ],
+  "typical_targets": [
+    "Browser saved credentials and cookies (harvested in sibling files)",
+    "Host and hardware fingerprint (HWID, Machine GUID, BIOS Serial, BaseBoard Manufacturer)",
+    "Public IP and coarse geolocation (country, region, city, postal)",
+    "Locale and OS build (timezone, Windows version)",
+    "CPU, GPU, screen resolution, and RAM inventory"
+  ],
+  "detection_notes": "Fingerprint requires both line-anchored keys `Count of\nCPU cores:` and `Count of CPU threads:`. The verbose\n`Count of` key prefix is unique in the parser registry:\ncanonical Lumma uses `- CPU Cores:` / `- CPU Threads:`\nwith the dash bullet, DataMonk uses bare `CPU Cores:` /\n`CPU Threads:`, CSCountCoreStealer uses the transposed\nsingular `Count Core:`, the user-info bracket template uses\n`Logical Cores:`, and Redline uses the WMI\n`Name: Intel(R) ..., N Cores`\nshape. False-positive risk is low. Treat the family\nattribution as unknown during triage: the panel is\nclearly Python-hand-rolled per the `Postal: None`\nliteral and the ipapi.co geolocation triple, but no\npublic writeup maps this caption to a named family.\nDownstream consumers can filter on the `CSCountOfCpu\nStealer` family literal to segregate the discovery.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "blank-grabber"
+  ],
+  "sources": [
+    "https://github.com/MalBeacon/what-is-this-stealer",
+    "https://blog.lexfo.fr/infostealer-parser.html",
+    "https://github.com/thredb/sysinfo-parser",
+    "https://cyble.com/blog/lummac2-stealer-a-potent-threat-to-crypto-users/"
+  ],
+  "related_external": [
+    "xillenstealer",
+    "inf0s3c-stealer"
+  ],
+  "variants": []
+}

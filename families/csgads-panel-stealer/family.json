@@ -1,0 +1,72 @@
+{
+  "id": "csgads-panel-stealer",
+  "name": "CSGADSPanelStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSGADSPanelStealer is a CyStack-coined identifier for a\ncompact five-line `Information.txt` panel summary observed\ninside `!! 2026 JAN.part01.rar`-style aggregator packs in\n`[CC]<IPv4>/Information.txt` victim folders. The body lists\nIP, Country (flag emoji + ISO code + country name), User,\nAntiVirus, and a `Browser Data:` count line in pipe-separated\nPXA-style notation:\n`CK:<n>|PW:<n>|AF:<n>|CC:<n>|FB:<n>|GADS:<bool>`. No HWID,\nhostname, OS, or hardware inventory accompanies the summary,\nso the panel is a victim-side fingerprint view rather than a\nfull system-info export.\n\nThe `CK|PW|AF|CC|FB` count abbreviations are publicly\ndocumented as the PXA Stealer data-tracker format, and the\n`[CC]<IP>` folder convention matches the PXA panel\nexfiltration shape (`[CC_IPADDRESS]_HOSTNAME.zip`). The\nattribution is suggestive but not definitive: PXA's documented\nvictim-side `system_info.txt` uses a verbose\nVietnamese-headered `Thông tin hệ thống` block of WMI\nsnake_case keys (claimed by `PXAParser`), and the trailing\n`GADS` (Google Ads account flag) column plus the bare\n`AntiVirus:` line are not described in any public reporting.\nThe format may be a panel-summary view from a PXA log-ingest\npipeline or an unrelated Telegram aggregator that adopted the\nPXA count notation.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this exact panel-summary layout.",
+  "aliases": [
+    "!! 2026 JAN aggregator panel summary"
+  ],
+  "typical_targets": [
+    "Browser saved credentials, cookies, autofill (counts only)",
+    "Credit-card data (count flag)",
+    "Facebook session cookies (count flag)",
+    "Google Ads account presence flag"
+  ],
+  "detection_notes": "Fingerprint requires line-anchored `IP:`, `Country:`,\n`User:`, `AntiVirus:` keys plus the `Browser Data: CK:`\nsubstring and the `|GADS:` substring. The `|GADS:` token\nis the disambiguator: PXA Stealer Telegram bot captions\nuse the same pipe-separated count notation but extend it\nwith `Sites|Wallets|Apps` columns rather than a `GADS`\nflag. During triage, treat the family attribution as\nunknown - the underlying stealer cannot be identified\nfrom the panel summary alone, and the per-victim folder\nis missing the harvested credential bodies that would\nallow follow-on family fingerprinting.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "pxa-stealer"
+  ],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_edb227dfc327e94eb4f8726bf60b7c89",
+      "parser": "logmine.ioc.parsers.cs_gads_panel_stealer.CSGADSPanelStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "Browser Data: CK:",
+        "|AF:",
+        "|CC:",
+        "|PW:"
+      ],
+      "fields": [
+        "IP",
+        "User"
+      ],
+      "observations": 24995,
+      "sample": {
+        "path": "samples/v_edb227dfc327e94eb4f8726bf60b7c89/sample.txt",
+        "sha256": "1bcb7dc74275e6505415c7cafd443acd743af2b0240f8d8ea349a41ac45398d9",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "cs-exception-cookies-only-stealer",
+  "name": "CSExceptionCookiesOnlyStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSExceptionCookiesOnlyStealer is a CyStack-coined identifier\nfor a LOGS-pack per-victim folder-style IOC shipping only a\n``Cookies/`` subdirectory (Netscape cookies.txt dumps) plus\na root-level ``Exception.txt`` file (the harvester panel-side exception log). Observed inside the ``23-24 JUNE - 25597\nLOGS.part01.rar`` aggregator pack at\n``<CC>-    -<HWID>-<TIMESTAMP>/`` victim folders where the\nfolder name uses a distinctive 2-letter country code + dash\n+ 4-space padding + dash + ~30-character alphanumeric HWID +\ndash + full dash-separated ISO 8601 timestamp with\nmicrosecond precision.\n\nThe LOGS pack ships multiple stealer families (canonical\nLumma, StealC, Mars-fork, AMOS, Cthulhu per prior LOGS-pack\nparser research), so the minimal cookies-plus-exception-log\nlayout carries no remaining family signal beyond ``cookie-jar exporter with .NET / Python exception traceback dump``.\nThe label exists to attribute the artifact by its fingerprint\nrather than guessing which stealer harvested the cookie jar.",
+  "aliases": [
+    "LOGS-pack cookies + Exception.txt bundle",
+    "Space-padded folder-name cookies-only bundle"
+  ],
+  "typical_targets": [
+    "Browser session cookies (Chromium / Firefox) exported\nas Netscape cookies.txt files per browser profile"
+  ],
+  "detection_notes": "Fingerprint requires the folder root to be a subset of\n``{cookies, exception.txt, \"\"}`` (case-insensitive) with\nboth ``cookies`` and ``exception.txt`` present, plus at\nleast two canonical Netscape cookies.txt rows in the cred\nfile body. The ``Exception.txt`` sibling is typically\nnon-empty (contains the harvester traceback), distinguishing\nthis from :class:`CSBradmaxCookiesOnlyBundle` which requires\nempty panel-placeholder siblings. During triage, correlate\nthe folder-name prefix with the LOGS pack archive to\nidentify the redistributor; the underlying harvester\nfamily is unattributable from the cookies-only layout\nalone.",
+  "attack_techniques": [
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "cs-bradmax-cookies-only-stealer"
+  ],
+  "sources": [],
+  "related_external": [
+    "CSDaisyCloudCookiesOnlyStealer",
+    "CSBradmaxAppCookiesStealer"
+  ],
+  "variants": []
+}

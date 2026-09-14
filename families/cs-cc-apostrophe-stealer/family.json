@@ -1,0 +1,50 @@
+{
+  "id": "cs-cc-apostrophe-stealer",
+  "name": "CSCcApostropheStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSCcApostropheStealer is a CyStack-coined identifier for a\nminimal three-file victim folder observed inside `!! 2025\nNOV.part001.rar` BRADMAX / `@BRADLOGS` aggregator packs at\n`[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/` victim folders. The pack\nships `cc's.txt` (credit-card listing with apostrophe-s\nlowercase naming) plus `cookies.txt` plus `history.txt`, and\nsometimes an empty-named packer directory artifact. No\ncompanion system-info file, no passwords dump, no token files.\n\n`cc's.txt` opens with the panel's 5-column pipe-header `Name\non Card | Expiration Month | Expiration Year | Card Number |\nDate Modified` (double-space-pipe-double-space separators).\nPer-card rows follow when the victim had saved cards; victims\nwith no saved cards produce a header-only file (~89 bytes).\nThe apostrophe-s filename is the distinguishing feature:\ncanonical Lumma / Vidar / Redline / StealC /\nPhantom-documented credit-card files use `cards.txt` /\n`CC.txt` / `CreditCards.txt`, never the `cc's.txt` form.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and\ncommunity catalogues do not document a stealer that emits\nexactly this `cc's.txt` + `cookies.txt` + `history.txt` shape\nwith the pipe-header credit-card file. The column-style\nwriting pattern is consistent with Stealerium and its forks\n(public reporting documents Stealerium and Phantom as one fork\nlineage), but no public Stealerium / Phantom analysis attests\nthe `cc's.txt` apostrophe filename, so the family attribution\nstays unknown.",
+  "aliases": [
+    "BRADMAX 3-file cc/cookies/history minimal pack",
+    "cc apostrophe-s pipe-header layout"
+  ],
+  "typical_targets": [
+    "Browser saved credit-card numbers (with expiry and name)",
+    "Browser cookies",
+    "Browser history"
+  ],
+  "detection_notes": "Fingerprint requires (a) `cc's.txt` AND `cookies.txt`\nAND `history.txt` in the folder root, (b) root-entry\ncount <= 4 (the optional fourth entry is an empty-named\npacker DIR), and (c) the `Name on Card  |  Expiration\nMonth  |  Expiration Year  |  Card Number  |  Date\nModified` pipe-header literal in the `cc's.txt` body.\nThe header anchor fires even on victims with no saved\ncards because the panel writes the header row\nunconditionally. The 3-file root-entry cap keeps the\nclaim off larger Lumma-shaped folders (which require\n`All_Passwords.txt` + `passwords.txt` + `cookies.txt` +\n`history.txt` per the Lumma detector). During triage,\ntreat the family attribution as unknown: the underlying\nstealer builder cannot be identified from the 3-file\nshape plus pipe-header alone.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1217",
+      "name": "Browser Information Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "stealerium",
+    "phantom-stealer",
+    "cs-wifi-backslash-n-stealer",
+    "cs-soft-host-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": []
+}

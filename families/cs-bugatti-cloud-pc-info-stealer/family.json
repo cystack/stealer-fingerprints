@@ -1,0 +1,41 @@
+{
+  "id": "cs-bugatti-cloud-pc-info-stealer",
+  "name": "CSBugattiCloudPcInfoStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSBugattiCloudPcInfoStealer is a CyStack-coined identifier for\nthe @Bugatti_Cloud Telegram aggregator's normalized\n`pc_info.txt` slice. The body is a flat 13-field `Key: Value`\nblock: `IP`, `Country`, `HWID`, `OS`, `Architecture`,\n`UserName`, `Computer Name`, `Local Time`, `Cores`, `RAM`, an\nempty `Display Resolution`, a populated top-level\n`Resolution`, and a `GPU` header with a tab-indented adapter\nlist. The `Local Time` field carries the lowercase JSON-null\nliteral `null` when the value is unset.\n\nTwo normalizer-side signatures point to a Python or Node.js\noperator tool rather than a native stealer panel. First, the\n`HWID` value glues the host's `Computer Name` (verbatim,\nincluding the Windows-default `DESKTOP-` prefix) to the host's\nMachineGuid UUID with no separator, a Python f-string\nconcatenation shape. Second, the `Local Time: null` literal\nmatches `json.dumps(None)` rather than any canonical stealer's\nempty value or `Unknown` fallback string. Family attribution\nis provisional pending a published threat-intel mapping for\nthis layout; public reporting and community catalogues\ndocument @Bugatti_Cloud only as a redistribution channel,\nnever as a native stealer family.",
+  "aliases": [
+    "@Bugatti_Cloud normalized pc_info.txt slice",
+    "Bugatti Cloud JSON-null Local Time variant"
+  ],
+  "typical_targets": [
+    "Network identity (IP address, ISO 3166-1 alpha-2 country\ncode)",
+    "Account identity (Windows username, computer name, MachineGuid\nconcatenated into the HWID value)",
+    "Host hardware summary (OS name, architecture, core count, RAM\nin gigabytes, screen resolution, GPU adapter list)"
+  ],
+  "detection_notes": "Fingerprint requires the line-anchored `Local Time: null`\nliteral AND line-anchored `Architecture:` AND line-anchored\n`HWID:` field keys. The `Local Time: null` literal is the\nload-bearing disambiguator: no surveyed canonical stealer\nemits the lowercase JSON-null placeholder for an unset\nvalue. The other two anchors narrow the claim to a system-info file shape rather than a code snippet or unrelated\ndocument. During triage, treat the underlying source-log\nfamily as unattributable and rely on the channel and panel\nbrand metadata to bucket samples. Companion files in the\nvictim folder (sibling `information.txt`, browser dumps,\nwallet exports) may carry stronger canonical-family\nfingerprints when present.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1592",
+      "name": "Gather Victim Host Information"
+    }
+  ],
+  "related_families": [
+    "bugatti-cloud",
+    "category-stealer",
+    "cs-brad-max-cloud-parsed-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/Bugatti_Cloud"
+  ],
+  "variants": []
+}

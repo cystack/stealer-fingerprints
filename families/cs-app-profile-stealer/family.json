@@ -1,0 +1,40 @@
+{
+  "id": "cs-app-profile-stealer",
+  "name": "CSAppProfileStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSAppProfileStealer is a CyStack-coined identifier for an\norphan `All_Passwords.txt` cred-file shape distributed inside\n`!! 2025 NOV.part001.rar` `@BRADLOGS / BRADMAX` aggregator\npacks in `[<CC>]@BRADLOGS (BRADMAX) (<NN>)/` victim folders\nwhere the panel does not ship a companion system-info file.\nEach saved credential is rendered as a 4-line `URL: /\nUsername: / Password: / Application: <Browser> [Profile:\n<name>]` block, with records separated by a 80-character\nU+2501 `━` HEAVY HORIZONTAL rule line.\n\nThe `Application:` line annotates the source browser and\nprofile in a bracketed form (e.g. `Application: Chrome\n[Profile: Default]`, `Application: Edge [Profile: Default]`).\nA public stealer-log parser grammar attests a sibling 4-line\nshape and notes that `URL/Username/Password/Application` is\nRedline-native, but no two independent public sources publish\na sample log showing this exact `[Profile: <name>]` bracket\nannotation paired with U+2501 separators. Family attribution\nis provisional pending a published threat-intel mapping for\nthis layout.",
+  "aliases": [
+    "BRADMAX All_Passwords.txt with [Profile:] bracket annotation",
+    "U+2501-separated Application-Profile cred block"
+  ],
+  "typical_targets": [
+    "Browser-saved credentials (URL, username, password)",
+    "Source browser identity (Chrome, Edge, Firefox, Brave, Opera)",
+    "Browser profile name (`Default`, named profiles)"
+  ],
+  "detection_notes": "Fingerprint requires 3+ consecutive 4-line `URL: / Username: /\nPassword: / Application: <Browser> [Profile: <name>]` blocks.\nThe `[Profile:` bracket-annotation substring on the\n`Application:` line is the disambiguating signal: Redline's\nnative shape (per a public parser grammar) uses an\n`Application: Google_[Chrome]_Default` underscore-and-bracket\nnotation rather than the explicit `[Profile: <name>]`\nannotation seen here. Empty `Username:` / `Password:` lines\nare tolerated (panel emits them for entries where the browser\nstored only one half of the credential pair). During triage,\ntreat the family attribution as unknown: the underlying\nstealer that produces the cred dump has not been mapped to\nthis exact bracketed-profile layout in any public reporting.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "redline",
+    "cs-soft-host-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": []
+}

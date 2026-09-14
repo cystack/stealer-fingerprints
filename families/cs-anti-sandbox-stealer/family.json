@@ -1,0 +1,77 @@
+{
+  "id": "cs-anti-sandbox-stealer",
+  "name": "CSAntiSandboxStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSAntiSandboxStealer is a CyStack-coined identifier for a\ntriple-equals-section `system_info.txt` panel observed inside\n`!! 2025 DEC.part01.rar` aggregator packs at\n`[<CC>]<IPv4>/system_info.txt` victim folders. The body opens\nwith six Title-case `=== <Section> ===` headers (`=== System\nInformation ===`, `=== Network ===`, `=== Hardware ===`, `===\nDisk ===`, `=== Anti-Sandbox Diagnostics ===`, `=== Summary\n===`) and a verbatim Anti-Sandbox Diagnostics block that\nexposes the stealer's sandbox-detection logic line by line\nwith arrow-verdict suffixes (`-> PASS` / `-> FAIL`).\n\nThe diagnostic block is the panel's distinguishing\ndeveloper-side quirk. Most stealers hide their sandbox-detection logic so analysts cannot easily map the thresholds,\nbut this builder prints every check and its configured\nthreshold (`RAM: 3 GB (threshold: 8 GB) -> FAIL`). The `===\nSummary ===` block carries the `Anti-Sandbox: ENABLED` flag\nplus a `Mode: V2 (Evasive)` panel-version identifier; the `V2`\nliteral suggests this is the second iteration of the builder's\nanti-sandbox logic.\n\nPublic reporting and the community stealer-format catalogues\ndo not document a family that emits this exact\ntriple-equals-section + verbatim diagnostic block +\narrow-verdict shape. Multiple public writeups document modern\nstealers that implement anti-sandbox checks (Lumma C2, Typhon\nReborn V2, Akira Stealer v2, Rhadamanthys, Vidar 2.0), but\nnone of those writeups quote a sample log with the diagnostic\nblock exposed verbatim. The format may be a debug /\ndeveloper-test build of one of those families that left the\nverbose diagnostic output enabled, or a separate undocumented\nbuilder. Family attribution is provisional pending a published\nmapping.",
+  "aliases": [
+    "Anti-Sandbox Diagnostics V2 panel",
+    "Mode V2 Evasive stealer"
+  ],
+  "typical_targets": [
+    "System fingerprint (Hostname, Username, OS, RAM,\nCPU cores, disk size, screen resolution)",
+    "Sandbox-detection diagnostic state (the panel itself\nships only system info plus the diagnostic block;\nharvested credentials live in sibling files)"
+  ],
+  "detection_notes": "Fingerprint requires `=== System Information ===` (Title\ncase) AND `=== Anti-Sandbox Diagnostics ===` AND\n`Mode: V2` substrings. The Title-case section names rule\nout `CSEnvVarDumpStealer` which uses ALL-CAPS headers\n(`=== SYSTEM INFORMATION ===`). The verbatim diagnostic\nblock is the most distinguishing single anchor; no other\ndocumented stealer exposes its sandbox-detection logic\nthis way. During triage, the per-check threshold lines\n(`RAM: 3 GB (threshold: 8 GB) -> FAIL`) reveal the\nbuilder's configured evasion bounds and can be tracked\nacross samples to detect threshold tuning.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1497",
+      "name": "Virtualization/Sandbox Evasion"
+    },
+    {
+      "id": "T1497.001",
+      "name": "System Checks"
+    },
+    {
+      "id": "T1497.003",
+      "name": "Time Based Evasion"
+    },
+    {
+      "id": "T1622",
+      "name": "Debugger Evasion"
+    }
+  ],
+  "related_families": [
+    "lumma",
+    "rhadamanthys",
+    "vidar"
+  ],
+  "sources": [],
+  "related_external": [
+    "typhon-stealer",
+    "akira-stealer"
+  ],
+  "variants": [
+    {
+      "id": "v_afd6a02604a11b541c94ed4334adccf3",
+      "parser": "logmine.ioc.parsers.cs_anti_sandbox_stealer.CSAntiSandboxStealerParser",
+      "filenames": [
+        "system_info.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "=== Anti-Sandbox Diagnostics ===",
+        "=== System Information ===",
+        "Mode: V2"
+      ],
+      "fields": [],
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_afd6a02604a11b541c94ed4334adccf3/sample.txt",
+        "sha256": "741924979c4f544ca36d7af70d8d7e3ec6082d8f7fcede9ac7e8db220b47ae99",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

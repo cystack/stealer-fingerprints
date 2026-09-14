@@ -1,72 +1,75 @@
 # Nexus
 
-**Known malware family · medium attribution confidence**
+Nexus is a small C++ Windows info-stealer sold on the
+exploit.in Russian-language crime forum for around $100 per
+build with free updates. The first technical
+reverse-engineering write-up describes a stub of roughly 460
+KB that queries `SOFTWARE\Microsoft\Windows NT\CurrentVersion`
+for the Windows version, and writes the small set of harvested
+attributes into a HWID-named staging directory before exfil.
 
-## At a glance
+The on-disk `Information.txt` carries a six-line box-drawing
+ASCII banner spelling NEXUS, a flat `Key: Value` system block,
+and a trailer with the Russian `Тема с отзывами:` ("Reviews
+thread:") zelenka.guru / Lolzteam link plus the seller's TOX
+and JABBER contact addresses (`NEXUSDEVELOPER@EXPLOIT.IN` and
+`NEXUSSUPPORT@EXPLOIT.IN`).
 
-- Aliases: <code>Nexus Stealer</code>
-- Typical filenames: <code>information.txt</code>
-- Published formats: 1
-- Representative samples: 1
+Public infection-telemetry research counts Nexus as one of
+four distinct families observed across a 50,000-device sample
+of 2025 infections, attributing roughly 2% of the sample to
+this family. The specific `Information.txt` layout fingerprint
+is not yet directly quoted in any public deep-dive, so family
+attribution rests on the JABBER self-identification literal
+and an independent technical match.
 
-<p>Nexus exports <code>information.txt</code> as a flat field list. Distinctive labels include <code>CPU Name</code>, <code>CPU Vendor</code>, <code>Jabber</code>, <code>NetBIOS</code>, and <code>RAM Size</code>.</p>
+## Research status
 
-## How to recognize it
+- Classification: **Known malware family**
+- Attribution confidence: **medium**
+- Aliases: `Nexus Stealer`
+- Variants observed: **0**
 
-- No stable text banner is known; combine filename and field layout.
-- Recurring fields: <code>country</code>, <code>cpu name</code>, <code>cpu vendor</code>, <code>gpu</code>, <code>hwid</code>, <code>ip address</code>, <code>jabber</code>, <code>language</code>, <code>netbios</code>, <code>os version</code>, <code>pc</code>, <code>ram size</code>, <code>screen resolution</code>, <code>user</code>
+## What it targets
 
-## Formats
+- Username, hostname, and machine identifiers
+- Windows version and OS language
+- CPU, GPU, and memory inventory
+- IP address and country geolocation
 
-| Format | Evidence | Fingerprint |
-|---|---|---|
-| information.txt - country / cpu name | 14 fields, filename | [`fp_d31ecda9c37dc73244b39455f2471618`](fingerprints/fp_d31ecda9c37dc73244b39455f2471618.json) |
+## Detection notes
 
-## Representative sample
+The `NEXUSDEVELOPER@EXPLOIT.IN` JABBER literal is the
+strongest single fingerprint, since it carries the malware
+author's own seller-contact handle and is written into every
+log by the panel. The six-line NEXUS box-drawing banner and
+the Russian `Тема с отзывами:` zelenka.guru reviews-thread
+line provide secondary confirmation. Triage logs from this
+family by collecting the flat `Key: Value` system block plus
+the HWID; the exfil set is small and contains no banking,
+wallet, or session-cookie data on its own (file-grabber
+output ships in sibling files inside the same victim folder).
 
-Observed text sample. Placeholders mark values removed from the original log.
+## Observed log variants
 
-[<code>information.txt</code>](samples/information.txt)
+No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
-```text
-╔╗─╔╗╔═══╗╔══╗╔══╗╔╗╔╗╔══╗
-║╚═╝║║╔══╝╚═╗║║╔═╝║║║║║╔═╝
-║╔╗─║║╚══╗──║╚╝║──║║║║║╚═╗
-║║╚╗║║╔══╝──║╔╗║──║║║║╚═╗║
-║║─║║║╚══╗╔═╝║║╚═╗║╚╝║╔═╝║
-╚╝─╚╝╚═══╝╚══╝╚══╝╚══╝╚══╝
+## MITRE ATT&CK
 
-PC: [redacted]
-User: [redacted]
-Hostname: [redacted]
-NetBIOS: [redacted]
-OS Version: Windows 11 (10.0.22621) x64
-Language: en-US
-HWID: [redacted]
-CPU vendor: GenuineIntel
-CPU name: Intel(R) Core(TM) i5-1035G4 CPU @ 1.10GHz
-GPU: Intel(R) Iris(R) Plus Graphics
-RAM size: 8192MB
-Screen resolution: 2736x1824
-IP Address: [redacted]
-Country: VN
-Тема с отзывами: zelenka.guru/threads/3534749
+| Technique | Name |
+|---|---|
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1614](https://attack.mitre.org/techniques/T1614/) | System Location Discovery |
+| [T1124](https://attack.mitre.org/techniques/T1124/) | System Time Discovery |
 
-TOX: DAA5A865F91C41B3C0698680BEB7412BDD125A794B562DB9FA6522E1A456D33C24875A5D4FAA
-JABBER: <email> / <email>
-```
+## Related catalog profiles
 
-## References
+- None recorded.
 
-- [https://flare.io/learn/resources/cybercrime-favorite-target-gamers](https://flare.io/learn/resources/cybercrime-favorite-target-gamers)
-- [https://fr3d.hk/blog/nexus-just-another-stealer](https://fr3d.hk/blog/nexus-just-another-stealer)
+## Sources
 
-## Try it locally
+- <https://fr3d.hk/blog/nexus-just-another-stealer>
+- <https://flare.io/learn/resources/cybercrime-favorite-target-gamers>
 
-```console
-python identify.py "families/nexus/samples/information.txt"
-```
-
-The evidence score describes a structural comparison, not attribution certainty.
-
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+Machine-readable record: [family.json](family.json)

@@ -1,0 +1,46 @@
+{
+  "id": "cs-dark-side-cloud-stealer",
+  "name": "CSDarkSideCloudStealer",
+  "classification": "family_variant",
+  "attribution_confidence": "high",
+  "description": "CSDarkSideCloudStealer is a CyStack-coined identifier for a\n`DARKSIDE PRIVATE CLOUD` aggregator wrap observed inside\n`@ft7links-vidar` packs. The panel encloses an ASCII-art\n`Darkside` banner between `===DARKSIDE_BRAND_BEGIN===` and\n`===DARKSIDE_BRAND_END===` delimiter lines, advertises a\ntiered subscription model (BUDGET $100, PREMIUM $200, GOLD\n$300), and embeds the channel handle\n`https://t.me/+abRpT5eRHCplNzIy`. Body shape is heavily-stripped Redline-canonical key naming (`AV:`, `User Name:`,\n`Display Resolution:`).",
+  "aliases": [
+    "DARKSIDE PRIVATE CLOUD",
+    "darkside linklogs",
+    "DarkSide Cloud"
+  ],
+  "typical_targets": [],
+  "detection_notes": "The 28-character `===DARKSIDE_BRAND_BEGIN===` delimiter is\nthe cleanest trigger; no other parser in the registry keys\non it. Pair with at least one Redline-canonical body field\n(`User Name:` or `Display Resolution:`) to avoid claiming\nbanner-only README artefacts the panel may also emit.\nNote: unrelated to the Russia-affiliated DarkSide ransomware\noperation (Colonial Pipeline, May 2021); naming collision\nis incidental.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "redline",
+    "vidar"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/+abRpT5eRHCplNzIy"
+  ],
+  "canonical_family": "redline",
+  "variants": []
+}

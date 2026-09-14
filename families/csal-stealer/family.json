@@ -1,0 +1,72 @@
+{
+  "id": "csal-stealer",
+  "name": "CSALStealer",
+  "classification": "family_variant",
+  "attribution_confidence": "medium",
+  "description": "CSALStealer is a CyStack-coined identifier for a self-named\nAL Stealer log family observed inside `APRIL 25 - 19966 LOGS`\nTelegram packs in `DZ_<IP>_<DD-MM-YY>/` victim folders. The\nformat is Lumma-shaped (dash-prefix YAML list) but carries a\ndistinct build banner, a different distribution channel, and\nlacks Lumma's canonical `(sig:UNIX.HEX)` signature. The\nmalware self-identifies as AL Stealer (likely \"Additional\nLibraries\", matching its Telegram channel) and targets\nHypixel Skyblock players via fake Minecraft mods. Family\nidentification is provisional; no published threat-intel\nsource attests this specific log template, hence the `CS`\nprefix.",
+  "aliases": [
+    "AL Stealer"
+  ],
+  "typical_targets": [
+    "Browser saved credentials",
+    "Crypto wallet extensions",
+    "Minecraft account credentials and Hypixel Skyblock data"
+  ],
+  "detection_notes": "Dash-prefix `- AL Stealer Build:` line is the cleanest\ntrigger. The `t.me/additionallibraries` channel reference in\nthe join-now header is a backup signature for variants that\nstrip the build banner.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "lumma"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/additionallibraries"
+  ],
+  "canonical_family": "lumma",
+  "variants": [
+    {
+      "id": "v_acc2678339f8059055700c66f385f24d",
+      "parser": "logmine.ioc.parsers.cs_al_stealer.CSALStealerParser",
+      "filenames": [
+        "System.txt"
+      ],
+      "panel_brand": "AL Stealer",
+      "distribution_channel": "t.me/additionallibraries",
+      "attribution_confidence": "medium",
+      "markers": [
+        "AL Stealer",
+        "t.me/additionallibraries"
+      ],
+      "fields": [
+        "AL Stealer Build"
+      ],
+      "observations": 26,
+      "sample": {
+        "path": "samples/v_acc2678339f8059055700c66f385f24d/sample.txt",
+        "sha256": "f500fa816cbb77efa7222cdd89e3dbf77713cf65c9cdf9d5a5f658957689f41e",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

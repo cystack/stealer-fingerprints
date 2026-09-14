@@ -1,109 +1,79 @@
 # SHub Stealer
 
-**Known malware family · high attribution confidence**
+SHub Stealer is a macOS-targeted info-stealer first publicly
+documented in March 2026 after a fake CleanMyMac landing-page
+campaign delivered the payload to crypto holders. A follow-on
+variant was analysed publicly under the build tag `Reaper` in
+May 2026; the family also gets broad public coverage.
 
-## At a glance
+The payload is a Mach-O binary that runs an AppleScript helper
+to harvest browser data, cryptocurrency wallets,
+developer-related configuration files, macOS Keychain data,
+iCloud session data, and Telegram session files. Collected
+data is bundled into a ZIP archive and POSTed to a hardcoded
+gate (e.g. `res2erch-sl0ut[.]com/gate`) along with a hardcoded
+API key identifying the malware build. Per-victim `Build Tag`
+campaign labels and a 32-character build hash support
+affiliate-level tracking. Observed build tags include
+`Reaper`, `PAds`, and `Crypto_Byte`.
 
-- Aliases: <code>SHub</code>, <code>SHub Reaper</code>
-- Typical filenames: <code>information.txt</code>
-- Published formats: 1
-- Representative samples: 1
+## Research status
 
-<p>SHub <code>information.txt</code> contains the literal <code>SHub Stealer</code> banner plus <code>Build Tag</code>, <code>External IP</code>, <code>Hardware</code>, <code>Graphics/Displays</code>, <code>Software</code>, and <code>Password</code> sections.</p>
+- Classification: **Known malware family**
+- Attribution confidence: **high**
+- Aliases: `SHub`, `SHub Reaper`
+- Variants observed: **0**
 
-## How to recognize it
+## What it targets
 
-- Stable markers: <code>SHub Stealer</code>
-- Recurring fields: <code>build tag</code>, <code>external ip</code>, <code>graphics/displays</code>, <code>hardware</code>, <code>password</code>, <code>software</code>
+- Browser saved credentials, cookies, autofill
+- Cryptocurrency wallet apps and browser extensions
+- macOS Keychain entries
+- iCloud session data
+- Telegram session files
+- Developer configuration files and Notes
+- On-screen prompted login credentials (osascript dialog)
 
-## Formats
+## Detection notes
 
-| Format | Evidence | Fingerprint |
-|---|---|---|
-| information.txt - SHub Stealer | marker, 6 fields, filename | [`fp_3c9de3aed18ee8c9eea55db6117edbc8`](fingerprints/fp_3c9de3aed18ee8c9eea55db6117edbc8.json) |
+The strongest single signal is the verbatim `SHub Stealer`
+banner literal, the family's self-identification header.
+Paired with the `Build Tag:` and `External IP:` preamble
+fields, attribution is high confidence. Triage rules
+should anchor on the banner literal plus the
+`system_profiler` body shape rather than the build tag
+value, which rotates per campaign (`Reaper`, `PAds`,
+`Crypto_Byte` are documented examples).
 
-## Representative sample
+## Observed log variants
 
-Observed text sample. Placeholders mark values removed from the original log.
+No representative Logmine sample has been retained for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
-[<code>information.txt</code>](samples/information.txt)
+## MITRE ATT&CK
 
-```text
-=== System Info ===
-SHub Stealer
-Build Tag: Crypto_Byte
-External IP: [redacted]
+| Technique | Name |
+|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
+| [T1555.001](https://attack.mitre.org/techniques/T1555/001/) | Keychain |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| [T1059.002](https://attack.mitre.org/techniques/T1059/002/) | AppleScript |
+| [T1056.002](https://attack.mitre.org/techniques/T1056/002/) | GUI Input Capture |
 
-System Info
-Username: [redacted]
-Password: [redacted]
+## Related catalog profiles
 
-Software:
+- [MacSync](../mac-sync/)
+- [AMOS Stealer](../amos-stealer/)
+- [Cthulhu Stealer](../cthulhu-stealer/)
 
-    System Software Overview:
+## Sources
 
-      System Version: macOS 26.2 (25C56)
-      Kernel Version: Darwin 25.2.0
-      Boot Volume: Macintosh HD
-      Boot Mode: Normal
-      Computer Name: [redacted]
-      User Name: [redacted]
-      Secure Virtual Memory: Enabled
-      System Integrity Protection: Enabled
-      Time since boot: 11 days, 3 hours, 22 minutes
+- <https://www.sentinelone.com/blog/shub-reaper-macos-stealer-spoofs-apple-google-and-microsoft-in-a-single-attack-chain/>
+- <https://www.malwarebytes.com/blog/threat-intel/2026/03/fake-cleanmymac-site-installs-shub-stealer-and-backdoors-crypto-wallets>
+- <https://www.bleepingcomputer.com/news/security/shub-macos-infostealer-variant-spoofs-apple-security-updates/>
+- <https://securitylabs.datadoghq.com/articles/tech-impersonators-clickfix-and-macos-infostealers/>
+- <https://www.helpnetsecurity.com/2026/05/19/shub-reaper-macos-infostealer-apple-google-microsoft/>
 
-Hardware:
-
-    Hardware Overview:
-
-      Model Name: MacBook Air
-      Model Identifier: Mac16,13
-      Model Number: MW1M3LL/A
-      Chip: Apple M4
-      Total Number of Cores: 10 (4 performance and 6 efficiency)
-      Memory: 16 GB
-      System Firmware Version: 13822.61.10
-      OS Loader Version: 13822.61.10
-      Serial Number (system): [redacted]
-      Hardware UUID: [redacted-uuid]
-      Provisioning UDID: [redacted]
-      Activation Lock Status: Enabled
-
-Graphics/Displays:
-
-    Apple M4:
-
-      Chipset Model: Apple M4
-      Type: GPU
-      Bus: Built-In
-      Total Number of Cores: 10
-      Vendor: Apple (0x106b)
-      Metal Support: Metal 4
-      Displays:
-        Color LCD:
-          Display Type: Built-in Liquid Retina Display
-          Resolution: 2880 x 1864 Retina
-          Main Display: Yes
-          Mirror: Off
-          Online: Yes
-          Automatically Adjust Brightness: No
-          Connection Type: Internal
-```
-
-## References
-
-- [https://securitylabs.datadoghq.com/articles/tech-impersonators-clickfix-and-macos-infostealers/](https://securitylabs.datadoghq.com/articles/tech-impersonators-clickfix-and-macos-infostealers/)
-- [https://www.bleepingcomputer.com/news/security/shub-macos-infostealer-variant-spoofs-apple-security-updates/](https://www.bleepingcomputer.com/news/security/shub-macos-infostealer-variant-spoofs-apple-security-updates/)
-- [https://www.helpnetsecurity.com/2026/05/19/shub-reaper-macos-infostealer-apple-google-microsoft/](https://www.helpnetsecurity.com/2026/05/19/shub-reaper-macos-infostealer-apple-google-microsoft/)
-- [https://www.malwarebytes.com/blog/threat-intel/2026/03/fake-cleanmymac-site-installs-shub-stealer-and-backdoors-crypto-wallets](https://www.malwarebytes.com/blog/threat-intel/2026/03/fake-cleanmymac-site-installs-shub-stealer-and-backdoors-crypto-wallets)
-- [https://www.sentinelone.com/blog/shub-reaper-macos-stealer-spoofs-apple-google-and-microsoft-in-a-single-attack-chain/](https://www.sentinelone.com/blog/shub-reaper-macos-stealer-spoofs-apple-google-and-microsoft-in-a-single-attack-chain/)
-
-## Try it locally
-
-```console
-python identify.py "families/s-hub-stealer/samples/information.txt"
-```
-
-The evidence score describes a structural comparison, not attribution certainty.
-
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+Machine-readable record: [family.json](family.json)

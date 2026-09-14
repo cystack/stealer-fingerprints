@@ -1,0 +1,74 @@
+{
+  "id": "snake-keylogger",
+  "name": "Snake Keylogger",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "Snake Keylogger, also tracked as 404 Keylogger, is a .NET-based info-stealer and keylogger first documented in late\n2020. The malware harvests keystrokes, saved browser\ncredentials, clipboard content, and screenshots, then\nexfiltrates them over one of three C2 channels: FTP, SMTP,\nor Telegram bot. Newer builds prefer the Telegram\n`sendDocument` API.\n\nThe password-harvesting module writes stolen credentials\nto a file named `bot-<chatid>-<msgid>-<victim>-SnakePW.txt`\nthat opens with the `PW | USER | Snake` module tag. Each\ncredential record sits inside a\n`-------- Snake Tracker --------` bracketed block with\n`Found From:`, `Host:`, `USR:`, and `PSWD:` lines. The\ntop of the file carries victim identity fields: `PC Name`,\n`Date and Time`, `Client IP`, plus a geo block (Country\nName / CountryCode / Region / City / TimeZone / Latitude /\nLongitude) that fills with the literal `{Null}` placeholder\nwhen the ipapi.co lookup failed or the operator disabled\nit.",
+  "aliases": [
+    "404 Keylogger",
+    "Snake Stealer keylogger module",
+    "SnakeKeylogger"
+  ],
+  "typical_targets": [
+    "Browser saved credentials (Chrome, Edge, Firefox, Opera)",
+    "Email client credentials (Thunderbird, Outlook)",
+    "Keystroke capture",
+    "Clipboard content",
+    "Screenshots",
+    "FTP/RDP session credentials"
+  ],
+  "detection_notes": "The `PW | USER | Snake` pipe-separated module tag combined\nwith the `-------- Snake Tracker --------` section separator\nis unmistakable Snake Keylogger provenance. The `SnakePW.txt`\nbasename plus the `bot-<chatid>-<msgid>-<victim>-SnakePW.txt`\nTelegram-bot naming convention are documented in public\nanalyses. Sibling module tags `KEY | USER | Snake` (keystroke\ncapture) and `INFO | USER | Snake` (system info) ship in\nseparate files per victim. During incident response, treat any\n`SnakePW.txt` as a complete credential compromise: every\n`USR:` / `PSWD:` pair in the file is a valid account\ncredential the operator harvested from the victim.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1056.001",
+      "name": "Input Capture: Keylogging"
+    },
+    {
+      "id": "T1115",
+      "name": "Clipboard Data"
+    },
+    {
+      "id": "T1113",
+      "name": "Screen Capture"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1041",
+      "name": "Exfiltration Over C2 Channel"
+    },
+    {
+      "id": "T1567",
+      "name": "Exfiltration Over Web Service"
+    }
+  ],
+  "related_families": [
+    "snake-stealer"
+  ],
+  "sources": [
+    "https://www.splunk.com/en_us/blog/security/under-the-hood-of-snakekeylogger-analyzing-its-loader-and-its-tactics-techniques-and-procedures.html",
+    "https://www.bitsight.com/blog/exfiltration-over-telegram-bots-skidding-infostealer-logs",
+    "https://www.fortinet.com/blog/threat-research/fortisandbox-detects-evolving-snake-keylogger-variant",
+    "https://hackread.com/snake-keylogger-variant-windows-data-telegram-bots/",
+    "https://malpedia.caad.fkie.fraunhofer.de/details/win.404keylogger"
+  ],
+  "related_external": [
+    "agent-tesla",
+    "formbook"
+  ],
+  "variants": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "csrfd-stealer",
+  "name": "CSRFDStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSRFDStealer is a CyStack-coined identifier for an\nemoji-prefixed `FileGrabber/UserInformation.txt` shape\ndistributed through the @BRADMAX_CLOUD redistributor\nportfolio. The file opens with a canonical `<================[\nUser Info ]>================>` section header followed by an\noperator tag literal `<================RFD================>`\non the next line, then a blank line, then a 17-line\nemoji-prefixed `<emoji> <Key>: <Value>` field block.\n\nField values place the runtime in JavaScript / Node.js: `Type:\nWindows_NT` is `os.type()`, `Arch: x64` is `os.arch()`,\n`Release: 10.0.19044` is `os.release()`, `Processors: <count>`\nis `os.cpus().length`. The label flip between `Host name`\n(which carries the canonical computer name from\n`os.hostname()`) and `PC Name` (which carries the Windows\naccount name from `process.env.USERNAME`) is consistent with a\nNodeJS or Electron stealer template. The body matches\nstructural features of the documented NodeJS / Electron\nstealer category (NOVABLIGHT, Celestial Stealer, Mercurial),\nbut no public reporting quotes a field-layout match for this\nexact layout, so family attribution is provisional.",
+  "aliases": [
+    "RFD banner UserInformation.txt",
+    "@BRADMAX_CLOUD FileGrabber sample"
+  ],
+  "typical_targets": [
+    "Host hardware and OS fingerprint (CPU, RAM, Windows version, uptime)",
+    "AppData and Temp paths for downstream credential harvesting",
+    "Account username and domain identity"
+  ],
+  "detection_notes": "Fingerprint requires both the\n`<================RFD================>` operator tag and the\n`<================[ User Info ]>` section header. Either\nliteral alone could plausibly appear in unrelated content (a\npublic writeup quoting only one of the two banners, a generic\n`User Info` heading in operator documentation), so both\nanchors are required. The emoji prefix set is distinctive but\nnot load-bearing for the fingerprint. During triage, treat the\nchannel attribution as the parent-folder shape\n(`[<CC>]@BRADMAX_CLOUD- (<NN>)`) evidence; the file body\nitself carries no IP, country, or log-time field, so the IOC\nsurfaces only device-level metadata. Companion files in the\nvictim folder carry the harvested credentials and cookies.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "dc-rat",
+    "lumma",
+    "mars-stealer",
+    "cs-brad-max-cloud-parsed-stealer",
+    "cs-brad-max-cloud-banner-only-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADMAX_CLOUD"
+  ],
+  "variants": []
+}

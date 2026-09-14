@@ -1,31 +1,140 @@
 {
-  "$schema": "../../schemas/family.schema.json",
-  "aliases": [
-    "Blank-c/Blank-Grabber",
-    "BlankGrabber"
-  ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "Blank Grabber logs are recognized as `information.txt` or `system.txt` by fields such as `Cellular Network`, `Computer OS`, `Discord Accounts`, `Roblox Cookies`, and `Wifi Passwords`. The observed layout groups them under `IP Info`, `System Info`, and `Grabbed Info`.",
-  "external_references": [
-    {
-      "url": "https://any.run/malware-trends/blankgrabber/"
-    },
-    {
-      "url": "https://www.splunk.com/en_us/blog/security/blankgrabber-trojan-stealer-analysis-detection.html"
-    }
-  ],
   "id": "blank-grabber",
   "name": "Blank Grabber",
-  "schema_version": "1.0",
-  "targets": [
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "Blank Grabber is a Python-based open-source info-stealer\nhosted on GitHub (Blank-c/Blank-Grabber). Low-skill actors\ncompile it with PyInstaller and distribute it via cracked\nsoftware lures, weaponised PyPI packages, and Discord or\nTelegram dropper campaigns. Exfiltration goes through a\nDiscord or Telegram webhook, so no dedicated C2 panel is\nneeded.\n\nThe exfil archive contains a top-level `Information.txt`\nwhose banner reads `Blank Grabber got a new victim: <name>`,\nfollowed by an `IP Info` block (ip-api.com data), a\n`System Info` block (Computer Name, OS, RAM, UUID, CPU,\nGPU, Product Key), and a `Grabbed Info` summary that counts\neach data category (Discord Accounts, Passwords, Cookies,\nRoblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).",
+  "aliases": [
+    "BlankGrabber",
+    "Blank-c/Blank-Grabber"
+  ],
+  "typical_targets": [
+    "Discord and Telegram session tokens",
     "Browser saved credentials, cookies, history, autofill",
     "Crypto wallet desktop clients (Bitcoin, Ethereum, Exodus, others)",
-    "Discord and Telegram session tokens",
-    "Game launcher sessions (Epic, Steam, Uplay, Battle.net, Growtopia)",
     "Roblox cookies and Minecraft sessions",
+    "Wifi passwords and webcam captures",
     "System hardware and locale inventory",
-    "Wifi passwords and webcam captures"
+    "Game launcher sessions (Epic, Steam, Uplay, Battle.net, Growtopia)"
   ],
-  "tracking_labels": []
+  "detection_notes": "The banner literal `Blank Grabber got a new victim:` is\nunique across the registry and unique to this codebase, so\na single substring check is sufficient to claim. Forks\n(notably AK-grabber) reuse the same banner verbatim, which\nis a feature for triage: the fork still maps to the\nBlank Grabber family. The `Grabbed Info` per-category counts\nare the cleanest indicator of which artifact subfolders the\narchive contains for evidence collection.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1119",
+      "name": "Automated Collection"
+    },
+    {
+      "id": "T1567",
+      "name": "Exfiltration Over Web Service"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://any.run/malware-trends/blankgrabber/",
+    "https://www.splunk.com/en_us/blog/security/blankgrabber-trojan-stealer-analysis-detection.html",
+    "https://github.com/Blank-c/Blank-Grabber"
+  ],
+  "related_external": [
+    "akgrabber"
+  ],
+  "variants": [
+    {
+      "id": "v_b1e576b5520c49a68172676d7c72c40a",
+      "parser": "logmine.ioc.parsers.blank_grabber.BlankGrabberParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": "Dead",
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "Dead",
+        "Grabbed Info",
+        "IP Info"
+      ],
+      "fields": [
+        "Dead got a new victim",
+        "System Info"
+      ],
+      "observations": 65,
+      "sample": {
+        "path": "samples/v_b1e576b5520c49a68172676d7c72c40a/sample.txt",
+        "sha256": "bc59a06e31f57a4950bb04b1ef23c863ade1d494018e47f4ad086cb56b50e0ab",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    },
+    {
+      "id": "v_ccdf4b8e3fbd1fec812ef139238867e6",
+      "parser": "logmine.ioc.parsers.blank_grabber.BlankGrabberParser",
+      "filenames": [
+        "Information.txt",
+        "System.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "Grabbed Info",
+        "IP Info"
+      ],
+      "fields": [
+        "Blank Grabber got a new victim",
+        "System Info"
+      ],
+      "observations": 12707,
+      "sample": {
+        "path": "samples/v_ccdf4b8e3fbd1fec812ef139238867e6/sample.txt",
+        "sha256": "c72b2968115f628d1cbda5507729dc54e4445f7f3f3386be0cff7055fc999fa5",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    },
+    {
+      "id": "v_d1192221791366c31e6fcf477e55b52b",
+      "parser": "logmine.ioc.parsers.blank_grabber.BlankGrabberParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": "Amnesia",
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "Amnesia",
+        "Grabbed Info",
+        "IP Info"
+      ],
+      "fields": [
+        "Amnesia got a new victim",
+        "System Info"
+      ],
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_d1192221791366c31e6fcf477e55b52b/sample.txt",
+        "sha256": "23cb51a4c2b4ebe3cd524606bc06c9e6498e1e41f9de8de3c4e16e475921f890",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
 }

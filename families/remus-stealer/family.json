@@ -1,0 +1,106 @@
+{
+  "id": "remus-stealer",
+  "name": "Remus Stealer",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "Remus Stealer is a 64-bit malware-as-a-service infostealer first\nobserved in 2026 and independently analyzed as closely related\nto Lumma. It is distributed via the `@rmsops` channel. The\n`Info.txt` opens with `# BUY STEALER - https://t.me/rmsops`\nfollowed by a `# REMUS LOG` banner and a YAML-style `build:`\nblock. Field shape parallels Lumma's dash-prefix list but with\na different banner and distribution channel.",
+  "aliases": [
+    "Remus"
+  ],
+  "typical_targets": [
+    "Browser saved credentials and cookies",
+    "Crypto wallet extensions and clients",
+    "System hardware and locale inventory"
+  ],
+  "detection_notes": "The `# REMUS LOG` banner together with the `@rmsops` channel\nreference is unambiguous. The YAML-shaped `build:` opening\nalso distinguishes Remus from Lumma proper, which uses the\ndash-prefix `- LummaC2 Build:` form instead.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "lumma"
+  ],
+  "sources": [
+    "https://stairwell.com/resources/detecting-remus-infostealer/",
+    "https://flashpoint.io/blog/remus-stealer-a-new-not-so-new-infostealer/",
+    "https://www.gendigital.com/blog/insights/reports/threat-report-h1-2026"
+  ],
+  "observed_channels": [
+    "https://t.me/rmsops"
+  ],
+  "variants": [
+    {
+      "id": "v_0b6a40975520ab343d4d6ad9a6073ea0",
+      "parser": "logmine.ioc.parsers.remus.RemusParser",
+      "filenames": [
+        "Info.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "# REMUS LOG",
+        "hardware:",
+        "os:"
+      ],
+      "fields": [
+        "elevated",
+        "ip-address"
+      ],
+      "observations": 46,
+      "sample": {
+        "path": "samples/v_0b6a40975520ab343d4d6ad9a6073ea0/sample.txt",
+        "sha256": "dc289702682a735f5566e6b52da1f22b3d99526d4f28c8409d75bd02dbb715ff",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "yaml-build-root"
+    },
+    {
+      "id": "v_40b69f8215f8aad13e8f74334058d313",
+      "parser": "logmine.ioc.parsers.remus.RemusParser",
+      "filenames": [
+        "Info.txt"
+      ],
+      "panel_brand": "Daisy Cloud",
+      "distribution_channel": "@UP_DAISYCLOUD",
+      "attribution_confidence": "high",
+      "markers": [
+        "# REMUS LOG",
+        "Daisy Cloud",
+        "hardware:",
+        "os:"
+      ],
+      "fields": [
+        "elevated",
+        "ip-address"
+      ],
+      "observations": 9,
+      "sample": {
+        "path": "samples/v_40b69f8215f8aad13e8f74334058d313/sample.txt",
+        "sha256": "795a50c7235d2d0299b86b9589d8bcdd3446b0d9cd93c472cc5c8f1d3fc1d4b0",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "yaml-build-root"
+    }
+  ]
+}

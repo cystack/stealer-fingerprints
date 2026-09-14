@@ -1,0 +1,50 @@
+{
+  "id": "disk-info-stealer",
+  "name": "DiskInfo Stealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "Unidentified `Disk Capacity` / `Disk Free` stealer observed\ninside `@BRADMAX` aggregator packs as a sibling of Remus,\nuser-info bracket, Snake, Minimal, and PCInfo logs. The\n`System_Info.txt` is a flat six-line key/value record with no\nbanner, no IP, no timestamp, and no CPU/GPU/display fields.\nVerified victims have included Windows Defender Application\nGuard sandbox VMs, suggesting heavy automated-execution\npoisoning of this corpus.",
+  "aliases": [],
+  "typical_targets": [],
+  "detection_notes": "The unique combination of `Disk Capacity:` and `Disk Free:`\nfields without any CPU/GPU/IP/banner is the signature. The\nflat six-line record makes the layout easy to recognise even\nwithout an explicit family banner.",
+  "attack_techniques": [
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_3b0bf5da89b9f399b382ffe560a526ed",
+      "parser": "logmine.ioc.parsers.disk_info_stealer.DiskInfoStealerParser",
+      "filenames": [
+        "System_Info.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [],
+      "fields": [
+        "Computer",
+        "Disk Capacity",
+        "Disk Free",
+        "Memory",
+        "OS",
+        "User"
+      ],
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_3b0bf5da89b9f399b382ffe560a526ed/sample.txt",
+        "sha256": "41ad6b627f7bc2b4d753757541766f6028c5a6422f979ba4485a31c8d691ed57",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

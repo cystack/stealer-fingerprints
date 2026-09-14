@@ -1,0 +1,211 @@
+686b.                 w         d68b   d6 
+6  .8 6   8 d86b d86b w .d86     wwP  dP6 
+8wwK' 6b d8 `Yb. `Yb. 6 6  6       6 dPw6 
+6  Yb `Y6P8 Y66P Y86P 8 `Y66    Y68P    6
+==========<url>
+Ip: <IP>
+Country: AE
+Version: Russia 34
+
+Date: 17/03/2026 <ip>
+MachineID: <HWID>
+GUID: <HWID>
+HWID: <HWID>
+
+Path: <redacted>
+Processor: Intel(R) Core(TM) i7-4790S CPU @ 3.20GHz
+Cores: 8
+Threads: 8
+RAM: 16324 MB
+VideoCard: AMD Radeon(TM) HD 7650A Graphics
+
+[Processes]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+winlogon.exe
+services.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+dwm.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+atiesrxx.exe
+svchost.exe
+svchost.exe
+atieclxx.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+Memory Compression
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+RtkAudioService64.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+RAVBg64.exe
+RAVBg64.exe
+svchost.exe
+svchost.exe
+spoolsv.exe
+svchost.exe
+alg.exe
+AppleMobileDeviceService.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+DiagnosticsHub.StandardCollector.Service.exe
+svchost.exe
+GameInputSvc.exe
+elevation_service.exe
+elevation_service.exe
+OfficeClickToRun.exe
+OSE.EXE
+svchost.exe
+perfhost.exe
+svchost.exe
+qcmtusvc.exe
+Locator.exe
+svchost.exe
+snmptrap.exe
+System Security.exe
+svchost.exe
+WsAppService3.exe
+Spectrum.exe
+PerceptionSimulationService.exe
+Windows Host Service.exe
+wbengine.exe
+VSSVC.exe
+vds.exe
+SearchIndexer.exe
+TieringEngineService.exe
+ssh-agent.exe
+WmiApSrv.exe
+svchost.exe
+GameInputSvc.exe
+svchost.exe
+dasHost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+wms temp.exe
+conhost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+taskhostw.exe
+WmiPrvSE.exe
+svchost.exe
+conhost.exe
+dwm.exe
+conhost.exe
+AggregatorHost.exe
+dialer.exe
+dialer.exe
+svchost.exe
+svchost.exe
+dllhost.exe
+svchost.exe
+sihost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+taskhostw.exe
+taskhostw.exe
+sihost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+ctfmon.exe
+svchost.exe
+explorer.exe
+svchost.exe
+svchost.exe
+svchost.exe
+StartMenuExperienceHost.exe
+TrustedInstaller.exe
+TiWorker.exe
+RuntimeBroker.exe
+SearchApp.exe
+RuntimeBroker.exe
+svchost.exe
+TextInputHost.exe
+WMIADAP.exe
+taskmanager.exe
+windowsservice.exe
+dllhost.exe
+svchost.exe
+explorer.exe
+msdtc.exe
+svchost.exe
+svchost.exe
+hostproviders.exe
+svchost.exe
+backgroundTaskHost.exe
+backgroundTaskHost.exe
+backgroundTaskHost.exe
+backgroundTaskHost.exe
+
+[Software]
+Windows Driver Package - FTDI CDM Driver Package - Bus/D2XX Driver (07/12/2013 2.08.30) - 07/12/2013 2.08.30
+Windows Driver Package - MediaTek Inc. (usbser) Ports  (01/05/2012 2.0000.0.1) - 01/05/2012 2.0000.0.1
+Windows Driver Package - FTDI CDM Driver Package - Bus/D2XX Driver (04/10/2012 2.08.24) - 04/10/2012 2.08.24
+Windows Driver Package - OnePlus, Inc. (WinUSB) AndroidUsbDeviceClass  (05/24/2012 6.0.0000.00000) - 05/24/2012 6.0.0000.00000
+Windows Driver Package - FTDI CDM Driver Package - VCP Driver (04/10/2012 2.08.24) - 04/10/2012 2.08.24
+Windows Driver Package - FTDI CDM Driver Package - VCP Driver (07/12/2013 2.08.30) - 07/12/2013 2.08.30
+Windows Driver Package - MediaTek Inc. (usbser) Ports  (12/24/2011 2.0000.0.0) - 12/24/2011 2.0000.0.0
+LibUSB-Win32-<ip> - <ip>
+MediaTek SP Driver version <ip> - <ip>
+Phoneboard
+Microsoft Office Professional Plus 2019 - en-us - 16.0.19127.20302
+WinRAR 6.11 (64-bit) - 6.11.0
+Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664 - 12.0.40664
+Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219 - 10.0.40219
+Microsoft Update Health Tools - <ip>
+Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.32.31332 - 14.32.31332
+WinUSB Drivers x64 - 2011.44.1.182
+Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61135 - 11.0.61135
+Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664 - 12.0.40664
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.7523 - 9.0.30729.7523
+UsbDk Runtime Libraries - 1.0.22
+Office 16 Click-to-Run Licensing Component - 16.0.19127.20264
+Office 16 Click-to-Run Extensibility Component 64-bit Registration - 16.0.19127.20154
+USB CCID Smartcard Reader - Version <ip> - <ip>
+Microsoft Visual C++ 2005 Redistributable (x64) - 8.0.61186
+Update for x64-based Windows Systems (KB5001716) - <ip>
+Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61135 - 11.0.61135
+Samsung USB Driver for Mobile Phones - <ip>

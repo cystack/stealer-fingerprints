@@ -1,0 +1,186 @@
+-- Контакты для связи: <url>
+
+Ip: <IP>
+Country: BR
+Version: 18.6
+
+Date: 27/03/2026 <ip>
+MachineID: <HWID>
+GUID: <HWID>
+HWID: <HWID>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Pro
+Install Date: 30/11/2025 <ip>
+AV: Windows Defender
+Computer Name: <HOST>
+Processor: Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz
+Cores: 6
+Threads: 6
+RAM: 16349 MB
+VideoCard: NVIDIA GeForce RTX 3050
+
+[Processes]
+System
+Secure System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+services.exe
+winlogon.exe
+LsaIso.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+dwm.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+NVDisplay.Container.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+Memory Compression
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+spoolsv.exe
+NVDisplay.Container.exe
+svchost.exe
+svchost.exe
+svchost.exe
+armsvc.exe
+svchost.exe
+svchost.exe
+ExitLagPmService.exe
+svchost.exe
+GameInputRedistService.exe
+AdobeUpdateService.exe
+OfficeClickToRun.exe
+ijplmsvc.exe
+svchost.exe
+svchost.exe
+LMS.exe
+MuseAuthService.exe
+RstMwService.exe
+RvControlSvc.exe
+MpDefenderCoreService.exe
+svchost.exe
+svchost.exe
+MsMpEng.exe
+svchost.exe
+WTabletServicePro.exe
+svchost.exe
+WmiPrvSE.exe
+svchost.exe
+svchost.exe
+GameInputRedistService.exe
+svchost.exe
+svchost.exe
+gamingservicesnet.exe
+gamingservices.exe
+svchost.exe
+sihost.exe
+svchost.exe
+AggregatorHost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+taskhostw.exe
+svchost.exe
+explorer.exe
+svchost.exe
+CrossDeviceResume.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+SearchHost.exe
+StartMenuExperienceHost.exe
+WidgetBoard.exe
+RuntimeBroker.exe
+svchost.exe
+backgroundTaskHost.exe
+WidgetService.exe
+msedgewebview2.exe
+audiodg.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+MicrosoftStartFeedProvider.exe
+svchost.exe
+WhatsApp.Root.exe
+SearchIndexer.exe
+ctfmon.exe
+RuntimeBroker.exe
+PhoneExperienceHost.exe
+SecurityHealthSystray.exe
+SecurityHealthService.exe
+AdobeCollabSync.exe
+AdobeCollabSync.exe
+RuntimeBroker.exe
+Wacom_TabletUser.exe
+Wacom_UpdateUtil.exe
+svchost.exe
+WacomHost.exe
+Wacom_Tablet.exe
+Wacom_TouchUser.exe
+TabTip.exe
+svchost.exe
+TextInputHost.exe
+jusched.exe
+CCXProcess.exe
+node.exe
+conhost.exe
+AdobeIPCBroker.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+ShellExperienceHost.exe
+RuntimeBroker.exe
+chrome.exe
+RuntimeBroker.exe
+steam.exe
+steamwebhelper.exe
+SteamService.exe
+steamwebhelper.exe
+steamwebhelper.exe
+steamwebhelper.exe
+steamwebhelper.exe
+steamwebhelper.exe
+chrome.exe
+chrome.exe
+taskhostw.exe

@@ -1,0 +1,64 @@
+{
+  "id": "cs-data-collected-stealer",
+  "name": "CSDataCollectedStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSDataCollectedStealer is a CyStack-coined identifier for a\nthree-line `Information.txt` notification stub observed\ninside `!! 2025 NOV.part001.rar`-style aggregator packs in\n`<id>_<CC>_<IPv4>_<DD-MM-YY>/Information.txt` per-victim\nfolders (e.g. `2047_UN_<IPv4>_25-10-25/\nInformation.txt`). The body is two bare `Key: Value` lines\n(`Computer:`, `IP:`) followed by the plain-English\n`Data collected successfully` completion ack.\n\nThe file is a panel-side notification, not a data report.\nIt tells the operator that exfiltration finished on this\nvictim. The actual harvested credentials live in sibling\nfiles inside the per-victim folder where any follow-on\nfamily fingerprinting should run. Structurally similar to\nCSNewLogStealer (also a notification stub from the same\naggregator-pack family), but missing the banner and the\nemoji-prefixed TOC enumeration that CSNewLogStealer\ncarries. Family attribution is provisional pending a\npublished threat-intel mapping for this layout: the body\nis too minimal to attribute to a specific builder.",
+  "aliases": [
+    "!! 2025 NOV aggregator notification stub"
+  ],
+  "typical_targets": [
+    "Browser saved credentials and cookies (in sibling cred files)",
+    "System hostname and public IP for victim fingerprinting"
+  ],
+  "detection_notes": "Fingerprint requires the literal `Data collected\nsuccessfully` substring (the panel-unique ack message)\nplus line-anchored `Computer:` and `IP:` keys as cross-confirmation. The ack literal alone is enough to\ndiscriminate against any currently-registered parser, but\nthe two-key pair guards against prose that quotes the\nphrase out of context. During triage, treat family\nattribution as unknown: this file is a notification stub\nwith no harvested credential body, and the underlying\nstealer cannot be identified from the host + IP + ack\ntriple alone.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    }
+  ],
+  "related_families": [
+    "cs-new-log-stealer",
+    "cs-inz-ext-stealer"
+  ],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_1629258e7c5a7787a73c5a354e94dde4",
+      "parser": "logmine.ioc.parsers.cs_data_collected_stealer.CSDataCollectedStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": "Data collected successfully ack",
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "Data collected successfully"
+      ],
+      "fields": [
+        "Computer",
+        "IP"
+      ],
+      "observations": 265,
+      "sample": {
+        "path": "samples/v_1629258e7c5a7787a73c5a354e94dde4/sample.txt",
+        "sha256": "61904a4cfa2b6411cc121a3b1a4f0619cdb2f41568575bccba79fca87e9a60a0",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

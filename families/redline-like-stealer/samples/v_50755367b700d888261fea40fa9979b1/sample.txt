@@ -1,0 +1,21 @@
+
+Log date: 30 Nov 25 18:14
+Version Build: 1400
+HWID: <HWID>
+Country: Hungary
+IP: <IP>
+System Language: Hungarian
+Processor: Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz (6 cores, 6 threads)
+Installed RAM: 31.94 GB
+Operation System: Windows 11 24H2 Pro (Build 26200) (64 Bit)
+Graphics card: NVIDIA GeForce RTX 2060
+Computer Name: <HOST>
+Domain Name: <HOST>
+-------------
+User Name: <USER>
+Admin Group: FALSE
+Integrity: Medium
+TimeZone: UTC+1
+UserLanguage: Hungarian
+Keyboard Language: Hungarian
+Display Resolution: 1440x1050

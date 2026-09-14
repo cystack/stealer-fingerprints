@@ -1,34 +1,82 @@
 {
-  "$schema": "../../schemas/family.schema.json",
+  "id": "phexia",
+  "name": "Phexia",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "Phexia is a macOS info-stealer that has been operating in\nprivate distribution since April 2024 per a published\ndeveloper interview. The payload is implemented in osascript\n(AppleScript) and the developer states it shares roughly 85%\nof its code with the Mac.c stealer module, but it is marketed\nand tracked as a separate product with its own\nself-identification banner and its own customer base (around\n20 active operators per the developer at the time of the\ninterview).\n\nThe on-disk `UserInformation.txt` opens with the literal\n`Phexia macOS Stealer` banner, then a flat identity block\n(`Build:` / `Username:` / `Password:` / `IP Address:`), then\nthe verbatim `system_profiler` output under `Software:` /\n`Hardware:` / `Graphics/Displays:` section headers. The\n`Build:` tag is a per-customer affiliate identifier set at\nbuild time. Captured macOS login credentials ship in the\n`Username:` / `Password:` pair at the top of the file.",
   "aliases": [
     "Phexia Stealer",
     "Phexia macOS Stealer"
   ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "Phexia exports `userinformation.txt` with `Build`, `Hardware`, `Graphics/Displays`, `Software`, `Password`, and `IP Address` sections.",
-  "external_references": [
-    {
-      "url": "https://cookie.engineer/weblog/articles/malware-insights-macos-phexia-stealer.html"
-    },
-    {
-      "url": "https://g0njxa.medium.com/approaching-stealers-devs-a-brief-interview-with-phexia-38ad3772dbcd"
-    },
-    {
-      "url": "https://www.pcrisk.com/removal-guides/34957-phexia-stealer-mac"
-    }
-  ],
-  "id": "phexia",
-  "name": "Phexia",
-  "schema_version": "1.0",
-  "targets": [
+  "typical_targets": [
+    "macOS login credentials (captured at the panel prompt)",
     "Browser saved credentials, cookies, web data, login data, and history from Chromium-based browsers",
     "Chromium browser extension data and local extension settings",
+    "macOS Keychain (`/Library/Keychains/login.keychain-db`)",
     "Crypto wallet desktop clients and browser extensions",
     "Notes.app passwords and small files in `~/Downloads`",
-    "Telegram session data on macOS",
-    "macOS Keychain (`/Library/Keychains/login.keychain-db`)",
-    "macOS login credentials (captured at the panel prompt)"
+    "Telegram session data on macOS"
   ],
-  "tracking_labels": []
+  "detection_notes": "The first-line `Phexia macOS Stealer` banner is the family's\nverbatim self-identification and is the cleanest single\nfingerprint. The `Build:` bare-key affiliate tag distinguishes\nthis layout from the sibling MacSync `Build Tag:` form and\nfrom Cthulhu's no-space `BuildID:` form. The shared `system_profiler`\nbody means folder-level macOS detectors may flash on the\nsame artifact, but parser dispatch on file system paths runs\nonly the parser chain so there is no collision in practice.\nTriage logs from this family by collecting the captured\nmacOS login credential pair, the affiliate `Build:` tag,\nand the Hardware UUID as the device identifier.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.001",
+      "name": "Keychain"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1059.002",
+      "name": "Command and Scripting Interpreter: AppleScript"
+    }
+  ],
+  "related_families": [
+    "mac-sync"
+  ],
+  "sources": [
+    "https://cookie.engineer/weblog/articles/malware-insights-macos-phexia-stealer.html",
+    "https://www.pcrisk.com/removal-guides/34957-phexia-stealer-mac",
+    "https://g0njxa.medium.com/approaching-stealers-devs-a-brief-interview-with-phexia-38ad3772dbcd"
+  ],
+  "variants": [
+    {
+      "id": "v_b2acb2241dc6354d10e66ebb270d1fe7",
+      "parser": "logmine.ioc.parsers.phexia.PhexiaParser",
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "Phexia macOS Stealer"
+      ],
+      "fields": [],
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_b2acb2241dc6354d10e66ebb270d1fe7/sample.txt",
+        "sha256": "e0e91bf55260ae513ac6f5a4821eba27bdb9793aa06ca9c2c822f6f4d3b184c9",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
 }

@@ -1,0 +1,81 @@
+{
+  "id": "cs-mac-keychain-pass-stealer",
+  "name": "CSMacKeychainPassStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSMacKeychainPassStealer is a CyStack-coined identifier for a\n3-line preamble macOS panel observed inside `@Bugatti_Cloud\nBugatti_Man` aggregator packs at `@bugatti_cloudnew\nch_<NNNN>/Information.txt` victim folders. The body opens with\n`IP: <ipv4|ipv6>`, `Username: <shortname>`, and `Password:\n<cleartext>` on three lines, then drops directly into verbatim\n`system_profiler SPSoftwareDataType` / `SPHardwareDataType` /\n`SPDisplaysDataType` output. No `Country:` line, no banner, no\n`BuildID:` per-build label, no `MetaMask Info:` / `Debanks:` /\n`Userinfo:` section markers, no self-banner.\n\nThe cleartext `Password:` line is the panel's distinguishing\nquirk. Documented macOS stealers that capture the user login\nor keychain password (AMOS, Banshee, Cthulhu, MacStealer)\narchive it to a sibling keychain dump or zip-pack rather than\nexpose it as a top-level field in the system-info file.\n\nFamily attribution is provisional. Public reporting and the\npublic stealer-format catalogues do not document a macOS\nfamily that emits exactly this 3-line preamble plus verbatim\n`system_profiler` shape with the cleartext keychain password\nexposed as a top-level field.",
+  "aliases": [
+    "3-line preamble macOS Information.txt with cleartext password",
+    "IP + Username + Password macOS panel"
+  ],
+  "typical_targets": [
+    "macOS user login / keychain password (captured as\ncleartext in the `Password:` preamble line)",
+    "Victim public IP (IPv4 or IPv6)",
+    "Victim hostname (`Computer Name:` field)",
+    "Victim username (`User Name:` display + shortname pair)",
+    "macOS hardware fingerprint (Chip, Hardware UUID, Serial\nNumber, Memory)",
+    "macOS version + kernel version (`System Version:` /\n`Kernel Version:`)"
+  ],
+  "detection_notes": "Fingerprint requires line-anchored `IP:` AND `Username:`\nAND `Password:` AND `System Software Overview:` AND\n`Hardware Overview:` substrings PLUS absence of\n`Country:` (rules out CSMacBareGeo / Cthulhu / AMOS /\nMacSync) AND absence of `Country Code:` (rules out\nCthulhu and CSMacUserinfo). The positive anchors confirm\na macOS `system_profiler` body with a cleartext-password\npreamble; the negative anchors defer to the five richer-geo macOS parsers when their geo fields are present.\nDuring triage, the `Password:` value is the victim's\ncleartext login or keychain password and should be\ntreated as a high-priority remediation indicator.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.001",
+      "name": "Keychain"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1518",
+      "name": "Software Discovery"
+    }
+  ],
+  "related_families": [
+    "cthulhu-stealer",
+    "amos-stealer",
+    "mac-sync",
+    "cs-mac-userinfo-stealer",
+    "cs-mac-bare-geo-stealer"
+  ],
+  "sources": [],
+  "related_external": [
+    "banshee-stealer"
+  ],
+  "variants": [
+    {
+      "id": "v_8fb0dfa34c44e8492fb4af61d80eddea",
+      "parser": "logmine.ioc.parsers.cs_mac_keychain_pass_stealer.CSMacKeychainPassStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "Hardware Overview:",
+        "System Software Overview:"
+      ],
+      "fields": [
+        "IP",
+        "Password",
+        "Username"
+      ],
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_8fb0dfa34c44e8492fb4af61d80eddea/sample.txt",
+        "sha256": "815c1774c393562a2cf1801750a44176d858ec6cc38cb6e2c29bfaf3ecd8d7cc",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

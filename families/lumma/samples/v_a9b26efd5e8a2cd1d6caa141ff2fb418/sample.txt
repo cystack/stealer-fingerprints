@@ -1,0 +1,37 @@
+**************************************************************
+*                                                            *
+*          ______                   _ ___  ___               *
+*    ____  | ___ \                 | ||  \/  |               *
+*   / __ \ | |_/ / _ __   __ _   __| || .  . |  __ _ __  __  *
+*  / / _` || ___ \| '__| / _` | / _` || |\/| | / _` |\ \/ /  *
+* | | (_| || |_/ /| |   | (_| || (_| || |  | || (_| | >  <   *
+*  \ \__,_|\____/ |_|    \__,_| \__,_|\_|  |_/ \__,_|/_/\_\  *
+*   \____/                                                   *
+*                                                            *
+*            Telegram: <url>        *
+*                       t.me/BRADMAX_LOG                     *
+**************************************************************
+
+LummaC2 Build: May 19 2025
+Path: <redacted>
+OS Version: Windows 10 Pro (10.0.19044) x64
+Local Date: 25.05.2025 <ip>
+Time Zone: UTC+0
+Elevated: true
+Computer: <HOST>
+User: <USER>
+Domain: <HOST>
+Hostname: <HOST>
+NetBIOS: <HOST>
+Language: de-DE
+HWID: <HWID>
+RAM Size: 16384MB
+CPU Vendor: GenuineIntel
+CPU Name: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+CPU Threads: 12
+CPU Cores: 6
+Display resolution: 1920x1080
+IP Address: <IP>
+Time: 25.05.2025 <ip> (sig:1748178833.<SECRET>)
+Country: DE
+LID: @BRADMAX_LOG (BRADMAX) / <url>

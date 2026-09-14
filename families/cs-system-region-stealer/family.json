@@ -1,0 +1,54 @@
+{
+  "id": "cs-system-region-stealer",
+  "name": "CSSystemRegionStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSSystemRegionStealer is a CyStack-coined identifier for a\nflat 12-field `info.txt` panel observed inside `10-13\nSEPTEMBER - 20370 LOGS.part01.rar` Telegram aggregator packs\nat `<33-CHAR-HEX-ID>/info.txt` victim folders. The\n33-character uppercase-hex folder ID is one character longer\nthan a standard 32-char MD5, hinting at a MachineGuid-derived\nor custom-hashed victim identifier.\n\nThe body layout is a flat `Key: Value` block with these fields\nin fixed order: `OS Version:` (WMI Caption plus parenthesised\n`(Build N)` suffix), `Local Date:` (Russian or European\nDD.MM.YYYY HH:MM:SS format, no timezone), `PC name:`\n(lowercase-`n` key), `User name:` (lowercase- `n`), `Screen\nResolution:`, `Processor:`, `Total RAM:`, `Graphics Card:`,\n`MAC Address(es):` (parenthesised `(es)` plural marker with a\ncomma-separated MAC list), `IP Address:`, `Country:` (full\ncountry name from an IP geolocation API), and `System Region:`\n(system locale from `GetUserDefaultLocaleName` or the WMI\nMUILanguages field, distinct from the IP-based `Country:`\nfield above).\n\nThe body terminates with a long `-=-=-=-=-` alternating\ndash-plus-equals separator followed by the Russian text `Здесь\nмогла бы быть ваша реклама` (\"Your ad could be here\"). The\ntrailer is a well-known Russian internet meme for empty ad\nplaceholders; embedding it in the panel output is either a\nstealer-author signature or an unfinished template feature the\noperator never populated. The trailer strongly suggests a\nRussian-speaking developer even though every field key is in\nEnglish.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and the\ncommunity catalogues do not attest a family emitting exactly\nthis 12-field layout with the `MAC Address(es):` plural\nmarker, the split `Country:` / `System Region:` geolocation\npair, and the Russian ad-meme trailer. Candidates ruled out\ninclude Sharp / Hannibal / TX (different field spelling, no\nsplit geolocation), Poulight (pure Russian key set), CGrabber,\nTorg Grabber, Predator The Thief, Collector-Stealer, Marco\nStealer, and Raven Stealer.",
+  "aliases": [
+    "Flat 12-field info.txt with System Region and MAC (es)",
+    "Russian ad-placeholder-trailer info.txt panel"
+  ],
+  "typical_targets": [
+    "OS caption from WMI `Win32_OperatingSystem.Caption`",
+    "Windows build number from the `(Build N)` suffix",
+    "Local wall-clock time (DD.MM.YYYY HH:MM:SS, no timezone)",
+    "PC name and OS user name (lowercase `name` field keys)",
+    "Screen resolution",
+    "Processor and Graphics Card names",
+    "Total RAM",
+    "MAC addresses from every network adapter",
+    "Public IPv4 and country name (from IP geolocation API)",
+    "System locale hint separate from IP-based country"
+  ],
+  "detection_notes": "Fingerprint requires line-anchored `System Region:` AND\n`MAC Address(es):` AND `Local Date:` AND `PC name:`\n(lowercase-`n`). The `(es)` plural marker on\n`MAC Address(es):` and the `System Region:` field are\nboth unique across the registered parsers, and the\nlowercase-`name` `PC name:` spelling rules out DCRat /\nCSBuildBlock / CSDataMonk which all use `PC Name:` with\ncapital-N. During triage, the split `Country:` /\n`System Region:` pair is useful: mismatch between the\ntwo (public IP resolves to one country, system locale\nto another) often flags a proxy or VPN user, or a\ntraveller whose device keeps a stale locale after a\nmove. The Russian ad-meme trailer is the strongest\ndeveloper-attribution signal even though every field\nkey is in English.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    },
+    {
+      "id": "T1124",
+      "name": "System Time Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "related_external": [
+    "sharp-stealer",
+    "hannibal-stealer",
+    "poulight-stealer"
+  ],
+  "variants": []
+}

@@ -1,8 +1,6 @@
 __pycache__/
 *.py[cod]
 .ruff_cache/
-.coverage
-htmlcov/
 .venv/
 venv/
 *.tmp

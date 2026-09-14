@@ -1,0 +1,49 @@
+{
+  "id": "meta-stealer",
+  "name": "MetaStealer",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "MetaStealer logs. MetaStealer is a Redline fork; the IOC log\nshape is similar but every key is renamed slightly (spaces\ninserted, the canonical Redline `Operation System:` typo\ndropped) and a couple of new fields appear (`Log from:`\ndistributor id, an IANA `Time Zone:` name instead of a UTC\noffset).",
+  "aliases": [
+    "Meta Stealer"
+  ],
+  "typical_targets": [
+    "Browser saved credentials and cookies",
+    "Crypto wallet extensions and desktop clients",
+    "FTP and VPN client credentials",
+    "Telegram and Discord session data",
+    "System fingerprint for victim profiling"
+  ],
+  "detection_notes": "The combination of `Log from:` (distributor id) and an IANA\n`Time Zone:` value (e.g. `Europe/Istanbul`) instead of a numeric\nUTC offset is the cleanest separator from canonical Redline.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "redline",
+    "redline-like-stealer"
+  ],
+  "sources": [
+    "https://krakensecurity.com/metastealer-malware/",
+    "https://www.sentinelone.com/labs/metastealer-redline-fork-meets-mac-users/"
+  ],
+  "variants": []
+}

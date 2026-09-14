@@ -1,0 +1,68 @@
+{
+  "id": "cs-best-private-logger-stealer",
+  "name": "CSBestPrivateLoggerStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSBestPrivateLoggerStealer is a CyStack-coined identifier for\na Telegram-bot-exfil stealer that emits a single\n`bot-<bot-id>-<chat-id>-Userdata.txt` victim file with a `Best\nPrivate LOGGER` ASCII-art banner, a `==========PC\nINFO==========` PC-info block, and one\n`============X============`-delimited record per harvested\nbrowser credential. Observed inside `!! 2025 JULY.part001.rar`\nBRADMAX / `@BRADLOGS` aggregator packs at `[<CC>]@BRADLOGS\n(BRADMAX) (<NN>)/ bot-<bot-id>-<chat-id>-Userdata.txt` victim\nfiles.\n\nThe PC-info block carries `Client Name:` (hostname),\n`FullDate:` (US-locale `M/D/YYYY - H:MM:SS AM/PM`), `IP:`, and\n`Country:` (full country name like `United States` rather than\nthe ISO 3166-1 alpha-2 code). Each credential block carries\n`URL:` / `Username:` / `Password:` / `Application:` fields\nwith the `Application:` value carrying browser-name plus\nchromium-variant strings (`Edge Chromium`, observed). The two\nnumeric segments in the filename encode the operator Telegram\nbot's chat ID and the per-victim chat ID, both visible to\nwhoever harvested the bot inbox.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. The Telegram-bot\nexfiltration shape is broadly documented as a common pattern\nacross multiple builders, but no public source ties the `Best\nPrivate LOGGER` banner and the `==========PC INFO==========`\npanel template to a specific named family.",
+  "aliases": [
+    "Best Private LOGGER Telegram-bot stealer",
+    "bot-<id>-<id>-Userdata.txt panel",
+    "==========PC INFO========== Userdata stealer"
+  ],
+  "typical_targets": [
+    "Browser-saved credentials (URL, Username, Password)",
+    "Source browser application (`Edge Chromium`, similar variants)",
+    "Victim hostname (`Client Name:` field)",
+    "Victim public IP and country (in the PC INFO block)",
+    "Victim local clock at exfil time (`FullDate:` field)"
+  ],
+  "detection_notes": "Fingerprint requires the line-anchored `==========PC\nINFO==========` 10-equals header AND a\n`============X============` 12-equals-plus-X record separator\nanywhere in the body. Both anchors are needed: the PC INFO\nheader alone could match a documentation snippet that quotes\nthe panel, and the separator alone is short enough to appear\nin unrelated separator-art. During triage, treat the family\nattribution as unknown - the underlying builder is\nundocumented in public reporting and community catalogues.\nInspect the filename for the bot-id / chat-id pair to identify\nthe Telegram bot operator; the bot chat ID is the same across\nevery victim file that operator distributes.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-app-profile-stealer",
+    "cs-logins-path-stealer",
+    "cs-date-created-stealer"
+  ],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_8ed58f5f3aef8144b0c675eacfba6344",
+      "parser": "logmine.ioc.parsers.cs_best_private_logger_stealer.CSBestPrivateLoggerStealerParser",
+      "filenames": [
+        "bot-<bot-id>-<chat-id>-Userdata.txt"
+      ],
+      "panel_brand": "Best Private LOGGER",
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "============X============",
+        "==========PC INFO=========="
+      ],
+      "fields": [],
+      "observations": 2,
+      "sample": {
+        "path": "samples/v_8ed58f5f3aef8144b0c675eacfba6344/sample.txt",
+        "sha256": "02454f5061b7243f4647864a3295ef0d0ffa6b63aa1e6a6483ba31a399e9ce26",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

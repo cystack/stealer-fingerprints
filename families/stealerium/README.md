@@ -1,95 +1,109 @@
 # Stealerium
 
-**Known malware family · high attribution confidence**
+Stealerium is an open-source .NET info-stealer first published
+on GitHub by user `kgnfth` in April 2022. The project ships as
+a buildable C# solution rather than a paid MaaS, so anyone can
+compile a private build and point it at their own Telegram
+bot, Discord webhook, SMTP relay, or Gofile upload endpoint.
+Public reporting tracked a surge in Stealerium activity
+through 2025 and documents the panel-side summary report as
+opening with the literal `*Stealerium - Report:` Markdown-bold
+banner. The v3.5.2 panel revision tags the banner with the
+build version (`*Stealerium v3.5.2 - Report:*`) and organises
+output into emoji-prefixed `*Hardware:*` / `*Network:*` /
+`*Domains info:*` / `*Browsers:*` / `*Software:*` /
+`*Device:*` / `*Installation:*` / `*File Grabber:*` sections.
 
-## At a glance
+Stealerium is the upstream family for several documented
+forks: Phantom Stealer (sold as MaaS), Warp Stealer, and
+StealeriumPy (distributed via ClickFix). The forks rebrand the
+banner while keeping the underlying data-collection layout, so
+analysts triaging logs should check the banner literal first
+to disambiguate.
 
-- Aliases: <code>Stealerium v3.5.2</code>
-- Typical filenames: <code>information.txt</code>
-- Published formats: 1
-- Representative samples: 1
+## Research status
 
-<p>Stealerium exports <code>information.txt</code> with a flat system and network summary. The current fingerprint combines <code>Gateway IP</code>, <code>Internal IP</code>, <code>External IP</code>, <code>Power</code>, <code>Screen</code>, and hardware fields.</p>
+- Classification: **Known malware family**
+- Attribution confidence: **high**
+- Aliases: `Stealerium v3.5.2`
+- Variants observed: **1**
+- Historical Logmine records represented: **4**
 
-## How to recognize it
+## What it targets
 
-- No stable text banner is known; combine filename and field layout.
-- Recurring fields: <code>antivirus</code>, <code>cpu</code>, <code>date</code>, <code>external ip</code>, <code>gateway ip</code>, <code>gpu</code>, <code>internal ip</code>, <code>language</code>, <code>power</code>, <code>ram</code>, <code>screen</code>, <code>system</code>
+- Browser saved credentials, cookies, autofill, history
+- Crypto wallet desktop clients and browser extensions
+- Discord, Telegram, Skype, Pidgin, Outlook, Element, Signal, Tox session data
+- Steam, Minecraft, Epic, Uplay, Growtopia session tokens
+- Wi-Fi profiles and saved passwords via netsh
+- Windows product key extraction
+- Desktop and webcam screenshot capture
+- VPN client configurations
+- File grabber configurable by extension and folder
 
-## Formats
+## Detection notes
 
-| Format | Evidence | Fingerprint |
-|---|---|---|
-| information.txt - antivirus / cpu | 12 fields, filename | [`fp_4ffd420074138e109d342769a677f0bd`](fingerprints/fp_4ffd420074138e109d342769a677f0bd.json) |
+High-confidence trigger: the `*Stealerium` banner token inside
+a Markdown-bold pair on the first line of `Information.txt`.
+The v3.5.2 build adds the version string (`*Stealerium v3.5.2
+- Report:*`); earlier builds per public reporting use the
+version-less `*Stealerium - Report:*` form. Disambiguate from
+Phantom (uses `*Phantom stealer v2.0`), Warp, and StealeriumPy
+forks by the banner literal rather than the field set, since
+all four families share the underlying section layout.
 
-## Representative sample
+During incident response, check the trailing archive block (`🔗
+[Archive download link]` plus `🔐 Archive password is:`) for
+the operator-side staging URL; the URL identifies the
+cloud-hosting service (commonly Gofile) the operator chose for
+exfiltration but is not victim infrastructure.
 
-Observed text sample. Placeholders mark values removed from the original log.
+## Observed log variants
 
-[<code>information.txt</code>](samples/information.txt)
+### `v_fea267824fe0c63f2704a2f713a8b5fc`
 
-```text
-😹 *Stealerium v3.5.2 - Report:*
-Date: 2025-07-23 [redacted] PM
-System: Microsoft Windows 11 Pro (64 Bit)
-Username: [redacted]
-CompName: [redacted]
-Language: 🇺🇸 es-US
-Antivirus: Windows Defender
+- Parser: `logmine.ioc.parsers.stealerium.StealeriumParser`
+- Observed filenames: `Information.txt`
+- Panel brand: `Stealerium v3.5.2`
+- Distribution channel: `@BRADLOGS`
+- Attribution confidence: **high**
+- Historical records represented: **4**
+- Representative sample: [open sample](samples/v_fea267824fe0c63f2704a2f713a8b5fc/sample.txt)
+- Sample SHA-256: `e3531ea1de20061e3a974888e95d7ee570781c278652e02ff783f076a1d6e504`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-💻 *Hardware:*
-CPU: AMD Ryzen 7 5700G with Radeon Graphics         
-GPU: AMD Radeon(TM) Graphics
-RAM: 14229MB
-Power: NoSystemBattery (100%)
-Screen: 1440x900
-Webcams count: 0
+Recognition anchors:
 
-📡 *Network:* 
-Gateway IP: [redacted]
-Internal IP: [redacted]
-External IP: [redacted]
+- Stable markers: `*Stealerium v3.5.2 - Report:*`, `Stealerium v3.5.2`
+- Field labels: -
 
-💸 *Domains info:*
-   - 🏦 *Banking services* (No data)
-   - 💰 *Cryptocurrency services* (No data)
-   - 🍓 *Porn websites* (No data)
 
-🌐 *Browsers:*
-   ∟ 📂 AutoFill: 4
-   ∟ ⏳ History: 136
+## MITRE ATT&CK
 
-🗃 *Software:*
+| Technique | Name |
+|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| [T1113](https://attack.mitre.org/techniques/T1113/) | Screen Capture |
+| [T1125](https://attack.mitre.org/techniques/T1125/) | Video Capture |
+| [T1083](https://attack.mitre.org/techniques/T1083/) | File and Directory Discovery |
+| [T1217](https://attack.mitre.org/techniques/T1217/) | Browser Information Discovery |
+| [T1016](https://attack.mitre.org/techniques/T1016/) | System Network Configuration Discovery |
+| [T1518.001](https://attack.mitre.org/techniques/T1518/001/) | Security Software Discovery |
 
-🧭 *Device:*
-   ∟ 🗝 Windows product key
-   ∟ 🌃 Desktop screenshot
+## Related catalog profiles
 
-🦠 *Installation:*
-   ∟ ⛔️ Startup disabled
-   ∟ ⛔️ Clipper not installed
-   ∟ ⛔️ Keylogger not installed
+- [Phantom Stealer](../phantom-stealer/)
+- [CSBradmaxCategoryStealer](../cs-bradmax-category-stealer/)
 
-📄 *File Grabber:*
-   ∟ 📂 Documents: 1
+## Sources
 
-🔗 [Archive download link]([redacted-url])
-🔐 Archive password is: "[redacted]"
-```
+- <https://malpedia.caad.fkie.fraunhofer.de/details/win.stealerium>
+- <https://www.proofpoint.com/us/blog/threat-insight/not-safe-work-tracking-and-investigating-stealerium-and-phantom-infostealers>
+- <https://www.uptycs.com/blog/threat-research-report-team/understanding-stealerium-malware-and-its-evasion-techniques>
+- <https://securityscorecard.com/wp-content/uploads/2024/01/Whitepaper-A-Detailed-Analysis-Of-A-New-Stealer-Called-Stealerium-.pdf>
 
-## References
-
-- [https://malpedia.caad.fkie.fraunhofer.de/details/win.stealerium](https://malpedia.caad.fkie.fraunhofer.de/details/win.stealerium)
-- [https://securityscorecard.com/wp-content/uploads/2024/01/Whitepaper-A-Detailed-Analysis-Of-A-New-Stealer-Called-Stealerium-.pdf](https://securityscorecard.com/wp-content/uploads/2024/01/Whitepaper-A-Detailed-Analysis-Of-A-New-Stealer-Called-Stealerium-.pdf)
-- [https://www.proofpoint.com/us/blog/threat-insight/not-safe-work-tracking-and-investigating-stealerium-and-phantom-infostealers](https://www.proofpoint.com/us/blog/threat-insight/not-safe-work-tracking-and-investigating-stealerium-and-phantom-infostealers)
-- [https://www.uptycs.com/blog/threat-research-report-team/understanding-stealerium-malware-and-its-evasion-techniques](https://www.uptycs.com/blog/threat-research-report-team/understanding-stealerium-malware-and-its-evasion-techniques)
-
-## Try it locally
-
-```console
-python identify.py "families/stealerium/samples/information.txt"
-```
-
-The evidence score describes a structural comparison, not attribution certainty.
-
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+Machine-readable record: [family.json](family.json)

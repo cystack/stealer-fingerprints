@@ -1,0 +1,45 @@
+{
+  "id": "cs-enchant-cloud-stealer",
+  "name": "CSEnchantCloudStealer",
+  "classification": "family_variant",
+  "attribution_confidence": "high",
+  "description": "CSEnchantCloudStealer is a CyStack-coined identifier for a\n`@ft7links` / `EnchantCloudNew` stripped Redline-shape\n`UserInformation.txt` distributed via the\n`t.me/EnchantCloudNew` Telegram channel. The panel emits a\n`JOIN OUR CHANNEL!` pipe-bordered banner with five\nchannel-promotion lines, then drops two distinct field-set\nshapes: a bogon-IP variant with canonical Redline-named fields\nand a non-bogon variant with extended-block fields.",
+  "aliases": [
+    "EnchantCloudNew",
+    "@ft7links Redline variant"
+  ],
+  "typical_targets": [],
+  "detection_notes": "Pipe-bordered `JOIN OUR CHANNEL!` banner with five\n`https://t.me/EnchantCloudNew` repetitions plus the stripped\nRedline-shape field set. Two variants share the banner; the\nfield-set variant indicates whether the victim resolved to a\nbogon IP.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "redline",
+    "redline-like-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/EnchantCloudNew"
+  ],
+  "canonical_family": "redline",
+  "variants": []
+}

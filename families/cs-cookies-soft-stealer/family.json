@@ -1,0 +1,45 @@
+{
+  "id": "cs-cookies-soft-stealer",
+  "name": "CSCookiesSoftStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSCookiesSoftStealer is a CyStack-coined identifier for a\nWindows-victim folder layout shipping a two-directory split\n(`Cookies/` and `Soft/`) inside a per-victim folder named\n`[<ISO2>]<IPv4>` (country code in brackets immediately\nfollowed by a dotted-quad IPv4, no separator). `Cookies/`\ncarries per-browser cookie dumps; `Soft/` carries\napplication-specific harvest folders for games and chat\nclients, including `Steam_<APPID>_<SESSIONID>/tokens.txt`\nSteam JWT auth tokens that grant the operator access to the\nvictim's Steam account without password or 2FA.\n\nObserved inside `MAY 02 - 8230 LOGS2` aggregator packs that\nalso carry the 32-hex-MD5 victim folders claimed by\nCSTikTokAccountStealer (iteration #49),\nCSNetflixCookiesStealer (iteration #53), and\nCSBrowserCategoryDumpStealer (iteration #54), plus the\n`[<IPv4>]-<HOSTNAME>` victim folders claimed by\nCSCommonFilesCategoryStealer (iterations #50 / #51). The\n`[<ISO2>]<IPv4>` country-coded shape is yet another\nper-source-stealer naming convention the aggregator preserved\nduring repacking. Family attribution is provisional pending a\npublished mapping for this specific 2-dir + country-IP layout.",
+  "aliases": [],
+  "typical_targets": [
+    "Browser cookies (Chromium and Gecko)",
+    "Steam JWT auth tokens (sessions that bypass password and 2FA)",
+    "Discord and Telegram session data",
+    "Other Chromium-based desktop app session data under `Soft/`"
+  ],
+  "detection_notes": "The `[<ISO2>]<IPv4>` parent folder name plus the strict\n`{cookies, soft, \"\"}` root subset is the fingerprint.\nDistinguishes from the iter #50 / #51\n`[<IPv4>]-<HOSTNAME>` shape via the country-code\nprefix and the absent hyphen-hostname suffix. Steam\ntoken files inside `Soft/Steam_<id>_<id>/tokens.txt`\ncarry JWT auth tokens whose `sub` field is the\nSteamID64 of the compromised account; treat each\n`tokens.txt` as a session-takeover indicator during\ntriage.",
+  "attack_techniques": [
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1528",
+      "name": "Steal Application Access Token"
+    },
+    {
+      "id": "T1550.004",
+      "name": "Use Alternate Authentication Material: Web Session Cookie"
+    },
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "cs-common-files-category-stealer",
+    "cs-tik-tok-account-stealer",
+    "cs-netflix-cookies-stealer",
+    "cs-browser-category-dump-stealer"
+  ],
+  "sources": [],
+  "variants": []
+}

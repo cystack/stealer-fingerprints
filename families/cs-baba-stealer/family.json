@@ -1,0 +1,64 @@
+{
+  "id": "cs-baba-stealer",
+  "name": "CSBabaStealer",
+  "classification": "family_variant",
+  "attribution_confidence": "high",
+  "description": "CSBabaStealer is a CyStack-coined identifier for a self-named\n`.B.A.B.A.` Lumma-rebrand `System.txt` log observed inside\n`@ft7links`-distributed packs alongside canonical Lumma content.\nThe `@ft7links` operator labels the archive `lumma` and ships\nboth genuine Lumma logs and this Lumma-shaped rebrand under one\ncover.",
+  "aliases": [
+    ".B.A.B.A.",
+    "Baba Logs"
+  ],
+  "typical_targets": [],
+  "detection_notes": "The `.B.A.B.A. Build :` literal (note the dotted spelling and\nthe space before the colon) is the unambiguous trigger.\nDistributed alongside Lumma proper; presence of either\nparser's claim does not exclude the other.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "lumma",
+    "cs-art-house-cloud-stealer"
+  ],
+  "sources": [],
+  "canonical_family": "lumma",
+  "variants": [
+    {
+      "id": "v_63cd49f8bebd918e6de1394bbce58a3d",
+      "parser": "logmine.ioc.parsers.cs_baba_stealer.CSBabaStealerParser",
+      "filenames": [
+        "System.txt"
+      ],
+      "panel_brand": ".B.A.B.A.",
+      "distribution_channel": "@Xavier_Log",
+      "attribution_confidence": "high",
+      "markers": [
+        ".B.A.B.A."
+      ],
+      "fields": [],
+      "observations": 365,
+      "sample": {
+        "path": "samples/v_63cd49f8bebd918e6de1394bbce58a3d/sample.txt",
+        "sha256": "6fa8895ded0e8ba56db4c36e66660d54e11d185d6ed088c74f9601593a8f991d",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

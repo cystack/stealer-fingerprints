@@ -1,0 +1,62 @@
+{
+  "id": "cs-azure-build-stealer",
+  "name": "CSAzureBuildStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSAzureBuildStealer is a CyStack-coined identifier for a\ndash-prefixed `System.txt` panel observed inside\n`!! 2025 JULY` aggregator packs under `[<CC>]<IP>/System.txt`\nvictim folders. Every line is shaped `- Key: Value` with a\nleading ASCII hyphen plus space. The panel ships an\n`Azure Build:` date stamp and a `Worker Tag:` operator-set\nlabel as the first two fields, then a fixed system summary\ncovering OS, hardware, network, and the local clock.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. The `Worker Tag` value\nobserved in the first sample was `XwormExp`, which hints at\nan operator affiliation with XWorm but does not match XWorm's\nown published log shape, so attribution to XWorm would be\nmisleading.",
+  "aliases": [],
+  "typical_targets": [
+    "System hardware and locale inventory",
+    "Anti-virus product name (Windows Defender / installed AV)",
+    "Geo-IP country code"
+  ],
+  "detection_notes": "Line-anchored `- Azure Build:` plus `- Worker Tag:` plus\n`- HWID:` plus `- Time Save Log:` is the fingerprint. The\n`- ` dash prefix is part of every key literal so a bare\n`Azure Build` mention (Microsoft Azure DevOps build-task\ndocumentation uses that phrase) cannot false-claim.\nTimestamps are in `DD.MM.YYYY HH:MM:SS` form and the\n`Time Zone` field is bare `UTC<N>` with no sign or minutes.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1518.001",
+      "name": "Security Software Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_6fc6c2fd95c996b3102846257cf1e256",
+      "parser": "logmine.ioc.parsers.cs_azure_build_stealer.CSAzureBuildStealerParser",
+      "filenames": [
+        "System.txt"
+      ],
+      "panel_brand": "Azure Build",
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "Azure Build"
+      ],
+      "fields": [
+        "Azure Build",
+        "HWID",
+        "Time Save Log",
+        "Worker Tag"
+      ],
+      "observations": 2480,
+      "sample": {
+        "path": "samples/v_6fc6c2fd95c996b3102846257cf1e256/sample.txt",
+        "sha256": "ef9b784f4feede70941b4fe5cd457bf9e0b3165263ec9086304878fd6bc682ba",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

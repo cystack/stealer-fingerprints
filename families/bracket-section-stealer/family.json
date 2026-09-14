@@ -1,0 +1,65 @@
+{
+  "id": "bracket-section-stealer",
+  "name": "BracketSection Stealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "Unidentified `[System]` / `[Hardware]`-sectioned stealer log\nvariant observed inside `@bugatti_cloud` aggregator packs.\nThe `UserInformation.txt` body is split into bracket-titled\nsections (`[System]`, `[Hardware]`, etc.) each followed by a\nflat key-value block. Family attribution is provisional; the\nformat has not been mapped to a published threat-intel name.",
+  "aliases": [],
+  "typical_targets": [],
+  "detection_notes": "The combination of bracket-titled sections (`[System]`,\n`[Hardware]`) with a flat key-value block under each is the\nprimary signature. Distributed via the `@bugatti_cloud`\naggregator channel.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://heroic.com/darkhive-breaches/bugatti-cloud-telegram-stealer-log-july-2023-timeline/",
+    "https://socradar.io/blog/top-stealer-log-telegram-channels/"
+  ],
+  "variants": [
+    {
+      "id": "v_516063da5807a1399ea249ebe8f60e04",
+      "parser": "logmine.ioc.parsers.bracket_section_stealer.BracketSectionStealerParser",
+      "filenames": [
+        "System.txt",
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "[Hardware]",
+        "[System]"
+      ],
+      "fields": [
+        "Buildtag"
+      ],
+      "observations": 893,
+      "sample": {
+        "path": "samples/v_516063da5807a1399ea249ebe8f60e04/sample.txt",
+        "sha256": "d2b797c2c1bdd70b592fa28112165e11e0771335756c9f8f390412be2fea2708",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "system-hardware-buildtag"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "cs-soft-url-pass-stealer",
+  "name": "CSSoftUrlPassStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSSoftUrlPassStealer is a CyStack-coined identifier for a\nPasswords.txt-shaped block-record file mis-routed to the\n``System.txt`` slot inside ``<N> LOGS.rar`` aggregator packs.\nObserved inside ``4 APRIL - 2950 LOGS.rar`` at\n``JM[<HWID>][<TIMESTAMP>]/System.txt`` victim folders where\nthe pack builder wrote per-victim credentials under a\n``System.txt`` basename rather than the canonical\n``Passwords.txt``.\n\nThe body is a block-record format with four line-anchored\nfields per record in fixed order: ``SOFT:`` (browser\nidentifier, ``Chrome Profile <N> (<version>)``), ``URL:``\n(login origin, HTTPS or Android autofill\n``android://<b64hash>@<pkg>/``), ``USER:`` (account handle),\nand ``PASS:`` (stored credential). Records are separated by\nblank lines. The SOFT/URL/USER/PASS block layout is common\nacross multiple stealers per a public stealer-log parser\nwriteup (one of five documented Passwords.txt shapes) and\ncannot be uniquely mapped to a specific underlying builder\nfrom format alone. Family attribution is provisional pending a\npublished threat-intel mapping for this specific mis-routing\npattern.",
+  "aliases": [
+    "SOFT/URL/USER/PASS block Passwords.txt (mis-routed to System.txt)"
+  ],
+  "typical_targets": [
+    "Browser credentials (Chrome profile passwords), the URL\norigin the credential belongs to, and the account\nidentifier (email, phone, or username handle)",
+    "Android autofill entries (``android://<b64hash>@<pkg>/``\norigins that Chrome for Android replicates into the\ndesktop credential store via Sync)"
+  ],
+  "detection_notes": "Fingerprint requires four line-anchored anchors, all four\nin the same body: ``SOFT: ``, ``URL: ``, ``USER: ``, and\n``PASS: ``. The four-anchor combination is exclusive to\nPasswords.txt-shaped content: no canonical system-info\npanel across the registry carries all four spelling\nvariants at line start. During incident response, treat\nthe file as a credentials dump: pull each URL / USER /\nPASS triple as a leaked-credential IOC and correlate the\n``JM[<HWID>][<TIMESTAMP>]`` sibling folder name for\nvictim identification.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "variants": []
+}

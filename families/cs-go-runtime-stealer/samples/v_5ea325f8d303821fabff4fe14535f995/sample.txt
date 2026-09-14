@@ -1,0 +1,6 @@
+=== SYSTEM INFORMATION ===
+User: <USER>
+Computer: <HOST>
+OS: windows amd64
+Directory: <PATH>
+========================

@@ -1,17 +1,121 @@
 {
-  "$schema": "../../schemas/family.schema.json",
-  "aliases": [],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "Raccoon Stealer exports `system info.txt` as a compact summary. Its distinctive labels include `User ID`, `IP info`, `Build Compile Date`, and `System Information`.",
-  "external_references": [
-    {
-      "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.raccoon"
-    }
-  ],
   "id": "raccoon",
   "name": "Raccoon",
-  "schema_version": "1.0",
-  "targets": [],
-  "tracking_labels": []
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "Raccoon Stealer is a long-running malware-as-a-service infostealer also tracked as RecordBreaker. Its panel exports a compact `System Info.txt` report. Raccoon v2 uses `User ID: <MachineGuid>|<UserName>`, a JavaScript-style `Last seen:` timestamp, a truncated `Build:` value, `IP info:`, and a tab-indented `System Information:` block. Raccoon v1 uses the `Racc0_0n` self-banner and `Bot_ID: <uuid>_<user>` while keeping the same system-inventory purpose.",
+  "aliases": [
+    "Raccoon Stealer",
+    "Raccoon v2",
+    "RecordBreaker",
+    "Racc0_0n"
+  ],
+  "typical_targets": [
+    "Browser saved credentials, cookies, autofill, and history",
+    "Crypto wallet extensions and desktop clients",
+    "Email, FTP, and VPN client credentials",
+    "Discord and Telegram session data",
+    "System and installed-application inventory",
+    "Files selected by the operator grabber configuration"
+  ],
+  "detection_notes": "Treat the v1 and v2 panel exports as separate layouts. The v2 layout combines `User ID:`, `Last seen:`, `IP info:`, `System Information:`, and `Installed applications:`. The v1 layout combines `Bot_ID:` and `System Information:` with either the `Racc0_0n` self-banner or `Launched at:`. The MachineGuid/user join and those co-occurring section labels distinguish Raccoon from generic system-information logs.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1083",
+      "name": "File and Directory Discovery"
+    },
+    {
+      "id": "T1518",
+      "name": "Software Discovery"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://malpedia.caad.fkie.fraunhofer.de/details/win.raccoon",
+    "https://attack.mitre.org/software/S1148/",
+    "https://www.zscaler.com/blogs/security-research/raccoon-stealer-v2-latest-generation-raccoon-family",
+    "https://www.darktrace.com/blog/the-resurgence-of-the-raccoon-steps-of-a-raccoon-stealer-v2-infection-part-2",
+    "https://any.run/malware-trends/raccoon/",
+    "https://github.com/MalBeacon/what-is-this-stealer"
+  ],
+  "variants": [
+    {
+      "id": "v_35981cb9ad7bbc2326661a3e2f019f55",
+      "parser": "logmine.ioc.parsers.raccoon.RaccoonStealerParser",
+      "filenames": [
+        "System Info.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "Installed Apps:",
+        "Racc0_0n",
+        "System Information:"
+      ],
+      "fields": [
+        "Bot_ID",
+        "Launched at"
+      ],
+      "observations": 16,
+      "sample": {
+        "path": "samples/v_35981cb9ad7bbc2326661a3e2f019f55/sample.txt",
+        "sha256": "c5d3d1edc84c6feeb7db5208b4c367dd6bf9839fb869468ef5787260f00cba85",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "panel-export-v1"
+    },
+    {
+      "id": "v_69fc6a9bafa5557076540aa275f3124f",
+      "parser": "logmine.ioc.parsers.raccoon.RaccoonStealerParser",
+      "filenames": [
+        "System Info.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "Installed applications:",
+        "System Information:"
+      ],
+      "fields": [
+        "IP info",
+        "Last seen",
+        "User ID"
+      ],
+      "observations": 386,
+      "sample": {
+        "path": "samples/v_69fc6a9bafa5557076540aa275f3124f/sample.txt",
+        "sha256": "a1f2514c030c612051fff1c8e733a80714411d8090ba055be29059d67f23aaf8",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "panel-export-v2"
+    }
+  ]
 }

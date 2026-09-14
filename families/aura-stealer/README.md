@@ -1,123 +1,95 @@
 # AuraStealer
 
-**Known malware family · high attribution confidence**
+Aura Stealer (a.k.a. AuraStealer) is a C++ infostealer-as-a-service advertised on underground forums from July 2025 by the
+threat actor AuraCorp. Subscription tiers ship a builder plus
+a web panel that aggregates harvested logs. Antivirus
+signatures catalogue it under the detection name
+`Trojan:MSIL/AuraStealer.AUKB!MTB`; Public malware trackers
+list it as `win.aurastealer`.
 
-## At a glance
+The on-wire exfil is JSON, GZIP-compressed and Base64-encoded
+to the C2. The artifact this parser claims is the operator-facing panel render written as `System.txt` inside each per-victim folder. The render opens with an `AURA v<x.y.z>` build
+banner, then a top block of identity fields (`HWID:`, the
+`Launched at:` local/UTC pair, `Location:`, the elevation
+flags), then four square-bracket sections in order: `[System
+Info]`, `[Hardware]`, `[Processes List]`, `[Installed
+Software]`. The `Location:` field carries the
+process-hollowing target, usually
+`C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe`
+per the publicly documented injection chain.
 
-- Aliases: <code>Aura Stealer</code>, <code>AuraStealer</code>
-- Typical filenames: <code>system.txt</code>
-- Published formats: 0
-- Representative samples: 1
+## Research status
 
-<p>The observed AuraStealer sample uses <code>system.txt</code>, headed <code>AURA v1.5.2</code>. Its layout separates <code>[System Info]</code>, <code>[Hardware]</code>, <code>[Processes List]</code>, and <code>[Installed Software]</code>.</p>
+- Classification: **Known malware family**
+- Attribution confidence: **high**
+- Aliases: `Aura Stealer`, `AuraStealer`
+- Variants observed: **1**
+- Historical Logmine records represented: **3,537**
 
-## How to recognize it
+## What it targets
 
-- No stable text banner is known; combine filename and field layout.
-- No machine-readable field set is published yet; compare the sample manually.
+- Browser saved credentials, cookies, autofill (110+ browsers)
+- Crypto wallet extensions and desktop clients (250+ extensions)
+- Authenticator and 2FA app data (70+ apps)
+- System hardware and installed-software inventory
 
-## Formats
+## Detection notes
 
-No matcher fingerprint has been published for this family yet.
+The line-anchored `AURA v<digits>` banner on the opening line
+is the cleanest fingerprint and is the panel's own self-identifier. The `[System Info]` + `[Hardware]` + `[Processes
+List]` + `[Installed Software]` bracket-section quartet with
+this exact spelling is unique to Aura. False-positive risk is
+negligible: prose that quotes the banner phrase will fail the
+bracket-section + `HWID:` guard.
 
-## Representative sample
+When triaging a panel-render log, treat `Location:` ending in
+`RegAsm.exe` as the injection-host signal. The on-wire JSON
+transport is not captured by this parser; pair host telemetry
+on RegAsm.exe outbound HTTPS with the published Aura C2 domain
+list.
 
-Observed text sample. Placeholders mark values removed from the original log.
+## Observed log variants
 
-[<code>system.txt</code>](samples/system.txt)
+### `v_97204ede3c0a7a80adbe42a20d7509b3`
 
-```text
-AURA v1.5.2
+- Parser: `logmine.ioc.parsers.aura_stealer.AuraStealerParser`
+- Observed filenames: `System.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Historical records represented: **3,537**
+- Representative sample: [open sample](samples/v_97204ede3c0a7a80adbe42a20d7509b3/sample.txt)
+- Sample SHA-256: `30d64ac0e523bea150efddfa0d23068ef181f08d4d13250e20ba3b71dd1a7cc8`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-HWID: [redacted]
-Launched at: 
-   Local time: 2025-10-26 [redacted]
-   UTC time: 2025-10-26 [redacted]
-Location: C:\Windows\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe
-Run as Admin: No
-User in Admins group: Yes
-Running on: Desktop PC
+Recognition anchors:
 
-[System Info]
-   OS Name: Windows 10 Pro
-   Edition: Professional
-   Version: 10.0.22621/1/x64
-   Build Number: 22621
-   Build Lab: 22621.ni_release.220506-1250
-   Install Date: May 30 2025 [redacted]
-   Product Id: [redacted]
-   Architecture: x64
-   Language: id-ID
-   Keyboard Layouts: en-US
-   Time Zone: Asia/Dubai UTC+04:00
-   Computer Name: [redacted]
-   User Name: [redacted]
-   Screen resolution: 1440x900
+- Stable markers: `[Hardware]`, `[System Info]`
+- Field labels: -
 
-[Hardware]
-   CPU: Intel(R) Core(TM) i3-4150 CPU @ 3.50GHz (4 cores)
-   RAM: 8110 MB (Used 5923 MB)
-   GPUs: Intel(R) HD Graphics 4400 
 
-[Processes List]
-   [System Process] [0]
-   System [4]
-   Registry [104]
-   smss.exe [504]
-   csrss.exe [716]
-   wininit.exe [808]
-   csrss.exe [816]
-   services.exe [880]
-   lsass.exe [900]
-   winlogon.exe [968]
-   svchost.exe [804]
-   fontdrvhost.exe [688]
-   fontdrvhost.exe [936]
-   svchost.exe [1132]
-   svchost.exe [1180]
-   svchost.exe [1272]
-   svchost.exe [1332]
-   svchost.exe [1356]
-   svchost.exe [1368]
-   svchost.exe [1444]
-   svchost.exe [1556]
-   svchost.exe [1604]
-   svchost.exe [1624]
-   svchost.exe [1680]
-   svchost.exe [1688]
-   svchost.exe [1704]
-   svchost.exe [1716]
-   dwm.exe [1724]
-   svchost.exe [1980]
-   svchost.exe [2008]
-   svchost.exe [1712]
-   svchost.exe [1864]
-   igfxCUIService.exe [2056]
-   Memory Compression [2080]
-   svchost.exe [2256]
-   svchost.exe [2268]
-   svchost.exe [2288]
-   svchost.exe [2316]
-   svchost.exe [2396]
-   svchost.exe [2464]
-   svchost.exe [2688]
-   svchost.exe [2704]
-   svchost.exe [2908]
-   svchost.exe [2980]
-   svchost.exe [3024]
-   svchost.exe [2652]
-   svchost.exe [2800]
-```
+## MITRE ATT&CK
 
-Preview shortened; open the sample file for the complete text.
+| Technique | Name |
+|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| [T1057](https://attack.mitre.org/techniques/T1057/) | Process Discovery |
+| [T1518](https://attack.mitre.org/techniques/T1518/) | Software Discovery |
+| [T1055.012](https://attack.mitre.org/techniques/T1055/012/) | Process Injection: Process Hollowing |
 
-## References
+## Related catalog profiles
 
-- [https://malpedia.caad.fkie.fraunhofer.de/details/win.aurastealer](https://malpedia.caad.fkie.fraunhofer.de/details/win.aurastealer)
-- [https://www.gendigital.com/blog/insights/research/defeating-aurastealer-obfuscation](https://www.gendigital.com/blog/insights/research/defeating-aurastealer-obfuscation)
-- [https://www.intrinsec.com/en/analysis-of-aurastealer-an-emerging-infostealer/](https://www.intrinsec.com/en/analysis-of-aurastealer-an-emerging-infostealer/)
-- [https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Trojan:MSIL/AuraStealer.AUKB!MTB&amp;ThreatID=2147957435](https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Trojan:MSIL/AuraStealer.AUKB!MTB&ThreatID=2147957435)
+- [Lumma](../lumma/)
 
-This sample is available for manual comparison; no matcher fingerprint is published for it yet.
+## Sources
 
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+- <https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Trojan:MSIL/AuraStealer.AUKB!MTB&ThreatID=2147957435>
+- <https://malpedia.caad.fkie.fraunhofer.de/details/win.aurastealer>
+- <https://www.gendigital.com/blog/insights/research/defeating-aurastealer-obfuscation>
+- <https://www.intrinsec.com/en/analysis-of-aurastealer-an-emerging-infostealer/>
+
+Machine-readable record: [family.json](family.json)

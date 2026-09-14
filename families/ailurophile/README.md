@@ -1,65 +1,85 @@
 # Ailurophile
 
-**Known malware family · high attribution confidence**
+Ailurophile is a subscription-style info-stealer first
+publicly documented in August 2024. The stub is PHP-coded,
+packaged into a Windows PE with ExeOutput, and then
+virtualized with BoxedApp. Operators configure each build
+through the family's own web panel, which lets them pick the
+extension list, the folder list, and the filename keyword list
+that drive the on-victim file grabber. Reports are sent to the
+Telegram chat configured at build time.
 
-## At a glance
+The on-victim staging directory is
+`%LOCALAPPDATA%\Ailurophile`, and the system summary is a flat
+`Key: Value` `info.txt` whose distinctive fields are `Allowed
+Extensions:`, `Folders to Search:`, `PC Type:`, and `Screen
+Resolution:`.
 
-- Aliases: <code>Ailurophile Stealer</code>
-- Typical filenames: <code>info.txt</code>
-- Published formats: 1
-- Representative samples: 1
+## Research status
 
-<p>Ailurophile logs are recognized by <code>info.txt</code> and the combined fields <code>PC Type</code>, <code>File Path</code>, <code>Main Path</code>, <code>MAC Address</code>, and browser-version lines such as <code>Chrome Default - version</code>.</p>
+- Classification: **Known malware family**
+- Attribution confidence: **high**
+- Aliases: `Ailurophile Stealer`
+- Variants observed: **1**
+- Historical Logmine records represented: **66**
 
-## How to recognize it
+## What it targets
 
-- No stable text banner is known; combine filename and field layout.
-- Recurring fields: <code>chrome default - version</code>, <code>country</code>, <code>edge default - version</code>, <code>file path</code>, <code>ip</code>, <code>mac address</code>, <code>main path</code>, <code>pc type</code>, <code>screen resolution</code>
+- Browser saved credentials, cookies, autofill, history
+- Credit card data from browser autofill
+- Crypto wallet extensions and desktop clients
+- Generic file grabber driven by configurable keyword and extension lists
 
-## Formats
+## Detection notes
 
-| Format | Evidence | Fingerprint |
-|---|---|---|
-| info.txt - chrome default - version / country | 9 fields, filename | [`fp_69d3c9b9deefeab3fd9ff5219d3e8012`](fingerprints/fp_69d3c9b9deefeab3fd9ff5219d3e8012.json) |
+The combination of `Allowed Extensions:` and `Folders to Search:`
+line-anchored is the canonical fingerprint and matches the
+public ail-project YARA rule. Operator rebrands prepend an
+extra banner line like `HORUS B13: @HORUS B13` above the
+canonical block: the underlying fields are identical, so
+attribution stays under `Ailurophile` and the banner surfaces
+through `panel_brand` and `distribution_channel`. False-positive
+risk is low because no other family in this catalog emits the
+paired `Allowed Extensions:` / `Folders to Search:` keys.
 
-## Representative sample
+## Observed log variants
 
-Observed text sample. Placeholders mark values removed from the original log.
+### `v_775f61d0716a746c69c9f5e6fd0c575f`
 
-[<code>info.txt</code>](samples/info.txt)
+- Parser: `logmine.ioc.parsers.ailurophile.AilurophileParser`
+- Observed filenames: `info.txt`
+- Panel brand: `HORUS B13`
+- Distribution channel: `@HORUS B13`
+- Attribution confidence: **high**
+- Historical records represented: **66**
+- Representative sample: [open sample](samples/v_775f61d0716a746c69c9f5e6fd0c575f/sample.txt)
+- Sample SHA-256: `bb2884c73df79e130973e24e6fc3a5840a192edc7bc8f6ce207f9d5a778007af`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-```text
-HORUS B13: @HORUS B13
+Recognition anchors:
 
-IP: [redacted]
-Country: United States
-Hostname: [redacted]
-PC Type: Microsoft Windows Server 2019 Datacenter 10.0.17763
-Architecture: amd64
-File Path: C:\xampp\htdocs\ailurophilego\crypt
-Main Path: C:\Users\<user>\AppData\Local\Ailurophile
-Allowed Extensions: [rdp txt doc docx pdf csv xls xlsx keys ldb log]
-Folders to Search: [Documents Desktop Downloads]
-Files: [secret password account tax key wallet gang default backup passw mdp motdepasse acc mot_de_passe login secret bot atomic account acount paypal banque bot metamask wallet crypto exodus discord 2fa code memo compte token backup secret seed mnemonic memoric private key passphrase pass phrase steal bank info cas…
-MAC Address: [redacted]
-Screen Resolution: 1680x1050
-Browsers:
-Chrome Default - version: 143.0.7499.170
-```
+- Stable markers: `HORUS B13`
+- Field labels: `Allowed Extensions`, `Folders to Search`
 
-Preview shortened; open the sample file for the complete text.
 
-## References
+## MITRE ATT&CK
 
-- [https://github.com/ail-project/ail-yara-rules/blob/master/rules/stealer/ailurophile.yara](https://github.com/ail-project/ail-yara-rules/blob/master/rules/stealer/ailurophile.yara)
-- [https://www.cyfirma.com/research/ailurophile-stealer/](https://www.cyfirma.com/research/ailurophile-stealer/)
+| Technique | Name |
+|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
 
-## Try it locally
+## Related catalog profiles
 
-```console
-python identify.py "families/ailurophile/samples/info.txt"
-```
+- None recorded.
 
-The evidence score describes a structural comparison, not attribution certainty.
+## Sources
 
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+- <https://www.cyfirma.com/research/ailurophile-stealer/>
+- <https://blog.gdatasoftware.com/2024/08/38005-ailurophile-infostealer>
+- <https://github.com/ail-project/ail-yara-rules/blob/master/rules/stealer/ailurophile.yara>
+
+Machine-readable record: [family.json](family.json)

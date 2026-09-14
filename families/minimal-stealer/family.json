@@ -1,0 +1,51 @@
+{
+  "id": "minimal-stealer",
+  "name": "Minimal Stealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "Unidentified minimal-format stealer observed inside `@BRADMAX`\naggregator packs alongside Remus, user-info bracket, and Snake logs.\nThe `System_Info.txt` is a flat seven-line key/value record\nwith no banner, no IP, and no time, barely enough to compose an\nIOC. Verified victims include Windows Defender Application Guard\nsandbox VMs.",
+  "aliases": [],
+  "typical_targets": [],
+  "detection_notes": "Flat seven-line record headed by `User:` (no `Username` or\n`User name` variant) is the primary trigger. The absence of\nbanner, IP, and timestamp distinguishes this layout from every\nother family in this catalog.",
+  "attack_techniques": [
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_289e675ff30a29b1a1292c77b54489e5",
+      "parser": "logmine.ioc.parsers.minimal_stealer.MinimalStealerParser",
+      "filenames": [
+        "System_Info.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [],
+      "fields": [
+        "Computer",
+        "CPU",
+        "GPU",
+        "OS",
+        "RAM",
+        "Resolution",
+        "User"
+      ],
+      "observations": 2,
+      "sample": {
+        "path": "samples/v_289e675ff30a29b1a1292c77b54489e5/sample.txt",
+        "sha256": "995594618cd831da529b69edf7f0372c94e7a63849cdd39ca4cd3cde3b866bf0",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

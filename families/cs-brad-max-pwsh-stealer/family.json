@@ -1,0 +1,57 @@
+{
+  "id": "cs-brad-max-pwsh-stealer",
+  "name": "CSBradMaxPwshStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSBradMaxPwshStealer is a CyStack-coined identifier for a\nbanner-less `system.txt` panel distributed through the\n@BRADMAX Telegram channel. The body opens with a flat `Build:\n<8-char>` / `IP:` / `Country:` / `MachineGuid:` / `Computer:`\n/ `User:` key block, then ships raw PowerShell cmdlet output:\na `Get-WmiObject Win32_Processor | Format-Table\nName,NumberOfCores,NumberOfEnabledCore,\nNumberOfLogicalProcessors` CPU table (with the literal dashed\nunderline row), an `AV List:` block emitting raw `<Name>.\nProduct State: <DWORD>` Win32_Reg_AV records, host fields\n(`OS:`, `Monitors:`, `Resolution(s):`, `AD:`, `GPU:`, `RAM:`,\n`System Language:`, `Timezone:`), a `Processes:` section with\n`Get-Process | Format-List\nProcessId,ParentProcessId,Name,CommandLine,Level` records, and\na `Software:` line-per-package installed-software list.\n\nThe custom `Level` Get-Process column is not a native\nSystem.Diagnostics.Process property, which points to a\nPowerShell or .NET launcher harness that enriches each process\nrecord with an integrity-level or tree-depth value before\nformatting. Family attribution is provisional pending a\npublished threat-intel mapping for this harness layout; no\npublic reporting or community catalogue documents this exact\nPowerShell-cmdlet-output shape.",
+  "aliases": [
+    "@BRADMAX PowerShell-harness system.txt slice",
+    "BRADMAX Build+MachineGuid+Level-column variant"
+  ],
+  "typical_targets": [
+    "Host hardware and OS fingerprint (CPU, GPU, RAM, monitor\ncount, screen resolution, OS version)",
+    "Network identity (IP address, country, system language,\ntimezone)",
+    "Account identity (Windows username, computer name,\nMachineGuid, Active Directory join state)",
+    "Installed software inventory (line-per-package)",
+    "Running-process tree snapshot with parent process IDs and\nfull command lines",
+    "Resident antivirus product list with Win32_Reg_AV\nproductState DWORD"
+  ],
+  "detection_notes": "Fingerprint requires both the misspelled\n`NumberOfEnabledCore` PowerShell Format-Table column\nheader AND the line-anchored `Level           : 0` custom\nFormat-List column on the Processes block. The two-anchor\ncombination is mutually exclusive with every other\nBRADMAX-distributed slice (the @BRADMAX_CLOUD slices all\ncarry the aBradMax Figlet banner; the sibling @BRADMAX\n`=== SYSTEM INFO ===` slice uses a triple-equals header).\nDuring triage, treat the underlying stealer family as\nunattributable and rely on the channel and panel_brand\nmetadata to bucket samples for analyst review. The\n`MachineGuid` UUID is the registry-resident\n`HKLM\\SOFTWARE\\Microsoft\\Cryptography\\MachineGuid` value\nand is suitable as a cross-victim host pivot when paired\nwith the same IP / `Computer` triple.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1057",
+      "name": "Process Discovery"
+    },
+    {
+      "id": "T1518.001",
+      "name": "Security Software Discovery"
+    },
+    {
+      "id": "T1518",
+      "name": "Software Discovery"
+    },
+    {
+      "id": "T1059.001",
+      "name": "PowerShell"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "cs-geo-sys-info-stealer",
+    "lumma",
+    "dc-rat",
+    "cs-brad-max-cloud-pc-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADMAX"
+  ],
+  "variants": []
+}

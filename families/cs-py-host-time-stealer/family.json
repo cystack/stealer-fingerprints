@@ -1,0 +1,41 @@
+{
+  "id": "cs-py-host-time-stealer",
+  "name": "CSPyHostTimeStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSPyHostTimeStealer is a CyStack-coined identifier for a\nPython-based stealer whose `system_info.txt` is reduced to a\n4-line `User:` / `Host:` / `OS:` / `Time:` block with no\nhardware, network, or locale fields. Distributed through the\n`@BRADLOGS` Telegram channel (active mirror of the `@BRADMAX`\n/ `t.me/bradmax_cloud` aggregator that public channel\ncatalogues list as a \"Redline and Raccoon Data Logs\"\nreseller), with per-victim folders named `[<CC>]@BRADLOGS\n(BRADMAX)/`.\n\nTwo structural traits point at a Python builder. The `OS:`\nvalue is dash-joined `platform.platform()` output\n(`Windows-11-10.0.26200-SP0`), and the `Time:` value carries\nsix-digit microsecond precision - the default\n`str(datetime.now())` format. No C# or .NET stealer in the\nsurveyed catalogues emits those two shapes together. The bare\n`Host:` key (rather than `Hostname:` / `Computer Name:`) is\nalso unusual.\n\nFamily attribution is provisional pending a published threat-intel mapping for this layout. The aggregator self-labels\ncontent as Redline / Raccoon but the body lacks every Redline\ncanonical anchor (`Operation System:` typo, `Hardwares:`\nblock) and every Raccoon canonical anchor (`User ID:` UUID,\n`Last seen:` JS-date), so the channel label cannot be trusted.",
+  "aliases": [
+    "@BRADLOGS minimal system_info.txt"
+  ],
+  "typical_targets": [
+    "Victim username and hostname",
+    "Operating-system platform string",
+    "Wall-clock exfiltration timestamp"
+  ],
+  "detection_notes": "Triple-guard fingerprint: all four line-anchored keys\n(`User:`, `Host:`, `OS:`, `Time:`) must appear, the `OS:`\nvalue must match the dash-joined `platform.platform()` shape\n(`Windows-<n>-...`), and the `Time:` value must carry six-digit microsecond precision (`.\\d{6}`). The microsecond-precision Time field is the strongest single signal that\nrules out non-Python builders. False-positive risk is low\nbecause no other registered parser uses `Host:` as a bare\nkey with this exact Time-value shape.",
+  "attack_techniques": [
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1124",
+      "name": "System Time Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADLOGS",
+    "https://t.me/bradmax_cloud"
+  ],
+  "variants": []
+}

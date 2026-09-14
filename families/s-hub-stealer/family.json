@@ -1,40 +1,68 @@
 {
-  "$schema": "../../schemas/family.schema.json",
+  "id": "s-hub-stealer",
+  "name": "SHub Stealer",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "SHub Stealer is a macOS-targeted info-stealer first publicly\ndocumented in March 2026 after a fake CleanMyMac landing-page\ncampaign delivered the payload to crypto holders. A follow-on\nvariant was analysed publicly under the build tag `Reaper` in\nMay 2026; the family also gets broad public coverage.\n\nThe payload is a Mach-O binary that runs an AppleScript helper\nto harvest browser data, cryptocurrency wallets,\ndeveloper-related configuration files, macOS Keychain data,\niCloud session data, and Telegram session files. Collected\ndata is bundled into a ZIP archive and POSTed to a hardcoded\ngate (e.g. `res2erch-sl0ut[.]com/gate`) along with a hardcoded\nAPI key identifying the malware build. Per-victim `Build Tag`\ncampaign labels and a 32-character build hash support\naffiliate-level tracking. Observed build tags include\n`Reaper`, `PAds`, and `Crypto_Byte`.",
   "aliases": [
     "SHub",
     "SHub Reaper"
   ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "SHub `information.txt` contains the literal `SHub Stealer` banner plus `Build Tag`, `External IP`, `Hardware`, `Graphics/Displays`, `Software`, and `Password` sections.",
-  "external_references": [
-    {
-      "url": "https://securitylabs.datadoghq.com/articles/tech-impersonators-clickfix-and-macos-infostealers/"
-    },
-    {
-      "url": "https://www.bleepingcomputer.com/news/security/shub-macos-infostealer-variant-spoofs-apple-security-updates/"
-    },
-    {
-      "url": "https://www.helpnetsecurity.com/2026/05/19/shub-reaper-macos-infostealer-apple-google-microsoft/"
-    },
-    {
-      "url": "https://www.malwarebytes.com/blog/threat-intel/2026/03/fake-cleanmymac-site-installs-shub-stealer-and-backdoors-crypto-wallets"
-    },
-    {
-      "url": "https://www.sentinelone.com/blog/shub-reaper-macos-stealer-spoofs-apple-google-and-microsoft-in-a-single-attack-chain/"
-    }
-  ],
-  "id": "s-hub-stealer",
-  "name": "SHub Stealer",
-  "schema_version": "1.0",
-  "targets": [
+  "typical_targets": [
     "Browser saved credentials, cookies, autofill",
     "Cryptocurrency wallet apps and browser extensions",
-    "Developer configuration files and Notes",
-    "On-screen prompted login credentials (osascript dialog)",
-    "Telegram session files",
+    "macOS Keychain entries",
     "iCloud session data",
-    "macOS Keychain entries"
+    "Telegram session files",
+    "Developer configuration files and Notes",
+    "On-screen prompted login credentials (osascript dialog)"
   ],
-  "tracking_labels": []
+  "detection_notes": "The strongest single signal is the verbatim `SHub Stealer`\nbanner literal, the family's self-identification header.\nPaired with the `Build Tag:` and `External IP:` preamble\nfields, attribution is high confidence. Triage rules\nshould anchor on the banner literal plus the\n`system_profiler` body shape rather than the build tag\nvalue, which rotates per campaign (`Reaper`, `PAds`,\n`Crypto_Byte` are documented examples).",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.001",
+      "name": "Keychain"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1059.002",
+      "name": "AppleScript"
+    },
+    {
+      "id": "T1056.002",
+      "name": "GUI Input Capture"
+    }
+  ],
+  "related_families": [
+    "mac-sync",
+    "amos-stealer",
+    "cthulhu-stealer"
+  ],
+  "sources": [
+    "https://www.sentinelone.com/blog/shub-reaper-macos-stealer-spoofs-apple-google-and-microsoft-in-a-single-attack-chain/",
+    "https://www.malwarebytes.com/blog/threat-intel/2026/03/fake-cleanmymac-site-installs-shub-stealer-and-backdoors-crypto-wallets",
+    "https://www.bleepingcomputer.com/news/security/shub-macos-infostealer-variant-spoofs-apple-security-updates/",
+    "https://securitylabs.datadoghq.com/articles/tech-impersonators-clickfix-and-macos-infostealers/",
+    "https://www.helpnetsecurity.com/2026/05/19/shub-reaper-macos-infostealer-apple-google-microsoft/"
+  ],
+  "variants": []
 }

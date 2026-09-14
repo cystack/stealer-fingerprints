@@ -1,0 +1,32 @@
+Log date: 19 Mar 26 21:51
+HWID: <HWID>
+System Language: Bulgarian
+Processor: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+Installed RAM: 16292 MB
+Operation System: Windows 10 Enterprise build 19045 (64 Bit)
+Graphics card: NVIDIA GeForce GTX 1650
+Antivirus: Avast
+Computer Name: <HOST>
+Domain Name: <HOST>
+User Name: 
+<redacted>
+Integrity: Medium
+TimeZone: UTC+2
+UserLanguage: Bulgarian
+Keyboard Language: Bulgarian
+Display Resolution: 1920x1080
+Wallpaper Hash: <HWID>
+
+═══════════════════════════════════════════════════════════════════
+                        IP GEOLOCATION DATA
+═══════════════════════════════════════════════════════════════════
+
+IP Address:      <IP>
+Country:         Bulgaria (BG)
+Region:          <LOCATION>
+City:            <LOCATION>
+Postal Code:     <LOCATION>
+
+Timezone:        Europe/Sofia (UTC)
+
+═══════════════════════════════════════════════════════════════════

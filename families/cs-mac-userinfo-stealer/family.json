@@ -1,0 +1,69 @@
+{
+  "id": "cs-mac-userinfo-stealer",
+  "name": "CSMacUserinfoStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSMacUserinfoStealer is a CyStack-coined identifier for a\nmacOS info-stealer that writes a bare `userinfo.txt`\n(lowercase) with a 9-field IP geolocation header followed\ndirectly by the verbatim `system_profiler` output for the\n`SPSoftwareDataType`, `SPHardwareDataType`, and\n`SPDisplaysDataType` sections. The file ships no operator\nbanner, no `BuildID:` per-build label, and no `MetaMask Info:`\n/ `Debanks:` / `Userinfo:` panel section headers. Observed\ninside `!! 2025 JULY.part001.rar` aggregator packs in\n`<CC><31-alnum>_<ISO timestamp with\nmicroseconds>/userinfo.txt` victim folders.\n\nThe layout overlaps the publicly documented Cthulhu Stealer\n`Userinfo.txt` shape but two structural details rule out a\ndirect Cthulhu attribution. First, `BuildID:` is absent.\nCthulhu always emits the line carrying its operator-set\nper-build label, so an unsigned variant is undocumented.\nSecond, the `Region:` value uses the IP2Location-style\n`Dubayy` transliteration for Dubai instead of ipinfo.io's\n`Dubai` form; Cthulhu uses ipinfo.io as its geo source. Family\nattribution is provisional pending a published threat-intel\nmapping for this layout.",
+  "aliases": [
+    "Bare macOS userinfo.txt panel",
+    "No-BuildID Cthulhu-shape macOS log"
+  ],
+  "typical_targets": [
+    "macOS hardware fingerprint (Hardware UUID, Model Identifier, Chip / Processor)",
+    "macOS account inventory (Computer Name, User Name)",
+    "macOS version and kernel build (System Version, Kernel Version)",
+    "Public-IP geolocation (country, city, latitude / longitude, zipcode, timezone)",
+    "Display configuration (Chipset Model, VRAM, resolution)"
+  ],
+  "detection_notes": "Line-anchored `Country Code:` AND `Zipcode:` AND\n`Hardware Overview:` is the fingerprint. The triple is\nspecific because `Country Code:` (separate from\n`Country:`) plus `Zipcode:` (one word) is the geo-block\nopener documented for Cthulhu, and `Hardware Overview:` is\nthe macOS-specific `system_profiler SPHardwareDataType`\nheader. CthulhuParser runs ahead and claims any sample\nthat also carries `BuildID:`, so this parser only sees\nthe BuildID-less variant. AMOSParser uses `Country:` (not\n`Country Code:`) plus the `MetaMask Info:` / `Debanks:` /\n`Userinfo:` section header triple - no overlap. MacSync\nrequires the `MacSync Stealer` banner - absent here.\nDuring triage, treat this label as a macOS infostealer\nsystem summary and look for sibling files (browser data,\nkeychain dumps, wallet folders) in the same victim folder.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    }
+  ],
+  "related_families": [
+    "cthulhu-stealer",
+    "amos-stealer",
+    "mac-sync"
+  ],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_ab5581abd38bf0fcdf843171df456903",
+      "parser": "logmine.ioc.parsers.cs_mac_userinfo_stealer.CSMacUserinfoStealerParser",
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "Hardware Overview:"
+      ],
+      "fields": [
+        "Country Code",
+        "Zipcode"
+      ],
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_ab5581abd38bf0fcdf843171df456903/sample.txt",
+        "sha256": "bc9690044f983ca1ac45b631b2d97f6548e94ae1d0d59269fa0c77be33baef85",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

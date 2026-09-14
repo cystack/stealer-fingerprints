@@ -1,0 +1,64 @@
+{
+  "id": "cs-pc-name-snake-stealer",
+  "name": "CSPcNameSnakeStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSPcNameSnakeStealer is a CyStack-coined identifier for an\neleven-line minimal `system_info.txt` panel distributed\nthrough the `@BRADLOGS / BRADMAX` Telegram channel inside\n`!! 2025 NOV.part001.rar` packs at\n`[<TAG>]@BRADLOGS (BRADMAX)/system_info.txt` victim folders.\nThe body is a flat `key: value` block with all-lowercase\nsnake_case keys and short-form field abbreviations:\n`username`, `pc_name`, `os`, `ram`, `cpu`, `gpu`, `mac`,\n`hwid`, `ip`, `country`, `city`. The `os:` value is the\nPython `platform.platform()` dash-joined shape\n(`Windows-10-10.0.19045-SP0`), and the `hwid:` value is\nthe classic Windows `GetSystemUUID` format (8-4-4-4-12\nhex with dashes, trailing segment matching the `mac:`\nvalue with dashes stripped).\n\nWhen the panel cannot resolve geo-IP, it emits the\nliteral `Unknown` placeholder for `ip`, `country`, and\n`city`. The Python-builder OS shape pairs this format\nwith `CSPyHostTimeStealer` as a sibling panel that the\nsame `@BRADLOGS / BRADMAX` aggregator distributes; this\neleven-key variant carries richer device metadata\n(MAC, HWID, CPU, GPU, RAM) but omits the timestamp.\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout.",
+  "aliases": [
+    "BRADMAX minimal snake_case system_info.txt",
+    "11-field pc_name/mac/hwid snake_case panel"
+  ],
+  "typical_targets": [
+    "Windows username",
+    "Host metadata: hostname (pc_name), MAC address, HWID UUID",
+    "OS fingerprint via Python `platform.platform()` output",
+    "Hardware inventory: CPU model, GPU model, RAM size",
+    "Victim public IP plus country / city (placeholder Unknown when geo-IP fails)"
+  ],
+  "detection_notes": "Fingerprint requires all four line-anchored short-form keys:\n`username:`, `pc_name:`, `mac:`, `hwid:`. The combination of\nlowercase snake_case keys with these short-form abbreviations\n(no `_address` suffix on `mac`, no `_id` suffix on `hwid`, no\n`computer_` prefix on `pc_name`) cannot collide with any other\nregistered parser. During triage, treat the family attribution\nas unknown: the format is structurally a Python-builder panel\n(`platform.platform()` OS shape) but no public source maps the\n11-key layout to a specific named family. Geo-IP placeholders\n(`Unknown`) indicate the victim was offline or behind a\nfirewall during panel exfiltration.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "cs-py-host-time-stealer",
+    "cs-wmic-dump-stealer",
+    "py-info-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": [
+    {
+      "id": "v_a518f20e8beffe929060e8d959b2b01c",
+      "parser": "logmine.ioc.parsers.cs_pc_name_snake_stealer.CSPcNameSnakeStealerParser",
+      "filenames": [
+        "system_info.txt"
+      ],
+      "panel_brand": "BRADMAX",
+      "distribution_channel": "@BRADLOGS",
+      "attribution_confidence": "unknown",
+      "markers": [],
+      "fields": [
+        "hwid",
+        "mac",
+        "pc_name",
+        "username"
+      ],
+      "observations": 23,
+      "sample": {
+        "path": "samples/v_a518f20e8beffe929060e8d959b2b01c/sample.txt",
+        "sha256": "c593944d228fcb55426fd7148086fb0bab573ca48d15be120a47c8bec8eef293",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

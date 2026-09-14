@@ -1,0 +1,46 @@
+---------- [Operating System] ----------------------------------
+Property                  Value
+Windows 10
+Emulated Operating System Windows 10 Pro x64, version 2009 (Fall Creators Update)
+Version                   2009 (OS Build 19041.5555)
+Product Name              Windows 10 Pro
+Code Name                 Redstone 3
+Features                  64 Bit Edition, Terminal Services in Remote Admin Mode, Multiprocessor Free
+Edition Type              Professional
+Edition ID                [TH]X19-98795
+Key Type                  Volume:GVLK
+EULA                      Volume
+SKU                       0x30 Windows 10 Pro
+Windows Insider Program   Disabled
+Language                  Turkish
+Safe Mode                 No
+Activation Status         Required
+License Status            Notification [Windows(R) Operating System, VOLUME_KMSCLIENT channel]
+Genuine                   No
+Checked Build             No
+UAC Enabled               Yes
+OS Root                   C:\Windows\
+Boot Device               \Device\HarddiskVolume1
+System Device             \Device\HarddiskVolume3
+Kernel Version            10.0.19041.5438
+Build Branch              vb_release
+Build Lab                 19041.vb_release.191206-1406
+Build Lab Ex              19041.1.<SECRET>
+Security                  256 bits
+MMC Version               3.0
+Hardware DEP Available    Yes
+Automatic Updates         Enabled
+Automatic Updates         Enabled
+Registration
+Windows To Go             No
+Installation Time         2022-07-02 <ip>
+Boot Time                 2025-02-26 <ip>
+Up Time                   1 Hour 18 Minutes 10 seconds
+System Restore            Enabled
+
+
+
+- IP Address: <IP>
+- Time: 24.06.2025 <ip> (sig:1750796749.<SECRET>)
+- Country: <ip>
+- @BRADLOGS (BRADMAX) / <url>

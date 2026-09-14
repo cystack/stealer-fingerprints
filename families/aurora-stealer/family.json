@@ -1,0 +1,77 @@
+{
+  "id": "aurora-stealer",
+  "name": "Aurora Stealer",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "Aurora Stealer is a Go-based Windows info-stealer operated as\nMalware-as-a-Service by a Russian-speaking actor calling\nthemselves 'Cheshire' (forum handle `cheshire666` on WWH\nClub). Public writeups document the family as active since at\nleast mid-2022. Aurora started as a multi-purpose botnet and\nevolved to focus on credential and cryptocurrency theft.\n\nThe operator-side `UserInformation.txt` panel opens with two\nself-declaration header lines pointing at the\n`t.me/cheshire_aurora` channel and\n`t.me/aurora_botnet_support` support handle, followed by four\n`<================ SECTION ================>` section headers\n(BUILD INFORMATION, GEO INFORMATION, USER INFORMATION, PC\nINFORMATION) with tilde-equals padding around the label.\nFields include HWID, Log date, FileLocation, IP, Country,\nRegion, City, ScreenSize, and dash-prefixed hardware inventory\n(- CPU / - RAM / - Display Devices).\n\nThe `FileLocation` value carries a WinRAR temp-extraction\npath (`Rar$EX...`) with a U+3164 Hangul Filler disguise: the\nobserved sample pads `Script inside.txt` with many invisible\nfiller characters so the actual `.exe` extension gets pushed\noff-screen in most file explorers. Victims see the file as\n`Script inside.txt` and double-click it, executing the malware\ndirectly from inside the RAR archive listing without\nextracting first.\n\nThe C2 wire format is documented as JSON, GZIP-compressed, and\nBase64-encoded. The observed plain-text panel render is the\noperator-facing dashboard shape, not the wire format.\nMultiple Telegram resellers repackage Aurora logs; the\nobserved sample ships through `@UP_DAISYCLOUD` with the Daisy\nCloud pipe-bordered banner and per-line watermark overlay.",
+  "aliases": [
+    "Aurora",
+    "Aurora Botnet",
+    "Cheshire Aurora"
+  ],
+  "typical_targets": [
+    "Browser saved credentials, cookies, autofill",
+    "Cryptocurrency wallet extensions and desktop clients",
+    "Steam session data",
+    "Telegram session data",
+    "Screenshot capture",
+    "Grabber for user-specified filename patterns",
+    "System hardware and geolocation inventory"
+  ],
+  "detection_notes": "Fingerprint requires the `cheshire_aurora` substring\n(the operator channel handle self-declared in the\n`CHANNEL:` header line) AND the `BUILD INFORMATION`\nsubstring (the first section header). The two-anchor\ncombination cannot collide with unrelated documents\nthat mention Aurora by name because both anchors must\nappear together. During triage, the `FileLocation:`\nvalue often carries the U+3164 Hangul Filler disguise\ntrick; stripping the filler chars reveals the actual\n`.exe` payload path. The `Log date:` format is\nshared with Redline (`DD MMM YY HH:MM:SS`), reflecting\nthe same Russian-speaking developer ecosystem.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1113",
+      "name": "Screen Capture"
+    },
+    {
+      "id": "T1036",
+      "name": "Masquerading"
+    }
+  ],
+  "related_families": [
+    "redline",
+    "cs-daisy-cloud-stealer"
+  ],
+  "sources": [
+    "https://blog.sekoia.io/aurora-a-rising-stealer-flying-under-the-radar/",
+    "https://www.esentire.com/blog/esentire-threat-intelligence-malware-analysis-aurora-stealer",
+    "https://www.securityweek.com/multi-purpose-botnet-and-infostealer-aurora-rising-fame/",
+    "https://thehackernews.com/2022/11/researchers-warn-of-cyber-criminals.html",
+    "https://d01a.github.io/aurora-stealer-builder/"
+  ],
+  "observed_channels": [
+    "https://t.me/cheshire_aurora",
+    "https://t.me/aurora_botnet_support",
+    "https://t.me/UP_DAISYCLOUD"
+  ],
+  "variants": []
+}

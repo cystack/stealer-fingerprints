@@ -1,0 +1,109 @@
+=== SYSTEM INFORMATION ===
+
+cpu_cores: 12
+motherboard_info: Manufacturer  Product         SerialNumber     Version  
+
+JGINYUE       X99M-G D3/ARGB  <SERIAL>  V2.0     
+
+
+
+
+os_build: Microsoft Windows [Version 10.0.19045.6456]
+mac_addresses: <MAC>
+memory_slots: MaxCapacity  MemoryDevices  
+
+8388608      12             
+
+134217728    2              
+
+134217728    2              
+
+
+
+
+os_version: 19045        Microsoft Windows 10 Pro  64-bit          <HWID>  10.0.19045
+bios_info: Manufacturer              ReleaseDate                SerialNumber    Version           
+
+American Megatrends Inc.  <CARD>.000000+000  <SERIAL>  ALASKA - 1072009  
+
+
+
+
+last_boot_time: LastBootUpTime             
+
+<CARD>.500000+420  
+
+
+
+
+ram: 15.91 GB
+local_ips: <ip>(Preferred)
+public_ip: <IP>
+computer_name: <HOST>
+cpu: Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz
+ram_total: 15.91 GB
+gpu_info: AdapterRAM  DriverVersion  Name                       
+
+4293918720  32.0.15.6094   NVIDIA GeForce GTX 750 Ti  
+
+
+
+
+user_domain: <HOST>
+ram_modules: Capacity     Manufacturer  PartNumber        Speed  
+
+17179869184  Samsung       M393B2G70QH0-YK0  1600   
+
+
+
+
+os: Windows
+cpu_count: 24
+username: <USER>
+disk_info: InterfaceType  Model                         SerialNumber          Size          
+
+IDE            MCQUEST FALCON 256GB SATA3.0  <SERIAL>  256052966400  
+
+
+
+
+network_config_full: 
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : <HOST>
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : <ip>
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : <ip>
+   Description . . . . . . . . . . . : Realtek PCIe GbE Family Controller
+   Physical Address. . . . . . . . . : <MAC>
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   IPv6 Address. . . . . . . . . . . : <ip>(Preferred) 
+   Temporary IPv6 Address. . . . . . : <ip>(Preferred) 
+   Link-local IPv6 Address . . . . . : <IP><ip>%14(Preferred) 
+   IPv4 Address. . . . . . . . . . . : <ip>(Preferred) 
+   Subnet Mask . . . . . . . . . . . : <ip>
+   Lease Obtained. . . . . . . . . . : Monday, January 5, 2026 <ip> PM
+   Lease Expires . . . . . . . . . . : Tuesday, January 6, 2026 <ip> PM
+   Default Gateway . . . . . . . . . : <IP>%14
+                                       <ip>
+   DHCP Server . . . . . . . . . . . : <ip>
+   DHCPv6 IAID . . . . . . . . . . . : <HWID>
+   DHCPv6 Client DUID. . . . . . . . : <HWID>
+   DNS Servers . . . . . . . . . . . : <IP>%14
+                                       <ip>
+                                       <ip>
+                                       <IP>%14
+   Primary WINS Server . . . . . . . : <ip>
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+cpu_info: Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz
+computer_model: Manufacturer  Model  SystemType    
+
+JGINYUE              x64-based PC

@@ -10,12 +10,9 @@ trim_trailing_whitespace = true
 indent_style = space
 indent_size = 4
 
-[*.{json,yml,yaml,md,yar}]
+[*.{json,yml,yaml,md}]
 indent_style = space
 indent_size = 2
 
 [families/**/samples/**]
-trim_trailing_whitespace = false
-
-[unattributed/**/samples/**]
 trim_trailing_whitespace = false

@@ -1,0 +1,44 @@
+{
+  "id": "cs-minimal-geo-stealer",
+  "name": "CSMinimalGeoStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSMinimalGeoStealer is a CyStack-coined identifier for a flat\n5-line panel-summary `Information.txt` observed inside `22-23\nSEPTEMBER - 20373 LOGS2.part1.rar` Telegram aggregator packs.\nThe victim folder name is a random uppercase-alphanumeric ID\nplus a Python-style timestamp\n(`<32-CHAR-ID>_YYYY_MM_DDTHH_MM_SS_micros/`), pointing at a\nPython or Go builder that mints the folder from\n`datetime.utcnow().isoformat()` with punctuation swapped for\nunderscores.\n\nThe body has exactly five bare `Key: Value` lines:\n`Username:`, `IP Address:`, `Country Code:`, `OS Version:`,\n`Antivirus:`. No banner, no HWID, no hostname, no hardware\ninventory, no build tag, no timestamp inside the body.\nDistinguishing key spellings: `IP Address:` (two-word form,\nspace between IP and Address), `Country Code:` (two-word form\nwith capital-C `Code`, bare ISO 3166-1 alpha-2 value),\n`Antivirus:` (lowercase `v`), and `OS Version:` carrying the\nWMI `Win32_OperatingSystem.Caption` prefix (e.g. `Microsoft\nWindows 11 Pro`).\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this minimal layout. Public reporting\nand the community catalogues do not attest a family emitting\nexactly this 5-field shape with the specific key spellings\nabove. Candidates ruled out include Raven Stealer,\nSamsStealer, PupkinStealer, XillenStealer, Braodo, and\nBoryptGrab (all documented body shapes are richer or differ in\nfield-key spelling). Rename the family constant if a public\nwriteup later identifies the underlying builder.",
+  "aliases": [
+    "Flat 5-field Information.txt panel-summary",
+    "Bare Username/IPAddress/CountryCode/OSVersion/Antivirus panel"
+  ],
+  "typical_targets": [
+    "OS user name (bare token, no bracket or slash suffix)",
+    "Public IPv4 address",
+    "Country code (ISO 3166-1 alpha-2)",
+    "OS caption from WMI `Win32_OperatingSystem.Caption`",
+    "Installed antivirus product list"
+  ],
+  "detection_notes": "Fingerprint requires all five bare keys line-anchored\n(`Username:`, `IP Address:`, `Country Code:`, `OS\nVersion:`, `Antivirus:`) PLUS absence of every richer-body anchor (`HWID:`, `PC Name:`, `User Name:` two-word\nform, `Computer Name:`, `Build:`, `Build ID:`,\n`Hostname:`, CamelCase `AntiVirus:`). During triage, the\nbody carries no cred count, hardware inventory, or\ntimestamp, so the IOC only pins victim identity, geo,\nOS, and installed AV. The folder-name Python-timestamp\nshape (`<ID>_YYYY_MM_DDTHH_MM_SS_micros`) is a useful\nsecondary signal but is not part of the parser\nfingerprint (parsers dispatch on content only).",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1518.001",
+      "name": "Security Software Discovery"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-bare-username-av-stealer",
+    "cs-bare-version-stealer",
+    "minimal-stealer"
+  ],
+  "sources": [],
+  "variants": []
+}

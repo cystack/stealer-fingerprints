@@ -1,0 +1,86 @@
+{
+  "id": "cs-dash-plus-sep-stealer",
+  "name": "CSDashPlusSepStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSDashPlusSepStealer is a CyStack-coined identifier for an\n11-stanza `Information.txt` panel summary that the `@BRADLOGS\n/ BRADMAX` aggregator distributes inside `!! 2025\nNOV.part001.rar` packs. Per-victim folders follow the\n`[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/Information.txt` layout.\nEvery value is written on its own line, padded with blank\nlines on both sides, and a `---+---+---+---+---+---+---`\ndash-plus rule separates the panel-summary block from a\nthree-line trailing block of opaque Facebook-Ads-Manager\nartefacts.\n\nThe panel-summary block carries `country : City-Region-CC`\nwith a space before the colon, an `ID :` value shaped like a\n15-digit Facebook user ID, a bare\n`Windows-<major>-<release>-<build>-SP0` line in the Python\n`platform.platform()` shape, a `Username:` line, and a\npipe-separated `CK: <n> | Card: <n>` count line. The trailing\nblock ships three values: a short alpha token, an integer, and\na `T-` prefixed 18-digit number (likely Facebook page\ninitials, page-likes count, and ad-account ID, though the\nschema has no slot for these so they are dropped at parse\ntime). Family attribution is provisional pending a published\nthreat-intel mapping for this layout. The closest documented\nrelatives are NodeStealer and SYS01, both Facebook-targeting\nfamilies, but neither publishes a sample log showing this\nexact label set or the `---+---+---` rule.",
+  "aliases": [
+    "BRADMAX dash-plus separator panel summary",
+    "@BRADLOGS Facebook-ID panel summary"
+  ],
+  "typical_targets": [
+    "Browser cookies (count flag only)",
+    "Credit cards (count flag only)",
+    "Facebook user ID",
+    "Facebook Ad account ID (T-prefixed)",
+    "Host OS via Python `platform.platform()` output",
+    "Windows username",
+    "Victim country (ISO 3166-1 alpha-2)"
+  ],
+  "detection_notes": "Fingerprint requires the `---+---+---+---+---+---+---`\ndash-plus rule AND `country :` (with space before the colon)\nAND `CK:` AND `| Card:`. Four anchors together cannot collide\nwith any other registered parser. During triage, treat the\nfamily attribution as unknown: the panel summary is the\nmetadata view of an underlying stealer whose canonical name\nhas not been mapped to this layout in any public reporting.\nThe Facebook user ID plus T-prefixed ad-account ID strongly\nsuggest a Facebook-business-account targeting family in the\nNodeStealer / SYS01 / Album-Stealer lineage, but no public\nsource confirms the mapping.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-facebook-profile-stealer",
+    "cs-py-host-time-stealer",
+    "cs-count-runs-stealer"
+  ],
+  "sources": [],
+  "related_external": [
+    "nodestealer",
+    "sys01-stealer"
+  ],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": [
+    {
+      "id": "v_229be1e07e9e623014faf573e5ca36b7",
+      "parser": "logmine.ioc.parsers.cs_dash_plus_sep_stealer.CSDashPlusSepStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": "BRADMAX",
+      "distribution_channel": "@BRADLOGS",
+      "attribution_confidence": "unknown",
+      "markers": [
+        "---+---+---+---+---+---+---",
+        "| Card:"
+      ],
+      "fields": [
+        "CK",
+        "country",
+        "ID",
+        "Username"
+      ],
+      "observations": 120,
+      "sample": {
+        "path": "samples/v_229be1e07e9e623014faf573e5ca36b7/sample.txt",
+        "sha256": "a73abf8cf6019727813bc41124b5ddb46d42519fba783916f286eb99aeb0ae42",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "rich-summary-tail"
+    }
+  ]
+}

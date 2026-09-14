@@ -1,0 +1,51 @@
+PDRstealer
+                               Code by @saved_messenges
+[User Info]
+User: <USER>
+Machine: <HOST>
+Now: 2026-05-06 <ip>
+Input ISO: ja
+Hwid: <HWID>
+Clipboard: <SECRET>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Network]
+External IP: <IP>
+Internal IP: <ip>
+Default Gateway: <ip>
+
+[System]
+OS Product: Windows 10 Pro 2009
+OS Build: 22621
+OS Arch: x64
+CPU Name: Intel(R) Celeron(R) CPU N3350 @ 1.10GHz
+Logical Cores: 2
+RAM Total (MB): 5992
+RAM Available (MB): 2375
+
+[Drives]
+C: Fixed FS:NTFS Size:57GB Free:0GB
+
+[GPU]
+Intel(R) HD Graphics 500
+
+[Basic]
+User Domain: <HOST>
+CLR Version: 4.0.30319.42000

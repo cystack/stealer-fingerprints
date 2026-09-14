@@ -1,0 +1,47 @@
+{
+  "id": "cs-data-monk-stealer",
+  "name": "CSDataMonkStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSDataMonkStealer is a CyStack-coined identifier for a shared\n`#BUY NOW: TG <buyer> -- <admin>` `SystemInfo.txt` panel\nobserved inside `@ft7links-mix-<TS>-<COUNT>pcs` aggregator\npacks. The panel is a builder that multiple Telegram resellers\ndistribute under their own buyer / admin handles - the body\nshape is identical, only the banner-line handles differ. Two\ndistributors observed so far: `@DataMonk_file` /\n`@DataMonk_Admin` (per-victim `Telegram @Datamonk_file -\n{<id>}/` subfolder) and `@SunCloudNew` / `@MrSun00` (flat\n`@ft7links_mix_<NN>_bogonip_<NN>/SystemInfo.txt` layout, no\nper-victim Telegram-handle subfolder).\n\nThe panel emits a leading `#BUY NOW` banner with paired buyer\n/ admin contacts, then a single mixed-case `=== System\nInformation ===` block of bare `Key: Value` lines terminated\nby a 26-character equals-sign rule. The 13-key field set\ncovers Build, IP, HWID, System Language, Processor, CPU Cores,\nCPU Threads, GPU, OS, OS Version, Computer Name, Total RAM,\nand Drives. The mixed-case header distinguishes this format\nfrom `PCInfoStealer`, which uses the uppercase `=== SYSTEM\nINFORMATION ===` form. The `Build: test_00` literal recurs\nacross distributors, suggesting an early or test-phase\nbuilder.\n\nFamily attribution is provisional: the panel is undocumented\nin public reporting, and is also absent from the community\nstealer-format catalogues. The family name keeps the\niteration-#7 `CSDataMonkStealer` literal for backward\ncompatibility with previously emitted IOCs even though the\npanel is shared. Rename when a public writeup identifies the\nunderlying builder.",
+  "aliases": [
+    "@DataMonk_file",
+    "@SunCloudNew",
+    "DataMonk"
+  ],
+  "typical_targets": [
+    "Browser saved credentials and cookies",
+    "System hardware and locale fingerprint",
+    "Discord token folder (per the @DataMonk_file Application/Discord layout)"
+  ],
+  "detection_notes": "The `#BUY NOW: TG @` panel banner plus the mixed-case\n`=== System Information ===` header is the cleanest\nfingerprint pair. PCInfoStealer uses the uppercase\nheader variant and emits `PC Username:` / `PC Name:` keys\ninstead of `Computer Name:`, so the two parsers do not\ncollide. The `Build:` value (`test_00` in surveyed\nsamples) suggests an early or test-phase builder; later\nproduction samples may emit a different value. The\nbanner-line handles vary by distributor, so triage based\non the channel handles in the banner rather than\nassuming a single source.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/DataMonk_file",
+    "https://t.me/SunCloudNew"
+  ],
+  "variants": []
+}

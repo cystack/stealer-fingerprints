@@ -1,0 +1,77 @@
+{
+  "id": "cs-tagged-info-stealer",
+  "name": "CSTaggedInfoStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSTaggedInfoStealer is a CyStack-coined identifier for a\nsectioned ``Information.txt`` panel observed inside the\n``17-20 AUGUST - 23791 LOGS.part01.rar`` aggregator pack. The\npanel uses ``- IP Info -`` / ``- PC Info -`` / ``- Other Info\n-`` / ``- Log Info -`` dash-bordered section headers, a\nRedline-derivative body vocabulary (``FileLocation:``,\n``Current Language:``, ``Is Elevated:``, ``HWID:`` in\n22-character alphanumeric shape), Cthulhu-derived geo fields\n(``Postal:``, ``ISP:`` with trailing ``- A<ASN>`` autonomous\nsystem suffix), and a distinctive credential-categorization\nblock: ``Tags Passwords:`` with comma-separated category tags\n(SOCIAL, CRYPTO, SENSITIVE), ``Tagged URLs:``, and ``Tagged\nCookies:``.\n\nThe sectioned layout plus the tag-category block are\nunattested in public reporting and community catalogues. The\ncategorization scheme resembles StealC panel-side markers\ndescribed in public ACR Stealer research, but the log-side\noutput shape does not match StealC's canonical ``Network\nInfo:`` + ``System Summary:`` layout. Family attribution is\nprovisional pending a published mapping.",
+  "aliases": [
+    "Dash-section Info-tagged stealer",
+    "- IP Info - / - PC Info - sectioned Information.txt"
+  ],
+  "typical_targets": [
+    "Browser passwords with SOCIAL / CRYPTO / SENSITIVE\ncategory tags",
+    "Browser cookies with per-URL / per-cookie tag lists",
+    "File grabs, wallets, credit cards, FTP/SSH credentials,\nand Discord tokens (per-count summary)",
+    "Host fingerprint (CPU, GPU with embedded resolution,\nHWID, OS, current language, admin flag)",
+    "Geo enrichment (IP, country, city, postal code, ISP\nwith autonomous system number, timezone offset)"
+  ],
+  "detection_notes": "Fingerprint requires four line-anchored anchors: ``- IP Info\n-``, ``- PC Info -``, ``- Log Info -``, and ``Tags\nPasswords:``. The dash-bordered section headers plus the\ncategorization key together are unique across the registry.\nDuring triage, correlate the sample with sibling LOGS-pack\nvariants (John Doe Project, Slurm Cloud) shipping in the same\narchive to identify shared operator infrastructure. The\nRedline-derivative body vocabulary means the underlying\nbuilder could be a Redline fork with an added categorization\npanel layer, but no published mapping confirms this.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-john-doe-project-stealer",
+    "cs-slurm-cloud-stealer"
+  ],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_d522c2ef9147f26c4d0f1a60ec97fcbd",
+      "parser": "logmine.ioc.parsers.cs_tagged_info_stealer.CSTaggedInfoStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "- IP Info -",
+        "- Log Info -",
+        "- PC Info -"
+      ],
+      "fields": [
+        "Tags Passwords"
+      ],
+      "observations": 30,
+      "sample": {
+        "path": "samples/v_d522c2ef9147f26c4d0f1a60ec97fcbd/sample.txt",
+        "sha256": "965cb66d0e3e1f37e871eb94de9df4ebc4aae708f37f253a9fe910aa72353d43",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

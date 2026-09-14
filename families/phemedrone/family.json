@@ -1,0 +1,76 @@
+{
+  "id": "phemedrone",
+  "name": "Phemedrone",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "Phemedrone Stealer is an open-source .NET info-stealer first\nsurfaced in August 2023 at\n`github.com/nullixx/Phemedrone-Stealer`. Public research\ndocumented its use in a CVE-2023-36025 Windows SmartScreen\nbypass campaign in January 2024, with detailed technical\nanalyses following. Public malware databases track the family\nunder `win.phemedrone_stealer` and list Ov3r_Stealer as an\nalias. Forks include VGS Stealer and its successor Arcane\n(publicly documented in March 2025).\n\nThe on-victim panel is a plain-text `Information.txt` with\nthree dashed-section headers spelled `----- Geolocation Data\n-----`, `----- Hardware Info -----`, and `----- Miscellaneous\n-----`. Fields under each header use a column-aligned `Key:`\nplus multi-space plus value shape. The Geolocation block ships\nIP, Country (name plus alpha-2 code), City, Postal, and MAC.\nThe Hardware block ships Username (as `<user>\\<hostname>`, the\nreverse of the Windows `USERDOMAIN\\USER` order), Windows name,\nHardware ID (32-hex MachineGuid hash), GPU, CPU, and RAM. The\nMiscellaneous block ships Antivirus products (comma-separated\nfrom the WMI SecurityCenter2 query), File Location (usually\n`C:\\Users\\<user>\\Downloads\\Build.exe`), and Clipboard text.\nTreat the Clipboard text field as unreliable for family\nattribution: it captures whatever was on the victim clipboard\nat exfil time, including coincidental strings that mention\nother stealers' names.",
+  "aliases": [
+    "Phemedrone Stealer",
+    "Ov3r_Stealer"
+  ],
+  "typical_targets": [
+    "Browser saved credentials, cookies, autofill, credit cards",
+    "Crypto wallet browser extensions and desktop clients",
+    "Discord, Telegram, Steam session data",
+    "Filezilla / VPN / gaming client configs",
+    "Clipboard content at time of execution",
+    "System hardware and geolocation inventory"
+  ],
+  "detection_notes": "Fingerprint requires all three dashed section headers\n(`----- Geolocation Data -----`,\n`----- Hardware Info -----`,\n`----- Miscellaneous -----`) line-anchored. The triple\nanchor is unique to Phemedrone across the registry: Arcane\nuses triple-dash `---User Info---` / `---Full Pc Info---`\nwith no spaces around the section name, and every bracket-section canonical parser (Aura, Vidar) uses `[Section]`\nsquare brackets. During triage, cross-check the folder for\na `moi.jpg` selfie screenshot (the folder-level detector\nanchor for Phemedrone) and a `passwords.txt` opening with\n`PASSWORDS FROM: <browser path>` header (the content-only\nfallback). Clipboard content in the Miscellaneous block\nsometimes carries other stealers' banners as unrelated\nstrings the victim happened to copy; do not use that field\nto reassign family attribution.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1518.001",
+      "name": "Security Software Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1115",
+      "name": "Clipboard Data"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    }
+  ],
+  "related_families": [
+    "arcane"
+  ],
+  "sources": [
+    "https://www.trendmicro.com/en_us/research/24/a/cve-2023-36025-exploited-for-defense-evasion-in-phemedrone-steal.html",
+    "https://www.splunk.com/en_us/blog/security/unveiling-phemedrone-stealer-threat-analysis-and-detections.html",
+    "https://spycloud.com/blog/phemedrone-stealer/",
+    "https://malpedia.caad.fkie.fraunhofer.de/details/win.phemedrone_stealer",
+    "https://github.com/MalBeacon/what-is-this-stealer"
+  ],
+  "related_external": [
+    "vgs-stealer"
+  ],
+  "variants": []
+}

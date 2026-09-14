@@ -1,0 +1,51 @@
+{
+  "id": "cs-essential-mac-stealer",
+  "name": "CSEssentialMacStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSEssentialMacStealer is a CyStack-coined identifier for a\nmacOS stealer that self-identifies with the first-line banner\n``Essential macOS Stealer``. The file is a\n``UserInformation.txt`` with a compact preamble (``Build:``\nper-build identifier plus captured ``Username:`` /\n``Password:`` login credentials plus ``IP Address:``) followed\nby three ``system_profiler`` section blocks: ``Software:``,\n``Hardware:``, and ``Graphics/Displays:``. Each block wraps\nverbatim output from the corresponding ``system_profiler``\ndata type with the nested 4-6 space indentation preserved.\n\nThe body shape is structurally identical to Phexia macOS\nStealer per public writeups, and a published interview with\nthe Phexia developer confirms that Phexia is one of multiple\nforks of the shared Mac.c stealer module. ``Essential`` may be\nanother Mac.c fork or a rebrand of one of the documented\nsiblings, but public reporting does not document this specific\nbanner. Family attribution is provisional pending a published\nthreat-intel writeup for the ``Essential macOS Stealer``\nbanner.",
+  "aliases": [
+    "Essential macOS Stealer",
+    "Mac.c-fork-shape stealer with Essential banner"
+  ],
+  "typical_targets": [
+    "macOS login credentials (captured directly in the\n``Username:`` / ``Password:`` preamble pair)",
+    "Host hardware and OS fingerprint (Mac model, chip, RAM,\ndisplay, Hardware UUID, Provisioning UDID, system\nfirmware)",
+    "Account identity (login name, display name, computer\nname)"
+  ],
+  "detection_notes": "Fingerprint requires the literal ``Essential macOS\nStealer`` first-line banner substring. The banner is\nthe family self-identification and is unique across\nthe registry; sibling macOS-stealer banners\n(``Phexia macOS Stealer`` / ``MacSync Stealer`` /\n``SHub Stealer`` / ``mac.c macOS Stealer``) are all\nmutually exclusive substrings so no collision is\npossible. During triage, treat the captured\n``Password:`` line as high-value: the stealer records\nthe victim's macOS login password in cleartext,\nso credential rotation on the affected account is\npriority-one during incident response. Companion\nfiles in the victim folder (keychain dumps, browser\nexports, wallet artifacts) will typically be present\nunder standard Phexia-shape filenames.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    }
+  ],
+  "related_families": [
+    "phexia",
+    "mac-sync",
+    "amos-stealer",
+    "cthulhu-stealer",
+    "s-hub-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/Bugatti_Cloud"
+  ],
+  "variants": []
+}

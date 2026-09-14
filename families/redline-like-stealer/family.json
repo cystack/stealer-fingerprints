@@ -1,0 +1,195 @@
+{
+  "id": "redline-like-stealer",
+  "name": "RedlineLike Stealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "RedLine extended-block log variants. UserInformation.txt files\nemitting the canonical Redline `Operation System:` typo together\nwith the panel's identity, locale, and hardware fields. Several\nTelegram-based affiliate channels rebrand the same RedLine builder\nwith custom banners (DARKSIDE, ZAPLINE, and similar) while keeping\nthe underlying field layout intact.",
+  "aliases": [
+    "redline",
+    "redline-extended"
+  ],
+  "typical_targets": [
+    "Browser saved credentials (Chromium and Gecko families)",
+    "Browser cookies and session storage",
+    "Crypto-wallet desktop clients",
+    "FTP and SSH client configs",
+    "Discord and Telegram session tokens"
+  ],
+  "detection_notes": "Confidence triggers, in increasing order of certainty:\n\n1. Plain `Operation System:` field (note the typo) is suggestive\n   but matches several stripped-down clones.\n2. `Operation System:` plus the channel banner (e.g.\n   `===DARKSIDE_BRAND_BEGIN===`) is high-confidence RedLine.\n3. `Operation System:` plus `Admin Group:` plus `Integrity:` is\n   the unambiguous RedLine extended-block form.\n\nPair with browser-credential file paths (`Login Data`,\n`formhistory.sqlite`) and Discord token grabber output to confirm\nin incident-response triage.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1119",
+      "name": "Automated Collection"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "vidar",
+    "meta-stealer"
+  ],
+  "sources": [
+    "https://www.esentire.com/blog/esentire-threat-intelligence-malware-analysis-redline-stealer",
+    "https://github.com/MalBeacon/what-is-this-stealer"
+  ],
+  "variants": [
+    {
+      "id": "v_125ec6057adbaa522bbf048fc48b7d70",
+      "parser": "logmine.ioc.parsers.redline_like_stealer.RedlineLikeStealerParser",
+      "filenames": [
+        "System.txt",
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [],
+      "fields": [
+        "Admin Group",
+        "Integrity",
+        "Operation System"
+      ],
+      "observations": 1051645,
+      "sample": {
+        "path": "samples/v_125ec6057adbaa522bbf048fc48b7d70/sample.txt",
+        "sha256": "0c23e734c4beaea3857bd74bc9ee56ca5676fb46a0e1fd28973e2aabc2554089",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "admin-integrity"
+    },
+    {
+      "id": "v_50755367b700d888261fea40fa9979b1",
+      "parser": "logmine.ioc.parsers.redline_like_stealer.RedlineLikeStealerParser",
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [],
+      "fields": [
+        "Operation System",
+        "Version Build"
+      ],
+      "observations": 10983,
+      "sample": {
+        "path": "samples/v_50755367b700d888261fea40fa9979b1/sample.txt",
+        "sha256": "14f0bd0b8bf0e9f4aacaefb33a9753a23d408ef4dbf2825046aa86ac86aca5b9",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "version-build"
+    },
+    {
+      "id": "v_7402f6de631ebb7c2f7f67ddd2239751",
+      "parser": "logmine.ioc.parsers.redline_like_stealer.RedlineLikeStealerParser",
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [],
+      "fields": [
+        "Operation System",
+        "Traffic"
+      ],
+      "observations": 60,
+      "sample": {
+        "path": "samples/v_7402f6de631ebb7c2f7f67ddd2239751/sample.txt",
+        "sha256": "367d7e75ca36a07d0b2e0c285706115a4720129902d03cd2d9ea641c75e97280",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "traffic"
+    },
+    {
+      "id": "v_925a2717759e113f55e4f8f24d7c663e",
+      "parser": "logmine.ioc.parsers.redline_like_stealer.RedlineLikeStealerParser",
+      "filenames": [
+        "System.txt",
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [],
+      "fields": [
+        "BUILD NAME",
+        "Operation System"
+      ],
+      "observations": 472,
+      "sample": {
+        "path": "samples/v_925a2717759e113f55e4f8f24d7c663e/sample.txt",
+        "sha256": "e8384435491e41ac7da69640dd2f8ea8bcde5708af6647fc8e149dd5e2f5b0a9",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "build-name"
+    },
+    {
+      "id": "v_f363fc0487965dea97d62674baf20c0b",
+      "parser": "logmine.ioc.parsers.redline_like_stealer.RedlineLikeStealerParser",
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [],
+      "fields": [
+        "Domain Name",
+        "Graphics card",
+        "Installed RAM",
+        "Operation System"
+      ],
+      "observations": 9,
+      "sample": {
+        "path": "samples/v_f363fc0487965dea97d62674baf20c0b/sample.txt",
+        "sha256": "cbc799cc324ecf72378a38d4e9b6a6e77a23e0d9a82c241b36dd889fb24c584f",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "installed-ram-graphics-domain"
+    },
+    {
+      "id": "v_fa7e14df9895c745ed45712a8b2db115",
+      "parser": "logmine.ioc.parsers.redline_like_stealer.RedlineLikeStealerParser",
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [],
+      "fields": [
+        "Display Resolution",
+        "Keyboard Language",
+        "UserLanguage"
+      ],
+      "observations": 6,
+      "sample": {
+        "path": "samples/v_fa7e14df9895c745ed45712a8b2db115/sample.txt",
+        "sha256": "a3a2bf799f01d2ad1f867457a82662167d41c8b020d0e3580b0c9d4a904a70fa",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "user-keyboard-display"
+    }
+  ]
+}

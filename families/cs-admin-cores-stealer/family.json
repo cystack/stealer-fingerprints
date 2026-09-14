@@ -1,0 +1,72 @@
+{
+  "id": "cs-admin-cores-stealer",
+  "name": "CSAdminCoresStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSAdminCoresStealer is a CyStack-coined identifier for a\n9-field bare-key `System.txt` panel observed inside `!! 2025\nDEC.part01.rar` aggregator packs at\n`<id>_<CC>_<IPv4>_<DD-MM-YY>/System.txt` victim folders. The\nbody is a flat key-value block with uppercase plural-noun\nkeys (`USERNAME`, `CORES`, `ADMIN`) and no banner, no section\ndividers, no trailing footer.\n\nThe `LID:` line carries an affiliate-style `<name>-<8-hex>`\nvalue (e.g. `TINY-47F174B7`) that mirrors Lumma Stealer's\npre-March-2025 LID convention documented in public\naffiliate-side writeups. The body shape diverges sharply from\ncanonical Lumma's verbose `- Key: Value` dash-prefix format,\nso family attribution stays CyStack-coined pending a published\nconfirmation: the LID format could be a coincidence (multiple\nstealers may use this name) or a Lumma fork with a radically\nreshaped panel template.\n\nThe `CPU:` value can carry virtualization markers (the\nobserved sample reads `AMD EPYC Processor (with IBPB)`, where\n`IBPB` is the Spectre-v2 mitigation flag QEMU / KVM exposes in\nthe guest CPU model name). The `IP:` value falls back to\n`127.0.0.1` when no external IPv4 is available at exfil time.\n\nPublic reporting and the community stealer-format catalogues\ndo not document a family that emits this 9-field bare-key\nuppercase-noun layout.",
+  "aliases": [
+    "TINY-affiliate Lumma-like minimal System.txt",
+    "Bare-key ADMIN/CORES panel"
+  ],
+  "typical_targets": [
+    "Browser-saved credentials (the panel itself ships only\nsystem info; harvested credentials live in sibling files)",
+    "Victim hostname / username",
+    "Hardware fingerprint (HWID, OS, CPU model, RAM, core count)",
+    "Privilege state (`ADMIN: Yes/No` flag)",
+    "Affiliate / campaign identifier (`LID: <name>-<hex>`)"
+  ],
+  "detection_notes": "Fingerprint requires line-anchored `LID:` AND `CORES:`\nAND `ADMIN:` keys plus a `LID:` value matching the\n`<name>-<hex>` affiliate-style format. The combination is\nunique across the registry: canonical Lumma uses `- LID:`\nwith a leading dash (claimed by `LummaParser`), and no\nother registered parser uses bare `CORES:` or `ADMIN:`\nuppercase keys. During triage, treat the `LID:` value as\nan operator affiliate / campaign identifier (parsable as\ntwo fields: name plus hex) so logs from the same\ndistribution channel cluster naturally. The `127.0.0.1`\nIP fallback marks the victim as either an offline\nmachine at exfil time or a sandbox; downstream consumers\ncan filter on the loopback range.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1057",
+      "name": "Process Discovery"
+    },
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    }
+  ],
+  "related_families": [
+    "lumma",
+    "csal-stealer",
+    "cs-baba-stealer"
+  ],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_b3b65e6d11f16cf0d060e57cd36b1d44",
+      "parser": "logmine.ioc.parsers.cs_admin_cores_stealer.CSAdminCoresStealerParser",
+      "filenames": [
+        "System.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [],
+      "fields": [
+        "ADMIN",
+        "CORES",
+        "LID"
+      ],
+      "observations": 5,
+      "sample": {
+        "path": "samples/v_b3b65e6d11f16cf0d060e57cd36b1d44/sample.txt",
+        "sha256": "7ae71f6a6b8431aac51ba766aedbc92c867e932699a66aa00f8b1afc2cf26c4c",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "cs-software-tail-stealer",
+  "name": "CSSoftwareTailStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSSoftwareTailStealer is a CyStack-coined identifier for a\nheavily-stripped `information.txt` panel tail distributed\nthrough the `@BRADLOGS / BRADMAX` Telegram channel inside `!!\n2025 NOV.part001.rar` packs at `[<TAG>]@BRADLOGS (BRADMAX)\n(<NN>)/information.txt` victim folders. The body opens with a\nbare `<exe>.exe` process list (no tab indent, no `[<PID>]`\nannotation), then the Vidar-canonical `[Software]` section\nmarker appears concatenated onto the last process entry as\n`<exe>.exe [Software]` rather than on its own line.\nVersioned-app entries follow in `<Name> - <Version>` form. No\nsystem info block, no IP / Country / Computer Name / HWID /\nLocal Time field survives.\n\nThe `[Software]` section header is Vidar-canonical per public\nVidar Stealer write-ups, but the heavily-stripped body carries\nno other Vidar fingerprint field (no `VideoCard:`, `Work\nDir:`, `Keyboard Languages:`, `Local Time:`, `Windows:` /\n`AV:` pair). Family attribution is provisional pending a\npublished threat-intel mapping for this layout. The structural\nsimilarity to Vidar is suggestive but not sufficient to claim\nVidar directly: the BRADMAX aggregator resells multiple\nstealer families under a shared redistribution shell, and any\npanel that emits a Vidar-style section marker as the only\nsignal could come from a Vidar fork or an unrelated builder.",
+  "aliases": [
+    "BRADMAX heavily-stripped information.txt tail",
+    "Bare-exe + `[Software]` marker labeling artifact"
+  ],
+  "typical_targets": [
+    "Running process names (no PIDs preserved)",
+    "Installed Windows applications with version strings"
+  ],
+  "detection_notes": "Fingerprint requires the `[Software]` substring AND 5+\nbare `<exe>.exe` lines (line-anchored, no tab indent, no\n`[<PID>]` bracket) AND 3+ `<Name> - <Version>` versioned-app lines. The three-anchor combination cannot collide\nwith canonical Vidar / StealC / Aura or the user-info bracket\nprofile because each claims via its own structural anchors\nanchors before this fallback runs. During triage, treat\nthis label as a \"victim infected but system-info\ntruncated\" marker: the IOC carries no extractable\nvictim or device fields, only the family literal and\ndistribution metadata. The underlying stealer family is\nunknown; the Vidar-canonical `[Software]` section marker\nsuggests but does not confirm Vidar lineage.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1057",
+      "name": "Process Discovery"
+    }
+  ],
+  "related_families": [
+    "vidar",
+    "cs-passwords-not-found-stub",
+    "cs-facebook-market-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": [
+    {
+      "id": "v_6923df9abcd89eb0b9f2e37b9e74a64d",
+      "parser": "logmine.ioc.parsers.cs_software_tail_stealer.CSSoftwareTailStealerParser",
+      "filenames": [
+        "_Information.txt",
+        "information.txt",
+        "system.txt",
+        "system_info.txt"
+      ],
+      "panel_brand": "BRADMAX",
+      "distribution_channel": "@BRADLOGS",
+      "attribution_confidence": "unknown",
+      "markers": [
+        "[Software]",
+        "Microsoft Visual C++"
+      ],
+      "fields": [],
+      "observations": 301,
+      "sample": {
+        "path": "samples/v_6923df9abcd89eb0b9f2e37b9e74a64d/sample.txt",
+        "sha256": "0d74054a5b0903cd3288dad368cbdf7771c9675934070d6a26a0f04ddf2c0b2b",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "process-software"
+    }
+  ]
+}

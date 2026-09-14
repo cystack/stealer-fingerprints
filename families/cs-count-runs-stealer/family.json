@@ -1,0 +1,75 @@
+{
+  "id": "cs-count-runs-stealer",
+  "name": "CSCountRunsStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSCountRunsStealer is a CyStack-coined identifier for an\n11-line `Information.txt` panel summary framed by U+2500\nheavy box-drawing characters and split into two captioned\nsections, `SYSTEM INFORMATION` and `EXTRACTION RESULTS`.\nObserved inside `!! 2025 NOV.part001.rar` aggregator packs\nin `[<TAG>]<IP>/Information.txt` victim folders (e.g.\n`[AK]<IPv4>/Information.txt`), distributed through the\n`@BRADLOGS` Telegram aggregator that resells multiple\nunderlying stealer families.\n\nThe SYSTEM INFORMATION block ships five fields: a combined\n`Location: City, Country (ISP)` line (consumer-grade IP\ngeolocation API shape), `Device:` hostname, `OS:` in\n`Windows <major>.<minor> (Build <build>)` form, `IP:`, and\na `Time:` value in the JS `toLocaleString` shape\n`MM/DD/YYYY, HH:MM:SS (UTC[+-]HH:MM)`. The EXTRACTION\nRESULTS block ships five count fields: `Cookies:`,\n`Passwords:`, `Facebook:`, `CC with CVC:` (the awkward\n`with CVC` phrasing for credit-card-with-CVV), and\n`Count Runs:` (an execution counter likely incremented\nacross repeated runs on the same victim). Family\nattribution is provisional pending a published threat-intel mapping for this caption format. The closest\ndocumented relative is Phemedrone, which also writes a\nper-victim `Information.txt` summary but uses dashed\nsection captions (`----- Geolocation Data -----` /\n`----- Hardware Info -----`) and a different field set.",
+  "aliases": [
+    "BRADMAX aggregator box-drawing panel summary",
+    "!! 2025 NOV.part001 EXTRACTION RESULTS panel"
+  ],
+  "typical_targets": [
+    "Browser cookies (count flag plus harvested body in sibling files)",
+    "Browser saved credentials (count flag plus body)",
+    "Credit cards with CVC (count flag)",
+    "Facebook sessions (count flag)",
+    "Host metadata: hostname, OS version with build",
+    "Victim public IP plus city / country / ISP enrichment"
+  ],
+  "detection_notes": "Fingerprint requires the `EXTRACTION RESULTS` mid-frame\ncaption AND the `Count Runs:` field key AND a U+2503 `┃` heavy\nvertical bar. The `Count Runs:` field name is unique across\nthe registry, and the box-drawing frame rejects any free-form\nreport that happens to mention the two captions. During\ntriage, treat the family attribution as unknown: the panel\nsummary is the metadata view of an underlying stealer whose\ncanonical name has not been mapped to this caption layout in\nany public reporting. The `Facebook:` and `CC with CVC:` count\nfields suggest the underlying stealer prioritises\nsocial-account session theft alongside browser credential\nharvesting.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "phemedrone",
+    "cs-py-host-time-stealer",
+    "cs-emoji-info-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": [
+    {
+      "id": "v_e5b07600b730bdb57cd9363fc77e23db",
+      "parser": "logmine.ioc.parsers.cs_count_runs_stealer.CSCountRunsStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": "@BRADLOGS",
+      "attribution_confidence": "unknown",
+      "markers": [
+        "Count Runs:",
+        "EXTRACTION RESULTS"
+      ],
+      "fields": [],
+      "observations": 97,
+      "sample": {
+        "path": "samples/v_e5b07600b730bdb57cd9363fc77e23db/sample.txt",
+        "sha256": "311b49be46062d3264464794a1e7ff623313f365a9656639596a354846eab194",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

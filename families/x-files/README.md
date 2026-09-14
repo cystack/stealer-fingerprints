@@ -1,136 +1,101 @@
 # XFiles
 
-**Known malware family · high attribution confidence**
+X-FILES (XFiles / DeerStealer) is a long-running C#-written
+infostealer first observed on Russian hacker forums in March
+2021. Later evolutions (2024+) are sold under the rebranded name
+DeerStealer by the same actor on dark-web forums and Telegram
+with a tiered subscription model. Targets Chromium and Gecko
+browsers, 80+ browser-based crypto wallet extensions, plus
+VPN, FTP, RDP, and messenger client data.
 
-## At a glance
+## Research status
 
-- Aliases: <code>X-FILES</code>, <code>X-Files Stealer</code>
-- Typical filenames: <code>information.txt</code>, <code>system.txt</code>
-- Published formats: 1
-- Representative samples: 2
+- Classification: **Known malware family**
+- Attribution confidence: **high**
+- Aliases: `X-FILES`, `DeerStealer`, `X-Files Stealer`
+- Variants observed: **2**
+- Historical Logmine records represented: **74,339**
 
-<p>X-FILES exports <code>information.txt</code>, <code>system.txt</code>, or both. Distinctive fields include <code>Operation ID</code>, <code>Hardware ID</code>, <code>CPU (Processor)</code>, <code>GPU (Display Devices)</code>, and <code>Desktop screenshot taken</code>. Some public reporting describes DeerStealer as a rewritten or evolved XFiles line; this catalog keeps it out of the alias list pending stronger format-level equivalence.</p>
+## What it targets
 
-## How to recognize it
+- Browser saved credentials and cookies (Chromium and Gecko)
+- 80+ browser-based crypto wallet extensions
+- Crypto wallet desktop clients
+- VPN, FTP, RDP client configs
+- Messenger session data (Telegram, Discord, Steam)
 
-- No stable text banner is known; combine filename and field layout.
-- Recurring fields: <code>computer name</code>, <code>country</code>, <code>cpu (processor)</code>, <code>desktop screenshot taken</code>, <code>gpu (display devices)</code>, <code>hardware id</code>, <code>ip</code>, <code>operating system</code>, <code>operation id</code>, <code>ram (memory)</code>
+## Detection notes
 
-## Formats
+XFiles `Information.txt` carries the panel banner together with
+victim hardware and locale fields. Older 2021-2022 variants and
+the rebranded 2024+ DeerStealer share the same field set so the
+family rule covers both eras. An aggregator-stripped variant
+redistributed via the Cloud WLFR project (`t.me/WichLoveFromR`,
+`linktr.ee/WLFRcloud`, support `@AltairSupport`) drops the
+`Operation ID:` panel-run identifier but keeps the rest of the
+XFiles-canonical field set; the parser fingerprint covers both
+shapes.
 
-| Format | Evidence | Fingerprint |
-|---|---|---|
-| information.txt - computer name / country | 10 fields, filename | [`fp_71e4879e79d5ec111750b46f414e04d6`](fingerprints/fp_71e4879e79d5ec111750b46f414e04d6.json) |
+## Observed log variants
 
-## Representative sample
+### `v_696f8d4a627ea995706ebfc9ab448d36`
 
-Some files below intentionally share the same sanitized body under different malware-visible names. They document filename variants, not independent payload observations.
+- Parser: `logmine.ioc.parsers.xfiles.XFilesStealerParser`
+- Observed filenames: `System.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `hardware-id-gpu`
+- Historical records represented: **95**
+- Representative sample: [open sample](samples/v_696f8d4a627ea995706ebfc9ab448d36/sample.txt)
+- Sample SHA-256: `bdab8a2c2cbfd659c005dda07081848e8cd88ba461d8d89da08a0e66c41ba2f3`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-Observed text sample. Placeholders mark values removed from the original log.
+Recognition anchors:
 
-[<code>information.txt</code>](samples/information.txt)
+- Stable markers: -
+- Field labels: `Hardware ID`, `Processed parts`
 
-```text
-██╗  ██╗███████╗██╗██╗     ███████╗███████╗
-╚██╗██╔╝██╔════╝██║██║     ██╔════╝██╔════╝
- ╚███╔╝ █████╗  ██║██║     █████╗  ███████╗
- ██╔██╗ ██╔══╝  ██║██║     ██╔══╝  ╚════██║
-██╔╝ ██╗██║     ██║███████╗███████╗███████║
-╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝
-* Official Support Links
-* TOX ——————— C96EA8DFB780D9053728816F20901315F6284CB73B735559100696FB30B31364CE0AD357E634
-* Jabber ———— <email>
-* Links ————— [redacted-url]
+### `v_7b67103a472b833b8edbbdb65216dad0`
 
-===== ПОДБОР ПАРОЛЕЙ К КОШЕЛЬКАМ / CRYPTO BRUTE-FORCE EXPERT =====
+- Parser: `logmine.ioc.parsers.xfiles.XFilesStealerParser`
+- Observed filenames: `Information.txt`, `System.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `operation-id`
+- Historical records represented: **74,244**
+- Representative sample: [open sample](samples/v_7b67103a472b833b8edbbdb65216dad0/sample.txt)
+- Sample SHA-256: `c407b8a84f11600db4c293b9631173e61d5dee1801972cffe5438adb67b3f6de`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-- Brute-force (password cracking) for crypto wallets (MetaMask, Trust Wallet, cold wallets, and more). 70/30 %
+Recognition anchors:
 
-- 5 years of experience.
-
-- Using my own trained neural network for faster and more efficient password recovery.
-
-- Cold wallet processing with guaranteed confidentiality.
-
-- I take on wallets that others couldn’t crack.
-
-Telegram: @bcstg  [redacted-url]
-Jabber:   <email>
-
-=====================================
+- Stable markers: -
+- Field labels: `Operation ID`, `Processed parts`
 
 
-Operation ID: [redacted]
+## MITRE ATT&CK
 
-IP: [redacted]
-Country: HU (Hungary)
-Operating System: Windows 10
-Username: [redacted]
-Computer Name: [redacted]
-Hardware ID: [redacted]
-CPU (Processor): Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz
-GPU (Display Devices): Intel(R) HD Graphics 5500
-RAM (Memory): 1966.9375
-Screens: 1366x768
-Desktop Screenshot Taken: Yes
+| Technique | Name |
+|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| [T1119](https://attack.mitre.org/techniques/T1119/) | Automated Collection |
 
-Windows Processes [
-   System
-   Registry
-   smss.exe
-   csrss.exe
-   wininit.exe
-   services.exe
-   lsass.exe
-   svchost.exe
-   fontdrvhost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   atiesrxx.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   Memory Compression
-   svchost.exe
-   svchost.exe
-   igfxCUIService.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-   svchost.exe
-```
+## Related catalog profiles
 
-Preview shortened; open the sample file for the complete text.
+- None recorded.
 
-Other samples: [<code>system.txt</code>](samples/system.txt)
+## Sources
 
-## References
+- <https://www.zscaler.com/blogs/security-research/x-files-stealer-evolution-analysis-and-comparison-study>
+- <https://any.run/malware-trends/xfiles/>
+- <https://www.esentire.com/blog/dont-get-caught-in-the-headlights-deerstealer-analysis>
+- <https://cyberint.com/blog/research/xfiles-stealer-campaign-abusing-follina/>
+- <https://www.bleepingcomputer.com/news/security/xfiles-info-stealing-malware-adds-support-for-follina-delivery/>
 
-- [https://any.run/malware-trends/xfiles/](https://any.run/malware-trends/xfiles/)
-- [https://cyberint.com/blog/research/xfiles-stealer-campaign-abusing-follina/](https://cyberint.com/blog/research/xfiles-stealer-campaign-abusing-follina/)
-- [https://www.bleepingcomputer.com/news/security/xfiles-info-stealing-malware-adds-support-for-follina-delivery/](https://www.bleepingcomputer.com/news/security/xfiles-info-stealing-malware-adds-support-for-follina-delivery/)
-- [https://www.esentire.com/blog/dont-get-caught-in-the-headlights-deerstealer-analysis](https://www.esentire.com/blog/dont-get-caught-in-the-headlights-deerstealer-analysis)
-- [https://www.zscaler.com/blogs/security-research/x-files-stealer-evolution-analysis-and-comparison-study](https://www.zscaler.com/blogs/security-research/x-files-stealer-evolution-analysis-and-comparison-study)
-
-## Try it locally
-
-```console
-python identify.py "families/x-files/samples/information.txt"
-```
-
-The evidence score describes a structural comparison, not attribution certainty.
-
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+Machine-readable record: [family.json](family.json)

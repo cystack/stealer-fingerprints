@@ -1,0 +1,22 @@
+Thông tin hệ thống
+
+install_date: 1767274718
+ram_used_percent: 9
+product_name: Windows 10 Pro
+public_ip: <IP>
+timezone: SE Asia Standard Time
+cpu_count: 20
+mac_address: <MAC>
+username: <USER>
+ram_total: 63.84 GB
+screen_resolution: 1920x1080
+user_domain: <HOST>
+local_ip: <IP>
+system_language: 0409
+windows_version: 24H2
+hostname: <HOST>
+windows_build: 26100
+computer_name: <HOST>
+edition_id: Professional
+processor: 12th Gen Intel(R) Core(TM) i7-12700F
+ram_available: 57.73 GB

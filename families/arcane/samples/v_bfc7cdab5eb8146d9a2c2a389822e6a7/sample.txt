@@ -1,0 +1,109 @@
+---User Info---
+Date Install: 6/5/2025 <ip> PM
+ISO Key: ar
+Clipboard: <SECRET>
+---Full Pc Info---
+=== CPU Information ===
+MaxClockSpeed: 3401
+Name: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+NumberOfCores: 4
+=== GPU Information ===
+AdapterRAM: 4293918720
+Name: NVIDIA GeForce GT 730
+=== RAM Information ===
+Capacity: 4294967296
+Capacity: 8589934592
+Capacity: 4294967296
+=== Disk Information ===
+Model: Dahua C800 2.5 inch SATA 256GB SSD
+Size: 256052966400
+=== Network Adapter Information ===
+MACAddress: <MAC>
+Name: Intel(R) 82579LM Gigabit Network Connection
+MACAddress: <MAC>
+Name: WAN Miniport (IP)
+Speed:
+MACAddress: <MAC>
+Name: WAN Miniport (IPv6)
+Speed:
+MACAddress: <MAC>
+Name: WAN Miniport (Network Monitor)
+Speed:
+MACAddress: <MAC>
+Name: USB 802.11N Wireless USB Adapter
+Speed: 72000000
+MACAddress: <MAC>
+Name: TAP-Windows Adapter V9
+Speed: 100000000
+MACAddress: <MAC>
+Name: VirtualBox Host-Only Ethernet Adapter
+Speed: 1000000000
+=== Windows Version Information ===
+Caption: Microsoft Windows 10 Pro
+OSArchitecture: 64-bit
+Version: 10.0.19045
+Manufacturer: Dell Inc.
+Product: 0GY6Y8
+SerialNumber: <SERIAL>
+=== BIOS Information ===
+Manufacturer: Dell Inc.
+ReleaseDate: <CARD>.000000+000
+SMBIOSBIOSVersion: A16
+=== User Account Information ===
+FullName:
+Name: <USER>
+FullName:
+Name: <USER>
+FullName:
+Name: <USER>
+FullName:
+Name: <USER>
+FullName:
+Name: <USER>
+=== Battery Information ===
+=== USB Devices Information ===
+????????? ??????: Invalid query
+=== Sound Device Information ===
+Name: NVIDIA High Definition Audio
+Name: NVIDIA High Definition Audio
+Name: NVIDIA High Definition Audio
+Name: NVIDIA High Definition Audio
+Name: Realtek Audio
+Name: Krisp Audio
+=== Keyboard Information ===
+Name: Enhanced (101- or 102-key)
+Name: Enhanced (101- or 102-key)
+=== Pointing Device Information ===
+Name: USB Input Device
+=== System Enclosure Information ===
+ChassisTypes: System.UInt16[]
+Manufacturer: Dell Inc.
+=== Logical Disk Information ===
+DeviceID: <HWID>
+FileSystem: NTFS
+FreeSpace: 43352973312
+Size: 253268738048
+DeviceID: <HWID>
+FileSystem: NTFS
+FreeSpace: 2079457280
+Size: 2096099328
+=== Printer Information ===
+????????? ??????: Generic failure
+=== Time Zone Information ===
+Caption:
+=== Network Information ===
+Description: USB 802.11N Wireless USB Adapter
+IPEnabled: True
+MACAddress: <MAC>
+Description: VirtualBox Host-Only Ethernet Adapter
+IPEnabled: True
+MACAddress: <MAC>
+=== Screen Information ===
+1600x900
+=== AntiVirus Information ===
+displayName: <NAME>
+instanceGuid: {<HWID>}
+pathToSignedProductExe: windowsdefender://
+pathToSignedReportingExe: %ProgramFiles%\Windows Defender\MsMpeng.exe
+productState: 397568
+timestamp: Thu, 05 Jun 2025 <ip> GMT

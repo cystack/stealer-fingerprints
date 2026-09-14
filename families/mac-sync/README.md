@@ -1,108 +1,74 @@
 # MacSync
 
-**Known malware family · high attribution confidence**
+MacSync is a macOS-targeted infostealer first observed in
+November 2025 as a rebrand of the earlier Mac.c family. Its
+AppleScript payload writes an `Information.txt` file into the
+victim staging directory combining a malware self-identification
+banner, captured account credentials, and the verbatim output of
+`system_profiler`.
 
-## At a glance
+## Research status
 
-- Aliases: <code>Mac.c</code>, <code>MacSync Stealer</code>
-- Typical filenames: <code>information.txt</code>
-- Published formats: 1
-- Representative samples: 1
+- Classification: **Known malware family**
+- Attribution confidence: **high**
+- Aliases: `Mac.c`, `MacSync Stealer`
+- Variants observed: **1**
+- Historical Logmine records represented: **75,488**
 
-<p>MacSync <code>information.txt</code> starts with the literal <code>MacSync Stealer</code> banner, followed by <code>Build Tag</code>, <code>Hardware</code>, <code>Graphics/Displays</code>, <code>Software</code>, and <code>Password</code> sections.</p>
+## What it targets
 
-## How to recognize it
+- Browser saved credentials (Chrome, Safari, Firefox)
+- Crypto wallet desktop clients (Electrum, Exodus, etc.)
+- macOS Keychain entries
+- Telegram and Discord session data on macOS
+- System profile information for victim fingerprinting
 
-- Stable markers: <code>MacSync Stealer</code>
-- Recurring fields: <code>build tag</code>, <code>graphics/displays</code>, <code>hardware</code>, <code>password</code>, <code>software</code>
+## Detection notes
 
-## Formats
+The `Information.txt` containing both a banner and verbatim
+`system_profiler` output is unambiguous. Pair with macOS-specific
+field values (Apple silicon CPU strings, macOS version) to
+confirm.
 
-| Format | Evidence | Fingerprint |
-|---|---|---|
-| information.txt - MacSync Stealer | marker, 5 fields, filename | [`fp_52c2a7fe75372374992c61619f5d9f4d`](fingerprints/fp_52c2a7fe75372374992c61619f5d9f4d.json) |
+## Observed log variants
 
-## Representative sample
+### `v_8ded840da2979d9deb0176880e86b1e9`
 
-Observed text sample. Placeholders mark values removed from the original log.
+- Parser: `logmine.ioc.parsers.macsync.MacSyncParser`
+- Observed filenames: `Information.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Historical records represented: **75,488**
+- Representative sample: [open sample](samples/v_8ded840da2979d9deb0176880e86b1e9/sample.txt)
+- Sample SHA-256: `0aca96c813ce5d994169a53f223ccb8bf66b719140d69aeaf25abc113dcafbe0`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-[<code>information.txt</code>](samples/information.txt)
+Recognition anchors:
 
-```text
-MacSync Stealer
+- Stable markers: `MacSync Stealer`
+- Field labels: -
 
-Build Tag: tgsoc
-Version: 1.1.2_release (x64_86 & ARM)
-IP: [redacted]
 
-Username: [redacted]
-Password: [redacted]
+## MITRE ATT&CK
 
-Software:
+| Technique | Name |
+|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
+| [T1555.001](https://attack.mitre.org/techniques/T1555/001/) | Keychain |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
 
-    System Software Overview:
+## Related catalog profiles
 
-      System Version: macOS 15.3.1 (24D70)
-      Kernel Version: Darwin 24.3.0
-      Boot Volume: Macintosh HD
-      Boot Mode: Normal
-      Computer Name: [redacted]
-      User Name: [redacted]
-      Secure Virtual Memory: Enabled
-      System Integrity Protection: Enabled
-      Time since boot: 5 hours, 4 minutes
+- None recorded.
 
-Hardware:
+## Sources
 
-    Hardware Overview:
+- <https://www.cisecurity.org/insights/blog/macsync-stealer-campaign-impacting-us-sltt-macos-users>
+- <https://www.jamf.com/blog/macsync-stealer-evolution-code-signed-swift-malware-analysis/>
+- <https://moonlock.com/new-mac-stealer-spreading>
+- <https://malware.news/t/mentalpositive-s-new-macos-stealer-amos-repackaged-or-a-new-cyber-threat/96207>
 
-      Model Name: MacBook Air
-      Model Identifier: MacBookAir10,1
-      Model Number: MGNE3T/A
-      Chip: Apple M1
-      Total Number of Cores: 8 (4 performance and 4 efficiency)
-      Memory: 8 GB
-      System Firmware Version: 11881.81.4
-      OS Loader Version: 11881.81.4
-      Serial Number (system): [redacted]
-      Hardware UUID: [redacted-uuid]
-      Provisioning UDID: [redacted]
-      Activation Lock Status: Enabled
-
-Graphics/Displays:
-
-    Apple M1:
-
-      Chipset Model: Apple M1
-      Type: GPU
-      Bus: Built-In
-      Total Number of Cores: 8
-      Vendor: Apple (0x106b)
-      Metal Support: Metal 3
-      Displays:
-        Color LCD:
-          Display Type: Built-In Retina LCD
-          Resolution: 2560 x 1600 Retina
-          Main Display: Yes
-          Mirror: Off
-          Online: Yes
-          Automatically Adjust Brightness: Yes
-          Connection Type: Internal
-```
-
-## References
-
-- [https://malware.news/t/mentalpositive-s-new-macos-stealer-amos-repackaged-or-a-new-cyber-threat/96207](https://malware.news/t/mentalpositive-s-new-macos-stealer-amos-repackaged-or-a-new-cyber-threat/96207)
-- [https://moonlock.com/new-mac-stealer-spreading](https://moonlock.com/new-mac-stealer-spreading)
-- [https://www.cisecurity.org/insights/blog/macsync-stealer-campaign-impacting-us-sltt-macos-users](https://www.cisecurity.org/insights/blog/macsync-stealer-campaign-impacting-us-sltt-macos-users)
-- [https://www.jamf.com/blog/macsync-stealer-evolution-code-signed-swift-malware-analysis/](https://www.jamf.com/blog/macsync-stealer-evolution-code-signed-swift-malware-analysis/)
-
-## Try it locally
-
-```console
-python identify.py "families/mac-sync/samples/information.txt"
-```
-
-The evidence score describes a structural comparison, not attribution certainty.
-
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+Machine-readable record: [family.json](family.json)

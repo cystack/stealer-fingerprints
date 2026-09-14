@@ -1,0 +1,38 @@
+{
+  "id": "cs-browser-fingerprint-stealer",
+  "name": "CSBrowserFingerprintStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSBrowserFingerprintStealer is a CyStack-coined identifier for\na per-application Chromium fingerprint grabber shipping\n``<App>_[<HEX4>].txt`` per-instance fingerprint dumps inside a\n``Browser/Fingerprint/`` subfolder. Each dump carries an\nINI-section body: `[Local State]`, `[Preferences]`,\n`[Metadata]` plus an epoch `Extraction Time:` field. The\ngrabber targets every Chromium-based desktop install on the\nvictim, not just browsers: Chrome / Edge / Discord / Riot\nClient / G HUB / TapTapGlobal / embedded Chromium caches such\nas ``CefBrowserCache`` and ``webcache2`` all get their own\ndump.\n\nObserved inside an `APRIL 30 - 12068 LOGS` aggregator pack\nthat also carries macOS SHub Stealer victims, so this is the\nWindows-victim shape within the same distribution pipeline.\nThe field set overlaps the documented ChromElevator (xaitax /\nChrome-App-Bound- Encryption-Decryption) `--fingerprint` mode,\nbut ChromElevator emits JSON output rather than the INI-section text observed here. Family attribution is provisional\npending a published mapping for this layout.",
+  "aliases": [],
+  "typical_targets": [
+    "Browser fingerprint signals from Chromium-based browsers",
+    "Embedded-Chromium fingerprint signals from Electron apps",
+    "Gaming-platform Chromium installs (Riot Client, TapTapGlobal)",
+    "Chromium settings used to score / spoof victim profiles"
+  ],
+  "detection_notes": "The folder basename `Fingerprint` plus the parent\n`Browser/` segment plus 3+ files matching\n`<Name>_[<HEX4>].txt` plus the INI-section body\n(`[Local State]`, `[Preferences]`, `[Metadata]`,\n`Extraction Time:`) is the fingerprint. Avoid false\npositives by always requiring the body anchors; the\nbracket-hex filename convention alone is too generic.\nDuring triage, treat the per-app fingerprint files as\nprofile-signal harvest rather than credential dumps.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1217",
+      "name": "Browser Information Discovery"
+    },
+    {
+      "id": "T1592.002",
+      "name": "Gather Victim Host Information: Software"
+    }
+  ],
+  "related_families": [
+    "s-hub-stealer"
+  ],
+  "sources": [],
+  "variants": []
+}

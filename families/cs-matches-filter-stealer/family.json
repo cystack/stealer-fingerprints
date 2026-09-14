@@ -1,0 +1,72 @@
+{
+  "id": "cs-matches-filter-stealer",
+  "name": "CSMatchesFilterStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSMatchesFilterStealer is a CyStack-coined identifier for a\nfour-line `Information.txt` written by a Telegram broker bot\nthat pre-scans the victim's harvested cookies and passwords\nfor high-value domain or keyword hits, then rolls the\nper-target counts into a single `Matches:` line so prospective\nbuyers can rank logs before purchase. The body is `IP:` /\n`Country:` / `User:` / `Matches:`, no banner, no section\ndividers, no trailing footer. The `Country:` value follows the\ndual-token `ISO2 - Name` form (`BD - Bangladesh`), which is\nthe parser's narrowest disambiguator across flat-key shapes.\n\nThe format is a broker-side caption rather than a stealer\nfamily's own writer output, so the underlying family for any\ngiven log is not recoverable from this panel alone: multiple\nstealers can feed into the broker's pre-scan pipeline. The\n`Matches:` enrichment list (per-domain or per-keyword counts)\nis panel-side metadata, not victim-side data, so it is\nintentionally not surfaced as IOC fields. Observed targets in\nthe rollup line include freelancer / payment platforms\n(`payoneer.com`, `upwork.com`, `gumroad.com`), social-network\naccounts (`facebook.com`, `studio.youtube.com`), and free-form\nfinancial keywords (`bank`, `payout`).\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and the\npublic stealer-format catalogues do not document a family that\nemits this exact four-line `IP` / `Country` / `User` /\n`Matches:` shape.",
+  "aliases": [
+    "Broker pre-scan caption",
+    "Matches rollup filter bot"
+  ],
+  "typical_targets": [
+    "Browser-saved credentials and cookies (counted by `Matches:` rollup)",
+    "Freelancer payment accounts (Payoneer, Upwork, Gumroad)",
+    "Social-network sessions (Facebook, YouTube Studio)",
+    "Free-form financial keywords (bank, payout)"
+  ],
+  "detection_notes": "Fingerprint requires four line-anchored anchor keys\n(`IP:`, `Country:`, `User:`, `Matches:`) plus the\n`Country: ISO2 - Name` dual-token country form. The four\nanchors alone would collide with any generic flat-key\npanel that ships an `IP:` / `Country:` / `User:` triple;\nrequiring the country value to carry both the two-letter\nISO code and the full name joined by ` - ` is what\nnarrows the match. The `Matches:` rollup itself is\nbroker-side metadata, not victim-side data, so during\ntriage treat the per-target counts as a relevance signal\n(the broker advertised the log because these accounts\nwere valuable) rather than as direct evidence of\ncompromise for those services. Treat the family\nattribution as unknown: multiple underlying stealers can\nfeed into the broker's pipeline, and the panel does not\npreserve the original writer's family signature.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-crown-build-stealer",
+    "cs-main-loot-stealer",
+    "rl-stealer"
+  ],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_e969c3c4ba0bb12611cb41de10a5c23f",
+      "parser": "logmine.ioc.parsers.cs_matches_filter_stealer.CSMatchesFilterStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [],
+      "fields": [
+        "Country",
+        "IP",
+        "Matches",
+        "User"
+      ],
+      "observations": 9,
+      "sample": {
+        "path": "samples/v_e969c3c4ba0bb12611cb41de10a5c23f/sample.txt",
+        "sha256": "21f0660b9ade211b7833f67f3471828a5adc27506e0b063ac6f9f85a0cffcdaa",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

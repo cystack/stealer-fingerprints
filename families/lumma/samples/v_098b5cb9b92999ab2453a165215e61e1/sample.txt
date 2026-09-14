@@ -1,0 +1,32 @@
+@BRADLOGS (BRADMAX) / <url>
+- Date : Build: Jun  3 2025
+- Configuration:
+- Path: <PATH>
+
+- OS Version: Windows 11 Pro (10.0.22631) x64
+- Local Date: 13.07.2025 <ip>
+- Time Zone: UTC+2
+- Install Date: 09.05.2025 <ip>
+- Elevated: false
+- Computer: <HOST>
+- User: <USER>
+- Domain: 
+- Hostname: <HOST>
+- NetBIOS: <HOST>
+- Language: id-ID
+- Anti Virus:
+	- Windows Defender
+- HWID: <HWID>
+- RAM Size: 4096MB
+- CPU Vendor: GenuineIntel
+- CPU Name: Intel(R) Celeron(R) CPU 1007U @ 1.50GHz
+- CPU Threads: 2
+- CPU Cores: 2
+- GPU:
+	- Intel(R) HD Graphics
+- Display resolution: 1366x768
+
+- IP Address: <IP>
+- Time: 13.07.2025 <ip>
+- Country: <ip>
+- @BRADLOGS (BRADMAX) / <url>

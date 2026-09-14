@@ -1,0 +1,29 @@
+{
+  "id": "cs-pixel-cloud-stealer",
+  "name": "CSPixelCloudStealer",
+  "classification": "aggregator",
+  "attribution_confidence": "unknown",
+  "description": "CSPixelCloudStealer is a CyStack-coined identifier for the\n``t.me/PIXELCLOUD3`` aggregator's stripped Redline-shape\n``System.txt`` observed inside ``@ft7links-lumma`` aggregator\npacks. The panel emits an ASCII-art banner followed by\ntwelve repeated ``https://t.me/PIXELCLOUD3`` subscriber\nlines arranged in a 3-row by 4-column block.",
+  "aliases": [
+    "PIXELCLOUD3",
+    "OBSCLOUD"
+  ],
+  "typical_targets": [],
+  "detection_notes": "Docstring: body shape 'structurally identical to CSRussia34StealerParser variant 1 / CSEnchantCloudStealerParser variant 1'; @ft7links labels the archive 'lumma' but body is canonical Redline-derivative for variant 1. Four variants emit different underlying families.",
+  "attack_techniques": [],
+  "related_families": [
+    "redline",
+    "redline-like-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/PIXELCLOUD3"
+  ],
+  "contains_families": [
+    "lumma",
+    "redline",
+    "redline-like-stealer",
+    "x-files"
+  ],
+  "variants": []
+}

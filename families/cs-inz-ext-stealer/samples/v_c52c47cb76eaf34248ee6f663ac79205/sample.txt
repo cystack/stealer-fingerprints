@@ -1,0 +1,13 @@
+{
+  "channel": "A7-574",
+  "pc_name": "<HOST>",
+  "pc_login": "<USER>",
+  "pc_info": "Windows-11-10.0.26100-SP0",
+  "path": "<PATH>",
+  "uuid": "<HWID>",
+  "sid": "<HWID>",
+  "inz_ext_count": 0,
+  "python": "C:\\Users\\<USER>\\AppData\\Local\\Programs\\Python\\Python3127\\python.exe",
+  "timestamp": 1760697813,
+  "client_utc": "2025-10-17 <ip>"
+}

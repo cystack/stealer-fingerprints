@@ -1,0 +1,28 @@
+{
+  "id": "cs-olson-tz-geo-stealer",
+  "name": "CSOlsonTzGeoStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSOlsonTzGeoStealer is a CyStack-coined identifier for a\nminimal 5-field geo-only ``info.txt`` panel observed inside\nthe ``25-26 JUNE - 5000 LOGS2.rar`` aggregator pack. The\npanel emits only ``City``, ``Region``, ``IP``, ``TimeZone``,\nand ``ZIP`` fields with a distinctive tight-colon convention\n(no space between the colon and the value) and an IANA / Olson\ntimezone format (``TimeZone:Europe/Paris`` instead of the\n``UTC±HH:MM`` offset shape most canonical stealers emit).\nThe 5-field set matches an ``ipinfo.io`` or ``ip-api.com``\ngeo-lookup response verbatim, so the underlying builder is\nlikely a Python-based stealer that ships the raw geo-API\nresponse as its ``info.txt``.\n\nNo banner, no HWID line, no host fingerprint (OS, CPU, RAM,\nuser, hostname all absent). The HWID appears in the folder-path prefix ``<CC>[<HWID>][<TIMESTAMP>]/`` but the body\nitself is heavily truncated. Family attribution is\nprovisional pending a published threat-intel mapping.",
+  "aliases": [
+    "Olson TZ geo-only info.txt",
+    "Tight-colon 5-field geo panel"
+  ],
+  "typical_targets": [
+    "Geo-IP enrichment only: victim IP, city, region name,\nZIP / postal code, IANA timezone name"
+  ],
+  "detection_notes": "Fingerprint requires four line-anchored no-space-after-colon\nanchors: ``City:``, ``Region:``, ``ZIP:``, and ``TimeZone:``\nfollowed by an Olson-format value. The combination is\ndistinctive across the registry. During triage, correlate with\ncompanion files in the victim folder (browser exports,\nwallet artifacts, cookie dumps, credential stores) to identify\nthe underlying stealer family. This parser only extracts the\ngeo block from the info.txt; the folder-level detector and\nsibling parsers handle the credential inventory.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "variants": []
+}

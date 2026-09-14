@@ -1,0 +1,57 @@
+{
+  "id": "py-info-stealer",
+  "name": "PyInfo Stealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "Unidentified Python-based stealer observed inside `@BRADMAX`\naggregator packs under `[UN]UNKNOWN_(N)` filler folders. The\n`system_info.txt` is a flat key/value record followed by two\n`--- ... ---` framed sections. Family attribution is\nprovisional; the format has not been mapped to a published\nthreat-intel name.",
+  "aliases": [],
+  "typical_targets": [],
+  "detection_notes": "The `Hostname:` opening (lowercase keys throughout) and dual\n`--- Section ---` framing is the signature. The Python origin\nis inferred from the field shape and snake_case key style\n(e.g. lowercase `user:` and `hostname:`), not from any\nexplicit banner.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_a3b2ccd87ba2430c6dde5f31bb7f6a42",
+      "parser": "logmine.ioc.parsers.pyinfo_stealer.PyInfoStealerParser",
+      "filenames": [
+        "system_info.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "--- Installed Programs (top 50) ---",
+        "--- Top Processes ---"
+      ],
+      "fields": [
+        "ISP",
+        "Org"
+      ],
+      "observations": 2,
+      "sample": {
+        "path": "samples/v_a3b2ccd87ba2430c6dde5f31bb7f6a42/sample.txt",
+        "sha256": "6c9f1c74223a815f4a5a14e070d86056cd05134534c8321127f6cf02da556ce4",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

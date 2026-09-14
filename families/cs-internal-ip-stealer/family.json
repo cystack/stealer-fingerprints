@@ -1,0 +1,54 @@
+{
+  "id": "cs-internal-ip-stealer",
+  "name": "CSInternalIpStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSInternalIpStealer is a CyStack-coined identifier for a\nflattened `Information.txt` panel with square-bracket section\nheaders (`[Basic]` / `[Network]` / `[Drives]` / `[GPU]`) and a\ndistinctive `Internal IP:` LAN-IP field paired with the\npublic-IP `Ip:` field. Observed inside `@BRADMAX 12000\nFEB-MARCH.part1.rar` at `@BRADMAX <count>\n<MONTHS>/[<CC>]<IPv4>/Information.txt` victim folders (e.g.\n`[UN]<IPv4>`).\n\nThe body ships three physical lines that concatenate the\nentire identity preamble plus four bracket-marked section\nblocks. Fields include `Ip:` (lowercase `p`), `Internal IP:`\n(LAN address), `HWID:` (64-hex SHA256), `Clipboard:`\n(opportunistic content), `Build:` (Windows build number), `OS\nArch:` (x64/x86), `CPU Name:`, `Logical Cores:`, `RAM Total\n(MB):`, `RAM Available (MB):`, and `Domain:`. Section headers\nappear inline mid-line rather than on their own rows because\nof the aggressive-collapse repacking.\n\nThe `HWID` SHA256 length points at newer stealer builds\n(Arkanix Stealer is publicly documented as using SHA256 for\nHWID). The dual public + LAN IP pair is unusual: most\ncanonical stealers emit only the public IP. The `RAM Total\n(MB):` / `RAM Available (MB):` parenthesised-unit value shape\nis also unusual.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping. Public reporting and community\ncatalogues do not attest a family emitting this exact flat\nbracket-section layout. Candidates ruled out include Arkanix\nStealer (JSON wire format serialised to\n`%LOCALAPPDATA%\\Arkanix_lol\\<class>.json`), Valkyrie Stealer\n(JSON output), Easy Stealer (Dashboard-panel view without\npublished log-file format), Redline (uses `Hardwares:` block\nwith `Name:` sub-entries), `BracketSectionStealer` (uses\n`[System]` + `[Hardware]` sections), AMOS (macOS-specific\n`system_profiler` output).",
+  "aliases": [
+    "Flat bracket-section Information.txt with Internal IP",
+    "BRADMAX dual-IP panel with [Basic]/[Network]/[Drives]/[GPU]"
+  ],
+  "typical_targets": [
+    "Public IPv4 (external) plus LAN IPv4 (internal)",
+    "HWID as SHA256 hash",
+    "Clipboard content (opportunistic per-victim data)",
+    "Windows build number and architecture",
+    "CPU name and logical core count",
+    "Total and available RAM (MB)",
+    "GPU adapters list",
+    "Windows domain / hostname"
+  ],
+  "detection_notes": "Fingerprint requires line-anchored `Ip:` AND `Internal IP:`\nAND `HWID:` PLUS at least two of the four bracket-section\nmarkers (`[Basic]` / `[Network]` / `[Drives]` / `[GPU]`)\npresent anywhere in the body. The `Internal IP:` field is\nunique across the registered parsers - no other family emits\nboth an external and internal IP as separate fields. The four-section bracket-header set differs from every existing\nbracket-section parser (`BracketSectionStealer` uses\n`[System]` + `[Hardware]`; AMOS uses `[System Info]` +\n`[Hardware]`). During triage, the SHA256 HWID length and the\ndual-IP shape point at a newer stealer build; the specific\nbuilder is not yet mapped in public reporting, so treat the\nfamily label as a placeholder. Rename the family constant if a\npublic writeup later publishes this exact layout.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    },
+    {
+      "id": "T1115",
+      "name": "Clipboard Data"
+    }
+  ],
+  "related_families": [
+    "bracket-section-stealer"
+  ],
+  "sources": [],
+  "related_external": [
+    "arkanix-stealer",
+    "valkyrie-stealer",
+    "easy-stealer"
+  ],
+  "variants": []
+}

@@ -1,0 +1,61 @@
+{
+  "id": "misericorde-stealer",
+  "name": "Misericorde Stealer",
+  "classification": "known_family",
+  "attribution_confidence": "low",
+  "description": "Misericorde Stealer is a C++ Windows info-stealer advertised\non HackForums under the product listing `Misericorde Stealer\n(C++ stub) - USER-HOST PANEL` with v10 and v20 versions. The\nmalware self-declares its name through an ASCII-art banner\nblock spelling `Misericorde` and a `Telegram -https://t.me/misericorde_supp` operator support-channel URL\nemitted at the top of every `UserInformation.txt` panel.\n\nThe panel ships a compact 10-field identity preamble\n(`Username`, `Hostname`, `FileLocation`, `IP`, `Country`,\n`Timezone`, `City`, `Hwid`, `Logdate`, `Buildtag`), then a\n`[System]` bracket-section block (`OS Product`, `Screensize`,\n`Keyboard`, `System Language`), then a `[Hardware]`\nbracket-section block (`GPU`, `CPU`, `RAM`). The single-word\n`Username` / `Hostname` / `Hwid` / `Logdate` / `Buildtag` key\nspellings distinguish Misericorde from Redline-lineage panels\n(which use two-word forms like `User Name` / `Computer Name`\n/ `HWID`).\n\nThe observed sample distributes through the `@UP_DAISYCLOUD`\nTelegram reseller channel with the Daisy Cloud per-line\nwatermark overlay (obfuscated `Daisy Private cloud` scramble\non every payload line). The underlying Misericorde body is\nindependent of Daisy Cloud; other resellers may ship the same\npanel without the watermark.\n\nFamily attribution rests on the self-declared banner literal\nplus the HackForums product listing (community catalog /\nunderground forum). No public research publishes a Misericorde\nwriteup, and the community catalogues do not document it\neither. `attribution_confidence = 'low'` reflects the one-underground-forum-source provenance combined with the strong\nbanner self-declaration signal.",
+  "aliases": [
+    "Misericorde",
+    "Misericorde C++ stub USER-HOST PANEL"
+  ],
+  "typical_targets": [
+    "Browser saved credentials, cookies, autofill (fields not\nobserved in the current sample - the UserInformation.txt\nis the reconnaissance summary)",
+    "Full identity preamble: username, hostname, HWID",
+    "Public IPv4 plus city and IANA timezone from IP\ngeolocation",
+    "OS caption with edition and build number",
+    "Display resolution and system language",
+    "CPU, GPU, and RAM hardware inventory",
+    "Malware install path (observed shape:\n`C:\\ProgramData\\<DropperName>\\<Payload>.exe`)"
+  ],
+  "detection_notes": "Fingerprint requires the `misericorde_supp` substring\nAND at least one of the `[System]` / `[Hardware]`\nbracket-section headers. The support-channel URL fragment\nis the strongest single anchor: the malware writes it\ninto every panel as part of the banner ASCII art and it\nsurvives the Daisy Cloud per-line watermark strip\nunchanged. During triage, the `Buildtag:` value carries\nthe operator's build identifier (observed:\n`cherry289`) and pivots to the specific reseller /\ncampaign. The `FileLocation:` value carries the on-victim install path; observed samples ship the payload\nas `C:\\ProgramData\\<DropperName>\\<Payload>.exe`.",
+  "attack_techniques": [
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    },
+    {
+      "id": "T1124",
+      "name": "System Time Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-daisy-cloud-stealer",
+    "redline"
+  ],
+  "sources": [
+    "https://hackforums.net/showthread.php?tid=6315987",
+    "https://cybersecuritynews.com/daisy-cloud-hacker-group-exposed-30k-login-credentials/",
+    "https://github.com/fastfire/deepdarkCTI/blob/main/telegram_infostealer.md"
+  ],
+  "observed_channels": [
+    "https://t.me/misericorde_supp",
+    "https://t.me/UP_DAISYCLOUD"
+  ],
+  "variants": []
+}

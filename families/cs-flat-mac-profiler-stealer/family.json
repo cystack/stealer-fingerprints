@@ -1,0 +1,122 @@
+{
+  "id": "cs-flat-mac-profiler-stealer",
+  "name": "CSFlatMacProfilerStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "low",
+  "description": "CSFlatMacProfilerStealer is a CyStack-coined identifier for a\nsix-field flat `Information.txt` panel carrying raw macOS\n`system_profiler` output with no section headers. Observed\ninside `@BRADMAX 14000 MARCH.part01.rar` Telegram aggregator\npacks at `@BRADMAX <count> <MONTH>/[<CC>]\nUNKNOWN_(<N>)/Information.txt` GeoIP-fallback filler-folder\npaths (e.g. `[FR]UNKNOWN_(4)`). This is the first macOS victim\nobserved inside a BRADMAX pack in the surveyed samples.\n\nThe body ships six flush-left `Key: Value` lines drawn from\n`system_profiler SPSoftwareDataType` (`User Name`),\n`SPHardwareDataType` (`Model Name`, `Processor Name`,\n`Memory`), and `SPDisplaysDataType` (`Chipset Model`,\n`Resolution`). The `User Name` value uses the macOS-canonical\n`<Real Name> (<login>)` parenthesised shape. The `Resolution`\nvalue includes a human-readable annotation in parentheses\n(e.g. `2560 x 1440 (QHD/WQHD - Wide Quad High Definition)`)\nmatching `system_profiler`'s output style.\n\nFamily attribution is provisional with `low` confidence.\nMultiple canonical macOS stealer families (AMOS / Atomic,\nBanshee, Cthulhu, Poseidon, MacSync) shell out to the same\n`system_profiler` subcommands per public writeups. Without a\nfamily-specific banner or section header surviving in this\nstripped panel, attribution to any single canonical family is\na guess. Rename the family constant to the canonical family\nname if a public writeup later publishes a sample of this\nexact six-field stripped variant.",
+  "aliases": [
+    "Flat macOS system_profiler panel",
+    "BRADMAX macOS victim minimal Information.txt"
+  ],
+  "typical_targets": [
+    "macOS full user name plus short login",
+    "Mac model family (iMac / MacBook Pro / Mac mini / etc.)",
+    "CPU marketing name (`Quad-Core Intel Core i5`,\n`Apple M1`, etc.)",
+    "Physical memory total",
+    "GPU chipset model",
+    "Primary display resolution with human-readable\nannotation"
+  ],
+  "detection_notes": "Fingerprint requires three line-anchored macOS-canonical\nkeys: `Model Name:` AND `Processor Name:` AND\n`Chipset Model:`. The three-anchor combination is\nmutually exclusive with every Windows-panel parser and\nwith every existing macOS-family parser (AMOS /\nCthulhu / MacSync / Phexia / CSEssentialMac / CSMac*\neach require a different canonical anchor that this\nstripped body lacks). During triage, treat the sample\nas weak attribution to a macOS stealer family via the\nBRADMAX aggregator channel. The parenthesised login\nin the `User Name` field is the short-username pivot\nthat lets analysts correlate with sibling artifacts\n(Keychain dumps, browser data) in the same victim\nfolder if the aggregator preserved them.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "amos-stealer",
+    "cthulhu-stealer",
+    "mac-sync",
+    "phexia"
+  ],
+  "sources": [],
+  "related_external": [
+    "banshee-stealer"
+  ],
+  "variants": [
+    {
+      "id": "v_795d6c44a730d4d0894bf8294e2a524c",
+      "parser": "logmine.ioc.parsers.cs_flat_mac_profiler_stealer.CSFlatMacProfilerStealerParser",
+      "filenames": [
+        "userinfo.txt",
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": "@BRADMAX",
+      "attribution_confidence": "low",
+      "markers": [],
+      "fields": [
+        "Chipset Model",
+        "Model Name",
+        "Processor Name"
+      ],
+      "observations": 42116,
+      "sample": {
+        "path": "samples/v_795d6c44a730d4d0894bf8294e2a524c/sample.txt",
+        "sha256": "433655423ea928323c17433e763032c96d4109341eeacbe5317701fc7d4125cf",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "intel-profiler"
+    },
+    {
+      "id": "v_94ff57251e89669ee573ff86ace30073",
+      "parser": "logmine.ioc.parsers.cs_flat_mac_profiler_stealer.CSFlatMacProfilerStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": "mac.c",
+      "distribution_channel": "@mentalpositive",
+      "attribution_confidence": "low",
+      "markers": [
+        "mac.c"
+      ],
+      "fields": [
+        "Chipset Model",
+        "Model Name",
+        "Resolution"
+      ],
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_94ff57251e89669ee573ff86ace30073/sample.txt",
+        "sha256": "7844a84f6d9e8f76696838ca0855738018b7d41fb9e6186dad652154084084d7",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "apple-silicon-profiler"
+    },
+    {
+      "id": "v_b5814736585d30db7e1caf91351dfb6b",
+      "parser": "logmine.ioc.parsers.cs_flat_mac_profiler_stealer.CSFlatMacProfilerStealerParser",
+      "filenames": [
+        "Information.txt",
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": "@BRADMAX",
+      "attribution_confidence": "low",
+      "markers": [],
+      "fields": [
+        "Chipset Model",
+        "Model Name",
+        "Resolution"
+      ],
+      "observations": 35,
+      "sample": {
+        "path": "samples/v_b5814736585d30db7e1caf91351dfb6b/sample.txt",
+        "sha256": "73c682d7c0f7de79bf1cff4b673b0d30db8fccb5e6bd598af26a7d7cffd551c6",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "apple-silicon-profiler"
+    }
+  ]
+}

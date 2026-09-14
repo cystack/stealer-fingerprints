@@ -1,0 +1,44 @@
+{
+  "id": "cs-card-target-stealer",
+  "name": "CSCardTargetStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSCardTargetStealer is a CyStack-coined identifier for a\n4- or 5-line `CN/DATE/NAME/TARGET[/CVV]` credit-card\ncred-file shape distributed inside `@BRADLOGS / BRADMAX`\naggregator packs. Observed in `!! 2025 NOV.part001.rar`\nat `[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/CreditCards/\nCC_Edge_Profile <N>.txt` and in the sibling\n`!! 2025 MARCH.part001.rar` packs at\n`[<TAG>]@MAXERSTE (@BRADMAX) (<NN>)/CreditCards/\nCC_Chrome_Profile <N>.txt` victim folders. Each cred\nfile holds exactly one card record in a per-browser-profile split (50-80 byte file size), so a typical\nvictim folder ships multiple `CC_<Browser>_Profile\n1.txt` / `2.txt` / `3.txt` files alongside any saved-card variants from other browser profiles.\n\nThe label sequence in uppercase casing\n(`CN:` / `DATE:` / `NAME:` / `TARGET:` and an optional\n`CVV:`) is the disambiguating signal. `CN:` is short\nfor card number (16-digit PAN), `DATE:` carries the\nexpiry in `M/YYYY` or `MM/YYYY` form, `NAME:` is the\ncardholder name (frequently empty when the browser\nstored only the number), `TARGET:` is the merchant or\nwebsite where the card was used, and the optional\n`CVV:` is the 3-digit security code. The panel drops\nthe `CVV:` line entirely when the browser stored only\nthe PAN and expiry, producing a 4-line block ending at\n`TARGET:`. Family attribution is provisional pending a\npublished threat-intel mapping for this layout. The\nformat is distinct from the Millenium RAT\n`CreditCards.txt` (``Browser/Name/Number/Expire``\nlabels with the ``------ Credit Cards ------`` banner,\niter#6/#13) and from the canonical PXA Stealer credit-card dump (per-browser JSON in the PXA Telegram\ncaptions).",
+  "aliases": [
+    "BRADMAX CC_Edge_Profile cred-file split",
+    "BRADMAX CC_Chrome_Profile cred-file split",
+    "4-line CN/DATE/NAME/TARGET credit-card block",
+    "5-line CN/DATE/NAME/TARGET/CVV credit-card block"
+  ],
+  "typical_targets": [
+    "Saved credit cards from Microsoft Edge browser profiles",
+    "Saved credit cards from Chrome browser profiles",
+    "Card PAN (CN), expiry (DATE), cardholder name (NAME)",
+    "Merchant or website where the card was used (TARGET)",
+    "Card verification value (CVV), when present"
+  ],
+  "detection_notes": "Fingerprint requires a single 4- or 5-line block\nmatching `CN: / DATE: / NAME: / TARGET: [/ CVV:]` with\nthe specific uppercase casing. The trailing `CVV:`\nline is optional: a 4-line block ending at `TARGET:`\ncovers cards saved without a security code. One match\nis sufficient because each cred file holds exactly one\ncard. The `CN:` + `TARGET:` label pair is unique\nacross the registry: Millenium RAT uses\n`Browser/Name/Number/Expire` and ships its dashed-banner header; canonical\nPXA Stealer ships cards as JSON in Telegram captions,\nnot as 4- or 5-line text blocks. During triage, treat\nthe IOC as a confirmed saved-card exfiltration even\nwhen individual fields (`NAME:`, `TARGET:`, `CVV:`)\nare blank or absent: the browser may have stored only\npartial card data, but the PAN and expiry pair is\nsufficient to flag the victim for downstream review\nand adding the CVV (when present) makes the record\ndirectly usable for card-not-present fraud.",
+  "attack_techniques": [
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "pxa-stealer",
+    "cs-app-profile-stealer",
+    "cs-date-created-stealer"
+  ],
+  "sources": [],
+  "related_external": [
+    "millenium-rat"
+  ],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": []
+}

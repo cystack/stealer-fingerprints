@@ -1,63 +1,153 @@
 # Phantom Stealer
 
-**Known malware family · high attribution confidence**
+Phantom Stealer is a Stealerium-fork info-stealer sold as a
+MaaS through the `phantomsoftwares.site` storefront and the
+`@Phantomsoftwares_bot` Telegram marketplace, contact handle
+`@Oldphantomoftheopera`. Public reporting documents the family
+as active since February 2025 with a NativeAOT `pdh.dll` outer
+loader plus a .NET inner payload (two-layer attack chain).
 
-## At a glance
+Two `Information.txt` panel shapes are claimed by separate
+parsers in this project:
 
-- Aliases: <code>Phantom Stealer</code>, <code>Phantom stealer v2.0</code>
-- Typical filenames: <code>information.txt</code>, <code>userinformation.txt</code>
-- Published formats: 1
-- Representative samples: 2
+- v2 emoji-section panel (canonical, publicly confirmed):
+banner `*Phantom stealer v2.0 - Report:*` with `📅 Date:`, `🖥️
+System:`, `💻 CompName:`, `🌐 External IP:` field lines
+organised under `*HARDWARE INFORMATION*` / `*NETWORK
+INFORMATION*` / `*DETECTED DOMAINS*` / `*BROWSER DATA*` /
+`*SOFTWARE & ACCOUNTS*` / `*DEVICE INFORMATION*` /
+`*INSTALLATION STATUS*` Markdown-bold section banners
+separated by U+2501 heavy horizontal `━` rules. Trailing
+operator-attribution block carries `contact` / `marketplace` /
+`website` URLs. - v1 flat key-colon-value
+`UserInformation.txt` layout (`Username:` / `PC-name:` / `Ip:`
+/ `Location:` / `System:` / `Admin rights:`). The v1 layout
+was originally flagged as provisionally-attributed Phantom;
+the v2 emoji-panel research has not directly confirmed the v1
+key-value shape, so v1 attribution remains tentative even
+though it is claimed under the same canonical family literal
+pending a published mapping.
 
-<p>Phantom Stealer exports either <code>information.txt</code> or <code>userinformation.txt</code> with the same compact system block. The layout combines <code>PC-Name</code>, <code>Admin Rights</code>, <code>Location</code>, CPU, GPU, RAM, and IP fields.</p>
+## Research status
 
-## How to recognize it
+- Classification: **Known malware family**
+- Attribution confidence: **high**
+- Aliases: `Phantom Stealer`, `Phantom stealer v2.0`
+- Variants observed: **3**
+- Historical Logmine records represented: **42**
 
-- No stable text banner is known; combine filename and field layout.
-- Recurring fields: <code>admin rights</code>, <code>cpu</code>, <code>gpu</code>, <code>ip</code>, <code>location</code>, <code>pc-name</code>, <code>ram</code>, <code>system</code>
+## What it targets
 
-## Formats
+- Browser saved credentials, cookies, autofill, history, bookmarks
+- Crypto wallet extensions and desktop wallet clients
+- Discord and Telegram session data (Tdata)
+- Windows product key extraction
+- Desktop screenshot capture
+- Banking / crypto / adult site domain detection summary
+- System hardware (CPU, GPU, RAM, screen, webcam, power) inventory
+- Network info (gateway, internal, external IP)
 
-| Format | Evidence | Fingerprint |
-|---|---|---|
-| information.txt - admin rights / cpu | 8 fields, filename | [`fp_bd9805cee1ca1effa8b2be8d1b54d790`](fingerprints/fp_bd9805cee1ca1effa8b2be8d1b54d790.json) |
+## Detection notes
 
-## Representative sample
+v2 fingerprint requires the literal `Phantom stealer v2.0`
+banner substring AND the `HARDWARE INFORMATION` section header
+AND the `External IP:` field name. The three-anchor
+combination is the panel self-banner plus structural
+confirmation. v2 `Date:` values use 12-hour `AM/PM` format
+with no explicit timezone marker, so log_time is normalised to
+UTC via strptime rather than the to_iso_time dateparser
+fallback (which would re-tag with the running host's local
+offset).
 
-Some files below intentionally share the same sanitized body under different malware-visible names. They document filename variants, not independent payload observations.
+v1 fingerprint requires the `PC-name:` (hyphenated) and `Admin
+rights:` keys together. The v1 attribution to Phantom Stealer
+is provisional - the v1 layout is structurally distinct from
+the publicly confirmed v2 panel and may represent a look-alike
+Russian stealer that was originally misattributed. Treat
+v1-shape Phantom claims with caution during triage.
 
-Observed text sample. Placeholders mark values removed from the original log.
+## Observed log variants
 
-[<code>information.txt</code>](samples/information.txt)
+### `v_44219ba58866514b6fc62b29339a973e`
 
-```text
-Username: [redacted]
-PC-name: [redacted]
-Ip: [redacted]
-Location: Romania
-System: Windows 10 Pro
-Admin rights: False
-CPU: AMD Ryzen 7 7735HS with Radeon Graphics
-GPU: AMD Radeon(TM) Graphics
-NVIDIA GeForce RTX 4060 Laptop GPU
-Ram: 16 GB
-```
+- Parser: `logmine.ioc.parsers.cs_sys_root_stealer.CSSysRootStealerParser`
+- Observed filenames: `Information.txt`
+- Panel brand: `Sys_root v-200`
+- Distribution channel: -
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_44219ba58866514b6fc62b29339a973e/sample.txt)
+- Sample SHA-256: `f96fd47319862d1e47d6f98acdabde745c985b1371333bd266baa94f92aaaa0b`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-Other samples: [<code>userinformation.txt</code>](samples/userinformation.txt)
+Recognition anchors:
 
-## References
+- Stable markers: `External IP:`, `HARDWARE INFORMATION`, `Sys_root`
+- Field labels: -
 
-- [https://darkatlas.io/blog/phantom-stealer-analysis-inside-the-two-layer-attack-chain-hidden-behind-a-windows-dll](https://darkatlas.io/blog/phantom-stealer-analysis-inside-the-two-layer-attack-chain-hidden-behind-a-windows-dll)
-- [https://malpedia.caad.fkie.fraunhofer.de/details/win.phantom_stealer](https://malpedia.caad.fkie.fraunhofer.de/details/win.phantom_stealer)
-- [https://www.group-ib.com/blog/phantom-stealer-credential-theft/](https://www.group-ib.com/blog/phantom-stealer-credential-theft/)
-- [https://www.proofpoint.com/us/blog/threat-insight/not-safe-work-tracking-and-investigating-stealerium-and-phantom-infostealers](https://www.proofpoint.com/us/blog/threat-insight/not-safe-work-tracking-and-investigating-stealerium-and-phantom-infostealers)
+### `v_644d60f850bf17ab715debd34be84482`
 
-## Try it locally
+- Parser: `logmine.ioc.parsers.phantom_v2.PhantomV2Parser`
+- Observed filenames: `Information.txt`
+- Panel brand: `Phantom stealer v2.0`
+- Distribution channel: `@Phantomsoftwares_bot`
+- Attribution confidence: **high**
+- Historical records represented: **36**
+- Representative sample: [open sample](samples/v_644d60f850bf17ab715debd34be84482/sample.txt)
+- Sample SHA-256: `394d2a403b0b34802ee996ad7edbf8c397b56c87d1b135c51ed808f3f0844719`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-```console
-python identify.py "families/phantom-stealer/samples/information.txt"
-```
+Recognition anchors:
 
-The evidence score describes a structural comparison, not attribution certainty.
+- Stable markers: `External IP:`, `HARDWARE INFORMATION`, `Phantom stealer v`, `Phantom stealer v2.0`
+- Field labels: -
 
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+### `v_c63d4009bb81da5cdadc47965e2d193d`
+
+- Parser: `logmine.ioc.parsers.phantom.PhantomParser`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Historical records represented: **5**
+- Representative sample: [open sample](samples/v_c63d4009bb81da5cdadc47965e2d193d/sample.txt)
+- Sample SHA-256: `5f8862643abbd18cfac5a58a9b2d6a6bc2a86f7351c86e1fdaf879f0ad81de92`
+- Sample provenance: Logmine runtime output, scrubbed for public use
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Admin rights`, `PC-name`
+
+
+## MITRE ATT&CK
+
+| Technique | Name |
+|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| [T1113](https://attack.mitre.org/techniques/T1113/) | Screen Capture |
+| [T1083](https://attack.mitre.org/techniques/T1083/) | File and Directory Discovery |
+| [T1217](https://attack.mitre.org/techniques/T1217/) | Browser Information Discovery |
+
+## Related catalog profiles
+
+- [Stealerium](../stealerium/)
+
+## Observed distribution channels
+
+- <https://t.me/Phantomsoftwares_bot>
+- <https://t.me/Oldphantomoftheopera>
+
+## Sources
+
+- <https://malpedia.caad.fkie.fraunhofer.de/details/win.phantom_stealer>
+- <https://www.proofpoint.com/us/blog/threat-insight/not-safe-work-tracking-and-investigating-stealerium-and-phantom-infostealers>
+- <https://www.group-ib.com/blog/phantom-stealer-credential-theft/>
+- <https://darkatlas.io/blog/phantom-stealer-analysis-inside-the-two-layer-attack-chain-hidden-behind-a-windows-dll>
+- <https://www.phantomsoftwares.site/home>
+
+Machine-readable record: [family.json](family.json)

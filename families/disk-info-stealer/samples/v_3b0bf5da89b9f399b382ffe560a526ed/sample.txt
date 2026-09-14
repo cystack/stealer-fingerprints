@@ -1,0 +1,6 @@
+User: <USER>
+Computer: <HOST>
+OS: Windows Server 2019 Standard Evaluation
+Memory: 4095 MB
+Disk Capacity: 65 GB
+Disk Free: 19 GB

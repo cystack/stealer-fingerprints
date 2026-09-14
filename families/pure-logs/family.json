@@ -1,37 +1,87 @@
 {
-  "$schema": "../../schemas/family.schema.json",
+  "id": "pure-logs",
+  "name": "PureLogs",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "PureLogs is a 64-bit C# infostealer in the Pure malware\nfamily, distributed since 2022 under a malware-as-a-service\nsubscription model. The stub is obfuscated with ConfuserEx,\n.NET Reactor, and custom virtualization, with the C2\nconfiguration carried as a Protobuf-serialized, XOR plus\n3DES-encrypted blob in the binary resources.\n\nThe exfiltrated artifact is a flat JSON `log.json` with a\nnested `BotInfo` sub-object split into `System` /\n`Hardware` / `Network` sections. The top-level fields\ncarry a `Username_Hwid` (literal `user_<hwid>` join), a\n`StubVersion` (e.g. `v4.0.1`) and a `LogFolder` whose\npath begins with `C:\\PureLogs v4\\Logs\\<COUNTRY>\\`.\n",
   "aliases": [
     "PureLog Stealer",
     "PureLogStealer",
     "win.purelogs"
   ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "The observed PureLogs `log.json` is a nested JSON record with top-level collection counts and `BotInfo` system, hardware, and network objects. This sample is available for manual comparison but is not an active fingerprint.",
-  "external_references": [
-    {
-      "url": "https://any.run/malware-trends/purelogs/"
-    },
-    {
-      "url": "https://flashpoint.io/blog/purelogs-low-cost-infostealer-high-impact-threat/"
-    },
-    {
-      "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.purelogs"
-    },
-    {
-      "url": "https://www.swisspost-cybersecurity.ch/news/purelogs-infostealer-analysis-dont-judge-a-png-by-its-header"
-    }
-  ],
-  "id": "pure-logs",
-  "name": "PureLogs",
-  "schema_version": "1.0",
-  "targets": [
-    "Browser extension list and metadata",
+  "typical_targets": [
     "Browser saved credentials, cookies, autofill, history",
-    "Clipboard contents",
     "Crypto wallet extensions and desktop clients",
+    "Browser extension list and metadata",
     "Outlook and other application data",
+    "Clipboard contents",
     "System hardware and locale inventory"
   ],
-  "tracking_labels": []
+  "detection_notes": "The `\"StubVersion\"`, `\"Username_Hwid\"`, and `\"BotInfo\"`\nJSON-key trio is the cleanest fingerprint. The literal\n`PureLogs v4` substring inside the `LogFolder` value\nself-identifies the family. The misspelled\n`BrowserExtenstions` (note missing `i`) field name is\ninvariant across observed samples and useful as a sanity\ncheck during triage.\n",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1115",
+      "name": "Clipboard Data"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1027",
+      "name": "Obfuscated Files or Information"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://malpedia.caad.fkie.fraunhofer.de/details/win.purelogs",
+    "https://any.run/malware-trends/purelogs/",
+    "https://flashpoint.io/blog/purelogs-low-cost-infostealer-high-impact-threat/",
+    "https://www.swisspost-cybersecurity.ch/news/purelogs-infostealer-analysis-dont-judge-a-png-by-its-header"
+  ],
+  "related_external": [
+    "pureminer",
+    "purecrypter"
+  ],
+  "variants": [
+    {
+      "id": "v_d9e2bb74fa7cf17912df704a74ceef77",
+      "parser": "logmine.ioc.parsers.purelogs.PureLogsParser",
+      "filenames": [
+        "log.json"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [],
+      "fields": [
+        "BotInfo",
+        "StubVersion",
+        "Username_Hwid"
+      ],
+      "observations": 4180,
+      "sample": {
+        "path": "samples/v_d9e2bb74fa7cf17912df704a74ceef77/sample.txt",
+        "sha256": "75548851886dcc2cb5b6f01b793f80d67b95c5a13aa54672fb53e591edf4d065",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
 }

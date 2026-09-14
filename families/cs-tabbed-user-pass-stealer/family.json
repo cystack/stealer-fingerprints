@@ -1,0 +1,44 @@
+{
+  "id": "cs-tabbed-user-pass-stealer",
+  "name": "CSTabbedUserPassStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSTabbedUserPassStealer is a CyStack-coined identifier\nfor a 2-line tab-padded `Username:` / `Pass:` credential\nnote shape harvested by stealers and redistributed inside\n`!! 2024 SEPTEMBER.part001.rar` BRADMAX aggregator packs\nat `[<ISO2>]<IPv4>/Important Files/Documents/Account\n<Descriptor>.txt` paths (e.g. `[ID]<IPv4>/\nImportant Files/Documents/Account Office.txt`, 53-byte\nbody). The file is a victim-curated password note that\nthe operator wrote themselves with a text editor (Notepad\nor VS Code with tab-indent setting); the stealer's\nFileGrabber dragneted the victim's Documents folder and\nscooped up the note alongside the panel-emitted cred files.\n\nThe 2-line body holds `Username\\t+:<email-or-username>`\non the first line and `Pass\\t+:<password>` on the second\nline, with tab characters (one or two) padding the label\nso the colons align across both lines. The tab-before-colon padding is a hand-written-note convention; no\nstealer panel template emits this shape. Family\nattribution is CyStack-coined (Case C, attribution\nconfidence unknown): the BRADMAX redistributor resells\nlogs from multiple underlying stealer families and the\ncred-file body carries no signal that pins the harvester\nto a specific builder.",
+  "aliases": [
+    "BRADMAX harvested-Documents tabbed Username/Pass note",
+    "Account <Descriptor>.txt 2-line tab-padded victim note"
+  ],
+  "typical_targets": [
+    "Hand-written `Account <Service>.txt` notes from the\nvictim's Documents / Desktop folder",
+    "Microsoft Office account credentials (observed sample)",
+    "Any browser-or-app account whose username and password\nthe victim recorded in a plain-text reminder note"
+  ],
+  "detection_notes": "Fingerprint requires the cred file body to match exactly\ntwo tab-padded lines (`\\AUsername\\t+:\\S[^\\n]*\\n`\n`Pass\\t+:\\S[^\\n]*\\s*\\Z`) with no additional content\nbefore or after. The strict `\\A` / `\\Z` anchors keep a\nlonger victim-curated note that happens to contain these\ntwo lines somewhere in the body from mis-claiming. During\ntriage, treat the credentials as real (the email and\npassword values are the victim's actual account, not\nplaceholder text), but treat the family attribution as\nunknown: the underlying stealer that swept the note is\nnot identifiable from this body alone.",
+  "attack_techniques": [
+    {
+      "id": "T1552",
+      "name": "Unsecured Credentials"
+    },
+    {
+      "id": "T1552.001",
+      "name": "Credentials In Files"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1083",
+      "name": "File and Directory Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-url-user-pass-from-stealer",
+    "cs-soft-host-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/bradmax_cloud"
+  ],
+  "variants": []
+}

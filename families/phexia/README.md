@@ -1,105 +1,96 @@
 # Phexia
 
-**Known malware family · high attribution confidence**
+Phexia is a macOS info-stealer that has been operating in
+private distribution since April 2024 per a published
+developer interview. The payload is implemented in osascript
+(AppleScript) and the developer states it shares roughly 85%
+of its code with the Mac.c stealer module, but it is marketed
+and tracked as a separate product with its own
+self-identification banner and its own customer base (around
+20 active operators per the developer at the time of the
+interview).
 
-## At a glance
+The on-disk `UserInformation.txt` opens with the literal
+`Phexia macOS Stealer` banner, then a flat identity block
+(`Build:` / `Username:` / `Password:` / `IP Address:`), then
+the verbatim `system_profiler` output under `Software:` /
+`Hardware:` / `Graphics/Displays:` section headers. The
+`Build:` tag is a per-customer affiliate identifier set at
+build time. Captured macOS login credentials ship in the
+`Username:` / `Password:` pair at the top of the file.
 
-- Aliases: <code>Phexia Stealer</code>, <code>Phexia macOS Stealer</code>
-- Typical filenames: <code>userinformation.txt</code>
-- Published formats: 1
-- Representative samples: 1
+## Research status
 
-<p>Phexia exports <code>userinformation.txt</code> with <code>Build</code>, <code>Hardware</code>, <code>Graphics/Displays</code>, <code>Software</code>, <code>Password</code>, and <code>IP Address</code> sections.</p>
+- Classification: **Known malware family**
+- Attribution confidence: **high**
+- Aliases: `Phexia Stealer`, `Phexia macOS Stealer`
+- Variants observed: **1**
+- Historical Logmine records represented: **1**
 
-## How to recognize it
+## What it targets
 
-- No stable text banner is known; combine filename and field layout.
-- Recurring fields: <code>build</code>, <code>graphics/displays</code>, <code>hardware</code>, <code>ip address</code>, <code>password</code>, <code>software</code>
+- macOS login credentials (captured at the panel prompt)
+- Browser saved credentials, cookies, web data, login data, and history from Chromium-based browsers
+- Chromium browser extension data and local extension settings
+- macOS Keychain (`/Library/Keychains/login.keychain-db`)
+- Crypto wallet desktop clients and browser extensions
+- Notes.app passwords and small files in `~/Downloads`
+- Telegram session data on macOS
 
-## Formats
+## Detection notes
 
-| Format | Evidence | Fingerprint |
-|---|---|---|
-| userinformation.txt - build / graphics/displays | 6 fields, filename | [`fp_28d1416faff5f29f7a6ed3393ecb366d`](fingerprints/fp_28d1416faff5f29f7a6ed3393ecb366d.json) |
+The first-line `Phexia macOS Stealer` banner is the family's
+verbatim self-identification and is the cleanest single
+fingerprint. The `Build:` bare-key affiliate tag distinguishes
+this layout from the sibling MacSync `Build Tag:` form and
+from Cthulhu's no-space `BuildID:` form. The shared `system_profiler`
+body means folder-level macOS detectors may flash on the
+same artifact, but parser dispatch on file system paths runs
+only the parser chain so there is no collision in practice.
+Triage logs from this family by collecting the captured
+macOS login credential pair, the affiliate `Build:` tag,
+and the Hardware UUID as the device identifier.
 
-## Representative sample
+## Observed log variants
 
-Observed text sample. Placeholders mark values removed from the original log.
+### `v_b2acb2241dc6354d10e66ebb270d1fe7`
 
-[<code>userinformation.txt</code>](samples/userinformation.txt)
+- Parser: `logmine.ioc.parsers.phexia.PhexiaParser`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_b2acb2241dc6354d10e66ebb270d1fe7/sample.txt)
+- Sample SHA-256: `e0e91bf55260ae513ac6f5a4821eba27bdb9793aa06ca9c2c822f6f4d3b184c9`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-```text
-Phexia macOS Stealer
+Recognition anchors:
 
-Build: GETWELL
-Username: [redacted]
-Password: [redacted]
-IP Address: [redacted]
+- Stable markers: `Phexia macOS Stealer`
+- Field labels: -
 
-Software:
 
-    System Software Overview:
+## MITRE ATT&CK
 
-      System Version: macOS 26.2 (25C56)
-      Kernel Version: Darwin 25.2.0
-      Boot Volume: Macintosh HD
-      Boot Mode: Normal
-      Computer Name: [redacted]
-      User Name: [redacted]
-      Secure Virtual Memory: Enabled
-      System Integrity Protection: Enabled
-      Time since boot: 19 days, 21 hours, 10 minutes
+| Technique | Name |
+|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
+| [T1555.001](https://attack.mitre.org/techniques/T1555/001/) | Keychain |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| [T1059.002](https://attack.mitre.org/techniques/T1059/002/) | Command and Scripting Interpreter: AppleScript |
 
-Hardware:
+## Related catalog profiles
 
-    Hardware Overview:
+- [MacSync](../mac-sync/)
 
-      Model Name: MacBook Pro
-      Model Identifier: Mac14,10
-      Model Number: MNW83B/A
-      Chip: Apple M2 Pro
-      Total Number of Cores: 12 (8 performance and 4 efficiency)
-      Memory: 16 GB
-      System Firmware Version: 13822.61.10
-      OS Loader Version: 13822.61.10
-      Serial Number (system): [redacted]
-      Hardware UUID: [redacted-uuid]
-      Provisioning UDID: [redacted]
-      Activation Lock Status: Enabled
+## Sources
 
-Graphics/Displays:
+- <https://cookie.engineer/weblog/articles/malware-insights-macos-phexia-stealer.html>
+- <https://www.pcrisk.com/removal-guides/34957-phexia-stealer-mac>
+- <https://g0njxa.medium.com/approaching-stealers-devs-a-brief-interview-with-phexia-38ad3772dbcd>
 
-    Apple M2 Pro:
-
-      Chipset Model: Apple M2 Pro
-      Type: GPU
-      Bus: Built-In
-      Total Number of Cores: 19
-      Vendor: Apple (0x106b)
-      Metal Support: Metal 4
-      Displays:
-        Color LCD:
-          Display Type: Built-in Liquid Retina XDR Display
-          Resolution: 3456 x 2234 Retina
-          Main Display: Yes
-          Mirror: Off
-          Online: Yes
-          Automatically Adjust Brightness: Yes
-          Connection Type: Internal
-```
-
-## References
-
-- [https://cookie.engineer/weblog/articles/malware-insights-macos-phexia-stealer.html](https://cookie.engineer/weblog/articles/malware-insights-macos-phexia-stealer.html)
-- [https://g0njxa.medium.com/approaching-stealers-devs-a-brief-interview-with-phexia-38ad3772dbcd](https://g0njxa.medium.com/approaching-stealers-devs-a-brief-interview-with-phexia-38ad3772dbcd)
-- [https://www.pcrisk.com/removal-guides/34957-phexia-stealer-mac](https://www.pcrisk.com/removal-guides/34957-phexia-stealer-mac)
-
-## Try it locally
-
-```console
-python identify.py "families/phexia/samples/userinformation.txt"
-```
-
-The evidence score describes a structural comparison, not attribution certainty.
-
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+Machine-readable record: [family.json](family.json)

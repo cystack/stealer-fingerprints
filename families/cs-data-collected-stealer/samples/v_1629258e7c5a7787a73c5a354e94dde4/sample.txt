@@ -1,0 +1,3 @@
+Computer: <HOST>
+IP: <IP>
+Data collected successfully

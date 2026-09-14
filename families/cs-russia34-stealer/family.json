@@ -1,0 +1,29 @@
+{
+  "id": "cs-russia34-stealer",
+  "name": "CSRussia34Stealer",
+  "classification": "aggregator",
+  "attribution_confidence": "unknown",
+  "description": "CSRussia34Stealer is a CyStack-coined identifier for a\n`russia34.com` / `Private Russia 34` stripped Redline-shape\n`UserInformation.txt` observed inside\n`@ft7links-redline-<TS>-<COUNT>pcs.rar` aggregator packs in\n`@ft7links_redline_<NN>_bogonip_<HWIDPFX>/` victim folders.\nThe panel emits an ASCII-art `REDLINE` banner with three\nrepeated `https://russia34.com` subscriber lines, then a\nstripped Redline-shape field set.",
+  "aliases": [
+    "russia34",
+    "Private Russia 34"
+  ],
+  "typical_targets": [],
+  "detection_notes": "ASCII-art REDLINE banner inside an asterisk-bordered box\nfollowed by `https://russia34.com` subscriber lines is the\ncleanest trigger. Pair with the stripped Redline-shape field\nset to confirm.",
+  "attack_techniques": [],
+  "related_families": [
+    "redline",
+    "redline-like-stealer"
+  ],
+  "sources": [
+    "https://russia34.com"
+  ],
+  "contains_families": [
+    "lumma",
+    "redline",
+    "redline-like-stealer",
+    "steal-c",
+    "x-files"
+  ],
+  "variants": []
+}

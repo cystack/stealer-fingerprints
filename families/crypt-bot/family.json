@@ -1,39 +1,108 @@
 {
-  "$schema": "../../schemas/family.schema.json",
-  "aliases": [
-    "Crypt Bot",
-    "CryptBot Stealer"
-  ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "CryptBot's `_Information.txt` is an aligned key/value summary combining `OS`, `Keyboard Languages`, `CPU`, `RAM`, `GPU`, `Display Resolution`, and `Installed software` fields.",
-  "external_references": [
-    {
-      "url": "https://any.run/malware-trends/cryptbot/"
-    },
-    {
-      "url": "https://fr3d.hk/blog/cryptbot-too-good-to-be-true"
-    },
-    {
-      "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.cryptbot"
-    },
-    {
-      "url": "https://research.openanalysis.net/cryptbot/botnet/yara/config/2024/12/06/cryptbot2.html"
-    },
-    {
-      "url": "https://www.deepinstinct.com/blog/cryptbot-how-free-becomes-a-high-price-to-pay"
-    }
-  ],
   "id": "crypt-bot",
   "name": "CryptBot",
-  "schema_version": "1.0",
-  "targets": [
-    "Browser cookies and autofill data",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "CryptBot is a Delphi-built info-stealer first publicly\ndocumented in December 2019. The family is best known for its\n`_Information.txt` victim summary plus sibling files\n`_AllPasswords_list.txt`, `_AllCookies_list.txt`,\n`_AllForms_list.txt`, `_AllWallets_list.txt`, and\n`Screen.png`, all written into a per-victim folder under\n`%TEMP%`. Multiple builder versions have been observed (v2.0,\nv3.0, v3.1 per public analyses); the field set in the summary\nfile is stable across versions, with the v3.x line moving the\nqualifier on `UserName` and `Data` fields from parentheses to\na brackets variant in some rebrand samples.\n\nCryptBot distribution leans on SEO-poisoned cracked-software\nlanding pages and bundled freeware installers. The malware\nwrites the victim summary to disk, packs it with the harvested\ncredential / cookie / wallet files into a ZIP, and POSTs the\narchive to a hard-coded C2 gate.",
+  "aliases": [
+    "CryptBot Stealer",
+    "Crypt Bot"
+  ],
+  "typical_targets": [
     "Browser saved credentials (Chromium and Gecko)",
+    "Browser cookies and autofill data",
     "Cryptocurrency wallet files and browser extensions",
     "Saved form data",
-    "Screenshot of the desktop",
-    "System hardware and locale inventory"
+    "System hardware and locale inventory",
+    "Screenshot of the desktop"
   ],
-  "tracking_labels": []
+  "detection_notes": "The `_Information.txt` filename is the strongest folder-level signal: paired with the `_AllPasswords_list.txt` /\n`_AllCookies_list.txt` / `_AllForms_list.txt` sibling\nset, no other family in the registry uses this exact\nnaming. Content-level fingerprint anchors on the\nbracket-suffixed `UserName [ComputerName]:` and\n`Data [Time]:` keys plus `Keyboard Languages:`; the\nno-space `UserName` spelling distinguishes CryptBot from\nVidar / StealC / Mars (which use `User Name:`).",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1113",
+      "name": "Screen Capture"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://research.openanalysis.net/cryptbot/botnet/yara/config/2024/12/06/cryptbot2.html",
+    "https://fr3d.hk/blog/cryptbot-too-good-to-be-true",
+    "https://malpedia.caad.fkie.fraunhofer.de/details/win.cryptbot",
+    "https://any.run/malware-trends/cryptbot/",
+    "https://www.deepinstinct.com/blog/cryptbot-how-free-becomes-a-high-price-to-pay"
+  ],
+  "variants": [
+    {
+      "id": "v_ab2260210a1222f2c7c15c25c8251227",
+      "parser": "logmine.ioc.parsers.cryptbot.CryptBotParser",
+      "filenames": [
+        "_Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "Data [Time]:",
+        "UserName ["
+      ],
+      "fields": [
+        "Installed software",
+        "Keyboard Languages"
+      ],
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_ab2260210a1222f2c7c15c25c8251227/sample.txt",
+        "sha256": "090c3bba8e01bf881bd061fb18d3c0a591a57433376c133a38838a3bb6eec86d",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "bracket-user-host"
+    },
+    {
+      "id": "v_cbcdfdbccf53d49530cd7b152470af8a",
+      "parser": "logmine.ioc.parsers.cryptbot.CryptBotParser",
+      "filenames": [
+        "_Information.txt"
+      ],
+      "panel_brand": "Ottoman",
+      "distribution_channel": "@OttoSup",
+      "attribution_confidence": "high",
+      "markers": [
+        "Data [Time]:",
+        "Installed software:",
+        "UserName ["
+      ],
+      "fields": [
+        "Keyboard Languages"
+      ],
+      "observations": 4,
+      "sample": {
+        "path": "samples/v_cbcdfdbccf53d49530cd7b152470af8a/sample.txt",
+        "sha256": "967be06238c92a4ffb1e3b21a0ce1d53ba66ecb9ccf7dc9f921eab0e605576e8",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "bracket-user-host"
+    }
+  ]
 }

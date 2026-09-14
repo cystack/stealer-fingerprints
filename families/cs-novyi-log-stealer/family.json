@@ -1,0 +1,79 @@
+{
+  "id": "cs-novyi-log-stealer",
+  "name": "CSNovyiLogStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSNovyiLogStealer is a CyStack-coined identifier for a\nRussian-language `info.txt` panel observed inside `!! 2025\nNOV.part001.rar` BRADMAX / `@BRADLOGS` aggregator packs. The\nfile lands buried inside the victim\n`AppData/Local/Temp/<8-char-random>/info.txt` path, not at a\ntop-level victim folder. The body opens with the Cyrillic\n`Новый лог!` (`New log!`) banner that the operator's Telegram\nbot posts on every new upload, then a `🗃Build ID: <name>`\nper-build tag, then a 10-field count panel with Russian field\nnames and one emoji glyph per line.\n\nField set: `🏳️ IP`, `🌎 Страна` (ISO 3166-1 alpha-2 code, not\nthe country name), `💻 Система` (localised Windows product\nname), `🍪 Куков` (cookies count), `🔐 Паролей` (passwords\ncount), `💳 Карт` (cards count), `📥 Загрузок` (downloads\ncount), `📚 Истории` (history count), `🎫 Токенов` (tokens\ncount), `👛 Кошельков` (wallets count), `📱 Tdata` (Telegram\ntdata count). The IOC schema does not carry per-category\ncount metrics so the parser surfaces only the build id, public\nIP, ISO2 country, and OS string.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and\ncommunity catalogues do not document a stealer that emits this\nexact `Новый лог!` banner with the 10-field emoji panel. A\npublic Angry Stealer / Rage Stealer write-up describes a\nsimilar field set (cookies + passwords + cards + downloads +\nwallets + Tdata) distributed via a Telegram bot, but does not\nshow the panel format verbatim, so the field-set similarity is\nnot enough to attribute. The `Build ID: Kev1n` value is a\nper-build operator tag, not a family brand.",
+  "aliases": [
+    "Novyi log info.txt Russian emoji panel",
+    "BRADMAX Temp/info.txt 10-field Cyrillic count panel"
+  ],
+  "typical_targets": [
+    "Browser saved credentials (count flag only; harvested body in sibling files)",
+    "Browser cookies (count flag only)",
+    "Browser autofill / credit cards (count flag only)",
+    "Browser download history (count flag only)",
+    "Browser history (count flag only)",
+    "Discord / Steam / Telegram tokens (count flag only)",
+    "Cryptocurrency wallets (count flag only)",
+    "Telegram tdata desktop sessions (count flag only)",
+    "Host OS string and victim public IP / country"
+  ],
+  "detection_notes": "Fingerprint requires the literal `Новый лог!` Cyrillic banner\nAND the `Build ID:` key AND the Cyrillic `Страна:` field name.\nThe three-anchor combination cannot collide with any other\nregistered parser: `Новый лог!` is the operator's Telegram bot\nnotification text and only appears in this panel template;\n`Страна:` is the Russian noun for country and is rare outside\nRussian-localised stealer output. During triage, treat the\nfamily attribution as unknown: the panel is a count summary,\nnot the harvested data itself, and the count fields plus the\nRussian field labels match several known Telegram-bot stealer\npanels (the publicly documented Angry / Rage Stealer family)\nwithout enough discriminating detail to confirm any specific\nbuilder. The actual harvested credentials live in sibling\nfiles inside the same per-victim folder.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-new-log-stealer",
+    "cs-emoji-info-stealer",
+    "cs-emoji-count-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": [
+    {
+      "id": "v_f5261d16e45e2fc5a86962a5fdbe680c",
+      "parser": "logmine.ioc.parsers.cs_novyi_log_stealer.CSNovyiLogStealerParser",
+      "filenames": [
+        "info.txt"
+      ],
+      "panel_brand": "Новый лог!",
+      "distribution_channel": "@BRADLOGS",
+      "attribution_confidence": "unknown",
+      "markers": [
+        "Build ID:",
+        "Новый лог!",
+        "Страна:"
+      ],
+      "fields": [],
+      "observations": 26,
+      "sample": {
+        "path": "samples/v_f5261d16e45e2fc5a86962a5fdbe680c/sample.txt",
+        "sha256": "8974ce614c995e809cb7acfca2c0a1c3ff193e7dc91fbfc20178d78c9ab31959",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

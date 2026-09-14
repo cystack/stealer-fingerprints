@@ -1,0 +1,78 @@
+{
+  "id": "predator-the-thief",
+  "name": "Predator The Thief",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "Predator The Thief is a C/C++ information stealer first\nadvertised in July 2018 on Russian-language forums by an\nactor known as ``Alexuiop1337`` (later also\n``Kongress_nlt``). Sold under a paid model through the\nTelegram channel ``t.me/sett9`` (v3.x paid channel) and\n``t.me/PredatorSoftwareChannel`` (update notes). Priced\naround USD 30 on Russian-speaking forums, positioning it\nas a low-cost commodity stealer.\n\nGrabs browser passwords, cookies, autofill data, and\nsaved forms; crypto wallets; Steam, Telegram, Discord,\nFileZilla, and WinFTP client credentials; the current\nclipboard; and system fingerprint (HWID, OS version,\nCPU / GPU / RAM / resolution). Later builds add webcam\nphoto capture and clipboard cryptocurrency-address\nswapping. Distinguishing on-disk artifact is the\n``Information.txt`` log with an ASCII-art ``PREDATOR``\nbanner and a dash-fenced\n``| Developed by Alexuiop1337 |`` /\n``| Buy Predator at t.me/sett9 |`` credit block above\nthe tally section.",
+  "aliases": [
+    "Predator Stealer",
+    "PredatorTheThief",
+    "win.predator"
+  ],
+  "typical_targets": [
+    "Browser credentials, cookies, autofill data, and saved\nform entries (Passwords / Cookies / Forms / Cards\ncounters in the log tally section)",
+    "Cryptocurrency wallet files (Wallets tally in the log)",
+    "Steam, Telegram, Discord, FileZilla, WinFTP client\ncredentials (dedicated tallies in the log)",
+    "System fingerprint (HWID, OS version, CPU, GPU, RAM,\nscreen resolution, machine name, keyboard layouts,\nsystem locale)",
+    "Geolocation (City, Country, Coordinates, IP, Timezone,\nZip code) resolved from the harvest-time public IP",
+    "Installed applications inventory (numbered\n``Installed applications:`` list)",
+    "Clipboard contents at grab time",
+    "Startup / persistence path of the harvester payload"
+  ],
+  "detection_notes": "Fingerprint on the family-self-identifying banner literal\n``Predator The Thief :`` at line start. The banner appears\nin every observed sample and does not clash with any\nother stealer log format. Confidence triggers include:\nthe ASCII-art ``PREDATOR`` header on the first non-blank\nlines, the ``| Buy Predator at t.me/sett9 |`` sale-channel\nwatermark, the ``--- ID: <numeric>`` trailer that carries\nthe campaign / customer identifier, and the specific\nfield-label spellings (``User name`` / ``Machine name`` /\n``UTC time`` / ``CPU info`` / ``GPU info`` /\n``Amount of RAM``). During incident response, treat the\ncampaign ID as the pivot for cross-victim correlation and\nthe ``Startup folder:`` value as the persistence-path\nartifact.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1518",
+      "name": "Software Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1115",
+      "name": "Clipboard Data"
+    },
+    {
+      "id": "T1125",
+      "name": "Video Capture"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://research.checkpoint.com/2020/predator-the-thief/",
+    "https://www.fortinet.com/blog/threat-research/predator-the-thief-recent-versions",
+    "https://securelist.com/a-predatory-tale/89779/",
+    "https://fumik0.com/2018/10/15/predator-the-thief-in-depth-analysis-v2-3-5/",
+    "https://malpedia.caad.fkie.fraunhofer.de/details/win.predator",
+    "https://any.run/malware-trends/predator/"
+  ],
+  "related_external": [
+    "Kongress"
+  ],
+  "observed_channels": [
+    "https://t.me/sett9",
+    "https://t.me/PredatorSoftwareChannel"
+  ],
+  "variants": []
+}

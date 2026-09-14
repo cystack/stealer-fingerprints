@@ -1,0 +1,42 @@
+{
+  "id": "cs-wifi-backslash-n-stealer",
+  "name": "CSWifiBackslashNStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSWifiBackslashNStealer is a CyStack-coined identifier for a\nminimal two-file victim folder observed inside `!! 2025\nNOV.part001.rar` BRADMAX / `@BRADLOGS` aggregator packs at\n`[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/` victim folders. The pack\nships only `installed_apps.txt` plus `wifi_passwords.txt` (and\nsometimes an empty-named packer directory artifact); no\ncompanion system-info file, no browser-credential dump, no\ntoken files.\n\nThe wifi cred file is one physical line at the OS level. The\npanel serialises per-SSID entries with the literal\ntwo-character `\\n` escape (backslash + `n`) as the separator,\nnot real LF. Per-entry shape is `<SSID> | <password>\\n`; open\nnetworks and browser-sync placeholders emit `<SSID> | \\n` with\nthe password segment blank.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and\ncommunity catalogues do not document a family that emits\nexactly this 2-file minimal layout. The pipe-delimited `<SSID>\n| <password>` body itself is a generic `netsh wlan show\nprofile name=<x> key=clear` post-processing shape used by many\n.NET and Python stealer builders, so the literal `\\n`\nserialisation plus the 2-file root layout is what gives this\nlabel its specificity.",
+  "aliases": [
+    "BRADMAX 2-file wifi+apps minimal pack",
+    "installed_apps + wifi_passwords literal-\\n export"
+  ],
+  "typical_targets": [
+    "Wifi SSIDs and saved network passwords",
+    "Installed Windows program names"
+  ],
+  "detection_notes": "Fingerprint requires (a) `installed_apps.txt` AND\n`wifi_passwords.txt` in the folder root, (b) root-entry count\n<= 3 (the optional third entry is an empty-named packer DIR),\nand (c) 3+ `<SSID> | <password>\\n` line matches in\n`wifi_passwords.txt` where `\\n` is the two-character escape,\nnot real LF. The literal-`\\n` constraint plus the file-count\ncap keep this off ZenRAT folders, which require 3 of 5 of\n`sysinfo.txt` / `running_services.txt` / `license_info.txt` /\n`installed_apps.txt` / `wifi_passwords.txt` per public ZenRAT\nreporting and use conventional LF-separated wifi output.\nDuring triage, treat this label as a \"victim folder truncated\nto the two cheapest panel outputs\" marker: the underlying\nstealer builder is not identifiable from this 2-file shape\nalone, only the BRADMAX distribution channel is.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "cs-soft-host-stealer",
+    "cs-data-collected-stealer"
+  ],
+  "sources": [],
+  "related_external": [
+    "zenrat"
+  ],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": []
+}

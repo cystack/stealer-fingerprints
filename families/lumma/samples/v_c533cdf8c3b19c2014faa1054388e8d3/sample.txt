@@ -1,0 +1,19 @@
+Path: <redacted>
+Time Zone: UTC-3
+Elevated: false
+Computer: <HOST>
+User: <USER>
+Hostname: <HOST>
+NetBIOS: <HOST>
+Language: es-AR
+HWID: <HWID>
+RAM Size: 32768MB
+CPU Vendor: AuthenticAMD
+CPU Name: AMD Ryzen 7 5700G with Radeon Graphics
+CPU Threads: 16
+CPU Cores: 8
+Display resolution: 1920x1080
+IP Address: <IP>
+Time: 25.05.2025 <ip> (sig:1748171520.<SECRET>)
+Country: AR
+LID: @BRADMAX_LOG (BRADMAX) / <url>

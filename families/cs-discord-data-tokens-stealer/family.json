@@ -1,0 +1,38 @@
+{
+  "id": "cs-discord-data-tokens-stealer",
+  "name": "CSDiscordDataTokensStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSDiscordDataTokensStealer is a CyStack-coined identifier for\na stripped victim-folder shape observed inside `!! 2025\nJULY.part001.rar` BRADMAX / `@BRADLOGS` aggregator packs at\n`[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/DiscordData/` subfolders.\nThe folder root carries `tokens.txt` plus optionally a\n`leveldb/` companion subdirectory and the BRADMAX repacker's\nempty-named DIR artifact, with no companion system-info file,\nno browser-credential dump, no wifi or installed-apps export.\n\n`tokens.txt` is the verbatim Discord LevelDB sstable content\nlifted from `%AppData%/discord/Local Storage/leveldb/*.ldb`\nand concatenated into one binary blob. Sample files run\nhundreds of kilobytes and decode as high-entropy CJK mojibake\nwhen interpreted as UTF-8 (random bytes forming valid 3-byte\nUTF-8 sequences in the ideograph range). When the `leveldb/`\nsidecar is present it holds the per-file LevelDB pages\n(`*.ldb` / `*.log` / `MANIFEST-*` / `CURRENT`) the panel\ncopied verbatim from the victim's Chromium `Local\nStorage/leveldb/` directory; the `tokens.txt` blob is the same\ndata concatenated for downstream convenience. The panel\nexported the raw leveldb pages rather than the parsed\n`<userId>.<timestamp>.<hmac>` token string that most\ndocumented Discord-token stealers emit, so the operator runs\nthe leveldb parse offline.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and\ncommunity catalogues do not document a stealer that emits this\nexact `DiscordData/tokens.txt` single-binary-file shape.\nDocumented sibling layouts write parsed-token text under\ndifferent folder names (PupkinStealer `Grabbers/Discord/`,\nBlackGuard `Discord/`, Bizfum `Account-Tokens.txt`, Octalyn\n`Discord/Tokens.txt`) or capture the whole leveldb directory\nverbatim under the canonical `Local Storage/leveldb/` path.\nThe `DiscordData/` folder name and the single-binary-blob\nlayout are a private builder choice the BRADMAX repacker\npreserved on its way through the aggregator.",
+  "aliases": [
+    "BRADMAX DiscordData/tokens.txt single-blob pack"
+  ],
+  "typical_targets": [
+    "Discord authentication tokens harvested from leveldb"
+  ],
+  "detection_notes": "Fingerprint requires (a) the IOC folder basename equals\n`DiscordData` (case-insensitive), (b) `tokens.txt` in the\nfolder root, (c) every other root entry is one of the\nallowed siblings (`leveldb` subdirectory or the empty-named packer DIR artifact), and (d) the system_path id\ncontains a `BRADLOGS` or `BRADMAX` token. The allowlist\n(rather than a count cap) keeps the detector tight as\nnew wrapper-side artifacts surface without dropping the\nconstraint that no unrelated cred / system file appears\nat root. The folder-name plus path-side BRADMAX anchor\nkeeps this off generic Discord-loot folders distributed\nthrough unrelated channels.\n\nDuring triage, treat this label as a \"BRADMAX victim where\nthe panel exported only the raw Discord leveldb dump\"\nmarker: the underlying stealer builder is not identifiable\nfrom this 1-file shape alone, only the BRADMAX\ndistribution channel is. To extract tokens from the\nbinary blob, decode as leveldb and grep for Discord's\n`dQw4w9WgXcQ` encryption prefix or the parsed\n`<userId>.<timestamp>.<hmac>` shape, the same way an\nincident responder would handle a stolen `*.ldb` file.",
+  "attack_techniques": [
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "cs-bradmax-category-stealer",
+    "cs-wifi-backslash-n-stealer",
+    "cs-cc-apostrophe-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": []
+}

@@ -1,120 +1,69 @@
 # Cthulhu Stealer
 
-**Known malware family · high attribution confidence**
+Cthulhu Stealer is a Go-written macOS infostealer that
+exfiltrates a custom `Userinfo.txt` written to
+`/Users/Shared/NW/`. The body opens with `IP:` and `Country:`
+fields and continues with macOS hardware and account inventory.
+Observed in `@bugatti_cloud` aggregator packs.
 
-## At a glance
+## Research status
 
-- Aliases: <code>Cthulhu macOS Stealer</code>
-- Typical filenames: <code>userinformation.txt</code>
-- Published formats: 0
-- Representative samples: 1
+- Classification: **Known malware family**
+- Attribution confidence: **high**
+- Aliases: `Cthulhu macOS Stealer`
+- Variants observed: **1**
+- Historical Logmine records represented: **5,450**
 
-<p>The observed Cthulhu Stealer sample uses <code>userinformation.txt</code>. It opens with <code>MetaMask Info:</code>, <code>Debanks:</code>, and <code>BuildID:</code> before <code>Userinfo:</code> and macOS system and hardware sections.</p>
+## What it targets
 
-## How to recognize it
+- Browser saved credentials on macOS
+- Crypto wallet desktop clients
+- macOS Keychain entries
+- Telegram session data
+- System inventory and hardware fingerprint
 
-- No stable text banner is known; combine filename and field layout.
-- No machine-readable field set is published yet; compare the sample manually.
+## Detection notes
 
-## Formats
+macOS-specific path (`/Users/Shared/NW/Userinfo.txt`) plus the
+IP-then-country opening is the clean fingerprint. The Go
+origin shows up in stable field ordering across builds.
 
-No matcher fingerprint has been published for this family yet.
+## Observed log variants
 
-## Representative sample
+### `v_1e1c8707a36b7f85a5633c78674b0d78`
 
-Observed text sample. Placeholders mark values removed from the original log.
+- Parser: `logmine.ioc.parsers.cthulhu.CthulhuParser`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Historical records represented: **5,450**
+- Representative sample: [open sample](samples/v_1e1c8707a36b7f85a5633c78674b0d78/sample.txt)
+- Sample SHA-256: `f86d1d768943f3ef56910c53097a0e39d5e5fbaee351ec58406c821f221609f1`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-[<code>userinformation.txt</code>](samples/userinformation.txt)
+Recognition anchors:
 
-```text
-MetaMask Info:
-Debanks: 
-BuildID:E3
+- Stable markers: `Hardware Overview:`
+- Field labels: `BuildID`
 
-Userinfo:
-Country: KR
-IP: [redacted]
-City: [redacted]
-Software:
 
-System Software Overview:
+## MITRE ATT&CK
 
-  System Version: macOS 26.0 (25A354)
-  Kernel Version: Darwin 25.0.0
-  Boot Volume: Macintosh HD
-  Boot Mode: Normal
-  Computer Name: [redacted]
-  User Name: [redacted]
-  Secure Virtual Memory: Enabled
-  System Integrity Protection: Enabled
-  Time since boot: 39 14
+| Technique | Name |
+|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
+| [T1555.001](https://attack.mitre.org/techniques/T1555/001/) | Keychain |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
 
-Hardware:
+## Related catalog profiles
 
-Hardware Overview:
+- None recorded.
 
-  Model Name: MacBook Pro
-  Model Identifier: MacBookPro16,1
-  Processor Name: 6-Core Intel Core i7
-  Processor Speed: 2.6 GHz
-  Number of Processors: 1
-  Total Number of Cores: 6
-  L2 Cache (per Core): 256 KB
-  L3 Cache: 12 MB
-  Hyper-Threading Technology: Enabled
-  Memory: 32 GB
-  System Firmware Version: 2092.[redacted] (iBridge: 23.16.10350.0.0,0)
-  OS Loader Version: 583~2470
-  Serial Number (system): [redacted]
-  Hardware UUID: [redacted-uuid]
-  Provisioning UDID: [redacted]
-  Activation Lock Status: Enabled
+## Sources
 
-Graphics/Displays:
+- <https://www.darktrace.com/blog/from-the-depths-analyzing-the-cthulhu-stealer-malware-for-macos>
 
-Intel UHD Graphics 630:
-
-  Chipset Model: Intel UHD Graphics 630
-  Type: GPU
-  Bus: Built-In
-  VRAM (Dynamic, Max): 1536 MB
-  Vendor: Intel
-  Device ID: 0x3e9b
-  Revision ID: 0x0000
-  Automatic Graphics Switching: Supported
-  gMux Version: 5.0.0
-  Metal Support: Metal 3
-  Displays:
-Color LCD:
-  Display Type: Built-In Retina LCD
-  Resolution: 3072 x 1920 Retina
-  Framebuffer Depth: 24-Bit Color (ARGB8888)
-  Main Display: Yes
-  Mirror: Off
-  Online: Yes
-  Automatically Adjust Brightness: No
-  Connection Type: Internal
-
-AMD Radeon Pro 5300M:
-
-  Chipset Model: AMD Radeon Pro 5300M
-  Type: GPU
-  Bus: PCIe
-  PCIe Lane Width: x16
-  VRAM (Total): 4 GB
-  Vendor: AMD (0x1002)
-  Device ID: 0x7340
-  Revision ID: 0x0043
-  ROM Revision: 113-D3220E-190
-  VBIOS Version: 113-D32207P1-019
-```
-
-Preview shortened; open the sample file for the complete text.
-
-## References
-
-- [https://www.darktrace.com/blog/from-the-depths-analyzing-the-cthulhu-stealer-malware-for-macos](https://www.darktrace.com/blog/from-the-depths-analyzing-the-cthulhu-stealer-malware-for-macos)
-
-This sample is available for manual comparison; no matcher fingerprint is published for it yet.
-
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+Machine-readable record: [family.json](family.json)

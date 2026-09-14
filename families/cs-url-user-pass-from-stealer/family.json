@@ -1,0 +1,40 @@
+{
+  "id": "cs-url-user-pass-from-stealer",
+  "name": "CSUrlUserPassFromStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSUrlUserPassFromStealer is a CyStack-coined identifier for a\n4-line `URL / User / Pass / From` cred-file shape distributed\ninside `202605080230_@BRADMAX 11700 MAY.part1.rar` aggregator\npacks at `[<ISO2>]<IPv4>/Passwords.txt` victim folders. The\nfolder ships a minimal 2-file layout (`Bookmarks.txt` +\n`Passwords.txt`) with no companion system-info file. The cred\nfile body holds short-label `URL: <url>`, `User: <username>`,\n`Pass: <password>`, `From: <Browser>` lines, one block per\nentry; observed samples ship a single 83-byte block per\nvictim.\n\nThe short labels (`URL` / `User` / `Pass`) distinguish this\nformat from sibling 4-line shapes: Redline,\n`CSAppProfileStealer`, `CSDateCreatedStealer`,\n`CSLoginsPathStealer`, and `CSDbscProtectedStealer` all use\nthe long-form `URL: / Username: / Password:` labels. The\n`From: <Browser>` fourth label, carrying a bare browser-name\nword, replaces the `Application:` line those sibling shapes\nuse. A public Zaraza Bot writeup documents an Edge-targeting\nTelegram-distributed builder that harvests `origin_url` /\n`username_value` / `password_value` to an `output.txt` cred\nfile, but does not publish the exact serialised label\nsequence, so attribution stays CyStack-coined pending a\npublished mapping for this exact shape.",
+  "aliases": [
+    "BRADMAX Passwords.txt short-label URL/User/Pass/From shape",
+    "Bookmarks-plus-Passwords minimal 2-file BRADMAX victim layout"
+  ],
+  "typical_targets": [
+    "Browser-saved credentials (URL, username, password)",
+    "Source browser identity (`From:` line, bare browser-name word)"
+  ],
+  "detection_notes": "Fingerprint requires a 4-line `URL: / User: / Pass: / From:\n<Browser>` block where the `From:` line carries a known\nbrowser-name word (Chrome, Edge, Firefox, Brave, Opera,\nVivaldi, Yandex, Mozilla, Chromium, Safari, Tor, Internet\nExplorer, IE). One block is sufficient: the minimal observed\ncred file is a single 83-byte record, and the short-label\nsequence plus the browser-name gate is specific enough that\nrequiring 3+ blocks would miss the minimal variant without\nadding false-positive protection. During triage, treat the\nfamily attribution as unknown: the underlying builder that\nemits this exact short-label layout is not pinned by any\npublic reporting.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "cs-soft-host-stealer",
+    "cs-app-profile-stealer",
+    "cs-dbsc-protected-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/bradmax_cloud"
+  ],
+  "variants": []
+}

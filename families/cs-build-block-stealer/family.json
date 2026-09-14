@@ -1,0 +1,70 @@
+{
+  "id": "cs-build-block-stealer",
+  "name": "CSBuildBlockStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSBuildBlockStealer is a CyStack-coined identifier for a\n`UserInformation.txt` shape distributed via `@ft7links`\naggregator packs that the operator mislabels as `redline`. The\nbody is a flat key/value block whose distinguishing feature is\na four-line `Build Path:` / `Build ID:` / `Build Version:` /\n`Build Comment:` group plus an `Active window:` line and a\ntwo-letter `GEO:` country code. None of the canonical Redline\nanchors (`Operation System:` typo, `FileLocation:`,\n`Hardwares:` block, `Anti-Viruses:` block) appear, so the\naggregator label cannot be trusted.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and the\npublic stealer-format catalogues do not document a family\nusing this exact `Build` block plus `Active window:` plus\n`GEO:` field set. Aurora ships `Build ID` paired with `Build\nGroup`; RisePro ships `Build` and `HWID` only; Mystic Stealer\nis documented at the protocol level rather than the\nlog-template level - none match.",
+  "aliases": [],
+  "typical_targets": [
+    "Browser saved credentials and cookies",
+    "Crypto wallet extensions and desktop clients",
+    "System hardware and locale inventory"
+  ],
+  "detection_notes": "Requires all five line-anchored keys: `Build Path:`,\n`Build ID:`, `Build Version:`, `Build Comment:`, and\n`Active window:`. The five-key combo is unique across\nthe parser registry; a stray document quoting one or two\nof the field names cannot accidentally claim the content.\nTreat the family attribution as provisional during triage\n- the aggregator labels the pack `redline` but the body\nlacks every canonical Redline anchor.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "redline",
+    "redline-like-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/ft7links"
+  ],
+  "variants": [
+    {
+      "id": "v_bf1a41ea43d38a0ab65502c1f7d81936",
+      "parser": "logmine.ioc.parsers.cs_build_block_stealer.CSBuildBlockStealerParser",
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "panel_brand": "4-key Build block (Path/ID/Version/Comment)",
+      "distribution_channel": "@ft7links",
+      "attribution_confidence": "unknown",
+      "markers": [],
+      "fields": [
+        "Active window",
+        "Build Comment",
+        "Build Path",
+        "Build Version"
+      ],
+      "observations": 369,
+      "sample": {
+        "path": "samples/v_bf1a41ea43d38a0ab65502c1f7d81936/sample.txt",
+        "sha256": "4d700e61e5c0fcc1772af67f8b8ee8b2c058923251721b03102aca4b369a7e9d",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

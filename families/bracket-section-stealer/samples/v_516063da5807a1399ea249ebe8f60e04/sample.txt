@@ -1,0 +1,17 @@
+Username: <USER>
+Hostname: <HOST>
+IP: <IP>
+Country: Germany (DE)
+Timezone: Europe/Berlin
+City: <LOCATION>
+Hwid: <HWID>
+Buildtag: cherry512
+[System]
+OS Product: Windows 10 Pro 22H2 x64 (19045)
+Screensize: 1440x1080
+Keyboard: Deutsch (Deutschland)
+System Language: de-DE
+[Hardware]
+GPU: NVIDIA GeForce GTX 1650
+CPU: AMD Ryzen 7 PRO 1700X Eight-Core Processor
+RAM: 16337 MB

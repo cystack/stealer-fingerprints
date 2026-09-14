@@ -1,0 +1,46 @@
+{
+  "id": "csx3zero-bot-stealer",
+  "name": "CSX3zeroBotStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSX3zeroBotStealer is a CyStack-coined identifier for the\npanel behind the `t.me/x3zeroBot` Telegram bot. The\npanel writes an `Information.txt` that opens with a\nthree-zero ASCII banner (Unicode box-drawing rendition\nof the operator's `０００` FULLWIDTH DIGIT ZERO display\nname), pins the `Info: t.me/x3zeroBot` operator handle\nat the top, and emits four fifteen-dash-separated\nblocks: build identity (`Build ID:`), geo / device\nidentity (`HWID:`, `IP Address:`, `Log Date:`,\n`Country:`, `City:`, `Coordinates:` lat/lng pair),\nhardware (`Username:`, `OS:` composite pipe-separated\ntriple, `Screen:` slash-separated resolution, `CPU:`,\n`GPU:`, `RAM:`), and per-category counts (`Cookies:`,\n`Passwords:`, `Crypto:`).\n\nObserved inside a @bugatti_cloud multi-family aggregator\narchive (`____Bugatti____Private_Cloud 22.07 .part01.rar`)\nat `[<CC>] <32-hex-HWID> [<DD-MM-YYYY HH-MM-SS>]/\nInformation.txt` victim folders. Family attribution is\nprovisional pending a published threat-intel mapping\nfor this panel; the surveyed CTI corpus and community\ncatalogues (MalBeacon what-is-this-stealer, deepdarkCTI,\nMalpedia, RussianPanda) do not attest an `x3zero` /\n`x3zeroBot` operator.",
+  "aliases": [],
+  "typical_targets": [
+    "Browser saved credentials (count surfaced as `Passwords:`)",
+    "Browser cookies (count surfaced as `Cookies:`)",
+    "Cryptocurrency wallets (count surfaced as `Crypto:`)",
+    "System hardware and geo inventory (per-victim identity block)"
+  ],
+  "detection_notes": "High-confidence trigger: the `t.me/x3zeroBot` URL\nliteral plus line-anchored `Build ID:` plus line-anchored `Coordinates:` bare-key geo enrichment. The\nthree-anchor combination is unique - no other family\nin this catalog emits the `x3zeroBot` handle or the\n`Coordinates: <lat>, <lng>` decimal-pair enrichment.\nTriage note: the `OS:` composite carries the product\nname, Windows directory, and NT kernel path joined by\npipes; only the first segment is stable across builds,\nand the trailing segment carries the OS build number\nthat would otherwise sit under a separate field.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://github.com/fastfire/deepdarkCTI/blob/main/telegram_infostealer.md",
+    "https://github.com/MalBeacon/what-is-this-stealer"
+  ],
+  "observed_channels": [
+    "https://t.me/x3zeroBot"
+  ],
+  "variants": []
+}

@@ -1,0 +1,35 @@
+- OS Version: Windows 10 Entreprise N (10.0.19045) x64
+- Local Date: 24.02.2025 <ip>
+- Time Zone: UTC+1
+- Install Date: 01.01.1970 <ip>
+- Elevated: false
+- Computer: <HOST>
+- User: <USER>
+- Domain:
+- Hostname: <HOST>
+- NetBIOS: <HOST>
+- Language: fr-FR
+- Anti Virus:
+- Windows Defender
+- HWID: <HWID>
+- RAM Size: 16384MB
+- CPU Vendor: GenuineIntel
+- CPU Name: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+- CPU Threads: 12
+- CPU Cores: 6
+- GPU:
+- NVIDIA GeForce GTX 1660
+- Display resolution: 1920x1080
+- IP Address: <IP>
+- Time: 24.02.2025 <ip> (sig:1740352266.<SECRET>)
+- Country: FR
+Куплю ваши YouTube каналы в больших объемах!
+Работая в данной сфере больше 6 лет  и могу с уверенностью сказать, что только работая с нами вы сможете  реализовать ваши YouTube каналы и получить максимальную выгоду.
+Постоянным продавцам мы предоставляем лучшую цену на рынке за любой канал + % со стрима.
+Наша команда на находится на связи 24/7.
+Exploit: <url>
+#1 Cервис по подобору паролей (MetaMask, Phantom, Exodus и множество других)
+Применяем широкий спектр атак для подбора паролей. Большой опыт в области криптографии и взлома паролей.
+Работаем с кошельками от $5,000
+Процент: 70/30 или 60/40 в вашу пользу (зависит от сложности подобранного пароля)
+Контакты - <url>

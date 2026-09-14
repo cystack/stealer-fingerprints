@@ -1,0 +1,122 @@
+{
+  "id": "cs-user-info-bracket-stealer",
+  "name": "CSUserInfoBracketStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CyStack tracking name for an unattributed Windows\n`Information.txt` template built from `[User Info]`, `[Network]`,\n`[System]`, `[Drives]`, `[GPU]`, and `[Basic]` sections. The same\nfield grammar has been observed with the self-labels `AETHERIS`,\n`PDRstealer`, and `Banshee v1.4`, and with no surviving banner.\nThe AETHERIS-labelled observation carries the `Developer\n@sexyweekly` watermark and was distributed in an `@BRADMAX`-style\npack. These labels are retained only as per-variant panel brands.",
+  "aliases": [
+    "Aetheris Stealer (observed self-label)",
+    "Banshee v1.4 (observed self-label)",
+    "PDRstealer (observed self-label)",
+    "User Info / Input ISO bracket template"
+  ],
+  "typical_targets": [
+    "Browser saved credentials and cookies",
+    "Crypto wallet extensions and clients",
+    "System hardware and locale inventory"
+  ],
+  "detection_notes": "Primary shape is `[User Info]` plus `Input ISO:`. Stripped forms\nretain `[Basic]` plus line-anchored `User Domain:`, or\nline-anchored `Hwid:` plus `CPU Name:`. The pinned ToxSteal source\nemits the same six sections and field vocabulary, while the\nindependent IRoveroll analysis documents the same\n`Information.txt` layout and clipboard routine. Exact template\nreuse is not evidence of payload identity or common lineage.\n`AETHERIS`, `PDRstealer`, and `Banshee v1.4` are self-labels only;\nthe last does not imply a relationship to the separately\ndocumented macOS malware named Banshee.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://github.com/onlytoxi/tox-steal/blob/a34b15b708b73e59814d7ecd233c3949da6ab708/New/Intelix.Targets.Device/SystemInfo.cs",
+    "https://github.com/taogoldi/reverse-engineer/blob/b29438e0244c1f21d6eed00e2d4040736bb46944/_posts/2026-04-23-iroveroll-telegram-infostealer.md"
+  ],
+  "variants": [
+    {
+      "id": "v_fdb74de9cb4f98c742de98b53c54eb33",
+      "parser": "logmine.ioc.parsers.cs_user_info_bracket_stealer.CSUserInfoBracketStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "[Basic]"
+      ],
+      "fields": [
+        "User Domain"
+      ],
+      "observations": 5,
+      "sample": {
+        "path": "samples/v_fdb74de9cb4f98c742de98b53c54eb33/sample.txt",
+        "sha256": "66b39fbd37357f589ba2e807edd7500ac9b026e0aa802afd53d6fbc4cc077884",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "basic-user-domain"
+    },
+    {
+      "id": "v_e4ecc884d733c891238731a7465cfa26",
+      "parser": "logmine.ioc.parsers.cs_user_info_bracket_stealer.CSUserInfoBracketStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": "PDRstealer",
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "[User Info]",
+        "PDRstealer"
+      ],
+      "fields": [
+        "Input ISO"
+      ],
+      "observations": 4755,
+      "sample": {
+        "path": "samples/v_e4ecc884d733c891238731a7465cfa26/sample.txt",
+        "sha256": "70a0251c7ad29e86b811aad4b29c76ca4c340a5488f8e6b75bcd0194e6d21968",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "user-info-input-iso"
+    },
+    {
+      "id": "v_b5830fa7c4f172950304e99c5fa7d4ad",
+      "parser": "logmine.ioc.parsers.cs_user_info_bracket_stealer.CSUserInfoBracketStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": "Banshee v1.4",
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "[User Info]",
+        "Banshee v1.4"
+      ],
+      "fields": [
+        "Input ISO"
+      ],
+      "observations": 613,
+      "sample": {
+        "path": "samples/v_b5830fa7c4f172950304e99c5fa7d4ad/sample.txt",
+        "sha256": "3a4f453b631ec4229f975817dde22f10f0a70a0f8865bb56ea652392a6387318",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "user-info-input-iso"
+    }
+  ]
+}

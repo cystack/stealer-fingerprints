@@ -1,0 +1,56 @@
+{
+  "id": "cs-edu-result-stealer",
+  "name": "CSEduResultStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "low",
+  "description": "CSEduResultStealer is a CyStack-coined identifier for a\nminimal five-field Python `system_info.txt` observed inside\n`7-11 AUGUST - 31283 LOGS2.part01.rar`-style aggregator packs\nat `<HWIDPFX>_<TIMESTAMP>/EDU_RESULT/extracted/\nsystem_info.txt` victim folders. The body carries only `OS`,\n`Hostname`, `IP Address` (LAN, not public), `CPU` (in Python\n`platform.processor()` output format, e.g. `Intel64 Family 6\nModel 186 Stepping 3, GenuineIntel`), and `RAM` (float GB from\n`psutil.virtual_memory()`).\n\nThe victim-folder `EDU_RESULT/` subtree carries the stealer's\nharvest categories (`archives_scanned.txt`, `cards.txt`,\n`cookies.txt`, `discord_token.txt`) plus an `extracted/`\nsibling with per-category folders (`bin/`,\n`Browsers/BraveSoftware/`, `Browsers/Chromium/`, etc.). The\n`EDU_RESULT` folder-name literal suggests an \"educational\"\nPython-project origin, likely one of the hobbyist /\nopen-source stealer scripts indexed under GitHub's\n`stealer-2025` / `info-steal` / `stealer-undetectable` Topics\ncovered in public reporting on the GitVenom campaign. Family\nattribution is provisional pending a published threat-intel\nmapping for the `EDU_RESULT` output layout.",
+  "aliases": [
+    "EDU_RESULT Python stealer",
+    "system_info.txt platform.processor minimal"
+  ],
+  "typical_targets": [
+    "Basic host identity and hardware inventory (OS,\nhostname, LAN IP, CPU, RAM)",
+    "Browser saved credentials, cookies, autofills, bookmarks\n(under `EDU_RESULT/extracted/Browsers/`)",
+    "Discord tokens (`EDU_RESULT/discord_token.txt`)",
+    "Credit-card data (`EDU_RESULT/cards.txt`)",
+    "Cookies dump (`EDU_RESULT/cookies.txt`)",
+    "Archive/wallet scan results (`archives_scanned.txt`)"
+  ],
+  "detection_notes": "Fingerprint requires all four of `OS:`, `Hostname:`,\n`IP Address:`, and a `CPU:` line whose value matches the\nPython `platform.processor()` shape `(Intel64|AMD64|\nARM64) Family <N> Model <N> Stepping <N>, (GenuineIntel|\nAuthenticAMD|...)`. The Python platform.processor CPU\nformat is the load-bearing anchor: canonical C# / .NET\nstealers emit the marketing CPU name (`Intel(R) Core(TM)\ni5-...`) rather than the raw registry `PROCESSOR_\nIDENTIFIER` string. During triage, treat this label as a\n\"hobbyist Python stealer\" marker: the underlying builder\nis not identifiable from this shape alone, but the\n`EDU_RESULT/extracted/` folder tree is the load-bearing\nevidence for confirming the family.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    }
+  ],
+  "related_families": [
+    "py-info-stealer",
+    "blank-grabber"
+  ],
+  "sources": [],
+  "related_external": [
+    "xillenstealer",
+    "braodo-stealer"
+  ],
+  "variants": []
+}

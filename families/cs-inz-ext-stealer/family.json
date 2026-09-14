@@ -1,0 +1,68 @@
+{
+  "id": "cs-inz-ext-stealer",
+  "name": "CSInzExtStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSInzExtStealer is a CyStack-coined identifier for a\nsnake_case `_info.json` panel observed inside\n`!! 2025 NOV.part001.rar`-style aggregator packs in\n`<id>_<CC>_<IPv4>_<DD-MM-YY>/<HOST>$<USER>_<YYMMDD>_\n<HHMMSS>/` per-victim folders. The body is a single flat\nJSON object with eleven keys: `channel`, `pc_name`,\n`pc_login`, `pc_info`, `path`, `uuid`, `sid`,\n`inz_ext_count`, `python`, `timestamp`, `client_utc`.\n\nThe panel self-identifies as Python-built: `pc_info`\ncarries Python's `platform.platform()` dash-joined\nstring (`Windows-<release>-<build>-<service_pack>`) and\n`python` is the absolute path to the interpreter that\nproduced the log (e.g. `C:\\Users\\<u>\\AppData\\Local\\\nPrograms\\Python\\Python3127\\python.exe`). The `channel`\nvalue is an alphanumeric campaign / builder code (first\nobserved literal `A7-574`) the operator uses to retag\neach victim - it is an internal campaign id rather than\na Telegram handle. The `inz_ext_count` key is the panel-unique marker; the `inz_` prefix is unusual and reads as\nthe panel author's shorthand for an installed-extension\nor inzip-extension counter. Family attribution is\nprovisional pending a published threat-intel mapping for\nthis layout. The Python-runtime self-reference suggests\na relative of the Vietnamese-speaking-actor cluster\naround PXA, Braodo, and Lone None, but none of those\nfamilies publishes this exact JSON schema.",
+  "aliases": [
+    "_info.json snake_case panel"
+  ],
+  "typical_targets": [
+    "Browser saved credentials and cookies (in sibling cred files)",
+    "Windows machine identity (SID, machine UUID)",
+    "System hardware and locale inventory"
+  ],
+  "detection_notes": "Fingerprint requires the `\"inz_ext_count\"` JSON-key\nsubstring (the panel-unique marker) plus the `\"pc_login\"`\nand `\"client_utc\"` snake_case keys as cross-confirmation.\nThe marker alone is enough to discriminate against any\ncurrently-registered parser, but the snake_case pair\nguards against fragments that quote the marker name in\nprose (e.g. a write-up that references the field). All\nthree together cannot collide with Acreed (PascalCase\n`PcName` / `IsElevator` shape) or any plain-text panel\nparser. During triage, treat family attribution as\nunknown: the `_info.json` is panel metadata only, and\nthe underlying stealer cannot be identified from these\neleven fields alone. The per-victim folder ships sibling\ncredential / cookie files where any follow-on family\nfingerprinting should run.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    }
+  ],
+  "related_families": [
+    "acreed",
+    "pxa-stealer"
+  ],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_c52c47cb76eaf34248ee6f663ac79205",
+      "parser": "logmine.ioc.parsers.cs_inz_ext_stealer.CSInzExtStealerParser",
+      "filenames": [
+        "_info.json"
+      ],
+      "panel_brand": "_info.json inz_ext_count schema",
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [],
+      "fields": [
+        "client_utc",
+        "inz_ext_count",
+        "pc_login"
+      ],
+      "observations": 295,
+      "sample": {
+        "path": "samples/v_c52c47cb76eaf34248ee6f663ac79205/sample.txt",
+        "sha256": "c0f891c635e29ba0908c8c9d920feaf518868b7c534b3f6179a63033d6e2ceba",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

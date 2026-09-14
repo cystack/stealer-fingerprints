@@ -1,36 +1,108 @@
 {
-  "$schema": "../../schemas/family.schema.json",
-  "aliases": [
-    "Ades"
-  ],
-  "attribution_confidence": "medium",
-  "classification": "known_family",
-  "description": "Observed RL Stealer samples use `Information.txt` with equals-sign section dividers and single-space-indented key/value lines. Public analysis identifies it as a 44CALIBER variant and notes a StringsCrypt module also seen in StormKitty; neither relationship is treated as an alias. This sample shape is not an active fingerprint.",
-  "external_references": [
-    {
-      "url": "https://github.com/MalBeacon/what-is-this-stealer"
-    },
-    {
-      "url": "https://github.com/razexgod/44CALIBER"
-    },
-    {
-      "url": "https://www.pcrisk.com/removal-guides/25759-rl-stealer-malware"
-    },
-    {
-      "title": "44 Caliber Stealer RL variant analysis",
-      "url": "https://www.ciphertechsolutions.com/acce-release-notes-v2-1-20230522/"
-    }
-  ],
   "id": "rl-stealer",
   "name": "RL Stealer",
-  "schema_version": "1.0",
-  "targets": [
-    "Browser saved credentials, cookies, autofill, history",
-    "Clipboard contents",
-    "Crypto wallet extensions and desktop clients",
-    "Desktop screenshot",
-    "Discord, Telegram, Steam, Minecraft session data",
-    "FTP and VPN client credentials"
+  "classification": "known_family",
+  "attribution_confidence": "medium",
+  "description": "RL Stealer is a .NET infostealer derived from the open-source\n`razexgod/44CALIBER` Discord-exfiltration builder. The panel\nwrites an `Information.txt` whose body matches 44CALIBER's\nupstream `SystemInfo.cs` writer character-for-character for\nthe first five sections, then appends a sixth section carrying\n`HDD:` / `MAC:` / `BIOS caption:` hardware identifiers that\nthe upstream does not emit. Each key/value line opens with a\nsingle leading space (invariant from the upstream string\nconcatenation), and sections are separated by equals-sign\nrules.\n\nFamily attribution: confidence is medium. A community\nstealer-format catalogue documents the format under the RL\nStealer label, the upstream `razexgod/44CALIBER` GitHub source\ncode matches the body shape, and public write-ups describe RL\nStealer as a rebranded Ades stealer. Two independent public\nsources do not jointly publish the format-to-family mapping,\nso the attribution rests on community catalog plus open-source\nbuilder-code confirmation.",
+  "aliases": [
+    "Ades",
+    "44Caliber variant",
+    "StormKitty variant"
   ],
-  "tracking_labels": []
+  "typical_targets": [
+    "Browser saved credentials, cookies, autofill, history",
+    "Crypto wallet extensions and desktop clients",
+    "Discord, Telegram, Steam, Minecraft session data",
+    "FTP and VPN client credentials",
+    "Clipboard contents",
+    "Desktop screenshot"
+  ],
+  "detection_notes": "Line-anchored ` PC user:`, ` Launch:`, and\n` IP Geolocation:` co-occurring is the cleanest trigger.\nThe leading-space prefix on each key line is invariant\nacross observed samples (the upstream's string\n`\"\\n PC user: \"` concatenation produces it). The base\n44CALIBER builder emits five sections; the RL panel\nextension appends a sixth carrying `HDD:` / `MAC:` /\n`BIOS caption:`, but the parser tolerates either count.\nBlackGuard Stealer is also a 44CALIBER fork; both share\nthe credential-collection method but emit different\nlog formats so they do not collide with this parser's\nfingerprint.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1115",
+      "name": "Clipboard Data"
+    },
+    {
+      "id": "T1113",
+      "name": "Screen Capture"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://github.com/MalBeacon/what-is-this-stealer",
+    "https://github.com/razexgod/44CALIBER",
+    "https://www.pcrisk.com/removal-guides/25759-rl-stealer-malware"
+  ],
+  "related_external": [
+    "44caliber",
+    "stormkitty",
+    "blackguard"
+  ],
+  "variants": [
+    {
+      "id": "v_1c8a415ef2a9f5b685b573ec7b10c602",
+      "parser": "logmine.ioc.parsers.cs_rl_panel_stealer.CSRLPanelStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": "==== RL STEALER ====",
+      "distribution_channel": "@BRADLOGS",
+      "attribution_confidence": "medium",
+      "markers": [
+        "==== RL STEALER ===="
+      ],
+      "fields": [],
+      "observations": 36,
+      "sample": {
+        "path": "samples/v_1c8a415ef2a9f5b685b573ec7b10c602/sample.txt",
+        "sha256": "036cf7de6574dbefbbe8241c2adce9b08567ab90410c31bbb83b83f943589314",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    },
+    {
+      "id": "v_48d2f4aed8930a82db85d16176d3d75f",
+      "parser": "logmine.ioc.parsers.rl_stealer.RLStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "medium",
+      "markers": [],
+      "fields": [
+        "IP Geolocation",
+        "Launch",
+        "PC user"
+      ],
+      "observations": 161,
+      "sample": {
+        "path": "samples/v_48d2f4aed8930a82db85d16176d3d75f/sample.txt",
+        "sha256": "75f23d19d1f2a8300b762a7cd58d72872f59669ac6e9fdf1571c5fc5b554f053",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
 }

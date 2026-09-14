@@ -1,0 +1,315 @@
+UID: mrd-<HWID>
+UserName: <USER>
+ComputerName: <HOST>
+OS: Windows 10 Enterprise x64
+DateTime:  14.09.2023 22.05.2023 <ip>
+Keyboard Languages: English
+Display Resolution: 1920 x 1080
+CPU: Intel(R) Celeron(R) CPU  J3060  @ 1.60GHz core 2
+RAM: physical 2047MB , virtual 2047MB
+GPU: Intel(R) HD Graphics
+isGodMod: no
+isAdmin: no
+
+Installed software:
+Autodesk AutoCAD 2016 - English [<ip>]
+Autodesk Content Service [<ip>]
+Autodesk ReCap [<ip>]
+Autodesk ReCap 2016 [<ip>]
+BlueStacks 5 [5.10.0.1085]
+Dassault Systemes Software B17 []
+Microsoft OneDrive [23.096.0507.0001]
+RAV Endpoint Protection [5.7.15]
+TAP-Windows 9.21.2 [9.21.2]
+VLC media player [3.0.11]
+WinRAR 5.91 (64-bit) [5.91.0]
+MiniTool Partition Wizard Free 12.7 [12.7]
+Autodesk ReCap [<ip>]
+Autodesk ReCap Language Pack-English [<ip>]
+Hindi Indic Input 2 [1.1.5]
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.4148 [9.0.30729.4148]
+Autodesk BIM 360 Glue AutoCAD 2016 Add-in 64 bit [4.35.1742]
+AutoCAD 2014 - English [<ip>]
+AutoCAD 2014 Language Pack - English [<ip>]
+AutoCAD 2014 - English [<ip>]
+AutoCAD 2016 [<ip>]
+ACAD Private [<ip>]
+AutoCAD 2016 Language Pack - English [<ip>]
+AutoCAD 2016 - English [<ip>]
+ACA & MEP 2016 Object Enabler [<ip>]
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161 [9.0.30729.6161]
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.17 [9.0.30729]
+Microsoft Office Office 64-bit Components 2010 [14.0.4734.1000]
+Microsoft Office Shared 64-bit MUI (English) 2010 [14.0.4734.1000]
+Microsoft Office Shared 64-bit Setup Metadata MUI (English) 2010 [14.0.4734.1000]
+Autodesk Content Service [<ip>]
+Autodesk Content Service Language Pack [<ip>]
+A360 Desktop [6.0.3.1100]
+Microsoft Update Health Tools [<ip>]
+Autodesk ReCap 2016 [<ip>]
+Autodesk Application Manager [<ip>]
+Google Chrome [113.0.5672.127]
+Microsoft Edge [113.0.1774.50]
+Microsoft Edge Update [<ip>]
+Microsoft Edge WebView2 Runtime [113.0.1774.50]
+ProtonVPN [2.3.2]
+Sonma Typing-Expert version 2.01.0000 [2.01.0000]
+TuxlerChromeExtensionHelperApp [<ip>]
+tuxlerVPN [<ip>]
+VLC media player [<ip>]
+WinRAR 6.11 (32-bit) [6.11.0]
+Ghostscript GPL 8.64 (Msi Setup) [8.64]
+Ghostscript GPL 8.64 (Msi Setup) [8.64]
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.4148 [9.0.30729.4148]
+Microsoft GameInput [10.1.22621.3036]
+Autodesk Material Library 2016 [<ip>]
+Tally.ERP 9 [Series A 6.6.3 Build 13763]
+Autodesk AutoCAD Performance Feedback Tool 1.2.4 [<ip>]
+Autodesk App Manager 2016 [2.0.0]
+CorelDRAW Graphics Suite 12 [<ip>]
+Autodesk Material Library Base Resolution Image Library 2014 [<ip>]
+Wondershare Helper Compact 2.6.0 [2.6.0]
+Autodesk Content Service Language Pack [<ip>]
+SketchUp Import for AutoCAD 2014 [1.1.0]
+Autodesk Material Library 2014 [<ip>]
+FARO LS <ip> (64bit) [5.2.0.35213]
+Autodesk Material Library Base Resolution Image Library 2016 [<ip>]
+Teams Machine-Wide Installer [1.5.0.8070]
+ProtonVPN [2.3.2]
+Microsoft Office Professional Plus 2010 [14.0.4734.1000]
+Microsoft Office Access MUI (English) 2010 [14.0.4734.1000]
+Microsoft Office Excel MUI (English) 2010 [14.0.4734.1000]
+Microsoft Office PowerPoint MUI (English) 2010 [14.0.4734.1000]
+Microsoft Office Publisher MUI (English) 2010 [14.0.4734.1000]
+Microsoft Office Outlook MUI (English) 2010 [14.0.4734.1000]
+Microsoft Office Word MUI (English) 2010 [14.0.4734.1000]
+Microsoft Office Proof (English) 2010 [14.0.4734.1000]
+Microsoft Office Proof (French) 2010 [14.0.4734.1000]
+Microsoft Office Proof (Spanish) 2010 [14.0.4734.1000]
+Microsoft Office Proofing (English) 2010 [14.0.4734.1000]
+Microsoft Office InfoPath MUI (English) 2010 [14.0.4734.1000]
+Microsoft Office Shared MUI (English) 2010 [14.0.4734.1000]
+Microsoft Office OneNote MUI (English) 2010 [14.0.4734.1000]
+Microsoft Office Groove MUI (English) 2010 [14.0.4734.1000]
+Microsoft Office Shared Setup Metadata MUI (English) 2010 [14.0.4734.1000]
+Microsoft Office Access Setup Metadata MUI (English) 2010 [14.0.4734.1000]
+Autodesk Advanced Material Library Image Library 2016 [<ip>]
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161 [9.0.30729.6161]
+PaladinVPN [<ip>]
+Chrome Remote Desktop Host [114.0.5735.35]
+SketchUp Import 2016 [2.0.0]
+Autodesk Featured Apps 2016 [2.0.0]
+Intel(R) Processor Graphics [20.19.15.5063]
+Realtek High Definition Audio Driver [6.0.8924.1]
+Autodesk Featured Apps [1.1.0]
+BlueStacks X [0.19.10.1001]
+Opera Stable 86.0.4363.59 [86.0.4363.59]
+Telegram Desktop [4.6.12]
+
+Disk:
+C:\ type: local disk, total: 83703MB, space: 1316MB
+E:\ type: DVD driver, total: , space: 
+F:\ type: local disk, total: 29653MB, space: 21416MB
+G:\ type: local disk, total: 923851MB, space: 865499MB
+
+Process:
+[System Process]
+System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+winlogon.exe
+services.exe
+lsass.exe
+fontdrvhost.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+dwm.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+WUDFHost.exe
+svchost.exe
+svchost.exe
+Memory Compression
+svchost.exe
+svchost.exe
+igfxCUIService.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+RtkAudioService64.exe
+svchost.exe
+svchost.exe
+svchost.exe
+RAVBg64.exe
+svchost.exe
+svchost.exe
+svchost.exe
+wlanext.exe
+conhost.exe
+spoolsv.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+sihost.exe
+svchost.exe
+PresentationFontCache.exe
+svchost.exe
+AdAppMgrSvc.exe
+CATSysDemon.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+gameinputsvc.exe
+svchost.exe
+gamingservicesnet.exe
+gamingservices.exe
+svchost.exe
+pldsvc.exe
+svchost.exe
+rsClientSvc.exe
+gameinputsvc.exe
+rsSyncSvc.exe
+RtkBtManServ.exe
+rsWSC.exe
+svchost.exe
+rsEngineSvc.exe
+taskhostw.exe
+svchost.exe
+InstallAssistService.exe
+svchost.exe
+svchost.exe
+svchost.exe
+dasHost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+ctfmon.exe
+taskhostw.exe
+igfxEM.exe
+igfxHK.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+PaladinVPN.exe
+svchost.exe
+SearchIndexer.exe
+RuntimeBroker.exe
+svchost.exe
+RuntimeBroker.exe
+updatechecker.exe
+GoogleCrashHandler.exe
+GoogleCrashHandler64.exe
+RtkNGUI64.exe
+svchost.exe
+SecurityHealthSystray.exe
+SecurityHealthService.exe
+rsHelper.exe
+rsAppUI.exe
+tuxlerVPN.exe
+svchost.exe
+svchost.exe
+svchost.exe
+rsAppUI.exe
+Skype.exe
+Cortana.exe
+svchost.exe
+RuntimeBroker.exe
+svchost.exe
+svchost.exe
+rsAppUI.exe
+svchost.exe
+WSHelper.exe
+Skype.exe
+rsAppUI.exe
+Skype.exe
+Skype.exe
+SgrmBroker.exe
+AdAppMgr.exe
+Skype.exe
+svchost.exe
+svchost.exe
+OneDrive.exe
+RuntimeBroker.exe
+dllhost.exe
+ApplicationFrameHost.exe
+dllhost.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+explorer.exe
+chrome.exe
+SearchApp.exe
+TextInputHost.exe
+StartMenuExperienceHost.exe
+chrome.exe
+CompPkgSrv.exe
+wermgr.exe
+chrome.exe
+UserOOBEBroker.exe
+ShellExperienceHost.exe
+RuntimeBroker.exe
+chrome.exe
+chrome.exe
+chrome.exe
+SearchApp.exe
+WhatsApp.exe
+Video.UI.exe
+GameBar.exe
+RuntimeBroker.exe
+GameBarFTServer.exe
+RuntimeBroker.exe
+RuntimeBroker.exe
+ExtensionHelperAppManager.exe
+ExtensionHelperApp.exe
+Spotify.exe
+Spotify.exe
+Spotify.exe
+Spotify.exe
+Spotify.exe
+Spotify.exe
+backgroundTaskHost.exe
+RuntimeBroker.exe
+audiodg.exe
+smartscreen.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+chrome.exe
+svchost.exe
+WmiPrvSE.exe
+RuntimeBroker.exe
+Installer.exe
+svchost.exe

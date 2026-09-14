@@ -1,0 +1,74 @@
+{
+  "id": "cs-facebook-market-stealer",
+  "name": "CSFacebookMarketStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSFacebookMarketStealer is a CyStack-coined identifier for a\nFacebook-account-resale marketplace listing emitted as\n`Information.txt` inside `!! 2025 NOV.part001.rar` `@BRADLOGS\n/ BRADMAX` aggregator packs. Per-victim folders follow the\n`[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/` layout. The body is a\nfour-line record: a 15-digit Facebook user ID plus display\nname plus date of birth header, a crown emoji pricing tier\nline, a related-pages line, and a raw Facebook session cookie\nstring carrying `c_user`, `xs`, `datr`, `sb`, `fr`, `ps_l`,\n`ps_n`, `wd`.\n\nThe pricing-tier line uses U+1F451 `👑` followed by a U+2219\n`∙` BULLET OPERATOR separator chain that carries asking price\n(with U+1F4B6 `💶` euro-banknote suffix), age and ratio stats,\ntrading currency, ISO 3166 country code, a `TS[<n>-<m>]`\ntrust-score bracket, and a U+2119 `ℙ` category flag. The body\nis most likely a panel-side post-processing artifact where a\nraw stealer cookie dump has been converted into a resale\nlisting for an underground Facebook account marketplace.\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. The closest documented\nrelatives are NodeStealer, SYS01, and the public\nFacebook-Profile-Stealer write-ups: each collects the `c_user`\nand `xs` cookie pair from Facebook accounts, but none\npublishes a sample log showing this exact emoji-tagged\nmarketplace listing shape.",
+  "aliases": [
+    "BRADMAX Facebook account marketplace listing",
+    "Crown-emoji Facebook resale Information.txt"
+  ],
+  "typical_targets": [
+    "Facebook user ID",
+    "Facebook session cookies (`c_user`, `xs`, `datr`, `sb`, `fr`)",
+    "Facebook account creation year and trust-score metadata",
+    "Account display name and date of birth",
+    "Related Facebook page IDs"
+  ],
+  "detection_notes": "Fingerprint requires U+1F451 `👑` crown glyph AND `c_user=` AND\n`xs=` AND `datr=` cookie-name substrings. Four anchors\ntogether cannot collide with any other registered parser: the\ncrown glyph alone rules out every system-info shape, and the\nthree Facebook session-cookie name substrings rule out any\nnon-Facebook artifact that happens to carry a crown emoji.\nDuring triage, treat the raw `c_user`, `xs`, and `datr` cookie\nvalues as exfiltrated session secrets that grant attacker-side\nFacebook account takeover. Family attribution is unknown: the\nunderlying stealer that scraped the original cookie dump has\nnot been mapped to this marketplace-listing layout in any\npublic reporting.",
+  "attack_techniques": [
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "cs-facebook-profile-stealer",
+    "cs-dash-plus-sep-stealer"
+  ],
+  "sources": [],
+  "related_external": [
+    "nodestealer",
+    "sys01-stealer"
+  ],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": [
+    {
+      "id": "v_cd44448921562de22da01df5270af56b",
+      "parser": "logmine.ioc.parsers.cs_facebook_market_stealer.CSFacebookMarketStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": "BRADMAX",
+      "distribution_channel": "@BRADLOGS",
+      "attribution_confidence": "unknown",
+      "markers": [
+        "c_user=",
+        "datr=",
+        "xs="
+      ],
+      "fields": [],
+      "observations": 925,
+      "sample": {
+        "path": "samples/v_cd44448921562de22da01df5270af56b/sample.txt",
+        "sha256": "c631122ad6230c405c5e4d526c8b5869185f87f579e7c9c59eaee9e715d6f7ad",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

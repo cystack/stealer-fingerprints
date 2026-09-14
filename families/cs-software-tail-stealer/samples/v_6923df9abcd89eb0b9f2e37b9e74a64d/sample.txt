@@ -1,0 +1,69 @@
+    
+conhost.exe
+powershell.exe
+svchost.exe
+msedgewebview2.exe
+svchost.exe
+SystemSettings.exe
+svchost.exe
+svchost.exe
+SystemSettingsAdminFlows.exe
+WmiPrvSE.exe
+powershell.exe
+conhost.exe
+powershell.exe
+svchost.exe
+svchost.exe
+msiexec.exe
+CelerityModule32.exe
+dllhost.exe
+DeltaOrchestr.exe
+lJ5IwxN.exe
+svchost.exe
+svchost.exe
+hPXwsPq.exe
+XPFix.exe
+RuntimeBroker.exe [Software]
+MSI App Player Engine - 5.21.151.6303
+BlueStacks - 5.22.102.1002
+Clownfish Voice Changer
+Google Play Games - <ip>
+O+ Connect - <ip>
+Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664 - 12.0.40664
+ENE_AIC_Marvell_HAL - <ip>
+Microsoft Visual C++ 2010 x64 Redistributable - 10.0.40219 - 10.0.40219
+ENE_External_Device_HAL - <ip>
+Verbatim_SureFireGaming_Product - <ip>
+ENE_EHD_M2_HAL - <ip>
+Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030 - 11.0.61030
+Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.42.34433 - 14.42.34433
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.4148 - 9.0.30729.4148
+Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664 - 12.0.40664
+ENE_DRAM_RGB_AIO - <ip>
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161 - 9.0.30729.6161
+Microsoft Visual C++ 2005 Redistributable (x64) - 8.0.50727.42
+Microsoft .NET Host - 8.0.21 (x64) - 64.84.40925
+iCloud Outlook - <ip>
+Patriot Viper M2 SSD RGB - <ip>
+Office 16 Click-to-Run Licensing Component - 16.0.15601.20142
+Office 16 Click-to-Run Extensibility Component - 16.0.15601.20064
+ENE_MousePad_HAL - <ip>
+ENE Video Capture Box HAL - <ip>
+Microsoft Windows Desktop Runtime - 8.0.21 (x64) - 64.84.40919
+Handbrake Tp - 4.1.7
+Microsoft Teams Meeting Add-in for Microsoft Office - 1.24.14501
+Microsoft Visual C++ 2005 Redistributable (x64) - 8.0.61000
+Microsoft .NET Host FX Resolver - 8.0.21 (x64) - 64.84.40925
+Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030 - 11.0.61030
+ENE_X_AIC_HAL - <ip>
+Koaie Quaos Moon - 6.2.4
+FindCommandDevOps - 4.7.5
+Microsoft Visual C++ 2022 X64 Additional Runtime - 14.42.34433 - 14.42.34433
+Microsoft GameInput - 10.1.26100.6879
+WD P40 Game Drive - <ip>
+Microsoft .NET Runtime - 8.0.21 (x64) - 64.84.40925
+MSI App Player - 10.40.0.6308
+BlueStacks Services - 3.0.9
+Discord - 1.0.9188
+Multi-functional backup 3.3.8.4294
+Opera Stable 117.0.5408.142 - 117.0.5408.142

@@ -1,0 +1,9 @@
+HWID : <HWID>
+IP : <IP>
+Users : <USER>
+
+
+🔑 Passwords: <SECRET>
+
+
+🍪 Cookies: <SECRET>

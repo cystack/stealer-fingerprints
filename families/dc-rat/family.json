@@ -1,40 +1,99 @@
 {
-  "$schema": "../../schemas/family.schema.json",
+  "id": "dc-rat",
+  "name": "DCRat",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "DCRat (Dark Crystal RAT, DarkCrystal RAT) is a .NET-based\nremote access trojan plus info-stealer that has been sold as\nmalware-as-a-service since at least 2019. Public trackers list\nthe family under the canonical literal DCRat. CERT-UA has\nflagged DCRat campaigns against Ukrainian defense and\ngovernment targets, attributed to Russia-aligned operators\n(Sandworm plus other clusters).\n\nThe harvested log opens with a five-line Figlet `small`- font\nASCII-art banner spelling `Dark Crystal RAT`, then a\nhorizontal-rule line of em-dashes, then four flat `Key: Value`\nblocks separated by blank lines. The first block carries WMI\nhardware enumeration including `PC Name`, `User Name`,\n`Windows` version, `CPU Name`, `CPU Cores` (with parenthesised\nlogical-thread count), `GPU Name`, `GPU Mode` (WxH x\ncolor-depth triple), `Motherboard` (Win32_BaseBoard SMBIOS\nstring), `BIOS` (Win32_BIOS string), `Antivirus`, `Firewall`,\n`RAM` (locale-aware comma decimal), and `LANIP`. The second\nblock reports the .NET Framework version and the install path\n(DCRat typically masquerades as a fake system service binary,\nfor example `fontdrvhost.exe` under a typo-squatted\n`MsHyperserverBrokersvc` folder). The third block is\ngeolocation (`IP`, `City`, `Country` as `CC / Name`,\n`Location` as latitude / longitude). The tail reports the\nmonitor list and `Save Time` in `DD.MM.YYYY HH:MM` European\nformat.",
   "aliases": [
     "Dark Crystal RAT",
     "DarkCrystal RAT",
     "dcRAT"
   ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "DCRat logs are recognized by locale-tagged filenames matching `information [<locale>].txt` and fields such as `PC Name`, `GPU Mode`, `Motherboard`, `BIOS`, `Antivirus`, and `Save Time`. The observed layout begins with an ASCII-art banner.",
-  "external_references": [
+  "typical_targets": [
+    "Browser saved credentials and cookies (plugin modules: Plugin_AutoStealer)",
+    "Keystroke capture (Plugin_AutoKeylogger)",
+    "Clipboard contents",
+    "Remote shell command execution",
+    "WMI-enumerated machine fingerprint (motherboard, BIOS, monitors)",
+    "Installed antivirus and firewall product detection"
+  ],
+  "detection_notes": "The Figlet `small`-font `Dark Crystal RAT` ASCII banner is the\ncleanest fingerprint. The detector class\n`logmine.detection.rats.DCRat` and the parser share the banner\nliteral as their anchor so attribution stays consistent across\nboth layers. The .NET / WMI enumeration profile plus the\n`MsHyperserverBrokersvc` style fake-service install path is\nthe secondary confidence signal. Public analyses note plugin\nidentifiers like `DCRatBuild`, `DCStlr`, `Plugin_AutoStealer`,\nand `Plugin_AutoKeylogger` in the binary; defenders triaging a\nvictim host should hunt for those strings in process memory or\non disk to confirm the family.",
+  "attack_techniques": [
     {
-      "url": "https://any.run/malware-trends/dcrat/"
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
     },
     {
-      "url": "https://cloud.google.com/blog/topics/threat-intelligence/analyzing-dark-crystal-rat-backdoor"
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
     },
     {
-      "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.dcrat"
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
     },
     {
-      "url": "https://thehackernews.com/2025/03/cert-ua-warns-dark-crystal-rat-targets.html"
+      "id": "T1056.001",
+      "name": "Keylogging"
     },
     {
-      "url": "https://www.splunk.com/en_us/blog/security/dark-crystal-rat-agent-deep-dive.html"
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1083",
+      "name": "File and Directory Discovery"
+    },
+    {
+      "id": "T1071.001",
+      "name": "Application Layer Protocol: Web Protocols"
+    },
+    {
+      "id": "T1218",
+      "name": "System Binary Proxy Execution"
     }
   ],
-  "id": "dc-rat",
-  "name": "DCRat",
-  "schema_version": "1.0",
-  "targets": [
-    "Browser saved credentials and cookies (plugin modules: Plugin_AutoStealer)",
-    "Clipboard contents",
-    "Installed antivirus and firewall product detection",
-    "Keystroke capture (Plugin_AutoKeylogger)",
-    "Remote shell command execution",
-    "WMI-enumerated machine fingerprint (motherboard, BIOS, monitors)"
+  "related_families": [],
+  "sources": [
+    "https://cloud.google.com/blog/topics/threat-intelligence/analyzing-dark-crystal-rat-backdoor",
+    "https://www.splunk.com/en_us/blog/security/dark-crystal-rat-agent-deep-dive.html",
+    "https://malpedia.caad.fkie.fraunhofer.de/details/win.dcrat",
+    "https://any.run/malware-trends/dcrat/",
+    "https://thehackernews.com/2025/03/cert-ua-warns-dark-crystal-rat-targets.html"
   ],
-  "tracking_labels": []
+  "variants": [
+    {
+      "id": "v_c05affb578cdd7ad283bd765c0f9cc1c",
+      "parser": "logmine.ioc.parsers.dcrat.DCRatParser",
+      "filenames": [
+        "Information [ID].txt",
+        "Information [IN].txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "/ __|_",
+        "/_\\_   _|"
+      ],
+      "fields": [
+        ".NET Framework Version",
+        "GPU Mode",
+        "LANIP",
+        "PC Name",
+        "Save Time"
+      ],
+      "observations": 177,
+      "sample": {
+        "path": "samples/v_c05affb578cdd7ad283bd765c0f9cc1c/sample.txt",
+        "sha256": "80541f90621ee53219173218c227126bbe60ecf769d3369b2a0ced1b8af26355",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "gpu-mode"
+    }
+  ]
 }

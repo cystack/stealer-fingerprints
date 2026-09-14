@@ -1,26 +1,100 @@
 {
-  "$schema": "../../schemas/family.schema.json",
+  "id": "redline",
+  "name": "Redline",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "Canonical Redline Stealer logs. UserInformation.txt files emitting\nthe family's typo'd `Operation System:` field together with a full\nidentity, locale, and hardware block. Build banners typically frame\nthe panel name (Octopus Cloud Logs and similar resellers) above\nthe field block.",
   "aliases": [
     "RedLine",
     "RedLineStealer"
   ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "RedLine exports `userinformation.txt` with identity, locale, and hardware fields. The misspelled `Operation System` label is a distinctive part of the layout.",
-  "external_references": [
+  "typical_targets": [
+    "Browser saved credentials",
+    "Browser cookies and session storage",
+    "Crypto wallet desktop clients and browser extensions",
+    "FTP and VPN client configs",
+    "Discord and Telegram session tokens"
+  ],
+  "detection_notes": "High-confidence trigger: the typo'd `Operation System:` field\npaired with `FileLocation:`. Stripped variants without\n`FileLocation:` are tracked separately as `RedlineLike Stealer`.",
+  "attack_techniques": [
     {
-      "url": "https://flare.io/learn/resources/blog/redline-stealer-malware/"
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
     }
   ],
-  "id": "redline",
-  "name": "Redline",
-  "schema_version": "1.0",
-  "targets": [
-    "Browser cookies and session storage",
-    "Browser saved credentials",
-    "Crypto wallet desktop clients and browser extensions",
-    "Discord and Telegram session tokens",
-    "FTP and VPN client configs"
+  "related_families": [
+    "redline-like-stealer",
+    "meta-stealer"
   ],
-  "tracking_labels": []
+  "sources": [
+    "https://flare.io/learn/resources/blog/redline-stealer-malware/"
+  ],
+  "observed_channels": [
+    "https://t.me/redline_market_bot"
+  ],
+  "variants": [
+    {
+      "id": "v_436a2a6dd26480ac96afbce620412cb2",
+      "parser": "logmine.ioc.parsers.redline.RedlineParser",
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [],
+      "fields": [
+        "FileLocation",
+        "Operation System"
+      ],
+      "observations": 31303,
+      "sample": {
+        "path": "samples/v_436a2a6dd26480ac96afbce620412cb2/sample.txt",
+        "sha256": "154e3ee6d7f08d47dd27169d6db791bef28822a96a089d10cfb1682802954acb",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "operation-system-file-location"
+    },
+    {
+      "id": "v_9ff2932c65398ba0ef8bad9c6465381a",
+      "parser": "logmine.ioc.parsers.redline.RedlineParser",
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "*  |_| \\_|_____|____/|_____|___|_| \\_|_____|  *"
+      ],
+      "fields": [
+        "Build ID"
+      ],
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_9ff2932c65398ba0ef8bad9c6465381a/sample.txt",
+        "sha256": "9623f948a384209925e8c624313e13a6a7b10bb96620b17a18546847ca68599a",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "build-id-banner"
+    }
+  ]
 }

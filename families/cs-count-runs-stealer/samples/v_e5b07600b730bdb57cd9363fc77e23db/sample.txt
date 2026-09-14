@@ -1,0 +1,13 @@
+    ┏━━━  SYSTEM INFORMATION ━━━┓
+┃  • Location: <LOCATION>
+┃  • Device: <HOST>
+┃  • OS: Windows 10.0 (Build 26100)
+┃  • IP: <IP>
+┃  • Time: 10/31/2025, <ip> (UTC+01:00)
+┣━━━  EXTRACTION RESULTS ━━━┫
+┃  • Cookies: <SECRET>
+┃  • Passwords: <SECRET>
+┃  • Facebook: 1
+┃  • CC with CVC: 0
+┃  • Count Runs: 79
+┗━━━━━━━━━━━━━━━━━┛

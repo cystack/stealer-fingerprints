@@ -1,0 +1,37 @@
+{
+  "id": "cs-slurm-cloud-stealer",
+  "name": "CSSlurmCloudStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSSlurmCloudStealer is a CyStack-coined identifier for a\n.NET-based stealer that self-identifies with the single-line\nbanner ``Slurm Cloud | Private — The best logs on the market``\nat the top of its ``system_info.txt`` file. Body vocabulary is\nbyte-for-byte identical to the sibling ``CSJohnDoeProject``\nvariant (same .NET-canonical field set, same duplicate\n``RAM:`` key with battery mislabel, same ``=== ENVIRONMENT\nVARIABLES ===`` section trailer). Both channels appear to\nresell a common private C# stealer template rather than\ndistinct forks; only the operator banner at the top of the\nfile differs.\n\nThe ``Slurm Private TG ArhontCorp`` and ``KATANA CLOUD PRIVATE\nTG ArhontCorp`` entries appear in public breach-data indexes.\nArhontCorp is the aggregator collective running the Slurm\nCloud panel. No public research has published a mapping to the\nunderlying builder; attribution is provisional pending a\nthreat-intel report on the private .NET template.",
+  "aliases": [
+    "Slurm Cloud banner stealer",
+    "ArhontCorp Slurm Private slice"
+  ],
+  "typical_targets": [
+    "Host hardware and OS fingerprint (CPU, GPU, RAM,\nresolution, Windows version, .NET Runtime, CLR)",
+    "Network identity (LAN IP, default gateway)",
+    "Account identity (Windows username, computer name)",
+    "Full Windows Environment Variables dump"
+  ],
+  "detection_notes": "Fingerprint requires the ``Slurm Cloud | Private`` banner\nsubstring and a line-anchored ``CLR Version:`` field key.\nThe pipe-separated banner phrase is the operator self-id\nno other channel in the surveyed corpus uses it. Pair the\npanel_brand with the sibling ``CSJohnDoeProject`` metadata\nwhen triaging: both channels appear to resell a common\nunderlying builder, so overlap in victim hardware fingerprints\nacross the two panels is expected. Companion files in the\nvictim folder (browser exports, cookie dumps, wallet\nartifacts) may trigger more confident attributions through\ntheir own family detectors.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-john-doe-project-stealer"
+  ],
+  "sources": [],
+  "variants": []
+}

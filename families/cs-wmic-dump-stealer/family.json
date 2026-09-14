@@ -1,0 +1,63 @@
+{
+  "id": "cs-wmic-dump-stealer",
+  "name": "CSWmicDumpStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSWmicDumpStealer is a CyStack-coined identifier for a\nsnake_case `system_info.txt` panel observed inside `!! 2026\nJAN.part01.rar` aggregator packs distributed via Telegram log\nchannels. Per-victim folders follow a\n`<id>_<2-hex>_<ip>_<DD-MM-YY>/system_info.txt` layout. The\nbody opens with an uppercase `=== SYSTEM INFORMATION ===`\nheader and is composed of snake_case `key: value` lines where\nmany of the values are raw stdout from Windows command-line\ntools: `wmic baseboard get`, `wmic bios get`, `wmic memorychip\nget`, `wmic memphysical get`, `wmic diskdrive get`, `wmic\ncomputersystem get`, `wmic path Win32_VideoController get`,\n`wmic os get LastBootUpTime`, plus `ipconfig /all` and `ver`.\nThe fixed-width WMIC tabular output is captured verbatim, with\nthe column-header row sitting on the same line as the field\nkey.\n\nThe snake_case naming convention plus the \"shell out to wmic\nand stash the stdout\" pattern strongly suggests a Python-based\nstealer (`subprocess.check_output(\"wmic ...\")` shape) but no\nsurveyed Python-stealer write-up (Inf0s3c, XillenStealer,\nAkira, ExelaStealer, BlankGrabber) documents this exact field\nset.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting plus\npublic stealer-format catalogues do not document a family\nusing this exact snake_case field set. The `CSWmicDumpStealer`\nliteral preserves the panel's most distinctive trait (raw WMIC\nstdout dumped into snake_case fields) as the suffix; rename\nthe family constant if a public writeup later identifies the\nunderlying builder.",
+  "aliases": [],
+  "typical_targets": [
+    "System hardware and locale inventory",
+    "Network configuration and adapter details",
+    "BIOS / motherboard / disk serial numbers"
+  ],
+  "detection_notes": "Requires the `=== SYSTEM INFORMATION ===` uppercase header\nAND the `network_config_full:` snake_case key AND the\n`user_domain:` snake_case key. PCInfoStealer uses the same\nheader but additionally requires `=== NETWORK INFO ===`\nand `PC Username:`, neither of which appears here, so the\ntwo parsers cannot collide. No other registered family\nuses snake_case keys at all, so the snake_case markers\nare sufficient to reject unrelated content.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_b56df7c47c8dd6e3c8b68ae39e89c1c5",
+      "parser": "logmine.ioc.parsers.cs_wmic_dump_stealer.CSWmicDumpStealerParser",
+      "filenames": [
+        "system_info.txt"
+      ],
+      "panel_brand": "snake_case wmic-dump system_info.txt",
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "=== SYSTEM INFORMATION ===",
+        "network_config_full:"
+      ],
+      "fields": [
+        "memory_slots",
+        "motherboard_info",
+        "ram_modules",
+        "user_domain"
+      ],
+      "observations": 148,
+      "sample": {
+        "path": "samples/v_b56df7c47c8dd6e3c8b68ae39e89c1c5/sample.txt",
+        "sha256": "07f7e3b36590b5a1bcf82f8400b88dc18af3dca57c0224172d909aadf0b70811",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

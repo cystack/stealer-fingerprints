@@ -1,0 +1,26 @@
+BUILD NAME: bigdick
+HWID: <HWID>
+Country: CA
+IP: <IP>
+TimeZone: -3
+System Language: English
+Processor: AMD Ryzen 5 7600 6-Core Processor
+Installed RAM: 31902 MB
+Operation System: Windows 11-10.0.26200
+Graphics card: AMD Radeon RX 7600 XT
+Computer Name: <HOST>
+Router MAC Address: <MAC>
+Domain Name: <HOST>
+Product Key: <SECRET>
+-------------
+User Name: <USER>
+Admin Group: FALSE
+Integrity: Medium
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1920x1080
+@stealerboss - Buy daily fresh logs: <SECRET>
+
+=== GEOLOCATION ===
+APPLE: 47.592857, -52.735085
+GOOGLE: 47.592955, -52.73486

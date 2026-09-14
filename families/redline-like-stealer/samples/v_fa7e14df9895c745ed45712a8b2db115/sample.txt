@@ -1,0 +1,6 @@
+Admin Group: TRUE
+Integrity: High
+TimeZone: UTC+2
+UserLanguage: English
+Keyboard Language: English
+Display Resolution: 1536x864

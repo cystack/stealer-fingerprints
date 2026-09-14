@@ -1,0 +1,41 @@
+{
+  "id": "cs-info-network-section-stealer",
+  "name": "CSInfoNetworkSectionStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSInfoNetworkSectionStealer is a CyStack-coined identifier for\na heavily-padded fixed-width ``_Info.txt`` panel with\nunderscored field names and ``[Info_Network]`` /\n``[Info_Software]`` bracketed-underscore section headers.\nObserved inside the ``25 APRIL - 25729 LOGS.part01.rar``\naggregator pack at ``<32-char>_<TIMESTAMP>/_Info.txt`` victim\nfolders. The 2020-07-10 log timestamp on observed samples\nsuggests an older builder whose panel-format research\npre-dates current public reporting.\n\nThe emitter replaces spaces with underscores inside multi-word\nfield keys (``Local_Date_and_Time:``, ``OS_Language:``,\n``Keyboard_Languages:``, ``Display_Resolution:``) and uses a\nparen-with-spaces annotation convention (``UTC ( TimeZone )\n:``, ``UserName ( ComputerName ) :``). The ``UTC ( TimeZone\n)`` value packs a bare 4-digit hhmm offset alongside an IANA\nOlson timezone name (``-0400 ( America/New_York )``). Related\nto the ``CSStartBuildInfoStealer`` iter #23 sibling by the\nshared ``_Info<...>.txt`` leading-underscore filename\nconvention and paren-annotated UserName field, but the\nspecific field-name spellings and bracketed-underscore section\nformat make it a distinct panel-emit variant.",
+  "aliases": [
+    "Info_Network + Info_Software section stealer",
+    "Underscored-field _Info.txt stealer"
+  ],
+  "typical_targets": [
+    "Host OS + hardware fingerprint (Windows version + build,\nCPU with core count, GPU, display resolution, language,\nIANA Olson timezone)",
+    "Account identity (user + computer name from the paren-annotated ``UserName ( ComputerName )`` field)",
+    "Geo enrichment (IP, country name + ISO code, city)",
+    "Installed software inventory (bracketed ``[Info_Software]``\nsection with per-program version tags)"
+  ],
+  "detection_notes": "Fingerprint requires three line-anchored anchors:\n``[Info_Network]``, ``[Info_Software]``, and the\n``UserName ( ComputerName ) :`` paren-with-spaces literal.\nThe bracketed-underscore section headers and the paren-with-spaces literal together are unique across the\nregistry. During triage, correlate with the sibling\n``CSStartBuildInfoStealer`` variant (iter #23) which\nshares the ``_Info<...>.txt`` filename convention but\nuses direct labels and tight parens instead of the\nunderscored + spaced form observed here.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1518",
+      "name": "Software Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-start-build-info-stealer"
+  ],
+  "sources": [],
+  "variants": []
+}

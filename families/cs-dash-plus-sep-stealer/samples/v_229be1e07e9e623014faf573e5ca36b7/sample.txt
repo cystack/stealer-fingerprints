@@ -1,0 +1,9 @@
+country :  <LOCATION>-BH
+ID : <CARD>
+Windows-11-10.0.26100-SP0
+Username: <USER>
+CK: 0 | Card: 0
+---+---+---+---+---+---+---
+KCG
+17
+T-<CARD>

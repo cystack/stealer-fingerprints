@@ -1,0 +1,42 @@
+Blank Grabber got a new victim: <USER>
+
+IP Info
+
+IP: <IP>
+Region: <LOCATION>
+Country: Colombia
+Timezone: America/Bogota
+
+Cellular Network:❎
+Proxy/VPN:   ❎
+Reverse DNS: <HOST>
+
+System Info
+Computer Name: <HOST>
+Computer OS: Microsoft Windows 10 Pro
+Total Memory: 4 GB
+UUID: <HWID>
+CPU: Intel64 Family 6 Model 142 Stepping 9, GenuineIntel
+GPU: Intel(R) HD Graphics 620
+Product Key: <SECRET>
+
+Grabbed Info
+Discord Accounts : 0
+Passwords : <SECRET>
+Cookies : <SECRET>
+History : 0
+Autofills : 0
+Roblox Cookies : 0
+Telegram Sessions : <SECRET>
+Common Files : 0
+Wallets : 0
+Wifi Passwords : <SECRET>
+Webcam : 0
+Minecraft Sessions : <SECRET>
+Epic Session : <SECRET>
+Steam Session : <SECRET>
+Uplay Session : <SECRET>
+Battle.Net Session : <SECRET>
+Growtopia Session : <SECRET>
+Screenshot : Yes
+System Info : Yes

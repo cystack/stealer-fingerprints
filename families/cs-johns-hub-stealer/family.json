@@ -1,0 +1,33 @@
+{
+  "id": "cs-johns-hub-stealer",
+  "name": "CSJohnsHubStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSJohnsHubStealer is a CyStack-coined identifier for a stealer\nthat self-identifies with the ``JOHN GOT RIPPED`` Figlet\nASCII-art banner and the ``https://t.me/johns_hub`` Telegram\nchannel URL. The panel writes a flat bare-key ``UserInfo.txt``\nbody with 12 identity fields: ``Build: @johns_hub``\n(self-referencing tag), ``Stealer version: <N.N.N>``\nself-declared version, plus ``Country``, ``IP``, ``HWID``\n(32-character uppercase hex), ``Username``, ``OS``,\n``Language``, ``CPU``, ``GPU``, ``RAM``, ``Resolution``, and a\nUS-format ``Date:`` timestamp.\n\nThe @johns_hub channel and JOHN GOT RIPPED banner are not\ndocumented in any public reporting or community catalog. The\nflat field set is consistent with a generic .NET stealer\ntemplate that could be a new family, a rebrand of an existing\none, or a private-panel build. Family attribution is\nprovisional pending a published threat-intel mapping for this\nlayout.",
+  "aliases": [
+    "JOHN GOT RIPPED banner stealer",
+    "@johns_hub UserInfo.txt slice"
+  ],
+  "typical_targets": [
+    "Host hardware and OS fingerprint (CPU, GPU, RAM,\nresolution, Windows version, HWID)",
+    "Network identity (IP, country, language)",
+    "Account identity (Windows username)"
+  ],
+  "detection_notes": "Fingerprint requires both the ``https://t.me/johns_hub``\nchannel URL and the line-anchored ``Stealer version:`` field\nkey. Neither anchor alone is unique enough (the URL could\nappear in prose in a public writeup), so both are required.\nDuring triage, treat the underlying stealer family as\nunattributable and rely on the channel + panel_brand metadata\nto bucket samples for analyst review. Companion files in the\nvictim folder (browser exports, wallet artifacts, cookie\ndumps) may trigger more confident attributions through their\nown family detectors.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/johns_hub"
+  ],
+  "variants": []
+}

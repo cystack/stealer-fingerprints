@@ -1,0 +1,38 @@
+{
+  "id": "cs-bugatti-pc-info-stealer",
+  "name": "CSBugattiPcInfoStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSBugattiPcInfoStealer is a CyStack-coined identifier for the\n@Bugatti_Cloud aggregator's ``pc_info.txt`` bare-key text\nslice. The file is a flat ``Key: Value`` body whose vocabulary\nresembles the publicly documented Acreed pc_info.json key set\nbut with operator-side renames throughout: ``PcName`` becomes\n``Computer Name``, ``Arch`` becomes ``Architecture``,\n``CpuCores`` becomes ``Cores``, ``ScreenSize`` becomes\n``Resolution``. The panel also emits a duplicate ``Display\nResolution:`` line with an empty value on the line just before\nthe populated ``Resolution:`` key, and the ``HWID:`` value is\na Computer-Name-prefixed UUID composite rather than a bare\nUUID or hex blob.\n\nThe @Bugatti_Cloud channel is a documented multi-family\naggregator that redistributes Redline and other stealer logs\nin a custom container format. This ``pc_info.txt`` variant may\nbe an operator-normalized text output of Acreed data or a\ndifferent underlying builder's panel; the renamed vocabulary\nis too far from documented Acreed JSON to attribute directly.\nFamily attribution is provisional pending a published\nthreat-intel mapping for this exact text layout.",
+  "aliases": [
+    "@Bugatti_Cloud pc_info.txt slice",
+    "Bugatti operator-normalized Acreed-adjacent variant"
+  ],
+  "typical_targets": [
+    "Host hardware and OS fingerprint (CPU cores, RAM, GPU,\nscreen resolution, Windows version and architecture)",
+    "Network identity (IP address, country)",
+    "Account identity (Windows username, computer name)"
+  ],
+  "detection_notes": "Fingerprint requires four bare-key line-anchored labels\ntogether: ``UserName:``, ``Architecture:``, ``Cores:``,\nand ``Local Time:``. The combination is disjoint from\nPyInfoStealer (which pairs ``Architecture:`` with\n``Processor:`` and ``ISP:`` / ``Org:`` ip-api.com keys)\nand from CSRussia34StealerParser (which pairs\n``Architecture:`` with ``Laptop:`` and the\n``russia34.com`` channel substring). During triage,\ntreat the underlying stealer family as unattributable\nand rely on the channel + panel_brand metadata to bucket\nsamples for analyst review. Companion files in the\nvictim folder (browser exports, wallet artifacts) may\ntrigger more confident attributions through their own\nfamily detectors.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "acreed",
+    "bugatti-cloud",
+    "category-stealer",
+    "redline-like-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/Bugatti_Cloud"
+  ],
+  "variants": []
+}

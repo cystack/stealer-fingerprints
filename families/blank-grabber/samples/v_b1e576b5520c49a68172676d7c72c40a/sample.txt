@@ -1,0 +1,34 @@
+Dead got a new victim: <USER>
+IP Info
+IP: <IP>
+Region: <LOCATION>
+Country: United States
+Timezone: America/Chicago
+Cellular Network:    ❎
+System Info
+Computer Name: <HOST>
+Computer OS: Microsoft Windows 11 Pro
+Total Memory: 34 GB
+UUID: <HWID>
+CPU: Intel64 Family 6 Model 158 Stepping 13, GenuineIntel
+GPU: NVIDIA GeForce RTX 2060
+Product Key: <SECRET>
+Grabbed Info
+Discord Accounts : 3
+Passwords : <SECRET>
+Cookies : <SECRET>
+History : 7126
+Autofills : 205
+Roblox Cookies : 0
+Telegram Sessions : <SECRET>
+Common Files : 5
+Wallets : 0
+Wifi Passwords : <SECRET>
+Webcam : 0
+Minecraft Sessions : <SECRET>
+Epic Session : <SECRET>
+Steam Session : <SECRET>
+Uplay Session : <SECRET>
+Growtopia Session : <SECRET>
+Screenshot : Yes
+System Info : Yes

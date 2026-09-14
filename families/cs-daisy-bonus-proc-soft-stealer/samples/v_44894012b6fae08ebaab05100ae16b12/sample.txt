@@ -1,0 +1,67 @@
+  [5780] SynTPHelper.exe
+  [5788] svchost.exe
+  [5880] sihost.exe
+  [5912] svchost.exe
+  [5964] svchost.exe
+  [5984] igfxEM.exe
+  [6060] taskhostw.exe
+  [5436] svchost.exe
+  [5272] svchost.exe
+  [5692] ctfmon.exe
+  [6236] servicehelper.exe
+  [6272] msiexec.exe
+  [6280] SmartAudio.exe
+  [6304] svchost.exe
+  [6336] svchost.exe
+  [6528] explorer.exe
+  [6904] svchost.exe
+  [5956] StartMenuExperienceHost.exe
+  [6600] TrustedInstaller.exe
+  [6012] TiWorker.exe
+  [6788] RuntimeBroker.exe
+  [6988] svchost.exe
+  [5636] MoUsoCoreWorker.exe
+  [7184] SearchApp.exe
+  [7372] RuntimeBroker.exe
+  [7588] backgroundTaskHost.exe
+  [7604] backgroundTaskHost.exe
+  [8188] WmiPrvSE.exe
+  [4408] svchost.exe
+  [2440] svchost.exe
+  [2804] svchost.exe
+  [8344] TextInputHost.exe
+  [8500] RuntimeBroker.exe
+  [8584] RuntimeBroker.exe
+  [8700] PhoneExperienceHost.exe
+  [8708] CAudioFilterAgent64.exe
+  [8828] fmapp.exe
+  [8904] DolbyDAX2TrayIcon.exe
+  [9000] Avro Keyboard.exe
+  [8104] f6ddb87b9b.exe
+  [9052] 20972d86da.exe
+  [9700] d0476e07d2.exe
+  [10076] 3828728ec9.exe
+  [9552] audiodg.exe
+  [8328] 384abd524b.exe
+  [9428] e526719c47.exe
+  [10132] 9998e1a56c.exe
+  [2276] 42105c377d.exe
+  [9316] svchost.exe
+  [10012] BdeUISrv.exe
+  [10448] svchost.exe
+  [10500] IGCCTray.exe
+  [10748] svchost.exe
+  [10936] IGCC.exe
+  [10996] d15ee48354.exe
+[Software]
+  Microsoft OneDrive
+  VLC media player
+  Microsoft Update Health Tools
+  Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.44.35211
+  LibreOffice <ip>
+  Dolby Audio X2 Windows API SDK
+  Microsoft Visual C++ 2022 X64 Additional Runtime - 14.44.35211
+  Dolby Audio X2 Windows APP
+  ViGEm Bus Driver
+  Microsoft GameInput
+  Update for x64-based Windows Systems (KB5001716)

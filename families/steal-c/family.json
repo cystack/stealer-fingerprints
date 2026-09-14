@@ -1,29 +1,101 @@
 {
-  "$schema": "../../schemas/family.schema.json",
+  "id": "steal-c",
+  "name": "StealC",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "StealC info-stealer logs. Writes a sectioned `system_info.txt`\nwith header lines like `Network Info:`, `System Summary:`, and\ntab-indented `- Key: Value` records under each. First documented\nin early 2023, StealC has remained an active commodity stealer\nwith the v2 rewrite tracked through 2024.",
   "aliases": [
     "StealC v1",
     "StealC v2"
   ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "Observed StealC samples use a sectioned `system_info.txt` with headers such as `Network Info` and `System Summary`, followed by hyphen-prefixed `- Key: Value` records. This sample layout is not an active fingerprint.",
-  "external_references": [
-    {
-      "url": "https://mssplab.github.io/threat-hunting/2023/11/23/malware-analysis-stealc-2.html"
-    },
-    {
-      "url": "https://www.zscaler.com/blogs/security-research/i-stealc-you-tracking-rapid-changes-stealc"
-    }
-  ],
-  "id": "steal-c",
-  "name": "StealC",
-  "schema_version": "1.0",
-  "targets": [
+  "typical_targets": [
     "Browser saved credentials and cookies",
     "Crypto wallet extensions and desktop clients",
-    "Custom file grabber configurable per-build",
+    "FTP, email, VPN, RDP client configs",
     "Discord and Telegram session data",
-    "FTP, email, VPN, RDP client configs"
+    "Custom file grabber configurable per-build"
   ],
-  "tracking_labels": []
+  "detection_notes": "Distinctive sectioned layout with `Network Info:` and\n`System Summary:` parent headers and tab-indented field lines.\nDistributed via multiple Telegram resellers; the\n`@stealerboss` channel is one of the larger redistributors.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1119",
+      "name": "Automated Collection"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://www.zscaler.com/blogs/security-research/i-stealc-you-tracking-rapid-changes-stealc",
+    "https://mssplab.github.io/threat-hunting/2023/11/23/malware-analysis-stealc-2.html"
+  ],
+  "variants": [
+    {
+      "id": "v_078dda10ae3264ed2b51d559017ac685",
+      "parser": "logmine.ioc.parsers.stealc.StealCParser",
+      "filenames": [
+        "System.txt",
+        "system_info.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "Network Info:",
+        "System Summary:"
+      ],
+      "fields": [],
+      "observations": 972136,
+      "sample": {
+        "path": "samples/v_078dda10ae3264ed2b51d559017ac685/sample.txt",
+        "sha256": "f5a0773995f4020e4e275701e8f3d3e858111ea7a2784bc8350eef7f5cef19f1",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "network-info-system-summary"
+    },
+    {
+      "id": "v_176158076f220af65d5f14c6593efde1",
+      "parser": "logmine.ioc.parsers.stealc.StealCParser",
+      "filenames": [
+        "System.txt",
+        "system_info.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [],
+      "fields": [
+        "All Users",
+        "Current User",
+        "Installed Apps"
+      ],
+      "observations": 165,
+      "sample": {
+        "path": "samples/v_176158076f220af65d5f14c6593efde1/sample.txt",
+        "sha256": "f504e0db01d2a3b1132ecc7ce12765f38eca2f6f90bf187acb9c6ab6557ae80b",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "installed-apps-users-processes"
+    }
+  ]
 }

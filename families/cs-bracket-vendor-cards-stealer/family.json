@@ -1,0 +1,39 @@
+{
+  "id": "cs-bracket-vendor-cards-stealer",
+  "name": "CSBracketVendorCardsStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSBracketVendorCardsStealer is a CyStack-coined identifier for\na `CreditCards/` victim-folder layout that ships one cred file\nper Chromium-based browser vendor / profile combination,\nnaming each file after the AppData/Local vendor subdirectory\nin square brackets. Observed inside `!! 2025 JUNE.part001.rar`\nat `CreditCards/ CreditCards_[AVAST Software]_Default.txt`,\n`CreditCards_[BraveSoftware]_Default.txt`, and\n`CreditCards_[Microsoft]_Default.txt` siblings.\n\nThe bracketed-vendor tokens (`[AVAST Software]`,\n`[BraveSoftware]`, `[Microsoft]`, `[Google]`, `[Yandex]`,\netc.) are literal copies of the subdirectory names under\n`AppData/Local/<Vendor>/` where Chromium-derivative browsers\nkeep their User Data tree. The stealer reads each browser's\nWeb Data SQLite `credit_cards` table and writes one file per\nsource profile. The cred-file body uses `Exp: <MM/YYYY>` for\nexpiry. Many files are minimal (expiry-only, ~12 bytes)\nbecause the panel app-bound-encryption bypass returned the\nencrypted PAN but could not decrypt it on Chrome builds\nshipping hardware-bound session keys.\n\nA public stealer-log parser writeup documents the sibling\n`Autofills/Google_[Chrome]_Default.txt` /\n`Autofills/Microsoft_[Edge]_Default.txt` bracketed-vendor\nconvention as a generic Chromium-credential-extract shape used\nby multiple stealers (RedLine, META, Raccoon, Stealc appear in\nthe same article), but does not pin the\n`CreditCards_[<Vendor>]_<Profile>.txt` shape to a named\nfamily. Family attribution is provisional pending a published\nthreat-intel mapping for this layout.",
+  "aliases": [
+    "CreditCards bracketed-vendor per-browser cred-file split",
+    "CreditCards_[<Vendor>]_<Profile>.txt layout"
+  ],
+  "typical_targets": [
+    "Saved credit cards from Chromium-based browser profiles",
+    "Per-vendor extracts from AppData/Local/<Vendor>/ User Data trees",
+    "Card PAN and expiry from Web Data SQLite `credit_cards` table"
+  ],
+  "detection_notes": "Fingerprint requires at least one file at folder root\nwhose basename matches the regex\n`^CreditCards_\\[[^\\]]+\\]_[^.]+\\.txt$` (case-insensitive).\nThe `CreditCards_` prefix, square-bracketed vendor token,\nunderscore separator, profile name, and `.txt` suffix is\nunique enough across the registry that one match is\nsufficient to claim. Folder root may also carry an\nempty-named packer DIR artifact, which the fingerprint\nignores. During triage, treat the family attribution as\nunknown: the underlying Chromium-credential extractor\nlineage (RedLine / META / Raccoon / Stealc / fork) cannot\nbe pinned from the filename alone. Many cred files carry\nonly an `Exp:` expiry line because the panel bypass\nfailed to decrypt the PAN, so a victim flagged by this\ndetector may have no recoverable card numbers but still\nattests browser-stored card presence.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "cs-card-target-stealer",
+    "cs-cc-apostrophe-stealer",
+    "redline",
+    "steal-c"
+  ],
+  "sources": [],
+  "variants": []
+}

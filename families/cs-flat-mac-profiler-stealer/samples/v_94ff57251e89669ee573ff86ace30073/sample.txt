@@ -1,0 +1,58 @@
+mac.c macOS Stealer by mentalpositive
+
+Build Tag: GETWELL
+Version: 1.3.1_release (x64_86 & ARM)
+
+Username: <USER>
+Password: <SECRET>
+
+Software:
+
+    System Software Overview:
+
+      System Version: macOS 26.0 (25A354)
+      Kernel Version: Darwin 25.0.0
+      Boot Volume: Macintosh HD
+      Boot Mode: Normal
+      Computer Name: <HOST>
+      User Name: <USER>
+      Secure Virtual Memory: Enabled
+      System Integrity Protection: Enabled
+      Time since boot: 9 hours, 50 minutes
+
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: MacBook Air
+      Model Identifier: Mac14,2
+      Model Number: MLY33B/A
+      Chip: Apple M2
+      Total Number of Cores: 8 (4 performance and 4 efficiency)
+      Memory: 8 GB
+      System Firmware Version: 13822.1.2
+      OS Loader Version: 13822.1.2
+      Serial Number (system): <SERIAL>
+      Hardware UUID: <HWID>
+      Provisioning UDID: <HWID>
+      Activation Lock Status: Enabled
+
+Graphics/Displays:
+
+    Apple M2:
+
+      Chipset Model: Apple M2
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 4
+      Displays:
+        Color LCD:
+          Display Type: Built-in Liquid Retina Display
+          Resolution: 2560 x 1664 Retina
+          Main Display: Yes
+          Mirror: Off
+          Online: Yes
+          Automatically Adjust Brightness: No
+          Connection Type: Internal

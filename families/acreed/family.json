@@ -1,29 +1,68 @@
 {
-  "$schema": "../../schemas/family.schema.json",
+  "id": "acreed",
+  "name": "Acreed",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "Acreed Stealer is one of the few infostealer families that\nemits structured JSON instead of free-form key/value text. The\nvictim metadata is written to `pc_info.json` with PascalCase\nkeys (`PcName`, `Os`, `Cpu`, etc.).",
   "aliases": [
     "Acreed Stealer"
   ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "The observed Acreed sample stores system metadata in `pc_info.json` as a structured JSON object with PascalCase keys such as `PcName`, `ScreenSize`, `CpuCores`, and `IsElevator`.",
-  "external_references": [
-    {
-      "title": "Analysis of Acreed, a rising infostealer",
-      "url": "https://www.intrinsec.com/wp-content/uploads/2025/10/TLP-CLEAR-Sept-2025-Acreed-infostealer-EN.pdf"
-    },
-    {
-      "title": "Acreed Infostealer",
-      "url": "https://www.broadcom.com/support/security-center/protection-bulletin/acreed-infostealer"
-    }
-  ],
-  "id": "acreed",
-  "name": "Acreed",
-  "schema_version": "1.0",
-  "targets": [
+  "typical_targets": [
     "Browser saved credentials, cookies, autofill",
     "Crypto wallet extensions and desktop clients",
     "Discord and Telegram session data",
     "Document grabber for sensitive file types"
   ],
-  "tracking_labels": []
+  "detection_notes": "Structured JSON shape with a top-level `PcName` key (PascalCase,\nno spaces) is unique among the families this catalog tracks; no\nother parser claims `pc_info.json` content.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://www.kaspersky.com/blog/acreed-stealer/"
+  ],
+  "variants": [
+    {
+      "id": "v_02aba0afc027e0ffde6554b29031e0b1",
+      "parser": "logmine.ioc.parsers.acreed.AcreedParser",
+      "filenames": [
+        "pc_info.json",
+        "pc_info.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [],
+      "fields": [
+        "IsElevator",
+        "PcName"
+      ],
+      "observations": 224616,
+      "sample": {
+        "path": "samples/v_02aba0afc027e0ffde6554b29031e0b1/sample.txt",
+        "sha256": "b8f16d760313ebd4003085217477561045790d3303b9e579b81cbc88983ae551",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
 }

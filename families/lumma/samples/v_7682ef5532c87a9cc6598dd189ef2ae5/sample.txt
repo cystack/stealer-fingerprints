@@ -1,0 +1,26 @@
+LummaC2, Build Oct 10 2023
+LID(Lumma ID): Xm5JA7--crypterium15
+
+- PC: <HOST>
+- User: <USER>
+- Domain: 
+- Workgroup: <HOST>
+- ComputerNameDnsHostname: <HOST>
+- ComputerNameNetBIOS: <HOST>
+- OS Version: Windows 10 (10.0.17763)
+- HWID: <HWID>
+- Screen Resoluton: 1920x1080
+- Language: en-US
+- CPU Name: AMD Ryzen 7 2700X Eight-Core Processor         
+- GPU: Radeon RX 570 Series
+- Physical Installed Memory: 16384MB
+
+- IP Address: <IP>
+- Country: PH
+
+
+Брут кошельков любой сложности с задействованием ИИ. [60/40]
+
+Exploit: <url> (Информация, отзывы клиентов)
+Telegram: <url>
+Минимальная сумма - $5k

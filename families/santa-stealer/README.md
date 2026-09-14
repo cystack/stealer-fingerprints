@@ -1,53 +1,101 @@
 # SantaStealer
 
-**Known malware family · high attribution confidence**
+SantaStealer is a malware-as-a-service info-stealer first
+publicly documented in December 2025. The operation is a
+rebrand of an earlier project named BluelineStealer; the
+SantaStealer brand is the operator-side relaunch ahead of an
+end-of-year launch push. The researchers obtained samples and
+access to the affiliate web panel, and identified a
+Russian-speaking developer. Pricing is Basic at $175 per month
+and Premium at $300 per month, advertised on Telegram and
+hacker forums.
 
-## At a glance
+The malware runs 14 data-collection modules in parallel
+threads (browser passwords, cookies, history, credit cards,
+Telegram / Discord / Steam sessions, crypto wallet apps and
+browser extensions, document grabber, desktop screenshots).
+Collected data is written to memory, archived into a `Log.zip`
+file in `%TEMP%`, split into 10 MB chunks, and exfiltrated
+over unencrypted HTTP to a hardcoded C2 IP on port 6767. The
+malware self-advertises through the Telegram channel
+`t.me/SantaStealer`, which is also embedded verbatim in every
+artifact the malware writes.
 
-- Aliases: <code>BluelineStealer</code>, <code>Santa Stealer</code>
-- Typical filenames: <code>information.txt</code>
-- Published formats: 0
-- Representative samples: 1
+## Research status
 
-<p>The observed SantaStealer <code>information.txt</code> opens with a large <code>SANTA STEALER</code> banner and operator marker, then lists grabbed files in a fixed-width table. This sample is available for manual comparison but is not an active fingerprint.</p>
+- Classification: **Known malware family**
+- Attribution confidence: **high**
+- Aliases: `Santa Stealer`, `BluelineStealer`
+- Variants observed: **1**
+- Historical Logmine records represented: **2**
 
-## How to recognize it
+## What it targets
 
-- No stable text banner is known; combine filename and field layout.
-- No machine-readable field set is published yet; compare the sample manually.
+- Browser saved credentials (Chromium and Gecko)
+- Browser cookies, history, autofill
+- Saved credit card data from browsers
+- Cryptocurrency wallet apps and browser extensions
+- Telegram, Discord, and Steam session data
+- Documents matching the file-grabber filter list
+- Desktop screenshots
 
-## Formats
+## Detection notes
 
-No matcher fingerprint has been published for this family yet.
+The strongest single signal is the verbatim Telegram
+channel handle `t.me/SantaStealer`, embedded by the
+malware's configuration and written into every artifact
+the malware emits. Paired with the file-grabber
+manifest header `Found N Sensitive files. Many of
+these will be false positives`, the family attribution
+is high-confidence. The ASCII-art `SANTA STEALER`
+banner uses Unicode box-drawing characters, so triage
+rules should anchor on the channel handle and template
+literal rather than the banner text itself.
 
-## Representative sample
+## Observed log variants
 
-Observed text sample. Placeholders mark values removed from the original log.
+### `v_e8de83dfb299d4ae3148727b940ff625`
 
-[<code>information.txt</code>](samples/information.txt)
+- Parser: `logmine.ioc.parsers.santastealer.SantaStealerParser`
+- Observed filenames: `Information.txt`
+- Panel brand: -
+- Distribution channel: `t.me/SantaStealer`
+- Attribution confidence: **high**
+- Historical records represented: **2**
+- Representative sample: [open sample](samples/v_e8de83dfb299d4ae3148727b940ff625/sample.txt)
+- Sample SHA-256: `b73d51ba290606d47b2533020499dfb471a5d4fa39dd55b0562058503c306f66`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-```text
-    ███████╗ █████╗ ███╗   ██╗████████╗ █████╗      ███████╗████████╗███████╗ █████╗ ██╗     ███████╗██████╗
-██╔════╝██╔══██╗████╗  ██║╚══██╔══╝██╔══██╗     ██╔════╝╚══██╔══╝██╔════╝██╔══██╗██║     ██╔════╝██╔══██╗
-███████╗███████║██╔██╗ ██║   ██║   ███████║     ███████╗   ██║   █████╗  ███████║██║     █████╗  ██████╔╝
-╚════██║██╔══██║██║╚██╗██║   ██║   ██╔══██║     ╚════██║   ██║   ██╔══╝  ██╔══██║██║     ██╔══╝  ██╔══██╗
-███████║██║  ██║██║ ╚████║   ██║   ██║  ██║     ███████║   ██║   ███████╗██║  ██║███████╗███████╗██║  ██║
-╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝     ╚══════╝   ╚═╝   ╚══════╝╚══════╝╚═╝╚══════╝╚══════╝╚═╝  ╚═╝
-t.me/SantaStealer     t.me/SantaStealer     t.me/SantaStealer     t.me/SantaStealer     t.me/SantaStealer
-[... 3 blank lines ...]
-Found 36 Sensitive files. Many of these will be false positives
+Recognition anchors:
 
-File Name                          | Size (bytes) | Full Path
----------------------------------- | ------------ | --------------------------------------------------
-[redacted sensitive filename]      | [redacted]   | [redacted path]
-```
+- Stable markers: `Sensitive files`, `t.me/SantaStealer`
+- Field labels: -
 
-## References
 
-- [https://www.bleepingcomputer.com/news/security/new-santastealer-malware-steals-data-from-browsers-crypto-wallets/](https://www.bleepingcomputer.com/news/security/new-santastealer-malware-steals-data-from-browsers-crypto-wallets/)
-- [https://www.rapid7.com/blog/post/tr-santastealer-is-coming-to-town-a-new-ambitious-infostealer-advertised-on-underground-forums/](https://www.rapid7.com/blog/post/tr-santastealer-is-coming-to-town-a-new-ambitious-infostealer-advertised-on-underground-forums/)
-- [https://www.theregister.com/2025/12/16/santastealer_stuffs_users_credentials_crypto](https://www.theregister.com/2025/12/16/santastealer_stuffs_users_credentials_crypto)
+## MITRE ATT&CK
 
-This sample is available for manual comparison; no matcher fingerprint is published for it yet.
+| Technique | Name |
+|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| [T1113](https://attack.mitre.org/techniques/T1113/) | Screen Capture |
+| [T1119](https://attack.mitre.org/techniques/T1119/) | Automated Collection |
 
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+## Related catalog profiles
+
+- None recorded.
+
+## Observed distribution channels
+
+- <https://t.me/SantaStealer>
+
+## Sources
+
+- <https://www.rapid7.com/blog/post/tr-santastealer-is-coming-to-town-a-new-ambitious-infostealer-advertised-on-underground-forums/>
+- <https://www.bleepingcomputer.com/news/security/new-santastealer-malware-steals-data-from-browsers-crypto-wallets/>
+- <https://www.theregister.com/2025/12/16/santastealer_stuffs_users_credentials_crypto>
+
+Machine-readable record: [family.json](family.json)

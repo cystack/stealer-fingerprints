@@ -1,0 +1,20 @@
+- OS Version: Windows 10 Home (10.0.19045) x64
+- Time Zone: UTC+4
+- Elevated: false
+- Computer: <HOST>
+- User: <USER>
+- Domain:
+- Hostname: <HOST>
+- NetBIOS: <HOST>
+- Language: en-US
+- Anti Virus:
+- Windows Defender
+- HWID: <HWID>
+- RAM Size: 32768MB
+- CPU Vendor: GenuineIntel
+- CPU Name: Intel(R) Core(TM) i7-10700KF CPU @ 3.80GHz
+- CPU Threads: 16
+- CPU Cores: 8
+- GPU:
+- NVIDIA GeForce GTX 1660
+- Display resolution: 1920x1080

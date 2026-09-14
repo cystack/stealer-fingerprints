@@ -1,96 +1,111 @@
 # CryptBot
 
-**Known malware family · high attribution confidence**
+CryptBot is a Delphi-built info-stealer first publicly
+documented in December 2019. The family is best known for its
+`_Information.txt` victim summary plus sibling files
+`_AllPasswords_list.txt`, `_AllCookies_list.txt`,
+`_AllForms_list.txt`, `_AllWallets_list.txt`, and
+`Screen.png`, all written into a per-victim folder under
+`%TEMP%`. Multiple builder versions have been observed (v2.0,
+v3.0, v3.1 per public analyses); the field set in the summary
+file is stable across versions, with the v3.x line moving the
+qualifier on `UserName` and `Data` fields from parentheses to
+a brackets variant in some rebrand samples.
 
-## At a glance
+CryptBot distribution leans on SEO-poisoned cracked-software
+landing pages and bundled freeware installers. The malware
+writes the victim summary to disk, packs it with the harvested
+credential / cookie / wallet files into a ZIP, and POSTs the
+archive to a hard-coded C2 gate.
 
-- Aliases: <code>Crypt Bot</code>, <code>CryptBot Stealer</code>
-- Typical filenames: <code>_information.txt</code>
-- Published formats: 1
-- Representative samples: 1
+## Research status
 
-<p>CryptBot's <code>_Information.txt</code> is an aligned key/value summary combining <code>OS</code>, <code>Keyboard Languages</code>, <code>CPU</code>, <code>RAM</code>, <code>GPU</code>, <code>Display Resolution</code>, and <code>Installed software</code> fields.</p>
+- Classification: **Known malware family**
+- Attribution confidence: **high**
+- Aliases: `CryptBot Stealer`, `Crypt Bot`
+- Variants observed: **2**
+- Historical Logmine records represented: **5**
 
-## How to recognize it
+## What it targets
 
-- No stable text banner is known; combine filename and field layout.
-- Recurring fields: <code>cpu</code>, <code>display resolution</code>, <code>gpu</code>, <code>installed software</code>, <code>keyboard languages</code>, <code>os</code>, <code>ram</code>
+- Browser saved credentials (Chromium and Gecko)
+- Browser cookies and autofill data
+- Cryptocurrency wallet files and browser extensions
+- Saved form data
+- System hardware and locale inventory
+- Screenshot of the desktop
 
-## Formats
+## Detection notes
 
-| Format | Evidence | Fingerprint |
-|---|---|---|
-| _information.txt - cpu / display resolution | 7 fields, filename | [`fp_cea640c59941fcc39cdb00af2aaae54c`](fingerprints/fp_cea640c59941fcc39cdb00af2aaae54c.json) |
+The `_Information.txt` filename is the strongest folder-level signal: paired with the `_AllPasswords_list.txt` /
+`_AllCookies_list.txt` / `_AllForms_list.txt` sibling
+set, no other family in the registry uses this exact
+naming. Content-level fingerprint anchors on the
+bracket-suffixed `UserName [ComputerName]:` and
+`Data [Time]:` keys plus `Keyboard Languages:`; the
+no-space `UserName` spelling distinguishes CryptBot from
+Vidar / StealC / Mars (which use `User Name:`).
 
-## Representative sample
+## Observed log variants
 
-Observed text sample. Placeholders mark values removed from the original log.
+### `v_ab2260210a1222f2c7c15c25c8251227`
 
-[<code>_information.txt</code>](samples/_information.txt)
+- Parser: `logmine.ioc.parsers.cryptbot.CryptBotParser`
+- Observed filenames: `_Information.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `bracket-user-host`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_ab2260210a1222f2c7c15c25c8251227/sample.txt)
+- Sample SHA-256: `090c3bba8e01bf881bd061fb18d3c0a591a57433376c133a38838a3bb6eec86d`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-```text
-UserName [ComputerName]:     [redacted] [redacted]
-Data [Time]:                 02.09.2023 [redacted]   UTC: -07:00 Hora verano, Montañas (México)
-OS:                          Windows 10 Home Single Language [x64] 
-Keyboard Languages:          Español (México) | Español (España, internacional) | 
+Recognition anchors:
 
-CPU:                         AMD E1-2100 APU with Radeon(TM) HD Graphics    
-RAM:                         3 Gb
-GPU:                         AMD Radeon HD 8210
-Display Resolution:          1366 x 768
+- Stable markers: `Data [Time]:`, `UserName [`
+- Field labels: `Installed software`, `Keyboard Languages`
 
-Installed software:
-Microsoft OneDrive [ Version: 23.169.0813.0001 ]
-Microsoft Office Professional Plus 2016 [ Version: 16.0.4266.1001 ]
-WinRAR 6.23 (64-bit) [ Version: 6.23.0 ]
-Microsoft Office Professional Plus 2016 [ Version: 16.0.4266.1001 ]
-Microsoft Access MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]
-Microsoft Excel MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]
-Microsoft PowerPoint MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]
-Microsoft Publisher MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]
-Microsoft Outlook MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]
-Microsoft Word MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]
-Eines de correcció del Microsoft Office 2016: català [ Version: 16.0.4266.1001 ]
-Microsoft Office Proofing Tools 2016 - English [ Version: 16.0.4266.1001 ]
-Revisores de Texto do Microsoft Office 2016 – Português (Brasil) [ Version: 16.0.4266.1001 ]
-Microsoft Office zuzenketa-tresnak 2016 - Euskara [ Version: 16.0.4266.1001 ]
-Ferramentas de verificación de Microsoft Office 2016 - Galego [ Version: 16.0.4266.1001 ]
-Herramientas de corrección de Microsoft Office 2016: español [ Version: 16.0.4266.1001 ]
-Microsoft Office Proofing (Spanish) 2016 [ Version: 16.0.4266.1001 ]
-Microsoft InfoPath MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]
-Microsoft Office Shared MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]
-Microsoft DCF MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]
-Microsoft OneNote MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]
-Microsoft Groove MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]
-Microsoft Office 32-bit Components 2016 [ Version: 16.0.4266.1001 ]
-Microsoft Office Shared 32-bit MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]
-Microsoft Office OSM MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]
-Microsoft Office OSM UX MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]
-Microsoft Skype for Business MUI (Spanish) 2016 [ Version: 16.0.4266.1001 ]
-ALPS Touch Pad Driver [ Version: 8.1202.1711.103 ]
-Microsoft Update Health Tools [ Version: [redacted] ]
-Google Chrome [ Version: 116.0.5845.141 ]
-Microsoft Edge [ Version: 116.0.1938.69 ]
-Microsoft Edge Update [ Version: [redacted] ]
-WebView2 Runtime de Microsoft Edge [ Version: 116.0.1938.62 ]
-10.0.10240.31218 ]
-Realtek High Definition Audio Driver [ Version: 6.0.1.7634 ]
-```
+### `v_cbcdfdbccf53d49530cd7b152470af8a`
 
-## References
+- Parser: `logmine.ioc.parsers.cryptbot.CryptBotParser`
+- Observed filenames: `_Information.txt`
+- Panel brand: `Ottoman`
+- Distribution channel: `@OttoSup`
+- Attribution confidence: **high**
+- Layout: `bracket-user-host`
+- Historical records represented: **4**
+- Representative sample: [open sample](samples/v_cbcdfdbccf53d49530cd7b152470af8a/sample.txt)
+- Sample SHA-256: `967be06238c92a4ffb1e3b21a0ce1d53ba66ecb9ccf7dc9f921eab0e605576e8`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-- [https://any.run/malware-trends/cryptbot/](https://any.run/malware-trends/cryptbot/)
-- [https://fr3d.hk/blog/cryptbot-too-good-to-be-true](https://fr3d.hk/blog/cryptbot-too-good-to-be-true)
-- [https://malpedia.caad.fkie.fraunhofer.de/details/win.cryptbot](https://malpedia.caad.fkie.fraunhofer.de/details/win.cryptbot)
-- [https://research.openanalysis.net/cryptbot/botnet/yara/config/2024/12/06/cryptbot2.html](https://research.openanalysis.net/cryptbot/botnet/yara/config/2024/12/06/cryptbot2.html)
-- [https://www.deepinstinct.com/blog/cryptbot-how-free-becomes-a-high-price-to-pay](https://www.deepinstinct.com/blog/cryptbot-how-free-becomes-a-high-price-to-pay)
+Recognition anchors:
 
-## Try it locally
+- Stable markers: `Data [Time]:`, `Installed software:`, `UserName [`
+- Field labels: `Keyboard Languages`
 
-```console
-python identify.py "families/crypt-bot/samples/_information.txt"
-```
 
-The evidence score describes a structural comparison, not attribution certainty.
+## MITRE ATT&CK
 
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+| Technique | Name |
+|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| [T1113](https://attack.mitre.org/techniques/T1113/) | Screen Capture |
+
+## Related catalog profiles
+
+- None recorded.
+
+## Sources
+
+- <https://research.openanalysis.net/cryptbot/botnet/yara/config/2024/12/06/cryptbot2.html>
+- <https://fr3d.hk/blog/cryptbot-too-good-to-be-true>
+- <https://malpedia.caad.fkie.fraunhofer.de/details/win.cryptbot>
+- <https://any.run/malware-trends/cryptbot/>
+- <https://www.deepinstinct.com/blog/cryptbot-how-free-becomes-a-high-price-to-pay>
+
+Machine-readable record: [family.json](family.json)

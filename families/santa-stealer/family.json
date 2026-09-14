@@ -1,34 +1,84 @@
 {
-  "$schema": "../../schemas/family.schema.json",
-  "aliases": [
-    "BluelineStealer",
-    "Santa Stealer"
-  ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "The observed SantaStealer `information.txt` opens with a large `SANTA STEALER` banner and operator marker, then lists grabbed files in a fixed-width table. This sample is available for manual comparison but is not an active fingerprint.",
-  "external_references": [
-    {
-      "url": "https://www.bleepingcomputer.com/news/security/new-santastealer-malware-steals-data-from-browsers-crypto-wallets/"
-    },
-    {
-      "url": "https://www.rapid7.com/blog/post/tr-santastealer-is-coming-to-town-a-new-ambitious-infostealer-advertised-on-underground-forums/"
-    },
-    {
-      "url": "https://www.theregister.com/2025/12/16/santastealer_stuffs_users_credentials_crypto"
-    }
-  ],
   "id": "santa-stealer",
   "name": "SantaStealer",
-  "schema_version": "1.0",
-  "targets": [
-    "Browser cookies, history, autofill",
-    "Browser saved credentials (Chromium and Gecko)",
-    "Cryptocurrency wallet apps and browser extensions",
-    "Desktop screenshots",
-    "Documents matching the file-grabber filter list",
-    "Saved credit card data from browsers",
-    "Telegram, Discord, and Steam session data"
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "SantaStealer is a malware-as-a-service info-stealer first\npublicly documented in December 2025. The operation is a\nrebrand of an earlier project named BluelineStealer; the\nSantaStealer brand is the operator-side relaunch ahead of an\nend-of-year launch push. The researchers obtained samples and\naccess to the affiliate web panel, and identified a\nRussian-speaking developer. Pricing is Basic at $175 per month\nand Premium at $300 per month, advertised on Telegram and\nhacker forums.\n\nThe malware runs 14 data-collection modules in parallel\nthreads (browser passwords, cookies, history, credit cards,\nTelegram / Discord / Steam sessions, crypto wallet apps and\nbrowser extensions, document grabber, desktop screenshots).\nCollected data is written to memory, archived into a `Log.zip`\nfile in `%TEMP%`, split into 10 MB chunks, and exfiltrated\nover unencrypted HTTP to a hardcoded C2 IP on port 6767. The\nmalware self-advertises through the Telegram channel\n`t.me/SantaStealer`, which is also embedded verbatim in every\nartifact the malware writes.",
+  "aliases": [
+    "Santa Stealer",
+    "BluelineStealer"
   ],
-  "tracking_labels": []
+  "typical_targets": [
+    "Browser saved credentials (Chromium and Gecko)",
+    "Browser cookies, history, autofill",
+    "Saved credit card data from browsers",
+    "Cryptocurrency wallet apps and browser extensions",
+    "Telegram, Discord, and Steam session data",
+    "Documents matching the file-grabber filter list",
+    "Desktop screenshots"
+  ],
+  "detection_notes": "The strongest single signal is the verbatim Telegram\nchannel handle `t.me/SantaStealer`, embedded by the\nmalware's configuration and written into every artifact\nthe malware emits. Paired with the file-grabber\nmanifest header `Found N Sensitive files. Many of\nthese will be false positives`, the family attribution\nis high-confidence. The ASCII-art `SANTA STEALER`\nbanner uses Unicode box-drawing characters, so triage\nrules should anchor on the channel handle and template\nliteral rather than the banner text itself.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1113",
+      "name": "Screen Capture"
+    },
+    {
+      "id": "T1119",
+      "name": "Automated Collection"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://www.rapid7.com/blog/post/tr-santastealer-is-coming-to-town-a-new-ambitious-infostealer-advertised-on-underground-forums/",
+    "https://www.bleepingcomputer.com/news/security/new-santastealer-malware-steals-data-from-browsers-crypto-wallets/",
+    "https://www.theregister.com/2025/12/16/santastealer_stuffs_users_credentials_crypto"
+  ],
+  "observed_channels": [
+    "https://t.me/SantaStealer"
+  ],
+  "variants": [
+    {
+      "id": "v_e8de83dfb299d4ae3148727b940ff625",
+      "parser": "logmine.ioc.parsers.santastealer.SantaStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": "t.me/SantaStealer",
+      "attribution_confidence": "high",
+      "markers": [
+        "Sensitive files",
+        "t.me/SantaStealer"
+      ],
+      "fields": [],
+      "observations": 2,
+      "sample": {
+        "path": "samples/v_e8de83dfb299d4ae3148727b940ff625/sample.txt",
+        "sha256": "b73d51ba290606d47b2533020499dfb471a5d4fa39dd55b0562058503c306f66",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
 }

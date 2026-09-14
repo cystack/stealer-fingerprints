@@ -1,0 +1,42 @@
+{
+  "id": "cs-geo-box-stealer",
+  "name": "CSGeoBoxStealer",
+  "classification": "family_variant",
+  "attribution_confidence": "high",
+  "description": "CSGeoBoxStealer is a CyStack-coined identifier for a no-banner\n`@ft7links` `UserInformation.txt` variant containing an\n`═══` `IP GEOLOCATION DATA` boxed enrichment block. Observed in\nthe same folder layout as `CSEnchantCloudStealer` (channel-banner\nvariants) and the RedlineLikeStealer DARKSIDE-banner variants,\nbut this rebrand strips the panel banner entirely and replaces\nthe identity preamble with a box-drawing geolocation block.",
+  "aliases": [
+    "@ft7links geo-box variant"
+  ],
+  "typical_targets": [],
+  "detection_notes": "Box-drawing horizontal rule (`═══...`) followed by an\n`IP GEOLOCATION DATA` heading is the cleanest trigger. Field\nshape parallels the Redline extended-block (`UserLanguage:`,\n`Keyboard Language:`, `Display Resolution:`, `Wallpaper Hash:`)\nbut the explicit panel banner is absent.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "redline",
+    "redline-like-stealer",
+    "cs-enchant-cloud-stealer"
+  ],
+  "sources": [],
+  "canonical_family": "redline",
+  "variants": []
+}

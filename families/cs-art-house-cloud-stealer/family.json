@@ -1,0 +1,27 @@
+{
+  "id": "cs-art-house-cloud-stealer",
+  "name": "CSArtHouseCloudStealer",
+  "classification": "aggregator",
+  "attribution_confidence": "unknown",
+  "description": "CSArtHouseCloudStealer is a CyStack-coined identifier for the\nheavily-stripped ArtHouse Cloud `System.txt` log observed inside\n`@ft7links`-distributed packs alongside canonical Lumma content\nand the `CSBabaStealer` rebrand. The body wraps an\nXFiles-derivative victim-info block in two ArtHouse Cloud\nbanners (header + footer) framed with U+2500 box-drawing\nhorizontal rules. The `@ft7links` operator labels the archive\n`lumma` and resells multiple panels under one cover.",
+  "aliases": [
+    "ArtHouse Cloud",
+    "ArtHouse_Cloud_Team"
+  ],
+  "typical_targets": [],
+  "detection_notes": "ArtHouse Cloud header/footer banners with `linktr.ee/ArtHouse_Cloud_Team`\nreference plus the U+2500 horizontal rule framing. Two\nfield-set shapes have been observed (5-field and richer\nvariants); both share the banner.",
+  "attack_techniques": [],
+  "related_families": [
+    "lumma",
+    "x-files",
+    "cs-baba-stealer",
+    "cs-cash-flow-stealer"
+  ],
+  "sources": [],
+  "contains_families": [
+    "lumma",
+    "redline",
+    "x-files"
+  ],
+  "variants": []
+}

@@ -1,38 +1,141 @@
 {
-  "$schema": "../../schemas/family.schema.json",
+  "id": "phantom-stealer",
+  "name": "Phantom Stealer",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "Phantom Stealer is a Stealerium-fork info-stealer sold as a\nMaaS through the `phantomsoftwares.site` storefront and the\n`@Phantomsoftwares_bot` Telegram marketplace, contact handle\n`@Oldphantomoftheopera`. Public reporting documents the family\nas active since February 2025 with a NativeAOT `pdh.dll` outer\nloader plus a .NET inner payload (two-layer attack chain).\n\nTwo `Information.txt` panel shapes are claimed by separate\nparsers in this project:\n\n- v2 emoji-section panel (canonical, publicly confirmed):\nbanner `*Phantom stealer v2.0 - Report:*` with `📅 Date:`, `🖥️\nSystem:`, `💻 CompName:`, `🌐 External IP:` field lines\norganised under `*HARDWARE INFORMATION*` / `*NETWORK\nINFORMATION*` / `*DETECTED DOMAINS*` / `*BROWSER DATA*` /\n`*SOFTWARE & ACCOUNTS*` / `*DEVICE INFORMATION*` /\n`*INSTALLATION STATUS*` Markdown-bold section banners\nseparated by U+2501 heavy horizontal `━` rules. Trailing\noperator-attribution block carries `contact` / `marketplace` /\n`website` URLs. - v1 flat key-colon-value\n`UserInformation.txt` layout (`Username:` / `PC-name:` / `Ip:`\n/ `Location:` / `System:` / `Admin rights:`). The v1 layout\nwas originally flagged as provisionally-attributed Phantom;\nthe v2 emoji-panel research has not directly confirmed the v1\nkey-value shape, so v1 attribution remains tentative even\nthough it is claimed under the same canonical family literal\npending a published mapping.",
   "aliases": [
     "Phantom Stealer",
     "Phantom stealer v2.0"
   ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "Phantom Stealer exports either `information.txt` or `userinformation.txt` with the same compact system block. The layout combines `PC-Name`, `Admin Rights`, `Location`, CPU, GPU, RAM, and IP fields.",
-  "external_references": [
-    {
-      "url": "https://darkatlas.io/blog/phantom-stealer-analysis-inside-the-two-layer-attack-chain-hidden-behind-a-windows-dll"
-    },
-    {
-      "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.phantom_stealer"
-    },
-    {
-      "url": "https://www.group-ib.com/blog/phantom-stealer-credential-theft/"
-    },
-    {
-      "url": "https://www.proofpoint.com/us/blog/threat-insight/not-safe-work-tracking-and-investigating-stealerium-and-phantom-infostealers"
-    }
-  ],
-  "id": "phantom-stealer",
-  "name": "Phantom Stealer",
-  "schema_version": "1.0",
-  "targets": [
-    "Banking / crypto / adult site domain detection summary",
+  "typical_targets": [
     "Browser saved credentials, cookies, autofill, history, bookmarks",
     "Crypto wallet extensions and desktop wallet clients",
-    "Desktop screenshot capture",
     "Discord and Telegram session data (Tdata)",
-    "Network info (gateway, internal, external IP)",
+    "Windows product key extraction",
+    "Desktop screenshot capture",
+    "Banking / crypto / adult site domain detection summary",
     "System hardware (CPU, GPU, RAM, screen, webcam, power) inventory",
-    "Windows product key extraction"
+    "Network info (gateway, internal, external IP)"
   ],
-  "tracking_labels": []
+  "detection_notes": "v2 fingerprint requires the literal `Phantom stealer v2.0`\nbanner substring AND the `HARDWARE INFORMATION` section header\nAND the `External IP:` field name. The three-anchor\ncombination is the panel self-banner plus structural\nconfirmation. v2 `Date:` values use 12-hour `AM/PM` format\nwith no explicit timezone marker, so log_time is normalised to\nUTC via strptime rather than the to_iso_time dateparser\nfallback (which would re-tag with the running host's local\noffset).\n\nv1 fingerprint requires the `PC-name:` (hyphenated) and `Admin\nrights:` keys together. The v1 attribution to Phantom Stealer\nis provisional - the v1 layout is structurally distinct from\nthe publicly confirmed v2 panel and may represent a look-alike\nRussian stealer that was originally misattributed. Treat\nv1-shape Phantom claims with caution during triage.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1113",
+      "name": "Screen Capture"
+    },
+    {
+      "id": "T1083",
+      "name": "File and Directory Discovery"
+    },
+    {
+      "id": "T1217",
+      "name": "Browser Information Discovery"
+    }
+  ],
+  "related_families": [
+    "stealerium"
+  ],
+  "sources": [
+    "https://malpedia.caad.fkie.fraunhofer.de/details/win.phantom_stealer",
+    "https://www.proofpoint.com/us/blog/threat-insight/not-safe-work-tracking-and-investigating-stealerium-and-phantom-infostealers",
+    "https://www.group-ib.com/blog/phantom-stealer-credential-theft/",
+    "https://darkatlas.io/blog/phantom-stealer-analysis-inside-the-two-layer-attack-chain-hidden-behind-a-windows-dll",
+    "https://www.phantomsoftwares.site/home"
+  ],
+  "observed_channels": [
+    "https://t.me/Phantomsoftwares_bot",
+    "https://t.me/Oldphantomoftheopera"
+  ],
+  "variants": [
+    {
+      "id": "v_44219ba58866514b6fc62b29339a973e",
+      "parser": "logmine.ioc.parsers.cs_sys_root_stealer.CSSysRootStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": "Sys_root v-200",
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "External IP:",
+        "HARDWARE INFORMATION",
+        "Sys_root"
+      ],
+      "fields": [],
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_44219ba58866514b6fc62b29339a973e/sample.txt",
+        "sha256": "f96fd47319862d1e47d6f98acdabde745c985b1371333bd266baa94f92aaaa0b",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    },
+    {
+      "id": "v_644d60f850bf17ab715debd34be84482",
+      "parser": "logmine.ioc.parsers.phantom_v2.PhantomV2Parser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": "Phantom stealer v2.0",
+      "distribution_channel": "@Phantomsoftwares_bot",
+      "attribution_confidence": "high",
+      "markers": [
+        "External IP:",
+        "HARDWARE INFORMATION",
+        "Phantom stealer v",
+        "Phantom stealer v2.0"
+      ],
+      "fields": [],
+      "observations": 36,
+      "sample": {
+        "path": "samples/v_644d60f850bf17ab715debd34be84482/sample.txt",
+        "sha256": "394d2a403b0b34802ee996ad7edbf8c397b56c87d1b135c51ed808f3f0844719",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    },
+    {
+      "id": "v_c63d4009bb81da5cdadc47965e2d193d",
+      "parser": "logmine.ioc.parsers.phantom.PhantomParser",
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [],
+      "fields": [
+        "Admin rights",
+        "PC-name"
+      ],
+      "observations": 5,
+      "sample": {
+        "path": "samples/v_c63d4009bb81da5cdadc47965e2d193d/sample.txt",
+        "sha256": "5f8862643abbd18cfac5a58a9b2d6a6bc2a86f7351c86e1fdaf879f0ad81de92",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
 }

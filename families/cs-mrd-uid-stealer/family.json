@@ -1,0 +1,102 @@
+{
+  "id": "cs-mrd-uid-stealer",
+  "name": "CSMrdUidStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSMrdUidStealer is a CyStack-coined identifier for an\ninfo-stealer `_Information.txt` panel observed inside `!! 2025\nDEC.part01.rar` aggregator packs at\n`<id>_<CC>_<IPv4>_<DD-MM-YY>/_Information.txt` victim folders.\nThe body is a 12-line flat `Key: Value` block followed by\nthree labelled sections (`Installed software:`, `Disk:`,\n`Process:`).\n\nTwo on-disk quirks pin the format. The `UID:` field carries a\n`mrd-<16-hex>` prefix that no documented stealer uses (Vidar /\nLumma / Redline / Raccoon / Mars / Oski / StealC all emit bare\nhex / GUID / volume-serial-derived HWIDs without a literal\nprefix). The `DateTime:` line splits two timestamps onto one\nrow with a `||` pipe-pipe separator: `DateTime: <DD.MM.YYYY>\n|| Registration: <DD.MM.YYYY HH:MM:SS>`. `DateTime` is the\npanel-side log-emission date, `Registration` is an earlier\ndate (often years prior) the panel records as the victim's\nfirst-seen timestamp.\n\nThree sub-quirks reinforce the fingerprint. `CPU: <name>\n<spaces> core <N>` appends a panel-side core / thread count\nafter the WMI processor name. `RAM: physical <N>MB , virtual\n<N>MB` reports both physical and virtual totals on one line\nwith comma-space separation. `Display Resolution: <W> x <H>`\nuses spaces around the `x` separator (rather than the tight\n`WxH` form most stealers emit).\n\nFamily attribution is provisional. Public reporting and the\npublic stealer-format catalogues do not document a family that\nemits this exact field combination. Mars Stealer collects an\noverlapping subset (`Keyboard Languages`, `Display\nResolution`, `Installed RAM`) per public analyses, but ships a\ndifferent on-disk layout with bracket-delimited sections\nrather than this bare-key flat shape.",
+  "aliases": [
+    "mrd-UID Information.txt panel",
+    "Dual-date Registration stealer log"
+  ],
+  "typical_targets": [
+    "Browser-saved credentials (panel ships an Installed software\nenumeration but the surveyed sample has the section empty)",
+    "Victim hostname / username",
+    "Hardware fingerprint (UID, OS, CPU, GPU, RAM)",
+    "Process snapshot (bare process names, no PID)",
+    "Disk inventory (per-drive total / free space)"
+  ],
+  "detection_notes": "Fingerprint requires `UID: mrd-` substring AND\n`|| Registration:` substring. Both anchors are unique\nacross the registry: the `mrd-` UID prefix is not\ndocumented by any surveyed stealer family, and the\npipe-pipe-separated dual-date line on a single key value\nis the panel's developer-side quirk. During triage, treat\nthe `DateTime:` half as the panel-side log-emission\ntimestamp (recent) and the `Registration:` half as the\nfirst-seen / account-creation timestamp (often years\nolder). The `CPU:` value carries a trailing `core <N>`\ncount that the parser strips; the bare model name is\nemitted as `device.cpu`.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1057",
+      "name": "Process Discovery"
+    },
+    {
+      "id": "T1083",
+      "name": "File and Directory Discovery"
+    },
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    }
+  ],
+  "related_families": [
+    "mars-stealer",
+    "vidar"
+  ],
+  "sources": [],
+  "related_external": [
+    "oski-stealer"
+  ],
+  "variants": [
+    {
+      "id": "v_29dd7a8b55e27e9bd3046f3426e477ee",
+      "parser": "logmine.ioc.parsers.cs_mrd_uid_stealer.CSMrdUidStealerParser",
+      "filenames": [
+        "_Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "UID: mrd-",
+        "|| Registration:"
+      ],
+      "fields": [],
+      "observations": 13,
+      "sample": {
+        "path": "samples/v_29dd7a8b55e27e9bd3046f3426e477ee/sample.txt",
+        "sha256": "6e89035b208ab576f5cbc1eca23ac13607b01251add2fbeddd638707caa52e15",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "registration"
+    },
+    {
+      "id": "v_cee5eaed2d3cc06a5ee54cd77a385fde",
+      "parser": "logmine.ioc.parsers.cs_mrd_uid_stealer.CSMrdUidStealerParser",
+      "filenames": [
+        "_Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "UID: mrd-"
+      ],
+      "fields": [
+        "RAM"
+      ],
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_cee5eaed2d3cc06a5ee54cd77a385fde/sample.txt",
+        "sha256": "aa18adf5157d3e54be3485b631d645e5544c92eb6e1f78291e6db3fe374a73f8",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "physical-virtual-ram"
+    }
+  ]
+}

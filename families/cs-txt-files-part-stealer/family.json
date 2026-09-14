@@ -1,0 +1,57 @@
+{
+  "id": "cs-txt-files-part-stealer",
+  "name": "CSTxtFilesPartStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSTxtFilesPartStealer is a CyStack-coined identifier for an\nArabic-language Telegram-bot manifest panel that ships as a\nthree-line `Information.txt` victim file. Observed inside `!!\n2025 JULY.part001.rar` at `[<CC>]<ip>/Information.txt` victim\nfiles.\n\nThe body carries three emoji-prefixed lines: a `📁 TXT Files |\nPart <N>` partition header, a `🌍 IP: <ipv4>` victim public IP\nline, and a `📦 عدد الملفات: <count>` Arabic file-count line.\nThe Arabic literal `عدد الملفات` reads as `Number of files`\nand is the panel's developer-side label, indicating the\noperator is Arabic-speaking. The `Part <N>` suffix on the\nheader is a per-victim upload-batch identifier the panel emits\nwhen it splits a larger pack across multiple partitions.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. The general Telegram-bot\nexfiltration shape is broadly documented, but no public source\nties the Arabic file-count literal and the `TXT Files | Part\n<N>` partition convention to a specific named family.",
+  "aliases": [
+    "Arabic TXT Files Part Telegram manifest",
+    "عدد الملفات file-count emoji panel"
+  ],
+  "typical_targets": [
+    "Victim public IP (in the `🌍 IP:` line)",
+    "Per-victim harvested-file count (in the Arabic line)",
+    "Per-victim partition index (`Part <N>` in the header)"
+  ],
+  "detection_notes": "Fingerprint requires the line-anchored `📁 TXT Files | Part`\npartition header AND `🌍 IP:` line AND `📦 عدد الملفات:` Arabic\nfile-count literal. The three-anchor combination cannot\ncollide with sibling emoji-prefixed panels:\n`CSEmojiInfoStealer` uses a different emoji set (`🖥️ User:`,\n`🌐 IP:`, `📋 OS Name:`) plus the `📝 Grabbed files:` section\nheader. During triage, treat the family attribution as\nunknown: the underlying builder is undocumented in public\nreporting and community catalogues. The `Part <N>` index can\nbe used to correlate per-victim partitions with the operator's\nTelegram-channel upload history.",
+  "attack_techniques": [
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-emoji-info-stealer",
+    "cs-main-loot-stealer",
+    "cs-best-private-logger-stealer"
+  ],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_3d2b0177a66777ae6136d20f2e9eee98",
+      "parser": "logmine.ioc.parsers.cs_txt_files_part_stealer.CSTxtFilesPartStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [],
+      "fields": [
+        "🌍 IP",
+        "📦 عدد الملفات"
+      ],
+      "observations": 5,
+      "sample": {
+        "path": "samples/v_3d2b0177a66777ae6136d20f2e9eee98/sample.txt",
+        "sha256": "6871422d1afc975686552e273267158de7757bc9f2a37780a387dae69d5b4aa9",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "cs-cash-flow-stealer",
+  "name": "CSCashFlowStealer",
+  "classification": "aggregator",
+  "attribution_confidence": "unknown",
+  "description": "CSCashFlowStealer is a CyStack-coined identifier for the\nheavily-stripped `CashFlow Premium Cloud` `System.txt` log\nobserved inside `@ft7links`-distributed packs alongside the\nCSArtHouseCloudStealer distribution. The body wraps the same\nXFiles-derivative victim-info block as `CSArtHouseCloudStealer`\nbut uses a different distributor's banner. The\n`@HUNTER_CLOUDS` support handle in the footer and the\n`t.me/Link_CashFlow` channel reference identify the\ndistribution path.",
+  "aliases": [
+    "CashFlow Premium Cloud",
+    "C4SHFL0W PR3M1UM CL0UD"
+  ],
+  "typical_targets": [],
+  "detection_notes": "Header banner `t . m e / + ... = C4SHFL0W PR3M1UM CL0UD L0G5`\nwith the leetspeak digits and spaced URL is the cleanest\ntrigger. Companion footer line carries `@HUNTER_CLOUDS`\nsupport reference and `Link_CashFlow` channel handle.",
+  "attack_techniques": [],
+  "related_families": [
+    "x-files",
+    "cs-art-house-cloud-stealer",
+    "cs-hunter-cloud-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/Link_CashFlow"
+  ],
+  "contains_families": [
+    "redline",
+    "x-files"
+  ],
+  "variants": []
+}

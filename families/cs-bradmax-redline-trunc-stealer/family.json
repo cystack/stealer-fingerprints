@@ -1,0 +1,53 @@
+{
+  "id": "cs-bradmax-redline-trunc-stealer",
+  "name": "CSBradmaxRedlineTruncStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSBradmaxRedlineTruncStealer is a CyStack-coined identifier\nfor the BRADMAX-truncated Redline-shape `System.txt` panel\nwhere the identity preamble (`IP:`, `UserName:`,\n`MachineName:`, `Country:`) is stripped by the aggregator and\nthe body starts flush with `Zip Code:`. Observed inside\n`@BRADMAX 27000 FEB-MARCH.part01.rar` at `@BRADMAX <count>\n<MONTHS>/[<CC>]<IPv4>/System.txt` victim folders (e.g.\n`@BRADMAX 27000 FEB-MARCH/[DE]<IPv4>/System.txt`).\n\nBody vocabulary is Redline-canonical: the `Operation System:`\ntypo (singular `Operation`, no trailing `ing`), the `Available\nKeyboardLayouts:` plural marker (no space between `Keyboard`\nand `Layouts`), the `Hardwares:` block header with `Name:\n<label>, <values>` rows below (RAM row uses the\ndual-serialisation `<N.NN> Mb or <bytes> bytes` format, GPU\nrows use `<vendor> <model>, <bytes> bytes`), plus a bare\n`Windows Defender` line at the tail with no `AV:` /\n`Antivirus:` key prefix. The `FileLocation:` field that\ncanonical `Redline` `UserInformation.txt` panels emit is\nabsent from this variant, so the canonical `Redline` parser\ndeclines and the body falls through to this CS-coined parser.\n\nThe same underlying panel-render lineage appears in the Daisy\nCloud reseller output handled by `CSDaisyBlockCloudStealer`\n(which retains the identity preamble and adds a pipe-bordered\nASCII-art banner) and `CSDaisyCloudStealer` (per-line\nwatermark overlay). This BRADMAX-truncated variant is the\nbannerless, preamble-stripped sibling.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this specific stripped variant.\nPublic reporting and community catalogues document the\nunderlying Redline body shape but do not attest this specific\nBRADMAX-stripped preamble-less variant. Without the canonical\n`FileLocation:` anchor and identity preamble it is impossible\nto confirm the builder is stock Redline versus a Redline-fork\n(Meta, Aurora, Amadey inherit some Redline vocabulary).",
+  "aliases": [
+    "BRADMAX truncated Redline-shape System.txt",
+    "BRADMAX preamble-stripped Redline variant"
+  ],
+  "typical_targets": [
+    "Victim ZIP code and city (IP geolocation)",
+    "HWID (32-hex device identifier)",
+    "Current UI language and timezone",
+    "OS caption with architecture suffix",
+    "Installed keyboard layouts",
+    "Total system RAM (MB, extracted from `Total of RAM` row)",
+    "GPU vendor and model list",
+    "Bare antivirus product name (trailing line)"
+  ],
+  "detection_notes": "Fingerprint requires (a) line-anchored `Operation System:`\n(Redline-canonical typo) AND (b) line-anchored\n`Hardwares:` (Redline-canonical plural block header) AND\n(c) `Name: Total of RAM,` substring (Redline-specific\ndual-serialisation RAM entry) AND (d) `@BRADMAX` in the\narchive-path preamble (aggregator scope gate). Five\nnegative anchors defer to higher-precedence sibling\nparsers: `FileLocation:` (canonical `Redline`),\n`t.me/UP_DAISYCLOUD` (`CSDaisyBlockCloudStealer`), the\nper-line watermark scramble regex (`CSDaisyCloudStealer`),\n`cheshire_aurora` (`CSDaisyAuroraStealer`), and\n`misericorde_supp` (`CSDaisyMisericordeStealer`). During\ntriage, treat this label as a \"Redline-shape body\nshipped by BRADMAX with the identity preamble stripped\"\nmarker: the ZIP / city / HWID / OS / RAM / GPU fields\nare usable IOCs, but the underlying builder cannot be\nconfirmed as stock Redline without a `FileLocation:` or\nASCII banner. The `Country:` value that the canonical\npanel would emit is absent from the body; the archive-path folder-prefix (`[<CC>]<IPv4>/`) carries a country\ntag but the aggregator sometimes ships an incorrect tag\n(the sample folder `[DE]<IPv4>` claims Germany\nwhile the IP is ARIN-registered in the US and the\n`Location:` field says Pontiac, Michigan).",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1614.001",
+      "name": "System Language Discovery"
+    },
+    {
+      "id": "T1518.001",
+      "name": "Security Software Discovery"
+    },
+    {
+      "id": "T1124",
+      "name": "System Time Discovery"
+    }
+  ],
+  "related_families": [
+    "redline",
+    "cs-daisy-cloud-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": []
+}

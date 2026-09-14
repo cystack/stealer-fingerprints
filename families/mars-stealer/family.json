@@ -1,0 +1,89 @@
+{
+  "id": "mars-stealer",
+  "name": "Mars Stealer",
+  "classification": "known_family",
+  "attribution_confidence": "medium",
+  "description": "Mars Stealer is a Windows info-stealer first publicly tracked\nin mid-2021. It is a fork of the older Oski Stealer code base\nand harvests browser credentials, crypto wallets, MFA\nextensions, and Telegram / Discord session data. The family is\ndocumented in public malware analyses from 2022 onward,\nincluding the March 2022 source-code-leak disclosure, and is\ntracked under the canonical literal `win.mars_stealer`. The\nsource-code leak in March 2022 produced a wave of derivative\nbuilders that ship the same panel-template vocabulary with\nminor field-block restructures; downstream consumers see\nMars-lineage logs from the @bradmax_cloud and other\nredistributor channels that resell builder output without\nnaming the specific fork.\n\nThe harvested log opens with an 11-field plain `Key: Value`\nsystem block: `Country`, `IP`, `Time Zone`, a language\nsub-block, `Processor`, `Installed RAM` (with the `Installed`\nprefix), `OS` (formatted as `Windows <N> build <NNNNN> (64\nBit)`), `Video card` (space + lowercase `card`), and `Display\nResolution` (as `WxH`). The native Mars language sub-block has\ntwo fields (`Display Language:` plus `Keyboard Languages:`)\nper public analyses; post-leak forks have been observed\nrestructuring the sub-block (for example the three-field\n`System Language` / `User Language` / `Keyboard Language`\nvariant the @bradmax_cloud redistributor ships). Below the\nsystem block, 33-hyphen separators delimit three sections: a\nbrowser-version inventory listing every binary version found\non disk per browser, a 4-field installed-software inventory\n(`Display Name:` / `Publisher:` / `Version:` / `Install\nSource:`), and a flat `KEY = value` environment-variable dump.",
+  "aliases": [
+    "Mars",
+    "MarsStealer",
+    "Mars Stealer family"
+  ],
+  "typical_targets": [
+    "Browser saved credentials (Chromium and Firefox families)",
+    "Browser cookies, autofill, history",
+    "Crypto wallet extensions and desktop clients",
+    "MFA / 2FA browser extensions",
+    "Telegram and Discord session data",
+    "System hardware and locale inventory",
+    "Installed-software inventory and environment-variable dump"
+  ],
+  "detection_notes": "The `Installed RAM:` and `Video card:` field-key literals are\nthe cleanest fingerprint anchors; both are documented in\npublic Mars Stealer analyses and do not appear in other family\npanel templates. Pair either with the `Display Resolution:`\ntwo-word key to avoid the small residual collision risk\nagainst unrelated text. During triage, treat post-March-2022\nsamples as Mars-fork lineage rather than canonical Mars: the\nsource-code leak produced many derivatives and the specific\nfork is rarely identifiable from the panel output alone.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1217",
+      "name": "Browser Information Discovery"
+    },
+    {
+      "id": "T1518",
+      "name": "Software Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://www.esentire.com/blog/esentire-threat-intelligence-malware-analysis-mars-stealer",
+    "https://x-junior.github.io/malware%20analysis/2022/05/19/MarsStealer.html",
+    "https://malpedia.caad.fkie.fraunhofer.de/details/win.mars_stealer"
+  ],
+  "related_external": [
+    "oski-stealer"
+  ],
+  "variants": [
+    {
+      "id": "v_8de2e373e826d69cbb04e67395a898f1",
+      "parser": "logmine.ioc.parsers.cs_bradmax_cloud_mars.CSBradMaxCloudMarsParser",
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "medium",
+      "markers": [],
+      "fields": [
+        "Installed RAM",
+        "Keyboard Language",
+        "MachineID",
+        "System Language",
+        "User Language",
+        "Video card"
+      ],
+      "observations": 3,
+      "sample": {
+        "path": "samples/v_8de2e373e826d69cbb04e67395a898f1/sample.txt",
+        "sha256": "0734e805c81bd842b214ec522243587bd305c7d319a7dc3ae94b2f57d5252ed1",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

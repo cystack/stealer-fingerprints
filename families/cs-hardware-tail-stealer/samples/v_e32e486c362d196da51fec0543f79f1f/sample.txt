@@ -1,0 +1,10 @@
+    product: Intel(R) Core(TM) i5-8365U CPU @ 1.60GHz
+    core count: 4
+    core enabled: 4
+    thread count: 8
+  ram:
+  - product: CT8G4SFRA266.C8FE   
+    size: 8192MB
+  gpu:
+  - Intel(R) UHD Graphics 620
+  display: 1920x1080

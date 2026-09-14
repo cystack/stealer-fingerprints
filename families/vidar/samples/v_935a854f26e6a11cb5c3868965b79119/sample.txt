@@ -1,0 +1,17 @@
+-- Контакты для связи: <url>
+
+Ip: <IP>
+Country: AU
+Version: 18.6
+
+Date: 26/03/2026 <ip>
+MachineID: <HWID>
+GUID: <HWID>
+HWID: <HWID>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 11 Home
+Install Date: 30/12/2025 <ip>
+AV: Windows Defender

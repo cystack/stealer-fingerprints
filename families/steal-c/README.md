@@ -1,121 +1,91 @@
 # StealC
 
-**Known malware family · high attribution confidence**
+StealC info-stealer logs. Writes a sectioned `system_info.txt`
+with header lines like `Network Info:`, `System Summary:`, and
+tab-indented `- Key: Value` records under each. First documented
+in early 2023, StealC has remained an active commodity stealer
+with the v2 rewrite tracked through 2024.
 
-## At a glance
+## Research status
 
-- Aliases: <code>StealC v1</code>, <code>StealC v2</code>
-- Typical filenames: <code>system_info.txt</code>
-- Published formats: 0
-- Representative samples: 1
+- Classification: **Known malware family**
+- Attribution confidence: **high**
+- Aliases: `StealC v1`, `StealC v2`
+- Variants observed: **2**
+- Historical Logmine records represented: **972,301**
 
-<p>Observed StealC samples use a sectioned <code>system_info.txt</code> with headers such as <code>Network Info</code> and <code>System Summary</code>, followed by hyphen-prefixed <code>- Key: Value</code> records. This sample layout is not an active fingerprint.</p>
+## What it targets
 
-## How to recognize it
+- Browser saved credentials and cookies
+- Crypto wallet extensions and desktop clients
+- FTP, email, VPN, RDP client configs
+- Discord and Telegram session data
+- Custom file grabber configurable per-build
 
-- No stable text banner is known; combine filename and field layout.
-- No machine-readable field set is published yet; compare the sample manually.
+## Detection notes
 
-## Formats
+Distinctive sectioned layout with `Network Info:` and
+`System Summary:` parent headers and tab-indented field lines.
+Distributed via multiple Telegram resellers; the
+`@stealerboss` channel is one of the larger redistributors.
 
-No matcher fingerprint has been published for this family yet.
+## Observed log variants
 
-## Representative sample
+### `v_078dda10ae3264ed2b51d559017ac685`
 
-Observed text sample. Placeholders mark values removed from the original log.
+- Parser: `logmine.ioc.parsers.stealc.StealCParser`
+- Observed filenames: `System.txt`, `system_info.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `network-info-system-summary`
+- Historical records represented: **972,136**
+- Representative sample: [open sample](samples/v_078dda10ae3264ed2b51d559017ac685/sample.txt)
+- Sample SHA-256: `f5a0773995f4020e4e275701e8f3d3e858111ea7a2784bc8350eef7f5cef19f1`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-[<code>system_info.txt</code>](samples/system_info.txt)
+Recognition anchors:
 
-```text
-Network Info:
-- Country: BR
-System Summary:
-- HWID: [redacted]
-- OS: Windows 10
-- Architecture: x64
-- UserName: [redacted]
-- Computer Name: [redacted]
-- Local Time: 2025-05-20 [redacted]
-- UTC: -3
-- Language: pt-BR
-- Keyboards: Português (Brasil)
-- Laptop: FALSE
-- Running Path: C:\Users\<user>\Downloads\QuantumHacks\QuantumHacks\QuantumLoader v3.82.exe
-- CPU: Intel(R) Core(TM) i3-8100T CPU @ 3.10GHz
-- Cores: 4
-- Threads: 4
-- RAM: 16 GB
-- Display Resolution:
-Device Name: \\.\DISPLAY1
-Device String: Radeon RX550/550 Series
-Resolution: 1024x768
-Color Depth: 32 bits per pixel
-- GPU:
-Process count: 141
-Process List:
-[System Process] [0]
-System [4]
-Registry [108]
-smss.exe [448]
-csrss.exe [636]
-wininit.exe [776]
-csrss.exe [784]
-services.exe [848]
-lsass.exe [856]
-svchost.exe [980]
-fontdrvhost.exe [1008]
-svchost.exe [500]
-svchost.exe [708]
-winlogon.exe [368]
-fontdrvhost.exe [1072]
-svchost.exe [1168]
-svchost.exe [1228]
-svchost.exe [1252]
-svchost.exe [1260]
-dwm.exe [1372]
-svchost.exe [1468]
-svchost.exe [1528]
-svchost.exe [1588]
-svchost.exe [1660]
-atiesrxx.exe [1668]
-svchost.exe [1728]
-svchost.exe [1744]
-svchost.exe [1796]
-svchost.exe [1840]
-svchost.exe [1896]
-svchost.exe [1956]
-svchost.exe [1964]
-wsc_proxy.exe [1988]
-atieclxx.exe [2008]
-svchost.exe [2068]
-svchost.exe [2076]
-svchost.exe [2208]
-svchost.exe [2260]
-svchost.exe [2268]
-svchost.exe [2476]
-svchost.exe [2556]
-svchost.exe [2784]
-svchost.exe [2848]
-svchost.exe [2928]
-svchost.exe [2936]
-svchost.exe [2952]
-svchost.exe [3004]
-svchost.exe [3012]
-AvastSvc.exe [2884]
-aswToolsSvc.exe [3172]
-svchost.exe [3220]
-svchost.exe [3372]
-afwServ.exe [3584]
-svchost.exe [3820]
-```
+- Stable markers: `Network Info:`, `System Summary:`
+- Field labels: -
 
-Preview shortened; open the sample file for the complete text.
+### `v_176158076f220af65d5f14c6593efde1`
 
-## References
+- Parser: `logmine.ioc.parsers.stealc.StealCParser`
+- Observed filenames: `System.txt`, `system_info.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `installed-apps-users-processes`
+- Historical records represented: **165**
+- Representative sample: [open sample](samples/v_176158076f220af65d5f14c6593efde1/sample.txt)
+- Sample SHA-256: `f504e0db01d2a3b1132ecc7ce12765f38eca2f6f90bf187acb9c6ab6557ae80b`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-- [https://mssplab.github.io/threat-hunting/2023/11/23/malware-analysis-stealc-2.html](https://mssplab.github.io/threat-hunting/2023/11/23/malware-analysis-stealc-2.html)
-- [https://www.zscaler.com/blogs/security-research/i-stealc-you-tracking-rapid-changes-stealc](https://www.zscaler.com/blogs/security-research/i-stealc-you-tracking-rapid-changes-stealc)
+Recognition anchors:
 
-This sample is available for manual comparison; no matcher fingerprint is published for it yet.
+- Stable markers: -
+- Field labels: `All Users`, `Current User`, `Installed Apps`
 
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+
+## MITRE ATT&CK
+
+| Technique | Name |
+|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1119](https://attack.mitre.org/techniques/T1119/) | Automated Collection |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+
+## Related catalog profiles
+
+- None recorded.
+
+## Sources
+
+- <https://www.zscaler.com/blogs/security-research/i-stealc-you-tracking-rapid-changes-stealc>
+- <https://mssplab.github.io/threat-hunting/2023/11/23/malware-analysis-stealc-2.html>
+
+Machine-readable record: [family.json](family.json)

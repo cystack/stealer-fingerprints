@@ -1,35 +1,71 @@
 {
-  "$schema": "../../schemas/family.schema.json",
+  "id": "mac-sync",
+  "name": "MacSync",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "MacSync is a macOS-targeted infostealer first observed in\nNovember 2025 as a rebrand of the earlier Mac.c family. Its\nAppleScript payload writes an `Information.txt` file into the\nvictim staging directory combining a malware self-identification\nbanner, captured account credentials, and the verbatim output of\n`system_profiler`.",
   "aliases": [
     "Mac.c",
     "MacSync Stealer"
   ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "MacSync `information.txt` starts with the literal `MacSync Stealer` banner, followed by `Build Tag`, `Hardware`, `Graphics/Displays`, `Software`, and `Password` sections.",
-  "external_references": [
-    {
-      "url": "https://malware.news/t/mentalpositive-s-new-macos-stealer-amos-repackaged-or-a-new-cyber-threat/96207"
-    },
-    {
-      "url": "https://moonlock.com/new-mac-stealer-spreading"
-    },
-    {
-      "url": "https://www.cisecurity.org/insights/blog/macsync-stealer-campaign-impacting-us-sltt-macos-users"
-    },
-    {
-      "url": "https://www.jamf.com/blog/macsync-stealer-evolution-code-signed-swift-malware-analysis/"
-    }
-  ],
-  "id": "mac-sync",
-  "name": "MacSync",
-  "schema_version": "1.0",
-  "targets": [
+  "typical_targets": [
     "Browser saved credentials (Chrome, Safari, Firefox)",
     "Crypto wallet desktop clients (Electrum, Exodus, etc.)",
-    "System profile information for victim fingerprinting",
+    "macOS Keychain entries",
     "Telegram and Discord session data on macOS",
-    "macOS Keychain entries"
+    "System profile information for victim fingerprinting"
   ],
-  "tracking_labels": []
+  "detection_notes": "The `Information.txt` containing both a banner and verbatim\n`system_profiler` output is unambiguous. Pair with macOS-specific\nfield values (Apple silicon CPU strings, macOS version) to\nconfirm.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.001",
+      "name": "Keychain"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://www.cisecurity.org/insights/blog/macsync-stealer-campaign-impacting-us-sltt-macos-users",
+    "https://www.jamf.com/blog/macsync-stealer-evolution-code-signed-swift-malware-analysis/",
+    "https://moonlock.com/new-mac-stealer-spreading",
+    "https://malware.news/t/mentalpositive-s-new-macos-stealer-amos-repackaged-or-a-new-cyber-threat/96207"
+  ],
+  "variants": [
+    {
+      "id": "v_8ded840da2979d9deb0176880e86b1e9",
+      "parser": "logmine.ioc.parsers.macsync.MacSyncParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "MacSync Stealer"
+      ],
+      "fields": [],
+      "observations": 75488,
+      "sample": {
+        "path": "samples/v_8ded840da2979d9deb0176880e86b1e9/sample.txt",
+        "sha256": "0aca96c813ce5d994169a53f223ccb8bf66b719140d69aeaf25abc113dcafbe0",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
 }

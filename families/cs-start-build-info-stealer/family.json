@@ -1,0 +1,38 @@
+{
+  "id": "cs-start-build-info-stealer",
+  "name": "CSStartBuildInfoStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSStartBuildInfoStealer is a CyStack-coined identifier for a\nfixed-width column-aligned ``_Information.txt`` panel observed\ninside the ``4,5 MAY - 5433 LOGS2.part1.rar`` aggregator pack\nat ``[<CC>][<HWID>]/_Information.txt`` victim folders. The\npanel uses a distinctive ``Start Build:`` first-line field\nwhose value is the harvester's running executable path\n(typically ``C:\\WINDOWS\\SysWOW64\\nslookup.exe`` when the\nstealer process-hollowed into a Windows built-in), followed by\nfixed-width column-aligned key/value pairs where every value\nstarts at column 25.\n\nDistinctive fields include ``UserName (ComputerName):`` with a\nparen-annotated ``<user> (<hostname>)`` value, ``Total RAM:``\nwith the ``Total`` prefix, ``CPU:`` with a parenthesised\n``(Cores: N)`` suffix, ``Display Resolution:`` with spaces\naround the ``x``, ``UTC:`` as a bare 4-digit hhmm offset\nwithout colon, and a bracketed ``[Installed software]``\nsection header followed by a free-form program-list body. The\n2020-12-17 log timestamp on observed samples suggests an older\nbuilder whose panel-format research pre-dates current public\nreporting. Family attribution is provisional pending a\npublished threat-intel mapping.",
+  "aliases": [
+    "Start Build Information.txt stealer",
+    "Column-aligned nslookup.exe process-hollow stealer"
+  ],
+  "typical_targets": [
+    "Host OS + hardware fingerprint (Windows version + build,\nCPU with core count, GPU, RAM, resolution, language,\ntimezone offset)",
+    "Account identity (user name + computer name from the paren-annotated ``UserName (ComputerName)`` field)",
+    "Installed software inventory (bracketed ``[Installed\nsoftware]`` section with per-program version tags)"
+  ],
+  "detection_notes": "Fingerprint requires four line-anchored anchors: ``Start\nBuild:``, ``UserName (ComputerName):``, ``Total RAM:``, and\nthe ``[Installed software]`` bracketed section header. The\nfour-anchor combination is unique across the registry.\nDuring triage, correlate the ``Start Build:`` value with the\nstealer process-hollow target (a Windows built-in exe path\nlike ``nslookup.exe`` is a strong process-hollow indicator).\nThe path-embedded HWID and country code fall out of the\n``[<CC>][<HWID>]`` folder name convention; the body itself\ndoes not emit IP or country fields.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1518",
+      "name": "Software Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1055.012",
+      "name": "Process Hollowing"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "variants": []
+}

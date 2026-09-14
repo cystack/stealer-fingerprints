@@ -1,0 +1,62 @@
+{
+  "id": "bugatti-cloud",
+  "name": "Bugatti Cloud",
+  "classification": "aggregator",
+  "attribution_confidence": "unknown",
+  "description": "Banner-only `information.txt` produced by the `@bugatti_cloud`\nTelegram-channel distribution. Victim folders use a\nconfig-style name pattern\n(`AR_<ver>_Cty_<id>_rgn_<n>i_ll<n>i_eenable_itp_optimization0-<hwidpfx>`).\nThe system file content is a single line of ASCII-art banner\nbetween pipe borders, with no field section at all; the\nunderlying stealer engine emits its banner without any\nidentity preamble.",
+  "aliases": [],
+  "typical_targets": [],
+  "detection_notes": "Single-line `information.txt` containing only an ASCII-art\nbanner between pipe borders. Companion folder layout uses the\nlong config-style suffix style, distinct from other\nchannel-specific layouts.",
+  "attack_techniques": [],
+  "related_families": [],
+  "sources": [
+    "https://heroic.com/darkhive-breaches/bugatti-cloud-telegram-stealer-log-july-2023-timeline/",
+    "https://socradar.io/blog/top-stealer-log-telegram-channels/"
+  ],
+  "contains_families": [
+    "bracket-section-stealer",
+    "category-stealer",
+    "crypt-bot",
+    "cs-bugatti-cloud-pc-info-stealer",
+    "cs-bugatti-pc-info-stealer",
+    "cs-bugatti-user-info-stealer",
+    "cs-cyrillic-cores-stealer",
+    "cs-essential-mac-stealer",
+    "cs-mac-keychain-pass-stealer",
+    "cs-plateform-exploitation-stealer",
+    "cs-plutus-stealer",
+    "cs-russia34-stealer",
+    "cs-sig-info-stealer",
+    "csx3zero-bot-stealer",
+    "cthulhu-stealer",
+    "dc-rat",
+    "erbium",
+    "pxa-stealer",
+    "remus-stealer",
+    "rhadamanthys",
+    "vidar"
+  ],
+  "variants": [
+    {
+      "id": "v_c12f9b157d6a74710a1e1e9ebc1ecea7",
+      "parser": "logmine.ioc.parsers.bugatti_cloud_banner.BugattiCloudBannerParser",
+      "filenames": [
+        "information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": "@bugatti_cloud",
+      "attribution_confidence": "unknown",
+      "markers": [
+        "_____  _   _ __   __  _____  _   _  _____  _____  ___   _      _      _____"
+      ],
+      "fields": [],
+      "observations": 2,
+      "sample": {
+        "path": "samples/v_c12f9b157d6a74710a1e1e9ebc1ecea7/sample.txt",
+        "sha256": "c0827f757e129b9667c320a2ae7552ff7172bdbf4444d32e87abc8817ecb677b",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

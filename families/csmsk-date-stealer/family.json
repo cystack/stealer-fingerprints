@@ -1,0 +1,43 @@
+{
+  "id": "csmsk-date-stealer",
+  "name": "CSMSKDateStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSMSKDateStealer is a CyStack-coined identifier for an\ninfo-stealer `information.txt` whose opening line is an exfil\ntimestamp suffixed with `MSK` (Moscow Standard Time). The file\nis a flat `Key: Value` block: short 16-hex `Machine UUID`, a\n`Machine: <hostname>/<user>` slash-suffix identity, hardware\nfields, a localised `Local Time: <date> (UTC+<offset>) <city>`\nclock, a geolocation block keyed on the ip-api.com JSON shape\n(`CountryCode`, `Region Name`, `IP Timezone`), and a\nwallet-extension enumerator that maps wallet names to\n`%USERPROFILE%` paths with right-arrow padding (`MetaMask ->\n...`).\n\nFamily attribution is provisional. The victim-profile field\nset overlaps with Snake Keylogger's publicly documented host\nprofile, but Snake Keylogger's documented exfiltration is an\nSMTP / FTP / Telegram message body, not a standalone info.txt\nwith a wallet-enumerator block. No public source maps this\nexact shape to a named family.",
+  "aliases": [],
+  "typical_targets": [
+    "Browser saved credentials and cookies",
+    "Crypto wallet browser extensions (MetaMask, Phantom, ...)",
+    "System hardware and locale inventory"
+  ],
+  "detection_notes": "The MSK-suffixed `Date:` opener is the single most\ndistinctive marker: no other family in this catalog emits a\ntimezone abbreviation on its Date line (Lumma uses dotted\nDD.MM.YYYY without trailing abbreviation, .B.A.B.A. uses\nDD/MM/YYYY, Snake Stealer uses M/D/YYYY with AM/PM). The\n`Machine UUID:` co-requirement closes the loop against a\nstray readme that mentions an MSK-suffixed date by\ncoincidence. If a published threat-intel report later\nattributes this format to a known stealer family, rename\nthe `family` constant on the parser rather than adding a\nsecond parser.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1124",
+      "name": "System Time Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "variants": []
+}

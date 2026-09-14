@@ -1,126 +1,112 @@
 # AMOS Stealer
 
-**Known malware family · medium attribution confidence**
+Atomic macOS Stealer (AMOS) is a Go and C++ macOS info-stealer
+sold as malware-as-a-service through private Telegram channels
+since April 2023. The operator panel charges around $1000 per
+month and ships a builder, a victim web panel, a MetaMask
+brute-forcer, and Telegram log delivery. Multiple public
+malware writeups profile the family. AMOS spawned the Banshee,
+Cthulhu, Poseidon, and Odyssey forks tracked separately in
+this catalog.
 
-## At a glance
+The artifact this parser claims is the operator-facing summary
+written as `UserInformation.txt` inside per-victim folders of
+AMOS log aggregator packs. The file opens with four flush-left
+panel section headers in a fixed order (`MetaMask Info:`,
+`Debanks:`, `Userinfo:`, then `Software:` / `Hardware:` /
+`Graphics/Displays:` introducing the verbatim
+`system_profiler` output for the SPSoftwareDataType,
+SPHardwareDataType, and SPDisplaysDataType data types).
+`MetaMask Info` and `Debanks` sit empty in most samples
+because the panel surfaces wallet artifacts in sibling folders
+(`Wallets/`, `Keychain/`) rather than inlined into this
+summary.
 
-- Aliases: <code>AMOS</code>, <code>Atomic Mac</code>, <code>Atomic Stealer</code>, <code>Atomic macOS Stealer</code>
-- Typical filenames: <code>userinformation.txt</code>
-- Published formats: 0
-- Representative samples: 1
+## Research status
 
-<p>The observed AMOS sample uses <code>userinformation.txt</code>. It opens with <code>MetaMask Info:</code> and <code>Debanks:</code>, then presents <code>Userinfo:</code> and macOS system, hardware, and display sections.</p>
+- Classification: **Known malware family**
+- Attribution confidence: **high**
+- Aliases: `Atomic Stealer`, `Atomic macOS Stealer`, `AMOS`, `Atomic Mac`
+- Variants observed: **1**
+- Historical Logmine records represented: **19,149**
 
-## How to recognize it
+## What it targets
 
-- No stable text banner is known; combine filename and field layout.
-- No machine-readable field set is published yet; compare the sample manually.
+- Browser saved credentials, cookies, autofill, history
+- Crypto wallet extensions (MetaMask, Phantom, Coin98, Trust Wallet, 50+ targeted)
+- Desktop crypto wallets (Electrum, Exodus, Atomic, Wasabi, Ledger Live, Trezor Suite)
+- macOS Keychain database and login password (AppleScript prompt)
+- Apple Notes content and Telegram session files
+- Documents and Desktop file grabber (.txt, .pdf, .docx, .wallet, .key)
 
-## Formats
+## Detection notes
 
-No matcher fingerprint has been published for this family yet.
+The line-anchored `MetaMask Info:` + `Debanks:` + `Userinfo:`
+triple is unique to this AMOS panel render and does not
+collide with the Cthulhu (`BuildID:` + `Hardware Overview:`)
+or MacSync (`MacSync Stealer` banner) macOS forks the catalog
+tracks. Family attribution rests on a community stealer-format
+catalog mapping this exact `UserInformation.txt` shape to
+Atomic Mac; the underlying AMOS family is publicly confirmed
+elsewhere but no public writeup shows a sample showing this
+specific section-header layout, so the parser ships with
+medium attribution confidence. Triaging an AMOS folder during
+incident response: check for sibling `FileGrabber/`,
+`BrowserVersion.txt`, `keychain.txt`, and `Passwords.txt`
+artifacts in the same victim directory - the folder-level AMOS
+detector fires on those names.
 
-## Representative sample
+## Observed log variants
 
-Observed text sample. Placeholders mark values removed from the original log.
+### `v_93dd7400af7f5eefc3087e22c6b99a1c`
 
-[<code>userinformation.txt</code>](samples/userinformation.txt)
+- Parser: `logmine.ioc.parsers.amos.AMOSParser`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **medium**
+- Historical records represented: **19,149**
+- Representative sample: [open sample](samples/v_93dd7400af7f5eefc3087e22c6b99a1c/sample.txt)
+- Sample SHA-256: `2356e0c8ea7177f7e7d33714b3b37bf74a3bbab1633e9f21b73d1d5fe30c7437`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-```text
-MetaMask Info:
-Debanks: 
+Recognition anchors:
+
+- Stable markers: `Debanks:`, `MetaMask Info:`, `Userinfo:`
+- Field labels: -
 
 
-Userinfo:
-Country: US
-IP: [redacted]
-City: [redacted]
-Software:
+## MITRE ATT&CK
 
-System Software Overview:
+| Technique | Name |
+|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
+| [T1555.001](https://attack.mitre.org/techniques/T1555/001/) | Credentials from Password Stores: Keychain |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| [T1217](https://attack.mitre.org/techniques/T1217/) | Browser Information Discovery |
 
-  System Version: macOS 15.6.1 (24G90)
-  Kernel Version: Darwin 24.6.0
-  Boot Volume: Macintosh HD
-  Boot Mode: Normal
-  Computer Name: [redacted]
-  User Name: [redacted]
-  Secure Virtual Memory: Enabled
-  System Integrity Protection: Enabled
-  Time since boot: 5 days, 2 hours, 12 minutes
+## Related catalog profiles
 
-Hardware:
+- [Cthulhu Stealer](../cthulhu-stealer/)
+- [Odyssey Stealer](../odyssey-stealer/)
+- [MacSync](../mac-sync/)
 
-Hardware Overview:
+## Related external families
 
-  Model Name: MacBook Pro
-  Model Identifier: MacBookPro16,1
-  Processor Name: 8-Core Intel Core i9
-  Processor Speed: 2.3 GHz
-  Number of Processors: 1
-  Total Number of Cores: 8
-  L2 Cache (per Core): 256 KB
-  L3 Cache: 16 MB
-  Hyper-Threading Technology: Enabled
-  Memory: 16 GB
-  System Firmware Version: 2075.[redacted] (iBridge: 22.16.16083.0.0,0)
-  OS Loader Version: 583~2210
-  Serial Number (system): [redacted]
-  Hardware UUID: [redacted-uuid]
-  Provisioning UDID: [redacted]
-  Activation Lock Status: Disabled
+- `banshee-stealer`
+- `poseidon-stealer`
 
-Graphics/Displays:
+## Sources
 
-Intel UHD Graphics 630:
+- <https://github.com/MalBeacon/what-is-this-stealer>
+- <https://www.sentinelone.com/blog/atomic-stealer-threat-actor-spawns-second-variant-of-macos-malware-sold-on-telegram/>
+- <https://www.esentire.com/blog/fake-deepseek-site-infects-mac-users-with-atomic-stealer>
+- <https://www.picussecurity.com/resource/blog/atomic-stealer-amos-macos-threat-analysis>
+- <https://moonlock.com/atomic-macos-stealer>
+- <https://www.bleepingcomputer.com/news/security/new-atomic-macos-info-stealing-malware-targets-50-crypto-wallets/>
+- <https://cyble.com/blog/threat-actor-selling-new-atomic-macos-amos-stealer-on-telegram/>
 
-  Chipset Model: Intel UHD Graphics 630
-  Type: GPU
-  Bus: Built-In
-  VRAM (Dynamic, Max): 1536 MB
-  Vendor: Intel
-  Device ID: 0x3e9b
-  Revision ID: 0x0002
-  Automatic Graphics Switching: Supported
-  gMux Version: 5.0.0
-  Metal Support: Metal 3
-
-AMD Radeon Pro 5500M:
-
-  Chipset Model: AMD Radeon Pro 5500M
-  Type: GPU
-  Bus: PCIe
-  PCIe Lane Width: x16
-  VRAM (Total): 4 GB
-  Vendor: AMD (0x1002)
-  Device ID: 0x7340
-  Revision ID: 0x0040
-  ROM Revision: 113-D3220E-190
-  VBIOS Version: 113-D32206U1-019
-  Option ROM Version: 113-D32206U1-019
-  EFI Driver Version: 01.A1.190
-  Automatic Graphics Switching: Supported
-  gMux Version: 5.0.0
-  Metal Support: Metal 3
-  Displays:
-Color LCD:
-  Display Type: Built-In Retina LCD
-  Resolution: 3072 x 1920 Retina
-  Framebuffer Depth: 30-Bit Color (ARGB2101010)
-```
-
-Preview shortened; open the sample file for the complete text.
-
-## References
-
-- [https://cyble.com/blog/threat-actor-selling-new-atomic-macos-amos-stealer-on-telegram/](https://cyble.com/blog/threat-actor-selling-new-atomic-macos-amos-stealer-on-telegram/)
-- [https://github.com/MalBeacon/what-is-this-stealer](https://github.com/MalBeacon/what-is-this-stealer)
-- [https://moonlock.com/atomic-macos-stealer](https://moonlock.com/atomic-macos-stealer)
-- [https://www.bleepingcomputer.com/news/security/new-atomic-macos-info-stealing-malware-targets-50-crypto-wallets/](https://www.bleepingcomputer.com/news/security/new-atomic-macos-info-stealing-malware-targets-50-crypto-wallets/)
-- [https://www.esentire.com/blog/fake-deepseek-site-infects-mac-users-with-atomic-stealer](https://www.esentire.com/blog/fake-deepseek-site-infects-mac-users-with-atomic-stealer)
-- [https://www.picussecurity.com/resource/blog/atomic-stealer-amos-macos-threat-analysis](https://www.picussecurity.com/resource/blog/atomic-stealer-amos-macos-threat-analysis)
-- [https://www.sentinelone.com/blog/atomic-stealer-threat-actor-spawns-second-variant-of-macos-malware-sold-on-telegram/](https://www.sentinelone.com/blog/atomic-stealer-threat-actor-spawns-second-variant-of-macos-malware-sold-on-telegram/)
-
-This sample is available for manual comparison; no matcher fingerprint is published for it yet.
-
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+Machine-readable record: [family.json](family.json)

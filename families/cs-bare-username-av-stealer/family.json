@@ -1,0 +1,38 @@
+{
+  "id": "cs-bare-username-av-stealer",
+  "name": "CSBareUsernameAVStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSBareUsernameAVStealer is a CyStack-coined identifier for a\nbare 3-line panel-summary `System.txt` observed inside `!!\n2025 DEC.part01.rar` aggregator packs at\n`[<CC>]<IPv4>/System.txt` victim folders. The body has just\nthree flush-left lines: `IP: <ipv4 or N/A>`, `Username:\n<user>[<machine>]`, and `AntiVirus: <product list>`. No HWID,\nno hostname header, no hardware inventory, no\nharvested-credential count line, no geo block.\n\nThe `Username:` value carries the `<user>[<machine>]`\nbracketed-machine-label shape: the leading token is the OS\nuser name, the bracketed token is the panel's collected\nmachine label (SMBIOS product name, build tag, or VM hostname\ndepending on what the panel captured). Public research\ndocuments this exact bracketed shape for PXA Stealer captions,\nbut the canonical PXA caption fingerprint requires the `Data\nInformation: CK:` count line which this body lacks. The\n3-field shape could be a heavily-stripped PXA panel where\noperator-side enrichment fully failed, or a separate panel\nthat adopted the PXA field set. Family stays CyStack-coined\npending a published confirmation; same conservative\nattribution rationale as `CSGADSPanelStealer`.",
+  "aliases": [
+    "Bare IP/Username/AntiVirus panel summary",
+    "Stripped PXA-shape 3-field System.txt"
+  ],
+  "typical_targets": [
+    "Public IPv4 (often `N/A` when geo-IP lookup fails)",
+    "OS user name + bracketed machine label\n(`Username: <user>[X1CARBON]`)",
+    "Installed antivirus product list"
+  ],
+  "detection_notes": "Fingerprint requires line-anchored `IP:` AND\n`Username:` AND `AntiVirus:` (CamelCase `V`) keys PLUS\nthe `Username:` value matching the `<user>[<machine>]`\nbracketed-machine-label shape PLUS absence of\n`Data Information:` (rules out PXACaption) AND\n`Browser Data:` (rules out CSGADSPanel) AND `Browers:`\n(rules out CSBrowersStealer). During triage, the\nbracketed machine label often carries the victim's\nlaptop model (e.g. `X1CARBON` for Lenovo ThinkPad X1\nCarbon, `FLAREVM` for sandbox VMs) or build tag, which\nis useful for victim-fingerprinting beyond the bare\nusername.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1518.001",
+      "name": "Security Software Discovery"
+    }
+  ],
+  "related_families": [
+    "pxa-stealer",
+    "csgads-panel-stealer",
+    "cs-browers-stealer"
+  ],
+  "sources": [],
+  "variants": []
+}

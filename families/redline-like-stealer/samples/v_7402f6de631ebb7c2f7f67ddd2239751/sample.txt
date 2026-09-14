@@ -1,0 +1,21 @@
+Log date: 15 Mar 25 20:56 UTC
+Traffic: @MAXERSTE (BRADMAX) / <url>
+HWID: <HWID>
+Country: DZ
+IP: <IP>
+System Language: English
+Processor: Intel(R) Core(TM)2 Duo CPU     P7450  @ 2.13GHz
+Installed RAM: 4024 MB
+Operation System: Windows 10 build 19045 (64 Bit)
+Video card: Mobile Intel(R) 4 Series Express Chipset Family (Microsoft Corporation - WDDM 1.1)
+Computer Name: <HOST>
+Domain Name: <HOST>
+MachineID: <HWID>
+Product Key: 
+-------------
+User Name: <USER>
+TimeZone: UTC-8
+UserLanguage: English
+Keyboard Language: French
+Display Resolution: 1366x768
+Wallpaper Hash: <HWID>

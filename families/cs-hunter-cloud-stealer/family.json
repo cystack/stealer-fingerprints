@@ -1,0 +1,45 @@
+{
+  "id": "cs-hunter-cloud-stealer",
+  "name": "CSHunterCloudStealer",
+  "classification": "family_variant",
+  "attribution_confidence": "high",
+  "description": "CSHunterCloudStealer is a CyStack-coined identifier for the\n`HUNTER CLOUD` watermarked Redline-derivative\n`UserInformation.txt` observed inside `@ft7links`-distributed\npacks. The `HUNTER_CLOUD` Telegram channel re-distributes\nRedline-derivative logs (the same shape as\nRedlineLikeStealer variant 4: `BUILD NAME:` plus extended\nblock) under a per-line anti-scrape watermark that prevents\nthe line-anchored `RedlineLikeStealer` parser from claiming\nthe content.",
+  "aliases": [
+    "HUNTER CLOUD",
+    "HUNTER_CLOUD"
+  ],
+  "typical_targets": [],
+  "detection_notes": "Spaced-letter ASCII banner `H U N T E R   C L O U D` plus the\nper-line anti-scrape watermark and the subscription pricing\nblock (`💵 1 Week / 1 Month / 3 Months / Lifetime`) is the\nfingerprint. The underlying Redline-derivative field set\n(`BUILD NAME:`, `Admin Group:`, `Integrity:`, `Wallpaper Hash:`)\nis preserved but spaced apart by the watermark.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "redline",
+    "redline-like-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/HUNTER_CLOUD"
+  ],
+  "canonical_family": "redline",
+  "variants": []
+}

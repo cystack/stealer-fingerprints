@@ -1,37 +1,142 @@
 {
-  "$schema": "../../schemas/family.schema.json",
-  "aliases": [
-    "Arcane Stealer"
-  ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "Arcane logs are recognized by `information.txt` and the combined `Worker`, `Date Install`, `External IP`, `Internal IP`, and `Gateway IP` fields. The observed layout continues with `=== ... Information ===` hardware and system sections. Public reporting describes VGS Stealer as a predecessor, not an Arcane alias.",
-  "external_references": [
-    {
-      "url": "https://cyberinsider.com/new-arcane-stealer-malware-targets-vpn-accounts-via-youtube-cheats/"
-    },
-    {
-      "url": "https://securelist.com/arcane-stealer/115919/"
-    },
-    {
-      "url": "https://thehackernews.com/2025/03/youtube-game-cheats-spread-arcane.html"
-    },
-    {
-      "url": "https://www.bleepingcomputer.com/news/security/new-arcane-infostealer-infects-youtube-discord-users-via-game-cheats/"
-    }
-  ],
   "id": "arcane",
   "name": "Arcane",
-  "schema_version": "1.0",
-  "targets": [
-    "Browser DPAPI keys cracked via embedded xaitax utility",
-    "Browser saved credentials, cookies, autofill, history (Chromium and Gecko)",
-    "Cryptocurrency wallets",
-    "Gaming client tokens (Riot Client, Epic, Steam, Ubisoft Connect, Roblox, Battle.net)",
-    "Network utility configs (ngrok, Playit, Cyberduck, FileZilla, DynDNS)",
-    "System hardware inventory and saved Wi-Fi networks",
-    "Telegram and Discord session data",
-    "VPN client configs (OpenVPN, Mullvad, NordVPN, IPVanish, Surfshark, Proton, hide.me, PIA, CyberGhost, ExpressVPN)"
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "Arcane is a Russian-targeted info-stealer first publicly\ndocumented in March 2025. The family is a successor to the VGS\nstealer, itself a Phemedrone derivative. Distribution runs\nthrough YouTube videos and Discord servers advertising game\ncheats and VPN cracks: a password-protected archive contains a\n`start.bat` that downloads a second payload via PowerShell and\ndrops both a miner and the Arcane binary. Most observed\nvictims are in Russia, Belarus, and Kazakhstan. A\ndistinguishing on-host artifact is the embedded `xaitax.exe`\nutility (also seen as `xaitx.exe`) that Arcane drops to disk\nto crack Chromium DPAPI keys by reading the keys off the\nutility's console output.\n\nThe operator-facing system summary is a flat `Information.txt`\nopened with a triple-dash `---User Info---` section (Worker,\nDate Install, ISO Key, Clipboard, External IP, Internal IP,\nGateway IP) and a triple-dash `---Full Pc Info---` section\nwhose body is a series of triple-equals `=== <subsection>\nInformation ===` blocks carrying raw WMI query output for CPU,\nGPU, RAM, Disk, Network Adapter, Windows Version, Motherboard,\nBIOS, User Account, Time Zone, Screen, AntiVirus, and Logical\nProcesses. Failed WMI queries leave a Russian-language\n`Произошла ошибка` ('An error occurred') line in place of the\nsubsection body.",
+  "aliases": [
+    "Arcane Stealer",
+    "VGS Stealer (predecessor)"
   ],
-  "tracking_labels": []
+  "typical_targets": [
+    "Browser saved credentials, cookies, autofill, history (Chromium and Gecko)",
+    "Browser DPAPI keys cracked via embedded xaitax utility",
+    "VPN client configs (OpenVPN, Mullvad, NordVPN, IPVanish, Surfshark, Proton, hide.me, PIA, CyberGhost, ExpressVPN)",
+    "Network utility configs (ngrok, Playit, Cyberduck, FileZilla, DynDNS)",
+    "Gaming client tokens (Riot Client, Epic, Steam, Ubisoft Connect, Roblox, Battle.net)",
+    "Cryptocurrency wallets",
+    "Telegram and Discord session data",
+    "System hardware inventory and saved Wi-Fi networks"
+  ],
+  "detection_notes": "Fingerprint: line-anchored `---User Info---` AND\n`---Full Pc Info---`. The triple-dash section pair is\nunique to Arcane's Information.txt across the registry.\nTwo strong triage signals on top: a Russian\n`Произошла ошибка` line where WMI subsections failed\n(targets are predominantly Russian-speaking), and a\n`xaitax.exe` or `xaitx.exe` process in the `=== Logical\nProcesses Information ===` block (the embedded Chromium\nDPAPI cracker is the malware-specific binary). During\nincident response, check sibling files for browser-data\ndumps, wallet folders, and VPN config exports - Arcane\ncollects each artifact class into a separate file.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    }
+  ],
+  "related_families": [
+    "phemedrone"
+  ],
+  "sources": [
+    "https://securelist.com/arcane-stealer/115919/",
+    "https://cyberinsider.com/new-arcane-stealer-malware-targets-vpn-accounts-via-youtube-cheats/",
+    "https://www.bleepingcomputer.com/news/security/new-arcane-infostealer-infects-youtube-discord-users-via-game-cheats/",
+    "https://thehackernews.com/2025/03/youtube-game-cheats-spread-arcane.html"
+  ],
+  "related_external": [
+    "vgs-stealer"
+  ],
+  "variants": [
+    {
+      "id": "v_19485e2d3464f1a74cdca2500ccf3e84",
+      "parser": "logmine.ioc.parsers.arcane.ArcaneParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": "@BRADLOGS (BRADMAX)",
+      "distribution_channel": "https://t.me/+0IAf5VIrl_EzNWRi",
+      "attribution_confidence": "high",
+      "markers": [
+        "---Full Pc Info---",
+        "---User Info---",
+        "@BRADLOGS (BRADMAX)"
+      ],
+      "fields": [],
+      "observations": 1865,
+      "sample": {
+        "path": "samples/v_19485e2d3464f1a74cdca2500ccf3e84/sample.txt",
+        "sha256": "24f0266761c4632f0193bb3dbe0f7dc86e8663ac46b44a15480a7beab470b03f",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "sectioned-user-info"
+    },
+    {
+      "id": "v_84d2bdd1450ee03b1b2ff559425b8999",
+      "parser": "logmine.ioc.parsers.arcane.ArcaneParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "---Full Pc Info---"
+      ],
+      "fields": [
+        "Date Install",
+        "Worker"
+      ],
+      "observations": 61,
+      "sample": {
+        "path": "samples/v_84d2bdd1450ee03b1b2ff559425b8999/sample.txt",
+        "sha256": "0fd16cf0e0aa38c2ddf07c36e415814e0f789197bf6bfb70dafbce7a57b6cc86",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "headerless-user-info"
+    },
+    {
+      "id": "v_bfc7cdab5eb8146d9a2c2a389822e6a7",
+      "parser": "logmine.ioc.parsers.arcane.ArcaneParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "---Full Pc Info---",
+        "---User Info---"
+      ],
+      "fields": [],
+      "observations": 3948,
+      "sample": {
+        "path": "samples/v_bfc7cdab5eb8146d9a2c2a389822e6a7/sample.txt",
+        "sha256": "1e43077bef0e93188a47aba5c2d7bb00535a4a016fe5707baa8f7f61dc211b41",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "sectioned-user-info"
+    }
+  ]
 }

@@ -1,0 +1,53 @@
+{
+  "id": "cs-bradmax-category-stealer",
+  "name": "CSBradmaxCategoryStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSBradmaxCategoryStealer is a CyStack-coined identifier\nfor a BRADMAX-redistributed victim folder that ships the\n4-category subdirectory layout\n(`Browsers/Discord/Files/System`) at root and no\ncompanion system-info file at the root level. Observed\ninside `!! 2025 JULY.part001.rar` at\n`[<CC>]@BRADLOGS (BRADMAX) (<NN>)/` victim folders.\n\nThe 4-subdir shape is a generic Stealerium-fork\ncategorical layout used by multiple builders. The\nBRADMAX redistribution strips per-builder branding from\nthe System/ subdirectory contents before repacking, so\nthe underlying family cannot be pinned from the root\nlisting alone. The cred-file selector often picks an\nunrelated harvested file from inside `Files/` (e.g. a\nvictim's pip `AUTHORS.txt` swept up alongside the real\nstealer drop) which leaves the folder-root IOC carrying\nno useful per-victim fields. Family attribution is\nprovisional pending a published threat-intel mapping\nfor this BRADMAX-distributed layout.",
+  "aliases": [
+    "BRADMAX 4-category victim folder",
+    "@BRADLOGS Browsers/Discord/Files/System layout"
+  ],
+  "typical_targets": [
+    "Browser-saved credentials, cookies, autofills (inside Browsers/)",
+    "Discord LevelDB session tokens (inside Discord/)",
+    "Desktop / Documents / Downloads files (inside Files/)",
+    "Victim system info (inside System/)"
+  ],
+  "detection_notes": "Fingerprint requires all four canonical subdirectory\nnames (`Browsers`, `Discord`, `Files`, `System`) at\nfolder root AND a `BRADLOGS` or `BRADMAX` token in the\nsystem_path. The path-side anchor keeps the detector\noff generic Stealerium-fork 4-category layouts\ndistributed through unrelated channels. During triage,\ninspect the `System/` subdirectory contents for the\nunderlying stealer banner: canonical Lumma, Phantom,\nStealerium, and BlackGuard all emit recognisable\nself-IDs inside the system-info text file that\nlives under `System/`, but the BRADMAX repacker's\nnaming on the system file is not consistent enough to\nfingerprint at the folder root.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-soft-host-stealer",
+    "cs-wifi-backslash-n-stealer",
+    "cs-cc-apostrophe-stealer"
+  ],
+  "sources": [],
+  "related_external": [
+    "programs-system-bundle"
+  ],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": []
+}

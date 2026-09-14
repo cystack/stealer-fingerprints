@@ -1,0 +1,55 @@
+{
+  "id": "cs-new-log-stealer",
+  "name": "CSNewLogStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSNewLogStealer is a CyStack-coined identifier for an\neight-line `Information.txt` panel notification stub observed\ninside `!! 2025 OCT.part01.rar`-style aggregator packs in\n`<id>_<CC>_<IPv4>_<DD-MM-YY>/` victim folders (e.g.\n`1175_CE_<IPv4>_21-10-25/`). The body opens with the\nliteral banner `⚡️NEW LOG (NOT ENCRYPTED)` (the trailing flag\nimplies the panel also has an encrypted payload variant),\nfollows with a comma-separated data line `Username: <user>,\nLocation: <country> [<CC>], <city>`, then enumerates six\nemoji-prefixed table-of-contents section names: `🖥General\ninformation`, `🌐Browser Data`, `🌐Browser History`,\n`🎆Screenshots`, `⚙️Process List`, `📦Desktop Files`. The TOC\nentries are *pointers* to sibling sub-folders that ship the\nactual harvest inside the per-victim archive; this file is the\npanel's notification stub rather than the data itself.\n\nThe `(NOT ENCRYPTED)` annotation is the panel's developer side\nquirk and serves as the disambiguating signal: no other\nregistered parser keys on this literal. Family attribution is\nprovisional pending a published threat-intel mapping for this\nbanner-plus-TOC layout. The closest documented candidates\nchecked - Continental Stealer, AuraStealer, Mystic Stealer,\nLumma, and the PXA Stealer panel caption - publish different\nbanner conventions.",
+  "aliases": [
+    "!! 2025 OCT aggregator notification stub"
+  ],
+  "typical_targets": [
+    "Browser saved credentials and cookies (in sibling Browser Data folder)",
+    "Browser history (in sibling Browser History folder)",
+    "Victim screenshots (in sibling Screenshots folder)",
+    "Running-process list (in sibling Process List folder)",
+    "Desktop files (in sibling Desktop Files folder)"
+  ],
+  "detection_notes": "Fingerprint requires the literal `⚡️NEW LOG (NOT ENCRYPTED)`\nsubstring (27 chars including the U+26A1 + U+FE0F lightning\nsequence - preserve both glyphs in source) plus the\nline-anchored `Username: <user>, Location:` inline-CSV data\nline. The banner phrase is distinctive enough on its own\nthat the data-line check is mainly a sanity guard against\nfragments that merely quote the banner phrase out of\ncontext. During triage, treat the family attribution as\nunknown: the file is a notification stub with no harvested\ncredential body, and the underlying stealer cannot be\nidentified from the TOC alone. The per-victim archive's\nsibling sub-folders (`Browser Data/`, `Process List/`,\netc.) carry the actual exfiltrated data and are where any\nfollow-on family fingerprinting should run.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1113",
+      "name": "Screen Capture"
+    },
+    {
+      "id": "T1057",
+      "name": "Process Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-emoji-info-stealer",
+    "cs-browers-stealer",
+    "csgads-panel-stealer"
+  ],
+  "sources": [],
+  "variants": []
+}

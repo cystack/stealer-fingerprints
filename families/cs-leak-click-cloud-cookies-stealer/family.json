@@ -1,0 +1,35 @@
+{
+  "id": "cs-leak-click-cloud-cookies-stealer",
+  "name": "CSLeakClickCloudCookiesStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSLeakClickCloudCookiesStealer is a CyStack-coined identifier\nfor a LOGS-pack per-victim folder-style IOC distributed through\nthe ``Leak Click Private`` / ``LEAK Click Cloud`` Telegram\nchannel. Observed inside the ``23-24 JUNE - 25597 LOGS.part01.rar``\naggregator pack at ``logs/<CC>- Leak Click Private -<HWID>-\n<TIMESTAMP>/`` victim folders. The folder-name convention\nembeds the literal ``- Leak Click Private -`` operator label\nbetween the country-code prefix and the alphanumeric HWID.\n\nThe pack ships a four-entry root: a ``Cookies/`` subdirectory\nwith Netscape cookies dumps per browser profile, a Windows\nURL shortcut file ``Link LEAK Click Cloud.url`` pointing to\nthe operator's Telegram channel, a short-random-name ``.txt``\ndecoy file (6-8 char lowercase, e.g. ``GgcvKn.txt``), and an\nempty-name packer DIR. The LOGS pack ships multiple stealer\nfamilies under a single archive convention, so the minimal\ncookies-plus-channel-shortcut layout carries no remaining\nfamily signal beyond ``cookie-jar exporter with LEAK Click\nchannel promo file``. Family attribution is provisional\npending a published threat-intel mapping.",
+  "aliases": [
+    "LEAK Click Cloud cookies bundle",
+    "Leak Click Private folder-name cookies bundle"
+  ],
+  "typical_targets": [
+    "Browser session cookies (Chromium / Firefox) exported\nas Netscape cookies.txt files per browser profile"
+  ],
+  "detection_notes": "Fingerprint requires either the folder-name literal ``Leak\nClick Private`` or a root-level ``Link LEAK Click Cloud.url``\nfile, plus a ``cookies`` subdirectory at root, plus at least\ntwo canonical Netscape cookies.txt rows in the cred file body.\nThe dual-anchor design handles cases where the folder-name\nhas been renamed by the analyst but the operator channel-shortcut file survives. During triage, correlate with the\nLOGS pack archive; the underlying harvester family is\nunattributable from the cookies-only layout alone.",
+  "attack_techniques": [
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "cs-exception-cookies-only-stealer",
+    "cs-bradmax-cookies-only-stealer"
+  ],
+  "sources": [],
+  "related_external": [
+    "CSDaisyCloudCookiesOnlyStealer",
+    "CSBradmaxAppCookiesStealer"
+  ],
+  "variants": []
+}

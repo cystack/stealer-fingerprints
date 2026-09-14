@@ -1,0 +1,37 @@
+{
+  "id": "cs-json-cookies-only-stealer",
+  "name": "CSJsonCookiesOnlyStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSJsonCookiesOnlyStealer is a CyStack-coined identifier for\na LOGS2-pack per-victim folder-style IOC shipping a minimal\n``cookies/`` subdirectory with JSON-array cookie exports\n(the Cookie-Editor / EditThisCookie extension format used\nby many post-processing tools). Observed inside the\n``23-24 JUNE - 25597 LOGS2.part01.rar`` aggregator pack at\n``<CC>-    -<HWID>-<TIMESTAMP>/`` victim folders where the\nfolder name uses the same space-padded convention as the\nsibling ``CSExceptionCookiesOnly`` LOGS-pack variant.\n\nThe per-profile cookie file uses a\n``<Browser>_<Profile>_json.txt`` filename with the ``_json``\ninfix, and the body is a JSON array of cookie objects with\n``domain`` / ``expirationDate`` / ``httpOnly`` / ``name`` /\n``path`` / ``secure`` / ``value`` keys. The stealer likely\nuses a Chromium ``Cookies`` SQLite export routine that\nserialises directly to JSON rather than to the Netscape\nflat-file layout. Family attribution is provisional pending\na published threat-intel mapping.",
+  "aliases": [
+    "JSON cookies-only bundle",
+    "Cookie-Editor export format cookies bundle",
+    "_json.txt suffix per-profile cookie bundle"
+  ],
+  "typical_targets": [
+    "Browser session cookies (Chromium) exported as JSON\narrays per browser profile"
+  ],
+  "detection_notes": "Fingerprint requires a ``cookies`` subdirectory at root\nand no other content-carrying siblings (any ``system.txt``\nor ``information.txt`` panel-placeholder must be empty),\nplus at least two JSON cookie objects in the cred file body\nthat carry both ``domain`` and ``name`` keys. During triage,\ncorrelate the ``<Browser>_<Profile>_json.txt`` filename\nconvention and the space-padded folder name with the LOGS2\npack archive to identify the redistributor; the underlying\nharvester family is unattributable from the cookies-only\nlayout alone.",
+  "attack_techniques": [
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "cs-exception-cookies-only-stealer",
+    "cs-bradmax-cookies-only-stealer",
+    "cs-leak-click-cloud-cookies-stealer"
+  ],
+  "sources": [],
+  "related_external": [
+    "CSDaisyCloudCookiesOnlyStealer",
+    "CSBradmaxAppCookiesStealer"
+  ],
+  "variants": []
+}

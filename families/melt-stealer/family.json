@@ -1,31 +1,98 @@
 {
-  "$schema": "../../schemas/family.schema.json",
-  "aliases": [
-    "Melt Stealer",
-    "melt-stealer"
-  ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "The observed MeltStealer `information.txt` starts with the emoji-marked `MeltStealer - Report` banner, followed by system, network, browser-count, software, device, and file-grabber sections. This sample is available for manual comparison but is not an active fingerprint.",
-  "external_references": [
-    {
-      "url": "https://any.run/report/a934dc7424ecc3d0e20848f36e44d1473b1908761cd41a4021d31f6d91c5ee34/ea0e35cd-70cc-4c19-aa20-532f49f278c7"
-    }
-  ],
   "id": "melt-stealer",
   "name": "MeltStealer",
-  "schema_version": "1.0",
-  "targets": [
-    "Browser cookies, autofill, history, bookmarks, downloads,",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "MeltStealer is an open-source C# data-extraction tool\nmaintained at `github.com/Vorolski/melt-stealer`. The builder\npacks a Telegram bot API token plus chat ID and exfiltrates\nharvested data through the Telegram Bot API. Public sandbox\ndatabases track the family with documented behaviours:\ncredential theft from web browsers, system-information\ncollection (Windows installation date, computer name, machine\nGUID, environment values), and general data exfiltration.\n\nThe harvest scope per the project README covers passwords and\ncookies, credit cards, cryptocurrency wallets and mnemonics,\nbrowser extensions, Wi-Fi networks, gaming session tokens\n(Steam, Minecraft), VPN configurations, Discord tokens,\nscreenshots and webcam captures, process lists, and registry\ninformation. The panel-side `Information.txt` opens with the\nverbatim `📋 MeltStealer - Report:` clipboard-emoji banner and\nships a 15-field emoji-prefixed identity block (Date / System\n/ Username / CompName / CPU / RAM / IP / Location / Zip Code /\nCoordinates / Timezone / ISP / Organization / AS) plus six\nsection blocks (Browsers / Software / Device / File Grabber /\nDomains info / Installation) with U+221F right-angle-arrow\nsub-items per section.",
+  "aliases": [
+    "melt-stealer",
+    "Melt Stealer"
+  ],
+  "typical_targets": [
+    "Browser saved credentials (Chrome, Brave, Edge, Firefox,\nOpera variants)",
+    "Browser cookies, autofill, history, bookmarks, downloads,\nextensions",
     "Credit card data",
     "Cryptocurrency wallets and seed-phrase mnemonics",
     "Discord tokens",
-    "Process lists and selected registry values",
     "Steam and Minecraft session data",
-    "System fingerprint (CPU, RAM, OS version, IP, ISP, ASN)",
     "VPN client configurations",
     "Wi-Fi network credentials",
-    "Windows product key, screenshots, webcam captures"
+    "Windows product key, screenshots, webcam captures",
+    "Process lists and selected registry values",
+    "System fingerprint (CPU, RAM, OS version, IP, ISP, ASN)"
   ],
-  "tracking_labels": []
+  "detection_notes": "The opening `📋 MeltStealer - Report:` banner is the family's\nverbatim self-identification and the cleanest fingerprint\nanchor. The U+1F4CB CLIPBOARD emoji prefix plus the\n`MeltStealer - Report:` literal cannot collide with any other\ndocumented family. Pairing with the `🗺️ Location:` geo field\nconfirms the body matches the panel template rather than a\npublic writeup quoting the banner. During triage, the `⚙️\nInstallation:` section flags `Clipper installed` and\n`Keylogger installed` for modules the operator enabled on the\nbuild; check those flags to understand the active feature set\non this specific victim.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1217",
+      "name": "Browser Information Discovery"
+    },
+    {
+      "id": "T1113",
+      "name": "Screen Capture"
+    },
+    {
+      "id": "T1125",
+      "name": "Video Capture"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1057",
+      "name": "Process Discovery"
+    }
+  ],
+  "related_families": [
+    "phantom-stealer",
+    "stealerium"
+  ],
+  "sources": [
+    "https://github.com/Vorolski/melt-stealer",
+    "https://any.run/report/a934dc7424ecc3d0e20848f36e44d1473b1908761cd41a4021d31f6d91c5ee34/ea0e35cd-70cc-4c19-aa20-532f49f278c7"
+  ],
+  "related_external": [
+    "pupkin-stealer"
+  ],
+  "variants": [
+    {
+      "id": "v_209de6a8e4756161ea71c25d62594571",
+      "parser": "logmine.ioc.parsers.melt_stealer.MeltStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "Location:",
+        "MeltStealer - Report:"
+      ],
+      "fields": [],
+      "observations": 5,
+      "sample": {
+        "path": "samples/v_209de6a8e4756161ea71c25d62594571/sample.txt",
+        "sha256": "063e49dcad7f0ab2bfa94158a5346a9a37d17883637a6cf6f23f460349dd7390",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
 }

@@ -1,0 +1,23 @@
+{
+  "PcName": "<HOST>",
+  "Os": "Windows 11",
+  "Ip": "<IP>",
+  "GPU": [
+    "Intel(R) Iris(R) Xe Graphics"
+  ],
+  "RAM": 7886,
+  "ScreenSize": "1680x1050",
+  "Arch": "x64",
+  "CpuCores": 8,
+  "Country": "AE",
+  "City": "<LOCATION>",
+  "ZipCode": "<LOCATION>",
+  "LocalTime": "null",
+  "LocalAdapterIpList": [],
+  "IsElevator": false,
+  "ProcessList": [],
+  "InstalledSoftware": [],
+  "UserName": "<USER>",
+  "Domain": "<HOST>",
+  "Hwid": "<HWID>"
+}

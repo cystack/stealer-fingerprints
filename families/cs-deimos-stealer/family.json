@@ -1,0 +1,67 @@
+{
+  "id": "cs-deimos-stealer",
+  "name": "CSDeimosStealer",
+  "classification": "family_variant",
+  "attribution_confidence": "medium",
+  "description": "CSDeimosStealer is a CyStack-coined identifier for the\nself-named `Deimos Golang Stealer` `UserInformation.txt` log\nobserved inside `@ft7links`-distributed packs alongside the\nCSEnchantCloudStealer and RedlineLikeStealer variants. The\n`@ft7links` operator labels the archive `redline` but actually\nmixes in multiple Lumma-shaped panels under one cover; this is\none of them. The `## Deimos Golang Stealer` banner is the\nprimary self-identification.",
+  "aliases": [
+    "Deimos Golang Stealer",
+    "Deimos"
+  ],
+  "typical_targets": [],
+  "detection_notes": "The `## Deimos Golang Stealer` literal banner together with\nthe `## Buy: https://t.me/<channel>` purchase line is the\ncleanest fingerprint. The Go origin shows up in stable field\nordering across builds.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "lumma",
+    "redline-like-stealer"
+  ],
+  "sources": [],
+  "canonical_family": "lumma",
+  "variants": [
+    {
+      "id": "v_0db166abde7c3b7da1e04e5d3ff74795",
+      "parser": "logmine.ioc.parsers.cs_deimos_stealer.CSDeimosStealerParser",
+      "filenames": [
+        "System.txt"
+      ],
+      "panel_brand": "Deimos Golang Stealer",
+      "distribution_channel": "@ft7links",
+      "attribution_confidence": "medium",
+      "markers": [],
+      "fields": [
+        "CPU Vendor",
+        "Display resolution",
+        "HWID",
+        "NetBIOS"
+      ],
+      "observations": 1058,
+      "sample": {
+        "path": "samples/v_0db166abde7c3b7da1e04e5d3ff74795/sample.txt",
+        "sha256": "a83fccfacb06f4fbe761e09d8b9ff8fc419a3f5e4ab52498f360f848ba9b9926",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

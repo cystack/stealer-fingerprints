@@ -1,97 +1,91 @@
 # Raccoon
 
-**Known malware family · high attribution confidence**
+Raccoon Stealer is a long-running malware-as-a-service infostealer also tracked as RecordBreaker. Its panel exports a compact `System Info.txt` report. Raccoon v2 uses `User ID: <MachineGuid>|<UserName>`, a JavaScript-style `Last seen:` timestamp, a truncated `Build:` value, `IP info:`, and a tab-indented `System Information:` block. Raccoon v1 uses the `Racc0_0n` self-banner and `Bot_ID: <uuid>_<user>` while keeping the same system-inventory purpose.
 
-## At a glance
+## Research status
 
-- Aliases: —
-- Typical filenames: <code>system info.txt</code>
-- Published formats: 1
-- Representative samples: 1
+- Classification: **Known malware family**
+- Attribution confidence: **high**
+- Aliases: `Raccoon Stealer`, `Raccoon v2`, `RecordBreaker`, `Racc0_0n`
+- Variants observed: **2**
+- Historical Logmine records represented: **402**
 
-<p>Raccoon Stealer exports <code>system info.txt</code> as a compact summary. Its distinctive labels include <code>User ID</code>, <code>IP info</code>, <code>Build Compile Date</code>, and <code>System Information</code>.</p>
+## What it targets
 
-## How to recognize it
+- Browser saved credentials, cookies, autofill, and history
+- Crypto wallet extensions and desktop clients
+- Email, FTP, and VPN client credentials
+- Discord and Telegram session data
+- System and installed-application inventory
+- Files selected by the operator grabber configuration
 
-- No stable text banner is known; combine filename and field layout.
-- Recurring fields: <code>build</code>, <code>build compile date</code>, <code>ip info</code>, <code>locale</code>, <code>system information</code>, <code>user id</code>
+## Detection notes
 
-## Formats
+Treat the v1 and v2 panel exports as separate layouts. The v2 layout combines `User ID:`, `Last seen:`, `IP info:`, `System Information:`, and `Installed applications:`. The v1 layout combines `Bot_ID:` and `System Information:` with either the `Racc0_0n` self-banner or `Launched at:`. The MachineGuid/user join and those co-occurring section labels distinguish Raccoon from generic system-information logs.
 
-| Format | Evidence | Fingerprint |
-|---|---|---|
-| system info.txt - build / build compile date | 6 fields, filename | [`fp_793567a050755f9bf2861ce6fc632294`](fingerprints/fp_793567a050755f9bf2861ce6fc632294.json) |
+## Observed log variants
 
-## Representative sample
+### `v_35981cb9ad7bbc2326661a3e2f019f55`
 
-Observed text sample. Placeholders mark values removed from the original log.
+- Parser: `logmine.ioc.parsers.raccoon.RaccoonStealerParser`
+- Observed filenames: `System Info.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `panel-export-v1`
+- Historical records represented: **16**
+- Representative sample: [open sample](samples/v_35981cb9ad7bbc2326661a3e2f019f55/sample.txt)
+- Sample SHA-256: `c5d3d1edc84c6feeb7db5208b4c367dd6bf9839fb869468ef5787260f00cba85`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-[<code>system info.txt</code>](samples/system%20info.txt)
+Recognition anchors:
 
-```text
-User ID: [redacted]
-Last seen: Thu Dec 15 2022 [redacted] GMT+0100 (Central European Standard Time)
-Build: 638123...25bedf
-IP info: AR [redacted]
-System Information: 
-	- Locale: Spanish
-	- Time zone: 	- OS: Windows 10 Pro
-	- Architecture: x64
-	- CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GH (8 cores)
-	- RAM: 7886 MB
-	- Display size: 1536x864
-	- Display Devices:
-		0) Intel(R) Iris(R) Xe Graphics
-Installed applications:
-	BlueStacks 5 5.9.350.1035
-	CCleaner 6.05
-	CPUID CPU-Z 1.96 
-	FabFilter Total Bundle 2019.3
-	Nicky Romero Kickstart 1.0.9 
-	Arturia Pigments 2.0.0
-	rekordbox 6.5.3 64bit 6.5.3.0028
-	rekordbox 6.6.7 64bit 6.6.7.0048
-	AIR Music Technology Studio Strings 1.1.0
-	u-he All Effects 2019.3
-	WinRAR 6.02 (64-bit) 6.02.0
-	Native Instruments Service Center [redacted]
-	Apple Mobile Device Support [redacted]
-	Native Instruments Massive 1.3.0.2050
-	Bonjour [redacted]
-	iTunes [redacted]
-	Ableton Live 11 Trial [redacted]
-	Epic Games Launcher Prerequisites (x64) [redacted]
-	Arturia Software Center 2.0.4 
-	FirmwareUpdateManager [redacted]
-	Google Chrome 108.0.5359.100
-	IL Harmor 
-	IL Minihost Modular 
-	JBridge 
-	Microsoft Edge 108.0.1462.46
-	Microsoft Edge Update [redacted]
-	WebView2 Runtime de Microsoft Edge 108.0.1462.46
-	Mini V3 3.7.1 
-	Native Instruments Massive 
-	Native Instruments Service Center 
-	Adobe Photoshop 2020 21.0.3
-	PunkBuster Services 0.986
-	reFX Nexus VSTi RTAS v2.2.0 
-	Launcher Prerequisites (x64) [redacted]
-	Intel(R) Graphics Driver Software [redacted]
-	Apple Software Update [redacted]
-	SD Card Formatter 5.0.1
-```
+- Stable markers: `Installed Apps:`, `Racc0_0n`, `System Information:`
+- Field labels: `Bot_ID`, `Launched at`
 
-## References
+### `v_69fc6a9bafa5557076540aa275f3124f`
 
-- [https://malpedia.caad.fkie.fraunhofer.de/details/win.raccoon](https://malpedia.caad.fkie.fraunhofer.de/details/win.raccoon)
+- Parser: `logmine.ioc.parsers.raccoon.RaccoonStealerParser`
+- Observed filenames: `System Info.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `panel-export-v2`
+- Historical records represented: **386**
+- Representative sample: [open sample](samples/v_69fc6a9bafa5557076540aa275f3124f/sample.txt)
+- Sample SHA-256: `a1f2514c030c612051fff1c8e733a80714411d8090ba055be29059d67f23aaf8`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-## Try it locally
+Recognition anchors:
 
-```console
-python identify.py "families/raccoon/samples/system info.txt"
-```
+- Stable markers: `Installed applications:`, `System Information:`
+- Field labels: `IP info`, `Last seen`, `User ID`
 
-The evidence score describes a structural comparison, not attribution certainty.
 
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+## MITRE ATT&CK
+
+| Technique | Name |
+|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| [T1083](https://attack.mitre.org/techniques/T1083/) | File and Directory Discovery |
+| [T1518](https://attack.mitre.org/techniques/T1518/) | Software Discovery |
+| [T1016](https://attack.mitre.org/techniques/T1016/) | System Network Configuration Discovery |
+
+## Related catalog profiles
+
+- None recorded.
+
+## Sources
+
+- <https://malpedia.caad.fkie.fraunhofer.de/details/win.raccoon>
+- <https://attack.mitre.org/software/S1148/>
+- <https://www.zscaler.com/blogs/security-research/raccoon-stealer-v2-latest-generation-raccoon-family>
+- <https://www.darktrace.com/blog/the-resurgence-of-the-raccoon-steps-of-a-raccoon-stealer-v2-infection-part-2>
+- <https://any.run/malware-trends/raccoon/>
+- <https://github.com/MalBeacon/what-is-this-stealer>
+
+Machine-readable record: [family.json](family.json)

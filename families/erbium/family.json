@@ -1,0 +1,57 @@
+{
+  "id": "erbium",
+  "name": "Erbium",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "Erbium Stealer is a C# / .NET Malware-as-a-Service info-stealer that surfaced in mid-2022 on Russian-speaking crime\nforums. The first public report of the family landed in July\n2022; a follow-on technical writeup covered the DLL loader and\nthe panel dashboard at `panel.erbium.ml`. Pricing tiers\nobserved on the operator channel run from `$9/week` at launch\nup to `$100/month` and `$1000/year`. Initial distribution\ncampaigns rode fake game cracks and cheat installers per\ncontemporaneous public coverage.\n\nThe panel writes `Information.txt` with an ERBIUM ASCII\nbanner, two `t.me/erbium_*` operator-channel URLs (Developer +\nUpdates), and five bracketed sections in fixed order:\n`[BUILD]`, `[PC INFO]`, `[LOG INFO]`, `[CLIPBOARD]`,\n`[ANTIVIRUSES]`. Field lines are tab-indented with a mixed\nhyphen / colon separator (hyphen for identity and count\nfields, colon for the hardware inventory inside `[PC INFO]`).\n`HardwareID` is a 64-character uppercase hex string; the\narchive victim folder is named after the same identifier.",
+  "aliases": [
+    "Erbium Stealer"
+  ],
+  "typical_targets": [
+    "Browser saved credentials, cookies, autofill (Firefox, Chrome, Cyberfox, K-Meleon, BlackHawk, Pale Moon, Thunderbird)",
+    "Crypto wallet extensions and desktop clients",
+    "2FA extensions (Authenticator, Authy, Trezor)",
+    "FileZilla / VPN credentials",
+    "Card numbers stored by browsers",
+    "Game client sessions and small file grabber"
+  ],
+  "detection_notes": "High-confidence trigger: the `t.me/erbium_support` URL\nliteral in the banner block plus line-anchored `[BUILD]`\nand `[PC INFO]` bracketed section headers. Both\nsignatures are Erbium-canonical panel emissions; no\nother family in this catalog uses the `erbium_support`\nhandle or the `[BUILD]` + `[PC INFO]` section pair.\nNote that Erbium has been observed inside the\n`@bugatti_cloud` Telegram aggregator (per this parser),\nso the outer archive may attribute to a redistributor\neven when the panel body is canonical Erbium output.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1119",
+      "name": "Automated Collection"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://www.cyfirma.com/outofband/erbium-stealer-malware-report/",
+    "https://www.bleepingcomputer.com/news/security/new-erbium-password-stealing-malware-spreads-as-game-cracks-cheats/",
+    "https://heimdalsecurity.com/blog/erbium-a-new-infostealer-malware-on-the-market/",
+    "https://cyware.com/news/erbium-infostealer-targets-web-browsers-and-crypto-wallets-e26a21b9/"
+  ],
+  "observed_channels": [
+    "https://t.me/erbium_support",
+    "https://t.me/erbium_news"
+  ],
+  "variants": []
+}

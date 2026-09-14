@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Identify an exported stealer-log text file from a repository checkout."""
+"""Rank a stealer log against the public CyStack fingerprint catalog."""
 
 from __future__ import annotations
 
@@ -8,25 +8,18 @@ import json
 import sys
 from pathlib import Path
 
-from tools.catalog import CatalogError, _print_identify, identify
+from tools.catalog import ROOT, CatalogError, identify, print_identify
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(
-        prog="identify.py",
-        description="Identify an exported information-stealer log by its text structure.",
-    )
-    parser.add_argument(
-        "path", type=Path, help="UTF-8, UTF-16, or Windows-1252 log text to inspect"
-    )
-    parser.add_argument("--top", type=int, default=3, help="number of matches to show (1-20)")
-    parser.add_argument(
-        "--known-only", action="store_true", help="hide unattributed structural clusters"
-    )
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("path", type=Path, help="exported stealer-log text file")
+    parser.add_argument("--root", type=Path, default=ROOT, help=argparse.SUPPRESS)
+    parser.add_argument("--top", type=int, default=5, help="number of results (1-50)")
     parser.add_argument("--json", action="store_true", help="emit machine-readable JSON")
     args = parser.parse_args(argv)
     try:
-        result = identify(args.path, top=args.top, known_only=args.known_only)
+        result = identify(args.path, args.root, top=args.top)
     except CatalogError as exc:
         print(
             json.dumps(
@@ -40,8 +33,8 @@ def main(argv: list[str] | None = None) -> int:
     if args.json:
         print(json.dumps(result, ensure_ascii=False, indent=2))
     else:
-        _print_identify(result)
-    return 0 if result["matches"] else 1
+        print_identify(result)
+    return 0 if result["status"] == "match" else 1
 
 
 if __name__ == "__main__":

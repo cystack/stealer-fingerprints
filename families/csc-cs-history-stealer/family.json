@@ -1,0 +1,39 @@
+{
+  "id": "csc-cs-history-stealer",
+  "name": "CSCCsHistoryStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSCCsHistoryStealer is a CyStack-coined identifier for a\nstripped 2-file per-victim folder shipping just `cc's.txt` (a\npipe-separated credit-card table) and `history.txt` (browser\nhistory dump) inside a 32-hex MD5 wrapped-in-brackets parent\nfolder. The `cc's.txt` body opens with a five-column header\n`Name on Card | Expiration Month | Expiration Year | Card\nNumber | Date Modified` mirroring the Chromium `Web Data`\nSQLite `credit_cards` table columns. The `Date Modified` 5th\ncolumn is the panel's distinguishing serialisation choice over\ncanonical Raccoon / Redline / Stealc card formats.\n\nObserved inside `MAY 02 - 8230 LOGS` aggregator packs (the\n`LOGS` sibling of `LOGS2` claimed by iter #49 / #53 / #54 /\n#57 / #58 detectors). The 32-hex MD5 parent convention matches\nthe same family of aggregator layouts. Family attribution is\nprovisional pending a published mapping for this exact layout.",
+  "aliases": [],
+  "typical_targets": [
+    "Browser saved credit cards (Chromium `Web Data` SQLite `credit_cards` table dump)",
+    "Browser history"
+  ],
+  "detection_notes": "The 32-hex MD5 folder name plus the strict\n`{cc's.txt, history.txt, \"\"}` root subset plus the\nthree column-header body anchors (`Name on Card`,\n`Card Number`, `Date Modified`) form the fingerprint.\nThe apostrophe in `cc's.txt` is a panel-side quirk\nrare across stealer cred-file conventions. The\nunderlying victim is the user whose browser was\nharvested; treat any populated `cc's.txt` row as a\ncard-theft incident requiring issuer notification.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1217",
+      "name": "Browser Information Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-cookies-soft-stealer",
+    "cs-tik-tok-account-stealer",
+    "cs-netflix-cookies-stealer",
+    "cs-browser-category-dump-stealer"
+  ],
+  "sources": [],
+  "variants": []
+}

@@ -1,0 +1,69 @@
+🔍 * Sys_root  v-200 Security is just an illusion $$$
+━━━━━━━━━━━━━━━━━━━━━━
+📅 Date: 2025-07-23 <ip> AM
+🖥️ System: Microsoft Windows 10 Pro Education (64 Bit)
+👤 Username: <USER>
+💻 CompName: <HOST>
+🌐 Language: 🇺🇸 en-US
+🛡️ Antivirus: Windows Defender
+
+*HARDWARE INFORMATION*
+━━━━━━━━━━━━━━━━━━━━━━
+⚡ CPU: AMD Ryzen 5 PRO 2500U w/ Radeon Vega Mobile Gfx
+🎮 GPU: AMD Radeon(TM) Vega 8 Graphics
+📊 RAM: 15293MB
+🔋 Power: Low (17%)
+📺 Screen: 1920x1080
+📷 Webcams: 1
+
+*NETWORK INFORMATION*
+━━━━━━━━━━━━━━━━━━━━━━
+🌐 Gateway IP: <ip>
+🔒 Internal IP: <ip>
+🌍 External IP: <IP>
+
+*DETECTED DOMAINS*
+━━━━━━━━━━━━━━━━━━━━━━
+   - 🏦 Banking Services (No data)
+   - 💰 Crypto Services:
+  - Bmstrading.Ca
+  - Devshiltrade.Mn
+  - Meet - Eth-Broz-Bkt
+  - Prometheus.Ge
+  - Wallet EN
+   - 🔞 Adult Websites:
+  - Sexygirls39.Ru
+
+*BROWSER DATA*
+━━━━━━━━━━━━━━━━━━━━━━
+   ∟ 🔑 Passwords: <SECRET>
+   ∟ 💳 Credit Cards: 2
+   ∟ 🍪 Cookies: <SECRET>
+   ∟ 📝 AutoFill: 4275
+   ∟ 📜 History: 4484
+   ∟ 🔖 Bookmarks: 406
+   ∟ 👛 Wallet Extensions: 1
+
+*SOFTWARE & ACCOUNTS*
+━━━━━━━━━━━━━━━━━━━━━━
+   ∟ ✈️ Telegram
+   ∟ 🔐 Tox
+
+*DEVICE INFORMATION*
+━━━━━━━━━━━━━━━━━━━━━━
+   ∟ 🔑 Windows Key
+   ∟ 📡 WiFi Networks: 1
+   ∟ 🖼️ Desktop Shot
+
+*INSTALLATION STATUS*
+━━━━━━━━━━━━━━━━━━━━━━
+   ∟ ⛔ Startup: Disabled
+   ∟ ⛔ Clipper: Inactive
+   ∟ ⛔ Keylogger: Stopped
+
+*FILE GRABBER*
+⛔ Disabled in configuration
+
+
+🔗 [Archive download link](<url>
+🔐  Archive password is: "<SECRET>"

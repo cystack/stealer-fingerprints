@@ -1,0 +1,30 @@
+
+
+IP: <IP>
+FileLocation: <redacted>
+UserName: <USER>
+Country: AR
+Zip Code: <LOCATION>
+Location: <LOCATION>
+HWID: <HWID>
+Current Language: Spanish (Mexico)
+ScreenSize: {Width=1600, Height=900}
+TimeZone: (UTC-03:00) Ciudad de Buenos Aires
+Operation System: Windows 10 Enterprise x64
+UAC: AllowAll
+Process Elevation: False
+Log date: 8/30/2022 <ip> AM
+
+Available KeyboardLayouts: 
+Spanish (Argentina)
+Spanish (Mexico)
+
+
+Hardwares: 
+Name: AMD Ryzen 5 2400G with Radeon Vega Graphics    , 2 Cores
+Name: AMD Radeon(TM) RX Vega 11 Graphics, 2147483648 bytes
+Name: Total of RAM, 14267.02 MB or 14960050176 bytes
+
+
+Anti-Viruses: 
+Windows Defender

@@ -1,0 +1,76 @@
+{
+  "id": "cs-browers-stealer",
+  "name": "CSBrowersStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSBrowersStealer is a CyStack-coined identifier for a\nnine-line `Information.txt` panel summary observed inside `!!\n2025 OCT.part01.rar`-style aggregator packs in\n`<id>_<CC>_<IPv4>_<DD-MM-YY>/Information.txt` victim folders\n(e.g. `1110_CA_<IPv4>_18-10-25/`). The body lists IP,\nCountry (flag emoji + ISO code + country name), Username,\nAntivirus, then four standalone section keys `Facebook:`,\n`Extensions:`, `Wallets:`, `Applications:` (each carrying a\nliteral comma-separated value or `None`), and closes with a\npipe-separated count line under the developer-misspelled key\n`Browers:` (sic, missing `s`):\n`CK:<n>|PW:<n>|AF:<n>|CC:<n>|GG:<n>|TT:<n>|FB:<n>|HOST:<bool>`.\nNo HWID, hostname, OS, or hardware inventory is shipped, so\nthe artifact is a victim-side fingerprint view rather than a\nfull system-info export.\n\nThe `CK|PW|AF|CC|FB` subset overlaps with the publicly\ndocumented PXA Stealer count notation, but the per-section\nsplit (standalone `Facebook:`, `Extensions:`, `Wallets:`,\n`Applications:` lines rather than the PXA caption single `Data\nInformation:` line), the `Browers:` typo, and the\n`GG`/`TT`/`HOST:FALSE` count columns are not described in any\npublic source. Family attribution is provisional pending a\npublished threat-intel mapping for this exact panel layout.",
+  "aliases": [
+    "!! 2025 OCT aggregator panel summary"
+  ],
+  "typical_targets": [
+    "Browser saved credentials, cookies, autofill (counts only)",
+    "Credit-card data (count flag)",
+    "Google session artifacts (count, suspected)",
+    "Twitter/X session artifacts (count, suspected)",
+    "Facebook session cookies (count flag)",
+    "Browser extensions (per-victim list)",
+    "Crypto wallet extensions and desktop clients (per-victim list)",
+    "Installed applications of interest (per-victim list)"
+  ],
+  "detection_notes": "Fingerprint requires the `Browers: CK:` substring (the\ndeveloper typo plus the leading count column) plus\nline-anchored `IP:`, `Country:`, `Username:`, and\n`Antivirus:` keys. The misspelling of `Browers` is the\ndisambiguator: no other registered parser keys on the\ntypo. The lowercase-v `Antivirus:` distinguishes the\nformat from PXA's caption shape (`AntiVirus:`, claimed by\n`PXACaptionParser`) and the GADS panel-summary shape\n(also `AntiVirus:`, claimed by `CSGADSPanelStealerParser`).\nDuring triage, treat the family attribution as unknown:\nthe panel summary lacks the harvested credential bodies\nthat would allow follow-on family fingerprinting, and the\npanel's underlying stealer cannot be identified from the\nsummary fields alone.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "pxa-stealer",
+    "csgads-panel-stealer"
+  ],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_5d3e7c5ff44f847c51a6ef2713ecb340",
+      "parser": "logmine.ioc.parsers.cs_browers_stealer.CSBrowersStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "Browers: CK:"
+      ],
+      "fields": [
+        "Antivirus",
+        "Country",
+        "Ip",
+        "Username"
+      ],
+      "observations": 15869,
+      "sample": {
+        "path": "samples/v_5d3e7c5ff44f847c51a6ef2713ecb340/sample.txt",
+        "sha256": "505d4712952f10ce4695ac9bae96401d5784539458b4d739f8cb6ef082a41c40",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

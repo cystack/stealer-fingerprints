@@ -1,27 +1,71 @@
 {
-  "$schema": "../../schemas/family.schema.json",
+  "id": "ailurophile",
+  "name": "Ailurophile",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "Ailurophile is a subscription-style info-stealer first\npublicly documented in August 2024. The stub is PHP-coded,\npackaged into a Windows PE with ExeOutput, and then\nvirtualized with BoxedApp. Operators configure each build\nthrough the family's own web panel, which lets them pick the\nextension list, the folder list, and the filename keyword list\nthat drive the on-victim file grabber. Reports are sent to the\nTelegram chat configured at build time.\n\nThe on-victim staging directory is\n`%LOCALAPPDATA%\\Ailurophile`, and the system summary is a flat\n`Key: Value` `info.txt` whose distinctive fields are `Allowed\nExtensions:`, `Folders to Search:`, `PC Type:`, and `Screen\nResolution:`.",
   "aliases": [
     "Ailurophile Stealer"
   ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "Ailurophile logs are recognized by `info.txt` and the combined fields `PC Type`, `File Path`, `Main Path`, `MAC Address`, and browser-version lines such as `Chrome Default - version`.",
-  "external_references": [
-    {
-      "url": "https://github.com/ail-project/ail-yara-rules/blob/master/rules/stealer/ailurophile.yara"
-    },
-    {
-      "url": "https://www.cyfirma.com/research/ailurophile-stealer/"
-    }
-  ],
-  "id": "ailurophile",
-  "name": "Ailurophile",
-  "schema_version": "1.0",
-  "targets": [
+  "typical_targets": [
     "Browser saved credentials, cookies, autofill, history",
     "Credit card data from browser autofill",
     "Crypto wallet extensions and desktop clients",
     "Generic file grabber driven by configurable keyword and extension lists"
   ],
-  "tracking_labels": []
+  "detection_notes": "The combination of `Allowed Extensions:` and `Folders to Search:`\nline-anchored is the canonical fingerprint and matches the\npublic ail-project YARA rule. Operator rebrands prepend an\nextra banner line like `HORUS B13: @HORUS B13` above the\ncanonical block: the underlying fields are identical, so\nattribution stays under `Ailurophile` and the banner surfaces\nthrough `panel_brand` and `distribution_channel`. False-positive\nrisk is low because no other family in this catalog emits the\npaired `Allowed Extensions:` / `Folders to Search:` keys.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://www.cyfirma.com/research/ailurophile-stealer/",
+    "https://blog.gdatasoftware.com/2024/08/38005-ailurophile-infostealer",
+    "https://github.com/ail-project/ail-yara-rules/blob/master/rules/stealer/ailurophile.yara"
+  ],
+  "variants": [
+    {
+      "id": "v_775f61d0716a746c69c9f5e6fd0c575f",
+      "parser": "logmine.ioc.parsers.ailurophile.AilurophileParser",
+      "filenames": [
+        "info.txt"
+      ],
+      "panel_brand": "HORUS B13",
+      "distribution_channel": "@HORUS B13",
+      "attribution_confidence": "high",
+      "markers": [
+        "HORUS B13"
+      ],
+      "fields": [
+        "Allowed Extensions",
+        "Folders to Search"
+      ],
+      "observations": 66,
+      "sample": {
+        "path": "samples/v_775f61d0716a746c69c9f5e6fd0c575f/sample.txt",
+        "sha256": "bb2884c73df79e130973e24e6fc3a5840a192edc7bc8f6ce207f9d5a778007af",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
 }

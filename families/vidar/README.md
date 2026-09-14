@@ -1,133 +1,201 @@
 # Vidar
 
-**Known malware family · high attribution confidence**
+Vidar Stealer logs. Build 4.x emits a flat key-colon-value
+`information.txt` opening with `Ip:`, `Country:`, `Version:`
+followed by hardware, locale, and build identity blocks. Vidar
+has been distributed since 2018 as a fork of Arkei and remains a
+high-volume infostealer family in 2025+.
 
-## At a glance
+## Research status
 
-- Aliases: <code>VidarStealer</code>
-- Typical filenames: <code>information.txt</code>, <code>system.txt</code>, <code>systeminfo.txt</code>
-- Published formats: 1
-- Representative samples: 3
+- Classification: **Known malware family**
+- Attribution confidence: **high**
+- Aliases: `VidarStealer`
+- Variants observed: **8**
+- Historical Logmine records represented: **4,421,157**
 
-<p>Vidar exports a flat key/value system summary under <code>information.txt</code>, <code>system.txt</code>, or <code>systeminfo.txt</code>. The stable field set combines <code>GUID</code>, <code>HWID</code>, <code>Install Date</code>, <code>Work Dir</code>, keyboard languages, and display details.</p>
+## What it targets
 
-## How to recognize it
+- Browser saved credentials, cookies, autofill, history
+- Crypto wallet extensions and desktop clients
+- Telegram and Discord session data
+- FTP, email, and VPN client configurations
+- Documents and screenshots from the desktop
 
-- No stable text banner is known; combine filename and field layout.
-- Recurring fields: <code>av</code>, <code>computer name</code>, <code>country</code>, <code>date</code>, <code>display resolution</code>, <code>guid</code>, <code>hwid</code>, <code>install date</code>, <code>ip</code>, <code>keyboard languages</code>, <code>local time</code>, <code>path</code>, <code>processor</code>, <code>ram</code>, <code>timezone</code>, <code>user name</code>, <code>windows</code>, <code>work dir</code>
+## Detection notes
 
-## Formats
+Distinctive header trio `Ip:` + `Country:` + `Version:` at the
+top of `information.txt`. Build banners reference the operator's
+Telegram channel.
 
-| Format | Evidence | Fingerprint |
-|---|---|---|
-| information.txt - av / computer name | 18 fields, filename | [`fp_edae11705baf127a4ae5b2aa45528a44`](fingerprints/fp_edae11705baf127a4ae5b2aa45528a44.json) |
+## Observed log variants
 
-## Representative sample
+### `v_00dd9546d45b50ad6aa83079fd410a05`
 
-Some files below intentionally share the same sanitized body under different malware-visible names. They document filename variants, not independent payload observations.
+- Parser: `logmine.ioc.parsers.vidar.VidarParser`
+- Observed filenames: `information.txt`, `System.txt`, `systeminfo.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `hardware-section`
+- Historical records represented: **4,414,515**
+- Representative sample: [open sample](samples/v_00dd9546d45b50ad6aa83079fd410a05/sample.txt)
+- Sample SHA-256: `f8f3b3e2c36fe321beff4efe1ef633d15802c81d9406363f4cf2dcc9cddcf71b`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-Observed text sample. Placeholders mark values removed from the original log.
+Recognition anchors:
 
-[<code>information.txt</code>](samples/information.txt)
+- Stable markers: `[Hardware]`
+- Field labels: `VideoCard`
 
-```text
-Ip: [redacted]
-Country: AU
+### `v_3d30d56f75090df4b0d9f8d114f8d4bc`
 
-Date: 19/12/2025 [redacted]
-MachineID: [redacted]
-GUID: [redacted]
-HWID: [redacted]
+- Parser: `logmine.ioc.parsers.vidar.VidarParser`
+- Observed filenames: `information.txt`, `System.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `workdir-video-card`
+- Historical records represented: **1,596**
+- Representative sample: [open sample](samples/v_3d30d56f75090df4b0d9f8d114f8d4bc/sample.txt)
+- Sample SHA-256: `5be5a789c074abc4d9e0cea642aafbedd90ef2b45885fcdd239b0b67b38cbfab`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-Path: [redacted]
-Work Dir: In memory
+Recognition anchors:
 
-Windows: Windows 11 Home
-Install Date: 29/01/2025 [redacted]
-AV: Windows Defender
-Computer Name: [redacted]
-User Name: [redacted]
-Display Resolution: 2172x1222
-Keyboard Languages: English English
-Local Time: 19/12/2025 [redacted]
-TimeZone: 10
+- Stable markers: -
+- Field labels: `VideoCard`, `Work Dir`
 
-[Hardware]
-Processor: Intel(R) Core(TM) i5-10600 CPU @ 3.30GHz
-Cores: 12
-Threads: 12
-RAM: 16208 MB
-VideoCard: NVIDIA GeForce RTX 3060
+### `v_5825071c685a7739b705bb3b6c62eb4f`
 
-[Processes][Software]
-Vortex - 1.13.5
-Cheat Engine 7.6
-CPUID CPU-Z MSI 2.08 - 2.08
-CrystalDiskInfo 9.6.3 - 9.6.3
-Bridge 2024.0.5 - 2024.0.5
-FxSound - [redacted]
-Git - 2.49.0
-Lazarus 2.2.2 - 2.2.2
-Mozilla Firefox (x64 en-GB) - 146.0.1
-Mozilla Maintenance Service - 136.0.1
-MuseHub - 2.6.3.2098
-Microsoft 365 Apps for enterprise - en-us - 16.0.19426.20186
-Microsoft OneDrive - 25.222.1112.0002
-Call of Duty: World at War
-60 Seconds! Reatomized
-War Selection
-Project Zomboid
-Rebel Inc: Escalation
-Marvel's Guardians of the Galaxy
-Cyberpunk 2077
-Hydroneer
-RISK: Global Domination
-Ready or Not
-Trepang2
-Artificial Extinction
-Teardown
-STAR WARS Jedi: Fallen Order? 
-WorldBox - God Simulator
-ULTRAKILL
-Portal Reloaded
-King of Crabs
-Half-Life: Blue Shift
-Easy Red 2
-Sons Of The Forest
-In Silence
-Metro Exodus Enhanced Edition
-Entropy : Zero 2
-God of War
-RoboCop: Rogue City
-Incremental Cubes
-Come Home
-Spore
-Age of Chivalry
-D.I.P.R.I.P. Warm Up
-STAR WARS Jedi: Survivor?
-Marvel?s Spider-Man Remastered
-STALCRAFT: X
-MultiVersus
-Idle Spiral
-Source Filmmaker
-DEATH STRANDING DIRECTOR'S CUT
-```
+- Parser: `logmine.ioc.parsers.vidar.VidarParser`
+- Observed filenames: `information.txt`, `System.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `workdir-keyboard-languages`
+- Historical records represented: **2,128**
+- Representative sample: [open sample](samples/v_5825071c685a7739b705bb3b6c62eb4f/sample.txt)
+- Sample SHA-256: `6fc08fb09e1adb855952e95f5d897451e48d36839853fcfcdf4aeda00ecef4bd`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-Preview shortened; open the sample file for the complete text.
+Recognition anchors:
 
-Other samples: [<code>system.txt</code>](samples/system.txt), [<code>systeminfo.txt</code>](samples/systeminfo.txt)
+- Stable markers: -
+- Field labels: `Keyboard Languages`, `Work Dir`
 
-## References
+### `v_58c234d75325190bcf406709f63fc9a3`
 
-- [https://usrlnk.io/vidar](https://usrlnk.io/vidar)
-- [https://www.kaspersky.com/resource-center/threats/vidar-stealer](https://www.kaspersky.com/resource-center/threats/vidar-stealer)
+- Parser: `logmine.ioc.parsers.vidar.VidarParser`
+- Observed filenames: `information.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `keyboard-languages-local-time`
+- Historical records represented: **5**
+- Representative sample: [open sample](samples/v_58c234d75325190bcf406709f63fc9a3/sample.txt)
+- Sample SHA-256: `0fb233b77b45660d467807b2eca99e2f83536071db5e967e52bd6400d2dab828`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-## Try it locally
+Recognition anchors:
 
-```console
-python identify.py "families/vidar/samples/information.txt"
-```
+- Stable markers: -
+- Field labels: `Keyboard Languages`, `Local Time`
 
-The evidence score describes a structural comparison, not attribution certainty.
+### `v_7c7fa9256eb052b7159c7f6c24b3bd26`
 
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+- Parser: `logmine.ioc.parsers.vidar.VidarParser`
+- Observed filenames: `information.txt`
+- Panel brand: `russia34.com aggregator (legacy mixed-shape)`
+- Distribution channel: `russia34.com`
+- Attribution confidence: **high**
+- Layout: `video-card-processes`
+- Historical records represented: **1,778**
+- Representative sample: [open sample](samples/v_7c7fa9256eb052b7159c7f6c24b3bd26/sample.txt)
+- Sample SHA-256: `a2b3a415b23ed86b236de21e56a6aa6706e044211ec7e7f0b03982e1b2db7122`
+- Sample provenance: Logmine runtime output, scrubbed for public use
+
+Recognition anchors:
+
+- Stable markers: `[Processes]`, `[Software]`
+- Field labels: `VideoCard`
+
+### `v_803053a76f889340f463f6baa3a81c4c`
+
+- Parser: `logmine.ioc.parsers.vidar.VidarParser`
+- Observed filenames: `information.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `video-card-processes`
+- Historical records represented: **1,012**
+- Representative sample: [open sample](samples/v_803053a76f889340f463f6baa3a81c4c/sample.txt)
+- Sample SHA-256: `0e7dee31a097367bda758f6da974c525f01902b13edca178f6ebe7d5ca049f9f`
+- Sample provenance: Logmine runtime output, scrubbed for public use
+
+Recognition anchors:
+
+- Stable markers: `[Processes]`, `[Software]`
+- Field labels: `VideoCard`
+
+### `v_935a854f26e6a11cb5c3868965b79119`
+
+- Parser: `logmine.ioc.parsers.vidar.VidarParser`
+- Observed filenames: `information.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `workdir-windows-av`
+- Historical records represented: **15**
+- Representative sample: [open sample](samples/v_935a854f26e6a11cb5c3868965b79119/sample.txt)
+- Sample SHA-256: `02207369a06c39411e67af0de28409753598fea7c1771d6ad69708f8c1ee8b72`
+- Sample provenance: Logmine runtime output, scrubbed for public use
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `AV`, `Windows`, `Work Dir`
+
+### `v_c4b6aaa7d5800948365271c046e748ef`
+
+- Parser: `logmine.ioc.parsers.vidar.VidarParser`
+- Observed filenames: `information.txt`
+- Panel brand: `russia34.com (Lumma 'Russia 34' bullet)`
+- Distribution channel: `russia34.com`
+- Attribution confidence: **high**
+- Layout: `video-card-processes`
+- Historical records represented: **108**
+- Representative sample: [open sample](samples/v_c4b6aaa7d5800948365271c046e748ef/sample.txt)
+- Sample SHA-256: `1b498c5523b37957d934b764ad255f8760af4d8e5cab23d1fa342f43ae32167c`
+- Sample provenance: Logmine runtime output, scrubbed for public use
+
+Recognition anchors:
+
+- Stable markers: `[Processes]`, `[Software]`
+- Field labels: `VideoCard`
+
+
+## MITRE ATT&CK
+
+| Technique | Name |
+|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+
+## Related catalog profiles
+
+- None recorded.
+
+## Observed distribution channels
+
+- <https://t.me/Clik_Start>
+
+## Sources
+
+- <https://usrlnk.io/vidar>
+- <https://www.kaspersky.com/resource-center/threats/vidar-stealer>
+
+Machine-readable record: [family.json](family.json)

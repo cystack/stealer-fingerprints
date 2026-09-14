@@ -1,0 +1,33 @@
+# Buy Now Logs : @BabaCloudNew { Admin - @baba_admin_ghost} *
+# Buy Now ULP : @BabaUlpNew { Admin - @baba_admin_ghost} *
+- .B.A.B.A. Build : May 05 2026
+Configuration :
+- Path: 
+- OS Version: 
+- Local Date : 05.05.2026 <ip>
+
+- Time Zone: 7
+- Install Date: 
+- Elevated: 
+- Computer: <HOST>
+- User: <USER>
+- Domain: 
+- Hostname: 
+- NetBIOS: 
+- Language: English
+- Anti Virus:
+    - 
+- HWID: <HWID>
+- RAM Size: 
+- CPU Vendor: 
+- CPU Name: 
+- CPU Threads: 
+- CPU Cores: 
+- GPU:
+    - 
+- Display resolution: 
+- IP Address: 
+- Country: VN
+
+- Time: 05.05.2026 <ip> (sig: auto )
+- LID: @BabaCloudNew { Admin - @baba_admin_ghost} TELEGRAM

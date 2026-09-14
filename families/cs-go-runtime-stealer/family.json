@@ -1,0 +1,63 @@
+{
+  "id": "cs-go-runtime-stealer",
+  "name": "CSGoRuntimeStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSGoRuntimeStealer is a CyStack-coined identifier for a bare\n4-field `system_info.txt` panel observed inside `!! 2025\nDEC.part01.rar` aggregator packs at\n`[<CC>]<IPv4>/<operator-handle>/system_info.txt` victim\nfolders (e.g. `[UN]<IPv4>/poopbandit/system_info.txt`).\nThe body is a 5-line minimal panel: an ALL CAPS triple-equals\n`=== SYSTEM INFORMATION ===` section header, four flat\nkey-value lines (`User: <Computer>\\<Username>` / `Computer:` /\n`OS: <goos> <goarch>` / `Directory:`), and a closing\ntriple-equals rule.\n\nThe strongest single fingerprint is the `OS:` value: Go\nbinaries emit `runtime.GOOS + \" \" + runtime.GOARCH` which\nproduces strings like `windows amd64`, `linux 386`, or `darwin\narm64`. The bare lowercase two-token shape does not appear in\nany other surveyed stealer-builder runtime: .NET emits\n`Microsoft Windows <version>`, Python emits\n`Windows-<release>-<build>`, Lumma emits `Windows <version>\n<edition> (<build>)`. The Go runtime shape is the panel's\nclearest builder-attribution signal.\n\nThe `User:` line carries a `<Computer>\\<Username>`\nbackslash-separated identity (the panel's preferred shape over\n`os/user.Current().Username` which would return just the\nusername on Unix). The `Directory:` line carries the malware's\nexecution path; the observed sample ran out of `%TEMP%`. The\npath-side `<operator-handle>/` segment between the victim\nfolder and the `system_info.txt` file exposes the operator's\npanel-side identifier (`poopbandit` in the observed sample);\nthe parser routes this through `malware.distribution_channel`\nso the operator handle travels with the IOC.\n\nPublic reporting and the public stealer-format catalogues do\nnot document a family that emits exactly this minimal\nGo-runtime panel shape. The `poopbandit` operator handle is\nunattested. Family attribution is provisional pending a\npublished mapping.",
+  "aliases": [
+    "Go-runtime minimal stealer panel",
+    "poopbandit Information.txt"
+  ],
+  "typical_targets": [
+    "Victim hostname (`Computer:` field plus the backslash\nhalf of the `User:` line)",
+    "Victim account shortname (`User:` line)",
+    "Operating system / architecture (`OS:` line via Go\nruntime values)",
+    "Malware execution directory (`Directory:` line)"
+  ],
+  "detection_notes": "Fingerprint requires `=== SYSTEM INFORMATION ===` (ALL\nCAPS) AND a `Directory:` field AND an `OS:` line matching\nthe Go-runtime `<goos> <goarch>` two-lowercase-token\nshape PLUS absence of `=== ENVIRONMENT VARIABLES ===`\n(rules out `CSEnvVarDumpStealer`). The Go-runtime\n`OS:` shape is the panel's strongest single signal: no\nother surveyed stealer-builder runtime emits the OS\nfield in this exact form. During triage, the path-side\n`<operator-handle>/` segment (between the\n`[<CC>]<IPv4>/` victim folder and the\n`system_info.txt` file) carries the operator's panel-side identifier; cluster IOCs by handle to track\ndistribution.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1059.004",
+      "name": "Unix Shell"
+    }
+  ],
+  "related_families": [
+    "cs-py-host-time-stealer",
+    "cs-env-var-dump-stealer"
+  ],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_5ea325f8d303821fabff4fe14535f995",
+      "parser": "logmine.ioc.parsers.cs_go_runtime_stealer.CSGoRuntimeStealerParser",
+      "filenames": [
+        "system_info.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": "poopbandit",
+      "attribution_confidence": "unknown",
+      "markers": [
+        "=== SYSTEM INFORMATION ==="
+      ],
+      "fields": [
+        "Directory",
+        "OS"
+      ],
+      "observations": 3,
+      "sample": {
+        "path": "samples/v_5ea325f8d303821fabff4fe14535f995/sample.txt",
+        "sha256": "d607cdbe5aa335eacb986db240a008540ba753990b7faf158ebc9a26b8f0e7dc",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

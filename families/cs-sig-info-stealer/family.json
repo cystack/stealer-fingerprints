@@ -1,0 +1,82 @@
+{
+  "id": "cs-sig-info-stealer",
+  "name": "CSSigInfoStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "low",
+  "description": "CSSigInfoStealer is a CyStack-coined identifier for a bare\n`Key: Value` `Info.txt` panel that carries the Lumma-canonical\n`(sig:UNIX.HEX)` watermark on the `Time:` line while using\nRedline-style verbose field naming for the rest of the body.\nObserved inside `!! 2025 NOV.part001.rar` `@BRADLOGS / BRADMAX`\naggregator packs in `[<CC>]<IP>/Info.txt` victim folders\n(e.g. `[CA]<IPv4>/Info.txt`).\n\nBody fields: `Build Date`, `Configuration`, `Execution Path`,\n`Elevated`, `Computer Name`, `User Name`, `User Language`,\n`Netbios`, `Operation System` (sic typo), `Install Date`,\n`System Date`, `Time Zone`, `Antivirus`, `HWID`, `Processor`,\n`Processor Threads`, `Processor Cores`, `Graphics Card`,\n`Installed RAM`, `Display Resolution`, `IP Address`, `Time`,\n`Country`, `User`. The body is flat (no leading-dash prefix\nunlike Lumma / Deimos / BABA / DarkSide / AL Stealer), no\noperator banner (unlike Redline), and not YAML (unlike\nRemus). Family attribution is provisional pending a published\nthreat-intel mapping for this exact bare-KV layout.",
+  "aliases": [
+    "BRADMAX Info.txt with Lumma sig watermark",
+    "Bare-KV Redline-style panel with Lumma sig suffix"
+  ],
+  "typical_targets": [
+    "Browser-saved credentials (count flag plus harvested body in sibling files)",
+    "Host metadata: hostname, NetBIOS, Windows username, language",
+    "OS fingerprint with build number and architecture",
+    "Hardware inventory: CPU model with cores/threads, GPU, installed RAM",
+    "Victim public IP plus ISO country code",
+    "Wall-clock and time zone offset"
+  ],
+  "detection_notes": "Fingerprint requires the `(sig:` substring (Lumma-canonical\nTime-line watermark per public Lumma analyses) AND the\n`Execution Path:` field name AND the `Operation System:` typo\nAND `Installed RAM:` line-anchored. Lumma and CSDeimosStealer\ndecline because both require the `- ` dash prefix on every\nfield; Redline declines because of the absent banner and\n`FileLocation:` / `Build ID:` canonical keys. During triage,\ntreat the `sig:UNIX.HEX` watermark as a Lumma-family indicator\nbut not a Lumma confirmation: the bare-KV layout with verbose\nfield names does not match Lumma canonical, so the underlying\nbuilder is most likely a Lumma fork or a stealer that adopted\nthe Lumma sig signature into a different panel template.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "lumma",
+    "remus-stealer",
+    "redline",
+    "cs-deimos-stealer",
+    "csal-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": [
+    {
+      "id": "v_571b9735a207cab65f14c48899af7f62",
+      "parser": "logmine.ioc.parsers.cs_sig_info_stealer.CSSigInfoStealerParser",
+      "filenames": [
+        "Info.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": "@BRADLOGS",
+      "attribution_confidence": "low",
+      "markers": [
+        "(sig:"
+      ],
+      "fields": [
+        "Country",
+        "Execution Path",
+        "Installed RAM",
+        "IP Address"
+      ],
+      "observations": 10811,
+      "sample": {
+        "path": "samples/v_571b9735a207cab65f14c48899af7f62/sample.txt",
+        "sha256": "1bbeb3f129bbe42254b047579474031831d7cbe84247a277455362e72692b982",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "full-device-os"
+    }
+  ]
+}

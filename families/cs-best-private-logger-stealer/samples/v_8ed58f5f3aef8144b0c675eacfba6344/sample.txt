@@ -1,0 +1,41 @@
+
+
+***********************************************************
+*                                                         *
+*                                                         *
+*                          _    ___   ___  ___ ___ ___    *
+*      Best               | |  / _ \ / __|/ __| __| _ \   *
+*                         | |_| (_) | (_ | (_ | _||   /   *
+*      Private  - - - ->  |____\___/ \___|\___|___|_|_\   *
+*                                                         *
+*                                                         *
+*                                                         *
+*********************************************************** 
+
+
+==========PC INFO==========
+Client Name:<HOST>
+FullDate: 7/23/2025 - <ip> AM
+IP: <IP>
+Country: United States
+==========PC INFO==========
+
+============X============
+URL: android:<SECRET>@com.spotify.lite/
+Username: <USER>
+Password: <SECRET>
+Application: Edge Chromium
+=========================
+ 
+============X============
+URL: <url>
+Username: <USER>
+Password: <SECRET>
+Application: Edge Chromium
+=========================
+ 
+============X============
+URL: android:<SECRET>@us.zoom.videomeetings/
+Username: <USER>
+Password: <SECRET>
+[additional credential records omitted]

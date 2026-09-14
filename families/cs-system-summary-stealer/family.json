@@ -1,0 +1,50 @@
+{
+  "id": "cs-system-summary-stealer",
+  "name": "CSSystemSummaryStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSSystemSummaryStealer is a CyStack-coined identifier for a\n`System.txt` panel opening with two flush-left identity lines\n(`- IP:` and `- Country:`), then a `System Summary:` section\nheader followed by a 14-field tab-indented dashed-key block\n(`- OS:`, `- Architecture:`, `- UserName:`, `- Computer\nName:`, `- Local Time:`, `- UTC: <integer>`, `- Language:`, `-\nKeyboards:`, `- Laptop: TRUE/FALSE`, `- Cores:`, `- Threads:`,\n`- RAM:`, `- Display Resolution:` with nested per-monitor\nblock, `- GPU:` list). Three trailing section headers `Process\ncount:` + `Process List:` + `Installed Apps:` add a process\ninventory and an installed-app inventory split into `All\nUsers:` and `Current User:` subsections.\n\nObserved inside `MAY 02 - 8230 LOGS2` aggregator packs at\n`[<ISO2>]<IPv4>/System.txt` victim folders, the same\ncountry-IPv4 victim-folder convention used by\nCSCookiesSoftStealer (iter #55 / #56). The field set overlaps\nan October 2023 Continental Stealer writeup but the exact\npanel layout is not documented in public reporting. Family\nattribution is provisional pending a public writeup that\nconfirms the panel format.",
+  "aliases": [],
+  "typical_targets": [
+    "Browser saved credentials (system summary only - this parser claims the System.txt; credentials live in sibling files)",
+    "System fingerprint: hostname, IP, OS, CPU cores / threads, RAM, GPU list, display resolution per monitor",
+    "Locale: country, language, keyboard locale, UTC offset",
+    "Laptop boolean flag (TRUE / FALSE)",
+    "Running process inventory (full process list with count)",
+    "Installed application inventory split by HKLM (`All Users:`) and HKCU (`Current User:`) registry hives"
+  ],
+  "detection_notes": "The three-anchor fingerprint `System Summary:` plus\n`- Laptop:` plus `- Keyboards:` is the cleanest panel\nsignal. The `- UTC: <integer>` bare hour offset (no `+`\nsign, no `:00` minutes) is a distinctive serialisation\nchoice for triage: when this format appears in a log,\nexpect ALL-CAPS `TRUE` / `FALSE` booleans on other\nflag fields too. The `Installed Apps:` split into HKLM\n(`All Users:`) and HKCU (`Current User:`) is unusual\nacross stealer panels; most flatten the list.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1057",
+      "name": "Process Discovery"
+    },
+    {
+      "id": "T1518",
+      "name": "Software Discovery"
+    },
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "cs-cookies-soft-stealer",
+    "cs-tik-tok-account-stealer",
+    "cs-common-files-category-stealer"
+  ],
+  "sources": [],
+  "variants": []
+}

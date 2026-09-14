@@ -1,0 +1,74 @@
+{
+  "id": "cs-geo-sys-info-stealer",
+  "name": "CSGeoSysInfoStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSGeoSysInfoStealer is a CyStack-coined identifier for\na single-section `=== SYSTEM INFO ===` `system.txt` panel\ndistributed through the `@BRADMAX` Telegram channel.\nThe body carries 8 flat `Key: Value` lines under one\ntriple-equals header: `Computer`, `User`, `OS`, `IP`,\n`Country`, `CPU`, `GPU`, `RAM`. Hardware fields are\npresent but typically empty on observed bodies; the\n`OS` value is the literal placeholder `Windows 10/11`\nrather than a real version string.\n\nThe format shares the `=== SYSTEM INFO ===` header with\nCSStatsSectionStealer (iteration #34) but ships an\nentirely different field set and no second STATS\nsection. Same operator channel `@BRADMAX` but a\ndifferent builder.",
+  "aliases": [],
+  "typical_targets": [
+    "Browser saved credentials and cookies",
+    "IP and geo fingerprint",
+    "System hardware and OS inventory"
+  ],
+  "detection_notes": "The header `=== SYSTEM INFO ===` plus the IP + Country\ngeo block plus the bare-key hardware tail is the\nfingerprint. The negative anchor on `=== STATS ===`\nseparates this panel from CSStatsSectionStealer, which\nuses the same header but adds a count section. The\n`OS: Windows 10/11` literal placeholder is a strong\ntell that the panel never enumerated the actual\nversion, useful as a triage signal.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-stats-section-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADMAX"
+  ],
+  "variants": [
+    {
+      "id": "v_bfb272d1a685583ab75ebac60c4da8f2",
+      "parser": "logmine.ioc.parsers.cs_geo_sys_info_stealer.CSGeoSysInfoStealerParser",
+      "filenames": [
+        "system.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": "@BRADMAX",
+      "attribution_confidence": "unknown",
+      "markers": [
+        "=== SYSTEM INFO ===",
+        "CPU:"
+      ],
+      "fields": [
+        "Country",
+        "IP"
+      ],
+      "observations": 2,
+      "sample": {
+        "path": "samples/v_bfb272d1a685583ab75ebac60c4da8f2/sample.txt",
+        "sha256": "d397ccf04a3f36789d00fe08ba92e011b18eed591bf5ee3ab386487c43b47471",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

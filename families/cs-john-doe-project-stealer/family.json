@@ -1,0 +1,38 @@
+{
+  "id": "cs-john-doe-project-stealer",
+  "name": "CSJohnDoeProjectStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSJohnDoeProjectStealer is a CyStack-coined identifier for a\n.NET-based stealer that self-identifies with the single-line\nbanner ``John Doe Project [t.me/JohnDoeProject]`` at the top\nof its ``system_info.txt`` file. The body carries a flat\nbare-key ``Key: Value`` identity block with .NET-canonical\nfields (``CLR Version:``, ``.NET Runtime:``, ``Processor\nCount:``, ``System Directory:``) plus host fingerprint\n(``Computer Name``, ``User Name``, ``OS Version``, ``System\nVersion``, ``Local IP``, ``Default Gateway``, ``Antivirus``,\n``CPU``, ``GPU``, ``RAM``, ``SCREEN``) and a trailing ``===\nENVIRONMENT VARIABLES ===`` section carrying a full ``KEY =\nvalue`` env-var dump.\n\nThe ``@JohnDoeProject`` Telegram channel and the panel banner\nare unattested in public reporting and community catalogues.\nThe .NET-canonical field set is consistent with a private\nC#-based stealer template. Family attribution is provisional\npending a published threat-intel mapping for this layout.",
+  "aliases": [
+    "John Doe Project banner stealer",
+    "@JohnDoeProject system_info.txt slice"
+  ],
+  "typical_targets": [
+    "Host hardware and OS fingerprint (CPU, GPU, RAM,\nresolution, Windows version, .NET Runtime, CLR)",
+    "Network identity (LAN IP, default gateway)",
+    "Account identity (Windows username, computer name)",
+    "Full Windows Environment Variables dump"
+  ],
+  "detection_notes": "Fingerprint requires the ``John Doe Project`` banner\nsubstring, the ``t.me/JohnDoeProject`` URL literal, and a\nline-anchored ``CLR Version:`` field key. The banner plus URL\nform the operator self-id; pairing them with the\n.NET-canonical ``CLR Version:`` keeps the claim off public\nwriteups that might quote the banner or URL in prose. During\ntriage, treat the underlying stealer family as unattributable\nand rely on the channel plus panel_brand metadata to bucket\nsamples for analyst review. Companion files in the victim\nfolder (browser exports, cookie dumps, wallet artifacts) may\ntrigger more confident attributions through their own family\ndetectors.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/JohnDoeProject"
+  ],
+  "variants": []
+}

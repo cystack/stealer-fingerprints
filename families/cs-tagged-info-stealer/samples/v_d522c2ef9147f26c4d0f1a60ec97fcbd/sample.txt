@@ -1,0 +1,43 @@
+- IP Info -
+
+IP: <IP>
+Country: Brazil
+City: <LOCATION>
+Postal: <LOCATION>
+ISP: <ISP>
+Timezone: -03:00
+
+- PC Info -
+
+Username: <USER>
+OS: Microsoft Windows 10 Pro
+CPU: Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
+GPU: Intel(R) HD Graphics (1920, 1080)VirtualMonitor Device
+HWID: <HWID>
+Current Language: Português (Brasil)
+FileLocation: <redacted>
+Is Elevated: true
+
+- Other Info -
+
+Antivirus: 
+    - Windows Defender
+
+- Log Info -
+
+Build:_____
+
+Passwords: <SECRET>
+Cookies: <SECRET>
+Wallets: ✅ 1
+Files: ✅ 2
+Credit Cards: ❌
+Servers FTP/SSH: ❌
+Discord Tokens: <SECRET>
+
+Tagged URLs: ❌
+Tagged Cookies: ❌
+
+Tags Passwords: <SECRET>
+
+Tags Cookies:

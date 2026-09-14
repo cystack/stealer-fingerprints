@@ -1,0 +1,274 @@
+
+***********************************************
+*         _   _   _   _   _   _   _           *
+*        / \ / \ / \ / \ / \ / \ / \          *
+*       ( O | T | T | O | M | A | N )         *
+*        \_/ \_/ \_/ \_/ \_/ \_/ \_/          *
+*                                             *
+*  Telegram : <url>  *
+***********************************************
+
+
+
+UserName [ComputerName]:     <HOST>
+
+Data [Time]:                 12.09.2023 [22:16:51]   UTC: -06:00 Hora estándar central (México)
+
+OS:                          Windows 10 Home Single Language [x64] 
+
+Keyboard Languages:          Español (México) | 
+
+
+
+CPU:                         AMD Ryzen 3 3200U with Radeon Vega Mobile Gfx  
+
+RAM:                         6 Gb
+
+GPU:                         AMD Radeon(TM) Vega 3 Graphics
+
+Display Resolution:          1366 x 768
+
+
+
+Installed software:
+
+WhatsApp Web [ Version: 1.0 ]
+
+Microsoft OneDrive [ Version: 23.174.0820.0003 ]
+
+Wondershare NativePush(Build <IP>) [ Version: 0 ]
+
+Zoom [ Version: 5.12.2 (9281) ]
+
+AMD Software [ Version: 20.7.2 ]
+
+Avast Free Antivirus [ Version: 23.7.6074 ]
+
+HP Documentation [ Version: <IP> ]
+
+Microsoft Visual Studio 2010 Tools for Office Runtime (x64) [ Version: 10.0.50903 ]
+
+WinRAR 6.11 (64-bit) [ Version: 6.11.0 ]
+
+CorelDRAW Graphics Suite [ Version: 24.4.0.636 ]
+
+Corel Graphics - Windows Shell Extension [ Version: 24.0.0.293 ]
+
+Photoview 360 Network Render Client 2022 SP03.1 [ Version: 30.31.0002 ]
+
+CorelDRAW Graphics Suite 2022 - BR (x64) [ Version: 24.4 ]
+
+Native Instruments Controller Editor [ Version: 2.6.2.547 ]
+
+SOLIDWORKS eDrawings 2022 SP03.1 [ Version: 30.30.0022 ]
+
+Microsoft ODBC Driver 17 for SQL Server [ Version: <IP> ]
+
+Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219 [ Version: 10.0.40219 ]
+
+CorelDRAW Graphics Suite 2022 - Setup Files (x64) [ Version: 24.4 ]
+
+CorelDRAW Graphics Suite 2022 - EN (x64) [ Version: 24.4 ]
+
+CorelDRAW Graphics Suite 2022 - IPM Content FR (x64) [ Version: 24.0 ]
+
+CorelDRAW Graphics Suite 2022 - Draw (x64) [ Version: 24.4 ]
+
+Microsoft Visual C++ 2019 X64 Additional Runtime - 14.28.29325 [ Version: 14.28.29325 ]
+
+CorelDRAW Graphics Suite 2022 - Font Manager (x64) [ Version: 24.4 ]
+
+SOLIDWORKS PCB Viewer 2022 SP03.1 [ Version: 30.31.0002 ]
+
+Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030 [ Version: 11.0.61030 ]
+
+CorelDRAW Graphics Suite 2022 - Discovery (x64) [ Version: 24.0.1 ]
+
+Nitro Pro 10 [ Version: <IP> ]
+
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.4148 [ Version: 9.0.30729.4148 ]
+
+Corel Update Manager [ Version: 2.16.673 ]
+
+Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40660 [ Version: 12.0.40660 ]
+
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161 [ Version: 9.0.30729.6161 ]
+
+AMD Settings [ Version: 2020.0711.1742.31878 ]
+
+CorelDRAW Graphics Suite 2022 - Models (x64) [ Version: 24.0.1 ]
+
+Bonjour [ Version: <IP> ]
+
+CorelDRAW Graphics Suite 2022 - ES (x64) [ Version: 24.4 ]
+
+Comprobación de estado de PC Windows [ Version: 3.2.2110.14001 ]
+
+Corel Graphics - Windows Shell Extension [ Version: 24.0.293 ]
+
+SOLIDWORKS Composer Player 2022 SP03.1 [ Version: 30.31.0002 ]
+
+CorelDRAW Graphics Suite 2022 - VBA (x64) [ Version: 24.4 ]
+
+Microsoft Visual C++ 2019 X64 Minimum Runtime - 14.28.29325 [ Version: 14.28.29325 ]
+
+CorelDRAW Graphics Suite 2022 - Writing Tools (x64) [ Version: 24.4 ]
+
+CorelDRAW Graphics Suite 2022 - Capture (x64) [ Version: 24.4 ]
+
+Branding64 [ Version: 1.00.0002 ]
+
+CorelDRAW Graphics Suite 2022 - PHOTO-PAINT (x64) [ Version: 24.4 ]
+
+CorelDRAW Graphics Suite 2022 - IPM Content BR (x64) [ Version: 24.0 ]
+
+Microsoft Visual Basic for Applications 7.1 (x64) [ Version: <IP> ]
+
+Microsoft Office 64-bit Components 2013 [ Version: 15.0.4569.1506 ]
+
+Microsoft Office Shared 64-bit MUI (Spanish) 2013 [ Version: 15.0.4569.1506 ]
+
+Microsoft Visual Basic for Applications 7.1 (x64) English [ Version: <IP> ]
+
+Microsoft Visual Basic for Applications 7.1 (x64) Spanish [ Version: <IP> ]
+
+Microsoft Visual Studio 2010 Tools for Office Runtime (x64) [ Version: 10.0.50908 ]
+
+CorelDRAW Graphics Suite 2022 - Common (x64) [ Version: 24.4.1 ]
+
+Corel Graphics - Windows Shell Extension 32 Bit Keys [ Version: 24.0.293 ]
+
+Microsoft Visual Studio Tools for Applications 2019 x64 Hosting Support [ Version: 16.0.28801 ]
+
+CorelDRAW Graphics Suite 2022 - IPM Content ES (x64) [ Version: 24.0 ]
+
+Adobe Acrobat (64-bit) [ Version: 23.003.20284 ]
+
+CorelDRAW Graphics Suite 2022 - Custom Data (x64) [ Version: 24.2 ]
+
+Microsoft Visual C++ 2005 Redistributable (x64) [ Version: 8.0.61000 ]
+
+CorelDRAW Graphics Suite 2022 [ Version: 24.2 ]
+
+Microsoft Update Health Tools [ Version: <IP> ]
+
+CorelDRAW Graphics Suite 2022 - FR (x64) [ Version: 24.4 ]
+
+CorelDRAW Graphics Suite 2022 - IPM (x64) [ Version: 24.4 ]
+
+AMD WVR64 [ Version: 1.0.2 ]
+
+Native Instruments Traktor Pro 3 [ Version: 3.5.3.303 ]
+
+Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40660 [ Version: 12.0.40660 ]
+
+Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030 [ Version: 11.0.61030 ]
+
+CorelDRAW Graphics Suite 2022 - Filters (x64) [ Version: 24.4 ]
+
+SOLIDWORKS PDM Client 2022 SP03.1 [ Version: 30.31.0002 ]
+
+SOLIDWORKS File Utilities 2022 SP03.1 [ Version: 30.31.0002 ]
+
+CorelDRAW Graphics Suite 2022 - IPM Content EN (x64) [ Version: 24.0 ]
+
+255.255.65535.0 ]
+
+SOLIDWORKS Manage Client 2022 SP03.1 [ Version: 30.31.0002 ]
+
+AMD User Experience Program Installer [ Version: 2020.01.09.711 ]
+
+CorelDRAW Graphics Suite 2022 - Workspaces (x64) [ Version: 24.4 ]
+
+Google Chrome [ Version: 116.0.5845.188 ]
+
+KakaoTalk [ Version: 3.5.2.3502 ]
+
+Adobe Lightroom Classic [ Version: 9.0 ]
+
+Microsoft Edge [ Version: 116.0.1938.76 ]
+
+Microsoft Edge Update [ Version: <IP> ]
+
+WebView2 Runtime de Microsoft Edge [ Version: 116.0.1938.76 ]
+
+Gameloop [ Version: <IP> ]
+
+Native Instruments Controller Editor [ Version: 2.6.2.547 ]
+
+Native Instruments Traktor Pro 3 [ Version: 3.5.3.303 ]
+
+Microsoft Office Professional Plus 2013 [ Version: 15.0.4569.1506 ]
+
+Photoshop CS5 Extended 12.0 [ Version: 0 ]
+
+SOLIDWORKS 2022 SP03.1 [ Version: <IP> ]
+
+TeamViewer [ Version: 15.25.8 ]
+
+Juegos WildTangent [ Version: <IP> ]
+
+Ghostscript GPL 8.64 (Msi Setup) [ Version: 8.64 ]
+
+Ghostscript GPL 8.64 (Msi Setup) [ Version: 8.64 ]
+
+Microsoft_VC90_CRT_x86 [ Version: 1.00.0000 ]
+
+Microsoft Visual Studio Tools for Applications 2019 [ Version: 16.0.28801 ]
+
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.4148 [ Version: 9.0.30729.4148 ]
+
+Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.28.29325 [ Version: 14.28.29325.2 ]
+
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030 [ Version: 11.0.61030.0 ]
+
+WebAdvisor de McAfee [ Version: 4.1.1.834 ]
+
+HP Audio Switch [ Version: <IP> ]
+
+TeighaX 3.09 [ Version: 3.9.0 ]
+
+HP System Event Utility [ Version: 1.4.32 ]
+
+SAi Production Suite [ Version: 10.0.1 ]
+
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40660 [ Version: 12.0.40660.0 ]
+
+HP Connection Optimizer [ Version: <IP> ]
+
+Microsoft Visual C++ 2005 Redistributable [ Version: 8.0.61001 ]
+
+Sentinel Protection Installer 7.6.4 [ Version: 7.6.4 ]
+
+Microsoft Visual Studio Tools for Applications 2019 x86 Hosting Support [ Version: 16.0.28801 ]
+
+Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.40660 [ Version: 12.0.40660 ]
+
+WildTangent ShortcutProvider [ Version: 7.0.0.285 ]
+
+Wondershare Recoverit(Build <IP>) [ Version: <IP> ]
+
+AMD Settings [ Version: 1.0.2 ]
+
+Microsoft Access MUI (Spanish) 2013 [ Version: 15.0.4569.1506 ]
+
+Service Pack 1 for Microsoft Office 2013 (KB2850036) 32-Bit Edition [ Version: 0 ]
+
+Security Update for Microsoft Access 2013 (KB4484527) 32-Bit Edition [ Version: 0 ]
+
+Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition [ Version: 0 ]
+
+Microsoft Excel MUI (Spanish) 2013 [ Version: 15.0.4569.1506 ]
+
+Service Pack 1 for Microsoft Office 2013 (KB2850036) 32-Bit Edition [ Version: 0 ]
+
+Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition [ Version: 0 ]
+
+Update for Microsoft Office 2013 (KB3191872) 32-Bit Edition [ Version: 0 ]
+
+Security Update for Microsoft Excel 2013 (KB5002451) 32-Bit Edition [ Version: 0 ]
+
+Update for Microsoft Office 2013 (KB5001937) 32-Bit Edition [ Version: 0 ]
+
+Security Update for Microsoft Office 2013 (KB3162051) 32-B
+<truncated>

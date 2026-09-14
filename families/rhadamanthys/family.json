@@ -1,31 +1,51 @@
 {
-  "$schema": "../../schemas/family.schema.json",
+  "id": "rhadamanthys",
+  "name": "Rhadamanthys",
+  "classification": "known_family",
+  "attribution_confidence": "medium",
+  "description": "Rhadamanthys info-stealer logs (v0.9.x device-fingerprint shape).\nWrites a flat `systeminfo.txt` opening with `IP:`, `Country:`\nand continuing with a hardware and locale block. Distinguished\nfrom Redline-shape logs by the `Wallpaper Hash:` and\n`MachineID:` field combination, which Rhadamanthys emits but\nRedline never does. Continuously updated through 2025 with\nexpanded crypto-wallet, browser, and messenger coverage.",
   "aliases": [
     "Rhadamanthys Stealer"
   ],
-  "attribution_confidence": "high",
-  "classification": "known_family",
-  "description": "Rhadamanthys v0.9.x exports `userinformation.txt` as a flat hardware and locale block. `Wallpaper Hash`, `Traffic`, `Domain Name`, and `Display Resolution` form a distinctive field combination.",
-  "external_references": [
-    {
-      "url": "https://any.run/malware-trends/rhadamanthys/"
-    },
-    {
-      "url": "https://research.checkpoint.com/2025/rhadamanthys-0-9-x-walk-through-the-updates/"
-    },
-    {
-      "url": "https://thehackernews.com/2025/10/rhadamanthys-stealer-evolves-adds.html"
-    }
-  ],
-  "id": "rhadamanthys",
-  "name": "Rhadamanthys",
-  "schema_version": "1.0",
-  "targets": [
-    "2FA codes from authenticator browser extensions",
+  "typical_targets": [
     "Browser saved credentials, cookies, history",
     "Crypto wallet extensions and desktop clients",
-    "Messenger and email clients",
-    "PDF, Office, and other document grabber"
+    "2FA codes from authenticator browser extensions",
+    "PDF, Office, and other document grabber",
+    "Messenger and email clients"
   ],
-  "tracking_labels": []
+  "detection_notes": "High-confidence trigger: `Wallpaper Hash:` + `MachineID:`\nfield pair. The `IP:` + `Country:` opening is shared with\nVidar but Rhadamanthys lacks Vidar's `Version:` third-line\nfield.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1119",
+      "name": "Automated Collection"
+    }
+  ],
+  "related_families": [],
+  "sources": [
+    "https://research.checkpoint.com/2025/rhadamanthys-0-9-x-walk-through-the-updates/",
+    "https://thehackernews.com/2025/10/rhadamanthys-stealer-evolves-adds.html",
+    "https://any.run/malware-trends/rhadamanthys/"
+  ],
+  "variants": []
 }

@@ -1,0 +1,51 @@
+{
+  "id": "antarctida-stealer",
+  "name": "Antarctida Stealer",
+  "classification": "observed_self_label",
+  "attribution_confidence": "unknown",
+  "description": "Observed-self-label profile for logs whose `Information.txt`\nopens with `❄ Antarctida Stealer ❄`. No independent malware\nanalysis currently confirms that label as a canonical family.\nA bullet-prefixed (`• OS:`, `• CPU:`) hardware and locale block\nfollows the banner.",
+  "aliases": [
+    "Antarctida Stealer"
+  ],
+  "typical_targets": [
+    "System hardware and OS inventory",
+    "User and computer identity",
+    "Public IP address"
+  ],
+  "detection_notes": "Require the exact snowflake-decorated banner line plus the\nbullet-prefixed `OS:`, `CPU:`, and `Computer Name:` fields. The\nbanner proves the observed label, not payload lineage; keep the\nprofile at unknown attribution until independent analysis maps\nthe executable or output format.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_04bcb3b8fdb3ba04fb2e9c8bdfbf63bd",
+      "parser": "logmine.ioc.parsers.antarctida.AntarctidaParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "Antarctida Stealer"
+      ],
+      "fields": [],
+      "observations": 33,
+      "sample": {
+        "path": "samples/v_04bcb3b8fdb3ba04fb2e9c8bdfbf63bd/sample.txt",
+        "sha256": "ed5cf23778fb0d49a3f4fb3a8bad55d5dc53f377421473ad086773dba95a4830",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+    - IP Info -
+
+IP: <IP>
+Country: Nigeria
+City: <LOCATION>
+Postal: 
+ISP: <ISP>
+Timezone:  01:00
+
+- PC Info -
+
+OS: Microsoft Windows 8.1
+CPU: Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz
+GPU: 
+    - Intel(R) HD Graphics 520 (1366, 768)
+HWID: <HWID>
+Current Language: English (United States)
+FileLocation: <redacted>
+Is Elevated: true
+
+- Other Info -
+
+Antivirus: 
+    - Windows Defender
+    - Avast Antivirus
+
+- Log Info -
+
+
+Build:_____
+
+Passwords: <SECRET>
+Cookies: <SECRET>
+Wallets: ✅ 2
+Files: ✅ 33
+Credit Cards: ❌
+Servers FTP/SSH: ❌
+Discord Tokens: <SECRET>
+Others: ❌

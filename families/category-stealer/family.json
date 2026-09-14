@@ -1,0 +1,84 @@
+{
+  "id": "category-stealer",
+  "name": "Category Stealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "Unidentified Category-block stealer observed inside the\n`@BRADMAX 20000 APRIL-MAY` and `@bugatti_cloud` aggregator\npacks. The `Information.txt` is divided into three\n`Category:` sections each separated by a 60-character dash\ndivider, with column-aligned key/value records under each.\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout.",
+  "aliases": [],
+  "typical_targets": [],
+  "detection_notes": "Three `Category:` headers separated by 60-dash dividers,\nwith column-aligned (rather than dash-prefixed) field rows,\nis the cleanest signature. A stripped variant emits only\nthe `User` and `System` blocks with the `Hardware` block\ndropped.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_6207ef922a5d4ce9cdbf6bc9de7c25e9",
+      "parser": "logmine.ioc.parsers.category_stealer.CategoryStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "Category: User"
+      ],
+      "fields": [
+        "Country",
+        "IP"
+      ],
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_6207ef922a5d4ce9cdbf6bc9de7c25e9/sample.txt",
+        "sha256": "f0205a7d51757b3c1fef49f00edac33c10336b44ff904dd5d9d86005d4ecc56e",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "user-ip-country"
+    },
+    {
+      "id": "v_93495bf8f14283ee6d5b4a5905b5ece2",
+      "parser": "logmine.ioc.parsers.category_stealer.CategoryStealerParser",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "Category: System",
+        "Category: User"
+      ],
+      "fields": [],
+      "observations": 375,
+      "sample": {
+        "path": "samples/v_93495bf8f14283ee6d5b4a5905b5ece2/sample.txt",
+        "sha256": "be55a1214cddcab3f472fe2e30d202cf727db2b36b0a3c52ed2d530043238d81",
+        "source": "logmine_runtime",
+        "sanitized": true
+      },
+      "layout_id": "user-system-sections"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "pc-info-stealer",
+  "name": "PCInfo Stealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "Unidentified `PC Username` / `PC Name` stealer observed inside\n`@BRADMAX` aggregator packs alongside Remus, user-info bracket, Snake,\nand Minimal logs. The `System_Info.txt` uses two\ntriple-equals section headers (`=== SYSTEM INFORMATION ===`)\nand four distinctive `PC ...` field keys.",
+  "aliases": [],
+  "typical_targets": [],
+  "detection_notes": "Field keys prefixed with `PC ` (`PC Username:`, `PC Name:`,\n`PC Owner:`, `PC Domain:`) together with the\n`=== SYSTEM INFORMATION ===` section header are the cleanest\nsignature.",
+  "attack_techniques": [
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "variants": [
+    {
+      "id": "v_b9fc8961d3b757934ac79ac1f776b15e",
+      "parser": "logmine.ioc.parsers.pcinfo_stealer.PCInfoStealerParser",
+      "filenames": [
+        "System_Info.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "=== NETWORK INFO ===",
+        "=== SYSTEM INFORMATION ==="
+      ],
+      "fields": [
+        "PC Name",
+        "PC Username"
+      ],
+      "observations": 4,
+      "sample": {
+        "path": "samples/v_b9fc8961d3b757934ac79ac1f776b15e/sample.txt",
+        "sha256": "cd2523aa9a43cacfe86e70cb0acf8791d1b0037d783fd1a3134c8a067f1fed8b",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

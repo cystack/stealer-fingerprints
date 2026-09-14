@@ -1,0 +1,37 @@
+{
+  "id": "cs-bradmax-cookies-only-stealer",
+  "name": "CSBradmaxCookiesOnlyStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSBradmaxCookiesOnlyStealer is a CyStack-coined identifier for\na minimal one-subdirectory victim folder observed inside\n`@BRADMAX 20000 APRIL-MAY.part1.rar` aggregator packs at\n`[<CC>]UNKNOWN_(<N>)/` filler-folder victim paths. The pack\nstrips every per-family artifact from the victim folder except\nthe browser cookie jar, leaving a two-entry root: a `cookies/`\nsubdirectory holding one or more Netscape `cookies.txt` files\n(basenames of the form `Cookies (<N>).txt`) plus the\nempty-named packer directory artifact.\n\nThe cookie body is the canonical seven-field TAB-separated\ncookie-jar layout documented by curl and the fileformats wiki:\ndomain, include-subdomains flag, path, secure flag, integer\nexpiry, name, value. The panel harvests this shape from\nChromium's Cookies SQLite database and exports it verbatim.\n\nThe BRADMAX aggregator (`@BRADMAX` / `bradmax_cloud` /\n`@BRADLOGS`) resells stealer logs from multiple underlying\nfamilies. Public channel catalogues attest the channel as a\nRedline and Raccoon redistributor. This minimal cookies-only\nlayout carries no remaining family signal beyond \"cookie-jar\nexporter\": no system-info file, no browser-credential dump, no\nwallet folder, no token file. Family attribution is\nprovisional pending a published threat-intel mapping for this\nspecific stripped-to-cookies BRADMAX layout.",
+  "aliases": [
+    "BRADMAX cookies-only minimal victim pack",
+    "[<CC>]UNKNOWN_(<N>) cookies-only variant"
+  ],
+  "typical_targets": [
+    "Browser session cookies (Chromium cookies.txt export)"
+  ],
+  "detection_notes": "Fingerprint requires (a) the folder root entry set is a\nsubset of `{\"cookies\", \"\"}` (case-insensitive) so the\n`cookies` subdirectory is the only real child plus an\noptional empty-named packer DIR, and (b) 2+ Netscape\ncookies.txt rows in the cred-file body where the second\nand fourth fields are `TRUE` or `FALSE` and the fifth\nfield is an integer expiry. The two-row floor stays low\nbecause the folder-shape constraint plus the seven-field\ntab layout is already discriminating. Some victims ship\na single Netflix or Google session cookie file whose\n3-row body is dominated by one enormous session-token\nblob (e.g. Netflix MAC-signed `NetflixId` cookies at\n~800 bytes each), leaving fewer than five parseable\nrows. During triage, treat this label as a \"victim\nfolder truncated to just the cookie jar\" marker: the\nunderlying stealer builder is not identifiable from\nthis shape alone, only the BRADMAX distribution channel\nis. High-value session cookies (claude.ai, netflix.com,\ngoogle.com, microsoft.com, banking domains) still\ntravel through the cred-file body and are usable IOCs\neven without family attribution.",
+  "attack_techniques": [
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "cs-bradmax-category-stealer",
+    "cs-netflix-cookies-stealer"
+  ],
+  "sources": [],
+  "related_external": [
+    "cs-netscape-cookies-notice"
+  ],
+  "observed_channels": [
+    "https://t.me/bradmax_cloud"
+  ],
+  "variants": []
+}

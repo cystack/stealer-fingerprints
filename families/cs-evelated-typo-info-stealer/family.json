@@ -1,0 +1,44 @@
+{
+  "id": "cs-evelated-typo-info-stealer",
+  "name": "CSEvelatedTypoInfoStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSEvelatedTypoInfoStealer is a CyStack-coined identifier for\nan ``Information.txt`` panel with the distinctive ``Is\nEvelated:`` typo (sic, ``Evelated`` not ``Elevated``)\nadmin-flag field. Observed inside the ``28 APRIL - 37817\nLOGS2.part01.rar`` aggregator pack at ``[<panel-tag>]\n<CC>_<IPv4>/<CC>_<IPv4>_<DDMMYYYY>_<HH>_<MM>_<SS>/\nInformation.txt`` victim folders where the parent folder\nprefix uses a ``[<panel-tag>]`` marker like ``[login.live]``\nthat identifies the victim category (browser sign-in tag,\nfilesharing tag, etc.).\n\nField vocabulary is Redline-lineage (``File Location:``,\n``HWID:``, ``Machine Name:``, ``Username:``), but the\ndistinctive ``Is Evelated:`` typo combined with paired\n``GPU:`` + ``Graphical Adapter:`` duplicate fields (both\ncarrying the same adapter query result under two labels), plus\n``Screen Resolution:`` (not ``Display Resolution:``),\n``Keyboard Layout:`` singular (not ``Keyboard Languages:``\nplural), and a ``Clipboard Text:`` raw-clipboard-content\nfield, makes it a private fork or niche family whose\nfingerprint has not been mapped publicly. The 2022-02-26 log\ntimestamp on observed samples suggests an older builder whose\npanel-format research pre-dates current public reporting.\nFamily attribution is provisional pending a published\nthreat-intel mapping.",
+  "aliases": [
+    "Is Evelated typo stealer",
+    "Graphical Adapter dual-GPU stealer"
+  ],
+  "typical_targets": [
+    "Host OS and hardware fingerprint (CPU, GPU with duplicate\n``Graphical Adapter`` label, screen resolution, HWID)",
+    "Geo enrichment (IP, country, city, ZIP, timezone with\noperator-side default timezone-city annotation)",
+    "Account identity (Windows username, machine name)",
+    "Current clipboard content at capture time (crypto\naddresses, magnet links, other high-value clipboard data)",
+    "Installed software inventory and running process list"
+  ],
+  "detection_notes": "Fingerprint requires the ``Is Evelated:`` typo substring\nand a line-anchored ``Graphical Adapter:`` field. The typo\nis uniquely this panel across the registry: no canonical\nRedline / Lumma / Vidar / StealC / Rhadamanthys /\nMetaStealer emits the admin flag with the ``Evelated``\nmisspelling. The ``Clipboard Text:`` field can carry\nhigh-value tokens (crypto wallet addresses, magnet links,\nsession tokens) so triage should review the clipboard\nvalue alongside browser credential exports.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1115",
+      "name": "Clipboard Data"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1518",
+      "name": "Software Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "variants": []
+}

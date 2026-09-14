@@ -1,0 +1,52 @@
+{
+  "id": "cs-files-stolen-stealer",
+  "name": "CSFilesStolenStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSFilesStolenStealer is a CyStack-coined identifier for a\ncompact ten-line `system.txt` panel whose distinctive\nsignature is the stealer-self-reporting `Files Stolen:`\ncounter field. Observed inside `JANUARY 15,16 - 4728\nLOGS.part1.rar` Telegram aggregator packs at\n`<HH-MM-SS>/system.txt` victim folders (e.g.\n`00-39-28/system.txt`). The archive-name convention with\ncomma-separated dates matches the operator lineage of\n`CSStartBuildInfoStealer` (`4,5 MAY`) and\n`CSExePathInfoStealer` (`5,6 APRIL`) from the same reseller\npipeline.\n\nThe body ships ten flush-left `Key: Value` lines: PC Name,\nDesktop Name, Windows Version, Files Stolen, IP Address, MAC\nAddress, GPU, RAM, Public IP, Antivirus. No bracketed section\nheaders, no banner, no trailing sections. Four features\ndistinguish this panel from every other registered format:\n\n1. `PC Name:` plus `Desktop Name:` sibling pair with both\nfields taking the same value on typical single-user Windows\nhosts. Common stealer panels emit `Computer Name` /\n`ComputerName` / `Hostname` as a single key, never as a `PC\nName` + `Desktop Name` pair. 2. `Files Stolen:` inline counter\nfor the number of files the harvester exfiltrated. Canonical\nVidar, StealC, and Lumma emit grab counts in a separate\nsummary section or not at all - in-body counter fields are\nrare across surveyed families. 3. Dual IP fields side by side:\n`IP Address:` carries the RFC-1918 LAN value (192.168.x.x,\n10.x.x.x, 172.16-31.x.x) and `Public IP:` carries the WAN\nroutable value. The IOC schema emits the routable value; the\nLAN value is retained in the source panel for triage. 4. `MAC\nAddress:` value uses hyphen byte separators (Windows ipconfig\nstyle) rather than the more common colon-separated form.\n`RAM:` value uses comma thousands separator (`18,308 MB`).\n\nThe `Windows Version:` value carries a trailing `- ` sentinel\nwith no product-name text after it (as if the panel builder\nintended to append a Windows edition string but the resolver\nreturned an empty value on the observed sample). The parser\nstrips the tail and emits the bare NT version.\n\nFamily attribution is provisional. The ten-field combination\nis unattested in public reporting and is also absent from the\ncommunity stealer-format catalogues. Multiple open-source\nPython stealer builders (XillenStealer, Trap Stealer,\nSPYSTEALER, py-stealer-builder) publish plain-text system\nreports but none of the surveyed writeups document this exact\nten-field key spelling. Rename the family constant if a public\nwriteup later maps this layout to a known builder.",
+  "aliases": [
+    "Files Stolen counter system.txt panel",
+    "PC Name + Desktop Name sibling-pair minimal stealer"
+  ],
+  "typical_targets": [
+    "Windows hostname (`PC Name:`)",
+    "Windows desktop / short login name (`Desktop Name:`)",
+    "Windows NT version (`Windows Version:` with edition\nplaceholder tail)",
+    "LAN interface IP (`IP Address:` RFC-1918 value)",
+    "Public exit IP (`Public IP:` WAN value)",
+    "MAC address (Windows ipconfig hyphen-separated form)",
+    "GPU adapter name (`None` fallback when no discrete\nadapter present)",
+    "Installed RAM in MB (comma thousands separator)",
+    "Antivirus product name (Windows Defender, third-party AV)",
+    "File-exfiltration count self-reported by the stealer\n(`Files Stolen:`)"
+  ],
+  "detection_notes": "Fingerprint requires the four line-prefix anchors\n`PC Name: `, `Desktop Name: `, `Files Stolen: `, and\n`Public IP: ` all present in the same body. The\n`Desktop Name:` + `Files Stolen:` pair is itself rare\nenough that this triplet-plus-one cannot collide with\nany other registered parser fingerprint. During\ntriage, the `Files Stolen:` value is a useful sanity\ncheck: values much lower than a typical Documents /\nDesktop harvest (single digits) suggest a targeted\ngrab or a quick-exit run, while values in the hundreds\nsuggest a full walk of the user profile. The\n`Windows Version:` tail with an empty edition slot\nsuggests the panel builder queries a Windows edition\nAPI path (registry `ProductName` or\n`Get-ComputerInfo`) that failed silently on the\nobserved victim - a diagnostic worth carrying into\nany future variants of this panel.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    },
+    {
+      "id": "T1518.001",
+      "name": "Security Software Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-start-build-info-stealer",
+    "cs-exe-path-info-stealer"
+  ],
+  "sources": [],
+  "variants": []
+}

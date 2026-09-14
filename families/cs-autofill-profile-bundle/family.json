@@ -1,0 +1,34 @@
+{
+  "id": "cs-autofill-profile-bundle",
+  "name": "CSAutofillProfileBundle",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSAutofillProfileBundle is a CyStack-coined identifier\nfor the per-browser-per-profile autofill leaf folder\n`Autofill/<browser><profile>/autofill.txt` observed\ninside `202605112215_MAY 09 - 20614 LOGS2.part01.rar`\naggregator packs at `-[<32-hex-md5>]/Autofill/...`\nvictim paths. The leaf-folder basename jams browser and\nprofile names together in lowercase (`googledefault`,\n`chromedefault`, `edgedefault`) rather than the\nunderscore-or-bracket-separated forms documented for\nVidar / RedLine / Lumma per-browser autofill grabs.\n\nThe `MAY 09 - 20614 LOGS2` pack belongs to the same\noperator series as the `MAY 02 - 8230 LOGS2` packs\ncarrying `CSTikTokAccountBundle` /\n`CSNetflixCookiesBundle` /\n`CSCommonFilesCategoryBundle` victims. The dash-prefixed bracketed-MD5 parent folder convention\n(`-[<32-hex>]`) is a variant of the same operator's\nbracketed-MD5 naming.\n\nEach leaf `autofill.txt` carries one\n`<field_name>: <value>` line per harvested Chromium\nautofill entry. The reference sample is 8 bytes\n(`c9: test`, a single field-id-prefixed key/value\npair), suggesting victims with minimal or test\nautofill state on the targeted profile.",
+  "aliases": [
+    "Autofill per-profile bundle",
+    "Browser-profile autofill leaf folder"
+  ],
+  "typical_targets": [
+    "Chromium browser autofill entries from the\n`autofill_entries` SQLite table (form field names\nand saved values)"
+  ],
+  "detection_notes": "Fingerprint requires `system_path` to be a folder, its\nid to contain `/Autofill/` (case-sensitive), its\nbasename to match a lowercase-alphanumeric 4-30 char\nshape, and the folder root to contain `autofill.txt`.\nThe four-anchor combination keeps the detector off\nrandom or spaced folder names that happen to live\nunder any `Autofill/` parent. False-positive risk is\nlow because the strict basename guard rules out the\nspaced or bracket-suffixed naming used by documented\nstealer-family autofill layouts. During triage, the\nparent victim folder convention (`-[<32-hex-md5>]`)\nplus the LOGS2 archive name help bucket victims back\nto the operator pack.",
+  "attack_techniques": [
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    }
+  ],
+  "related_families": [
+    "cs-netflix-cookies-stealer"
+  ],
+  "sources": [],
+  "related_external": [
+    "cs-tiktok-account-bundle",
+    "cs-common-files-category-bundle"
+  ],
+  "variants": []
+}

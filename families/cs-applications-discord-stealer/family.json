@@ -1,0 +1,38 @@
+{
+  "id": "cs-applications-discord-stealer",
+  "name": "CSApplicationsDiscordStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSApplicationsDiscordStealer is a CyStack-coined identifier\nfor a per-victim folder shipping a single `Applications/`\nsubdirectory with per-application token harvests inside a\n`[<ISO2>]<IPv4>` parent folder. Each app under `Applications/`\ncarries its own `Tokens.txt` file (e.g.\n`Applications/Discord/Tokens.txt` for Discord auth tokens).\nThe Discord file body carries one token per line: the leading\nbase64 segment encodes the user's Discord snowflake ID,\nfollowed by dotted timestamp / signature parts (3-part form\nfor standard auth tokens, 2-part for refresh / MFA tokens).\n\nObserved inside `MAY 02 - 8230 LOGS` aggregator packs (the\n`LOGS` sibling of `LOGS2` claimed by CSCookiesSoftStealer iter\n#55 / #56 / #58). Same `[<ISO2>]<IPv4>` parent-folder\nconvention, but a different categorical subdir name\n(`Applications/` vs `Soft/`) and a different per-app harvest\nconvention (Discord auth tokens vs Steam JWT sessions). Family\nattribution is provisional pending a published mapping for\nthis exact layout.",
+  "aliases": [],
+  "typical_targets": [
+    "Discord auth tokens (full sessions, refresh tokens, MFA tokens)",
+    "Other Chromium-Electron desktop app session tokens (potentially shipped under `Applications/<App>/Tokens.txt`)"
+  ],
+  "detection_notes": "The `[<ISO2>]<IPv4>` parent name plus the strict\n`{Applications, \"\"}` root subset plus the\n`Applications/<NonEmpty>/Tokens.txt` cred-file path\npattern is the fingerprint. Disambiguates from\nCSCookiesSoftStealer via the categorical-subdir name\n(`Applications/` vs `Soft/`) and from\nCSDiscordDataTokensBundle (which ships a verbatim\nLevelDB binary blob under `DiscordData/tokens.txt`).\nDecode each token's leading base64 segment with a\nstandard base64 decoder to recover the victim's\nDiscord snowflake ID for cluster tracking.",
+  "attack_techniques": [
+    {
+      "id": "T1528",
+      "name": "Steal Application Access Token"
+    },
+    {
+      "id": "T1550.001",
+      "name": "Use Alternate Authentication Material: Application Access Token"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    }
+  ],
+  "related_families": [
+    "cs-cookies-soft-stealer",
+    "cs-discord-data-tokens-stealer",
+    "cs-tik-tok-account-stealer"
+  ],
+  "sources": [],
+  "variants": []
+}

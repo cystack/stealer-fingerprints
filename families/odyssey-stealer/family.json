@@ -1,0 +1,71 @@
+{
+  "id": "odyssey-stealer",
+  "name": "Odyssey Stealer",
+  "classification": "known_family",
+  "attribution_confidence": "high",
+  "description": "Odyssey Stealer is a macOS infostealer sold as\nmalware-as-a-service by a Russian-speaking operator. Public\nreporting tracks it as a rebrand of Poseidon Stealer, which\nitself forked from the AMOS Stealer codebase. Public research\ndocumented the ClickFix delivery chain in April 2026, and a\nfollow-on evolution writeup covered new obfuscation and\ncode-signing techniques. A separate writeup covers the same\ncampaign from the delivery-side view.\n\nThe stealer runs as an AppleScript compiled file (.scpt)\nlaunched via osascript. Its info file opens with `External IP:\n<ipv4>`, then a bare `System Info` header, then `Username:` /\n`Password:` / `Hostname:` / `OS Version:` / `Is CIS:` boolean\nfields, then verbatim `system_profiler SPSoftwareDataType` /\n`SPHardwareDataType` / `SPDisplaysDataType` output. The `Is\nCIS:` flag is set by inspecting\n`~/Library/Preferences/com.apple.HIToolbox.plist` for a\nRussian keyboard layout; the beacon reports the flag so the\noperator can filter or drop CIS victims per campaign. The\nharvested password is captured through a fake authentication\ndialog rendered via osascript.",
+  "aliases": [
+    "Odyssey",
+    "Poseidon Stealer (predecessor)",
+    "ClickFix AppleScript stealer"
+  ],
+  "typical_targets": [
+    "Browser saved credentials and cookies (12+ browsers)",
+    "Crypto wallet browser extensions (300+ per public reporting)",
+    "Standalone macOS crypto wallets (16+ apps)",
+    "macOS Keychain database",
+    "Live web-browser session cookies",
+    "Victim login password captured via fake osascript dialog"
+  ],
+  "detection_notes": "The `Is CIS: true` / `Is CIS: false` boolean field is\nthe strongest single anchor. Combined with `External IP:`\nand the macOS `Software:` + `Hardware:` +\n`Graphics/Displays:` `system_profiler` section headers,\nthe fingerprint is unique across the registered parser\ncorpus. During triage, treat any log with the `Is CIS:`\nfield as Odyssey; the corresponding `Password:` line\nholds the victim login credential the AppleScript grabbed\nthrough the fake auth prompt and must be treated as\ncompromised. Odyssey samples redistributed through the\nBRADMAX Telegram aggregator strip the `SHub Stealer`\nbanner (present in the sibling SHub family) but preserve\nthe `Is CIS:` + `External IP:` + `system_profiler` triple\nverbatim, so the same parser fingerprint claims both\ndirect-C2 and aggregator-redistributed samples.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.001",
+      "name": "Keychain"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1204.002",
+      "name": "User Execution: Malicious File"
+    }
+  ],
+  "related_families": [
+    "amos-stealer",
+    "s-hub-stealer",
+    "mac-sync"
+  ],
+  "sources": [
+    "https://www.cyfirma.com/research/odyssey-stealer-the-rebrand-of-poseidon-stealer/",
+    "https://www.netskope.com/blog/macos-clickfix-lures-deploy-applescript-stealer-persistent-rat",
+    "https://www.jamf.com/blog/signed-and-stealing-uncovering-new-insights-on-odyssey-infostealer/",
+    "https://www.forcepoint.com/blog/x-labs/odyssey-stealer-attacks-macos-users",
+    "https://socprime.com/active-threats/odyssey-stealer-analysis/"
+  ],
+  "related_external": [
+    "poseidon-stealer"
+  ],
+  "variants": []
+}

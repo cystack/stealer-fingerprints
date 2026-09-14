@@ -1,0 +1,48 @@
+{
+  "id": "cs-process-elevation-stealer",
+  "name": "CSProcessElevationStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "medium",
+  "description": "CSProcessElevationStealer is a CyStack-coined identifier for a\nRedline-shape `System.txt` observed inside `@ft7links-lumma`\naggregator packs in `@ft7links_lumma_<NN>_bogonip_<HWIDPFX>/`\nvictim folders. The body carries the canonical Redline\n`Operation System:` (sic) typo and `Hardwares:` block, but\nadds a `Process Elevation: True|False` line that canonical\nRedline never emits, joins `ScreenSize:` and `TimeZone:` on a\nsingle line with whitespace around the `=` (canonical Redline\nemits no spaces and breaks them onto separate lines), and\nstrips Redline's identity preamble (`Build ID:`, `IP:`,\n`FileLocation:`, `MachineName:`, `Location:`, `Log date:`)\nentirely on bogon-IP victims.\n\nA community stealer-format catalogue maps this exact field\nshape to ArechClient2 / SectopRAT, and an independent\nmalware-analysis writeup confirms ArechClient2's collector\nemits a matching field set (`OSVersion`, `ScreenSize`,\n`TimeZone`, `AvailableLanguages`, `SystemHardwares`). The\ncanonical ArechClient2 / SectopRAT family is well documented\npublicly, but none of those writeups publish a sample log\nshowing the exact label set above, so the format-to-family\nmapping remains provisional and the `CS` prefix is retained\npending a published confirmation.",
+  "aliases": [
+    "ArechClient2 (provisional)",
+    "SectopRAT (provisional)"
+  ],
+  "typical_targets": [
+    "Browser saved credentials, cookies, autofill",
+    "Crypto wallet extensions and desktop clients",
+    "System hardware, locale, and timezone inventory",
+    "Anti-virus product enumeration"
+  ],
+  "detection_notes": "The `Process Elevation:` line plus the joined\n`ScreenSize: {Width = X,Height = Y}TimeZone: ...` emission\n(spaces around the `=`, no separator before `TimeZone:`) is\nunique to this panel among the Redline-shape rebrands in\nthis catalog. The `UNKNOWN` literal recurs in `Country:`\nand `Zip Code:` for bogon-IP victims, so triage should\ntreat those values as missing rather than as a real country\nor postal code. False-positive risk is low: no other\nparser fingerprints on `Process Elevation:`, and the\nco-required `Operation System:` typo confirms the\nRedline-derived body shape.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "redline",
+    "redline-like-stealer",
+    "cs-enchant-cloud-stealer",
+    "cs-russia34-stealer"
+  ],
+  "sources": [],
+  "variants": []
+}

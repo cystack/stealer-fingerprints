@@ -1,0 +1,33 @@
+    ____      __       _______  __
+User: <USER>
+Machine: <HOST>
+Now: 2026-03-23 <ip>
+Input ISO: tr
+Hwid: <HWID>
+Clipboard: <SECRET>
+
+
+
+[Network]
+External IP: <IP>
+Internal IP: <ip>
+Default Gateway: <ip>
+
+[System]
+OS Product: Windows 10 Enterprise 2009
+OS Build: 19045
+OS Arch: x64
+CPU Name: AMD Ryzen 5 5600X 6-Core Processor             
+Logical Cores: 12
+RAM Total (MB): 32694
+RAM Available (MB): 22860
+
+[Drives]
+C: Fixed FS:NTFS Size:465GB Free:124GB
+
+[GPU]
+NVIDIA GeForce RTX 4060
+
+[Basic]
+User Domain: <HOST>
+CLR Version: 4.0.30319.42000

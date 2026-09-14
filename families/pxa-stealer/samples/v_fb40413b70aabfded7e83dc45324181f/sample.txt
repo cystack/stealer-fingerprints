@@ -1,0 +1,5 @@
+IP: <IP>
+Country: 🇧🇷 BR - Brazil
+Username: <USER>
+AntiVirus: McAfee, Windows Defender
+Data Information: CK:3277|PW:221|AF:9256|CC:0|TK:6|FB:4|Sites:16|Wallets:0|Apps:0

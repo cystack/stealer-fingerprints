@@ -1,0 +1,303 @@
+Ip: <IP>
+Country: ID
+
+Date: 10/12/2025 <ip>
+MachineID: <HWID>
+GUID: <HWID>
+HWID: <HWID>
+
+Path: <redacted>
+Work Dir: In memory
+
+Windows: Windows 10 Pro
+Install Date: 17/09/2024 <ip>
+AV: Windows Defender
+Computer Name: <HOST>
+User Name: <USER>
+Display Resolution: 1366x768
+Keyboard Languages: English
+Local Time: 10/12/2025 <ip>
+TimeZone: 7
+
+[Hardware]
+Processor: Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz
+Cores: 4
+Threads: 4
+RAM: 7591 MB
+VideoCard: Intel(R) HD Graphics 520
+
+[Processes]
+System
+Secure System
+Registry
+smss.exe
+csrss.exe
+wininit.exe
+csrss.exe
+services.exe
+LsaIso.exe
+lsass.exe
+svchost.exe
+fontdrvhost.exe
+WUDFHost.exe
+svchost.exe
+svchost.exe
+winlogon.exe
+fontdrvhost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+IntelCpHDCPSvc.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+dwm.exe
+svchost.exe
+IntelCpHeciSvc.exe
+svchost.exe
+igfxCUIService.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+ibmpmsvc.exe
+svchost.exe
+svchost.exe
+svchost.exe
+amdfendrsr.exe
+atiesrxx.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+atieclxx.exe
+svchost.exe
+svchost.exe
+svchost.exe
+Memory Compression
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+RtkAudioService64.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+spoolsv.exe
+svchost.exe
+svchost.exe
+wlanext.exe
+svchost.exe
+svchost.exe
+svchost.exe
+HidMonitorSvc.exe
+svchost.exe
+conhost.exe
+svchost.exe
+ExitLagPmService.exe
+jhi_service.exe
+OneApp.IGCC.WinService.exe
+svchost.exe
+svchost.exe
+svchost.exe
+shareitservice.exe
+RstMwService.exe
+MpDefenderCoreService.exe
+EasyResume.exe
+svchost.exe
+SynTPEnhService.exe
+valWBFPolicyService.exe
+valWbioSyncSvc.exe
+MsMpEng.exe
+svchost.exe
+WMIRegistrationService.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+RAVBg64.exe
+svchost.exe
+gamingservicesnet.exe
+gamingservices.exe
+SearchIndexer.exe
+dllhost.exe
+sihost.exe
+svchost.exe
+SensorDBSynch.exe
+conhost.exe
+svchost.exe
+svchost.exe
+PresentationFontCache.exe
+taskhostw.exe
+PowerMgr.exe
+svchost.exe
+svchost.exe
+ctfmon.exe
+igfxEM.exe
+explorer.exe
+svchost.exe
+SynTPEnh.exe
+SynTPLpr.exe
+SynLenovoHelper.exe
+svchost.exe
+svchost.exe
+AggregatorHost.exe
+svchost.exe
+SynTPHelper.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+svchost.exe
+dasHost.exe
+dllhost.exe
+svchost.exe
+StartMenuExperienceHost.exe
+RuntimeBroker.exe
+svchost.exe
+SearchApp.exe
+svchost.exe
+RuntimeBroker.exe
+UserOOBEBroker.exe
+RuntimeBroker.exe
+svchost.exe
+TextInputHost.exe
+SecurityHealthSystray.exe
+SecurityHealthService.exe
+OneDrive.exe
+steam.exe
+steamwebhelper.exe
+steamwebhelper.exe
+steamservice.exe
+steamwebhelper.exe
+steamwebhelper.exe
+steamwebhelper.exe
+Discord.exe
+Discord.exe
+Discord.exe
+Discord.exe
+WSHelper.exe
+CompPkgSrv.exe
+steamwebhelper.exe
+Discord.exe
+svchost.exe
+Discord.exe
+svchost.exe
+steamwebhelper.exe
+SystemSettings.exe
+ApplicationFrameHost.exe
+DolbyDAX2API.exe
+svchost.exe
+sppsvc.exe
+svchost.exe
+svchost.exe
+SearchApp.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+msedgewebview2.exe
+Video.UI.exe
+RuntimeBroker.exe
+FileCoAuth.exe
+svchost.exe
+dllhost.exe
+svchost.exe
+LockApp.exe
+RuntimeBroker.exe
+msedge.exe
+msedge.exe
+msedge.exe
+msedge.exe
+msedge.exe
+msedge.exe
+svchost.exe
+ShellExperienceHost.exe
+RuntimeBroker.exe
+svchost.exe
+taskhostw.exe
+browser_assistant.exe
+browser_assistant.exe
+unsecapp.exe
+WmiPrvSE.exe
+smartscreen.exe
+svchost.exe
+Wave.exe
+CefSharp.BrowserSubprocess.exe
+CefSharp.BrowserSubprocess.exe
+CefSharp.BrowserSubprocess.exe
+node.exe
+conhost.exe
+CefSharp.BrowserSubprocess.exe
+CefSharp.BrowserSubprocess.exe
+luau-lsp.exe
+svchost.exe
+svchost.exe
+svchost.exe
+GameBar.exe
+svchost.exe
+GameBarFTServer.exe
+RuntimeBroker.exe
+audiodg.exe
+SearchProtocolHost.exe
+SearchFilterHost.exe
+exeA66A.tmp
+svchost.exe
+backgroundTaskHost.exe
+RuntimeBroker.exe
+RobloxPlayerBeta.exe
+Bloxstrap.exe
+RobloxCrashHandler.exe
+svchost.exe
+HxTsr.exe
+
+[Software]
+7-Zip 24.08 (x64) - 24.08
+Genshin Impact - 5.8.0
+HoYoPlay - <ip>
+Limbus Company
+Kingdom: Classic
+WinRAR 6.20 (64-bit) - 6.20.0
+Microsoft .NET Runtime - 6.0.31 (x64) - 48.124.15198
+Microsoft .NET Host FX Resolver - 9.0.4 (x64) - 72.16.31125
+Microsoft Update Health Tools - <ip>
+Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.42.34438 - 14.42.34438
+Microsoft .NET Host - 8.0.11 (x64) - 64.44.23191
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.4148 - 9.0.30729.4148
+ExitLag version 5.15.1 - 5.15.1
+Microsoft .NET Host - 6.0.31 (x64) - 48.124.15198
+Windows PC Health Check - 3.6.2204.08001
+Microsoft Windows Desktop Runtime - 9.0.4 (x64) - 72.16.31142
+Node.js - 22.12.0
+Microsoft .NET Runtime - 9.0.4 (x64) - 72.16.31125
+Microsoft .NET Host FX Resolver - 6.0.31 (x64) - 48.124.15198
+Microsoft .NET Runtime - 8.0.11 (x64) - 64.44.23191
+Microsoft .NET Host - 9.0.4 (x64) - 72.16.31125
+Update for x64-based Windows Systems (KB5001716) - <ip>
+Microsoft Windows Desktop Runtime - 8.0.11 (x64) - 64.44.23253
+UE4 Prerequisites (x64) - <ip>
+Microsoft Visual C++ 2010  x64 Redistributable - 10.0.30319 - 10.0.30319
+Microsoft Visual C++ 2022 X64 Additional Runtime - 14.42.34438 - 14.42.34438
+Microsoft GameInput - 10.1.26100.6879
+Microsoft Windows Desktop Runtime - 6.0.31 (x64) - 48.124.15242
+Microsoft .NET Host FX Resolver - 8.0.11 (x64) - 64.44.23191
+Dolby Audio X2 Windows API SDK - <ip>
+TikTok - 1.0
+Bloxstrap - 2.10.0
+Amazon Appstore - release-<ip>.208039.0_335610
+jujutsuphanpara - 2.4.2
+Delta Force - <ip>
+Discord - 1.0.9161
+Microsoft OneDrive - 25.216.1104.0002
+Opera Stable 125.0.5729.15 - 125.0.5729.15
+Roblox Player for USER
+Roblox Studio for USER

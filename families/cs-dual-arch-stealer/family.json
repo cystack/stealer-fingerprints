@@ -1,0 +1,42 @@
+{
+  "id": "cs-dual-arch-stealer",
+  "name": "CSDualArchStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSDualArchStealer is a CyStack-coined identifier for a minimal\n6-field `Info.txt` panel with a bare `System Information:`\nsection header and dual `Process Architecture:` + `OS\nArchitecture:` fields. Observed inside `@BRADMAX 12000\nFEB-MARCH.part1.rar` at `@BRADMAX <count>\n<MONTHS>/[<CC>]@BRADMAX (<N>)/ Info.txt` victim folders (e.g.\n`[UN]@BRADMAX (140)/ Info.txt`).\n\nThe body ships exactly seven lines: a section-header line\n`System Information:` followed by six `Key: Value` fields.\nEach field maps directly to a .NET `Environment` class\nproperty: `OS:` (WMI or\n`Environment.OSVersion.VersionString`), `Machine Name:`\n(`Environment.MachineName`), `User Name:`\n(`Environment.UserName`), `Current Directory:`\n(`Environment.CurrentDirectory`), `Process Architecture:`\n(`Environment.Is64BitProcess` rendered as `x64` / `x86`), `OS\nArchitecture:` (`Environment.Is64BitOperatingSystem` rendered\nas `x64` / `x86`). The `Current Directory` value in the\nobserved sample points at PowerShell as the execution context\n(`C:\\Windows\\system32\\WindowsPowerShell\\v1.0`), suggesting a\nPowerShell-based dropper chain.\n\nExtremely minimal - no hardware inventory, no identity fields\nbeyond hostname and short-username, no timestamps. The panel\nis a small .NET Environment-query snapshot rather than a full\nstealer log.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping. Public reporting and community\ncatalogues do not attest a family emitting exactly this\n6-field layout with the dual architecture pair.",
+  "aliases": [
+    "Dual-Architecture .NET Environment Info.txt",
+    "BRADMAX minimal System Information panel"
+  ],
+  "typical_targets": [
+    "OS caption (Windows edition)",
+    "Machine name (Environment.MachineName)",
+    "OS user short-login (Environment.UserName)",
+    "Current working directory (Environment.CurrentDirectory)",
+    "Process bitness (Environment.Is64BitProcess)",
+    "OS bitness (Environment.Is64BitOperatingSystem)"
+  ],
+  "detection_notes": "Fingerprint requires five line-anchored keys:\n`System Information:` bare section header AND\n`Machine Name:` AND `Current Directory:` AND\n`Process Architecture:` AND `OS Architecture:`. The\ndual architecture pair with these exact key spellings\nis unique across the registered parsers. During\ntriage, the `Current Directory` value often carries\nthe dropper execution context (PowerShell interpreter\ndirectory in the observed sample); pivot to that path\nto identify the parent process. The sibling\n`CSTop20ProcStealer` (iter #11) also uses .NET\n`Environment` class properties but emits them as\n`64-bit OS: True` / `64-bit Process: False` boolean\nform under different section headers.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1083",
+      "name": "File and Directory Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-top20-proc-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": []
+}

@@ -1,0 +1,31 @@
+==== RL STEALER ==== 
+⏰ Date => 07-23-2025 7:44
+💻System => Windows 10 Pro (64 Bit)
+👤 User =<USER>
+🆔 PC =<HOST>
+🏴 Country => [India]
+🔍 IP =<IP>
+📝 Language => 🇮🇳 en-IN
+🔓 Antivirus => Windows Defender.
+ ===={ User Data }====
+📂 FileGrabber => 17
+📦 Telegram => ✅
+💸 Wallets => ❌
+💬 Discord => ❌
+📡 FileZilla: ❌
+ VimeWorld => ❌
+ ===={ VPN }====
+ ∟ NordVPN => ❌
+ ∟ OpenVPN => ❌
+ ∟ ProtonVPN => ❌
+ ===={ Browsers Data }====
+🗝 Passwords =<SECRET>
+🕑 History => 1583
+🍪 Cookies =<SECRET>
+📝 AutoFills => 453
+💳 CC => 0
+ ===={ Gaming }====
+ 🎮 Steam => ❌
+ ==================
+ DOMAINS DETECTED:
+ - github.com

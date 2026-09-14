@@ -1,0 +1,77 @@
+{
+  "id": "cs-emoji-info-stealer",
+  "name": "CSEmojiInfoStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSEmojiInfoStealer is a CyStack-coined identifier for a\nnineteen-line `Information.txt` panel summary where every\nvisible field carries a leading Unicode emoji glyph, observed\ninside `!! 2025 OCT.part01.rar`-style aggregator packs in\n`<id>_<CC>_<IPv4>_<DD-MM-YY>/Information.txt` victim folders\n(e.g. `1121_CH_<IPv4>_18-10-25/`). The body opens with a\nthree-line victim header (`🖥️ User:`, `🌐 IP:`, `📋 OS Name:`\ncarrying Python's `platform.platform()` dash-joined string),\nsix single-line counts (`🍪 Cookies:`, `🔒 Passwords:`, `📖\nHistory:`, `📚 Bookmarks:`, `📦 Extensions:`, `💳 Cards:`), and\ncloses with three free-form section blocks (`📁 Other\napplications:`, `💸 Crypto wallets:`, `📝 Grabbed files:`) that\nuse the literal placeholders `No wallets found` and `No\ngrabbed files found` when empty.\n\nThe `platform.platform()` OS-string format points at a\nPython-built grabber, and the emoji-on-every-field convention\nplus the `📝 Grabbed files:` section header is the panel's\ndeveloper-side quirk. Family attribution is provisional\npending a published threat-intel mapping for this exact field\nset. The closest documented relative is PupkinStealer, which\nalso uses emoji-prefixed fields but ships a different label\nset (`🔸 PC:`, `🆔 SID:`, `🔐 Found passwords:`, `📷 Screenshot:`,\n`📂 Desktop files:`) and a `Coded by Ardent` watermark not seen\nhere.",
+  "aliases": [
+    "!! 2025 OCT aggregator emoji-prefixed panel summary"
+  ],
+  "typical_targets": [
+    "Browser saved credentials, cookies, history, bookmarks (counts only)",
+    "Browser autofill and credit-card data (count flag)",
+    "Browser extensions (count flag)",
+    "Other applications of interest (per-victim list)",
+    "Crypto wallet extensions and desktop clients (per-victim list)",
+    "Grabbed user files (per-victim list)"
+  ],
+  "detection_notes": "Fingerprint requires the `📝 Grabbed files:` substring (the\nmemo-emoji-prefixed section header is the disambiguator -\n`Grabbed files` is unusual phrasing not used by\nPupkinStealer or the other emoji-prefixed grabbers\nsurveyed) plus three line-anchored header keys\n`🖥️ User: `, `🌐 IP: `, `📋 OS Name: `. The `🖥️` glyph\ncarries Python's variation selector U+FE0F that must be\npreserved in source code. During triage, treat the family\nattribution as unknown: the panel summary lacks any\nharvested credential bodies, and the underlying stealer\ncannot be identified from the summary fields alone.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-browers-stealer",
+    "csgads-panel-stealer"
+  ],
+  "sources": [],
+  "related_external": [
+    "pupkinstealer"
+  ],
+  "variants": [
+    {
+      "id": "v_0d792db01a0756f7e24d1c85651bfea1",
+      "parser": "logmine.ioc.parsers.cs_emoji_info_stealer.CSEmojiInfoStealerParser",
+      "filenames": [
+        "Information.txt",
+        "System.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "📝 Grabbed files:"
+      ],
+      "fields": [
+        "🌐 IP",
+        "📋 OS Name",
+        "🖥️ User"
+      ],
+      "observations": 5414,
+      "sample": {
+        "path": "samples/v_0d792db01a0756f7e24d1c85651bfea1/sample.txt",
+        "sha256": "00c1d34544696aa93c8919692d5f642d64d15d0456cf894b1ef25537032dadef",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

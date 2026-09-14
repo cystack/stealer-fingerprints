@@ -1,0 +1,55 @@
+{
+  "id": "rise-pro",
+  "name": "RisePro",
+  "classification": "known_family",
+  "attribution_confidence": "medium",
+  "description": "RisePro is a C++ info-stealer first documented in December\n2022 and re-covered in 2023 when PrivateLoader began\nredropping updated builds. A 2024 `gitgub` campaign writeup\ncatalogued RisePro v1.6 with FNV-1A dynamic import resolution,\nXOR-obfuscated stack strings, TCP port 50500\ncommand-and-control, and Base64-encoded ZIP exfiltration to\nTelegram bot channels. Functionally it resembles Vidar:\nbrowser credential grab, wallet grab, and a `brute.txt`\npassword aggregate for downstream brute-forcing.\n\nThe log this parser claims is not native RisePro output. It is\nemitted by an in-house Python normalizer that a Telegram log\nbroker runs over raw stealer output before redistribution. The\ntool writes leading-space `Key: Value` fields, a pipe-joined\n`Single-line params:` hardware summary, an `Original file:`\nreference to the operator working folder, and a `Source:\nIP-API (https://ip-api.com/)` geolocation attribution line.\nThe tool self-declares the family via a `Stealer:` field; here\nit points at RisePro. The BRADMAX_CLOUD sibling parser handles\nthe same wrapper when the tool cannot fingerprint the\nunderlying stealer (`Stealer: Unknown`).",
+  "aliases": [
+    "RisePro Stealer"
+  ],
+  "typical_targets": [
+    "Browser saved credentials, cookies, autofill",
+    "Crypto wallet extensions and desktop clients",
+    "Discord and Telegram session data",
+    "System hardware, locale, and installed-software inventory",
+    "Password aggregate for offline brute-forcing (`brute.txt`)"
+  ],
+  "detection_notes": "High-confidence trigger for the normalized wrapper: line-anchored ` Stealer: RisePro` (leading space) plus ` Original\nfile:` plus ` Source: IP-API (https://ip-api.com/)`. Attribution\nto RisePro runs through the normalizer tool, so triage should\ncross-check the raw-log fingerprint (TCP port 50500 traffic,\n`brute.txt` in the archive, RISEPRO banner in `password.txt`)\nbefore pivoting on the family label. Native RisePro panels do\nnot credit their geolocation data source; the `Source: IP-API`\nline is the wrapper-tool tell.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1119",
+      "name": "Automated Collection"
+    }
+  ],
+  "related_families": [
+    "vidar",
+    "steal-c"
+  ],
+  "sources": [
+    "https://www.sekoia.com/blog/new-risepro-stealer-distributed-by-the-prominent-privateloader",
+    "https://blog.gdatasoftware.com/2024/03/37885-risepro-stealer-campaign-github",
+    "https://flashpoint.io/blog/risepro-stealer-and-pay-per-install-malware-privateloader/",
+    "https://www.pcrisk.com/removal-guides/25589-risepro-stealer"
+  ],
+  "variants": []
+}

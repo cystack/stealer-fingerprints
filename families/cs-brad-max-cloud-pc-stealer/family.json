@@ -1,0 +1,39 @@
+{
+  "id": "cs-brad-max-cloud-pc-stealer",
+  "name": "CSBradMaxCloudPCStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSBradMaxCloudPCStealer is a CyStack-coined identifier for a\nbare-key flat `Key: Value` `Information.txt` shape distributed\nthrough the @BRADMAX_CLOUD Telegram channel. The file ships\nthe aBradMax Figlet banner inside a `*`-bordered frame with\nthe `Telegram: https://t.me/BRADMAX_CLOUD` watermark, then a\nflat body of bare `Key: Value` lines (no dash prefix, no\n`Name` suffix on the `PC` / `User` keys). The field set covers\nPC, User, Workgroup, ComputerNameDnsHostname,\nComputerNameNetBIOS, OS Version, HWID, Screen Resoluton (sic),\nLanguage, CPU Name, GPU, Physical Installed Memory, IP\nAddress, and Country.\n\nThe COMPUTER_NAME_FORMAT-enum-derived labels\n(`ComputerNameDnsHostname`, `ComputerNameNetBIOS`) plus the\n`Physical Installed Memory` field name point to a .NET builder\niterating Windows enum values verbatim, but no public\nreporting or community catalog documents this exact field-set\nwith the `Screen Resoluton` operator typo. Family attribution\nis provisional pending a published threat-intel mapping for\nthis layout.",
+  "aliases": [
+    "BRADMAX_CLOUD bare-key Information.txt slice",
+    "BRADMAX flat PC User HWID Screen Resoluton variant"
+  ],
+  "typical_targets": [
+    "Host hardware and OS fingerprint (CPU, GPU, RAM, screen,\nHWID, OS version)",
+    "Network identity (IP address, country, language)",
+    "Account identity (Windows username, computer name pair,\nworkgroup)"
+  ],
+  "detection_notes": "Fingerprint requires both the\n`https://t.me/BRADMAX_CLOU` URL prefix (the loosened\nprefix tolerates the known panel-render bug that fuses\nthe URL with adjacent lines mid-word at the channel-name\nsuffix) and the line-anchored `Screen Resoluton:`\noperator-typo literal. The typo is the load-bearing\ndisambiguator: no other surveyed stealer family emits a\n`Resoluton` (sic) key, and the URL pin confirms the\nBRADMAX_CLOUD redistributor portfolio. During triage,\ntreat the underlying stealer family as unattributable\nand rely on the channel + panel_brand metadata to bucket\nsamples for analyst review. Companion files in the\nvictim folder (browser dumps, wallet exports) may\ntrigger more confident attributions through their own\nfamily detectors.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "dc-rat",
+    "lumma",
+    "mars-stealer",
+    "cs-brad-max-cloud-parsed-stealer",
+    "cs-brad-max-cloud-banner-only-stealer"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADMAX_CLOUD"
+  ],
+  "variants": []
+}

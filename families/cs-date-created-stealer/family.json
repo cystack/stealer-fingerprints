@@ -1,0 +1,42 @@
+{
+  "id": "cs-date-created-stealer",
+  "name": "CSDateCreatedStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSDateCreatedStealer is a CyStack-coined identifier for a\n5-line `URL` / `Username` / `Password` / `Date Created` /\n`Application` cred-file format distributed inside `!! 2025\nNOV.part001.rar` `@BRADLOGS / BRADMAX` aggregator packs in\n`[<TAG>]<IP>/Pass/Pass.txt` victim folders. The per-entry\n`Date Created:` creation-timestamp line wedged between\n`Password:` and `Application:` is the disambiguating signal:\nno other registered cred-file shape includes a per-credential\ncreation timestamp.\n\nThe `Date Created:` value uses a US-locale `M/D/YYYY, H:MM:SS\nAM/PM` format. The `Application:` line carries a bare\nbrowser-profile name (`Default`, `Profile 2`) with no\nbracketed annotation (distinct from `CSAppProfileStealer`,\nwhich uses `Application: Chrome [Profile: Default]`). Records\nare separated by a blank line. The panel preserves\nChrome-synced Android-app credential URLs in the\n`android://<base64>@com.<pkg>/` form alongside HTTPS desktop\nURLs, indicating the underlying stealer reads Chromium's\n`Login Data` SQLite directly rather than filtering by URL\nscheme. Family attribution is provisional pending a published\nthreat-intel mapping for this layout. The format resembles the\npublicly documented PXA Stealer Vietnamese-targeting cred\ndumps (PXA targets Chromium and Android credentials), but no\npublic write-up shows a sample log with the verbatim 5-line\n`Date Created:` layout.",
+  "aliases": [
+    "BRADMAX Pass.txt with Date Created field",
+    "5-line URL/Username/Password/Date Created/Application block"
+  ],
+  "typical_targets": [
+    "Browser-saved credentials (URL, username, password)",
+    "Source browser profile name (`Default` / `Profile <n>`)",
+    "Per-credential creation timestamp from `Login Data` SQLite",
+    "Chrome-synced Android app credentials (`android://` package URLs)"
+  ],
+  "detection_notes": "Fingerprint requires 3+ consecutive 5-line blocks matching\n`URL: / Username: / Password: / Date Created: / Application:`.\nThe `Date Created:` line is the disambiguator: it does not\nappear in any other registered cred-file shape. During triage,\ntreat the family attribution as unknown: the underlying\nstealer that produces the cred dump has not been mapped to\nthis exact 5-line layout in any public reporting. The\nstructural overlap with PXA Stealer targeting (Chromium plus\nAndroid credentials) is suggestive but not confirmed.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [
+    "pxa-stealer",
+    "cs-app-profile-stealer",
+    "cs-passwords-not-found-stub"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": []
+}

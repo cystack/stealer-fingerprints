@@ -1,0 +1,74 @@
+{
+  "id": "cs-count-core-stealer",
+  "name": "CSCountCoreStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSCountCoreStealer is a CyStack-coined identifier for a\nfifteen-line `Information.txt` panel summary that opens with a\n`🔐 Passwords Count: <n>` banner and a `⚙ System Information:`\nheader, then ships a keyed field block carrying NodeJS `os`\nmodule values. Observed inside `!! 2025 OCT.part01.rar`-style\naggregator packs in `<id>_<CC>_<IPv4>_<DD-MM-YY>/` victim\nfolders (e.g. `1273_UN_<IPv4>_16-10-25/`). The keyed\nblock carries `Mac:`, `Gpu:`, `Cpu:`, `Uuid:`, `Hostname:`,\n`User Info:`, `IP Address:`, `Version:`, `Type:`, `Arch:`,\n`Release:`, `Count Core:`, `File Location:`. Multi-GPU systems\nput the second GPU name on its own line after `Gpu:` with no\nkey prefix.\n\nThe NodeJS `os` module fingerprint is unmistakable: `Type:\nWindows_NT` is the `os.type()` literal, `Arch: x64` is\n`os.arch()`, `Release: 10.0.22631` is `os.release()`, and\n`Count Core: 8` is the transposed phrasing for\n`os.cpus().length`. The transposed `Count Core` plus the `User\nInfo:` label (rather than `Username:`) is the panel's\ndeveloper-side quirk. Family attribution is provisional\npending a published threat-intel mapping for this exact\ncaption format. The closest publicly documented JavaScript /\nNodeJS infostealer candidates - Celestial Stealer, Bizfum\nStealer, Wish Stealer - do not publish a matching caption\nformat in their write-ups.",
+  "aliases": [
+    "!! 2025 OCT aggregator NodeJS-os panel summary"
+  ],
+  "typical_targets": [
+    "Browser saved credentials (count flag plus harvested body in sibling files)",
+    "Host metadata: MAC address, hardware UUID, hostname",
+    "Hardware inventory: CPU model, GPU list",
+    "OS fingerprint: NodeJS os.type/arch/release plus friendly Windows version",
+    "Victim public IP",
+    "Stealer install path under `C:\\WINDOWS\\System32`"
+  ],
+  "detection_notes": "Fingerprint requires the line-anchored `Count Core:` key (the\ntransposed phrasing is the disambiguator - no other registered\nparser keys on it) plus the `Type: Windows_NT` NodeJS\n`os.type()` literal. Together the pair cannot collide with\nother registered formats. During triage, treat the family\nattribution as unknown: the panel summary is the metadata view\nof a JavaScript / NodeJS infostealer whose canonical name has\nnot been mapped to this caption layout in any public\nreporting.",
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "related_families": [
+    "cs-emoji-info-stealer",
+    "cs-new-log-stealer"
+  ],
+  "sources": [],
+  "related_external": [
+    "celestial-stealer"
+  ],
+  "variants": [
+    {
+      "id": "v_1021cf33442dd3c624bed4d2c8af05e8",
+      "parser": "logmine.ioc.parsers.cs_count_core_stealer.CSCountCoreStealerParser",
+      "filenames": [
+        "Information.txt",
+        "System.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [],
+      "fields": [
+        "Count Core",
+        "User Info"
+      ],
+      "observations": 23809,
+      "sample": {
+        "path": "samples/v_1021cf33442dd3c624bed4d2c8af05e8/sample.txt",
+        "sha256": "080b0b0dc3db8d919c1b220daf009b2acf5aa9ffd0d0e64b9ebe91821f663870",
+        "source": "logmine_runtime",
+        "sanitized": true
+      }
+    }
+  ]
+}

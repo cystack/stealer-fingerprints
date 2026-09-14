@@ -1,0 +1,30 @@
+{
+  "id": "cs-bld-stealer",
+  "name": "CSBldStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSBldStealer is a CyStack-coined identifier for a flat\nbare-key ``system.txt`` slice with a distinctive short-form\nfield vocabulary: ``BLD:`` build tag, ``UUID:`` machine UUID,\n``PC Name:`` computer name, ``User:`` username, ``AD:`` admin\nflag (``+`` / ``-`` sentinel), ``CPU`` / ``GPU`` / ``RAM`` /\n``Resolution``, ``System lang:`` UI-language (short-form\n``lang``), ``System TimeZone:`` bare-offset key, ``OS:``,\n``AV:``, plus a trailing ``Programs:`` installed-software\nblock.\n\nThe short-form abbreviations (``BLD`` / ``AD`` / ``System\nlang``) do not appear in any public reporting or community\ncatalog. The panel could be a new .NET stealer, a rebrand of\nan existing family, or a private-panel build. Family\nattribution is provisional pending a published threat-intel\nmapping for this layout.",
+  "aliases": [
+    "BLD short-form panel",
+    "System lang / System TimeZone abbreviated variant"
+  ],
+  "typical_targets": [
+    "Host hardware and OS fingerprint (CPU, GPU, RAM,\nresolution, Windows version, UUID)",
+    "Account identity (Windows username, computer name, admin\nflag)",
+    "Installed software inventory (per-program name plus\nversion)"
+  ],
+  "detection_notes": "Fingerprint requires three line-anchored short-form\nlabels together: ``BLD:``, ``System lang:``, and\n``System TimeZone:``. The three abbreviations rarely\nco-occur outside this panel template; requiring all\nthree keeps a stray document mentioning only ``BLD:``\nin prose from mis-claiming. During triage, treat the\nunderlying stealer family as unattributable and rely\non the parent-folder shape (``<CC> <IPv4> <YYYY-MM-DD>\n<HH-MM-SS>``) as the correlation anchor. Companion\nfiles (browser exports, wallet artifacts, cookie dumps)\nmay trigger more confident attributions through their\nown family detectors.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "variants": []
+}

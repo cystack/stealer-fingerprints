@@ -1,0 +1,41 @@
+Amnesia got a new victim: <USER>
+
+IP Info
+
+IP: <IP>
+Region: <LOCATION>
+Country: Nigeria
+Timezone: Africa/Lagos
+
+Cellular Network:    ✅
+Proxy/VPN:           ❎
+
+System Info
+Computer Name: <HOST>
+Computer OS: Microsoft Windows 11 Pro
+Total Memory: 8 GB
+UUID: <HWID>
+CPU: Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
+GPU: Intel(R) HD Graphics 515
+Product Key: <SECRET>
+
+Grabbed Info
+Discord Accounts : 0
+Passwords : <SECRET>
+Cookies : <SECRET>
+History : 2089
+Autofills : 208
+Roblox Cookies : 0
+Telegram Sessions : <SECRET>
+Common Files : 1
+Wallets : 0
+Wifi Passwords : <SECRET>
+Webcam : 1
+Minecraft Sessions : <SECRET>
+Epic Session : <SECRET>
+Steam Session : <SECRET>
+Uplay Session : <SECRET>
+Battle.Net Session : <SECRET>
+Growtopia Session : <SECRET>
+Screenshot : Yes
+System Info : Yes

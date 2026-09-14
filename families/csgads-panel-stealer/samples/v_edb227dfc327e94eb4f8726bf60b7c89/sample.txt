@@ -1,0 +1,7 @@
+NguyenBang Stealer
+IP: <IP>
+Country: EG - Egypt
+User: <USER>
+Antivirus: Windows Defender
+Browser Data: CK: 262|PW: 14|AF: 31|CC: 0
+RuntimeExecption: 0

@@ -1,0 +1,32 @@
+  ___           _      ___             _        _   ___    _ _____ 
+ |   \ __ _ _ ___  / __|_ _ _  _ ___ __ _ | _ \  /_\_   _|
+ ) / _` | '_| / / | (__| '_| (_-<  _/ _`  |   / / _ \  
+ |___/\__,_|__\_\  \___|_|  \_, /__/\__\__,_|__|_\/_/ \_\_|  
+                               |__/                                
+———————————————————————————————————————
+PC Name: <HOST>
+User Name: <USER>
+Windows: Windows 10 Enterprise 64 Bit
+CPU Name: AMD Ryzen 5 3600 6-Core Processor               (AMD64 Family 23 Model 113 Stepping 0)
+CPU Cores: 6 (12)
+GPU Name: NVIDIA GeForce RTX 3060 (12 GB)
+GPU Mode: 1920 x 1080 x 4294967296 cores
+Motherboard: ASUSTeK COMPUTER INC. TUF GAMING A520M-PLUS (<CARD>)
+BIOS: 2423 (ALASKA - 1072009)
+Antivirus: Windows Defender
+Firewall: Unknown
+RAM: 15,91 GB
+LANIP: <ip>
+
+.NET Framework Version: 4.8+
+Path: <redacted>
+
+IP: <IP>
+City: <LOCATION>
+Country Code: BR
+Location: <LOCATION>
+
+Monitors: 
+\\<HOST>\DISPLAY1 @ 1920x1080
+
+Save Time: 05.03.2023 16:30

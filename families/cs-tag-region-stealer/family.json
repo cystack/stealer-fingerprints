@@ -1,0 +1,30 @@
+{
+  "id": "cs-tag-region-stealer",
+  "name": "CSTagRegionStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSTagRegionStealer is a CyStack-coined identifier for a\nstripped 9-line `system.txt` panel whose most distinctive\nfeature is a mid-file key-spacing transition. The first five\nfields use the tight `Key: Value` shape (`Core:`, `Video:`,\n`RAM:`, `Screen:`, `OS:`), and the trailing four fields use\nthe loose `Key : Value` shape with a space before the colon\nand all-lowercase key names (`name :`, `tag :`, `ip :`,\n`region :`). The transition suggests a builder that\nconcatenates two separately-generated blocks: a hardware\ninventory followed by an identity plus geolocation block.\n\nThe panel emits no ASCII-art banner and no watermark. The `tag\n:` field carries the operator affiliate or build identifier\nwhen set (empty in the sample that produced this parser,\nindicating a default no-tag build). The `region :` field\ncarries a slash-separated `Country/Subdivision/City` triple\nwith the full country name (not ISO 3166-1 alpha-2) as the\nfirst token; the schema drops the country slot rather than\nemit a bogus ISO code because the project does not maintain a\nname-to-code mapping table.\n\nObserved inside a generic `<N MONTH> - <count> LOGS`\naggregator archive with victim folders shaped as\n`[<IPv4>]<hostname>{<MachineGuid>}/system.txt`. The aggregator\nnaming does not identify a specific Telegram channel.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and\ncommunity catalogues return no hits for the `Core:` / `Video:`\n/ `Screen:` label combination or for the space-around-colon\nlowercase `tag :` / `region :` pair. Rename the family\nconstant when a public writeup identifies the underlying\nbuilder.",
+  "aliases": [],
+  "typical_targets": [
+    "System hardware and geolocation fingerprint (CPU, GPU,\nRAM, screen resolution, OS, hostname, IP, region)",
+    "The parser only extracts the summary system.txt fields;\nsibling parsers claim any credential files in the\nvictim folder"
+  ],
+  "detection_notes": "Line-anchored `Core:` (rather than `CPU:` / `Processor:`)\nplus line-anchored `tag :` and `region :` (both space-around-colon lowercase) is the three-anchor fingerprint.\nThe mid-file key-spacing transition is the strongest\nstylistic tell. During triage, treat the `tag :` value\nas the operator build or affiliate identifier and\ncorrelate across samples: multiple logs sharing the\nsame tag value likely originate from the same build.\nThe `region :` value carries the full-name country and\na slash-separated `Country/Subdivision/City` triple\nsuitable for coarse geolocation correlation.",
+  "attack_techniques": [
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    }
+  ],
+  "related_families": [],
+  "sources": [],
+  "variants": []
+}

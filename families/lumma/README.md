@@ -1,78 +1,172 @@
 # Lumma
 
-**Known malware family · high attribution confidence**
+Lumma C2 (LummaC2) logs. The panel writes `System.txt` with a
+YAML-like dash-prefix list (`- LummaC2 Build:`,
+`- Configuration:`, etc.) and a distinctive `(sig:UNIX.HEX)`
+signature on the `Time:` line. Build banners reference the
+`@lummanowork` channel; the panel is sold MaaS via
+`@lummamarketplace_bot`.
 
-## At a glance
+## Research status
 
-- Aliases: <code>Lumma Stealer</code>, <code>LummaC2</code>
-- Typical filenames: <code>information.txt</code>, <code>system.txt</code>, <code>system_info.txt</code>, <code>userinformation.txt</code>
-- Published formats: 1
-- Representative samples: 4
+- Classification: **Known malware family**
+- Attribution confidence: **high**
+- Aliases: `LummaC2`, `Lumma Stealer`
+- Variants observed: **6**
+- Historical Logmine records represented: **776,374**
 
-<p>Lumma logs are recognized across <code>information.txt</code>, <code>system.txt</code>, <code>system_info.txt</code>, and <code>userinformation.txt</code> by shared fields including <code>LummaC2 Build</code>, <code>LID</code>, <code>HWID</code>, and CPU details. The observed <code>Time</code> value ends with a <code>(sig:&lt;UNIX&gt;.&lt;hex&gt;)</code> marker.</p>
+## What it targets
 
-## How to recognize it
+- Browser saved credentials, cookies, autofill
+- Crypto wallet extensions (focus on MetaMask, Phantom, and similar)
+- Steam, Telegram, Discord session tokens
+- 2FA seeds from Authy and similar desktop clients
+- Cryptocurrency seed phrases harvested from text files
 
-- No stable text banner is known; combine filename and field layout.
-- Recurring fields: <code>computer</code>, <code>country</code>, <code>cpu cores</code>, <code>cpu name</code>, <code>cpu threads</code>, <code>cpu vendor</code>, <code>display resolution</code>, <code>elevated</code>, <code>hwid</code>, <code>ip address</code>, <code>language</code>, <code>lid</code>, <code>lummac2 build</code>, <code>netbios</code>, <code>path</code>, <code>ram size</code>, <code>time</code>, <code>user</code>
+## Detection notes
 
-## Formats
+High-confidence trigger: the `(sig:UNIX.HEX)` parenthesised
+signature on the `- Time:` line. Together with the
+`- LummaC2 Build:` banner this is unambiguous Lumma. Several
+derivative families (Remus, AL Stealer, BabaStealer,
+ArtHouseCloud, CashFlow) share the dash-prefix shape but lack
+the signature; they should be tracked separately.
 
-| Format | Evidence | Fingerprint |
-|---|---|---|
-| information.txt - computer / country | 18 fields, filename | [`fp_f2587b8d87e3afad9a2323ce6884fe56`](fingerprints/fp_f2587b8d87e3afad9a2323ce6884fe56.json) |
+## Observed log variants
 
-## Representative sample
+### `v_098b5cb9b92999ab2453a165215e61e1`
 
-Some files below intentionally share the same sanitized body under different malware-visible names. They document filename variants, not independent payload observations.
+- Parser: `logmine.ioc.parsers.cs_brad_logs_stealer.CSBradLogsStealerParser`
+- Observed filenames: `System.txt`
+- Panel brand: `BRADMAX`
+- Distribution channel: `@BRADLOGS`
+- Attribution confidence: **high**
+- Historical records represented: **7,369**
+- Representative sample: [open sample](samples/v_098b5cb9b92999ab2453a165215e61e1/sample.txt)
+- Sample SHA-256: `f6ae0c9fd19239a2f3275a95e5769ea0c26079b999e4d9cd37d23e5be2f84ea4`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-Observed text sample. Placeholders mark values removed from the original log.
+Recognition anchors:
 
-[<code>information.txt</code>](samples/information.txt)
+- Stable markers: `- @BRADLOGS`, `- Date : Build:`, `BRADMAX`
+- Field labels: -
 
-```text
--- [redacted-url] | [redacted-url] |@BRADMAXCLOUD_BOT
--- [redacted-url] | [redacted-url] |@BRADMAXCLOUD_BOT
--- [redacted-url] | [redacted-url] |@BRADMAXCLOUD_BOT
+### `v_41473f829c21e719f7d2c773a67ed897`
 
-LummaC2 Build: Jun  8 2025
-Path: [redacted]
-OS Version: Windows 10 Home (10.0.19045) x64
-Local Date: 10.06.2025 [redacted]
-Time Zone: UTC+2
-Install Date: 01.01.1970 [redacted]
-Elevated: false
-Computer: [redacted]
-User: [redacted]
-Domain: [redacted]
-Hostname: [redacted]
-NetBIOS: [redacted]
-Language: de-DE
-HWID: [redacted]
-RAM Size: 16384MB
-CPU Vendor: AuthenticAMD
-CPU Name: AMD Ryzen 5 3400G with Radeon Vega Graphics    
-CPU Threads: 8
-CPU Cores: 1
-Display resolution: 1920x1080
-IP Address: [redacted]
-Time: 10.06.2025 [redacted] (sig:<UNIX>.<hex>)
-Country: [redacted]
-LID: yau6Na--7411681655
-```
+- Parser: `logmine.ioc.parsers.cs_brad_logs_stealer.CSBradLogsStealerParser`
+- Observed filenames: `System.txt`
+- Panel brand: -
+- Distribution channel: `@BRADLOGS`
+- Attribution confidence: **high**
+- Historical records represented: **206**
+- Representative sample: [open sample](samples/v_41473f829c21e719f7d2c773a67ed897/sample.txt)
+- Sample SHA-256: `d01c724db8109b2834104f87e4b4cd1ed91ce1208ebefc7cd4b1519f9787005f`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-Other samples: [<code>system.txt</code>](samples/system.txt), [<code>system_info.txt</code>](samples/system_info.txt), [<code>userinformation.txt</code>](samples/userinformation.txt)
+Recognition anchors:
 
-## References
+- Stable markers: `- @BRADLOGS`
+- Field labels: -
 
-- [https://www.cloudflare.com/cloudforce-one/research/loot-load-repeat-dissecting-the-lumma-stealer-playbook/](https://www.cloudflare.com/cloudforce-one/research/loot-load-repeat-dissecting-the-lumma-stealer-playbook/)
+### `v_7682ef5532c87a9cc6598dd189ef2ae5`
 
-## Try it locally
+- Parser: `logmine.ioc.parsers.lumma.LummaParser`
+- Observed filenames: `System.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `legacy-lummac2-build`
+- Historical records represented: **3**
+- Representative sample: [open sample](samples/v_7682ef5532c87a9cc6598dd189ef2ae5/sample.txt)
+- Sample SHA-256: `e1ee50cd83e5e442a2a04894bed6f45d4cdd5a5d938c07c1b15cc1a164a96fc6`
+- Sample provenance: Logmine runtime output, scrubbed for public use
 
-```console
-python identify.py "families/lumma/samples/information.txt"
-```
+Recognition anchors:
 
-The evidence score describes a structural comparison, not attribution certainty.
+- Stable markers: `LummaC2, Build`
+- Field labels: -
 
-<!-- Generated by tools/catalog.py from family data, fingerprints, and samples. -->
+### `v_a9b26efd5e8a2cd1d6caa141ff2fb418`
+
+- Parser: `logmine.ioc.parsers.lumma.LummaParser`
+- Observed filenames: `Information.txt`, `System.txt`, `UserInformation.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `lumma-build-banner`
+- Historical records represented: **30,637**
+- Representative sample: [open sample](samples/v_a9b26efd5e8a2cd1d6caa141ff2fb418/sample.txt)
+- Sample SHA-256: `38a2eaac0856758fb7c1c07750cd08f96c8dc746c93801a38a84b7185deefa76`
+- Sample provenance: Logmine runtime output, scrubbed for public use
+
+Recognition anchors:
+
+- Stable markers: `LummaC2 Build:`
+- Field labels: -
+
+### `v_c533cdf8c3b19c2014faa1054388e8d3`
+
+- Parser: `logmine.ioc.parsers.lumma.LummaParser`
+- Observed filenames: `Information.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `bare-hwid-cpu-display`
+- Historical records represented: **110**
+- Representative sample: [open sample](samples/v_c533cdf8c3b19c2014faa1054388e8d3/sample.txt)
+- Sample SHA-256: `818614ea003ee14409b1ee491b0ba452f8c36ae21da4983e41f3b6b223dced8b`
+- Sample provenance: Logmine runtime output, scrubbed for public use
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `CPU Vendor`, `Display resolution`, `HWID`
+
+### `v_db24fff43a757db95bdc275cd0470dea`
+
+- Parser: `logmine.ioc.parsers.lumma.LummaParser`
+- Observed filenames: `Information.txt`, `System.txt`, `system_info.txt`, `UserInformation.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `dash-hwid-cpu-ip-display`
+- Historical records represented: **738,049**
+- Representative sample: [open sample](samples/v_db24fff43a757db95bdc275cd0470dea/sample.txt)
+- Sample SHA-256: `d34e235ef451070611fce20bf7cec44ef91798b69f201c5153a68fd7cd6e2ba3`
+- Sample provenance: Logmine runtime output, scrubbed for public use
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `CPU Vendor`, `Display resolution`, `HWID`, `IP Address`
+
+
+## MITRE ATT&CK
+
+| Technique | Name |
+|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
+| [T1119](https://attack.mitre.org/techniques/T1119/) | Automated Collection |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+
+## Related catalog profiles
+
+- [Remus Stealer](../remus-stealer/)
+- [CSALStealer](../csal-stealer/)
+- [CSBabaStealer](../cs-baba-stealer/)
+- [CSArtHouseCloudStealer](../cs-art-house-cloud-stealer/)
+- [CSCashFlowStealer](../cs-cash-flow-stealer/)
+
+## Observed distribution channels
+
+- <https://t.me/lummanowork>
+- <https://t.me/lummamarketplace_bot>
+
+## Sources
+
+- <https://www.cloudflare.com/cloudforce-one/research/loot-load-repeat-dissecting-the-lumma-stealer-playbook/>
+
+Machine-readable record: [family.json](family.json)

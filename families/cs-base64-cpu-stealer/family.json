@@ -1,0 +1,52 @@
+{
+  "id": "cs-base64-cpu-stealer",
+  "name": "CSBase64CpuStealer",
+  "classification": "cystack_named",
+  "attribution_confidence": "unknown",
+  "description": "CSBase64CpuStealer is a CyStack-coined identifier for a flat\n`UserInformation.txt` panel observed inside `@BRADMAX 21300\nAPRIL.part1.rar` Telegram aggregator packs at `@BRADMAX\n<count> <MONTH>/[<CC>]<IPv4>/UserInformation.txt` victim\nfolders. The body has a compact 13-field flat `Key: Value`\nlayout with three distinctive quirks: an `L_HWID:` field that\nduplicates the `HWID:` value in lowercase (the `L_` prefix\nappears to stand for lowercase), a `CPU Name Base64:` field\nthat base64-serialises the plain `CPU Name:` value above\n(verified: the sample string\n`SW50ZWwoUikgQ29yZShUTSkgaTctODcwMEsgQ1BVIEAgMy43MEdIeg==`\ndecodes to `Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz`), and a\npaired `Log Date:` plus `Grab Start Date:` header that records\nboth the harvest start and the panel-render time in the same\n`DD MMM YYYY HH:MM UTC[+-]H` shape.\n\nThe panel splits the IP geolocation lookup into two adjacent\nfields: `IP Location: <country name>, <city name>`\n(human-readable form) plus `IP Country Code: <ISO2>` (the\nmachine-readable alpha-2 code). The OS field uses the\nRedline-canonical typo `Operation System:` (sic, `Operation`\nrather than `Operating`), and the AV field uses the\nVidar-style plural `AVs:` key. The mix of Redline and Vidar\nspelling conventions plus the Russian-adjacent UTC+3 timezone\nin the sample points at a Russian-speaking developer who\nstudied Redline's output format but adopted some Vidar\nfield-name conventions. The redundant base64 duplicate of the\nCPU name may be a panel-side workaround for character-set\ncorruption on ASCII-hostile channels.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and the\ncommunity catalogues do not attest a family emitting exactly\nthis 13-field layout with the L_HWID / CPU Name Base64\nduplicates. Candidates ruled out: Aurora (different field\nspellings, JSON wire format), Redline / Redline-like\n(different identity preamble), Vidar (uses AV singular and has\na bracketed section header), StealC v2 (base64 lives in the\nwire protocol, not the log file), Torg Grabber, CGrabber,\nMarco Stealer, Raven Stealer.",
+  "aliases": [
+    "L_HWID + CPU Name Base64 duplicate-field panel",
+    "BRADMAX @BRADMAX-pack UserInformation.txt variant"
+  ],
+  "typical_targets": [
+    "Public IPv4 plus split human-readable and ISO2 geolocation",
+    "Machine name, OS user name",
+    "HWID (uppercase and lowercase base16 duplicates)",
+    "CPU name (plain and base64-serialised duplicates)",
+    "OS caption (with Redline-canonical `Operation` typo)",
+    "Installed antivirus product list",
+    "Log render time and grab start time"
+  ],
+  "detection_notes": "Fingerprint requires all five line-anchored keys: `L_HWID:`\nAND `CPU Name Base64:` AND `Grab Start Date:` AND `IP Country\nCode:` AND `IP Location:`. The combination is unique across\nthe registry because no other parser emits the lowercase-HWID\nduplicate, the base64-serialised CPU name, or the split\nhuman-vs-ISO2 geolocation pair. During triage, treat the\nsample as weak attribution to an unnamed private stealer that\nborrows Redline's `Operation System:` field name; if a public\nwriteup later identifies the underlying builder, rename the\nfamily constant rather than adding a duplicate parser. The\n`L_HWID` and `CPU Name Base64` duplicates are lossless copies\nof the paired plain field, so ignoring them during IOC\ncomposition loses no information.",
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1518.001",
+      "name": "Security Software Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1124",
+      "name": "System Time Discovery"
+    }
+  ],
+  "related_families": [
+    "redline",
+    "vidar"
+  ],
+  "sources": [],
+  "observed_channels": [
+    "https://t.me/BRADLOGS"
+  ],
+  "variants": []
+}
