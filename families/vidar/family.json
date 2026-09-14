@@ -5,7 +5,7 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "Vidar is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "Vidar exports a flat key/value system summary under `information.txt`, `system.txt`, or `systeminfo.txt`. The stable field set combines `GUID`, `HWID`, `Install Date`, `Work Dir`, keyboard languages, and display details.",
   "external_references": [
     {
       "url": "https://usrlnk.io/vidar"

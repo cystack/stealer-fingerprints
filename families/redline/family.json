@@ -6,7 +6,7 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "Redline is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "RedLine exports `userinformation.txt` with identity, locale, and hardware fields. The misspelled `Operation System` label is a distinctive part of the layout.",
   "external_references": [
     {
       "url": "https://flare.io/learn/resources/blog/redline-stealer-malware/"

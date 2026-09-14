@@ -1,7 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/cystack/stealer-fingerprints/schemas/candidate.schema.json",
-  "title": "Safe catalog candidate event",
+  "$id": "https://raw.githubusercontent.com/cystack/stealer-fingerprints/main/schemas/candidate.schema.json",
+  "title": "Catalog candidate event",
+  "description": "One event represents one observed filename variant and at most one representative sample. Runtime limits are 1 MiB per JSONL line, 16 MiB per stream, and 1000 candidate events per stream.",
   "type": "object",
   "additionalProperties": false,
   "required": ["event_type", "schema_version", "family", "fingerprint"],
@@ -21,13 +22,36 @@
     },
     "fingerprint": {
       "$ref": "fingerprint.schema.json#/$defs/signature",
-      "description": "Structure only. panel_brand/banner_strings are verified literals in exported text, never analyst/operator/channel labels."
+      "description": "Structure only. Every panel_brand/banner_strings literal must be evidenced by a uniquely linked representative sample, never analyst/operator/channel labels. New fingerprints declare at most one observed filename per event; submit later filenames or alternative marker layouts as separate events."
+    },
+    "sample": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["filename", "content"],
+      "properties": {
+        "filename": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 180,
+          "pattern": "^[A-Za-z0-9_ .()\\[\\]<>+-]+\\.(?:[tT][xX][tT]|[jJ][sS][oO][nN]|[lL][oO][gG]|[iI][nN][iI]|[cC][sS][vV])$",
+          "description": "Canonical safe ASCII basename; angle-bracket placeholders may represent dynamic filename segments. The runtime also rejects traversal components and reserved device names."
+        },
+        "content": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Runtime limit: 128 KiB after UTF-8 encoding."
+        }
+      },
+      "description": "Representative UTF-8 text sample for this event's one observed filename. Required for a new fingerprint or filename variant."
     }
   },
   "allOf": [
     {
       "if": {"properties": {"family": {"properties": {"classification": {"const": "known_family"}}}}},
-      "then": {"properties": {"family": {"properties": {"attribution_confidence": {"enum": ["high", "medium"]}}}}}
+      "then": {"properties": {"family": {"properties": {
+        "id": {"not": {"pattern": "^unattributed-[0-9a-f]{32}$"}},
+        "attribution_confidence": {"enum": ["high", "medium"]}
+      }}}}
     },
     {
       "if": {"properties": {"family": {"properties": {"classification": {"const": "provisional_cluster"}}}}},

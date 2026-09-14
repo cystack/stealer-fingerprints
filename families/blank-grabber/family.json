@@ -6,13 +6,10 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "Blank Grabber is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "Blank Grabber logs are recognized as `information.txt` or `system.txt` by fields such as `Cellular Network`, `Computer OS`, `Discord Accounts`, `Roblox Cookies`, and `Wifi Passwords`. The observed layout groups them under `IP Info`, `System Info`, and `Grabbed Info`.",
   "external_references": [
     {
       "url": "https://any.run/malware-trends/blankgrabber/"
-    },
-    {
-      "url": "https://github.com/Blank-c/Blank-Grabber"
     },
     {
       "url": "https://www.splunk.com/en_us/blog/security/blankgrabber-trojan-stealer-analysis-detection.html"

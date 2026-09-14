@@ -8,7 +8,7 @@
   ],
   "attribution_confidence": "medium",
   "classification": "known_family",
-  "description": "AMOS Stealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "The observed AMOS sample uses `userinformation.txt`. It opens with `MetaMask Info:` and `Debanks:`, then presents `Userinfo:` and macOS system, hardware, and display sections.",
   "external_references": [
     {
       "url": "https://cyble.com/blog/threat-actor-selling-new-atomic-macos-amos-stealer-on-telegram/"

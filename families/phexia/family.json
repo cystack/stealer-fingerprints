@@ -6,7 +6,7 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "Phexia is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "Phexia exports `userinformation.txt` with `Build`, `Hardware`, `Graphics/Displays`, `Software`, `Password`, and `IP Address` sections.",
   "external_references": [
     {
       "url": "https://cookie.engineer/weblog/articles/malware-insights-macos-phexia-stealer.html"

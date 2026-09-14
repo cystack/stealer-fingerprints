@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "unattributed-e1f953de8ad63d7d4bea246d9eafedcf",
+  "id": "fp_f5a28e8e67c516eaf71ad0aa767a7e68",
+  "quality": {
+    "independent_signal_count": 3,
+    "independent_signal_types": [
+      "marker",
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": true
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [
+      "==========PC INFO=========="
+    ],
+    "field_keys": [
+      "application",
+      "client name",
+      "country",
+      "ip",
+      "password",
+      "url"
+    ],
+    "filenames": [
+      "bot-<id>-<id>-userdata.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active"
+}

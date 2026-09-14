@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "unattributed-6d44c2a9742cfbef977562be6ed977bf",
+  "id": "fp_5b47813a4ba9ad162c1f46e18da42720",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "arch",
+      "city",
+      "country",
+      "cpu",
+      "gpu",
+      "hwid",
+      "ip",
+      "locale",
+      "os",
+      "quarantine zone",
+      "ram",
+      "region",
+      "risk",
+      "size",
+      "timezone"
+    ],
+    "filenames": [
+      "systeminfo.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active"
+}

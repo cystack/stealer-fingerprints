@@ -7,7 +7,7 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "PureLogs is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "The observed PureLogs `log.json` is a nested JSON record with top-level collection counts and `BotInfo` system, hardware, and network objects. This sample is available for manual comparison but is not an active fingerprint.",
   "external_references": [
     {
       "url": "https://any.run/malware-trends/purelogs/"

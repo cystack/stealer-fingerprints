@@ -1,0 +1,261 @@
+██╗  ██╗███████╗██╗██╗     ███████╗███████╗
+╚██╗██╔╝██╔════╝██║██║     ██╔════╝██╔════╝
+ ╚███╔╝ █████╗  ██║██║     █████╗  ███████╗
+ ██╔██╗ ██╔══╝  ██║██║     ██╔══╝  ╚════██║
+██╔╝ ██╗██║     ██║███████╗███████╗███████║
+╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝
+* Official Support Links
+* TOX ——————— C96EA8DFB780D9053728816F20901315F6284CB73B735559100696FB30B31364CE0AD357E634
+* Jabber ———— <email>
+* Links ————— [redacted-url]
+
+===== ПОДБОР ПАРОЛЕЙ К КОШЕЛЬКАМ / CRYPTO BRUTE-FORCE EXPERT =====
+
+- Brute-force (password cracking) for crypto wallets (MetaMask, Trust Wallet, cold wallets, and more). 70/30 %
+
+- 5 years of experience.
+
+- Using my own trained neural network for faster and more efficient password recovery.
+
+- Cold wallet processing with guaranteed confidentiality.
+
+- I take on wallets that others couldn’t crack.
+
+Telegram: @bcstg  [redacted-url]
+Jabber:   <email>
+
+=====================================
+
+
+Operation ID: [redacted]
+
+IP: [redacted]
+Country: HU (Hungary)
+Operating System: Windows 10
+Username: [redacted]
+Computer Name: [redacted]
+Hardware ID: [redacted]
+CPU (Processor): Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz
+GPU (Display Devices): Intel(R) HD Graphics 5500
+RAM (Memory): 1966.9375
+Screens: 1366x768
+Desktop Screenshot Taken: Yes
+
+Windows Processes [
+   System
+   Registry
+   smss.exe
+   csrss.exe
+   wininit.exe
+   services.exe
+   lsass.exe
+   svchost.exe
+   fontdrvhost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   atiesrxx.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   Memory Compression
+   svchost.exe
+   svchost.exe
+   igfxCUIService.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   spoolsv.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   ETDService.exe
+   svchost.exe
+   svchost.exe
+   inPixioService.exe
+   svchost.exe
+   MpDefenderCoreService.exe
+   svchost.exe
+   RtkBtManServ.exe
+   svchost.exe
+   svchost.exe
+   MsMpEng.exe
+   svchost.exe
+   svchost.exe
+   dasHost.exe
+   svchost.exe
+   svchost.exe
+   dllhost.exe
+   svchost.exe
+   svchost.exe
+   AggregatorHost.exe
+   svchost.exe
+   PresentationFontCache.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   NisSrv.exe
+   svchost.exe
+   SecurityHealthService.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   OfficeClickToRun.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   svchost.exe
+   updater.exe
+   updater.exe
+   csrss.exe
+   winlogon.exe
+   fontdrvhost.exe
+   dwm.exe
+   atieclxx.exe
+   updater.exe
+   updater.exe
+   svchost.exe
+   svchost.exe
+   ETDCtrl.exe
+   sihost.exe
+   svchost.exe
+   svchost.exe
+   MicrosoftEdgeUpdate.exe
+   taskhostw.exe
+   igfxEM.exe
+   igfxHK.exe
+   igfxTray.exe
+   ETDCtrlHelper.exe
+   explorer.exe
+   ctfmon.exe
+   svchost.exe
+   StartMenuExperienceHost.exe
+   RuntimeBroker.exe
+   SearchApp.exe
+   RuntimeBroker.exe
+   RuntimeBroker.exe
+   TextInputHost.exe
+   smartscreen.exe
+   chrome.exe
+   chrome.exe
+   chrome.exe
+   chrome.exe
+   chrome.exe
+   chrome.exe
+   SecurityHealthSystray.exe
+   RAVCpl64.exe
+   FMAPP.exe
+   RAVBg64.exe
+   RAVBg64.exe
+   RAVBg64.exe
+   OneDrive.exe
+   chrome.exe
+   terminal.exe
+   msedge.exe
+   msedge.exe
+   msedge.exe
+   msedge.exe
+   msedge.exe
+   audiodg.exe
+   firefox.exe
+   crashhelper.exe
+   firefox.exe
+   firefox.exe
+   firefox.exe
+   firefox.exe
+   NortonBrowser.exe
+   NortonBrowser.exe
+   firefox.exe
+   firefox.exe
+   firefox.exe
+   NortonBrowser.exe
+   NortonBrowser.exe
+   NortonBrowser.exe
+   NortonBrowser.exe
+   NortonBrowser.exe
+   NortonBrowser.exe
+   NortonBrowser.exe
+   NortonBrowser.exe
+   taskhostw.exe
+   BingSvc.exe
+   Copilot.exe
+   svchost.exe
+   CacheAggregato.exe
+   chrome.exe
+   TqCObniadkm29RkE.exe
+   _is6A70.exe
+   OfficeClickToRun.exe
+   svchost.exe
+   SearchApp.exe
+   msedgewebview2.exe
+   msedgewebview2.exe
+   msedgewebview2.exe
+   msedgewebview2.exe
+   msedgewebview2.exe
+   msedgewebview2.exe
+   WmiPrvSE.exe
+   OfficeClickToRun.exe
+   AppVShNotify.exe
+   updater.exe
+   updater.exe
+   NortonBrowser.exe
+   svchost.exe
+   lync.exe
+   Integrator.exe
+   conhost.exe
+   svchost.exe
+   RuntimeBroker.exe
+   msiexec.exe
+   MoUsoCoreWorker.exe
+   SearchIndexer.exe
+   SearchProtocolHost.exe
+   SearchFilterHost.exe
+   backgroundTaskHost.exe
+   backgroundTaskHost.exe
+   backgroundTaskHost.exe
+   backgroundTaskHost.exe
+   RuntimeBroker.exe
+]
+Processed parts: [
+   Total Time to process: [redacted].4018556
+   Wallets: [redacted].0000768
+   Games: [redacted].0000783
+   Ftp: [redacted].0000776
+   Vpn: [redacted].0000789
+   Vnc: [redacted].0000748
+   ChromiumBrowsers: [redacted].1715995
+   GeckoBrowsers: [redacted].1983567
+   RemoteAdminControl: [redacted].0000561
+   EmailClients: [redacted].0007545
+   Messengers: [redacted].0051321
+   Hardware: [redacted].0013719
+   FileGrabber: [redacted].0241984
+]

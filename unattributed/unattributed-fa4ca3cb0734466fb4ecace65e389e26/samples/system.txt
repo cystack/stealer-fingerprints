@@ -1,0 +1,60 @@
+IP: [redacted]
+Execute Path: C:\Users\<user>\AppData\Local\Temp\tmpf433283968\S-V.33.636.2488.exe
+Build Name: One-Go
+User Name: [redacted]
+Computer Name: [redacted]
+CPU: Intel(R) Core(TM) i7-14650HX, 24 cores
+GPU: Intel(R) UHD Graphics
+GPU: NVIDIA GeForce RTX 4060 Laptop GPU
+Operation System: Microsoft Windows 11 Home Single Language 24H2
+Country ISO2: GB
+Elevated: true
+Screen Resolution: 2560x1600
+Date: 2025-06-23 [redacted].2152587 +0000 UTC
+[... 3 blank lines ...]
+Enviromental Variables:
+
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\<user>\AppData\Roaming
+CommonProgramFiles=C:\Program Files\Common Files
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+CommonProgramW6432=C:\Program Files\Common Files
+COMPUTERNAME=[redacted]
+ComSpec=C:\WINDOWS\system32\cmd.exe
+configsetroot=C:\WINDOWS\ConfigSetRoot
+DriverData=C:\Windows\System32\Drivers\DriverData
+HOMEDRIVE=C:
+HOMEPATH=\Users\<user>
+IGCCSVC_DB=[redacted protected value]
+IntelliJ IDEA Community Edition=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.3\bin;
+INTEL_DEV_REDIST=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\
+LOCALAPPDATA=C:\Users\<user>\AppData\Local
+LOGONSERVER=[redacted]
+MIC_LD_LIBRARY_PATH=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\mic
+NUMBER_OF_PROCESSORS=24
+OneDrive=C:\Users\<user>\OneDrive
+OneDriveConsumer=C:\Users\<user>\OneDrive
+OS=Windows_NT
+Path=[redacted]
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_ARCHITECTURE=AMD64
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 183 Stepping 1, GenuineIntel
+PROCESSOR_LEVEL=6
+PROCESSOR_REVISION=b701
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+ProgramFiles(x86)=C:\Program Files (x86)
+ProgramW6432=C:\Program Files
+PSModulePath=%ProgramFiles%\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC=C:\Users\<user>
+redshift_LICENSE=C:\ProgramData\Maxon\RLM\
+SystemDrive=C:
+SystemRoot=C:\WINDOWS
+TEMP=C:\Users\<user>\AppData\Local\Temp
+TMP=C:\Users\<user>\AppData\Local\Temp
+USERDOMAIN=[redacted]
+USERDOMAIN_ROAMINGPROFILE=[redacted]
+USERNAME=[redacted]
+USERPROFILE=C:\Users\<user>
+windir=C:\WINDOWS
+ZES_ENABLE_SYSMAN=1

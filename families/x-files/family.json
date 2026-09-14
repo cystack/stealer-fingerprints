@@ -1,13 +1,12 @@
 {
   "$schema": "../../schemas/family.schema.json",
   "aliases": [
-    "DeerStealer",
     "X-FILES",
     "X-Files Stealer"
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "XFiles is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "X-FILES exports `information.txt`, `system.txt`, or both. Distinctive fields include `Operation ID`, `Hardware ID`, `CPU (Processor)`, `GPU (Display Devices)`, and `Desktop screenshot taken`. Some public reporting describes DeerStealer as a rewritten or evolved XFiles line; this catalog keeps it out of the alias list pending stronger format-level equivalence.",
   "external_references": [
     {
       "url": "https://any.run/malware-trends/xfiles/"

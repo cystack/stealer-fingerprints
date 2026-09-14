@@ -5,7 +5,7 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "Rhadamanthys is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "Rhadamanthys v0.9.x exports `userinformation.txt` as a flat hardware and locale block. `Wallpaper Hash`, `Traffic`, `Domain Name`, and `Display Resolution` form a distinctive field combination.",
   "external_references": [
     {
       "url": "https://any.run/malware-trends/rhadamanthys/"

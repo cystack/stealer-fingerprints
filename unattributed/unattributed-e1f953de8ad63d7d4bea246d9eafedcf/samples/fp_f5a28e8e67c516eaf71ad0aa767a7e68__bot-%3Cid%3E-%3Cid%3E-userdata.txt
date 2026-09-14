@@ -1,0 +1,39 @@
+
+
+***********************************************************
+*                                                         *
+*                                                         *
+*                          _    ___   ___  ___ ___ ___    *
+*      Best               | |  / _ \ / __|/ __| __| _ \   *
+*                         | |_| (_) | (_ | (_ | _||   /   *
+*      Private  - - - ->  |____\___/ \___|\___|___|_|_\   *
+*                                                         *
+*                                                         *
+*                                                         *
+***********************************************************
+
+
+==========PC INFO==========
+Client Name:[redacted]
+FullDate: 7/23/2025 - [redacted] AM
+IP: [redacted]
+Country: United States
+==========PC INFO==========
+
+============X============
+URL: android://<REDACTED>@com.spotify.lite/
+Username: [redacted]
+Password: [redacted]
+Application: Edge Chromium
+=========================
+
+============X============
+URL: [redacted-url]
+Username: [redacted]
+Password: [redacted]
+Application: Edge Chromium
+=========================
+
+[... additional credential records omitted ...]
+
+--------------------------------------------------

@@ -5,11 +5,8 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "Ailurophile is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "Ailurophile logs are recognized by `info.txt` and the combined fields `PC Type`, `File Path`, `Main Path`, `MAC Address`, and browser-version lines such as `Chrome Default - version`.",
   "external_references": [
-    {
-      "url": "https://blog.gdatasoftware.com/2024/08/38005-ailurophile-infostealer"
-    },
     {
       "url": "https://github.com/ail-project/ail-yara-rules/blob/master/rules/stealer/ailurophile.yara"
     },

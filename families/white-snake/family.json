@@ -5,13 +5,15 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "WhiteSnake is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "WhiteSnake exports `pc_info.txt` with system, user, network, and time fields. `Started as admin`, `Internet provider`, and `Installed antivirus` help distinguish the layout.",
   "external_references": [
     {
-      "url": "https://socradar.io/whitesnake-stealer-malware-analysis/"
+      "title": "Trojan.Siggen21.39882 (WhiteSnake Stealer)",
+      "url": "https://vms.drweb.com/virus/?i=25908610"
     },
     {
-      "url": "https://www.cyfirma.com/research/whitesnake-stealer/"
+      "title": "Study of a targeted attack using WhiteSnake Stealer",
+      "url": "https://st.drweb.com/static/new-www/news/2024/march/study_of_a_targeted_attack_on_a_russian_enterprise_in_the_mechanical_engineering_sector_en.pdf"
     }
   ],
   "id": "white-snake",

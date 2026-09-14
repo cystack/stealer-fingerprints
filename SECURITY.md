@@ -8,8 +8,8 @@ Include only the affected repository path, commit identifier, and the minimum de
 
 ## Response priorities
 
-Maintainers should restrict access, preserve a private incident record, remove the material from the current tree, rotate exposed secrets, assess downstream distribution, and rewrite Git history when sensitive material entered a commit. Consumers should be told to discard affected clones or follow the replacement-history instructions.
-
-The initial v1 release is subject to the mandatory gate in [HISTORY_REWRITE.md](HISTORY_REWRITE.md).
+Maintainers should remove exposed secrets, rotate them where possible, and assess downstream
+distribution. Public samples are expected in this repository, but live credentials, cookies,
+session tokens, wallet secrets, malware binaries, and bulk victim datasets are not.
 
 The generated YARA rules classify exported text formats. They are experimental, may produce false positives or false negatives, and must not be treated as proof that a host or binary is infected.

@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "nexus",
+  "id": "fp_d31ecda9c37dc73244b39455f2471618",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "country",
+      "cpu name",
+      "cpu vendor",
+      "gpu",
+      "hwid",
+      "ip address",
+      "jabber",
+      "language",
+      "netbios",
+      "os version",
+      "pc",
+      "ram size",
+      "screen resolution",
+      "user"
+    ],
+    "filenames": [
+      "information.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active"
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "blank-grabber",
+  "id": "fp_438d72e22516746a8a42bc0654c93a49",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "cellular network",
+      "computer name",
+      "computer os",
+      "country",
+      "cpu",
+      "discord accounts",
+      "epic session",
+      "gpu",
+      "growtopia session",
+      "history",
+      "ip",
+      "minecraft sessions",
+      "product key",
+      "proxy/vpn",
+      "region",
+      "roblox cookies",
+      "screenshot",
+      "steam session",
+      "system info",
+      "telegram sessions",
+      "timezone",
+      "total memory",
+      "uplay session",
+      "uuid",
+      "webcam",
+      "wifi passwords"
+    ],
+    "filenames": [
+      "information.txt",
+      "system.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active"
+}

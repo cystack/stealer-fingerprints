@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [],
+  "attribution_confidence": "unknown",
+  "classification": "provisional_cluster",
+  "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+  "external_references": [],
+  "id": "unattributed-cbd4ffc14365e8b3d1171b4f42fd618e",
+  "name": "Unattributed cluster cbd4ffc14365e8b3d1171b4f42fd618e",
+  "schema_version": "1.0",
+  "targets": [],
+  "tracking_labels": [
+    "Aetheris Stealer"
+  ]
+}

@@ -5,10 +5,15 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "Acreed is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "The observed Acreed sample stores system metadata in `pc_info.json` as a structured JSON object with PascalCase keys such as `PcName`, `ScreenSize`, `CpuCores`, and `IsElevator`.",
   "external_references": [
     {
-      "url": "https://www.kaspersky.com/blog/acreed-stealer/"
+      "title": "Analysis of Acreed, a rising infostealer",
+      "url": "https://www.intrinsec.com/wp-content/uploads/2025/10/TLP-CLEAR-Sept-2025-Acreed-infostealer-EN.pdf"
+    },
+    {
+      "title": "Acreed Infostealer",
+      "url": "https://www.broadcom.com/support/security-center/protection-bulletin/acreed-infostealer"
     }
   ],
   "id": "acreed",

@@ -6,7 +6,7 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "Phantom Stealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "Phantom Stealer exports either `information.txt` or `userinformation.txt` with the same compact system block. The layout combines `PC-Name`, `Admin Rights`, `Location`, CPU, GPU, RAM, and IP fields.",
   "external_references": [
     {
       "url": "https://darkatlas.io/blog/phantom-stealer-analysis-inside-the-two-layer-attack-chain-hidden-behind-a-windows-dll"
@@ -16,9 +16,6 @@
     },
     {
       "url": "https://www.group-ib.com/blog/phantom-stealer-credential-theft/"
-    },
-    {
-      "url": "https://www.phantomsoftwares.site/home"
     },
     {
       "url": "https://www.proofpoint.com/us/blog/threat-insight/not-safe-work-tracking-and-investigating-stealerium-and-phantom-infostealers"

@@ -1,0 +1,40 @@
+    ~~Banshee v1.4 Report (2025-12-19 21:57)
+
+
+[User Info]
+User: [redacted]
+Machine: [redacted]
+Now: 2025-12-19 [redacted]
+FileLocation: [redacted]
+Country: India
+Input ISO: en
+Hwid: [redacted]
+Clipboard: [redacted clipboard content]
+
+[Network]
+External IP: [redacted]
+Internal IP: [redacted]
+Default Gateway: [redacted]
+
+[System]
+OS Product: Windows 10 Home 2009
+OS Build: 26200
+OS Arch: x64
+CPU Name: AMD Ryzen 5 5600G with Radeon Graphics         
+Logical Cores: 12
+RAM Total (MB): 16252
+RAM Available (MB): 7179
+Screensize: 1920x1080
+Keyboard: en-US
+System Language: en-US
+
+[Drives]
+C: Fixed FS:NTFS Size:149GB Free:80GB
+D: Fixed FS:NTFS Size:106GB Free:34GB
+E: Fixed FS:NTFS Size:219GB Free:189GB
+
+[GPU]
+AMD Radeon(TM) RX 6400
+
+[Basic]
+User Domain: [redacted]

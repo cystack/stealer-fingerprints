@@ -5,7 +5,7 @@
   ],
   "attribution_confidence": "medium",
   "classification": "known_family",
-  "description": "Nexus is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "Nexus exports `information.txt` as a flat field list. Distinctive labels include `CPU Name`, `CPU Vendor`, `Jabber`, `NetBIOS`, and `RAM Size`.",
   "external_references": [
     {
       "url": "https://flare.io/learn/resources/cybercrime-favorite-target-gamers"

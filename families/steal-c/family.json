@@ -6,7 +6,7 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "StealC is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "Observed StealC samples use a sectioned `system_info.txt` with headers such as `Network Info` and `System Summary`, followed by hyphen-prefixed `- Key: Value` records. This sample layout is not an active fingerprint.",
   "external_references": [
     {
       "url": "https://mssplab.github.io/threat-hunting/2023/11/23/malware-analysis-stealc-2.html"

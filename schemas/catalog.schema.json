@@ -1,14 +1,45 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/cystack/stealer-fingerprints/schemas/catalog.schema.json",
+  "$id": "https://raw.githubusercontent.com/cystack/stealer-fingerprints/main/schemas/catalog.schema.json",
   "title": "Generated stealer fingerprint catalog",
   "type": "object",
   "additionalProperties": false,
-  "required": ["$schema", "schema_version", "families", "fingerprints"],
+  "required": ["$schema", "schema_version", "families", "fingerprints", "samples"],
   "properties": {
     "$schema": {"const": "../schemas/catalog.schema.json"},
     "schema_version": {"const": "1.0"},
     "families": {"type": "array", "items": {"$ref": "family.schema.json"}},
-    "fingerprints": {"type": "array", "items": {"$ref": "fingerprint.schema.json"}}
+    "fingerprints": {"type": "array", "items": {"$ref": "fingerprint.schema.json"}},
+    "samples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["family_id", "filename", "fingerprint_id", "path", "sha256", "size", "source_type", "verification", "sanitization"],
+        "properties": {
+          "family_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+          "filename": {"type": "string", "minLength": 1},
+          "fingerprint_id": {
+            "type": ["string", "null"],
+            "pattern": "^fp_[0-9a-f]{32}$"
+          },
+          "path": {"type": "string", "minLength": 1},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "size": {"type": "integer", "minimum": 1, "maximum": 131072},
+          "source_type": {
+            "const": "private_collection",
+            "description": "The observed log format came from the maintainers' authorized private collection."
+          },
+          "verification": {
+            "const": "curator_verified",
+            "description": "A curator verified the representative format before publication."
+          },
+          "sanitization": {
+            "const": "direct identifiers and secrets redacted",
+            "description": "Direct victim identifiers and reusable secrets were removed while structural evidence was retained."
+          }
+        }
+      }
+    }
   }
 }

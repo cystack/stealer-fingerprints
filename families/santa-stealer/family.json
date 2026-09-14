@@ -6,7 +6,7 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "SantaStealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "The observed SantaStealer `information.txt` opens with a large `SANTA STEALER` banner and operator marker, then lists grabbed files in a fixed-width table. This sample is available for manual comparison but is not an active fingerprint.",
   "external_references": [
     {
       "url": "https://www.bleepingcomputer.com/news/security/new-santastealer-malware-steals-data-from-browsers-crypto-wallets/"

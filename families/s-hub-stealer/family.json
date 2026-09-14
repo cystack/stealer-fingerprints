@@ -6,7 +6,7 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "SHub Stealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "SHub `information.txt` contains the literal `SHub Stealer` banner plus `Build Tag`, `External IP`, `Hardware`, `Graphics/Displays`, `Software`, and `Password` sections.",
   "external_references": [
     {
       "url": "https://securitylabs.datadoghq.com/articles/tech-impersonators-clickfix-and-macos-infostealers/"

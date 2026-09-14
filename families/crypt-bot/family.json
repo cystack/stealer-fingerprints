@@ -6,7 +6,7 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "CryptBot is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "CryptBot's `_Information.txt` is an aligned key/value summary combining `OS`, `Keyboard Languages`, `CPU`, `RAM`, `GPU`, `Display Resolution`, and `Installed software` fields.",
   "external_references": [
     {
       "url": "https://any.run/malware-trends/cryptbot/"

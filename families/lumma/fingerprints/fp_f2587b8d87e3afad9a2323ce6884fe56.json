@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "lumma",
+  "id": "fp_f2587b8d87e3afad9a2323ce6884fe56",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "computer",
+      "country",
+      "cpu cores",
+      "cpu name",
+      "cpu threads",
+      "cpu vendor",
+      "display resolution",
+      "elevated",
+      "hwid",
+      "ip address",
+      "language",
+      "lid",
+      "lummac2 build",
+      "netbios",
+      "path",
+      "ram size",
+      "time",
+      "user"
+    ],
+    "filenames": [
+      "information.txt",
+      "system.txt",
+      "system_info.txt",
+      "userinformation.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active"
+}

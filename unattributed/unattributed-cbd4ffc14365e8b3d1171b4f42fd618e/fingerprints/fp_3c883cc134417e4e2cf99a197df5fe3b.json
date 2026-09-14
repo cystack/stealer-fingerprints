@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "unattributed-cbd4ffc14365e8b3d1171b4f42fd618e",
+  "id": "fp_3c883cc134417e4e2cf99a197df5fe3b",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "clipboard",
+      "cpu name",
+      "default gateway",
+      "external ip",
+      "hwid",
+      "input iso",
+      "internal ip",
+      "logical cores",
+      "machine",
+      "os arch",
+      "os build",
+      "os product",
+      "ram available (mb)",
+      "ram total (mb)",
+      "user",
+      "user domain"
+    ],
+    "filenames": [
+      "information.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active"
+}

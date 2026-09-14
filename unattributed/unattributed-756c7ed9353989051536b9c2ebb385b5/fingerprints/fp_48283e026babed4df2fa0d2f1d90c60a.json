@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "unattributed-756c7ed9353989051536b9c2ebb385b5",
+  "id": "fp_48283e026babed4df2fa0d2f1d90c60a",
+  "quality": {
+    "independent_signal_count": 3,
+    "independent_signal_types": [
+      "marker",
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": true
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [
+      "Build Comment: Xeno"
+    ],
+    "field_keys": [
+      "admin rights",
+      "build comment",
+      "build id",
+      "build path",
+      "build version",
+      "cpu",
+      "geo",
+      "gpu",
+      "hwid",
+      "ip",
+      "memory",
+      "os",
+      "pc name",
+      "user name",
+      "user time"
+    ],
+    "filenames": [
+      "userinformation.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active"
+}

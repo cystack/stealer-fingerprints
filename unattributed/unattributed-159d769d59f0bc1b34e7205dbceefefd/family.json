@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [],
+  "attribution_confidence": "unknown",
+  "classification": "provisional_cluster",
+  "description": "Provisional grouping based only on recurring exported-log structure. Historical tracking labels are analyst shorthand, not confirmed malware-family attribution.",
+  "external_references": [],
+  "id": "unattributed-159d769d59f0bc1b34e7205dbceefefd",
+  "name": "Unattributed cluster 159d769d59f0bc1b34e7205dbceefefd",
+  "schema_version": "1.0",
+  "targets": [],
+  "tracking_labels": [
+    "PCInfo Stealer"
+  ]
+}

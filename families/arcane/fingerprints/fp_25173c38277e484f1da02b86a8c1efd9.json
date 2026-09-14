@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "arcane",
+  "id": "fp_25173c38277e484f1da02b86a8c1efd9",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "capacity",
+      "caption",
+      "clipboard",
+      "date install",
+      "default",
+      "external ip",
+      "fullname",
+      "gateway ip",
+      "internal ip",
+      "manufacturer",
+      "model",
+      "name",
+      "product",
+      "size",
+      "speed",
+      "worker"
+    ],
+    "filenames": [
+      "information.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active"
+}

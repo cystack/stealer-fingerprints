@@ -7,7 +7,7 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "DCRat is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "DCRat logs are recognized by locale-tagged filenames matching `information [<locale>].txt` and fields such as `PC Name`, `GPU Mode`, `Motherboard`, `BIOS`, `Antivirus`, and `Save Time`. The observed layout begins with an ASCII-art banner.",
   "external_references": [
     {
       "url": "https://any.run/malware-trends/dcrat/"

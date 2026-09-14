@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/family.schema.json",
+  "aliases": [],
+  "attribution_confidence": "unknown",
+  "classification": "provisional_cluster",
+  "description": "Provisional grouping based only on a recurring exported-log structure; no malware-family attribution has been established.",
+  "external_references": [],
+  "id": "unattributed-a854c167c0b2ce12d2ee89b3103aaa1d",
+  "name": "Unattributed cluster a854c167c0b2ce12d2ee89b3103aaa1d",
+  "schema_version": "1.0",
+  "targets": [],
+  "tracking_labels": []
+}

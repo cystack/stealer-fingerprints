@@ -6,7 +6,7 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "Lumma is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "Lumma logs are recognized across `information.txt`, `system.txt`, `system_info.txt`, and `userinformation.txt` by shared fields including `LummaC2 Build`, `LID`, `HWID`, and CPU details. The observed `Time` value ends with a `(sig:<UNIX>.<hex>)` marker.",
   "external_references": [
     {
       "url": "https://www.cloudflare.com/cloudforce-one/research/loot-load-repeat-dissecting-the-lumma-stealer-playbook/"

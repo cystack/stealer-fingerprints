@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../schemas/fingerprint.schema.json",
+  "family_id": "x-files",
+  "id": "fp_71e4879e79d5ec111750b46f414e04d6",
+  "quality": {
+    "independent_signal_count": 2,
+    "independent_signal_types": [
+      "field_keys",
+      "filenames"
+    ],
+    "yara_eligible": false
+  },
+  "schema_version": "1.0",
+  "scope": "exported_log_format",
+  "sharing": "TLP:CLEAR",
+  "signature": {
+    "banner_strings": [],
+    "field_keys": [
+      "computer name",
+      "country",
+      "cpu (processor)",
+      "desktop screenshot taken",
+      "gpu (display devices)",
+      "hardware id",
+      "ip",
+      "operating system",
+      "operation id",
+      "ram (memory)"
+    ],
+    "filenames": [
+      "information.txt",
+      "system.txt"
+    ],
+    "panel_brand": null
+  },
+  "status": "active"
+}

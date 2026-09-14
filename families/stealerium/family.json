@@ -5,7 +5,7 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "Stealerium is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "Stealerium exports `information.txt` with a flat system and network summary. The current fingerprint combines `Gateway IP`, `Internal IP`, `External IP`, `Power`, `Screen`, and hardware fields.",
   "external_references": [
     {
       "url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.stealerium"

@@ -5,7 +5,7 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "Cthulhu Stealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "The observed Cthulhu Stealer sample uses `userinformation.txt`. It opens with `MetaMask Info:`, `Debanks:`, and `BuildID:` before `Userinfo:` and macOS system and hardware sections.",
   "external_references": [
     {
       "url": "https://www.darktrace.com/blog/from-the-depths-analyzing-the-cthulhu-stealer-malware-for-macos"

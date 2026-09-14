@@ -1,13 +1,11 @@
 {
   "$schema": "../../schemas/family.schema.json",
   "aliases": [
-    "44Caliber variant",
-    "Ades",
-    "StormKitty variant"
+    "Ades"
   ],
   "attribution_confidence": "medium",
   "classification": "known_family",
-  "description": "RL Stealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "Observed RL Stealer samples use `Information.txt` with equals-sign section dividers and single-space-indented key/value lines. Public analysis identifies it as a 44CALIBER variant and notes a StringsCrypt module also seen in StormKitty; neither relationship is treated as an alias. This sample shape is not an active fingerprint.",
   "external_references": [
     {
       "url": "https://github.com/MalBeacon/what-is-this-stealer"
@@ -17,6 +15,10 @@
     },
     {
       "url": "https://www.pcrisk.com/removal-guides/25759-rl-stealer-malware"
+    },
+    {
+      "title": "44 Caliber Stealer RL variant analysis",
+      "url": "https://www.ciphertechsolutions.com/acce-release-notes-v2-1-20230522/"
     }
   ],
   "id": "rl-stealer",

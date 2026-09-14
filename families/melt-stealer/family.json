@@ -6,13 +6,10 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "MeltStealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "The observed MeltStealer `information.txt` starts with the emoji-marked `MeltStealer - Report` banner, followed by system, network, browser-count, software, device, and file-grabber sections. This sample is available for manual comparison but is not an active fingerprint.",
   "external_references": [
     {
       "url": "https://any.run/report/a934dc7424ecc3d0e20848f36e44d1473b1908761cd41a4021d31f6d91c5ee34/ea0e35cd-70cc-4c19-aa20-532f49f278c7"
-    },
-    {
-      "url": "https://github.com/Vorolski/melt-stealer"
     }
   ],
   "id": "melt-stealer",

@@ -1,12 +1,11 @@
 {
   "$schema": "../../schemas/family.schema.json",
   "aliases": [
-    "Arcane Stealer",
-    "VGS Stealer (predecessor)"
+    "Arcane Stealer"
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "Arcane is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "Arcane logs are recognized by `information.txt` and the combined `Worker`, `Date Install`, `External IP`, `Internal IP`, and `Gateway IP` fields. The observed layout continues with `=== ... Information ===` hardware and system sections. Public reporting describes VGS Stealer as a predecessor, not an Arcane alias.",
   "external_references": [
     {
       "url": "https://cyberinsider.com/new-arcane-stealer-malware-targets-vpn-accounts-via-youtube-cheats/"

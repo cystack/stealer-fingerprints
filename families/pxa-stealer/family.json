@@ -5,13 +5,13 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "PXA Stealer is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "The observed PXA Stealer `information.txt` is a compact summary with `IP`, `Country`, `User`, and `AntiVirus` fields plus packed `Data Information` counters. This sample is available for manual comparison but is not an active fingerprint.",
   "external_references": [
     {
-      "url": "https://blog.talosintelligence.com/pxa-stealer/"
+      "url": "https://www.cyberproof.com/blog/a-deep-dive-into-pxa-stealer/"
     },
     {
-      "url": "https://socradar.io/threat-actor-spotlight-pxa-stealer/"
+      "url": "https://any.run/malware-trends/pxastealer/"
     }
   ],
   "id": "pxa-stealer",

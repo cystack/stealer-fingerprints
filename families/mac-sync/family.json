@@ -6,7 +6,7 @@
   ],
   "attribution_confidence": "high",
   "classification": "known_family",
-  "description": "MacSync is an externally documented malware family represented here only by recurring exported-log structure. Consult the external references before operational use.",
+  "description": "MacSync `information.txt` starts with the literal `MacSync Stealer` banner, followed by `Build Tag`, `Hardware`, `Graphics/Displays`, `Software`, and `Password` sections.",
   "external_references": [
     {
       "url": "https://malware.news/t/mentalpositive-s-new-macos-stealer-amos-repackaged-or-a-new-cyber-threat/96207"
