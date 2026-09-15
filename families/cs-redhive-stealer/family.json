@@ -31,8 +31,8 @@
   "attribution_confidence": "high",
   "canonical_family": "lumma",
   "classification": "family_variant",
-  "description": "CSRedhiveStealer is a CyStack-coined identifier for a\nLumma-shape `System.txt` panel that self-brands as\n`Redhive Stealer` on its build banner line. Observed inside\n`BONUS$#01(c)_NEW_ROYCLOUD_HQ_MIX_<n>_<Mon>_<YYYY>.part1.rar`\narchives at `<CC>_<IPv4>-<HWID>/System.txt` victim folders\n(e.g. `CO_181.52.194.15-043BD157EE/System.txt`), preceded by\nthe same stylised `RÔýĆløud` reseller banner that wraps the\nRemus and bare key-value variants distributed through the same\nchannel.\n\nThe body opens with `- Redhive Stealer: <DD.MM.YYYY>` and\n`- Lid: <numeric>`, then continues with the Lumma-canonical\ndash-prefixed field set: `- OS Version`, `- System Installed`\n(ISO calendar date, replaces canonical Lumma `- Install\nDate`), `- Local Date`, `- Time Zone`, `- Computer`, `- User`,\n`- Language`, `- Anti Virus`, `- HWID`, `- RAM Size`, `- CPU\nName`, `- CPU Threads`, `- CPU Cores`, `- GPU`, `- Display\nresolution`, `- IP Address`, `- Time Save Log` (ISO datetime,\nreplaces canonical Lumma `- Time`), `- Country`. The `- CPU\nVendor` field canonical Lumma always emits is absent, and the\nLumma-canonical `(sig:UNIX.HEX)` watermark is stripped\nentirely from the timestamp line. HWID is short-form 8-hex\nrather than the canonical Lumma 32-hex hash.\n\nThe `- Lid`, `- Computer`, `- User`, `- Anti Virus`, `- HWID`,\n`- RAM Size`, `- GPU`, `- IP Address`, `- Country`\ndash-prefixed vocabulary is documented as Lumma-canonical by\nMalBeacon `what-is-this-stealer`, Outpost24 LummaC2 analysis,\nand Cloudflare Cloudforce One playbook analysis of Lumma\npanel output. The `Redhive Stealer` self-brand string is\nnovel and unattested in curated CTI mappings at time of\nintegration; the profile is classified as a Lumma variant\nbecause the field lattice unambiguously matches documented\nLumma output.",
-  "detection_notes": "Fingerprint requires the `- Redhive Stealer` self-brand\nliteral AND the Lumma-canonical `- Lid:` panel affiliate\nidentifier line. Canonical Lumma declines because of the\nabsent `- LummaC2 Build:` header, absent `- CPU Vendor:`\nfield, absent `- Install Date:` field (replaced by\n`- System Installed:` with an ISO calendar date shape),\nand absent `(sig:UNIX.HEX)` timestamp watermark. The\nRedhive self-brand is also carried in the Lumma parser's\nrebrand-exclusion list so canonical Lumma's stripped-variant\nfallback paths cannot accidentally claim a Redhive body. During triage, treat the panel as a Lumma affiliate\nor fork rebrand until published research maps the `Redhive`\nbrand to a specific Lumma successor or to an independent\nbuilder.",
+  "description": "CSRedhiveStealer is a CyStack-coined identifier for a\nLumma-shape `System.txt` panel that self-brands as\n`Redhive Stealer` on its build banner line. Observed inside\n`BONUS$#01(c)_NEW_ROYCLOUD_HQ_MIX_<n>_<Mon>_<YYYY>.part1.rar`\narchives at `<CC>_<IPv4>-<HWID>/System.txt` victim folders\n(e.g. `CO_181.52.194.15-043BD157EE/System.txt`), preceded by\nthe same stylised `RÔýĆløud` reseller banner that wraps the\nRemus and bare key-value variants distributed through the same\nchannel.\n\nThe body opens with `- Redhive Stealer: <DD.MM.YYYY>` and\n`- Lid: <numeric>`, then continues with the Lumma-canonical\ndash-prefixed field set: `- OS Version`, `- System Installed`\n(ISO calendar date, replaces canonical Lumma `- Install Date`), `- Local Date`, `- Time Zone`, `- Computer`, `- User`,\n`- Language`, `- Anti Virus`, `- HWID`, `- RAM Size`, `- CPU Name`, `- CPU Threads`, `- CPU Cores`, `- GPU`, `- Display resolution`, `- IP Address`, `- Time Save Log` (ISO datetime,\nreplaces canonical Lumma `- Time`), `- Country`. The `- CPU Vendor` field canonical Lumma always emits is absent, and the\nLumma-canonical `(sig:UNIX.HEX)` watermark is stripped\nentirely from the timestamp line. HWID is short-form 8-hex\nrather than the canonical Lumma 32-hex hash.\n\nThe `- Lid`, `- Computer`, `- User`, `- Anti Virus`, `- HWID`,\n`- RAM Size`, `- GPU`, `- IP Address`, `- Country`\ndash-prefixed vocabulary is documented as Lumma-canonical by\nMalBeacon `what-is-this-stealer`, Outpost24 LummaC2 analysis,\nand Cloudflare Cloudforce One playbook analysis of Lumma\npanel output. The `Redhive Stealer` self-brand string is\nnovel and unattested in curated CTI mappings at time of\nintegration; the profile is classified as a Lumma variant\nbecause the field lattice unambiguously matches documented\nLumma output.",
+  "detection_notes": "Fingerprint requires the `- Redhive Stealer` self-brand\nliteral AND the Lumma-canonical `- Lid:` panel affiliate\nidentifier line. Distinguish it from canonical Lumma by the\nabsent `- LummaC2 Build:` header, absent `- CPU Vendor:`\nfield, absent `- Install Date:` field (replaced by\n`- System Installed:` with an ISO calendar date shape),\nand absent `(sig:UNIX.HEX)` timestamp watermark. During\ntriage, treat the panel as a Lumma affiliate or fork rebrand\nuntil published research maps the `Redhive` brand to a\nspecific Lumma successor or to an independent builder.",
   "id": "cs-redhive-stealer",
   "name": "CSRedhiveStealer",
   "related_families": [
@@ -96,5 +96,46 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSRedhiveStealer là định danh do CyStack đặt cho một bảng điều khiển (panel) có cấu trúc dữ liệu kiểu Lumma `System.txt` tự gắn nhãn thương hiệu là\n`Redhive Stealer` trên dòng banner phiên bản build. Được quan sát bên trong\n`BONUS$#01(c)_NEW_ROYCLOUD_HQ_MIX_<n>_<Mon>_<YYYY>.part1.rar`\ncác kho lưu trữ tại các thư mục nạn nhân `<CC>_<IPv4>-<HWID>/System.txt` (ví dụ: `CO_181.52.194.15-043BD157EE/System.txt`), đi trước là\ncùng một banner reseller cách điệu `RÔýĆløud` vốn bao bọc\ncác biến thể Remus và biến thể khóa-giá trị thuần được phân phối qua cùng\nkênh đó.\n\nPhần thân mở đầu bằng `- Redhive Stealer: <DD.MM.YYYY>` và\n`- Lid: <numeric>`, sau đó tiếp tục với tập trường mang gạch ngang đứng trước theo chuẩn Lumma: `- OS Version`, `- System Installed`\n(ngày theo lịch ISO, thay thế trường chuẩn Lumma `- Install Date`), `- Local Date`, `- Time Zone`, `- Computer`, `- User`,\n`- Language`, `- Anti Virus`, `- HWID`, `- RAM Size`, `- CPU Name`, `- CPU Threads`, `- CPU Cores`, `- GPU`, `- Display resolution`, `- IP Address`, `- Time Save Log` (thời gian ISO,\nthay thế trường chuẩn Lumma `- Time`), `- Country`. Trường `- CPU Vendor` mà Lumma chuẩn luôn tạo dữ liệu đầu ra thì không xuất hiện, và\nwatermark chuẩn Lumma `(sig:UNIX.HEX)` bị loại bỏ hoàn toàn khỏi dòng dấu thời gian. HWID có dạng ngắn 8 ký tự hex\nthay vì mã băm 32 ký tự hex chuẩn của Lumma.\n\nBộ từ vựng mang gạch ngang đứng trước `- Lid`, `- Computer`, `- User`, `- Anti Virus`, `- HWID`,\n`- RAM Size`, `- GPU`, `- IP Address`, `- Country`\nđược ghi nhận là chuẩn Lumma bởi MalBeacon `what-is-this-stealer`, phân tích LummaC2 của Outpost24,\nvà phân tích playbook của Cloudflare Cloudforce One về dữ liệu đầu ra của panel Lumma. Chuỗi tự gắn nhãn thương hiệu `Redhive Stealer` là\nmới và chưa từng được ghi nhận trong các ánh xạ CTI đã tuyển chọn tại thời điểm tích hợp; hồ sơ này được phân loại là một biến thể Lumma vì\ncấu trúc trường khớp rõ ràng, không mơ hồ với dữ liệu đầu ra đã được ghi nhận của Lumma.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trong trình duyệt",
+        "Tiện ích mở rộng ví tiền mã hóa",
+        "Siêu dữ liệu máy: tên máy, tên người dùng Windows, ngôn ngữ",
+        "Dấu vết nhận diện hệ điều hành kèm số hiệu build và kiến trúc",
+        "Thông tin phần cứng: dòng CPU kèm số nhân/luồng, GPU, dung lượng RAM đã cài đặt",
+        "Tên phần mềm diệt virus đã cài đặt",
+        "Địa chỉ IP công khai của nạn nhân kèm mã quốc gia ISO"
+      ],
+      "detection_notes": "Việc nhận diện đòi hỏi đồng thời chuỗi tự gắn nhãn `- Redhive Stealer` và dòng định danh affiliate của panel theo chuẩn Lumma `- Lid:`. Phân biệt biến thể này với Lumma chuẩn dựa trên việc không có tiêu đề `- LummaC2 Build:`, trường `- CPU Vendor:`, trường `- Install Date:` (được thay bằng `- System Installed:` với ngày theo định dạng ISO) và watermark thời gian `(sig:UNIX.HEX)`. Trong quá trình phân loại ban đầu, hãy coi panel này là một affiliate hoặc bản fork của Lumma cho đến khi có nghiên cứu công bố ánh xạ thương hiệu `Redhive` tới một biến thể kế thừa cụ thể của Lumma hoặc một builder độc lập.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1518.001",
+          "name": "Dò tìm phần mềm bảo mật"
+        }
+      ]
+    }
+  }
 }

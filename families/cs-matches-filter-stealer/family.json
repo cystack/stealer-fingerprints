@@ -14,7 +14,7 @@
     "Social-network sessions (Facebook, YouTube Studio)",
     "Free-form financial keywords (bank, payout)"
   ],
-  "detection_notes": "Fingerprint requires four line-anchored anchor keys\n(`IP:`, `Country:`, `User:`, `Matches:`) plus the\n`Country: ISO2 - Name` dual-token country form. The four\nanchors alone would collide with any generic flat-key\npanel that ships an `IP:` / `Country:` / `User:` triple;\nrequiring the country value to carry both the two-letter\nISO code and the full name joined by ` - ` is what\nnarrows the match. The `Matches:` rollup itself is\nbroker-side metadata, not victim-side data, so during\ntriage treat the per-target counts as a relevance signal\n(the broker advertised the log because these accounts\nwere valuable) rather than as direct evidence of\ncompromise for those services. Treat the family\nattribution as unknown: multiple underlying stealers can\nfeed into the broker's pipeline, and the panel does not\npreserve the original writer's family signature.",
+  "detection_notes": "Fingerprint requires four line-anchored anchor keys\n(`IP:`, `Country:`, `User:`, `Matches:`) plus the\n`Country: ISO2 - Name` dual-token country form. The four\nanchors alone would collide with any generic flat-key\npanel that ships an `IP:` / `Country:` / `User:` triple;\nrequiring the country value to carry both the two-letter\nISO code and the full name joined by `-` is what\nnarrows the match. The `Matches:` rollup itself is\nbroker-side metadata, not victim-side data, so during\ntriage treat the per-target counts as a relevance signal\n(the broker advertised the log because these accounts\nwere valuable) rather than as direct evidence of\ncompromise for those services. Treat the family\nattribution as unknown: multiple underlying stealers can\nfeed into the broker's pipeline, and the panel does not\npreserve the original writer's family signature.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -68,5 +68,39 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSMatchesFilterStealer là định danh do CyStack đặt cho một `Information.txt` bốn dòng được viết bởi một bot môi giới trên Telegram, thực hiện quét sơ bộ các cookie và mật khẩu đã thu thập được của nạn nhân để tìm các kết quả trùng khớp với tên miền hoặc từ khóa có giá trị cao, sau đó gộp số lượng theo từng mục tiêu vào một dòng `Matches:` duy nhất để người mua tiềm năng có thể xếp hạng các log trước khi mua. Phần thân gồm `IP:` / `Country:` / `User:` / `Matches:`, không có banner, không có dòng phân cách phần, không có footer ở cuối. Giá trị `Country:` tuân theo cấu trúc hai token `ISO2 - Name` (`BD - Bangladesh`), đây là yếu tố phân biệt hẹp nhất của định dạng này trong số các cấu trúc dữ liệu khóa phẳng.\n\nĐịnh dạng này là chú thích do bên môi giới tạo ra chứ không phải dữ liệu đầu ra gốc từ một họ mã độc đánh cắp thông tin cụ thể, do đó không thể xác định họ mã độc gốc cho một log cụ thể chỉ dựa vào panel này: nhiều mã độc đánh cắp thông tin khác nhau có thể cùng đưa dữ liệu vào pipeline quét sơ bộ của bên môi giới. Danh sách bổ sung `Matches:` (số lượng theo từng tên miền hoặc từ khóa) là siêu dữ liệu phía panel, không phải dữ liệu từ phía nạn nhân, vì vậy nó chủ đích không được lưu giữ như một dấu hiệu quan sát được của nạn nhân. Các mục tiêu được quan sát trong dòng tổng hợp bao gồm các nền tảng freelancer / thanh toán (`payoneer.com`, `upwork.com`, `gumroad.com`), tài khoản mạng xã hội (`facebook.com`, `studio.youtube.com`), và các từ khóa tài chính dạng tự do (`bank`, `payout`).\n\nViệc quy kết họ mã độc hiện vẫn mang tính tạm thời cho đến khi có báo cáo tình báo an ninh mạng ánh xạ bố cục này. Các báo cáo công khai và các danh mục định dạng mã độc đánh cắp thông tin công khai hiện chưa ghi nhận họ mã độc nào tạo dữ liệu đầu ra đúng theo cấu trúc dữ liệu bốn dòng `IP` / `Country` / `User` / `Matches:` này.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie được trình duyệt lưu lại (được đếm theo tổng hợp `Matches:`)",
+        "Tài khoản thanh toán freelancer (Payoneer, Upwork, Gumroad)",
+        "Phiên đăng nhập mạng xã hội (Facebook, YouTube Studio)",
+        "Từ khóa tài chính dạng tự do (bank, payout)"
+      ],
+      "detection_notes": "Việc lấy dấu hiệu nhận diện yêu cầu bốn khóa neo gắn theo dòng (`IP:`, `Country:`, `User:`, `Matches:`) cùng với cấu trúc quốc gia hai token `Country: ISO2 - Name`. Chỉ riêng bốn khóa neo này sẽ trùng lặp với bất kỳ panel khóa phẳng thông thường nào có bộ ba `IP:` / `Country:` / `User:`; yêu cầu giá trị quốc gia phải mang cả mã ISO hai chữ cái lẫn tên đầy đủ được nối bằng `-` chính là yếu tố thu hẹp việc khớp mẫu. Bản thân dòng tổng hợp `Matches:` là siêu dữ liệu phía bên môi giới, không phải dữ liệu từ phía nạn nhân, do đó trong quá trình phân loại (triage) cần coi số lượng theo từng mục tiêu là tín hiệu liên quan (bên môi giới quảng cáo log này vì các tài khoản đó có giá trị) chứ không phải bằng chứng trực tiếp cho thấy các dịch vụ đó đã bị xâm phạm. Cần coi việc quy kết họ mã độc là chưa xác định: nhiều mã độc đánh cắp thông tin khác nhau có thể cùng đưa dữ liệu vào pipeline của bên môi giới, và panel này không lưu giữ dấu hiệu đặc trưng của họ mã độc gốc từ bộ tạo dữ liệu đầu ra ban đầu.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

@@ -10,6 +10,7 @@ import unittest
 from pathlib import Path
 from unittest import mock
 
+import identify as identify_cli
 from tools import catalog
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -41,6 +42,16 @@ def _family(
         "typical_targets": ["Browser data"],
         "detection_notes": "Confirm multiple structural anchors before attribution.",
         "attack_techniques": [],
+        "localizations": {
+            "vi": {
+                "description": "Hồ sơ log stealer chỉ dùng cho kiểm thử.",
+                "typical_targets": ["Dữ liệu trình duyệt"],
+                "detection_notes": (
+                    "Xác nhận nhiều dấu hiệu cấu trúc trước khi quy kết."
+                ),
+                "attack_techniques": [],
+            }
+        },
         "related_families": [],
         "sources": ["https://example.test/research"],
         "variants": [],
@@ -120,6 +131,47 @@ def _tree_state(root: Path) -> dict[str, tuple[str, bytes]]:
 
 
 class CatalogTests(unittest.TestCase):
+    def test_cli_configures_unicode_safe_windows_streams(self) -> None:
+        class Stream:
+            def __init__(self) -> None:
+                self.options: dict[str, str] = {}
+
+            def reconfigure(self, **options: str) -> None:
+                self.options = options
+
+        stdout = Stream()
+        stderr = Stream()
+        with (
+            mock.patch.object(catalog.sys, "stdout", stdout),
+            mock.patch.object(catalog.sys, "stderr", stderr),
+        ):
+            catalog._configure_utf8_stdio()
+
+        self.assertEqual(stdout.options, {"encoding": "utf-8", "errors": "replace"})
+        self.assertEqual(stderr.options, {"encoding": "utf-8", "errors": "replace"})
+
+    def test_identify_entrypoint_prints_unicode_with_a_legacy_console(self) -> None:
+        raw = io.BytesIO()
+        stream = io.TextIOWrapper(raw, encoding="cp1252")
+        result = {
+            "status": "match",
+            "ambiguous": False,
+            "input": {"filename": "Info.txt"},
+            "matches": [{"evidence": {"markers": ["RÔýĆløud"]}}],
+        }
+        try:
+            with (
+                mock.patch.object(identify_cli.sys, "stdout", stream),
+                mock.patch.object(identify_cli, "identify", return_value=result),
+            ):
+                self.assertEqual(identify_cli.main(["Info.txt", "--json"]), 0)
+                stream.flush()
+            rendered = raw.getvalue().decode("utf-8")
+        finally:
+            stream.detach()
+
+        self.assertIn("RÔýĆløud", rendered)
+
     def test_repository_validates_and_generated_docs_are_current(self) -> None:
         stats = catalog.validate_catalog(ROOT)
         self.assertGreater(stats["families"], 0)
@@ -159,6 +211,156 @@ class CatalogTests(unittest.TestCase):
             _write_family(root, _family())
             stats = catalog.validate_catalog(root)
             self.assertEqual((stats["families"], stats["variants"], stats["samples"]), (1, 0, 0))
+
+    def test_vietnamese_localization_validates_and_renders(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            family = _family()
+            family["description"] = "Profile for the `Machine ID:` layout."
+            family["typical_targets"] = ["Saved `Browser Data`"]
+            family["detection_notes"] = "Require the `Machine ID:` field."
+            family["attack_techniques"] = [
+                {"id": "T1555", "name": "Credentials from Password Stores"}
+            ]
+            family["localizations"]["vi"] = {
+                "description": "Hồ sơ cho bố cục `Machine ID:`.",
+                "typical_targets": ["`Browser Data` đã lưu"],
+                "detection_notes": "Yêu cầu trường `Machine ID:`.",
+                "attack_techniques": [
+                    {"id": "T1555", "name": "Thông tin xác thực từ kho mật khẩu"}
+                ],
+            }
+            _write_family(root, family)
+
+            catalog.validate_catalog(root)
+            catalog.build(root)
+            readme = (root / "families" / family["id"] / "README.md").read_text(
+                encoding="utf-8"
+            )
+
+            self.assertIn("## Overview / Tổng quan", readme)
+            self.assertIn("Hồ sơ cho bố cục `Machine ID:`.", readme)
+            self.assertIn("| Saved `Browser Data` | `Browser Data` đã lưu |", readme)
+            self.assertIn(
+                "| [T1555](https://attack.mitre.org/techniques/T1555/) | "
+                "Credentials from Password Stores | Thông tin xác thực từ kho mật khẩu |",
+                readme,
+            )
+
+    def test_vietnamese_localization_is_required(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            family = _family()
+            family.pop("localizations")
+            _write_family(root, family)
+
+            with self.assertRaises(catalog.CatalogError) as raised:
+                catalog.validate_catalog(root)
+
+            self.assertEqual(raised.exception.code, "shape")
+            self.assertIn("localizations", str(raised.exception))
+
+    def test_localization_requires_aligned_fields_and_literals(self) -> None:
+        cases = []
+
+        missing_field = _family()
+        missing_field["localizations"]["vi"].pop("detection_notes")
+        cases.append(("missing-field", missing_field, "missing: detection_notes"))
+
+        target_drift = _family()
+        target_drift["localizations"]["vi"]["typical_targets"] = []
+        cases.append(("target-count", target_drift, "align one-to-one"))
+
+        technique_drift = _family()
+        technique_drift["attack_techniques"] = [
+            {"id": "T1555", "name": "Credentials from Password Stores"}
+        ]
+        technique_drift["localizations"]["vi"]["attack_techniques"] = [
+            {"id": "T1005", "name": "Dữ liệu từ hệ thống cục bộ"}
+        ]
+        cases.append(("technique-id", technique_drift, "IDs and order"))
+
+        literal_drift = _family()
+        literal_drift["description"] = "Profile for `Machine ID:`."
+        literal_drift["localizations"]["vi"]["description"] = (
+            "Hồ sơ cho trường `Mã máy:`."
+        )
+        cases.append(("inline-code", literal_drift, "inline-code literals"))
+
+        double_literal_drift = _family()
+        double_literal_drift["description"] = "Profile for ``Machine ID:``."
+        double_literal_drift["localizations"]["vi"]["description"] = (
+            "Hồ sơ không còn literal kỹ thuật."
+        )
+        cases.append(
+            ("double-inline-code", double_literal_drift, "inline-code literals")
+        )
+
+        multiline_literal = _family()
+        multiline_literal["description"] = "Profile for `Machine\nID:`."
+        multiline_literal["localizations"]["vi"]["description"] = (
+            "Hồ sơ cho `Machine\nID:`."
+        )
+        cases.append(
+            ("multiline-inline-code", multiline_literal, "multiline inline-code")
+        )
+
+        for label, family, message in cases:
+            with self.subTest(case=label), tempfile.TemporaryDirectory() as temporary:
+                root = Path(temporary)
+                _write_family(root, family)
+                with self.assertRaises(catalog.CatalogError) as raised:
+                    catalog.validate_catalog(root)
+                self.assertIn(message, str(raised.exception))
+
+    def test_attack_names_are_consistent_across_locales_and_profiles(self) -> None:
+        for localized_drift in (False, True):
+            with (
+                self.subTest(localized_drift=localized_drift),
+                tempfile.TemporaryDirectory() as temporary,
+            ):
+                root = Path(temporary)
+                first = _family()
+                second = _family("second-family", "Second Family")
+                for family in (first, second):
+                    family["attack_techniques"] = [
+                        {"id": "T1555", "name": "Credentials from Password Stores"}
+                    ]
+                    family["localizations"]["vi"]["attack_techniques"] = [
+                        {"id": "T1555", "name": "Thông tin xác thực từ kho mật khẩu"}
+                    ]
+                if localized_drift:
+                    second["localizations"]["vi"]["attack_techniques"][0]["name"] = (
+                        "Tên tiếng Việt không nhất quán"
+                    )
+                else:
+                    second["attack_techniques"][0]["name"] = "Different English name"
+                _write_family(root, first)
+                _write_family(root, second)
+
+                with self.assertRaises(catalog.CatalogError) as raised:
+                    catalog.validate_catalog(root)
+
+                self.assertEqual(raised.exception.code, "localization")
+                self.assertIn("names T1555", str(raised.exception))
+
+    def test_new_attack_id_requires_reviewed_vietnamese_terminology(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            family = _family()
+            family["attack_techniques"] = [
+                {"id": "T9999", "name": "Future Technique"}
+            ]
+            family["localizations"]["vi"]["attack_techniques"] = [
+                {"id": "T9999", "name": "Kỹ thuật tương lai"}
+            ]
+            _write_family(root, family)
+
+            with self.assertRaises(catalog.CatalogError) as raised:
+                catalog.validate_catalog(root)
+
+        self.assertEqual(raised.exception.code, "localization")
+        self.assertIn("no reviewed Vietnamese name for T9999", str(raised.exception))
 
     def test_observed_self_label_and_external_context_render_separately(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
@@ -603,6 +805,7 @@ class CatalogTests(unittest.TestCase):
             self.assertEqual(result["status"], "changed")
             self.assertEqual(stored["description"], "Authoritative public research narrative.")
             self.assertEqual(stored["detection_notes"], family["detection_notes"])
+            self.assertEqual(stored["localizations"], family["localizations"])
             self.assertEqual([item["id"] for item in stored["variants"]], [variant["id"]])
 
     def test_ingest_preserves_observed_label_relationship_and_channel_fields(self) -> None:
@@ -860,6 +1063,44 @@ class CatalogTests(unittest.TestCase):
                 )
             )
 
+    def test_matcher_marks_a_full_but_nonunique_signature_ambiguous(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            short = _family("short-signature", "Short Signature", "cystack_named")
+            short_variant = _variant("short-format")
+            short_variant["markers"] = ["Shared marker"]
+            short_variant["fields"] = []
+            _install_variant(
+                root,
+                short,
+                short_variant,
+                "Shared marker\nExtra: value\n",
+            )
+
+            detailed = _family(
+                "detailed-signature", "Detailed Signature", "cystack_named"
+            )
+            detailed_variant = _variant("detailed-format")
+            detailed_variant["markers"] = ["Shared marker"]
+            detailed_variant["fields"] = ["Extra"]
+            _install_variant(
+                root,
+                detailed,
+                detailed_variant,
+                "Shared marker\nExtra: value\n",
+            )
+            probe = root / "renamed.log"
+            probe.write_text("Shared marker\n", encoding="utf-8")
+
+            result = catalog.identify(probe, root)
+
+            self.assertEqual(result["matches"][0]["family_id"], "short-signature")
+            self.assertEqual(result["matches"][0]["evidence_level"], "possible")
+            self.assertEqual(
+                result["matches"][0]["evidence"]["signature_family_count"], 2
+            )
+            self.assertTrue(result["ambiguous"])
+
     def test_ingest_rejects_declared_evidence_missing_from_sample(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
@@ -877,6 +1118,69 @@ class CatalogTests(unittest.TestCase):
 
             self.assertEqual(raised.exception.code, "candidate")
             self.assertIn("declared evidence", str(raised.exception))
+
+    def test_field_labels_ignore_art_comments_urls_and_drive_paths(self) -> None:
+        content = "\n".join(
+            (
+                "|::|\\:::: ASCII art",
+                "/::::\\ banner",
+                "ROYCLOUD:::: banner",
+                "< Admin : @operator >",
+                "# BUY STEALER - https://t.me/example",
+                "# Telegram: operator",
+                "path: >-",
+                "  C:/Users/<USER>/sample.exe",
+                "- CPU: Example processor",
+                "| Machine ID: example |",
+                '  \"PcName\": \"<HOST>\",',
+                "👑Build: example",
+                ".NET Runtime: 4.8",
+                "– Business: 1",
+                "IPv4/IPv6 Mode: dual",
+                "edition_id=Professional",
+            )
+        )
+
+        self.assertEqual(
+            catalog._field_labels(content),
+            {
+                ".net runtime",
+                "– business",
+                "cpu",
+                "edition_id",
+                "ipv4/ipv6 mode",
+                "machine id",
+                "path",
+                "pcname",
+                "👑build",
+            },
+        )
+
+    def test_ingest_rejects_non_structural_declared_fields(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            family = _family()
+            _write_family(root, family)
+            variant = _variant()
+            variant["fields"] = ["|", "C", "BUY STEALER - https"]
+            candidate = _write_candidate(
+                root,
+                family,
+                variant,
+                content=(
+                    "Fixture stealer marker\n"
+                    "|:::::::::/ ASCII art\n"
+                    "# BUY STEALER - https://t.me/example\n"
+                    "path: >-\n"
+                    "  C:/Users/<USER>/sample.exe\n"
+                ),
+            )
+
+            with self.assertRaises(catalog.CatalogError) as raised:
+                catalog.ingest(candidate, root)
+
+            self.assertEqual(raised.exception.code, "candidate")
+            self.assertIn("missing field labels", str(raised.exception))
 
     def test_repository_rejects_non_text_sample(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:

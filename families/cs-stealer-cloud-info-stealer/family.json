@@ -73,5 +73,25 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSStealerCloudInfoStealer là một định danh do CyStack đặt tên cho cấu trúc tệp thứ ba của broker STEALERCLOUD: một `Information.txt` tối giản 2 trường chỉ chứa một dòng `GPU:` và một dòng `Displays:` (số nhiều) có phần đệm nhiều khoảng trắng sau mỗi dấu hai chấm. Nội dung không có banner, không có tên đối tượng vận hành, và không có trường nào khác. Cùng thương hiệu bảng điều khiển `STEALERCLOUD` và kênh phân phối `@STEALERBOSS` như CSHardwareTailStealer (phần đuôi phần cứng dạng YAML trong Info.txt) và CSStealerCloudUserInfoStealer (khối locale + vị trí địa lý trong UserInformation.txt); broker này phân phối dữ liệu ngữ cảnh theo từng nạn nhân, chia thành ba cấu trúc tên tệp.\n\nDạng tối giản 2 trường này có thể phản ánh một đường dẫn dự phòng mà broker sử dụng khi không có bảng điều khiển mã độc đánh cắp thông tin nguồn gốc chuẩn nào khả dụng, khi đó chuyển sang liệt kê thuần túy qua Win32 WMI `Win32_VideoController` + `Win32_DisplayMonitor`. Việc quy kết họ mã độc hiện vẫn mang tính tạm thời, chờ có bài viết công khai xác nhận.",
+      "typical_targets": [
+        "Model GPU của nạn nhân (từ WMI `Win32_VideoController`)",
+        "Độ phân giải màn hình của nạn nhân (từ WMI `Win32_DisplayMonitor`)"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện kết hợp giữa `GPU:` neo theo dòng và `Displays:` (số nhiều) neo theo dòng là duy nhất trong toàn bộ danh mục này. Dạng số nhiều của `Displays:` giúp loại trừ các bảng điều khiển liên quan tạo dữ liệu đầu ra dạng số ít `Display:` hoặc `Display Resolution:`. Hãy kết hợp nhãn này với các tệp Info.txt của CSHardwareTailStealer và UserInformation.txt của CSStealerCloudUserInfoStealer trong cùng một thư mục nạn nhân `STEALERCLOUD#<NN>` để có bản tóm tắt đầy đủ theo từng nạn nhân.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

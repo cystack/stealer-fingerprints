@@ -60,5 +60,34 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSBabaStealer là định danh do CyStack đặt cho một log tự đặt tên `.B.A.B.A.` được gắn mác rebrand của Lumma `System.txt`, được ghi nhận bên trong các gói phân phối bởi `@ft7links` cùng với nội dung Lumma nguyên bản. Đối tượng vận hành `@ft7links` đặt tên kho lưu trữ là `lumma` và phân phối cả log Lumma thực lẫn bản rebrand có cấu trúc giống Lumma này dưới cùng một lớp vỏ bọc.",
+      "typical_targets": [],
+      "detection_notes": "Chuỗi ký tự `.B.A.B.A. Build :` (lưu ý cách viết có dấu chấm và khoảng trắng trước dấu hai chấm) là dấu hiệu kích hoạt không thể nhầm lẫn. Cấu hình nhận diện này có thể cùng tồn tại với Lumma nguyên bản trong cùng một đợt phân phối.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

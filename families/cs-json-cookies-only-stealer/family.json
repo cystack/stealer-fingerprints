@@ -3,7 +3,7 @@
   "name": "CSJsonCookiesOnlyStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSJsonCookiesOnlyStealer is a CyStack-coined identifier for\na LOGS2-pack per-victim folder-style IOC shipping a minimal\n``cookies/`` subdirectory with JSON-array cookie exports\n(the Cookie-Editor / EditThisCookie extension format used\nby many post-processing tools). Observed inside the\n``23-24 JUNE - 25597 LOGS2.part01.rar`` aggregator pack at\n``<CC>-    -<HWID>-<TIMESTAMP>/`` victim folders where the\nfolder name uses the same space-padded convention as the\nsibling ``CSExceptionCookiesOnly`` LOGS-pack variant.\n\nThe per-profile cookie file uses a\n``<Browser>_<Profile>_json.txt`` filename with the ``_json``\ninfix, and the body is a JSON array of cookie objects with\n``domain`` / ``expirationDate`` / ``httpOnly`` / ``name`` /\n``path`` / ``secure`` / ``value`` keys. The stealer likely\nuses a Chromium ``Cookies`` SQLite export routine that\nserialises directly to JSON rather than to the Netscape\nflat-file layout. Family attribution is provisional pending\na published threat-intel mapping.",
+  "description": "CSJsonCookiesOnlyStealer is a CyStack-coined identifier for\na LOGS2-pack per-victim folder-style IOC shipping a minimal\n``cookies/`` subdirectory with JSON-array cookie exports\n(the Cookie-Editor / EditThisCookie extension format used\nby many post-processing tools). Observed inside the\n``23-24 JUNE - 25597 LOGS2.part01.rar`` aggregator pack at\n``<CC>- -<HWID>-<TIMESTAMP>/`` victim folders where the\nfolder name uses the same space-padded convention as the\nsibling ``CSExceptionCookiesOnly`` LOGS-pack variant.\n\nThe per-profile cookie file uses a\n``<Browser>_<Profile>_json.txt`` filename with the ``_json``\ninfix, and the body is a JSON array of cookie objects with\n``domain`` / ``expirationDate`` / ``httpOnly`` / ``name`` /\n``path`` / ``secure`` / ``value`` keys. The stealer likely\nuses a Chromium ``Cookies`` SQLite export routine that\nserialises directly to JSON rather than to the Netscape\nflat-file layout. Family attribution is provisional pending\na published threat-intel mapping.",
   "aliases": [
     "JSON cookies-only bundle",
     "Cookie-Editor export format cookies bundle",
@@ -33,5 +33,24 @@
     "CSDaisyCloudCookiesOnlyStealer",
     "CSBradmaxAppCookiesStealer"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSJsonCookiesOnlyStealer là định danh do CyStack đặt tên cho một dấu vết dạng thư mục theo từng nạn nhân trong gói LOGS2-pack, chỉ chứa một thư mục con tối giản ``cookies/`` với các tệp xuất cookie dạng mảng JSON (định dạng của tiện ích mở rộng Cookie-Editor / EditThisCookie được nhiều công cụ hậu xử lý sử dụng). Dấu vết này được quan sát bên trong gói tổng hợp ``23-24 JUNE - 25597 LOGS2.part01.rar`` tại các thư mục nạn nhân ``<CC>- -<HWID>-<TIMESTAMP>/``, trong đó tên thư mục sử dụng cùng quy ước đệm khoảng trắng như biến thể LOGS-pack liên quan ``CSExceptionCookiesOnly``.\n\nTệp cookie theo từng hồ sơ (profile) sử dụng tên tệp dạng ``<Browser>_<Profile>_json.txt`` với hậu tố ``_json``, và nội dung là một mảng JSON gồm các đối tượng cookie với các khóa ``domain`` / ``expirationDate`` / ``httpOnly`` / ``name`` / ``path`` / ``secure`` / ``value``. Mã độc đánh cắp thông tin này có khả năng sử dụng một quy trình xuất cơ sở dữ liệu SQLite ``Cookies`` của Chromium, tuần tự hóa trực tiếp thành JSON thay vì theo bố cục tệp phẳng Netscape. Việc quy kết họ mã độc hiện vẫn mang tính tạm thời, chờ được xác nhận qua một bản đồ tình báo mối đe dọa đã công bố.",
+      "typical_targets": [
+        "Cookie phiên trình duyệt (Chromium) được xuất dưới dạng mảng JSON theo từng hồ sơ trình duyệt"
+      ],
+      "detection_notes": "Việc xác định dấu hiệu nhận diện yêu cầu có một thư mục con ``cookies`` ở gốc và không có các tệp/dấu vết liên quan nào khác mang nội dung (mọi tệp giữ chỗ giao diện điều khiển như ``system.txt`` hoặc ``information.txt`` phải rỗng), cùng với ít nhất hai đối tượng cookie JSON trong nội dung tệp thông tin xác thực có mang cả hai khóa ``domain`` và ``name``. Trong quá trình phân loại ban đầu, cần đối chiếu quy ước tên tệp ``<Browser>_<Profile>_json.txt`` và tên thư mục đệm khoảng trắng với gói lưu trữ LOGS2 pack để xác định đối tượng phát tán lại; họ mã độc thu thập dữ liệu gốc không thể được quy kết chỉ dựa trên bố cục chỉ chứa cookie này.",
+      "attack_techniques": [
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

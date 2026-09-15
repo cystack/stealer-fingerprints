@@ -80,5 +80,46 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Meduza Stealer là một mã độc đánh cắp thông tin .NET trên Windows, được ghi nhận công khai lần đầu vào tháng 6 năm 2023. Nó được rao bán dưới hình thức malware-as-a-service trên các diễn đàn hacker tiếng Nga và loại trừ theo địa lý đối với một số mục tiêu thuộc khối CIS (Nga, Kazakhstan, Belarus) theo các bài phân tích công khai. Họ mã độc này được theo dõi dưới các định danh chuẩn `win.meduza` và `Meduza` trong các cơ sở dữ liệu mã độc công khai, cùng với các phân tích công khai xác nhận. CERT-UA đã đề cập đến Meduza trong các đợt tấn công lừa đảo UAC-0050 nhắm vào Ukraine và Ba Lan.\n\nLog thu thập được mở đầu bằng một banner ASCII-art bảy dòng đánh vần chữ MEDUZA bằng các ký tự khối Unicode nằm trong một khung viền `*`, tiếp theo là phần nội dung `Key: Value` dạng phẳng. Tập trường dữ liệu gồm `HWID`, `Log Date`, `Build Name`, `Country Code`, `User Name`, `Computer Name`, `Operation System` (lỗi chính tả phía panel, nguyên văn), `Time Zone` (offset đặt trong ngoặc vuông nối với tên đầy đủ), `Screen Resolution`, `CPU` (tên cộng với dấu phẩy đệm khoảng trắng cộng số lõi logic), `GPU`, `RAM` (định dạng `GB` dạng số thập phân phân tách bằng dấu chấm với độ chính xác bốn chữ số thập phân), `IP`, và `Execute Path`. Giá trị `Log Date` có định dạng châu Âu DD-MM-YYYY HH:MM:SS với dấu phẩy phân tách ngày và giờ.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt (họ Chromium và Firefox)",
+        "Cookie, dữ liệu tự động điền, lịch sử duyệt web, dấu trang của trình duyệt",
+        "Tiện ích mở rộng ví tiền mã hóa và ứng dụng desktop (phạm vi ghi nhận: ~76 loại ví)",
+        "Trình quản lý mật khẩu (hỗ trợ ~19 loại theo báo cáo công khai)",
+        "Dữ liệu phiên đăng nhập Steam và Discord",
+        "Tệp phiên đăng nhập Telegram",
+        "Thông tin kiểm kê phần cứng và ngôn ngữ hệ thống"
+      ],
+      "detection_notes": "Banner ASCII-art MEDUZA là dấu hiệu tự nhận diện nguyên văn của họ mã độc này; chuỗi con hàng dưới cùng `██║░╚═╝░██║` là điểm neo dấu vết rõ ràng nhất và được sử dụng làm điểm neo nhận diện chính trong CyStack Threat Intelligence. Nên kết hợp điểm neo banner với khóa trường dữ liệu đặc trưng của Meduza là `Build Name:` để tránh rủi ro trùng lặp còn sót lại với Redline (cũng tạo dữ liệu đầu ra `Operation System:`, nguyên văn). Trong quá trình phân loại ban đầu, giá trị `Execute Path` thường trỏ đến vị trí cài đặt của mã độc và có giá trị tín hiệu cao đối với việc phát lại trong sandbox cũng như dọn dẹp máy.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1217",
+          "name": "Dò tìm thông tin trình duyệt"
+        }
+      ]
+    }
+  }
 }

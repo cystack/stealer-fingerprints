@@ -3,7 +3,7 @@
   "name": "CSDataMonkStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSDataMonkStealer is a CyStack-coined identifier for a shared\n`#BUY NOW: TG <buyer> -- <admin>` `SystemInfo.txt` panel\nobserved inside `@ft7links-mix-<TS>-<COUNT>pcs` aggregator\npacks. The panel is a builder that multiple Telegram resellers\ndistribute under their own buyer / admin handles - the body\nshape is identical, only the banner-line handles differ. Two\ndistributors observed so far: `@DataMonk_file` /\n`@DataMonk_Admin` (per-victim `Telegram @Datamonk_file -\n{<id>}/` subfolder) and `@SunCloudNew` / `@MrSun00` (flat\n`@ft7links_mix_<NN>_bogonip_<NN>/SystemInfo.txt` layout, no\nper-victim Telegram-handle subfolder).\n\nThe panel emits a leading `#BUY NOW` banner with paired buyer\n/ admin contacts, then a single mixed-case `=== System\nInformation ===` block of bare `Key: Value` lines terminated\nby a 26-character equals-sign rule. The 13-key field set\ncovers Build, IP, HWID, System Language, Processor, CPU Cores,\nCPU Threads, GPU, OS, OS Version, Computer Name, Total RAM,\nand Drives. The mixed-case header distinguishes this format\nfrom `PCInfoStealer`, which uses the uppercase `=== SYSTEM\nINFORMATION ===` form. The `Build: test_00` literal recurs\nacross distributors, suggesting an early or test-phase\nbuilder.\n\nFamily attribution is provisional: the panel is undocumented\nin public reporting, and is also absent from the community\nstealer-format catalogues. The family name keeps the\niteration-#7 `CSDataMonkStealer` literal for backward\ncompatibility with previously emitted IOCs even though the\npanel is shared. Rename when a public writeup identifies the\nunderlying builder.",
+  "description": "CSDataMonkStealer is a CyStack-coined identifier for a shared\n`#BUY NOW: TG <buyer> -- <admin>` `SystemInfo.txt` panel\nobserved inside `@ft7links-mix-<TS>-<COUNT>pcs` aggregator\npacks. The panel is a builder that multiple Telegram resellers\ndistribute under their own buyer / admin handles - the body\nshape is identical, only the banner-line handles differ. Two\ndistributors observed so far: `@DataMonk_file` /\n`@DataMonk_Admin` (per-victim `Telegram @Datamonk_file - {<id>}/` subfolder) and `@SunCloudNew` / `@MrSun00` (flat\n`@ft7links_mix_<NN>_bogonip_<NN>/SystemInfo.txt` layout, no\nper-victim Telegram-handle subfolder).\n\nThe panel emits a leading `#BUY NOW` banner with paired buyer\n/ admin contacts, then a single mixed-case `=== System Information ===` block of bare `Key: Value` lines terminated\nby a 26-character equals-sign rule. The 13-key field set\ncovers Build, IP, HWID, System Language, Processor, CPU Cores,\nCPU Threads, GPU, OS, OS Version, Computer Name, Total RAM,\nand Drives. The mixed-case header distinguishes this format\nfrom `PCInfoStealer`, which uses the uppercase `=== SYSTEM INFORMATION ===` form. The `Build: test_00` literal recurs\nacross distributors, suggesting an early or test-phase\nbuilder.\n\nFamily attribution is provisional: the panel is undocumented\nin public reporting, and is also absent from the community\nstealer-format catalogues. The stable `CSDataMonkStealer` tracking name is retained so\nexisting CyStack intelligence references remain consistent even\nthough the panel is shared. Rename the profile when public\nresearch identifies the underlying builder.",
   "aliases": [
     "@DataMonk_file",
     "@SunCloudNew",
@@ -43,5 +43,38 @@
     "https://t.me/DataMonk_file",
     "https://t.me/SunCloudNew"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSDataMonkStealer là định danh do CyStack đặt cho một panel `#BUY NOW: TG <buyer> -- <admin>` `SystemInfo.txt` dùng chung được quan sát bên trong các gói tổng hợp `@ft7links-mix-<TS>-<COUNT>pcs`. Panel này là một builder được nhiều đối tượng bán lại trên Telegram phân phối dưới các handle người mua/quản trị viên riêng của họ - cấu trúc dữ liệu phần thân giống hệt nhau, chỉ khác các handle ở dòng banner. Đã quan sát được hai đối tượng phân phối cho đến nay: `@DataMonk_file` / `@DataMonk_Admin` (thư mục con `Telegram @Datamonk_file - {<id>}/` theo từng nạn nhân) và `@SunCloudNew` / `@MrSun00` (bố cục `@ft7links_mix_<NN>_bogonip_<NN>/SystemInfo.txt` phẳng, không có thư mục con theo handle Telegram của từng nạn nhân).\n\nPanel này tạo dữ liệu đầu ra là một banner `#BUY NOW` ở đầu với các liên hệ người mua/quản trị viên đi kèm nhau, sau đó là một khối `=== System Information ===` hỗn hợp chữ hoa chữ thường gồm các dòng `Key: Value` trần, kết thúc bằng một quy tắc dấu bằng dài 26 ký tự. Tập 13 trường bao gồm Build, IP, HWID, System Language, Processor, CPU Cores, CPU Threads, GPU, OS, OS Version, Computer Name, Total RAM, và Drives. Phần tiêu đề hỗn hợp chữ hoa chữ thường phân biệt định dạng này với `PCInfoStealer`, vốn sử dụng dạng `=== SYSTEM INFORMATION ===` viết hoa toàn bộ. Chuỗi ký tự `Build: test_00` lặp lại ở nhiều đối tượng phân phối, cho thấy đây có thể là một builder giai đoạn đầu hoặc giai đoạn thử nghiệm.\n\nViệc quy kết họ mã độc hiện chỉ mang tính tạm thời: panel này chưa được ghi nhận trong các báo cáo công khai, và cũng không xuất hiện trong các danh mục định dạng mã độc đánh cắp thông tin của cộng đồng. Tên theo dõi ổn định `CSDataMonkStealer` được giữ lại để các tham chiếu tình báo hiện có của CyStack luôn nhất quán, dù panel này được nhiều bên cùng sử dụng. Hồ sơ sẽ được đổi tên khi nghiên cứu công khai xác định được builder gốc.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trong trình duyệt",
+        "Dấu vết nhận dạng phần cứng và ngôn ngữ hệ thống",
+        "Thư mục token Discord (theo bố cục @DataMonk_file Application/Discord)"
+      ],
+      "detection_notes": "Cặp dấu hiệu nhận diện rõ ràng nhất là banner panel `#BUY NOW: TG @` kết hợp với tiêu đề `=== System Information ===` hỗn hợp chữ hoa chữ thường. PCInfoStealer sử dụng biến thể tiêu đề viết hoa toàn bộ và tạo dữ liệu đầu ra là các trường `PC Username:` / `PC Name:` thay vì `Computer Name:`, do đó hai định dạng này không trùng lặp với nhau. Giá trị `Build:` (là `test_00` trong các mẫu đã khảo sát) cho thấy đây có thể là builder giai đoạn đầu hoặc giai đoạn thử nghiệm; các mẫu sản xuất sau này có thể tạo dữ liệu đầu ra với giá trị khác. Các handle ở dòng banner thay đổi theo từng đối tượng phân phối, vì vậy nên phân loại dựa trên các handle kênh trong banner thay vì giả định chỉ có một nguồn duy nhất.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

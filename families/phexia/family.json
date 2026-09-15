@@ -45,7 +45,7 @@
     },
     {
       "id": "T1059.002",
-      "name": "Command and Scripting Interpreter: AppleScript"
+      "name": "AppleScript"
     }
   ],
   "related_families": [
@@ -78,5 +78,50 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Phexia là một mã độc đánh cắp thông tin trên macOS đã hoạt động trong hình thức phân phối riêng tư kể từ tháng 4 năm 2024, theo một cuộc phỏng vấn đã công bố với nhà phát triển. Payload được triển khai bằng osascript (AppleScript) và nhà phát triển cho biết nó chia sẻ khoảng 85% mã nguồn với mô-đun mã độc đánh cắp thông tin Mac.c, nhưng được tiếp thị và theo dõi như một sản phẩm riêng biệt với biểu ngữ tự nhận diện riêng và tập khách hàng riêng (khoảng 20 đối tượng vận hành đang hoạt động theo lời nhà phát triển tại thời điểm phỏng vấn).\n\nTệp `UserInformation.txt` trên đĩa mở đầu bằng biểu ngữ nguyên văn `Phexia macOS Stealer`, tiếp theo là một khối định danh dạng phẳng (`Build:` / `Username:` / `Password:` / `IP Address:`), sau đó là dữ liệu đầu ra nguyên văn của `system_profiler` dưới các tiêu đề mục `Software:` / `Hardware:` / `Graphics/Displays:`. Thẻ `Build:` là một mã định danh liên kết (affiliate) riêng cho từng khách hàng, được thiết lập tại thời điểm build. Thông tin xác thực đăng nhập macOS bị đánh cắp được đóng gói trong cặp `Username:` / `Password:` ở đầu tệp.",
+      "typical_targets": [
+        "Thông tin xác thực đăng nhập macOS (thu thập tại màn hình yêu cầu nhập của bảng điều khiển)",
+        "Thông tin xác thực, cookie, dữ liệu web, dữ liệu đăng nhập và lịch sử đã lưu trên trình duyệt từ các trình duyệt nền tảng Chromium",
+        "Dữ liệu tiện ích mở rộng trình duyệt Chromium và các thiết lập tiện ích mở rộng cục bộ",
+        "Kho thông tin xác thực macOS Keychain (`/Library/Keychains/login.keychain-db`)",
+        "Ứng dụng ví tiền mã hóa dạng desktop và tiện ích mở rộng trình duyệt",
+        "Mật khẩu trong Notes.app và các tệp nhỏ trong `~/Downloads`",
+        "Dữ liệu phiên Telegram trên macOS"
+      ],
+      "detection_notes": "Biểu ngữ `Phexia macOS Stealer` ở dòng đầu tiên là dấu hiệu tự nhận diện nguyên văn của họ mã độc này và là dấu vết nhận diện đơn lẻ rõ ràng nhất. Thẻ liên kết dạng khóa trần `Build:` giúp phân biệt cấu trúc dữ liệu này với dạng `Build Tag:` của MacSync (một họ mã độc liên quan) và với dạng không có khoảng trắng `BuildID:` của Cthulhu. Phần thân `system_profiler` dùng chung có sự trùng lặp với các dấu vết macOS khác, nhưng biểu ngữ họ mã độc ở dòng đầu, khóa `Build:` dạng trần, và việc không có các biểu ngữ liên quan khác giúp giữ được dấu vết cấu trúc riêng biệt.\nKhi phân loại log của họ mã độc này, cần thu thập cặp thông tin xác thực đăng nhập macOS bị đánh cắp, thẻ liên kết `Build:`, và Hardware UUID làm mã định danh thiết bị.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.001",
+          "name": "Keychain"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1059.002",
+          "name": "AppleScript"
+        }
+      ]
+    }
+  }
 }

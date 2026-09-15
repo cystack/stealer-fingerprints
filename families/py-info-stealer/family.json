@@ -53,5 +53,30 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Mã độc đánh cắp thông tin dựa trên Python chưa được định danh, được phát hiện bên trong các gói tổng hợp `@BRADMAX` dưới các thư mục đệm `[UN]UNKNOWN_(N)`. `system_info.txt` là một bản ghi khóa/giá trị dạng phẳng, theo sau là hai phần được đóng khung `--- ... ---`. Việc quy kết họ mã độc hiện vẫn mang tính tạm thời; định dạng này chưa được ánh xạ với bất kỳ tên gọi tình báo mối đe dọa đã công bố nào.",
+      "typical_targets": [],
+      "detection_notes": "Dấu hiệu đặc trưng là phần mở đầu `Hostname:` (các khóa đều viết thường) cùng cấu trúc đóng khung kép `--- Section ---`. Nguồn gốc Python được suy ra từ cấu trúc dữ liệu của các trường và kiểu đặt tên khóa snake_case (ví dụ: `user:` và `hostname:` viết thường), chứ không phải từ bất kỳ banner tường minh nào.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

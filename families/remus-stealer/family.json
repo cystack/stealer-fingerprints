@@ -3,7 +3,7 @@
   "name": "Remus Stealer",
   "classification": "known_family",
   "attribution_confidence": "high",
-  "description": "Remus Stealer is a 64-bit malware-as-a-service infostealer first\nobserved in 2026 and independently analyzed as closely related\nto Lumma. It is distributed via the `@rmsops` channel. The\n`Info.txt` opens with `# BUY STEALER - https://t.me/rmsops`\nfollowed by a `# REMUS LOG` banner and a YAML-style `build:`\nblock. Field shape parallels Lumma's dash-prefix list but with\na different banner and distribution channel.",
+  "description": "Remus Stealer is a 64-bit malware-as-a-service infostealer first\nobserved in 2026 and independently analyzed as closely related\nto Lumma. Its known `Info.txt` body contains the `@rmsops`\ndistribution reference, a `# REMUS LOG` banner, and a YAML-style\n`build:` block. Some collected artifacts place an additional\nreseller banner, such as the stylised `RÔýĆløud` watermark,\nbefore that body. Field shape parallels Lumma's dash-prefix list\nbut uses a different banner and distribution channel.",
   "aliases": [
     "Remus"
   ],
@@ -12,7 +12,7 @@
     "Crypto wallet extensions and clients",
     "System hardware and locale inventory"
   ],
-  "detection_notes": "The `# REMUS LOG` banner together with the `@rmsops` channel\nreference is unambiguous. The YAML-shaped `build:` opening\nalso distinguishes Remus from Lumma proper, which uses the\ndash-prefix `- LummaC2 Build:` form instead.",
+  "detection_notes": "The `# REMUS LOG` banner together with the `@rmsops` channel\nreference is a high-confidence Remus signature. The YAML-shaped\n`build:` root and nested `hardware:` block distinguish Remus\nfrom Lumma proper, which uses the dash-prefix `- LummaC2 Build:`\nform instead. A reseller watermark may precede these anchors and\nshould be treated as distribution context, not a different body\nformat.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -78,21 +78,8 @@
       "attribution_confidence": "high",
       "distribution_channel": null,
       "fields": [
-        "/",
-        "/<IP>\\ \\ /",
-        "<IP>| \\<IP>/____/ \\",
-        "<IP>| | \\",
-        "<IP>| ~| \\",
-        "<IP>|\\",
-        "\\",
-        "\\/____|",
-        "\\<IP>/ |",
-        "\\<IP>| | \\<IP>/____/ \\",
         "anti-virus",
-        "Brute all crypto wallets",
         "build",
-        "BUY STEALER - https",
-        "C",
         "computer-name",
         "core count",
         "core enabled",
@@ -120,13 +107,11 @@
         "size",
         "state",
         "tag",
-        "Telegram",
         "thread count",
         "time",
         "time-zone",
         "user-name",
-        "version",
-        "|"
+        "version"
       ],
       "filenames": [
         "Info.txt"
@@ -135,7 +120,9 @@
       "id": "v_35b77a5daa4d8a67c5e2aacb67efa6c2",
       "layout_id": "yaml-build-root",
       "markers": [
-        "hardware:"
+        "# REMUS LOG",
+        "hardware:",
+        "RÔýĆløud"
       ],
       "panel_brand": "RoyCloud",
       "observations": 1,
@@ -174,5 +161,38 @@
       },
       "layout_id": "yaml-build-root"
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Remus Stealer là mã độc đánh cắp thông tin 64-bit được cung cấp theo mô hình malware-as-a-service, ghi nhận lần đầu vào năm 2026 và được các nghiên cứu độc lập xác định có quan hệ gần với Lumma. Phần thân `Info.txt` đã biết chứa tham chiếu phân phối `@rmsops`, banner `# REMUS LOG` và khối gốc `build:` dạng YAML. Một số mẫu thu thập được có thêm banner của bên phân phối, chẳng hạn watermark cách điệu `RÔýĆløud`, đặt trước phần thân này. Cấu trúc trường tương đồng với danh sách tiền tố dấu gạch ngang của Lumma nhưng sử dụng banner và kênh phân phối khác.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trong trình duyệt",
+        "Tiện ích mở rộng và ứng dụng ví tiền điện tử",
+        "Thông tin phần cứng hệ thống và ngôn ngữ/khu vực"
+      ],
+      "detection_notes": "Banner `# REMUS LOG` kết hợp với tham chiếu kênh `@rmsops` tạo thành dấu hiệu nhận diện Remus có độ tin cậy cao. Khối gốc `build:` dạng YAML và khối `hardware:` lồng bên trong giúp phân biệt Remus với Lumma nguyên bản, vốn sử dụng dạng `- LummaC2 Build:` có tiền tố dấu gạch ngang. Watermark của bên phân phối có thể xuất hiện trước các neo này và cần được xem là ngữ cảnh phân phối, không phải một định dạng phần thân khác.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

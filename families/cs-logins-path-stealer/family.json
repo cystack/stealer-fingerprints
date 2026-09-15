@@ -3,7 +3,7 @@
   "name": "CSLoginsPathStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSLoginsPathStealer is a CyStack-coined identifier for a\n4-line `URL/Username/Password/Application` cred-file shape\nwhere the `Application:` line carries a\n`Browser/Logins/<Browser>_<Profile>[<hex>].txt` source-file\npath. Records are separated by `===============` (15-equals)\nrule lines. Distributed inside `!! 2025 NOV.part001.rar`\n`@BRADLOGS / BRADMAX` aggregator packs at `[<TAG>]@BRADLOGS\n(BRADMAX) (<NN>)/All_Passwords.txt` victim folders that ship\nno companion system-info file.\n\nThe `Application: Browser/Logins/<Browser>_<Profile>[<hex>]\n.txt` path notation is the disambiguating signal. The\n`<Browser>_<Profile>` slug matches Lumma's per-profile\ncred-file naming convention (`Chrome_Default[<hex>].txt`,\n`Edge_Default[<hex>].txt`), and the `[<hex>]` suffix is a\nper-profile random hash that the panel template appends\n(likely a panel-side cache or upload identifier). Family\nattribution is provisional pending a published threat-intel\nmapping for this layout. The closest documented relative is\nLumma Stealer, which public analyses show writing\nper-browser-profile cred files with the same\n`<Browser>_<Profile>[<hex>]` naming convention, but the\nBRADMAX redistribution wraps the data into\n`URL/Username/Password/Application` blocks rather than Lumma's\ncanonical `SOFT/URL/USER/PASS` 4-line shape.",
+  "description": "CSLoginsPathStealer is a CyStack-coined identifier for a\n4-line `URL/Username/Password/Application` cred-file shape\nwhere the `Application:` line carries a\n`Browser/Logins/<Browser>_<Profile>[<hex>].txt` source-file\npath. Records are separated by `===============` (15-equals)\nrule lines. Distributed inside `!! 2025 NOV.part001.rar`\n`@BRADLOGS / BRADMAX` aggregator packs at `[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/All_Passwords.txt` victim folders that ship\nno companion system-info file.\n\nThe `Application: Browser/Logins/<Browser>_<Profile>[<hex>] .txt` path notation is the disambiguating signal. The\n`<Browser>_<Profile>` slug matches Lumma's per-profile\ncred-file naming convention (`Chrome_Default[<hex>].txt`,\n`Edge_Default[<hex>].txt`), and the `[<hex>]` suffix is a\nper-profile random hash that the panel template appends\n(likely a panel-side cache or upload identifier). Family\nattribution is provisional pending a published threat-intel\nmapping for this layout. The closest documented relative is\nLumma Stealer, which public analyses show writing\nper-browser-profile cred files with the same\n`<Browser>_<Profile>[<hex>]` naming convention, but the\nBRADMAX redistribution wraps the data into\n`URL/Username/Password/Application` blocks rather than Lumma's\ncanonical `SOFT/URL/USER/PASS` 4-line shape.",
   "aliases": [
     "BRADMAX All_Passwords.txt with Browser/Logins/ path",
     "4-line URL/Username/Password/Application logins-path block"
@@ -38,5 +38,30 @@
   "observed_channels": [
     "https://t.me/BRADLOGS"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSLoginsPathStealer là định danh do CyStack đặt cho một cấu trúc dữ liệu tệp thông tin xác thực (cred-file) 4 dòng `URL/Username/Password/Application`, trong đó dòng `Application:` chứa đường dẫn tệp nguồn `Browser/Logins/<Browser>_<Profile>[<hex>].txt`. Các bản ghi được phân tách bởi các dòng quy tắc `===============` (15 dấu bằng). Được phân phối bên trong các gói tổng hợp `!! 2025 NOV.part001.rar` `@BRADLOGS / BRADMAX` tại các thư mục nạn nhân `[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/All_Passwords.txt` không kèm theo tệp thông tin hệ thống đi cùng.\n\nKý hiệu đường dẫn `Application: Browser/Logins/<Browser>_<Profile>[<hex>] .txt` là tín hiệu giúp phân biệt. Phần định danh `<Browser>_<Profile>` khớp với quy ước đặt tên tệp thông tin xác thực theo từng hồ sơ (profile) của Lumma (`Chrome_Default[<hex>].txt`, `Edge_Default[<hex>].txt`), và hậu tố `[<hex>]` là một chuỗi băm ngẫu nhiên theo từng hồ sơ do mẫu (template) của panel gắn thêm (có khả năng là bộ nhớ đệm phía panel hoặc mã định danh tải lên). Việc quy kết họ mã độc hiện chỉ mang tính tạm thời, chờ có công bố về mối liên hệ tình báo mối đe dọa (threat-intel) cho cấu trúc dữ liệu này. Đối tượng gần nhất đã được ghi nhận là Lumma Stealer, vốn được các phân tích công khai cho thấy ghi các tệp thông tin xác thực theo từng hồ sơ trình duyệt (per-browser-profile) với cùng quy ước đặt tên `<Browser>_<Profile>[<hex>]`, tuy nhiên việc phân phối lại của BRADMAX đóng gói dữ liệu thành các khối `URL/Username/Password/Application` thay vì cấu trúc dữ liệu 4 dòng chuẩn `SOFT/URL/USER/PASS` của Lumma.",
+      "typical_targets": [
+        "Thông tin xác thực được trình duyệt lưu (URL, tên đăng nhập, mật khẩu)",
+        "Đường dẫn tệp theo từng hồ sơ trình duyệt nguồn",
+        "Định danh trình duyệt và mã hồ sơ (profile slug) từ đường dẫn nguồn"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện yêu cầu 3 khối 4 dòng liên tiếp trở lên khớp với `URL: / Username: / Password: / Application: Browser/Logins/`. Tiền tố `Application: Browser/Logins/` là yếu tố phân biệt: `CSAppProfileStealer` yêu cầu chú thích trong ngoặc vuông `Application: <Browser> [Profile:` thay thế. Trong quá trình phân loại (triage), cần xem việc quy kết họ mã độc là chưa xác định: quy ước đặt tên theo từng hồ sơ `<Browser>_<Profile>[<hex>]` trùng khớp với Lumma, nhưng cấu trúc dữ liệu khối 4 dòng bao quanh không khớp với cấu trúc dữ liệu chuẩn `SOFT/URL/USER/PASS` của Lumma và không có nguồn công khai nào xác nhận mối liên hệ này.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

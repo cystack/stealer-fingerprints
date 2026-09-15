@@ -17,7 +17,7 @@
     "Documents matching the file-grabber filter list",
     "Desktop screenshots"
   ],
-  "detection_notes": "The strongest single signal is the verbatim Telegram\nchannel handle `t.me/SantaStealer`, embedded by the\nmalware's configuration and written into every artifact\nthe malware emits. Paired with the file-grabber\nmanifest header `Found N Sensitive files. Many of\nthese will be false positives`, the family attribution\nis high-confidence. The ASCII-art `SANTA STEALER`\nbanner uses Unicode box-drawing characters, so triage\nrules should anchor on the channel handle and template\nliteral rather than the banner text itself.",
+  "detection_notes": "The strongest single signal is the verbatim Telegram\nchannel handle `t.me/SantaStealer`, embedded by the\nmalware's configuration and written into every artifact\nthe malware emits. Paired with the file-grabber\nmanifest header `Found N Sensitive files. Many of these will be false positives`, the family attribution\nis high-confidence. The ASCII-art `SANTA STEALER`\nbanner uses Unicode box-drawing characters, so triage\nrules should anchor on the channel handle and template\nliteral rather than the banner text itself.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -80,5 +80,50 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "SantaStealer là một mã độc đánh cắp thông tin dạng malware-as-a-service, lần đầu được ghi nhận công khai vào tháng 12 năm 2025. Chiến dịch này là bản đổi thương hiệu của một dự án trước đó có tên BluelineStealer; thương hiệu SantaStealer là bản tái ra mắt từ phía đối tượng vận hành nhằm chuẩn bị cho đợt đẩy mạnh ra mắt vào cuối năm. Các nhà nghiên cứu đã thu được mẫu và quyền truy cập vào bảng điều khiển web dành cho đại lý (affiliate web panel), đồng thời xác định được một nhà phát triển nói tiếng Nga. Giá bán gồm gói Basic 175 USD/tháng và gói Premium 300 USD/tháng, được quảng cáo trên Telegram và các diễn đàn hacker.\n\nMã độc chạy 14 mô-đun thu thập dữ liệu song song theo các luồng (thông tin xác thực trình duyệt, cookie, lịch sử duyệt web, thẻ tín dụng, phiên đăng nhập Telegram/Discord/Steam, các ứng dụng ví tiền điện tử và tiện ích mở rộng trình duyệt, mô-đun thu thập tệp tài liệu, ảnh chụp màn hình desktop). Dữ liệu thu thập được ghi vào bộ nhớ, nén thành tệp `Log.zip` trong `%TEMP%`, chia thành các đoạn 10 MB, và được đưa ra ngoài qua HTTP không mã hóa đến một địa chỉ IP C2 được ghi cố định, qua cổng 6767. Mã độc tự quảng cáo thông qua kênh Telegram `t.me/SantaStealer`, kênh này cũng được nhúng nguyên văn trong mọi dấu vết mà mã độc ghi ra.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trên trình duyệt (Chromium và Gecko)",
+        "Cookie, lịch sử duyệt web, dữ liệu tự động điền của trình duyệt",
+        "Dữ liệu thẻ tín dụng đã lưu trên trình duyệt",
+        "Các ứng dụng ví tiền điện tử và tiện ích mở rộng trình duyệt",
+        "Dữ liệu phiên đăng nhập Telegram, Discord và Steam",
+        "Tài liệu khớp với danh sách bộ lọc của mô-đun thu thập tệp",
+        "Ảnh chụp màn hình desktop"
+      ],
+      "detection_notes": "Tín hiệu mạnh nhất là tên kênh Telegram `t.me/SantaStealer` được nhúng nguyên văn trong cấu hình của mã độc và ghi vào mọi dấu vết mà mã độc tạo ra. Kết hợp với tiêu đề manifest của mô-đun thu thập tệp `Found N Sensitive files. Many of these will be false positives`, việc quy kết họ mã độc đạt mức độ tin cậy cao. Biểu ngữ ASCII-art `SANTA STEALER` sử dụng các ký tự vẽ khung Unicode, do đó các quy tắc phân loại nên bám vào tên kênh và chuỗi khuôn mẫu (template literal) thay vì nội dung văn bản của biểu ngữ.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1113",
+          "name": "Chụp màn hình"
+        },
+        {
+          "id": "T1119",
+          "name": "Thu thập tự động"
+        }
+      ]
+    }
+  }
 }

@@ -1,32 +1,48 @@
 # PXA Stealer
 
+## Overview / Tổng quan
+
+### English
+
 PXA Stealer is a Vietnamese-origin info-stealer. Its
 `system_info.txt` uses a Vietnamese header
 (`Thông tin hệ thống`) and snake_case keys lifted from WMI /
 Win32 API names, making the fingerprint visually distinctive
 even before content matches.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **Known malware family**
+PXA Stealer là một mã độc đánh cắp thông tin có nguồn gốc từ Việt Nam. `system_info.txt` của nó sử dụng phần tiêu đề bằng tiếng Việt (`Thông tin hệ thống`) và các khóa dạng snake_case được lấy từ tên WMI / Win32 API, khiến dấu vết trở nên đặc trưng về mặt hình thức ngay cả trước khi đối chiếu nội dung.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `PXAStealer`
 - Variants observed: **2**
 - CyStack observations represented: **108,969**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- Browser saved credentials and cookies
-- Crypto wallet extensions and desktop clients
-- Telegram, Discord, Steam session tokens
-- VPN and FTP client configurations
-- Documents matching specific filename patterns
+| English | Tiếng Việt |
+|---|---|
+| Browser saved credentials and cookies | Thông tin xác thực và cookie đã lưu trong trình duyệt |
+| Crypto wallet extensions and desktop clients | Tiện ích mở rộng ví tiền mã hóa và ứng dụng desktop |
+| Telegram, Discord, Steam session tokens | Token phiên đăng nhập của Telegram, Discord, Steam |
+| VPN and FTP client configurations | Cấu hình ứng dụng VPN và FTP client |
+| Documents matching specific filename patterns | Tài liệu khớp với các mẫu tên tệp cụ thể |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 Vietnamese banner `Thông tin hệ thống` is unambiguous. Pair
 with the snake_case key style (`computer_system`, `os`,
 `processor`, `bios`) to confirm.
+
+### Tiếng Việt
+
+Banner tiếng Việt `Thông tin hệ thống` là dấu hiệu rõ ràng, không gây nhầm lẫn. Kết hợp với kiểu khóa snake_case (`computer_system`, `os`, `processor`, `bios`) để xác nhận.
 
 ## Observed log variants
 
@@ -68,13 +84,13 @@ Recognition anchors:
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
-| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
-| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores | Thông tin xác thực từ kho mật khẩu |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers | Thông tin xác thực từ trình duyệt web |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie | Đánh cắp cookie phiên web |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
 
 ## Related catalog profiles
 

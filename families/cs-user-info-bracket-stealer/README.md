@@ -1,29 +1,40 @@
 # CSUserInfoBracketStealer
 
+## Overview / Tổng quan
+
+### English
+
 CyStack tracking name for an unattributed Windows
 `Information.txt` template built from `[User Info]`, `[Network]`,
 `[System]`, `[Drives]`, `[GPU]`, and `[Basic]` sections. The same
 field grammar has been observed with the self-labels `AETHERIS`,
 `PDRstealer`, and `Banshee v1.4`, and with no surviving banner.
-The AETHERIS-labelled observation carries the `Developer
-@sexyweekly` watermark and was distributed in an `@BRADMAX`-style
+The AETHERIS-labelled observation carries the `Developer @sexyweekly` watermark and was distributed in an `@BRADMAX`-style
 pack. These labels are retained only as per-variant panel brands.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **CyStack tracking name**
+Định danh do CyStack đặt cho một mẫu thông tin (template) Windows `Information.txt` chưa được quy kết, được xây dựng từ các phần `[User Info]`, `[Network]`, `[System]`, `[Drives]`, `[GPU]` và `[Basic]`. Cùng một cấu trúc ngữ pháp trường dữ liệu này đã được ghi nhận với các nhãn tự đặt `AETHERIS`, `PDRstealer` và `Banshee v1.4`, cũng như trường hợp không còn banner sót lại. Mẫu quan sát được gắn nhãn AETHERIS mang watermark `Developer @sexyweekly` và được phân phối trong một gói theo kiểu `@BRADMAX`. Các nhãn này chỉ được giữ lại như tên thương hiệu bảng điều khiển (panel) riêng của từng biến thể.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `Aetheris Stealer (observed self-label)`, `Banshee v1.4 (observed self-label)`, `PDRstealer (observed self-label)`, `User Info / Input ISO bracket template`
 - Variants observed: **3**
 - CyStack observations represented: **5,373**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- Browser saved credentials and cookies
-- Crypto wallet extensions and clients
-- System hardware and locale inventory
+| English | Tiếng Việt |
+|---|---|
+| Browser saved credentials and cookies | Thông tin xác thực và cookie được lưu trong trình duyệt |
+| Crypto wallet extensions and clients | Tiện ích mở rộng và ứng dụng ví tiền điện tử |
+| System hardware and locale inventory | Thông tin phần cứng hệ thống và cấu hình vùng miền (locale) |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 Primary shape is `[User Info]` plus `Input ISO:`. Stripped forms
 retain `[Basic]` plus line-anchored `User Domain:`, or
@@ -35,6 +46,10 @@ reuse is not evidence of payload identity or common lineage.
 `AETHERIS`, `PDRstealer`, and `Banshee v1.4` are self-labels only;
 the last does not imply a relationship to the separately
 documented macOS malware named Banshee.
+
+### Tiếng Việt
+
+Cấu trúc dữ liệu chính là `[User Info]` kết hợp với `Input ISO:`. Các biến thể đã bị lược bỏ vẫn giữ `[Basic]` kết hợp với `User Domain:` được neo theo dòng, hoặc `Hwid:` được neo theo dòng kết hợp với `CPU Name:`. Nguồn ToxSteal đã được xác định tạo dữ liệu đầu ra với cùng sáu phần và từ vựng trường dữ liệu như trên, trong khi phân tích độc lập của IRoveroll ghi nhận cùng bố cục `Information.txt` và cùng thường trình xử lý clipboard. Việc tái sử dụng chính xác mẫu thông tin (template) không phải là bằng chứng cho thấy payload giống hệt nhau hay có chung nguồn gốc. `AETHERIS`, `PDRstealer` và `Banshee v1.4` chỉ là các nhãn tự đặt; nhãn cuối cùng không hàm ý có mối liên hệ với mã độc macOS được ghi nhận riêng biệt có tên Banshee.
 
 ## Observed log variants
 
@@ -95,13 +110,13 @@ Recognition anchors:
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
-| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
-| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores | Thông tin xác thực từ kho mật khẩu |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers | Thông tin xác thực từ trình duyệt web |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie | Đánh cắp cookie phiên web |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
 
 ## Related catalog profiles
 

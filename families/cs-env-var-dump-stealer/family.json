@@ -3,7 +3,7 @@
   "name": "CSEnvVarDumpStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSEnvVarDumpStealer is a CyStack-coined identifier for a\n.NET-based stealer panel whose `system_info.txt` opens with a\n`=== SYSTEM INFORMATION ===` header followed by a `===\nENVIRONMENT VARIABLES ===` block that dumps the full Win32\nenvironment table verbatim. Distributed through the `@BRADMAX`\nTelegram aggregator (public channel catalogues list\n`t.me/bradmax_cloud` as a Redline / Raccoon Data Logs\nchannel), with per-victim folders named `[<CC>]@BRADMAX\n(<N>)/`.\n\nDistinctive to this panel are the `CLR Version:` and `.NET\nRuntime:` fields (pointing to a .NET builder), the `Default\nGateway:` / `Antivirus:` / `Local IP:` triple, and a verbatim\nWin32 environment dump as the second section. A panel bug\nemits `RAM: NoSystemBattery (100%)` as a duplicate `RAM:`\nline: a battery-detection result mislabeled with the RAM key.\nThe `NoSystemBattery (100%)` literal is shared with\nStealerium's `Info.txt` `BATTERY:` field per a community\nstealer-format catalogue, but Stealerium's layout uses\nbracket-titled `[Machine]` / `[Virtualization]` sections,\nnever the `===` triple-equals headers seen here, so the\nrelationship is at most a snippet lift, not a fork.",
+  "description": "CSEnvVarDumpStealer is a CyStack-coined identifier for a\n.NET-based stealer panel whose `system_info.txt` opens with a\n`=== SYSTEM INFORMATION ===` header followed by a `=== ENVIRONMENT VARIABLES ===` block that dumps the full Win32\nenvironment table verbatim. Distributed through the `@BRADMAX`\nTelegram aggregator (public channel catalogues list\n`t.me/bradmax_cloud` as a Redline / Raccoon Data Logs\nchannel), with per-victim folders named `[<CC>]@BRADMAX (<N>)/`.\n\nDistinctive to this panel are the `CLR Version:` and `.NET Runtime:` fields (pointing to a .NET builder), the `Default Gateway:` / `Antivirus:` / `Local IP:` triple, and a verbatim\nWin32 environment dump as the second section. A panel bug\nemits `RAM: NoSystemBattery (100%)` as a duplicate `RAM:`\nline: a battery-detection result mislabeled with the RAM key.\nThe `NoSystemBattery (100%)` literal is shared with\nStealerium's `Info.txt` `BATTERY:` field per a community\nstealer-format catalogue, but Stealerium's layout uses\nbracket-titled `[Machine]` / `[Virtualization]` sections,\nnever the `===` triple-equals headers seen here, so the\nrelationship is at most a snippet lift, not a fork.",
   "aliases": [
     "@BRADMAX system_info.txt"
   ],
@@ -76,5 +76,47 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSEnvVarDumpStealer là định danh do CyStack đặt cho một panel mã độc đánh cắp thông tin dựa trên .NET, trong đó `system_info.txt` mở đầu bằng tiêu đề `=== SYSTEM INFORMATION ===` theo sau là khối `=== ENVIRONMENT VARIABLES ===` dump nguyên văn toàn bộ bảng biến môi trường Win32. Được phát tán qua bộ tổng hợp Telegram `@BRADMAX` (kênh công khai liệt kê `t.me/bradmax_cloud` là kênh Redline / Raccoon Data Logs), với các thư mục theo từng nạn nhân được đặt tên `[<CC>]@BRADMAX (<N>)/`.\n\nĐặc trưng riêng của panel này là các trường `CLR Version:` và `.NET Runtime:` (trỏ đến một builder .NET), bộ ba `Default Gateway:` / `Antivirus:` / `Local IP:`, và phần dump nguyên văn biến môi trường Win32 là mục thứ hai. Một lỗi trong panel khiến `RAM: NoSystemBattery (100%)` tạo dữ liệu đầu ra trùng lặp với dòng `RAM:`: đây là kết quả phát hiện pin bị gán nhãn sai bằng khóa RAM. Chuỗi ký tự `NoSystemBattery (100%)` được dùng chung với trường `Info.txt` `BATTERY:` của Stealerium theo một danh mục định dạng mã độc đánh cắp thông tin do cộng đồng biên soạn, nhưng bố cục của Stealerium sử dụng các mục có tiêu đề trong dấu ngoặc vuông `[Machine]` / `[Virtualization]`, không bao giờ dùng các tiêu đề ba dấu bằng `===` như thấy ở đây, vì vậy mối liên hệ nhiều nhất chỉ là việc sao chép một đoạn mã, chứ không phải là một nhánh (fork).",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trong trình duyệt (các tệp đi kèm panel)",
+        "Thông tin kiểm kê phần cứng và ngôn ngữ hệ thống",
+        "Dữ liệu dump nguyên văn biến môi trường Win32",
+        "Liệt kê các sản phẩm diệt virus"
+      ],
+      "detection_notes": "Dấu vết nhận diện ba phần: chuỗi con `=== SYSTEM INFORMATION ===` VÀ chuỗi con `=== ENVIRONMENT VARIABLES ===` VÀ chuỗi con `.NET Runtime:`. Khóa `.NET Runtime:` là duy nhất trong danh mục này; tiêu đề mục biến môi trường giúp loại trừ PCInfoStealer (vốn yêu cầu `=== NETWORK INFO ===`) và CSWmicDumpStealer (dùng khóa dạng snake_case, không có phần dump biến môi trường). Việc quy kết họ mã độc này vẫn mang tính tạm thời cho đến khi có bản đồ tình báo mối đe dọa được công bố cho bố cục này.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1518.001",
+          "name": "Dò tìm phần mềm bảo mật"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        }
+      ]
+    }
+  }
 }

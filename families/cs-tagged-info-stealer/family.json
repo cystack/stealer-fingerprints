@@ -3,7 +3,7 @@
   "name": "CSTaggedInfoStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSTaggedInfoStealer is a CyStack-coined identifier for a\nsectioned ``Information.txt`` panel observed inside the\n``17-20 AUGUST - 23791 LOGS.part01.rar`` aggregator pack. The\npanel uses ``- IP Info -`` / ``- PC Info -`` / ``- Other Info\n-`` / ``- Log Info -`` dash-bordered section headers, a\nRedline-derivative body vocabulary (``FileLocation:``,\n``Current Language:``, ``Is Elevated:``, ``HWID:`` in\n22-character alphanumeric shape), Cthulhu-derived geo fields\n(``Postal:``, ``ISP:`` with trailing ``- A<ASN>`` autonomous\nsystem suffix), and a distinctive credential-categorization\nblock: ``Tags Passwords:`` with comma-separated category tags\n(SOCIAL, CRYPTO, SENSITIVE), ``Tagged URLs:``, and ``Tagged\nCookies:``.\n\nThe sectioned layout plus the tag-category block are\nunattested in public reporting and community catalogues. The\ncategorization scheme resembles StealC panel-side markers\ndescribed in public ACR Stealer research, but the log-side\noutput shape does not match StealC's canonical ``Network\nInfo:`` + ``System Summary:`` layout. Family attribution is\nprovisional pending a published mapping.",
+  "description": "CSTaggedInfoStealer is a CyStack-coined identifier for a\nsectioned ``Information.txt`` panel observed inside the\n``17-20 AUGUST - 23791 LOGS.part01.rar`` aggregator pack. The\npanel uses ``- IP Info -`` / ``- PC Info -`` / ``- Other Info -`` / ``- Log Info -`` dash-bordered section headers, a\nRedline-derivative body vocabulary (``FileLocation:``,\n``Current Language:``, ``Is Elevated:``, ``HWID:`` in\n22-character alphanumeric shape), Cthulhu-derived geo fields\n(``Postal:``, ``ISP:`` with trailing ``- A<ASN>`` autonomous\nsystem suffix), and a distinctive credential-categorization\nblock: ``Tags Passwords:`` with comma-separated category tags\n(SOCIAL, CRYPTO, SENSITIVE), ``Tagged URLs:``, and ``Tagged Cookies:``.\n\nThe sectioned layout plus the tag-category block are\nunattested in public reporting and community catalogues. The\ncategorization scheme resembles StealC panel-side markers\ndescribed in public ACR Stealer research, but the log-side\noutput shape does not match StealC's canonical ``Network Info:`` + ``System Summary:`` layout. Family attribution is\nprovisional pending a published mapping.",
   "aliases": [
     "Dash-section Info-tagged stealer",
     "- IP Info - / - PC Info - sectioned Information.txt"
@@ -15,7 +15,7 @@
     "Host fingerprint (CPU, GPU with embedded resolution,\nHWID, OS, current language, admin flag)",
     "Geo enrichment (IP, country, city, postal code, ISP\nwith autonomous system number, timezone offset)"
   ],
-  "detection_notes": "Fingerprint requires four line-anchored anchors: ``- IP Info\n-``, ``- PC Info -``, ``- Log Info -``, and ``Tags\nPasswords:``. The dash-bordered section headers plus the\ncategorization key together are unique across this catalog.\nDuring triage, correlate the sample with sibling LOGS-pack\nvariants (John Doe Project, Slurm Cloud) shipping in the same\narchive to identify shared operator infrastructure. The\nRedline-derivative body vocabulary means the underlying\nbuilder could be a Redline fork with an added categorization\npanel layer, but no published mapping confirms this.",
+  "detection_notes": "Fingerprint requires four line-anchored anchors: ``- IP Info -``, ``- PC Info -``, ``- Log Info -``, and ``Tags Passwords:``. The dash-bordered section headers plus the\ncategorization key together are unique across this catalog.\nDuring triage, correlate the sample with sibling LOGS-pack\nvariants (John Doe Project, Slurm Cloud) shipping in the same\narchive to identify shared operator infrastructure. The\nRedline-derivative body vocabulary means the underlying\nbuilder could be a Redline fork with an added categorization\npanel layer, but no published mapping confirms this.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -73,5 +73,44 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSTaggedInfoStealer là định danh do CyStack đặt cho một bảng điều khiển ``Information.txt`` được chia theo phần, quan sát thấy bên trong gói tổng hợp ``17-20 AUGUST - 23791 LOGS.part01.rar``. Bảng điều khiển sử dụng các tiêu đề phần được viền bằng dấu gạch ngang ``- IP Info -`` / ``- PC Info -`` / ``- Other Info -`` / ``- Log Info -``, phần từ vựng nội dung mang tính phái sinh từ Redline (``FileLocation:``, ``Current Language:``, ``Is Elevated:``, ``HWID:`` theo cấu trúc dữ liệu chuỗi ký tự chữ-số 22 ký tự), các trường địa lý phái sinh từ Cthulhu (``Postal:``, ``ISP:`` kèm hậu tố hệ thống tự trị ``- A<ASN>``), và một khối phân loại thông tin xác thực đặc trưng: ``Tags Passwords:`` với các thẻ phân loại phân tách bằng dấu phẩy (SOCIAL, CRYPTO, SENSITIVE), ``Tagged URLs:``, và ``Tagged Cookies:``.\n\nBố cục chia theo phần cùng với khối thẻ phân loại chưa từng được ghi nhận trong các báo cáo công khai và danh mục cộng đồng. Cơ chế phân loại này có nét tương đồng với các dấu hiệu phía bảng điều khiển của StealC được mô tả trong nghiên cứu công khai về ACR Stealer, nhưng cấu trúc dữ liệu đầu ra phía nhật ký lại không khớp với bố cục chuẩn ``Network Info:`` + ``System Summary:`` của StealC. Việc quy kết họ mã độc hiện vẫn mang tính tạm thời cho đến khi có ánh xạ được công bố.",
+      "typical_targets": [
+        "Mật khẩu trình duyệt kèm thẻ phân loại SOCIAL / CRYPTO / SENSITIVE",
+        "Cookie trình duyệt kèm danh sách thẻ theo từng URL / từng cookie",
+        "Dữ liệu thu thập từ tệp, ví tiền điện tử, thẻ tín dụng, thông tin xác thực FTP/SSH, và token Discord (tổng hợp theo số lượng)",
+        "Dấu vết định danh máy (CPU, GPU kèm độ phân giải tích hợp, HWID, hệ điều hành, ngôn ngữ hiện tại, cờ quyền quản trị)",
+        "Dữ liệu làm giàu địa lý (IP, quốc gia, thành phố, mã bưu điện, ISP kèm số hệ thống tự trị, độ lệch múi giờ)"
+      ],
+      "detection_notes": "Việc nhận diện dấu hiệu yêu cầu bốn điểm neo theo dòng: ``- IP Info -``, ``- PC Info -``, ``- Log Info -``, và ``Tags Passwords:``. Các tiêu đề phần được viền bằng dấu gạch ngang cùng với khóa phân loại là sự kết hợp duy nhất trong danh mục này. Trong quá trình phân loại ban đầu, cần đối chiếu tương quan giữa mẫu này với các biến thể LOGS-pack liên quan (John Doe Project, Slurm Cloud) được đóng gói chung trong cùng kho lưu trữ nhằm xác định hạ tầng dùng chung của đối tượng vận hành. Phần từ vựng nội dung mang tính phái sinh từ Redline cho thấy bộ dựng (builder) nền tảng có thể là một bản fork của Redline được bổ sung thêm lớp bảng phân loại, tuy nhiên chưa có ánh xạ công bố nào xác nhận điều này.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        }
+      ]
+    }
+  }
 }

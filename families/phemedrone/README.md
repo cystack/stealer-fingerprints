@@ -1,5 +1,9 @@
 # Phemedrone
 
+## Overview / Tổng quan
+
+### English
+
 Phemedrone Stealer is an open-source .NET info-stealer first
 surfaced in August 2023 at
 `github.com/nullixx/Phemedrone-Stealer`. Public research
@@ -11,9 +15,7 @@ alias. Forks include VGS Stealer and its successor Arcane
 (publicly documented in March 2025).
 
 The on-victim panel is a plain-text `Information.txt` with
-three dashed-section headers spelled `----- Geolocation Data
------`, `----- Hardware Info -----`, and `----- Miscellaneous
------`. Fields under each header use a column-aligned `Key:`
+three dashed-section headers spelled `----- Geolocation Data -----`, `----- Hardware Info -----`, and `----- Miscellaneous -----`. Fields under each header use a column-aligned `Key:`
 plus multi-space plus value shape. The Geolocation block ships
 IP, Country (name plus alpha-2 code), City, Postal, and MAC.
 The Hardware block ships Username (as `<user>\<hostname>`, the
@@ -27,23 +29,33 @@ attribution: it captures whatever was on the victim clipboard
 at exfil time, including coincidental strings that mention
 other stealers' names.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **Known malware family**
+Phemedrone Stealer là một mã độc đánh cắp thông tin viết bằng .NET, mã nguồn mở, xuất hiện lần đầu vào tháng 8/2023 tại `github.com/nullixx/Phemedrone-Stealer`. Các nghiên cứu công khai đã ghi nhận việc mã độc này được sử dụng trong một chiến dịch khai thác lỗ hổng CVE-2023-36025 nhằm vượt qua Windows SmartScreen vào tháng 1/2024, kèm theo các phân tích kỹ thuật chi tiết sau đó. Các cơ sở dữ liệu mã độc công khai theo dõi họ mã độc này dưới tên `win.phemedrone_stealer` và liệt kê Ov3r_Stealer như một bí danh. Các bản fork bao gồm VGS Stealer và phiên bản kế thừa Arcane (được công bố công khai vào tháng 3/2025).
+
+Bảng điều khiển trên máy nạn nhân là một `Information.txt` dạng văn bản thuần với ba tiêu đề mục có gạch ngang được đặt tên là `----- Geolocation Data -----`, `----- Hardware Info -----`, và `----- Miscellaneous -----`. Các trường dữ liệu dưới mỗi tiêu đề sử dụng cấu trúc dữ liệu gồm `Key:` được căn cột, cộng với nhiều khoảng trắng, cộng với giá trị. Khối Geolocation chứa IP, Country (tên quốc gia kèm mã alpha-2), City, Postal, và MAC. Khối Hardware chứa Username (dưới dạng `<user>\<hostname>`, ngược với thứ tự `USERDOMAIN\USER` của Windows), Windows name, Hardware ID (mã băm MachineGuid 32 ký tự hex), GPU, CPU, và RAM. Khối Miscellaneous chứa các sản phẩm diệt virus (phân tách bằng dấu phẩy, lấy từ truy vấn WMI SecurityCenter2), File Location (thường là `C:\Users\<user>\Downloads\Build.exe`), và nội dung Clipboard. Cần coi trường nội dung Clipboard là không đáng tin cậy cho mục đích quy kết họ mã độc: trường này ghi lại bất kỳ nội dung nào có trên clipboard của nạn nhân tại thời điểm đưa dữ liệu ra ngoài, bao gồm cả các chuỗi trùng hợp ngẫu nhiên có nhắc đến tên của các mã độc đánh cắp thông tin khác.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Phemedrone Stealer`, `Ov3r_Stealer`
 - Variants observed: **0**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- Browser saved credentials, cookies, autofill, credit cards
-- Crypto wallet browser extensions and desktop clients
-- Discord, Telegram, Steam session data
-- Filezilla / VPN / gaming client configs
-- Clipboard content at time of execution
-- System hardware and geolocation inventory
+| English | Tiếng Việt |
+|---|---|
+| Browser saved credentials, cookies, autofill, credit cards | Thông tin xác thực, cookie, dữ liệu tự động điền, thẻ tín dụng được lưu trong trình duyệt |
+| Crypto wallet browser extensions and desktop clients | Tiện ích mở rộng trình duyệt và ứng dụng desktop của ví tiền mã hóa |
+| Discord, Telegram, Steam session data | Dữ liệu phiên của Discord, Telegram, Steam |
+| Filezilla / VPN / gaming client configs | Cấu hình của Filezilla / VPN / ứng dụng gaming |
+| Clipboard content at time of execution | Nội dung clipboard tại thời điểm thực thi |
+| System hardware and geolocation inventory | Thông tin phần cứng hệ thống và vị trí địa lý |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 Fingerprint requires all three dashed section headers
 (`----- Geolocation Data -----`,
@@ -57,24 +69,28 @@ sometimes carries other stealers' banners as unrelated
 strings the victim happened to copy; do not use that field
 to reassign family attribution.
 
+### Tiếng Việt
+
+Việc nhận diện dấu hiệu đặc trưng yêu cầu cả ba tiêu đề mục có gạch ngang (`----- Geolocation Data -----`, `----- Hardware Info -----`, `----- Miscellaneous -----`) phải nằm ở đầu dòng. Bộ ba neo nhận diện này là duy nhất của Phemedrone trong toàn bộ danh mục: Arcane sử dụng ba dấu gạch ngang `---User Info---` / `---Full Pc Info---` không có khoảng trắng quanh tên mục, còn các định dạng mục theo dấu ngoặc vuông chuẩn như Aura và Vidar sử dụng dấu ngoặc vuông `[Section]`. Trong quá trình phân loại ban đầu, nên đối chiếu hồ sơ này với một ảnh chụp màn hình selfie `moi.jpg` liên quan và một tệp `passwords.txt` mở đầu bằng `PASSWORDS FROM: <browser path>`. Nội dung Clipboard trong khối Miscellaneous đôi khi chứa banner của các mã độc đánh cắp thông tin khác dưới dạng các chuỗi không liên quan mà nạn nhân tình cờ sao chép; không được dùng trường này để quy kết lại họ mã độc.
+
 ## Observed log variants
 
 No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
-| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
-| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
-| [T1033](https://attack.mitre.org/techniques/T1033/) | System Owner/User Discovery |
-| [T1518.001](https://attack.mitre.org/techniques/T1518/001/) | Security Software Discovery |
-| [T1614](https://attack.mitre.org/techniques/T1614/) | System Location Discovery |
-| [T1115](https://attack.mitre.org/techniques/T1115/) | Clipboard Data |
-| [T1016](https://attack.mitre.org/techniques/T1016/) | System Network Configuration Discovery |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores | Thông tin xác thực từ kho mật khẩu |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers | Thông tin xác thực từ trình duyệt web |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie | Đánh cắp cookie phiên web |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
+| [T1033](https://attack.mitre.org/techniques/T1033/) | System Owner/User Discovery | Xác định chủ sở hữu/người dùng hệ thống |
+| [T1518.001](https://attack.mitre.org/techniques/T1518/001/) | Security Software Discovery | Dò tìm phần mềm bảo mật |
+| [T1614](https://attack.mitre.org/techniques/T1614/) | System Location Discovery | Xác định vị trí hệ thống |
+| [T1115](https://attack.mitre.org/techniques/T1115/) | Clipboard Data | Dữ liệu bảng tạm |
+| [T1016](https://attack.mitre.org/techniques/T1016/) | System Network Configuration Discovery | Dò tìm cấu hình mạng hệ thống |
 
 ## Related catalog profiles
 

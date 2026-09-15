@@ -1,5 +1,9 @@
 # Bugatti Cloud
 
+## Overview / Tổng quan
+
+### English
+
 Banner-only `information.txt` produced by the `@bugatti_cloud`
 Telegram-channel distribution. Victim folders use a
 config-style name pattern
@@ -9,24 +13,34 @@ between pipe borders, with no field section at all; the
 underlying stealer engine emits its banner without any
 identity preamble.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **Log aggregator**
+`information.txt` chỉ có biểu ngữ, được tạo ra qua kênh phát tán Telegram `@bugatti_cloud`. Các thư mục nạn nhân sử dụng mẫu tên kiểu cấu hình (`AR_<ver>_Cty_<id>_rgn_<n>i_ll<n>i_eenable_itp_optimization0-<hwidpfx>`). Nội dung tệp hệ thống là một dòng duy nhất biểu ngữ ASCII-art nằm giữa các viền dạng ống, không có phần trường thông tin nào cả; mã độc đánh cắp thông tin cơ bản tạo dữ liệu đầu ra là biểu ngữ mà không có bất kỳ lời giới thiệu định danh nào.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **Log aggregator / Nguồn tổng hợp log**
 - Attribution confidence: **unknown**
 - Aliases: -
 - Variants observed: **1**
 - CyStack observations represented: **2**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- No target inventory published yet.
+- No target inventory published yet / Chưa công bố danh mục mục tiêu.
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 Single-line `information.txt` containing only an ASCII-art
 banner between pipe borders. Companion folder layout uses the
 long config-style suffix style, distinct from other
 channel-specific layouts.
+
+### Tiếng Việt
+
+`information.txt` một dòng duy nhất chỉ chứa biểu ngữ ASCII-art nằm giữa các viền dạng ống. Bố cục thư mục đi kèm sử dụng kiểu hậu tố dài dạng cấu hình, khác biệt với các bố cục theo kênh khác.
 
 ## Families seen in this aggregator
 
@@ -74,7 +88,7 @@ Recognition anchors:
 
 ## MITRE ATT&CK
 
-No ATT&CK mapping published yet.
+No ATT&CK mapping published yet / Chưa công bố ánh xạ ATT&CK.
 
 ## Related catalog profiles
 

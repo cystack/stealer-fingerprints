@@ -3,7 +3,7 @@
   "name": "CSCcApostropheStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSCcApostropheStealer is a CyStack-coined identifier for a\nminimal three-file victim folder observed inside `!! 2025\nNOV.part001.rar` BRADMAX / `@BRADLOGS` aggregator packs at\n`[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/` victim folders. The pack\nships `cc's.txt` (credit-card listing with apostrophe-s\nlowercase naming) plus `cookies.txt` plus `history.txt`, and\nsometimes an empty-named packer directory artifact. No\ncompanion system-info file, no passwords dump, no token files.\n\n`cc's.txt` opens with the panel's 5-column pipe-header `Name\non Card | Expiration Month | Expiration Year | Card Number |\nDate Modified` (double-space-pipe-double-space separators).\nPer-card rows follow when the victim had saved cards; victims\nwith no saved cards produce a header-only file (~89 bytes).\nThe apostrophe-s filename is the distinguishing feature:\ncanonical Lumma / Vidar / Redline / StealC /\nPhantom-documented credit-card files use `cards.txt` /\n`CC.txt` / `CreditCards.txt`, never the `cc's.txt` form.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and\ncommunity catalogues do not document a stealer that emits\nexactly this `cc's.txt` + `cookies.txt` + `history.txt` shape\nwith the pipe-header credit-card file. The column-style\nwriting pattern is consistent with Stealerium and its forks\n(public reporting documents Stealerium and Phantom as one fork\nlineage), but no public Stealerium / Phantom analysis attests\nthe `cc's.txt` apostrophe filename, so the family attribution\nstays unknown.",
+  "description": "CSCcApostropheStealer is a CyStack-coined identifier for a\nminimal three-file victim folder observed inside `!! 2025 NOV.part001.rar` BRADMAX / `@BRADLOGS` aggregator packs at\n`[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/` victim folders. The pack\nships `cc's.txt` (credit-card listing with apostrophe-s\nlowercase naming) plus `cookies.txt` plus `history.txt`, and\nsometimes an empty-named packer directory artifact. No\ncompanion system-info file, no passwords dump, no token files.\n\n`cc's.txt` opens with the panel's 5-column pipe-header `Name on Card | Expiration Month | Expiration Year | Card Number | Date Modified` (double-space-pipe-double-space separators).\nPer-card rows follow when the victim had saved cards; victims\nwith no saved cards produce a header-only file (~89 bytes).\nThe apostrophe-s filename is the distinguishing feature:\ncanonical Lumma / Vidar / Redline / StealC /\nPhantom-documented credit-card files use `cards.txt` /\n`CC.txt` / `CreditCards.txt`, never the `cc's.txt` form.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and\ncommunity catalogues do not document a stealer that emits\nexactly this `cc's.txt` + `cookies.txt` + `history.txt` shape\nwith the pipe-header credit-card file. The column-style\nwriting pattern is consistent with Stealerium and its forks\n(public reporting documents Stealerium and Phantom as one fork\nlineage), but no public Stealerium / Phantom analysis attests\nthe `cc's.txt` apostrophe filename, so the family attribution\nstays unknown.",
   "aliases": [
     "BRADMAX 3-file cc/cookies/history minimal pack",
     "cc apostrophe-s pipe-header layout"
@@ -13,7 +13,7 @@
     "Browser cookies",
     "Browser history"
   ],
-  "detection_notes": "Fingerprint requires (a) `cc's.txt` AND `cookies.txt`\nAND `history.txt` in the folder root, (b) root-entry\ncount <= 4 (the optional fourth entry is an empty-named\npacker DIR), and (c) the `Name on Card  |  Expiration\nMonth  |  Expiration Year  |  Card Number  |  Date\nModified` pipe-header literal in the `cc's.txt` body.\nThe header anchor fires even on victims with no saved\ncards because the panel writes the header row\nunconditionally. The 3-file root-entry cap distinguishes larger Lumma-shaped folders (which require\n`All_Passwords.txt` + `passwords.txt` + `cookies.txt` +\n`history.txt` as documented in the Lumma profile). During triage,\ntreat the family attribution as unknown: the underlying\nstealer builder cannot be identified from the 3-file\nshape plus pipe-header alone.",
+  "detection_notes": "Fingerprint requires (a) `cc's.txt` AND `cookies.txt`\nAND `history.txt` in the folder root, (b) root-entry\ncount <= 4 (the optional fourth entry is an empty-named\npacker DIR), and (c) the `Name on Card | Expiration Month | Expiration Year | Card Number | Date Modified` pipe-header literal in the `cc's.txt` body.\nThe header anchor fires even on victims with no saved\ncards because the panel writes the header row\nunconditionally. The 3-file root-entry cap distinguishes larger Lumma-shaped folders (which require\n`All_Passwords.txt` + `passwords.txt` + `cookies.txt` +\n`history.txt` as documented in the Lumma profile). During triage,\ntreat the family attribution as unknown: the underlying\nstealer builder cannot be identified from the 3-file\nshape plus pipe-header alone.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -46,5 +46,38 @@
   "observed_channels": [
     "https://t.me/BRADLOGS"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSCcApostropheStealer là một định danh do CyStack đặt cho một thư mục nạn nhân tối giản gồm ba tệp, được phát hiện bên trong `!! 2025 NOV.part001.rar` BRADMAX / `@BRADLOGS` aggregator packs tại `[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/` thư mục nạn nhân. Gói này chứa `cc's.txt` (danh sách thẻ tín dụng với cách đặt tên apostrophe-s chữ thường) cộng với `cookies.txt` và `history.txt`, và đôi khi có một dấu vết thư mục packer không đặt tên. Không có tệp thông tin hệ thống đi kèm, không có bản dump mật khẩu, không có tệp token.\n\n`cc's.txt` mở đầu bằng dòng tiêu đề 5 cột dùng dấu pipe của panel `Name on Card | Expiration Month | Expiration Year | Card Number | Date Modified` (dấu phân cách khoảng-trắng-kép-pipe-khoảng-trắng-kép). Các hàng theo từng thẻ sẽ xuất hiện tiếp theo nếu nạn nhân có lưu thẻ; nạn nhân không lưu thẻ nào sẽ tạo ra tệp chỉ có tiêu đề (~89 byte). Tên tệp dạng apostrophe-s là đặc điểm phân biệt: các tệp thẻ tín dụng đã được ghi nhận của Lumma / Vidar / Redline / StealC / Phantom sử dụng `cards.txt` / `CC.txt` / `CreditCards.txt`, chứ không bao giờ dùng dạng `cc's.txt`.\n\nViệc quy kết họ mã độc hiện vẫn mang tính tạm thời, chờ có một ánh xạ tình báo mối đe dọa được công bố cho bố cục này. Các báo cáo công khai và các danh mục cộng đồng không ghi nhận bất kỳ mã độc đánh cắp thông tin nào tạo dữ liệu đầu ra đúng theo cấu trúc `cc's.txt` + `cookies.txt` + `history.txt` này kèm tệp thẻ tín dụng có tiêu đề dùng dấu pipe. Kiểu ghi dữ liệu theo cột này phù hợp với Stealerium và các bản fork của nó (các báo cáo công khai ghi nhận Stealerium và Phantom thuộc cùng một dòng fork), nhưng không có phân tích công khai nào về Stealerium / Phantom xác nhận tên tệp apostrophe `cc's.txt` này, do đó việc quy kết họ mã độc vẫn chưa xác định.",
+      "typical_targets": [
+        "Số thẻ tín dụng đã lưu trên trình duyệt (kèm ngày hết hạn và tên chủ thẻ)",
+        "Cookie trình duyệt",
+        "Lịch sử duyệt web"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện yêu cầu (a) `cc's.txt` VÀ `cookies.txt` VÀ `history.txt` nằm tại gốc thư mục, (b) số lượng mục ở gốc <= 4 (mục thứ tư tùy chọn là một thư mục (DIR) packer không đặt tên), và (c) chuỗi tiêu đề dùng dấu pipe `Name on Card | Expiration Month | Expiration Year | Card Number | Date Modified` xuất hiện trong nội dung `cc's.txt`. Mốc nhận diện tiêu đề này vẫn kích hoạt ngay cả với nạn nhân không lưu thẻ nào, vì panel luôn ghi dòng tiêu đề một cách vô điều kiện. Giới hạn tối đa 3 tệp ở gốc giúp phân biệt với các thư mục có cấu trúc Lumma lớn hơn (yêu cầu `All_Passwords.txt` + `passwords.txt` + `cookies.txt` + `history.txt` như đã mô tả trong hồ sơ Lumma). Trong quá trình phân loại ban đầu, cần coi việc quy kết họ mã độc là chưa xác định: không thể xác định được trình dựng (builder) mã độc đánh cắp thông tin gốc chỉ dựa trên cấu trúc 3 tệp cùng tiêu đề dùng dấu pipe.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1217",
+          "name": "Dò tìm thông tin trình duyệt"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

@@ -3,7 +3,7 @@
   "name": "CSMainLootStealer",
   "classification": "cystack_named",
   "attribution_confidence": "low",
-  "description": "CSMainLootStealer is a CyStack-coined identifier for a\nTelegram-bot-notification `Information.txt` panel with a `✨\nNew Log Received ✨` sparkle-bracketed banner. The body ships a\n`💻 User: <user>@<host>` victim-identity line, a `🌍 IP:`\nplaceholder, two captioned sections (`📊 Main Loot:` for\npasswords / cookies / wallets, `📦 Additional Data:` for\nmessengers / games / servers / grabbers), each carrying\nper-category emoji-prefixed count lines, and a `Support:\n@VerifiedThief` admin contact footer. Observed inside `!! 2025\nNOV.part001.rar` BRADMAX aggregator packs at `[<TAG>]@BRADLOGS\n(BRADMAX) (<NN>)/Information.txt` victim folders.\n\nA single community source (March 2026) hints at Hexo Stealer\nattribution for the sparkle-banner + Main Loot + Additional\nData notification shape, but the article is paywalled and\ncould not be fetched verbatim. A public Hexon Stealer report\ndocuments a related (but distinct) rebrand of Stealit Stealer\nwithout publishing the exact notification format. With one\nunverifiable community source and no confirmation from public\nresearch, family attribution stays CyStack-coined.",
+  "description": "CSMainLootStealer is a CyStack-coined identifier for a\nTelegram-bot-notification `Information.txt` panel with a `✨ New Log Received ✨` sparkle-bracketed banner. The body ships a\n`💻 User: <user>@<host>` victim-identity line, a `🌍 IP:`\nplaceholder, two captioned sections (`📊 Main Loot:` for\npasswords / cookies / wallets, `📦 Additional Data:` for\nmessengers / games / servers / grabbers), each carrying\nper-category emoji-prefixed count lines, and a `Support: @VerifiedThief` admin contact footer. Observed inside `!! 2025 NOV.part001.rar` BRADMAX aggregator packs at `[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/Information.txt` victim folders.\n\nA single community source (March 2026) hints at Hexo Stealer\nattribution for the sparkle-banner + Main Loot + Additional\nData notification shape, but the article is paywalled and\ncould not be fetched verbatim. A public Hexon Stealer report\ndocuments a related (but distinct) rebrand of Stealit Stealer\nwithout publishing the exact notification format. With one\nunverifiable community source and no confirmation from public\nresearch, family attribution stays CyStack-coined.",
   "aliases": [
     "BRADMAX sparkle-banner notification panel",
     "@VerifiedThief Telegram-bot Main Loot / Additional Data log"
@@ -18,7 +18,7 @@
     "Grabbed files (count flag on `🎣 Grabbers:`)",
     "Combined OS username + hostname (user@host on the `💻 User:` line)"
   ],
-  "detection_notes": "Fingerprint requires `New Log Received` substring AND `Main\nLoot:` substring AND `Additional Data:` substring AND\n`@VerifiedThief` substring. The four-anchor combo is unique\nacross this catalog: the `Main Loot:` and `Additional Data:`\nsection-caption pair is the panel-side developer quirk, and\nthe `@VerifiedThief` admin handle is unique to this\ndistribution. During triage, treat this label as a panel-side\nnotification view (counts only): the actual harvested\ncredentials live in sibling files the operator's archive\n(browser-data folders, cookie dumps, etc.) rather than in this\nnotification body. The underlying stealer family is unknown;\nthe Hexo Stealer attribution from that community source is\nprovisional pending published confirmation.",
+  "detection_notes": "Fingerprint requires `New Log Received` substring AND `Main Loot:` substring AND `Additional Data:` substring AND\n`@VerifiedThief` substring. The four-anchor combo is unique\nacross this catalog: the `Main Loot:` and `Additional Data:`\nsection-caption pair is the panel-side developer quirk, and\nthe `@VerifiedThief` admin handle is unique to this\ndistribution. During triage, treat this label as a panel-side\nnotification view (counts only): the actual harvested\ncredentials live in sibling files the operator's archive\n(browser-data folders, cookie dumps, etc.) rather than in this\nnotification body. The underlying stealer family is unknown;\nthe Hexo Stealer attribution from that community source is\nprovisional pending published confirmation.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -75,5 +75,43 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSMainLootStealer là định danh do CyStack đặt cho một cấu trúc dữ liệu bảng điều khiển thông báo qua Telegram-bot `Information.txt` với banner viền lấp lánh `✨ New Log Received ✨`. Phần nội dung chứa dòng nhận diện nạn nhân `💻 User: <user>@<host>`, một trường giữ chỗ `🌍 IP:`, hai phần có chú thích (`📊 Main Loot:` dành cho thông tin xác thực/cookie/ví tiền điện tử, `📦 Additional Data:` dành cho ứng dụng nhắn tin/game/server/mô-đun thu thập), mỗi phần mang các dòng đếm theo từng hạng mục có tiền tố emoji, và một dòng chân trang liên hệ quản trị `Support: @VerifiedThief`. Được quan sát bên trong các gói tổng hợp BRADMAX `!! 2025 NOV.part001.rar` tại các thư mục nạn nhân `[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/Information.txt`.\n\nMột nguồn cộng đồng duy nhất (tháng 3/2026) gợi ý quy kết cho Hexo Stealer đối với cấu trúc thông báo banner-lấp-lánh + Main Loot + Additional Data, nhưng bài viết bị chặn sau tường phí và không thể lấy được nguyên văn. Một báo cáo công khai về Hexon Stealer ghi nhận một biến thể đổi tên liên quan (nhưng khác biệt) của Stealit Stealer mà không công bố định dạng thông báo chính xác. Với một nguồn cộng đồng chưa được xác minh và không có xác nhận từ nghiên cứu công khai, việc quy kết họ mã độc vẫn giữ nguyên là định danh do CyStack đặt.",
+      "typical_targets": [
+        "Thông tin xác thực lưu trong trình duyệt (cờ đếm tại `🔑 Passwords:`)",
+        "Cookie trình duyệt (cờ đếm tại `🍪 Cookies:`)",
+        "Ví tiền điện tử (cờ đếm tại `💰 Wallets:`)",
+        "Phiên đăng nhập ứng dụng nhắn tin (cờ đếm tại `💬 Messengers:`)",
+        "Thông tin xác thực launcher game (cờ đếm tại `🎮 Games:`)",
+        "Thông tin xác thực server/FTP/SSH (cờ đếm tại `🗄️ Servers:`)",
+        "Tệp bị thu thập (cờ đếm tại `🎣 Grabbers:`)",
+        "Tên người dùng hệ điều hành kết hợp tên máy (user@host trên dòng `💻 User:`)"
+      ],
+      "detection_notes": "Việc lấy dấu vết yêu cầu chuỗi con `New Log Received` VÀ chuỗi con `Main Loot:` VÀ chuỗi con `Additional Data:` VÀ chuỗi con `@VerifiedThief`. Tổ hợp bốn điểm neo này là duy nhất trong toàn bộ danh mục này: cặp chú thích phần `Main Loot:` và `Additional Data:` là đặc điểm riêng của nhà phát triển bảng điều khiển, và tài khoản quản trị `@VerifiedThief` là duy nhất đối với đợt phân phối này. Trong quá trình phân loại, hãy coi nhãn này là một giao diện thông báo phía bảng điều khiển (chỉ mang tính đếm số): thông tin xác thực thực tế bị đánh cắp nằm trong các tệp/dấu vết liên quan trong bộ lưu trữ của đối tượng vận hành (thư mục dữ liệu trình duyệt, tệp dump cookie, v.v.) chứ không phải trong nội dung thông báo này. Họ mã độc đánh cắp thông tin bên dưới hiện chưa xác định; việc quy kết cho Hexo Stealer từ nguồn cộng đồng đó vẫn là tạm thời, chờ xác nhận từ nguồn công khai đã công bố.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

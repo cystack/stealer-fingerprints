@@ -53,5 +53,30 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSDashSectionStealer là định danh do CyStack đặt cho một biến thể `SystemInfo.txt` dạng dash-section chưa được xác định, được quan sát bên trong các gói phân phối `@stealerboss` nằm lồng trong các thư mục con `Autofill/[OF - NEW @kir3info]_<random>/`. Phần nội dung mở đầu bằng các trường HWID, IP, vị trí địa lý và ngôn ngữ hệ thống, sau đó là dấu phân tách `----- System info:` dẫn vào các bản ghi CPU, GPU và phần cứng.",
+      "typical_targets": [],
+      "detection_notes": "Chuỗi ký tự `----- System info:` (năm dấu gạch ngang, dấu cách, dấu hai chấm) là dấu hiệu duy nhất của định dạng này trong số các định dạng thuộc danh mục này. Kết hợp với giá trị dạng GUID `HWID:` và tham chiếu kênh `@stealerboss` trong banner quảng cáo mua ngay để xác nhận.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

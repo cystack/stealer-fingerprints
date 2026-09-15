@@ -3,7 +3,7 @@
   "name": "CSEvelatedTypoInfoStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSEvelatedTypoInfoStealer is a CyStack-coined identifier for\nan ``Information.txt`` panel with the distinctive ``Is\nEvelated:`` typo (sic, ``Evelated`` not ``Elevated``)\nadmin-flag field. Observed inside the ``28 APRIL - 37817\nLOGS2.part01.rar`` aggregator pack at ``[<panel-tag>]\n<CC>_<IPv4>/<CC>_<IPv4>_<DDMMYYYY>_<HH>_<MM>_<SS>/\nInformation.txt`` victim folders where the parent folder\nprefix uses a ``[<panel-tag>]`` marker like ``[login.live]``\nthat identifies the victim category (browser sign-in tag,\nfilesharing tag, etc.).\n\nField vocabulary is Redline-lineage (``File Location:``,\n``HWID:``, ``Machine Name:``, ``Username:``), but the\ndistinctive ``Is Evelated:`` typo combined with paired\n``GPU:`` + ``Graphical Adapter:`` duplicate fields (both\ncarrying the same adapter query result under two labels), plus\n``Screen Resolution:`` (not ``Display Resolution:``),\n``Keyboard Layout:`` singular (not ``Keyboard Languages:``\nplural), and a ``Clipboard Text:`` raw-clipboard-content\nfield, makes it a private fork or niche family whose\nfingerprint has not been mapped publicly. The 2022-02-26 log\ntimestamp on observed samples suggests an older builder whose\npanel-format research pre-dates current public reporting.\nFamily attribution is provisional pending a published\nthreat-intel mapping.",
+  "description": "CSEvelatedTypoInfoStealer is a CyStack-coined identifier for\nan ``Information.txt`` panel with the distinctive ``Is Evelated:`` typo (sic, ``Evelated`` not ``Elevated``)\nadmin-flag field. Observed inside the ``28 APRIL - 37817 LOGS2.part01.rar`` aggregator pack at ``[<panel-tag>] <CC>_<IPv4>/<CC>_<IPv4>_<DDMMYYYY>_<HH>_<MM>_<SS>/ Information.txt`` victim folders where the parent folder\nprefix uses a ``[<panel-tag>]`` marker like ``[login.live]``\nthat identifies the victim category (browser sign-in tag,\nfilesharing tag, etc.).\n\nField vocabulary is Redline-lineage (``File Location:``,\n``HWID:``, ``Machine Name:``, ``Username:``), but the\ndistinctive ``Is Evelated:`` typo combined with paired\n``GPU:`` + ``Graphical Adapter:`` duplicate fields (both\ncarrying the same adapter query result under two labels), plus\n``Screen Resolution:`` (not ``Display Resolution:``),\n``Keyboard Layout:`` singular (not ``Keyboard Languages:``\nplural), and a ``Clipboard Text:`` raw-clipboard-content\nfield, makes it a private fork or niche family whose\nfingerprint has not been mapped publicly. The 2022-02-26 log\ntimestamp on observed samples suggests an older builder whose\npanel-format research pre-dates current public reporting.\nFamily attribution is provisional pending a published\nthreat-intel mapping.",
   "aliases": [
     "Is Evelated typo stealer",
     "Graphical Adapter dual-GPU stealer"
@@ -40,5 +40,40 @@
   ],
   "related_families": [],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSEvelatedTypoInfoStealer là định danh do CyStack đặt cho một panel ``Information.txt`` có lỗi chính tả đặc trưng ``Is Evelated:`` (sic, ``Evelated`` chứ không phải ``Elevated``) trong trường cờ quản trị (admin-flag). Được quan sát bên trong gói tổng hợp ``28 APRIL - 37817 LOGS2.part01.rar`` tại ``[<panel-tag>] <CC>_<IPv4>/<CC>_<IPv4>_<DDMMYYYY>_<HH>_<MM>_<SS>/ Information.txt`` thư mục nạn nhân, nơi tiền tố thư mục cha sử dụng một dấu hiệu ``[<panel-tag>]`` như ``[login.live]`` để xác định danh mục nạn nhân (thẻ đăng nhập trình duyệt, thẻ chia sẻ tệp, v.v.).\n\nBộ từ vựng trường dữ liệu có nguồn gốc từ Redline (``File Location:``, ``HWID:``, ``Machine Name:``, ``Username:``), nhưng lỗi chính tả đặc trưng ``Is Evelated:`` kết hợp với cặp trường trùng lặp ``GPU:`` + ``Graphical Adapter:`` (cả hai đều mang cùng kết quả truy vấn adapter dưới hai nhãn khác nhau), cùng với ``Screen Resolution:`` (chứ không phải ``Display Resolution:``), ``Keyboard Layout:`` dạng số ít (chứ không phải ``Keyboard Languages:`` số nhiều), và một trường ``Clipboard Text:`` chứa nội dung clipboard thô, khiến đây trở thành một bản fork riêng hoặc một họ mã độc ngách mà dấu vết nhận diện chưa được công bố rộng rãi. Dấu thời gian log 2022-02-26 trên các mẫu quan sát được cho thấy đây là một builder cũ, có nghiên cứu định dạng panel diễn ra trước các báo cáo công khai hiện tại. Việc quy kết họ mã độc vẫn mang tính tạm thời cho đến khi có ánh xạ tình báo mối đe dọa được công bố.",
+      "typical_targets": [
+        "Dấu vết nhận diện hệ điều hành máy và phần cứng (CPU, GPU với nhãn ``Graphical Adapter`` trùng lặp, độ phân giải màn hình, HWID)",
+        "Làm giàu dữ liệu địa lý (IP, quốc gia, thành phố, mã bưu điện, múi giờ kèm chú thích thành phố-múi giờ mặc định phía đối tượng vận hành)",
+        "Thông tin định danh tài khoản (tên người dùng Windows, tên máy)",
+        "Nội dung clipboard hiện tại tại thời điểm thu thập (địa chỉ tiền mã hóa, liên kết magnet, dữ liệu clipboard giá trị cao khác)",
+        "Danh sách phần mềm đã cài đặt và danh sách tiến trình đang chạy"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu chuỗi con lỗi chính tả ``Is Evelated:`` và trường ``Graphical Adapter:`` được neo theo dòng. Lỗi chính tả này là duy nhất đối với panel này trong toàn bộ danh mục: không có họ Redline / Lumma / Vidar / StealC / Rhadamanthys / MetaStealer chuẩn nào tạo dữ liệu đầu ra cờ quản trị với lỗi chính tả ``Evelated``. Trường ``Clipboard Text:`` có thể mang các token giá trị cao (địa chỉ ví tiền mã hóa, liên kết magnet, token phiên), do đó việc phân loại ban đầu nên xem xét giá trị clipboard cùng với dữ liệu xuất thông tin xác thực trình duyệt.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1115",
+          "name": "Dữ liệu bảng tạm"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1518",
+          "name": "Dò tìm phần mềm"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        }
+      ]
+    }
+  }
 }

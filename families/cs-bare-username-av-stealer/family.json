@@ -3,7 +3,7 @@
   "name": "CSBareUsernameAVStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSBareUsernameAVStealer is a CyStack-coined identifier for a\nbare 3-line panel-summary `System.txt` observed inside `!!\n2025 DEC.part01.rar` aggregator packs at\n`[<CC>]<IPv4>/System.txt` victim folders. The body has just\nthree flush-left lines: `IP: <ipv4 or N/A>`, `Username:\n<user>[<machine>]`, and `AntiVirus: <product list>`. No HWID,\nno hostname header, no hardware inventory, no\nharvested-credential count line, no geo block.\n\nThe `Username:` value carries the `<user>[<machine>]`\nbracketed-machine-label shape: the leading token is the OS\nuser name, the bracketed token is the panel's collected\nmachine label (SMBIOS product name, build tag, or VM hostname\ndepending on what the panel captured). Public research\ndocuments this exact bracketed shape for PXA Stealer captions,\nbut the canonical PXA caption fingerprint requires the `Data\nInformation: CK:` count line which this body lacks. The\n3-field shape could be a heavily-stripped PXA panel where\noperator-side enrichment fully failed, or a separate panel\nthat adopted the PXA field set. Family stays CyStack-coined\npending a published confirmation; same conservative\nattribution rationale as `CSGADSPanelStealer`.",
+  "description": "CSBareUsernameAVStealer is a CyStack-coined identifier for a\nbare 3-line panel-summary `System.txt` observed inside `!! 2025 DEC.part01.rar` aggregator packs at\n`[<CC>]<IPv4>/System.txt` victim folders. The body has just\nthree flush-left lines: `IP: <ipv4 or N/A>`, `Username: <user>[<machine>]`, and `AntiVirus: <product list>`. No HWID,\nno hostname header, no hardware inventory, no\nharvested-credential count line, no geo block.\n\nThe `Username:` value carries the `<user>[<machine>]`\nbracketed-machine-label shape: the leading token is the OS\nuser name, the bracketed token is the panel's collected\nmachine label (SMBIOS product name, build tag, or VM hostname\ndepending on what the panel captured). Public research\ndocuments this exact bracketed shape for PXA Stealer captions,\nbut the canonical PXA caption fingerprint requires the `Data Information: CK:` count line which this body lacks. The\n3-field shape could be a heavily-stripped PXA panel where\noperator-side enrichment fully failed, or a separate panel\nthat adopted the PXA field set. Family stays CyStack-coined\npending a published confirmation; same conservative\nattribution rationale as `CSGADSPanelStealer`.",
   "aliases": [
     "Bare IP/Username/AntiVirus panel summary",
     "Stripped PXA-shape 3-field System.txt"
@@ -34,5 +34,30 @@
     "cs-browers-stealer"
   ],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSBareUsernameAVStealer là định danh do CyStack đặt cho một bản tóm tắt bảng điều khiển (panel-summary) trơ trụi gồm 3 dòng, `System.txt`, được quan sát bên trong các gói tổng hợp `!! 2025 DEC.part01.rar` tại các thư mục nạn nhân `[<CC>]<IPv4>/System.txt`. Phần nội dung chỉ có ba dòng canh trái: `IP: <ipv4 or N/A>`, `Username: <user>[<machine>]`, và `AntiVirus: <product list>`. Không có HWID, không có dòng tiêu đề hostname, không có bản kê phần cứng, không có dòng đếm số lượng thông tin xác thực thu thập được, không có khối thông tin địa lý.\n\nGiá trị `Username:` mang cấu trúc dữ liệu nhãn-máy-trong-ngoặc `<user>[<machine>]`: token đứng đầu là tên người dùng hệ điều hành, token trong ngoặc là nhãn máy do panel thu thập (tên sản phẩm SMBIOS, tag build, hoặc hostname máy ảo tùy theo những gì panel ghi nhận được). Các nghiên cứu công khai đã ghi nhận chính xác cấu trúc dữ liệu trong ngoặc này đối với chú thích của PXA Stealer, tuy nhiên dấu vết nhận diện chuẩn (fingerprint) của chú thích PXA đòi hỏi phải có dòng đếm số lượng `Data Information: CK:` mà nội dung này không có. Cấu trúc dữ liệu 3 trường có thể là một panel PXA đã bị tước bỏ gần như toàn bộ, nơi việc làm giàu dữ liệu (enrichment) phía đối tượng vận hành hoàn toàn thất bại, hoặc có thể là một panel riêng biệt đã áp dụng bộ trường dữ liệu của PXA. Họ mã độc này vẫn được xem là do CyStack đặt tên cho đến khi có xác nhận công bố; áp dụng cùng cơ sở lý luận quy kết thận trọng như đối với `CSGADSPanelStealer`.",
+      "typical_targets": [
+        "Địa chỉ IPv4 công khai (thường là `N/A` khi tra cứu geo-IP thất bại)",
+        "Tên người dùng hệ điều hành + nhãn máy trong ngoặc (`Username: <user>[X1CARBON]`)",
+        "Danh sách các sản phẩm antivirus đã cài đặt"
+      ],
+      "detection_notes": "Dấu vết nhận diện đòi hỏi các khóa neo theo dòng `IP:` VÀ `Username:` VÀ `AntiVirus:` (CamelCase `V`) CỘNG với giá trị `Username:` khớp với cấu trúc dữ liệu nhãn-máy-trong-ngoặc `<user>[<machine>]` CỘNG với việc không có `Data Information:` (loại trừ PXACaption) VÀ `Browser Data:` (loại trừ CSGADSPanel) VÀ `Browers:` (loại trừ CSBrowersStealer). Trong quá trình phân loại, nhãn máy trong ngoặc thường mang theo model laptop của nạn nhân (ví dụ `X1CARBON` đối với Lenovo ThinkPad X1 Carbon, `FLAREVM` đối với các máy ảo sandbox) hoặc tag build, điều này hữu ích cho việc xác định dấu vết nạn nhân ngoài phạm vi tên người dùng trơ trụi.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1518.001",
+          "name": "Dò tìm phần mềm bảo mật"
+        }
+      ]
+    }
+  }
 }

@@ -16,7 +16,7 @@
     "Victim public IP plus ISO country code",
     "Wall-clock and time zone offset"
   ],
-  "detection_notes": "Fingerprint requires the `(sig:` substring (Lumma-canonical\nTime-line watermark per public Lumma analyses) AND the\n`Execution Path:` field name AND the `Operation System:` typo\nAND `Installed RAM:` line-anchored. Lumma and CSDeimosStealer\ndecline because both require the `- ` dash prefix on every\nfield; Redline declines because of the absent banner and\n`FileLocation:` / `Build ID:` canonical keys. During triage,\ntreat the `sig:UNIX.HEX` watermark as a Lumma-family indicator\nbut not a Lumma confirmation: the bare-KV layout with verbose\nfield names does not match Lumma canonical, so the underlying\nbuilder is most likely a Lumma fork or a stealer that adopted\nthe Lumma sig signature into a different panel template.",
+  "detection_notes": "Fingerprint requires the `(sig:` substring (Lumma-canonical\nTime-line watermark per public Lumma analyses) AND the\n`Execution Path:` field name AND the `Operation System:` typo\nAND `Installed RAM:` line-anchored. Lumma and CSDeimosStealer\ndecline because both require the `-` dash prefix on every\nfield; Redline declines because of the absent banner and\n`FileLocation:` / `Build ID:` canonical keys. During triage,\ntreat the `sig:UNIX.HEX` watermark as a Lumma-family indicator\nbut not a Lumma confirmation: the bare-KV layout with verbose\nfield names does not match Lumma canonical, so the underlying\nbuilder is most likely a Lumma fork or a stealer that adopted\nthe Lumma sig signature into a different panel template.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -78,5 +78,41 @@
       },
       "layout_id": "full-device-os"
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSSigInfoStealer là định danh do CyStack đặt cho một panel `Key: Value` `Info.txt` dạng trần, mang watermark chuẩn Lumma `(sig:UNIX.HEX)` trên dòng `Time:`, đồng thời sử dụng cách đặt tên trường đầy đủ theo phong cách Redline cho phần còn lại của nội dung.\nĐược quan sát bên trong các gói tổng hợp `!! 2025 NOV.part001.rar` `@BRADLOGS / BRADMAX`\ntrong các thư mục nạn nhân `[<CC>]<IP>/Info.txt`\n(ví dụ: `[CA]<IPv4>/Info.txt`).\n\nCác trường nội dung: `Build Date`, `Configuration`, `Execution Path`,\n`Elevated`, `Computer Name`, `User Name`, `User Language`,\n`Netbios`, `Operation System` (lỗi đánh máy nguyên bản), `Install Date`,\n`System Date`, `Time Zone`, `Antivirus`, `HWID`, `Processor`,\n`Processor Threads`, `Processor Cores`, `Graphics Card`,\n`Installed RAM`, `Display Resolution`, `IP Address`, `Time`,\n`Country`, `User`. Nội dung có cấu trúc dữ liệu bằng phẳng (không có tiền tố dấu gạch đầu dòng như ở Lumma / Deimos / BABA / DarkSide / AL Stealer), không có banner của đối tượng vận hành (khác với Redline), và không phải định dạng YAML (khác với Remus). Việc quy kết họ mã độc vẫn là tạm thời, chờ một bản đồ ánh xạ threat-intel đã công bố cho đúng cấu trúc dữ liệu bare-KV này.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt (cờ đếm số lượng kèm nội dung thu thập được trong các tệp liên quan)",
+        "Dữ liệu tổng hợp của máy: hostname, NetBIOS, tên người dùng Windows, ngôn ngữ",
+        "Dấu vết nhận diện hệ điều hành gồm số hiệu build và kiến trúc",
+        "Kiểm kê phần cứng: model CPU kèm số core/thread, GPU, dung lượng RAM đã lắp",
+        "Địa chỉ IP công khai của nạn nhân kèm mã quốc gia ISO",
+        "Thời gian thực và độ lệch múi giờ"
+      ],
+      "detection_notes": "Việc xác định dấu hiệu nhận diện yêu cầu chuỗi con `(sig:` (watermark Time-line chuẩn Lumma theo các phân tích Lumma công khai) VÀ tên trường `Execution Path:` VÀ lỗi đánh máy `Operation System:` VÀ `Installed RAM:` được gắn cố định theo dòng. Lumma và CSDeimosStealer bị loại trừ vì cả hai đều yêu cầu tiền tố dấu gạch `-` trên mọi trường; Redline bị loại trừ vì thiếu banner và các khóa chuẩn `FileLocation:` / `Build ID:`. Trong quá trình phân loại ban đầu, hãy coi watermark `sig:UNIX.HEX` là một chỉ báo thuộc họ Lumma nhưng không phải là xác nhận chắc chắn thuộc Lumma: cấu trúc dữ liệu bare-KV với tên trường đầy đủ không khớp với chuẩn Lumma, vì vậy builder nền tảng nhiều khả năng là một bản fork của Lumma hoặc một mã độc đánh cắp thông tin đã tích hợp chữ ký sig của Lumma vào một mẫu panel khác.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

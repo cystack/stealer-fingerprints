@@ -17,7 +17,7 @@
     "Clipboard contents",
     "Desktop screenshot"
   ],
-  "detection_notes": "Line-anchored ` PC user:`, ` Launch:`, and\n` IP Geolocation:` co-occurring is the cleanest trigger.\nThe leading-space prefix on each key line is invariant\nacross observed samples (the upstream's string\n`\"\\n PC user: \"` concatenation produces it). The base\n44CALIBER builder emits five sections; the RL panel\nextension appends a sixth carrying `HDD:` / `MAC:` /\n`BIOS caption:`, but the fingerprint covers either section count.\nBlackGuard Stealer is also a 44CALIBER fork; both share\nthe credential-collection method but emit different\nlog formats so they do not collide with this format's\nfingerprint.",
+  "detection_notes": "Line-anchored `PC user:`, `Launch:`, and\n`IP Geolocation:` co-occurring is the cleanest trigger.\nThe leading-space prefix on each key line is invariant\nacross observed samples (the upstream's string\n`\"\\n PC user: \"` concatenation produces it). The base\n44CALIBER builder emits five sections; the RL panel\nextension appends a sixth carrying `HDD:` / `MAC:` /\n`BIOS caption:`, but the fingerprint covers either section count.\nBlackGuard Stealer is also a 44CALIBER fork; both share\nthe credential-collection method but emit different\nlog formats so they do not collide with this format's\nfingerprint.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -104,5 +104,49 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "RL Stealer là một mã độc đánh cắp thông tin viết bằng .NET, bắt nguồn từ công cụ tạo build mã nguồn mở `razexgod/44CALIBER` dùng để đưa dữ liệu ra ngoài qua Discord. Bảng điều khiển tạo ra một `Information.txt` có phần nội dung khớp từng ký tự với bộ ghi `SystemInfo.cs` gốc của 44CALIBER trong năm phần đầu tiên, sau đó bổ sung phần thứ sáu chứa các định danh phần cứng `HDD:` / `MAC:` / `BIOS caption:` mà bản gốc không tạo dữ liệu đầu ra. Mỗi dòng khóa/giá trị đều bắt đầu bằng một dấu cách ở đầu dòng (đặc điểm bất biến do phép nối chuỗi trong mã nguồn gốc), và các phần được phân tách bằng các dòng dấu bằng.\n\nQuy kết họ mã độc: độ tin cậy ở mức trung bình. Một danh mục định dạng mã độc đánh cắp thông tin do cộng đồng biên soạn ghi nhận định dạng này dưới nhãn RL Stealer, mã nguồn GitHub gốc của `razexgod/44CALIBER` khớp với cấu trúc dữ liệu phần nội dung, và các bài viết công khai mô tả RL Stealer là phiên bản đổi thương hiệu của Ades stealer. Không có hai nguồn công khai độc lập nào cùng công bố việc ánh xạ định dạng với họ mã độc, do đó việc quy kết dựa trên danh mục cộng đồng kết hợp với xác nhận từ mã nguồn mở của công cụ tạo build.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt, cookie, dữ liệu tự động điền, lịch sử duyệt web",
+        "Tiện ích mở rộng ví tiền điện tử và ứng dụng desktop",
+        "Dữ liệu phiên của Discord, Telegram, Steam, Minecraft",
+        "Thông tin xác thực của ứng dụng FTP và VPN",
+        "Nội dung clipboard",
+        "Ảnh chụp màn hình desktop"
+      ],
+      "detection_notes": "Sự đồng xuất hiện của các chuỗi neo theo dòng `PC user:`, `Launch:`, và `IP Geolocation:` là dấu hiệu kích hoạt rõ ràng nhất. Tiền tố dấu cách ở đầu mỗi dòng khóa là đặc điểm bất biến trên các mẫu đã quan sát (do phép nối chuỗi `\"\\n PC user: \"` trong mã nguồn gốc tạo ra). Công cụ tạo build 44CALIBER gốc tạo dữ liệu đầu ra gồm năm phần; phần mở rộng của bảng điều khiển RL bổ sung phần thứ sáu chứa `HDD:` / `MAC:` / `BIOS caption:`, nhưng dấu vết nhận diện bao phủ cả hai trường hợp số lượng phần. BlackGuard Stealer cũng là một nhánh phân nhánh từ 44CALIBER; cả hai đều dùng chung phương pháp thu thập thông tin xác thực nhưng tạo dữ liệu đầu ra với định dạng log khác nhau nên không trùng lặp với dấu vết nhận diện của định dạng này.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1115",
+          "name": "Dữ liệu bảng tạm"
+        },
+        {
+          "id": "T1113",
+          "name": "Chụp màn hình"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

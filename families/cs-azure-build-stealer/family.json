@@ -10,7 +10,7 @@
     "Anti-virus product name (Windows Defender / installed AV)",
     "Geo-IP country code"
   ],
-  "detection_notes": "Line-anchored `- Azure Build:` plus `- Worker Tag:` plus\n`- HWID:` plus `- Time Save Log:` is the fingerprint. The\n`- ` dash prefix is part of every key literal so a bare\n`Azure Build` mention (Microsoft Azure DevOps build-task\ndocumentation uses that phrase) cannot produce a false match.\nTimestamps are in `DD.MM.YYYY HH:MM:SS` form and the\n`Time Zone` field is bare `UTC<N>` with no sign or minutes.",
+  "detection_notes": "Line-anchored `- Azure Build:` plus `- Worker Tag:` plus\n`- HWID:` plus `- Time Save Log:` is the fingerprint. The\n`-` dash prefix is part of every key literal so a bare\n`Azure Build` mention (Microsoft Azure DevOps build-task\ndocumentation uses that phrase) cannot produce a false match.\nTimestamps are in `DD.MM.YYYY HH:MM:SS` form and the\n`Time Zone` field is bare `UTC<N>` with no sign or minutes.",
   "attack_techniques": [
     {
       "id": "T1082",
@@ -58,5 +58,34 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSAzureBuildStealer là định danh do CyStack đặt cho một bảng điều khiển có tiền tố dấu gạch ngang `System.txt` được quan sát bên trong các gói tổng hợp `!! 2025 JULY` nằm dưới các thư mục nạn nhân `[<CC>]<IP>/System.txt`. Mỗi dòng có cấu trúc dữ liệu `- Key: Value` với một dấu gạch ngang ASCII đứng đầu kèm theo dấu cách. Bảng điều khiển này chứa một mốc thời gian `Azure Build:` và một nhãn do đối tượng vận hành thiết lập `Worker Tag:` làm hai trường đầu tiên, tiếp theo là một bản tóm tắt hệ thống cố định bao gồm hệ điều hành, phần cứng, mạng và đồng hồ cục bộ.\n\nViệc quy kết họ mã độc hiện vẫn mang tính tạm thời cho đến khi có một ánh xạ thông tin tình báo về mối đe dọa được công bố cho bố cục này. Giá trị `Worker Tag` quan sát được trong mẫu đầu tiên là `XwormExp`, gợi ý về một mối liên hệ của đối tượng vận hành với XWorm, nhưng không khớp với cấu trúc dữ liệu log riêng đã được công bố của XWorm, do đó việc quy kết cho XWorm sẽ gây hiểu nhầm.",
+      "typical_targets": [
+        "Kiểm kê phần cứng hệ thống và ngôn ngữ khu vực",
+        "Tên phần mềm diệt vi-rút (Windows Defender / phần mềm diệt vi-rút đã cài đặt)",
+        "Mã quốc gia theo Geo-IP"
+      ],
+      "detection_notes": "Dấu vết đặc trưng là sự kết hợp giữa `- Azure Build:`, `- Worker Tag:`, `- HWID:` và `- Time Save Log:` neo theo dòng. Tiền tố dấu gạch ngang `-` là một phần của mọi chuỗi khóa cố định, vì vậy chỉ riêng cụm `Azure Build` (được tài liệu về tác vụ build của Microsoft Azure DevOps sử dụng) không thể tạo ra kết quả trùng khớp sai. Dấu thời gian có dạng `DD.MM.YYYY HH:MM:SS` và trường `Time Zone` là dạng thuần `UTC<N>` không có dấu hoặc phút.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1518.001",
+          "name": "Dò tìm phần mềm bảo mật"
+        }
+      ]
+    }
+  }
 }

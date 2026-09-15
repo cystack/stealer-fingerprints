@@ -3,7 +3,7 @@
   "name": "CSSystemSummaryStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSSystemSummaryStealer is a CyStack-coined identifier for a\n`System.txt` panel opening with two flush-left identity lines\n(`- IP:` and `- Country:`), then a `System Summary:` section\nheader followed by a 14-field tab-indented dashed-key block\n(`- OS:`, `- Architecture:`, `- UserName:`, `- Computer\nName:`, `- Local Time:`, `- UTC: <integer>`, `- Language:`, `-\nKeyboards:`, `- Laptop: TRUE/FALSE`, `- Cores:`, `- Threads:`,\n`- RAM:`, `- Display Resolution:` with nested per-monitor\nblock, `- GPU:` list). Three trailing section headers `Process\ncount:` + `Process List:` + `Installed Apps:` add a process\ninventory and an installed-app inventory split into `All\nUsers:` and `Current User:` subsections.\n\nObserved inside `MAY 02 - 8230 LOGS2` aggregator packs at\n`[<ISO2>]<IPv4>/System.txt` victim folders, the same\ncountry-IPv4 victim-folder convention used by\nCSCookiesSoftStealer. The field set overlaps\nan October 2023 Continental Stealer writeup but the exact\npanel layout is not documented in public reporting. Family\nattribution is provisional pending a public writeup that\nconfirms the panel format.",
+  "description": "CSSystemSummaryStealer is a CyStack-coined identifier for a\n`System.txt` panel opening with two flush-left identity lines\n(`- IP:` and `- Country:`), then a `System Summary:` section\nheader followed by a 14-field tab-indented dashed-key block\n(`- OS:`, `- Architecture:`, `- UserName:`, `- Computer Name:`, `- Local Time:`, `- UTC: <integer>`, `- Language:`, `- Keyboards:`, `- Laptop: TRUE/FALSE`, `- Cores:`, `- Threads:`,\n`- RAM:`, `- Display Resolution:` with nested per-monitor\nblock, `- GPU:` list). Three trailing section headers `Process count:` + `Process List:` + `Installed Apps:` add a process\ninventory and an installed-app inventory split into `All Users:` and `Current User:` subsections.\n\nObserved inside `MAY 02 - 8230 LOGS2` aggregator packs at\n`[<ISO2>]<IPv4>/System.txt` victim folders, the same\ncountry-IPv4 victim-folder convention used by\nCSCookiesSoftStealer. The field set overlaps\nan October 2023 Continental Stealer writeup but the exact\npanel layout is not documented in public reporting. Family\nattribution is provisional pending a public writeup that\nconfirms the panel format.",
   "aliases": [],
   "typical_targets": [
     "Browser saved credentials retained in sibling files",
@@ -46,5 +46,45 @@
     "cs-common-files-category-stealer"
   ],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSSystemSummaryStealer là một định danh do CyStack đặt cho một `System.txt` có panel mở đầu bằng hai dòng định danh căn lề trái (`- IP:` và `- Country:`), sau đó là tiêu đề mục `System Summary:` theo sau là một khối 14 trường thụt lề bằng tab với các khóa có dấu gạch ngang (`- OS:`, `- Architecture:`, `- UserName:`, `- Computer Name:`, `- Local Time:`, `- UTC: <integer>`, `- Language:`, `- Keyboards:`, `- Laptop: TRUE/FALSE`, `- Cores:`, `- Threads:`, `- RAM:`, `- Display Resolution:` với khối lồng nhau theo từng màn hình, danh sách `- GPU:`). Ba tiêu đề mục nằm sau đó `Process count:` + `Process List:` + `Installed Apps:` bổ sung một danh mục tiến trình và một danh mục ứng dụng đã cài đặt được chia thành các phần con `All Users:` và `Current User:`.\n\nĐược ghi nhận bên trong các gói tổng hợp `MAY 02 - 8230 LOGS2` tại các thư mục nạn nhân `[<ISO2>]<IPv4>/System.txt`, cùng quy ước đặt tên thư mục nạn nhân theo quốc gia-IPv4 được sử dụng bởi CSCookiesSoftStealer. Tập trường dữ liệu này trùng lặp với một bài viết về Continental Stealer công bố vào tháng 10 năm 2023, nhưng bố cục panel chính xác chưa được ghi nhận trong các báo cáo công khai. Việc quy kết họ mã độc hiện chỉ mang tính tạm thời cho đến khi có một bài viết công khai xác nhận định dạng panel này.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt được giữ lại trong các tệp liên quan",
+        "Dấu vân tay hệ thống: tên máy, địa chỉ IP, hệ điều hành, số lõi/luồng CPU, dung lượng RAM, danh sách GPU, độ phân giải màn hình theo từng màn hình",
+        "Thông tin ngôn ngữ/vùng: quốc gia, ngôn ngữ, bố cục bàn phím theo vùng, độ lệch múi giờ UTC",
+        "Cờ boolean cho biết máy tính xách tay (TRUE / FALSE)",
+        "Danh mục tiến trình đang chạy (danh sách tiến trình đầy đủ kèm số lượng)",
+        "Danh mục ứng dụng đã cài đặt được chia theo khóa registry HKLM (`All Users:`) và HKCU (`Current User:`)"
+      ],
+      "detection_notes": "Dấu hiệu ba điểm neo `System Summary:` cùng với `- Laptop:` và `- Keyboards:` là tín hiệu nhận diện panel rõ ràng nhất. Độ lệch giờ dạng số nguyên trần `- UTC: <integer>` (không có dấu `+`, không có phút `:00`) là một lựa chọn tuần tự hóa dữ liệu đặc trưng để phục vụ phân loại: khi định dạng này xuất hiện trong log, cần dự kiến các giá trị boolean `TRUE` / `FALSE` viết hoa toàn bộ cũng xuất hiện ở các trường cờ khác. Việc chia `Installed Apps:` thành HKLM (`All Users:`) và HKCU (`Current User:`) là điều bất thường so với các panel mã độc đánh cắp thông tin khác; hầu hết đều gộp phẳng danh sách này.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1057",
+          "name": "Dò tìm tiến trình"
+        },
+        {
+          "id": "T1518",
+          "name": "Dò tìm phần mềm"
+        },
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

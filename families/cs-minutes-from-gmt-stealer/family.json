@@ -3,7 +3,7 @@
   "name": "CSMinutesFromGmtStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSMinutesFromGmtStealer is a CyStack-coined identifier for\na `System Info.txt` panel whose timezone field is emitted\nas `+NNN minutes from GMT` (a signed integer minute\noffset with a trailing GMT literal). The format mirrors\nthe JavaScript `Date.prototype.getTimezoneOffset` semantics,\nhinting at a Node.js or Electron-based panel. Cyfirma's\nLTX Stealer writeup and Microsoft's Node.js-abuse guidance\nboth document Node.js-runtime stealers as a growing\ncategory, but no curated CTI vendor documents this exact\npanel layout.\n\nObserved inside `MARCH 15 - 3059 LOGS.part01.rar`\naggregator packs at\n`[<CC>]<32-hex-lowercase-HWID>/System Info.txt` victim\nfolders. The filename carries a literal ASCII space; the\nfolder shape uses lowercase 32-hex HWID with a bracketed\ncountry-code prefix. Body opens with a bare `IP info: <CC>\n<IPv4>` two-word first-line key that packs the country\ncode and IPv4 on one line, followed by a bare\n`System Information:` section header, tab-indented\n`- Key: Value` sub-fields (Locale, Time zone, OS,\nArchitecture, CPU, RAM, Display size, Display Devices\nnested numbered list), and a bare `Installed applications:`\nsection with tab-indented `<Name> <Version>` per-app\nentries. Family attribution is provisional pending a\npublished threat-intel mapping for this layout.",
+  "description": "CSMinutesFromGmtStealer is a CyStack-coined identifier for\na `System Info.txt` panel whose timezone field is emitted\nas `+NNN minutes from GMT` (a signed integer minute\noffset with a trailing GMT literal). The format mirrors\nthe JavaScript `Date.prototype.getTimezoneOffset` semantics,\nhinting at a Node.js or Electron-based panel. Cyfirma's\nLTX Stealer writeup and Microsoft's Node.js-abuse guidance\nboth document Node.js-runtime stealers as a growing\ncategory, but no curated CTI vendor documents this exact\npanel layout.\n\nObserved inside `MARCH 15 - 3059 LOGS.part01.rar`\naggregator packs at\n`[<CC>]<32-hex-lowercase-HWID>/System Info.txt` victim\nfolders. The filename carries a literal ASCII space; the\nfolder shape uses lowercase 32-hex HWID with a bracketed\ncountry-code prefix. Body opens with a bare `IP info: <CC> <IPv4>` two-word first-line key that packs the country\ncode and IPv4 on one line, followed by a bare\n`System Information:` section header, tab-indented\n`- Key: Value` sub-fields (Locale, Time zone, OS,\nArchitecture, CPU, RAM, Display size, Display Devices\nnested numbered list), and a bare `Installed applications:`\nsection with tab-indented `<Name> <Version>` per-app\nentries. Family attribution is provisional pending a\npublished threat-intel mapping for this layout.",
   "aliases": [],
   "typical_targets": [
     "Installed-software inventory (bare `Installed applications:` block)",
@@ -31,5 +31,30 @@
     "https://github.com/MalBeacon/what-is-this-stealer",
     "https://www.cyfirma.com/research/ltx-stealer-analysis-of-a-node-js-based-credential-stealer/"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSMinutesFromGmtStealer là định danh do CyStack đặt tên cho một `System Info.txt` panel có trường timezone được tạo dữ liệu đầu ra dưới dạng `+NNN minutes from GMT` (một số nguyên có dấu biểu thị độ lệch phút kèm theo ký tự literal GMT ở cuối). Định dạng này mô phỏng theo ngữ nghĩa của `Date.prototype.getTimezoneOffset` trong JavaScript, cho thấy khả năng đây là một panel dựa trên Node.js hoặc Electron. Bài viết về LTX Stealer của Cyfirma và tài liệu hướng dẫn về việc lạm dụng Node.js của Microsoft đều ghi nhận các mã độc đánh cắp thông tin chạy trên nền Node.js là một nhóm đang gia tăng, nhưng chưa có nhà cung cấp CTI uy tín nào ghi nhận chính xác bố cục panel này.\n\nĐược quan sát bên trong các gói tổng hợp (aggregator packs) `MARCH 15 - 3059 LOGS.part01.rar` tại các thư mục nạn nhân `[<CC>]<32-hex-lowercase-HWID>/System Info.txt`. Tên tệp chứa một ký tự khoảng trắng ASCII thực; cấu trúc thư mục sử dụng HWID dạng 32 ký tự hex viết thường với tiền tố mã quốc gia đặt trong dấu ngoặc vuông. Phần thân bắt đầu bằng một dòng khóa đầu tiên trần gồm hai từ `IP info: <CC> <IPv4>` gộp mã quốc gia và địa chỉ IPv4 trên cùng một dòng, tiếp theo là tiêu đề mục trần `System Information:`, các trường con thụt lề bằng tab `- Key: Value` (Locale, Time zone, OS, Architecture, CPU, RAM, Display size, danh sách đánh số lồng nhau Display Devices), và một mục trần `Installed applications:` với các mục ứng dụng thụt lề bằng tab `<Name> <Version>` cho từng ứng dụng. Việc quy kết họ mã độc vẫn mang tính tạm thời cho đến khi có một bản đồ tình báo về mối đe dọa được công bố cho bố cục này.",
+      "typical_targets": [
+        "Danh mục phần mềm đã cài đặt (khối trần `Installed applications:`)",
+        "Phần cứng hệ thống và ngôn ngữ hệ thống (khối `System Information:`)",
+        "Định vị địa lý (mã quốc gia + IPv4 trong cấu trúc dữ liệu tổng hợp `IP info:`)"
+      ],
+      "detection_notes": "Yếu tố kích hoạt có độ tin cậy cao: khóa `IP info:` được neo theo dòng, kết hợp với ký tự literal hậu tố timezone `minutes from GMT`, cùng với tiêu đề mục trần `Installed applications:` được neo theo dòng. Ký tự literal `minutes from GMT` chính là điểm đặc thù riêng biệt phía nhà phát triển panel: không có họ mã độc nào khác trong danh mục này tạo dữ liệu đầu ra timezone dưới dạng số nguyên có dấu tính theo phút kèm ký tự literal `GMT` ở cuối. Trong quá trình phân tích ban đầu, khối `Installed applications:` liệt kê các chương trình đã cài đặt của nạn nhân theo cấu trúc dữ liệu `<name> <version>` và có thể được kết hợp với cặp mã quốc gia + IPv4 `IP info:` để lập danh mục tài sản theo từng nạn nhân.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1518",
+          "name": "Dò tìm phần mềm"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

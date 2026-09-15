@@ -3,7 +3,7 @@
   "name": "CSCrownBuildStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSCrownBuildStealer is a CyStack-coined identifier for a\nsix-line `Information.txt` Telegram-bot caption observed\ninside `!! 2025 JULY.part001.rar` aggregator packs under\n`[<CC>]<IPv4>/Information.txt` victim folders. The panel is a\ncompact preview summary - one field per line, each line opens\nwith an emoji glyph attached directly to the ASCII key with no\nseparator space (`🚩IP:`, `👑Build:`, `🔑Passwords:`,\n`🍪Cookies:`, `💰Wallets:`, `📂Applications:`). The zero-space\nform is the panel quirk that distinguishes this layout from\nother emoji-prefixed formats.\n\nThe IP line carries a trailing `(<CC>)` two-letter ISO country\ncode in parentheses after the IPv4. The Build line carries an\noperator-set build / affiliate label (`STEAM` in the observed\nsample, but the slot accepts arbitrary literals). The Wallets\nline names a single wallet brand (`MetaMask`) rather than\nemitting a count. The Applications line uses a literal `No No\n/ No` placeholder when the empty-bucket sentinel applies.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and the\npublic stealer-format catalogues do not document a family that\nemits this exact six-line zero-space emoji-key shape with the\ncountry-code-in-parens IP convention and the `Build:` operator\nlabel slot.",
+  "description": "CSCrownBuildStealer is a CyStack-coined identifier for a\nsix-line `Information.txt` Telegram-bot caption observed\ninside `!! 2025 JULY.part001.rar` aggregator packs under\n`[<CC>]<IPv4>/Information.txt` victim folders. The panel is a\ncompact preview summary - one field per line, each line opens\nwith an emoji glyph attached directly to the ASCII key with no\nseparator space (`🚩IP:`, `👑Build:`, `🔑Passwords:`,\n`🍪Cookies:`, `💰Wallets:`, `📂Applications:`). The zero-space\nform is the panel quirk that distinguishes this layout from\nother emoji-prefixed formats.\n\nThe IP line carries a trailing `(<CC>)` two-letter ISO country\ncode in parentheses after the IPv4. The Build line carries an\noperator-set build / affiliate label (`STEAM` in the observed\nsample, but the slot accepts arbitrary literals). The Wallets\nline names a single wallet brand (`MetaMask`) rather than\nemitting a count. The Applications line uses a literal `No No / No` placeholder when the empty-bucket sentinel applies.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and the\npublic stealer-format catalogues do not document a family that\nemits this exact six-line zero-space emoji-key shape with the\ncountry-code-in-parens IP convention and the `Build:` operator\nlabel slot.",
   "aliases": [],
   "typical_targets": [
     "Browser saved credentials (count surfaced as `Passwords:`)",
@@ -65,5 +65,39 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSCrownBuildStealer là định danh do CyStack đặt cho một caption bot Telegram sáu dòng `Information.txt` được quan sát bên trong các gói tổng hợp `!! 2025 JULY.part001.rar` dưới các thư mục nạn nhân `[<CC>]<IPv4>/Information.txt`. Panel này là bản tóm tắt xem trước gọn nhẹ - mỗi trường một dòng, mỗi dòng mở đầu bằng một ký tự biểu tượng cảm xúc gắn liền trực tiếp vào khóa ASCII mà không có khoảng trắng phân cách (`🚩IP:`, `👑Build:`, `🔑Passwords:`, `🍪Cookies:`, `💰Wallets:`, `📂Applications:`). Dạng không-khoảng-trắng này là đặc điểm riêng của panel giúp phân biệt bố cục này với các định dạng có tiền tố biểu tượng cảm xúc khác.\n\nDòng IP mang theo mã quốc gia ISO hai chữ cái `(<CC>)` đặt trong ngoặc đơn sau địa chỉ IPv4. Dòng Build mang theo nhãn build/affiliate do đối tượng vận hành thiết lập (`STEAM` trong mẫu quan sát được, nhưng trường này chấp nhận chuỗi văn bản tùy ý). Dòng Wallets nêu tên một thương hiệu ví duy nhất (`MetaMask`) thay vì tạo dữ liệu đầu ra là một số đếm. Dòng Applications sử dụng giá trị chữ nghĩa `No No / No` khi áp dụng cờ báo hiệu rỗng (empty-bucket sentinel).\n\nViệc quy kết họ mã độc hiện vẫn mang tính tạm thời, chờ có một bản ánh xạ thông tin tình báo mối đe dọa đã công bố cho bố cục này. Các báo cáo công khai và các danh mục định dạng mã độc đánh cắp thông tin công khai không ghi nhận họ mã độc nào tạo dữ liệu đầu ra đúng theo cấu trúc dữ liệu sáu dòng, khóa-emoji viết liền này, cùng quy ước IP có mã quốc gia trong ngoặc đơn và vị trí nhãn đối tượng vận hành `Build:`.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt (số đếm hiển thị dưới dạng `Passwords:`)",
+        "Cookie trình duyệt (số đếm hiển thị dưới dạng `Cookies:`)",
+        "Tiện ích mở rộng ví tiền mã hóa (một thương hiệu duy nhất hiển thị dưới dạng `Wallets:`)",
+        "Cờ báo hiệu sự hiện diện dữ liệu ứng dụng (`Applications:`)"
+      ],
+      "detection_notes": "Việc lấy dấu vân tay (fingerprint) yêu cầu ba literal khóa-emoji không có khoảng trắng được neo theo dòng: `👑Build:`, `🚩IP:` và `📂Applications:`. Tổ hợp ba điểm neo này là duy nhất trong toàn bộ danh mục này - không có định dạng nào khác tạo dữ liệu đầu ra theo bất kỳ hình thức nào trong ba hình thức trên (CSEmojiInfo / CSEmojiCount / CSMainLoot / CSRLPanel đều tách biệt ký tự biểu tượng cảm xúc khỏi khóa ASCII bằng một khoảng trắng). Trong quá trình phân loại ban đầu, hãy coi việc quy kết họ mã độc là chưa xác định: cấu trúc dữ liệu caption bot sáu dòng gọn nhẹ này chỉ cung cấp IP, quốc gia và nhãn build như các trường có thể quan sát được, do đó không thể khôi phục tên máy, tên người dùng, hệ điều hành, HWID hay dấu thời gian theo từng nạn nhân chỉ từ log này. Vị trí `Build:` do đối tượng vận hành kiểm soát, vì vậy một giá trị quan sát được (`STEAM`) không đại diện cho toàn bộ không gian nhãn.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

@@ -11,7 +11,7 @@
     "Browser credentials (Chrome profile passwords), the URL\norigin the credential belongs to, and the account\nidentifier (email, phone, or username handle)",
     "Android autofill entries (``android://<b64hash>@<pkg>/``\norigins that Chrome for Android replicates into the\ndesktop credential store via Sync)"
   ],
-  "detection_notes": "Fingerprint requires four line-anchored anchors, all four\nin the same body: ``SOFT: ``, ``URL: ``, ``USER: ``, and\n``PASS: ``. The four-anchor combination is exclusive to\nPasswords.txt-shaped content: no canonical system-info\npanel across this catalog carries all four spelling\nvariants at line start. During incident response, treat\nthe file as a credentials dump: pull each URL / USER /\nPASS triple as a leaked-credential IOC and correlate the\n``JM[<HWID>][<TIMESTAMP>]`` sibling folder name for\nvictim identification.",
+  "detection_notes": "Fingerprint requires four line-anchored anchors, all four\nin the same body: ``SOFT:``, ``URL:``, ``USER:``, and\n``PASS:``. The four-anchor combination is exclusive to\nPasswords.txt-shaped content: no canonical system-info\npanel across this catalog carries all four spelling\nvariants at line start. During incident response, treat\nthe file as a credentials dump: pull each URL / USER /\nPASS triple as a leaked-credential IOC and correlate the\n``JM[<HWID>][<TIMESTAMP>]`` sibling folder name for\nvictim identification.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -24,5 +24,25 @@
   ],
   "related_families": [],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSSoftUrlPassStealer là định danh do CyStack đặt cho một tệp bản ghi dạng khối (block-record) có cấu trúc dữ liệu giống Passwords.txt nhưng bị định tuyến nhầm vào vị trí ``System.txt`` bên trong các gói tổng hợp ``<N> LOGS.rar``. Được ghi nhận bên trong ``4 APRIL - 2950 LOGS.rar`` tại các thư mục nạn nhân ``JM[<HWID>][<TIMESTAMP>]/System.txt``, nơi trình đóng gói (pack builder) ghi thông tin xác thực của từng nạn nhân dưới tên tệp cơ sở ``System.txt`` thay vì tên chuẩn ``Passwords.txt``.\n\nPhần nội dung là định dạng bản ghi dạng khối với bốn trường được neo theo dòng trong mỗi bản ghi theo thứ tự cố định: ``SOFT:`` (định danh trình duyệt, ``Chrome Profile <N> (<version>)``), ``URL:`` (nguồn gốc đăng nhập, HTTPS hoặc tự động điền trên Android ``android://<b64hash>@<pkg>/``), ``USER:`` (tên tài khoản), và ``PASS:`` (thông tin xác thực được lưu trữ). Các bản ghi được phân tách bằng dòng trống. Bố cục khối SOFT/URL/USER/PASS này phổ biến trên nhiều mã độc đánh cắp thông tin theo một bài viết công khai về định dạng nhật ký của mã độc đánh cắp thông tin (một trong năm cấu trúc dữ liệu Passwords.txt đã được ghi nhận) và không thể ánh xạ duy nhất về một builder cụ thể chỉ dựa trên định dạng. Việc quy kết họ mã độc vẫn mang tính tạm thời cho đến khi có ánh xạ tình báo mối đe dọa được công bố cho mẫu định tuyến nhầm cụ thể này.",
+      "typical_targets": [
+        "Thông tin xác thực trình duyệt (mật khẩu hồ sơ Chrome), nguồn gốc URL mà thông tin xác thực thuộc về, và định danh tài khoản (email, số điện thoại, hoặc tên người dùng)",
+        "Các mục tự động điền trên Android (nguồn gốc ``android://<b64hash>@<pkg>/`` mà Chrome dành cho Android sao chép vào kho lưu trữ thông tin xác thực trên máy tính để bàn thông qua Sync)"
+      ],
+      "detection_notes": "Việc nhận diện dấu hiệu đòi hỏi bốn điểm neo theo dòng, tất cả bốn cùng xuất hiện trong cùng một nội dung tệp: ``SOFT:``, ``URL:``, ``USER:``, và ``PASS:``. Sự kết hợp của bốn điểm neo này chỉ dành riêng cho nội dung có cấu trúc dữ liệu giống Passwords.txt: không có bảng thông tin hệ thống chuẩn nào trong danh mục này mang đủ cả bốn biến thể chính tả ở đầu dòng. Trong quá trình ứng phó sự cố, hãy xem tệp này như một bản kết xuất thông tin xác thực: trích xuất từng bộ ba URL / USER / PASS làm dấu hiệu xâm nhập (IOC) về thông tin xác thực bị rò rỉ và đối chiếu tên thư mục liên quan ``JM[<HWID>][<TIMESTAMP>]`` để xác định nạn nhân.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        }
+      ]
+    }
+  }
 }

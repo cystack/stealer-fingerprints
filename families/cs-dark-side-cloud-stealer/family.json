@@ -42,5 +42,34 @@
     "https://t.me/+abRpT5eRHCplNzIy"
   ],
   "canonical_family": "redline",
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSDarkSideCloudStealer là định danh do CyStack đặt cho một lớp bọc trình tổng hợp `DARKSIDE PRIVATE CLOUD` được quan sát bên trong các gói `@ft7links-vidar`. Bảng điều khiển bao quanh một banner ASCII-art `Darkside` giữa các dòng phân tách `===DARKSIDE_BRAND_BEGIN===` và `===DARKSIDE_BRAND_END===`, quảng cáo mô hình đăng ký theo cấp (BUDGET 100 USD, PREMIUM 200 USD, GOLD 300 USD), và nhúng tên kênh `https://t.me/+abRpT5eRHCplNzIy`. Cấu trúc dữ liệu phần thân sử dụng cách đặt tên khóa theo chuẩn Redline đã bị lược bỏ mạnh (`AV:`, `User Name:`, `Display Resolution:`).",
+      "typical_targets": [],
+      "detection_notes": "Dòng phân tách `===DARKSIDE_BRAND_BEGIN===` dài 28 ký tự là dấu hiệu kích hoạt rõ ràng nhất; không có định dạng nào khác trong danh mục này sử dụng nó. Kết hợp với ít nhất một trường phần thân theo chuẩn Redline (`User Name:` hoặc `Display Resolution:`) để phân biệt với các dấu vết README chỉ chứa banner mà bảng điều khiển này cũng có thể tạo ra. Lưu ý: không liên quan đến chiến dịch mã độc tống tiền DarkSide có liên hệ với Nga (Colonial Pipeline, tháng 5/2021); việc trùng tên chỉ là ngẫu nhiên.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

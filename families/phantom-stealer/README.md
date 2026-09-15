@@ -1,5 +1,9 @@
 # Phantom Stealer
 
+## Overview / Tổng quan
+
+### English
+
 Phantom Stealer is a Stealerium-fork info-stealer sold as a
 MaaS through the `phantomsoftwares.site` storefront and the
 `@Phantomsoftwares_bot` Telegram marketplace, contact handle
@@ -10,10 +14,8 @@ loader plus a .NET inner payload (two-layer attack chain).
 This catalog documents two distinct `Information.txt` panel shapes:
 
 - v2 emoji-section panel (canonical, publicly confirmed):
-banner `*Phantom stealer v2.0 - Report:*` with `📅 Date:`, `🖥️
-System:`, `💻 CompName:`, `🌐 External IP:` field lines
-organised under `*HARDWARE INFORMATION*` / `*NETWORK
-INFORMATION*` / `*DETECTED DOMAINS*` / `*BROWSER DATA*` /
+banner `*Phantom stealer v2.0 - Report:*` with `📅 Date:`, `🖥️ System:`, `💻 CompName:`, `🌐 External IP:` field lines
+organised under `*HARDWARE INFORMATION*` / `*NETWORK INFORMATION*` / `*DETECTED DOMAINS*` / `*BROWSER DATA*` /
 `*SOFTWARE & ACCOUNTS*` / `*DEVICE INFORMATION*` /
 `*INSTALLATION STATUS*` Markdown-bold section banners
 separated by U+2501 heavy horizontal `━` rules. Trailing
@@ -27,26 +29,39 @@ key-value shape, so v1 attribution remains tentative even
 though it is retained under the same canonical family
 pending a published mapping.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **Known malware family**
+Phantom Stealer là một họ mã độc đánh cắp thông tin được fork từ Stealerium, được bán dưới dạng MaaS thông qua gian hàng `phantomsoftwares.site` và chợ Telegram `@Phantomsoftwares_bot`, tài khoản liên hệ `@Oldphantomoftheopera`. Các báo cáo công khai ghi nhận họ mã độc này hoạt động từ tháng 2/2025, sử dụng bộ tải (loader) ngoài NativeAOT `pdh.dll` kết hợp với payload .NET bên trong (chuỗi tấn công hai lớp).
+
+Danh mục này ghi nhận hai cấu trúc dữ liệu panel `Information.txt` khác biệt:
+
+- Panel v2 dạng phân mục emoji (chuẩn, đã được xác nhận công khai): banner `*Phantom stealer v2.0 - Report:*` với các dòng trường `📅 Date:`, `🖥️ System:`, `💻 CompName:`, `🌐 External IP:` được tổ chức dưới các banner phân mục in đậm kiểu Markdown `*HARDWARE INFORMATION*` / `*NETWORK INFORMATION*` / `*DETECTED DOMAINS*` / `*BROWSER DATA*` / `*SOFTWARE & ACCOUNTS*` / `*DEVICE INFORMATION*` / `*INSTALLATION STATUS*`, ngăn cách bởi các đường kẻ ngang đậm U+2501 `━`. Khối quy kết đối tượng vận hành ở cuối chứa các URL `contact` / `marketplace` / `website`.
+- Bố cục v1 dạng phẳng khóa-dấu hai chấm-giá trị `UserInformation.txt` (`Username:` / `PC-name:` / `Ip:` / `Location:` / `System:` / `Admin rights:`). Bố cục v1 ban đầu được gắn cờ là quy kết tạm thời cho Phantom; nghiên cứu về panel emoji v2 chưa trực tiếp xác nhận cấu trúc dữ liệu khóa-giá trị của v1, do đó việc quy kết v1 vẫn còn mang tính tạm thời dù nó vẫn được giữ dưới cùng họ mã độc chuẩn cho đến khi có ánh xạ được công bố.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Phantom Stealer`, `Phantom stealer v2.0`
 - Variants observed: **3**
 - CyStack observations represented: **42**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- Browser saved credentials, cookies, autofill, history, bookmarks
-- Crypto wallet extensions and desktop wallet clients
-- Discord and Telegram session data (Tdata)
-- Windows product key extraction
-- Desktop screenshot capture
-- Banking / crypto / adult site domain detection summary
-- System hardware (CPU, GPU, RAM, screen, webcam, power) inventory
-- Network info (gateway, internal, external IP)
+| English | Tiếng Việt |
+|---|---|
+| Browser saved credentials, cookies, autofill, history, bookmarks | Thông tin xác thực đã lưu trong trình duyệt, cookie, dữ liệu tự động điền, lịch sử duyệt web, bookmark |
+| Crypto wallet extensions and desktop wallet clients | Các tiện ích mở rộng ví tiền điện tử và ứng dụng ví desktop |
+| Discord and Telegram session data (Tdata) | Dữ liệu phiên đăng nhập Discord và Telegram (Tdata) |
+| Windows product key extraction | Trích xuất khóa sản phẩm (product key) Windows |
+| Desktop screenshot capture | Chụp ảnh màn hình desktop |
+| Banking / crypto / adult site domain detection summary | Tổng hợp nhận diện tên miền thuộc lĩnh vực ngân hàng / tiền điện tử / nội dung người lớn |
+| System hardware (CPU, GPU, RAM, screen, webcam, power) inventory | Kiểm kê phần cứng hệ thống (CPU, GPU, RAM, màn hình, webcam, nguồn điện) |
+| Network info (gateway, internal, external IP) | Thông tin mạng (gateway, IP nội bộ, IP bên ngoài) |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 v2 fingerprint requires the literal `Phantom stealer v2.0`
 banner substring AND the `HARDWARE INFORMATION` section header
@@ -54,11 +69,16 @@ AND the `External IP:` field name. The three-anchor
 combination is the panel self-banner plus structural
 confirmation. v2 `Date:` values use 12-hour `AM/PM` format with no explicit timezone marker; analysts should treat the timezone as unknown rather than infer it from the processing host.
 
-v1 fingerprint requires the `PC-name:` (hyphenated) and `Admin
-rights:` keys together. The v1 attribution to Phantom Stealer
+v1 fingerprint requires the `PC-name:` (hyphenated) and `Admin rights:` keys together. The v1 attribution to Phantom Stealer
 is provisional - the v1 layout is structurally distinct from
 the publicly confirmed v2 panel and may represent a look-alike
 Russian stealer that was originally misattributed. Treat v1-shape Phantom attribution with caution during triage.
+
+### Tiếng Việt
+
+Việc nhận diện v2 yêu cầu phải có đồng thời chuỗi con banner `Phantom stealer v2.0`, tiêu đề phân mục `HARDWARE INFORMATION`, và tên trường `External IP:`. Tổ hợp ba điểm neo này gồm banner tự nhận diện của panel cộng với xác nhận về mặt cấu trúc dữ liệu. Các giá trị `Date:` trong v2 dùng định dạng 12 giờ `AM/PM` mà không có dấu hiệu múi giờ rõ ràng; các nhà phân tích nên coi múi giờ là không xác định thay vì suy luận từ máy xử lý.
+
+Việc nhận diện v1 yêu cầu phải có đồng thời các khóa `PC-name:` (có gạch nối) và `Admin rights:`. Việc quy kết v1 cho Phantom Stealer chỉ mang tính tạm thời - bố cục v1 khác biệt về mặt cấu trúc so với panel v2 đã được xác nhận công khai và có thể là một mã độc đánh cắp thông tin có nguồn gốc Nga trông tương tự nhưng ban đầu bị quy kết nhầm. Cần thận trọng khi xử lý quy kết Phantom dạng v1 trong quá trình phân loại ban đầu (triage).
 
 ## Observed log variants
 
@@ -116,16 +136,16 @@ Recognition anchors:
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
-| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
-| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
-| [T1113](https://attack.mitre.org/techniques/T1113/) | Screen Capture |
-| [T1083](https://attack.mitre.org/techniques/T1083/) | File and Directory Discovery |
-| [T1217](https://attack.mitre.org/techniques/T1217/) | Browser Information Discovery |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores | Thông tin xác thực từ kho mật khẩu |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers | Thông tin xác thực từ trình duyệt web |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie | Đánh cắp cookie phiên web |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
+| [T1113](https://attack.mitre.org/techniques/T1113/) | Screen Capture | Chụp màn hình |
+| [T1083](https://attack.mitre.org/techniques/T1083/) | File and Directory Discovery | Dò tìm tệp và thư mục |
+| [T1217](https://attack.mitre.org/techniques/T1217/) | Browser Information Discovery | Dò tìm thông tin trình duyệt |
 
 ## Related catalog profiles
 

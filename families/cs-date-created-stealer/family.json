@@ -3,7 +3,7 @@
   "name": "CSDateCreatedStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSDateCreatedStealer is a CyStack-coined identifier for a\n5-line `URL` / `Username` / `Password` / `Date Created` /\n`Application` cred-file format distributed inside `!! 2025\nNOV.part001.rar` `@BRADLOGS / BRADMAX` aggregator packs in\n`[<TAG>]<IP>/Pass/Pass.txt` victim folders. The per-entry\n`Date Created:` creation-timestamp line wedged between\n`Password:` and `Application:` is the disambiguating signal:\nno other registered cred-file shape includes a per-credential\ncreation timestamp.\n\nThe `Date Created:` value uses a US-locale `M/D/YYYY, H:MM:SS\nAM/PM` format. The `Application:` line carries a bare\nbrowser-profile name (`Default`, `Profile 2`) with no\nbracketed annotation (distinct from `CSAppProfileStealer`,\nwhich uses `Application: Chrome [Profile: Default]`). Records\nare separated by a blank line. The panel preserves\nChrome-synced Android-app credential URLs in the\n`android://<base64>@com.<pkg>/` form alongside HTTPS desktop\nURLs, indicating the underlying stealer reads Chromium's\n`Login Data` SQLite directly rather than filtering by URL\nscheme. Family attribution is provisional pending a published\nthreat-intel mapping for this layout. The format resembles the\npublicly documented PXA Stealer Vietnamese-targeting cred\ndumps (PXA targets Chromium and Android credentials), but no\npublic write-up shows a sample log with the verbatim 5-line\n`Date Created:` layout.",
+  "description": "CSDateCreatedStealer is a CyStack-coined identifier for a\n5-line `URL` / `Username` / `Password` / `Date Created` /\n`Application` cred-file format distributed inside `!! 2025 NOV.part001.rar` `@BRADLOGS / BRADMAX` aggregator packs in\n`[<TAG>]<IP>/Pass/Pass.txt` victim folders. The per-entry\n`Date Created:` creation-timestamp line wedged between\n`Password:` and `Application:` is the disambiguating signal:\nno other registered cred-file shape includes a per-credential\ncreation timestamp.\n\nThe `Date Created:` value uses a US-locale `M/D/YYYY, H:MM:SS AM/PM` format. The `Application:` line carries a bare\nbrowser-profile name (`Default`, `Profile 2`) with no\nbracketed annotation (distinct from `CSAppProfileStealer`,\nwhich uses `Application: Chrome [Profile: Default]`). Records\nare separated by a blank line. The panel preserves\nChrome-synced Android-app credential URLs in the\n`android://<base64>@com.<pkg>/` form alongside HTTPS desktop\nURLs, indicating the underlying stealer reads Chromium's\n`Login Data` SQLite directly rather than filtering by URL\nscheme. Family attribution is provisional pending a published\nthreat-intel mapping for this layout. The format resembles the\npublicly documented PXA Stealer Vietnamese-targeting cred\ndumps (PXA targets Chromium and Android credentials), but no\npublic write-up shows a sample log with the verbatim 5-line\n`Date Created:` layout.",
   "aliases": [
     "BRADMAX Pass.txt with Date Created field",
     "5-line URL/Username/Password/Date Created/Application block"
@@ -31,12 +31,37 @@
   ],
   "related_families": [
     "pxa-stealer",
-    "cs-app-profile-stealer",
-    "cs-passwords-not-found-stub"
+    "cs-app-profile-stealer"
   ],
   "sources": [],
   "observed_channels": [
     "https://t.me/BRADLOGS"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSDateCreatedStealer là định danh do CyStack đặt cho một định dạng tệp thông tin xác thực 5 dòng `URL` / `Username` / `Password` / `Date Created` / `Application` được phân phối bên trong các gói tổng hợp `!! 2025 NOV.part001.rar` `@BRADLOGS / BRADMAX` trong các thư mục nạn nhân `[<TAG>]<IP>/Pass/Pass.txt`. Dòng mốc thời gian tạo (creation-timestamp) `Date Created:` theo từng mục, nằm xen giữa `Password:` và `Application:`, chính là tín hiệu để phân biệt: không có cấu trúc dữ liệu tệp thông tin xác thực nào khác đã được ghi nhận có mốc thời gian tạo theo từng thông tin xác thực.\n\nGiá trị `Date Created:` sử dụng định dạng `M/D/YYYY, H:MM:SS AM/PM` theo chuẩn khu vực Mỹ. Dòng `Application:` mang tên hồ sơ trình duyệt (browser profile) trần, không có chú thích trong ngoặc (`Default`, `Profile 2`), khác biệt so với `CSAppProfileStealer` vốn sử dụng `Application: Chrome [Profile: Default]`. Các bản ghi được phân tách bằng một dòng trống. Bảng điều khiển lưu giữ các URL thông tin xác thực ứng dụng Android được đồng bộ qua Chrome dưới dạng `android://<base64>@com.<pkg>/` song song với các URL desktop dạng HTTPS, cho thấy mã độc đánh cắp thông tin bên dưới đọc trực tiếp cơ sở dữ liệu SQLite `Login Data` của Chromium thay vì lọc theo giao thức URL. Việc quy kết họ mã độc vẫn còn là tạm thời, chờ có báo cáo tình báo về mối đe dọa được công bố để ánh xạ với cấu trúc dữ liệu này. Định dạng này có nét tương đồng với các bản dump thông tin xác thực nhắm vào nạn nhân Việt Nam của PXA Stealer đã được công khai tài liệu hóa (PXA nhắm vào thông tin xác thực Chromium và Android), nhưng chưa có bài viết công khai nào cho thấy một mẫu log với cấu trúc dữ liệu 5 dòng `Date Created:` giống hệt.",
+      "typical_targets": [
+        "Thông tin xác thực được trình duyệt lưu (URL, tên đăng nhập, mật khẩu)",
+        "Tên hồ sơ trình duyệt nguồn (`Default` / `Profile <n>`)",
+        "Mốc thời gian tạo theo từng thông tin xác thực lấy từ cơ sở dữ liệu SQLite `Login Data`",
+        "Thông tin xác thực ứng dụng Android được đồng bộ qua Chrome (URL gói `android://`)"
+      ],
+      "detection_notes": "Việc xác định dấu hiệu nhận diện yêu cầu 3 khối 5 dòng liên tiếp trở lên khớp với `URL: / Username: / Password: / Date Created: / Application:`. Dòng `Date Created:` là yếu tố phân biệt: nó không xuất hiện trong bất kỳ cấu trúc dữ liệu tệp thông tin xác thực nào khác đã được ghi nhận. Trong quá trình phân loại ban đầu (triage), hãy xem việc quy kết họ mã độc là chưa xác định: mã độc đánh cắp thông tin tạo ra bản dump thông tin xác thực này chưa được ánh xạ với cấu trúc dữ liệu 5 dòng chính xác này trong bất kỳ báo cáo công khai nào. Sự trùng khớp về cấu trúc với mục tiêu nhắm đến của PXA Stealer (thông tin xác thực Chromium và Android) mang tính gợi ý nhưng chưa được xác nhận.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

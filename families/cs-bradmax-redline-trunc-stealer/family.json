@@ -3,7 +3,7 @@
   "name": "CSBradmaxRedlineTruncStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSBradmaxRedlineTruncStealer is a CyStack-coined identifier\nfor the BRADMAX-truncated Redline-shape `System.txt` panel\nwhere the identity preamble (`IP:`, `UserName:`,\n`MachineName:`, `Country:`) is stripped by the aggregator and\nthe body starts flush with `Zip Code:`. Observed inside\n`@BRADMAX 27000 FEB-MARCH.part01.rar` at `@BRADMAX <count>\n<MONTHS>/[<CC>]<IPv4>/System.txt` victim folders (e.g.\n`@BRADMAX 27000 FEB-MARCH/[DE]<IPv4>/System.txt`).\n\nBody vocabulary is Redline-canonical: the `Operation System:`\ntypo (singular `Operation`, no trailing `ing`), the `Available\nKeyboardLayouts:` plural marker (no space between `Keyboard`\nand `Layouts`), the `Hardwares:` block header with `Name:\n<label>, <values>` rows below (RAM row uses the\ndual-serialisation `<N.NN> Mb or <bytes> bytes` format, GPU\nrows use `<vendor> <model>, <bytes> bytes`), plus a bare\n`Windows Defender` line at the tail with no `AV:` /\n`Antivirus:` key prefix. The `FileLocation:` field emitted by canonical Redline `UserInformation.txt` panels is absent, distinguishing this preamble-stripped variant from the canonical layout.\n\nThe same underlying panel-render lineage appears in the Daisy\nCloud reseller output handled by `CSDaisyBlockCloudStealer`\n(which retains the identity preamble and adds a pipe-bordered\nASCII-art banner) and `CSDaisyCloudStealer` (per-line\nwatermark overlay). This BRADMAX-truncated variant is the\nbannerless, preamble-stripped sibling.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this specific stripped variant.\nPublic reporting and community catalogues document the\nunderlying Redline body shape but do not attest this specific\nBRADMAX-stripped preamble-less variant. Without the canonical\n`FileLocation:` anchor and identity preamble it is impossible\nto confirm the builder is stock Redline versus a Redline-fork\n(Meta, Aurora, Amadey inherit some Redline vocabulary).",
+  "description": "CSBradmaxRedlineTruncStealer is a CyStack-coined identifier\nfor the BRADMAX-truncated Redline-shape `System.txt` panel\nwhere the identity preamble (`IP:`, `UserName:`,\n`MachineName:`, `Country:`) is stripped by the aggregator and\nthe body starts flush with `Zip Code:`. Observed inside\n`@BRADMAX 27000 FEB-MARCH.part01.rar` at `@BRADMAX <count> <MONTHS>/[<CC>]<IPv4>/System.txt` victim folders (e.g.\n`@BRADMAX 27000 FEB-MARCH/[DE]<IPv4>/System.txt`).\n\nBody vocabulary is Redline-canonical: the `Operation System:`\ntypo (singular `Operation`, no trailing `ing`), the `Available KeyboardLayouts:` plural marker (no space between `Keyboard`\nand `Layouts`), the `Hardwares:` block header with `Name: <label>, <values>` rows below (RAM row uses the\ndual-serialisation `<N.NN> Mb or <bytes> bytes` format, GPU\nrows use `<vendor> <model>, <bytes> bytes`), plus a bare\n`Windows Defender` line at the tail with no `AV:` /\n`Antivirus:` key prefix. The `FileLocation:` field emitted by canonical Redline `UserInformation.txt` panels is absent, distinguishing this preamble-stripped variant from the canonical layout.\n\nThe same underlying panel-render lineage appears in the Daisy\nCloud reseller output handled by `CSDaisyBlockCloudStealer`\n(which retains the identity preamble and adds a pipe-bordered\nASCII-art banner) and `CSDaisyCloudStealer` (per-line\nwatermark overlay). This BRADMAX-truncated variant is the\nbannerless, preamble-stripped sibling.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this specific stripped variant.\nPublic reporting and community catalogues document the\nunderlying Redline body shape but do not attest this specific\nBRADMAX-stripped preamble-less variant. Without the canonical\n`FileLocation:` anchor and identity preamble it is impossible\nto confirm the builder is stock Redline versus a Redline-fork\n(Meta, Aurora, Amadey inherit some Redline vocabulary).",
   "aliases": [
     "BRADMAX truncated Redline-shape System.txt",
     "BRADMAX preamble-stripped Redline variant"
@@ -49,5 +49,43 @@
   "observed_channels": [
     "https://t.me/BRADLOGS"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSBradmaxRedlineTruncStealer là định danh do CyStack đặt cho phần thân dữ liệu dạng Redline bị cắt bởi BRADMAX (`System.txt` panel), trong đó phần mở đầu định danh (`IP:`, `UserName:`, `MachineName:`, `Country:`) đã bị bộ tổng hợp (aggregator) loại bỏ và phần thân bắt đầu ngay từ `Zip Code:`. Được ghi nhận bên trong `@BRADMAX 27000 FEB-MARCH.part01.rar` tại các thư mục nạn nhân `@BRADMAX <count> <MONTHS>/[<CC>]<IPv4>/System.txt` (ví dụ: `@BRADMAX 27000 FEB-MARCH/[DE]<IPv4>/System.txt`).\n\nTừ vựng trong phần thân mang tính đặc trưng chuẩn của Redline: lỗi chính tả `Operation System:` (dạng số ít `Operation`, không có `ing` ở cuối), ký hiệu số nhiều `Available KeyboardLayouts:` (không có khoảng trắng giữa `Keyboard` và `Layouts`), tiêu đề khối `Hardwares:` với các dòng `Name: <label>, <values>` bên dưới (dòng RAM dùng định dạng tuần tự hóa kép `<N.NN> Mb or <bytes> bytes`, các dòng GPU dùng `<vendor> <model>, <bytes> bytes`), cùng với một dòng `Windows Defender` trơn ở cuối, không có tiền tố khóa `AV:` / `Antivirus:`. Trường `FileLocation:` mà các panel Redline chuẩn `UserInformation.txt` thường tạo ra không xuất hiện, đây là điểm phân biệt biến thể bị cắt phần mở đầu này với bố cục chuẩn.\n\nCùng một nguồn gốc render panel này cũng xuất hiện trong dữ liệu đầu ra của đại lý bán lại Daisy Cloud, được xử lý bởi `CSDaisyBlockCloudStealer` (vẫn giữ nguyên phần mở đầu định danh và bổ sung banner ASCII art viền bằng ký tự pipe) và `CSDaisyCloudStealer` (lớp phủ watermark theo từng dòng). Biến thể bị cắt bởi BRADMAX này là biến thể liên quan không có banner và không có phần mở đầu định danh.\n\nViệc quy kết họ mã độc hiện vẫn ở dạng tạm thời, chờ có báo cáo tình báo mối đe dọa ánh xạ cho biến thể bị cắt cụ thể này. Các báo cáo công khai và danh mục cộng đồng có ghi nhận cấu trúc phần thân dạng Redline nền tảng, nhưng chưa xác nhận biến thể bị BRADMAX cắt bỏ phần mở đầu định danh cụ thể này. Do thiếu điểm neo `FileLocation:` chuẩn và phần mở đầu định danh, không thể xác nhận builder là Redline nguyên bản hay một bản fork của Redline (Meta, Aurora, Amadey đều kế thừa một phần từ vựng của Redline).",
+      "typical_targets": [
+        "Mã ZIP code và thành phố của nạn nhân (định vị theo IP)",
+        "HWID (định danh thiết bị dạng 32 ký tự hex)",
+        "Ngôn ngữ giao diện hiện tại và múi giờ",
+        "Tên hệ điều hành kèm hậu tố kiến trúc",
+        "Các bố cục bàn phím đã cài đặt",
+        "Tổng dung lượng RAM hệ thống (MB, trích xuất từ dòng `Total of RAM`)",
+        "Danh sách hãng và model GPU",
+        "Tên phần mềm diệt virus dạng trơn (dòng cuối)"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện yêu cầu đồng thời: (a) `Operation System:` neo theo dòng (lỗi chính tả đặc trưng chuẩn của Redline) VÀ (b) `Hardwares:` neo theo dòng (tiêu đề khối số nhiều đặc trưng chuẩn của Redline) VÀ (c) chuỗi con `Name: Total of RAM,` (mục RAM tuần tự hóa kép đặc thù của Redline) VÀ (d) `@BRADMAX` trong phần mở đầu đường dẫn kho lưu trữ (điều kiện phạm vi của bộ tổng hợp). Năm điểm neo phủ định giúp phân biệt các định dạng liên quan: `FileLocation:` (chuẩn `Redline`), `t.me/UP_DAISYCLOUD` (`CSDaisyBlockCloudStealer`), biểu thức chính quy xáo trộn watermark theo từng dòng (`CSDaisyCloudStealer`), `cheshire_aurora` (`CSDaisyAuroraStealer`), và `misericorde_supp` (`CSDaisyMisericordeStealer`). Trong quá trình phân loại, hãy coi nhãn này là dấu hiệu \"phần thân dạng Redline được BRADMAX phát hành với phần mở đầu định danh đã bị loại bỏ\": các trường ZIP / thành phố / HWID / hệ điều hành / RAM / GPU là các IOC có thể sử dụng được, nhưng không thể xác nhận builder nền tảng là Redline nguyên bản nếu thiếu `FileLocation:` hoặc banner ASCII. Giá trị `Country:` mà panel chuẩn sẽ tạo ra không xuất hiện trong phần thân; tiền tố thư mục trong đường dẫn kho lưu trữ (`[<CC>]<IPv4>/`) mang một nhãn quốc gia, nhưng đôi khi bộ tổng hợp gán sai nhãn (thư mục mẫu `[DE]<IPv4>` cho thấy Đức trong khi IP được đăng ký bởi ARIN tại Mỹ và trường `Location:` ghi Pontiac, Michigan).",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        },
+        {
+          "id": "T1614.001",
+          "name": "Xác định ngôn ngữ hệ thống"
+        },
+        {
+          "id": "T1518.001",
+          "name": "Dò tìm phần mềm bảo mật"
+        },
+        {
+          "id": "T1124",
+          "name": "Xác định thời gian hệ thống"
+        }
+      ]
+    }
+  }
 }

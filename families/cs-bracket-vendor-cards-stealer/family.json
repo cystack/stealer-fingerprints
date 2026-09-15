@@ -35,5 +35,30 @@
     "steal-c"
   ],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSBracketVendorCardsStealer là định danh do CyStack đặt cho một bố cục thư mục nạn nhân `CreditCards/`, trong đó chứa một tệp thông tin xác thực cho mỗi cặp trình duyệt gốc Chromium / hồ sơ (profile), đặt tên mỗi tệp theo tên thư mục con vendor trong AppData/Local, được bọc trong dấu ngoặc vuông. Được quan sát bên trong `!! 2025 JUNE.part001.rar` tại `CreditCards/ CreditCards_[AVAST Software]_Default.txt`, cùng với các tệp/dấu vết liên quan `CreditCards_[BraveSoftware]_Default.txt` và `CreditCards_[Microsoft]_Default.txt`.\n\nCác token vendor trong ngoặc vuông (`[AVAST Software]`, `[BraveSoftware]`, `[Microsoft]`, `[Google]`, `[Yandex]`, v.v.) là bản sao nguyên văn của tên thư mục con nằm dưới `AppData/Local/<Vendor>/`, nơi các trình duyệt dẫn xuất từ Chromium lưu trữ cây User Data. Mã độc đánh cắp thông tin đọc bảng `credit_cards` trong SQLite Web Data của từng trình duyệt và ghi ra một tệp cho mỗi hồ sơ nguồn. Nội dung tệp thông tin xác thực sử dụng `Exp: <MM/YYYY>` để biểu thị ngày hết hạn. Nhiều tệp có nội dung tối giản (chỉ chứa ngày hết hạn, khoảng 12 byte) vì kỹ thuật vượt qua app-bound-encryption của panel chỉ lấy được PAN đã mã hóa nhưng không thể giải mã trên các bản Chrome sử dụng khóa phiên gắn với phần cứng.\n\nMột bài viết công khai mô tả định dạng log mã độc đánh cắp thông tin đã ghi nhận quy ước đặt tên vendor trong ngoặc vuông ở các tệp/dấu vết liên quan `Autofills/Google_[Chrome]_Default.txt` / `Autofills/Microsoft_[Edge]_Default.txt` như một cấu trúc dữ liệu trích xuất thông tin xác thực Chromium mang tính tổng quát, được nhiều họ mã độc sử dụng (RedLine, META, Raccoon, Stealc đều xuất hiện trong cùng bài viết), nhưng không gắn cụ thể cấu trúc dữ liệu `CreditCards_[<Vendor>]_<Profile>.txt` này với một họ mã độc được nêu tên. Việc quy kết họ mã độc hiện chỉ mang tính tạm thời, chờ có bản đồ tình báo mối đe dọa được công bố cho bố cục này.",
+      "typical_targets": [
+        "Thẻ tín dụng đã lưu từ các hồ sơ trình duyệt gốc Chromium",
+        "Dữ liệu trích xuất theo từng vendor từ các cây User Data trong AppData/Local/<Vendor>/",
+        "Số PAN và ngày hết hạn thẻ từ bảng `credit_cards` trong SQLite Web Data"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu ít nhất một tệp ở gốc thư mục có tên tệp khớp với biểu thức chính quy `^CreditCards_\\[[^\\]]+\\]_[^.]+\\.txt$` (không phân biệt hoa thường). Tiền tố `CreditCards_`, token vendor trong ngoặc vuông, dấu gạch dưới phân tách, tên hồ sơ, và hậu tố `.txt` đủ đặc trưng trong danh mục này để chỉ cần một kết quả khớp là đủ cho việc nhận diện cấu trúc. Gốc thư mục cũng có thể chứa một dấu vết DIR của trình đóng gói không có tên, dấu vết này bị bỏ qua khi nhận diện. Trong quá trình phân loại ban đầu, cần coi việc quy kết họ mã độc là chưa xác định: không thể xác định chính xác nguồn gốc của công cụ trích xuất thông tin xác thực Chromium (RedLine / META / Raccoon / Stealc / bản fork) chỉ dựa vào tên tệp. Nhiều tệp thông tin xác thực chỉ chứa một dòng ngày hết hạn `Exp:` vì kỹ thuật vượt qua của panel không giải mã được PAN, do đó một nạn nhân được quan sát có thể không có số thẻ nào có thể khôi phục được nhưng vẫn cho thấy bằng chứng về việc có thẻ được lưu trong trình duyệt.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

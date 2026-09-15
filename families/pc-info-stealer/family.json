@@ -6,7 +6,7 @@
   "description": "Unidentified `PC Username` / `PC Name` stealer observed inside\n`@BRADMAX` aggregator packs alongside Remus, user-info bracket, Snake,\nand Minimal logs. The `System_Info.txt` uses two\ntriple-equals section headers (`=== SYSTEM INFORMATION ===`)\nand four distinctive `PC ...` field keys.",
   "aliases": [],
   "typical_targets": [],
-  "detection_notes": "Field keys prefixed with `PC ` (`PC Username:`, `PC Name:`,\n`PC Owner:`, `PC Domain:`) together with the\n`=== SYSTEM INFORMATION ===` section header are the cleanest\nsignature.",
+  "detection_notes": "Field keys prefixed with `PC` (`PC Username:`, `PC Name:`,\n`PC Owner:`, `PC Domain:`) together with the\n`=== SYSTEM INFORMATION ===` section header are the cleanest\nsignature.",
   "attack_techniques": [
     {
       "id": "T1005",
@@ -45,5 +45,22 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Mã độc đánh cắp thông tin chưa xác định `PC Username` / `PC Name` được phát hiện bên trong các gói tổng hợp `@BRADMAX` cùng với log của Remus, user-info bracket, Snake và Minimal. `System_Info.txt` sử dụng hai tiêu đề phần dạng dấu bằng ba lần (`=== SYSTEM INFORMATION ===`) và bốn khóa trường `PC ...` đặc trưng.",
+      "typical_targets": [],
+      "detection_notes": "Các khóa trường có tiền tố `PC` (`PC Username:`, `PC Name:`, `PC Owner:`, `PC Domain:`) cùng với tiêu đề phần `=== SYSTEM INFORMATION ===` là dấu hiệu nhận diện rõ ràng nhất.",
+      "attack_techniques": [
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

@@ -3,7 +3,7 @@
   "name": "CSMinimalGeoStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSMinimalGeoStealer is a CyStack-coined identifier for a flat\n5-line panel-summary `Information.txt` observed inside `22-23\nSEPTEMBER - 20373 LOGS2.part1.rar` Telegram aggregator packs.\nThe victim folder name is a random uppercase-alphanumeric ID\nplus a Python-style timestamp\n(`<32-CHAR-ID>_YYYY_MM_DDTHH_MM_SS_micros/`), pointing at a\nPython or Go builder that mints the folder from\n`datetime.utcnow().isoformat()` with punctuation swapped for\nunderscores.\n\nThe body has exactly five bare `Key: Value` lines:\n`Username:`, `IP Address:`, `Country Code:`, `OS Version:`,\n`Antivirus:`. No banner, no HWID, no hostname, no hardware\ninventory, no build tag, no timestamp inside the body.\nDistinguishing key spellings: `IP Address:` (two-word form,\nspace between IP and Address), `Country Code:` (two-word form\nwith capital-C `Code`, bare ISO 3166-1 alpha-2 value),\n`Antivirus:` (lowercase `v`), and `OS Version:` carrying the\nWMI `Win32_OperatingSystem.Caption` prefix (e.g. `Microsoft\nWindows 11 Pro`).\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this minimal layout. Public reporting\nand the community catalogues do not attest a family emitting\nexactly this 5-field shape with the specific key spellings\nabove. Candidates ruled out include Raven Stealer,\nSamsStealer, PupkinStealer, XillenStealer, Braodo, and\nBoryptGrab (all documented body shapes are richer or differ in\nfield-key spelling). Update this tracking profile if a public\nwriteup later identifies the underlying builder.",
+  "description": "CSMinimalGeoStealer is a CyStack-coined identifier for a flat\n5-line panel-summary `Information.txt` observed inside `22-23 SEPTEMBER - 20373 LOGS2.part1.rar` Telegram aggregator packs.\nThe victim folder name is a random uppercase-alphanumeric ID\nplus a Python-style timestamp\n(`<32-CHAR-ID>_YYYY_MM_DDTHH_MM_SS_micros/`), pointing at a\nPython or Go builder that mints the folder from\n`datetime.utcnow().isoformat()` with punctuation swapped for\nunderscores.\n\nThe body has exactly five bare `Key: Value` lines:\n`Username:`, `IP Address:`, `Country Code:`, `OS Version:`,\n`Antivirus:`. No banner, no HWID, no hostname, no hardware\ninventory, no build tag, no timestamp inside the body.\nDistinguishing key spellings: `IP Address:` (two-word form,\nspace between IP and Address), `Country Code:` (two-word form\nwith capital-C `Code`, bare ISO 3166-1 alpha-2 value),\n`Antivirus:` (lowercase `v`), and `OS Version:` carrying the\nWMI `Win32_OperatingSystem.Caption` prefix (e.g. `Microsoft Windows 11 Pro`).\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this minimal layout. Public reporting\nand the community catalogues do not attest a family emitting\nexactly this 5-field shape with the specific key spellings\nabove. Candidates ruled out include Raven Stealer,\nSamsStealer, PupkinStealer, XillenStealer, Braodo, and\nBoryptGrab (all documented body shapes are richer or differ in\nfield-key spelling). Update this tracking profile if a public\nwriteup later identifies the underlying builder.",
   "aliases": [
     "Flat 5-field Information.txt panel-summary",
     "Bare Username/IPAddress/CountryCode/OSVersion/Antivirus panel"
@@ -15,7 +15,7 @@
     "OS caption from WMI `Win32_OperatingSystem.Caption`",
     "Installed antivirus product list"
   ],
-  "detection_notes": "Fingerprint requires all five bare keys line-anchored\n(`Username:`, `IP Address:`, `Country Code:`, `OS\nVersion:`, `Antivirus:`) PLUS absence of every richer-body anchor (`HWID:`, `PC Name:`, `User Name:` two-word\nform, `Computer Name:`, `Build:`, `Build ID:`,\n`Hostname:`, CamelCase `AntiVirus:`). During triage, the\nbody carries no cred count, hardware inventory, or\ntimestamp, so the public record retains victim identity, geo,\nOS, and installed AV. The folder-name Python-timestamp\nshape (`<ID>_YYYY_MM_DDTHH_MM_SS_micros`) is a useful\nsecondary signal but is not part of the format\nfingerprint (the content fingerprint uses the body only).",
+  "detection_notes": "Fingerprint requires all five bare keys line-anchored\n(`Username:`, `IP Address:`, `Country Code:`, `OS Version:`, `Antivirus:`) PLUS absence of every richer-body anchor (`HWID:`, `PC Name:`, `User Name:` two-word\nform, `Computer Name:`, `Build:`, `Build ID:`,\n`Hostname:`, CamelCase `AntiVirus:`). During triage, the\nbody carries no cred count, hardware inventory, or\ntimestamp, so the public record retains victim identity, geo,\nOS, and installed AV. The folder-name Python-timestamp\nshape (`<ID>_YYYY_MM_DDTHH_MM_SS_micros`) is a useful\nsecondary signal but is not part of the format\nfingerprint (the content fingerprint uses the body only).",
   "attack_techniques": [
     {
       "id": "T1082",
@@ -40,5 +40,36 @@
     "minimal-stealer"
   ],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSMinimalGeoStealer là định danh do CyStack đặt cho một bản tóm tắt panel dạng phẳng gồm 5 dòng `Information.txt` được quan sát bên trong các gói tổng hợp Telegram `22-23 SEPTEMBER - 20373 LOGS2.part1.rar`.\nTên thư mục nạn nhân là một ID chữ-số viết hoa ngẫu nhiên\ncộng với dấu thời gian kiểu Python\n(`<32-CHAR-ID>_YYYY_MM_DDTHH_MM_SS_micros/`), cho thấy đây là sản phẩm của một\nbộ builder viết bằng Python hoặc Go tạo ra thư mục từ\n`datetime.utcnow().isoformat()` với các dấu câu được thay bằng\ndấu gạch dưới.\n\nPhần nội dung có đúng năm dòng khóa trần `Key: Value`:\n`Username:`, `IP Address:`, `Country Code:`, `OS Version:`,\n`Antivirus:`. Không có banner, không có HWID, không có tên máy, không có\nbảng kê phần cứng, không có build tag, không có dấu thời gian bên trong nội dung.\nCác cách viết khóa đặc trưng để phân biệt: `IP Address:` (dạng hai từ,\ncó khoảng trắng giữa IP và Address), `Country Code:` (dạng hai từ\nvới chữ C viết hoa `Code`, giá trị ISO 3166-1 alpha-2 trần),\n`Antivirus:` (chữ thường `v`), và `OS Version:` mang\ntiền tố WMI `Win32_OperatingSystem.Caption` (ví dụ `Microsoft Windows 11 Pro`).\n\nViệc quy kết họ mã độc hiện vẫn là tạm thời, chờ có ánh xạ\ntình báo mối đe dọa công khai cho bố cục tối giản này. Các báo cáo công khai\nvà các danh mục cộng đồng chưa xác nhận có họ mã độc nào tạo ra\nchính xác cấu trúc dữ liệu 5 trường này với các cách viết khóa cụ thể\nnêu trên. Các ứng viên đã bị loại trừ bao gồm Raven Stealer,\nSamsStealer, PupkinStealer, XillenStealer, Braodo, và\nBoryptGrab (tất cả các cấu trúc nội dung đã được ghi nhận đều phong phú hơn hoặc\nkhác về cách viết khóa trường). Cập nhật hồ sơ theo dõi này nếu sau này có\nbài viết công khai xác định được builder gốc.",
+      "typical_targets": [
+        "Tên người dùng hệ điều hành (token trần, không có ngoặc hoặc hậu tố dấu gạch chéo)",
+        "Địa chỉ IPv4 công khai",
+        "Mã quốc gia (ISO 3166-1 alpha-2)",
+        "Tên hiển thị hệ điều hành lấy từ WMI `Win32_OperatingSystem.Caption`",
+        "Danh sách sản phẩm diệt virus đã cài đặt"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện đòi hỏi cả năm khóa trần đều được neo theo dòng\n(`Username:`, `IP Address:`, `Country Code:`, `OS Version:`, `Antivirus:`) CỘNG THÊM việc không có bất kỳ neo nội dung phong phú hơn nào (`HWID:`, `PC Name:`, dạng hai từ\n`User Name:`, `Computer Name:`, `Build:`, `Build ID:`,\n`Hostname:`, `AntiVirus:` dạng CamelCase). Trong quá trình phân loại sơ bộ,\nnội dung không mang số lượng thông tin xác thực, bảng kê phần cứng hay\ndấu thời gian, do đó hồ sơ công khai chỉ giữ lại danh tính nạn nhân, vị trí địa lý,\nhệ điều hành và phần mềm diệt virus đã cài đặt. Cấu trúc dấu thời gian kiểu Python\ntrong tên thư mục (`<ID>_YYYY_MM_DDTHH_MM_SS_micros`) là một tín hiệu phụ\nhữu ích nhưng không thuộc dấu hiệu nhận diện định dạng\n(dấu hiệu nhận diện nội dung chỉ dựa trên phần thân).",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1518.001",
+          "name": "Dò tìm phần mềm bảo mật"
+        },
+        {
+          "id": "T1016",
+          "name": "Dò tìm cấu hình mạng hệ thống"
+        }
+      ]
+    }
+  }
 }

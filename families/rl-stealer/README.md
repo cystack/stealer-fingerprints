@@ -1,5 +1,9 @@
 # RL Stealer
 
+## Overview / Tổng quan
+
+### English
+
 RL Stealer is a .NET infostealer derived from the open-source
 `razexgod/44CALIBER` Discord-exfiltration builder. The panel
 writes an `Information.txt` whose body matches 44CALIBER's
@@ -20,27 +24,37 @@ sources do not jointly publish the format-to-family mapping,
 so the attribution rests on community catalog plus open-source
 builder-code confirmation.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **Known malware family**
+RL Stealer là một mã độc đánh cắp thông tin viết bằng .NET, bắt nguồn từ công cụ tạo build mã nguồn mở `razexgod/44CALIBER` dùng để đưa dữ liệu ra ngoài qua Discord. Bảng điều khiển tạo ra một `Information.txt` có phần nội dung khớp từng ký tự với bộ ghi `SystemInfo.cs` gốc của 44CALIBER trong năm phần đầu tiên, sau đó bổ sung phần thứ sáu chứa các định danh phần cứng `HDD:` / `MAC:` / `BIOS caption:` mà bản gốc không tạo dữ liệu đầu ra. Mỗi dòng khóa/giá trị đều bắt đầu bằng một dấu cách ở đầu dòng (đặc điểm bất biến do phép nối chuỗi trong mã nguồn gốc), và các phần được phân tách bằng các dòng dấu bằng.
+
+Quy kết họ mã độc: độ tin cậy ở mức trung bình. Một danh mục định dạng mã độc đánh cắp thông tin do cộng đồng biên soạn ghi nhận định dạng này dưới nhãn RL Stealer, mã nguồn GitHub gốc của `razexgod/44CALIBER` khớp với cấu trúc dữ liệu phần nội dung, và các bài viết công khai mô tả RL Stealer là phiên bản đổi thương hiệu của Ades stealer. Không có hai nguồn công khai độc lập nào cùng công bố việc ánh xạ định dạng với họ mã độc, do đó việc quy kết dựa trên danh mục cộng đồng kết hợp với xác nhận từ mã nguồn mở của công cụ tạo build.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **medium**
 - Aliases: `Ades`, `44Caliber variant`, `StormKitty variant`
 - Variants observed: **2**
 - CyStack observations represented: **197**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- Browser saved credentials, cookies, autofill, history
-- Crypto wallet extensions and desktop clients
-- Discord, Telegram, Steam, Minecraft session data
-- FTP and VPN client credentials
-- Clipboard contents
-- Desktop screenshot
+| English | Tiếng Việt |
+|---|---|
+| Browser saved credentials, cookies, autofill, history | Thông tin xác thực đã lưu trong trình duyệt, cookie, dữ liệu tự động điền, lịch sử duyệt web |
+| Crypto wallet extensions and desktop clients | Tiện ích mở rộng ví tiền điện tử và ứng dụng desktop |
+| Discord, Telegram, Steam, Minecraft session data | Dữ liệu phiên của Discord, Telegram, Steam, Minecraft |
+| FTP and VPN client credentials | Thông tin xác thực của ứng dụng FTP và VPN |
+| Clipboard contents | Nội dung clipboard |
+| Desktop screenshot | Ảnh chụp màn hình desktop |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
 
-Line-anchored ` PC user:`, ` Launch:`, and
-` IP Geolocation:` co-occurring is the cleanest trigger.
+### English
+
+Line-anchored `PC user:`, `Launch:`, and
+`IP Geolocation:` co-occurring is the cleanest trigger.
 The leading-space prefix on each key line is invariant
 across observed samples (the upstream's string
 `"\n PC user: "` concatenation produces it). The base
@@ -51,6 +65,10 @@ BlackGuard Stealer is also a 44CALIBER fork; both share
 the credential-collection method but emit different
 log formats so they do not collide with this format's
 fingerprint.
+
+### Tiếng Việt
+
+Sự đồng xuất hiện của các chuỗi neo theo dòng `PC user:`, `Launch:`, và `IP Geolocation:` là dấu hiệu kích hoạt rõ ràng nhất. Tiền tố dấu cách ở đầu mỗi dòng khóa là đặc điểm bất biến trên các mẫu đã quan sát (do phép nối chuỗi `"\n PC user: "` trong mã nguồn gốc tạo ra). Công cụ tạo build 44CALIBER gốc tạo dữ liệu đầu ra gồm năm phần; phần mở rộng của bảng điều khiển RL bổ sung phần thứ sáu chứa `HDD:` / `MAC:` / `BIOS caption:`, nhưng dấu vết nhận diện bao phủ cả hai trường hợp số lượng phần. BlackGuard Stealer cũng là một nhánh phân nhánh từ 44CALIBER; cả hai đều dùng chung phương pháp thu thập thông tin xác thực nhưng tạo dữ liệu đầu ra với định dạng log khác nhau nên không trùng lặp với dấu vết nhận diện của định dạng này.
 
 ## Observed log variants
 
@@ -91,15 +109,15 @@ Recognition anchors:
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
-| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
-| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
-| [T1115](https://attack.mitre.org/techniques/T1115/) | Clipboard Data |
-| [T1113](https://attack.mitre.org/techniques/T1113/) | Screen Capture |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores | Thông tin xác thực từ kho mật khẩu |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers | Thông tin xác thực từ trình duyệt web |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie | Đánh cắp cookie phiên web |
+| [T1115](https://attack.mitre.org/techniques/T1115/) | Clipboard Data | Dữ liệu bảng tạm |
+| [T1113](https://attack.mitre.org/techniques/T1113/) | Screen Capture | Chụp màn hình |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
 
 ## Related catalog profiles
 

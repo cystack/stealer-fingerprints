@@ -3,7 +3,7 @@
   "name": "CSBldStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSBldStealer is a CyStack-coined identifier for a flat\nbare-key ``system.txt`` slice with a distinctive short-form\nfield vocabulary: ``BLD:`` build tag, ``UUID:`` machine UUID,\n``PC Name:`` computer name, ``User:`` username, ``AD:`` admin\nflag (``+`` / ``-`` sentinel), ``CPU`` / ``GPU`` / ``RAM`` /\n``Resolution``, ``System lang:`` UI-language (short-form\n``lang``), ``System TimeZone:`` bare-offset key, ``OS:``,\n``AV:``, plus a trailing ``Programs:`` installed-software\nblock.\n\nThe short-form abbreviations (``BLD`` / ``AD`` / ``System\nlang``) do not appear in any public reporting or community\ncatalog. The panel could be a new .NET stealer, a rebrand of\nan existing family, or a private-panel build. Family\nattribution is provisional pending a published threat-intel\nmapping for this layout.",
+  "description": "CSBldStealer is a CyStack-coined identifier for a flat\nbare-key ``system.txt`` slice with a distinctive short-form\nfield vocabulary: ``BLD:`` build tag, ``UUID:`` machine UUID,\n``PC Name:`` computer name, ``User:`` username, ``AD:`` admin\nflag (``+`` / ``-`` sentinel), ``CPU`` / ``GPU`` / ``RAM`` /\n``Resolution``, ``System lang:`` UI-language (short-form\n``lang``), ``System TimeZone:`` bare-offset key, ``OS:``,\n``AV:``, plus a trailing ``Programs:`` installed-software\nblock.\n\nThe short-form abbreviations (``BLD`` / ``AD`` / ``System lang``) do not appear in any public reporting or community\ncatalog. The panel could be a new .NET stealer, a rebrand of\nan existing family, or a private-panel build. Family\nattribution is provisional pending a published threat-intel\nmapping for this layout.",
   "aliases": [
     "BLD short-form panel",
     "System lang / System TimeZone abbreviated variant"
@@ -13,7 +13,7 @@
     "Account identity (Windows username, computer name, admin\nflag)",
     "Installed software inventory (per-program name plus\nversion)"
   ],
-  "detection_notes": "Fingerprint requires three line-anchored short-form\nlabels together: ``BLD:``, ``System lang:``, and\n``System TimeZone:``. The three abbreviations rarely\nco-occur outside this panel template; requiring all\nthree keeps a stray document mentioning only ``BLD:``\nin prose from producing a false match. During triage, treat the\nunderlying stealer family as unattributable and rely\non the parent-folder shape (``<CC> <IPv4> <YYYY-MM-DD>\n<HH-MM-SS>``) as the correlation anchor. Companion\nfiles (browser exports, wallet artifacts, cookie dumps)\nmay provide more confident family attribution.",
+  "detection_notes": "Fingerprint requires three line-anchored short-form\nlabels together: ``BLD:``, ``System lang:``, and\n``System TimeZone:``. The three abbreviations rarely\nco-occur outside this panel template; requiring all\nthree keeps a stray document mentioning only ``BLD:``\nin prose from producing a false match. During triage, treat the\nunderlying stealer family as unattributable and rely\non the parent-folder shape (``<CC> <IPv4> <YYYY-MM-DD> <HH-MM-SS>``) as the correlation anchor. Companion\nfiles (browser exports, wallet artifacts, cookie dumps)\nmay provide more confident family attribution.",
   "attack_techniques": [
     {
       "id": "T1082",
@@ -26,5 +26,26 @@
   ],
   "related_families": [],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSBldStealer là định danh do CyStack đặt tên cho một cấu trúc dữ liệu phẳng dạng bare-key ``system.txt`` với một tập từ vựng trường dạng viết tắt đặc trưng: ``BLD:`` (thẻ build), ``UUID:`` (UUID máy), ``PC Name:`` (tên máy tính), ``User:`` (tên người dùng), ``AD:`` (cờ admin, sentinel ``+`` / ``-``), ``CPU`` / ``GPU`` / ``RAM`` / ``Resolution``, ``System lang:`` (ngôn ngữ giao diện, dạng viết tắt ``lang``), ``System TimeZone:`` (khóa bare-offset), ``OS:``, ``AV:``, cùng với một khối phần mềm đã cài đặt ``Programs:`` ở cuối.\n\nCác dạng viết tắt ngắn (``BLD`` / ``AD`` / ``System lang``) không xuất hiện trong bất kỳ báo cáo công khai hay danh mục cộng đồng nào. Panel này có thể là một mã độc đánh cắp thông tin .NET mới, một phiên bản đổi thương hiệu của một họ mã độc đã có, hoặc một bản build panel riêng tư. Việc quy kết họ mã độc chỉ mang tính tạm thời cho đến khi có ánh xạ thông tin tình báo đe dọa được công bố cho cấu trúc dữ liệu này.",
+      "typical_targets": [
+        "Dấu vết phần cứng máy và hệ điều hành (CPU, GPU, RAM, độ phân giải, phiên bản Windows, UUID)",
+        "Định danh tài khoản (tên người dùng Windows, tên máy tính, cờ admin)",
+        "Danh mục phần mềm đã cài đặt (tên từng chương trình kèm phiên bản)"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu ba nhãn dạng viết tắt được neo theo dòng xuất hiện cùng nhau: ``BLD:``, ``System lang:``, và ``System TimeZone:``. Ba dạng viết tắt này hiếm khi cùng xuất hiện bên ngoài mẫu panel này; yêu cầu cả ba giúp tránh trường hợp một tài liệu ngẫu nhiên chỉ đề cập đến ``BLD:`` trong văn bản thông thường tạo ra kết quả khớp giả (dương tính giả). Trong quá trình phân loại ban đầu, nên coi họ mã độc đánh cắp thông tin gốc là chưa thể quy kết và dựa vào cấu trúc dữ liệu của thư mục cha (``<CC> <IPv4> <YYYY-MM-DD> <HH-MM-SS>``) làm điểm neo tương quan. Các tệp liên quan (dữ liệu xuất từ trình duyệt, dấu vết ví tiền điện tử, dữ liệu cookie) có thể cung cấp cơ sở quy kết họ mã độc đáng tin cậy hơn.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

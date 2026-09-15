@@ -3,7 +3,7 @@
   "name": "CSWifiBackslashNStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSWifiBackslashNStealer is a CyStack-coined identifier for a\nminimal two-file victim folder observed inside `!! 2025\nNOV.part001.rar` BRADMAX / `@BRADLOGS` aggregator packs at\n`[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/` victim folders. The pack\nships only `installed_apps.txt` plus `wifi_passwords.txt` (and\nsometimes an empty-named packer directory artifact); no\ncompanion system-info file, no browser-credential dump, no\ntoken files.\n\nThe wifi cred file is one physical line at the OS level. The\npanel serialises per-SSID entries with the literal\ntwo-character `\\n` escape (backslash + `n`) as the separator,\nnot real LF. Per-entry shape is `<SSID> | <password>\\n`; open\nnetworks and browser-sync placeholders emit `<SSID> | \\n` with\nthe password segment blank.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and\ncommunity catalogues do not document a family that emits\nexactly this 2-file minimal layout. The pipe-delimited `<SSID>\n| <password>` body itself is a generic `netsh wlan show\nprofile name=<x> key=clear` post-processing shape used by many\n.NET and Python stealer builders, so the literal `\\n`\nserialisation plus the 2-file root layout is what gives this\nlabel its specificity.",
+  "description": "CSWifiBackslashNStealer is a CyStack-coined identifier for a\nminimal two-file victim folder observed inside `!! 2025 NOV.part001.rar` BRADMAX / `@BRADLOGS` aggregator packs at\n`[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/` victim folders. The pack\nships only `installed_apps.txt` plus `wifi_passwords.txt` (and\nsometimes an empty-named packer directory artifact); no\ncompanion system-info file, no browser-credential dump, no\ntoken files.\n\nThe wifi cred file is one physical line at the OS level. The\npanel serialises per-SSID entries with the literal\ntwo-character `\\n` escape (backslash + `n`) as the separator,\nnot real LF. Per-entry shape is `<SSID> | <password>\\n`; open\nnetworks and browser-sync placeholders emit `<SSID> | \\n` with\nthe password segment blank.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and\ncommunity catalogues do not document a family that emits\nexactly this 2-file minimal layout. The pipe-delimited `<SSID> | <password>` body itself is a generic `netsh wlan show profile name=<x> key=clear` post-processing shape used by many\n.NET and Python stealer builders, so the literal `\\n`\nserialisation plus the 2-file root layout is what gives this\nlabel its specificity.",
   "aliases": [
     "BRADMAX 2-file wifi+apps minimal pack",
     "installed_apps + wifi_passwords literal-\\n export"
@@ -38,5 +38,29 @@
   "observed_channels": [
     "https://t.me/BRADLOGS"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSWifiBackslashNStealer là định danh do CyStack đặt cho một thư mục nạn nhân tối giản gồm hai tệp, được quan sát bên trong các gói tổng hợp `!! 2025 NOV.part001.rar` BRADMAX / `@BRADLOGS` tại `[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/` thư mục nạn nhân. Gói này chỉ chứa `installed_apps.txt` cùng `wifi_passwords.txt` (và đôi khi có thêm một dấu vết thư mục packer không tên); không có tệp thông tin hệ thống đi kèm, không có bản dump thông tin xác thực trình duyệt, không có tệp token.\n\nTệp thông tin xác thực wifi là một dòng vật lý duy nhất ở cấp hệ điều hành. Panel tuần tự hóa các mục theo từng SSID bằng chuỗi thoát hai ký tự `\\n` (dấu backslash + `n`) làm ký tự phân tách, chứ không phải ký tự LF thật. Cấu trúc dữ liệu của mỗi mục là `<SSID> | <password>\\n`; các mạng mở và các placeholder đồng bộ trình duyệt tạo dữ liệu đầu ra `<SSID> | \\n` với phần mật khẩu để trống.\n\nViệc quy kết họ mã độc hiện chỉ mang tính tạm thời, chờ có ánh xạ tình báo mối đe dọa được công bố cho bố cục này. Các báo cáo công khai và danh mục cộng đồng chưa ghi nhận họ mã độc nào tạo ra đúng bố cục tối giản 2 tệp này. Bản thân phần nội dung `<SSID> | <password>` phân tách bằng dấu pipe là một cấu trúc hậu xử lý `netsh wlan show profile name=<x> key=clear` chung, được nhiều công cụ dựng mã độc đánh cắp thông tin viết bằng .NET và Python sử dụng, do đó chính việc tuần tự hóa `\\n` theo nghĩa đen kết hợp với bố cục gốc 2 tệp mới là yếu tố tạo nên tính đặc trưng cho nhãn này.",
+      "typical_targets": [
+        "SSID wifi và mật khẩu mạng đã lưu",
+        "Tên các chương trình Windows đã cài đặt"
+      ],
+      "detection_notes": "Việc lấy dấu hiệu nhận diện yêu cầu (a) `installed_apps.txt` VÀ `wifi_passwords.txt` ở gốc thư mục, (b) số lượng mục ở cấp gốc <= 3 (mục thứ ba tùy chọn là một thư mục (DIR) packer không tên), và (c) khớp từ 3 dòng trở lên `<SSID> | <password>\\n` trong `wifi_passwords.txt`, trong đó `\\n` là chuỗi thoát hai ký tự, không phải LF thật. Điều kiện ràng buộc theo nghĩa đen `\\n` kết hợp với giới hạn số lượng tệp giúp loại trừ các thư mục ZenRAT, vốn yêu cầu 3 trong số 5 của `sysinfo.txt` / `running_services.txt` / `license_info.txt` / `installed_apps.txt` / `wifi_passwords.txt` theo báo cáo công khai về ZenRAT, và sử dụng dữ liệu đầu ra wifi phân tách bằng LF theo kiểu thông thường. Trong quá trình phân loại ban đầu, hãy xem nhãn này như một dấu hiệu \"thư mục nạn nhân bị cắt gọn chỉ còn hai loại dữ liệu đầu ra rẻ nhất của panel\": chỉ từ bố cục 2 tệp này không thể xác định được công cụ dựng mã độc đánh cắp thông tin cụ thể, mà chỉ có thể xác định kênh phân phối BRADMAX.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1016",
+          "name": "Dò tìm cấu hình mạng hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

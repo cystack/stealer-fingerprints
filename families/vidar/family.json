@@ -242,5 +242,40 @@
       },
       "layout_id": "video-card-processes"
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Nhật ký của Vidar Stealer. Bản dựng 4.x tạo tệp `information.txt` dạng khóa-hai-chấm-giá-trị phẳng, mở đầu bằng `Ip:`, `Country:`, `Version:`, tiếp theo là các khối thông tin phần cứng, ngôn ngữ hệ thống và định danh bản dựng. Vidar được phát tán từ năm 2018 dưới dạng một nhánh của Arkei và vẫn là họ mã độc đánh cắp thông tin có số lượng lớn từ năm 2025 trở đi.",
+      "typical_targets": [
+        "Thông tin xác thực, cookie, dữ liệu tự động điền, lịch sử đã lưu trong trình duyệt",
+        "Tiện ích mở rộng ví tiền điện tử và ứng dụng desktop của ví",
+        "Dữ liệu phiên đăng nhập Telegram và Discord",
+        "Cấu hình ứng dụng FTP, email và VPN",
+        "Tài liệu và ảnh chụp màn hình từ desktop"
+      ],
+      "detection_notes": "Bộ ba tiêu đề đặc trưng `Ip:` + `Country:` + `Version:` nằm ở\nđầu `information.txt`. Banner của bản dựng có nhắc đến kênh Telegram của\nđối tượng vận hành.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

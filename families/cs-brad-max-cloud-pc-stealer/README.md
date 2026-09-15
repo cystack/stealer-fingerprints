@@ -1,5 +1,9 @@
 # CSBradMaxCloudPCStealer
 
+## Overview / Tổng quan
+
+### English
+
 CSBradMaxCloudPCStealer is a CyStack-coined identifier for a
 bare-key flat `Key: Value` `Information.txt` shape distributed
 through the @BRADMAX_CLOUD Telegram channel. The file ships
@@ -21,22 +25,30 @@ with the `Screen Resoluton` operator typo. Family attribution
 is provisional pending a published threat-intel mapping for
 this layout.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **CyStack tracking name**
+CSBradMaxCloudPCStealer là định danh do CyStack đặt cho một cấu trúc dữ liệu dạng phẳng bare-key `Key: Value` `Information.txt` được phát tán qua kênh Telegram @BRADMAX_CLOUD. Tệp chứa banner Figlet aBradMax bên trong khung viền `*` kèm watermark `Telegram: https://t.me/BRADMAX_CLOUD`, tiếp theo là phần thân phẳng gồm các dòng bare `Key: Value` (không có tiền tố gạch ngang, không có hậu tố `Name` trên các khóa `PC` / `User`). Tập trường bao gồm PC, User, Workgroup, ComputerNameDnsHostname, ComputerNameNetBIOS, OS Version, HWID, Screen Resoluton (nguyên văn), Language, CPU Name, GPU, Physical Installed Memory, IP Address, và Country.
+
+Các nhãn bắt nguồn từ enum COMPUTER_NAME_FORMAT (`ComputerNameDnsHostname`, `ComputerNameNetBIOS`) cùng tên trường `Physical Installed Memory` cho thấy đây là một công cụ dựng bằng .NET lặp qua các giá trị enum của Windows nguyên trạng, nhưng chưa có báo cáo công khai hay danh mục cộng đồng nào ghi nhận chính xác tập trường này cùng lỗi đánh máy `Screen Resoluton` của đối tượng vận hành. Việc quy kết họ mã độc hiện chỉ mang tính tạm thời, chờ một ánh xạ threat-intel đã công bố cho bố cục này.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `BRADMAX_CLOUD bare-key Information.txt slice`, `BRADMAX flat PC User HWID Screen Resoluton variant`
 - Variants observed: **0**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- Host hardware and OS fingerprint (CPU, GPU, RAM, screen,
-HWID, OS version)
-- Network identity (IP address, country, language)
-- Account identity (Windows username, computer name pair,
-workgroup)
+| English | Tiếng Việt |
+|---|---|
+| Host hardware and OS fingerprint (CPU, GPU, RAM, screen, HWID, OS version) | Dấu vết nhận dạng phần cứng máy và hệ điều hành (CPU, GPU, RAM, màn hình, HWID, phiên bản OS) |
+| Network identity (IP address, country, language) | Danh tính mạng (địa chỉ IP, quốc gia, ngôn ngữ) |
+| Account identity (Windows username, computer name pair, workgroup) | Danh tính tài khoản (tên người dùng Windows, cặp tên máy, workgroup) |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 Fingerprint requires both the
 `https://t.me/BRADMAX_CLOU` URL prefix (the loosened
@@ -52,16 +64,20 @@ and rely on the channel + panel_brand metadata to bucket
 samples for analyst review. Companion files in the
 victim folder (browser dumps, wallet exports) may provide more confident family attribution.
 
+### Tiếng Việt
+
+Việc xác định dấu hiệu nhận dạng đòi hỏi cả tiền tố URL `https://t.me/BRADMAX_CLOU` (tiền tố được nới lỏng nhằm dung nạp lỗi hiển thị panel đã biết, khiến URL bị dính liền với các dòng lân cận giữa từ tại hậu tố tên kênh) lẫn chuỗi literal lỗi đánh máy của đối tượng vận hành `Screen Resoluton:` được neo theo dòng. Lỗi đánh máy này chính là yếu tố phân biệt then chốt: không có họ mã độc đánh cắp thông tin nào khác được khảo sát tạo dữ liệu đầu ra khóa `Resoluton` (nguyên văn), và việc ghim URL xác nhận danh mục các bên phân phối lại thuộc BRADMAX_CLOUD. Trong quá trình phân loại ban đầu, hãy coi họ mã độc đánh cắp thông tin gốc là chưa thể quy kết và dựa vào metadata channel cùng panel_brand để phân nhóm mẫu cho việc phân tích chuyên sâu. Các tệp liên quan trong thư mục nạn nhân (bản trích xuất trình duyệt, dữ liệu ví) có thể cung cấp cơ sở quy kết họ mã độc đáng tin cậy hơn.
+
 ## Observed log variants
 
 No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
 
 ## Related catalog profiles
 

@@ -1,5 +1,9 @@
 # CryptBot
 
+## Overview / Tổng quan
+
+### English
+
 CryptBot is a Delphi-built info-stealer first publicly
 documented in December 2019. The family is best known for its
 `_Information.txt` victim summary plus sibling files
@@ -18,24 +22,34 @@ writes the victim summary to disk, packs it with the harvested
 credential / cookie / wallet files into a ZIP, and POSTs the
 archive to a hard-coded C2 gate.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **Known malware family**
+CryptBot là mã độc đánh cắp thông tin viết bằng Delphi, được ghi nhận công khai lần đầu vào tháng 12 năm 2019. Họ mã độc này được biết đến nhiều nhất với bản tóm tắt nạn nhân `_Information.txt` cùng các tệp liên quan `_AllPasswords_list.txt`, `_AllCookies_list.txt`, `_AllForms_list.txt`, `_AllWallets_list.txt`, và `Screen.png`, tất cả được ghi vào một thư mục theo từng nạn nhân dưới `%TEMP%`. Nhiều phiên bản trình dựng đã được ghi nhận (v2.0, v3.0, v3.1 theo các phân tích công khai); tập hợp trường trong tệp tóm tắt ổn định qua các phiên bản, với dòng v3.x chuyển bộ định danh trên các trường `UserName` và `Data` từ dấu ngoặc đơn sang biến thể dấu ngoặc vuông trong một số mẫu đổi thương hiệu.
+
+Việc phát tán CryptBot dựa vào các trang đích phần mềm crack bị đầu độc SEO và các trình cài đặt phần mềm miễn phí đi kèm. Mã độc ghi bản tóm tắt nạn nhân ra đĩa, đóng gói nó cùng các tệp thông tin xác thực / cookie / ví đã thu thập được vào một tệp ZIP, rồi POST tệp nén đó đến một điểm tiếp nhận C2 được ghi cố định.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `CryptBot Stealer`, `Crypt Bot`
 - Variants observed: **2**
 - CyStack observations represented: **5**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- Browser saved credentials (Chromium and Gecko)
-- Browser cookies and autofill data
-- Cryptocurrency wallet files and browser extensions
-- Saved form data
-- System hardware and locale inventory
-- Screenshot of the desktop
+| English | Tiếng Việt |
+|---|---|
+| Browser saved credentials (Chromium and Gecko) | Thông tin xác thực được trình duyệt lưu (Chromium và Gecko) |
+| Browser cookies and autofill data | Cookie và dữ liệu tự động điền của trình duyệt |
+| Cryptocurrency wallet files and browser extensions | Tệp ví tiền mã hóa và tiện ích mở rộng trình duyệt |
+| Saved form data | Dữ liệu biểu mẫu đã lưu |
+| System hardware and locale inventory | Kiểm kê phần cứng hệ thống và ngôn ngữ/vùng |
+| Screenshot of the desktop | Ảnh chụp màn hình desktop |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 The `_Information.txt` filename is the strongest folder-level signal: paired with the `_AllPasswords_list.txt` /
 `_AllCookies_list.txt` / `_AllForms_list.txt` sibling
@@ -45,6 +59,10 @@ bracket-suffixed `UserName [ComputerName]:` and
 `Data [Time]:` keys plus `Keyboard Languages:`; the
 no-space `UserName` spelling distinguishes CryptBot from
 Vidar / StealC / Mars (which use `User Name:`).
+
+### Tiếng Việt
+
+Tên tệp `_Information.txt` là tín hiệu cấp thư mục mạnh nhất: kết hợp với bộ tệp liên quan `_AllPasswords_list.txt` / `_AllCookies_list.txt` / `_AllForms_list.txt`, không có họ mã độc nào khác trong danh mục này sử dụng đúng cách đặt tên này. Dấu hiệu nhận diện ở cấp nội dung dựa trên các khóa `UserName [ComputerName]:` và `Data [Time]:` có hậu tố ngoặc vuông cùng `Keyboard Languages:`; cách viết `UserName` không có khoảng trắng phân biệt CryptBot với Vidar / StealC / Mars (vốn dùng `User Name:`).
 
 ## Observed log variants
 
@@ -87,14 +105,14 @@ Recognition anchors:
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
-| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
-| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
-| [T1113](https://attack.mitre.org/techniques/T1113/) | Screen Capture |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores | Thông tin xác thực từ kho mật khẩu |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers | Thông tin xác thực từ trình duyệt web |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie | Đánh cắp cookie phiên web |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
+| [T1113](https://attack.mitre.org/techniques/T1113/) | Screen Capture | Chụp màn hình |
 
 ## Related catalog profiles
 

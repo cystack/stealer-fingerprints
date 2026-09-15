@@ -3,7 +3,7 @@
   "name": "CSBradMaxPwshStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSBradMaxPwshStealer is a CyStack-coined identifier for a\nbanner-less `system.txt` panel distributed through the\n@BRADMAX Telegram channel. The body opens with a flat `Build:\n<8-char>` / `IP:` / `Country:` / `MachineGuid:` / `Computer:`\n/ `User:` key block, then ships raw PowerShell cmdlet output:\na `Get-WmiObject Win32_Processor | Format-Table\nName,NumberOfCores,NumberOfEnabledCore,\nNumberOfLogicalProcessors` CPU table (with the literal dashed\nunderline row), an `AV List:` block emitting raw `<Name>.\nProduct State: <DWORD>` Win32_Reg_AV records, host fields\n(`OS:`, `Monitors:`, `Resolution(s):`, `AD:`, `GPU:`, `RAM:`,\n`System Language:`, `Timezone:`), a `Processes:` section with\n`Get-Process | Format-List\nProcessId,ParentProcessId,Name,CommandLine,Level` records, and\na `Software:` line-per-package installed-software list.\n\nThe custom `Level` Get-Process column is not a native\nSystem.Diagnostics.Process property, which points to a\nPowerShell or .NET launcher harness that enriches each process\nrecord with an integrity-level or tree-depth value before\nformatting. Family attribution is provisional pending a\npublished threat-intel mapping for this harness layout; no\npublic reporting or community catalogue documents this exact\nPowerShell-cmdlet-output shape.",
+  "description": "CSBradMaxPwshStealer is a CyStack-coined identifier for a\nbanner-less `system.txt` panel distributed through the\n@BRADMAX Telegram channel. The body opens with a flat `Build: <8-char>` / `IP:` / `Country:` / `MachineGuid:` / `Computer:`\n/ `User:` key block, then ships raw PowerShell cmdlet output:\na `Get-WmiObject Win32_Processor | Format-Table Name,NumberOfCores,NumberOfEnabledCore, NumberOfLogicalProcessors` CPU table (with the literal dashed\nunderline row), an `AV List:` block emitting raw `<Name>. Product State: <DWORD>` Win32_Reg_AV records, host fields\n(`OS:`, `Monitors:`, `Resolution(s):`, `AD:`, `GPU:`, `RAM:`,\n`System Language:`, `Timezone:`), a `Processes:` section with\n`Get-Process | Format-List ProcessId,ParentProcessId,Name,CommandLine,Level` records, and\na `Software:` line-per-package installed-software list.\n\nThe custom `Level` Get-Process column is not a native\nSystem.Diagnostics.Process property, which points to a\nPowerShell or .NET launcher harness that enriches each process\nrecord with an integrity-level or tree-depth value before\nformatting. Family attribution is provisional pending a\npublished threat-intel mapping for this harness layout; no\npublic reporting or community catalogue documents this exact\nPowerShell-cmdlet-output shape.",
   "aliases": [
     "@BRADMAX PowerShell-harness system.txt slice",
     "BRADMAX Build+MachineGuid+Level-column variant"
@@ -16,7 +16,7 @@
     "Running-process tree snapshot with parent process IDs and\nfull command lines",
     "Resident antivirus product list with Win32_Reg_AV\nproductState DWORD"
   ],
-  "detection_notes": "Fingerprint requires both the misspelled\n`NumberOfEnabledCore` PowerShell Format-Table column\nheader AND the line-anchored `Level           : 0` custom\nFormat-List column on the Processes block. The two-anchor\ncombination is mutually exclusive with every other\nBRADMAX-distributed slice (the @BRADMAX_CLOUD slices all\ncarry the aBradMax Figlet banner; the sibling @BRADMAX\n`=== SYSTEM INFO ===` slice uses a triple-equals header).\nDuring triage, treat the underlying stealer family as\nunattributable and rely on the channel and panel_brand\nmetadata to bucket samples for analyst review. The\n`MachineGuid` UUID is the registry-resident\n`HKLM\\SOFTWARE\\Microsoft\\Cryptography\\MachineGuid` value\nand is suitable as a cross-victim host pivot when paired\nwith the same IP / `Computer` triple.",
+  "detection_notes": "Fingerprint requires both the misspelled\n`NumberOfEnabledCore` PowerShell Format-Table column\nheader AND the line-anchored `Level : 0` custom\nFormat-List column on the Processes block. The two-anchor\ncombination is mutually exclusive with every other\nBRADMAX-distributed slice (the @BRADMAX_CLOUD slices all\ncarry the aBradMax Figlet banner; the sibling @BRADMAX\n`=== SYSTEM INFO ===` slice uses a triple-equals header).\nDuring triage, treat the underlying stealer family as\nunattributable and rely on the channel and panel_brand\nmetadata to bucket samples for analyst review. The\n`MachineGuid` UUID is the registry-resident\n`HKLM\\SOFTWARE\\Microsoft\\Cryptography\\MachineGuid` value\nand is suitable as a cross-victim host pivot when paired\nwith the same IP / `Computer` triple.",
   "attack_techniques": [
     {
       "id": "T1082",
@@ -53,5 +53,45 @@
   "observed_channels": [
     "https://t.me/BRADMAX"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSBradMaxPwshStealer là định danh do CyStack đặt cho một bảng điều khiển không có banner (`system.txt`) được phát tán qua kênh Telegram @BRADMAX. Phần thân bắt đầu bằng một khối khóa phẳng `Build: <8-char>` / `IP:` / `Country:` / `MachineGuid:` / `Computer:` / `User:`, sau đó xuất trực tiếp dữ liệu đầu ra thô của các cmdlet PowerShell: một bảng CPU `Get-WmiObject Win32_Processor | Format-Table Name,NumberOfCores,NumberOfEnabledCore, NumberOfLogicalProcessors` (kèm dòng gạch ngang phân cách theo đúng nguyên văn), một khối `AV List:` tạo dữ liệu đầu ra thô các bản ghi Win32_Reg_AV `<Name>. Product State: <DWORD>`, các trường thông tin máy (`OS:`, `Monitors:`, `Resolution(s):`, `AD:`, `GPU:`, `RAM:`, `System Language:`, `Timezone:`), một phần `Processes:` với các bản ghi `Get-Process | Format-List ProcessId,ParentProcessId,Name,CommandLine,Level`, và một danh sách phần mềm đã cài đặt theo dạng mỗi dòng một gói `Software:`.\n\nCột `Level` tùy chỉnh trong Get-Process không phải là thuộc tính gốc của System.Diagnostics.Process, điều này cho thấy có một bộ khung khởi chạy (launcher harness) bằng PowerShell hoặc .NET làm giàu mỗi bản ghi tiến trình bằng một giá trị mức toàn vẹn (integrity-level) hoặc độ sâu cây (tree-depth) trước khi định dạng. Việc quy kết họ mã độc hiện chỉ mang tính tạm thời, chờ một ánh xạ thông tin đe dọa được công bố cho cấu trúc bộ khung này; hiện chưa có báo cáo công khai hay danh mục cộng đồng nào ghi nhận chính xác cấu trúc dữ liệu đầu ra cmdlet PowerShell này.",
+      "typical_targets": [
+        "Dấu vết nhận dạng phần cứng và hệ điều hành của máy (CPU, GPU, RAM, số lượng màn hình, độ phân giải màn hình, phiên bản hệ điều hành)",
+        "Thông tin nhận dạng mạng (địa chỉ IP, quốc gia, ngôn ngữ hệ thống, múi giờ)",
+        "Thông tin nhận dạng tài khoản (tên người dùng Windows, tên máy tính, MachineGuid, trạng thái gia nhập Active Directory)",
+        "Danh mục phần mềm đã cài đặt (mỗi dòng một gói)",
+        "Ảnh chụp nhanh cây tiến trình đang chạy kèm ID tiến trình cha và dòng lệnh đầy đủ",
+        "Danh sách sản phẩm diệt virus thường trú kèm giá trị DWORD productState của Win32_Reg_AV"
+      ],
+      "detection_notes": "Việc nhận diện đòi hỏi phải có đồng thời cả tiêu đề cột Format-Table bị viết sai chính tả `NumberOfEnabledCore` của PowerShell VÀ cột Format-List tùy chỉnh `Level : 0` được neo theo dòng trong khối Processes. Sự kết hợp của hai điểm neo này loại trừ lẫn nhau với mọi lát cắt (slice) khác được phát tán bởi BRADMAX (các lát cắt @BRADMAX_CLOUD đều mang banner Figlet aBradMax; còn lát cắt liên quan @BRADMAX `=== SYSTEM INFO ===` sử dụng tiêu đề ba dấu bằng). Trong quá trình phân loại ban đầu (triage), hãy coi họ mã độc đánh cắp thông tin nền tảng là chưa thể quy kết, và dựa vào metadata channel cùng panel_brand để phân nhóm mẫu phục vụ việc rà soát của chuyên viên phân tích. UUID `MachineGuid` chính là giá trị `HKLM\\SOFTWARE\\Microsoft\\Cryptography\\MachineGuid` thường trú trong registry, và phù hợp để dùng làm điểm xoay (pivot) liên kết các máy nạn nhân khi kết hợp cùng bộ ba IP / `Computer`.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1057",
+          "name": "Dò tìm tiến trình"
+        },
+        {
+          "id": "T1518.001",
+          "name": "Dò tìm phần mềm bảo mật"
+        },
+        {
+          "id": "T1518",
+          "name": "Dò tìm phần mềm"
+        },
+        {
+          "id": "T1059.001",
+          "name": "PowerShell"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

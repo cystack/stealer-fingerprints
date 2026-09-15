@@ -9,7 +9,7 @@
     "@Primo_Cloud"
   ],
   "typical_targets": [],
-  "detection_notes": "The `@Primo_Cloud:` watermark line is the cleanest trigger.\nPair with line-anchored `User Name:` and `Display\nResolution:` to confirm a heavily-stripped body, and\nverify absence of `UserLanguage:` to avoid colliding with\nRedlineLikeStealer variants 7 and 8 which retain the\nextended `UserLanguage:` / `Keyboard Language:` /\n`Display Resolution:` block on full-body @Primo_Cloud\nredistribution. Family attribution is provisional pending\na published threat-intel mapping for this layout.",
+  "detection_notes": "The `@Primo_Cloud:` watermark line is the cleanest trigger.\nPair with line-anchored `User Name:` and `Display Resolution:` to confirm a heavily-stripped body, and\nverify absence of `UserLanguage:` to avoid colliding with\nRedlineLikeStealer variants 7 and 8 which retain the\nextended `UserLanguage:` / `Keyboard Language:` /\n`Display Resolution:` block on full-body @Primo_Cloud\nredistribution. Family attribution is provisional pending\na published threat-intel mapping for this layout.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -41,5 +41,34 @@
     "https://t.me/+ecb2NTo6VKFhYzI0"
   ],
   "canonical_family": "redline",
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSPrimoCloudStealer là định danh do CyStack đặt cho một lớp bọc trình tổng hợp `@Primo_Cloud` đã bị lược bỏ mạnh, được phát hiện bên trong các gói `@ft7links-vidar`. Bảng điều khiển tạo dữ liệu đầu ra gồm bốn dòng watermark `@Primo_Cloud:https://t.me/+ecb2NTo6VKFhYzI0` lặp lại, theo sau là phần thân dữ liệu theo chuẩn Redline nhưng đã bị rút gọn chỉ còn hai trường trên nạn nhân có IP bogon đã xác minh (`User Name:` và `Display Resolution:`).",
+      "typical_targets": [],
+      "detection_notes": "Dòng watermark `@Primo_Cloud:` là chỉ dấu kích hoạt rõ ràng nhất. Kết hợp với `User Name:` và `Display Resolution:` neo theo dòng để xác nhận phần thân dữ liệu đã bị lược bỏ mạnh, đồng thời xác minh không có `UserLanguage:` để tránh nhầm lẫn với các biến thể 7 và 8 của RedlineLikeStealer, vốn vẫn giữ khối `UserLanguage:` / `Keyboard Language:` / `Display Resolution:` mở rộng khi phân phối lại toàn bộ phần thân @Primo_Cloud. Việc quy kết họ mã độc hiện vẫn mang tính tạm thời, chờ có ánh xạ threat-intel được công bố cho bố cục này.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

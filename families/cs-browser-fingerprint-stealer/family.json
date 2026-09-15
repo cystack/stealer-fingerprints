@@ -34,5 +34,35 @@
     "s-hub-stealer"
   ],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSBrowserFingerprintStealer là định danh do CyStack đặt cho một mô-đun thu thập dấu vân tay trình duyệt (fingerprint grabber) Chromium theo từng ứng dụng, tạo ra các tệp kết xuất dấu vân tay riêng lẻ theo định dạng ``<App>_[<HEX4>].txt`` bên trong thư mục con ``Browser/Fingerprint/``. Mỗi tệp kết xuất mang phần thân dạng section INI: `[Local State]`, `[Preferences]`, `[Metadata]` cùng với trường epoch `Extraction Time:`. Mô-đun này nhắm đến mọi bản cài đặt desktop dựa trên Chromium trên máy nạn nhân, không chỉ giới hạn ở trình duyệt: Chrome / Edge / Discord / Riot Client / G HUB / TapTapGlobal / các bộ đệm Chromium nhúng như ``CefBrowserCache`` và ``webcache2`` đều có tệp kết xuất riêng.\n\nĐược quan sát bên trong một gói tổng hợp `APRIL 30 - 12068 LOGS` mà cũng chứa các nạn nhân của macOS SHub Stealer, do đó đây là cấu trúc dữ liệu dành cho nạn nhân Windows trong cùng một chuỗi phân phối. Tập hợp trường dữ liệu có sự trùng lặp với chế độ `--fingerprint` đã được tài liệu hóa của ChromElevator (xaitax / Chrome-App-Bound-Encryption-Decryption), nhưng ChromElevator tạo dữ liệu đầu ra dạng JSON thay vì văn bản dạng section INI như quan sát được ở đây. Việc quy kết họ mã độc vẫn còn mang tính tạm thời cho đến khi có ánh xạ được công bố cho cấu trúc dữ liệu này.",
+      "typical_targets": [
+        "Tín hiệu dấu vân tay trình duyệt từ các trình duyệt dựa trên Chromium",
+        "Tín hiệu dấu vân tay Chromium nhúng từ các ứng dụng Electron",
+        "Các bản cài đặt Chromium trên nền tảng game (Riot Client, TapTapGlobal)",
+        "Các thiết lập Chromium được dùng để tính điểm / giả mạo hồ sơ nạn nhân"
+      ],
+      "detection_notes": "Tên cơ sở của thư mục `Fingerprint` kết hợp với phân đoạn thư mục cha `Browser/`, cộng với 3 tệp trở lên khớp với `<Name>_[<HEX4>].txt`, cộng với phần thân dạng section INI (`[Local State]`, `[Preferences]`, `[Metadata]`, `Extraction Time:`) chính là dấu hiệu nhận diện. Để tránh dương tính giả, luôn yêu cầu có đủ các mốc trong phần thân; chỉ riêng quy ước đặt tên tệp dạng dấu ngoặc-hex là quá chung chung. Trong quá trình phân loại ban đầu, hãy coi các tệp dấu vân tay theo từng ứng dụng là dữ liệu thu thập tín hiệu hồ sơ chứ không phải là dữ liệu đánh cắp thông tin xác thực.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1217",
+          "name": "Dò tìm thông tin trình duyệt"
+        },
+        {
+          "id": "T1592.002",
+          "name": "Thu thập thông tin máy nạn nhân: phần mềm"
+        }
+      ]
+    }
+  }
 }

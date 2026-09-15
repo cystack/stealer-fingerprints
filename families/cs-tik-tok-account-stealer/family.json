@@ -34,5 +34,34 @@
     "cs-browser-fingerprint-stealer"
   ],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSTikTokAccountStealer là một định danh do CyStack đặt ra cho thư mục đầu ra tổng hợp của một công cụ kiểm tra tài khoản (account-checker) TikTok. Thư mục ứng với mỗi nạn nhân được đặt tên theo mã MD5 32 ký tự hex bọc trong dấu ngoặc (`[<md5>]`) và chứa một tệp `.txt` cho mỗi tài khoản TikTok. Mỗi tên tệp gói gọn chín đoạn được phân tách bằng dấu ngoặc, mã hóa các chỉ số thống kê của tài khoản: số người theo dõi, số video, số lượt thích, số coin, giá trị tài khoản quy đổi ra đô la, số thẻ thanh toán đã lưu, năm tạo tài khoản, mã quốc gia ISO 3166 alpha-2, và tên người dùng TikTok. Nội dung tệp là cookie theo định dạng Netscape dành cho `.tiktok.com`, chứa tập hợp cookie phiên (`sessionid`, `sid_guard`, `sid_tt`, `sid_ucp_v1`, `ssid_ucp_v1`, `uid_tt`, `odin_tt`, `ttwid`).\n\nThư mục này là đầu ra phía công cụ tổng hợp của một account-checker: công cụ này lấy các log cookie thô do mã độc đánh cắp thông tin thu thập được, xác thực từng phiên đăng nhập TikTok, làm giàu dữ liệu cookie bằng các chỉ số thống kê của tài khoản đã đăng nhập lấy từ TikTok API, sau đó ghi lại tệp cookie với tên được mã hóa theo các chỉ số đó. Các lô dữ liệu có thể được lọc và định giá theo giá trị tài khoản trước khi đem bán lại. Cùng một kênh phân phối `LOGS` này còn mang theo các nạn nhân của SHub Stealer trên macOS và các bản dump dấu vân tay trình duyệt (browser-fingerprint) trên Windows trong các gói dữ liệu liên quan. Việc quy kết họ mã độc hiện vẫn là tạm thời, chờ có bản đồ ánh xạ được công bố cho công cụ account-checker cụ thể này.",
+      "typical_targets": [
+        "Cookie phiên TikTok (sessionid, sid_guard, sid_tt, sid_ucp_v1, ssid_ucp_v1, uid_tt, odin_tt, ttwid)",
+        "Siêu dữ liệu hồ sơ tài khoản TikTok (số lượng người theo dõi / video / lượt thích / coin, thẻ thanh toán, năm tạo tài khoản)",
+        "Ánh xạ giữa tên người dùng TikTok và quốc gia"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện gồm: tên thư mục là mã MD5 32 ký tự hex, cùng với 5 tệp trở lên khớp với biểu thức chính quy tên tệp chín đoạn ngoặc, cộng thêm các mốc neo nội dung `.tiktok.com` và `sessionid`. Nạn nhân thực sự ở đây là người dùng có log của mã độc đánh cắp thông tin là nguồn cookie, chứ không phải chủ sở hữu tài khoản TikTok: mỗi lần thu thập cookie trình duyệt có thể tạo ra nhiều phiên TikTok nếu nạn nhân đã đăng nhập nhiều tài khoản khác nhau.",
+      "attack_techniques": [
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1550.004",
+          "name": "Sử dụng dữ liệu xác thực thay thế: cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1213",
+          "name": "Dữ liệu từ kho thông tin"
+        }
+      ]
+    }
+  }
 }

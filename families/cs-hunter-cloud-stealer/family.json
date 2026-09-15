@@ -9,7 +9,7 @@
     "HUNTER_CLOUD"
   ],
   "typical_targets": [],
-  "detection_notes": "Spaced-letter ASCII banner `H U N T E R   C L O U D` plus the\nper-line anti-scrape watermark and the subscription pricing\nblock (`💵 1 Week / 1 Month / 3 Months / Lifetime`) is the\nfingerprint. The underlying Redline-derivative field set\n(`BUILD NAME:`, `Admin Group:`, `Integrity:`, `Wallpaper Hash:`)\nis preserved but spaced apart by the watermark.",
+  "detection_notes": "Spaced-letter ASCII banner `H U N T E R C L O U D` plus the\nper-line anti-scrape watermark and the subscription pricing\nblock (`💵 1 Week / 1 Month / 3 Months / Lifetime`) is the\nfingerprint. The underlying Redline-derivative field set\n(`BUILD NAME:`, `Admin Group:`, `Integrity:`, `Wallpaper Hash:`)\nis preserved but spaced apart by the watermark.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -41,5 +41,34 @@
     "https://t.me/HUNTER_CLOUD"
   ],
   "canonical_family": "redline",
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSHunterCloudStealer là định danh do CyStack đặt cho biến thể `HUNTER CLOUD` có gắn watermark, phái sinh từ Redline `UserInformation.txt`, được quan sát bên trong các gói phân phối bởi `@ft7links`. Kênh Telegram `HUNTER_CLOUD` phân phối lại các log phái sinh từ Redline (có cùng cấu trúc dữ liệu với RedlineLikeStealer biến thể 4: `BUILD NAME:` cộng thêm khối mở rộng) dưới một watermark chống thu thập dữ liệu (anti-scrape) theo từng dòng, khiến dấu vân tay (fingerprint) RedlineLike dựa trên vị trí dòng không thể khớp với nội dung.",
+      "typical_targets": [],
+      "detection_notes": "Banner ASCII có các ký tự cách nhau `H U N T E R C L O U D` cùng với watermark chống thu thập dữ liệu theo từng dòng và khối thông tin giá gói đăng ký (`💵 1 Week / 1 Month / 3 Months / Lifetime`) chính là dấu vân tay (fingerprint) nhận diện. Tập trường dữ liệu gốc phái sinh từ Redline (`BUILD NAME:`, `Admin Group:`, `Integrity:`, `Wallpaper Hash:`) vẫn được giữ nguyên nhưng bị watermark chèn cách quãng.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

@@ -77,5 +77,45 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSOttomanPanelStealer là định danh do CyStack đặt tên cho cấu trúc dữ liệu của panel tổng hợp Ottoman`Information.txt`. Ottoman, tự nhận là `Ottoman Cloud` hoặc `Ottoman Stealer v2.0`, là một dịch vụ phân phối log trả phí, bán lại log từ các mã độc đánh cắp thông tin thông qua hệ sinh thái Telegram. Theo trang quảng bá của chính đối tượng vận hành tại ottomancloud.github.io, dịch vụ này tổng hợp dữ liệu thu thập được từ nhiều mã độc nguồn, chuẩn hóa dữ liệu đầu ra thành một cấu trúc dữ liệu `Information.txt` thống nhất, và bán từ 1500 đến 5000 bản ghi mỗi ngày theo các gói đăng ký phân tầng (75 đến 600 USD mỗi tháng).\n\nPanel Ottoman xuất hiện trong các danh mục cộng đồng nhưng chưa có nghiên cứu công khai nào công bố phân tích gốc về định dạng panel này. Đối tượng vận hành thừa nhận Ottoman hoạt động trên nhiều họ mã độc nguồn (Redline, MetaStealer, Raccoon, AuraStealer, TitanStealer, Vidar), do đó họ mã độc nền tảng trên mỗi nạn nhân có thể khác nhau. Tiền tố CS đánh dấu nhãn này do CyStack đặt tên; thương hiệu panel `Ottoman` và tài khoản hỗ trợ của đối tượng vận hành `@OttoSup` được giữ nguyên như các trường phân loại.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt, cookie, dữ liệu tự động điền",
+        "Ứng dụng ví tiền điện tử và tiện ích mở rộng trình duyệt",
+        "Token phiên đăng nhập của Telegram, Steam, Discord",
+        "Tài liệu khớp với danh sách bộ lọc của mô-đun thu thập tệp",
+        "Lịch sử duyệt web, dấu trang, tiện ích mở rộng trình duyệt",
+        "Dữ liệu thẻ tín dụng được lưu trong trình duyệt"
+      ],
+      "detection_notes": "Biểu ngữ ASCII theo từng ký tự trong dấu ngoặc đơn `( O | T | T | O | M | A | N )` cùng với tài khoản hỗ trợ của đối tượng vận hành `@OttoSup` là dấu hiệu nhận diện đặc trưng nhất. Dòng liên kết mời `Telegram :` bên trong khung ASCII thay đổi theo từng gói lưu trữ, vì vậy các quy tắc nhận diện nên dựa vào chuỗi ký tự của biểu ngữ và tài khoản hỗ trợ thay vì mã mời. Khi phân loại log từ họ mã độc này, cần lưu ý mã độc nền tảng thay đổi theo từng nạn nhân, do đó nên đối chiếu ngược lại với mã độc nguồn (Redline / Meta / Raccoon / Aura / Titan / Vidar) thông qua các tệp liên quan khi có thể.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1213",
+          "name": "Dữ liệu từ kho thông tin"
+        }
+      ]
+    }
+  }
 }

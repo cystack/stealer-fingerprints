@@ -199,5 +199,44 @@
       },
       "layout_id": "dash-hwid-cpu-ip-display"
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Nhật ký Lumma C2 (LummaC2). Panel ghi `System.txt` với danh sách kiểu YAML có dấu gạch đầu dòng (`- LummaC2 Build:`, `- Configuration:`, v.v.) và chữ ký đặc trưng `(sig:UNIX.HEX)` trên dòng `Time:`. Banner build tham chiếu kênh `@lummanowork`; panel được bán theo mô hình MaaS thông qua `@lummamarketplace_bot`.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt, cookie, dữ liệu tự động điền",
+        "Tiện ích mở rộng ví tiền điện tử (tập trung vào MetaMask, Phantom và các ví tương tự)",
+        "Token phiên đăng nhập Steam, Telegram, Discord",
+        "Seed 2FA từ Authy và các ứng dụng desktop tương tự",
+        "Cụm từ khôi phục (seed phrase) tiền điện tử thu thập từ tệp văn bản"
+      ],
+      "detection_notes": "Dấu hiệu có độ tin cậy cao: chữ ký trong ngoặc đơn `(sig:UNIX.HEX)` trên dòng `- Time:`. Kết hợp với banner `- LummaC2 Build:`, đây là dấu hiệu nhận diện Lumma rõ ràng, không gây nhầm lẫn. Một số họ mã độc phái sinh (Remus, AL Stealer, BabaStealer, ArtHouseCloud, CashFlow) có chung cấu trúc dữ liệu dạng gạch đầu dòng nhưng không có chữ ký này; cần theo dõi các họ này riêng biệt.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1119",
+          "name": "Thu thập tự động"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

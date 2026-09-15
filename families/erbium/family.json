@@ -53,5 +53,45 @@
     "https://t.me/erbium_support",
     "https://t.me/erbium_news"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "Erbium Stealer là một họ mã độc đánh cắp thông tin dạng Malware-as-a-Service viết bằng C# / .NET, xuất hiện vào giữa năm 2022 trên các diễn đàn tội phạm nói tiếng Nga. Báo cáo công khai đầu tiên về họ mã độc này xuất hiện vào tháng 7 năm 2022; một bài phân tích kỹ thuật tiếp theo đã đề cập đến trình tải DLL và bảng điều khiển tại `panel.erbium.ml`. Các mức giá được ghi nhận trên kênh của đối tượng vận hành dao động từ `$9/week` khi ra mắt lên tới `$100/month` và `$1000/year`. Theo các bài đưa tin công khai cùng thời điểm, các chiến dịch phát tán ban đầu lợi dụng crack game giả mạo và các trình cài đặt cheat.\n\nBảng điều khiển tạo dữ liệu đầu ra `Information.txt` kèm banner ASCII ERBIUM, hai URL kênh của đối tượng vận hành `t.me/erbium_*` (Developer + Updates), và năm mục được đặt trong dấu ngoặc vuông theo thứ tự cố định: `[BUILD]`, `[PC INFO]`, `[LOG INFO]`, `[CLIPBOARD]`, `[ANTIVIRUSES]`. Các dòng trường dữ liệu được thụt lề bằng tab với dấu phân cách hỗn hợp gạch nối / dấu hai chấm (gạch nối cho các trường định danh và số lượng, dấu hai chấm cho danh mục phần cứng bên trong `[PC INFO]`). `HardwareID` là một chuỗi hex viết hoa dài 64 ký tự; thư mục nạn nhân trong tệp nén được đặt tên theo chính định danh này.",
+      "typical_targets": [
+        "Thông tin xác thực, cookie, dữ liệu tự động điền được lưu trong trình duyệt (Firefox, Chrome, Cyberfox, K-Meleon, BlackHawk, Pale Moon, Thunderbird)",
+        "Tiện ích mở rộng và ứng dụng desktop ví tiền điện tử",
+        "Tiện ích mở rộng xác thực hai yếu tố (Authenticator, Authy, Trezor)",
+        "Thông tin xác thực FileZilla / VPN",
+        "Số thẻ được trình duyệt lưu trữ",
+        "Phiên đăng nhập game client và mô-đun thu thập tệp cỡ nhỏ"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện có độ tin cậy cao: chuỗi URL `t.me/erbium_support` trong khối banner kết hợp với các tiêu đề mục đặt trong dấu ngoặc vuông `[BUILD]` và `[PC INFO]` được neo theo dòng. Cả hai đặc trưng này đều là dữ liệu đầu ra chuẩn của bảng điều khiển Erbium; không họ mã độc nào khác trong danh mục này sử dụng handle `erbium_support` hoặc cặp mục `[BUILD]` + `[PC INFO]`. Lưu ý rằng Erbium từng được ghi nhận xuất hiện bên trong bộ tổng hợp Telegram `@bugatti_cloud` (trong bản ghi danh mục này), do đó tệp nén bên ngoài có thể được quy kết cho một bên phát tán lại ngay cả khi nội dung bảng điều khiển là dữ liệu đầu ra chuẩn của Erbium.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1119",
+          "name": "Thu thập tự động"
+        }
+      ]
+    }
+  }
 }

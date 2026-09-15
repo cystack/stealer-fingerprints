@@ -3,7 +3,7 @@
   "name": "CSMacUserinfoStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSMacUserinfoStealer is a CyStack-coined identifier for a\nmacOS info-stealer that writes a bare `userinfo.txt`\n(lowercase) with a 9-field IP geolocation header followed\ndirectly by the verbatim `system_profiler` output for the\n`SPSoftwareDataType`, `SPHardwareDataType`, and\n`SPDisplaysDataType` sections. The file ships no operator\nbanner, no `BuildID:` per-build label, and no `MetaMask Info:`\n/ `Debanks:` / `Userinfo:` panel section headers. Observed\ninside `!! 2025 JULY.part001.rar` aggregator packs in\n`<CC><31-alnum>_<ISO timestamp with\nmicroseconds>/userinfo.txt` victim folders.\n\nThe layout overlaps the publicly documented Cthulhu Stealer\n`Userinfo.txt` shape but two structural details rule out a\ndirect Cthulhu attribution. First, `BuildID:` is absent.\nCthulhu always emits the line carrying its operator-set\nper-build label, so an unsigned variant is undocumented.\nSecond, the `Region:` value uses the IP2Location-style\n`Dubayy` transliteration for Dubai instead of ipinfo.io's\n`Dubai` form; Cthulhu uses ipinfo.io as its geo source. Family\nattribution is provisional pending a published threat-intel\nmapping for this layout.",
+  "description": "CSMacUserinfoStealer is a CyStack-coined identifier for a\nmacOS info-stealer that writes a bare `userinfo.txt`\n(lowercase) with a 9-field IP geolocation header followed\ndirectly by the verbatim `system_profiler` output for the\n`SPSoftwareDataType`, `SPHardwareDataType`, and\n`SPDisplaysDataType` sections. The file ships no operator\nbanner, no `BuildID:` per-build label, and no `MetaMask Info:`\n/ `Debanks:` / `Userinfo:` panel section headers. Observed\ninside `!! 2025 JULY.part001.rar` aggregator packs in\n`<CC><31-alnum>_<ISO timestamp with microseconds>/userinfo.txt` victim folders.\n\nThe layout overlaps the publicly documented Cthulhu Stealer\n`Userinfo.txt` shape but two structural details rule out a\ndirect Cthulhu attribution. First, `BuildID:` is absent.\nCthulhu always emits the line carrying its operator-set\nper-build label, so an unsigned variant is undocumented.\nSecond, the `Region:` value uses the IP2Location-style\n`Dubayy` spelling for Dubai instead of ipinfo.io's\n`Dubai` form; Cthulhu uses ipinfo.io as its geo source. Family\nattribution is provisional pending a published threat-intel\nmapping for this layout.",
   "aliases": [
     "Bare macOS userinfo.txt panel",
     "No-BuildID Cthulhu-shape macOS log"
@@ -65,5 +65,36 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSMacUserinfoStealer là định danh do CyStack đặt cho một mã độc đánh cắp thông tin trên macOS ghi ra một dòng `userinfo.txt` trần (chữ thường) với phần tiêu đề định vị địa lý IP gồm 9 trường, theo ngay sau đó là dữ liệu đầu ra nguyên văn của `system_profiler` cho các phần `SPSoftwareDataType`, `SPHardwareDataType` và `SPDisplaysDataType`. Tệp này không có banner của đối tượng vận hành, không có nhãn `BuildID:` theo từng bản build, và không có các tiêu đề phần panel `MetaMask Info:` / `Debanks:` / `Userinfo:`. Được quan sát thấy bên trong các gói tổng hợp `!! 2025 JULY.part001.rar` trong các thư mục nạn nhân `<CC><31-alnum>_<ISO timestamp with microseconds>/userinfo.txt`.\n\nBố cục này trùng lặp với cấu trúc dữ liệu `Userinfo.txt` của Cthulhu Stealer đã được công bố công khai, nhưng có hai chi tiết cấu trúc loại trừ khả năng quy kết trực tiếp cho Cthulhu. Thứ nhất, `BuildID:` bị thiếu. Cthulhu luôn tạo dữ liệu đầu ra là dòng mang nhãn theo từng bản build do đối tượng vận hành thiết lập, do đó một biến thể không có chữ ký (unsigned) như vậy chưa được ghi nhận. Thứ hai, giá trị `Region:` sử dụng cách phiên âm kiểu IP2Location `Dubayy` cho Dubai thay vì dạng `Dubai` của ipinfo.io; Cthulhu sử dụng ipinfo.io làm nguồn dữ liệu địa lý. Việc quy kết họ mã độc hiện chỉ mang tính tạm thời cho đến khi có bản đồ tình báo mối đe dọa được công bố cho bố cục này.",
+      "typical_targets": [
+        "Dấu vân tay phần cứng macOS (Hardware UUID, Model Identifier, Chip / Processor)",
+        "Danh sách tài khoản macOS (Computer Name, User Name)",
+        "Phiên bản macOS và bản build kernel (System Version, Kernel Version)",
+        "Định vị địa lý IP công khai (quốc gia, thành phố, vĩ độ / kinh độ, mã bưu điện, múi giờ)",
+        "Cấu hình hiển thị (Chipset Model, VRAM, độ phân giải)"
+      ],
+      "detection_notes": "Sự xuất hiện của `Country Code:` VÀ `Zipcode:` VÀ `Hardware Overview:` được neo theo dòng chính là dấu hiệu nhận diện đặc trưng. Bộ ba này mang tính đặc thù vì `Country Code:` (tách biệt với `Country:`) cộng với `Zipcode:` (một từ) là điểm mở đầu khối dữ liệu địa lý đã được ghi nhận đối với Cthulhu, và `Hardware Overview:` là tiêu đề `system_profiler SPHardwareDataType` đặc thù của macOS. Các mẫu cũng mang `BuildID:` khớp với hồ sơ Cthulhu; hồ sơ này bao phủ biến thể không có BuildID. AMOS sử dụng `Country:` (không phải `Country Code:`) cùng với bộ ba tiêu đề phần `MetaMask Info:` / `Debanks:` / `Userinfo:` - không có sự trùng lặp. MacSync yêu cầu phải có banner `MacSync Stealer` - điều này không xuất hiện ở đây. Trong quá trình phân loại ban đầu, hãy coi nhãn này là bản tóm tắt hệ thống của mã độc đánh cắp thông tin trên macOS và tìm kiếm các tệp/dấu vết liên quan (dữ liệu trình duyệt, dữ liệu keychain, thư mục ví) trong cùng thư mục nạn nhân.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        }
+      ]
+    }
+  }
 }

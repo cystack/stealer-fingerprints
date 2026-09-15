@@ -44,5 +44,39 @@
     "cs-russia34-stealer"
   ],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSProcessElevationStealer là định danh do CyStack đặt cho một mã độc đánh cắp thông tin có cấu trúc dữ liệu kiểu Redline `System.txt` được phát hiện bên trong các gói tổng hợp `@ft7links-lumma` trong các thư mục nạn nhân `@ft7links_lumma_<NN>_bogonip_<HWIDPFX>/`. Nội dung mang lỗi chính tả điển hình của Redline `Operation System:` (nguyên văn) và khối `Hardwares:`, nhưng bổ sung dòng `Process Elevation: True|False` mà Redline nguyên bản không bao giờ tạo dữ liệu đầu ra, ghép `ScreenSize:` và `TimeZone:` trên cùng một dòng với khoảng trắng quanh `=` (Redline nguyên bản tạo dữ liệu đầu ra không có khoảng trắng và tách chúng thành các dòng riêng biệt), đồng thời loại bỏ hoàn toàn phần mở đầu định danh của Redline (`Build ID:`, `IP:`, `FileLocation:`, `MachineName:`, `Location:`, `Log date:`) đối với các nạn nhân có IP bogon.\n\nMột danh mục định dạng mã độc đánh cắp thông tin do cộng đồng biên soạn ánh xạ chính xác cấu trúc trường dữ liệu này tới ArechClient2 / SectopRAT, và một bài phân tích mã độc độc lập xác nhận rằng bộ thu thập của ArechClient2 tạo dữ liệu đầu ra với tập trường tương ứng (`OSVersion`, `ScreenSize`, `TimeZone`, `AvailableLanguages`, `SystemHardwares`). Họ mã độc ArechClient2 / SectopRAT nguyên bản đã được ghi nhận công khai đầy đủ, nhưng không bài viết nào trong số đó công bố mẫu log cho thấy đúng tập nhãn nêu trên, do đó việc ánh xạ định dạng sang họ mã độc vẫn còn mang tính tạm thời và tiền tố `CS` được giữ nguyên cho đến khi có xác nhận được công bố.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt, cookie, dữ liệu tự động điền",
+        "Tiện ích mở rộng ví tiền điện tử và ứng dụng desktop",
+        "Thông tin phần cứng hệ thống, ngôn ngữ vùng và múi giờ",
+        "Liệt kê sản phẩm diệt vi-rút"
+      ],
+      "detection_notes": "Dòng `Process Elevation:` kết hợp với việc tạo dữ liệu đầu ra ghép `ScreenSize: {Width = X,Height = Y}TimeZone: ...` (có khoảng trắng quanh `=`, không có dấu phân tách trước `TimeZone:`) là đặc điểm riêng biệt của bảng điều khiển này trong số các biến thể đổi thương hiệu có cấu trúc dữ liệu kiểu Redline trong danh mục này. Giá trị nguyên văn `UNKNOWN` xuất hiện lặp lại ở `Country:` và `Zip Code:` đối với các nạn nhân có IP bogon, vì vậy quá trình phân loại ưu tiên xử lý nên coi các giá trị này là bị thiếu thay vì là quốc gia hoặc mã bưu chính thực sự. Rủi ro dương tính giả ở mức thấp: không có định dạng nào khác khớp dấu vết nhận diện trên `Process Elevation:`, và lỗi chính tả bắt buộc đi kèm `Operation System:` xác nhận cấu trúc dữ liệu bắt nguồn từ Redline.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

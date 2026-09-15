@@ -66,5 +66,40 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Nhật ký của WhiteSnake Stealer. Các bản dựng sau năm 2024 tạo dữ liệu đầu ra dưới dạng `PC_info.txt` bắt đầu bằng một mục `🖥Computer info:` có tiền tố biểu tượng cảm xúc và chứa các giá trị về hệ thống, người dùng, thời gian cùng với các mục tiếp theo bao gồm phần mềm đã cài đặt và trạng thái mạng. Được phát tán qua các kênh tổng hợp trên Telegram (đối tượng phân phối lại kiểu BRADMAX) và theo mô hình đăng ký MaaS.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trong trình duyệt",
+        "Tiện ích mở rộng và ứng dụng desktop ví tiền điện tử",
+        "Dữ liệu phiên của Discord, Telegram, Steam",
+        "Mã 2FA từ các ứng dụng xác thực",
+        "Thông tin xác thực của ứng dụng email và FTP"
+      ],
+      "detection_notes": "Tiêu đề mục có tiền tố biểu tượng cảm xúc (`🖥Computer info:`) có đặc điểm nhận dạng trực quan rõ ràng. Kết hợp với nhãn trường `User name:` và `System time:` (lưu ý các khoảng trắng), đây là nội dung chắc chắn thuộc về WhiteSnake.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

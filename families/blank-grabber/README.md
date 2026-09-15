@@ -1,5 +1,9 @@
 # Blank Grabber
 
+## Overview / Tổng quan
+
+### English
+
 Blank Grabber is a Python-based open-source info-stealer
 hosted on GitHub (Blank-c/Blank-Grabber). Low-skill actors
 compile it with PyInstaller and distribute it via cracked
@@ -16,25 +20,35 @@ GPU, Product Key), and a `Grabbed Info` summary that counts
 each data category (Discord Accounts, Passwords, Cookies,
 Roblox Cookies, Telegram Sessions, Wallets, Wifi, etc.).
 
-## Research status
+### Tiếng Việt
 
-- Classification: **Known malware family**
+Blank Grabber là mã độc đánh cắp thông tin mã nguồn mở viết bằng Python, được lưu trữ trên GitHub (Blank-c/Blank-Grabber). Các tác nhân ít kỹ năng biên dịch nó bằng PyInstaller và phát tán qua các mồi nhử phần mềm crack, các gói PyPI được vũ khí hóa, và các chiến dịch phát tán qua Discord hoặc Telegram. Việc đưa dữ liệu ra ngoài đi qua webhook Discord hoặc Telegram, nên không cần bảng điều khiển C2 chuyên dụng.
+
+Tệp nén chứa dữ liệu đưa ra ngoài có một `Information.txt` ở cấp cao nhất với biểu ngữ ghi `Blank Grabber got a new victim: <name>`, tiếp theo là một khối `IP Info` (dữ liệu từ ip-api.com), một khối `System Info` (Computer Name, OS, RAM, UUID, CPU, GPU, Product Key), và một bản tóm tắt `Grabbed Info` đếm số lượng của mỗi loại dữ liệu (Discord Accounts, Passwords, Cookies, Roblox Cookies, Telegram Sessions, Wallets, Wifi, v.v.).
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `BlankGrabber`, `Blank-c/Blank-Grabber`
 - Variants observed: **3**
 - CyStack observations represented: **12,773**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- Discord and Telegram session tokens
-- Browser saved credentials, cookies, history, autofill
-- Crypto wallet desktop clients (Bitcoin, Ethereum, Exodus, others)
-- Roblox cookies and Minecraft sessions
-- Wifi passwords and webcam captures
-- System hardware and locale inventory
-- Game launcher sessions (Epic, Steam, Uplay, Battle.net, Growtopia)
+| English | Tiếng Việt |
+|---|---|
+| Discord and Telegram session tokens | Mã thông báo phiên Discord và Telegram |
+| Browser saved credentials, cookies, history, autofill | Thông tin xác thực, cookie, lịch sử duyệt web, dữ liệu tự động điền được trình duyệt lưu |
+| Crypto wallet desktop clients (Bitcoin, Ethereum, Exodus, others) | Ứng dụng ví tiền mã hóa trên máy tính (Bitcoin, Ethereum, Exodus và các loại khác) |
+| Roblox cookies and Minecraft sessions | Cookie Roblox và dữ liệu phiên Minecraft |
+| Wifi passwords and webcam captures | Mật khẩu Wifi và ảnh chụp webcam |
+| System hardware and locale inventory | Kiểm kê phần cứng hệ thống và ngôn ngữ/vùng |
+| Game launcher sessions (Epic, Steam, Uplay, Battle.net, Growtopia) | Dữ liệu phiên trình khởi chạy trò chơi (Epic, Steam, Uplay, Battle.net, Growtopia) |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 The banner literal `Blank Grabber got a new victim:` is
 unique across this catalog and absent from other retained formats, so
@@ -44,6 +58,10 @@ is a feature for triage: the fork still maps to the
 Blank Grabber family. The `Grabbed Info` per-category counts
 are the cleanest indicator of which artifact subfolders the
 archive contains for evidence collection.
+
+### Tiếng Việt
+
+Chuỗi biểu ngữ `Blank Grabber got a new victim:` là đặc điểm riêng trong toàn bộ danh mục này và không xuất hiện ở các định dạng khác được lưu giữ, do đó chỉ cần kiểm tra một chuỗi con là đủ để xác định khớp cấu trúc. Các bản phân nhánh (đáng chú ý là AK-grabber) sử dụng lại nguyên văn cùng biểu ngữ, đây là một đặc điểm hữu ích cho việc phân loại ban đầu: bản phân nhánh vẫn được ánh xạ vào họ Blank Grabber. Số lượng đếm theo từng danh mục trong `Grabbed Info` là chỉ báo rõ ràng nhất về các thư mục con dấu vết nào mà tệp nén chứa để thu thập bằng chứng.
 
 ## Observed log variants
 
@@ -101,15 +119,15 @@ Recognition anchors:
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
-| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
-| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
-| [T1119](https://attack.mitre.org/techniques/T1119/) | Automated Collection |
-| [T1567](https://attack.mitre.org/techniques/T1567/) | Exfiltration Over Web Service |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores | Thông tin xác thực từ kho mật khẩu |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers | Thông tin xác thực từ trình duyệt web |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie | Đánh cắp cookie phiên web |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
+| [T1119](https://attack.mitre.org/techniques/T1119/) | Automated Collection | Thu thập tự động |
+| [T1567](https://attack.mitre.org/techniques/T1567/) | Exfiltration Over Web Service | Đưa dữ liệu ra ngoài qua dịch vụ web |
 
 ## Related catalog profiles
 

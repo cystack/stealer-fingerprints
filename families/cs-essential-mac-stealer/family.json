@@ -13,7 +13,7 @@
     "Host hardware and OS fingerprint (Mac model, chip, RAM,\ndisplay, Hardware UUID, Provisioning UDID, system\nfirmware)",
     "Account identity (login name, display name, computer\nname)"
   ],
-  "detection_notes": "Fingerprint requires the literal ``Essential macOS\nStealer`` first-line banner substring. The banner is\nthe family self-identification and is unique across\nthe registry; sibling macOS-stealer banners\n(``Phexia macOS Stealer`` / ``MacSync Stealer`` /\n``SHub Stealer`` / ``mac.c macOS Stealer``) are all\nmutually exclusive substrings so no collision is\npossible. During triage, treat the captured\n``Password:`` line as high-value: the stealer records\nthe victim's macOS login password in cleartext,\nso credential rotation on the affected account is\npriority-one during incident response. Companion\nfiles in the victim folder (keychain dumps, browser\nexports, wallet artifacts) will typically be present\nunder standard Phexia-shape filenames.",
+  "detection_notes": "Fingerprint requires the literal ``Essential macOS Stealer`` first-line banner substring. The banner is\nthe family self-identification and is unique across\nthe registry; sibling macOS-stealer banners\n(``Phexia macOS Stealer`` / ``MacSync Stealer`` /\n``SHub Stealer`` / ``mac.c macOS Stealer``) are all\nmutually exclusive substrings so no collision is\npossible. During triage, treat the captured\n``Password:`` line as high-value: the stealer records\nthe victim's macOS login password in cleartext,\nso credential rotation on the affected account is\npriority-one during incident response. Companion\nfiles in the victim folder (keychain dumps, browser\nexports, wallet artifacts) will typically be present\nunder standard Phexia-shape filenames.",
   "attack_techniques": [
     {
       "id": "T1082",
@@ -47,5 +47,38 @@
   "observed_channels": [
     "https://t.me/Bugatti_Cloud"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSEssentialMacStealer là một định danh do CyStack đặt cho một mã độc đánh cắp thông tin trên macOS tự nhận dạng bằng banner dòng đầu tiên ``Essential macOS Stealer``. Tệp này là ``UserInformation.txt`` với phần mở đầu ngắn gọn (định danh riêng cho từng bản build ``Build:`` cùng với thông tin xác thực đăng nhập ``Username:`` / ``Password:`` đã thu thập được cộng với ``IP Address:``), tiếp theo là ba khối phần ``system_profiler``: ``Software:``, ``Hardware:`` và ``Graphics/Displays:``. Mỗi khối bao bọc dữ liệu đầu ra nguyên văn từ kiểu dữ liệu ``system_profiler`` tương ứng, với định dạng thụt lề lồng nhau 4-6 khoảng trắng được giữ nguyên.\n\nCấu trúc dữ liệu của phần thân giống hệt về mặt cấu trúc với Phexia macOS Stealer theo các bài viết công khai, và một cuộc phỏng vấn đã công bố với nhà phát triển Phexia xác nhận rằng Phexia là một trong nhiều bản fork của mô-đun mã độc đánh cắp thông tin Mac.c dùng chung. ``Essential`` có thể là một bản fork khác của Mac.c hoặc là bản đổi tên của một trong các họ mã độc liên quan đã được ghi nhận, nhưng các báo cáo công khai không ghi nhận cụ thể banner này. Việc quy kết họ mã độc vẫn còn mang tính tạm thời cho đến khi có bài viết phân tích tình báo mối đe dọa được công bố cho banner ``Essential macOS Stealer``.",
+      "typical_targets": [
+        "Thông tin xác thực đăng nhập macOS (được thu thập trực tiếp trong cặp phần mở đầu ``Username:`` / ``Password:``)",
+        "Dấu vết nhận dạng phần cứng và hệ điều hành của máy (dòng máy Mac, chip, RAM, màn hình, Hardware UUID, Provisioning UDID, firmware hệ thống)",
+        "Danh tính tài khoản (tên đăng nhập, tên hiển thị, tên máy)"
+      ],
+      "detection_notes": "Việc nhận diện dấu hiệu yêu cầu chuỗi con banner dòng đầu tiên nguyên văn ``Essential macOS Stealer``. Banner này là dấu hiệu tự nhận dạng của họ mã độc và là duy nhất trong toàn bộ registry; các banner của các họ mã độc đánh cắp thông tin macOS liên quan (``Phexia macOS Stealer`` / ``MacSync Stealer`` / ``SHub Stealer`` / ``mac.c macOS Stealer``) đều là các chuỗi con loại trừ lẫn nhau nên không thể xảy ra xung đột. Trong quá trình phân loại ban đầu, cần coi dòng ``Password:`` đã thu thập được là dữ liệu có giá trị cao: mã độc đánh cắp thông tin này ghi lại mật khẩu đăng nhập macOS của nạn nhân dưới dạng văn bản thuần túy, do đó việc thay đổi thông tin xác thực trên tài khoản bị ảnh hưởng phải là ưu tiên hàng đầu trong quá trình ứng phó sự cố. Các tệp liên quan trong thư mục nạn nhân (bản kết xuất keychain, dữ liệu xuất từ trình duyệt, dấu vết ví tiền điện tử) thường sẽ xuất hiện dưới các tên tệp theo cấu trúc dữ liệu chuẩn của Phexia.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        }
+      ]
+    }
+  }
 }

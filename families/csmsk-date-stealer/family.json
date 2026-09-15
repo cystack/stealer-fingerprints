@@ -3,7 +3,7 @@
   "name": "CSMSKDateStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSMSKDateStealer is a CyStack-coined identifier for an\ninfo-stealer `information.txt` whose opening line is an exfil\ntimestamp suffixed with `MSK` (Moscow Standard Time). The file\nis a flat `Key: Value` block: short 16-hex `Machine UUID`, a\n`Machine: <hostname>/<user>` slash-suffix identity, hardware\nfields, a localised `Local Time: <date> (UTC+<offset>) <city>`\nclock, a geolocation block keyed on the ip-api.com JSON shape\n(`CountryCode`, `Region Name`, `IP Timezone`), and a\nwallet-extension enumerator that maps wallet names to\n`%USERPROFILE%` paths with right-arrow padding (`MetaMask ->\n...`).\n\nFamily attribution is provisional. The victim-profile field\nset overlaps with Snake Keylogger's publicly documented host\nprofile, but Snake Keylogger's documented exfiltration is an\nSMTP / FTP / Telegram message body, not a standalone info.txt\nwith a wallet-enumerator block. No public source maps this\nexact shape to a named family.",
+  "description": "CSMSKDateStealer is a CyStack-coined identifier for an\ninfo-stealer `information.txt` whose opening line is an exfil\ntimestamp suffixed with `MSK` (Moscow Standard Time). The file\nis a flat `Key: Value` block: short 16-hex `Machine UUID`, a\n`Machine: <hostname>/<user>` slash-suffix identity, hardware\nfields, a localised `Local Time: <date> (UTC+<offset>) <city>`\nclock, a geolocation block keyed on the ip-api.com JSON shape\n(`CountryCode`, `Region Name`, `IP Timezone`), and a\nwallet-extension enumerator that maps wallet names to\n`%USERPROFILE%` paths with right-arrow padding (`MetaMask -> ...`).\n\nFamily attribution is provisional. The victim-profile field\nset overlaps with Snake Keylogger's publicly documented host\nprofile, but Snake Keylogger's documented exfiltration is an\nSMTP / FTP / Telegram message body, not a standalone info.txt\nwith a wallet-enumerator block. No public source maps this\nexact shape to a named family.",
   "aliases": [],
   "typical_targets": [
     "Browser saved credentials and cookies",
@@ -39,5 +39,42 @@
   ],
   "related_families": [],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSMSKDateStealer là một định danh do CyStack đặt cho một mã độc đánh cắp thông tin `information.txt` có dòng mở đầu là dấu thời gian đưa dữ liệu ra ngoài kèm hậu tố `MSK` (giờ chuẩn Moscow). Tệp này là một khối `Key: Value` phẳng: `Machine UUID` hex 16 ký tự ngắn, một định danh hậu tố dấu gạch chéo `Machine: <hostname>/<user>`, các trường phần cứng, đồng hồ `Local Time: <date> (UTC+<offset>) <city>` đã được bản địa hóa, một khối định vị địa lý dựa trên cấu trúc dữ liệu JSON của ip-api.com (`CountryCode`, `Region Name`, `IP Timezone`), và một bộ liệt kê tiện ích mở rộng ví ánh xạ tên ví sang các đường dẫn `%USERPROFILE%` với phần đệm mũi tên phải (`MetaMask -> ...`).\n\nViệc quy kết họ mã độc hiện vẫn mang tính tạm thời. Tập trường hồ sơ nạn nhân trùng lặp với hồ sơ máy đã được công khai tài liệu hóa của Snake Keylogger, nhưng phương thức đưa dữ liệu ra ngoài đã được ghi nhận của Snake Keylogger là nội dung thư SMTP / FTP / Telegram, chứ không phải một tệp info.txt độc lập kèm khối liệt kê ví. Không có nguồn công khai nào ánh xạ chính xác cấu trúc dữ liệu này với một họ mã độc đã được đặt tên.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trong trình duyệt",
+        "Tiện ích mở rộng ví tiền mã hóa trên trình duyệt (MetaMask, Phantom, ...)",
+        "Thông tin kiểm kê phần cứng và ngôn ngữ/vùng của hệ thống"
+      ],
+      "detection_notes": "Dòng mở đầu `Date:` kèm hậu tố MSK là dấu hiệu đặc trưng nhất: không có họ mã độc nào khác trong danh mục này tạo dữ liệu đầu ra kèm chữ viết tắt múi giờ trên dòng Date (Lumma dùng định dạng DD.MM.YYYY có dấu chấm mà không kèm chữ viết tắt phía sau, .B.A.B.A. dùng DD/MM/YYYY, Snake Stealer dùng M/D/YYYY kèm AM/PM). Yêu cầu đi kèm `Machine UUID:` giúp khép kín điều kiện nhận diện, tránh trường hợp một tệp readme ngẫu nhiên đề cập đến ngày có hậu tố MSK do trùng hợp. Nếu sau này có thông tin tình báo mối đe dọa đã công bố quy kết định dạng này về một họ mã độc đã biết, hãy cập nhật hồ sơ theo dõi này thay vì tạo một bản ghi trùng lặp.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1124",
+          "name": "Xác định thời gian hệ thống"
+        }
+      ]
+    }
+  }
 }

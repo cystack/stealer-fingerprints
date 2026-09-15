@@ -1,5 +1,9 @@
 # PyInfo Stealer
 
+## Overview / Tổng quan
+
+### English
+
 Unidentified Python-based stealer observed inside `@BRADMAX`
 aggregator packs under `[UN]UNKNOWN_(N)` filler folders. The
 `system_info.txt` is a flat key/value record followed by two
@@ -7,25 +11,35 @@ aggregator packs under `[UN]UNKNOWN_(N)` filler folders. The
 provisional; the format has not been mapped to a published
 threat-intel name.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **CyStack tracking name**
+Mã độc đánh cắp thông tin dựa trên Python chưa được định danh, được phát hiện bên trong các gói tổng hợp `@BRADMAX` dưới các thư mục đệm `[UN]UNKNOWN_(N)`. `system_info.txt` là một bản ghi khóa/giá trị dạng phẳng, theo sau là hai phần được đóng khung `--- ... ---`. Việc quy kết họ mã độc hiện vẫn mang tính tạm thời; định dạng này chưa được ánh xạ với bất kỳ tên gọi tình báo mối đe dọa đã công bố nào.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: -
 - Variants observed: **1**
 - CyStack observations represented: **2**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- No target inventory published yet.
+- No target inventory published yet / Chưa công bố danh mục mục tiêu.
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 The `Hostname:` opening (lowercase keys throughout) and dual
 `--- Section ---` framing is the signature. The Python origin
 is inferred from the field shape and snake_case key style
 (e.g. lowercase `user:` and `hostname:`), not from any
 explicit banner.
+
+### Tiếng Việt
+
+Dấu hiệu đặc trưng là phần mở đầu `Hostname:` (các khóa đều viết thường) cùng cấu trúc đóng khung kép `--- Section ---`. Nguồn gốc Python được suy ra từ cấu trúc dữ liệu của các trường và kiểu đặt tên khóa snake_case (ví dụ: `user:` và `hostname:` viết thường), chứ không phải từ bất kỳ banner tường minh nào.
 
 ## Observed log variants
 
@@ -49,12 +63,12 @@ Recognition anchors:
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
-| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores | Thông tin xác thực từ kho mật khẩu |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers | Thông tin xác thực từ trình duyệt web |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
 
 ## Related catalog profiles
 

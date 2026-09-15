@@ -1,5 +1,9 @@
 # CSPrimoCloudStealer
 
+## Overview / Tổng quan
+
+### English
+
 CSPrimoCloudStealer is a CyStack-coined identifier for a
 heavily-stripped `@Primo_Cloud` aggregator wrap observed
 inside `@ft7links-vidar` packs. The panel emits four
@@ -8,23 +12,28 @@ watermark lines followed by a Redline-canonical body that
 is reduced to two fields on the verified bogon-IP victim
 (`User Name:` and `Display Resolution:`).
 
-## Research status
+### Tiếng Việt
 
-- Classification: **Family variant**
+CSPrimoCloudStealer là định danh do CyStack đặt cho một lớp bọc trình tổng hợp `@Primo_Cloud` đã bị lược bỏ mạnh, được phát hiện bên trong các gói `@ft7links-vidar`. Bảng điều khiển tạo dữ liệu đầu ra gồm bốn dòng watermark `@Primo_Cloud:https://t.me/+ecb2NTo6VKFhYzI0` lặp lại, theo sau là phần thân dữ liệu theo chuẩn Redline nhưng đã bị rút gọn chỉ còn hai trường trên nạn nhân có IP bogon đã xác minh (`User Name:` và `Display Resolution:`).
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **Family variant / Biến thể của một họ mã độc**
 - Attribution confidence: **high**
 - Canonical family: [redline](../redline/)
 - Aliases: `Primo_Cloud`, `@Primo_Cloud`
 - Variants observed: **0**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- No target inventory published yet.
+- No target inventory published yet / Chưa công bố danh mục mục tiêu.
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 The `@Primo_Cloud:` watermark line is the cleanest trigger.
-Pair with line-anchored `User Name:` and `Display
-Resolution:` to confirm a heavily-stripped body, and
+Pair with line-anchored `User Name:` and `Display Resolution:` to confirm a heavily-stripped body, and
 verify absence of `UserLanguage:` to avoid colliding with
 RedlineLikeStealer variants 7 and 8 which retain the
 extended `UserLanguage:` / `Keyboard Language:` /
@@ -32,19 +41,23 @@ extended `UserLanguage:` / `Keyboard Language:` /
 redistribution. Family attribution is provisional pending
 a published threat-intel mapping for this layout.
 
+### Tiếng Việt
+
+Dòng watermark `@Primo_Cloud:` là chỉ dấu kích hoạt rõ ràng nhất. Kết hợp với `User Name:` và `Display Resolution:` neo theo dòng để xác nhận phần thân dữ liệu đã bị lược bỏ mạnh, đồng thời xác minh không có `UserLanguage:` để tránh nhầm lẫn với các biến thể 7 và 8 của RedlineLikeStealer, vốn vẫn giữ khối `UserLanguage:` / `Keyboard Language:` / `Display Resolution:` mở rộng khi phân phối lại toàn bộ phần thân @Primo_Cloud. Việc quy kết họ mã độc hiện vẫn mang tính tạm thời, chờ có ánh xạ threat-intel được công bố cho bố cục này.
+
 ## Observed log variants
 
 No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
-| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
-| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores | Thông tin xác thực từ kho mật khẩu |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers | Thông tin xác thực từ trình duyệt web |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie | Đánh cắp cookie phiên web |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
 
 ## Related catalog profiles
 

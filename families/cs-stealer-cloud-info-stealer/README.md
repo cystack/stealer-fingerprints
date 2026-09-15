@@ -1,5 +1,9 @@
 # CSStealerCloudInfoStealer
 
+## Overview / Tổng quan
+
+### English
+
 CSStealerCloudInfoStealer is a CyStack-coined identifier for
 the STEALERCLOUD broker's third file shape: a stripped 2-field
 `Information.txt` containing just a `GPU:` line and a
@@ -18,20 +22,30 @@ available, falling back to a bare Win32 WMI
 `Win32_VideoController` + `Win32_DisplayMonitor` enumeration.
 Family attribution is provisional pending a public writeup.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **CyStack tracking name**
+CSStealerCloudInfoStealer là một định danh do CyStack đặt tên cho cấu trúc tệp thứ ba của broker STEALERCLOUD: một `Information.txt` tối giản 2 trường chỉ chứa một dòng `GPU:` và một dòng `Displays:` (số nhiều) có phần đệm nhiều khoảng trắng sau mỗi dấu hai chấm. Nội dung không có banner, không có tên đối tượng vận hành, và không có trường nào khác. Cùng thương hiệu bảng điều khiển `STEALERCLOUD` và kênh phân phối `@STEALERBOSS` như CSHardwareTailStealer (phần đuôi phần cứng dạng YAML trong Info.txt) và CSStealerCloudUserInfoStealer (khối locale + vị trí địa lý trong UserInformation.txt); broker này phân phối dữ liệu ngữ cảnh theo từng nạn nhân, chia thành ba cấu trúc tên tệp.
+
+Dạng tối giản 2 trường này có thể phản ánh một đường dẫn dự phòng mà broker sử dụng khi không có bảng điều khiển mã độc đánh cắp thông tin nguồn gốc chuẩn nào khả dụng, khi đó chuyển sang liệt kê thuần túy qua Win32 WMI `Win32_VideoController` + `Win32_DisplayMonitor`. Việc quy kết họ mã độc hiện vẫn mang tính tạm thời, chờ có bài viết công khai xác nhận.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **low**
 - Aliases: -
 - Variants observed: **2**
 - CyStack observations represented: **2,160**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- Victim GPU model (from WMI `Win32_VideoController`)
-- Victim display resolution (from WMI `Win32_DisplayMonitor`)
+| English | Tiếng Việt |
+|---|---|
+| Victim GPU model (from WMI `Win32_VideoController`) | Model GPU của nạn nhân (từ WMI `Win32_VideoController`) |
+| Victim display resolution (from WMI `Win32_DisplayMonitor`) | Độ phân giải màn hình của nạn nhân (từ WMI `Win32_DisplayMonitor`) |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 The line-anchored `GPU:` plus line-anchored `Displays:`
 (plural) fingerprint is unique across this catalog. The
@@ -41,6 +55,10 @@ this label with CSHardwareTailStealer Info.txt and
 CSStealerCloudUserInfoStealer UserInformation.txt files
 in the same `STEALERCLOUD#<NN>` victim folder for the
 full per-victim summary.
+
+### Tiếng Việt
+
+Dấu hiệu nhận diện kết hợp giữa `GPU:` neo theo dòng và `Displays:` (số nhiều) neo theo dòng là duy nhất trong toàn bộ danh mục này. Dạng số nhiều của `Displays:` giúp loại trừ các bảng điều khiển liên quan tạo dữ liệu đầu ra dạng số ít `Display:` hoặc `Display Resolution:`. Hãy kết hợp nhãn này với các tệp Info.txt của CSHardwareTailStealer và UserInformation.txt của CSStealerCloudUserInfoStealer trong cùng một thư mục nạn nhân `STEALERCLOUD#<NN>` để có bản tóm tắt đầy đủ theo từng nạn nhân.
 
 ## Observed log variants
 
@@ -81,10 +99,10 @@ Recognition anchors:
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
 
 ## Related catalog profiles
 

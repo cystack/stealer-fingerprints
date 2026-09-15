@@ -3,7 +3,7 @@
   "name": "CSMacBareGeoStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSMacBareGeoStealer is a CyStack-coined identifier for a bare\n2-line geo header macOS panel observed inside `!! 2025\nDEC.part01.rar` aggregator packs at\n`[<CC>]<IPv4>/UserInformation.txt` victim folders. The body\nopens with just `IP: <ipv4>` and `Country: <full English\nname>` on two lines, then drops into the verbatim\n`system_profiler SPSoftwareDataType` / `SPHardwareDataType` /\n`SPDisplaysDataType` output. No banner, no `Country Code:`\nline, no `Region:` / `City:` / lat / lon / `Zipcode:` /\n`Timezone:` fields, no `BuildID:` per-build label, no\n`MetaMask Info:` / `Debanks:` / `Userinfo:` section markers,\nno self-banner.\n\nThe 2-line geo header is the panel's minimal-extraction quirk.\nDocumented macOS stealers either ship a richer geo block\n(Cthulhu's 9-field block, AMOS's 3-field block) or serialise\nsystem info to JSON (Banshee). The flat-key text shape plus\nthe missing country-code sibling field rules out all four\nregistered macOS formats (Cthulhu, MacSync, AMOS,\nCSMacUserinfo).\n\nFamily attribution is provisional. Public reporting and the\npublic stealer-format catalogues do not document a macOS\nfamily that emits this exact bare 2-line geo +\n`system_profiler` shape. Public coverage of macOS stealers\nfocuses on Cthulhu, AMOS, Banshee, Poseidon / Odyssey, and\nDigitStealer, but none of those writeups publish a sample\nmatching this layout.",
+  "description": "CSMacBareGeoStealer is a CyStack-coined identifier for a bare\n2-line geo header macOS panel observed inside `!! 2025 DEC.part01.rar` aggregator packs at\n`[<CC>]<IPv4>/UserInformation.txt` victim folders. The body\nopens with just `IP: <ipv4>` and `Country: <full English name>` on two lines, then drops into the verbatim\n`system_profiler SPSoftwareDataType` / `SPHardwareDataType` /\n`SPDisplaysDataType` output. No banner, no `Country Code:`\nline, no `Region:` / `City:` / lat / lon / `Zipcode:` /\n`Timezone:` fields, no `BuildID:` per-build label, no\n`MetaMask Info:` / `Debanks:` / `Userinfo:` section markers,\nno self-banner.\n\nThe 2-line geo header is the panel's minimal-extraction quirk.\nDocumented macOS stealers either ship a richer geo block\n(Cthulhu's 9-field block, AMOS's 3-field block) or serialise\nsystem info to JSON (Banshee). The flat-key text shape plus\nthe missing country-code sibling field rules out all four\nregistered macOS formats (Cthulhu, MacSync, AMOS,\nCSMacUserinfo).\n\nFamily attribution is provisional. Public reporting and the\npublic stealer-format catalogues do not document a macOS\nfamily that emits this exact bare 2-line geo +\n`system_profiler` shape. Public coverage of macOS stealers\nfocuses on Cthulhu, AMOS, Banshee, Poseidon / Odyssey, and\nDigitStealer, but none of those writeups publish a sample\nmatching this layout.",
   "aliases": [
     "Bare 2-line geo macOS UserInformation.txt",
     "Stripped IP + Country macOS panel"
@@ -48,5 +48,40 @@
   "related_external": [
     "banshee-stealer"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSMacBareGeoStealer là định danh do CyStack đặt cho một panel macOS chỉ có phần header địa lý 2 dòng đơn giản, được quan sát bên trong các gói tổng hợp `!! 2025 DEC.part01.rar` tại các thư mục nạn nhân `[<CC>]<IPv4>/UserInformation.txt`. Phần thân bắt đầu chỉ với `IP: <ipv4>` và `Country: <full English name>` trên hai dòng, sau đó chuyển sang dữ liệu đầu ra nguyên văn dạng `system_profiler SPSoftwareDataType` / `SPHardwareDataType` / `SPDisplaysDataType`. Không có banner, không có dòng `Country Code:`, không có các trường `Region:` / `City:` / lat / lon / `Zipcode:` / `Timezone:`, không có nhãn `BuildID:` theo từng bản build, không có các dấu phân cách mục `MetaMask Info:` / `Debanks:` / `Userinfo:`, không có self-banner.\n\nHeader địa lý 2 dòng là điểm đặc trưng cho thấy panel này chỉ trích xuất tối thiểu. Các mã độc đánh cắp thông tin macOS đã được ghi nhận trước đây hoặc là đóng gói một khối địa lý phong phú hơn (khối 9 trường của Cthulhu, khối 3 trường của AMOS), hoặc tuần tự hóa thông tin hệ thống thành JSON (Banshee). Cấu trúc dữ liệu dạng văn bản khóa-phẳng cùng với việc thiếu trường mã quốc gia liên quan đã loại trừ cả bốn định dạng macOS đã được đăng ký (Cthulhu, MacSync, AMOS, CSMacUserinfo).\n\nViệc quy kết họ mã độc hiện chỉ mang tính tạm thời. Các báo cáo công khai và các danh mục định dạng mã độc đánh cắp thông tin công khai không ghi nhận một họ mã độc macOS nào tạo dữ liệu đầu ra đúng theo cấu trúc header địa lý 2 dòng đơn giản kèm `system_profiler` như thế này. Các tài liệu công khai về mã độc đánh cắp thông tin macOS tập trung vào Cthulhu, AMOS, Banshee, Poseidon / Odyssey và DigitStealer, nhưng không có bài viết nào trong số đó công bố một mẫu khớp với bố cục này.",
+      "typical_targets": [
+        "Thông tin xác thực được trình duyệt lưu lại (bản thân UserInformation.txt chỉ chứa thông tin hệ thống; thông tin xác thực thu thập được nằm trong các tệp liên quan trong kho lưu trữ của đối tượng vận hành)",
+        "Tên máy nạn nhân (trường `Computer Name:`)",
+        "Tên người dùng nạn nhân (cặp tên hiển thị `User Name:` + shortname)",
+        "Dấu vân tay phần cứng macOS (Chip, Hardware UUID, Serial Number, Memory, Resolution)",
+        "Phiên bản macOS + phiên bản kernel (`System Version:` / `Kernel Version:`)"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu các chuỗi con neo theo dòng `IP:` VÀ `Country:` VÀ `System Software Overview:` VÀ `Hardware Overview:` CỘNG với việc không có `Country Code:` (loại trừ Cthulhu và CSMacUserinfo) VÀ không có `BuildID:` (loại trừ Cthulhu) VÀ không có `MetaMask Info:` (loại trừ AMOS) VÀ không có `MacSync Stealer` (loại trừ MacSync). Các neo dương xác nhận đây là phần thân `system_profiler` của macOS; các neo âm nhường ưu tiên cho bốn định dạng macOS có phần địa lý phong phú hơn khi banner hoặc các trường của chúng xuất hiện. Trong quá trình phân tích ban đầu, giá trị `Country:` chứa tên đầy đủ bằng tiếng Anh của quốc gia (không phải mã ISO 2 chữ cái), vì vậy các bộ lọc theo quốc gia ở bước sau cần có bảng tra cứu tên sang mã ISO.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1518",
+          "name": "Dò tìm phần mềm"
+        },
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        }
+      ]
+    }
+  }
 }

@@ -71,5 +71,41 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSCountRunsStealer là định danh do CyStack đặt tên cho một bản tóm tắt panel gồm 11 dòng `Information.txt` được đóng khung bởi các ký tự vẽ khung đậm U+2500 và chia thành hai phần có tiêu đề, `SYSTEM INFORMATION` và `EXTRACTION RESULTS`.\n\nĐược quan sát bên trong các gói tổng hợp `!! 2025 NOV.part001.rar` trong các thư mục nạn nhân `[<TAG>]<IP>/Information.txt` (ví dụ `[AK]<IPv4>/Information.txt`), phân phối qua bộ tổng hợp Telegram `@BRADLOGS` chuyên bán lại nhiều họ mã độc đánh cắp thông tin khác nhau.\n\nKhối SYSTEM INFORMATION chứa năm trường: một dòng `Location: City, Country (ISP)` kết hợp (cấu trúc dữ liệu API định vị địa lý IP cấp tiêu dùng), tên máy `Device:`, `OS:` ở dạng `Windows <major>.<minor> (Build <build>)`, `IP:`, và một giá trị `Time:` theo cấu trúc dữ liệu JS `toLocaleString` là `MM/DD/YYYY, HH:MM:SS (UTC[+-]HH:MM)`. Khối EXTRACTION RESULTS chứa năm trường đếm: `Cookies:`, `Passwords:`, `Facebook:`, `CC with CVC:` (cách diễn đạt vụng về `with CVC` dùng cho thẻ tín dụng kèm CVV), và `Count Runs:` (một bộ đếm lần thực thi có khả năng tăng dần qua các lần chạy lặp lại trên cùng một nạn nhân). Việc quy kết họ mã độc hiện vẫn còn tạm thời, chờ có bản đồ tình báo mối đe dọa công khai cho định dạng tiêu đề này. Họ mã độc liên quan gần nhất đã được tài liệu hóa là Phemedrone, cũng ghi ra một bản tóm tắt `Information.txt` theo từng nạn nhân nhưng sử dụng các tiêu đề phần có gạch ngang (`----- Geolocation Data -----` / `----- Hardware Info -----`) và một tập trường khác.",
+      "typical_targets": [
+        "Cookie trình duyệt (cờ đếm cùng nội dung thu thập được trong các tệp liên quan)",
+        "Thông tin xác thực đã lưu của trình duyệt (cờ đếm cùng nội dung)",
+        "Thẻ tín dụng kèm CVC (cờ đếm)",
+        "Phiên đăng nhập Facebook (cờ đếm)",
+        "Metadata của máy: tên máy, phiên bản hệ điều hành kèm số build",
+        "IP công khai của nạn nhân cùng thông tin làm giàu thành phố / quốc gia / ISP"
+      ],
+      "detection_notes": "Việc lấy dấu vân tay đòi hỏi phải có tiêu đề giữa khung `EXTRACTION RESULTS` VÀ khóa trường `Count Runs:` VÀ một thanh dọc đậm U+2503 `┃`. Tên trường `Count Runs:` là duy nhất trong toàn bộ registry, và khung vẽ ký tự loại bỏ bất kỳ báo cáo dạng tự do nào tình cờ đề cập đến hai tiêu đề này. Trong quá trình phân loại, hãy coi việc quy kết họ mã độc là chưa xác định: bản tóm tắt panel là góc nhìn metadata của một mã độc đánh cắp thông tin bên dưới mà tên gọi chưa được ánh xạ với bố cục tiêu đề này trong bất kỳ báo cáo công khai nào. Các trường đếm `Facebook:` và `CC with CVC:` cho thấy mã độc đánh cắp thông tin bên dưới ưu tiên đánh cắp phiên đăng nhập tài khoản mạng xã hội song song với việc thu thập thông tin xác thực trình duyệt.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

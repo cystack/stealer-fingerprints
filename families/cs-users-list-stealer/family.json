@@ -3,7 +3,7 @@
   "name": "CSUsersListStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSUsersListStealer is a CyStack-coined identifier for a\nfive-line minimal `Information.txt` panel distributed through\nthe `@BRADLOGS` Telegram channel (active mirror of the\n`@BRADMAX` / `t.me/bradmax_cloud` aggregator that public\nchannel catalogues list as a \"Redline and Raccoon Data Logs\"\nreseller). Observed at `[<TAG>]@BRADLOGS (BRADMAX)\n(<NN>)/Information.txt` victim folders inside `!! 2025\nJULY.part001.rar` packs.\n\nThe body is three space-before-colon header lines (`HWID :\n<uuid>`, `IP : <ipv4>`, `Users : <comma-list>`) followed by\ntwo emoji-prefixed per-category count lines (`🔑 Passwords:\n<n>`, `🍪 Cookies: <n>`) separated from the header block by\nblank-line padding. No hostname, OS, build label, timestamp,\ncountry, or antivirus field is emitted.\n\nThe plural `Users :` line carries every Windows user profile\nenumerated from `C:\\Users\\`, including the real victim plus\nstale `TEMP` / `TEMP.DESKTOP-XXXX` / `TEMP.DESKTOP-XXXX.000`\nremnants left behind when `LoadUserProfile` failed and the OS\ncreated a throwaway profile directory. The multi-profile\nenumeration is unique to this panel across the catalog; canonical stealers ship only the current\n`Environment.UserName` value. The plural form points at a\nPython builder calling `os.listdir(r\"C:\\Users\")` rather than a\n.NET runtime API.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping. Community stealer-format catalogues do\nnot document a family that emits this exact five-line\nspace-before-colon shape with a plural-profile `Users :` line\nand `🔑` / `🍪` per-category count tail. The closest documented\nrelative is LucaStealer, whose summary format uses `✅`/`❌`\ncount indicators rather than the `🔑` / `🍪` category emoji used\nhere, and which ships no plural-profile `Users :` enumeration.\nThe aggregator self-label (Redline / Raccoon) cannot be\ntrusted because the body lacks every Redline canonical anchor\n(`Operation System:` typo, `Hardwares:` block) and every\nRaccoon canonical anchor (`User ID:` UUID, `Last seen:`\nJS-date).",
+  "description": "CSUsersListStealer is a CyStack-coined identifier for a\nfive-line minimal `Information.txt` panel distributed through\nthe `@BRADLOGS` Telegram channel (active mirror of the\n`@BRADMAX` / `t.me/bradmax_cloud` aggregator that public\nchannel catalogues list as a \"Redline and Raccoon Data Logs\"\nreseller). Observed at `[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/Information.txt` victim folders inside `!! 2025 JULY.part001.rar` packs.\n\nThe body is three space-before-colon header lines (`HWID : <uuid>`, `IP : <ipv4>`, `Users : <comma-list>`) followed by\ntwo emoji-prefixed per-category count lines (`🔑 Passwords: <n>`, `🍪 Cookies: <n>`) separated from the header block by\nblank-line padding. No hostname, OS, build label, timestamp,\ncountry, or antivirus field is emitted.\n\nThe plural `Users :` line carries every Windows user profile\nenumerated from `C:\\Users\\`, including the real victim plus\nstale `TEMP` / `TEMP.DESKTOP-XXXX` / `TEMP.DESKTOP-XXXX.000`\nremnants left behind when `LoadUserProfile` failed and the OS\ncreated a throwaway profile directory. The multi-profile\nenumeration is unique to this panel across the catalog; canonical stealers ship only the current\n`Environment.UserName` value. The plural form points at a\nPython builder calling `os.listdir(r\"C:\\Users\")` rather than a\n.NET runtime API.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping. Community stealer-format catalogues do\nnot document a family that emits this exact five-line\nspace-before-colon shape with a plural-profile `Users :` line\nand `🔑` / `🍪` per-category count tail. The closest documented\nrelative is LucaStealer, whose summary format uses `✅`/`❌`\ncount indicators rather than the `🔑` / `🍪` category emoji used\nhere, and which ships no plural-profile `Users :` enumeration.\nThe aggregator self-label (Redline / Raccoon) cannot be\ntrusted because the body lacks every Redline canonical anchor\n(`Operation System:` typo, `Hardwares:` block) and every\nRaccoon canonical anchor (`User ID:` UUID, `Last seen:`\nJS-date).",
   "aliases": [
     "@BRADLOGS five-line HWID-IP-Users panel",
     "BRADMAX minimal Information.txt with emoji counts"
@@ -75,5 +75,40 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSUsersListStealer là định danh do CyStack đặt cho một panel tối giản năm dòng `Information.txt` được phân phối qua kênh Telegram `@BRADLOGS` (bản sao đang hoạt động của bộ tổng hợp `@BRADMAX` / `t.me/bradmax_cloud` mà kênh công khai liệt kê là bên bán lại \"Redline and Raccoon Data Logs\"). Được quan sát tại các thư mục nạn nhân `[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/Information.txt` bên trong các gói `!! 2025 JULY.part001.rar`.\n\nPhần thân gồm ba dòng tiêu đề có khoảng trắng trước dấu hai chấm (`HWID : <uuid>`, `IP : <ipv4>`, `Users : <comma-list>`) tiếp theo là hai dòng đếm theo danh mục có tiền tố emoji (`🔑 Passwords: <n>`, `🍪 Cookies: <n>`), được ngăn cách với khối tiêu đề bằng dòng trống đệm. Không có trường hostname, hệ điều hành, nhãn build, dấu thời gian, quốc gia, hoặc phần mềm diệt virus nào được tạo dữ liệu đầu ra.\n\nDòng `Users :` ở dạng số nhiều liệt kê mọi hồ sơ người dùng Windows được liệt kê từ `C:\\Users\\`, bao gồm nạn nhân thật cùng với các dấu vết cũ `TEMP` / `TEMP.DESKTOP-XXXX` / `TEMP.DESKTOP-XXXX.000` còn sót lại khi `LoadUserProfile` thất bại và hệ điều hành tạo ra một thư mục hồ sơ tạm bỏ. Việc liệt kê nhiều hồ sơ là đặc điểm riêng biệt của panel này trong toàn bộ danh mục; các mã độc đánh cắp thông tin kinh điển chỉ xuất giá trị `Environment.UserName` hiện tại. Dạng số nhiều cho thấy một builder Python gọi `os.listdir(r\"C:\\Users\")` thay vì một API runtime .NET.\n\nViệc quy kết họ mã độc hiện vẫn là tạm thời, chờ một ánh xạ threat-intel được công bố. Các danh mục định dạng stealer của cộng đồng không ghi nhận họ mã độc nào tạo ra chính xác cấu trúc dữ liệu năm dòng với khoảng trắng trước dấu hai chấm này, có dòng `Users :` hồ sơ số nhiều cùng phần đuôi đếm theo danh mục `🔑` / `🍪`. Họ mã độc liên quan gần nhất được ghi nhận là LucaStealer, có định dạng tóm tắt sử dụng các chỉ báo đếm `✅`/`❌` thay vì emoji danh mục `🔑` / `🍪` được dùng ở đây, và không có việc liệt kê `Users :` hồ sơ số nhiều. Nhãn tự gán của bộ tổng hợp (Redline / Raccoon) không thể tin cậy được vì phần thân thiếu mọi mốc nhận diện kinh điển của Redline (lỗi chính tả `Operation System:`, khối `Hardwares:`) và mọi mốc nhận diện kinh điển của Raccoon (UUID `User ID:`, ngày kiểu JS `Last seen:`).",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt (cờ đếm trên `🔑 Passwords:`)",
+        "Cookie trình duyệt (cờ đếm trên `🍪 Cookies:`)",
+        "HWID Windows (`HWID :` dạng GetSystemUUID 8-4-4-4-12)",
+        "Địa chỉ IPv4 công khai (dòng `IP :`)",
+        "Liệt kê đầy đủ hồ sơ người dùng Windows (danh sách số nhiều `Users :`)"
+      ],
+      "detection_notes": "Việc nhận diện dấu hiệu yêu cầu các dòng neo theo vị trí `HWID :` VÀ `IP :` VÀ `Users :` (cả ba đều có dấu phân cách khoảng trắng trước dấu hai chấm) VÀ chuỗi con `🔑 Passwords:` VÀ chuỗi con `🍪 Cookies:`. Tổ hợp năm mốc nhận diện này là duy nhất trong toàn bộ danh mục: bộ ba khoảng trắng trước dấu hai chấm trên các dòng tiêu đề là đặc điểm riêng phía nhà phát triển của panel, và khi kết hợp với cả hai nhãn đếm emoji thì loại trừ khả năng đây là Redline kinh điển (vốn dùng khoảng trắng-hai chấm-khoảng trắng `Field : value` nhưng có lỗi chính tả `Operation System:` và các khối `Hardwares:` / `Anti-Viruses:` không xuất hiện ở đây). Trong quá trình phân loại ban đầu, hãy coi nhãn này là một khung nhìn tóm tắt phía panel (chỉ có số đếm): thông tin xác thực thực sự bị đánh cắp nằm trong các tệp liên quan trong kho lưu trữ của đối tượng vận hành, chứ không nằm trong phần thân của Information.txt này. Builder gốc chưa được xác định.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        }
+      ]
+    }
+  }
 }

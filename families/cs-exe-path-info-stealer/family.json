@@ -38,5 +38,35 @@
     "cs-info-network-section-stealer"
   ],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSExePathInfoStealer là định danh do CyStack đặt cho một panel ``system_info.txt`` có định dạng độ rộng cố định với nhiều khoảng đệm, đặc trưng bởi trường tiêu đề chữ hoa-gạch dưới ``EXE_PATH:``. Được quan sát bên trong gói tổng hợp ``5,6 APRIL - 10250 LOGS.part1.rar`` tại ``<32-char>_<TIMESTAMP>/system_info.txt`` thư mục nạn nhân, nơi quy ước đặt tên kho lưu trữ với các ngày phân tách bằng dấu phẩy tương tự ``CSStartBuildInfoStealer`` (``4,5 MAY``).\n\nĐây là biến thể thứ ba của một họ panel-builder phổ biến, có chung trường ``UserName`` / ``Username`` chú thích trong ngoặc đơn và phong cách căn chỉnh cột dày đặc với ``CSStartBuildInfoStealer`` và ``CSInfoNetworkSectionStealer``, nhưng mỗi biến thể tạo dữ liệu đầu ra với quy ước chính tả khóa trường riêng biệt. Biến thể này sử dụng ``Operating system:`` (chữ thường sau từ đầu tiên, dạng đầy đủ), ``Memory ram:`` (chữ r thường ``ram``), ``Video card:`` (có khoảng trắng), ``Username (Computername):`` (ngoặc sát nhau, chữ c thường), và một mục ``[Software]`` duy nhất đặt trong dấu ngoặc vuông.\n\nDấu thời gian log 2021-01-19 trên các mẫu quan sát được cho thấy đây là một builder cũ, có nghiên cứu định dạng panel diễn ra trước các báo cáo công khai hiện tại. Việc quy kết họ mã độc vẫn mang tính tạm thời cho đến khi có ánh xạ tình báo mối đe dọa được công bố.",
+      "typical_targets": [
+        "Dấu vết nhận diện hệ điều hành máy và phần cứng (phiên bản + số bản dựng Windows, CPU với số lõi chữ thường, GPU với khóa Video card từ chữ thường ở từ thứ hai, RAM, độ phân giải màn hình, ngôn ngữ)",
+        "Thông tin định danh tài khoản (tên người dùng + tên máy tính từ trường ``Username (Computername)`` ngoặc sát nhau)",
+        "Đường dẫn cài đặt trình thu thập (giá trị ``EXE_PATH:`` trỏ đến tệp .com tên ngẫu nhiên được thả trong thư mục con TMP IXP)",
+        "Danh sách phần mềm đã cài đặt (mục ``[Software]`` trong ngoặc vuông kèm thẻ phiên bản theo từng chương trình)"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu bốn điểm neo được neo theo dòng: ``EXE_PATH:``, ``Operating system:``, ``Memory ram:``, và ``Username (Computername):``. Sự kết hợp bốn điểm neo này là đặc trưng riêng trong toàn bộ danh mục và tách biệt với các định dạng liên quan ``CSStartBuildInfoStealer`` và ``CSInfoNetworkSectionStealer``, vốn mỗi định dạng đòi hỏi các điểm neo chính tả khóa khác nhau. Trong quá trình phân loại ban đầu, hãy đối chiếu giá trị ``EXE_PATH:`` với một thư mục con TMP IXP để xác định đường dẫn tiến trình thu thập.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1518",
+          "name": "Dò tìm phần mềm"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        }
+      ]
+    }
+  }
 }

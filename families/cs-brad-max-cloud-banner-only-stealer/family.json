@@ -3,7 +3,7 @@
   "name": "CSBradMaxCloudBannerOnlyStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSBradMaxCloudBannerOnlyStealer is a CyStack-coined\nidentifier for a banner-only `system_info.txt` shape\ndistributed through the @bradmax_cloud Telegram channel.\nThe file ships the aBradMax Figlet banner inside a\n`*`-bordered frame with the\n`Telegram: https://t.me/BRADMAX_CLOUD` watermark and\nnothing else: no `Key: Value` field block, no section\nseparators, no installed-software inventory or environment-variable dump. The underlying stealer panel template\nemitted the header but the field-population step failed\n(operator-side normalization failure, anti-leech truncation, or\nthe source log was captured mid-write).\n\nObserved inside `!! 2024 MAY.part01.rar` packs at\n`<CC>_<IPv4>_<YYYY>_<MM>_<DD>_<HH>_<MM>_<SS>/\n/system_info.txt` victim folders (e.g.\n`CZ_<IPv4>_2024_04_22_16_05_20/system_info.txt`).\nThe all-underscore timestamp separators distinguish this\nfolder shape from the Mars-fork sibling that puts a space\nbetween the date and time components. The file basename\n`system_info.txt` (underscore + lowercase) is distinct\nfrom the `system.txt` / `System.txt` / `Information.txt`\nfilenames the other four BRADMAX_CLOUD slices use, but\nthe fingerprint relies on body content rather than the filename\nso that variant filenames carrying the same banner-only\nbody remains identifiable.",
+  "description": "CSBradMaxCloudBannerOnlyStealer is a CyStack-coined\nidentifier for a banner-only `system_info.txt` shape\ndistributed through the @bradmax_cloud Telegram channel.\nThe file ships the aBradMax Figlet banner inside a\n`*`-bordered frame with the\n`Telegram: https://t.me/BRADMAX_CLOUD` watermark and\nnothing else: no `Key: Value` field block, no section\nseparators, no installed-software inventory or environment-variable dump. The underlying stealer panel template\nemitted the header but the field-population step failed\n(operator-side normalization failure, anti-leech truncation, or\nthe source log was captured mid-write).\n\nObserved inside `!! 2024 MAY.part01.rar` packs at\n`<CC>_<IPv4>_<YYYY>_<MM>_<DD>_<HH>_<MM>_<SS>/ /system_info.txt` victim folders (e.g.\n`CZ_<IPv4>_2024_04_22_16_05_20/system_info.txt`).\nThe all-underscore timestamp separators distinguish this\nfolder shape from the Mars-fork sibling that puts a space\nbetween the date and time components. The file basename\n`system_info.txt` (underscore + lowercase) is distinct\nfrom the `system.txt` / `System.txt` / `Information.txt`\nfilenames the other four BRADMAX_CLOUD slices use, but\nthe fingerprint relies on body content rather than the filename\nso that variant filenames carrying the same banner-only\nbody remains identifiable.",
   "aliases": [
     "@BRADMAX_CLOUD empty-body system_info.txt stub",
     "BRADMAX_CLOUD banner-only skeleton sample"
@@ -25,5 +25,20 @@
     "mars-stealer"
   ],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSBradMaxCloudBannerOnlyStealer là định danh do CyStack đặt cho một cấu trúc dữ liệu `system_info.txt` chỉ chứa banner, được phát tán qua kênh Telegram @bradmax_cloud.\nTệp này chứa banner Figlet aBradMax bên trong một khung viền `*` kèm watermark `Telegram: https://t.me/BRADMAX_CLOUD` và không có gì khác: không có khối trường `Key: Value`, không có dấu phân tách phần, không có danh mục phần mềm đã cài đặt hay bản kết xuất biến môi trường. Mẫu giao diện quản trị (panel) của mã độc đánh cắp thông tin bên dưới đã tạo dữ liệu đầu ra phần header nhưng bước điền trường bị lỗi (lỗi chuẩn hóa dữ liệu từ phía đối tượng vận hành, bị cắt bớt do cơ chế chống rò rỉ (anti-leech), hoặc log nguồn bị thu thập giữa lúc đang ghi).\n\nĐược quan sát bên trong các gói `!! 2024 MAY.part01.rar` tại các thư mục nạn nhân `<CC>_<IPv4>_<YYYY>_<MM>_<DD>_<HH>_<MM>_<SS>/ /system_info.txt` (ví dụ `CZ_<IPv4>_2024_04_22_16_05_20/system_info.txt`).\nCác dấu phân tách timestamp toàn dấu gạch dưới giúp phân biệt cấu trúc thư mục này với dạng liên quan thuộc nhánh rẽ (fork) Mars, vốn đặt một dấu cách giữa phần ngày và phần giờ. Tên tệp cơ sở `system_info.txt` (dùng dấu gạch dưới + chữ thường) khác với các tên tệp `system.txt` / `System.txt` / `Information.txt` mà bốn phần còn lại của BRADMAX_CLOUD sử dụng, nhưng dấu hiệu nhận diện dựa vào nội dung phần thân tệp thay vì tên tệp, nhờ đó các biến thể tên tệp khác mang cùng phần thân chỉ chứa banner vẫn có thể được nhận diện.",
+      "typical_targets": [
+        "Chỉ có siêu dữ liệu quy kết theo kênh; không có trường dữ liệu nạn nhân hoặc thiết bị nào có thể trích xuất"
+      ],
+      "detection_notes": "Việc nhận diện đòi hỏi đồng thời cả watermark `Telegram: https://t.me/BRADMAX_CLOUD` VÀ nội dung tệp (sau khi rstrip) kết thúc bằng ít nhất 20 ký tự `*` liên tiếp - phần viền đóng của banner. Các dấu vết liên quan có chứa phần thân dữ liệu (DCRat, Lumma, được tạo bởi bộ chuẩn hóa, nhánh rẽ Mars) đều kết thúc bằng một dòng trường dữ liệu không thỏa điều kiện kiểm tra đuôi dấu hoa thị, do đó tiêu chí phân biệt này là rõ ràng, không mập mờ. Trong quá trình phân loại ban đầu (triage), nên coi họ mã độc đánh cắp thông tin bên dưới là không thể quy kết: mẫu chỉ chứa banner không mang bất kỳ tín hiệu nào giúp xác định gắn với một bộ công cụ dựng mã độc (builder) cụ thể. Các tệp liên quan trong thư mục nạn nhân (bản kết xuất trình duyệt, dữ liệu ví xuất ra) mới chứa thông tin xác thực thực sự bị thu thập; stub chỉ chứa banner `system_info.txt` chỉ là phần đầu (header stub).",
+      "attack_techniques": [
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

@@ -39,5 +39,34 @@
   ],
   "sources": [],
   "canonical_family": "lumma",
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSKortexStealer là định danh do CyStack đặt cho log `KORTEX // STEAL` `System.txt` được quan sát bên trong gói phân phối Telegram-pack `APRIL 25 - 19977 LOGS` trong các thư mục nạn nhân `<CC>_<IP>_<DD-MM-YY>/` cùng với các cấu trúc dữ liệu XFiles và RedlineLikeStealer. Định dạng này kết hợp một khối thông tin định danh có tiền tố dấu gạch ngang với các bản ghi phần cứng được chia theo mục.",
+      "typical_targets": [],
+      "detection_notes": "Dòng biểu ngữ `- KORTEX // STEAL` được neo theo dòng với hai dấu gạch chéo là chỉ báo kích hoạt rõ ràng nhất. Phần mở đầu trường có tiền tố dấu gạch ngang (`- Path:`, `- ID:`, `- OS Version:`, v.v.) cũng xuất hiện ở các biến thể có cấu trúc dữ liệu dạng Lumma, nhưng biểu ngữ KORTEX là duy nhất.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

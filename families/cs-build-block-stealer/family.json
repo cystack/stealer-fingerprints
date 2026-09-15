@@ -3,7 +3,7 @@
   "name": "CSBuildBlockStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSBuildBlockStealer is a CyStack-coined identifier for a\n`UserInformation.txt` shape distributed via `@ft7links`\naggregator packs that the operator mislabels as `redline`. The\nbody is a flat key/value block whose distinguishing feature is\na four-line `Build Path:` / `Build ID:` / `Build Version:` /\n`Build Comment:` group plus an `Active window:` line and a\ntwo-letter `GEO:` country code. None of the canonical Redline\nanchors (`Operation System:` typo, `FileLocation:`,\n`Hardwares:` block, `Anti-Viruses:` block) appear, so the\naggregator label cannot be trusted.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and the\npublic stealer-format catalogues do not document a family\nusing this exact `Build` block plus `Active window:` plus\n`GEO:` field set. Aurora ships `Build ID` paired with `Build\nGroup`; RisePro ships `Build` and `HWID` only; Mystic Stealer\nis documented at the protocol level rather than the\nlog-template level - none match.",
+  "description": "CSBuildBlockStealer is a CyStack-coined identifier for a\n`UserInformation.txt` shape distributed via `@ft7links`\naggregator packs that the operator mislabels as `redline`. The\nbody is a flat key/value block whose distinguishing feature is\na four-line `Build Path:` / `Build ID:` / `Build Version:` /\n`Build Comment:` group plus an `Active window:` line and a\ntwo-letter `GEO:` country code. None of the canonical Redline\nanchors (`Operation System:` typo, `FileLocation:`,\n`Hardwares:` block, `Anti-Viruses:` block) appear, so the\naggregator label cannot be trusted.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and the\npublic stealer-format catalogues do not document a family\nusing this exact `Build` block plus `Active window:` plus\n`GEO:` field set. Aurora ships `Build ID` paired with `Build Group`; RisePro ships `Build` and `HWID` only; Mystic Stealer\nis documented at the protocol level rather than the\nlog-template level - none match.",
   "aliases": [],
   "typical_targets": [
     "Browser saved credentials and cookies",
@@ -66,5 +66,38 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSBuildBlockStealer là định danh do CyStack đặt cho một cấu trúc dữ liệu `UserInformation.txt` được phân phối qua các gói tổng hợp `@ft7links` mà đối tượng vận hành gắn nhãn sai là `redline`. Phần thân là một khối key/value phẳng có đặc điểm nhận dạng là nhóm bốn dòng `Build Path:` / `Build ID:` / `Build Version:` / `Build Comment:` cộng với một dòng `Active window:` và mã quốc gia hai chữ cái `GEO:`. Không có dấu vết đặc trưng chuẩn nào của Redline xuất hiện (lỗi chính tả `Operation System:`, `FileLocation:`, khối `Hardwares:`, khối `Anti-Viruses:`), do đó nhãn của gói tổng hợp không thể tin cậy được.\n\nViệc quy kết họ mã độc hiện chỉ mang tính tạm thời, chờ có ánh xạ tình báo mối đe dọa được công bố cho bố cục này. Các báo cáo công khai và các danh mục định dạng mã độc đánh cắp thông tin công khai không ghi nhận họ mã độc nào sử dụng đúng bộ trường gồm khối `Build` cộng `Active window:` cộng `GEO:` này. Aurora tạo dữ liệu đầu ra `Build ID` đi kèm với `Build Group`; RisePro chỉ tạo dữ liệu đầu ra `Build` và `HWID`; Mystic Stealer được ghi nhận ở cấp độ giao thức thay vì cấp độ mẫu log - không có trường hợp nào khớp.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trong trình duyệt",
+        "Tiện ích mở rộng ví tiền mã hóa và ứng dụng desktop",
+        "Thông tin phần cứng hệ thống và ngôn ngữ/vùng"
+      ],
+      "detection_notes": "Yêu cầu đầy đủ cả năm khóa gắn theo dòng: `Build Path:`, `Build ID:`, `Build Version:`, `Build Comment:`, và `Active window:`. Tổ hợp năm khóa này là duy nhất trong toàn bộ danh mục; một tài liệu bất kỳ chỉ trích dẫn một hoặc hai trong số các tên trường này không thể tạo ra kết quả trùng khớp giả. Trong quá trình phân loại ban đầu, cần coi việc quy kết họ mã độc là tạm thời - gói tổng hợp gắn nhãn gói này là `redline` nhưng phần thân lại thiếu mọi dấu vết đặc trưng chuẩn của Redline.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

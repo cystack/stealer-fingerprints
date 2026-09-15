@@ -3,7 +3,7 @@
   "name": "CSSlurmCloudStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSSlurmCloudStealer is a CyStack-coined identifier for a\n.NET-based stealer that self-identifies with the single-line\nbanner ``Slurm Cloud | Private — The best logs on the market``\nat the top of its ``system_info.txt`` file. Body vocabulary is\nbyte-for-byte identical to the sibling ``CSJohnDoeProject``\nvariant (same .NET-canonical field set, same duplicate\n``RAM:`` key with battery mislabel, same ``=== ENVIRONMENT\nVARIABLES ===`` section trailer). Both channels appear to\nresell a common private C# stealer template rather than\ndistinct forks; only the operator banner at the top of the\nfile differs.\n\nThe ``Slurm Private TG ArhontCorp`` and ``KATANA CLOUD PRIVATE\nTG ArhontCorp`` entries appear in public breach-data indexes.\nArhontCorp is the aggregator collective running the Slurm\nCloud panel. No public research has published a mapping to the\nunderlying builder; attribution is provisional pending a\nthreat-intel report on the private .NET template.",
+  "description": "CSSlurmCloudStealer is a CyStack-coined identifier for a\n.NET-based stealer that self-identifies with the single-line\nbanner ``Slurm Cloud | Private — The best logs on the market``\nat the top of its ``system_info.txt`` file. Body vocabulary is\nbyte-for-byte identical to the sibling ``CSJohnDoeProject``\nvariant (same .NET-canonical field set, same duplicate\n``RAM:`` key with battery mislabel, same ``=== ENVIRONMENT VARIABLES ===`` section trailer). Both channels appear to\nresell a common private C# stealer template rather than\ndistinct forks; only the operator banner at the top of the\nfile differs.\n\nThe ``Slurm Private TG ArhontCorp`` and ``KATANA CLOUD PRIVATE TG ArhontCorp`` entries appear in public breach-data indexes.\nArhontCorp is the aggregator collective running the Slurm\nCloud panel. No public research has published a mapping to the\nunderlying builder; attribution is provisional pending a\nthreat-intel report on the private .NET template.",
   "aliases": [
     "Slurm Cloud banner stealer",
     "ArhontCorp Slurm Private slice"
@@ -33,5 +33,31 @@
     "cs-john-doe-project-stealer"
   ],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSSlurmCloudStealer là định danh do CyStack đặt tên cho một mã độc đánh cắp thông tin dựa trên .NET, tự nhận diện bằng một banner một dòng ``Slurm Cloud | Private — The best logs on the market`` ở đầu tệp ``system_info.txt``. Từ vựng trong phần thân trùng khớp từng byte với biến thể liên quan ``CSJohnDoeProject`` (cùng bộ trường .NET-canonical, cùng khóa ``RAM:`` trùng lặp với lỗi gán nhãn pin, cùng phần kết thúc mục ``=== ENVIRONMENT VARIABLES ===``). Cả hai kênh dường như đang bán lại chung một mẫu (template) mã độc đánh cắp thông tin bằng C# thuộc sở hữu tư nhân thay vì là các nhánh (fork) riêng biệt; chỉ khác nhau ở banner của đối tượng vận hành ở đầu tệp.\n\nCác mục ``Slurm Private TG ArhontCorp`` và ``KATANA CLOUD PRIVATE TG ArhontCorp`` xuất hiện trong các chỉ mục dữ liệu rò rỉ công khai. ArhontCorp là tập thể tổng hợp dữ liệu vận hành bảng điều khiển Slurm Cloud. Chưa có nghiên cứu công khai nào công bố ánh xạ tới công cụ xây dựng (builder) nền tảng; việc quy kết hiện mang tính tạm thời cho đến khi có báo cáo tình báo về mối đe dọa liên quan đến mẫu .NET tư nhân này.",
+      "typical_targets": [
+        "Dấu vân tay phần cứng máy và hệ điều hành (CPU, GPU, RAM, độ phân giải, phiên bản Windows, .NET Runtime, CLR)",
+        "Danh tính mạng (địa chỉ IP LAN, cổng mặc định)",
+        "Danh tính tài khoản (tên người dùng Windows, tên máy tính)",
+        "Bản dump toàn bộ biến môi trường Windows"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu chuỗi con banner ``Slurm Cloud | Private`` và khóa trường ``CLR Version:`` được neo theo dòng. Cụm từ banner phân tách bằng dấu gạch đứng (pipe) là định danh tự nhận của đối tượng vận hành — không có kênh nào khác trong tập dữ liệu khảo sát sử dụng cụm từ này. Khi rà soát phân loại, hãy đối chiếu panel_brand với siêu dữ liệu liên quan của ``CSJohnDoeProject``: cả hai kênh dường như đang bán lại chung một công cụ xây dựng (builder) nền tảng, do đó việc trùng lặp dấu vân tay phần cứng nạn nhân giữa hai bảng điều khiển là điều có thể dự đoán trước. Các tệp đi kèm trong thư mục nạn nhân (dữ liệu xuất từ trình duyệt, dump cookie, dấu vết ví) có thể cung cấp độ tin cậy cao hơn cho việc quy kết họ mã độc.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        }
+      ]
+    }
+  }
 }

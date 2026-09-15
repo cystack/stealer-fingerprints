@@ -3,7 +3,7 @@
   "name": "CSDualArchStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSDualArchStealer is a CyStack-coined identifier for a minimal\n6-field `Info.txt` panel with a bare `System Information:`\nsection header and dual `Process Architecture:` + `OS\nArchitecture:` fields. Observed inside `@BRADMAX 12000\nFEB-MARCH.part1.rar` at `@BRADMAX <count>\n<MONTHS>/[<CC>]@BRADMAX (<N>)/ Info.txt` victim folders (e.g.\n`[UN]@BRADMAX (140)/ Info.txt`).\n\nThe body ships exactly seven lines: a section-header line\n`System Information:` followed by six `Key: Value` fields.\nEach field maps directly to a .NET `Environment` class\nproperty: `OS:` (WMI or\n`Environment.OSVersion.VersionString`), `Machine Name:`\n(`Environment.MachineName`), `User Name:`\n(`Environment.UserName`), `Current Directory:`\n(`Environment.CurrentDirectory`), `Process Architecture:`\n(`Environment.Is64BitProcess` rendered as `x64` / `x86`), `OS\nArchitecture:` (`Environment.Is64BitOperatingSystem` rendered\nas `x64` / `x86`). The `Current Directory` value in the\nobserved sample points at PowerShell as the execution context\n(`C:\\Windows\\system32\\WindowsPowerShell\\v1.0`), suggesting a\nPowerShell-based dropper chain.\n\nExtremely minimal - no hardware inventory, no identity fields\nbeyond hostname and short-username, no timestamps. The panel\nis a small .NET Environment-query snapshot rather than a full\nstealer log.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping. Public reporting and community\ncatalogues do not attest a family emitting exactly this\n6-field layout with the dual architecture pair.",
+  "description": "CSDualArchStealer is a CyStack-coined identifier for a minimal\n6-field `Info.txt` panel with a bare `System Information:`\nsection header and dual `Process Architecture:` + `OS Architecture:` fields. Observed inside `@BRADMAX 12000 FEB-MARCH.part1.rar` at `@BRADMAX <count> <MONTHS>/[<CC>]@BRADMAX (<N>)/ Info.txt` victim folders (e.g.\n`[UN]@BRADMAX (140)/ Info.txt`).\n\nThe body ships exactly seven lines: a section-header line\n`System Information:` followed by six `Key: Value` fields.\nEach field maps directly to a .NET `Environment` class\nproperty: `OS:` (WMI or\n`Environment.OSVersion.VersionString`), `Machine Name:`\n(`Environment.MachineName`), `User Name:`\n(`Environment.UserName`), `Current Directory:`\n(`Environment.CurrentDirectory`), `Process Architecture:`\n(`Environment.Is64BitProcess` rendered as `x64` / `x86`), `OS Architecture:` (`Environment.Is64BitOperatingSystem` rendered\nas `x64` / `x86`). The `Current Directory` value in the\nobserved sample points at PowerShell as the execution context\n(`C:\\Windows\\system32\\WindowsPowerShell\\v1.0`), suggesting a\nPowerShell-based dropper chain.\n\nExtremely minimal - no hardware inventory, no identity fields\nbeyond hostname and short-username, no timestamps. The panel\nis a small .NET Environment-query snapshot rather than a full\nstealer log.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping. Public reporting and community\ncatalogues do not attest a family emitting exactly this\n6-field layout with the dual architecture pair.",
   "aliases": [
     "Dual-Architecture .NET Environment Info.txt",
     "BRADMAX minimal System Information panel"
@@ -38,5 +38,33 @@
   "observed_channels": [
     "https://t.me/BRADLOGS"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSDualArchStealer là định danh do CyStack đặt tên cho một panel tối giản gồm 6 trường `Info.txt` với một tiêu đề mục `System Information:` trần và cặp trường kép `Process Architecture:` + `OS Architecture:`. Được quan sát bên trong `@BRADMAX 12000 FEB-MARCH.part1.rar` tại các thư mục nạn nhân `@BRADMAX <count> <MONTHS>/[<CC>]@BRADMAX (<N>)/ Info.txt` (ví dụ: `[UN]@BRADMAX (140)/ Info.txt`).\n\nPhần nội dung chứa đúng bảy dòng: một dòng tiêu đề mục `System Information:` theo sau là sáu trường `Key: Value`. Mỗi trường ánh xạ trực tiếp đến một thuộc tính lớp `Environment` của .NET: `OS:` (WMI hoặc `Environment.OSVersion.VersionString`), `Machine Name:` (`Environment.MachineName`), `User Name:` (`Environment.UserName`), `Current Directory:` (`Environment.CurrentDirectory`), `Process Architecture:` (`Environment.Is64BitProcess` được hiển thị dưới dạng `x64` / `x86`), `OS Architecture:` (`Environment.Is64BitOperatingSystem` được hiển thị dưới dạng `x64` / `x86`). Giá trị `Current Directory` trong mẫu quan sát được trỏ đến PowerShell như bối cảnh thực thi (`C:\\Windows\\system32\\WindowsPowerShell\\v1.0`), gợi ý một chuỗi dropper dựa trên PowerShell.\n\nCực kỳ tối giản - không có thông tin kiểm kê phần cứng, không có trường định danh nào ngoài tên máy và tên đăng nhập rút gọn, không có dấu thời gian. Panel này là một bản chụp truy vấn Environment nhỏ của .NET hơn là một log mã độc đánh cắp thông tin đầy đủ.\n\nViệc quy kết họ mã độc hiện vẫn mang tính tạm thời cho đến khi có ánh xạ tình báo mối đe dọa được công bố. Các báo cáo công khai và danh mục cộng đồng chưa xác nhận có họ mã độc nào tạo dữ liệu đầu ra đúng bố cục 6 trường này cùng cặp trường kiến trúc kép.",
+      "typical_targets": [
+        "Tên hệ điều hành (OS caption - phiên bản Windows)",
+        "Tên máy (Machine name - Environment.MachineName)",
+        "Tên đăng nhập rút gọn của người dùng hệ điều hành (Environment.UserName)",
+        "Thư mục làm việc hiện tại (Environment.CurrentDirectory)",
+        "Kiến trúc bit của tiến trình (Process bitness - Environment.Is64BitProcess)",
+        "Kiến trúc bit của hệ điều hành (OS bitness - Environment.Is64BitOperatingSystem)"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện đòi hỏi năm khóa gắn theo dòng: tiêu đề mục trần `System Information:` VÀ `Machine Name:` VÀ `Current Directory:` VÀ `Process Architecture:` VÀ `OS Architecture:`. Cặp trường kiến trúc kép với chính xác cách viết khóa này là duy nhất trong toàn bộ các định dạng đã được lập danh mục. Trong quá trình phân loại ban đầu, giá trị `Current Directory` thường mang bối cảnh thực thi của dropper (thư mục trình thông dịch PowerShell trong mẫu quan sát được); hãy truy theo đường dẫn đó để xác định tiến trình cha. Dấu vết liên quan `CSTop20ProcStealer` cũng sử dụng các thuộc tính lớp `Environment` của .NET nhưng tạo dữ liệu đầu ra dưới dạng boolean `64-bit OS: True` / `64-bit Process: False` dưới các tiêu đề mục khác nhau.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1083",
+          "name": "Dò tìm tệp và thư mục"
+        }
+      ]
+    }
+  }
 }

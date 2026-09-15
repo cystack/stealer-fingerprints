@@ -3,7 +3,7 @@
   "name": "Arcane",
   "classification": "known_family",
   "attribution_confidence": "high",
-  "description": "Arcane is a Russian-targeted info-stealer first publicly\ndocumented in March 2025. The family is a successor to the VGS\nstealer, itself a Phemedrone derivative. Distribution runs\nthrough YouTube videos and Discord servers advertising game\ncheats and VPN cracks: a password-protected archive contains a\n`start.bat` that downloads a second payload via PowerShell and\ndrops both a miner and the Arcane binary. Most observed\nvictims are in Russia, Belarus, and Kazakhstan. A\ndistinguishing on-host artifact is the embedded `xaitax.exe`\nutility (also seen as `xaitx.exe`) that Arcane drops to disk\nto crack Chromium DPAPI keys by reading the keys off the\nutility's console output.\n\nThe operator-facing system summary is a flat `Information.txt`\nopened with a triple-dash `---User Info---` section (Worker,\nDate Install, ISO Key, Clipboard, External IP, Internal IP,\nGateway IP) and a triple-dash `---Full Pc Info---` section\nwhose body is a series of triple-equals `=== <subsection>\nInformation ===` blocks carrying raw WMI query output for CPU,\nGPU, RAM, Disk, Network Adapter, Windows Version, Motherboard,\nBIOS, User Account, Time Zone, Screen, AntiVirus, and Logical\nProcesses. Failed WMI queries leave a Russian-language\n`Произошла ошибка` ('An error occurred') line in place of the\nsubsection body.",
+  "description": "Arcane is a Russian-targeted info-stealer first publicly\ndocumented in March 2025. The family is a successor to the VGS\nstealer, itself a Phemedrone derivative. Distribution runs\nthrough YouTube videos and Discord servers advertising game\ncheats and VPN cracks: a password-protected archive contains a\n`start.bat` that downloads a second payload via PowerShell and\ndrops both a miner and the Arcane binary. Most observed\nvictims are in Russia, Belarus, and Kazakhstan. A\ndistinguishing on-host artifact is the embedded `xaitax.exe`\nutility (also seen as `xaitx.exe`) that Arcane drops to disk\nto crack Chromium DPAPI keys by reading the keys off the\nutility's console output.\n\nThe operator-facing system summary is a flat `Information.txt`\nopened with a triple-dash `---User Info---` section (Worker,\nDate Install, ISO Key, Clipboard, External IP, Internal IP,\nGateway IP) and a triple-dash `---Full Pc Info---` section\nwhose body is a series of triple-equals `=== <subsection> Information ===` blocks carrying raw WMI query output for CPU,\nGPU, RAM, Disk, Network Adapter, Windows Version, Motherboard,\nBIOS, User Account, Time Zone, Screen, AntiVirus, and Logical\nProcesses. Failed WMI queries leave a Russian-language\n`Произошла ошибка` ('An error occurred') line in place of the\nsubsection body.",
   "aliases": [
     "Arcane Stealer",
     "VGS Stealer (predecessor)"
@@ -18,7 +18,7 @@
     "Telegram and Discord session data",
     "System hardware inventory and saved Wi-Fi networks"
   ],
-  "detection_notes": "Fingerprint: line-anchored `---User Info---` AND\n`---Full Pc Info---`. The triple-dash section pair is\nunique to Arcane's Information.txt across this catalog.\nTwo strong triage signals on top: a Russian\n`Произошла ошибка` line where WMI subsections failed\n(targets are predominantly Russian-speaking), and a\n`xaitax.exe` or `xaitx.exe` process in the `=== Logical\nProcesses Information ===` block (the embedded Chromium\nDPAPI cracker is the malware-specific binary). During\nincident response, check sibling files for browser-data\ndumps, wallet folders, and VPN config exports - Arcane\ncollects each artifact class into a separate file.",
+  "detection_notes": "Fingerprint: line-anchored `---User Info---` AND\n`---Full Pc Info---`. The triple-dash section pair is\nunique to Arcane's Information.txt across this catalog.\nTwo strong triage signals on top: a Russian\n`Произошла ошибка` line where WMI subsections failed\n(targets are predominantly Russian-speaking), and a\n`xaitax.exe` or `xaitx.exe` process in the `=== Logical Processes Information ===` block (the embedded Chromium\nDPAPI cracker is the malware-specific binary). During\nincident response, check sibling files for browser-data\ndumps, wallet folders, and VPN config exports - Arcane\ncollects each artifact class into a separate file.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -138,5 +138,55 @@
       },
       "layout_id": "sectioned-user-info"
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Arcane là mã độc đánh cắp thông tin nhắm mục tiêu vào Nga, được ghi nhận công khai lần đầu vào tháng 3 năm 2025. Họ mã độc này là bản kế thừa của mã độc VGS, vốn là một biến thể của Phemedrone. Việc phát tán diễn ra qua các video YouTube và máy chủ Discord quảng cáo hack game và công cụ crack VPN: một tệp nén được bảo vệ bằng mật khẩu chứa `start.bat` tải xuống một tải trọng thứ hai qua PowerShell và thả xuống đĩa cả một trình đào tiền mã hóa lẫn tệp nhị phân Arcane. Hầu hết nạn nhân được ghi nhận ở Nga, Belarus và Kazakhstan. Một dấu vết đặc trưng trên máy là tiện ích `xaitax.exe` được nhúng (cũng thấy dưới tên `xaitx.exe`) mà Arcane ghi ra đĩa để bẻ khóa DPAPI của Chromium bằng cách đọc các khóa từ dữ liệu đầu ra trên console của tiện ích này.\n\nBản tóm tắt hệ thống dành cho đối tượng vận hành là một `Information.txt` phẳng, mở đầu bằng một phần `---User Info---` với dấu gạch ngang ba lần (Worker, Date Install, ISO Key, Clipboard, External IP, Internal IP, Gateway IP) và một phần `---Full Pc Info---` với dấu gạch ngang ba lần, có nội dung là một chuỗi các khối `=== <subsection> Information ===` với dấu bằng ba lần, chứa dữ liệu đầu ra thô của truy vấn WMI cho CPU, GPU, RAM, Disk, Network Adapter, Windows Version, Motherboard, BIOS, User Account, Time Zone, Screen, AntiVirus và Logical Processes. Các truy vấn WMI thất bại để lại một dòng tiếng Nga `Произошла ошибка` ('Đã xảy ra lỗi') thay cho nội dung phần con đó.",
+      "typical_targets": [
+        "Thông tin xác thực, cookie, dữ liệu tự động điền, lịch sử duyệt web được trình duyệt lưu (Chromium và Gecko)",
+        "Khóa DPAPI của trình duyệt được bẻ khóa thông qua tiện ích xaitax được nhúng",
+        "Cấu hình ứng dụng VPN (OpenVPN, Mullvad, NordVPN, IPVanish, Surfshark, Proton, hide.me, PIA, CyberGhost, ExpressVPN)",
+        "Cấu hình tiện ích mạng (ngrok, Playit, Cyberduck, FileZilla, DynDNS)",
+        "Mã thông báo ứng dụng khách chơi game (Riot Client, Epic, Steam, Ubisoft Connect, Roblox, Battle.net)",
+        "Ví tiền mã hóa",
+        "Dữ liệu phiên Telegram và Discord",
+        "Kiểm kê phần cứng hệ thống và các mạng Wi-Fi đã lưu"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện: `---User Info---` neo theo dòng VÀ `---Full Pc Info---`. Cặp phần với dấu gạch ngang ba lần này là đặc điểm riêng của Information.txt thuộc Arcane trong toàn bộ danh mục này. Ngoài ra còn có hai tín hiệu phân loại ban đầu mạnh: một dòng `Произошла ошибка` tiếng Nga khi các phần con WMI thất bại (mục tiêu chủ yếu nói tiếng Nga), và một tiến trình `xaitax.exe` hoặc `xaitx.exe` trong khối `=== Logical Processes Information ===` (công cụ bẻ khóa DPAPI Chromium được nhúng là tệp nhị phân đặc trưng của mã độc này). Trong quá trình ứng phó sự cố, hãy kiểm tra các tệp liên quan để tìm bản kết xuất dữ liệu trình duyệt, thư mục ví và bản xuất cấu hình VPN - Arcane thu thập từng loại dấu vết vào một tệp riêng biệt.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1016",
+          "name": "Dò tìm cấu hình mạng hệ thống"
+        }
+      ]
+    }
+  }
 }

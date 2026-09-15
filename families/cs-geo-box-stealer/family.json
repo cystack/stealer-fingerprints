@@ -38,5 +38,34 @@
   ],
   "sources": [],
   "canonical_family": "redline",
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSGeoBoxStealer là định danh do CyStack đặt cho một biến thể `UserInformation.txt` không có banner, được phân phối qua `@ft7links` và chứa khối làm giàu `IP GEOLOCATION DATA` đóng khung bằng ký tự `═══`. Biến thể này được quan sát trong cùng bố cục thư mục với `CSEnchantCloudStealer` (các biến thể có banner kênh) và các biến thể có banner DARKSIDE của RedlineLikeStealer, nhưng bản đổi thương hiệu này loại bỏ hoàn toàn banner panel và thay phần mở đầu định danh bằng một khối dữ liệu định vị địa lý vẽ bằng ký tự khung.",
+      "typical_targets": [],
+      "detection_notes": "Dấu hiệu kích hoạt rõ ràng nhất là một đường kẻ ngang dạng box-drawing (`═══...`) theo sau bởi một tiêu đề `IP GEOLOCATION DATA`. Cấu trúc dữ liệu của các trường tương đồng với khối mở rộng của Redline (`UserLanguage:`, `Keyboard Language:`, `Display Resolution:`, `Wallpaper Hash:`), nhưng banner panel tường minh thì không xuất hiện.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

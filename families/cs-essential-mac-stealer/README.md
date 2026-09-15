@@ -1,5 +1,9 @@
 # CSEssentialMacStealer
 
+## Overview / Tổng quan
+
+### English
+
 CSEssentialMacStealer is a CyStack-coined identifier for a
 macOS stealer that self-identifies with the first-line banner
 ``Essential macOS Stealer``. The file is a
@@ -21,27 +25,32 @@ banner. Family attribution is provisional pending a published
 threat-intel writeup for the ``Essential macOS Stealer``
 banner.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **CyStack tracking name**
+CSEssentialMacStealer là một định danh do CyStack đặt cho một mã độc đánh cắp thông tin trên macOS tự nhận dạng bằng banner dòng đầu tiên ``Essential macOS Stealer``. Tệp này là ``UserInformation.txt`` với phần mở đầu ngắn gọn (định danh riêng cho từng bản build ``Build:`` cùng với thông tin xác thực đăng nhập ``Username:`` / ``Password:`` đã thu thập được cộng với ``IP Address:``), tiếp theo là ba khối phần ``system_profiler``: ``Software:``, ``Hardware:`` và ``Graphics/Displays:``. Mỗi khối bao bọc dữ liệu đầu ra nguyên văn từ kiểu dữ liệu ``system_profiler`` tương ứng, với định dạng thụt lề lồng nhau 4-6 khoảng trắng được giữ nguyên.
+
+Cấu trúc dữ liệu của phần thân giống hệt về mặt cấu trúc với Phexia macOS Stealer theo các bài viết công khai, và một cuộc phỏng vấn đã công bố với nhà phát triển Phexia xác nhận rằng Phexia là một trong nhiều bản fork của mô-đun mã độc đánh cắp thông tin Mac.c dùng chung. ``Essential`` có thể là một bản fork khác của Mac.c hoặc là bản đổi tên của một trong các họ mã độc liên quan đã được ghi nhận, nhưng các báo cáo công khai không ghi nhận cụ thể banner này. Việc quy kết họ mã độc vẫn còn mang tính tạm thời cho đến khi có bài viết phân tích tình báo mối đe dọa được công bố cho banner ``Essential macOS Stealer``.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `Essential macOS Stealer`, `Mac.c-fork-shape stealer with Essential banner`
 - Variants observed: **0**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- macOS login credentials (captured directly in the
-``Username:`` / ``Password:`` preamble pair)
-- Host hardware and OS fingerprint (Mac model, chip, RAM,
-display, Hardware UUID, Provisioning UDID, system
-firmware)
-- Account identity (login name, display name, computer
-name)
+| English | Tiếng Việt |
+|---|---|
+| macOS login credentials (captured directly in the ``Username:`` / ``Password:`` preamble pair) | Thông tin xác thực đăng nhập macOS (được thu thập trực tiếp trong cặp phần mở đầu ``Username:`` / ``Password:``) |
+| Host hardware and OS fingerprint (Mac model, chip, RAM, display, Hardware UUID, Provisioning UDID, system firmware) | Dấu vết nhận dạng phần cứng và hệ điều hành của máy (dòng máy Mac, chip, RAM, màn hình, Hardware UUID, Provisioning UDID, firmware hệ thống) |
+| Account identity (login name, display name, computer name) | Danh tính tài khoản (tên đăng nhập, tên hiển thị, tên máy) |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
 
-Fingerprint requires the literal ``Essential macOS
-Stealer`` first-line banner substring. The banner is
+### English
+
+Fingerprint requires the literal ``Essential macOS Stealer`` first-line banner substring. The banner is
 the family self-identification and is unique across
 the registry; sibling macOS-stealer banners
 (``Phexia macOS Stealer`` / ``MacSync Stealer`` /
@@ -56,19 +65,23 @@ files in the victim folder (keychain dumps, browser
 exports, wallet artifacts) will typically be present
 under standard Phexia-shape filenames.
 
+### Tiếng Việt
+
+Việc nhận diện dấu hiệu yêu cầu chuỗi con banner dòng đầu tiên nguyên văn ``Essential macOS Stealer``. Banner này là dấu hiệu tự nhận dạng của họ mã độc và là duy nhất trong toàn bộ registry; các banner của các họ mã độc đánh cắp thông tin macOS liên quan (``Phexia macOS Stealer`` / ``MacSync Stealer`` / ``SHub Stealer`` / ``mac.c macOS Stealer``) đều là các chuỗi con loại trừ lẫn nhau nên không thể xảy ra xung đột. Trong quá trình phân loại ban đầu, cần coi dòng ``Password:`` đã thu thập được là dữ liệu có giá trị cao: mã độc đánh cắp thông tin này ghi lại mật khẩu đăng nhập macOS của nạn nhân dưới dạng văn bản thuần túy, do đó việc thay đổi thông tin xác thực trên tài khoản bị ảnh hưởng phải là ưu tiên hàng đầu trong quá trình ứng phó sự cố. Các tệp liên quan trong thư mục nạn nhân (bản kết xuất keychain, dữ liệu xuất từ trình duyệt, dấu vết ví tiền điện tử) thường sẽ xuất hiện dưới các tên tệp theo cấu trúc dữ liệu chuẩn của Phexia.
+
 ## Observed log variants
 
 No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
-| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
-| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
-| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores | Thông tin xác thực từ kho mật khẩu |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers | Thông tin xác thực từ trình duyệt web |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie | Đánh cắp cookie phiên web |
 
 ## Related catalog profiles
 

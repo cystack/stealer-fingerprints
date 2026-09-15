@@ -117,5 +117,53 @@
       },
       "layout_id": "panel-export-v2"
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Raccoon Stealer là một mã độc đánh cắp thông tin dạng malware-as-a-service tồn tại lâu dài, còn được theo dõi với tên RecordBreaker. Bảng điều khiển của nó xuất ra một báo cáo `System Info.txt` dạng cô đọng. Raccoon v2 sử dụng `User ID: <MachineGuid>|<UserName>`, một dấu thời gian kiểu JavaScript `Last seen:`, một giá trị `Build:` bị cắt ngắn, `IP info:`, và một khối `System Information:` thụt lề bằng tab. Raccoon v1 sử dụng biểu ngữ tự nhận diện `Racc0_0n` và `Bot_ID: <uuid>_<user>` trong khi vẫn giữ cùng mục đích kiểm kê hệ thống.",
+      "typical_targets": [
+        "Thông tin xác thực, cookie, dữ liệu tự động điền và lịch sử duyệt web đã lưu trên trình duyệt",
+        "Tiện ích mở rộng và ứng dụng desktop ví tiền mã hóa",
+        "Thông tin xác thực của ứng dụng email, FTP và VPN",
+        "Dữ liệu phiên đăng nhập Discord và Telegram",
+        "Kiểm kê hệ thống và ứng dụng đã cài đặt",
+        "Các tệp được đối tượng vận hành lựa chọn thông qua cấu hình mô-đun thu thập tệp"
+      ],
+      "detection_notes": "Cần xử lý các báo cáo xuất từ bảng điều khiển v1 và v2 như hai bố cục riêng biệt. Bố cục v2 kết hợp `User ID:`, `Last seen:`, `IP info:`, `System Information:`, và `Installed applications:`. Bố cục v1 kết hợp `Bot_ID:` và `System Information:` với biểu ngữ tự nhận diện `Racc0_0n` hoặc `Launched at:`. Việc kết hợp MachineGuid/user cùng các nhãn phần xuất hiện đồng thời này giúp phân biệt Raccoon với các nhật ký thông tin hệ thống thông thường.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1083",
+          "name": "Dò tìm tệp và thư mục"
+        },
+        {
+          "id": "T1518",
+          "name": "Dò tìm phần mềm"
+        },
+        {
+          "id": "T1016",
+          "name": "Dò tìm cấu hình mạng hệ thống"
+        }
+      ]
+    }
+  }
 }

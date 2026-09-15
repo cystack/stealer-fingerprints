@@ -47,5 +47,44 @@
     "https://thehackernews.com/2025/10/rhadamanthys-stealer-evolves-adds.html",
     "https://any.run/malware-trends/rhadamanthys/"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "Nhật ký của mã độc đánh cắp thông tin Rhadamanthys (cấu trúc dữ liệu vân tay thiết bị phiên bản v0.9.x).\nGhi phần mở đầu dạng phẳng `systeminfo.txt` với `IP:`, `Country:`\nvà tiếp tục với một khối thông tin phần cứng và ngôn ngữ hệ thống. Được phân biệt\nvới các nhật ký có cấu trúc dữ liệu của Redline nhờ tổ hợp trường `Wallpaper Hash:` và\n`MachineID:`, vốn Rhadamanthys tạo dữ liệu đầu ra nhưng\nRedline thì không bao giờ có. Liên tục được cập nhật xuyên suốt năm 2025 với\nphạm vi thu thập mở rộng đối với ví tiền mã hóa, trình duyệt và ứng dụng nhắn tin.",
+      "typical_targets": [
+        "Thông tin xác thực, cookie, lịch sử duyệt web đã lưu trong trình duyệt",
+        "Tiện ích mở rộng ví tiền mã hóa và ứng dụng desktop",
+        "Mã 2FA từ các tiện ích mở rộng trình duyệt dùng cho xác thực",
+        "Mô-đun thu thập tệp PDF, Office và các loại tài liệu khác",
+        "Ứng dụng nhắn tin và email"
+      ],
+      "detection_notes": "Dấu hiệu kích hoạt có độ tin cậy cao: cặp trường `Wallpaper Hash:` + `MachineID:`.\nPhần mở đầu `IP:` + `Country:` được dùng chung với\nVidar, nhưng Rhadamanthys không có trường ở dòng thứ ba `Version:` như Vidar.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1119",
+          "name": "Thu thập tự động"
+        }
+      ]
+    }
+  }
 }

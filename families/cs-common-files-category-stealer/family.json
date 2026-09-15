@@ -49,5 +49,48 @@
     "cs-browsers-display-stealer"
   ],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSCommonFilesCategoryStealer là định danh do CyStack đặt cho một bố cục thư mục ở máy nạn nhân Windows, triển khai cách chia bốn thư mục phân loại bên trong một thư mục theo từng nạn nhân có tên `[<IPv4>]-<HOSTNAME>`. Bốn thư mục con gốc là `Common Files`, `Credentials`, `Directories` và `System`, kèm ảnh chụp màn hình `Display (N).png` ở thư mục gốc và một DIR không tên tùy chọn dùng cho packer đi kèm. `Common Files` chứa dữ liệu đầu ra của mô-đun thu thập tệp (tài liệu người dùng thu thập từ Downloads / Documents), `Credentials` chứa các bản kết xuất thông tin xác thực do mã độc đánh cắp thông tin tạo ra, `Directories` chứa danh sách thư mục đã duyệt qua, và `System` chứa các bản kết xuất thông tin hệ thống dạng văn bản.\n\nĐược quan sát bên trong các gói tổng hợp `MAY 02 - 8230 LOGS2` mà cũng chứa các thư mục thu thập tài khoản TikTok được đại diện bởi CSTikTokAccountStealer. Cách đặt tên phân loại này là lựa chọn không được ghi chép của công cụ dựng bảng điều khiển, chứ không phải một quy ước có tài liệu của mã độc đánh cắp thông tin. Việc quy kết họ mã độc vẫn còn tạm thời cho đến khi có ánh xạ được công bố cho bố cục này.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trên trình duyệt",
+        "Tài liệu người dùng thu thập được từ thư mục Downloads / Documents",
+        "Danh sách thư mục từ các ổ đĩa của nạn nhân",
+        "Thông tin hệ thống: tên máy, địa chỉ IP, dấu vân tay phần cứng, phần mềm đã cài đặt",
+        "Ảnh chụp màn hình desktop (theo từng màn hình, đánh số `Display (N).png`)"
+      ],
+      "detection_notes": "Bộ bốn thư mục `Common Files`, `Credentials`, `Directories`, `System` cùng tên thư mục cha `[<IPv4>]-<HOSTNAME>` là dấu hiệu nhận diện. Quy ước thư mục cha đặt IP trong dấu ngoặc vuông là đặc trưng khác biệt: hầu hết các bảng điều khiển mã độc đánh cắp thông tin dùng `<HOSTNAME>_<IPv4>_<date>` hoặc `<CC>_<IPv4>` thay vì nhúng IP trong dấu ngoặc vuông. Khi phân loại ưu tiên, duyệt `System/` trước để tìm tệp Information.txt chuẩn, sau đó duyệt `Credentials/` để tìm các tệp mật khẩu do mã độc đánh cắp thông tin tạo ra.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1113",
+          "name": "Chụp màn hình"
+        },
+        {
+          "id": "T1083",
+          "name": "Dò tìm tệp và thư mục"
+        }
+      ]
+    }
+  }
 }

@@ -47,5 +47,26 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Hồ sơ dựa trên nhãn tự khai báo quan sát được cho các nhật ký có `Information.txt` bắt đầu bằng `❄ Antarctida Stealer ❄`. Hiện chưa có phân tích mã độc độc lập nào xác nhận nhãn này là một họ mã độc. Theo sau biểu ngữ là một khối thông tin phần cứng và ngôn ngữ/vùng có dấu gạch đầu dòng (`• OS:`, `• CPU:`).",
+      "typical_targets": [
+        "Kiểm kê phần cứng và hệ điều hành",
+        "Danh tính người dùng và máy tính",
+        "Địa chỉ IP công khai"
+      ],
+      "detection_notes": "Yêu cầu đúng dòng biểu ngữ trang trí hình bông tuyết cùng với các trường có dấu gạch đầu dòng `OS:`, `CPU:` và `Computer Name:`. Biểu ngữ chỉ chứng minh nhãn quan sát được, không chứng minh nguồn gốc mã độc; giữ hồ sơ này ở mức quy kết chưa xác định cho đến khi có phân tích độc lập ánh xạ được tệp thực thi hoặc định dạng dữ liệu đầu ra.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        }
+      ]
+    }
+  }
 }

@@ -3,7 +3,7 @@
   "name": "Phantom Stealer",
   "classification": "known_family",
   "attribution_confidence": "high",
-  "description": "Phantom Stealer is a Stealerium-fork info-stealer sold as a\nMaaS through the `phantomsoftwares.site` storefront and the\n`@Phantomsoftwares_bot` Telegram marketplace, contact handle\n`@Oldphantomoftheopera`. Public reporting documents the family\nas active since February 2025 with a NativeAOT `pdh.dll` outer\nloader plus a .NET inner payload (two-layer attack chain).\n\nThis catalog documents two distinct `Information.txt` panel shapes:\n\n- v2 emoji-section panel (canonical, publicly confirmed):\nbanner `*Phantom stealer v2.0 - Report:*` with `📅 Date:`, `🖥️\nSystem:`, `💻 CompName:`, `🌐 External IP:` field lines\norganised under `*HARDWARE INFORMATION*` / `*NETWORK\nINFORMATION*` / `*DETECTED DOMAINS*` / `*BROWSER DATA*` /\n`*SOFTWARE & ACCOUNTS*` / `*DEVICE INFORMATION*` /\n`*INSTALLATION STATUS*` Markdown-bold section banners\nseparated by U+2501 heavy horizontal `━` rules. Trailing\noperator-attribution block carries `contact` / `marketplace` /\n`website` URLs. - v1 flat key-colon-value\n`UserInformation.txt` layout (`Username:` / `PC-name:` / `Ip:`\n/ `Location:` / `System:` / `Admin rights:`). The v1 layout\nwas originally flagged as provisionally-attributed Phantom;\nthe v2 emoji-panel research has not directly confirmed the v1\nkey-value shape, so v1 attribution remains tentative even\nthough it is retained under the same canonical family\npending a published mapping.",
+  "description": "Phantom Stealer is a Stealerium-fork info-stealer sold as a\nMaaS through the `phantomsoftwares.site` storefront and the\n`@Phantomsoftwares_bot` Telegram marketplace, contact handle\n`@Oldphantomoftheopera`. Public reporting documents the family\nas active since February 2025 with a NativeAOT `pdh.dll` outer\nloader plus a .NET inner payload (two-layer attack chain).\n\nThis catalog documents two distinct `Information.txt` panel shapes:\n\n- v2 emoji-section panel (canonical, publicly confirmed):\nbanner `*Phantom stealer v2.0 - Report:*` with `📅 Date:`, `🖥️ System:`, `💻 CompName:`, `🌐 External IP:` field lines\norganised under `*HARDWARE INFORMATION*` / `*NETWORK INFORMATION*` / `*DETECTED DOMAINS*` / `*BROWSER DATA*` /\n`*SOFTWARE & ACCOUNTS*` / `*DEVICE INFORMATION*` /\n`*INSTALLATION STATUS*` Markdown-bold section banners\nseparated by U+2501 heavy horizontal `━` rules. Trailing\noperator-attribution block carries `contact` / `marketplace` /\n`website` URLs. - v1 flat key-colon-value\n`UserInformation.txt` layout (`Username:` / `PC-name:` / `Ip:`\n/ `Location:` / `System:` / `Admin rights:`). The v1 layout\nwas originally flagged as provisionally-attributed Phantom;\nthe v2 emoji-panel research has not directly confirmed the v1\nkey-value shape, so v1 attribution remains tentative even\nthough it is retained under the same canonical family\npending a published mapping.",
   "aliases": [
     "Phantom Stealer",
     "Phantom stealer v2.0"
@@ -18,7 +18,7 @@
     "System hardware (CPU, GPU, RAM, screen, webcam, power) inventory",
     "Network info (gateway, internal, external IP)"
   ],
-  "detection_notes": "v2 fingerprint requires the literal `Phantom stealer v2.0`\nbanner substring AND the `HARDWARE INFORMATION` section header\nAND the `External IP:` field name. The three-anchor\ncombination is the panel self-banner plus structural\nconfirmation. v2 `Date:` values use 12-hour `AM/PM` format with no explicit timezone marker; analysts should treat the timezone as unknown rather than infer it from the processing host.\n\nv1 fingerprint requires the `PC-name:` (hyphenated) and `Admin\nrights:` keys together. The v1 attribution to Phantom Stealer\nis provisional - the v1 layout is structurally distinct from\nthe publicly confirmed v2 panel and may represent a look-alike\nRussian stealer that was originally misattributed. Treat v1-shape Phantom attribution with caution during triage.",
+  "detection_notes": "v2 fingerprint requires the literal `Phantom stealer v2.0`\nbanner substring AND the `HARDWARE INFORMATION` section header\nAND the `External IP:` field name. The three-anchor\ncombination is the panel self-banner plus structural\nconfirmation. v2 `Date:` values use 12-hour `AM/PM` format with no explicit timezone marker; analysts should treat the timezone as unknown rather than infer it from the processing host.\n\nv1 fingerprint requires the `PC-name:` (hyphenated) and `Admin rights:` keys together. The v1 attribution to Phantom Stealer\nis provisional - the v1 layout is structurally distinct from\nthe publicly confirmed v2 panel and may represent a look-alike\nRussian stealer that was originally misattributed. Treat v1-shape Phantom attribution with caution during triage.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -137,5 +137,55 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Phantom Stealer là một họ mã độc đánh cắp thông tin được fork từ Stealerium, được bán dưới dạng MaaS thông qua gian hàng `phantomsoftwares.site` và chợ Telegram `@Phantomsoftwares_bot`, tài khoản liên hệ `@Oldphantomoftheopera`. Các báo cáo công khai ghi nhận họ mã độc này hoạt động từ tháng 2/2025, sử dụng bộ tải (loader) ngoài NativeAOT `pdh.dll` kết hợp với payload .NET bên trong (chuỗi tấn công hai lớp).\n\nDanh mục này ghi nhận hai cấu trúc dữ liệu panel `Information.txt` khác biệt:\n\n- Panel v2 dạng phân mục emoji (chuẩn, đã được xác nhận công khai): banner `*Phantom stealer v2.0 - Report:*` với các dòng trường `📅 Date:`, `🖥️ System:`, `💻 CompName:`, `🌐 External IP:` được tổ chức dưới các banner phân mục in đậm kiểu Markdown `*HARDWARE INFORMATION*` / `*NETWORK INFORMATION*` / `*DETECTED DOMAINS*` / `*BROWSER DATA*` / `*SOFTWARE & ACCOUNTS*` / `*DEVICE INFORMATION*` / `*INSTALLATION STATUS*`, ngăn cách bởi các đường kẻ ngang đậm U+2501 `━`. Khối quy kết đối tượng vận hành ở cuối chứa các URL `contact` / `marketplace` / `website`.\n- Bố cục v1 dạng phẳng khóa-dấu hai chấm-giá trị `UserInformation.txt` (`Username:` / `PC-name:` / `Ip:` / `Location:` / `System:` / `Admin rights:`). Bố cục v1 ban đầu được gắn cờ là quy kết tạm thời cho Phantom; nghiên cứu về panel emoji v2 chưa trực tiếp xác nhận cấu trúc dữ liệu khóa-giá trị của v1, do đó việc quy kết v1 vẫn còn mang tính tạm thời dù nó vẫn được giữ dưới cùng họ mã độc chuẩn cho đến khi có ánh xạ được công bố.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt, cookie, dữ liệu tự động điền, lịch sử duyệt web, bookmark",
+        "Các tiện ích mở rộng ví tiền điện tử và ứng dụng ví desktop",
+        "Dữ liệu phiên đăng nhập Discord và Telegram (Tdata)",
+        "Trích xuất khóa sản phẩm (product key) Windows",
+        "Chụp ảnh màn hình desktop",
+        "Tổng hợp nhận diện tên miền thuộc lĩnh vực ngân hàng / tiền điện tử / nội dung người lớn",
+        "Kiểm kê phần cứng hệ thống (CPU, GPU, RAM, màn hình, webcam, nguồn điện)",
+        "Thông tin mạng (gateway, IP nội bộ, IP bên ngoài)"
+      ],
+      "detection_notes": "Việc nhận diện v2 yêu cầu phải có đồng thời chuỗi con banner `Phantom stealer v2.0`, tiêu đề phân mục `HARDWARE INFORMATION`, và tên trường `External IP:`. Tổ hợp ba điểm neo này gồm banner tự nhận diện của panel cộng với xác nhận về mặt cấu trúc dữ liệu. Các giá trị `Date:` trong v2 dùng định dạng 12 giờ `AM/PM` mà không có dấu hiệu múi giờ rõ ràng; các nhà phân tích nên coi múi giờ là không xác định thay vì suy luận từ máy xử lý.\n\nViệc nhận diện v1 yêu cầu phải có đồng thời các khóa `PC-name:` (có gạch nối) và `Admin rights:`. Việc quy kết v1 cho Phantom Stealer chỉ mang tính tạm thời - bố cục v1 khác biệt về mặt cấu trúc so với panel v2 đã được xác nhận công khai và có thể là một mã độc đánh cắp thông tin có nguồn gốc Nga trông tương tự nhưng ban đầu bị quy kết nhầm. Cần thận trọng khi xử lý quy kết Phantom dạng v1 trong quá trình phân loại ban đầu (triage).",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1113",
+          "name": "Chụp màn hình"
+        },
+        {
+          "id": "T1083",
+          "name": "Dò tìm tệp và thư mục"
+        },
+        {
+          "id": "T1217",
+          "name": "Dò tìm thông tin trình duyệt"
+        }
+      ]
+    }
+  }
 }

@@ -65,5 +65,40 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Cthulhu Stealer là một mã độc đánh cắp thông tin trên macOS được viết bằng Go, thực hiện đưa dữ liệu ra ngoài dưới dạng `Userinfo.txt` tùy chỉnh được ghi vào `/Users/Shared/NW/`. Phần thân dữ liệu mở đầu bằng các trường `IP:` và `Country:`, sau đó tiếp tục với thông tin kiểm kê phần cứng và tài khoản trên macOS. Đã được ghi nhận trong các gói tổng hợp `@bugatti_cloud`.",
+      "typical_targets": [
+        "Thông tin xác thực được lưu trong trình duyệt trên macOS",
+        "Ứng dụng ví tiền mã hóa dạng desktop",
+        "Mục trong Keychain của macOS",
+        "Dữ liệu phiên đăng nhập Telegram",
+        "Thông tin kiểm kê hệ thống và dấu vân tay phần cứng"
+      ],
+      "detection_notes": "Đường dẫn đặc thù của macOS (`/Users/Shared/NW/Userinfo.txt`) cùng với phần mở đầu theo thứ tự IP rồi đến quốc gia là dấu hiệu nhận diện rõ ràng. Nguồn gốc từ Go thể hiện qua thứ tự các trường ổn định giữa các bản dựng.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.001",
+          "name": "Keychain"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

@@ -70,5 +70,42 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSGeoSysInfoStealer là định danh do CyStack đặt cho một panel `=== SYSTEM INFO ===` `system.txt` đơn phần, được phân phối qua kênh Telegram `@BRADMAX`.\n\nPhần thân chứa 8 dòng `Key: Value` dạng phẳng nằm dưới một tiêu đề ba dấu bằng: `Computer`, `User`, `OS`, `IP`, `Country`, `CPU`, `GPU`, `RAM`. Các trường phần cứng có xuất hiện nhưng thường để trống trong các phần thân đã quan sát được; giá trị `OS` là chuỗi giữ chỗ (placeholder) `Windows 10/11` theo nghĩa đen, chứ không phải một chuỗi phiên bản thực.\n\nĐịnh dạng này dùng chung tiêu đề `=== SYSTEM INFO ===` với CSStatsSectionStealer nhưng mang một tập trường hoàn toàn khác và không có phần STATS thứ hai. Cùng kênh đối tượng vận hành `@BRADMAX` nhưng khác builder.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trong trình duyệt",
+        "Dấu vết nhận dạng IP và địa lý",
+        "Thông tin phần cứng hệ thống và hệ điều hành"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện là tiêu đề `=== SYSTEM INFO ===` kết hợp với khối địa lý IP + quốc gia và phần đuôi các khóa trần về phần cứng. Việc không có `=== STATS ===` (mốc phủ định) giúp phân biệt panel này với CSStatsSectionStealer, vốn dùng cùng tiêu đề nhưng có thêm phần đếm. Chuỗi giữ chỗ (placeholder) `OS: Windows 10/11` theo nghĩa đen là dấu hiệu mạnh cho thấy panel chưa bao giờ liệt kê phiên bản thực tế, hữu ích như một tín hiệu sàng lọc ban đầu.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1016",
+          "name": "Dò tìm cấu hình mạng hệ thống"
+        }
+      ]
+    }
+  }
 }

@@ -60,5 +60,28 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSPcNameSnakeStealer là định danh do CyStack đặt tên cho một bố cục panel `system_info.txt` tối giản gồm mười một dòng, được phân phối qua kênh Telegram `@BRADLOGS / BRADMAX` bên trong các gói `!! 2025 NOV.part001.rar` tại các thư mục nạn nhân `[<TAG>]@BRADLOGS (BRADMAX)/system_info.txt`.\nPhần thân là một khối `key: value` phẳng với các khóa dạng snake_case viết thường toàn bộ và các dạng viết tắt ngắn của trường dữ liệu:\n`username`, `pc_name`, `os`, `ram`, `cpu`, `gpu`, `mac`,\n`hwid`, `ip`, `country`, `city`. Giá trị `os:` là cấu trúc dữ liệu nối bằng dấu gạch ngang của Python `platform.platform()`\n(`Windows-10-10.0.19045-SP0`), và giá trị `hwid:` là\nđịnh dạng `GetSystemUUID` cổ điển của Windows (8-4-4-4-12 ký tự hex có dấu gạch ngang, đoạn cuối khớp với giá trị `mac:` sau khi loại bỏ dấu gạch ngang).\n\nKhi panel không thể phân giải geo-IP, nó tạo dữ liệu đầu ra là placeholder `Unknown` cho `ip`, `country`, và\n`city`. Cấu trúc dữ liệu hệ điều hành theo kiểu Python-builder đi kèm định dạng này với `CSPyHostTimeStealer` như một panel liên quan mà cùng bộ tổng hợp `@BRADLOGS / BRADMAX` phân phối; biến thể mười một khóa này mang theo siêu dữ liệu thiết bị phong phú hơn\n(MAC, HWID, CPU, GPU, RAM) nhưng không có dấu thời gian.\nViệc quy kết họ mã độc hiện vẫn là tạm thời, chờ một bản ánh xạ tình báo về mối đe dọa được công bố cho bố cục này.",
+      "typical_targets": [
+        "Tên người dùng Windows",
+        "Siêu dữ liệu máy: tên máy (pc_name), địa chỉ MAC, HWID UUID",
+        "Dấu vân tay hệ điều hành qua dữ liệu đầu ra của Python `platform.platform()`",
+        "Kiểm kê phần cứng: model CPU, model GPU, dung lượng RAM",
+        "Địa chỉ IP công khai của nạn nhân cùng quốc gia / thành phố (placeholder Unknown khi geo-IP thất bại)"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu đầy đủ bốn khóa dạng viết tắt ngắn được neo theo dòng:\n`username:`, `pc_name:`, `mac:`, `hwid:`. Sự kết hợp giữa các khóa snake_case viết thường với các dạng viết tắt ngắn này\n(không có hậu tố `_address` trên `mac`, không có hậu tố `_id` trên `hwid`, không có\ntiền tố `computer_` trên `pc_name`) không thể trùng lặp với bất kỳ định dạng nào khác đã được thu thập trong danh mục. Trong quá trình phân loại ban đầu, hãy coi việc quy kết họ mã độc là chưa xác định: xét về cấu trúc, đây là một panel kiểu Python-builder\n(cấu trúc dữ liệu hệ điều hành `platform.platform()`) nhưng không có nguồn công khai nào ánh xạ bố cục 11 khóa này với một họ mã độc cụ thể được đặt tên. Các placeholder geo-IP\n(`Unknown`) cho thấy nạn nhân đang ngoại tuyến hoặc nằm sau tường lửa trong quá trình panel đưa dữ liệu ra ngoài.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

@@ -8,10 +8,17 @@ import json
 import sys
 from pathlib import Path
 
-from tools.catalog import ROOT, CatalogError, identify, print_identify
+from tools.catalog import (
+    ROOT,
+    CatalogError,
+    _configure_utf8_stdio,
+    identify,
+    print_identify,
+)
 
 
 def main(argv: list[str] | None = None) -> int:
+    _configure_utf8_stdio()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("path", type=Path, help="exported stealer-log text file")
     parser.add_argument("--root", type=Path, default=ROOT, help=argparse.SUPPRESS)

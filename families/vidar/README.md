@@ -1,32 +1,50 @@
 # Vidar
 
+## Overview / Tổng quan
+
+### English
+
 Vidar Stealer logs. Build 4.x emits a flat key-colon-value
 `information.txt` opening with `Ip:`, `Country:`, `Version:`
 followed by hardware, locale, and build identity blocks. Vidar
 has been distributed since 2018 as a fork of Arkei and remains a
 high-volume infostealer family in 2025+.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **Known malware family**
+Nhật ký của Vidar Stealer. Bản dựng 4.x tạo tệp `information.txt` dạng khóa-hai-chấm-giá-trị phẳng, mở đầu bằng `Ip:`, `Country:`, `Version:`, tiếp theo là các khối thông tin phần cứng, ngôn ngữ hệ thống và định danh bản dựng. Vidar được phát tán từ năm 2018 dưới dạng một nhánh của Arkei và vẫn là họ mã độc đánh cắp thông tin có số lượng lớn từ năm 2025 trở đi.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `VidarStealer`
 - Variants observed: **8**
 - CyStack observations represented: **4,421,157**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- Browser saved credentials, cookies, autofill, history
-- Crypto wallet extensions and desktop clients
-- Telegram and Discord session data
-- FTP, email, and VPN client configurations
-- Documents and screenshots from the desktop
+| English | Tiếng Việt |
+|---|---|
+| Browser saved credentials, cookies, autofill, history | Thông tin xác thực, cookie, dữ liệu tự động điền, lịch sử đã lưu trong trình duyệt |
+| Crypto wallet extensions and desktop clients | Tiện ích mở rộng ví tiền điện tử và ứng dụng desktop của ví |
+| Telegram and Discord session data | Dữ liệu phiên đăng nhập Telegram và Discord |
+| FTP, email, and VPN client configurations | Cấu hình ứng dụng FTP, email và VPN |
+| Documents and screenshots from the desktop | Tài liệu và ảnh chụp màn hình từ desktop |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 Distinctive header trio `Ip:` + `Country:` + `Version:` at the
 top of `information.txt`. Build banners reference the operator's
 Telegram channel.
+
+### Tiếng Việt
+
+Bộ ba tiêu đề đặc trưng `Ip:` + `Country:` + `Version:` nằm ở
+đầu `information.txt`. Banner của bản dựng có nhắc đến kênh Telegram của
+đối tượng vận hành.
 
 ## Observed log variants
 
@@ -177,13 +195,13 @@ Recognition anchors:
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
-| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
-| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores | Thông tin xác thực từ kho mật khẩu |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers | Thông tin xác thực từ trình duyệt web |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie | Đánh cắp cookie phiên web |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
 
 ## Related catalog profiles
 

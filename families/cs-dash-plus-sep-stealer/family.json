@@ -3,7 +3,7 @@
   "name": "CSDashPlusSepStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSDashPlusSepStealer is a CyStack-coined identifier for an\n11-stanza `Information.txt` panel summary that the `@BRADLOGS\n/ BRADMAX` aggregator distributes inside `!! 2025\nNOV.part001.rar` packs. Per-victim folders follow the\n`[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/Information.txt` layout.\nEvery value is written on its own line, padded with blank\nlines on both sides, and a `---+---+---+---+---+---+---`\ndash-plus rule separates the panel-summary block from a\nthree-line trailing block of opaque Facebook-Ads-Manager\nartefacts.\n\nThe panel-summary block carries `country : City-Region-CC`\nwith a space before the colon, an `ID :` value shaped like a\n15-digit Facebook user ID, a bare\n`Windows-<major>-<release>-<build>-SP0` line in the Python\n`platform.platform()` shape, a `Username:` line, and a\npipe-separated `CK: <n> | Card: <n>` count line. The trailing\nblock ships three values: a short alpha token, an integer, and\na `T-` prefixed 18-digit number (likely Facebook page\ninitials, page-likes count, and ad-account ID, though the\nschema has no slot for these so they are dropped at parse\ntime). Family attribution is provisional pending a published\nthreat-intel mapping for this layout. The closest documented\nrelatives are NodeStealer and SYS01, both Facebook-targeting\nfamilies, but neither publishes a sample log showing this\nexact label set or the `---+---+---` rule.",
+  "description": "CSDashPlusSepStealer is a CyStack-coined identifier for an\n11-stanza `Information.txt` panel summary that the `@BRADLOGS / BRADMAX` aggregator distributes inside `!! 2025 NOV.part001.rar` packs. Per-victim folders follow the\n`[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/Information.txt` layout.\nEvery value is written on its own line, padded with blank\nlines on both sides, and a `---+---+---+---+---+---+---`\ndash-plus rule separates the panel-summary block from a\nthree-line trailing block of opaque Facebook-Ads-Manager\nartefacts.\n\nThe panel-summary block carries `country : City-Region-CC`\nwith a space before the colon, an `ID :` value shaped like a\n15-digit Facebook user ID, a bare\n`Windows-<major>-<release>-<build>-SP0` line in the Python\n`platform.platform()` shape, a `Username:` line, and a\npipe-separated `CK: <n> | Card: <n>` count line. The trailing\nblock ships three values: a short alpha token, an integer, and\na `T-` prefixed 18-digit number (likely Facebook page\ninitials, page-likes count, and ad-account ID, though the\nschema has no slot for these so they are dropped at parse\ntime). Family attribution is provisional pending a published\nthreat-intel mapping for this layout. The closest documented\nrelatives are NodeStealer and SYS01, both Facebook-targeting\nfamilies, but neither publishes a sample log showing this\nexact label set or the `---+---+---` rule.",
   "aliases": [
     "BRADMAX dash-plus separator panel summary",
     "@BRADLOGS Facebook-ID panel summary"
@@ -82,5 +82,42 @@
       },
       "layout_id": "rich-summary-tail"
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSDashPlusSepStealer là định danh do CyStack đặt tên cho một bản tóm tắt panel gồm 11 đoạn `Information.txt` mà bộ tổng hợp `@BRADLOGS / BRADMAX` phân phối bên trong các gói `!! 2025 NOV.part001.rar`. Các thư mục theo từng nạn nhân tuân theo bố cục `[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/Information.txt`.\nMỗi giá trị được ghi trên một dòng riêng, đệm bằng các dòng trống ở cả hai phía, và một quy tắc dấu gạch ngang-cộng `---+---+---+---+---+---+---` phân tách khối tóm tắt panel với một khối cuối gồm ba dòng chứa các dấu vết Facebook-Ads-Manager không rõ ràng.\n\nKhối tóm tắt panel mang `country : City-Region-CC` với một khoảng trắng trước dấu hai chấm, một giá trị `ID :` có cấu trúc dữ liệu giống ID người dùng Facebook 15 chữ số, một dòng `Windows-<major>-<release>-<build>-SP0` trần theo cấu trúc dữ liệu Python `platform.platform()`, một dòng `Username:`, và một dòng đếm `CK: <n> | Card: <n>` phân tách bằng dấu gạch đứng. Khối cuối chứa ba giá trị: một mã token chữ ngắn, một số nguyên, và một số 18 chữ số có tiền tố `T-` (có thể lần lượt là chữ viết tắt trang Facebook, số lượt thích trang, và ID tài khoản quảng cáo, tuy nhiên do lược đồ không có vị trí dành cho các giá trị này nên chúng bị loại bỏ khi phân tích). Việc quy kết họ mã độc vẫn còn tạm thời do chưa có ánh xạ tình báo mối đe dọa nào được công bố cho bố cục này. Các họ có liên quan gần nhất đã được ghi nhận là NodeStealer và SYS01, đều là các họ mã độc nhắm mục tiêu Facebook, nhưng không họ nào công bố mẫu log cho thấy đúng tập nhãn này hoặc quy tắc `---+---+---`.",
+      "typical_targets": [
+        "Cookie trình duyệt (chỉ có cờ đếm)",
+        "Thẻ tín dụng (chỉ có cờ đếm)",
+        "ID người dùng Facebook",
+        "ID tài khoản quảng cáo Facebook (tiền tố T)",
+        "Hệ điều hành máy thông qua dữ liệu đầu ra của Python `platform.platform()`",
+        "Tên người dùng Windows",
+        "Quốc gia nạn nhân (ISO 3166-1 alpha-2)"
+      ],
+      "detection_notes": "Việc nhận diện đòi hỏi phải có quy tắc dấu gạch ngang-cộng `---+---+---+---+---+---+---` VÀ `country :` (có khoảng trắng trước dấu hai chấm) VÀ `CK:` VÀ `| Card:`. Bốn mốc nhận diện kết hợp lại không thể trùng với bất kỳ định dạng nào khác đã được lưu trong danh mục. Trong quá trình phân loại ban đầu, hãy coi việc quy kết họ mã độc là chưa xác định: bản tóm tắt panel là góc nhìn siêu dữ liệu của một mã độc đánh cắp thông tin nền tảng mà tên gọi của nó chưa được ánh xạ với bố cục này trong bất kỳ báo cáo công khai nào. ID người dùng Facebook cùng với ID tài khoản quảng cáo có tiền tố T cho thấy mạnh mẽ đây là một họ mã độc nhắm mục tiêu tài khoản doanh nghiệp Facebook thuộc dòng NodeStealer / SYS01 / Album-Stealer, nhưng không có nguồn công khai nào xác nhận ánh xạ này.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

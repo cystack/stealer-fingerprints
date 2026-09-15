@@ -3,7 +3,7 @@
   "name": "Misericorde Stealer",
   "classification": "known_family",
   "attribution_confidence": "low",
-  "description": "Misericorde Stealer is a C++ Windows info-stealer advertised\non HackForums under the product listing `Misericorde Stealer\n(C++ stub) - USER-HOST PANEL` with v10 and v20 versions. The\nmalware self-declares its name through an ASCII-art banner\nblock spelling `Misericorde` and a `Telegram -https://t.me/misericorde_supp` operator support-channel URL\nemitted at the top of every `UserInformation.txt` panel.\n\nThe panel ships a compact 10-field identity preamble\n(`Username`, `Hostname`, `FileLocation`, `IP`, `Country`,\n`Timezone`, `City`, `Hwid`, `Logdate`, `Buildtag`), then a\n`[System]` bracket-section block (`OS Product`, `Screensize`,\n`Keyboard`, `System Language`), then a `[Hardware]`\nbracket-section block (`GPU`, `CPU`, `RAM`). The single-word\n`Username` / `Hostname` / `Hwid` / `Logdate` / `Buildtag` key\nspellings distinguish Misericorde from Redline-lineage panels\n(which use two-word forms like `User Name` / `Computer Name`\n/ `HWID`).\n\nThe observed sample distributes through the `@UP_DAISYCLOUD`\nTelegram reseller channel with the Daisy Cloud per-line\nwatermark overlay (obfuscated `Daisy Private cloud` scramble\non every payload line). The underlying Misericorde body is\nindependent of Daisy Cloud; other resellers may ship the same\npanel without the watermark.\n\nFamily attribution rests on the self-declared banner literal\nplus the HackForums product listing (community catalog /\nunderground forum). No public research publishes a Misericorde\nwriteup, and the community catalogues do not document it\neither. `attribution_confidence = 'low'` reflects the one-underground-forum-source provenance combined with the strong\nbanner self-declaration signal.",
+  "description": "Misericorde Stealer is a C++ Windows info-stealer advertised\non HackForums under the product listing `Misericorde Stealer (C++ stub) - USER-HOST PANEL` with v10 and v20 versions. The\nmalware self-declares its name through an ASCII-art banner\nblock spelling `Misericorde` and a `Telegram -https://t.me/misericorde_supp` operator support-channel URL\nemitted at the top of every `UserInformation.txt` panel.\n\nThe panel ships a compact 10-field identity preamble\n(`Username`, `Hostname`, `FileLocation`, `IP`, `Country`,\n`Timezone`, `City`, `Hwid`, `Logdate`, `Buildtag`), then a\n`[System]` bracket-section block (`OS Product`, `Screensize`,\n`Keyboard`, `System Language`), then a `[Hardware]`\nbracket-section block (`GPU`, `CPU`, `RAM`). The single-word\n`Username` / `Hostname` / `Hwid` / `Logdate` / `Buildtag` key\nspellings distinguish Misericorde from Redline-lineage panels\n(which use two-word forms like `User Name` / `Computer Name`\n/ `HWID`).\n\nThe observed sample distributes through the `@UP_DAISYCLOUD`\nTelegram reseller channel with the Daisy Cloud per-line\nwatermark overlay (obfuscated `Daisy Private cloud` scramble\non every payload line). The underlying Misericorde body is\nindependent of Daisy Cloud; other resellers may ship the same\npanel without the watermark.\n\nFamily attribution rests on the self-declared banner literal\nplus the HackForums product listing (community catalog /\nunderground forum). No public research publishes a Misericorde\nwriteup, and the community catalogues do not document it\neither. `attribution_confidence = 'low'` reflects the one-underground-forum-source provenance combined with the strong\nbanner self-declaration signal.",
   "aliases": [
     "Misericorde",
     "Misericorde C++ stub USER-HOST PANEL"
@@ -57,5 +57,46 @@
     "https://t.me/misericorde_supp",
     "https://t.me/UP_DAISYCLOUD"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "Misericorde Stealer là mã độc đánh cắp thông tin trên Windows viết bằng C++, được rao bán trên HackForums qua tin đăng sản phẩm `Misericorde Stealer (C++ stub) - USER-HOST PANEL` với các phiên bản v10 và v20. Mã độc tự khai báo tên của mình qua một khối banner ASCII-art đánh vần `Misericorde` cùng một URL kênh hỗ trợ đối tượng vận hành `Telegram -https://t.me/misericorde_supp` được tạo dữ liệu đầu ra ở đầu mỗi panel `UserInformation.txt`.\n\nPanel này cung cấp một phần mở đầu nhận dạng gồm 10 trường gọn nhẹ (`Username`, `Hostname`, `FileLocation`, `IP`, `Country`, `Timezone`, `City`, `Hwid`, `Logdate`, `Buildtag`), sau đó là một khối mục trong dấu ngoặc `[System]` (`OS Product`, `Screensize`, `Keyboard`, `System Language`), rồi tiếp đến một khối mục trong dấu ngoặc `[Hardware]` (`GPU`, `CPU`, `RAM`). Cách đánh vần khóa một từ `Username` / `Hostname` / `Hwid` / `Logdate` / `Buildtag` giúp phân biệt Misericorde với các panel thuộc dòng Redline (sử dụng dạng hai từ như `User Name` / `Computer Name` / `HWID`).\n\nMẫu quan sát được phân phối qua kênh Telegram bán lại `@UP_DAISYCLOUD` với lớp watermark theo từng dòng của Daisy Cloud (chuỗi xáo trộn `Daisy Private cloud` bị làm rối trên mỗi dòng payload). Phần thân Misericorde cơ bản độc lập với Daisy Cloud; các đối tượng bán lại khác có thể phân phối cùng panel này mà không có watermark.\n\nViệc quy kết họ mã độc dựa trên chuỗi ký tự tự khai báo trong banner kết hợp với tin đăng sản phẩm trên HackForums (danh mục cộng đồng / diễn đàn ngầm). Chưa có nghiên cứu công khai nào công bố báo cáo phân tích về Misericorde, và các danh mục cộng đồng cũng chưa ghi nhận nó. `attribution_confidence = 'low'` phản ánh nguồn gốc chỉ từ một diễn đàn ngầm duy nhất, kết hợp với tín hiệu tự khai báo banner có độ tin cậy cao.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt, cookie, autofill (các trường này không được quan sát trong mẫu hiện tại - UserInformation.txt là bản tóm tắt trinh sát)",
+        "Phần mở đầu nhận dạng đầy đủ: tên người dùng, tên máy, HWID",
+        "Địa chỉ IPv4 công khai cùng thành phố và múi giờ IANA từ định vị địa lý theo IP",
+        "Tên hiển thị hệ điều hành kèm phiên bản và số build",
+        "Độ phân giải hiển thị và ngôn ngữ hệ thống",
+        "Thông tin phần cứng CPU, GPU và RAM",
+        "Đường dẫn cài đặt mã độc (cấu trúc dữ liệu quan sát được: `C:\\ProgramData\\<DropperName>\\<Payload>.exe`)"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu chuỗi con `misericorde_supp` VÀ ít nhất một trong các tiêu đề mục trong dấu ngoặc `[System]` / `[Hardware]`. Đoạn URL kênh hỗ trợ là điểm neo đơn lẻ mạnh nhất: mã độc ghi nó vào mọi panel như một phần của banner ASCII art và nó vẫn giữ nguyên không đổi sau khi lớp watermark theo từng dòng của Daisy Cloud bị loại bỏ. Trong quá trình xử lý ban đầu, giá trị `Buildtag:` mang mã định danh bản build của đối tượng vận hành (quan sát được: `cherry289`) và có thể dùng để xác định cụ thể đối tượng bán lại / chiến dịch. Giá trị `FileLocation:` mang đường dẫn cài đặt trên máy nạn nhân; các mẫu quan sát được phân phối payload dưới dạng `C:\\ProgramData\\<DropperName>\\<Payload>.exe`.",
+      "attack_techniques": [
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        },
+        {
+          "id": "T1016",
+          "name": "Dò tìm cấu hình mạng hệ thống"
+        },
+        {
+          "id": "T1124",
+          "name": "Xác định thời gian hệ thống"
+        }
+      ]
+    }
+  }
 }

@@ -19,8 +19,8 @@
   ],
   "attribution_confidence": "unknown",
   "classification": "cystack_named",
-  "description": "CSRoyCloudInfoStealer is a CyStack-coined identifier for a\nbare `Key: Value` `Info.txt` panel wrapped in the RoyCloud\nreseller banner watermark. Observed inside\n`BONUS$#01(c)_NEW_ROYCLOUD_HQ_MIX_<n>_<Mon>_<YYYY>.part1.rar`\narchives at `<CC>_<IPv4>-<HWID>/Info.txt` victim folders\n(e.g. `AU_115.130.78.139-5B13BE2108/Info.txt`).\n\nThe banner block above the body is a decorative ASCII-art\nrendering of `ROYCLOUD` (repeated several times in different\nblock-drawing character sets) plus two watermark lines whose\ndistinctive stylised literal is `RÔýĆløud` (Latin capital R,\nLatin capital O with circumflex, Latin small y with acute,\nLatin capital C with acute, Latin small l, Latin small o with\nstroke, Latin small u, Latin small d). Random-alphanumeric\nprefix / suffix strings around the literal rotate per sample.\n\nBody fields: `Build Date` (C-preprocessor `__DATE__` shape),\n`Configuration` (usually empty), `Execution Path`, `Elevated`,\n`Computer Name`, `User Name`, `User Language`, `Netbios`,\n`Operation System` (sic typo carried from Redline / Lumma\nsources), `Install Date`, `System Date`, `Time Zone`,\n`Antivirus`, `HWID`, `Processor`, `Processor Threads`,\n`Processor Cores`, `Graphics Card`, `Installed RAM`,\n`Display Resolution`. The body is flat (no leading-dash\nprefix unlike Lumma / Deimos / BABA), no `FileLocation:` /\n`Build ID:` (unlike canonical Redline), and not YAML (unlike\nRemus). Unlike the sibling bare-KV `CSSigInfoStealer` layout,\nthis variant carries no `IP Address:` / `Time:` / `Country:` /\n`User:` panel-metadata footer; the victim IP / country /\nHWID are moved into the archive-path token instead.\n\nFamily attribution is provisional. The RoyCloud panel brand\nhas no curated CTI writeup or Telegram aggregator index\nattestation as of integration; the body vocabulary matches\nthe Redline-shape / Lumma-influenced hybrid also seen in\n`CSSigInfoStealer` but does not itself match any single\ncanonical family layout. The stylised `RÔýĆløud` watermark\nhas also been observed wrapping Remus-shape Info.txt bodies\nfrom the same reseller.",
-  "detection_notes": "Fingerprint requires the stylised `RÔýĆløud` panel watermark\nliteral AND the `Execution Path:` field name AND the\n`Installed RAM:` field name. The panel watermark alone is\nunique to the RoyCloud reseller; pairing it with the two\nRedline-style bare-KV anchors excludes hypothetical\nunrelated documents that happen to quote the banner literal.\nCanonical Redline declines because of the absent operator\nbanner and `FileLocation:` / `Build ID:` keys. Canonical\nLumma declines because of the absent `- ` dash prefix on\nevery field. The sibling `CSSigInfoStealer` bare-KV shape\ndeclines because of the absent `(sig:UNIX.HEX)` Lumma\nwatermark on the `Time:` line, and because this RoyCloud\nvariant strips the `Time:` line entirely.",
+  "description": "CSRoyCloudInfoStealer is a CyStack-coined identifier for a\nbare `Key: Value` `Info.txt` panel associated with the RoyCloud\nreseller. The retained representative observation came from\n`BONUS$#01(c)_NEW_ROYCLOUD_HQ_MIX_<n>_<Mon>_<YYYY>.part1.rar`\nat a `<CC>_<IPv4>-<HWID>/Info.txt` victim path.\n\nThe sample starts with decorative ASCII art rendering\n`ROYCLOUD` and includes the distinctive stylised watermark\n`RÔýĆløud`; random alphanumeric text around that literal\nchanges between observations. Its flat body records `Build Date`,\n`Configuration`, `Execution Path`, `Elevated`, `Computer Name`,\n`User Name`, `User Language`, `Netbios`, `Operation System`,\n`Install Date`, `System Date`, `Time Zone`, `Antivirus`, `HWID`,\n`Processor`, `Processor Threads`, `Processor Cores`,\n`Graphics Card`, `Installed RAM`, and `Display Resolution`.\nThe `Operation System` spelling is retained exactly as observed.\n\nFamily attribution remains provisional. No independent public\nresearch currently maps the RoyCloud label to a canonical malware\nfamily. The body combines Redline-style verbose field names with\nLumma-influenced vocabulary, while the same `RÔýĆløud` reseller\nwatermark has also been observed around a Remus-format body.",
+  "detection_notes": "The retained variant requires the stylised `RÔýĆløud` watermark\ntogether with line-anchored `Execution Path:` and `Installed RAM:`\nfields. A bare copy without `RÔýĆløud` is not sufficient for this\nsample-only fingerprint; archive or collection context must be\nassessed separately. The layout differs from canonical Redline by\nomitting `FileLocation:` and `Build ID:`, from canonical Lumma by\nomitting the `-` field prefix, and from `CSSigInfoStealer` by\nomitting both the `(sig:UNIX.HEX)` marker and the `Time:` footer.",
   "id": "cs-roy-cloud-info-stealer",
   "name": "CSRoyCloudInfoStealer",
   "related_families": [
@@ -41,16 +41,6 @@
       "attribution_confidence": "unknown",
       "distribution_channel": null,
       "fields": [
-        "/",
-        "/<IP>\\ \\ /",
-        "<IP>| \\<IP>/____/ \\",
-        "<IP>| | \\",
-        "<IP>| ~| \\",
-        "<IP>|\\",
-        "\\",
-        "\\/____|",
-        "\\<IP>/ |",
-        "\\<IP>| | \\<IP>/____/ \\",
         "Antivirus",
         "Build Date",
         "Computer Name",
@@ -70,15 +60,17 @@
         "System Date",
         "Time Zone",
         "User Language",
-        "User Name",
-        "|"
+        "User Name"
       ],
       "filenames": [
         "Info.txt"
       ],
       "format_id": "cs-roycloud-info-stealer",
       "id": "v_f4b3735510ac3fefebbf122c82df736e",
-      "markers": [],
+      "layout_id": "bannered-bare-kv",
+      "markers": [
+        "RÔýĆløud"
+      ],
       "panel_brand": "RoyCloud",
       "observations": 1,
       "sample": {
@@ -88,5 +80,32 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSRoyCloudInfoStealer là định danh do CyStack đặt cho một panel\n`Info.txt` dạng `Key: Value` phẳng gắn với bên phân phối RoyCloud.\nMẫu đại diện được lưu giữ được thu thập từ\n`BONUS$#01(c)_NEW_ROYCLOUD_HQ_MIX_<n>_<Mon>_<YYYY>.part1.rar`\ntại đường dẫn nạn nhân `<CC>_<IPv4>-<HWID>/Info.txt`.\n\nMẫu bắt đầu bằng hình vẽ ASCII thể hiện `ROYCLOUD` và chứa\nwatermark cách điệu đặc trưng `RÔýĆløud`; phần chữ-số ngẫu nhiên\nbao quanh chuỗi này thay đổi giữa các lần quan sát. Phần thân phẳng\nghi lại `Build Date`, `Configuration`, `Execution Path`,\n`Elevated`, `Computer Name`, `User Name`, `User Language`,\n`Netbios`, `Operation System`, `Install Date`, `System Date`,\n`Time Zone`, `Antivirus`, `HWID`, `Processor`,\n`Processor Threads`, `Processor Cores`, `Graphics Card`,\n`Installed RAM` và `Display Resolution`. Cách viết\n`Operation System` được giữ nguyên đúng như quan sát.\n\nViệc quy kết họ mã độc vẫn mang tính tạm thời. Chưa có nghiên cứu\ncông khai độc lập nào ánh xạ nhãn RoyCloud với một họ mã độc chuẩn.\nPhần thân kết hợp tên trường chi tiết kiểu Redline với vốn từ chịu\nảnh hưởng của Lumma, trong khi watermark của bên phân phối\n`RÔýĆløud` cũng từng được quan sát bao quanh phần thân định dạng Remus.",
+      "typical_targets": [
+        "Siêu dữ liệu máy: tên máy, NetBIOS, tên người dùng Windows, ngôn ngữ",
+        "Dấu vết nhận diện hệ điều hành kèm số hiệu build và kiến trúc",
+        "Kiểm kê phần cứng: dòng CPU kèm số lõi/luồng, GPU, dung lượng RAM đã lắp đặt",
+        "Tên sản phẩm diệt virus đã cài đặt",
+        "Đường dẫn thực thi mẫu và cờ nâng quyền"
+      ],
+      "detection_notes": "Biến thể được lưu giữ yêu cầu watermark cách điệu `RÔýĆløud`\ncùng hai trường được neo đầu dòng là `Execution Path:` và\n`Installed RAM:`. Một bản sao phần thân không có `RÔýĆløud`\nchưa đủ cho dấu hiệu nhận diện chỉ dựa trên mẫu này; cần đánh giá\nriêng ngữ cảnh kho lưu trữ hoặc nguồn thu thập. Bố cục này khác\nRedline chuẩn do không có `FileLocation:` và `Build ID:`, khác\nLumma chuẩn do không có tiền tố trường `-`, và khác\n`CSSigInfoStealer` do không có cả dấu `(sig:UNIX.HEX)` lẫn\nphần chân trang `Time:`.",
+      "attack_techniques": [
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1518.001",
+          "name": "Dò tìm phần mềm bảo mật"
+        }
+      ]
+    }
+  }
 }

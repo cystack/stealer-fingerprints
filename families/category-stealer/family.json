@@ -80,5 +80,34 @@
       },
       "layout_id": "user-system-sections"
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Mã độc đánh cắp thông tin dạng khối Category chưa xác định danh tính, quan sát được bên trong các gói tổng hợp `@BRADMAX 20000 APRIL-MAY` và `@bugatti_cloud`. `Information.txt` được chia thành ba phần `Category:`, mỗi phần được ngăn cách bởi một dòng phân cách gồm 60 dấu gạch ngang, với các bản ghi khóa/giá trị canh cột bên dưới mỗi phần. Việc quy kết họ mã độc là tạm thời, chờ có ánh xạ tình báo mối đe dọa đã công bố cho bố cục này.",
+      "typical_targets": [],
+      "detection_notes": "Ba tiêu đề `Category:` được ngăn cách bởi các dòng phân cách 60 dấu gạch ngang, cùng với các dòng trường canh cột (thay vì có dấu gạch đầu dòng), là chữ ký nhận diện rõ ràng nhất. Một biến thể rút gọn chỉ tạo dữ liệu đầu ra cho các khối `User` và `System`, bỏ khối `Hardware`.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

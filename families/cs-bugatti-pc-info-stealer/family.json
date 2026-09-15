@@ -3,7 +3,7 @@
   "name": "CSBugattiPcInfoStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSBugattiPcInfoStealer is a CyStack-coined identifier for the\n@Bugatti_Cloud aggregator's ``pc_info.txt`` bare-key text\nslice. The file is a flat ``Key: Value`` body whose vocabulary\nresembles the publicly documented Acreed pc_info.json key set\nbut with operator-side renames throughout: ``PcName`` becomes\n``Computer Name``, ``Arch`` becomes ``Architecture``,\n``CpuCores`` becomes ``Cores``, ``ScreenSize`` becomes\n``Resolution``. The panel also emits a duplicate ``Display\nResolution:`` line with an empty value on the line just before\nthe populated ``Resolution:`` key, and the ``HWID:`` value is\na Computer-Name-prefixed UUID composite rather than a bare\nUUID or hex blob.\n\nThe @Bugatti_Cloud channel is a documented multi-family\naggregator that redistributes Redline and other stealer logs\nin a custom container format. This ``pc_info.txt`` variant may\nbe an operator-normalized text output of Acreed data or a\ndifferent underlying builder's panel; the renamed vocabulary\nis too far from documented Acreed JSON to attribute directly.\nFamily attribution is provisional pending a published\nthreat-intel mapping for this exact text layout.",
+  "description": "CSBugattiPcInfoStealer is a CyStack-coined identifier for the\n@Bugatti_Cloud aggregator's ``pc_info.txt`` bare-key text\nslice. The file is a flat ``Key: Value`` body whose vocabulary\nresembles the publicly documented Acreed pc_info.json key set\nbut with operator-side renames throughout: ``PcName`` becomes\n``Computer Name``, ``Arch`` becomes ``Architecture``,\n``CpuCores`` becomes ``Cores``, ``ScreenSize`` becomes\n``Resolution``. The panel also emits a duplicate ``Display Resolution:`` line with an empty value on the line just before\nthe populated ``Resolution:`` key, and the ``HWID:`` value is\na Computer-Name-prefixed UUID composite rather than a bare\nUUID or hex blob.\n\nThe @Bugatti_Cloud channel is a documented multi-family\naggregator that redistributes Redline and other stealer logs\nin a custom container format. This ``pc_info.txt`` variant may\nbe an operator-normalized text output of Acreed data or a\ndifferent underlying builder's panel; the renamed vocabulary\nis too far from documented Acreed JSON to attribute directly.\nFamily attribution is provisional pending a published\nthreat-intel mapping for this exact text layout.",
   "aliases": [
     "@Bugatti_Cloud pc_info.txt slice",
     "Bugatti operator-normalized Acreed-adjacent variant"
@@ -34,5 +34,26 @@
   "observed_channels": [
     "https://t.me/Bugatti_Cloud"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSBugattiPcInfoStealer là định danh do CyStack đặt cho lát cắt văn bản dạng bare-key ``pc_info.txt`` của bộ tổng hợp @Bugatti_Cloud. Tệp này là một khối văn bản ``Key: Value`` phẳng có bộ từ vựng tương tự bộ khóa pc_info.json của Acreed đã được công bố công khai nhưng bị đổi tên xuyên suốt bởi phía đối tượng vận hành: ``PcName`` trở thành ``Computer Name``, ``Arch`` trở thành ``Architecture``, ``CpuCores`` trở thành ``Cores``, ``ScreenSize`` trở thành ``Resolution``. Bảng điều khiển cũng tạo dữ liệu đầu ra là một dòng ``Display Resolution:`` trùng lặp với giá trị rỗng ngay trước dòng chứa khóa ``Resolution:`` đã có giá trị, và giá trị ``HWID:`` là một tổ hợp UUID có tiền tố Computer-Name thay vì một UUID trần hoặc khối dữ liệu hex.\n\nKênh @Bugatti_Cloud là một bộ tổng hợp đa họ mã độc đã được ghi nhận, chuyên phân phối lại nhật ký của Redline và các mã độc đánh cắp thông tin khác dưới một định dạng container tùy chỉnh. Biến thể ``pc_info.txt`` này có thể là dữ liệu đầu ra dạng văn bản đã được chuẩn hóa bởi đối tượng vận hành từ dữ liệu Acreed, hoặc là bảng điều khiển của một trình builder khác; bộ từ vựng đã bị đổi tên khác quá xa so với JSON của Acreed đã được ghi nhận nên không thể quy kết trực tiếp. Việc quy kết họ mã độc là tạm thời, chờ một ánh xạ tình báo mối đe dọa được công bố cho đúng bố cục văn bản này.",
+      "typical_targets": [
+        "Dấu vết phần cứng máy và hệ điều hành (số lõi CPU, RAM, GPU, độ phân giải màn hình, phiên bản và kiến trúc Windows)",
+        "Danh tính mạng (địa chỉ IP, quốc gia)",
+        "Danh tính tài khoản (tên người dùng Windows, tên máy)"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu bốn nhãn bare-key gắn theo dòng cùng xuất hiện: ``UserName:``, ``Architecture:``, ``Cores:``, và ``Local Time:``. Tổ hợp này tách biệt với PyInfoStealer (kết hợp ``Architecture:`` với ``Processor:`` và các khóa ip-api.com ``ISP:`` / ``Org:``) và với CSRussia34Stealer (kết hợp ``Architecture:`` với ``Laptop:`` và chuỗi con kênh ``russia34.com``). Trong quá trình phân loại ban đầu, hãy coi họ mã độc đánh cắp thông tin bên dưới là chưa thể quy kết và dựa vào metadata channel + panel_brand để phân nhóm mẫu cho việc rà soát của chuyên viên phân tích. Các tệp liên quan trong thư mục nạn nhân (dữ liệu xuất từ trình duyệt, dấu vết ví) có thể cung cấp cơ sở quy kết họ mã độc đáng tin cậy hơn.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

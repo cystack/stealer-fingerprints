@@ -3,7 +3,7 @@
   "name": "CSUserInfoBracketStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CyStack tracking name for an unattributed Windows\n`Information.txt` template built from `[User Info]`, `[Network]`,\n`[System]`, `[Drives]`, `[GPU]`, and `[Basic]` sections. The same\nfield grammar has been observed with the self-labels `AETHERIS`,\n`PDRstealer`, and `Banshee v1.4`, and with no surviving banner.\nThe AETHERIS-labelled observation carries the `Developer\n@sexyweekly` watermark and was distributed in an `@BRADMAX`-style\npack. These labels are retained only as per-variant panel brands.",
+  "description": "CyStack tracking name for an unattributed Windows\n`Information.txt` template built from `[User Info]`, `[Network]`,\n`[System]`, `[Drives]`, `[GPU]`, and `[Basic]` sections. The same\nfield grammar has been observed with the self-labels `AETHERIS`,\n`PDRstealer`, and `Banshee v1.4`, and with no surviving banner.\nThe AETHERIS-labelled observation carries the `Developer @sexyweekly` watermark and was distributed in an `@BRADMAX`-style\npack. These labels are retained only as per-variant panel brands.",
   "aliases": [
     "Aetheris Stealer (observed self-label)",
     "Banshee v1.4 (observed self-label)",
@@ -118,5 +118,38 @@
       },
       "layout_id": "user-info-input-iso"
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Định danh do CyStack đặt cho một mẫu thông tin (template) Windows `Information.txt` chưa được quy kết, được xây dựng từ các phần `[User Info]`, `[Network]`, `[System]`, `[Drives]`, `[GPU]` và `[Basic]`. Cùng một cấu trúc ngữ pháp trường dữ liệu này đã được ghi nhận với các nhãn tự đặt `AETHERIS`, `PDRstealer` và `Banshee v1.4`, cũng như trường hợp không còn banner sót lại. Mẫu quan sát được gắn nhãn AETHERIS mang watermark `Developer @sexyweekly` và được phân phối trong một gói theo kiểu `@BRADMAX`. Các nhãn này chỉ được giữ lại như tên thương hiệu bảng điều khiển (panel) riêng của từng biến thể.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie được lưu trong trình duyệt",
+        "Tiện ích mở rộng và ứng dụng ví tiền điện tử",
+        "Thông tin phần cứng hệ thống và cấu hình vùng miền (locale)"
+      ],
+      "detection_notes": "Cấu trúc dữ liệu chính là `[User Info]` kết hợp với `Input ISO:`. Các biến thể đã bị lược bỏ vẫn giữ `[Basic]` kết hợp với `User Domain:` được neo theo dòng, hoặc `Hwid:` được neo theo dòng kết hợp với `CPU Name:`. Nguồn ToxSteal đã được xác định tạo dữ liệu đầu ra với cùng sáu phần và từ vựng trường dữ liệu như trên, trong khi phân tích độc lập của IRoveroll ghi nhận cùng bố cục `Information.txt` và cùng thường trình xử lý clipboard. Việc tái sử dụng chính xác mẫu thông tin (template) không phải là bằng chứng cho thấy payload giống hệt nhau hay có chung nguồn gốc. `AETHERIS`, `PDRstealer` và `Banshee v1.4` chỉ là các nhãn tự đặt; nhãn cuối cùng không hàm ý có mối liên hệ với mã độc macOS được ghi nhận riêng biệt có tên Banshee.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

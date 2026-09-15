@@ -64,5 +64,39 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Acreed Stealer là một trong số ít họ mã độc đánh cắp thông tin tạo dữ liệu đầu ra dạng JSON có cấu trúc thay vì văn bản dạng khóa/giá trị tự do. Dữ liệu nạn nhân được ghi vào `pc_info.json` với các khóa PascalCase (`PcName`, `Os`, `Cpu`, v.v.).",
+      "typical_targets": [
+        "Thông tin xác thực, cookie, dữ liệu tự động điền được trình duyệt lưu",
+        "Tiện ích mở rộng ví tiền mã hóa và ứng dụng ví trên máy tính",
+        "Dữ liệu phiên Discord và Telegram",
+        "Mô-đun thu thập tệp tài liệu cho các loại tệp nhạy cảm"
+      ],
+      "detection_notes": "Cấu trúc dữ liệu JSON có cấu trúc với một khóa cấp cao nhất `PcName` (PascalCase, không có khoảng trắng) là đặc điểm riêng biệt trong số các họ mã độc mà danh mục này theo dõi; không có định dạng nào khác được lưu giữ sử dụng cấu trúc dữ liệu `pc_info.json` này.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

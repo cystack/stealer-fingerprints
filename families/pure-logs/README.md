@@ -1,5 +1,9 @@
 # PureLogs
 
+## Overview / Tổng quan
+
+### English
+
 PureLogs is a 64-bit C# infostealer in the Pure malware
 family, distributed since 2022 under a malware-as-a-service
 subscription model. The stub is obfuscated with ConfuserEx,
@@ -14,24 +18,34 @@ carry a `Username_Hwid` (literal `user_<hwid>` join), a
 `StubVersion` (e.g. `v4.0.1`) and a `LogFolder` whose
 path begins with `C:\PureLogs v4\Logs\<COUNTRY>\`.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **Known malware family**
+PureLogs là mã độc đánh cắp thông tin viết bằng C# 64-bit thuộc họ mã độc Pure, được phân phối từ năm 2022 theo mô hình đăng ký dịch vụ malware-as-a-service. Stub được làm rối bằng ConfuserEx, .NET Reactor và kỹ thuật ảo hóa tùy biến, với cấu hình C2 được mang dưới dạng khối dữ liệu tuần tự hóa Protobuf, mã hóa XOR kết hợp 3DES nằm trong tài nguyên của tệp nhị phân.
+
+Dấu vết bị đưa ra ngoài là một tệp JSON phẳng `log.json` với một sub-object lồng `BotInfo` được chia thành các phần `System` / `Hardware` / `Network`. Các trường cấp cao nhất mang một `Username_Hwid` (được ghép nối bằng literal `user_<hwid>`), một `StubVersion` (ví dụ `v4.0.1`) và một `LogFolder` có đường dẫn bắt đầu bằng `C:\PureLogs v4\Logs\<COUNTRY>\`.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `PureLog Stealer`, `PureLogStealer`, `win.purelogs`
 - Variants observed: **1**
 - CyStack observations represented: **4,180**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- Browser saved credentials, cookies, autofill, history
-- Crypto wallet extensions and desktop clients
-- Browser extension list and metadata
-- Outlook and other application data
-- Clipboard contents
-- System hardware and locale inventory
+| English | Tiếng Việt |
+|---|---|
+| Browser saved credentials, cookies, autofill, history | Thông tin xác thực đã lưu trong trình duyệt, cookie, dữ liệu autofill, lịch sử duyệt web |
+| Crypto wallet extensions and desktop clients | Tiện ích mở rộng và ứng dụng desktop của ví tiền điện tử |
+| Browser extension list and metadata | Danh sách tiện ích mở rộng trình duyệt và siêu dữ liệu liên quan |
+| Outlook and other application data | Dữ liệu ứng dụng Outlook và các ứng dụng khác |
+| Clipboard contents | Nội dung clipboard |
+| System hardware and locale inventory | Thông tin kiểm kê phần cứng hệ thống và ngôn ngữ/khu vực |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 The `"StubVersion"`, `"Username_Hwid"`, and `"BotInfo"`
 JSON-key trio is the cleanest fingerprint. The literal
@@ -40,6 +54,10 @@ self-identifies the family. The misspelled
 `BrowserExtenstions` (note missing `i`) field name is
 invariant across observed samples and useful as a sanity
 check during triage.
+
+### Tiếng Việt
+
+Bộ ba khóa JSON `"StubVersion"`, `"Username_Hwid"` và `"BotInfo"` là dấu hiệu nhận diện rõ ràng nhất. Chuỗi con `PureLogs v4` literal xuất hiện bên trong giá trị `LogFolder` tự nhận diện đây là họ mã độc này. Tên trường bị viết sai chính tả `BrowserExtenstions` (lưu ý thiếu `i`) là bất biến trong các mẫu quan sát được và hữu ích để làm bước kiểm tra nhanh trong quá trình phân loại ban đầu.
 
 ## Observed log variants
 
@@ -63,15 +81,15 @@ Recognition anchors:
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
-| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
-| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
-| [T1115](https://attack.mitre.org/techniques/T1115/) | Clipboard Data |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
-| [T1027](https://attack.mitre.org/techniques/T1027/) | Obfuscated Files or Information |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores | Thông tin xác thực từ kho mật khẩu |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers | Thông tin xác thực từ trình duyệt web |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie | Đánh cắp cookie phiên web |
+| [T1115](https://attack.mitre.org/techniques/T1115/) | Clipboard Data | Dữ liệu bảng tạm |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
+| [T1027](https://attack.mitre.org/techniques/T1027/) | Obfuscated Files or Information | Tệp hoặc thông tin bị làm rối |
 
 ## Related catalog profiles
 

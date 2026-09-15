@@ -3,7 +3,7 @@
   "name": "CSBitArchStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSBitArchStealer is a CyStack-coined identifier for a\ncolon-no-space `info.txt` panel observed inside `!! 2026\nJAN.part01.rar` aggregator packs distributed via Telegram log\nchannels. Per-victim folders follow a\n`<id>_<2-hex>_<ip>_<DD-MM-YY>/info.txt` layout. The body is a\nflat key/value block whose distinguishing markers are a\nparenthesised `BitArch:(x64 bit)` architecture field and a\n`WindowsVersion:` OS-name field, neither of which is used by\nany other family in the catalog.\n\nThe panel writes literal `Unknown country` / `Unknown city` /\n`Unknown Region` / `Unknown IP` / `Unknown Timezone` /\n`Unknown Zip` placeholders when its IP-to-geo lookup fails.\nField-name semantics deviate from convention: the panel\nappears to source `Username` from Windows USERDOMAIN\n(workgroup label) and `DomainName` from the machine name, so\nthe values are essentially swapped relative to what the labels\nsuggest.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting plus\npublic stealer-format catalogues do not document a family\nusing this exact field set. The `CSBitArchStealer` literal\npreserves the panel's most distinctive marker as the suffix;\nUpdate this tracking profile if a public writeup later\nidentifies the underlying builder.",
+  "description": "CSBitArchStealer is a CyStack-coined identifier for a\ncolon-no-space `info.txt` panel observed inside `!! 2026 JAN.part01.rar` aggregator packs distributed via Telegram log\nchannels. Per-victim folders follow a\n`<id>_<2-hex>_<ip>_<DD-MM-YY>/info.txt` layout. The body is a\nflat key/value block whose distinguishing markers are a\nparenthesised `BitArch:(x64 bit)` architecture field and a\n`WindowsVersion:` OS-name field, neither of which is used by\nany other family in the catalog.\n\nThe panel writes literal `Unknown country` / `Unknown city` /\n`Unknown Region` / `Unknown IP` / `Unknown Timezone` /\n`Unknown Zip` placeholders when its IP-to-geo lookup fails.\nField-name semantics deviate from convention: the panel\nappears to source `Username` from Windows USERDOMAIN\n(workgroup label) and `DomainName` from the machine name, so\nthe values are essentially swapped relative to what the labels\nsuggest.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting plus\npublic stealer-format catalogues do not document a family\nusing this exact field set. The `CSBitArchStealer` literal\npreserves the panel's most distinctive marker as the suffix;\nUpdate this tracking profile if a public writeup later\nidentifies the underlying builder.",
   "aliases": [],
   "typical_targets": [
     "Browser saved credentials and cookies",
@@ -58,5 +58,37 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSBitArchStealer là định danh do CyStack đặt cho một panel dạng `info.txt` không có khoảng trắng sau dấu hai chấm, được phát hiện bên trong các gói tổng hợp `!! 2026 JAN.part01.rar` phân phối qua các kênh log Telegram. Các thư mục theo từng nạn nhân tuân theo bố cục `<id>_<2-hex>_<ip>_<DD-MM-YY>/info.txt`. Phần thân là một khối key/value dạng phẳng với các dấu hiệu đặc trưng gồm một trường kiến trúc `BitArch:(x64 bit)` được đặt trong ngoặc đơn và một trường tên hệ điều hành `WindowsVersion:`, cả hai đều không xuất hiện ở bất kỳ họ mã độc nào khác trong danh mục.\n\nPanel ghi các placeholder nguyên văn `Unknown country` / `Unknown city` / `Unknown Region` / `Unknown IP` / `Unknown Timezone` / `Unknown Zip` khi việc tra cứu IP-sang-vị trí địa lý thất bại. Ngữ nghĩa tên trường lệch khỏi quy ước thông thường: panel dường như lấy `Username` từ USERDOMAIN của Windows (nhãn workgroup) và `DomainName` từ tên máy, do đó các giá trị về cơ bản bị hoán đổi so với những gì nhãn trường gợi ý.\n\nViệc quy kết họ mã độc hiện chỉ mang tính tạm thời, chờ có ánh xạ tình báo mối đe dọa được công bố cho bố cục này. Các báo cáo công khai cùng các danh mục định dạng stealer công khai không ghi nhận họ mã độc nào sử dụng đúng tập trường này. Phần hậu tố `CSBitArchStealer` giữ lại dấu hiệu đặc trưng nhất của panel làm hậu tố; hãy cập nhật hồ sơ theo dõi này nếu sau này có bài viết công khai xác định được builder gốc.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trong trình duyệt",
+        "Thông tin kiểm kê phần cứng hệ thống và ngôn ngữ hệ thống"
+      ],
+      "detection_notes": "Cần có đồng thời chuỗi con giá trị trong ngoặc đơn `BitArch:(` VÀ chuỗi con `WindowsVersion:`. Nếu chỉ dùng một trong hai thì quá yếu (một tài liệu ngẫu nhiên có thể đề cập `BitArch` mà không có dấu ngoặc đơn, hoặc trích dẫn `WindowsVersion` trong văn bản không liên quan); chỉ khi kết hợp cả hai mới là dấu hiệu duy nhất của panel này. Các placeholder nguyên văn `Unknown <field>` dùng khi định vị địa lý thất bại thể hiện dữ liệu bị thiếu chứ không phải bằng chứng có thể sử dụng được; khi phân loại ưu tiên dựa trên `country` / `city` / `ip` / `time_zone` / `zip_code` phản ánh nội dung thông tin thực tế thay vì chuỗi placeholder của panel.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

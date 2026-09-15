@@ -1,5 +1,9 @@
 # RedlineLike Stealer
 
+## Overview / Tổng quan
+
+### English
+
 RedLine extended-block log variants. UserInformation.txt files
 emitting the canonical Redline `Operation System:` typo together
 with the panel's identity, locale, and hardware fields. Several
@@ -7,23 +11,31 @@ Telegram-based affiliate channels rebrand the same RedLine builder
 with custom banners (DARKSIDE, ZAPLINE, and similar) while keeping
 the underlying field layout intact.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **CyStack tracking name**
+Các biến thể log dạng khối mở rộng (extended-block) của RedLine. Tệp UserInformation.txt tạo dữ liệu đầu ra chứa lỗi đánh máy đặc trưng `Operation System:` của Redline cùng với các trường thông tin định danh, ngôn ngữ/vùng và phần cứng của bảng điều khiển. Một số kênh liên kết trên Telegram gắn thương hiệu riêng (DARKSIDE, ZAPLINE, và tương tự) lên cùng một builder RedLine, trong khi vẫn giữ nguyên bố cục trường dữ liệu gốc.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `redline`, `redline-extended`
 - Variants observed: **6**
 - CyStack observations represented: **1,063,175**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- Browser saved credentials (Chromium and Gecko families)
-- Browser cookies and session storage
-- Crypto-wallet desktop clients
-- FTP and SSH client configs
-- Discord and Telegram session tokens
+| English | Tiếng Việt |
+|---|---|
+| Browser saved credentials (Chromium and Gecko families) | Thông tin xác thực đã lưu trong trình duyệt (các họ Chromium và Gecko) |
+| Browser cookies and session storage | Cookie trình duyệt và dữ liệu phiên lưu trữ |
+| Crypto-wallet desktop clients | Ứng dụng desktop ví tiền điện tử |
+| FTP and SSH client configs | Cấu hình ứng dụng FTP và SSH |
+| Discord and Telegram session tokens | Token phiên Discord và Telegram |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 Confidence triggers, in increasing order of certainty:
 
@@ -37,6 +49,16 @@ Confidence triggers, in increasing order of certainty:
 Pair with browser-credential file paths (`Login Data`,
 `formhistory.sqlite`) and Discord token grabber output to confirm
 in incident-response triage.
+
+### Tiếng Việt
+
+Các mức độ tin cậy, theo thứ tự tăng dần:
+
+1. Trường `Operation System:` đơn thuần (lưu ý lỗi đánh máy) chỉ mang tính gợi ý và trùng khớp với nhiều bản sao đã bị lược bớt.
+2. `Operation System:` kết hợp với banner của kênh (ví dụ `===DARKSIDE_BRAND_BEGIN===`) cho độ tin cậy cao là RedLine.
+3. `Operation System:` kết hợp với `Admin Group:` và `Integrity:` là dạng khối mở rộng RedLine không thể nhầm lẫn.
+
+Kết hợp với đường dẫn tệp thông tin xác thực trình duyệt (`Login Data`, `formhistory.sqlite`) và dữ liệu đầu ra của mô-đun thu thập token Discord để xác nhận trong quá trình phân loại ứng phó sự cố.
 
 ## Observed log variants
 
@@ -151,13 +173,13 @@ Recognition anchors:
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
-| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
-| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
-| [T1119](https://attack.mitre.org/techniques/T1119/) | Automated Collection |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores | Thông tin xác thực từ kho mật khẩu |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers | Thông tin xác thực từ trình duyệt web |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie | Đánh cắp cookie phiên web |
+| [T1119](https://attack.mitre.org/techniques/T1119/) | Automated Collection | Thu thập tự động |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
 
 ## Related catalog profiles
 

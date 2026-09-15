@@ -3,7 +3,7 @@
   "name": "CSEmojiInfoStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSEmojiInfoStealer is a CyStack-coined identifier for a\nnineteen-line `Information.txt` panel summary where every\nvisible field carries a leading Unicode emoji glyph, observed\ninside `!! 2025 OCT.part01.rar`-style aggregator packs in\n`<id>_<CC>_<IPv4>_<DD-MM-YY>/Information.txt` victim folders\n(e.g. `1121_CH_<IPv4>_18-10-25/`). The body opens with a\nthree-line victim header (`🖥️ User:`, `🌐 IP:`, `📋 OS Name:`\ncarrying Python's `platform.platform()` dash-joined string),\nsix single-line counts (`🍪 Cookies:`, `🔒 Passwords:`, `📖\nHistory:`, `📚 Bookmarks:`, `📦 Extensions:`, `💳 Cards:`), and\ncloses with three free-form section blocks (`📁 Other\napplications:`, `💸 Crypto wallets:`, `📝 Grabbed files:`) that\nuse the literal placeholders `No wallets found` and `No\ngrabbed files found` when empty.\n\nThe `platform.platform()` OS-string format points at a\nPython-built grabber, and the emoji-on-every-field convention\nplus the `📝 Grabbed files:` section header is the panel's\ndeveloper-side quirk. Family attribution is provisional\npending a published threat-intel mapping for this exact field\nset. The closest documented relative is PupkinStealer, which\nalso uses emoji-prefixed fields but ships a different label\nset (`🔸 PC:`, `🆔 SID:`, `🔐 Found passwords:`, `📷 Screenshot:`,\n`📂 Desktop files:`) and a `Coded by Ardent` watermark not seen\nhere.",
+  "description": "CSEmojiInfoStealer is a CyStack-coined identifier for a\nnineteen-line `Information.txt` panel summary where every\nvisible field carries a leading Unicode emoji glyph, observed\ninside `!! 2025 OCT.part01.rar`-style aggregator packs in\n`<id>_<CC>_<IPv4>_<DD-MM-YY>/Information.txt` victim folders\n(e.g. `1121_CH_<IPv4>_18-10-25/`). The body opens with a\nthree-line victim header (`🖥️ User:`, `🌐 IP:`, `📋 OS Name:`\ncarrying Python's `platform.platform()` dash-joined string),\nsix single-line counts (`🍪 Cookies:`, `🔒 Passwords:`, `📖 History:`, `📚 Bookmarks:`, `📦 Extensions:`, `💳 Cards:`), and\ncloses with three free-form section blocks (`📁 Other applications:`, `💸 Crypto wallets:`, `📝 Grabbed files:`) that\nuse the literal placeholders `No wallets found` and `No grabbed files found` when empty.\n\nThe `platform.platform()` OS-string format points at a\nPython-built grabber, and the emoji-on-every-field convention\nplus the `📝 Grabbed files:` section header is the panel's\ndeveloper-side quirk. Family attribution is provisional\npending a published threat-intel mapping for this exact field\nset. The closest documented relative is PupkinStealer, which\nalso uses emoji-prefixed fields but ships a different label\nset (`🔸 PC:`, `🆔 SID:`, `🔐 Found passwords:`, `📷 Screenshot:`,\n`📂 Desktop files:`) and a `Coded by Ardent` watermark not seen\nhere.",
   "aliases": [
     "!! 2025 OCT aggregator emoji-prefixed panel summary"
   ],
@@ -15,7 +15,7 @@
     "Crypto wallet extensions and desktop clients (per-victim list)",
     "Grabbed user files (per-victim list)"
   ],
-  "detection_notes": "Fingerprint requires the `📝 Grabbed files:` substring (the\nmemo-emoji-prefixed section header is the disambiguator -\n`Grabbed files` is unusual phrasing not used by\nPupkinStealer or the other emoji-prefixed grabbers\nsurveyed) plus three line-anchored header keys\n`🖥️ User: `, `🌐 IP: `, `📋 OS Name: `. The `🖥️` glyph\ncarries Python's variation selector U+FE0F that must be\npreserved in source code. During triage, treat the family\nattribution as unknown: the panel summary lacks any\nharvested credential bodies, and the underlying stealer\ncannot be identified from the summary fields alone.",
+  "detection_notes": "Fingerprint requires the `📝 Grabbed files:` substring (the\nmemo-emoji-prefixed section header is the disambiguator -\n`Grabbed files` is unusual phrasing not used by\nPupkinStealer or the other emoji-prefixed grabbers\nsurveyed) plus three line-anchored header keys\n`🖥️ User:`, `🌐 IP:`, `📋 OS Name:`. The `🖥️` glyph\ncarries Python's variation selector U+FE0F that must be\npreserved in source code. During triage, treat the family\nattribution as unknown: the panel summary lacks any\nharvested credential bodies, and the underlying stealer\ncannot be identified from the summary fields alone.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -73,5 +73,41 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSEmojiInfoStealer là định danh do CyStack đặt cho một bảng tóm tắt panel `Information.txt` gồm mười chín dòng, trong đó mọi trường hiển thị đều mang một glyph emoji Unicode ở đầu, được quan sát bên trong các gói tổng hợp kiểu `!! 2025 OCT.part01.rar` nằm trong các thư mục nạn nhân `<id>_<CC>_<IPv4>_<DD-MM-YY>/Information.txt` (ví dụ: `1121_CH_<IPv4>_18-10-25/`). Phần nội dung mở đầu bằng phần tiêu đề nạn nhân ba dòng (`🖥️ User:`, `🌐 IP:`, `📋 OS Name:` mang chuỗi nối bằng dấu gạch ngang của `platform.platform()` trong Python), sáu dòng đếm số đơn (`🍪 Cookies:`, `🔒 Passwords:`, `📖 History:`, `📚 Bookmarks:`, `📦 Extensions:`, `💳 Cards:`), và kết thúc bằng ba khối phần tự do (`📁 Other applications:`, `💸 Crypto wallets:`, `📝 Grabbed files:`) sử dụng các placeholder cố định `No wallets found` và `No grabbed files found` khi trống.\n\nĐịnh dạng chuỗi hệ điều hành `platform.platform()` cho thấy đây là mô-đun thu thập tệp được xây dựng bằng Python, và quy ước gắn emoji cho mọi trường cùng với tiêu đề phần `📝 Grabbed files:` là đặc điểm riêng biệt phía đối tượng phát triển của panel này. Việc quy kết họ mã độc vẫn còn tạm thời, chờ có bản đồ tình báo mối đe dọa đã công bố cho đúng tập trường này. Họ mã độc gần nhất được ghi nhận là PupkinStealer, cũng sử dụng các trường có tiền tố emoji nhưng dùng một tập nhãn khác (`🔸 PC:`, `🆔 SID:`, `🔐 Found passwords:`, `📷 Screenshot:`, `📂 Desktop files:`) và có watermark `Coded by Ardent` không xuất hiện ở đây.",
+      "typical_targets": [
+        "Thông tin xác thực, cookie, lịch sử duyệt web, dấu trang đã lưu trên trình duyệt (chỉ đếm số lượng)",
+        "Dữ liệu tự động điền và thẻ tín dụng của trình duyệt (cờ đếm số lượng)",
+        "Tiện ích mở rộng trình duyệt (cờ đếm số lượng)",
+        "Các ứng dụng đáng chú ý khác (danh sách theo từng nạn nhân)",
+        "Tiện ích mở rộng ví tiền mã hóa và ứng dụng desktop (danh sách theo từng nạn nhân)",
+        "Các tệp người dùng đã bị thu thập (danh sách theo từng nạn nhân)"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu chuỗi con `📝 Grabbed files:` (tiêu đề phần có tiền tố emoji ghi chú là yếu tố phân biệt chính - `Grabbed files` là cách diễn đạt khác thường không được PupkinStealer hay các mô-đun thu thập tệp có tiền tố emoji khác đã khảo sát sử dụng) cùng với ba khóa tiêu đề neo theo dòng `🖥️ User:`, `🌐 IP:`, `📋 OS Name:`. Glyph `🖥️` mang bộ chọn biến thể (variation selector) U+FE0F của Python cần được giữ nguyên trong mã nguồn. Trong quá trình phân loại ban đầu, hãy coi việc quy kết họ mã độc là chưa xác định: bảng tóm tắt panel không chứa bất kỳ nội dung thông tin xác thực nào đã thu thập được, và không thể xác định mã độc đánh cắp thông tin cụ thể chỉ từ các trường tóm tắt này.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

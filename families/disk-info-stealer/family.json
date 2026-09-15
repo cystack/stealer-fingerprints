@@ -46,5 +46,22 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Mã độc đánh cắp thông tin `Disk Capacity` / `Disk Free` chưa xác định danh tính được phát hiện bên trong các gói tổng hợp `@BRADMAX`, xuất hiện cùng với các log liên quan là Remus, user-info bracket, Snake, Minimal và PCInfo. `System_Info.txt` là một bản ghi khóa/giá trị dạng phẳng gồm sáu dòng, không có banner, không có địa chỉ IP, không có dấu thời gian và không có các trường CPU/GPU/màn hình. Các nạn nhân đã được xác minh bao gồm các máy ảo sandbox của Windows Defender Application Guard, cho thấy khả năng bộ dữ liệu này bị nhiễm nặng do thực thi tự động.",
+      "typical_targets": [],
+      "detection_notes": "Sự kết hợp đặc trưng giữa các trường `Disk Capacity:` và `Disk Free:` mà không có bất kỳ trường CPU/GPU/IP/banner nào chính là dấu hiệu nhận diện. Bố cục bản ghi phẳng sáu dòng giúp dễ dàng nhận ra ngay cả khi không có banner họ mã độc rõ ràng.",
+      "attack_techniques": [
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

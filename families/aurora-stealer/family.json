@@ -73,5 +73,58 @@
     "https://t.me/aurora_botnet_support",
     "https://t.me/UP_DAISYCLOUD"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "Aurora Stealer là mã độc đánh cắp thông tin trên Windows viết bằng Go, được vận hành dưới dạng Malware-as-a-Service bởi một tác nhân nói tiếng Nga tự xưng là 'Cheshire' (biệt danh diễn đàn `cheshire666` trên WWH Club). Các bài phân tích công khai ghi nhận họ mã độc này hoạt động ít nhất từ giữa năm 2022. Aurora khởi đầu là một botnet đa mục đích và tiến hóa để tập trung vào đánh cắp thông tin xác thực và tiền mã hóa.\n\nBảng điều khiển `UserInformation.txt` phía đối tượng vận hành mở đầu bằng hai dòng tiêu đề tự khai báo trỏ đến kênh `t.me/cheshire_aurora` và biệt danh hỗ trợ `t.me/aurora_botnet_support`, tiếp theo là bốn tiêu đề phần `<================ SECTION ================>` (BUILD INFORMATION, GEO INFORMATION, USER INFORMATION, PC INFORMATION) với phần đệm dấu ngã-bằng bao quanh nhãn. Các trường bao gồm HWID, Log date, FileLocation, IP, Country, Region, City, ScreenSize, và kiểm kê phần cứng có dấu gạch đầu dòng (- CPU / - RAM / - Display Devices).\n\nGiá trị `FileLocation` chứa đường dẫn giải nén tạm thời của WinRAR (`Rar$EX...`) với thủ thuật ngụy trang ký tự U+3164 Hangul Filler: mẫu quan sát được đệm `Script inside.txt` bằng rất nhiều ký tự đệm vô hình để phần mở rộng `.exe` thực sự bị đẩy ra ngoài màn hình hiển thị trong hầu hết các trình duyệt tệp. Nạn nhân thấy tệp là `Script inside.txt` và nhấp đúp vào nó, thực thi mã độc trực tiếp từ bên trong danh sách tệp nén RAR mà không cần giải nén trước.\n\nĐịnh dạng dữ liệu trên đường truyền C2 được ghi nhận là JSON, nén GZIP và mã hóa Base64. Bản kết xuất bảng điều khiển dạng văn bản thuần quan sát được là cấu trúc bảng điều khiển dành cho đối tượng vận hành, không phải định dạng dữ liệu trên đường truyền. Nhiều đối tượng bán lại trên Telegram đóng gói lại nhật ký Aurora; mẫu quan sát được phát tán qua `@UP_DAISYCLOUD` với biểu ngữ có viền dạng ống của Daisy Cloud và lớp phủ watermark theo từng dòng.",
+      "typical_targets": [
+        "Thông tin xác thực, cookie, dữ liệu tự động điền được trình duyệt lưu",
+        "Tiện ích mở rộng ví tiền mã hóa và ứng dụng ví trên máy tính",
+        "Dữ liệu phiên Steam",
+        "Dữ liệu phiên Telegram",
+        "Chụp ảnh màn hình",
+        "Mô-đun thu thập tệp theo mẫu tên tệp do người dùng chỉ định",
+        "Kiểm kê phần cứng hệ thống và vị trí địa lý"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện yêu cầu chuỗi con `cheshire_aurora` (biệt danh kênh của đối tượng vận hành tự khai báo trong dòng tiêu đề `CHANNEL:`) VÀ chuỗi con `BUILD INFORMATION` (tiêu đề phần đầu tiên). Sự kết hợp hai mỏ neo này không thể trùng lặp với các tài liệu không liên quan có nhắc đến tên Aurora vì cả hai mỏ neo phải xuất hiện cùng nhau. Trong quá trình phân loại ban đầu, giá trị `FileLocation:` thường mang thủ thuật ngụy trang ký tự U+3164 Hangul Filler; loại bỏ các ký tự đệm sẽ lộ ra đường dẫn tải trọng `.exe` thực sự. Định dạng `Log date:` được chia sẻ với Redline (`DD MMM YY HH:MM:SS`), phản ánh cùng một hệ sinh thái nhà phát triển nói tiếng Nga.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        },
+        {
+          "id": "T1113",
+          "name": "Chụp màn hình"
+        },
+        {
+          "id": "T1036",
+          "name": "Ngụy trang"
+        }
+      ]
+    }
+  }
 }

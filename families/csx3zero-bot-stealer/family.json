@@ -3,7 +3,7 @@
   "name": "CSX3zeroBotStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSX3zeroBotStealer is a CyStack-coined identifier for the\npanel behind the `t.me/x3zeroBot` Telegram bot. The\npanel writes an `Information.txt` that opens with a\nthree-zero ASCII banner (Unicode box-drawing rendition\nof the operator's `０００` FULLWIDTH DIGIT ZERO display\nname), pins the `Info: t.me/x3zeroBot` operator handle\nat the top, and emits four fifteen-dash-separated\nblocks: build identity (`Build ID:`), geo / device\nidentity (`HWID:`, `IP Address:`, `Log Date:`,\n`Country:`, `City:`, `Coordinates:` lat/lng pair),\nhardware (`Username:`, `OS:` composite pipe-separated\ntriple, `Screen:` slash-separated resolution, `CPU:`,\n`GPU:`, `RAM:`), and per-category counts (`Cookies:`,\n`Passwords:`, `Crypto:`).\n\nObserved inside a @bugatti_cloud multi-family aggregator\narchive (`____Bugatti____Private_Cloud 22.07 .part01.rar`)\nat `[<CC>] <32-hex-HWID> [<DD-MM-YYYY HH-MM-SS>]/\nInformation.txt` victim folders. Family attribution is\nprovisional pending a published threat-intel mapping\nfor this panel; the surveyed CTI corpus and community\ncatalogues (MalBeacon what-is-this-stealer, deepdarkCTI,\nMalpedia, RussianPanda) do not attest an `x3zero` /\n`x3zeroBot` operator.",
+  "description": "CSX3zeroBotStealer is a CyStack-coined identifier for the\npanel behind the `t.me/x3zeroBot` Telegram bot. The\npanel writes an `Information.txt` that opens with a\nthree-zero ASCII banner (Unicode box-drawing rendition\nof the operator's `０００` FULLWIDTH DIGIT ZERO display\nname), pins the `Info: t.me/x3zeroBot` operator handle\nat the top, and emits four fifteen-dash-separated\nblocks: build identity (`Build ID:`), geo / device\nidentity (`HWID:`, `IP Address:`, `Log Date:`,\n`Country:`, `City:`, `Coordinates:` lat/lng pair),\nhardware (`Username:`, `OS:` composite pipe-separated\ntriple, `Screen:` slash-separated resolution, `CPU:`,\n`GPU:`, `RAM:`), and per-category counts (`Cookies:`,\n`Passwords:`, `Crypto:`).\n\nObserved inside a @bugatti_cloud multi-family aggregator\narchive (`____Bugatti____Private_Cloud 22.07 .part01.rar`)\nat `[<CC>] <32-hex-HWID> [<DD-MM-YYYY HH-MM-SS>]/ Information.txt` victim folders. Family attribution is\nprovisional pending a published threat-intel mapping\nfor this panel; the surveyed CTI corpus and community\ncatalogues (MalBeacon what-is-this-stealer, deepdarkCTI,\nMalpedia, RussianPanda) do not attest an `x3zero` /\n`x3zeroBot` operator.",
   "aliases": [],
   "typical_targets": [
     "Browser saved credentials (count surfaced as `Passwords:`)",
@@ -42,5 +42,39 @@
   "observed_channels": [
     "https://t.me/x3zeroBot"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSX3zeroBotStealer là định danh do CyStack đặt cho bảng điều khiển đứng sau bot Telegram `t.me/x3zeroBot`. Bảng điều khiển này ghi ra một `Information.txt` mở đầu bằng banner ASCII ba số không (bản dựng bằng ký tự vẽ khung Unicode của tên hiển thị `０００` FULLWIDTH DIGIT ZERO của đối tượng vận hành), ghim tên tài khoản đối tượng vận hành `Info: t.me/x3zeroBot` ở đầu, và tạo dữ liệu đầu ra gồm bốn khối được phân tách bằng mười lăm dấu gạch ngang: định danh bản dựng (`Build ID:`), định danh địa lý/thiết bị (`HWID:`, `IP Address:`, `Log Date:`, `Country:`, `City:`, cặp vĩ độ/kinh độ `Coordinates:`), phần cứng (`Username:`, cấu trúc dữ liệu ba thành phần phân tách bằng dấu gạch đứng `OS:`, độ phân giải phân tách bằng dấu gạch chéo `Screen:`, `CPU:`, `GPU:`, `RAM:`), và số lượng theo từng hạng mục (`Cookies:`, `Passwords:`, `Crypto:`).\n\nĐược ghi nhận bên trong kho lưu trữ tổng hợp đa họ mã độc @bugatti_cloud (`____Bugatti____Private_Cloud 22.07 .part01.rar`) tại các thư mục nạn nhân `[<CC>] <32-hex-HWID> [<DD-MM-YYYY HH-MM-SS>]/ Information.txt`. Việc quy kết họ mã độc hiện chỉ mang tính tạm thời do chưa có ánh xạ tình báo mối đe dọa đã công bố nào cho bảng điều khiển này; kho dữ liệu CTI được khảo sát cũng như các danh mục cộng đồng (MalBeacon what-is-this-stealer, deepdarkCTI, Malpedia, RussianPanda) đều không xác nhận đối tượng vận hành `x3zero` / `x3zeroBot`.",
+      "typical_targets": [
+        "Thông tin xác thực được trình duyệt lưu (số lượng hiển thị dưới dạng `Passwords:`)",
+        "Cookie trình duyệt (số lượng hiển thị dưới dạng `Cookies:`)",
+        "Ví tiền điện tử (số lượng hiển thị dưới dạng `Crypto:`)",
+        "Danh mục phần cứng hệ thống và thông tin địa lý (khối định danh theo từng nạn nhân)"
+      ],
+      "detection_notes": "Tín hiệu kích hoạt độ tin cậy cao: chuỗi URL nguyên văn `t.me/x3zeroBot` kết hợp với `Build ID:` neo theo dòng cùng với dữ liệu làm giàu địa lý dạng khóa trần `Coordinates:` neo theo dòng. Tổ hợp ba điểm neo này là duy nhất - không có họ mã độc nào khác trong danh mục này tạo dữ liệu đầu ra là tên tài khoản `x3zeroBot` hay dữ liệu làm giàu dạng cặp số thập phân `Coordinates: <lat>, <lng>`.\nLưu ý khi phân loại: cấu trúc dữ liệu tổng hợp `OS:` chứa tên sản phẩm, thư mục Windows, và đường dẫn nhân NT nối với nhau bằng dấu gạch đứng; chỉ đoạn đầu tiên là ổn định qua các bản dựng, còn đoạn cuối chứa số hiệu bản dựng hệ điều hành vốn lẽ ra nằm ở một trường riêng biệt.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

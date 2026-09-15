@@ -97,5 +97,44 @@
       },
       "layout_id": "installed-apps-users-processes"
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Nhật ký của StealC, một mã độc đánh cắp thông tin. Mã độc ghi một `system_info.txt` theo dạng phân đoạn với các dòng tiêu đề như `Network Info:`, `System Summary:`, và các bản ghi `- Key: Value` được thụt lề bằng tab bên dưới mỗi phần. Được ghi nhận lần đầu vào đầu năm 2023, StealC vẫn là một mã độc đánh cắp thông tin thương mại hoạt động tích cực, với bản viết lại v2 được theo dõi xuyên suốt năm 2024.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trên trình duyệt",
+        "Tiện ích mở rộng ví tiền điện tử và ứng dụng desktop",
+        "Cấu hình ứng dụng FTP, email, VPN, RDP",
+        "Dữ liệu phiên của Discord và Telegram",
+        "Mô-đun thu thập tệp tùy chỉnh có thể cấu hình theo từng bản build"
+      ],
+      "detection_notes": "Bố cục phân đoạn đặc trưng với các tiêu đề cấp cha `Network Info:` và `System Summary:`, cùng các dòng trường dữ liệu thụt lề bằng tab. Được phân phối qua nhiều đối tượng bán lại trên Telegram; kênh `@stealerboss` là một trong những kênh phân phối lại lớn hơn.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1119",
+          "name": "Thu thập tự động"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

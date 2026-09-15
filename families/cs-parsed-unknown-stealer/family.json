@@ -3,14 +3,14 @@
   "name": "CSParsedUnknownStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSParsedUnknownStealer is a CyStack-coined identifier for\na banner-less variant of the normalization-tool output log\nwrapper that the CSBradMaxCloudParsedStealer sibling also represents. The wrapper is an in-house Python normalizer that a\nTelegram log broker runs over raw stealer output before\nredistribution: leading-space `Key: Value` fields, a pipe-joined `Single-line params:` hardware summary, an `Original\nfile: C:\\Users\\admin\\Desktop\\<workdir>\\...` reference to\nthe operator's analysis-machine working folder, and a\n`Source: IP-API (https://ip-api.com/)` geolocation\nattribution line.\n\nThis variant carries `Stealer: Unknown` (the tool ran but\ncould not fingerprint the underlying stealer family) and\nships without the `https://t.me/BRADMAX_CLOUD` banner that\nscopes the CSBradMaxCloudParsedStealer sibling. The\n`<workdir> = 2` operator ships all three sibling format\nshapes seen so far (RisePro, Rhadamanthys, Unknown) without\na channel banner, so `panel_brand` and\n`distribution_channel` stay unset.",
+  "description": "CSParsedUnknownStealer is a CyStack-coined identifier for\na banner-less variant of the normalization-tool output log\nwrapper that the CSBradMaxCloudParsedStealer sibling also represents. The wrapper is an in-house Python normalizer that a\nTelegram log broker runs over raw stealer output before\nredistribution: leading-space `Key: Value` fields, a pipe-joined `Single-line params:` hardware summary, an `Original file: C:\\Users\\admin\\Desktop\\<workdir>\\...` reference to\nthe operator's analysis-machine working folder, and a\n`Source: IP-API (https://ip-api.com/)` geolocation\nattribution line.\n\nThis variant carries `Stealer: Unknown` (the tool ran but\ncould not fingerprint the underlying stealer family) and\nships without the `https://t.me/BRADMAX_CLOUD` banner that\nscopes the CSBradMaxCloudParsedStealer sibling. The\n`<workdir> = 2` operator ships all three sibling format\nshapes seen so far (RisePro, Rhadamanthys, Unknown) without\na channel banner, so `panel_brand` and\n`distribution_channel` stay unset.",
   "aliases": [],
   "typical_targets": [
     "Browser saved credentials, cookies, autofill (per underlying stealer)",
     "Crypto wallet extensions and desktop clients (per underlying stealer)",
     "System hardware, locale, and geolocation inventory (per wrapper output)"
   ],
-  "detection_notes": "High-confidence trigger: line-anchored ` Stealer: Unknown`\n(leading space) plus ` Original file:` plus ` Source:\nIP-API (https://ip-api.com/)`, with no\n`https://t.me/BRADMAX_CLOUD` banner in the body. Attribution\nis intentionally CyStack-coined because the wrapper tool\nitself admits it could not fingerprint the source stealer.\nAnalysts triaging this variant should pivot on the raw log\nif the archive preserved it (the `Original file:` field\npoints at the source path on the operator machine), or\nmatch victim IPs against other stealer channels to guess\nthe source family.",
+  "detection_notes": "High-confidence trigger: line-anchored `Stealer: Unknown`\n(leading space) plus `Original file:` plus `Source: IP-API (https://ip-api.com/)`, with no\n`https://t.me/BRADMAX_CLOUD` banner in the body. Attribution\nis intentionally CyStack-coined because the wrapper tool\nitself admits it could not fingerprint the source stealer.\nAnalysts triaging this variant should pivot on the raw log\nif the archive preserved it (the `Original file:` field\npoints at the source path on the operator machine), or\nmatch victim IPs against other stealer channels to guess\nthe source family.",
   "attack_techniques": [
     {
       "id": "T1005",
@@ -27,5 +27,26 @@
     "rhadamanthys"
   ],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSParsedUnknownStealer là định danh do CyStack tự đặt cho một biến thể không có banner của lớp bọc log đầu ra công cụ chuẩn hóa mà biến thể liên quan CSBradMaxCloudParsedStealer cũng đại diện. Lớp bọc này là một bộ chuẩn hóa Python nội bộ mà một broker log trên Telegram chạy trên dữ liệu đầu ra thô của mã độc đánh cắp thông tin trước khi phân phối lại: các trường `Key: Value` có khoảng trắng ở đầu, một bản tóm tắt phần cứng `Single-line params:` nối bằng dấu gạch đứng, một tham chiếu `Original file: C:\\Users\\admin\\Desktop\\<workdir>\\...` đến thư mục làm việc trên máy phân tích của đối tượng vận hành, và một dòng quy kết định vị địa lý `Source: IP-API (https://ip-api.com/)`.\n\nBiến thể này mang `Stealer: Unknown` (công cụ đã chạy nhưng không thể xác định dấu vân tay của họ mã độc đánh cắp thông tin gốc) và không đi kèm banner `https://t.me/BRADMAX_CLOUD` vốn giới hạn phạm vi cho biến thể liên quan CSBradMaxCloudParsedStealer. Đối tượng vận hành `<workdir> = 2` phát hành cả ba cấu trúc dữ liệu định dạng liên quan đã được ghi nhận cho đến nay (RisePro, Rhadamanthys, Unknown) mà không có banner kênh, do đó `panel_brand` và `distribution_channel` vẫn chưa được thiết lập.",
+      "typical_targets": [
+        "Thông tin xác thực, cookie, dữ liệu tự động điền được trình duyệt lưu (tùy theo mã độc đánh cắp thông tin gốc)",
+        "Các tiện ích mở rộng ví tiền mã hóa và ứng dụng desktop (tùy theo mã độc đánh cắp thông tin gốc)",
+        "Danh mục phần cứng hệ thống, ngôn ngữ và vị trí địa lý (theo dữ liệu đầu ra của lớp bọc)"
+      ],
+      "detection_notes": "Dấu hiệu kích hoạt có độ tin cậy cao: dòng được neo với `Stealer: Unknown` (có khoảng trắng ở đầu) kết hợp với `Original file:` và `Source: IP-API (https://ip-api.com/)`, mà không có banner `https://t.me/BRADMAX_CLOUD` trong phần nội dung. Việc quy kết được cố tình đặt là do CyStack tự đặt vì bản thân công cụ bọc log này thừa nhận không thể xác định dấu vân tay của mã độc đánh cắp thông tin nguồn. Các nhà phân tích khi rà soát biến thể này nên tra cứu theo log thô nếu kho lưu trữ còn giữ lại (trường `Original file:` trỏ đến đường dẫn nguồn trên máy của đối tượng vận hành), hoặc đối chiếu địa chỉ IP nạn nhân với các kênh mã độc đánh cắp thông tin khác để suy đoán họ mã độc nguồn.",
+      "attack_techniques": [
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

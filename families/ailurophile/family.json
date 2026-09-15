@@ -3,7 +3,7 @@
   "name": "Ailurophile",
   "classification": "known_family",
   "attribution_confidence": "high",
-  "description": "Ailurophile is a subscription-style info-stealer first\npublicly documented in August 2024. The stub is PHP-coded,\npackaged into a Windows PE with ExeOutput, and then\nvirtualized with BoxedApp. Operators configure each build\nthrough the family's own web panel, which lets them pick the\nextension list, the folder list, and the filename keyword list\nthat drive the on-victim file grabber. Reports are sent to the\nTelegram chat configured at build time.\n\nThe on-victim staging directory is\n`%LOCALAPPDATA%\\Ailurophile`, and the system summary is a flat\n`Key: Value` `info.txt` whose distinctive fields are `Allowed\nExtensions:`, `Folders to Search:`, `PC Type:`, and `Screen\nResolution:`.",
+  "description": "Ailurophile is a subscription-style info-stealer first\npublicly documented in August 2024. The stub is PHP-coded,\npackaged into a Windows PE with ExeOutput, and then\nvirtualized with BoxedApp. Operators configure each build\nthrough the family's own web panel, which lets them pick the\nextension list, the folder list, and the filename keyword list\nthat drive the on-victim file grabber. Reports are sent to the\nTelegram chat configured at build time.\n\nThe on-victim staging directory is\n`%LOCALAPPDATA%\\Ailurophile`, and the system summary is a flat\n`Key: Value` `info.txt` whose distinctive fields are `Allowed Extensions:`, `Folders to Search:`, `PC Type:`, and `Screen Resolution:`.",
   "aliases": [
     "Ailurophile Stealer"
   ],
@@ -67,5 +67,39 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Ailurophile là mã độc đánh cắp thông tin theo mô hình đăng ký thuê bao, được ghi nhận công khai lần đầu vào tháng 8 năm 2024. Stub được viết bằng PHP, đóng gói thành tệp PE Windows bằng ExeOutput, sau đó được ảo hóa bằng BoxedApp. Đối tượng vận hành cấu hình từng bản build thông qua bảng điều khiển web riêng của họ mã độc, cho phép chọn danh sách phần mở rộng, danh sách thư mục, và danh sách từ khóa tên tệp để điều khiển mô-đun thu thập tệp trên máy nạn nhân. Báo cáo được gửi đến kênh Telegram được cấu hình tại thời điểm build.\n\nThư mục lưu trữ tạm trên máy nạn nhân là `%LOCALAPPDATA%\\Ailurophile`, và bản tóm tắt hệ thống là một `Key: Value` `info.txt` dạng phẳng với các trường đặc trưng là `Allowed Extensions:`, `Folders to Search:`, `PC Type:`, và `Screen Resolution:`.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt, cookie, dữ liệu tự động điền, lịch sử duyệt web",
+        "Dữ liệu thẻ tín dụng từ tính năng tự động điền của trình duyệt",
+        "Tiện ích mở rộng ví tiền điện tử và ứng dụng desktop",
+        "Mô-đun thu thập tệp tổng quát điều khiển bằng danh sách từ khóa và phần mở rộng có thể cấu hình"
+      ],
+      "detection_notes": "Sự kết hợp giữa `Allowed Extensions:` và `Folders to Search:` được neo theo dòng là dấu hiệu nhận diện chính tắc, khớp với quy tắc YARA công khai của ail-project. Các bản gắn thương hiệu lại của đối tượng vận hành chèn thêm một dòng banner phía trên khối chính tắc, ví dụ `HORUS B13: @HORUS B13`: các trường bên dưới vẫn giữ nguyên, do đó việc quy kết vẫn nằm dưới `Ailurophile` và banner thể hiện qua `panel_brand` và `distribution_channel`. Rủi ro dương tính giả thấp vì không có họ mã độc nào khác trong danh mục này tạo dữ liệu đầu ra là cặp khóa `Allowed Extensions:` / `Folders to Search:`.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

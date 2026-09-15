@@ -34,5 +34,33 @@
     "cs-tik-tok-account-stealer"
   ],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSApplicationsDiscordStealer là một định danh do CyStack đặt tên cho một bố cục thư mục theo từng nạn nhân chứa một thư mục con `Applications/` duy nhất với các bản thu thập mã thông báo theo từng ứng dụng bên trong một thư mục mẹ `[<ISO2>]<IPv4>`. Mỗi ứng dụng dưới `Applications/` mang tệp `Tokens.txt` riêng (ví dụ: `Applications/Discord/Tokens.txt` cho mã thông báo xác thực Discord). Nội dung tệp Discord chứa một mã thông báo mỗi dòng: đoạn base64 đứng đầu mã hóa Discord snowflake ID của người dùng, theo sau là các phần dấu chấm thời gian / chữ ký (dạng 3 phần cho mã thông báo xác thực tiêu chuẩn, dạng 2 phần cho mã thông báo làm mới / MFA).\n\nQuan sát được bên trong các gói tổng hợp `MAY 02 - 8230 LOGS` (là dạng liên quan `LOGS` của `LOGS2` cũng liên quan đến CSCookiesSoftStealer). Cùng quy ước thư mục mẹ `[<ISO2>]<IPv4>`, nhưng khác tên thư mục con phân loại (`Applications/` so với `Soft/`) và khác quy ước thu thập theo từng ứng dụng (mã thông báo xác thực Discord so với phiên JWT của Steam). Việc quy kết họ mã độc là tạm thời, chờ có ánh xạ công khai cho đúng bố cục này.",
+      "typical_targets": [
+        "Mã thông báo xác thực Discord (phiên đầy đủ, mã thông báo làm mới, mã thông báo MFA)",
+        "Mã thông báo phiên của các ứng dụng desktop Chromium-Electron khác (có thể được gửi dưới `Applications/<App>/Tokens.txt`)"
+      ],
+      "detection_notes": "Tên thư mục mẹ `[<ISO2>]<IPv4>` cùng với tập con nghiêm ngặt `{Applications, \"\"}` ở gốc và mẫu đường dẫn tệp thông tin xác thực `Applications/<NonEmpty>/Tokens.txt` là dấu hiệu nhận diện. Phân biệt với CSCookiesSoftStealer qua tên thư mục con phân loại (`Applications/` so với `Soft/`) và với CSDiscordDataTokensBundle (vốn gửi một khối dữ liệu nhị phân LevelDB nguyên văn dưới `DiscordData/tokens.txt`). Giải mã đoạn base64 đứng đầu của mỗi mã thông báo bằng bộ giải mã base64 tiêu chuẩn để khôi phục Discord snowflake ID của nạn nhân phục vụ theo dõi theo cụm.",
+      "attack_techniques": [
+        {
+          "id": "T1528",
+          "name": "Đánh cắp token truy cập ứng dụng"
+        },
+        {
+          "id": "T1550.001",
+          "name": "Sử dụng dữ liệu xác thực thay thế: token truy cập ứng dụng"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        }
+      ]
+    }
+  }
 }

@@ -1,5 +1,9 @@
 # CSRedhiveStealer
 
+## Overview / Tổng quan
+
+### English
+
 CSRedhiveStealer is a CyStack-coined identifier for a
 Lumma-shape `System.txt` panel that self-brands as
 `Redhive Stealer` on its build banner line. Observed inside
@@ -13,13 +17,9 @@ channel.
 The body opens with `- Redhive Stealer: <DD.MM.YYYY>` and
 `- Lid: <numeric>`, then continues with the Lumma-canonical
 dash-prefixed field set: `- OS Version`, `- System Installed`
-(ISO calendar date, replaces canonical Lumma `- Install
-Date`), `- Local Date`, `- Time Zone`, `- Computer`, `- User`,
-`- Language`, `- Anti Virus`, `- HWID`, `- RAM Size`, `- CPU
-Name`, `- CPU Threads`, `- CPU Cores`, `- GPU`, `- Display
-resolution`, `- IP Address`, `- Time Save Log` (ISO datetime,
-replaces canonical Lumma `- Time`), `- Country`. The `- CPU
-Vendor` field canonical Lumma always emits is absent, and the
+(ISO calendar date, replaces canonical Lumma `- Install Date`), `- Local Date`, `- Time Zone`, `- Computer`, `- User`,
+`- Language`, `- Anti Virus`, `- HWID`, `- RAM Size`, `- CPU Name`, `- CPU Threads`, `- CPU Cores`, `- GPU`, `- Display resolution`, `- IP Address`, `- Time Save Log` (ISO datetime,
+replaces canonical Lumma `- Time`), `- Country`. The `- CPU Vendor` field canonical Lumma always emits is absent, and the
 Lumma-canonical `(sig:UNIX.HEX)` watermark is stripped
 entirely from the timestamp line. HWID is short-form 8-hex
 rather than the canonical Lumma 32-hex hash.
@@ -35,40 +35,70 @@ integration; the profile is classified as a Lumma variant
 because the field lattice unambiguously matches documented
 Lumma output.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **Family variant**
+CSRedhiveStealer là định danh do CyStack đặt cho một bảng điều khiển (panel) có cấu trúc dữ liệu kiểu Lumma `System.txt` tự gắn nhãn thương hiệu là
+`Redhive Stealer` trên dòng banner phiên bản build. Được quan sát bên trong
+`BONUS$#01(c)_NEW_ROYCLOUD_HQ_MIX_<n>_<Mon>_<YYYY>.part1.rar`
+các kho lưu trữ tại các thư mục nạn nhân `<CC>_<IPv4>-<HWID>/System.txt` (ví dụ: `CO_181.52.194.15-043BD157EE/System.txt`), đi trước là
+cùng một banner reseller cách điệu `RÔýĆløud` vốn bao bọc
+các biến thể Remus và biến thể khóa-giá trị thuần được phân phối qua cùng
+kênh đó.
+
+Phần thân mở đầu bằng `- Redhive Stealer: <DD.MM.YYYY>` và
+`- Lid: <numeric>`, sau đó tiếp tục với tập trường mang gạch ngang đứng trước theo chuẩn Lumma: `- OS Version`, `- System Installed`
+(ngày theo lịch ISO, thay thế trường chuẩn Lumma `- Install Date`), `- Local Date`, `- Time Zone`, `- Computer`, `- User`,
+`- Language`, `- Anti Virus`, `- HWID`, `- RAM Size`, `- CPU Name`, `- CPU Threads`, `- CPU Cores`, `- GPU`, `- Display resolution`, `- IP Address`, `- Time Save Log` (thời gian ISO,
+thay thế trường chuẩn Lumma `- Time`), `- Country`. Trường `- CPU Vendor` mà Lumma chuẩn luôn tạo dữ liệu đầu ra thì không xuất hiện, và
+watermark chuẩn Lumma `(sig:UNIX.HEX)` bị loại bỏ hoàn toàn khỏi dòng dấu thời gian. HWID có dạng ngắn 8 ký tự hex
+thay vì mã băm 32 ký tự hex chuẩn của Lumma.
+
+Bộ từ vựng mang gạch ngang đứng trước `- Lid`, `- Computer`, `- User`, `- Anti Virus`, `- HWID`,
+`- RAM Size`, `- GPU`, `- IP Address`, `- Country`
+được ghi nhận là chuẩn Lumma bởi MalBeacon `what-is-this-stealer`, phân tích LummaC2 của Outpost24,
+và phân tích playbook của Cloudflare Cloudforce One về dữ liệu đầu ra của panel Lumma. Chuỗi tự gắn nhãn thương hiệu `Redhive Stealer` là
+mới và chưa từng được ghi nhận trong các ánh xạ CTI đã tuyển chọn tại thời điểm tích hợp; hồ sơ này được phân loại là một biến thể Lumma vì
+cấu trúc trường khớp rõ ràng, không mơ hồ với dữ liệu đầu ra đã được ghi nhận của Lumma.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **Family variant / Biến thể của một họ mã độc**
 - Attribution confidence: **high**
 - Canonical family: [lumma](../lumma/)
 - Aliases: `Redhive Stealer`
 - Variants observed: **1**
 - CyStack observations represented: **1**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- Browser saved credentials and cookies
-- Crypto wallet extensions
-- Host metadata: hostname, Windows username, language
-- OS fingerprint with build number and architecture
-- Hardware inventory: CPU model with cores/threads, GPU, installed RAM
-- Installed antivirus product name
-- Victim public IP plus ISO country code
+| English | Tiếng Việt |
+|---|---|
+| Browser saved credentials and cookies | Thông tin xác thực và cookie đã lưu trong trình duyệt |
+| Crypto wallet extensions | Tiện ích mở rộng ví tiền mã hóa |
+| Host metadata: hostname, Windows username, language | Siêu dữ liệu máy: tên máy, tên người dùng Windows, ngôn ngữ |
+| OS fingerprint with build number and architecture | Dấu vết nhận diện hệ điều hành kèm số hiệu build và kiến trúc |
+| Hardware inventory: CPU model with cores/threads, GPU, installed RAM | Thông tin phần cứng: dòng CPU kèm số nhân/luồng, GPU, dung lượng RAM đã cài đặt |
+| Installed antivirus product name | Tên phần mềm diệt virus đã cài đặt |
+| Victim public IP plus ISO country code | Địa chỉ IP công khai của nạn nhân kèm mã quốc gia ISO |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 Fingerprint requires the `- Redhive Stealer` self-brand
 literal AND the Lumma-canonical `- Lid:` panel affiliate
-identifier line. Canonical Lumma declines because of the
+identifier line. Distinguish it from canonical Lumma by the
 absent `- LummaC2 Build:` header, absent `- CPU Vendor:`
 field, absent `- Install Date:` field (replaced by
 `- System Installed:` with an ISO calendar date shape),
-and absent `(sig:UNIX.HEX)` timestamp watermark. The
-Redhive self-brand is also carried in the Lumma parser's
-rebrand-exclusion list so canonical Lumma's stripped-variant
-fallback paths cannot accidentally claim a Redhive body. During triage, treat the panel as a Lumma affiliate
-or fork rebrand until published research maps the `Redhive`
-brand to a specific Lumma successor or to an independent
-builder.
+and absent `(sig:UNIX.HEX)` timestamp watermark. During
+triage, treat the panel as a Lumma affiliate or fork rebrand
+until published research maps the `Redhive` brand to a
+specific Lumma successor or to an independent builder.
+
+### Tiếng Việt
+
+Việc nhận diện đòi hỏi đồng thời chuỗi tự gắn nhãn `- Redhive Stealer` và dòng định danh affiliate của panel theo chuẩn Lumma `- Lid:`. Phân biệt biến thể này với Lumma chuẩn dựa trên việc không có tiêu đề `- LummaC2 Build:`, trường `- CPU Vendor:`, trường `- Install Date:` (được thay bằng `- System Installed:` với ngày theo định dạng ISO) và watermark thời gian `(sig:UNIX.HEX)`. Trong quá trình phân loại ban đầu, hãy coi panel này là một affiliate hoặc bản fork của Lumma cho đến khi có nghiên cứu công bố ánh xạ thương hiệu `Redhive` tới một biến thể kế thừa cụ thể của Lumma hoặc một builder độc lập.
 
 ## Observed log variants
 
@@ -92,14 +122,14 @@ Recognition anchors:
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
-| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
-| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
-| [T1518.001](https://attack.mitre.org/techniques/T1518/001/) | Security Software Discovery |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores | Thông tin xác thực từ kho mật khẩu |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers | Thông tin xác thực từ trình duyệt web |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie | Đánh cắp cookie phiên web |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
+| [T1518.001](https://attack.mitre.org/techniques/T1518/001/) | Security Software Discovery | Dò tìm phần mềm bảo mật |
 
 ## Related catalog profiles
 

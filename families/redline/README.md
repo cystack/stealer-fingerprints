@@ -1,32 +1,48 @@
 # Redline
 
+## Overview / Tổng quan
+
+### English
+
 Canonical Redline Stealer logs. UserInformation.txt files emitting
 the family's typo'd `Operation System:` field together with a full
 identity, locale, and hardware block. Build banners typically frame
 the panel name (Octopus Cloud Logs and similar resellers) above
 the field block.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **Known malware family**
+Các log Redline Stealer chuẩn. Các tệp UserInformation.txt tạo dữ liệu đầu ra chứa trường bị lỗi chính tả đặc trưng của họ mã độc này `Operation System:` cùng với một khối thông tin danh tính, vùng miền và phần cứng đầy đủ. Các banner phiên bản build thường đặt tên bảng điều khiển (Octopus Cloud Logs và các bên bán lại tương tự) phía trên khối trường dữ liệu.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `RedLine`, `RedLineStealer`
 - Variants observed: **2**
 - CyStack observations represented: **31,304**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- Browser saved credentials
-- Browser cookies and session storage
-- Crypto wallet desktop clients and browser extensions
-- FTP and VPN client configs
-- Discord and Telegram session tokens
+| English | Tiếng Việt |
+|---|---|
+| Browser saved credentials | Thông tin xác thực đã lưu trong trình duyệt |
+| Browser cookies and session storage | Cookie và dữ liệu phiên lưu trữ của trình duyệt |
+| Crypto wallet desktop clients and browser extensions | Ứng dụng ví tiền điện tử desktop và tiện ích mở rộng trình duyệt |
+| FTP and VPN client configs | Cấu hình client FTP và VPN |
+| Discord and Telegram session tokens | Token phiên của Discord và Telegram |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 High-confidence trigger: the typo'd `Operation System:` field
 paired with `FileLocation:`. Stripped variants without
 `FileLocation:` are tracked separately as `RedlineLike Stealer`.
+
+### Tiếng Việt
+
+Yếu tố kích hoạt độ tin cậy cao: trường bị lỗi chính tả `Operation System:` đi kèm với `FileLocation:`. Các biến thể đã bị lược bỏ không có `FileLocation:` được theo dõi riêng biệt dưới tên `RedlineLike Stealer`.
 
 ## Observed log variants
 
@@ -69,13 +85,13 @@ Recognition anchors:
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
-| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
-| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores | Thông tin xác thực từ kho mật khẩu |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers | Thông tin xác thực từ trình duyệt web |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie | Đánh cắp cookie phiên web |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
 
 ## Related catalog profiles
 

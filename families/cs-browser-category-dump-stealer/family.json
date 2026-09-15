@@ -44,5 +44,41 @@
   "related_external": [
     "csperprofilebrowserdumpbundle"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSBrowserCategoryDumpStealer là định danh do CyStack đặt cho một cấu trúc dữ liệu tệp dump theo danh mục, tính theo từng nạn nhân và từng trình duyệt, được đóng gói dưới các thư mục lá `[<32-hex>]/Browser/<BrowserName>/`. Mỗi thư mục lá chứa các tệp danh mục dạng Pascal-case (`Autofill.txt`, `Passwords.txt`, `Cookies.txt`, `History.txt`, `Bookmarks.txt`, `CreditCards.txt`, `Downloads.txt`, `Extensions.txt`). Nội dung mỗi tệp mở đầu bằng một tiêu đề mục viết hoa toàn bộ, đóng khung bằng dấu bằng ba lần, phản ánh tên danh mục (nội dung `Autofill.txt` mở đầu bằng `=== AUTOFILL ===`), tiếp theo là một dòng trống, sau đó là một hoặc nhiều bản ghi `key: value` được phân tách bằng các dòng gạch ngang dài 50 ký tự.\n\nQuy ước đặt tên thư mục nạn nhân bằng MD5 32 ký tự hex khớp với CSTikTokAccountStealer và CSNetflixCookiesStealer, xác nhận một quy trình phân phối `MAY 02 - 8230 LOGS2` dùng chung. Tên các thư mục lá bao trùm các trình duyệt gốc Chromium (Chrome / Edge / Brave / Opera / EpicPrivacyBrowser / Vivaldi / Yandex / CocCoc / Maxthon / Comodo Dragon). Việc quy kết họ mã độc hiện chỉ mang tính tạm thời, chờ có ánh xạ được công bố cho đúng cấu trúc dữ liệu này.",
+      "typical_targets": [
+        "Dữ liệu tự động điền của trình duyệt (họ tên, địa chỉ, số điện thoại, email)",
+        "Thông tin xác thực đã lưu trong trình duyệt (tên đăng nhập, mật khẩu, URL)",
+        "Cookie và dữ liệu phiên của trình duyệt",
+        "Lịch sử duyệt web, dấu trang, danh sách tải xuống",
+        "Dữ liệu thẻ tín dụng đã lưu",
+        "Danh sách tiện ích mở rộng của trình duyệt"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện là sự kết hợp giữa token đường dẫn `[<32-hex>]/Browser/<BrowserName>/`, ít nhất một tên tệp danh mục chuẩn dạng Pascal-case (`Autofill.txt`, `Passwords.txt`, v.v.) và tiêu đề nội dung viết hoa toàn bộ đóng khung bằng dấu bằng ba lần `=== <CATEGORY> ===`. Các cấu trúc dữ liệu liên quan ưu tiên theo danh mục trước (`cookies_chrome_Default.txt` theo CSPerProfileBrowserDumpBundle) mang cùng loại dữ liệu nhưng được tổ chức khác đi; quy ước đặt thư mục con theo tên trình duyệt ở đây là lựa chọn riêng của bảng điều khiển.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1217",
+          "name": "Dò tìm thông tin trình duyệt"
+        }
+      ]
+    }
+  }
 }

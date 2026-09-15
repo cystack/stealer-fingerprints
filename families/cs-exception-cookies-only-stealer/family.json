@@ -3,7 +3,7 @@
   "name": "CSExceptionCookiesOnlyStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSExceptionCookiesOnlyStealer is a CyStack-coined identifier\nfor a LOGS-pack per-victim folder-style IOC shipping only a\n``Cookies/`` subdirectory (Netscape cookies.txt dumps) plus\na root-level ``Exception.txt`` file (the harvester panel-side exception log). Observed inside the ``23-24 JUNE - 25597\nLOGS.part01.rar`` aggregator pack at\n``<CC>-    -<HWID>-<TIMESTAMP>/`` victim folders where the\nfolder name uses a distinctive 2-letter country code + dash\n+ 4-space padding + dash + ~30-character alphanumeric HWID +\ndash + full dash-separated ISO 8601 timestamp with\nmicrosecond precision.\n\nThe LOGS pack ships multiple stealer families (canonical\nLumma, StealC, Mars-fork, AMOS, Cthulhu per prior LOGS-pack\nformat research), so the minimal cookies-plus-exception-log\nlayout carries no remaining family signal beyond ``cookie-jar exporter with .NET / Python exception traceback dump``.\nThe label exists to attribute the artifact by its fingerprint\nrather than guessing which stealer harvested the cookie jar.",
+  "description": "CSExceptionCookiesOnlyStealer is a CyStack-coined identifier\nfor a LOGS-pack per-victim folder-style IOC shipping only a\n``Cookies/`` subdirectory (Netscape cookies.txt dumps) plus\na root-level ``Exception.txt`` file (the harvester panel-side exception log). Observed inside the ``23-24 JUNE - 25597 LOGS.part01.rar`` aggregator pack at\n``<CC>- -<HWID>-<TIMESTAMP>/`` victim folders where the\nfolder name uses a distinctive 2-letter country code + dash\n+ 4-space padding + dash + ~30-character alphanumeric HWID +\ndash + full dash-separated ISO 8601 timestamp with\nmicrosecond precision.\n\nThe LOGS pack ships multiple stealer families (canonical\nLumma, StealC, Mars-fork, AMOS, Cthulhu per prior LOGS-pack\nformat research), so the minimal cookies-plus-exception-log\nlayout carries no remaining family signal beyond ``cookie-jar exporter with .NET / Python exception traceback dump``.\nThe label exists to attribute the artifact by its fingerprint\nrather than guessing which stealer harvested the cookie jar.",
   "aliases": [
     "LOGS-pack cookies + Exception.txt bundle",
     "Space-padded folder-name cookies-only bundle"
@@ -11,7 +11,7 @@
   "typical_targets": [
     "Browser session cookies (Chromium / Firefox) exported\nas Netscape cookies.txt files per browser profile"
   ],
-  "detection_notes": "Fingerprint requires the folder root to be a subset of\n``{cookies, exception.txt, \"\"}`` (case-insensitive) with\nboth ``cookies`` and ``exception.txt`` present, plus at\nleast two canonical Netscape cookies.txt rows in the cred\nfile body. The ``Exception.txt`` sibling is typically\nnon-empty (contains the harvester traceback), distinguishing\nthis from :class:`CSBradmaxCookiesOnlyBundle` which requires\nempty panel-placeholder siblings. During triage, correlate\nthe folder-name prefix with the LOGS pack archive to\nidentify the redistributor; the underlying harvester\nfamily is unattributable from the cookies-only layout\nalone.",
+  "detection_notes": "Fingerprint requires the folder root to be a subset of\n``{cookies, exception.txt, \"\"}`` (case-insensitive) with\nboth ``cookies`` and ``exception.txt`` present, plus at\nleast two canonical Netscape cookies.txt rows in the cred\nfile body. The ``Exception.txt`` sibling is typically\nnon-empty (contains the harvester traceback), distinguishing\nthis from `CSBradmaxCookiesOnlyStealer` which requires\nempty panel-placeholder siblings. During triage, correlate\nthe folder-name prefix with the LOGS pack archive to\nidentify the redistributor; the underlying harvester\nfamily is unattributable from the cookies-only layout\nalone.",
   "attack_techniques": [
     {
       "id": "T1539",
@@ -30,5 +30,24 @@
     "CSDaisyCloudCookiesOnlyStealer",
     "CSBradmaxAppCookiesStealer"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSExceptionCookiesOnlyStealer là định danh do CyStack đặt cho một dấu hiệu nhận biết (IOC) dạng thư mục theo từng nạn nhân trong gói LOGS, chỉ chứa một thư mục con ``Cookies/`` (các bản dump cookies.txt định dạng Netscape) cùng một tệp ``Exception.txt`` ở cấp gốc (nhật ký ngoại lệ phía panel của trình thu thập dữ liệu). Được quan sát bên trong gói tổng hợp ``23-24 JUNE - 25597 LOGS.part01.rar`` tại ``<CC>- -<HWID>-<TIMESTAMP>/`` thư mục nạn nhân, nơi tên thư mục sử dụng một quy ước đặc trưng: mã quốc gia 2 chữ cái + dấu gạch ngang + đệm 4 khoảng trắng + dấu gạch ngang + HWID chữ và số dài khoảng 30 ký tự + dấu gạch ngang + dấu thời gian ISO 8601 đầy đủ phân tách bằng dấu gạch ngang với độ chính xác micro giây.\n\nGói LOGS phân phối nhiều họ mã độc đánh cắp thông tin (Lumma chuẩn, StealC, bản fork của Mars, AMOS, Cthulhu theo nghiên cứu định dạng gói LOGS trước đây), do đó bố cục tối giản chỉ gồm cookies và nhật ký ngoại lệ không còn mang tín hiệu nhận diện họ mã độc nào ngoài ``cookie-jar exporter with .NET / Python exception traceback dump``. Nhãn này tồn tại nhằm quy kết dấu vết theo đặc điểm nhận dạng của nó thay vì đoán xem họ mã độc đánh cắp thông tin nào đã thu thập lọ cookie này.",
+      "typical_targets": [
+        "Cookies phiên trình duyệt (Chromium / Firefox) được xuất dưới dạng tệp cookies.txt định dạng Netscape theo từng hồ sơ trình duyệt"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu gốc thư mục là một tập con của ``{cookies, exception.txt, \"\"}`` (không phân biệt hoa thường), có mặt cả ``cookies`` và ``exception.txt``, cùng ít nhất hai dòng cookies.txt định dạng Netscape chuẩn trong nội dung tệp thông tin xác thực. Tệp liên quan ``Exception.txt`` thường không rỗng (chứa traceback của trình thu thập), giúp phân biệt với `CSBradmaxCookiesOnlyStealer` vốn yêu cầu các tệp liên quan là tệp giữ chỗ rỗng của panel. Trong quá trình phân loại ban đầu, hãy đối chiếu tiền tố tên thư mục với kho lưu trữ gói LOGS để xác định đối tượng phân phối lại; họ mã độc thu thập gốc không thể quy kết được chỉ từ bố cục chỉ chứa cookies.",
+      "attack_techniques": [
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

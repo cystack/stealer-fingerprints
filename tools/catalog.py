@@ -43,6 +43,7 @@ FAMILY_CORE = {
     "typical_targets",
     "detection_notes",
     "attack_techniques",
+    "localizations",
     "related_families",
     "sources",
     "variants",
@@ -65,11 +66,78 @@ FAMILY_OPTIONAL = {
     "observed_channels",
     "related_external",
 }
+LOCALIZED_FAMILY_FIELDS = {
+    "description",
+    "typical_targets",
+    "detection_notes",
+    "attack_techniques",
+}
 VARIANT_OPTIONAL = {"layout_id", "observations", "sources"}
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:[._-][a-z0-9]+)*$")
 VARIANT_ID_RE = re.compile(r"^v_[0-9a-f]{32}$")
 SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
 TECHNIQUE_RE = re.compile(r"^T\d{4}(?:\.\d{3})?$")
+LANGUAGE_TAG_RE = re.compile(r"^[A-Za-z]{2,8}(?:-[A-Za-z0-9]{1,8})*$")
+FIELD_LINE_RE = re.compile(
+    r'^[ \t]*(?:[-*\u2022|>][ \t]*)?["\']?'
+    r'(?P<label>[^:=\r\n]{1,100}?)["\']?[ \t]*'
+    r'(?P<separator>[:=])(?P<value>.*)$'
+)
+JSON_FIELD_RE = re.compile(r'"([^"\\]{1,100})"\s*:')
+REVIEWED_VI_ATTACK_NAMES = {
+    "T1005": "Dữ liệu từ hệ thống cục bộ",
+    "T1016": "Dò tìm cấu hình mạng hệ thống",
+    "T1027": "Tệp hoặc thông tin bị làm rối",
+    "T1033": "Xác định chủ sở hữu/người dùng hệ thống",
+    "T1036": "Ngụy trang",
+    "T1041": "Đưa dữ liệu ra ngoài qua kênh C2",
+    "T1055.012": "Process Hollowing (thay thế mã trong tiến trình)",
+    "T1056.001": "Ghi lại phím bấm",
+    "T1056.002": "Thu thập dữ liệu nhập qua GUI",
+    "T1057": "Dò tìm tiến trình",
+    "T1059": "Trình thông dịch lệnh và tập lệnh",
+    "T1059.001": "PowerShell",
+    "T1059.002": "AppleScript",
+    "T1059.004": "Unix shell",
+    "T1059.006": "Python",
+    "T1071.001": "Giao thức tầng ứng dụng: giao thức web",
+    "T1082": "Dò tìm thông tin hệ thống",
+    "T1083": "Dò tìm tệp và thư mục",
+    "T1102": "Dịch vụ web",
+    "T1105": "Chuyển công cụ vào hệ thống",
+    "T1113": "Chụp màn hình",
+    "T1115": "Dữ liệu bảng tạm",
+    "T1119": "Thu thập tự động",
+    "T1124": "Xác định thời gian hệ thống",
+    "T1125": "Ghi hình",
+    "T1204.002": "Người dùng thực thi: tệp độc hại",
+    "T1213": "Dữ liệu từ kho thông tin",
+    "T1217": "Dò tìm thông tin trình duyệt",
+    "T1218": "Thực thi gián tiếp qua tệp nhị phân hệ thống",
+    "T1219": "Phần mềm truy cập từ xa",
+    "T1497": "Né tránh môi trường ảo hóa/sandbox",
+    "T1497.001": "Kiểm tra hệ thống",
+    "T1497.003": "Né tránh dựa trên thời gian",
+    "T1518": "Dò tìm phần mềm",
+    "T1518.001": "Dò tìm phần mềm bảo mật",
+    "T1528": "Đánh cắp token truy cập ứng dụng",
+    "T1539": "Đánh cắp cookie phiên web",
+    "T1550.001": "Sử dụng dữ liệu xác thực thay thế: token truy cập ứng dụng",
+    "T1550.004": "Sử dụng dữ liệu xác thực thay thế: cookie phiên web",
+    "T1552": "Thông tin xác thực không được bảo vệ",
+    "T1552.001": "Thông tin xác thực trong tệp",
+    "T1552.004": "Khóa riêng",
+    "T1555": "Thông tin xác thực từ kho mật khẩu",
+    "T1555.001": "Keychain",
+    "T1555.003": "Thông tin xác thực từ trình duyệt web",
+    "T1567": "Đưa dữ liệu ra ngoài qua dịch vụ web",
+    "T1592": "Thu thập thông tin máy nạn nhân",
+    "T1592.002": "Thu thập thông tin máy nạn nhân: phần mềm",
+    "T1608": "Chuẩn bị năng lực tấn công",
+    "T1614": "Xác định vị trí hệ thống",
+    "T1614.001": "Xác định ngôn ngữ hệ thống",
+    "T1622": "Né tránh trình gỡ lỗi",
+}
 UNATTRIBUTED_HASH_RE = re.compile(r"(?i)^unattributed(?:[-_ ]cluster)?[-_ ]?[0-9a-f]{8,}$")
 PORTABLE_SAMPLE_PART_RE = re.compile(r"^[A-Za-z0-9._%+ ()\[\]-]+$")
 FILENAME_PLACEHOLDER_RE = re.compile(r"<[A-Za-z0-9][A-Za-z0-9_-]{0,31}>")
@@ -301,10 +369,11 @@ def _safe_existing_file(family_dir: Path, relative: PurePosixPath) -> Path:
     return resolved_file
 
 
-def _validate_attack_techniques(value: Any, context: str) -> None:
+def _validate_attack_techniques(value: Any, context: str) -> list[tuple[str, str]]:
     if not isinstance(value, list):
         raise CatalogError("shape", f"{context} must be an array")
     seen: set[str] = set()
+    result: list[tuple[str, str]] = []
     for index, technique in enumerate(value):
         item = f"{context}[{index}]"
         if not isinstance(technique, dict):
@@ -312,12 +381,155 @@ def _validate_attack_techniques(value: Any, context: str) -> None:
         if set(technique) != {"id", "name"}:
             raise CatalogError("shape", f"{item} must contain only id and name")
         technique_id = _canonical_text(technique.get("id"), f"{item}.id")
-        _canonical_text(technique.get("name"), f"{item}.name")
+        technique_name = _canonical_text(technique.get("name"), f"{item}.name")
         if not TECHNIQUE_RE.fullmatch(technique_id):
             raise CatalogError("shape", f"{item}.id is not a MITRE ATT&CK technique ID")
         if technique_id in seen:
             raise CatalogError("duplicate", f"{context} repeats {technique_id}")
         seen.add(technique_id)
+        result.append((technique_id, technique_name))
+    return result
+
+
+_INLINE_CODE_RE = re.compile(
+    r"(?<!`)(?P<fence>``|`)(?P<literal>[^`]+)(?P=fence)(?!`)",
+    re.DOTALL,
+)
+
+
+def _inline_code_spans(value: str) -> tuple[str, ...]:
+    """Return normalized single/double-backtick literals translations must preserve."""
+
+    return tuple(
+        " ".join(match.group("literal").split())
+        for match in _INLINE_CODE_RE.finditer(value)
+    )
+
+
+def _validate_inline_code_layout(value: str, context: str) -> None:
+    """Reject source-formatting wraps inside Markdown inline-code literals."""
+
+    if any("\n" in match.group("literal") for match in _INLINE_CODE_RE.finditer(value)):
+        raise CatalogError(
+            "shape", f"{context} contains a multiline inline-code literal"
+        )
+
+
+def _validate_localizations(
+    value: Any,
+    context: str,
+    *,
+    description: str,
+    typical_targets: list[str],
+    detection_notes: str,
+    attack_techniques: list[tuple[str, str]],
+) -> dict[str, list[tuple[str, str]]]:
+    """Validate complete language overlays without changing canonical English."""
+
+    if not isinstance(value, dict):
+        raise CatalogError("shape", f"{context} must be an object")
+    if "vi" not in value:
+        raise CatalogError("shape", f"{context} must contain the Vietnamese locale vi")
+
+    folded_locales: set[str] = set()
+    localized_techniques: dict[str, list[tuple[str, str]]] = {}
+    for locale, localized in value.items():
+        if not isinstance(locale, str) or not LANGUAGE_TAG_RE.fullmatch(locale):
+            raise CatalogError(
+                "shape", f"{context} contains an invalid BCP 47 language tag"
+            )
+        folded = locale.casefold()
+        if folded == "en":
+            raise CatalogError(
+                "shape", f"{context} must not duplicate canonical English"
+            )
+        if folded in folded_locales:
+            raise CatalogError(
+                "duplicate", f"{context} contains equivalent language tags"
+            )
+        folded_locales.add(folded)
+        if not isinstance(localized, dict):
+            raise CatalogError("shape", f"{context}.{locale} must be an object")
+        missing = LOCALIZED_FAMILY_FIELDS - localized.keys()
+        unknown = set(localized) - LOCALIZED_FAMILY_FIELDS
+        if missing or unknown:
+            details = []
+            if missing:
+                details.append("missing: " + ", ".join(sorted(missing)))
+            if unknown:
+                details.append("unknown fields: " + ", ".join(sorted(unknown)))
+            raise CatalogError(
+                "shape", f"{context}.{locale} has " + "; ".join(details)
+            )
+
+        localized_description = _text(
+            localized["description"], f"{context}.{locale}.description"
+        )
+        localized_targets = _string_list(
+            localized["typical_targets"],
+            f"{context}.{locale}.typical_targets",
+        )
+        localized_detection = _text(
+            localized["detection_notes"],
+            f"{context}.{locale}.detection_notes",
+        )
+        techniques = _validate_attack_techniques(
+            localized["attack_techniques"],
+            f"{context}.{locale}.attack_techniques",
+        )
+
+        if len(localized_targets) != len(typical_targets):
+            raise CatalogError(
+                "localization",
+                f"{context}.{locale}.typical_targets must align one-to-one "
+                "with canonical English",
+            )
+        canonical_ids = [technique_id for technique_id, _ in attack_techniques]
+        localized_ids = [technique_id for technique_id, _ in techniques]
+        if localized_ids != canonical_ids:
+            raise CatalogError(
+                "localization",
+                f"{context}.{locale}.attack_techniques must preserve canonical "
+                "English IDs and order",
+            )
+        if folded == "vi":
+            for technique_id, technique_name in techniques:
+                reviewed_name = REVIEWED_VI_ATTACK_NAMES.get(technique_id)
+                if reviewed_name is None:
+                    raise CatalogError(
+                        "localization",
+                        f"{context}.{locale}.attack_techniques has no reviewed "
+                        f"Vietnamese name for {technique_id}",
+                    )
+                if technique_name != reviewed_name:
+                    raise CatalogError(
+                        "localization",
+                        f"{context}.{locale}.attack_techniques names {technique_id} "
+                        f"as {technique_name!r}; reviewed catalog terminology is "
+                        f"{reviewed_name!r}",
+                    )
+
+        paired_text = [
+            ("description", description, localized_description),
+            ("detection_notes", detection_notes, localized_detection),
+            *(
+                (f"typical_targets[{index}]", source, translated)
+                for index, (source, translated) in enumerate(
+                    zip(typical_targets, localized_targets, strict=True)
+                )
+            ),
+        ]
+        for field, source, translated in paired_text:
+            _validate_inline_code_layout(translated, f"{context}.{locale}.{field}")
+            if Counter(_inline_code_spans(source)) != Counter(
+                _inline_code_spans(translated)
+            ):
+                raise CatalogError(
+                    "localization",
+                    f"{context}.{locale}.{field} must preserve inline-code literals",
+                )
+        localized_techniques[locale] = techniques
+    return localized_techniques
 
 
 def _validate_sample(
@@ -498,6 +710,8 @@ def validate_catalog(root: Path = ROOT) -> dict[str, int]:
     variant_ids: dict[str, tuple[str, str]] = {}
     variant_identities: dict[tuple[str, str, str], tuple[str, str]] = {}
     format_families: dict[str, str] = {}
+    attack_names: dict[str, tuple[str, Path]] = {}
+    localized_attack_names: dict[tuple[str, str], tuple[str, Path]] = {}
     class_counts: Counter[str] = Counter()
     variant_count = sample_bytes = observation_count = 0
 
@@ -547,11 +761,56 @@ def validate_catalog(root: Path = ROOT) -> dict[str, int]:
                 f"{context}.attribution_confidence must be low or unknown "
                 "for an observed self-label",
             )
-        _text(family["description"], f"{context}.description")
+        description = _text(family["description"], f"{context}.description")
         _string_list(family["aliases"], f"{context}.aliases")
-        _string_list(family["typical_targets"], f"{context}.typical_targets")
-        _text(family["detection_notes"], f"{context}.detection_notes")
-        _validate_attack_techniques(family["attack_techniques"], f"{context}.attack_techniques")
+        typical_targets = _string_list(
+            family["typical_targets"], f"{context}.typical_targets"
+        )
+        detection_notes = _text(
+            family["detection_notes"], f"{context}.detection_notes"
+        )
+        _validate_inline_code_layout(description, f"{context}.description")
+        for index, target in enumerate(typical_targets):
+            _validate_inline_code_layout(
+                target, f"{context}.typical_targets[{index}]"
+            )
+        _validate_inline_code_layout(
+            detection_notes, f"{context}.detection_notes"
+        )
+        techniques = _validate_attack_techniques(
+            family["attack_techniques"], f"{context}.attack_techniques"
+        )
+        localized_techniques = _validate_localizations(
+            family["localizations"],
+            f"{context}.localizations",
+            description=description,
+            typical_targets=typical_targets,
+            detection_notes=detection_notes,
+            attack_techniques=techniques,
+        )
+        for technique_id, technique_name in techniques:
+            previous = attack_names.setdefault(technique_id, (technique_name, path))
+            if previous[0] != technique_name:
+                raise CatalogError(
+                    "localization",
+                    f"{context}.attack_techniques names {technique_id} as "
+                    f"{technique_name!r}, but {previous[1].relative_to(root).as_posix()} "
+                    f"names it as {previous[0]!r}",
+                )
+        for locale, translated_techniques in localized_techniques.items():
+            for technique_id, technique_name in translated_techniques:
+                key = (locale.casefold(), technique_id)
+                previous = localized_attack_names.setdefault(
+                    key, (technique_name, path)
+                )
+                if previous[0] != technique_name:
+                    raise CatalogError(
+                        "localization",
+                        f"{context}.localizations.{locale}.attack_techniques names "
+                        f"{technique_id} as {technique_name!r}, but "
+                        f"{previous[1].relative_to(root).as_posix()} names it as "
+                        f"{previous[0]!r}",
+                    )
         related = _string_list(family["related_families"], f"{context}.related_families")
         for target in related:
             if not SLUG_RE.fullmatch(target) or target == family_id:
@@ -754,17 +1013,38 @@ def _family_label(classification: str) -> str:
     }[classification]
 
 
+def _family_label_vi(classification: str) -> str:
+    return {
+        "known_family": "Họ mã độc đã được định danh",
+        "observed_self_label": "Tên tự nhận quan sát được",
+        "cystack_named": "Tên theo dõi do CyStack đặt",
+        "family_variant": "Biến thể của một họ mã độc",
+        "aggregator": "Nguồn tổng hợp log",
+    }[classification]
+
+
 def _family_readme(
     family: dict[str, Any], known_ids: set[str], family_names: dict[str, str]
 ) -> str:
+    vietnamese = family["localizations"]["vi"]
     lines = [
         f"# {family['name']}",
         "",
+        "## Overview / Tổng quan",
+        "",
+        "### English",
+        "",
         family["description"].strip(),
         "",
-        "## Research status",
+        "### Tiếng Việt",
         "",
-        f"- Classification: **{_family_label(family['classification'])}**",
+        vietnamese["description"].strip(),
+        "",
+        "## Research status / Trạng thái nghiên cứu",
+        "",
+        "- Classification / Phân loại: "
+        f"**{_family_label(family['classification'])} / "
+        f"{_family_label_vi(family['classification'])}**",
         f"- Attribution confidence: **{family['attribution_confidence']}**",
     ]
     if family.get("canonical_family"):
@@ -782,11 +1062,34 @@ def _family_readme(
             "- CyStack observations represented: "
             f"**{sum(v.get('observations', 1) for v in family['variants']):,}**"
         )
-    lines.extend(["", "## What it targets", ""])
-    lines.extend(f"- {target}" for target in family["typical_targets"])
+    lines.extend(["", "## What it targets / Mục tiêu thường gặp", ""])
+    if family["typical_targets"]:
+        lines.extend(["| English | Tiếng Việt |", "|---|---|"])
+        lines.extend(
+            f"| {_md(english)} | {_md(vietnamese_target)} |"
+            for english, vietnamese_target in zip(
+                family["typical_targets"],
+                vietnamese["typical_targets"],
+                strict=True,
+            )
+        )
     if not family["typical_targets"]:
-        lines.append("- No target inventory published yet.")
-    lines.extend(["", "## Detection notes", "", family["detection_notes"].strip(), ""])
+        lines.append("- No target inventory published yet / Chưa công bố danh mục mục tiêu.")
+    lines.extend(
+        [
+            "",
+            "## Detection notes / Ghi chú nhận diện",
+            "",
+            "### English",
+            "",
+            family["detection_notes"].strip(),
+            "",
+            "### Tiếng Việt",
+            "",
+            vietnamese["detection_notes"].strip(),
+            "",
+        ]
+    )
 
     if family.get("contains_families"):
         lines.extend(["## Families seen in this aggregator", ""])
@@ -857,13 +1160,25 @@ def _family_readme(
 
     lines.extend(["", "## MITRE ATT&CK", ""])
     if family["attack_techniques"]:
-        lines.extend(["| Technique | Name |", "|---|---|"])
-        for technique in family["attack_techniques"]:
+        lines.extend(
+            [
+                "| Technique | English | Tiếng Việt |",
+                "|---|---|---|",
+            ]
+        )
+        for technique, translated in zip(
+            family["attack_techniques"],
+            vietnamese["attack_techniques"],
+            strict=True,
+        ):
             technique_id = technique["id"]
             url = f"https://attack.mitre.org/techniques/{technique_id.replace('.', '/')}/"
-            lines.append(f"| [{technique_id}]({url}) | {_md(technique['name'])} |")
+            lines.append(
+                f"| [{technique_id}]({url}) | {_md(technique['name'])} | "
+                f"{_md(translated['name'])} |"
+            )
     else:
-        lines.append("No ATT&CK mapping published yet.")
+        lines.append("No ATT&CK mapping published yet / Chưa công bố ánh xạ ATT&CK.")
 
     lines.extend(["", "## Related catalog profiles", ""])
     if family["related_families"]:
@@ -909,6 +1224,13 @@ def _root_readme(families: list[dict[str, Any]], stats: dict[str, int]) -> str:
         "",
         "> This catalog describes exported stealer logs, not malware binaries. A structural "
         "match is an analyst lead, not proof of infection or final attribution.",
+        "",
+        "Family pages present the research narrative, target inventory, detection notes, and "
+        "MITRE ATT&CK names in both English and Vietnamese. English remains the canonical "
+        "machine-readable text; Vietnamese is maintained as an aligned localization.",
+        "",
+        "Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục tiêu, ghi chú nhận diện "
+        "và tên kỹ thuật MITRE ATT&CK bằng cả tiếng Anh và tiếng Việt.",
         "",
         "## Corpus at a glance",
         "",
@@ -1003,8 +1325,9 @@ def _root_readme(families: list[dict[str, Any]], stats: dict[str, int]) -> str:
             "Family descriptions and detection notes are maintained by CyStack Threat "
             "Intelligence. Samples retain useful layout, spelling, separators, field order, "
             "and malware/panel markers while direct victim secrets are scrubbed.",
-            "Repository sample files use the stable name `sample.txt`; the original artifact "
-            "basename patterns remain in each variant's **Observed filenames** field.",
+            "Each sample lives under its stable variant directory. Its basename is either "
+            "`sample.txt` or the sanitized observed basename; original artifact basename "
+            "patterns remain in each variant's **Observed filenames** field.",
             "",
             "## Research process",
             "",
@@ -1017,6 +1340,10 @@ def _root_readme(families: list[dict[str, Any]], stats: dict[str, int]) -> str:
             "The machine-readable source for each profile is its `family.json`; the adjacent "
             "README and this index are generated from those records. See [CONTRIBUTING.md]"
             "(CONTRIBUTING.md) for corrections or new evidence.",
+            "",
+            "Top-level descriptive fields in `family.json` are canonical English. The "
+            "`localizations.vi` object carries a complete, positionally aligned Vietnamese "
+            "translation without changing stable IDs or evidence fields.",
             "",
             "`format_id` is a catalog-wide stable public identifier for a log structure; each "
             "`v_...` value is an opaque catalog-wide stable variant identifier and should not "
@@ -1457,12 +1784,39 @@ def _normal(value: str) -> str:
 def _field_labels(content: str) -> set[str]:
     labels: set[str] = set()
     for line in content.splitlines():
-        match = re.match(r'^\s*(?:[-*•|#>]\s*)?["\']?([^:=\n]{1,100}?)["\']?\s*[:=]', line)
+        # Comments and advertising banners are not log-schema fields.
+        if line.lstrip(" \t").startswith("#"):
+            continue
+        match = FIELD_LINE_RE.match(line)
         if match:
-            labels.add(_normal(match.group(1)).strip(" []{}()\"'"))
-        for json_key in re.findall(r'"([^"\\]{1,100})"\s*:', line):
-            labels.add(_normal(json_key))
+            label = _plausible_field_label(
+                match.group("label"),
+                separator=match.group("separator"),
+                value=match.group("value"),
+            )
+            if label:
+                labels.add(_normal(label))
+        for json_key in JSON_FIELD_RE.findall(line):
+            label = _plausible_field_label(json_key)
+            if label:
+                labels.add(_normal(label))
     return {label for label in labels if label}
+
+
+def _plausible_field_label(
+    label: str, *, separator: str = "", value: str = ""
+) -> str:
+    """Return a structural label, excluding ASCII art, URLs, and paths."""
+
+    cleaned = label.strip(" []{}()\"'")
+    if (
+        not cleaned
+        or not any(character.isalnum() for character in cleaned)
+        or any(character in cleaned for character in "\\|<>")
+        or (separator == ":" and value.lstrip().startswith((":", "/", "\\")))
+    ):
+        return ""
+    return cleaned
 
 
 def _filename_matches(pattern: str, filename: str) -> bool:
@@ -1682,7 +2036,10 @@ def identify(path: Path, root: Path = ROOT, *, top: int = 5) -> dict[str, Any]:
         if first["evidence_level"] == "strong":
             ambiguous = any(item["evidence_level"] == "strong" for item in competitors)
         elif first["evidence_level"] == "possible":
-            ambiguous = any(item["_full_signature"] for item in competitors)
+            ambiguous = (
+                first["_full_signature"]
+                and first["evidence"]["signature_family_count"] > 1
+            ) or any(item["_full_signature"] for item in competitors)
         else:
             ambiguous = bool(competitors)
     status = "no_match"
@@ -1754,7 +2111,22 @@ def _error(exc: CatalogError, *, rejected: bool = False) -> None:
     )
 
 
+def _configure_utf8_stdio() -> None:
+    """Make Unicode catalog evidence usable on legacy Windows consoles."""
+
+    for stream in (sys.stdout, sys.stderr):
+        reconfigure = getattr(stream, "reconfigure", None)
+        if not callable(reconfigure):
+            continue
+        try:
+            reconfigure(encoding="utf-8", errors="replace")
+        except (OSError, ValueError):
+            # Embedded callers can expose already-detached or immutable streams.
+            continue
+
+
 def main(argv: list[str] | None = None) -> int:
+    _configure_utf8_stdio()
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
     validate_parser = commands.add_parser("validate", help="validate family JSON and samples")

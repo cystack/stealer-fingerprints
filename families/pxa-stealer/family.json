@@ -93,5 +93,40 @@
       },
       "layout_id": "full-wmi"
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "PXA Stealer là một mã độc đánh cắp thông tin có nguồn gốc từ Việt Nam. `system_info.txt` của nó sử dụng phần tiêu đề bằng tiếng Việt (`Thông tin hệ thống`) và các khóa dạng snake_case được lấy từ tên WMI / Win32 API, khiến dấu vết trở nên đặc trưng về mặt hình thức ngay cả trước khi đối chiếu nội dung.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trong trình duyệt",
+        "Tiện ích mở rộng ví tiền mã hóa và ứng dụng desktop",
+        "Token phiên đăng nhập của Telegram, Discord, Steam",
+        "Cấu hình ứng dụng VPN và FTP client",
+        "Tài liệu khớp với các mẫu tên tệp cụ thể"
+      ],
+      "detection_notes": "Banner tiếng Việt `Thông tin hệ thống` là dấu hiệu rõ ràng, không gây nhầm lẫn. Kết hợp với kiểu khóa snake_case (`computer_system`, `os`, `processor`, `bios`) để xác nhận.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

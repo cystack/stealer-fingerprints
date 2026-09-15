@@ -66,5 +66,43 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Hồ sơ tự gán nhãn quan sát được cho báo cáo hệ thống `Snake Stealer`\nđược phát tán lại bên trong các gói `@BRADMAX`. Tệp này có nhãn ASCII-art\nSNAKE và bảy phần được bao trong dấu ngoặc ba-dấu-bằng. Hiện chưa có\nphân tích độc lập nào ánh xạ định dạng cụ thể này với một\nhọ mã độc chính danh. Định dạng này khác biệt với WhiteSnake và Snake\nKeylogger, vốn sử dụng định dạng và tên tệp khác.",
+      "typical_targets": [
+        "Kiểm kê phần cứng hệ thống, hệ điều hành và thông tin ngôn ngữ/khu vực",
+        "Danh tính người dùng và máy tính",
+        "Cấu hình adapter mạng",
+        "Danh sách tiến trình đang chạy và trình duyệt đã cài đặt"
+      ],
+      "detection_notes": "Định dạng được ghi nhận đòi hỏi bộ ba phần cấu trúc `=== INFO ===`,\n`=== HARDWARE INFORMATION ===`, và `=== INSTALLED BROWSERS ===`.\nNhãn SNAKE quan sát được chỉ đặt tên cho hồ sơ này chứ không tự nó\nxác lập nguồn gốc payload, do đó việc quy kết họ mã độc vẫn chưa xác định.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1016",
+          "name": "Dò tìm cấu hình mạng hệ thống"
+        },
+        {
+          "id": "T1057",
+          "name": "Dò tìm tiến trình"
+        },
+        {
+          "id": "T1518",
+          "name": "Dò tìm phần mềm"
+        },
+        {
+          "id": "T1124",
+          "name": "Xác định thời gian hệ thống"
+        }
+      ]
+    }
+  }
 }

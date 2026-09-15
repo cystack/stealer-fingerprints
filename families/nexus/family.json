@@ -37,5 +37,35 @@
     "https://fr3d.hk/blog/nexus-just-another-stealer",
     "https://flare.io/learn/resources/cybercrime-favorite-target-gamers"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "Nexus là một mã độc đánh cắp thông tin Windows viết bằng C++ có kích thước nhỏ, được rao bán trên diễn đàn tội phạm mạng tiếng Nga exploit.in với giá khoảng 100 đô la mỗi bản build kèm cập nhật miễn phí. Bài phân tích dịch ngược kỹ thuật đầu tiên mô tả một stub có kích thước khoảng 460 KB, thực hiện truy vấn `SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion` để lấy phiên bản Windows, và ghi tập hợp nhỏ các thuộc tính thu thập được vào một thư mục tạm được đặt tên theo HWID trước khi đưa dữ liệu ra ngoài.\n\n`Information.txt` trên đĩa mang một banner ASCII dạng khung kẻ sáu dòng đánh vần NEXUS, một khối hệ thống `Key: Value` dạng phẳng, và phần cuối chứa dòng chữ tiếng Nga `Тема с отзывами:` (\"Chủ đề đánh giá:\") liên kết đến zelenka.guru / Lolzteam cùng với địa chỉ liên hệ TOX và JABBER của người bán (`NEXUSDEVELOPER@EXPLOIT.IN` và `NEXUSSUPPORT@EXPLOIT.IN`).\n\nNghiên cứu dữ liệu viễn trắc lây nhiễm công khai ghi nhận Nexus là một trong bốn họ mã độc riêng biệt được quan sát trong một mẫu 50.000 thiết bị bị lây nhiễm năm 2025, quy khoảng 2% mẫu này cho họ mã độc này. Dấu vân tay cấu trúc `Information.txt` cụ thể chưa được trích dẫn trực tiếp trong bất kỳ bài phân tích chuyên sâu công khai nào, do đó việc quy kết họ mã độc dựa trên chuỗi ký tự tự nhận diện qua JABBER và một sự khớp kỹ thuật độc lập.",
+      "typical_targets": [
+        "Tên người dùng, tên máy và các định danh máy",
+        "Phiên bản Windows và ngôn ngữ hệ điều hành",
+        "Thông tin kiểm kê CPU, GPU và bộ nhớ",
+        "Địa chỉ IP và vị trí địa lý theo quốc gia"
+      ],
+      "detection_notes": "Chuỗi ký tự JABBER `NEXUSDEVELOPER@EXPLOIT.IN` là dấu vân tay đơn lẻ mạnh nhất, vì nó mang chính bí danh liên hệ bán hàng của tác giả mã độc và được panel ghi vào mọi log. Banner dạng khung kẻ NEXUS sáu dòng và dòng chữ tiếng Nga `Тема с отзывами:` dẫn đến chủ đề đánh giá trên zelenka.guru cung cấp xác nhận bổ sung. Hãy phân loại log của họ mã độc này bằng cách thu thập khối hệ thống `Key: Value` dạng phẳng cùng với HWID; tập dữ liệu đưa ra ngoài có kích thước nhỏ và tự bản thân không chứa dữ liệu ngân hàng, ví tiền điện tử, hay cookie phiên (dữ liệu đầu ra của mô-đun thu thập tệp nằm trong các tệp liên quan bên trong cùng thư mục nạn nhân).",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        },
+        {
+          "id": "T1124",
+          "name": "Xác định thời gian hệ thống"
+        }
+      ]
+    }
+  }
 }

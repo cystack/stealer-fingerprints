@@ -58,5 +58,13 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "`information.txt` chỉ có biểu ngữ, được tạo ra qua kênh phát tán Telegram `@bugatti_cloud`. Các thư mục nạn nhân sử dụng mẫu tên kiểu cấu hình (`AR_<ver>_Cty_<id>_rgn_<n>i_ll<n>i_eenable_itp_optimization0-<hwidpfx>`). Nội dung tệp hệ thống là một dòng duy nhất biểu ngữ ASCII-art nằm giữa các viền dạng ống, không có phần trường thông tin nào cả; mã độc đánh cắp thông tin cơ bản tạo dữ liệu đầu ra là biểu ngữ mà không có bất kỳ lời giới thiệu định danh nào.",
+      "typical_targets": [],
+      "detection_notes": "`information.txt` một dòng duy nhất chỉ chứa biểu ngữ ASCII-art nằm giữa các viền dạng ống. Bố cục thư mục đi kèm sử dụng kiểu hậu tố dài dạng cấu hình, khác biệt với các bố cục theo kênh khác.",
+      "attack_techniques": []
+    }
+  }
 }

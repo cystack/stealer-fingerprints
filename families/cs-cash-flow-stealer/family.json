@@ -24,5 +24,13 @@
     "redline",
     "x-files"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSCashFlowStealer là định danh do CyStack đặt cho log `CashFlow Premium Cloud` `System.txt` đã bị lược bỏ nhiều thành phần, được ghi nhận bên trong các gói phân phối bởi `@ft7links` cùng với hoạt động phân phối CSArtHouseCloudStealer. Phần thân bao bọc cùng một khối thông tin nạn nhân bắt nguồn từ XFiles giống như `CSArtHouseCloudStealer` nhưng sử dụng biểu ngữ (banner) của một đối tượng phân phối khác. Đầu mối hỗ trợ `@HUNTER_CLOUDS` trong phần chân trang và tham chiếu kênh `t.me/Link_CashFlow` giúp xác định đường phân phối.",
+      "typical_targets": [],
+      "detection_notes": "Biểu ngữ (banner) tiêu đề `t . m e / + ... = C4SHFL0W PR3M1UM CL0UD L0G5` kèm các chữ số kiểu leetspeak và URL có khoảng cách là dấu hiệu nhận diện rõ ràng nhất. Dòng chân trang đi kèm mang tham chiếu hỗ trợ `@HUNTER_CLOUDS` và đầu mối kênh `Link_CashFlow`.",
+      "attack_techniques": []
+    }
+  }
 }

@@ -71,5 +71,43 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSEmojiCountStealer là định danh do CyStack đặt cho một bảng điều khiển `Information.txt` được chia thành bốn phần `- IP Info -` / `- PC Info -` / `- Other Info -` / `- Log Info -` với tiêu đề dạng gạch ngang-khoảng trắng-tên-khoảng trắng-gạch ngang. Phần Log Info chứa một placeholder `Build:_____` và một dòng đếm số lượng cho mỗi loại dấu vết, sử dụng biểu tượng cảm xúc ✅ (đã thu thập được dữ liệu) hoặc ❌ (danh mục trống) để đánh dấu. Tám danh mục đếm được theo dõi gồm: `Passwords:`, `Cookies:`, `Wallets:`, `Files:`, `Credit Cards:`, `Servers FTP/SSH:`, `Discord Tokens:`, `Others:`. Được ghi nhận bên trong các gói tổng hợp `!! 2025 NOV.part001.rar` trong các thư mục nạn nhân `[<CC>]<IP>/Information.txt`.\n\nPhần thân chứa các tên trường `FileLocation:` và `Current Language:` trùng khớp với chuẩn Redline, nhưng cấu trúc phần bao quanh (tiêu đề dạng gạch ngang-khoảng trắng, chỉ báo đếm bằng biểu tượng cảm xúc, placeholder `Build:_____`) lại không khớp với chuẩn Redline (không có lỗi chính tả `Operation System:`, không có khối `Hardwares:`, không có khối `Anti-Viruses:`). Việc quy kết họ mã độc vẫn ở mức tạm thời, chờ một ánh xạ tình báo mối đe dọa đã công bố cho bố cục này.",
+      "typical_targets": [
+        "Thông tin xác thực được lưu trong trình duyệt",
+        "Cookie trình duyệt và token phiên đăng nhập",
+        "Ví tiền điện tử",
+        "Tệp bị thu thập",
+        "Thẻ tín dụng",
+        "Thông tin xác thực máy chủ FTP và SSH",
+        "Token Discord",
+        "Thông tin định vị địa lý theo từng nạn nhân (IP / quốc gia / thành phố / nhà cung cấp dịch vụ Internet)"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết đòi hỏi ba chuỗi con trong tiêu đề phần (`- IP Info -`, `- PC Info -`, `- Log Info -`) cộng với ít nhất một chỉ báo đếm bằng biểu tượng cảm xúc (U+2705 ✅ hoặc U+274C ❌). Bộ ba phần này là duy nhất trong toàn bộ danh mục, và việc xác nhận bằng biểu tượng cảm xúc giúp loại trừ các văn bản không liên quan sử dụng tiêu đề dạng gạch ngang làm dấu phân đoạn văn xuôi thông thường. Trong quá trình phân loại ban đầu, hãy coi việc quy kết họ mã độc là chưa xác định: các tên trường `FileLocation:` và `Current Language:` trùng chuẩn Redline cho thấy khả năng có nguồn gốc từ Redline, nhưng cấu trúc dữ liệu tổng thể của phần thân lại không khớp với chuẩn Redline.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

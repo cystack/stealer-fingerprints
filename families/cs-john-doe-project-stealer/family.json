@@ -3,7 +3,7 @@
   "name": "CSJohnDoeProjectStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSJohnDoeProjectStealer is a CyStack-coined identifier for a\n.NET-based stealer that self-identifies with the single-line\nbanner ``John Doe Project [t.me/JohnDoeProject]`` at the top\nof its ``system_info.txt`` file. The body carries a flat\nbare-key ``Key: Value`` identity block with .NET-canonical\nfields (``CLR Version:``, ``.NET Runtime:``, ``Processor\nCount:``, ``System Directory:``) plus host fingerprint\n(``Computer Name``, ``User Name``, ``OS Version``, ``System\nVersion``, ``Local IP``, ``Default Gateway``, ``Antivirus``,\n``CPU``, ``GPU``, ``RAM``, ``SCREEN``) and a trailing ``===\nENVIRONMENT VARIABLES ===`` section carrying a full ``KEY =\nvalue`` env-var dump.\n\nThe ``@JohnDoeProject`` Telegram channel and the panel banner\nare unattested in public reporting and community catalogues.\nThe .NET-canonical field set is consistent with a private\nC#-based stealer template. Family attribution is provisional\npending a published threat-intel mapping for this layout.",
+  "description": "CSJohnDoeProjectStealer is a CyStack-coined identifier for a\n.NET-based stealer that self-identifies with the single-line\nbanner ``John Doe Project [t.me/JohnDoeProject]`` at the top\nof its ``system_info.txt`` file. The body carries a flat\nbare-key ``Key: Value`` identity block with .NET-canonical\nfields (``CLR Version:``, ``.NET Runtime:``, ``Processor Count:``, ``System Directory:``) plus host fingerprint\n(``Computer Name``, ``User Name``, ``OS Version``, ``System Version``, ``Local IP``, ``Default Gateway``, ``Antivirus``,\n``CPU``, ``GPU``, ``RAM``, ``SCREEN``) and a trailing ``=== ENVIRONMENT VARIABLES ===`` section carrying a full ``KEY = value`` env-var dump.\n\nThe ``@JohnDoeProject`` Telegram channel and the panel banner\nare unattested in public reporting and community catalogues.\nThe .NET-canonical field set is consistent with a private\nC#-based stealer template. Family attribution is provisional\npending a published threat-intel mapping for this layout.",
   "aliases": [
     "John Doe Project banner stealer",
     "@JohnDoeProject system_info.txt slice"
@@ -34,5 +34,31 @@
   "observed_channels": [
     "https://t.me/JohnDoeProject"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSJohnDoeProjectStealer là một định danh do CyStack đặt tên cho một mã độc đánh cắp thông tin dựa trên .NET, tự nhận diện bằng biểu ngữ một dòng ``John Doe Project [t.me/JohnDoeProject]`` ở đầu tệp ``system_info.txt`` của nó. Phần nội dung mang một khối định danh dạng khóa trần phẳng ``Key: Value`` với các trường chuẩn của .NET (``CLR Version:``, ``.NET Runtime:``, ``Processor Count:``, ``System Directory:``) cùng dấu vân tay máy (``Computer Name``, ``User Name``, ``OS Version``, ``System Version``, ``Local IP``, ``Default Gateway``, ``Antivirus``, ``CPU``, ``GPU``, ``RAM``, ``SCREEN``) và một phần cuối ``=== ENVIRONMENT VARIABLES ===`` chứa bản kết xuất đầy đủ các biến môi trường ``KEY = value``.\n\nKênh Telegram ``@JohnDoeProject`` và biểu ngữ bảng điều khiển chưa được xác nhận trong các báo cáo công khai và danh mục cộng đồng. Tập hợp trường chuẩn của .NET phù hợp với một mẫu mã độc đánh cắp thông tin viết bằng C# dạng riêng tư. Việc quy kết họ mã độc vẫn còn tạm thời cho đến khi có một ánh xạ tình báo mối đe dọa được công bố cho bố cục này.",
+      "typical_targets": [
+        "Dấu vân tay phần cứng máy và hệ điều hành (CPU, GPU, RAM, độ phân giải, phiên bản Windows, .NET Runtime, CLR)",
+        "Định danh mạng (địa chỉ IP LAN, cổng mặc định)",
+        "Định danh tài khoản (tên người dùng Windows, tên máy tính)",
+        "Bản kết xuất đầy đủ các biến môi trường của Windows"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu chuỗi con biểu ngữ ``John Doe Project``, chuỗi URL ``t.me/JohnDoeProject``, và khóa trường ``CLR Version:`` được neo theo dòng. Biểu ngữ cùng với URL tạo thành tự định danh của đối tượng vận hành; kết hợp chúng với trường chuẩn ``CLR Version:`` của .NET giúp phân biệt với các bài viết công khai có thể trích dẫn biểu ngữ hoặc URL trong văn bản. Trong quá trình phân loại ban đầu, hãy coi họ mã độc đánh cắp thông tin bên dưới là chưa thể quy kết và dựa vào siêu dữ liệu kênh cùng panel_brand để nhóm các mẫu phục vụ việc rà soát của nhà phân tích. Các tệp liên quan trong thư mục nạn nhân (dữ liệu xuất từ trình duyệt, bản kết xuất cookie, dấu vết ví) có thể cung cấp mức độ quy kết họ mã độc đáng tin cậy hơn.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        }
+      ]
+    }
+  }
 }

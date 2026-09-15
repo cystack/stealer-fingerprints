@@ -61,5 +61,35 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSFacebookProfileStealer là định danh do CyStack đặt cho một bản tóm tắt hồ sơ tài khoản Facebook mà bảng điều khiển `@ft7links-lumma` ghi vào một tệp có tên `System.txt` thay vì thông tin hệ thống chuẩn của mã độc đánh cắp thông tin. Mỗi dòng sử dụng ký tự en-dash U+2013 (không phải dấu gạch nối ASCII) làm ký tự tiền tố và liệt kê bốn trường được lấy trực tiếp từ Facebook Graph API: `Friends` (số lượng bạn bè của tài khoản), `Business` (cờ đánh dấu Business Manager), `Marketplace` (cờ đánh dấu quyền truy cập Marketplace), và `Country` (quốc gia của tài khoản Facebook, để trống đối với nạn nhân có IP bogon mà bảng điều khiển không thể phân giải geo-IP).\n\nĐịnh dạng này khớp với những gì các báo cáo công khai mô tả về NodeStealer 2.0 và SYS01 stealer (cả hai đều truy vấn Facebook Graph API sau khi đưa cookie phiên ra ngoài để liệt kê số lượng bạn bè, cờ tài khoản doanh nghiệp, và quốc gia tài khoản), nhưng chưa có báo cáo công khai nào cho thấy mẫu log với bộ nhãn tiền tố en-dash chính xác này, do đó việc ánh xạ định dạng sang họ mã độc vẫn mang tính tạm thời và tiền tố `CS` được giữ lại cho đến khi có xác nhận được công bố. Danh mục này giữ nguyên cấu trúc như một hồ sơ chỉ mang tính gán nhãn: quốc gia và nhãn theo dõi có thể được khôi phục, trong khi bằng chứng hiện có không đủ để hỗ trợ một quy kết họ mã độc chắc chắn hơn.",
+      "typical_targets": [
+        "Cookie phiên Facebook và thông tin xác thực tài khoản",
+        "Quyền truy cập Facebook Business Manager và tài khoản quảng cáo",
+        "Quyền truy cập danh sách rao bán trên Facebook Marketplace",
+        "Dữ liệu meta hồ sơ tài khoản Facebook (số lượng bạn bè, quốc gia)"
+      ],
+      "detection_notes": "Tiền tố dòng en-dash U+2013 (`-`) kết hợp với bộ ba trường `Friends:` / `Business:` / `Marketplace:` của Facebook Graph API là điểm đặc trưng riêng của dấu vết này: mọi họ mã độc khác dùng tiền tố gạch nối trong danh mục này đều sử dụng ký tự gạch nối ASCII hoặc em-dash, và không có định dạng họ mã độc nào khác mang bộ trường đặc thù Facebook này. Rủi ro dương tính giả thấp vì bộ ba khóa này quá đặc thù để trùng lặp với bất kỳ định dạng thông tin hệ thống nào khác. Xử lý ban đầu: bất kỳ dấu hiệu xâm nhập (IOC) nào được gắn nhãn họ mã độc này đều có nghĩa là nạn nhân đã bị chiếm đoạt phiên Facebook bởi một mã độc đánh cắp thông tin nhắm vào Facebook, ngay cả khi không có tệp thông tin hệ thống nào khác trong thư mục nạn nhân.",
+      "attack_techniques": [
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

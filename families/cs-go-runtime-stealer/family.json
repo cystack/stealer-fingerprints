@@ -3,7 +3,7 @@
   "name": "CSGoRuntimeStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSGoRuntimeStealer is a CyStack-coined identifier for a bare\n4-field `system_info.txt` panel observed inside `!! 2025\nDEC.part01.rar` aggregator packs at\n`[<CC>]<IPv4>/<operator-handle>/system_info.txt` victim\nfolders (e.g. `[UN]<IPv4>/poopbandit/system_info.txt`).\nThe body is a 5-line minimal panel: an ALL CAPS triple-equals\n`=== SYSTEM INFORMATION ===` section header, four flat\nkey-value lines (`User: <Computer>\\<Username>` / `Computer:` /\n`OS: <goos> <goarch>` / `Directory:`), and a closing\ntriple-equals rule.\n\nThe strongest single fingerprint is the `OS:` value: Go\nbinaries emit `runtime.GOOS + \" \" + runtime.GOARCH` which\nproduces strings like `windows amd64`, `linux 386`, or `darwin\narm64`. The bare lowercase two-token shape does not appear in\nany other surveyed stealer-builder runtime: .NET emits\n`Microsoft Windows <version>`, Python emits\n`Windows-<release>-<build>`, Lumma emits `Windows <version>\n<edition> (<build>)`. The Go runtime shape is the panel's\nclearest builder-attribution signal.\n\nThe `User:` line carries a `<Computer>\\<Username>`\nbackslash-separated identity (the panel's preferred shape over\n`os/user.Current().Username` which would return just the\nusername on Unix). The `Directory:` line carries the malware's\nexecution path; the observed sample ran out of `%TEMP%`. The\npath-side `<operator-handle>/` segment between the victim\nfolder and the `system_info.txt` file exposes the operator's\npanel-side identifier (`poopbandit` in the observed sample);\nthe operator handle is retained as distribution-channel\nevidence in this catalog.\n\nPublic reporting and the public stealer-format catalogues do\nnot document a family that emits exactly this minimal\nGo-runtime panel shape. The `poopbandit` operator handle is\nunattested. Family attribution is provisional pending a\npublished mapping.",
+  "description": "CSGoRuntimeStealer is a CyStack-coined identifier for a bare\n4-field `system_info.txt` panel observed inside `!! 2025 DEC.part01.rar` aggregator packs at\n`[<CC>]<IPv4>/<operator-handle>/system_info.txt` victim\nfolders (e.g. `[UN]<IPv4>/poopbandit/system_info.txt`).\nThe body is a 5-line minimal panel: an ALL CAPS triple-equals\n`=== SYSTEM INFORMATION ===` section header, four flat\nkey-value lines (`User: <Computer>\\<Username>` / `Computer:` /\n`OS: <goos> <goarch>` / `Directory:`), and a closing\ntriple-equals rule.\n\nThe strongest single fingerprint is the `OS:` value: Go\nbinaries emit `runtime.GOOS + \" \" + runtime.GOARCH` which\nproduces strings like `windows amd64`, `linux 386`, or `darwin arm64`. The bare lowercase two-token shape does not appear in\nany other surveyed stealer-builder runtime: .NET emits\n`Microsoft Windows <version>`, Python emits\n`Windows-<release>-<build>`, Lumma emits `Windows <version> <edition> (<build>)`. The Go runtime shape is the panel's\nclearest builder-attribution signal.\n\nThe `User:` line carries a `<Computer>\\<Username>`\nbackslash-separated identity (the panel's preferred shape over\n`os/user.Current().Username` which would return just the\nusername on Unix). The `Directory:` line carries the malware's\nexecution path; the observed sample ran out of `%TEMP%`. The\npath-side `<operator-handle>/` segment between the victim\nfolder and the `system_info.txt` file exposes the operator's\npanel-side identifier (`poopbandit` in the observed sample);\nthe operator handle is retained as distribution-channel\nevidence in this catalog.\n\nPublic reporting and the public stealer-format catalogues do\nnot document a family that emits exactly this minimal\nGo-runtime panel shape. The `poopbandit` operator handle is\nunattested. Family attribution is provisional pending a\npublished mapping.",
   "aliases": [
     "Go-runtime minimal stealer panel",
     "poopbandit Information.txt"
@@ -59,5 +59,31 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSGoRuntimeStealer là định danh do CyStack đặt cho một panel 4 trường không có tiền tố `system_info.txt` được phát hiện bên trong các gói tổng hợp `!! 2025 DEC.part01.rar` tại các thư mục nạn nhân `[<CC>]<IPv4>/<operator-handle>/system_info.txt` (ví dụ: `[UN]<IPv4>/poopbandit/system_info.txt`).\n\nPhần thân là một panel tối giản gồm 5 dòng: tiêu đề mục viết HOA toàn bộ dạng ba dấu bằng `=== SYSTEM INFORMATION ===`, bốn dòng khóa-giá trị phẳng (`User: <Computer>\\<Username>` / `Computer:` / `OS: <goos> <goarch>` / `Directory:`), và một dòng kẻ ba dấu bằng đóng.\n\nDấu vết nhận diện mạnh nhất là giá trị `OS:`: các tệp nhị phân Go tạo dữ liệu đầu ra `runtime.GOOS + \" \" + runtime.GOARCH`, sinh ra các chuỗi như `windows amd64`, `linux 386`, hoặc `darwin arm64`. Cấu trúc dữ liệu hai token chữ thường không có tiền tố này không xuất hiện trong bất kỳ runtime của trình dựng mã độc đánh cắp thông tin nào khác được khảo sát: .NET tạo ra `Microsoft Windows <version>`, Python tạo ra `Windows-<release>-<build>`, Lumma tạo ra `Windows <version> <edition> (<build>)`. Cấu trúc dữ liệu runtime Go là tín hiệu quy kết trình dựng (builder) rõ ràng nhất của panel này.\n\nDòng `User:` mang định danh phân tách bằng dấu gạch chéo ngược `<Computer>\\<Username>` (đây là cấu trúc dữ liệu mà panel ưu tiên hơn so với `os/user.Current().Username` vốn chỉ trả về tên người dùng trên Unix). Dòng `Directory:` mang đường dẫn thực thi của mã độc; mẫu quan sát được chạy từ `%TEMP%`. Đoạn `<operator-handle>/` ở phía đường dẫn, nằm giữa thư mục nạn nhân và tệp `system_info.txt`, lộ ra định danh phía panel của đối tượng vận hành (`poopbandit` trong mẫu quan sát được); handle của đối tượng vận hành được lưu giữ trong danh mục này như một bằng chứng về kênh phân phối.\n\nCác báo cáo công khai cũng như các danh mục định dạng mã độc đánh cắp thông tin công khai không ghi nhận họ mã độc nào tạo ra chính xác cấu trúc dữ liệu panel runtime Go tối giản này. Handle đối tượng vận hành `poopbandit` chưa được ghi nhận ở nguồn nào khác. Việc quy kết họ mã độc hiện chỉ mang tính tạm thời cho đến khi có ánh xạ được công bố.",
+      "typical_targets": [
+        "Tên máy nạn nhân (trường `Computer:` cộng với nửa phân tách bằng dấu gạch chéo ngược của dòng `User:`)",
+        "Tên tài khoản rút gọn của nạn nhân (dòng `User:`)",
+        "Hệ điều hành / kiến trúc (dòng `OS:` thông qua các giá trị runtime Go)",
+        "Thư mục thực thi của mã độc (dòng `Directory:`)"
+      ],
+      "detection_notes": "Dấu vết nhận diện yêu cầu `=== SYSTEM INFORMATION ===` (viết HOA toàn bộ) VÀ một trường `Directory:` VÀ một dòng `OS:` khớp với cấu trúc dữ liệu hai token chữ thường `<goos> <goarch>` đặc trưng của runtime Go CỘNG VỚI việc không có `=== ENVIRONMENT VARIABLES ===` (loại trừ khả năng là `CSEnvVarDumpStealer`). Cấu trúc dữ liệu `OS:` của runtime Go là tín hiệu đơn lẻ mạnh nhất của panel này: không có runtime của trình dựng mã độc đánh cắp thông tin nào khác được khảo sát tạo dữ liệu đầu ra trường hệ điều hành theo đúng dạng này. Trong quá trình phân loại ban đầu (triage), đoạn `<operator-handle>/` ở phía đường dẫn (nằm giữa thư mục nạn nhân `[<CC>]<IPv4>/` và tệp `system_info.txt`) mang định danh phía panel của đối tượng vận hành; hãy phân cụm các dấu hiệu xâm nhập (IOC) theo handle để theo dõi kênh phân phối.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1059.004",
+          "name": "Unix shell"
+        }
+      ]
+    }
+  }
 }

@@ -1,5 +1,9 @@
 # Snake Keylogger
 
+## Overview / Tổng quan
+
+### English
+
 Snake Keylogger, also tracked as 404 Keylogger, is a .NET-based info-stealer and keylogger first documented in late
 2020. The malware harvests keystrokes, saved browser
 credentials, clipboard content, and screenshots, then
@@ -20,23 +24,33 @@ Longitude) that fills with the literal `{Null}` placeholder
 when the ipapi.co lookup failed or the operator disabled
 it.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **Known malware family**
+Snake Keylogger, còn được theo dõi với tên gọi 404 Keylogger, là một mã độc đánh cắp thông tin và keylogger dựa trên .NET, được ghi nhận lần đầu vào cuối năm 2020. Mã độc này thu thập thao tác bàn phím, thông tin xác thực được lưu trong trình duyệt, nội dung clipboard và ảnh chụp màn hình, sau đó đưa dữ liệu ra ngoài qua một trong ba kênh C2: FTP, SMTP hoặc Telegram bot. Các bản build mới hơn ưu tiên sử dụng API `sendDocument` của Telegram.
+
+Mô-đun thu thập mật khẩu ghi thông tin xác thực đánh cắp được vào một tệp tên `bot-<chatid>-<msgid>-<victim>-SnakePW.txt`, mở đầu bằng thẻ mô-đun `PW | USER | Snake`. Mỗi bản ghi thông tin xác thực nằm trong một khối được đóng ngoặc `-------- Snake Tracker --------` với các dòng `Found From:`, `Host:`, `USR:` và `PSWD:`. Phần đầu tệp chứa các trường định danh nạn nhân: `PC Name`, `Date and Time`, `Client IP`, cùng với một khối thông tin địa lý (Country Name / CountryCode / Region / City / TimeZone / Latitude / Longitude) được điền bằng placeholder `{Null}` khi việc tra cứu ipapi.co thất bại hoặc bị đối tượng vận hành vô hiệu hóa.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `404 Keylogger`, `Snake Stealer keylogger module`, `SnakeKeylogger`
 - Variants observed: **0**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- Browser saved credentials (Chrome, Edge, Firefox, Opera)
-- Email client credentials (Thunderbird, Outlook)
-- Keystroke capture
-- Clipboard content
-- Screenshots
-- FTP/RDP session credentials
+| English | Tiếng Việt |
+|---|---|
+| Browser saved credentials (Chrome, Edge, Firefox, Opera) | Thông tin xác thực được lưu trong trình duyệt (Chrome, Edge, Firefox, Opera) |
+| Email client credentials (Thunderbird, Outlook) | Thông tin xác thực ứng dụng email (Thunderbird, Outlook) |
+| Keystroke capture | Ghi lại thao tác bàn phím |
+| Clipboard content | Nội dung clipboard |
+| Screenshots | Ảnh chụp màn hình |
+| FTP/RDP session credentials | Thông tin xác thực phiên FTP/RDP |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 The `PW | USER | Snake` pipe-separated module tag combined
 with the `-------- Snake Tracker --------` section separator
@@ -50,23 +64,27 @@ separate files per victim. During incident response, treat any
 `USR:` / `PSWD:` pair in the file is a valid account
 credential the operator harvested from the victim.
 
+### Tiếng Việt
+
+Thẻ mô-đun phân tách bằng dấu gạch đứng `PW | USER | Snake` kết hợp với dấu phân tách phần `-------- Snake Tracker --------` là dấu hiệu nhận diện rõ ràng nguồn gốc Snake Keylogger. Tên tệp cơ sở `SnakePW.txt` cùng với quy ước đặt tên Telegram-bot `bot-<chatid>-<msgid>-<victim>-SnakePW.txt` đã được ghi nhận trong các phân tích công khai. Các thẻ mô-đun liên quan `KEY | USER | Snake` (thu thập thao tác bàn phím) và `INFO | USER | Snake` (thông tin hệ thống) được xuất trong các tệp riêng biệt cho mỗi nạn nhân. Trong quá trình ứng phó sự cố, hãy coi bất kỳ `SnakePW.txt` nào là một trường hợp xâm phạm thông tin xác thực hoàn toàn: mỗi cặp `USR:` / `PSWD:` trong tệp đều là một thông tin xác thực tài khoản hợp lệ mà đối tượng vận hành đã thu thập được từ nạn nhân.
+
 ## Observed log variants
 
 No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
-| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
-| [T1056.001](https://attack.mitre.org/techniques/T1056/001/) | Input Capture: Keylogging |
-| [T1115](https://attack.mitre.org/techniques/T1115/) | Clipboard Data |
-| [T1113](https://attack.mitre.org/techniques/T1113/) | Screen Capture |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
-| [T1041](https://attack.mitre.org/techniques/T1041/) | Exfiltration Over C2 Channel |
-| [T1567](https://attack.mitre.org/techniques/T1567/) | Exfiltration Over Web Service |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores | Thông tin xác thực từ kho mật khẩu |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers | Thông tin xác thực từ trình duyệt web |
+| [T1056.001](https://attack.mitre.org/techniques/T1056/001/) | Keylogging | Ghi lại phím bấm |
+| [T1115](https://attack.mitre.org/techniques/T1115/) | Clipboard Data | Dữ liệu bảng tạm |
+| [T1113](https://attack.mitre.org/techniques/T1113/) | Screen Capture | Chụp màn hình |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
+| [T1041](https://attack.mitre.org/techniques/T1041/) | Exfiltration Over C2 Channel | Đưa dữ liệu ra ngoài qua kênh C2 |
+| [T1567](https://attack.mitre.org/techniques/T1567/) | Exfiltration Over Web Service | Đưa dữ liệu ra ngoài qua dịch vụ web |
 
 ## Related catalog profiles
 

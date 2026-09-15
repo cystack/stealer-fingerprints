@@ -3,7 +3,7 @@
   "name": "CSCCsHistoryStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSCCsHistoryStealer is a CyStack-coined identifier for a\nstripped 2-file per-victim folder shipping just `cc's.txt` (a\npipe-separated credit-card table) and `history.txt` (browser\nhistory dump) inside a 32-hex MD5 wrapped-in-brackets parent\nfolder. The `cc's.txt` body opens with a five-column header\n`Name on Card | Expiration Month | Expiration Year | Card\nNumber | Date Modified` mirroring the Chromium `Web Data`\nSQLite `credit_cards` table columns. The `Date Modified` 5th\ncolumn is the panel's distinguishing serialisation choice over\ncanonical Raccoon / Redline / Stealc card formats.\n\nObserved inside `MAY 02 - 8230 LOGS` aggregator packs (the `LOGS` sibling of `LOGS2`). The 32-hex MD5 parent convention matches\nthe same family of aggregator layouts. Family attribution is\nprovisional pending a published mapping for this exact layout.",
+  "description": "CSCCsHistoryStealer is a CyStack-coined identifier for a\nstripped 2-file per-victim folder shipping just `cc's.txt` (a\npipe-separated credit-card table) and `history.txt` (browser\nhistory dump) inside a 32-hex MD5 wrapped-in-brackets parent\nfolder. The `cc's.txt` body opens with a five-column header\n`Name on Card | Expiration Month | Expiration Year | Card Number | Date Modified` mirroring the Chromium `Web Data`\nSQLite `credit_cards` table columns. The `Date Modified` 5th\ncolumn is the panel's distinguishing serialisation choice over\ncanonical Raccoon / Redline / Stealc card formats.\n\nObserved inside `MAY 02 - 8230 LOGS` aggregator packs (the `LOGS` sibling of `LOGS2`). The 32-hex MD5 parent convention matches\nthe same family of aggregator layouts. Family attribution is\nprovisional pending a published mapping for this exact layout.",
   "aliases": [],
   "typical_targets": [
     "Browser saved credit cards (Chromium `Web Data` SQLite `credit_cards` table dump)",
@@ -35,5 +35,33 @@
     "cs-browser-category-dump-stealer"
   ],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSCCsHistoryStealer là định danh do CyStack đặt tên cho một thư mục nạn nhân dạng rút gọn chỉ gồm 2 tệp, gồm `cc's.txt` (bảng thẻ tín dụng phân tách bằng dấu gạch đứng) và `history.txt` (bản trích xuất lịch sử duyệt web) nằm trong một thư mục cha có tên là mã MD5 32 ký tự hex được bọc trong dấu ngoặc vuông. Phần nội dung của `cc's.txt` bắt đầu bằng tiêu đề năm cột `Name on Card | Expiration Month | Expiration Year | Card Number | Date Modified` phản ánh các cột của bảng `credit_cards` trong cơ sở dữ liệu SQLite `Web Data` của Chromium. Cột thứ 5, `Date Modified`, là lựa chọn tuần tự hóa (serialisation) đặc trưng giúp phân biệt bảng điều khiển này so với các định dạng dữ liệu thẻ kinh điển của Raccoon / Redline / Stealc.\n\nDấu vết này được quan sát bên trong các gói tổng hợp `MAY 02 - 8230 LOGS` (dấu vết liên quan của `LOGS2` với `LOGS`). Quy ước đặt tên thư mục cha bằng mã MD5 32 ký tự hex khớp với cùng họ cấu trúc dữ liệu bố cục tổng hợp này. Việc quy kết họ mã độc hiện vẫn mang tính tạm thời cho đến khi có ánh xạ được công bố cho đúng cấu trúc dữ liệu này.",
+      "typical_targets": [
+        "Thẻ tín dụng đã lưu trên trình duyệt (bản trích xuất bảng `credit_cards` trong SQLite `Web Data` của Chromium)",
+        "Lịch sử duyệt web"
+      ],
+      "detection_notes": "Tên thư mục dạng mã MD5 32 ký tự hex kết hợp với tập con gốc chặt chẽ `{cc's.txt, history.txt, \"\"}` cùng với ba mốc tiêu đề cột trong nội dung tệp (`Name on Card`, `Card Number`, `Date Modified`) tạo thành dấu hiệu nhận diện (fingerprint). Dấu nháy đơn trong `cc's.txt` là một đặc điểm riêng phía bảng điều khiển, hiếm gặp trong các quy ước tệp thông tin xác thực của mã độc đánh cắp thông tin. Nạn nhân thực chất là người dùng có trình duyệt bị thu thập dữ liệu; mọi dòng `cc's.txt` có dữ liệu cần được coi là sự cố đánh cắp thẻ, đòi hỏi phải thông báo cho đơn vị phát hành thẻ.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1217",
+          "name": "Dò tìm thông tin trình duyệt"
+        }
+      ]
+    }
+  }
 }

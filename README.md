@@ -6,12 +6,16 @@ Every retained variant has exactly one representative text sample from the CySta
 
 > This catalog describes exported stealer logs, not malware binaries. A structural match is an analyst lead, not proof of infection or final attribution.
 
+Family pages present the research narrative, target inventory, detection notes, and MITRE ATT&CK names in both English and Vietnamese. English remains the canonical machine-readable text; Vietnamese is maintained as an aligned localization.
+
+Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục tiêu, ghi chú nhận diện và tên kỹ thuật MITRE ATT&CK bằng cả tiếng Anh và tiếng Việt.
+
 ## Corpus at a glance
 
-- **196** research profiles
-- **41** known malware families
+- **191** research profiles
+- **40** known malware families
 - **2** observed self-labels without independent family attribution
-- **137** CyStack tracking names
+- **133** CyStack tracking names
 - **11** CyStack names mapped to a known parent family
 - **5** log aggregators
 - **129** observed log variants and **129** samples
@@ -38,7 +42,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 
 ## Catalog
 
-### Known malware families (41)
+### Known malware families (40)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -74,7 +78,6 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Rhadamanthys](families/rhadamanthys/) | medium | 0 | Metadata only |
 | [RisePro](families/rise-pro/) | medium | 0 | Metadata only |
 | [RL Stealer](families/rl-stealer/) | medium | 2 | [2 retained](families/rl-stealer/#observed-log-variants) |
-| [RMS](families/rms/) | high | 0 | Metadata only |
 | [SantaStealer](families/santa-stealer/) | high | 1 | [1 retained](families/santa-stealer/#observed-log-variants) |
 | [SHub Stealer](families/s-hub-stealer/) | high | 0 | Metadata only |
 | [Snake Keylogger](families/snake-keylogger/) | high | 0 | Metadata only |
@@ -91,7 +94,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Antarctida Stealer](families/antarctida-stealer/) | unknown | 1 | [1 retained](families/antarctida-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (137)
+### CyStack tracking names (133)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -107,7 +110,6 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSBareVersionStealer](families/cs-bare-version-stealer/) | unknown | 0 | Metadata only |
 | [CSBase64CpuStealer](families/cs-base64-cpu-stealer/) | unknown | 0 | Metadata only |
 | [CSBestPrivateLoggerStealer](families/cs-best-private-logger-stealer/) | unknown | 1 | [1 retained](families/cs-best-private-logger-stealer/#observed-log-variants) |
-| [CSBinaryGarbageStealer](families/cs-binary-garbage-stealer/) | unknown | 0 | Metadata only |
 | [CSBitArchStealer](families/cs-bit-arch-stealer/) | unknown | 1 | [1 retained](families/cs-bit-arch-stealer/#observed-log-variants) |
 | [CSBldStealer](families/cs-bld-stealer/) | unknown | 0 | Metadata only |
 | [CSBracketVendorCardsStealer](families/cs-bracket-vendor-cards-stealer/) | unknown | 0 | Metadata only |
@@ -176,7 +178,6 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSJohnsHubStealer](families/cs-johns-hub-stealer/) | unknown | 0 | Metadata only |
 | [CSJsonCookiesOnlyStealer](families/cs-json-cookies-only-stealer/) | unknown | 0 | Metadata only |
 | [CSLeakClickCloudCookiesStealer](families/cs-leak-click-cloud-cookies-stealer/) | unknown | 0 | Metadata only |
-| [CSLoaderReadyStealer](families/cs-loader-ready-stealer/) | unknown | 0 | Metadata only |
 | [CSLoginsPathStealer](families/cs-logins-path-stealer/) | unknown | 0 | Metadata only |
 | [CSMacBareGeoStealer](families/cs-mac-bare-geo-stealer/) | unknown | 0 | Metadata only |
 | [CSMacKeychainPassStealer](families/cs-mac-keychain-pass-stealer/) | unknown | 1 | [1 retained](families/cs-mac-keychain-pass-stealer/#observed-log-variants) |
@@ -195,7 +196,6 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSOneGoStealer](families/cs-one-go-stealer/) | unknown | 0 | Metadata only |
 | [CSOttomanPanelStealer](families/cs-ottoman-panel-stealer/) | low | 1 | [1 retained](families/cs-ottoman-panel-stealer/#observed-log-variants) |
 | [CSParsedUnknownStealer](families/cs-parsed-unknown-stealer/) | unknown | 0 | Metadata only |
-| [CSPasswordsNotFoundStub](families/cs-passwords-not-found-stub/) | unknown | 0 | Metadata only |
 | [CSPcNameSnakeStealer](families/cs-pc-name-snake-stealer/) | unknown | 1 | [1 retained](families/cs-pc-name-snake-stealer/#observed-log-variants) |
 | [CSPlateformExploitationStealer](families/cs-plateform-exploitation-stealer/) | unknown | 0 | Metadata only |
 | [CSPlutusStealer](families/cs-plutus-stealer/) | unknown | 0 | Metadata only |
@@ -214,7 +214,6 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSStealerCloudUserInfoStealer](families/cs-stealer-cloud-user-info-stealer/) | low | 1 | [1 retained](families/cs-stealer-cloud-user-info-stealer/#observed-log-variants) |
 | [CSSystemRegionStealer](families/cs-system-region-stealer/) | unknown | 0 | Metadata only |
 | [CSSystemSummaryStealer](families/cs-system-summary-stealer/) | unknown | 0 | Metadata only |
-| [CSTabbedUserPassStealer](families/cs-tabbed-user-pass-stealer/) | unknown | 0 | Metadata only |
 | [CSTaggedInfoStealer](families/cs-tagged-info-stealer/) | unknown | 1 | [1 retained](families/cs-tagged-info-stealer/#observed-log-variants) |
 | [CSTagRegionStealer](families/cs-tag-region-stealer/) | unknown | 0 | Metadata only |
 | [CSTikTokAccountStealer](families/cs-tik-tok-account-stealer/) | unknown | 0 | Metadata only |
@@ -264,7 +263,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 An **observed self-label** is a name printed by a log or its panel that has not yet been established as a canonical family by independent research. A **CyStack tracking name** denotes a repeatable, useful log structure for which public attribution is not yet strong enough. A **family variant** is a CyStack name that has since been linked to a known parent. An **aggregator** describes a distribution or panel grouping that can contain multiple families.
 
 Family descriptions and detection notes are maintained by CyStack Threat Intelligence. Samples retain useful layout, spelling, separators, field order, and malware/panel markers while direct victim secrets are scrubbed.
-Repository sample files use the stable name `sample.txt`; the original artifact basename patterns remain in each variant's **Observed filenames** field.
+Each sample lives under its stable variant directory. Its basename is either `sample.txt` or the sanitized observed basename; original artifact basename patterns remain in each variant's **Observed filenames** field.
 
 ## Research process
 
@@ -273,6 +272,8 @@ CyStack Threat Intelligence adds a variant only after its structure has been con
 ## Working with the data
 
 The machine-readable source for each profile is its `family.json`; the adjacent README and this index are generated from those records. See [CONTRIBUTING.md](CONTRIBUTING.md) for corrections or new evidence.
+
+Top-level descriptive fields in `family.json` are canonical English. The `localizations.vi` object carries a complete, positionally aligned Vietnamese translation without changing stable IDs or evidence fields.
 
 `format_id` is a catalog-wide stable public identifier for a log structure; each `v_...` value is an opaque catalog-wide stable variant identifier and should not be recalculated. A sample with `source: cystack_collection` was retained from the CyStack Threat Intelligence research collection and scrubbed before publication.
 

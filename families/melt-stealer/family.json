@@ -21,7 +21,7 @@
     "Process lists and selected registry values",
     "System fingerprint (CPU, RAM, OS version, IP, ISP, ASN)"
   ],
-  "detection_notes": "The opening `📋 MeltStealer - Report:` banner is the family's\nverbatim self-identification and the cleanest fingerprint\nanchor. The U+1F4CB CLIPBOARD emoji prefix plus the\n`MeltStealer - Report:` literal cannot collide with any other\ndocumented family. Pairing with the `🗺️ Location:` geo field\nconfirms the body matches the panel template rather than a\npublic writeup quoting the banner. During triage, the `⚙️\nInstallation:` section flags `Clipper installed` and\n`Keylogger installed` for modules the operator enabled on the\nbuild; check those flags to understand the active feature set\non this specific victim.",
+  "detection_notes": "The opening `📋 MeltStealer - Report:` banner is the family's\nverbatim self-identification and the cleanest fingerprint\nanchor. The U+1F4CB CLIPBOARD emoji prefix plus the\n`MeltStealer - Report:` literal cannot collide with any other\ndocumented family. Pairing with the `🗺️ Location:` geo field\nconfirms the body matches the panel template rather than a\npublic writeup quoting the banner. During triage, the `⚙️ Installation:` section flags `Clipper installed` and\n`Keylogger installed` for modules the operator enabled on the\nbuild; check those flags to understand the active feature set\non this specific victim.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -94,5 +94,62 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "MeltStealer là một công cụ trích xuất dữ liệu mã nguồn mở viết bằng C#, được duy trì tại `github.com/Vorolski/melt-stealer`. Bộ builder đóng gói mã token API bot Telegram cùng chat ID và đưa dữ liệu thu thập được ra ngoài thông qua Telegram Bot API. Các cơ sở dữ liệu sandbox công khai ghi nhận họ mã độc này với các hành vi đã được xác nhận: đánh cắp thông tin xác thực từ trình duyệt web, thu thập thông tin hệ thống (ngày cài đặt Windows, tên máy tính, machine GUID, các giá trị môi trường), và hành vi đưa dữ liệu ra ngoài nói chung.\n\nPhạm vi thu thập theo tệp README của dự án bao gồm mật khẩu và cookie, thẻ tín dụng, ví tiền điện tử và cụm từ ghi nhớ (mnemonic), tiện ích mở rộng trình duyệt, mạng Wi-Fi, token phiên chơi game (Steam, Minecraft), cấu hình VPN, token Discord, ảnh chụp màn hình và ảnh chụp từ webcam, danh sách tiến trình, và thông tin registry. Giao diện điều khiển phía `Information.txt` mở đầu bằng banner biểu tượng clipboard nguyên văn `📋 MeltStealer - Report:` và chứa một khối định danh gồm 15 trường có tiền tố biểu tượng (Date / System / Username / CompName / CPU / RAM / IP / Location / Zip Code / Coordinates / Timezone / ISP / Organization / AS) cùng sáu khối phần (Browsers / Software / Device / File Grabber / Domains info / Installation) với các mục con dùng ký tự mũi tên góc vuông U+221F cho từng phần.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt (Chrome, Brave, Edge, Firefox, các biến thể Opera)",
+        "Cookie, autofill, lịch sử duyệt web, bookmark, tệp tải xuống, tiện ích mở rộng của trình duyệt",
+        "Dữ liệu thẻ tín dụng",
+        "Ví tiền điện tử và cụm từ ghi nhớ (seed-phrase mnemonic)",
+        "Token Discord",
+        "Dữ liệu phiên Steam và Minecraft",
+        "Cấu hình ứng dụng khách VPN",
+        "Thông tin xác thực mạng Wi-Fi",
+        "Product key Windows, ảnh chụp màn hình, ảnh chụp từ webcam",
+        "Danh sách tiến trình và các giá trị registry được chọn lọc",
+        "Dấu vân tay hệ thống (CPU, RAM, phiên bản hệ điều hành, IP, ISP, ASN)"
+      ],
+      "detection_notes": "Banner mở đầu `📋 MeltStealer - Report:` là dấu hiệu tự nhận diện nguyên văn của họ mã độc này và là điểm neo dấu vết rõ ràng nhất. Tiền tố biểu tượng U+1F4CB CLIPBOARD cùng với chuỗi nguyên văn `MeltStealer - Report:` không thể trùng lặp với bất kỳ họ mã độc nào khác đã được ghi nhận. Việc kết hợp với trường địa lý `🗺️ Location:` xác nhận rằng phần nội dung khớp với mẫu giao diện điều khiển (panel template) thay vì một bài viết công khai trích dẫn lại banner. Trong quá trình phân loại ban đầu, phần `⚙️ Installation:` đánh dấu `Clipper installed` và `Keylogger installed` cho các mô-đun mà đối tượng vận hành đã bật trong bản build; cần kiểm tra các cờ này để hiểu tập tính năng đang hoạt động trên nạn nhân cụ thể này.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1217",
+          "name": "Dò tìm thông tin trình duyệt"
+        },
+        {
+          "id": "T1113",
+          "name": "Chụp màn hình"
+        },
+        {
+          "id": "T1125",
+          "name": "Ghi hình"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1057",
+          "name": "Dò tìm tiến trình"
+        }
+      ]
+    }
+  }
 }

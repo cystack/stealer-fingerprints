@@ -63,5 +63,34 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSDeimosStealer là định danh do CyStack đặt cho nhật ký tự đặt tên `Deimos Golang Stealer` `UserInformation.txt` được quan sát bên trong các gói phân phối qua `@ft7links` cùng với các biến thể CSEnchantCloudStealer và RedlineLikeStealer. Đối tượng vận hành `@ft7links` gắn nhãn kho lưu trữ là `redline` nhưng thực tế trộn lẫn nhiều bảng điều khiển có cấu trúc giống Lumma dưới cùng một vỏ bọc; đây là một trong số đó. Dòng chữ `## Deimos Golang Stealer` là dấu hiệu tự nhận diện chính.",
+      "typical_targets": [],
+      "detection_notes": "Dòng chữ `## Deimos Golang Stealer` cùng với dòng thông tin mua hàng `## Buy: https://t.me/<channel>` là dấu vết nhận diện rõ ràng nhất. Nguồn gốc Go thể hiện qua thứ tự trường dữ liệu ổn định giữa các bản build.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

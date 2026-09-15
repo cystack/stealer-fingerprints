@@ -14,7 +14,7 @@
     "GPU adapter names",
     "Primary display resolution"
   ],
-  "detection_notes": "Triple-anchor fingerprint: a line-anchored `core enabled:`\nkey (with leading whitespace and an integer value), a\nline-anchored `  display:` line at 2-space indent carrying\na `<W>x<H>` scalar, and the absence of a top-level\n`build:` key at column 0. The triple rules out canonical\nRemus (which always opens at column 0 with `build:`) and\ndocuments its structural distinction from Remus. The body ships no victim-identifying fields,\nso the retained evidence carries only the hardware inventory.",
+  "detection_notes": "Triple-anchor fingerprint: a line-anchored `core enabled:`\nkey (with leading whitespace and an integer value), a\nline-anchored `display:` line at 2-space indent carrying\na `<W>x<H>` scalar, and the absence of a top-level\n`build:` key at column 0. The triple rules out canonical\nRemus (which always opens at column 0 with `build:`) and\ndocuments its structural distinction from Remus. The body ships no victim-identifying fields,\nso the retained evidence carries only the hardware inventory.",
   "attack_techniques": [
     {
       "id": "T1082",
@@ -53,5 +53,23 @@
       },
       "layout_id": "core-enabled"
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSHardwareTailStealer là định danh do CyStack đặt cho một biến thể `Info.txt` tối giản chỉ thu thập thông tin phần cứng, được phát tán qua kênh tổng hợp Telegram `@STEALERBOSS` dưới ký hiệu thư mục theo-từng-nạn-nhân `STEALERCLOUD#<N>`. Phần thân chứa các khóa khối phần cứng YAML chuẩn của Remus Stealer (`product:`, `core count:`, `thread count:`, `ram:`, `gpu:`, `display:`). Các khối cha `build:` và `os:`, cùng mọi trường định danh (banner, IP, quốc gia, thời gian, người dùng, tên máy, đường dẫn cài đặt, phần mềm diệt virus) đều không xuất hiện.\n\nHai biến thể bị cắt bớt được phát tán cùng một gói dữ liệu từ đối tượng môi giới. Biến thể A giữ nguyên khối CPU và bổ sung một trường mới `core enabled:` phản ánh `core count:`. Biến thể B cắt khối CPU xuống chỉ còn một dòng `thread count:` không có tiền tố, thay vào đó phát tán một khối `motherboard:` mang các giá trị Win32_BaseBoard `manufacturer:` và `product:`. Cả hai biến thể đều chia sẻ chung phần đuôi `ram:` / `gpu:` / `display:`.\n\nĐối tượng môi giới có khả năng đóng gói lại các đoạn dữ liệu phần cứng này như một bản xem trước mẫu trước khi tính phí người mua để lấy log đầy đủ. Việc quy kết họ mã độc hiện mang tính tạm thời: phần thân có cấu trúc bắt nguồn từ Remus, nhưng các trường định danh mang tính then chốt vốn có thể xác nhận Remus đều đã bị loại bỏ, và không có báo cáo công khai hay danh mục cộng đồng nào ghi nhận bố cục họ mã độc STEALERCLOUD hoặc STEALERBOSS. Cần đổi tên mục này nếu xuất hiện bằng chứng quy kết mạnh hơn.",
+      "typical_targets": [
+        "Model CPU, số lõi và số luồng xử lý",
+        "Chuỗi thông tin sản phẩm SPD của RAM và dung lượng từng thanh RAM",
+        "Tên adapter GPU",
+        "Độ phân giải màn hình chính"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện dựa trên ba mỏ neo: một khóa `core enabled:` được neo theo dòng (có khoảng trắng đầu dòng và giá trị số nguyên), một dòng `display:` được neo theo dòng với thụt lề 2 khoảng trắng mang giá trị vô hướng `<W>x<H>`, và việc thiếu khóa cấp cao nhất `build:` ở cột 0. Bộ ba mỏ neo này loại trừ khả năng đây là Remus chuẩn (vốn luôn bắt đầu ở cột 0 với `build:`) và ghi nhận sự khác biệt về cấu trúc dữ liệu so với Remus. Phần thân không phát tán bất kỳ trường định danh nạn nhân nào, do đó bằng chứng còn lại chỉ mang thông tin kiểm kê phần cứng.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

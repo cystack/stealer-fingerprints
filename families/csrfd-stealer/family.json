@@ -3,7 +3,7 @@
   "name": "CSRFDStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSRFDStealer is a CyStack-coined identifier for an\nemoji-prefixed `FileGrabber/UserInformation.txt` shape\ndistributed through the @BRADMAX_CLOUD redistributor\nportfolio. The file opens with a canonical `<================[\nUser Info ]>================>` section header followed by an\noperator tag literal `<================RFD================>`\non the next line, then a blank line, then a 17-line\nemoji-prefixed `<emoji> <Key>: <Value>` field block.\n\nField values place the runtime in JavaScript / Node.js: `Type:\nWindows_NT` is `os.type()`, `Arch: x64` is `os.arch()`,\n`Release: 10.0.19044` is `os.release()`, `Processors: <count>`\nis `os.cpus().length`. The label flip between `Host name`\n(which carries the canonical computer name from\n`os.hostname()`) and `PC Name` (which carries the Windows\naccount name from `process.env.USERNAME`) is consistent with a\nNodeJS or Electron stealer template. The body matches\nstructural features of the documented NodeJS / Electron\nstealer category (NOVABLIGHT, Celestial Stealer, Mercurial),\nbut no public reporting quotes a field-layout match for this\nexact layout, so family attribution is provisional.",
+  "description": "CSRFDStealer is a CyStack-coined identifier for an\nemoji-prefixed `FileGrabber/UserInformation.txt` shape\ndistributed through the @BRADMAX_CLOUD redistributor\nportfolio. The file opens with a canonical `<================[ User Info ]>================>` section header followed by an\noperator tag literal `<================RFD================>`\non the next line, then a blank line, then a 17-line\nemoji-prefixed `<emoji> <Key>: <Value>` field block.\n\nField values place the runtime in JavaScript / Node.js: `Type: Windows_NT` is `os.type()`, `Arch: x64` is `os.arch()`,\n`Release: 10.0.19044` is `os.release()`, `Processors: <count>`\nis `os.cpus().length`. The label flip between `Host name`\n(which carries the canonical computer name from\n`os.hostname()`) and `PC Name` (which carries the Windows\naccount name from `process.env.USERNAME`) is consistent with a\nNodeJS or Electron stealer template. The body matches\nstructural features of the documented NodeJS / Electron\nstealer category (NOVABLIGHT, Celestial Stealer, Mercurial),\nbut no public reporting quotes a field-layout match for this\nexact layout, so family attribution is provisional.",
   "aliases": [
     "RFD banner UserInformation.txt",
     "@BRADMAX_CLOUD FileGrabber sample"
@@ -35,5 +35,26 @@
   "observed_channels": [
     "https://t.me/BRADMAX_CLOUD"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSRFDStealer là định danh do CyStack đặt cho một cấu trúc dữ liệu `FileGrabber/UserInformation.txt` có tiền tố emoji, được phân phối thông qua danh mục các kênh phân phối lại @BRADMAX_CLOUD. Tệp mở đầu bằng một tiêu đề phần `<================[ User Info ]>================>` chuẩn, tiếp theo là dòng chứa nhãn đối tượng vận hành literal `<================RFD================>` ở dòng kế tiếp, sau đó là một dòng trống, rồi đến khối trường dữ liệu `<emoji> <Key>: <Value>` gồm 17 dòng có tiền tố emoji.\n\nGiá trị các trường cho thấy môi trường thực thi là JavaScript / Node.js: `Type: Windows_NT` là `os.type()`, `Arch: x64` là `os.arch()`, `Release: 10.0.19044` là `os.release()`, `Processors: <count>` là `os.cpus().length`. Sự hoán đổi nhãn giữa `Host name` (mang tên máy chuẩn từ `os.hostname()`) và `PC Name` (mang tên tài khoản Windows từ `process.env.USERNAME`) phù hợp với mẫu mã độc đánh cắp thông tin dạng NodeJS hoặc Electron. Phần thân tệp khớp với các đặc điểm cấu trúc của nhóm mã độc đánh cắp thông tin NodeJS / Electron đã được ghi nhận (NOVABLIGHT, Celestial Stealer, Mercurial), nhưng chưa có báo cáo công khai nào trích dẫn sự trùng khớp bố cục trường dữ liệu chính xác với cấu trúc này, do đó việc quy kết họ mã độc vẫn mang tính tạm thời.",
+      "typical_targets": [
+        "Dấu vết phần cứng máy và hệ điều hành (CPU, RAM, phiên bản Windows, thời gian hoạt động)",
+        "Đường dẫn AppData và Temp phục vụ thu thập thông tin xác thực ở giai đoạn sau",
+        "Tên tài khoản người dùng và danh tính miền"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu phải có đồng thời nhãn đối tượng vận hành `<================RFD================>` và tiêu đề phần `<================[ User Info ]>`. Nếu chỉ có một trong hai literal này thì vẫn có khả năng xuất hiện trong nội dung không liên quan (một bài viết công khai chỉ trích dẫn một trong hai banner, hoặc một tiêu đề `User Info` chung chung trong tài liệu của đối tượng vận hành), vì vậy cần cả hai mốc nhận diện này. Tập tiền tố emoji có tính đặc trưng nhưng không phải yếu tố then chốt để nhận diện dấu vết. Trong quá trình phân loại ban đầu, hãy xem việc quy kết kênh phân phối là bằng chứng dựa trên cấu trúc dữ liệu thư mục cha (`[<CC>]@BRADMAX_CLOUD- (<NN>)`); bản thân phần thân tệp không chứa trường IP, quốc gia hay thời gian ghi log, do đó chỉ báo này chỉ thể hiện siêu dữ liệu ở cấp độ thiết bị. Các tệp liên quan trong thư mục nạn nhân mang theo thông tin xác thực và cookie đã bị đánh cắp.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

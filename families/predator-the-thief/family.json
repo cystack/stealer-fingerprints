@@ -74,5 +74,59 @@
     "https://t.me/sett9",
     "https://t.me/PredatorSoftwareChannel"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "Predator The Thief là một họ mã độc đánh cắp thông tin viết bằng C/C++, lần đầu được quảng cáo vào tháng 7 năm 2018 trên các diễn đàn tiếng Nga bởi một đối tượng có biệt danh ``Alexuiop1337`` (sau này còn dùng biệt danh ``Kongress_nlt``). Được bán theo mô hình trả phí thông qua kênh Telegram ``t.me/sett9`` (kênh trả phí phiên bản v3.x) và ``t.me/PredatorSoftwareChannel`` (kênh thông báo cập nhật). Giá bán khoảng 30 USD trên các diễn đàn nói tiếng Nga, định vị đây là mã độc đánh cắp thông tin thương mại giá rẻ.\n\nThu thập mật khẩu trình duyệt, cookie, dữ liệu tự động điền và các biểu mẫu đã lưu; ví tiền mã hóa; thông tin xác thực của các ứng dụng Steam, Telegram, Discord, FileZilla và WinFTP; nội dung clipboard hiện tại; và dấu vân tay hệ thống (HWID, phiên bản hệ điều hành, CPU / GPU / RAM / độ phân giải). Các phiên bản sau này bổ sung tính năng chụp ảnh từ webcam và hoán đổi địa chỉ ví tiền mã hóa trên clipboard. Dấu vết đặc trưng trên đĩa là tệp nhật ký ``Information.txt`` có banner ASCII-art ``PREDATOR`` và khối ghi công được đóng khung bằng dấu gạch ngang ``| Developed by Alexuiop1337 |`` / ``| Buy Predator at t.me/sett9 |`` phía trên phần tổng hợp số liệu.",
+      "typical_targets": [
+        "Thông tin xác thực trình duyệt, cookie, dữ liệu tự động điền và các mục biểu mẫu đã lưu (các bộ đếm Passwords / Cookies / Forms / Cards trong phần tổng hợp số liệu của nhật ký)",
+        "Tệp ví tiền mã hóa (bộ đếm Wallets trong nhật ký)",
+        "Thông tin xác thực của các ứng dụng Steam, Telegram, Discord, FileZilla, WinFTP (các bộ đếm riêng trong nhật ký)",
+        "Dấu vân tay hệ thống (HWID, phiên bản hệ điều hành, CPU, GPU, RAM, độ phân giải màn hình, tên máy, bố cục bàn phím, locale hệ thống)",
+        "Vị trí địa lý (thành phố, quốc gia, tọa độ, IP, múi giờ, mã bưu điện) được xác định từ địa chỉ IP công cộng tại thời điểm thu thập",
+        "Danh mục ứng dụng đã cài đặt (danh sách đánh số ``Installed applications:``)",
+        "Nội dung clipboard tại thời điểm thu thập",
+        "Đường dẫn khởi động / duy trì truy cập của payload thu thập dữ liệu"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện dựa trên chuỗi ký tự tự nhận diện họ mã độc ``Predator The Thief :`` ở đầu dòng. Banner này xuất hiện trong mọi mẫu quan sát được và không trùng lặp với định dạng nhật ký của bất kỳ mã độc đánh cắp thông tin nào khác. Các yếu tố củng cố độ tin cậy bao gồm: tiêu đề ASCII-art ``PREDATOR`` ở những dòng không trống đầu tiên, watermark kênh bán hàng ``| Buy Predator at t.me/sett9 |``, phần cuối ``--- ID: <numeric>`` mang mã định danh chiến dịch / khách hàng, và cách viết nhãn trường đặc trưng (``User name`` / ``Machine name`` / ``UTC time`` / ``CPU info`` / ``GPU info`` / ``Amount of RAM``). Trong quá trình ứng phó sự cố, nên coi mã chiến dịch (campaign ID) là điểm mấu chốt để đối chiếu chéo giữa các nạn nhân, và giá trị ``Startup folder:`` là dấu vết đường dẫn duy trì truy cập.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1518",
+          "name": "Dò tìm phần mềm"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        },
+        {
+          "id": "T1115",
+          "name": "Dữ liệu bảng tạm"
+        },
+        {
+          "id": "T1125",
+          "name": "Ghi hình"
+        }
+      ]
+    }
+  }
 }

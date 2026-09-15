@@ -1,8 +1,11 @@
 # CSWifiBackslashNStealer
 
+## Overview / Tổng quan
+
+### English
+
 CSWifiBackslashNStealer is a CyStack-coined identifier for a
-minimal two-file victim folder observed inside `!! 2025
-NOV.part001.rar` BRADMAX / `@BRADLOGS` aggregator packs at
+minimal two-file victim folder observed inside `!! 2025 NOV.part001.rar` BRADMAX / `@BRADLOGS` aggregator packs at
 `[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/` victim folders. The pack
 ships only `installed_apps.txt` plus `wifi_passwords.txt` (and
 sometimes an empty-named packer directory artifact); no
@@ -19,26 +22,36 @@ the password segment blank.
 Family attribution is provisional pending a published
 threat-intel mapping for this layout. Public reporting and
 community catalogues do not document a family that emits
-exactly this 2-file minimal layout. The pipe-delimited `<SSID>
-| <password>` body itself is a generic `netsh wlan show
-profile name=<x> key=clear` post-processing shape used by many
+exactly this 2-file minimal layout. The pipe-delimited `<SSID> | <password>` body itself is a generic `netsh wlan show profile name=<x> key=clear` post-processing shape used by many
 .NET and Python stealer builders, so the literal `\n`
 serialisation plus the 2-file root layout is what gives this
 label its specificity.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **CyStack tracking name**
+CSWifiBackslashNStealer là định danh do CyStack đặt cho một thư mục nạn nhân tối giản gồm hai tệp, được quan sát bên trong các gói tổng hợp `!! 2025 NOV.part001.rar` BRADMAX / `@BRADLOGS` tại `[<TAG>]@BRADLOGS (BRADMAX) (<NN>)/` thư mục nạn nhân. Gói này chỉ chứa `installed_apps.txt` cùng `wifi_passwords.txt` (và đôi khi có thêm một dấu vết thư mục packer không tên); không có tệp thông tin hệ thống đi kèm, không có bản dump thông tin xác thực trình duyệt, không có tệp token.
+
+Tệp thông tin xác thực wifi là một dòng vật lý duy nhất ở cấp hệ điều hành. Panel tuần tự hóa các mục theo từng SSID bằng chuỗi thoát hai ký tự `\n` (dấu backslash + `n`) làm ký tự phân tách, chứ không phải ký tự LF thật. Cấu trúc dữ liệu của mỗi mục là `<SSID> | <password>\n`; các mạng mở và các placeholder đồng bộ trình duyệt tạo dữ liệu đầu ra `<SSID> | \n` với phần mật khẩu để trống.
+
+Việc quy kết họ mã độc hiện chỉ mang tính tạm thời, chờ có ánh xạ tình báo mối đe dọa được công bố cho bố cục này. Các báo cáo công khai và danh mục cộng đồng chưa ghi nhận họ mã độc nào tạo ra đúng bố cục tối giản 2 tệp này. Bản thân phần nội dung `<SSID> | <password>` phân tách bằng dấu pipe là một cấu trúc hậu xử lý `netsh wlan show profile name=<x> key=clear` chung, được nhiều công cụ dựng mã độc đánh cắp thông tin viết bằng .NET và Python sử dụng, do đó chính việc tuần tự hóa `\n` theo nghĩa đen kết hợp với bố cục gốc 2 tệp mới là yếu tố tạo nên tính đặc trưng cho nhãn này.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `BRADMAX 2-file wifi+apps minimal pack`, `installed_apps + wifi_passwords literal-\n export`
 - Variants observed: **0**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- Wifi SSIDs and saved network passwords
-- Installed Windows program names
+| English | Tiếng Việt |
+|---|---|
+| Wifi SSIDs and saved network passwords | SSID wifi và mật khẩu mạng đã lưu |
+| Installed Windows program names | Tên các chương trình Windows đã cài đặt |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 Fingerprint requires (a) `installed_apps.txt` AND
 `wifi_passwords.txt` in the folder root, (b) root-entry count
@@ -55,17 +68,21 @@ to the two cheapest panel outputs" marker: the underlying
 stealer builder is not identifiable from this 2-file shape
 alone, only the BRADMAX distribution channel is.
 
+### Tiếng Việt
+
+Việc lấy dấu hiệu nhận diện yêu cầu (a) `installed_apps.txt` VÀ `wifi_passwords.txt` ở gốc thư mục, (b) số lượng mục ở cấp gốc <= 3 (mục thứ ba tùy chọn là một thư mục (DIR) packer không tên), và (c) khớp từ 3 dòng trở lên `<SSID> | <password>\n` trong `wifi_passwords.txt`, trong đó `\n` là chuỗi thoát hai ký tự, không phải LF thật. Điều kiện ràng buộc theo nghĩa đen `\n` kết hợp với giới hạn số lượng tệp giúp loại trừ các thư mục ZenRAT, vốn yêu cầu 3 trong số 5 của `sysinfo.txt` / `running_services.txt` / `license_info.txt` / `installed_apps.txt` / `wifi_passwords.txt` theo báo cáo công khai về ZenRAT, và sử dụng dữ liệu đầu ra wifi phân tách bằng LF theo kiểu thông thường. Trong quá trình phân loại ban đầu, hãy xem nhãn này như một dấu hiệu "thư mục nạn nhân bị cắt gọn chỉ còn hai loại dữ liệu đầu ra rẻ nhất của panel": chỉ từ bố cục 2 tệp này không thể xác định được công cụ dựng mã độc đánh cắp thông tin cụ thể, mà chỉ có thể xác định kênh phân phối BRADMAX.
+
 ## Observed log variants
 
 No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
-| [T1016](https://attack.mitre.org/techniques/T1016/) | System Network Configuration Discovery |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
+| [T1016](https://attack.mitre.org/techniques/T1016/) | System Network Configuration Discovery | Dò tìm cấu hình mạng hệ thống |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
 
 ## Related catalog profiles
 

@@ -3,14 +3,14 @@
   "name": "CSStealerCloudUserInfoStealer",
   "classification": "cystack_named",
   "attribution_confidence": "low",
-  "description": "CSStealerCloudUserInfoStealer is a CyStack-coined identifier\nfor the STEALERCLOUD broker's `UserInformation.txt` shape:\nthree flush-left `Key: Value` identity lines at the top\n(`Keyboard Language:`, `Display Resolution:`, an `@stealerboss\n- Buy daily fresh logs:` operator banner with a wallpaper-name\nvalue), then a centered `IP GEOLOCATION DATA` ASCII section\nheader, then six geo fields (`IP Address:`, `Country: <Name>\n(<ISO2>)`, `Region:`, `City:`, `Postal Code:`, `Timezone:\n<IANA-tz> (<UTC-offset>)`). The `IP Address:` slot accepts\nboth IPv4 and IPv6.\n\nSame broker as CSHardwareTailStealer: the STEALERCLOUD\naggregator pack splits the victim summary across two files,\nwith the YAML hardware tail in `Info.txt` and the locale plus\ngeo identity in `UserInformation.txt`. The `@STEALERBOSS`\nTelegram channel handle is the distribution channel. No public\nreporting attributes either file shape to a specific\nsource-stealer family, so attribution is provisional pending a\npublic writeup.",
+  "description": "CSStealerCloudUserInfoStealer is a CyStack-coined identifier\nfor the STEALERCLOUD broker's `UserInformation.txt` shape:\nthree flush-left `Key: Value` identity lines at the top\n(`Keyboard Language:`, `Display Resolution:`, an `@stealerboss - Buy daily fresh logs:` operator banner with a wallpaper-name\nvalue), then a centered `IP GEOLOCATION DATA` ASCII section\nheader, then six geo fields (`IP Address:`, `Country: <Name> (<ISO2>)`, `Region:`, `City:`, `Postal Code:`, `Timezone: <IANA-tz> (<UTC-offset>)`). The `IP Address:` slot accepts\nboth IPv4 and IPv6.\n\nSame broker as CSHardwareTailStealer: the STEALERCLOUD\naggregator pack splits the victim summary across two files,\nwith the YAML hardware tail in `Info.txt` and the locale plus\ngeo identity in `UserInformation.txt`. The `@STEALERBOSS`\nTelegram channel handle is the distribution channel. No public\nreporting attributes either file shape to a specific\nsource-stealer family, so attribution is provisional pending a\npublic writeup.",
   "aliases": [],
   "typical_targets": [
     "Browser saved credentials and cookies (sibling files in the same victim folder; this file is identity / locale / geo only)",
     "Victim locale (keyboard language, display resolution)",
     "Victim geo (country, region, city, postal code, timezone) plus IPv4 / IPv6 address"
   ],
-  "detection_notes": "The two-anchor fingerprint `@stealerboss - Buy daily\nfresh logs:` operator-handle banner plus the centered\n`IP GEOLOCATION DATA` section header is the cleanest\npanel signal. The IPv6 capability in the `IP Address:`\nslot is unusual across stealer panels (most ship IPv4\nonly via `ip-api.com`-shaped lookups). Pair with\nCSHardwareTailStealer hardware-tail Info.txt files in\nthe same victim folder for the full per-victim summary.",
+  "detection_notes": "The two-anchor fingerprint `@stealerboss - Buy daily fresh logs:` operator-handle banner plus the centered\n`IP GEOLOCATION DATA` section header is the cleanest\npanel signal. The IPv6 capability in the `IP Address:`\nslot is unusual across stealer panels (most ship IPv4\nonly via `ip-api.com`-shaped lookups). Pair with\nCSHardwareTailStealer hardware-tail Info.txt files in\nthe same victim folder for the full per-victim summary.",
   "attack_techniques": [
     {
       "id": "T1082",
@@ -62,5 +62,34 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSStealerCloudUserInfoStealer là định danh do CyStack đặt tên cho cấu trúc dữ liệu `UserInformation.txt` của broker STEALERCLOUD:\nba dòng thông tin định danh `Key: Value` căn lề trái ở trên cùng\n(`Keyboard Language:`, `Display Resolution:`, một banner đối tượng vận hành `@stealerboss - Buy daily fresh logs:` với giá trị tên hình nền),\nsau đó là tiêu đề phần ASCII `IP GEOLOCATION DATA` căn giữa, tiếp theo là sáu trường địa lý\n(`IP Address:`, `Country: <Name> (<ISO2>)`, `Region:`, `City:`, `Postal Code:`, `Timezone: <IANA-tz> (<UTC-offset>)`). Vị trí `IP Address:` chấp nhận\ncả IPv4 và IPv6.\n\nCùng broker với CSHardwareTailStealer: gói tổng hợp STEALERCLOUD\ntách bản tóm tắt nạn nhân thành hai tệp, với phần đuôi YAML thông tin phần cứng\ntrong `Info.txt` và thông tin ngôn ngữ/vùng cùng địa lý trong `UserInformation.txt`. Tên kênh Telegram\n`@STEALERBOSS` là kênh phân phối. Chưa có báo cáo công khai nào quy kết\ncấu trúc dữ liệu của một trong hai tệp này cho một họ mã độc đánh cắp thông tin nguồn cụ thể, do đó việc quy kết\nchỉ mang tính tạm thời, chờ có bài phân tích công khai.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trên trình duyệt (các tệp liên quan trong cùng thư mục nạn nhân; tệp này chỉ chứa thông tin định danh / ngôn ngữ vùng / địa lý)",
+        "Thông tin ngôn ngữ vùng của nạn nhân (ngôn ngữ bàn phím, độ phân giải màn hình)",
+        "Thông tin địa lý của nạn nhân (quốc gia, khu vực, thành phố, mã bưu chính, múi giờ) cùng địa chỉ IPv4 / IPv6"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện hai điểm neo gồm banner tên đối tượng vận hành `@stealerboss - Buy daily fresh logs:` cùng tiêu đề phần\n`IP GEOLOCATION DATA` căn giữa là tín hiệu bảng điều khiển rõ ràng nhất. Khả năng hỗ trợ IPv6 tại vị trí\n`IP Address:` là điểm bất thường so với các bảng điều khiển mã độc đánh cắp thông tin khác (phần lớn chỉ hỗ trợ IPv4\nthông qua các truy vấn có cấu trúc dữ liệu `ip-api.com`). Kết hợp với các tệp Info.txt phần đuôi thông tin phần cứng\ncủa CSHardwareTailStealer trong cùng thư mục nạn nhân để có bản tóm tắt đầy đủ theo từng nạn nhân.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1016",
+          "name": "Dò tìm cấu hình mạng hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

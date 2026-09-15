@@ -3,7 +3,7 @@
   "name": "CSDaisyBonusProcSoftStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSDaisyBonusProcSoftStealer is a CyStack-coined identifier for\na heavily-stripped `information.txt` panel observed inside\n`Daisy Private Cloud - <N> Pcs - <DD> <Mon> - Bonus.7z`\naggregator packs distributed by the `@UP_DAISYCLOUD` Telegram\nchannel. Per-victim folders follow a flat\n`<CC><HWID-30-CHARS>_<YYYY>_<MM>_<DD>T<HH>_<MM>_<XX>_<N>/`\nnaming convention (the country code is the leading two\nletters, the HWID is a 30-character alphanumeric block, and\nthe trailing segment encodes a timestamp).\n\nThe body ships only two surviving sections from the underlying\npanel: a 2-space-indented `[<PID>] <name>.exe` process list\nand a `[Software]` Vidar-style section header followed by a\n2-space-indented program inventory. No banner, no `IP /\nCountry / HWID / Computer Name` field block, and no Redline /\nLumma / Vidar canonical anchors survive. The\nleading-PID-bracket process-list shape is the reverse of Aura\nStealer and StealC, which emit process entries as `<name>.exe\n[<PID>]` (PID after the exe), so the two layouts remain structurally distinct.\n\nFamily attribution is provisional pending a published threat-intel mapping. Public reporting documents the `@UP_DAISYCLOUD`\nchannel as a Telegram credential-trading channel potentially\nlinked to RedLine Stealer, but the heavily-stripped Bonus-pack\nbody carries no Redline-canonical fields, so the Redline lineage evidence that the sibling `CSDaisyCloudStealer`\nwatermarked sibling supports for canonical\n`UserInformation.txt` cannot be carried over. The Bonus pack\nmay ship victim records from a different underlying stealer\nthan the canonical Daisy Cloud channel, or the same stealer\nwith a different stripping configuration. The\n`CSDaisyBonusProcSoftStealer` literal captures the discovery;\nupdate this tracking profile if a public writeup later\nidentifies the underlying builder.",
+  "description": "CSDaisyBonusProcSoftStealer is a CyStack-coined identifier for\na heavily-stripped `information.txt` panel observed inside\n`Daisy Private Cloud - <N> Pcs - <DD> <Mon> - Bonus.7z`\naggregator packs distributed by the `@UP_DAISYCLOUD` Telegram\nchannel. Per-victim folders follow a flat\n`<CC><HWID-30-CHARS>_<YYYY>_<MM>_<DD>T<HH>_<MM>_<XX>_<N>/`\nnaming convention (the country code is the leading two\nletters, the HWID is a 30-character alphanumeric block, and\nthe trailing segment encodes a timestamp).\n\nThe body ships only two surviving sections from the underlying\npanel: a 2-space-indented `[<PID>] <name>.exe` process list\nand a `[Software]` Vidar-style section header followed by a\n2-space-indented program inventory. No banner, no `IP / Country / HWID / Computer Name` field block, and no Redline /\nLumma / Vidar canonical anchors survive. The\nleading-PID-bracket process-list shape is the reverse of Aura\nStealer and StealC, which emit process entries as `<name>.exe [<PID>]` (PID after the exe), so the two layouts remain structurally distinct.\n\nFamily attribution is provisional pending a published threat-intel mapping. Public reporting documents the `@UP_DAISYCLOUD`\nchannel as a Telegram credential-trading channel potentially\nlinked to RedLine Stealer, but the heavily-stripped Bonus-pack\nbody carries no Redline-canonical fields, so the Redline lineage evidence that the sibling `CSDaisyCloudStealer`\nwatermarked sibling supports for canonical\n`UserInformation.txt` cannot be carried over. The Bonus pack\nmay ship victim records from a different underlying stealer\nthan the canonical Daisy Cloud channel, or the same stealer\nwith a different stripping configuration. The\n`CSDaisyBonusProcSoftStealer` literal captures the discovery;\nupdate this tracking profile if a public writeup later\nidentifies the underlying builder.",
   "aliases": [
     "Daisy Private Cloud Bonus",
     "@UP_DAISYCLOUD"
@@ -57,5 +57,29 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSDaisyBonusProcSoftStealer là định danh do CyStack đặt cho một bảng điều khiển (panel) `information.txt` đã bị lược bỏ nặng, được quan sát bên trong các gói tổng hợp `Daisy Private Cloud - <N> Pcs - <DD> <Mon> - Bonus.7z` được phát tán qua kênh Telegram `@UP_DAISYCLOUD`. Các thư mục theo từng nạn nhân tuân theo quy ước đặt tên phẳng `<CC><HWID-30-CHARS>_<YYYY>_<MM>_<DD>T<HH>_<MM>_<XX>_<N>/` (mã quốc gia là hai chữ cái đứng đầu, HWID là một khối chữ và số dài 30 ký tự, và đoạn cuối mã hóa một mốc thời gian).\n\nPhần nội dung chỉ chứa hai phần còn sót lại từ panel gốc: một danh sách tiến trình `[<PID>] <name>.exe` được thụt lề 2 khoảng trắng và một tiêu đề phần kiểu Vidar `[Software]` theo sau là một bản kê chương trình được thụt lề 2 khoảng trắng. Không có banner, không có khối trường `IP / Country / HWID / Computer Name`, và không có neo chuẩn (canonical anchor) nào của Redline / Lumma / Vidar còn tồn tại. Cấu trúc dữ liệu danh sách tiến trình có ngoặc PID đứng trước là ngược lại với Aura Stealer và StealC, vốn tạo dữ liệu đầu ra các mục tiến trình dưới dạng `<name>.exe [<PID>]` (PID nằm sau tên tệp thực thi), vì vậy hai bố cục này vẫn tách biệt về mặt cấu trúc.\n\nViệc quy kết họ mã độc vẫn chỉ mang tính tạm thời, chờ có bản đồ tình báo mối đe dọa được công bố. Các báo cáo công khai ghi nhận kênh `@UP_DAISYCLOUD` là một kênh Telegram giao dịch thông tin xác thực, có khả năng liên quan đến RedLine Stealer, nhưng phần nội dung của gói Bonus bị lược bỏ nặng này không mang bất kỳ trường chuẩn nào của Redline, do đó bằng chứng về nguồn gốc Redline mà dấu vết liên quan `CSDaisyCloudStealer` có đóng dấu watermark hỗ trợ cho `UserInformation.txt` chuẩn không thể được áp dụng sang trường hợp này. Gói Bonus có thể chứa các bản ghi nạn nhân từ một mã độc đánh cắp thông tin nền khác với kênh Daisy Cloud chuẩn, hoặc cùng một mã độc đánh cắp thông tin nhưng với cấu hình lược bỏ khác. Chuỗi ký tự `CSDaisyBonusProcSoftStealer` ghi lại quá trình phát hiện này; hãy cập nhật hồ sơ theo dõi này nếu sau này có bài viết công khai xác định được công cụ builder nền tảng.",
+      "typical_targets": [
+        "Bản kê tiến trình đang chạy (có ngoặc PID)",
+        "Bản kê phần mềm đã cài đặt"
+      ],
+      "detection_notes": "Các mốc tin cậy: tiêu đề phần `[Software]` được neo theo dòng VÀ có từ 10 dòng trở lên trong danh sách tiến trình `[<PID>] <name>.exe` được thụt lề 2 khoảng trắng. Cấu trúc dữ liệu có ngoặc PID đứng trước là tín hiệu phân biệt mạnh nhất: Aura và StealC tạo dữ liệu đầu ra các mục tiến trình dưới dạng `<name>.exe [<PID>]` (thứ tự ngược lại), và `CSSoftwareTailStealer` yêu cầu các dòng `<exe>.exe` trần không có ngoặc PID, nên các định dạng này vẫn tách biệt về mặt cấu trúc. Ngưỡng tối thiểu 10 dòng tiến trình giúp loại bỏ các tài liệu không liên quan chỉ đề cập đến một đoạn trích `[123] foo.exe` đơn lẻ trong văn bản. Phần nội dung không chứa trường nạn nhân hoặc thiết bị nào có thể trích xuất: hồ sơ này chỉ dùng để gắn nhãn. Khi phân loại nhật ký thuộc họ mã độc này, hãy đọc tên thư mục theo từng nạn nhân (`<CC><HWID>_<timestamp>`) để lấy quốc gia nạn nhân, HWID và thời gian ghi nhật ký, sau đó đối chiếu chéo với các tệp thông tin xác thực trong cùng thư mục để lấy tài khoản và token.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1057",
+          "name": "Dò tìm tiến trình"
+        },
+        {
+          "id": "T1518",
+          "name": "Dò tìm phần mềm"
+        }
+      ]
+    }
+  }
 }

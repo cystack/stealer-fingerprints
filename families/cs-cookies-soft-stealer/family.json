@@ -41,5 +41,39 @@
     "cs-browser-category-dump-stealer"
   ],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSCookiesSoftStealer là định danh do CyStack đặt cho một bố cục thư mục nạn nhân trên Windows với cấu trúc chia hai thư mục con (`Cookies/` và `Soft/`) bên trong một thư mục riêng cho từng nạn nhân có tên `[<ISO2>]<IPv4>` (mã quốc gia trong ngoặc vuông theo ngay sau bởi một địa chỉ IPv4 dạng dotted-quad, không có ký tự phân tách). `Cookies/` chứa các bản dump cookie theo từng trình duyệt; `Soft/` chứa các thư mục thu thập dữ liệu riêng cho từng ứng dụng, dành cho game và ứng dụng chat, bao gồm `Steam_<APPID>_<SESSIONID>/tokens.txt` token xác thực Steam JWT cho phép đối tượng vận hành truy cập vào tài khoản Steam của nạn nhân mà không cần mật khẩu hay 2FA.\n\nĐược ghi nhận bên trong các gói tổng hợp `MAY 02 - 8230 LOGS2` mà cũng chứa các thư mục nạn nhân dạng MD5 32 ký tự hex được đại diện bởi CSTikTokAccountStealer, CSNetflixCookiesStealer và CSBrowserCategoryDumpStealer, cùng với các thư mục nạn nhân `[<IPv4>]-<HOSTNAME>` được đại diện bởi CSCommonFilesCategoryStealer. Cấu trúc dữ liệu mã quốc gia `[<ISO2>]<IPv4>` là một quy ước đặt tên khác theo từng mã độc đánh cắp thông tin nguồn mà đối tượng tổng hợp giữ nguyên trong quá trình đóng gói lại. Việc quy kết họ mã độc vẫn còn mang tính tạm thời do chưa có ánh xạ công bố cho bố cục 2 thư mục kết hợp mã quốc gia + IP cụ thể này.",
+      "typical_targets": [
+        "Cookie trình duyệt (Chromium và Gecko)",
+        "Token xác thực Steam JWT (phiên đăng nhập bỏ qua mật khẩu và 2FA)",
+        "Dữ liệu phiên Discord và Telegram",
+        "Dữ liệu phiên của các ứng dụng desktop khác dựa trên Chromium trong `Soft/`"
+      ],
+      "detection_notes": "Tên thư mục cha `[<ISO2>]<IPv4>` kết hợp với tập con thư mục gốc chặt chẽ `{cookies, soft, \"\"}` chính là dấu hiệu nhận diện. Phân biệt với cấu trúc dữ liệu liên quan `[<IPv4>]-<HOSTNAME>` nhờ tiền tố mã quốc gia và việc không có hậu tố hostname nối bằng dấu gạch nối. Các tệp token Steam bên trong `Soft/Steam_<id>_<id>/tokens.txt` chứa token xác thực JWT với trường `sub` chính là SteamID64 của tài khoản bị xâm phạm; trong quá trình phân loại xử lý, cần coi mỗi `tokens.txt` là một chỉ dấu chiếm quyền phiên đăng nhập.",
+      "attack_techniques": [
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1528",
+          "name": "Đánh cắp token truy cập ứng dụng"
+        },
+        {
+          "id": "T1550.004",
+          "name": "Sử dụng dữ liệu xác thực thay thế: cookie phiên web"
+        },
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

@@ -43,5 +43,29 @@
   "observed_channels": [
     "https://t.me/BRADMAX_CLOUD"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSBradMaxCloudMacStealer là định danh do CyStack đặt cho nhánh macOS trong danh mục phát tán log đánh cắp thông tin của kênh Telegram @BRADMAX_CLOUD. Tệp mở đầu bằng khối banner Figlet aBradMax nằm trong khung viền `*` mang watermark URL `Telegram: https://t.me/BRADMAX_CLOUD`, sau đó là bản dump `system_profiler` dạng làm phẳng bao gồm các data type SPSoftwareDataType, SPHardwareDataType và SPDisplaysDataType. Bảng dữ liệu này đã loại bỏ các tiêu đề mục chuẩn (`Software:` / `Hardware:` / `Graphics/Displays:`) cũng như phần thụt lề lồng 4-6 khoảng trắng, khiến mọi trường dữ liệu hiển thị sát lề trái dưới dạng dòng `Key: Value` trơn.\n\nKhông có banner của họ mã độc gốc nào còn sót lại. Phexia, MacSync, SHub và mac.c đều thêm banner tự nhận diện riêng trước khi truyền nội dung `system_profiler`, nhưng mẫu này chỉ chứa khối aBradMax. Do thiếu banner của họ mã độc, không thể quy kết mã độc đánh cắp thông tin trên macOS đã thu thập dữ liệu gốc chỉ dựa trên phần nội dung. Việc quy kết họ mã độc hiện chỉ mang tính tạm thời, chờ có bản đồ threat-intel công bố cho bố cục này.",
+      "typical_targets": [
+        "Dấu vết phần cứng máy và hệ điều hành (dòng Mac, chip, RAM, màn hình, Hardware UUID, firmware hệ thống)",
+        "Thông tin định danh tài khoản (tên đăng nhập, tên máy)"
+      ],
+      "detection_notes": "Việc nhận diện đòi hỏi cả tiền tố URL `https://t.me/BRADMAX_CLOU` (được nới lỏng điều kiện để xử lý lỗi hiển thị bảng dữ liệu đã biết khiến URL bị hợp nhất với các dòng liền kề) và chuỗi literal `System Version: macOS` neo theo dòng. Tiền tố phiên bản macOS là trường SPSoftwareDataType đầu tiên theo chuẩn, giúp phân biệt mẫu này với mọi mẫu BRADMAX_CLOUD có cấu trúc dữ liệu kiểu Windows (các nhánh DCRat, Lumma, Mars, đã phân tích cú pháp, chỉ có banner, PC, CpuVendor). Nội dung không chứa địa chỉ IP hay mã quốc gia, nên tên thư mục cha (`<CC>_<32-hex>`) là tín hiệu địa lý nạn nhân duy nhất. Trong quá trình phân loại ban đầu, hãy nhóm các mẫu theo metadata channel + panel_brand và kiểm tra các tệp liên quan trong thư mục nạn nhân (bản dump keychain, dữ liệu xuất từ trình duyệt, dấu vết ví tiền số) để có mức độ tin cậy cao hơn khi quy kết họ mã độc trên Mac.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        }
+      ]
+    }
+  }
 }

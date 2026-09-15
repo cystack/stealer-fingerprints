@@ -3,7 +3,7 @@
   "name": "CSBrowersStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSBrowersStealer is a CyStack-coined identifier for a\nnine-line `Information.txt` panel summary observed inside `!!\n2025 OCT.part01.rar`-style aggregator packs in\n`<id>_<CC>_<IPv4>_<DD-MM-YY>/Information.txt` victim folders\n(e.g. `1110_CA_<IPv4>_18-10-25/`). The body lists IP,\nCountry (flag emoji + ISO code + country name), Username,\nAntivirus, then four standalone section keys `Facebook:`,\n`Extensions:`, `Wallets:`, `Applications:` (each carrying a\nliteral comma-separated value or `None`), and closes with a\npipe-separated count line under the developer-misspelled key\n`Browers:` (sic, missing `s`):\n`CK:<n>|PW:<n>|AF:<n>|CC:<n>|GG:<n>|TT:<n>|FB:<n>|HOST:<bool>`.\nNo HWID, hostname, OS, or hardware inventory is shipped, so\nthe artifact is a victim-side fingerprint view rather than a\nfull system-info export.\n\nThe `CK|PW|AF|CC|FB` subset overlaps with the publicly\ndocumented PXA Stealer count notation, but the per-section\nsplit (standalone `Facebook:`, `Extensions:`, `Wallets:`,\n`Applications:` lines rather than the PXA caption single `Data\nInformation:` line), the `Browers:` typo, and the\n`GG`/`TT`/`HOST:FALSE` count columns are not described in any\npublic source. Family attribution is provisional pending a\npublished threat-intel mapping for this exact panel layout.",
+  "description": "CSBrowersStealer is a CyStack-coined identifier for a\nnine-line `Information.txt` panel summary observed inside `!! 2025 OCT.part01.rar`-style aggregator packs in\n`<id>_<CC>_<IPv4>_<DD-MM-YY>/Information.txt` victim folders\n(e.g. `1110_CA_<IPv4>_18-10-25/`). The body lists IP,\nCountry (flag emoji + ISO code + country name), Username,\nAntivirus, then four standalone section keys `Facebook:`,\n`Extensions:`, `Wallets:`, `Applications:` (each carrying a\nliteral comma-separated value or `None`), and closes with a\npipe-separated count line under the developer-misspelled key\n`Browers:` (sic, missing `s`):\n`CK:<n>|PW:<n>|AF:<n>|CC:<n>|GG:<n>|TT:<n>|FB:<n>|HOST:<bool>`.\nNo HWID, hostname, OS, or hardware inventory is shipped, so\nthe artifact is a victim-side fingerprint view rather than a\nfull system-info export.\n\nThe `CK|PW|AF|CC|FB` subset overlaps with the publicly\ndocumented PXA Stealer count notation, but the per-section\nsplit (standalone `Facebook:`, `Extensions:`, `Wallets:`,\n`Applications:` lines rather than the PXA caption single `Data Information:` line), the `Browers:` typo, and the\n`GG`/`TT`/`HOST:FALSE` count columns are not described in any\npublic source. Family attribution is provisional pending a\npublished threat-intel mapping for this exact panel layout.",
   "aliases": [
     "!! 2025 OCT aggregator panel summary"
   ],
@@ -72,5 +72,43 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSBrowersStealer là định danh do CyStack đặt cho một bản tóm tắt panel gồm chín dòng `Information.txt` được quan sát bên trong các gói tổng hợp (aggregator pack) kiểu `!! 2025 OCT.part01.rar` nằm trong các thư mục nạn nhân `<id>_<CC>_<IPv4>_<DD-MM-YY>/Information.txt` (ví dụ `1110_CA_<IPv4>_18-10-25/`). Phần nội dung liệt kê IP, Country (biểu tượng cờ + mã ISO + tên quốc gia), Username, Antivirus, sau đó là bốn khóa mục độc lập `Facebook:`, `Extensions:`, `Wallets:`, `Applications:` (mỗi khóa mang một giá trị dạng chuỗi phân tách bằng dấu phẩy hoặc `None`), và kết thúc bằng một dòng đếm phân tách bằng dấu gạch đứng dưới khóa bị lỗi chính tả do nhà phát triển gõ sai `Browers:` (nguyên văn, thiếu `s`): `CK:<n>|PW:<n>|AF:<n>|CC:<n>|GG:<n>|TT:<n>|FB:<n>|HOST:<bool>`.\n\nDấu vết này không đi kèm HWID, tên máy, hệ điều hành hay bản kiểm kê phần cứng, do đó đây là một khung nhìn fingerprint phía nạn nhân chứ không phải bản xuất thông tin hệ thống đầy đủ.\n\nTập con `CK|PW|AF|CC|FB` trùng lặp với ký hiệu đếm của PXA Stealer đã được công khai tài liệu hóa, nhưng cách tách theo từng mục (các dòng `Facebook:`, `Extensions:`, `Wallets:`, `Applications:` độc lập thay vì một dòng caption duy nhất `Data Information:` như của PXA), lỗi chính tả `Browers:`, và các cột đếm `GG`/`TT`/`HOST:FALSE` chưa được mô tả trong bất kỳ nguồn công khai nào. Việc quy kết họ mã độc hiện chỉ mang tính tạm thời, chờ có ánh xạ thông tin tình báo mối đe dọa đã công bố cho đúng bố cục panel này.",
+      "typical_targets": [
+        "Thông tin xác thực, cookie, tự động điền đã lưu trên trình duyệt (chỉ dạng số đếm)",
+        "Dữ liệu thẻ tín dụng (cờ đếm)",
+        "Dấu vết phiên Google (số đếm, nghi ngờ)",
+        "Dấu vết phiên Twitter/X (số đếm, nghi ngờ)",
+        "Cookie phiên Facebook (cờ đếm)",
+        "Tiện ích mở rộng trình duyệt (danh sách theo từng nạn nhân)",
+        "Tiện ích mở rộng ví crypto và ứng dụng desktop (danh sách theo từng nạn nhân)",
+        "Ứng dụng đã cài đặt đáng chú ý (danh sách theo từng nạn nhân)"
+      ],
+      "detection_notes": "Việc nhận diện fingerprint đòi hỏi chuỗi con `Browers: CK:` (lỗi chính tả của nhà phát triển cộng với cột đếm ở đầu) cùng với các khóa `IP:`, `Country:`, `Username:` và `Antivirus:` được neo theo dòng. Lỗi chính tả của `Browers` chính là yếu tố phân biệt: không có định dạng nào khác trong danh mục sử dụng lỗi chính tả này. Chữ v viết thường trong `Antivirus:` giúp phân biệt định dạng này với cấu trúc dữ liệu caption của PXA (`AntiVirus:`, như thấy trong caption của PXA) và cấu trúc dữ liệu bản tóm tắt panel GADS (cũng là `AntiVirus:`, như thấy trong CSGADSPanelStealer).\n\nTrong quá trình phân loại ban đầu, nên coi việc quy kết họ mã độc là chưa xác định: bản tóm tắt panel thiếu phần nội dung thông tin xác thực đã thu thập được để có thể tiến hành nhận diện họ mã độc tiếp theo, và không thể xác định mã độc đánh cắp thông tin làm nền tảng cho panel này chỉ từ các trường tóm tắt.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

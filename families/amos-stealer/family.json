@@ -30,7 +30,7 @@
     },
     {
       "id": "T1555.001",
-      "name": "Credentials from Password Stores: Keychain"
+      "name": "Keychain"
     },
     {
       "id": "T1539",
@@ -91,5 +91,49 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Atomic macOS Stealer (AMOS) là mã độc đánh cắp thông tin trên macOS viết bằng Go và C++, được bán dưới dạng malware-as-a-service qua các kênh Telegram riêng tư từ tháng 4 năm 2023. Bảng điều khiển đối tượng vận hành tính phí khoảng 1000 đô la mỗi tháng và đi kèm một trình dựng (builder), một bảng điều khiển web để quản lý nạn nhân, một công cụ dò mật khẩu (brute-forcer) cho MetaMask, và tính năng gửi nhật ký qua Telegram. Nhiều bài phân tích mã độc công khai đã mô tả chi tiết họ mã độc này. AMOS đã sinh ra các nhánh Banshee, Cthulhu, Poseidon và Odyssey được theo dõi riêng trong danh mục này.\n\nDấu vết được ghi lại ở đây là bản tóm tắt dành cho đối tượng vận hành được ghi dưới dạng `UserInformation.txt` bên trong các thư mục theo từng nạn nhân của các gói tổng hợp nhật ký AMOS. Tệp bắt đầu với bốn tiêu đề phần của bảng điều khiển canh lề trái theo thứ tự cố định (`MetaMask Info:`, `Debanks:`, `Userinfo:`, sau đó `Software:` / `Hardware:` / `Graphics/Displays:` giới thiệu dữ liệu đầu ra nguyên văn `system_profiler` cho các kiểu dữ liệu SPSoftwareDataType, SPHardwareDataType và SPDisplaysDataType). `MetaMask Info` và `Debanks` trống trong hầu hết các mẫu vì bảng điều khiển đưa các dấu vết liên quan đến ví vào các thư mục liên quan (`Wallets/`, `Keychain/`) thay vì chèn trực tiếp vào bản tóm tắt này.",
+      "typical_targets": [
+        "Thông tin xác thực, cookie, dữ liệu tự động điền, lịch sử duyệt web được trình duyệt lưu",
+        "Tiện ích mở rộng ví tiền mã hóa (MetaMask, Phantom, Coin98, Trust Wallet, hơn 50 mục tiêu)",
+        "Ví tiền mã hóa trên máy tính (Electrum, Exodus, Atomic, Wasabi, Ledger Live, Trezor Suite)",
+        "Cơ sở dữ liệu Keychain của macOS và mật khẩu đăng nhập (thông qua hộp thoại AppleScript)",
+        "Nội dung Apple Notes và tệp phiên Telegram",
+        "Mô-đun thu thập tệp trong thư mục Documents và Desktop (.txt, .pdf, .docx, .wallet, .key)"
+      ],
+      "detection_notes": "Bộ ba `MetaMask Info:` + `Debanks:` + `Userinfo:` neo theo dòng là đặc điểm riêng của cách hiển thị bảng điều khiển AMOS này và không trùng lặp với các nhánh macOS Cthulhu (`BuildID:` + `Hardware Overview:`) hoặc MacSync (biểu ngữ `MacSync Stealer`) mà danh mục này theo dõi. Việc quy kết họ mã độc dựa trên một danh mục định dạng mã độc đánh cắp thông tin do cộng đồng biên soạn, ánh xạ đúng cấu trúc dữ liệu `UserInformation.txt` này với Atomic Mac; bản thân họ mã độc AMOS đã được xác nhận công khai ở nơi khác nhưng không có bài phân tích công khai nào cho thấy một mẫu có bố cục tiêu đề phần cụ thể này, do đó hồ sơ này mang mức độ tin cậy quy kết trung bình. Trong quá trình ứng phó sự cố, hãy kiểm tra các dấu vết liên quan `FileGrabber/`, `BrowserVersion.txt`, `keychain.txt` và `Passwords.txt` trong cùng thư mục nạn nhân; các tên tệp liên quan này củng cố việc quy kết cho AMOS.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1555.001",
+          "name": "Keychain"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1217",
+          "name": "Dò tìm thông tin trình duyệt"
+        }
+      ]
+    }
+  }
 }

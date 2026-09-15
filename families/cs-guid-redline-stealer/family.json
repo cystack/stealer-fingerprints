@@ -3,7 +3,7 @@
   "name": "CSGuidRedlineStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSGuidRedlineStealer is a CyStack-coined identifier for a\nRedline-lineage `UserInformation.txt` fork whose field-key\nconvention swaps canonical Redline's `MachineName:` for\n`ComputerName:` and `HWID:` for `GUID:` (dashed-UUID\nvalue). The panel preserves the Redline-canonical\n`Operation System:` typo but reformats several other\nvalue shapes: `ScreenSize:` uses bare `WxH` (not the\ncanonical `{Width=X, Height=Y}` brace form),\n`TimeZone:` carries an IANA Olson identifier (e.g.\n`Europe/Belgrade`, not the canonical `(UTC+X:XX) <city\nlist>` form), and the `Hardwares:` block uses bare\n`CPU:` / `GPU:` / `RAM:` sub-keys instead of the\ncanonical WMI-serialized `Name: <cpu>, N Cores` /\n`Name: <gpu>, N bytes` / `Name: Total of RAM, X.XX Mb\nor Y bytes` prefixed dual-serialization. `File Location:`\n(space-separated) matches the MetaStealer-fork convention\nbut this variant drops the MetaStealer `Log from:`\ndistributor-id line.\n\nObserved inside `MARCH 15 - 3059 LOGS2.part01.rar`\naggregator packs at `[<UUID>][<random-alnum>]/\nUserInformation.txt` victim folders. The UUID inside the\nfolder's first bracket matches the `GUID:` body field.\nFamily attribution stays CS-coined pending a curated CTI\nmapping - attributing to canonical Redline would poison\nthe canonical-Redline IOC index with a fork whose value\nshapes diverge substantively.",
+  "description": "CSGuidRedlineStealer is a CyStack-coined identifier for a\nRedline-lineage `UserInformation.txt` fork whose field-key\nconvention swaps canonical Redline's `MachineName:` for\n`ComputerName:` and `HWID:` for `GUID:` (dashed-UUID\nvalue). The panel preserves the Redline-canonical\n`Operation System:` typo but reformats several other\nvalue shapes: `ScreenSize:` uses bare `WxH` (not the\ncanonical `{Width=X, Height=Y}` brace form),\n`TimeZone:` carries an IANA Olson identifier (e.g.\n`Europe/Belgrade`, not the canonical `(UTC+X:XX) <city list>` form), and the `Hardwares:` block uses bare\n`CPU:` / `GPU:` / `RAM:` sub-keys instead of the\ncanonical WMI-serialized `Name: <cpu>, N Cores` /\n`Name: <gpu>, N bytes` / `Name: Total of RAM, X.XX Mb or Y bytes` prefixed dual-serialization. `File Location:`\n(space-separated) matches the MetaStealer-fork convention\nbut this variant drops the MetaStealer `Log from:`\ndistributor-id line.\n\nObserved inside `MARCH 15 - 3059 LOGS2.part01.rar`\naggregator packs at `[<UUID>][<random-alnum>]/ UserInformation.txt` victim folders. The UUID inside the\nfolder's first bracket matches the `GUID:` body field.\nFamily attribution stays CS-coined pending a curated CTI\nmapping - attributing to canonical Redline would poison\nthe canonical-Redline IOC index with a fork whose value\nshapes diverge substantively.",
   "aliases": [],
   "typical_targets": [
     "Browser saved credentials, cookies, autofill (per Redline lineage)",
@@ -43,5 +43,38 @@
     "https://github.com/MalBeacon/what-is-this-stealer",
     "https://securityscorecard.com/research/detailed-analysis-redline-stealer/"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSGuidRedlineStealer là mã định danh do CyStack đặt cho một nhánh phân nhánh (fork) thuộc dòng Redline `UserInformation.txt`, có quy ước khóa trường thay thế khóa `MachineName:` chuẩn của Redline bằng `ComputerName:` và `HWID:` bằng `GUID:` (giá trị UUID dạng có dấu gạch ngang). Bảng điều khiển vẫn giữ lỗi chính tả kinh điển của Redline là `Operation System:` nhưng định dạng lại nhiều cấu trúc dữ liệu giá trị khác: `ScreenSize:` sử dụng dạng thuần `WxH` (không phải dạng dấu ngoặc nhọn chuẩn `{Width=X, Height=Y}`), `TimeZone:` mang định danh IANA Olson (ví dụ `Europe/Belgrade`, không phải dạng chuẩn `(UTC+X:XX) <city list>`), và khối `Hardwares:` sử dụng các khóa con thuần `CPU:` / `GPU:` / `RAM:` thay vì dạng song song có tiền tố WMI-serialized chuẩn `Name: <cpu>, N Cores` / `Name: <gpu>, N bytes` / `Name: Total of RAM, X.XX Mb or Y bytes`. `File Location:` (phân tách bằng khoảng trắng) khớp với quy ước của nhánh MetaStealer, nhưng biến thể này lại bỏ dòng mã định danh nhà phân phối (distributor-id) `Log from:` đặc trưng của MetaStealer.\n\nĐược ghi nhận bên trong các gói tổng hợp (aggregator pack) `MARCH 15 - 3059 LOGS2.part01.rar`, tại các thư mục nạn nhân `[<UUID>][<random-alnum>]/ UserInformation.txt`. UUID nằm trong dấu ngoặc vuông đầu tiên của tên thư mục khớp với trường thân dữ liệu `GUID:`. Việc quy kết họ mã độc tạm thời vẫn giữ theo định danh do CS đặt cho đến khi có ánh xạ CTI đã được tuyển chọn - việc quy kết vào Redline chuẩn sẽ làm nhiễm loãng chỉ mục IOC của Redline chuẩn bằng một nhánh có cấu trúc dữ liệu giá trị khác biệt đáng kể.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt, cookie, dữ liệu tự động điền (autofill) (theo dòng Redline)",
+        "Kiểm kê phần cứng hệ thống và thông tin vùng miền (locale)",
+        "Liệt kê phần mềm diệt virus"
+      ],
+      "detection_notes": "Chỉ báo tin cậy cao: dòng chứa `Operation System:` (lỗi chính tả kinh điển của Redline) cộng với dòng chứa `ComputerName:` (tên đổi từ `MachineName:` do nhánh fork) cộng với dòng chứa `GUID:` (tên đổi từ `HWID:` do nhánh fork). Tổ hợp ba chỉ báo này tách biệt hoàn toàn với Redline chuẩn (sử dụng `MachineName:` + `HWID:`), với MetaStealer (yêu cầu `Log from:` + `File Location:` và sử dụng `OS:` không có lỗi chính tả), và với RedlineLikeStealer (sử dụng `Processor:` / `Installed RAM:` / `Graphics card:` / `Computer Name:` có khoảng trắng). Trong quá trình phân loại ban đầu (triage), UUID `GUID:` khớp với đoạn đầu tiên trong dấu ngoặc vuông của tên thư mục nạn nhân, vì vậy định dạng đường dẫn thư mục có thể được dùng để đối chiếu chéo danh tính theo từng nạn nhân.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

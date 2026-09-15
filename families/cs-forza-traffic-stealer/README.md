@@ -1,86 +1,90 @@
 # CSForzaTrafficStealer
 
-CSForzaTrafficStealer is a CyStack tracking name for the bare
-`Key: Value` `Info.txt` panel that the `@FORZATRAFFICx`
-Telegram reseller redistributes inside
-`MIX_LOGS_<NNNN>_BONUS_UPDATE_@FORZATRAFFICx_<Month>_<YYYY>
-_part<N>.rar` aggregator packs. Victim folders follow the
-shape `<CC>_<32-hex>/Info.txt` (country code plus underscore
-plus a 32-character HWID-derived hex identifier, no IP
-segment in the folder tree), and the archive-tree top
-folder repeats the `@FORZATRAFFICx` reseller handle
-verbatim.
+## Overview / Tổng quan
 
-The body vocabulary is byte-identical to two peer cloud
-reseller shapes already cataloged (`CSRoyCloudInfoStealer`
-and `CSSigInfoStealer`): a Redline-shape verbose field
-inventory with Lumma influences carrying `Build Date` in the
-C-preprocessor `__DATE__` format, a `Configuration:` header
-with empty value, `Execution Path:` with the setup binary
-path, `Elevated:` privilege state, `Computer Name` /
-`User Name` / `Netbios` / `User Language`, an
-`Operation System:` (sic) typo carried from Redline sources,
-`Install Date` and `System Date` in dotted DMY, `Time Zone`
-as a short `UTC[+-]H` offset, `Antivirus:` naming the AV
-product, plain 32-hex `HWID`, `Processor` plus split
-`Processor Threads` and `Processor Cores`, an indented
-`Graphics Card:` block, `Installed RAM:` in MB, and
-`Display Resolution:` in `WxH` form.
+### English
 
-Distinguishing features vs the two peer shapes: no
-Lumma-canonical `(sig:UNIX.HEX)` Time-line watermark and no
-trailing `IP Address:` / `Time:` / `Country:` / `User:`
-panel-metadata footer (both are present on the `CSSigInfo`
-shape), and no `RÔýĆløud` panel-brand watermark that
-wraps the `CSRoyCloud` shape. Victim IP and country and log
-time are recoverable only from the archive-path segment
-plus the `System Date` / `Time Zone` field pair inside
-`Info.txt`.
+CSForzaTrafficStealer is a CyStack tracking name for an
+observed `Info.txt` layout. The retained body identifies
+`CLÓUD CHANNEL - @forza_traffic` and
+`SUPPORT - @ez_sources`; its archive provenance carries the
+separate `@FORZATRAFFICx` handle in
+`MIX_LOGS_<NNNN>_BONUS_UPDATE_@FORZATRAFFICx_<Month>_<YYYY>_part<N>.rar` packs. These labels establish
+distribution provenance, not a canonical malware-family
+attribution.
 
-Public reporting attests `@FORZATRAFFICx` as an active
-credential-log reseller distributing tens of thousands of
-records per pack alongside sibling `TG ArhontCorp`-branded
-channels (`FateTraffic TG ArhontCorp`, `Slurm Private TG
-ArhontCorp`, `KATANA CLOUD PRIVATE TG ArhontCorp`). No
-published mapping ties the exact bare-KV field vocabulary
-here to a canonical builder, so family attribution stays a
-CyStack tracking name pending a curated writeup.
+After the banner, the device-information block shares a
+verbose bare `Key: Value` vocabulary with
+`CSRoyCloudInfoStealer` and `CSSigInfoStealer`. Stable fields
+cover build and execution context, privilege state, host and
+user identity, OS and language, install and system time,
+antivirus, HWID, CPU, GPU, RAM, and display resolution.
 
-## Research status
+The observed body has neither the `(sig:UNIX.HEX)` footer of
+`CSSigInfoStealer` nor the `RÔýĆløud` wrapper of
+`CSRoyCloudInfoStealer`. Its `<CC>_<32-hex>/Info.txt` folder
+name contains a country-code token and an opaque identifier,
+not an IP address or timestamp. Log time is derived from the
+`System Date` and `Time Zone` body fields; IP and country stay
+unset unless explicit fields are present.
 
-- Classification: **CyStack tracking name**
+No defensible public mapping currently ties this exact layout
+to a canonical builder, so attribution remains a CyStack
+tracking name.
+
+### Tiếng Việt
+
+CSForzaTrafficStealer là định danh theo dõi do CyStack đặt cho một định dạng `Info.txt` đã được quan sát. Mẫu đại diện có biểu ngữ `CLÓUD CHANNEL - @forza_traffic` và `SUPPORT - @ez_sources`; đường dẫn trong gói lưu trữ mang thêm tên tài khoản `@FORZATRAFFICx` ở các gói `MIX_LOGS_<NNNN>_BONUS_UPDATE_@FORZATRAFFICx_<Month>_<YYYY>_part<N>.rar`. Những nhãn này chỉ phản ánh nguồn phân phối, không phải tên một họ mã độc đã được quy kết.
+
+Sau biểu ngữ, khối thông tin thiết bị dùng tập trường `Key: Value` chi tiết tương tự `CSRoyCloudInfoStealer` và `CSSigInfoStealer`. Các trường ổn định mô tả bản dựng và ngữ cảnh thực thi, quyền của tiến trình, danh tính máy và người dùng, hệ điều hành và ngôn ngữ, thời gian cài đặt và thời gian hệ thống, phần mềm diệt virus, HWID, CPU, GPU, RAM và độ phân giải màn hình.
+
+Mẫu được quan sát không có phần cuối `(sig:UNIX.HEX)` của `CSSigInfoStealer` và cũng không có biểu ngữ `RÔýĆløud` của `CSRoyCloudInfoStealer`. Tên thư mục `<CC>_<32-hex>/Info.txt` chứa mã quốc gia và một định danh chưa xác định ý nghĩa; nó không chứa địa chỉ IP hay dấu thời gian. Thời gian ghi log được suy ra từ hai trường `System Date` và `Time Zone`; IP và quốc gia được để trống nếu nội dung không có trường tương ứng.
+
+Hiện chưa có ánh xạ công khai đủ tin cậy để liên hệ chính xác định dạng này với một bộ công cụ tạo mã độc cụ thể, vì vậy CyStack tiếp tục giữ định danh theo dõi riêng.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
-- Aliases: `@FORZATRAFFIC`, `@FORZATRAFFICx`, `ForzaTraffic MIX LOGS`, `ForzaTraffic TG ArhontCorp`
+- Aliases: `@forza_traffic`, `@FORZATRAFFICx`, `@ez_sources`, `ForzaTraffic MIX LOGS`
 - Variants observed: **1**
 - CyStack observations represented: **1**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- Browser saved credentials, cookies, autofill
-- System hardware and identity inventory
-- Installed antivirus product identity
+| English | Tiếng Việt |
+|---|---|
+| Host identity and operating-system metadata | Thông tin nhận dạng máy và hệ điều hành |
+| CPU, GPU, RAM, and display inventory | Thông tin phần cứng: CPU, GPU, RAM và độ phân giải màn hình |
+| Antivirus product and execution-path metadata | Sản phẩm diệt virus và đường dẫn thực thi |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
 
-Fingerprint requires line-anchored `Execution Path:` AND
-`Installed RAM:` AND the `forzatraffic` archive-tree token
-in the observed system-path breadcrumbs. The two peer bare
-Key-Value parsers cleanly decline the same body when the
-`(sig:UNIX.HEX)` watermark and the `RÔýĆløud` reseller
-banner are both absent, so channel attribution lands on
-this profile.
+### English
+
+Require the same line to contain
+`CLÓUD CHANNEL - @forza_traffic` and
+`SUPPORT - @ez_sources`, together with
+line-anchored `Execution Path:` and `Installed RAM:` fields.
+The `@FORZATRAFFICx` archive-path token corroborates observed
+distribution but is not sufficient by itself. Do not
+attribute the layout from the shared bare fields alone.
+
+### Tiếng Việt
+
+Dấu hiệu nhận diện yêu cầu `CLÓUD CHANNEL - @forza_traffic` và `SUPPORT - @ez_sources` xuất hiện trên cùng một dòng, đồng thời có các trường `Execution Path:` và `Installed RAM:` được neo ở đầu dòng. Chuỗi `@FORZATRAFFICx` trong đường dẫn gói lưu trữ giúp xác nhận nguồn phân phối đã quan sát, nhưng không đủ để nhận diện nếu đứng riêng. Không quy kết chỉ từ các trường khóa–giá trị dùng chung.
 
 ## Observed log variants
 
-### `v_243781523ca2e74811e2e8ecf7b8cea3`
+### `v_b69e0e2c91e37b3a9e78e1452a1fe542`
 
 - Format ID: `cs-forzatraffic-stealer`
 - Observed filenames: `Info.txt`
-- Panel brand: `@FORZATRAFFICx`
+- Panel brand: `@forza_traffic`
 - Distribution channel: `@FORZATRAFFICx`
 - Attribution confidence: **unknown**
 - Historical records represented: **1**
-- Representative sample: [open sample](samples/v_243781523ca2e74811e2e8ecf7b8cea3/Info.txt)
+- Representative sample: [open sample](samples/v_b69e0e2c91e37b3a9e78e1452a1fe542/Info.txt)
 - Sample SHA-256: `0d1d48d0eefa4e15994db2039cceafd04d15d7b11c57101cb7514ccf28c21e1d`
 - Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
 
@@ -92,23 +96,26 @@ Recognition anchors:
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
-| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
-| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
-| [T1518.001](https://attack.mitre.org/techniques/T1518/001/) | Security Software Discovery |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
+| [T1124](https://attack.mitre.org/techniques/T1124/) | System Time Discovery | Xác định thời gian hệ thống |
+| [T1518.001](https://attack.mitre.org/techniques/T1518/001/) | Security Software Discovery | Dò tìm phần mềm bảo mật |
+| [T1614.001](https://attack.mitre.org/techniques/T1614/001/) | System Language Discovery | Xác định ngôn ngữ hệ thống |
 
 ## Related catalog profiles
 
 - [CSRoyCloudInfoStealer](../cs-roy-cloud-info-stealer/)
 - [CSSigInfoStealer](../cs-sig-info-stealer/)
 
+## Observed distribution channels
+
+- <https://t.me/forza_traffic>
+- <https://t.me/ez_sources>
+- <https://t.me/FORZATRAFFICx>
+
 ## Sources
 
-- <https://heroic.com/darkhive-breaches/fatetraffic-tg-arhontcloud-uploaded-by-a-telegram-user/>
-- <https://heroic.com/darkhive-breaches/logs-uploaded-by-a-telegram-user-breach-2023/>
+- CyStack-observed log structure; no external family source recorded.
 
 Machine-readable record: [family.json](family.json)

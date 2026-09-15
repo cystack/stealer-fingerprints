@@ -67,5 +67,40 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "MacSync là một họ mã độc đánh cắp thông tin nhắm vào macOS, được ghi nhận lần đầu vào tháng 11 năm 2025 dưới dạng đổi thương hiệu từ họ mã độc Mac.c trước đó. Tải trọng AppleScript của nó ghi một tệp `Information.txt` vào thư mục tập kết dữ liệu trên máy nạn nhân, kết hợp một banner tự nhận diện mã độc, thông tin xác thực tài khoản đã thu thập được, và dữ liệu đầu ra nguyên văn của `system_profiler`.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt (Chrome, Safari, Firefox)",
+        "Ứng dụng client ví tiền mã hóa trên máy tính (Electrum, Exodus, v.v.)",
+        "Các mục trong macOS Keychain",
+        "Dữ liệu phiên đăng nhập Telegram và Discord trên macOS",
+        "Thông tin cấu hình hệ thống dùng để nhận diện nạn nhân"
+      ],
+      "detection_notes": "`Information.txt` chứa cả banner lẫn dữ liệu đầu ra nguyên văn của `system_profiler` là dấu hiệu nhận diện rõ ràng, không gây nhầm lẫn. Nên kết hợp với các giá trị trường đặc thù của macOS (chuỗi CPU Apple silicon, phiên bản macOS) để xác nhận.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.001",
+          "name": "Keychain"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

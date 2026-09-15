@@ -68,5 +68,38 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSALStealer là định danh do CyStack đặt cho một họ log AL Stealer tự đặt tên, được phát hiện bên trong các gói `APRIL 25 - 19966 LOGS` trên Telegram trong `DZ_<IP>_<DD-MM-YY>/` thư mục nạn nhân. Định dạng này có cấu trúc dữ liệu giống Lumma (danh sách YAML tiền tố dấu gạch ngang) nhưng mang banner build riêng biệt, kênh phân phối khác, và thiếu chữ ký `(sig:UNIX.HEX)` đặc trưng của Lumma. Mã độc tự nhận diện là AL Stealer (khả năng viết tắt của \"Additional Libraries\", khớp với tên kênh Telegram của nó) và nhắm mục tiêu vào người chơi Hypixel Skyblock thông qua các mod Minecraft giả mạo. Việc xác định họ mã độc này còn mang tính tạm thời; chưa có nguồn tình báo an ninh mạng nào được công bố xác nhận mẫu log cụ thể này, do đó có tiền tố `CS`.",
+      "typical_targets": [
+        "Thông tin xác thực được lưu trong trình duyệt",
+        "Tiện ích mở rộng ví tiền điện tử",
+        "Thông tin xác thực tài khoản Minecraft và dữ liệu Hypixel Skyblock"
+      ],
+      "detection_notes": "Dòng `- AL Stealer Build:` với tiền tố dấu gạch ngang là dấu hiệu kích hoạt rõ ràng nhất. Tham chiếu kênh `t.me/additionallibraries` trong phần tiêu đề mời tham gia là chữ ký dự phòng cho các biến thể đã loại bỏ banner build.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

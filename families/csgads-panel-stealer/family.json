@@ -68,5 +68,39 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSGADSPanelStealer là định danh do CyStack đặt cho một bản tóm tắt panel `Information.txt` gồm năm dòng, được quan sát bên trong các gói tổng hợp kiểu `!! 2026 JAN.part01.rar` nằm trong các thư mục nạn nhân `[CC]<IPv4>/Information.txt`. Phần nội dung liệt kê IP, Country (biểu tượng cờ + mã ISO + tên quốc gia), User, AntiVirus, và một dòng đếm `Browser Data:` theo cấu trúc dữ liệu phân tách bằng dấu gạch đứng kiểu PXA: `CK:<n>|PW:<n>|AF:<n>|CC:<n>|FB:<n>|GADS:<bool>`. Bản tóm tắt không đi kèm HWID, hostname, hệ điều hành hay thông tin kiểm kê phần cứng, do đó đây là một khung nhìn nhận dạng dấu vết phía nạn nhân hơn là một bản xuất thông tin hệ thống đầy đủ.\n\nCác chữ viết tắt đếm `CK|PW|AF|CC|FB` đã được công khai tài liệu hóa là định dạng data-tracker của PXA Stealer, và quy ước thư mục `[CC]<IP>` khớp với cấu trúc dữ liệu đưa dữ liệu ra ngoài của panel PXA (`[CC_IPADDRESS]_HOSTNAME.zip`). Việc quy kết mang tính gợi ý nhưng chưa dứt khoát: khối `system_info.txt` phía nạn nhân đã được tài liệu hóa của PXA sử dụng một khối `Thông tin hệ thống` có tiêu đề tiếng Việt đầy đủ gồm các khóa WMI dạng snake_case, như đã ghi nhận trong hồ sơ PXA, còn cột `GADS` ở cuối (cờ đánh dấu tài khoản Google Ads) cùng dòng `AntiVirus:` trơ trọi không được mô tả trong bất kỳ báo cáo công khai nào. Định dạng này có thể là một khung nhìn tóm tắt panel từ một pipeline nạp log của PXA, hoặc từ một trình tổng hợp Telegram không liên quan nhưng đã áp dụng cấu trúc dữ liệu đếm của PXA.\n\nViệc quy kết họ mã độc vẫn còn tạm thời cho đến khi có một bản ánh xạ threat-intel được công bố cho đúng bố cục tóm tắt panel này.",
+      "typical_targets": [
+        "Thông tin xác thực, cookie và dữ liệu tự động điền đã lưu trong trình duyệt (chỉ ở dạng số đếm)",
+        "Dữ liệu thẻ tín dụng (cờ đếm)",
+        "Cookie phiên Facebook (cờ đếm)",
+        "Cờ đánh dấu sự hiện diện tài khoản Google Ads"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết đòi hỏi các khóa `IP:`, `Country:`, `User:`, `AntiVirus:` được neo theo dòng, cùng với chuỗi con `Browser Data: CK:` và chuỗi con `|GADS:`. Token `|GADS:` là yếu tố phân biệt: các chú thích bot Telegram của PXA Stealer sử dụng cùng cấu trúc dữ liệu đếm phân tách bằng dấu gạch đứng nhưng mở rộng thêm bằng các cột `Sites|Wallets|Apps` thay vì cờ `GADS`. Trong quá trình phân loại ban đầu, hãy coi việc quy kết họ mã độc là chưa xác định - mã độc đánh cắp thông tin bên dưới không thể được xác định chỉ từ bản tóm tắt panel, và thư mục nạn nhân tương ứng đang thiếu phần nội dung thông tin xác thực đã thu thập được, vốn cần thiết để nhận diện họ mã độc ở các bước tiếp theo.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

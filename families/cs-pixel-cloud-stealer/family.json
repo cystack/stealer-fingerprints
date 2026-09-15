@@ -25,5 +25,13 @@
     "redline-like-stealer",
     "x-files"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSPixelCloudStealer là định danh do CyStack đặt cho tệp ``System.txt`` dạng rút gọn theo cấu trúc dữ liệu Redline của bộ tổng hợp ``t.me/PIXELCLOUD3``, được ghi nhận bên trong các gói tổng hợp ``@ft7links-lumma``. Bảng điều khiển tạo dữ liệu đầu ra là một banner ASCII-art theo sau bởi mười hai dòng ``https://t.me/PIXELCLOUD3`` subscriber lặp lại, được sắp xếp thành khối 3 hàng x 4 cột.",
+      "typical_targets": [],
+      "detection_notes": "Cấu trúc dữ liệu của phần thân trùng khớp với các biến thể được ghi nhận đầu tiên của CSRussia34Stealer và CSEnchantCloudStealer; @ft7links gắn nhãn kho lưu trữ là 'lumma' nhưng phần thân lại là dạng phái sinh Redline điển hình đối với biến thể 1. Bốn biến thể tạo dữ liệu đầu ra từ các họ mã độc nền tảng khác nhau.",
+      "attack_techniques": []
+    }
+  }
 }

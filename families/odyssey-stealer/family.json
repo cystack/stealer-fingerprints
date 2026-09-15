@@ -3,7 +3,7 @@
   "name": "Odyssey Stealer",
   "classification": "known_family",
   "attribution_confidence": "high",
-  "description": "Odyssey Stealer is a macOS infostealer sold as\nmalware-as-a-service by a Russian-speaking operator. Public\nreporting tracks it as a rebrand of Poseidon Stealer, which\nitself forked from the AMOS Stealer codebase. Public research\ndocumented the ClickFix delivery chain in April 2026, and a\nfollow-on evolution writeup covered new obfuscation and\ncode-signing techniques. A separate writeup covers the same\ncampaign from the delivery-side view.\n\nThe stealer runs as an AppleScript compiled file (.scpt)\nlaunched via osascript. Its info file opens with `External IP:\n<ipv4>`, then a bare `System Info` header, then `Username:` /\n`Password:` / `Hostname:` / `OS Version:` / `Is CIS:` boolean\nfields, then verbatim `system_profiler SPSoftwareDataType` /\n`SPHardwareDataType` / `SPDisplaysDataType` output. The `Is\nCIS:` flag is set by inspecting\n`~/Library/Preferences/com.apple.HIToolbox.plist` for a\nRussian keyboard layout; the beacon reports the flag so the\noperator can filter or drop CIS victims per campaign. The\nharvested password is captured through a fake authentication\ndialog rendered via osascript.",
+  "description": "Odyssey Stealer is a macOS infostealer sold as\nmalware-as-a-service by a Russian-speaking operator. Public\nreporting tracks it as a rebrand of Poseidon Stealer, which\nitself forked from the AMOS Stealer codebase. Public research\ndocumented the ClickFix delivery chain in April 2026, and a\nfollow-on evolution writeup covered new obfuscation and\ncode-signing techniques. A separate writeup covers the same\ncampaign from the delivery-side view.\n\nThe stealer runs as an AppleScript compiled file (.scpt)\nlaunched via osascript. Its info file opens with `External IP: <ipv4>`, then a bare `System Info` header, then `Username:` /\n`Password:` / `Hostname:` / `OS Version:` / `Is CIS:` boolean\nfields, then verbatim `system_profiler SPSoftwareDataType` /\n`SPHardwareDataType` / `SPDisplaysDataType` output. The `Is CIS:` flag is set by inspecting\n`~/Library/Preferences/com.apple.HIToolbox.plist` for a\nRussian keyboard layout; the beacon reports the flag so the\noperator can filter or drop CIS victims per campaign. The\nharvested password is captured through a fake authentication\ndialog rendered via osascript.",
   "aliases": [
     "Odyssey",
     "Poseidon Stealer (predecessor)",
@@ -67,5 +67,53 @@
   "related_external": [
     "poseidon-stealer"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "Odyssey Stealer là một mã độc đánh cắp thông tin trên macOS được bán dưới hình thức phần mềm độc hại dưới dạng dịch vụ (malware-as-a-service) bởi một đối tượng vận hành nói tiếng Nga. Các báo cáo công khai ghi nhận đây là bản đổi thương hiệu của Poseidon Stealer, vốn được phân nhánh từ mã nguồn của AMOS Stealer. Nghiên cứu công khai đã ghi lại chuỗi phát tán ClickFix vào tháng 4 năm 2026, và một bài viết tiếp theo về quá trình tiến hóa đã đề cập đến các kỹ thuật gây rối mã (obfuscation) và ký mã mới. Một bài viết riêng biệt khác đề cập đến cùng chiến dịch này từ góc độ phát tán.\n\nMã độc đánh cắp thông tin này chạy dưới dạng tệp AppleScript đã biên dịch (.scpt) được khởi chạy thông qua osascript. Tệp thông tin của nó mở đầu bằng `External IP: <ipv4>`, sau đó là tiêu đề thuần `System Info`, tiếp theo là các trường boolean `Username:` / `Password:` / `Hostname:` / `OS Version:` / `Is CIS:`, sau đó là dữ liệu đầu ra nguyên văn `system_profiler SPSoftwareDataType` / `SPHardwareDataType` / `SPDisplaysDataType`. Cờ `Is CIS:` được thiết lập bằng cách kiểm tra `~/Library/Preferences/com.apple.HIToolbox.plist` để tìm bố cục bàn phím Nga; tín hiệu beacon báo cáo cờ này để đối tượng vận hành có thể lọc hoặc loại bỏ nạn nhân thuộc khối CIS theo từng chiến dịch. Mật khẩu thu thập được được lấy thông qua một hộp thoại xác thực giả được hiển thị qua osascript.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trong trình duyệt (12+ trình duyệt)",
+        "Tiện ích mở rộng ví tiền điện tử trên trình duyệt (300+ loại theo báo cáo công khai)",
+        "Ví tiền điện tử độc lập trên macOS (16+ ứng dụng)",
+        "Cơ sở dữ liệu Keychain của macOS",
+        "Cookie phiên trình duyệt web đang hoạt động",
+        "Mật khẩu đăng nhập của nạn nhân bị lấy qua hộp thoại giả osascript"
+      ],
+      "detection_notes": "Trường boolean `Is CIS: true` / `Is CIS: false` là điểm neo nhận diện mạnh nhất. Kết hợp với `External IP:` và các tiêu đề phần `Software:` + `Hardware:` + `Graphics/Displays:` `system_profiler` đặc trưng của macOS, dấu hiệu nhận diện này là duy nhất trong toàn bộ kho định dạng đã được phân loại. Trong quá trình phân loại ban đầu, hãy coi bất kỳ nhật ký nào có trường `Is CIS:` là thuộc về Odyssey; dòng `Password:` tương ứng chứa thông tin xác thực đăng nhập của nạn nhân mà AppleScript đã thu thập được thông qua hộp thoại xác thực giả và phải được coi là đã bị xâm phạm. Các mẫu Odyssey được phát tán lại qua kênh tổng hợp Telegram BRADMAX loại bỏ biểu ngữ `SHub Stealer` (vốn xuất hiện trong họ mã độc liên quan là SHub) nhưng vẫn giữ nguyên bộ ba `Is CIS:` + `External IP:` + `system_profiler`, do đó cùng một dấu hiệu nhận diện về cấu trúc dữ liệu này bao phủ được cả mẫu điều khiển C2 trực tiếp lẫn mẫu được phát tán lại qua kênh tổng hợp.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.001",
+          "name": "Keychain"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        },
+        {
+          "id": "T1204.002",
+          "name": "Người dùng thực thi: tệp độc hại"
+        }
+      ]
+    }
+  }
 }

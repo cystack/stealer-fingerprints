@@ -99,5 +99,44 @@
       },
       "layout_id": "operation-id"
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "X-FILES (XFiles / DeerStealer) là một họ mã độc đánh cắp thông tin viết bằng C# đã hoạt động lâu dài, được ghi nhận lần đầu trên các diễn đàn hacker Nga vào tháng 3 năm 2021. Các phiên bản phát triển sau này (từ 2024 trở đi) được đổi thương hiệu thành DeerStealer và bán bởi cùng một tác nhân đe dọa trên các diễn đàn dark web và Telegram theo mô hình đăng ký phân cấp. Nhắm mục tiêu vào trình duyệt Chromium và Gecko, hơn 80 tiện ích mở rộng ví tiền mã hóa dựa trên trình duyệt, cùng dữ liệu từ VPN, FTP, RDP và ứng dụng nhắn tin.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trên trình duyệt (Chromium và Gecko)",
+        "Hơn 80 tiện ích mở rộng ví tiền mã hóa dựa trên trình duyệt",
+        "Ứng dụng desktop ví tiền mã hóa",
+        "Cấu hình ứng dụng VPN, FTP, RDP",
+        "Dữ liệu phiên ứng dụng nhắn tin (Telegram, Discord, Steam)"
+      ],
+      "detection_notes": "XFiles `Information.txt` mang theo banner của bảng điều khiển cùng với các trường thông tin phần cứng và ngôn ngữ hệ thống của nạn nhân. Các biến thể cũ giai đoạn 2021-2022 và phiên bản đổi thương hiệu DeerStealer từ 2024 trở đi có chung tập trường dữ liệu, do đó quy tắc nhận diện họ mã độc này bao phủ cả hai giai đoạn. Một biến thể bị bộ tổng hợp lược bớt, được phát tán lại thông qua dự án Cloud WLFR (`t.me/WichLoveFromR`, `linktr.ee/WLFRcloud`, hỗ trợ `@AltairSupport`), loại bỏ định danh phiên chạy bảng điều khiển `Operation ID:` nhưng vẫn giữ nguyên phần còn lại của tập trường dữ liệu chuẩn XFiles; dấu vân tay cấu trúc dữ liệu bao phủ cả hai cấu trúc.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1119",
+          "name": "Thu thập tự động"
+        }
+      ]
+    }
+  }
 }

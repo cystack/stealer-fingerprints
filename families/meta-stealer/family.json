@@ -45,5 +45,40 @@
     "https://krakensecurity.com/metastealer-malware/",
     "https://www.sentinelone.com/labs/metastealer-redline-fork-meets-mac-users/"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "Nhật ký của MetaStealer. MetaStealer là một biến thể tách nhánh (fork) từ Redline; cấu trúc dữ liệu của nhật ký IOC tương tự nhau nhưng mỗi khóa đều được đổi tên nhẹ (chèn thêm khoảng trắng, bỏ lỗi chính tả đặc trưng `Operation System:` của Redline gốc) và xuất hiện thêm một vài trường mới (`Log from:` là id nhà phân phối, tên `Time Zone:` theo chuẩn IANA thay vì độ lệch UTC).",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trong trình duyệt",
+        "Tiện ích mở rộng ví tiền điện tử và ứng dụng desktop",
+        "Thông tin xác thực FTP và VPN client",
+        "Dữ liệu phiên đăng nhập Telegram và Discord",
+        "Dấu vân tay hệ thống để lập hồ sơ nạn nhân"
+      ],
+      "detection_notes": "Sự kết hợp giữa `Log from:` (id nhà phân phối) và giá trị `Time Zone:` theo chuẩn IANA (ví dụ: `Europe/Istanbul`) thay vì độ lệch UTC dạng số là dấu hiệu phân biệt rõ ràng nhất so với Redline gốc.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

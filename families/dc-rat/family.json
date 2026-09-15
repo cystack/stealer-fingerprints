@@ -95,5 +95,57 @@
       },
       "layout_id": "gpu-mode"
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "DCRat (Dark Crystal RAT, DarkCrystal RAT) là một mã độc điều khiển từ xa (RAT) dựa trên nền tảng .NET kết hợp mã độc đánh cắp thông tin, được rao bán dưới dạng malware-as-a-service ít nhất từ năm 2019. Các hệ thống theo dõi công khai liệt kê họ mã độc này dưới tên định danh chuẩn DCRat. CERT-UA đã ghi nhận các chiến dịch DCRat nhắm vào mục tiêu quốc phòng và chính phủ Ukraine, được quy kết cho các đối tượng vận hành liên kết với Nga (Sandworm cùng các cụm khác).\n\nBản ghi thu thập được mở đầu bằng banner ASCII-art Figlet 5 dòng phông chữ `small` đánh vần `Dark Crystal RAT`, tiếp theo là một dòng kẻ ngang bằng dấu gạch dài, rồi đến bốn khối phẳng `Key: Value` ngăn cách nhau bằng dòng trống. Khối đầu tiên chứa dữ liệu liệt kê phần cứng qua WMI bao gồm `PC Name`, `User Name`, phiên bản `Windows`, `CPU Name`, `CPU Cores` (kèm số luồng logic trong ngoặc đơn), `GPU Name`, `GPU Mode` (bộ ba chiều rộng x chiều cao x độ sâu màu), `Motherboard` (chuỗi SMBIOS của Win32_BaseBoard), `BIOS` (chuỗi Win32_BIOS), `Antivirus`, `Firewall`, `RAM` (dấu phẩy thập phân theo ngôn ngữ hệ thống), và `LANIP`. Khối thứ hai báo cáo phiên bản .NET Framework và đường dẫn cài đặt (DCRat thường giả dạng một tệp nhị phân dịch vụ hệ thống giả, ví dụ `fontdrvhost.exe` nằm trong thư mục `MsHyperserverBrokersvc` đánh lừa bằng lỗi chính tả tên thư mục thật). Khối thứ ba là dữ liệu định vị địa lý (`IP`, `City`, `Country` dưới dạng `CC / Name`, `Location` là vĩ độ/kinh độ). Phần cuối báo cáo danh sách màn hình và `Save Time` theo định dạng châu Âu `DD.MM.YYYY HH:MM`.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trong trình duyệt (các mô-đun plugin: Plugin_AutoStealer)",
+        "Ghi lại thao tác bàn phím (Plugin_AutoKeylogger)",
+        "Nội dung clipboard",
+        "Thực thi lệnh shell từ xa",
+        "Dấu vết nhận diện máy thu thập qua WMI (bo mạch chủ, BIOS, màn hình)",
+        "Phát hiện phần mềm diệt virus và tường lửa đã cài đặt"
+      ],
+      "detection_notes": "Banner ASCII Figlet phông chữ `small` `Dark Crystal RAT` là dấu hiệu nhận diện rõ ràng nhất. CyStack Threat Intelligence sử dụng cùng chuỗi banner này làm điểm neo cấu trúc chính, giúp việc quy kết họ mã độc nhất quán xuyên suốt quá trình thu thập và phân tích. Cấu trúc dữ liệu liệt kê .NET / WMI cùng đường dẫn cài đặt giả dạng dịch vụ kiểu `MsHyperserverBrokersvc` là tín hiệu tin cậy thứ cấp. Các phân tích công khai ghi nhận các định danh plugin như `DCRatBuild`, `DCStlr`, `Plugin_AutoStealer`, và `Plugin_AutoKeylogger` trong tệp nhị phân; đội ngũ ứng phó khi rà soát một máy nạn nhân nên tìm kiếm các chuỗi này trong bộ nhớ tiến trình hoặc trên đĩa để xác nhận họ mã độc.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1056.001",
+          "name": "Ghi lại phím bấm"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1083",
+          "name": "Dò tìm tệp và thư mục"
+        },
+        {
+          "id": "T1071.001",
+          "name": "Giao thức tầng ứng dụng: giao thức web"
+        },
+        {
+          "id": "T1218",
+          "name": "Thực thi gián tiếp qua tệp nhị phân hệ thống"
+        }
+      ]
+    }
+  }
 }

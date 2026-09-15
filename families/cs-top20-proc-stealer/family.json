@@ -3,7 +3,7 @@
   "name": "CSTop20ProcStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSTop20ProcStealer is a CyStack-coined identifier for a\nseven-section `info.txt` panel observed inside `@BRADMAX 60000\nMARCH-APRIL.part01.rar` Telegram aggregator packs at `@BRADMAX\n<count> <MONTHS>/ [<CC>]UNKNOWN_(<N>)/info.txt` filler-folder\npaths. The body ships seven triple-equals-wrapped section\nheaders in fixed order: `=== SYSTEM INFORMATION ===`, `===\nWINDOWS VERSION ===`, `=== HARDWARE INFORMATION ===`, `===\nNETWORK INFORMATION ===`, `=== RUNNING PROCESSES (Top 20)\n===`, `=== INSTALLED BROWSERS ===`, `=== TIME INFORMATION\n===`.\n\nThe parenthesised `(Top 20)` qualifier on the RUNNING\nPROCESSES section header is the most distinctive marker: no\nother cataloged format or documented family emits this exact\nliteral. The panel then lists at most 20 processes in `<Name>\n(PID: <int>, Memory: <int> MB)` format ranked by working-set\nmemory descending.\n\nThe field vocabulary maps to .NET `Environment` class\nproperties: `64-bit OS: True` / `64-bit Process: False`\n(`Environment.Is64BitOperatingSystem` /\n`Environment.Is64BitProcess`), `Processor Count`\n(`Environment.ProcessorCount`), `System Directory`\n(`Environment.SystemDirectory`), `User Domain`\n(`Environment.UserDomainName`). The `Uptime` value uses the\n.NET `TimeSpan.ToString()` default format (`00:07:37.4530000`,\nseven-digit fractional seconds). The `Current Time` value uses\nthe .NET `DateTime. ToString()` en-US default (`M/D/YYYY\nh:mm:ss tt`). All of these point at a private .NET stealer\nthat authored its own panel template rather than forking an\nopen-source project.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and\ncommunity catalogues do not attest a family emitting this\nseven-section triple-equals layout. Candidates ruled out\ninclude Bandit Stealer (Go-based, different output shape),\nPupkinStealer (.NET but no free-form info.txt), Aurora Stealer\n(JSON wire format), Ailurophile, MeltStealer, ZestyChips.",
+  "description": "CSTop20ProcStealer is a CyStack-coined identifier for a\nseven-section `info.txt` panel observed inside `@BRADMAX 60000 MARCH-APRIL.part01.rar` Telegram aggregator packs at `@BRADMAX <count> <MONTHS>/ [<CC>]UNKNOWN_(<N>)/info.txt` filler-folder\npaths. The body ships seven triple-equals-wrapped section\nheaders in fixed order: `=== SYSTEM INFORMATION ===`, `=== WINDOWS VERSION ===`, `=== HARDWARE INFORMATION ===`, `=== NETWORK INFORMATION ===`, `=== RUNNING PROCESSES (Top 20) ===`, `=== INSTALLED BROWSERS ===`, `=== TIME INFORMATION ===`.\n\nThe parenthesised `(Top 20)` qualifier on the RUNNING\nPROCESSES section header is the most distinctive marker: no\nother cataloged format or documented family emits this exact\nliteral. The panel then lists at most 20 processes in `<Name> (PID: <int>, Memory: <int> MB)` format ranked by working-set\nmemory descending.\n\nThe field vocabulary maps to .NET `Environment` class\nproperties: `64-bit OS: True` / `64-bit Process: False`\n(`Environment.Is64BitOperatingSystem` /\n`Environment.Is64BitProcess`), `Processor Count`\n(`Environment.ProcessorCount`), `System Directory`\n(`Environment.SystemDirectory`), `User Domain`\n(`Environment.UserDomainName`). The `Uptime` value uses the\n.NET `TimeSpan.ToString()` default format (`00:07:37.4530000`,\nseven-digit fractional seconds). The `Current Time` value uses\nthe .NET `DateTime. ToString()` en-US default (`M/D/YYYY h:mm:ss tt`). All of these point at a private .NET stealer\nthat authored its own panel template rather than forking an\nopen-source project.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and\ncommunity catalogues do not attest a family emitting this\nseven-section triple-equals layout. Candidates ruled out\ninclude Bandit Stealer (Go-based, different output shape),\nPupkinStealer (.NET but no free-form info.txt), Aurora Stealer\n(JSON wire format), Ailurophile, MeltStealer, ZestyChips.",
   "aliases": [
     "Seven-section triple-equals info.txt panel",
     "BRADMAX (Top 20) processes panel"
@@ -55,5 +55,49 @@
   "observed_channels": [
     "https://t.me/BRADLOGS"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSTop20ProcStealer là định danh do CyStack đặt cho một bảng thông tin (panel) gồm bảy phần `info.txt` được quan sát bên trong các gói tổng hợp Telegram `@BRADMAX 60000 MARCH-APRIL.part01.rar` tại các đường dẫn thư mục đệm `@BRADMAX <count> <MONTHS>/ [<CC>]UNKNOWN_(<N>)/info.txt`. Phần nội dung chứa bảy tiêu đề phần được bọc bằng ba dấu bằng theo thứ tự cố định: `=== SYSTEM INFORMATION ===`, `=== WINDOWS VERSION ===`, `=== HARDWARE INFORMATION ===`, `=== NETWORK INFORMATION ===`, `=== RUNNING PROCESSES (Top 20) ===`, `=== INSTALLED BROWSERS ===`, `=== TIME INFORMATION ===`.\n\nBổ ngữ `(Top 20)` trong ngoặc đơn ở tiêu đề phần RUNNING PROCESSES là dấu hiệu đặc trưng nhất: không có định dạng nào khác đã được lập danh mục hoặc họ mã độc nào đã được ghi nhận tạo ra chuỗi ký tự chính xác này. Bảng thông tin sau đó liệt kê tối đa 20 tiến trình theo định dạng `<Name> (PID: <int>, Memory: <int> MB)`, xếp hạng theo bộ nhớ working-set giảm dần.\n\nBộ từ vựng trường dữ liệu ánh xạ tới các thuộc tính của lớp .NET `Environment`: `64-bit OS: True` / `64-bit Process: False` (`Environment.Is64BitOperatingSystem` / `Environment.Is64BitProcess`), `Processor Count` (`Environment.ProcessorCount`), `System Directory` (`Environment.SystemDirectory`), `User Domain` (`Environment.UserDomainName`). Giá trị `Uptime` sử dụng định dạng mặc định của .NET `TimeSpan.ToString()` (`00:07:37.4530000`, phần giây thập phân bảy chữ số). Giá trị `Current Time` sử dụng định dạng mặc định en-US của .NET `DateTime. ToString()` (`M/D/YYYY h:mm:ss tt`). Tất cả các đặc điểm này cho thấy đây là một mã độc đánh cắp thông tin viết bằng .NET, riêng tư, tự xây dựng mẫu bảng thông tin của riêng mình thay vì phân nhánh từ một dự án mã nguồn mở.\n\nViệc quy kết họ mã độc hiện vẫn mang tính tạm thời do chưa có công bố tình báo mối đe dọa nào ánh xạ tới bố cục này. Các báo cáo công khai và danh mục cộng đồng không ghi nhận họ mã độc nào tạo ra bố cục bảy phần dùng ba dấu bằng này. Các ứng viên đã bị loại trừ bao gồm Bandit Stealer (viết bằng Go, cấu trúc dữ liệu đầu ra khác), PupkinStealer (.NET nhưng không có info.txt dạng tự do), Aurora Stealer (định dạng dữ liệu trên đường truyền là JSON), Ailurophile, MeltStealer, ZestyChips.",
+      "typical_targets": [
+        "Tên máy, tên người dùng hệ điều hành, tên miền người dùng",
+        "Tiêu đề hệ điều hành cùng bộ ba Product Name / Version / Build",
+        "Các cờ boolean hệ điều hành 64-bit / tiến trình 64-bit",
+        "CPU cùng số lõi và số luồng",
+        "Danh sách GPU",
+        "Tổng dung lượng RAM",
+        "Địa chỉ IP mạng LAN, subnet mask, địa chỉ MAC theo từng bộ điều hợp mạng",
+        "Top 20 tiến trình đang chạy xếp hạng theo bộ nhớ working-set",
+        "Đường dẫn cài đặt trình duyệt (chrome, msedge)",
+        "Thời gian hệ thống hiện tại và thời gian hoạt động liên tục của hệ thống"
+      ],
+      "detection_notes": "Việc nhận diện đòi hỏi neo theo dòng `=== SYSTEM INFORMATION ===` VÀ `=== RUNNING PROCESSES (Top 20) ===`. Bổ ngữ `(Top 20)` trong ngoặc đơn là điểm neo đơn lẻ mạnh nhất: không có định dạng nào khác đã được lập danh mục hoặc họ mã độc nào đã được ghi nhận tạo ra chuỗi ký tự chính xác này. Trong quá trình phân loại ban đầu, nên xem mẫu này là quy kết yếu về một mã độc đánh cắp thông tin .NET riêng tư. Các tên tiến trình đáng ngờ trong danh sách top 20 (ví dụ: tên mã hóa hex 24 ký tự như `0f41b0fcb95aed8fa1356bb0.exe`) là tín hiệu phụ hữu ích để lần theo dropper gốc. Phần `Installed Browsers` chỉ liệt kê đường dẫn trình duyệt mà không thu thập thông tin xác thực, do đó bảng thông tin info.txt là một bản tóm tắt trinh sát chứ không phải dữ liệu đánh cắp thông tin xác thực.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1016",
+          "name": "Dò tìm cấu hình mạng hệ thống"
+        },
+        {
+          "id": "T1057",
+          "name": "Dò tìm tiến trình"
+        },
+        {
+          "id": "T1518",
+          "name": "Dò tìm phần mềm"
+        },
+        {
+          "id": "T1124",
+          "name": "Xác định thời gian hệ thống"
+        }
+      ]
+    }
+  }
 }

@@ -41,5 +41,34 @@
     "https://t.me/EnchantCloudNew"
   ],
   "canonical_family": "redline",
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSEnchantCloudStealer là định danh do CyStack đặt tên cho một biến thể `@ft7links` / `EnchantCloudNew` rút gọn có cấu trúc dữ liệu giống Redline `UserInformation.txt`, được phát tán qua kênh Telegram `t.me/EnchantCloudNew`. Bảng điều khiển tạo dữ liệu đầu ra là một banner `JOIN OUR CHANNEL!` có viền dấu gạch đứng (pipe) kèm năm dòng quảng bá kênh, sau đó thả xuống hai cấu trúc tập trường (field-set) khác biệt: một biến thể với IP bogon có các trường được đặt tên theo chuẩn Redline, và một biến thể không phải bogon với các trường thuộc khối mở rộng.",
+      "typical_targets": [],
+      "detection_notes": "Banner `JOIN OUR CHANNEL!` có viền dấu gạch đứng (pipe) với năm lần lặp lại `https://t.me/EnchantCloudNew`, cùng với tập trường có cấu trúc dữ liệu giống Redline đã bị rút gọn. Cả hai biến thể đều dùng chung banner; biến thể tập trường cho biết liệu nạn nhân có phân giải ra IP bogon hay không.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

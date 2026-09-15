@@ -104,5 +104,45 @@
       },
       "layout_id": "bracket-user-host"
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CryptBot là mã độc đánh cắp thông tin viết bằng Delphi, được ghi nhận công khai lần đầu vào tháng 12 năm 2019. Họ mã độc này được biết đến nhiều nhất với bản tóm tắt nạn nhân `_Information.txt` cùng các tệp liên quan `_AllPasswords_list.txt`, `_AllCookies_list.txt`, `_AllForms_list.txt`, `_AllWallets_list.txt`, và `Screen.png`, tất cả được ghi vào một thư mục theo từng nạn nhân dưới `%TEMP%`. Nhiều phiên bản trình dựng đã được ghi nhận (v2.0, v3.0, v3.1 theo các phân tích công khai); tập hợp trường trong tệp tóm tắt ổn định qua các phiên bản, với dòng v3.x chuyển bộ định danh trên các trường `UserName` và `Data` từ dấu ngoặc đơn sang biến thể dấu ngoặc vuông trong một số mẫu đổi thương hiệu.\n\nViệc phát tán CryptBot dựa vào các trang đích phần mềm crack bị đầu độc SEO và các trình cài đặt phần mềm miễn phí đi kèm. Mã độc ghi bản tóm tắt nạn nhân ra đĩa, đóng gói nó cùng các tệp thông tin xác thực / cookie / ví đã thu thập được vào một tệp ZIP, rồi POST tệp nén đó đến một điểm tiếp nhận C2 được ghi cố định.",
+      "typical_targets": [
+        "Thông tin xác thực được trình duyệt lưu (Chromium và Gecko)",
+        "Cookie và dữ liệu tự động điền của trình duyệt",
+        "Tệp ví tiền mã hóa và tiện ích mở rộng trình duyệt",
+        "Dữ liệu biểu mẫu đã lưu",
+        "Kiểm kê phần cứng hệ thống và ngôn ngữ/vùng",
+        "Ảnh chụp màn hình desktop"
+      ],
+      "detection_notes": "Tên tệp `_Information.txt` là tín hiệu cấp thư mục mạnh nhất: kết hợp với bộ tệp liên quan `_AllPasswords_list.txt` / `_AllCookies_list.txt` / `_AllForms_list.txt`, không có họ mã độc nào khác trong danh mục này sử dụng đúng cách đặt tên này. Dấu hiệu nhận diện ở cấp nội dung dựa trên các khóa `UserName [ComputerName]:` và `Data [Time]:` có hậu tố ngoặc vuông cùng `Keyboard Languages:`; cách viết `UserName` không có khoảng trắng phân biệt CryptBot với Vidar / StealC / Mars (vốn dùng `User Name:`).",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1113",
+          "name": "Chụp màn hình"
+        }
+      ]
+    }
+  }
 }

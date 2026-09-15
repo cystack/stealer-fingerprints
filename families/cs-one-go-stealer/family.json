@@ -3,7 +3,7 @@
   "name": "CSOneGoStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSOneGoStealer is a CyStack-coined identifier for a flat\nbare-key `System.txt` panel emitted by a Go-based stealer\nbinary. The body opens with `IP:` / `Execute Path:` / `Build\nName:` / `User Name:` / `Computer Name:` / `CPU:` / `GPU:`\n(repeated per adapter) / `Operation System:` / `Country ISO2:`\n/ `Elevated:` / `Screen Resolution:` / `Date:` lines, then a\nblank-line gap and a misspelled `Enviromental Variables:`\n(sic) section dumping the victim's Win32 environment as\n`KEY=VALUE` pairs. The observed `Build Name` value is the\nliteral `One-Go`, the operator's build / version label\nhardcoded into the panel.\n\nThe Go-runtime signature is the `Date:` value: Go's default\n`time.Time.String()` format with sub-second precision and a\ntrailing `+0000 UTC` token after the numeric offset\n(`2025-06-23 16:49:43.2152587 +0000 UTC`). Python\n`datetime.isoformat`, .NET, and Delphi all emit different\nshapes, so the trailing `UTC` keyword pins the underlying\nbinary to a Go build. The misspelled `Enviromental` section\nheader (missing the first `n`) is a stable panel-side bug\nhardcoded in the source.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting,\nincluding the Go-stealer writeups on Skuld, Salat Stealer,\nPentagon Stealer, macOS MetaStealer, and the 2019 Go-stealer\nfind, does not document a family that emits this exact field\nset. Rename if a later report attributes the layout to a known\nauthor.",
+  "description": "CSOneGoStealer is a CyStack-coined identifier for a flat\nbare-key `System.txt` panel emitted by a Go-based stealer\nbinary. The body opens with `IP:` / `Execute Path:` / `Build Name:` / `User Name:` / `Computer Name:` / `CPU:` / `GPU:`\n(repeated per adapter) / `Operation System:` / `Country ISO2:`\n/ `Elevated:` / `Screen Resolution:` / `Date:` lines, then a\nblank-line gap and a misspelled `Enviromental Variables:`\n(sic) section dumping the victim's Win32 environment as\n`KEY=VALUE` pairs. The observed `Build Name` value is the\nliteral `One-Go`, the operator's build / version label\nhardcoded into the panel.\n\nThe Go-runtime signature is the `Date:` value: Go's default\n`time.Time.String()` format with sub-second precision and a\ntrailing `+0000 UTC` token after the numeric offset\n(`2025-06-23 16:49:43.2152587 +0000 UTC`). Python\n`datetime.isoformat`, .NET, and Delphi all emit different\nshapes, so the trailing `UTC` keyword pins the underlying\nbinary to a Go build. The misspelled `Enviromental` section\nheader (missing the first `n`) is a stable panel-side bug\nhardcoded in the source.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting,\nincluding the Go-stealer writeups on Skuld, Salat Stealer,\nPentagon Stealer, macOS MetaStealer, and the 2019 Go-stealer\nfind, does not document a family that emits this exact field\nset. Rename if a later report attributes the layout to a known\nauthor.",
   "aliases": [
     "One-Go build label",
     "Enviromental dump panel"
@@ -14,7 +14,7 @@
     "System hardware and locale fingerprint",
     "Win32 environment variable dump (full PATH, USERPROFILE, TEMP, vendor-specific keys)"
   ],
-  "detection_notes": "Fingerprint requires three line-anchored anchor keys:\nmixed-case `Build Name:` (rules out RedlineLikeStealer's\nall-caps `BUILD NAME:`), `Country ISO2:` (the Go-idiomatic\nISO 3166-1 alpha-2 field name, unique across this catalog),\nand the misspelled `Enviromental Variables:` (rules out\nCSEnvVarDumpStealer's correctly-spelled `=== ENVIRONMENT\nVARIABLES ===` triple-equals header). The Go-runtime `+0000\nUTC` timestamp suffix is an additional binary-lineage hint but\nis not part of the fingerprint. During triage, treat the\n`One-Go` build label as operator-controlled: other builds may\nuse different labels while keeping the same structural shape,\nso the family attribution should remain unknown until a public\nwriteup ties the layout to a named author.",
+  "detection_notes": "Fingerprint requires three line-anchored anchor keys:\nmixed-case `Build Name:` (rules out RedlineLikeStealer's\nall-caps `BUILD NAME:`), `Country ISO2:` (the Go-idiomatic\nISO 3166-1 alpha-2 field name, unique across this catalog),\nand the misspelled `Enviromental Variables:` (rules out\nCSEnvVarDumpStealer's correctly-spelled `=== ENVIRONMENT VARIABLES ===` triple-equals header). The Go-runtime `+0000 UTC` timestamp suffix is an additional binary-lineage hint but\nis not part of the fingerprint. During triage, treat the\n`One-Go` build label as operator-controlled: other builds may\nuse different labels while keeping the same structural shape,\nso the family attribution should remain unknown until a public\nwriteup ties the layout to a named author.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -43,5 +43,39 @@
     "redline"
   ],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSOneGoStealer là định danh do CyStack đặt cho một bảng điều khiển dạng bare-key phẳng `System.txt` được một tệp nhị phân mã độc đánh cắp thông tin viết bằng Go tạo dữ liệu đầu ra. Phần thân mở đầu bằng các dòng `IP:` / `Execute Path:` / `Build Name:` / `User Name:` / `Computer Name:` / `CPU:` / `GPU:`\n(lặp lại theo từng adapter) / `Operation System:` / `Country ISO2:`\n/ `Elevated:` / `Screen Resolution:` / `Date:`, sau đó là một khoảng trắng và một phần tiêu đề `Enviromental Variables:` bị viết sai chính tả\n(sic) dùng để kết xuất biến môi trường Win32 của nạn nhân dưới dạng các cặp `KEY=VALUE`. Giá trị `Build Name` quan sát được là chuỗi\nliteral `One-Go`, tức là nhãn build/phiên bản do đối tượng vận hành gán cứng vào bảng điều khiển.\n\nDấu hiệu đặc trưng của Go runtime nằm ở giá trị `Date:`: đây là định dạng `time.Time.String()` mặc định của Go với độ chính xác dưới giây và có kèm token `+0000 UTC` ở cuối sau phần offset số\n(`2025-06-23 16:49:43.2152587 +0000 UTC`). Python\n`datetime.isoformat`, .NET và Delphi đều tạo dữ liệu đầu ra với cấu trúc dữ liệu khác nhau, do đó từ khóa `UTC` ở cuối giúp xác định tệp nhị phân gốc là một bản build bằng Go. Tiêu đề phần `Enviromental` bị viết sai chính tả (thiếu ký tự `n` đầu tiên) là một lỗi ổn định phía bảng điều khiển, được gán cứng trong mã nguồn.\n\nViệc quy kết họ mã độc hiện chỉ mang tính tạm thời, chờ có báo cáo tình báo mối đe dọa công khai ánh xạ bố cục này với một họ cụ thể. Các báo cáo công khai hiện có, bao gồm các bài viết về mã độc đánh cắp thông tin viết bằng Go như Skuld, Salat Stealer, Pentagon Stealer, macOS MetaStealer và phát hiện về stealer Go năm 2019, đều không ghi nhận họ mã độc nào tạo dữ liệu đầu ra với đúng tập trường dữ liệu này. Cần đổi tên nếu sau này có báo cáo quy kết bố cục này cho một tác giả đã xác định.",
+      "typical_targets": [
+        "Thông tin xác thực được trình duyệt lưu trữ",
+        "Cookie trình duyệt và token phiên",
+        "Dấu vết cấu hình phần cứng và ngôn ngữ hệ thống",
+        "Bản kết xuất biến môi trường Win32 (toàn bộ PATH, USERPROFILE, TEMP, các khóa đặc thù của nhà cung cấp)"
+      ],
+      "detection_notes": "Việc xác định dấu hiệu nhận diện cần dựa vào ba khóa neo theo dòng: `Build Name:` viết hoa/thường xen kẽ (loại trừ khả năng là RedlineLikeStealer với khóa `BUILD NAME:` viết hoa toàn bộ), `Country ISO2:` (tên trường theo phong cách Go, dùng chuẩn ISO 3166-1 alpha-2, là duy nhất trong toàn bộ danh mục này), và tiêu đề `Enviromental Variables:` bị viết sai chính tả (loại trừ khả năng là CSEnvVarDumpStealer với tiêu đề ba dấu bằng `=== ENVIRONMENT VARIABLES ===` viết đúng chính tả). Hậu tố thời gian `+0000 UTC` đặc trưng của Go runtime là một manh mối bổ sung về nguồn gốc tệp nhị phân nhưng không nằm trong tập dấu hiệu nhận diện. Trong quá trình phân loại ban đầu, cần coi nhãn build `One-Go` là do đối tượng vận hành kiểm soát: các bản build khác có thể sử dụng nhãn khác nhau trong khi vẫn giữ nguyên cấu trúc dữ liệu, do đó việc quy kết họ mã độc nên được giữ ở trạng thái chưa xác định cho đến khi có báo cáo công khai gắn bố cục này với một tác giả cụ thể.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

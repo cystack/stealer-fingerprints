@@ -3,7 +3,7 @@
   "name": "CSDataCollectedStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSDataCollectedStealer is a CyStack-coined identifier for a\nthree-line `Information.txt` notification stub observed\ninside `!! 2025 NOV.part001.rar`-style aggregator packs in\n`<id>_<CC>_<IPv4>_<DD-MM-YY>/Information.txt` per-victim\nfolders (e.g. `2047_UN_<IPv4>_25-10-25/\nInformation.txt`). The body is two bare `Key: Value` lines\n(`Computer:`, `IP:`) followed by the plain-English\n`Data collected successfully` completion ack.\n\nThe file is a panel-side notification, not a data report.\nIt tells the operator that exfiltration finished on this\nvictim. The actual harvested credentials live in sibling\nfiles inside the per-victim folder where any follow-on\nfamily fingerprinting should run. Structurally similar to\nCSNewLogStealer (also a notification stub from the same\naggregator-pack family), but missing the banner and the\nemoji-prefixed TOC enumeration that CSNewLogStealer\ncarries. Family attribution is provisional pending a\npublished threat-intel mapping for this layout: the body\nis too minimal to attribute to a specific builder.",
+  "description": "CSDataCollectedStealer is a CyStack-coined identifier for a\nthree-line `Information.txt` notification stub observed\ninside `!! 2025 NOV.part001.rar`-style aggregator packs in\n`<id>_<CC>_<IPv4>_<DD-MM-YY>/Information.txt` per-victim\nfolders (e.g. `2047_UN_<IPv4>_25-10-25/ Information.txt`). The body is two bare `Key: Value` lines\n(`Computer:`, `IP:`) followed by the plain-English\n`Data collected successfully` completion ack.\n\nThe file is a panel-side notification, not a data report.\nIt tells the operator that exfiltration finished on this\nvictim. The actual harvested credentials live in sibling\nfiles inside the per-victim folder where any follow-on\nfamily fingerprinting should run. Structurally similar to\nCSNewLogStealer (also a notification stub from the same\naggregator-pack family), but missing the banner and the\nemoji-prefixed TOC enumeration that CSNewLogStealer\ncarries. Family attribution is provisional pending a\npublished threat-intel mapping for this layout: the body\nis too minimal to attribute to a specific builder.",
   "aliases": [
     "!! 2025 NOV aggregator notification stub"
   ],
@@ -11,7 +11,7 @@
     "Browser saved credentials and cookies (in sibling cred files)",
     "System hostname and public IP for victim fingerprinting"
   ],
-  "detection_notes": "Fingerprint requires the literal `Data collected\nsuccessfully` substring (the panel-unique ack message)\nplus line-anchored `Computer:` and `IP:` keys as cross-confirmation. The ack literal alone is enough to\ndiscriminate against any currently cataloged format, but\nthe two-key pair guards against prose that quotes the\nphrase out of context. During triage, treat family\nattribution as unknown: this file is a notification stub\nwith no harvested credential body, and the underlying\nstealer cannot be identified from the host + IP + ack\ntriple alone.",
+  "detection_notes": "Fingerprint requires the literal `Data collected successfully` substring (the panel-unique ack message)\nplus line-anchored `Computer:` and `IP:` keys as cross-confirmation. The ack literal alone is enough to\ndiscriminate against any currently cataloged format, but\nthe two-key pair guards against prose that quotes the\nphrase out of context. During triage, treat family\nattribution as unknown: this file is a notification stub\nwith no harvested credential body, and the underlying\nstealer cannot be identified from the host + IP + ack\ntriple alone.",
   "attack_techniques": [
     {
       "id": "T1082",
@@ -60,5 +60,33 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSDataCollectedStealer là định danh do CyStack đặt cho một tệp thông báo ba dòng `Information.txt` được phát hiện bên trong các gói tổng hợp kiểu `!! 2025 NOV.part001.rar`, nằm trong các thư mục theo từng nạn nhân `<id>_<CC>_<IPv4>_<DD-MM-YY>/Information.txt` (ví dụ: `2047_UN_<IPv4>_25-10-25/ Information.txt`). Phần nội dung gồm hai dòng `Key: Value` trần (`Computer:`, `IP:`), theo sau là thông báo xác nhận hoàn tất bằng tiếng Anh thuần túy `Data collected successfully`.\n\nTệp này là thông báo phía bảng điều khiển, không phải báo cáo dữ liệu. Nó cho đối tượng vận hành biết rằng việc đưa dữ liệu ra ngoài đối với nạn nhân này đã hoàn tất. Thông tin xác thực thực sự bị thu thập nằm trong các tệp liên quan bên trong thư mục theo từng nạn nhân, nơi cần thực hiện các bước xác định dấu vân tay họ mã độc tiếp theo. Về cấu trúc, tệp này tương tự CSNewLogStealer (cũng là một tệp thông báo thuộc cùng họ gói tổng hợp), nhưng thiếu phần banner và danh sách mục lục có tiền tố emoji mà CSNewLogStealer có. Việc quy kết họ mã độc hiện chỉ là tạm thời, chờ có ánh xạ threat-intel công bố cho bố cục này: nội dung tệp quá tối giản để có thể quy kết cho một builder cụ thể.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trong trình duyệt (trong các tệp thông tin xác thực liên quan)",
+        "Tên máy hệ thống và địa chỉ IP công khai dùng để xác định dấu vân tay nạn nhân"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết đòi hỏi chuỗi con `Data collected successfully` (thông báo xác nhận đặc trưng riêng của bảng điều khiển) cùng với các khóa `Computer:` và `IP:` được neo theo dòng để xác nhận chéo. Chỉ riêng chuỗi xác nhận này đã đủ để phân biệt với bất kỳ định dạng nào hiện đã được lập danh mục, nhưng cặp hai khóa này giúp đề phòng trường hợp cụm từ đó bị trích dẫn ngoài ngữ cảnh. Trong quá trình phân loại ban đầu, hãy coi việc quy kết họ mã độc là chưa xác định: tệp này là một tệp thông báo không chứa nội dung thông tin xác thực đã thu thập, và không thể xác định mã độc đánh cắp thông tin gốc chỉ dựa vào bộ ba tên máy, IP và thông báo xác nhận.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        }
+      ]
+    }
+  }
 }

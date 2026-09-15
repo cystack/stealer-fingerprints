@@ -3,7 +3,7 @@
   "name": "CSMrdUidStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSMrdUidStealer is a CyStack-coined identifier for an\ninfo-stealer `_Information.txt` panel observed inside `!! 2025\nDEC.part01.rar` aggregator packs at\n`<id>_<CC>_<IPv4>_<DD-MM-YY>/_Information.txt` victim folders.\nThe body is a 12-line flat `Key: Value` block followed by\nthree labelled sections (`Installed software:`, `Disk:`,\n`Process:`).\n\nTwo on-disk quirks pin the format. The `UID:` field carries a\n`mrd-<16-hex>` prefix that no documented stealer uses (Vidar /\nLumma / Redline / Raccoon / Mars / Oski / StealC all emit bare\nhex / GUID / volume-serial-derived HWIDs without a literal\nprefix). The `DateTime:` line splits two timestamps onto one\nrow with a `||` pipe-pipe separator: `DateTime: <DD.MM.YYYY>\n|| Registration: <DD.MM.YYYY HH:MM:SS>`. `DateTime` is the\npanel-side log-emission date, `Registration` is an earlier\ndate (often years prior) the panel records as the victim's\nfirst-seen timestamp.\n\nThree sub-quirks reinforce the fingerprint. `CPU: <name>\n<spaces> core <N>` appends a panel-side core / thread count\nafter the WMI processor name. `RAM: physical <N>MB , virtual\n<N>MB` reports both physical and virtual totals on one line\nwith comma-space separation. `Display Resolution: <W> x <H>`\nuses spaces around the `x` separator (rather than the tight\n`WxH` form most stealers emit).\n\nFamily attribution is provisional. Public reporting and the\npublic stealer-format catalogues do not document a family that\nemits this exact field combination. Mars Stealer collects an\noverlapping subset (`Keyboard Languages`, `Display\nResolution`, `Installed RAM`) per public analyses, but ships a\ndifferent on-disk layout with bracket-delimited sections\nrather than this bare-key flat shape.",
+  "description": "CSMrdUidStealer is a CyStack-coined identifier for an\ninfo-stealer `_Information.txt` panel observed inside `!! 2025 DEC.part01.rar` aggregator packs at\n`<id>_<CC>_<IPv4>_<DD-MM-YY>/_Information.txt` victim folders.\nThe body is a 12-line flat `Key: Value` block followed by\nthree labelled sections (`Installed software:`, `Disk:`,\n`Process:`).\n\nTwo on-disk quirks pin the format. The `UID:` field carries a\n`mrd-<16-hex>` prefix that no documented stealer uses (Vidar /\nLumma / Redline / Raccoon / Mars / Oski / StealC all emit bare\nhex / GUID / volume-serial-derived HWIDs without a literal\nprefix). The `DateTime:` line splits two timestamps onto one\nrow with a `||` pipe-pipe separator: `DateTime: <DD.MM.YYYY> || Registration: <DD.MM.YYYY HH:MM:SS>`. `DateTime` is the\npanel-side log-emission date, `Registration` is an earlier\ndate (often years prior) the panel records as the victim's\nfirst-seen timestamp.\n\nThree sub-quirks reinforce the fingerprint. `CPU: <name> <spaces> core <N>` appends a panel-side core / thread count\nafter the WMI processor name. `RAM: physical <N>MB , virtual <N>MB` reports both physical and virtual totals on one line\nwith comma-space separation. `Display Resolution: <W> x <H>`\nuses spaces around the `x` separator (rather than the tight\n`WxH` form most stealers emit).\n\nFamily attribution is provisional. Public reporting and the\npublic stealer-format catalogues do not document a family that\nemits this exact field combination. Mars Stealer collects an\noverlapping subset (`Keyboard Languages`, `Display Resolution`, `Installed RAM`) per public analyses, but ships a\ndifferent on-disk layout with bracket-delimited sections\nrather than this bare-key flat shape.",
   "aliases": [
     "mrd-UID Information.txt panel",
     "Dual-date Registration stealer log"
@@ -98,5 +98,44 @@
       },
       "layout_id": "physical-virtual-ram"
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSMrdUidStealer là định danh do CyStack đặt tên cho một bảng điều khiển mã độc đánh cắp thông tin `_Information.txt` được quan sát bên trong các gói tổng hợp `!! 2025 DEC.part01.rar` tại các thư mục nạn nhân `<id>_<CC>_<IPv4>_<DD-MM-YY>/_Information.txt`.\n\nPhần thân là một khối `Key: Value` phẳng gồm 12 dòng, theo sau bởi ba mục có nhãn (`Installed software:`, `Disk:`, `Process:`).\n\nHai điểm bất thường trên đĩa giúp xác định định dạng này. Trường `UID:` mang tiền tố `mrd-<16-hex>` mà không họ mã độc đánh cắp thông tin nào được ghi nhận sử dụng (Vidar / Lumma / Redline / Raccoon / Mars / Oski / StealC đều tạo dữ liệu đầu ra là HWID dạng hex / GUID / bắt nguồn từ số serial ổ đĩa thuần túy, không có tiền tố dạng chữ). Dòng `DateTime:` gộp hai mốc thời gian trên cùng một dòng với dấu phân cách hai gạch đứng `||`: `DateTime: <DD.MM.YYYY> || Registration: <DD.MM.YYYY HH:MM:SS>`. `DateTime` là ngày tạo nhật ký phía bảng điều khiển, còn `Registration` là một ngày sớm hơn (thường trước đó nhiều năm) mà bảng điều khiển ghi nhận là mốc thời gian phát hiện lần đầu của nạn nhân.\n\nBa điểm bất thường phụ củng cố thêm dấu vết nhận diện này. `CPU: <name> <spaces> core <N>` bổ sung số lượng lõi / luồng phía bảng điều khiển ngay sau tên bộ xử lý theo WMI. `RAM: physical <N>MB , virtual <N>MB` báo cáo cả tổng dung lượng vật lý và ảo trên cùng một dòng, phân tách bằng dấu phẩy và khoảng trắng. `Display Resolution: <W> x <H>` sử dụng khoảng trắng bao quanh dấu phân cách `x` (thay vì dạng sát nhau `WxH` mà hầu hết các mã độc đánh cắp thông tin khác tạo ra).\n\nViệc quy kết họ mã độc hiện vẫn chỉ mang tính tạm thời. Các báo cáo công khai và các danh mục định dạng mã độc đánh cắp thông tin công khai không ghi nhận họ mã độc nào tạo ra chính xác tổ hợp trường dữ liệu này. Mars Stealer thu thập một tập con có phần trùng lặp (`Keyboard Languages`, `Display Resolution`, `Installed RAM`) theo các phân tích công khai, nhưng sử dụng bố cục trên đĩa khác, với các mục được phân tách bằng dấu ngoặc vuông thay vì cấu trúc dữ liệu phẳng dạng khóa thuần túy này.",
+      "typical_targets": [
+        "Thông tin xác thực được trình duyệt lưu (bảng điều khiển có mục liệt kê phần mềm đã cài đặt nhưng ở mẫu được khảo sát, mục này trống)",
+        "Tên máy / tên người dùng của nạn nhân",
+        "Dấu vết định danh phần cứng (UID, hệ điều hành, CPU, GPU, RAM)",
+        "Ảnh chụp tiến trình (chỉ tên tiến trình thuần túy, không có PID)",
+        "Danh sách ổ đĩa (tổng dung lượng / dung lượng trống theo từng ổ)"
+      ],
+      "detection_notes": "Dấu vết nhận diện yêu cầu có cả chuỗi con `UID: mrd-` VÀ chuỗi con `|| Registration:`. Cả hai điểm neo này đều là duy nhất trong danh mục này: tiền tố UID `mrd-` không được bất kỳ họ mã độc đánh cắp thông tin nào được khảo sát ghi nhận sử dụng, và dòng chứa hai mốc thời gian phân tách bằng hai gạch đứng trên cùng một giá trị khóa là điểm bất thường đặc trưng của nhà phát triển bảng điều khiển. Trong quá trình phân loại ban đầu, hãy coi nửa `DateTime:` là mốc thời gian tạo nhật ký phía bảng điều khiển (gần đây), còn nửa `Registration:` là mốc thời gian phát hiện lần đầu / thời điểm tạo tài khoản (thường cũ hơn nhiều năm). Giá trị `CPU:` kết hợp tên model và số lượng `core <N>` ở cuối; nhà phân tích có thể coi phần văn bản đứng trước là tên model CPU thuần túy.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1057",
+          "name": "Dò tìm tiến trình"
+        },
+        {
+          "id": "T1083",
+          "name": "Dò tìm tệp và thư mục"
+        },
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        }
+      ]
+    }
+  }
 }

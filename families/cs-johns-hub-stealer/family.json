@@ -29,5 +29,26 @@
   "observed_channels": [
     "https://t.me/johns_hub"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSJohnsHubStealer là định danh do CyStack đặt cho một mã độc đánh cắp thông tin tự nhận diện bằng banner ASCII-art Figlet ``JOHN GOT RIPPED`` và URL kênh Telegram ``https://t.me/johns_hub``. Bảng điều khiển ghi ra một khối bare-key ``UserInfo.txt`` phẳng gồm 12 trường danh tính: ``Build: @johns_hub`` (thẻ tự tham chiếu), ``Stealer version: <N.N.N>`` phiên bản tự khai báo, cùng với ``Country``, ``IP``, ``HWID`` (hex 32 ký tự chữ hoa), ``Username``, ``OS``, ``Language``, ``CPU``, ``GPU``, ``RAM``, ``Resolution``, và một dấu thời gian ``Date:`` theo định dạng Mỹ.\n\nKênh @johns_hub và banner JOHN GOT RIPPED chưa được ghi nhận trong bất kỳ báo cáo công khai hay danh mục cộng đồng nào. Bộ trường phẳng này phù hợp với một mẫu mã độc đánh cắp thông tin .NET tổng quát, có thể là một họ mã độc mới, một bản đổi thương hiệu của một họ đã có, hoặc một bản dựng bảng điều khiển riêng tư. Việc quy kết họ mã độc là tạm thời, chờ một ánh xạ tình báo mối đe dọa được công bố cho bố cục này.",
+      "typical_targets": [
+        "Dấu vết phần cứng máy và hệ điều hành (CPU, GPU, RAM, độ phân giải, phiên bản Windows, HWID)",
+        "Danh tính mạng (IP, quốc gia, ngôn ngữ)",
+        "Danh tính tài khoản (tên người dùng Windows)"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu cả URL kênh ``https://t.me/johns_hub`` và khóa trường ``Stealer version:`` gắn theo dòng. Không dấu hiệu nào trong hai dấu hiệu này đủ riêng biệt khi đứng một mình (URL có thể xuất hiện trong văn xuôi của một bài viết công khai), nên cần cả hai. Trong quá trình phân loại ban đầu, hãy coi họ mã độc đánh cắp thông tin bên dưới là chưa thể quy kết và dựa vào metadata channel + panel_brand để phân nhóm mẫu cho việc rà soát của chuyên viên phân tích. Các tệp liên quan trong thư mục nạn nhân (dữ liệu xuất từ trình duyệt, dấu vết ví, dữ liệu xuất cookie) có thể cung cấp cơ sở quy kết họ mã độc đáng tin cậy hơn.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

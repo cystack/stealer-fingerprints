@@ -61,5 +61,34 @@
       },
       "layout_id": "system-hardware-buildtag"
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Biến thể nhật ký mã độc đánh cắp thông tin chưa xác định danh tính, chia phần bằng `[System]` / `[Hardware]`, quan sát được bên trong các gói tổng hợp `@bugatti_cloud`. Nội dung `UserInformation.txt` được chia thành các phần có tiêu đề trong dấu ngoặc vuông (`[System]`, `[Hardware]`, v.v.), mỗi phần theo sau bởi một khối khóa-giá trị phẳng. Việc quy kết họ mã độc là tạm thời; định dạng này chưa được ánh xạ với một tên tình báo mối đe dọa đã công bố.",
+      "typical_targets": [],
+      "detection_notes": "Sự kết hợp giữa các phần có tiêu đề trong dấu ngoặc vuông (`[System]`, `[Hardware]`) với một khối khóa-giá trị phẳng bên dưới mỗi phần là chữ ký nhận diện chính. Được phát tán qua kênh tổng hợp `@bugatti_cloud`.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

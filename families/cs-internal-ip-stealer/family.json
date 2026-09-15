@@ -3,7 +3,7 @@
   "name": "CSInternalIpStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSInternalIpStealer is a CyStack-coined identifier for a\nflattened `Information.txt` panel with square-bracket section\nheaders (`[Basic]` / `[Network]` / `[Drives]` / `[GPU]`) and a\ndistinctive `Internal IP:` LAN-IP field paired with the\npublic-IP `Ip:` field. Observed inside `@BRADMAX 12000\nFEB-MARCH.part1.rar` at `@BRADMAX <count>\n<MONTHS>/[<CC>]<IPv4>/Information.txt` victim folders (e.g.\n`[UN]<IPv4>`).\n\nThe body ships three physical lines that concatenate the\nentire identity preamble plus four bracket-marked section\nblocks. Fields include `Ip:` (lowercase `p`), `Internal IP:`\n(LAN address), `HWID:` (64-hex SHA256), `Clipboard:`\n(opportunistic content), `Build:` (Windows build number), `OS\nArch:` (x64/x86), `CPU Name:`, `Logical Cores:`, `RAM Total\n(MB):`, `RAM Available (MB):`, and `Domain:`. Section headers\nappear inline mid-line rather than on their own rows because\nof the aggressive-collapse repacking.\n\nThe `HWID` SHA256 length points at newer stealer builds\n(Arkanix Stealer is publicly documented as using SHA256 for\nHWID). The dual public + LAN IP pair is unusual: most\ncanonical stealers emit only the public IP. The `RAM Total\n(MB):` / `RAM Available (MB):` parenthesised-unit value shape\nis also unusual.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping. Public reporting and community\ncatalogues do not attest a family emitting this exact flat\nbracket-section layout. Candidates ruled out include Arkanix\nStealer (JSON wire format serialised to\n`%LOCALAPPDATA%\\Arkanix_lol\\<class>.json`), Valkyrie Stealer\n(JSON output), Easy Stealer (Dashboard-panel view without\npublished log-file format), Redline (uses `Hardwares:` block\nwith `Name:` sub-entries), `BracketSectionStealer` (uses\n`[System]` + `[Hardware]` sections), AMOS (macOS-specific\n`system_profiler` output).",
+  "description": "CSInternalIpStealer is a CyStack-coined identifier for a\nflattened `Information.txt` panel with square-bracket section\nheaders (`[Basic]` / `[Network]` / `[Drives]` / `[GPU]`) and a\ndistinctive `Internal IP:` LAN-IP field paired with the\npublic-IP `Ip:` field. Observed inside `@BRADMAX 12000 FEB-MARCH.part1.rar` at `@BRADMAX <count> <MONTHS>/[<CC>]<IPv4>/Information.txt` victim folders (e.g.\n`[UN]<IPv4>`).\n\nThe body ships three physical lines that concatenate the\nentire identity preamble plus four bracket-marked section\nblocks. Fields include `Ip:` (lowercase `p`), `Internal IP:`\n(LAN address), `HWID:` (64-hex SHA256), `Clipboard:`\n(opportunistic content), `Build:` (Windows build number), `OS Arch:` (x64/x86), `CPU Name:`, `Logical Cores:`, `RAM Total (MB):`, `RAM Available (MB):`, and `Domain:`. Section headers\nappear inline mid-line rather than on their own rows because\nof the aggressive-collapse repacking.\n\nThe `HWID` SHA256 length points at newer stealer builds\n(Arkanix Stealer is publicly documented as using SHA256 for\nHWID). The dual public + LAN IP pair is unusual: most\ncanonical stealers emit only the public IP. The `RAM Total (MB):` / `RAM Available (MB):` parenthesised-unit value shape\nis also unusual.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping. Public reporting and community\ncatalogues do not attest a family emitting this exact flat\nbracket-section layout. Candidates ruled out include Arkanix\nStealer (JSON wire format serialised to\n`%LOCALAPPDATA%\\Arkanix_lol\\<class>.json`), Valkyrie Stealer\n(JSON output), Easy Stealer (Dashboard-panel view without\npublished log-file format), Redline (uses `Hardwares:` block\nwith `Name:` sub-entries), `BracketSectionStealer` (uses\n`[System]` + `[Hardware]` sections), AMOS (macOS-specific\n`system_profiler` output).",
   "aliases": [
     "Flat bracket-section Information.txt with Internal IP",
     "BRADMAX dual-IP panel with [Basic]/[Network]/[Drives]/[GPU]"
@@ -50,5 +50,43 @@
     "valkyrie-stealer",
     "easy-stealer"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSInternalIpStealer là định danh do CyStack đặt cho một bảng điều khiển `Information.txt` dạng làm phẳng với các tiêu đề phần đặt trong dấu ngoặc vuông (`[Basic]` / `[Network]` / `[Drives]` / `[GPU]`) cùng một trường IP LAN đặc trưng `Internal IP:` đi kèm với trường IP công khai `Ip:`. Được ghi nhận bên trong `@BRADMAX 12000 FEB-MARCH.part1.rar` tại các thư mục nạn nhân `@BRADMAX <count> <MONTHS>/[<CC>]<IPv4>/Information.txt` (ví dụ: `[UN]<IPv4>`).\n\nPhần thân chứa ba dòng vật lý gộp toàn bộ phần mở đầu định danh cùng bốn khối phần được đánh dấu bằng ngoặc vuông. Các trường bao gồm `Ip:` (chữ thường `p`), `Internal IP:` (địa chỉ LAN), `HWID:` (SHA256 64 ký tự hex), `Clipboard:` (nội dung thu thập tùy cơ hội), `Build:` (số build Windows), `OS Arch:` (x64/x86), `CPU Name:`, `Logical Cores:`, `RAM Total (MB):`, `RAM Available (MB):`, và `Domain:`. Các tiêu đề phần xuất hiện xen giữa dòng thay vì nằm trên dòng riêng do quá trình đóng gói lại theo kiểu gộp mạnh.\n\nĐộ dài SHA256 của `HWID` cho thấy đây là các bản build mã độc đánh cắp thông tin mới hơn (Arkanix Stealer được tài liệu công khai ghi nhận là sử dụng SHA256 cho HWID). Việc có cặp IP công khai và IP LAN đồng thời là điểm bất thường: hầu hết các họ mã độc đánh cắp thông tin phổ biến chỉ tạo dữ liệu đầu ra là IP công khai. Cấu trúc dữ liệu giá trị theo dạng đơn vị trong ngoặc đơn của `RAM Total (MB):` / `RAM Available (MB):` cũng là điểm bất thường.\n\nViệc quy kết họ mã độc hiện chỉ mang tính tạm thời, chờ có ánh xạ thông tin tình báo về mối đe dọa được công bố. Các báo cáo công khai và danh mục cộng đồng chưa xác nhận có họ mã độc nào tạo ra đúng bố cục phần dạng ngoặc phẳng này. Các ứng viên đã bị loại trừ gồm Arkanix Stealer (định dạng dữ liệu trên đường truyền JSON được tuần tự hóa thành `%LOCALAPPDATA%\\Arkanix_lol\\<class>.json`), Valkyrie Stealer (tạo dữ liệu đầu ra JSON), Easy Stealer (giao diện bảng điều khiển Dashboard không có định dạng tệp log được công bố), Redline (sử dụng khối `Hardwares:` với các mục con `Name:`), `BracketSectionStealer` (sử dụng các phần `[System]` + `[Hardware]`), AMOS (tạo dữ liệu đầu ra `system_profiler` đặc thù cho macOS).",
+      "typical_targets": [
+        "IPv4 công khai (bên ngoài) cùng IPv4 LAN (nội bộ)",
+        "HWID dưới dạng băm SHA256",
+        "Nội dung clipboard (dữ liệu thu thập tùy cơ hội theo từng nạn nhân)",
+        "Số build Windows và kiến trúc hệ thống",
+        "Tên CPU và số nhân logic",
+        "Tổng dung lượng và dung lượng RAM khả dụng (MB)",
+        "Danh sách card đồ họa (GPU)",
+        "Miền Windows / tên máy"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện yêu cầu phải có đồng thời `Ip:` VÀ `Internal IP:` VÀ `HWID:` được neo theo dòng, CỘNG THÊM ít nhất hai trong bốn dấu hiệu tiêu đề phần dạng ngoặc vuông (`[Basic]` / `[Network]` / `[Drives]` / `[GPU]`) xuất hiện ở bất kỳ vị trí nào trong phần thân. Trường `Internal IP:` là duy nhất trong số các định dạng đã được lập danh mục - không có họ mã độc nào khác tạo dữ liệu đầu ra đồng thời cả IP bên ngoài và IP nội bộ dưới dạng các trường riêng biệt. Bộ bốn tiêu đề phần dạng ngoặc vuông này khác với mọi định dạng phần dạng ngoặc hiện có (`BracketSectionStealer` sử dụng `[System]` + `[Hardware]`; AMOS sử dụng `[System Info]` + `[Hardware]`). Trong quá trình phân tích ban đầu, độ dài SHA256 của HWID cùng cấu trúc dữ liệu IP kép cho thấy đây là bản build mã độc đánh cắp thông tin mới hơn; công cụ builder cụ thể chưa được ánh xạ trong các báo cáo công khai, do đó nhãn họ mã độc này nên được coi là tạm thời. Cập nhật hồ sơ theo dõi này nếu sau này có báo cáo công khai công bố đúng bố cục này.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1016",
+          "name": "Dò tìm cấu hình mạng hệ thống"
+        },
+        {
+          "id": "T1115",
+          "name": "Dữ liệu bảng tạm"
+        }
+      ]
+    }
+  }
 }

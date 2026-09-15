@@ -24,5 +24,24 @@
   ],
   "related_families": [],
   "sources": [],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSOlsonTzGeoStealer là định danh do CyStack đặt cho một panel tối giản dạng ``info.txt`` chỉ chứa 5 trường thông tin địa lý, được phát hiện trong bộ gói tổng hợp ``25-26 JUNE - 5000 LOGS2.rar``. Panel này chỉ tạo dữ liệu đầu ra gồm các trường ``City``, ``Region``, ``IP``, ``TimeZone``, và ``ZIP`` với một quy ước dấu hai chấm sát đặc trưng (không có khoảng trắng giữa dấu hai chấm và giá trị) và định dạng múi giờ IANA/Olson (``TimeZone:Europe/Paris`` thay vì cấu trúc dữ liệu lệch giờ ``UTC±HH:MM`` mà hầu hết các mã độc đánh cắp thông tin kinh điển tạo ra).\n\nTập 5 trường này khớp chính xác từng chữ với phản hồi tra cứu địa lý (geo-lookup) từ ``ipinfo.io`` hoặc ``ip-api.com``, do đó builder gốc nhiều khả năng là một mã độc đánh cắp thông tin viết bằng Python, đưa trực tiếp phản hồi thô từ geo-API vào làm ``info.txt`` của nó.\n\nKhông có banner, không có dòng HWID, không có dấu vết nhận dạng máy (thiếu hoàn toàn OS, CPU, RAM, user, hostname). HWID xuất hiện trong tiền tố đường dẫn thư mục ``<CC>[<HWID>][<TIMESTAMP>]/`` nhưng phần nội dung chính lại bị cắt xén nặng. Việc quy kết họ mã độc hiện vẫn mang tính tạm thời, chờ có bản đồ tình báo về mối đe dọa được công bố.",
+      "typical_targets": [
+        "Chỉ làm giàu dữ liệu Geo-IP: IP của nạn nhân, thành phố, tên khu vực, mã ZIP/mã bưu chính, tên múi giờ IANA"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện yêu cầu bốn mốc gắn theo dòng không có khoảng trắng sau dấu hai chấm: ``City:``, ``Region:``, ``ZIP:``, và ``TimeZone:`` theo sau bởi giá trị theo định dạng Olson. Sự kết hợp này là đặc trưng riêng biệt trong danh mục này. Trong quá trình phân loại ban đầu, cần đối chiếu với các tệp liên quan trong thư mục nạn nhân (dữ liệu xuất từ trình duyệt, dấu vết ví điện tử, dữ liệu cookie, kho lưu trữ thông tin xác thực) để xác định họ mã độc đánh cắp thông tin gốc. `info.txt` chỉ đóng góp phần khối dữ liệu địa lý; hãy sử dụng các dấu vết thông tin xác thực liên quan để xác định họ mã độc gốc.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        }
+      ]
+    }
+  }
 }

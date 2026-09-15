@@ -96,5 +96,40 @@
       },
       "layout_id": "build-id-banner"
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Các log Redline Stealer chuẩn. Các tệp UserInformation.txt tạo dữ liệu đầu ra chứa trường bị lỗi chính tả đặc trưng của họ mã độc này `Operation System:` cùng với một khối thông tin danh tính, vùng miền và phần cứng đầy đủ. Các banner phiên bản build thường đặt tên bảng điều khiển (Octopus Cloud Logs và các bên bán lại tương tự) phía trên khối trường dữ liệu.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt",
+        "Cookie và dữ liệu phiên lưu trữ của trình duyệt",
+        "Ứng dụng ví tiền điện tử desktop và tiện ích mở rộng trình duyệt",
+        "Cấu hình client FTP và VPN",
+        "Token phiên của Discord và Telegram"
+      ],
+      "detection_notes": "Yếu tố kích hoạt độ tin cậy cao: trường bị lỗi chính tả `Operation System:` đi kèm với `FileLocation:`. Các biến thể đã bị lược bỏ không có `FileLocation:` được theo dõi riêng biệt dưới tên `RedlineLike Stealer`.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

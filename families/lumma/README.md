@@ -1,5 +1,9 @@
 # Lumma
 
+## Overview / Tổng quan
+
+### English
+
 Lumma C2 (LummaC2) logs. The panel writes `System.txt` with a
 YAML-like dash-prefix list (`- LummaC2 Build:`,
 `- Configuration:`, etc.) and a distinctive `(sig:UNIX.HEX)`
@@ -7,23 +11,31 @@ signature on the `Time:` line. Build banners reference the
 `@lummanowork` channel; the panel is sold MaaS via
 `@lummamarketplace_bot`.
 
-## Research status
+### Tiếng Việt
 
-- Classification: **Known malware family**
+Nhật ký Lumma C2 (LummaC2). Panel ghi `System.txt` với danh sách kiểu YAML có dấu gạch đầu dòng (`- LummaC2 Build:`, `- Configuration:`, v.v.) và chữ ký đặc trưng `(sig:UNIX.HEX)` trên dòng `Time:`. Banner build tham chiếu kênh `@lummanowork`; panel được bán theo mô hình MaaS thông qua `@lummamarketplace_bot`.
+
+## Research status / Trạng thái nghiên cứu
+
+- Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `LummaC2`, `Lumma Stealer`
 - Variants observed: **6**
 - CyStack observations represented: **776,374**
 
-## What it targets
+## What it targets / Mục tiêu thường gặp
 
-- Browser saved credentials, cookies, autofill
-- Crypto wallet extensions (focus on MetaMask, Phantom, and similar)
-- Steam, Telegram, Discord session tokens
-- 2FA seeds from Authy and similar desktop clients
-- Cryptocurrency seed phrases harvested from text files
+| English | Tiếng Việt |
+|---|---|
+| Browser saved credentials, cookies, autofill | Thông tin xác thực đã lưu trong trình duyệt, cookie, dữ liệu tự động điền |
+| Crypto wallet extensions (focus on MetaMask, Phantom, and similar) | Tiện ích mở rộng ví tiền điện tử (tập trung vào MetaMask, Phantom và các ví tương tự) |
+| Steam, Telegram, Discord session tokens | Token phiên đăng nhập Steam, Telegram, Discord |
+| 2FA seeds from Authy and similar desktop clients | Seed 2FA từ Authy và các ứng dụng desktop tương tự |
+| Cryptocurrency seed phrases harvested from text files | Cụm từ khôi phục (seed phrase) tiền điện tử thu thập từ tệp văn bản |
 
-## Detection notes
+## Detection notes / Ghi chú nhận diện
+
+### English
 
 High-confidence trigger: the `(sig:UNIX.HEX)` parenthesised
 signature on the `- Time:` line. Together with the
@@ -31,6 +43,10 @@ signature on the `- Time:` line. Together with the
 derivative families (Remus, AL Stealer, BabaStealer,
 ArtHouseCloud, CashFlow) share the dash-prefix shape but lack
 the signature; they should be tracked separately.
+
+### Tiếng Việt
+
+Dấu hiệu có độ tin cậy cao: chữ ký trong ngoặc đơn `(sig:UNIX.HEX)` trên dòng `- Time:`. Kết hợp với banner `- LummaC2 Build:`, đây là dấu hiệu nhận diện Lumma rõ ràng, không gây nhầm lẫn. Một số họ mã độc phái sinh (Remus, AL Stealer, BabaStealer, ArtHouseCloud, CashFlow) có chung cấu trúc dữ liệu dạng gạch đầu dòng nhưng không có chữ ký này; cần theo dõi các họ này riêng biệt.
 
 ## Observed log variants
 
@@ -143,14 +159,14 @@ Recognition anchors:
 
 ## MITRE ATT&CK
 
-| Technique | Name |
-|---|---|
-| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores |
-| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers |
-| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie |
-| [T1119](https://attack.mitre.org/techniques/T1119/) | Automated Collection |
-| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System |
-| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery |
+| Technique | English | Tiếng Việt |
+|---|---|---|
+| [T1555](https://attack.mitre.org/techniques/T1555/) | Credentials from Password Stores | Thông tin xác thực từ kho mật khẩu |
+| [T1555.003](https://attack.mitre.org/techniques/T1555/003/) | Credentials from Web Browsers | Thông tin xác thực từ trình duyệt web |
+| [T1539](https://attack.mitre.org/techniques/T1539/) | Steal Web Session Cookie | Đánh cắp cookie phiên web |
+| [T1119](https://attack.mitre.org/techniques/T1119/) | Automated Collection | Thu thập tự động |
+| [T1005](https://attack.mitre.org/techniques/T1005/) | Data from Local System | Dữ liệu từ hệ thống cục bộ |
+| [T1082](https://attack.mitre.org/techniques/T1082/) | System Information Discovery | Dò tìm thông tin hệ thống |
 
 ## Related catalog profiles
 

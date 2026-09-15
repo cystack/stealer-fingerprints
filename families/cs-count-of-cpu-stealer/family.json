@@ -3,7 +3,7 @@
   "name": "CSCountOfCpuStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSCountOfCpuStealer is a CyStack-coined identifier for a\nPython-shaped `UserInformation.txt` panel observed inside\n`<MONTH DAY> - <count> LOGS.part<N>.rar` aggregator packs\nat `<30-char alphanum>-XT/UserInformation.txt` victim\nfolders. The body is a flat `Key: Value` block split into\nan identity header (`Timezone:`, `Time:`, `Username:`,\n`PC Name:`, `OS:`, `HWID:`), a hardware-identifier block\n(`BIOS Serial Number:`, `Machine GUID:`, `BaseBoard\nManufacturer:`), a `Network:` section with ipapi.co-style\ngeolocation (`IP:`, `Country:`, `Region:`, `City:`,\n`Postal:`), a `Hardwares:` section (`CPU:`, `Count of CPU\ncores:`, `Count of CPU threads:`, `GPU:`, `Screen\nResolution:`), and a bare RAM triple (`RAM:`, `RAM\nAvailable:`, `RAM Used:`).\n\nMultiple details in the format read as hand-rolled Python\nrather than a compiled C# or NodeJS panel. `Time:` is\nwritten in `time.asctime()` shape (`Sun Dec 17 11:24:02\n2023`). `Timezone:` uses the Olson (IANA) form\n(`Africa/Accra`) that `zoneinfo` / `time.tzname` return.\n`Postal: None` writes the Python `None` literal verbatim\nwhen the ipapi.co lookup returns no postal code. The\nverbose `Count of CPU cores:` and `Count of CPU threads:`\nkeys read like an f-string that composed the label from a\n`psutil.cpu_count(logical=False)` / `psutil.cpu_count()`\ncall. `RAM:` values use `X.XX GB` decimal-GB units, not\nthe `MB` or `bytes` shapes canonical C# panels emit.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this exact caption format.\nCurated CTI vendors (TrendMicro, SentinelOne Labs,\nKaspersky SecureList, Cyfirma, SOCRadar, Cloudflare\nCloudforce One, Talos, Unit 42, Microsoft TI, Mandiant,\nRecorded Future, eSentire, ANY.RUN) and community\ncatalogues (MalBeacon what-is-this-stealer, deepdarkCTI,\nMalpedia, lexfo/stealer-parser, thredb/sysinfo-parser)\ndo not document this exact `Count of CPU cores:` +\n`Postal: None` combination. The closest Python-hand-rolled candidates surveyed (Blank Grabber, XillenStealer,\nInf0s3c) either use a different filename\n(`Information.txt`), a different banner (`<name> got a\nnew victim:`), or different field vocabulary (`Computer\nName:` + `Total Memory:` + `UUID:` rather than `PC Name:`\n+ `RAM:` + `HWID:` + `Machine GUID:`).",
+  "description": "CSCountOfCpuStealer is a CyStack-coined identifier for a\nPython-shaped `UserInformation.txt` panel observed inside\n`<MONTH DAY> - <count> LOGS.part<N>.rar` aggregator packs\nat `<30-char alphanum>-XT/UserInformation.txt` victim\nfolders. The body is a flat `Key: Value` block split into\nan identity header (`Timezone:`, `Time:`, `Username:`,\n`PC Name:`, `OS:`, `HWID:`), a hardware-identifier block\n(`BIOS Serial Number:`, `Machine GUID:`, `BaseBoard Manufacturer:`), a `Network:` section with ipapi.co-style\ngeolocation (`IP:`, `Country:`, `Region:`, `City:`,\n`Postal:`), a `Hardwares:` section (`CPU:`, `Count of CPU cores:`, `Count of CPU threads:`, `GPU:`, `Screen Resolution:`), and a bare RAM triple (`RAM:`, `RAM Available:`, `RAM Used:`).\n\nMultiple details in the format read as hand-rolled Python\nrather than a compiled C# or NodeJS panel. `Time:` is\nwritten in `time.asctime()` shape (`Sun Dec 17 11:24:02 2023`). `Timezone:` uses the Olson (IANA) form\n(`Africa/Accra`) that `zoneinfo` / `time.tzname` return.\n`Postal: None` writes the Python `None` literal verbatim\nwhen the ipapi.co lookup returns no postal code. The\nverbose `Count of CPU cores:` and `Count of CPU threads:`\nkeys read like an f-string that composed the label from a\n`psutil.cpu_count(logical=False)` / `psutil.cpu_count()`\ncall. `RAM:` values use `X.XX GB` decimal-GB units, not\nthe `MB` or `bytes` shapes canonical C# panels emit.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this exact caption format.\nCurated CTI vendors (TrendMicro, SentinelOne Labs,\nKaspersky SecureList, Cyfirma, SOCRadar, Cloudflare\nCloudforce One, Talos, Unit 42, Microsoft TI, Mandiant,\nRecorded Future, eSentire, ANY.RUN) and community\ncatalogues (MalBeacon what-is-this-stealer, deepdarkCTI,\nMalpedia, lexfo/stealer-parser, thredb/sysinfo-parser)\ndo not document this exact `Count of CPU cores:` +\n`Postal: None` combination. The closest Python-hand-rolled candidates surveyed (Blank Grabber, XillenStealer,\nInf0s3c) either use a different filename\n(`Information.txt`), a different banner (`<name> got a new victim:`), or different field vocabulary (`Computer Name:` + `Total Memory:` + `UUID:` rather than `PC Name:`\n+ `RAM:` + `HWID:` + `Machine GUID:`).",
   "aliases": [
     "LOGS-pack Python-shaped UserInformation panel",
     "Count-of-CPU verbose-key UserInformation panel"
@@ -15,7 +15,7 @@
     "Locale and OS build (timezone, Windows version)",
     "CPU, GPU, screen resolution, and RAM inventory"
   ],
-  "detection_notes": "Fingerprint requires both line-anchored keys `Count of\nCPU cores:` and `Count of CPU threads:`. The verbose\n`Count of` key prefix is unique in the catalog:\ncanonical Lumma uses `- CPU Cores:` / `- CPU Threads:`\nwith the dash bullet, DataMonk uses bare `CPU Cores:` /\n`CPU Threads:`, CSCountCoreStealer uses the transposed\nsingular `Count Core:`, the user-info bracket template uses\n`Logical Cores:`, and Redline uses the WMI\n`Name: Intel(R) ..., N Cores`\nshape. False-positive risk is low. Treat the family\nattribution as unknown during triage: the panel is\nclearly Python-hand-rolled per the `Postal: None`\nliteral and the ipapi.co geolocation triple, but no\npublic writeup maps this caption to a named family.\nDownstream consumers can filter on the `CSCountOfCpu\nStealer` family literal to segregate the discovery.",
+  "detection_notes": "Fingerprint requires both line-anchored keys `Count of CPU cores:` and `Count of CPU threads:`. The verbose\n`Count of` key prefix is unique in the catalog:\ncanonical Lumma uses `- CPU Cores:` / `- CPU Threads:`\nwith the dash bullet, DataMonk uses bare `CPU Cores:` /\n`CPU Threads:`, CSCountCoreStealer uses the transposed\nsingular `Count Core:`, the user-info bracket template uses\n`Logical Cores:`, and Redline uses the WMI\n`Name: Intel(R) ..., N Cores`\nshape. False-positive risk is low. Treat the family\nattribution as unknown during triage: the panel is\nclearly Python-hand-rolled per the `Postal: None`\nliteral and the ipapi.co geolocation triple, but no\npublic writeup maps this caption to a named family.\nDownstream consumers can filter on the `CSCountOfCpu Stealer` family literal to segregate the discovery.",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -51,5 +51,40 @@
     "xillenstealer",
     "inf0s3c-stealer"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSCountOfCpuStealer là định danh do CyStack đặt cho một bảng thông tin (panel) dạng Python `UserInformation.txt` được phát hiện bên trong các gói tổng hợp `<MONTH DAY> - <count> LOGS.part<N>.rar` tại các thư mục nạn nhân `<30-char alphanum>-XT/UserInformation.txt`. Nội dung là một khối `Key: Value` phẳng được chia thành phần đầu định danh (`Timezone:`, `Time:`, `Username:`, `PC Name:`, `OS:`, `HWID:`), khối định danh phần cứng (`BIOS Serial Number:`, `Machine GUID:`, `BaseBoard Manufacturer:`), phần `Network:` chứa dữ liệu định vị địa lý kiểu ipapi.co (`IP:`, `Country:`, `Region:`, `City:`, `Postal:`), phần `Hardwares:` (`CPU:`, `Count of CPU cores:`, `Count of CPU threads:`, `GPU:`, `Screen Resolution:`), và một bộ ba RAM trần (`RAM:`, `RAM Available:`, `RAM Used:`).\n\nNhiều chi tiết trong định dạng này cho thấy đây là mã Python viết tay thay vì một panel C# hoặc NodeJS được biên dịch. `Time:` được viết theo cấu trúc dữ liệu `time.asctime()` (`Sun Dec 17 11:24:02 2023`). `Timezone:` sử dụng dạng Olson (IANA) (`Africa/Accra`) mà `zoneinfo` / `time.tzname` trả về. `Postal: None` ghi nguyên văn giá trị literal Python `None` khi truy vấn ipapi.co không trả về mã bưu chính. Các khóa đầy đủ `Count of CPU cores:` và `Count of CPU threads:` đọc giống như một f-string ghép nhãn từ lệnh gọi `psutil.cpu_count(logical=False)` / `psutil.cpu_count()`. Các giá trị `RAM:` sử dụng đơn vị GB thập phân `X.XX GB`, không theo cấu trúc dữ liệu `MB` hoặc `bytes` mà các panel C# chuẩn tạo dữ liệu đầu ra.\n\nViệc quy kết họ mã độc hiện vẫn là tạm thời, chờ có tài liệu tình báo mối đe dọa công bố ánh xạ chính xác cho định dạng caption này. Các nhà cung cấp CTI đã được tuyển chọn (TrendMicro, SentinelOne Labs, Kaspersky SecureList, Cyfirma, SOCRadar, Cloudflare Cloudforce One, Talos, Unit 42, Microsoft TI, Mandiant, Recorded Future, eSentire, ANY.RUN) và các danh mục cộng đồng (MalBeacon what-is-this-stealer, deepdarkCTI, Malpedia, lexfo/stealer-parser, thredb/sysinfo-parser) đều không ghi nhận đúng tổ hợp `Count of CPU cores:` + `Postal: None` này. Các ứng viên Python viết tay gần nhất được khảo sát (Blank Grabber, XillenStealer, Inf0s3c) đều dùng tên tệp khác (`Information.txt`), banner khác (`<name> got a new victim:`), hoặc từ vựng trường dữ liệu khác (`Computer Name:` + `Total Memory:` + `UUID:` thay vì `PC Name:` + `RAM:` + `HWID:` + `Machine GUID:`).",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trong trình duyệt (được thu thập trong các tệp liên quan)",
+        "Dấu vết nhận diện máy và phần cứng (HWID, Machine GUID, BIOS Serial, BaseBoard Manufacturer)",
+        "Địa chỉ IP công khai và vị trí địa lý ở mức thô (quốc gia, khu vực, thành phố, mã bưu chính)",
+        "Ngôn ngữ vùng và phiên bản hệ điều hành (múi giờ, phiên bản Windows)",
+        "Danh sách kiểm kê CPU, GPU, độ phân giải màn hình và RAM"
+      ],
+      "detection_notes": "Dấu vết nhận diện yêu cầu cả hai khóa cố định vị trí dòng `Count of CPU cores:` và `Count of CPU threads:`. Tiền tố khóa đầy đủ `Count of` là duy nhất trong danh mục: Lumma chuẩn sử dụng `- CPU Cores:` / `- CPU Threads:` kèm ký hiệu gạch đầu dòng, DataMonk sử dụng `CPU Cores:` / `CPU Threads:` trần, CSCountCoreStealer sử dụng dạng số ít đảo vị `Count Core:`, mẫu ngoặc thông tin người dùng sử dụng `Logical Cores:`, và Redline sử dụng cấu trúc dữ liệu WMI `Name: Intel(R) ..., N Cores`. Rủi ro dương tính giả ở mức thấp. Trong quá trình phân loại ban đầu (triage), nên xem việc quy kết họ mã độc là chưa xác định: panel này rõ ràng là mã Python viết tay dựa trên literal `Postal: None` và bộ ba dữ liệu định vị địa lý ipapi.co, nhưng chưa có bài viết công khai nào ánh xạ caption này với một họ mã độc có tên cụ thể. Các bên tiêu thụ dữ liệu ở hạ nguồn có thể lọc theo literal họ mã độc `CSCountOfCpu Stealer` để tách riêng phát hiện này.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  }
 }

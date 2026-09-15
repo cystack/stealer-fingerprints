@@ -83,5 +83,49 @@
         "sanitized": true
       }
     }
-  ]
+  ],
+  "localizations": {
+    "vi": {
+      "description": "PureLogs là mã độc đánh cắp thông tin viết bằng C# 64-bit thuộc họ mã độc Pure, được phân phối từ năm 2022 theo mô hình đăng ký dịch vụ malware-as-a-service. Stub được làm rối bằng ConfuserEx, .NET Reactor và kỹ thuật ảo hóa tùy biến, với cấu hình C2 được mang dưới dạng khối dữ liệu tuần tự hóa Protobuf, mã hóa XOR kết hợp 3DES nằm trong tài nguyên của tệp nhị phân.\n\nDấu vết bị đưa ra ngoài là một tệp JSON phẳng `log.json` với một sub-object lồng `BotInfo` được chia thành các phần `System` / `Hardware` / `Network`. Các trường cấp cao nhất mang một `Username_Hwid` (được ghép nối bằng literal `user_<hwid>`), một `StubVersion` (ví dụ `v4.0.1`) và một `LogFolder` có đường dẫn bắt đầu bằng `C:\\PureLogs v4\\Logs\\<COUNTRY>\\`.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt, cookie, dữ liệu autofill, lịch sử duyệt web",
+        "Tiện ích mở rộng và ứng dụng desktop của ví tiền điện tử",
+        "Danh sách tiện ích mở rộng trình duyệt và siêu dữ liệu liên quan",
+        "Dữ liệu ứng dụng Outlook và các ứng dụng khác",
+        "Nội dung clipboard",
+        "Thông tin kiểm kê phần cứng hệ thống và ngôn ngữ/khu vực"
+      ],
+      "detection_notes": "Bộ ba khóa JSON `\"StubVersion\"`, `\"Username_Hwid\"` và `\"BotInfo\"` là dấu hiệu nhận diện rõ ràng nhất. Chuỗi con `PureLogs v4` literal xuất hiện bên trong giá trị `LogFolder` tự nhận diện đây là họ mã độc này. Tên trường bị viết sai chính tả `BrowserExtenstions` (lưu ý thiếu `i`) là bất biến trong các mẫu quan sát được và hữu ích để làm bước kiểm tra nhanh trong quá trình phân loại ban đầu.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1115",
+          "name": "Dữ liệu bảng tạm"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1027",
+          "name": "Tệp hoặc thông tin bị làm rối"
+        }
+      ]
+    }
+  }
 }

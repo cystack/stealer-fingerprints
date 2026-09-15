@@ -3,7 +3,7 @@
   "name": "CSImportantFilesOnlyStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSImportantFilesOnlyStealer is a CyStack-coined\nidentifier for the most-stripped BRADMAX-redistributed\nper-victim ``[<CC>]<IPv4>`` folder shape that ships a\nsingle ``Important Files/`` subdirectory at root plus\nthe BRADMAX packer's empty-name DIR artifact. Harvested\ncontent lives under ``Important Files/<subfolder>/\n<name>.txt``, typically random ``Documents/`` and\n``Desktop/`` text notes swept off the victim host.\n\nObserved inside 2024-era BRADMAX aggregator packs at\n``!! <YYYY> <MONTH>/@BRADMAX <count> <MONTH>/\n[<CC>]<IPv4>/`` paths, distinct from the newer\n``@BRADLOGS (BRADMAX) (<NN>)/`` per-victim shape.\nThe layout has no ``Browsers/`` per-browser credential\nsection, no aggregate ``Passwords.txt`` or\n``All Passwords.txt``, and no ``System.txt`` /\n``Information.txt`` system fingerprint - the\naggregator kept only the harvested-files bucket. The\nunderlying stealer family that captured the original\nlog cannot be recovered from this stripped shape\nbecause the BRADMAX channel resells multiple families'\nlogs under a single packer.",
+  "description": "CSImportantFilesOnlyStealer is a CyStack-coined\nidentifier for the most-stripped BRADMAX-redistributed\nper-victim ``[<CC>]<IPv4>`` folder shape that ships a\nsingle ``Important Files/`` subdirectory at root plus\nthe BRADMAX packer's empty-name DIR artifact. Harvested\ncontent lives under ``Important Files/<subfolder>/ <name>.txt``, typically random ``Documents/`` and\n``Desktop/`` text notes swept off the victim host.\n\nObserved inside 2024-era BRADMAX aggregator packs at\n``!! <YYYY> <MONTH>/@BRADMAX <count> <MONTH>/ [<CC>]<IPv4>/`` paths, distinct from the newer\n``@BRADLOGS (BRADMAX) (<NN>)/`` per-victim shape.\nThe layout has no ``Browsers/`` per-browser credential\nsection, no aggregate ``Passwords.txt`` or\n``All Passwords.txt``, and no ``System.txt`` /\n``Information.txt`` system fingerprint - the\naggregator kept only the harvested-files bucket. The\nunderlying stealer family that captured the original\nlog cannot be recovered from this stripped shape\nbecause the BRADMAX channel resells multiple families'\nlogs under a single packer.",
   "aliases": [
     "BRADMAX Important Files only bundle",
     "BRADMAX 1-dir victim folder"
@@ -30,5 +30,20 @@
   "observed_channels": [
     "https://t.me/BRADMAX"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSImportantFilesOnlyStealer là định danh do CyStack đặt cho cấu trúc thư mục ``[<CC>]<IPv4>`` theo từng nạn nhân bị lược bớt nhiều nhất, được phân phối lại qua BRADMAX, chỉ chứa một thư mục con ``Important Files/`` ở cấp gốc cùng dấu vết DIR không tên đặc trưng của trình đóng gói BRADMAX. Nội dung thu thập được nằm dưới ``Important Files/<subfolder>/ <name>.txt``, thường là các ghi chú văn bản ngẫu nhiên ``Documents/`` và ``Desktop/`` được quét ra từ máy nạn nhân.\n\nĐược quan sát bên trong các gói tổng hợp BRADMAX thời kỳ 2024 tại đường dẫn ``!! <YYYY> <MONTH>/@BRADMAX <count> <MONTH>/ [<CC>]<IPv4>/``, khác biệt với cấu trúc thư mục theo từng nạn nhân mới hơn ``@BRADLOGS (BRADMAX) (<NN>)/``. Bố cục này không có mục thông tin xác thực theo từng trình duyệt ``Browsers/``, không có ``Passwords.txt`` hoặc ``All Passwords.txt`` tổng hợp, và không có dấu vết nhận diện hệ thống ``System.txt`` / ``Information.txt`` — bên tổng hợp chỉ giữ lại nhóm tệp đã thu thập. Họ mã độc đánh cắp thông tin gốc đã thu thập log ban đầu không thể khôi phục được từ cấu trúc bị lược bớt này vì kênh BRADMAX bán lại log của nhiều họ mã độc khác nhau dưới một trình đóng gói duy nhất.",
+      "typical_targets": [
+        "Các ghi chú văn bản ngẫu nhiên trong thư mục Documents / Desktop của nạn nhân, được quét bởi mô-đun thu thập tệp của mã độc đánh cắp thông tin gốc"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu ba điều kiện: (1) thư mục gốc chứa một thư mục ``Important Files``, (2) mục còn lại duy nhất ở gốc là dấu vết DIR không tên của trình đóng gói BRADMAX (gốc chỉ có nghiêm ngặt 1 hoặc 2 mục), và (3) system_path ID mang token ``BRADMAX`` hoặc ``BRADLOGS``. Điểm neo phía đường dẫn loại trừ các thư mục chỉ chứa ``Important Files/`` chung chung được phân phối qua các kênh khác. Trong quá trình phân loại ban đầu, hãy coi họ mã độc đánh cắp thông tin gốc là không thể quy kết được và dựa vào metadata channel + panel_brand để nhóm các mẫu phục vụ đánh giá của chuyên gia phân tích.",
+      "attack_techniques": [
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  }
 }

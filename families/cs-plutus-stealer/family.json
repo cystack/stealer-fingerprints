@@ -14,7 +14,7 @@
     "System hardware and locale fingerprint (OS, CPU, GPU, RAM,\nHWID / MachineGuid, screen resolution, keyboard layouts)",
     "Geo-IP profile (Country, ISO, City, ZIP, Postal, Olson\ntimezone, latitude / longitude)"
   ],
-  "detection_notes": "Line-anchored ``Plutus Stealer v `` self-brand (with the\ntrailing space and a version digit immediately after) plus the\n``[GENERAL]`` section marker on its own line is the cleanest\nfingerprint pair. Neither alone is safe: a public writeup or\ncatalog entry may quote the family name in prose without\ncarrying the uppercase bracketed section headers, and a stray\nREADME with a ``[GENERAL]`` section may share the header\nspelling without the self-brand. During triage, treat the\npanel-issued ``Machine Id`` and the ``HWID`` MachineGuid as\nseparate identifiers: the former is the operator-side victim\nkey (useful for correlating multiple logs from the same\ninfection) while the latter is the host fingerprint (useful\nfor correlating across families).",
+  "detection_notes": "Line-anchored ``Plutus Stealer v`` self-brand (with the\ntrailing space and a version digit immediately after) plus the\n``[GENERAL]`` section marker on its own line is the cleanest\nfingerprint pair. Neither alone is safe: a public writeup or\ncatalog entry may quote the family name in prose without\ncarrying the uppercase bracketed section headers, and a stray\nREADME with a ``[GENERAL]`` section may share the header\nspelling without the self-brand. During triage, treat the\npanel-issued ``Machine Id`` and the ``HWID`` MachineGuid as\nseparate identifiers: the former is the operator-side victim\nkey (useful for correlating multiple logs from the same\ninfection) while the latter is the host fingerprint (useful\nfor correlating across families).",
   "attack_techniques": [
     {
       "id": "T1555",
@@ -50,5 +50,47 @@
   "observed_channels": [
     "https://t.me/bugatti_cloud"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSPlutusStealer là định danh do CyStack đặt cho bảng điều khiển ``Plutus Stealer v 3.0`` ``SystemInfo.txt``. Mã độc tự gắn thương hiệu qua banner ASCII-art ``Plutus`` dạng Figlet và một dòng đơn giản ``Plutus Stealer v <MAJOR>.<MINOR>``, theo sau là năm mục ngoặc vuông viết hoa theo thứ tự cố định: ``[GENERAL]``, ``[LOCATION]``, ``[SYSTEM]``, ``[HARDWARE]``, ``[CLIPBOARD]``.\n\nKhối ``[GENERAL]`` mang theo cặp thông tin phiên bản bảng điều khiển gồm hai dòng ``Build Tag`` + ``Build Version``, một định danh nạn nhân do bảng điều khiển cấp gọi là ``Machine Id`` (tiền tố hai chữ cái của bảng điều khiển cộng với chuỗi đuôi 24 ký tự chữ và số), một cờ boolean ``Is running as admin``, và một đường dẫn ``File Location`` trỏ đến vị trí cài đặt mã độc. Khối ``[LOCATION]`` báo cáo địa chỉ IP cùng hồ sơ định vị địa lý theo IP đầy đủ (Country, ISO, City, ZIP, Postal, Time Zone kèm tên Olson và độ lệch UTC, Location với vĩ độ / kinh độ dùng dấu phẩy thập phân kiểu châu Âu). Khối ``[HARDWARE]`` chứa ``MachineGuid`` trong registry Windows được bọc trong dấu ngoặc nhọn dưới khóa ``HWID``, khác biệt với ``Machine Id`` do bảng điều khiển cấp nêu ở trên. Khối ``[CLIPBOARD]`` ghi lại nội dung clipboard đang hiển thị tại thời điểm thu thập và có thể mang các đoạn hội thoại cùng mẫu chuyển khoản tài khoản theo ngôn ngữ địa phương của nạn nhân.\n\nViệc quy kết họ mã độc hiện còn tạm thời, chờ một ánh xạ tình báo mối đe dọa được công bố cho bố cục này. Các báo cáo công khai không cho ra kết quả nào khi tra cứu tên ``Plutus Stealer`` gắn với định dạng infostealer. Các danh mục cộng đồng cũng không có xác nhận nào. Thương hiệu tự nhận của đối tượng vận hành được giữ nguyên văn trong ``panel_brand`` nhưng không được tin cậy như một ánh xạ quy kết. Cập nhật hồ sơ theo dõi này khi có bài viết công khai xác định được builder gốc.\n\nGói mẫu duy nhất được quan sát được phân phối qua kênh Telegram ``@bugatti_cloud``, một bộ tổng hợp log đánh cắp thông tin đa họ mã độc đã được lập danh mục công khai. Các lát cắt liên quan của cùng kênh này đã mang DCRat, BracketSection, và các biến thể do CyStack đặt tên; lát cắt mang thương hiệu Plutus này mở rộng thêm danh mục đó.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trong trình duyệt (được chỉ ra qua cách đặt tên stealer và cấu trúc đường dẫn cài đặt thư mục tạm của WinRAR SFX)",
+        "Nội dung clipboard tại thời điểm thu thập qua mục ``[CLIPBOARD]`` (các đoạn hội thoại, mẫu chuyển khoản tài khoản theo ngôn ngữ địa phương của nạn nhân)",
+        "Dấu vết nhận dạng phần cứng hệ thống và ngôn ngữ địa phương (OS, CPU, GPU, RAM, HWID / MachineGuid, độ phân giải màn hình, bố cục bàn phím)",
+        "Hồ sơ định vị địa lý theo IP (Country, ISO, City, ZIP, Postal, múi giờ Olson, vĩ độ / kinh độ)"
+      ],
+      "detection_notes": "Cặp dấu hiệu nhận diện rõ ràng nhất là dòng tự gắn thương hiệu ``Plutus Stealer v`` được neo theo dòng (kèm khoảng trắng cuối và một chữ số phiên bản ngay sau đó) kết hợp với mục đánh dấu ``[GENERAL]`` nằm trên một dòng riêng. Không dấu hiệu nào an toàn khi đứng riêng lẻ: một bài viết công khai hoặc mục danh mục có thể trích dẫn tên họ mã độc trong văn xuôi mà không mang theo các tiêu đề mục viết hoa trong ngoặc vuông, còn một tệp README ngẫu nhiên có mục ``[GENERAL]`` có thể trùng cách viết tiêu đề mà không có dòng tự gắn thương hiệu. Trong quá trình phân loại ban đầu, hãy coi ``Machine Id`` do bảng điều khiển cấp và ``HWID`` MachineGuid là hai định danh riêng biệt: cái trước là khóa nạn nhân phía đối tượng vận hành (hữu ích để liên kết nhiều log từ cùng một lần lây nhiễm), trong khi cái sau là dấu vết nhận dạng máy (hữu ích để liên kết dữ liệu qua nhiều họ mã độc khác nhau).",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1115",
+          "name": "Dữ liệu bảng tạm"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        }
+      ]
+    }
+  }
 }

@@ -64,5 +64,54 @@
     "https://securitylabs.datadoghq.com/articles/tech-impersonators-clickfix-and-macos-infostealers/",
     "https://www.helpnetsecurity.com/2026/05/19/shub-reaper-macos-infostealer-apple-google-microsoft/"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "SHub Stealer là mã độc đánh cắp thông tin nhắm vào macOS, lần đầu được ghi nhận công khai vào tháng 3 năm 2026 sau một chiến dịch dùng trang landing page giả mạo CleanMyMac để phát tán payload tới người nắm giữ tiền điện tử. Một biến thể tiếp theo được phân tích công khai với tag build `Reaper` vào tháng 5 năm 2026; họ mã độc này cũng nhận được sự đưa tin công khai rộng rãi.\n\nPayload là một tệp nhị phân Mach-O chạy một trình trợ giúp AppleScript để thu thập dữ liệu trình duyệt, ví tiền điện tử, các tệp cấu hình liên quan đến nhà phát triển, dữ liệu macOS Keychain, dữ liệu phiên iCloud, và các tệp phiên Telegram. Dữ liệu thu thập được đóng gói vào một tệp lưu trữ ZIP và được gửi bằng phương thức POST tới một điểm tiếp nhận được ghi cố định (ví dụ: `res2erch-sl0ut[.]com/gate`) cùng với một khóa API được ghi cố định dùng để nhận diện build mã độc. Nhãn chiến dịch `Build Tag` theo từng nạn nhân và mã băm build gồm 32 ký tự hỗ trợ việc theo dõi ở cấp độ đối tác liên kết. Các tag build được quan sát bao gồm `Reaper`, `PAds`, và `Crypto_Byte`.",
+      "typical_targets": [
+        "Thông tin xác thực, cookie, dữ liệu tự động điền được lưu trong trình duyệt",
+        "Ứng dụng ví tiền điện tử và tiện ích mở rộng trình duyệt",
+        "Mục dữ liệu macOS Keychain",
+        "Dữ liệu phiên iCloud",
+        "Các tệp phiên Telegram",
+        "Tệp cấu hình dành cho nhà phát triển và ứng dụng Notes",
+        "Thông tin xác thực đăng nhập được nhập qua hộp thoại nhắc trên màn hình (hộp thoại osascript)"
+      ],
+      "detection_notes": "Dấu hiệu mạnh nhất là chuỗi ký tự văn bản nguyên văn `SHub Stealer` trong banner, chính là tiêu đề tự nhận diện của họ mã độc này. Kết hợp với các trường mở đầu `Build Tag:` và `External IP:`, việc quy kết đạt độ tin cậy cao. Các quy tắc phân loại nên dựa trên chuỗi ký tự văn bản của banner cùng với cấu trúc dữ liệu phần thân `system_profiler`, thay vì dựa vào giá trị tag build, vốn thay đổi theo từng chiến dịch (`Reaper`, `PAds`, `Crypto_Byte` là các ví dụ đã được ghi nhận).",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.001",
+          "name": "Keychain"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1059.002",
+          "name": "AppleScript"
+        },
+        {
+          "id": "T1056.002",
+          "name": "Thu thập dữ liệu nhập qua GUI"
+        }
+      ]
+    }
+  }
 }

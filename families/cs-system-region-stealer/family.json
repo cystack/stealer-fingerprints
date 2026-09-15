@@ -3,7 +3,7 @@
   "name": "CSSystemRegionStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSSystemRegionStealer is a CyStack-coined identifier for a\nflat 12-field `info.txt` panel observed inside `10-13\nSEPTEMBER - 20370 LOGS.part01.rar` Telegram aggregator packs\nat `<33-CHAR-HEX-ID>/info.txt` victim folders. The\n33-character uppercase-hex folder ID is one character longer\nthan a standard 32-char MD5, hinting at a MachineGuid-derived\nor custom-hashed victim identifier.\n\nThe body layout is a flat `Key: Value` block with these fields\nin fixed order: `OS Version:` (WMI Caption plus parenthesised\n`(Build N)` suffix), `Local Date:` (Russian or European\nDD.MM.YYYY HH:MM:SS format, no timezone), `PC name:`\n(lowercase-`n` key), `User name:` (lowercase- `n`), `Screen\nResolution:`, `Processor:`, `Total RAM:`, `Graphics Card:`,\n`MAC Address(es):` (parenthesised `(es)` plural marker with a\ncomma-separated MAC list), `IP Address:`, `Country:` (full\ncountry name from an IP geolocation API), and `System Region:`\n(system locale from `GetUserDefaultLocaleName` or the WMI\nMUILanguages field, distinct from the IP-based `Country:`\nfield above).\n\nThe body terminates with a long `-=-=-=-=-` alternating\ndash-plus-equals separator followed by the Russian text `Здесь\nмогла бы быть ваша реклама` (\"Your ad could be here\"). The\ntrailer is a well-known Russian internet meme for empty ad\nplaceholders; embedding it in the panel output is either a\nstealer-author signature or an unfinished template feature the\noperator never populated. The trailer strongly suggests a\nRussian-speaking developer even though every field key is in\nEnglish.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and the\ncommunity catalogues do not attest a family emitting exactly\nthis 12-field layout with the `MAC Address(es):` plural\nmarker, the split `Country:` / `System Region:` geolocation\npair, and the Russian ad-meme trailer. Candidates ruled out\ninclude Sharp / Hannibal / TX (different field spelling, no\nsplit geolocation), Poulight (pure Russian key set), CGrabber,\nTorg Grabber, Predator The Thief, Collector-Stealer, Marco\nStealer, and Raven Stealer.",
+  "description": "CSSystemRegionStealer is a CyStack-coined identifier for a\nflat 12-field `info.txt` panel observed inside `10-13 SEPTEMBER - 20370 LOGS.part01.rar` Telegram aggregator packs\nat `<33-CHAR-HEX-ID>/info.txt` victim folders. The\n33-character uppercase-hex folder ID is one character longer\nthan a standard 32-char MD5, hinting at a MachineGuid-derived\nor custom-hashed victim identifier.\n\nThe body layout is a flat `Key: Value` block with these fields\nin fixed order: `OS Version:` (WMI Caption plus parenthesised\n`(Build N)` suffix), `Local Date:` (Russian or European\nDD.MM.YYYY HH:MM:SS format, no timezone), `PC name:`\n(lowercase-`n` key), `User name:` (lowercase- `n`), `Screen Resolution:`, `Processor:`, `Total RAM:`, `Graphics Card:`,\n`MAC Address(es):` (parenthesised `(es)` plural marker with a\ncomma-separated MAC list), `IP Address:`, `Country:` (full\ncountry name from an IP geolocation API), and `System Region:`\n(system locale from `GetUserDefaultLocaleName` or the WMI\nMUILanguages field, distinct from the IP-based `Country:`\nfield above).\n\nThe body terminates with a long `-=-=-=-=-` alternating\ndash-plus-equals separator followed by the Russian text `Здесь могла бы быть ваша реклама` (\"Your ad could be here\"). The\ntrailer is a well-known Russian internet meme for empty ad\nplaceholders; embedding it in the panel output is either a\nstealer-author signature or an unfinished template feature the\noperator never populated. The trailer strongly suggests a\nRussian-speaking developer even though every field key is in\nEnglish.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for this layout. Public reporting and the\ncommunity catalogues do not attest a family emitting exactly\nthis 12-field layout with the `MAC Address(es):` plural\nmarker, the split `Country:` / `System Region:` geolocation\npair, and the Russian ad-meme trailer. Candidates ruled out\ninclude Sharp / Hannibal / TX (different field spelling, no\nsplit geolocation), Poulight (pure Russian key set), CGrabber,\nTorg Grabber, Predator The Thief, Collector-Stealer, Marco\nStealer, and Raven Stealer.",
   "aliases": [
     "Flat 12-field info.txt with System Region and MAC (es)",
     "Russian ad-placeholder-trailer info.txt panel"
@@ -50,5 +50,45 @@
     "hannibal-stealer",
     "poulight-stealer"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSSystemRegionStealer là một định danh do CyStack đặt ra cho một bảng điều khiển `info.txt` dạng phẳng gồm 12 trường, được quan sát bên trong các bộ gói tổng hợp Telegram `10-13 SEPTEMBER - 20370 LOGS.part01.rar` tại các thư mục nạn nhân `<33-CHAR-HEX-ID>/info.txt`. ID thư mục gồm 33 ký tự hex viết hoa, dài hơn một ký tự so với MD5 chuẩn 32 ký tự, gợi ý đây là một định danh nạn nhân bắt nguồn từ MachineGuid hoặc được băm theo cách tùy chỉnh.\n\nBố cục phần thân là một khối `Key: Value` dạng phẳng với các trường theo thứ tự cố định sau: `OS Version:` (Caption của WMI cộng với hậu tố `(Build N)` trong ngoặc đơn), `Local Date:` (định dạng DD.MM.YYYY HH:MM:SS theo kiểu Nga hoặc châu Âu, không có múi giờ), `PC name:` (khóa `n` viết thường), `User name:` (`n` viết thường), `Screen Resolution:`, `Processor:`, `Total RAM:`, `Graphics Card:`, `MAC Address(es):` (dấu hiệu số nhiều `(es)` trong ngoặc đơn kèm danh sách MAC phân tách bằng dấu phẩy), `IP Address:`, `Country:` (tên quốc gia đầy đủ từ một API định vị địa lý theo IP), và `System Region:` (ngôn ngữ hệ thống lấy từ `GetUserDefaultLocaleName` hoặc trường MUILanguages của WMI, khác với trường `Country:` dựa trên IP ở trên).\n\nPhần thân kết thúc bằng một dải phân cách dài `-=-=-=-=-` xen kẽ dấu gạch ngang và dấu cộng-bằng, theo sau là đoạn văn bản tiếng Nga `Здесь могла бы быть ваша реклама` (\"Quảng cáo của bạn có thể ở đây\"). Phần đuôi này là một meme internet tiếng Nga nổi tiếng dùng cho các vị trí quảng cáo trống; việc nhúng nó vào dữ liệu đầu ra của bảng điều khiển có thể là chữ ký của tác giả mã độc đánh cắp thông tin hoặc là một tính năng mẫu chưa hoàn thiện mà đối tượng vận hành chưa bao giờ điền vào. Phần đuôi này gợi ý mạnh mẽ về một nhà phát triển nói tiếng Nga, mặc dù mọi khóa trường đều bằng tiếng Anh.\n\nViệc quy kết họ mã độc vẫn còn tạm thời, chờ một bản đồ tình báo đe dọa đã công bố cho bố cục này. Các báo cáo công khai và danh mục cộng đồng không xác nhận có họ mã độc nào tạo dữ liệu đầu ra đúng theo bố cục 12 trường này với dấu hiệu số nhiều `MAC Address(es):`, cặp định vị địa lý tách biệt `Country:` / `System Region:`, và phần đuôi meme quảng cáo tiếng Nga. Các ứng viên đã bị loại trừ bao gồm Sharp / Hannibal / TX (cách đặt tên trường khác, không có định vị địa lý tách biệt), Poulight (tập khóa hoàn toàn bằng tiếng Nga), CGrabber, Torg Grabber, Predator The Thief, Collector-Stealer, Marco Stealer, và Raven Stealer.",
+      "typical_targets": [
+        "Caption hệ điều hành từ WMI `Win32_OperatingSystem.Caption`",
+        "Số hiệu bản dựng Windows từ hậu tố `(Build N)`",
+        "Thời gian thực tại địa phương (DD.MM.YYYY HH:MM:SS, không có múi giờ)",
+        "Tên máy và tên người dùng hệ điều hành (khóa trường `name` viết thường)",
+        "Độ phân giải màn hình",
+        "Tên bộ xử lý và card đồ họa",
+        "Tổng dung lượng RAM",
+        "Địa chỉ MAC từ mọi card mạng",
+        "IPv4 công khai và tên quốc gia (từ API định vị địa lý theo IP)",
+        "Gợi ý ngôn ngữ hệ thống, tách biệt với quốc gia xác định qua IP"
+      ],
+      "detection_notes": "Việc xác định dấu hiệu nhận diện yêu cầu `System Region:` VÀ `MAC Address(es):` VÀ `Local Date:` VÀ `PC name:` (viết thường-`n`) đều neo theo dòng. Dấu hiệu số nhiều `(es)` trên `MAC Address(es):` và trường `System Region:` đều là duy nhất trong số các định dạng đã được lập danh mục, và cách viết thường-`name` của `PC name:` loại trừ DCRat / CSBuildBlock / CSDataMonk vì các họ này đều dùng `PC Name:` với chữ N viết hoa. Trong quá trình phân loại ban đầu, cặp tách biệt `Country:` / `System Region:` rất hữu ích: sự không khớp giữa hai trường này (IP công khai phân giải về một quốc gia, còn ngôn ngữ hệ thống lại về quốc gia khác) thường cho thấy người dùng proxy hoặc VPN, hoặc một người thường xuyên di chuyển mà thiết bị vẫn giữ ngôn ngữ cũ sau khi chuyển địa điểm. Phần đuôi meme quảng cáo tiếng Nga là tín hiệu quy kết nhà phát triển mạnh nhất, mặc dù mọi khóa trường đều bằng tiếng Anh.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        },
+        {
+          "id": "T1016",
+          "name": "Dò tìm cấu hình mạng hệ thống"
+        },
+        {
+          "id": "T1124",
+          "name": "Xác định thời gian hệ thống"
+        }
+      ]
+    }
+  }
 }

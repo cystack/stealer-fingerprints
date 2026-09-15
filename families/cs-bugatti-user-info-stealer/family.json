@@ -3,7 +3,7 @@
   "name": "CSBugattiUserInfoStealer",
   "classification": "cystack_named",
   "attribution_confidence": "unknown",
-  "description": "CSBugattiUserInfoStealer is a CyStack-coined identifier for\nthe @Bugatti_Cloud aggregator's ``UserInformation.txt`` hybrid\nslice. The file is a flat ``Key: Value`` body whose vocabulary\nmixes markers from multiple documented stealer families.\nRedline contributes the ``Operation System:`` typo,\n``ScreenSize:``, and ``Log date:`` keys. Lumma contributes the\n``# Buy now: TG`` operator banner template with the affiliate\nvalue stripped. Rhadamanthys contributes the ``MachineID:``\nUUID bot fingerprint. Mars Stealer contributes ``Installed\nRAM:`` and ``Graphics card:``. Bugatti-specific additions\ninclude CamelCase no-space ``UserName:`` / ``ComputerName:``,\na ``UUID:`` line for the system product UUID, a ``Current\nPath:`` label for the malware install path, and a 3-language\nblock with spaced keys.\n\nThe @Bugatti_Cloud channel is a documented multi-family\naggregator that redistributes Redline and other stealer logs\nin custom container formats. The mixed vocabulary observed\nhere is consistent with an operator-side reformatter that\nnormalises logs from multiple underlying panels into a unified\ntemplate. The ``UserInformation.txt`` filename is publicly\ndocumented as Aurora Stealer's canonical exfil filename, but\nno public writeup publishes the exact field-label mapping.\nFamily attribution is provisional pending a published\nthreat-intel writeup for this layout.",
+  "description": "CSBugattiUserInfoStealer is a CyStack-coined identifier for\nthe @Bugatti_Cloud aggregator's ``UserInformation.txt`` hybrid\nslice. The file is a flat ``Key: Value`` body whose vocabulary\nmixes markers from multiple documented stealer families.\nRedline contributes the ``Operation System:`` typo,\n``ScreenSize:``, and ``Log date:`` keys. Lumma contributes the\n``# Buy now: TG`` operator banner template with the affiliate\nvalue stripped. Rhadamanthys contributes the ``MachineID:``\nUUID bot fingerprint. Mars Stealer contributes ``Installed RAM:`` and ``Graphics card:``. Bugatti-specific additions\ninclude CamelCase no-space ``UserName:`` / ``ComputerName:``,\na ``UUID:`` line for the system product UUID, a ``Current Path:`` label for the malware install path, and a 3-language\nblock with spaced keys.\n\nThe @Bugatti_Cloud channel is a documented multi-family\naggregator that redistributes Redline and other stealer logs\nin custom container formats. The mixed vocabulary observed\nhere is consistent with an operator-side reformatter that\nnormalises logs from multiple underlying panels into a unified\ntemplate. The ``UserInformation.txt`` filename is publicly\ndocumented as Aurora Stealer's canonical exfil filename, but\nno public writeup publishes the exact field-label mapping.\nFamily attribution is provisional pending a published\nthreat-intel writeup for this layout.",
   "aliases": [
     "@Bugatti_Cloud UserInformation.txt slice",
     "Bugatti hybrid Redline/Lumma/Rhadamanthys/Mars variant"
@@ -15,7 +15,7 @@
     "Bot fingerprint identifiers (MachineID GUID, system\nproduct UUID)",
     "Malware install path (Current Path field)"
   ],
-  "detection_notes": "Fingerprint requires four line-anchored labels together:\n``# Buy now: TG`` (Lumma-affiliate template with stripped\nvalue), ``Current Path:`` (Bugatti-specific label),\n``Installed RAM:`` (Mars / Rhadamanthys v0.5 marker),\nand ``MachineID:`` (Rhadamanthys bot fingerprint). The\nfour together are disjoint from Lumma (needs\n``@lummanowork`` / ``LummaC2 Build:``), Rhadamanthys\n(needs ``Wallpaper Hash:`` / family banner / BRADMAX +\n``Traffic Name:``), Redline (needs ``FileLocation:``),\nand RedlineLike (needs ``Version Build:`` / ``BUILD\nNAME:`` / DARKSIDE banner / extended-block triple).\nDuring triage, treat the underlying stealer family as\nunattributable and rely on the channel + panel_brand\nmetadata to bucket samples for analyst review.\nCompanion files in the victim folder (browser exports,\nwallet artifacts, screenshot.jpg) may provide more confident family attribution.",
+  "detection_notes": "Fingerprint requires four line-anchored labels together:\n``# Buy now: TG`` (Lumma-affiliate template with stripped\nvalue), ``Current Path:`` (Bugatti-specific label),\n``Installed RAM:`` (Mars / Rhadamanthys v0.5 marker),\nand ``MachineID:`` (Rhadamanthys bot fingerprint). The\nfour together are disjoint from Lumma (needs\n``@lummanowork`` / ``LummaC2 Build:``), Rhadamanthys\n(needs ``Wallpaper Hash:`` / family banner / BRADMAX +\n``Traffic Name:``), Redline (needs ``FileLocation:``),\nand RedlineLike (needs ``Version Build:`` / ``BUILD NAME:`` / DARKSIDE banner / extended-block triple).\nDuring triage, treat the underlying stealer family as\nunattributable and rely on the channel + panel_brand\nmetadata to bucket samples for analyst review.\nCompanion files in the victim folder (browser exports,\nwallet artifacts, screenshot.jpg) may provide more confident family attribution.",
   "attack_techniques": [
     {
       "id": "T1082",
@@ -43,5 +43,32 @@
   "observed_channels": [
     "https://t.me/Bugatti_Cloud"
   ],
-  "variants": []
+  "variants": [],
+  "localizations": {
+    "vi": {
+      "description": "CSBugattiUserInfoStealer là định danh do CyStack đặt cho lát cắt lai ``UserInformation.txt`` của bộ tổng hợp @Bugatti_Cloud. Tệp này là một khối văn bản ``Key: Value`` phẳng có bộ từ vựng pha trộn các dấu hiệu từ nhiều họ mã độc đánh cắp thông tin đã được ghi nhận. Redline đóng góp lỗi chính tả ``Operation System:``, cùng các khóa ``ScreenSize:`` và ``Log date:``. Lumma đóng góp mẫu banner đối tượng vận hành ``# Buy now: TG`` với giá trị affiliate đã bị loại bỏ. Rhadamanthys đóng góp dấu vết bot UUID ``MachineID:``. Mars Stealer đóng góp ``Installed RAM:`` và ``Graphics card:``. Các thành phần bổ sung riêng của Bugatti bao gồm ``UserName:`` / ``ComputerName:`` dạng CamelCase không dấu cách, một dòng ``UUID:`` cho UUID sản phẩm hệ thống, một nhãn ``Current Path:`` cho đường dẫn cài đặt mã độc, và một khối 3 ngôn ngữ với các khóa có dấu cách.\n\nKênh @Bugatti_Cloud là một bộ tổng hợp đa họ mã độc đã được ghi nhận, chuyên phân phối lại nhật ký của Redline và các mã độc đánh cắp thông tin khác dưới các định dạng container tùy chỉnh. Bộ từ vựng pha trộn quan sát được ở đây phù hợp với một công cụ định dạng lại phía đối tượng vận hành, chuẩn hóa nhật ký từ nhiều bảng điều khiển bên dưới thành một mẫu thống nhất. Tên tệp ``UserInformation.txt`` đã được công khai ghi nhận là tên tệp đưa dữ liệu ra ngoài đặc trưng của Aurora Stealer, nhưng không có bài viết công khai nào công bố ánh xạ nhãn trường chính xác. Việc quy kết họ mã độc là tạm thời, chờ một bài viết tình báo mối đe dọa được công bố cho bố cục này.",
+      "typical_targets": [
+        "Dấu vết phần cứng máy và hệ điều hành (model CPU, danh sách adapter GPU, dung lượng RAM cài đặt, độ phân giải màn hình, phiên bản Windows)",
+        "Danh tính mạng (địa chỉ IP, quốc gia)",
+        "Danh tính tài khoản (tên người dùng Windows, tên máy)",
+        "Định danh dấu vết bot (MachineID GUID, UUID sản phẩm hệ thống)",
+        "Đường dẫn cài đặt mã độc (trường Current Path)"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu bốn nhãn gắn theo dòng cùng xuất hiện: ``# Buy now: TG`` (mẫu affiliate-Lumma với giá trị đã bị loại bỏ), ``Current Path:`` (nhãn riêng của Bugatti), ``Installed RAM:`` (dấu hiệu Mars / Rhadamanthys v0.5), và ``MachineID:`` (dấu vết bot của Rhadamanthys). Bốn dấu hiệu này cùng nhau tách biệt với Lumma (cần ``@lummanowork`` / ``LummaC2 Build:``), Rhadamanthys (cần ``Wallpaper Hash:`` / banner họ mã độc / BRADMAX + ``Traffic Name:``), Redline (cần ``FileLocation:``), và RedlineLike (cần ``Version Build:`` / ``BUILD NAME:`` / banner DARKSIDE / bộ ba khối mở rộng). Trong quá trình phân loại ban đầu, hãy coi họ mã độc đánh cắp thông tin bên dưới là chưa thể quy kết và dựa vào metadata channel + panel_brand để phân nhóm mẫu cho việc rà soát của chuyên viên phân tích. Các tệp liên quan trong thư mục nạn nhân (dữ liệu xuất từ trình duyệt, dấu vết ví, screenshot.jpg) có thể cung cấp cơ sở quy kết họ mã độc đáng tin cậy hơn.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        }
+      ]
+    }
+  }
 }
