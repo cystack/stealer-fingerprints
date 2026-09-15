@@ -8,14 +8,14 @@ Every retained variant has exactly one representative text sample from the CySta
 
 ## Corpus at a glance
 
-- **195** research profiles
+- **196** research profiles
 - **41** known malware families
 - **2** observed self-labels without independent family attribution
-- **136** CyStack tracking names
+- **137** CyStack tracking names
 - **11** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **128** observed log variants and **128** samples
-- **8,052,882** CyStack observations represented by the retained sample set
+- **129** observed log variants and **129** samples
+- **8,052,883** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -91,7 +91,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Antarctida Stealer](families/antarctida-stealer/) | unknown | 1 | [1 retained](families/antarctida-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (136)
+### CyStack tracking names (137)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -162,6 +162,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSFlatMacBradmaxStealer](families/cs-flat-mac-bradmax-stealer/) | low | 0 | Metadata only |
 | [CSFlatMacProfilerStealer](families/cs-flat-mac-profiler-stealer/) | low | 3 | [3 retained](families/cs-flat-mac-profiler-stealer/#observed-log-variants) |
 | [CSFlatRemusStealer](families/cs-flat-remus-stealer/) | low | 0 | Metadata only |
+| [CSForzaTrafficStealer](families/cs-forza-traffic-stealer/) | unknown | 1 | [1 retained](families/cs-forza-traffic-stealer/#observed-log-variants) |
 | [CSGADSPanelStealer](families/csgads-panel-stealer/) | unknown | 1 | [1 retained](families/csgads-panel-stealer/#observed-log-variants) |
 | [CSGeoSysInfoStealer](families/cs-geo-sys-info-stealer/) | unknown | 1 | [1 retained](families/cs-geo-sys-info-stealer/#observed-log-variants) |
 | [CSGoRuntimeStealer](families/cs-go-runtime-stealer/) | unknown | 1 | [1 retained](families/cs-go-runtime-stealer/#observed-log-variants) |

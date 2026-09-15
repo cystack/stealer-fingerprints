@@ -1,0 +1,97 @@
+{
+  "aliases": [
+    "@FORZATRAFFIC",
+    "@FORZATRAFFICx",
+    "ForzaTraffic MIX LOGS",
+    "ForzaTraffic TG ArhontCorp"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1518.001",
+      "name": "Security Software Discovery"
+    }
+  ],
+  "attribution_confidence": "unknown",
+  "classification": "cystack_named",
+  "description": "CSForzaTrafficStealer is a CyStack tracking name for the bare\n`Key: Value` `Info.txt` panel that the `@FORZATRAFFICx`\nTelegram reseller redistributes inside\n`MIX_LOGS_<NNNN>_BONUS_UPDATE_@FORZATRAFFICx_<Month>_<YYYY>\n_part<N>.rar` aggregator packs. Victim folders follow the\nshape `<CC>_<32-hex>/Info.txt` (country code plus underscore\nplus a 32-character HWID-derived hex identifier, no IP\nsegment in the folder tree), and the archive-tree top\nfolder repeats the `@FORZATRAFFICx` reseller handle\nverbatim.\n\nThe body vocabulary is byte-identical to two peer cloud\nreseller shapes already cataloged (`CSRoyCloudInfoStealer`\nand `CSSigInfoStealer`): a Redline-shape verbose field\ninventory with Lumma influences carrying `Build Date` in the\nC-preprocessor `__DATE__` format, a `Configuration:` header\nwith empty value, `Execution Path:` with the setup binary\npath, `Elevated:` privilege state, `Computer Name` /\n`User Name` / `Netbios` / `User Language`, an\n`Operation System:` (sic) typo carried from Redline sources,\n`Install Date` and `System Date` in dotted DMY, `Time Zone`\nas a short `UTC[+-]H` offset, `Antivirus:` naming the AV\nproduct, plain 32-hex `HWID`, `Processor` plus split\n`Processor Threads` and `Processor Cores`, an indented\n`Graphics Card:` block, `Installed RAM:` in MB, and\n`Display Resolution:` in `WxH` form.\n\nDistinguishing features vs the two peer shapes: no\nLumma-canonical `(sig:UNIX.HEX)` Time-line watermark and no\ntrailing `IP Address:` / `Time:` / `Country:` / `User:`\npanel-metadata footer (both are present on the `CSSigInfo`\nshape), and no `RÔýĆløud` panel-brand watermark that\nwraps the `CSRoyCloud` shape. Victim IP and country and log\ntime are recoverable only from the archive-path segment\nplus the `System Date` / `Time Zone` field pair inside\n`Info.txt`.\n\nPublic reporting attests `@FORZATRAFFICx` as an active\ncredential-log reseller distributing tens of thousands of\nrecords per pack alongside sibling `TG ArhontCorp`-branded\nchannels (`FateTraffic TG ArhontCorp`, `Slurm Private TG\nArhontCorp`, `KATANA CLOUD PRIVATE TG ArhontCorp`). No\npublished mapping ties the exact bare-KV field vocabulary\nhere to a canonical builder, so family attribution stays a\nCyStack tracking name pending a curated writeup.",
+  "detection_notes": "Fingerprint requires line-anchored `Execution Path:` AND\n`Installed RAM:` AND the `forzatraffic` archive-tree token\nin the observed system-path breadcrumbs. The two peer bare\nKey-Value parsers cleanly decline the same body when the\n`(sig:UNIX.HEX)` watermark and the `RÔýĆløud` reseller\nbanner are both absent, so channel attribution lands on\nthis profile.",
+  "id": "cs-forza-traffic-stealer",
+  "name": "CSForzaTrafficStealer",
+  "related_families": [
+    "cs-roy-cloud-info-stealer",
+    "cs-sig-info-stealer"
+  ],
+  "sources": [
+    "https://heroic.com/darkhive-breaches/fatetraffic-tg-arhontcloud-uploaded-by-a-telegram-user/",
+    "https://heroic.com/darkhive-breaches/logs-uploaded-by-a-telegram-user-breach-2023/"
+  ],
+  "typical_targets": [
+    "Browser saved credentials, cookies, autofill",
+    "System hardware and identity inventory",
+    "Installed antivirus product identity"
+  ],
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@FORZATRAFFICx",
+      "fields": [
+        "Antivirus",
+        "Build Date",
+        "Computer Name",
+        "Configuration",
+        "Display Resolution",
+        "Elevated",
+        "Execution Path",
+        "Graphics Card",
+        "HWID",
+        "Install Date",
+        "Installed RAM",
+        "Netbios",
+        "Operation System",
+        "Processor",
+        "Processor Cores",
+        "Processor Threads",
+        "System Date",
+        "Time Zone",
+        "User Language",
+        "User Name"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "format_id": "cs-forzatraffic-stealer",
+      "id": "v_243781523ca2e74811e2e8ecf7b8cea3",
+      "markers": [
+        "│ [ CLÓUD CHANNEL - @forza_traffic ] [ SUPPORT - @ez_sources ] │"
+      ],
+      "panel_brand": "@FORZATRAFFICx",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_243781523ca2e74811e2e8ecf7b8cea3/Info.txt",
+        "sha256": "0d1d48d0eefa4e15994db2039cceafd04d15d7b11c57101cb7514ccf28c21e1d",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}
