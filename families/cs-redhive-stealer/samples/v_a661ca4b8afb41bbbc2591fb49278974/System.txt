@@ -1,0 +1,36 @@
+
+    ________  ________      ___    ___ ________  ___       ________  ___  ___  ________     
+    |\   __  \|\   __  \    |\  \  /  /|\   ____\|\  \     |\   __  \|\  \|\  \|\   ___ \    
+    \ \  \|\  \ \  \|\  \   \ \  \/  / | \  \___|\ \  \    \ \  \|\  \ \  \\  \ \  \_|\ \   
+     \ \   _  _\ \  \\  \   \ \    / / \ \  \    \ \  \    \ \  \\  \ \  \\  \ \  \ \ \  
+      \ \  \  \ \  \\  \   \/  /  /   \ \  \____\ \  \____\ \  \\  \ \  \\  \ \  \_\ \ 
+       \ \__\ _\ \_______\__/  / /      \ \_______\ \_______\ \_______\ \_______\ \_______        \|__|\|__|\|_______|\___/ /        \|_______|\|_______|\|_______|\|_______|\|_______|1
+                           \|___|/                                                           
+    
+ CZQl8oRm RÔýĆløudL7ldZXEJ19
+
+- Redhive Stealer: 11.05.2026
+- Lid: 1093215276
+
+- Configuration: 
+
+- OS Version: Windows 10 Pro (10.0.26200) x64
+- System Installed: 2026-04-15
+- Local Date: 29.08.2026 15:47:02
+- Time Zone: UTC-5
+- Computer: <HOST>
+- User: <USER>
+- Language: es-MX
+
+- Anti Virus: Windows Defender
+- HWID: <HWID>
+- RAM Size: 32 GB
+- CPU Name: 12th Gen Intel(R) Core(TM) i9-12900KS
+- CPU Threads: 24
+- CPU Cores: 16
+- GPU: AMD Radeon RX 9070 XT
+- Display resolution: 3840x2160
+
+- IP Address: <IP>
+- Time Save Log: 2026-08-29 13:46:52
+- Country: CO

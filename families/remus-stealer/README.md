@@ -13,8 +13,8 @@ a different banner and distribution channel.
 - Classification: **Known malware family**
 - Attribution confidence: **high**
 - Aliases: `Remus`
-- Variants observed: **2**
-- CyStack observations represented: **55**
+- Variants observed: **3**
+- CyStack observations represented: **56**
 
 ## What it targets
 
@@ -48,6 +48,24 @@ Recognition anchors:
 
 - Stable markers: `# REMUS LOG`, `hardware:`, `os:`
 - Field labels: `elevated`, `ip-address`
+
+### `v_35b77a5daa4d8a67c5e2aacb67efa6c2`
+
+- Format ID: `remus`
+- Observed filenames: `Info.txt`
+- Panel brand: `RoyCloud`
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `yaml-build-root`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_35b77a5daa4d8a67c5e2aacb67efa6c2/Info.txt)
+- Sample SHA-256: `34d8e7925ca6c707bdbb30cd5625ea084875b7f31fcb3f4f86c26a8876c5f8e6`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `hardware:`
+- Field labels: `/`, `/<IP>\ \ /`, `<IP>\| \<IP>/____/ \`, `<IP>\| \| \`, `<IP>\| ~\| \`, `<IP>\|\`, `\`, `\/____\|`, `\<IP>/ \|`, `\<IP>\| \| \<IP>/____/ \`, `anti-virus`, `Brute all crypto wallets`, `build`, `BUY STEALER - https`, `C`, `computer-name`, `core count`, `core enabled`, `country`, `cpu`, `date`, `display`, `domain`, `elevated`, `gpu`, `hardware`, `hostname`, `install-date`, `ip-address`, `language`, `local-date`, `manufacturer`, `motherboard`, `name`, `netbios`, `os`, `path`, `product`, `ram`, `size`, `state`, `tag`, `Telegram`, `thread count`, `time`, `time-zone`, `user-name`, `version`, `\|`
 
 ### `v_40b69f8215f8aad13e8f74334058d313`
 

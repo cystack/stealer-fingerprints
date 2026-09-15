@@ -1,0 +1,92 @@
+{
+  "aliases": [
+    "RoyCloud bare-KV Info.txt panel",
+    "RÔýĆløud watermarked Redline-style Info.txt"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1518.001",
+      "name": "Security Software Discovery"
+    }
+  ],
+  "attribution_confidence": "unknown",
+  "classification": "cystack_named",
+  "description": "CSRoyCloudInfoStealer is a CyStack-coined identifier for a\nbare `Key: Value` `Info.txt` panel wrapped in the RoyCloud\nreseller banner watermark. Observed inside\n`BONUS$#01(c)_NEW_ROYCLOUD_HQ_MIX_<n>_<Mon>_<YYYY>.part1.rar`\narchives at `<CC>_<IPv4>-<HWID>/Info.txt` victim folders\n(e.g. `AU_115.130.78.139-5B13BE2108/Info.txt`).\n\nThe banner block above the body is a decorative ASCII-art\nrendering of `ROYCLOUD` (repeated several times in different\nblock-drawing character sets) plus two watermark lines whose\ndistinctive stylised literal is `RÔýĆløud` (Latin capital R,\nLatin capital O with circumflex, Latin small y with acute,\nLatin capital C with acute, Latin small l, Latin small o with\nstroke, Latin small u, Latin small d). Random-alphanumeric\nprefix / suffix strings around the literal rotate per sample.\n\nBody fields: `Build Date` (C-preprocessor `__DATE__` shape),\n`Configuration` (usually empty), `Execution Path`, `Elevated`,\n`Computer Name`, `User Name`, `User Language`, `Netbios`,\n`Operation System` (sic typo carried from Redline / Lumma\nsources), `Install Date`, `System Date`, `Time Zone`,\n`Antivirus`, `HWID`, `Processor`, `Processor Threads`,\n`Processor Cores`, `Graphics Card`, `Installed RAM`,\n`Display Resolution`. The body is flat (no leading-dash\nprefix unlike Lumma / Deimos / BABA), no `FileLocation:` /\n`Build ID:` (unlike canonical Redline), and not YAML (unlike\nRemus). Unlike the sibling bare-KV `CSSigInfoStealer` layout,\nthis variant carries no `IP Address:` / `Time:` / `Country:` /\n`User:` panel-metadata footer; the victim IP / country /\nHWID are moved into the archive-path token instead.\n\nFamily attribution is provisional. The RoyCloud panel brand\nhas no curated CTI writeup or Telegram aggregator index\nattestation as of integration; the body vocabulary matches\nthe Redline-shape / Lumma-influenced hybrid also seen in\n`CSSigInfoStealer` but does not itself match any single\ncanonical family layout. The stylised `RÔýĆløud` watermark\nhas also been observed wrapping Remus-shape Info.txt bodies\nfrom the same reseller.",
+  "detection_notes": "Fingerprint requires the stylised `RÔýĆløud` panel watermark\nliteral AND the `Execution Path:` field name AND the\n`Installed RAM:` field name. The panel watermark alone is\nunique to the RoyCloud reseller; pairing it with the two\nRedline-style bare-KV anchors excludes hypothetical\nunrelated documents that happen to quote the banner literal.\nCanonical Redline declines because of the absent operator\nbanner and `FileLocation:` / `Build ID:` keys. Canonical\nLumma declines because of the absent `- ` dash prefix on\nevery field. The sibling `CSSigInfoStealer` bare-KV shape\ndeclines because of the absent `(sig:UNIX.HEX)` Lumma\nwatermark on the `Time:` line, and because this RoyCloud\nvariant strips the `Time:` line entirely.",
+  "id": "cs-roy-cloud-info-stealer",
+  "name": "CSRoyCloudInfoStealer",
+  "related_families": [
+    "remus-stealer",
+    "redline",
+    "cs-sig-info-stealer"
+  ],
+  "sources": [],
+  "typical_targets": [
+    "Host metadata: hostname, NetBIOS, Windows username, language",
+    "OS fingerprint with build number and architecture",
+    "Hardware inventory: CPU model with cores/threads, GPU, installed RAM",
+    "Installed antivirus product name",
+    "Sample execution path and elevation flag"
+  ],
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": null,
+      "fields": [
+        "/",
+        "/<IP>\\ \\ /",
+        "<IP>| \\<IP>/____/ \\",
+        "<IP>| | \\",
+        "<IP>| ~| \\",
+        "<IP>|\\",
+        "\\",
+        "\\/____|",
+        "\\<IP>/ |",
+        "\\<IP>| | \\<IP>/____/ \\",
+        "Antivirus",
+        "Build Date",
+        "Computer Name",
+        "Configuration",
+        "Display Resolution",
+        "Elevated",
+        "Execution Path",
+        "Graphics Card",
+        "HWID",
+        "Install Date",
+        "Installed RAM",
+        "Netbios",
+        "Operation System",
+        "Processor",
+        "Processor Cores",
+        "Processor Threads",
+        "System Date",
+        "Time Zone",
+        "User Language",
+        "User Name",
+        "|"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "format_id": "cs-roycloud-info-stealer",
+      "id": "v_f4b3735510ac3fefebbf122c82df736e",
+      "markers": [],
+      "panel_brand": "RoyCloud",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_f4b3735510ac3fefebbf122c82df736e/Info.txt",
+        "sha256": "806f4cf1111fb161c8825edac24d6292e833d8b4f93d488a509d05fffda38e10",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}

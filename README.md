@@ -8,14 +8,14 @@ Every retained variant has exactly one representative text sample from the CySta
 
 ## Corpus at a glance
 
-- **193** research profiles
+- **195** research profiles
 - **41** known malware families
 - **2** observed self-labels without independent family attribution
-- **135** CyStack tracking names
-- **10** CyStack names mapped to a known parent family
+- **136** CyStack tracking names
+- **11** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **125** observed log variants and **125** samples
-- **8,052,879** CyStack observations represented by the retained sample set
+- **128** observed log variants and **128** samples
+- **8,052,882** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -70,7 +70,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [PXA Stealer](families/pxa-stealer/) | high | 2 | [2 retained](families/pxa-stealer/#observed-log-variants) |
 | [Raccoon](families/raccoon/) | high | 2 | [2 retained](families/raccoon/#observed-log-variants) |
 | [Redline](families/redline/) | high | 2 | [2 retained](families/redline/#observed-log-variants) |
-| [Remus Stealer](families/remus-stealer/) | high | 2 | [2 retained](families/remus-stealer/#observed-log-variants) |
+| [Remus Stealer](families/remus-stealer/) | high | 3 | [3 retained](families/remus-stealer/#observed-log-variants) |
 | [Rhadamanthys](families/rhadamanthys/) | medium | 0 | Metadata only |
 | [RisePro](families/rise-pro/) | medium | 0 | Metadata only |
 | [RL Stealer](families/rl-stealer/) | medium | 2 | [2 retained](families/rl-stealer/#observed-log-variants) |
@@ -91,7 +91,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Antarctida Stealer](families/antarctida-stealer/) | unknown | 1 | [1 retained](families/antarctida-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (135)
+### CyStack tracking names (136)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -201,6 +201,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSProcessElevationStealer](families/cs-process-elevation-stealer/) | medium | 0 | Metadata only |
 | [CSPyHostTimeStealer](families/cs-py-host-time-stealer/) | unknown | 0 | Metadata only |
 | [CSRFDStealer](families/csrfd-stealer/) | unknown | 0 | Metadata only |
+| [CSRoyCloudInfoStealer](families/cs-roy-cloud-info-stealer/) | unknown | 1 | [1 retained](families/cs-roy-cloud-info-stealer/#observed-log-variants) |
 | [CSSigInfoStealer](families/cs-sig-info-stealer/) | low | 1 | [1 retained](families/cs-sig-info-stealer/#observed-log-variants) |
 | [CSSlurmCloudStealer](families/cs-slurm-cloud-stealer/) | unknown | 0 | Metadata only |
 | [CSSoftHostStealer](families/cs-soft-host-stealer/) | unknown | 0 | Metadata only |
@@ -231,7 +232,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [PyInfo Stealer](families/py-info-stealer/) | unknown | 1 | [1 retained](families/py-info-stealer/#observed-log-variants) |
 | [RedlineLike Stealer](families/redline-like-stealer/) | unknown | 6 | [6 retained](families/redline-like-stealer/#observed-log-variants) |
 
-### Mapped family variants (10)
+### Mapped family variants (11)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -245,6 +246,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSHunterCloudStealer](families/cs-hunter-cloud-stealer/) → [redline](families/redline/) | high | 0 | Metadata only |
 | [CSKortexStealer](families/cs-kortex-stealer/) → [lumma](families/lumma/) | low | 0 | Metadata only |
 | [CSPrimoCloudStealer](families/cs-primo-cloud-stealer/) → [redline](families/redline/) | high | 0 | Metadata only |
+| [CSRedhiveStealer](families/cs-redhive-stealer/) → [lumma](families/lumma/) | high | 1 | [1 retained](families/cs-redhive-stealer/#observed-log-variants) |
 
 ### Log aggregators (5)
 

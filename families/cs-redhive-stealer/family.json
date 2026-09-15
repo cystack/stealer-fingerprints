@@ -1,0 +1,100 @@
+{
+  "aliases": [
+    "Redhive Stealer"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1518.001",
+      "name": "Security Software Discovery"
+    }
+  ],
+  "attribution_confidence": "high",
+  "canonical_family": "lumma",
+  "classification": "family_variant",
+  "description": "CSRedhiveStealer is a CyStack-coined identifier for a\nLumma-shape `System.txt` panel that self-brands as\n`Redhive Stealer` on its build banner line. Observed inside\n`BONUS$#01(c)_NEW_ROYCLOUD_HQ_MIX_<n>_<Mon>_<YYYY>.part1.rar`\narchives at `<CC>_<IPv4>-<HWID>/System.txt` victim folders\n(e.g. `CO_181.52.194.15-043BD157EE/System.txt`), preceded by\nthe same stylised `RÔýĆløud` reseller banner that wraps the\nRemus and bare key-value variants distributed through the same\nchannel.\n\nThe body opens with `- Redhive Stealer: <DD.MM.YYYY>` and\n`- Lid: <numeric>`, then continues with the Lumma-canonical\ndash-prefixed field set: `- OS Version`, `- System Installed`\n(ISO calendar date, replaces canonical Lumma `- Install\nDate`), `- Local Date`, `- Time Zone`, `- Computer`, `- User`,\n`- Language`, `- Anti Virus`, `- HWID`, `- RAM Size`, `- CPU\nName`, `- CPU Threads`, `- CPU Cores`, `- GPU`, `- Display\nresolution`, `- IP Address`, `- Time Save Log` (ISO datetime,\nreplaces canonical Lumma `- Time`), `- Country`. The `- CPU\nVendor` field canonical Lumma always emits is absent, and the\nLumma-canonical `(sig:UNIX.HEX)` watermark is stripped\nentirely from the timestamp line. HWID is short-form 8-hex\nrather than the canonical Lumma 32-hex hash.\n\nThe `- Lid`, `- Computer`, `- User`, `- Anti Virus`, `- HWID`,\n`- RAM Size`, `- GPU`, `- IP Address`, `- Country`\ndash-prefixed vocabulary is documented as Lumma-canonical by\nMalBeacon `what-is-this-stealer`, Outpost24 LummaC2 analysis,\nand Cloudflare Cloudforce One playbook analysis of Lumma\npanel output. The `Redhive Stealer` self-brand string is\nnovel and unattested in curated CTI mappings at time of\nintegration; the profile is classified as a Lumma variant\nbecause the field lattice unambiguously matches documented\nLumma output.",
+  "detection_notes": "Fingerprint requires the `- Redhive Stealer` self-brand\nliteral AND the Lumma-canonical `- Lid:` panel affiliate\nidentifier line. Canonical Lumma declines because of the\nabsent `- LummaC2 Build:` header, absent `- CPU Vendor:`\nfield, absent `- Install Date:` field (replaced by\n`- System Installed:` with an ISO calendar date shape),\nand absent `(sig:UNIX.HEX)` timestamp watermark. The\nRedhive self-brand is also carried in the Lumma parser's\nrebrand-exclusion list so canonical Lumma's stripped-variant\nfallback paths cannot accidentally claim a Redhive body. During triage, treat the panel as a Lumma affiliate\nor fork rebrand until published research maps the `Redhive`\nbrand to a specific Lumma successor or to an independent\nbuilder.",
+  "id": "cs-redhive-stealer",
+  "name": "CSRedhiveStealer",
+  "related_families": [
+    "lumma"
+  ],
+  "sources": [
+    "https://github.com/MalBeacon/what-is-this-stealer",
+    "https://outpost24.com/blog/everything-you-need-to-know-lummac2-stealer/",
+    "https://www.cloudflare.com/cloudforce-one/research/loot-load-repeat-dissecting-the-lumma-stealer-playbook/"
+  ],
+  "typical_targets": [
+    "Browser saved credentials and cookies",
+    "Crypto wallet extensions",
+    "Host metadata: hostname, Windows username, language",
+    "OS fingerprint with build number and architecture",
+    "Hardware inventory: CPU model with cores/threads, GPU, installed RAM",
+    "Installed antivirus product name",
+    "Victim public IP plus ISO country code"
+  ],
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": null,
+      "fields": [
+        "Anti Virus",
+        "Computer",
+        "Configuration",
+        "Country",
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "Display resolution",
+        "GPU",
+        "HWID",
+        "IP Address",
+        "Language",
+        "Lid",
+        "Local Date",
+        "OS Version",
+        "RAM Size",
+        "Redhive Stealer",
+        "System Installed",
+        "Time Save Log",
+        "Time Zone",
+        "User"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "format_id": "cs-redhive-stealer",
+      "id": "v_a661ca4b8afb41bbbc2591fb49278974",
+      "markers": [
+        "Redhive Stealer"
+      ],
+      "panel_brand": "Redhive Stealer",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_a661ca4b8afb41bbbc2591fb49278974/System.txt",
+        "sha256": "5eb4654b9b9709cac361932eab0785222777a42c3c9c5aefb98d5297dc6d5257",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}
