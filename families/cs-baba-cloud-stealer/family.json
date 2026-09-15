@@ -1,0 +1,98 @@
+{
+  "aliases": [
+    "BabaCloud Logs",
+    "BabaCloudLogs",
+    "@BabaCloud_New"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "attribution_confidence": "medium",
+  "canonical_family": "vidar",
+  "classification": "family_variant",
+  "description": "CSBabaCloudStealer is a CyStack tracking name for a\nVidar-shaped `System_Info.txt` distributed by the\n`@BabaCloud_New` Telegram channel operator. Victim folders\nfollow the shape `@BabaCloud_New {<seq>} [<CC>]_<IPv4>_\n<HWID8>_<DDMMYYYY>_<HHMMSS>` and ship inside archives\nnamed `@BabaCloudNew { <count> } Logs Cloud <DDMMYYYY>.rar`.\n\nThe body carries the Vidar-canonical identifier preamble\n(`MachineID`, `GUID`, `HWID`, `Path`, `Work Dir`, `Windows`,\n`Computer Name`, `User Name`, `Display Resolution`) plus the\nVidar-canonical five-field hardware tuple (`Processor`,\n`Cores`, `Threads`, `RAM`, `VideoCard`) that public reporting\ndocuments as Vidar's own build-4.x+ schema. The rebrand\nstrips `Version`, `Install date`, `AV`, `Display Language`,\n`Keyboard Languages`, `Local Time`, `TimeZone`, and the\ntrailing `[Processes]` and `[Software]` sections.\n\nDistinctive presentation differences vs the canonical Vidar\nbody: every field uses a space-before-colon form\n(`Key : Value`), the harvest wall clock is split across\nadjacent `Date :` and `Time :` lines instead of a single\ncombined value, the hardware block is introduced by a\n`--- [ Hardware ] ---` dash-boxed header rather than a bare\n`[Hardware]` bracket header, and absent-path victims carry a\n`Path : >-` YAML-block-scalar sentinel. The framing banner\nis an angle-bracket sandwiched caret block advertising\n`Main Channel - @Baba_Logs`, `Public Logs Channel :\n@BabaCloud_New`, `Public Ulp Channel : @BabaUlp_New`, and\n`Admin : @Mr_Ghost_004` between two horizontal rules.\n\nPublic reporting attests `@BabaCloud_New` as a\nTelegram-distributed cloud-logs operation that has released\nmultiple thousand-record credential dumps since mid-2025 but\ndoes not explicitly name the underlying panel family. The\nVidar attribution here is inferred from the identifier\npreamble plus the five-field hardware tuple - a combination\nthat is Vidar-canonical - and is retained at medium\nconfidence pending an explicit rebrand mapping.\n\nThis tracking name is unrelated to the `CSBabaStealer`\nprofile, which covers a `.B.A.B.A.` Lumma-rebrand distributed\nby a different operator; the shared `Baba` substring in the\nnames is incidental.",
+  "detection_notes": "Fingerprint requires the `@BabaCloud_New` distributor-brand\nliteral present in content AND at least one Vidar-canonical\nfield line-anchored with the space-before-colon form\n(`MachineID :` OR `VideoCard :`). Canonical Vidar cleanly\ndeclines these bodies because every canonical fingerprint\nrequires the `Key:` no-space form.",
+  "id": "cs-baba-cloud-stealer",
+  "name": "CSBabaCloudStealer",
+  "related_families": [
+    "vidar"
+  ],
+  "sources": [
+    "https://www.trendmicro.com/en_us/research/25/j/how-vidar-stealer-2-upgrades-infostealer-capabilities.html",
+    "https://www.kaspersky.com/resource-center/threats/vidar-stealer",
+    "https://heroic.com/darkhive-breaches/babacloudlogs-stealer-log-22361-credentials-leaked/",
+    "https://heroic.com/darkhive-breaches/babacloudlogs-stealer-log-breach-explained-17507-records/"
+  ],
+  "typical_targets": [
+    "Browser saved credentials, cookies, autofill",
+    "Crypto wallet extensions and desktop clients",
+    "Cloud service session tokens and endpoint URLs",
+    "System hardware and identity inventory"
+  ],
+  "variants": [
+    {
+      "attribution_confidence": "medium",
+      "distribution_channel": "@Baba_Logs",
+      "fields": [
+        "< Admin",
+        "< https",
+        "< Public Logs Channel",
+        "< Public Ulp Channel",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "IP",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "Time",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "System_Info.txt"
+      ],
+      "format_id": "cs-baba-cloud-stealer",
+      "id": "v_636e5657cf3f5ac2f89d1f6765a6f2b9",
+      "markers": [
+        "< Main Channel - @Baba_Logs . >",
+        "@BabaCloud_New"
+      ],
+      "panel_brand": "@BabaCloud_New",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_636e5657cf3f5ac2f89d1f6765a6f2b9/System_Info.txt",
+        "sha256": "56e50db45ad291ded9819a0dee4f0c71f85ca2ae13168f5d72058a32dd0cf321",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}

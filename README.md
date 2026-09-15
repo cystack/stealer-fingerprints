@@ -8,14 +8,14 @@ Every retained variant has exactly one representative text sample from the CySta
 
 ## Corpus at a glance
 
-- **192** research profiles
+- **193** research profiles
 - **41** known malware families
 - **2** observed self-labels without independent family attribution
 - **135** CyStack tracking names
-- **9** CyStack names mapped to a known parent family
+- **10** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **124** observed log variants and **124** samples
-- **8,052,878** CyStack observations represented by the retained sample set
+- **125** observed log variants and **125** samples
+- **8,052,879** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -231,11 +231,12 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [PyInfo Stealer](families/py-info-stealer/) | unknown | 1 | [1 retained](families/py-info-stealer/#observed-log-variants) |
 | [RedlineLike Stealer](families/redline-like-stealer/) | unknown | 6 | [6 retained](families/redline-like-stealer/#observed-log-variants) |
 
-### Mapped family variants (9)
+### Mapped family variants (10)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
 | [CSALStealer](families/csal-stealer/) → [lumma](families/lumma/) | medium | 1 | [1 retained](families/csal-stealer/#observed-log-variants) |
+| [CSBabaCloudStealer](families/cs-baba-cloud-stealer/) → [vidar](families/vidar/) | medium | 1 | [1 retained](families/cs-baba-cloud-stealer/#observed-log-variants) |
 | [CSBabaStealer](families/cs-baba-stealer/) → [lumma](families/lumma/) | high | 1 | [1 retained](families/cs-baba-stealer/#observed-log-variants) |
 | [CSDarkSideCloudStealer](families/cs-dark-side-cloud-stealer/) → [redline](families/redline/) | high | 0 | Metadata only |
 | [CSDeimosStealer](families/cs-deimos-stealer/) → [lumma](families/lumma/) | medium | 1 | [1 retained](families/cs-deimos-stealer/#observed-log-variants) |
