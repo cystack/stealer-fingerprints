@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **191** research profiles
-- **40** known malware families
+- **194** research profiles
+- **42** known malware families
 - **2** observed self-labels without independent family attribution
-- **133** CyStack tracking names
+- **134** CyStack tracking names
 - **11** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **129** observed log variants and **129** samples
-- **8,052,883** CyStack observations represented by the retained sample set
+- **142** observed log variants and **142** samples
+- **8,052,896** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -42,7 +42,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 
 ## Catalog
 
-### Known malware families (40)
+### Known malware families (42)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -52,6 +52,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Arcane](families/arcane/) | high | 3 | [3 retained](families/arcane/#observed-log-variants) |
 | [AuraStealer](families/aura-stealer/) | high | 1 | [1 retained](families/aura-stealer/#observed-log-variants) |
 | [Aurora Stealer](families/aurora-stealer/) | high | 0 | Metadata only |
+| [Bee Stealer](families/bee-stealer/) | high | 1 | [1 retained](families/bee-stealer/#observed-log-variants) |
 | [Blank Grabber](families/blank-grabber/) | high | 3 | [3 retained](families/blank-grabber/#observed-log-variants) |
 | [CryptBot](families/crypt-bot/) | high | 2 | [2 retained](families/crypt-bot/#observed-log-variants) |
 | [Cthulhu Stealer](families/cthulhu-stealer/) | high | 1 | [1 retained](families/cthulhu-stealer/#observed-log-variants) |
@@ -67,14 +68,14 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Nexus](families/nexus/) | medium | 0 | Metadata only |
 | [Odyssey Stealer](families/odyssey-stealer/) | high | 0 | Metadata only |
 | [Phantom Stealer](families/phantom-stealer/) | high | 3 | [3 retained](families/phantom-stealer/#observed-log-variants) |
-| [Phemedrone](families/phemedrone/) | high | 0 | Metadata only |
+| [Phemedrone](families/phemedrone/) | high | 1 | [1 retained](families/phemedrone/#observed-log-variants) |
 | [Phexia](families/phexia/) | high | 1 | [1 retained](families/phexia/#observed-log-variants) |
 | [Predator The Thief](families/predator-the-thief/) | high | 0 | Metadata only |
 | [PureLogs](families/pure-logs/) | high | 1 | [1 retained](families/pure-logs/#observed-log-variants) |
 | [PXA Stealer](families/pxa-stealer/) | high | 2 | [2 retained](families/pxa-stealer/#observed-log-variants) |
 | [Raccoon](families/raccoon/) | high | 2 | [2 retained](families/raccoon/#observed-log-variants) |
 | [Redline](families/redline/) | high | 2 | [2 retained](families/redline/#observed-log-variants) |
-| [Remus Stealer](families/remus-stealer/) | high | 3 | [3 retained](families/remus-stealer/#observed-log-variants) |
+| [Remus Stealer](families/remus-stealer/) | high | 4 | [4 retained](families/remus-stealer/#observed-log-variants) |
 | [Rhadamanthys](families/rhadamanthys/) | medium | 0 | Metadata only |
 | [RisePro](families/rise-pro/) | medium | 0 | Metadata only |
 | [RL Stealer](families/rl-stealer/) | medium | 2 | [2 retained](families/rl-stealer/#observed-log-variants) |
@@ -83,6 +84,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Snake Keylogger](families/snake-keylogger/) | high | 0 | Metadata only |
 | [StealC](families/steal-c/) | high | 2 | [2 retained](families/steal-c/#observed-log-variants) |
 | [Stealerium](families/stealerium/) | high | 1 | [1 retained](families/stealerium/#observed-log-variants) |
+| [Storm Stealer](families/storm-stealer/) | high | 1 | [1 retained](families/storm-stealer/#observed-log-variants) |
 | [Vidar](families/vidar/) | high | 8 | [8 retained](families/vidar/#observed-log-variants) |
 | [WhiteSnake](families/white-snake/) | high | 1 | [1 retained](families/white-snake/#observed-log-variants) |
 | [XFiles](families/x-files/) | high | 2 | [2 retained](families/x-files/#observed-log-variants) |
@@ -91,10 +93,10 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
-| [Antarctida Stealer](families/antarctida-stealer/) | unknown | 1 | [1 retained](families/antarctida-stealer/#observed-log-variants) |
+| [Antarctida Stealer](families/antarctida-stealer/) | unknown | 2 | [2 retained](families/antarctida-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (133)
+### CyStack tracking names (134)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -127,7 +129,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSBrowserProfileStealer](families/cs-browser-profile-stealer/) | unknown | 0 | Metadata only |
 | [CSBrowsersDisplayStealer](families/cs-browsers-display-stealer/) | unknown | 0 | Metadata only |
 | [CSBugattiCloudPcInfoStealer](families/cs-bugatti-cloud-pc-info-stealer/) | unknown | 0 | Metadata only |
-| [CSBugattiPcInfoStealer](families/cs-bugatti-pc-info-stealer/) | unknown | 0 | Metadata only |
+| [CSBugattiPcInfoStealer](families/cs-bugatti-pc-info-stealer/) | unknown | 1 | [1 retained](families/cs-bugatti-pc-info-stealer/#observed-log-variants) |
 | [CSBugattiUserInfoStealer](families/cs-bugatti-user-info-stealer/) | unknown | 0 | Metadata only |
 | [CSBuildBlockStealer](families/cs-build-block-stealer/) | unknown | 1 | [1 retained](families/cs-build-block-stealer/#observed-log-variants) |
 | [CSCardTargetStealer](families/cs-card-target-stealer/) | unknown | 0 | Metadata only |
@@ -145,7 +147,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSDashPlusSepStealer](families/cs-dash-plus-sep-stealer/) | unknown | 1 | [1 retained](families/cs-dash-plus-sep-stealer/#observed-log-variants) |
 | [CSDashSectionStealer](families/cs-dash-section-stealer/) | low | 1 | [1 retained](families/cs-dash-section-stealer/#observed-log-variants) |
 | [CSDataCollectedStealer](families/cs-data-collected-stealer/) | unknown | 1 | [1 retained](families/cs-data-collected-stealer/#observed-log-variants) |
-| [CSDataMonkStealer](families/cs-data-monk-stealer/) | unknown | 0 | Metadata only |
+| [CSDataMonkStealer](families/cs-data-monk-stealer/) | unknown | 1 | [1 retained](families/cs-data-monk-stealer/#observed-log-variants) |
 | [CSDateCreatedStealer](families/cs-date-created-stealer/) | unknown | 0 | Metadata only |
 | [CSDbscProtectedStealer](families/cs-dbsc-protected-stealer/) | unknown | 0 | Metadata only |
 | [CSDiscordDataTokensStealer](families/cs-discord-data-tokens-stealer/) | unknown | 0 | Metadata only |
@@ -170,6 +172,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSGoRuntimeStealer](families/cs-go-runtime-stealer/) | unknown | 1 | [1 retained](families/cs-go-runtime-stealer/#observed-log-variants) |
 | [CSGuidRedlineStealer](families/cs-guid-redline-stealer/) | unknown | 0 | Metadata only |
 | [CSHardwareTailStealer](families/cs-hardware-tail-stealer/) | low | 1 | [1 retained](families/cs-hardware-tail-stealer/#observed-log-variants) |
+| [CSHostHwidStealer](families/cs-host-hwid-stealer/) | unknown | 1 | [1 retained](families/cs-host-hwid-stealer/#observed-log-variants) |
 | [CSImportantFilesOnlyStealer](families/cs-important-files-only-stealer/) | unknown | 0 | Metadata only |
 | [CSInfoNetworkSectionStealer](families/cs-info-network-section-stealer/) | unknown | 0 | Metadata only |
 | [CSInternalIpStealer](families/cs-internal-ip-stealer/) | unknown | 0 | Metadata only |
@@ -203,7 +206,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSPyHostTimeStealer](families/cs-py-host-time-stealer/) | unknown | 0 | Metadata only |
 | [CSRFDStealer](families/csrfd-stealer/) | unknown | 0 | Metadata only |
 | [CSRoyCloudInfoStealer](families/cs-roy-cloud-info-stealer/) | unknown | 1 | [1 retained](families/cs-roy-cloud-info-stealer/#observed-log-variants) |
-| [CSSigInfoStealer](families/cs-sig-info-stealer/) | low | 1 | [1 retained](families/cs-sig-info-stealer/#observed-log-variants) |
+| [CSSigInfoStealer](families/cs-sig-info-stealer/) | low | 2 | [2 retained](families/cs-sig-info-stealer/#observed-log-variants) |
 | [CSSlurmCloudStealer](families/cs-slurm-cloud-stealer/) | unknown | 0 | Metadata only |
 | [CSSoftHostStealer](families/cs-soft-host-stealer/) | unknown | 0 | Metadata only |
 | [CSSoftUrlPassStealer](families/cs-soft-url-pass-stealer/) | unknown | 0 | Metadata only |
@@ -220,7 +223,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSTop20ProcStealer](families/cs-top20-proc-stealer/) | unknown | 0 | Metadata only |
 | [CSTxtFilesPartStealer](families/cs-txt-files-part-stealer/) | unknown | 1 | [1 retained](families/cs-txt-files-part-stealer/#observed-log-variants) |
 | [CSUrlUserPassFromStealer](families/cs-url-user-pass-from-stealer/) | unknown | 0 | Metadata only |
-| [CSUserInfoBracketStealer](families/cs-user-info-bracket-stealer/) | unknown | 3 | [3 retained](families/cs-user-info-bracket-stealer/#observed-log-variants) |
+| [CSUserInfoBracketStealer](families/cs-user-info-bracket-stealer/) | unknown | 5 | [5 retained](families/cs-user-info-bracket-stealer/#observed-log-variants) |
 | [CSUsersListStealer](families/cs-users-list-stealer/) | unknown | 1 | [1 retained](families/cs-users-list-stealer/#observed-log-variants) |
 | [CSWifiBackslashNStealer](families/cs-wifi-backslash-n-stealer/) | unknown | 0 | Metadata only |
 | [CSWLFRCloudStealer](families/cswlfr-cloud-stealer/) | unknown | 1 | [1 retained](families/cswlfr-cloud-stealer/#observed-log-variants) |
@@ -230,7 +233,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Minimal Stealer](families/minimal-stealer/) | unknown | 1 | [1 retained](families/minimal-stealer/#observed-log-variants) |
 | [PCInfo Stealer](families/pc-info-stealer/) | unknown | 1 | [1 retained](families/pc-info-stealer/#observed-log-variants) |
 | [PyInfo Stealer](families/py-info-stealer/) | unknown | 1 | [1 retained](families/py-info-stealer/#observed-log-variants) |
-| [RedlineLike Stealer](families/redline-like-stealer/) | unknown | 6 | [6 retained](families/redline-like-stealer/#observed-log-variants) |
+| [RedlineLike Stealer](families/redline-like-stealer/) | unknown | 7 | [7 retained](families/redline-like-stealer/#observed-log-variants) |
 
 ### Mapped family variants (11)
 
@@ -255,7 +258,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Bugatti Cloud](families/bugatti-cloud/) | unknown | 1 | [1 retained](families/bugatti-cloud/#observed-log-variants) |
 | [CSArtHouseCloudStealer](families/cs-art-house-cloud-stealer/) | unknown | 0 | Metadata only |
 | [CSCashFlowStealer](families/cs-cash-flow-stealer/) | unknown | 0 | Metadata only |
-| [CSPixelCloudStealer](families/cs-pixel-cloud-stealer/) | unknown | 0 | Metadata only |
+| [CSPixelCloudStealer](families/cs-pixel-cloud-stealer/) | unknown | 1 | [1 retained](families/cs-pixel-cloud-stealer/#observed-log-variants) |
 | [CSRussia34Stealer](families/cs-russia34-stealer/) | unknown | 0 | Metadata only |
 
 ## Naming and evidence

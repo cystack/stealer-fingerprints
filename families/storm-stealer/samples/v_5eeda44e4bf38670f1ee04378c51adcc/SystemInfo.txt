@@ -1,0 +1,34 @@
+Storm Stealer
+https://storm-project.biz/support
+
+Remote IP: <IP>
+Location: <LOCATION>
+State/Region: Minas Gerais (MG)
+ZIP/Postal Code: 36200
+Coordinates: <LOCATION>
+Location Accuracy: ±20 km
+Timezone: America/Sao_Paulo
+ISP: <ISP>
+AS Number: AS262680 - OPERA SERVICOS DE TELECOM EIRELI
+
+─────────────────────────────────────────────────────────
+
+OS:       Windows 11 (Build 22000) [x64]
+Computer: <HOST>
+User:     <USER>
+AV:       WinDefender
+
+CPU:      4C / 8T
+RAM: 16339 MB (15.96 GB)
+GPU:      AMD Radeon RX 580 2048SP
+Display:  1366x768 [1 mon]
+
+[1]  IP     <IP>
+MAC    <MAC>
+GW     <IP>
+Name   Realtek PCIe GbE Family Controller
+
+Launch:   Memory
+
+
+─────────────────────────────────────────────────────────

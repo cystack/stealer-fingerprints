@@ -25,6 +25,27 @@
   ],
   "related_families": [],
   "sources": [],
+  "localizations": {
+    "vi": {
+      "description": "Hồ sơ dựa trên nhãn tự khai báo quan sát được cho các nhật ký có `Information.txt` bắt đầu bằng `❄ Antarctida Stealer ❄`. Hiện chưa có phân tích mã độc độc lập nào xác nhận nhãn này là một họ mã độc. Theo sau biểu ngữ là một khối thông tin phần cứng và ngôn ngữ/vùng có dấu gạch đầu dòng (`• OS:`, `• CPU:`).",
+      "typical_targets": [
+        "Kiểm kê phần cứng và hệ điều hành",
+        "Danh tính người dùng và máy tính",
+        "Địa chỉ IP công khai"
+      ],
+      "detection_notes": "Yêu cầu đúng dòng biểu ngữ trang trí hình bông tuyết cùng với các trường có dấu gạch đầu dòng `OS:`, `CPU:` và `Computer Name:`. Biểu ngữ chỉ chứng minh nhãn quan sát được, không chứng minh nguồn gốc mã độc; giữ hồ sơ này ở mức quy kết chưa xác định cho đến khi có phân tích độc lập ánh xạ được tệp thực thi hoặc định dạng dữ liệu đầu ra.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        }
+      ]
+    }
+  },
   "variants": [
     {
       "id": "v_04bcb3b8fdb3ba04fb2e9c8bdfbf63bd",
@@ -46,27 +67,38 @@
         "source": "cystack_collection",
         "sanitized": true
       }
-    }
-  ],
-  "localizations": {
-    "vi": {
-      "description": "Hồ sơ dựa trên nhãn tự khai báo quan sát được cho các nhật ký có `Information.txt` bắt đầu bằng `❄ Antarctida Stealer ❄`. Hiện chưa có phân tích mã độc độc lập nào xác nhận nhãn này là một họ mã độc. Theo sau biểu ngữ là một khối thông tin phần cứng và ngôn ngữ/vùng có dấu gạch đầu dòng (`• OS:`, `• CPU:`).",
-      "typical_targets": [
-        "Kiểm kê phần cứng và hệ điều hành",
-        "Danh tính người dùng và máy tính",
-        "Địa chỉ IP công khai"
+    },
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": null,
+      "fields": [
+        "Computer Name",
+        "CPU",
+        "Disk",
+        "GPU",
+        "IP",
+        "OS",
+        "RAM",
+        "System Directory",
+        "Username"
       ],
-      "detection_notes": "Yêu cầu đúng dòng biểu ngữ trang trí hình bông tuyết cùng với các trường có dấu gạch đầu dòng `OS:`, `CPU:` và `Computer Name:`. Biểu ngữ chỉ chứng minh nhãn quan sát được, không chứng minh nguồn gốc mã độc; giữ hồ sơ này ở mức quy kết chưa xác định cho đến khi có phân tích độc lập ánh xạ được tệp thực thi hoặc định dạng dữ liệu đầu ra.",
-      "attack_techniques": [
-        {
-          "id": "T1082",
-          "name": "Dò tìm thông tin hệ thống"
-        },
-        {
-          "id": "T1033",
-          "name": "Xác định chủ sở hữu/người dùng hệ thống"
-        }
-      ]
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "antarctida",
+      "id": "v_c935b3796d814f9bc9b02e605fc7d622",
+      "markers": [
+        "Antarctida Stealer",
+        "❄ Antarctida Stealer ❄"
+      ],
+      "panel_brand": "Antarctida Stealer",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_c935b3796d814f9bc9b02e605fc7d622/Information.txt",
+        "sha256": "bbbe1d02d8f4b27faefd3b116ba47fa7fb3ab67bc509d3c43e56b617ac753ae7",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
     }
-  }
+  ]
 }

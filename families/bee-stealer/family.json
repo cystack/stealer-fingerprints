@@ -1,0 +1,140 @@
+{
+  "aliases": [
+    "Bee",
+    "BeeStealer"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1083",
+      "name": "File and Directory Discovery"
+    },
+    {
+      "id": "T1027",
+      "name": "Obfuscated Files or Information"
+    }
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "Bee Stealer is a commercially-sold malware-as-a-service\ninfostealer first publicly documented by Flashpoint in the\n\"Infostealers to Watch in 2025\" brief. Public reporting\nplaces the June 2025 debut at roughly $300 per month on a\ncentralized-panel model that does not permit customers to\nself-host, with a stated feature list covering credential /\ncookie / card / cryptocurrency wallet theft plus\nattacker-configurable file grabbing. Downstream aggregator\ntraffic markets (for example the `@FATETRAFFIC` Telegram\nMIX packs) resell Bee logs alongside other families.\n\nThe panel writes a per-victim `UserInfo.txt` opening with\nan ASCII-art bee mascot rendered from parenthesis and\nbackslash glyphs and a `Bee stealer` self-brand banner line\nin lowercase, separated from the device block by a\nfixed-width 28-hyphen dash rule. The device block uses a\nhyphenated lowercase key vocabulary (`os`, `time-zone`,\n`local-date`, `language`, `computer-name`, `netbios`,\n`hostname`, `user-name`, `domain`, `cpu-cores`, `cpu`,\n`ram-total`, `display-x`, `display-y`, `gpu`) in flat plain\ntext rather than the YAML block layout Remus uses. A\ntrailing block carries capitalised `Ip` and `Country` keys\nand the report closes with a `Procces riped: True` boolean\nthat surfaces the panel writer typo verbatim across observed\nsamples.",
+  "detection_notes": "High-confidence trigger: the `Bee stealer` self-brand token\nAND a line-anchored `cpu-cores:` hyphenated field. The\ntwo-anchor requirement guards against CTI report excerpts\nthat quote the brand string in prose without shipping the\npanel body. The ASCII-art bee mascot, the split\n`display-x` / `display-y` dimension pair, and the trailing\n`Procces riped: True` typo footer are supporting Bee-specific\nartefacts once the primary anchors have fired.",
+  "id": "bee-stealer",
+  "name": "Bee Stealer",
+  "related_families": [],
+  "sources": [
+    "https://flashpoint.io/blog/infostealers-2025-katz-bee-acreed-more/"
+  ],
+  "typical_targets": [
+    "Browser saved credentials, cookies, autofill, card data",
+    "Cryptocurrency wallet browser extensions and desktop clients",
+    "KeePass, Telegram, FileZilla, Binance credential stores",
+    "Host metadata: hostname, NetBIOS, Windows username, language",
+    "OS fingerprint and hardware inventory",
+    "File grabber configurable by extension and folder"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Bee Stealer là một mã độc đánh cắp thông tin dạng malware-as-a-service được thương mại hóa, lần đầu tiên được Flashpoint công khai ghi nhận trong báo cáo \"Infostealers to Watch in 2025\". Các báo cáo công khai xác định thời điểm ra mắt vào tháng 6 năm 2025 với mức giá khoảng 300 đô la mỗi tháng theo mô hình bảng điều khiển tập trung, không cho phép khách hàng tự lưu trữ (self-host), cùng danh sách tính năng được công bố bao gồm đánh cắp thông tin xác thực / cookie / thông tin thẻ / ví tiền điện tử cùng với mô-đun thu thập tệp có thể được đối tượng tấn công tùy chỉnh cấu hình. Các chợ giao dịch dữ liệu trung gian ở hạ nguồn (ví dụ như các gói MIX trên Telegram `@FATETRAFFIC`) bán lại nhật ký của Bee cùng với các họ mã độc khác.\n\nBảng điều khiển tạo ra một tệp `UserInfo.txt` cho mỗi nạn nhân, mở đầu bằng một hình vẽ ASCII linh vật con ong được dựng từ các ký tự ngoặc đơn và dấu gạch chéo ngược, cùng một dòng biểu ngữ tự thương hiệu `Bee stealer` viết thường, được ngăn cách với khối thông tin thiết bị bằng một đường kẻ ngang cố định 28 dấu gạch nối. Khối thông tin thiết bị sử dụng bộ từ khóa viết thường có gạch nối (`os`, `time-zone`, `local-date`, `language`, `computer-name`, `netbios`, `hostname`, `user-name`, `domain`, `cpu-cores`, `cpu`, `ram-total`, `display-x`, `display-y`, `gpu`) dưới dạng văn bản thuần túy phẳng thay vì bố cục khối YAML mà Remus sử dụng. Một khối theo sau chứa các khóa viết hoa `Ip` và `Country`, và báo cáo kết thúc bằng một giá trị boolean `Procces riped: True` thể hiện nguyên văn lỗi chính tả của người viết bảng điều khiển trên các mẫu quan sát được.",
+      "typical_targets": [
+        "Thông tin xác thực, cookie, dữ liệu tự động điền, thông tin thẻ được lưu trong trình duyệt",
+        "Các tiện ích mở rộng trình duyệt và ứng dụng desktop ví tiền điện tử",
+        "Kho lưu trữ thông tin xác thực của KeePass, Telegram, FileZilla, Binance",
+        "Thông tin thiết bị: tên máy, NetBIOS, tên người dùng Windows, ngôn ngữ",
+        "Dấu vân tay hệ điều hành và thông tin kiểm kê phần cứng",
+        "Mô-đun thu thập tệp có thể cấu hình theo phần mở rộng và thư mục"
+      ],
+      "detection_notes": "Dấu hiệu kích hoạt có độ tin cậy cao: mã thương hiệu tự nhận diện `Bee stealer` KẾT HỢP VỚI trường có gạch nối `cpu-cores:` được neo theo dòng. Yêu cầu hai điểm neo này nhằm tránh trường hợp các đoạn trích từ báo cáo CTI dẫn lại chuỗi thương hiệu trong văn bản mà không kèm theo nội dung thực tế của bảng điều khiển. Hình vẽ ASCII linh vật con ong, cặp kích thước tách biệt `display-x` / `display-y`, và phần chân trang chứa lỗi chính tả `Procces riped: True` là các dấu vết đặc trưng bổ sung của Bee sau khi các điểm neo chính đã được kích hoạt.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1083",
+          "name": "Dò tìm tệp và thư mục"
+        },
+        {
+          "id": "T1027",
+          "name": "Tệp hoặc thông tin bị làm rối"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": null,
+      "fields": [
+        "computer-name",
+        "Country",
+        "cpu",
+        "cpu-cores",
+        "display-x",
+        "display-y",
+        "domain",
+        "gpu",
+        "hostname",
+        "Ip",
+        "language",
+        "local-date",
+        "netbios",
+        "os",
+        "Procces riped",
+        "ram-total",
+        "time-zone",
+        "user-name"
+      ],
+      "filenames": [
+        "UserInfo.txt"
+      ],
+      "format_id": "bee-stealer",
+      "id": "v_89b6be67a6b6975295164997e044362f",
+      "markers": [
+        "Bee stealer <\\\\ |"
+      ],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_89b6be67a6b6975295164997e044362f/UserInfo.txt",
+        "sha256": "0b2930290f05ecc20345d0e7e159aa9c61f3e5534d04747773a7b3fd0c9ab2a9",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}

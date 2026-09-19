@@ -1,0 +1,43 @@
+
+                                          
+ █████  ███████ ████████ ██   ██ ███████ ██████  ██ ███████ 
+██   ██ ██         ██    ██   ██ ██      ██   ██ ██ ██      
+███████ █████      ██    ███████ █████   ██████  ██ ███████ 
+██   ██ ██         ██    ██   ██ ██      ██   ██ ██      ██ 
+██   ██ ███████    ██    ██   ██ ███████ ██   ██ ██ ███████ 
+                                                            
+                                                            
+                                     
+                               Developer @sexyweekly
+[User Info]
+User: <USER>
+Machine: <HOST>
+Now: 2026-07-18 17:38:31
+Input ISO: ru
+Hwid: <HWID>
+Clipboard: <SECRET>
+
+[Network]
+External IP: <IP>
+Internal IP: <IP>
+Default Gateway: <IP>
+
+[System]
+OS Product: Windows 10 Pro 2009
+OS Build: 19045
+OS Arch: x64
+CPU Name: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+Logical Cores: 4
+RAM Total (MB): 6026
+RAM Available (MB): 1135
+
+[Drives]
+C: Fixed FS:NTFS Size:214GB Free:92GB
+E: Fixed FS:NTFS Size:483GB Free:344GB
+
+[GPU]
+Intel(R) HD Graphics 4000
+
+[Basic]
+User Domain: <HOST>
+CLR Version: 4.0.30319.42000

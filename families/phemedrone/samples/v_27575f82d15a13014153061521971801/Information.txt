@@ -1,0 +1,45 @@
+
+    ,d88b.d88b,    
+    88888888888    Custom Stealer
+    `Y8888888Y'    04/07/2026 00:20:17
+      `Y888Y'      improved and configured by @snyuw
+        `Y'        Tag: namemc, google, minecraft, vape.gg, microsoft, universocraft
+
+    ----- Geolocation Data -----
+
+IP:                      <IP>
+Country:                 Indonesia (ID)
+City:                    <LOCATION>
+Postal:                  <LOCATION>
+MAC:                     <MAC>
+
+    ----- Hardware Info -----
+
+Username:                <USER> 
+Windows name:            Windows 10 Enterprise x64
+Hardware ID:             <HWID>
+Screen Resolution:       1366x768
+GPU:                     NVIDIA GeForce GT 730
+CPU:                     Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz
+RAM:                     16 GB
+Uptime:                  0d 0h 2m 0s
+Battery:                 NoSystemBattery (100%)
+
+    ----- Report Contents -----
+
+Passwords:               <SECRET>
+Cookies:                 <SECRET>
+Credit Cards:            0
+AutoFills:               1292
+Extensions:              0
+Wallets:                 0
+Gaming:                  3
+Files:                   15
+
+Detected Tags:           google, microsoft
+
+    ----- Miscellaneous -----
+
+Antivirus products:      Malwarebytes, Windows Defender
+File Location:           <PATH>
+Clipboard text:          <SECRET>

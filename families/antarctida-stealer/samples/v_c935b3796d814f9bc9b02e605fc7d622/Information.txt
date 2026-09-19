@@ -1,0 +1,11 @@
+❄ Antarctida Stealer ❄
+
+• OS: Windows 10
+• CPU: Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz
+• RAM: 8 GB
+• GPU: Intel(R) HD Graphics 4600
+• Disk: 465 GB
+• IP: <IP>
+• Username: <USER>
+• Computer Name: <HOST>
+• System Directory: C:\Windows\system32

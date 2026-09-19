@@ -20,7 +20,8 @@ CSPixelCloudStealer là định danh do CyStack đặt cho tệp ``System.txt`` 
 - Classification / Phân loại: **Log aggregator / Nguồn tổng hợp log**
 - Attribution confidence: **unknown**
 - Aliases: `PIXELCLOUD3`, `OBSCLOUD`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -45,7 +46,24 @@ Cấu trúc dữ liệu của phần thân trùng khớp với các biến thể
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_d73679982ffbd4a944760d7d353aee79`
+
+- Format ID: `cs-pixel-cloud-stealer`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: `PIXELCLOUD3 (RedlineLike Admin/Integrity)`
+- Distribution channel: `t.me/PIXELCLOUD3`
+- Attribution confidence: **high**
+- Layout: `redline-like`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_d73679982ffbd4a944760d7d353aee79/UserInformation.txt)
+- Sample SHA-256: `4c72ad178a8174718586bccfe7cbc82d9892dcd71cf1211d9c395630b2cb0a16`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `Installed RAM`, `Integrity`, `IP`, `Keyboard Language`, `Log date`, `now`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Version Build`
+
 
 ## MITRE ATT&CK
 

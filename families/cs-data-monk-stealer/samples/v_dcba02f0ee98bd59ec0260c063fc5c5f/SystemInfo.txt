@@ -1,0 +1,22 @@
+=== System Information ===
+Build: saif
+IP: <IP>
+HWID: <HWID>
+System Language: es-MX
+Processor: Intel(R) Celeron(R) N4500 @ 1.10GHz
+CPU Cores: 2
+CPU Threads: 2
+GPU: Intel(R) UHD Graphics
+OS: Windows 10 Pro Education
+OS Version: 10.0.19045 (Build 19045)
+Computer Name: <HOST>
+Total RAM: 3901 MB
+Drives: C:\
+Monitors: 1
+
+Monitor 1:
+  Name: Generic PnP Monitor
+  Resolution: 1366x768
+  Position: (0, 0)
+  Primary: Yes
+==========================

@@ -1,0 +1,33 @@
+zalupa stealer
+                               Code by @neverliet cracked by @rbxxw
+[User Info]
+User: <USER>
+Machine: <HOST>
+Now: 2026-07-02 09:51:50
+Input ISO: ru
+Hwid: <HWID>
+Clipboard: <SECRET>
+
+[Network]
+External IP: <IP>
+Internal IP: <IP>
+Default Gateway: <IP>
+
+[System]
+OS Product: Windows 10 Pro 2009
+OS Build: 26200
+OS Arch: x64
+CPU Name: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+Logical Cores: 8
+RAM Total (MB): 12154
+RAM Available (MB): 6292
+
+[Drives]
+C: Fixed FS:NTFS Size:475GB Free:318GB
+
+[GPU]
+Intel(R) UHD Graphics 620
+
+[Basic]
+User Domain: <HOST>
+CLR Version: 4.0.30319.42000

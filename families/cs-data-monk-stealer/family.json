@@ -43,7 +43,6 @@
     "https://t.me/DataMonk_file",
     "https://t.me/SunCloudNew"
   ],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "CSDataMonkStealer là định danh do CyStack đặt cho một panel `#BUY NOW: TG <buyer> -- <admin>` `SystemInfo.txt` dùng chung được quan sát bên trong các gói tổng hợp `@ft7links-mix-<TS>-<COUNT>pcs`. Panel này là một builder được nhiều đối tượng bán lại trên Telegram phân phối dưới các handle người mua/quản trị viên riêng của họ - cấu trúc dữ liệu phần thân giống hệt nhau, chỉ khác các handle ở dòng banner. Đã quan sát được hai đối tượng phân phối cho đến nay: `@DataMonk_file` / `@DataMonk_Admin` (thư mục con `Telegram @Datamonk_file - {<id>}/` theo từng nạn nhân) và `@SunCloudNew` / `@MrSun00` (bố cục `@ft7links_mix_<NN>_bogonip_<NN>/SystemInfo.txt` phẳng, không có thư mục con theo handle Telegram của từng nạn nhân).\n\nPanel này tạo dữ liệu đầu ra là một banner `#BUY NOW` ở đầu với các liên hệ người mua/quản trị viên đi kèm nhau, sau đó là một khối `=== System Information ===` hỗn hợp chữ hoa chữ thường gồm các dòng `Key: Value` trần, kết thúc bằng một quy tắc dấu bằng dài 26 ký tự. Tập 13 trường bao gồm Build, IP, HWID, System Language, Processor, CPU Cores, CPU Threads, GPU, OS, OS Version, Computer Name, Total RAM, và Drives. Phần tiêu đề hỗn hợp chữ hoa chữ thường phân biệt định dạng này với `PCInfoStealer`, vốn sử dụng dạng `=== SYSTEM INFORMATION ===` viết hoa toàn bộ. Chuỗi ký tự `Build: test_00` lặp lại ở nhiều đối tượng phân phối, cho thấy đây có thể là một builder giai đoạn đầu hoặc giai đoạn thử nghiệm.\n\nViệc quy kết họ mã độc hiện chỉ mang tính tạm thời: panel này chưa được ghi nhận trong các báo cáo công khai, và cũng không xuất hiện trong các danh mục định dạng mã độc đánh cắp thông tin của cộng đồng. Tên theo dõi ổn định `CSDataMonkStealer` được giữ lại để các tham chiếu tình báo hiện có của CyStack luôn nhất quán, dù panel này được nhiều bên cùng sử dụng. Hồ sơ sẽ được đổi tên khi nghiên cứu công khai xác định được builder gốc.",
@@ -76,5 +75,48 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@DataMonk_file/@SunCloudNew",
+      "fields": [
+        "Build",
+        "Computer Name",
+        "CPU Cores",
+        "CPU Threads",
+        "Drives",
+        "GPU",
+        "HWID",
+        "IP",
+        "Monitor 1",
+        "Monitors",
+        "Name",
+        "OS",
+        "OS Version",
+        "Position",
+        "Primary",
+        "Processor",
+        "Resolution",
+        "System Language",
+        "Total RAM"
+      ],
+      "filenames": [
+        "SystemInfo.txt"
+      ],
+      "format_id": "cs-datamonk-stealer",
+      "id": "v_dcba02f0ee98bd59ec0260c063fc5c5f",
+      "markers": [
+        "=== System Information ==="
+      ],
+      "panel_brand": "#BUY NOW: TG",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_dcba02f0ee98bd59ec0260c063fc5c5f/SystemInfo.txt",
+        "sha256": "f6658b775910c53d04fb0896762bba985af3ca647a34590aff31abeb79307029",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

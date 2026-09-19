@@ -21,8 +21,8 @@ pack. These labels are retained only as per-variant panel brands.
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `Aetheris Stealer (observed self-label)`, `Banshee v1.4 (observed self-label)`, `PDRstealer (observed self-label)`, `User Info / Input ISO bracket template`
-- Variants observed: **3**
-- CyStack observations represented: **5,373**
+- Variants observed: **5**
+- CyStack observations represented: **5,375**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -52,6 +52,42 @@ documented macOS malware named Banshee.
 Cấu trúc dữ liệu chính là `[User Info]` kết hợp với `Input ISO:`. Các biến thể đã bị lược bỏ vẫn giữ `[Basic]` kết hợp với `User Domain:` được neo theo dòng, hoặc `Hwid:` được neo theo dòng kết hợp với `CPU Name:`. Nguồn ToxSteal đã được xác định tạo dữ liệu đầu ra với cùng sáu phần và từ vựng trường dữ liệu như trên, trong khi phân tích độc lập của IRoveroll ghi nhận cùng bố cục `Information.txt` và cùng thường trình xử lý clipboard. Việc tái sử dụng chính xác mẫu thông tin (template) không phải là bằng chứng cho thấy payload giống hệt nhau hay có chung nguồn gốc. `AETHERIS`, `PDRstealer` và `Banshee v1.4` chỉ là các nhãn tự đặt; nhãn cuối cùng không hàm ý có mối liên hệ với mã độc macOS được ghi nhận riêng biệt có tên Banshee.
 
 ## Observed log variants
+
+### `v_910d7bdd6e44b19f3c2ad23bb98c3a48`
+
+- Format ID: `cs-user-info-bracket-stealer`
+- Observed filenames: `Information.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **unknown**
+- Layout: `user-info-input-iso`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_910d7bdd6e44b19f3c2ad23bb98c3a48/Information.txt)
+- Sample SHA-256: `274b6ba3323a8aaadf424ea42e0e94b5a0f1060770d44d04ee0bd9b7884bcf3b`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `[Basic]`, `[Drives]`, `[GPU]`, `[Network]`, `[System]`, `[User Info]`, `Code by @neverliet cracked by @rbxxw`, `zalupa stealer`
+- Field labels: `C`, `Clipboard`, `CLR Version`, `CPU Name`, `Default Gateway`, `External IP`, `Hwid`, `Input ISO`, `Internal IP`, `Logical Cores`, `Machine`, `Now`, `OS Arch`, `OS Build`, `OS Product`, `RAM Available (MB`, `RAM Total (MB`, `User`, `User Domain`
+
+### `v_97e6d921901a4c9f155e67a46fdc33bc`
+
+- Format ID: `cs-user-info-bracket-stealer`
+- Observed filenames: `Information.txt`
+- Panel brand: `AETHERIS`
+- Distribution channel: -
+- Attribution confidence: **unknown**
+- Layout: `developer-watermark`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_97e6d921901a4c9f155e67a46fdc33bc/Information.txt)
+- Sample SHA-256: `b34a73bf862175149fca877eb70c926ab06e74f7ebb674d7974af00f39b528f1`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `[Basic]`, `[Drives]`, `[GPU]`, `[Network]`, `[System]`, `[User Info]`, `Developer @sexyweekly`
+- Field labels: `C`, `Clipboard`, `CLR Version`, `CPU Name`, `Default Gateway`, `E`, `External IP`, `Hwid`, `Input ISO`, `Internal IP`, `Logical Cores`, `Machine`, `Now`, `OS Arch`, `OS Build`, `OS Product`, `RAM Available (MB`, `RAM Total (MB`, `User`, `User Domain`
 
 ### `v_b5830fa7c4f172950304e99c5fa7d4ad`
 

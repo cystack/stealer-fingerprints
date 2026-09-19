@@ -45,7 +45,8 @@ Việc quy kết họ mã độc hiện chỉ mang tính tạm thời: panel nà
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `@DataMonk_file`, `@SunCloudNew`, `DataMonk`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -77,7 +78,23 @@ Cặp dấu hiệu nhận diện rõ ràng nhất là banner panel `#BUY NOW: TG
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_dcba02f0ee98bd59ec0260c063fc5c5f`
+
+- Format ID: `cs-datamonk-stealer`
+- Observed filenames: `SystemInfo.txt`
+- Panel brand: `#BUY NOW: TG`
+- Distribution channel: `@DataMonk_file/@SunCloudNew`
+- Attribution confidence: **unknown**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_dcba02f0ee98bd59ec0260c063fc5c5f/SystemInfo.txt)
+- Sample SHA-256: `f6658b775910c53d04fb0896762bba985af3ca647a34590aff31abeb79307029`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `=== System Information ===`
+- Field labels: `Build`, `Computer Name`, `CPU Cores`, `CPU Threads`, `Drives`, `GPU`, `HWID`, `IP`, `Monitor 1`, `Monitors`, `Name`, `OS`, `OS Version`, `Position`, `Primary`, `Processor`, `Resolution`, `System Language`, `Total RAM`
+
 
 ## MITRE ATT&CK
 

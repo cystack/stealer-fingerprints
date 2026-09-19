@@ -36,7 +36,8 @@ Kênh @Bugatti_Cloud là một bộ tổng hợp đa họ mã độc đã đư�
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `@Bugatti_Cloud pc_info.txt slice`, `Bugatti operator-normalized Acreed-adjacent variant`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -69,7 +70,23 @@ Việc nhận diện dấu vết yêu cầu bốn nhãn bare-key gắn theo dòn
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_61bbdb077e8c0fd1b204341fbfba32c6`
+
+- Format ID: `cs-bugatti-pc-info-stealer`
+- Observed filenames: `pc_info.txt`
+- Panel brand: `@Bugatti_Cloud pc_info.txt`
+- Distribution channel: `@Bugatti_Cloud`
+- Attribution confidence: **unknown**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_61bbdb077e8c0fd1b204341fbfba32c6/pc_info.txt)
+- Sample SHA-256: `c7cb355e742d7ebb5d36013c3dd172160f1087b6cf97e479630db1a7abe48e2e`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Architecture`, `Computer Name`, `Cores`, `Country`, `Display Resolution`, `GPU`, `HWID`, `IP`, `Local Time`, `OS`, `RAM`, `Resolution`, `UserName`
+
 
 ## MITRE ATT&CK
 

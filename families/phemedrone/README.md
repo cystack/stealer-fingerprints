@@ -40,7 +40,8 @@ Bảng điều khiển trên máy nạn nhân là một `Information.txt` dạng
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Phemedrone Stealer`, `Ov3r_Stealer`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -75,7 +76,23 @@ Việc nhận diện dấu hiệu đặc trưng yêu cầu cả ba tiêu đề m
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_27575f82d15a13014153061521971801`
+
+- Format ID: `phemedrone`
+- Observed filenames: `Information.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_27575f82d15a13014153061521971801/Information.txt)
+- Sample SHA-256: `44ef369f66b7126502d0b2635f7b326206430d514de59dccd19f37b6db69956c`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `88888888888 Custom Stealer`, ``Y888Y' improved and configured by @snyuw`
+- Field labels: ``Y' Tag`, ``Y8888888Y' 04/07/2026 00`, `Antivirus products`, `AutoFills`, `Battery`, `City`, `Clipboard text`, `Cookies`, `Country`, `CPU`, `Credit Cards`, `Detected Tags`, `Extensions`, `File Location`, `Files`, `Gaming`, `GPU`, `Hardware ID`, `IP`, `MAC`, `Passwords`, `Postal`, `RAM`, `Screen Resolution`, `Uptime`, `Username`, `Wallets`, `Windows name`
+
 
 ## MITRE ATT&CK
 

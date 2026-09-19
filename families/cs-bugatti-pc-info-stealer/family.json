@@ -34,7 +34,6 @@
   "observed_channels": [
     "https://t.me/Bugatti_Cloud"
   ],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "CSBugattiPcInfoStealer là định danh do CyStack đặt cho lát cắt văn bản dạng bare-key ``pc_info.txt`` của bộ tổng hợp @Bugatti_Cloud. Tệp này là một khối văn bản ``Key: Value`` phẳng có bộ từ vựng tương tự bộ khóa pc_info.json của Acreed đã được công bố công khai nhưng bị đổi tên xuyên suốt bởi phía đối tượng vận hành: ``PcName`` trở thành ``Computer Name``, ``Arch`` trở thành ``Architecture``, ``CpuCores`` trở thành ``Cores``, ``ScreenSize`` trở thành ``Resolution``. Bảng điều khiển cũng tạo dữ liệu đầu ra là một dòng ``Display Resolution:`` trùng lặp với giá trị rỗng ngay trước dòng chứa khóa ``Resolution:`` đã có giá trị, và giá trị ``HWID:`` là một tổ hợp UUID có tiền tố Computer-Name thay vì một UUID trần hoặc khối dữ liệu hex.\n\nKênh @Bugatti_Cloud là một bộ tổng hợp đa họ mã độc đã được ghi nhận, chuyên phân phối lại nhật ký của Redline và các mã độc đánh cắp thông tin khác dưới một định dạng container tùy chỉnh. Biến thể ``pc_info.txt`` này có thể là dữ liệu đầu ra dạng văn bản đã được chuẩn hóa bởi đối tượng vận hành từ dữ liệu Acreed, hoặc là bảng điều khiển của một trình builder khác; bộ từ vựng đã bị đổi tên khác quá xa so với JSON của Acreed đã được ghi nhận nên không thể quy kết trực tiếp. Việc quy kết họ mã độc là tạm thời, chờ một ánh xạ tình báo mối đe dọa được công bố cho đúng bố cục văn bản này.",
@@ -55,5 +54,40 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@Bugatti_Cloud",
+      "fields": [
+        "Architecture",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Display Resolution",
+        "GPU",
+        "HWID",
+        "IP",
+        "Local Time",
+        "OS",
+        "RAM",
+        "Resolution",
+        "UserName"
+      ],
+      "filenames": [
+        "pc_info.txt"
+      ],
+      "format_id": "cs-bugatti-pc-info-stealer",
+      "id": "v_61bbdb077e8c0fd1b204341fbfba32c6",
+      "markers": [],
+      "panel_brand": "@Bugatti_Cloud pc_info.txt",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_61bbdb077e8c0fd1b204341fbfba32c6/pc_info.txt",
+        "sha256": "c7cb355e742d7ebb5d36013c3dd172160f1087b6cf97e479630db1a7abe48e2e",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

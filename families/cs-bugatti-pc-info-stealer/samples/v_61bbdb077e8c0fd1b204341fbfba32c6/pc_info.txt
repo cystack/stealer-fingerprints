@@ -1,0 +1,16 @@
+
+
+IP: <IP>
+Country: CA
+HWID: <HWID>
+OS: Windows 10
+Architecture: x64
+UserName: <USER>
+Computer Name: <HOST>
+Local Time: 26.06.2026 23:00:04
+Cores: Unknown
+RAM: 16 GB
+Display Resolution:
+Resolution: 1920x1080
+GPU:
+	NVIDIA GeForce RTX 2060 SUPER

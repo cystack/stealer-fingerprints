@@ -50,35 +50,6 @@
   "observed_channels": [
     "https://t.me/BRADLOGS"
   ],
-  "variants": [
-    {
-      "id": "v_571b9735a207cab65f14c48899af7f62",
-      "format_id": "cs-sig-info-stealer",
-      "filenames": [
-        "Info.txt"
-      ],
-      "panel_brand": null,
-      "distribution_channel": "@BRADLOGS",
-      "attribution_confidence": "low",
-      "markers": [
-        "(sig:"
-      ],
-      "fields": [
-        "Country",
-        "Execution Path",
-        "Installed RAM",
-        "IP Address"
-      ],
-      "observations": 10811,
-      "sample": {
-        "path": "samples/v_571b9735a207cab65f14c48899af7f62/sample.txt",
-        "sha256": "1bbeb3f129bbe42254b047579474031831d7cbe84247a277455362e72692b982",
-        "source": "cystack_collection",
-        "sanitized": true
-      },
-      "layout_id": "full-device-os"
-    }
-  ],
   "localizations": {
     "vi": {
       "description": "CSSigInfoStealer là định danh do CyStack đặt cho một panel `Key: Value` `Info.txt` dạng trần, mang watermark chuẩn Lumma `(sig:UNIX.HEX)` trên dòng `Time:`, đồng thời sử dụng cách đặt tên trường đầy đủ theo phong cách Redline cho phần còn lại của nội dung.\nĐược quan sát bên trong các gói tổng hợp `!! 2025 NOV.part001.rar` `@BRADLOGS / BRADMAX`\ntrong các thư mục nạn nhân `[<CC>]<IP>/Info.txt`\n(ví dụ: `[CA]<IPv4>/Info.txt`).\n\nCác trường nội dung: `Build Date`, `Configuration`, `Execution Path`,\n`Elevated`, `Computer Name`, `User Name`, `User Language`,\n`Netbios`, `Operation System` (lỗi đánh máy nguyên bản), `Install Date`,\n`System Date`, `Time Zone`, `Antivirus`, `HWID`, `Processor`,\n`Processor Threads`, `Processor Cores`, `Graphics Card`,\n`Installed RAM`, `Display Resolution`, `IP Address`, `Time`,\n`Country`, `User`. Nội dung có cấu trúc dữ liệu bằng phẳng (không có tiền tố dấu gạch đầu dòng như ở Lumma / Deimos / BABA / DarkSide / AL Stealer), không có banner của đối tượng vận hành (khác với Redline), và không phải định dạng YAML (khác với Remus). Việc quy kết họ mã độc vẫn là tạm thời, chờ một bản đồ ánh xạ threat-intel đã công bố cho đúng cấu trúc dữ liệu bare-KV này.",
@@ -114,5 +85,76 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "id": "v_571b9735a207cab65f14c48899af7f62",
+      "format_id": "cs-sig-info-stealer",
+      "filenames": [
+        "Info.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": "@BRADLOGS",
+      "attribution_confidence": "low",
+      "markers": [
+        "(sig:"
+      ],
+      "fields": [
+        "Country",
+        "Execution Path",
+        "Installed RAM",
+        "IP Address"
+      ],
+      "observations": 10811,
+      "sample": {
+        "path": "samples/v_571b9735a207cab65f14c48899af7f62/sample.txt",
+        "sha256": "1bbeb3f129bbe42254b047579474031831d7cbe84247a277455362e72692b982",
+        "source": "cystack_collection",
+        "sanitized": true
+      },
+      "layout_id": "full-device-os"
+    },
+    {
+      "attribution_confidence": "low",
+      "distribution_channel": "@BRADLOGS",
+      "fields": [
+        "Antivirus",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Elevated",
+        "Graphics Card",
+        "HWID",
+        "Install Date",
+        "Installed RAM",
+        "IP Address",
+        "Netbios",
+        "Operation System",
+        "Processor",
+        "Processor Cores",
+        "Processor Threads",
+        "System Date",
+        "Time",
+        "Time Zone",
+        "User",
+        "User Language",
+        "User Name"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "format_id": "cs-sig-info-stealer",
+      "id": "v_7a05ee499eb89ba2e184501cb922cd9a",
+      "layout_id": "footer-stub",
+      "markers": [],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_7a05ee499eb89ba2e184501cb922cd9a/Info.txt",
+        "sha256": "edb8bea5f34968f3bf19405cc514388889fc113b5e6573ce3aa1a09f5bc13698",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

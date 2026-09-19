@@ -46,6 +46,41 @@
     "https://www.esentire.com/blog/esentire-threat-intelligence-malware-analysis-redline-stealer",
     "https://github.com/MalBeacon/what-is-this-stealer"
   ],
+  "localizations": {
+    "vi": {
+      "description": "Các biến thể log dạng khối mở rộng (extended-block) của RedLine. Tệp UserInformation.txt tạo dữ liệu đầu ra chứa lỗi đánh máy đặc trưng `Operation System:` của Redline cùng với các trường thông tin định danh, ngôn ngữ/vùng và phần cứng của bảng điều khiển. Một số kênh liên kết trên Telegram gắn thương hiệu riêng (DARKSIDE, ZAPLINE, và tương tự) lên cùng một builder RedLine, trong khi vẫn giữ nguyên bố cục trường dữ liệu gốc.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt (các họ Chromium và Gecko)",
+        "Cookie trình duyệt và dữ liệu phiên lưu trữ",
+        "Ứng dụng desktop ví tiền điện tử",
+        "Cấu hình ứng dụng FTP và SSH",
+        "Token phiên Discord và Telegram"
+      ],
+      "detection_notes": "Các mức độ tin cậy, theo thứ tự tăng dần:\n\n1. Trường `Operation System:` đơn thuần (lưu ý lỗi đánh máy) chỉ mang tính gợi ý và trùng khớp với nhiều bản sao đã bị lược bớt.\n2. `Operation System:` kết hợp với banner của kênh (ví dụ `===DARKSIDE_BRAND_BEGIN===`) cho độ tin cậy cao là RedLine.\n3. `Operation System:` kết hợp với `Admin Group:` và `Integrity:` là dạng khối mở rộng RedLine không thể nhầm lẫn.\n\nKết hợp với đường dẫn tệp thông tin xác thực trình duyệt (`Login Data`, `formhistory.sqlite`) và dữ liệu đầu ra của mô-đun thu thập token Discord để xác nhận trong quá trình phân loại ứng phó sự cố.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1119",
+          "name": "Thu thập tự động"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  },
   "variants": [
     {
       "id": "v_125ec6057adbaa522bbf048fc48b7d70",
@@ -117,6 +152,44 @@
         "sanitized": true
       },
       "layout_id": "traffic"
+    },
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": null,
+      "fields": [
+        "ComputerName",
+        "Country",
+        "Current Path",
+        "Graphics card",
+        "Installed RAM",
+        "IP",
+        "Keyboard Language",
+        "Log date",
+        "MachineID",
+        "Operation System",
+        "Processor",
+        "ScreenSize",
+        "System Language",
+        "TimeZone",
+        "User Language",
+        "UserName",
+        "UUID"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "format_id": "redline-like-stealer",
+      "id": "v_8f791a8040e2e6593efabd4a991c2b56",
+      "layout_id": "current-path",
+      "markers": [],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_8f791a8040e2e6593efabd4a991c2b56/UserInformation.txt",
+        "sha256": "29d4fb61258df304a60a95afb53e5875f8c89b1935408fce2b7a09b8fd16ca31",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
     },
     {
       "id": "v_925a2717759e113f55e4f8f24d7c663e",
@@ -191,40 +264,5 @@
       },
       "layout_id": "user-keyboard-display"
     }
-  ],
-  "localizations": {
-    "vi": {
-      "description": "Các biến thể log dạng khối mở rộng (extended-block) của RedLine. Tệp UserInformation.txt tạo dữ liệu đầu ra chứa lỗi đánh máy đặc trưng `Operation System:` của Redline cùng với các trường thông tin định danh, ngôn ngữ/vùng và phần cứng của bảng điều khiển. Một số kênh liên kết trên Telegram gắn thương hiệu riêng (DARKSIDE, ZAPLINE, và tương tự) lên cùng một builder RedLine, trong khi vẫn giữ nguyên bố cục trường dữ liệu gốc.",
-      "typical_targets": [
-        "Thông tin xác thực đã lưu trong trình duyệt (các họ Chromium và Gecko)",
-        "Cookie trình duyệt và dữ liệu phiên lưu trữ",
-        "Ứng dụng desktop ví tiền điện tử",
-        "Cấu hình ứng dụng FTP và SSH",
-        "Token phiên Discord và Telegram"
-      ],
-      "detection_notes": "Các mức độ tin cậy, theo thứ tự tăng dần:\n\n1. Trường `Operation System:` đơn thuần (lưu ý lỗi đánh máy) chỉ mang tính gợi ý và trùng khớp với nhiều bản sao đã bị lược bớt.\n2. `Operation System:` kết hợp với banner của kênh (ví dụ `===DARKSIDE_BRAND_BEGIN===`) cho độ tin cậy cao là RedLine.\n3. `Operation System:` kết hợp với `Admin Group:` và `Integrity:` là dạng khối mở rộng RedLine không thể nhầm lẫn.\n\nKết hợp với đường dẫn tệp thông tin xác thực trình duyệt (`Login Data`, `formhistory.sqlite`) và dữ liệu đầu ra của mô-đun thu thập token Discord để xác nhận trong quá trình phân loại ứng phó sự cố.",
-      "attack_techniques": [
-        {
-          "id": "T1555",
-          "name": "Thông tin xác thực từ kho mật khẩu"
-        },
-        {
-          "id": "T1555.003",
-          "name": "Thông tin xác thực từ trình duyệt web"
-        },
-        {
-          "id": "T1539",
-          "name": "Đánh cắp cookie phiên web"
-        },
-        {
-          "id": "T1119",
-          "name": "Thu thập tự động"
-        },
-        {
-          "id": "T1005",
-          "name": "Dữ liệu từ hệ thống cục bộ"
-        }
-      ]
-    }
-  }
+  ]
 }

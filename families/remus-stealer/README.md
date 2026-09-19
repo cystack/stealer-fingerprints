@@ -22,8 +22,8 @@ Remus Stealer là mã độc đánh cắp thông tin 64-bit được cung cấp 
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Remus`
-- Variants observed: **3**
-- CyStack observations represented: **56**
+- Variants observed: **4**
+- CyStack observations represented: **57**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -86,6 +86,24 @@ Recognition anchors:
 
 - Stable markers: `# REMUS LOG`, `hardware:`, `RÔýĆløud`
 - Field labels: `anti-virus`, `build`, `computer-name`, `core count`, `core enabled`, `country`, `cpu`, `date`, `display`, `domain`, `elevated`, `gpu`, `hardware`, `hostname`, `install-date`, `ip-address`, `language`, `local-date`, `manufacturer`, `motherboard`, `name`, `netbios`, `os`, `path`, `product`, `ram`, `size`, `state`, `tag`, `thread count`, `time`, `time-zone`, `user-name`, `version`
+
+### `v_3fd5e702d8f417070e20ecdf7546038f`
+
+- Format ID: `remus`
+- Observed filenames: `Info.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `yaml-build-root-stripped`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_3fd5e702d8f417070e20ecdf7546038f/Info.txt)
+- Sample SHA-256: `a81830a125f8cab129fc56a408128d5c0fdd420a42872bd86f0b091767ee1ff5`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `hardware:`
+- Field labels: `anti-virus`, `computer-name`, `core count`, `core enabled`, `country`, `cpu`, `date`, `display`, `domain`, `elevated`, `gpu`, `hardware`, `hostname`, `install-date`, `ip-address`, `language`, `local-date`, `manufacturer`, `motherboard`, `name`, `netbios`, `os`, `path`, `product`, `ram`, `size`, `state`, `thread count`, `time`, `time-zone`, `user-name`, `version`
 
 ### `v_40b69f8215f8aad13e8f74334058d313`
 

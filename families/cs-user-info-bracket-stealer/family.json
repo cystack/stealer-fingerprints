@@ -43,82 +43,6 @@
     "https://github.com/onlytoxi/tox-steal/blob/a34b15b708b73e59814d7ecd233c3949da6ab708/New/Intelix.Targets.Device/SystemInfo.cs",
     "https://github.com/taogoldi/reverse-engineer/blob/b29438e0244c1f21d6eed00e2d4040736bb46944/_posts/2026-04-23-iroveroll-telegram-infostealer.md"
   ],
-  "variants": [
-    {
-      "id": "v_fdb74de9cb4f98c742de98b53c54eb33",
-      "format_id": "cs-user-info-bracket-stealer",
-      "filenames": [
-        "Information.txt"
-      ],
-      "panel_brand": null,
-      "distribution_channel": null,
-      "attribution_confidence": "unknown",
-      "markers": [
-        "[Basic]"
-      ],
-      "fields": [
-        "User Domain"
-      ],
-      "observations": 5,
-      "sample": {
-        "path": "samples/v_fdb74de9cb4f98c742de98b53c54eb33/sample.txt",
-        "sha256": "66b39fbd37357f589ba2e807edd7500ac9b026e0aa802afd53d6fbc4cc077884",
-        "source": "cystack_collection",
-        "sanitized": true
-      },
-      "layout_id": "basic-user-domain"
-    },
-    {
-      "id": "v_e4ecc884d733c891238731a7465cfa26",
-      "format_id": "cs-user-info-bracket-stealer",
-      "filenames": [
-        "Information.txt"
-      ],
-      "panel_brand": "PDRstealer",
-      "distribution_channel": null,
-      "attribution_confidence": "unknown",
-      "markers": [
-        "[User Info]",
-        "PDRstealer"
-      ],
-      "fields": [
-        "Input ISO"
-      ],
-      "observations": 4755,
-      "sample": {
-        "path": "samples/v_e4ecc884d733c891238731a7465cfa26/sample.txt",
-        "sha256": "70a0251c7ad29e86b811aad4b29c76ca4c340a5488f8e6b75bcd0194e6d21968",
-        "source": "cystack_collection",
-        "sanitized": true
-      },
-      "layout_id": "user-info-input-iso"
-    },
-    {
-      "id": "v_b5830fa7c4f172950304e99c5fa7d4ad",
-      "format_id": "cs-user-info-bracket-stealer",
-      "filenames": [
-        "Information.txt"
-      ],
-      "panel_brand": "Banshee v1.4",
-      "distribution_channel": null,
-      "attribution_confidence": "unknown",
-      "markers": [
-        "[User Info]",
-        "Banshee v1.4"
-      ],
-      "fields": [
-        "Input ISO"
-      ],
-      "observations": 613,
-      "sample": {
-        "path": "samples/v_b5830fa7c4f172950304e99c5fa7d4ad/sample.txt",
-        "sha256": "3a4f453b631ec4229f975817dde22f10f0a70a0f8865bb56ea652392a6387318",
-        "source": "cystack_collection",
-        "sanitized": true
-      },
-      "layout_id": "user-info-input-iso"
-    }
-  ],
   "localizations": {
     "vi": {
       "description": "Định danh do CyStack đặt cho một mẫu thông tin (template) Windows `Information.txt` chưa được quy kết, được xây dựng từ các phần `[User Info]`, `[Network]`, `[System]`, `[Drives]`, `[GPU]` và `[Basic]`. Cùng một cấu trúc ngữ pháp trường dữ liệu này đã được ghi nhận với các nhãn tự đặt `AETHERIS`, `PDRstealer` và `Banshee v1.4`, cũng như trường hợp không còn banner sót lại. Mẫu quan sát được gắn nhãn AETHERIS mang watermark `Developer @sexyweekly` và được phân phối trong một gói theo kiểu `@BRADMAX`. Các nhãn này chỉ được giữ lại như tên thương hiệu bảng điều khiển (panel) riêng của từng biến thể.",
@@ -151,5 +75,179 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": null,
+      "fields": [
+        "C",
+        "Clipboard",
+        "CLR Version",
+        "CPU Name",
+        "Default Gateway",
+        "External IP",
+        "Hwid",
+        "Input ISO",
+        "Internal IP",
+        "Logical Cores",
+        "Machine",
+        "Now",
+        "OS Arch",
+        "OS Build",
+        "OS Product",
+        "RAM Available (MB",
+        "RAM Total (MB",
+        "User",
+        "User Domain"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "cs-user-info-bracket-stealer",
+      "id": "v_910d7bdd6e44b19f3c2ad23bb98c3a48",
+      "layout_id": "user-info-input-iso",
+      "markers": [
+        "[Basic]",
+        "[Drives]",
+        "[GPU]",
+        "[Network]",
+        "[System]",
+        "[User Info]",
+        "Code by @neverliet cracked by @rbxxw",
+        "zalupa stealer"
+      ],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_910d7bdd6e44b19f3c2ad23bb98c3a48/Information.txt",
+        "sha256": "274b6ba3323a8aaadf424ea42e0e94b5a0f1060770d44d04ee0bd9b7884bcf3b",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": null,
+      "fields": [
+        "C",
+        "Clipboard",
+        "CLR Version",
+        "CPU Name",
+        "Default Gateway",
+        "E",
+        "External IP",
+        "Hwid",
+        "Input ISO",
+        "Internal IP",
+        "Logical Cores",
+        "Machine",
+        "Now",
+        "OS Arch",
+        "OS Build",
+        "OS Product",
+        "RAM Available (MB",
+        "RAM Total (MB",
+        "User",
+        "User Domain"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "cs-user-info-bracket-stealer",
+      "id": "v_97e6d921901a4c9f155e67a46fdc33bc",
+      "layout_id": "developer-watermark",
+      "markers": [
+        "[Basic]",
+        "[Drives]",
+        "[GPU]",
+        "[Network]",
+        "[System]",
+        "[User Info]",
+        "Developer @sexyweekly"
+      ],
+      "panel_brand": "AETHERIS",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_97e6d921901a4c9f155e67a46fdc33bc/Information.txt",
+        "sha256": "b34a73bf862175149fca877eb70c926ab06e74f7ebb674d7974af00f39b528f1",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "id": "v_b5830fa7c4f172950304e99c5fa7d4ad",
+      "format_id": "cs-user-info-bracket-stealer",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": "Banshee v1.4",
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "[User Info]",
+        "Banshee v1.4"
+      ],
+      "fields": [
+        "Input ISO"
+      ],
+      "observations": 613,
+      "sample": {
+        "path": "samples/v_b5830fa7c4f172950304e99c5fa7d4ad/sample.txt",
+        "sha256": "3a4f453b631ec4229f975817dde22f10f0a70a0f8865bb56ea652392a6387318",
+        "source": "cystack_collection",
+        "sanitized": true
+      },
+      "layout_id": "user-info-input-iso"
+    },
+    {
+      "id": "v_e4ecc884d733c891238731a7465cfa26",
+      "format_id": "cs-user-info-bracket-stealer",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": "PDRstealer",
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "[User Info]",
+        "PDRstealer"
+      ],
+      "fields": [
+        "Input ISO"
+      ],
+      "observations": 4755,
+      "sample": {
+        "path": "samples/v_e4ecc884d733c891238731a7465cfa26/sample.txt",
+        "sha256": "70a0251c7ad29e86b811aad4b29c76ca4c340a5488f8e6b75bcd0194e6d21968",
+        "source": "cystack_collection",
+        "sanitized": true
+      },
+      "layout_id": "user-info-input-iso"
+    },
+    {
+      "id": "v_fdb74de9cb4f98c742de98b53c54eb33",
+      "format_id": "cs-user-info-bracket-stealer",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "[Basic]"
+      ],
+      "fields": [
+        "User Domain"
+      ],
+      "observations": 5,
+      "sample": {
+        "path": "samples/v_fdb74de9cb4f98c742de98b53c54eb33/sample.txt",
+        "sha256": "66b39fbd37357f589ba2e807edd7500ac9b026e0aa802afd53d6fbc4cc077884",
+        "source": "cystack_collection",
+        "sanitized": true
+      },
+      "layout_id": "basic-user-domain"
+    }
+  ]
 }

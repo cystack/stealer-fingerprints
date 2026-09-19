@@ -1,0 +1,48 @@
+IP: <IP>
+Country: EG
+City: <LOCATION>
+ISP: <ISP>
+HWID: <HWID>
+OS: Windows 11 (Build 26100) Server
+Username: <USER>
+Hostname: <HOST>
+Language: en
+CPU Cores: 4
+RAM: 16230 MB
+Disk: 222 GB
+Display: 1536x864
+
+--- Installed Software ---
+  MuMuPlayer
+  Microsoft 365 Apps for enterprise - en-us
+  Microsoft OneDrive
+  Microsoft Project - en-us
+  Synaptics Pointing Device Driver
+  Microsoft Visio - en-us
+  WinRAR 6.01 (64-bit)
+  Eclipse Temurin JRE with Hotspot 11.0.32+9 (x64)
+  Allgemeine Runtime Files (x86)
+  Java 8 Update 251 (64-bit)
+  Eclipse Temurin JRE with Hotspot 8u502-b07 (x64)
+  Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61135
+  Eclipse Temurin JRE with Hotspot 21.0.12+8 (x64)
+  Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.40.33816
+  Microsoft Visual C++ 2022 X64 Additional Runtime - 14.40.33816
+  Microsoft Visual Studio 2010 Tools for Office Runtime (x64)
+  Amazon Corretto 8 (x64)
+  VMware Workstation
+  DirectX 9.0c Extra Files (x86, x64)
+  Microsoft Silverlight
+  Amazon Corretto JRE 8 (x64)
+  Office 16 Click-to-Run Extensibility Component
+  Microsoft Visual C++ 2005 Redistributable (x64)
+  Eclipse Temurin JDK with Hotspot 8u502-b07 (x64)
+  NVIDIA Graphics Driver 565.90
+  NVIDIA RTX Desktop Manager 205.22
+  NVIDIA Install Application
+  WifiAutoInstall version <IP>
+  Tailscale
+  Eclipse Temurin JRE with Hotspot 17.0.20+8 (x64)
+  Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61135
+  Eclipse Temurin JRE with Hotspot 25.0.4+7 (x64)
+  Eclipse Temurin JDK with Hotspot 25.0.4+7 (x64)

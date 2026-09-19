@@ -1,0 +1,99 @@
+{
+  "aliases": [
+    "FATETRAFFIC UserInfo.txt with compound HWID",
+    "HostHwid stealer"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1518",
+      "name": "Software Discovery"
+    }
+  ],
+  "attribution_confidence": "unknown",
+  "classification": "cystack_named",
+  "description": "CSHostHwidStealer is a CyStack-coined identifier for a\nplain `Key: Value` `UserInfo.txt` panel whose HWID field\ncarries a compound `<8-hex>-<HOSTNAME>` identifier that\nembeds the Windows hostname into the second half of the\nHWID. Observed inside `BONUS @FATETRAFFIC <count> MIX <DD>-<MM>-<YYYY>.part<N>.rar` aggregator packs at\n`[<CC>]_@FATETRAFFIC_<YYYY>_<MM>_<DD>_<N>/UserInfo.txt`\nvictim folders (for example\n`[EG]_@FATETRAFFIC_2026_08_30_62434557/UserInfo.txt`).\n\nBody fields: `IP`, `Country`, `City`, `ISP`, `HWID`, `OS`,\n`Username`, `Hostname`, `Language`, `CPU Cores`, `RAM`,\n`Disk`, `Display`, followed by a `--- Installed Software ---` triple-dash section header and 2-space-indented\nprogram names one per line (WMI-derived DisplayName strings\nfrom the standard `HKLM\\Software\\Microsoft\\Windows\\ CurrentVersion\\Uninstall` registry hive). The layout is\nplain (no leading-dash prefix unlike Lumma and its Deimos /\nBABA / AL variants), lacks the Redline-canonical\n`Operation System:` typo and `FileLocation:` / `Build ID:`\nanchors, is not YAML (unlike Remus), and does not carry\nthe Meduza `UserInfo.txt` layout markers or the plain hex\nor GUID HWID hashes emitted by Redline, Lumma, Vidar,\nRhadamanthys, StealC, RisePro, Meduza, Acreed, and\nMetaStealer.\n\nAttribution is provisional. No curated CTI vendor writeup\nor community catalog surveyed at time of integration\ndocuments this exact combination of `UserInfo.txt` filename,\n`<hex>-<HOSTNAME>` compound-HWID shape, `--- Installed Software ---` triple-dash section header, and indented\nsoftware-inventory bullet layout. The archive-side\n`@FATETRAFFIC` handle is an aggregator label documented as\na mixed-source redistributor rather than a stealer builder.",
+  "detection_notes": "Fingerprint requires the `--- Installed Software ---`\ntriple-dash section header literal AND a line-anchored\n`HWID:` line. The section-header literal is invariant\nacross observed samples and cannot collide with any other\nregistered format; pairing with the HWID line guards\nagainst unrelated documents that might quote the header\nstring in prose. Canonical Redline declines because of\nthe absent operator banner and `FileLocation:` /\n`Build ID:` keys. Canonical Lumma declines because of\nthe absent `-` dash prefix on every field. Meduza\ndeclines because its `UserInfo.txt` carries a plain hex\nHWID hash rather than the compound `<hex>-<HOSTNAME>`\nshape and does not emit a triple-dash section header.\nDuring triage, treat the panel as an unattributed builder\nuntil published research maps the compound-HWID shape to\na specific family.",
+  "id": "cs-host-hwid-stealer",
+  "name": "CSHostHwidStealer",
+  "related_families": [],
+  "sources": [],
+  "typical_targets": [
+    "Host metadata: hostname, Windows username, language",
+    "OS fingerprint with build number and edition",
+    "Hardware inventory: CPU core count, installed RAM, disk capacity",
+    "Screen resolution and display configuration",
+    "Full installed-software inventory from the Uninstall registry hive",
+    "Victim public IP plus ISO country code and city"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSHostHwidStealer là mã định danh do CyStack đặt tên cho một panel `Key: Value` `UserInfo.txt` dạng văn bản thuần, trong đó trường HWID mang một định danh `<8-hex>-<HOSTNAME>` dạng ghép, nhúng tên máy Windows vào nửa sau của HWID. Được ghi nhận bên trong các gói tổng hợp `BONUS @FATETRAFFIC <count> MIX <DD>-<MM>-<YYYY>.part<N>.rar` tại các thư mục nạn nhân `[<CC>]_@FATETRAFFIC_<YYYY>_<MM>_<DD>_<N>/UserInfo.txt` (ví dụ `[EG]_@FATETRAFFIC_2026_08_30_62434557/UserInfo.txt`).\n\nCác trường trong phần nội dung: `IP`, `Country`, `City`, `ISP`, `HWID`, `OS`, `Username`, `Hostname`, `Language`, `CPU Cores`, `RAM`, `Disk`, `Display`, theo sau là tiêu đề mục ba dấu gạch ngang `--- Installed Software ---` và các tên chương trình được thụt lề 2 khoảng trắng, mỗi tên một dòng (các chuỗi DisplayName lấy từ WMI, xuất phát từ registry hive `HKLM\\Software\\Microsoft\\Windows\\ CurrentVersion\\Uninstall` chuẩn). Bố cục này thuần túy (không có tiền tố gạch đầu dòng như Lumma và các biến thể Deimos / BABA / AL của nó), không có lỗi chính tả đặc trưng của Redline `Operation System:` và các mốc neo `FileLocation:` / `Build ID:`, không phải YAML (khác với Remus), và không mang các dấu hiệu bố cục `UserInfo.txt` của Meduza hay các hash HWID dạng hex thuần hoặc GUID mà Redline, Lumma, Vidar, Rhadamanthys, StealC, RisePro, Meduza, Acreed, và MetaStealer tạo ra.\n\nViệc quy kết hiện chỉ mang tính tạm thời. Không có báo cáo CTI đã qua kiểm duyệt từ nhà cung cấp nào hay danh mục cộng đồng nào được khảo sát tại thời điểm tích hợp ghi nhận đúng sự kết hợp này giữa tên tệp `UserInfo.txt`, cấu trúc dữ liệu HWID dạng ghép `<hex>-<HOSTNAME>`, tiêu đề mục ba dấu gạch ngang `--- Installed Software ---`, và bố cục danh sách phần mềm được thụt lề. Nhãn `@FATETRAFFIC` ở phía kho lưu trữ là nhãn của một bên tổng hợp, được ghi nhận là đơn vị phân phối lại từ nhiều nguồn khác nhau chứ không phải nhà phát triển mã độc đánh cắp thông tin.",
+      "typical_targets": [
+        "Metadata của máy: tên máy, tên người dùng Windows, ngôn ngữ",
+        "Dấu vết nhận dạng hệ điều hành kèm số hiệu bản dựng và phiên bản",
+        "Kiểm kê phần cứng: số nhân CPU, dung lượng RAM đã cài đặt, dung lượng ổ đĩa",
+        "Độ phân giải màn hình và cấu hình hiển thị",
+        "Danh sách đầy đủ phần mềm đã cài đặt lấy từ registry hive Uninstall",
+        "Địa chỉ IP công cộng của nạn nhân kèm mã quốc gia ISO và thành phố"
+      ],
+      "detection_notes": "Việc nhận diện đòi hỏi phải có chuỗi tiêu đề mục ba dấu gạch ngang `--- Installed Software ---` VÀ một dòng `HWID:` được neo theo dòng. Chuỗi tiêu đề mục này là bất biến trên các mẫu đã quan sát và không thể trùng lặp với bất kỳ định dạng nào khác đã được đăng ký; việc kết hợp với dòng HWID giúp tránh nhầm lẫn với các tài liệu không liên quan có thể trích dẫn chuỗi tiêu đề này trong văn bản thông thường. Redline chuẩn bị loại trừ do thiếu banner của đối tượng vận hành và các khóa `FileLocation:` / `Build ID:`. Lumma chuẩn bị loại trừ do thiếu tiền tố gạch ngang `-` ở mọi trường. Meduza bị loại trừ vì `UserInfo.txt` của nó mang hash HWID dạng hex thuần thay vì cấu trúc dữ liệu ghép `<hex>-<HOSTNAME>`, và không tạo dữ liệu đầu ra là tiêu đề mục ba dấu gạch ngang. Trong quá trình phân loại ban đầu, hãy xem panel này là một công cụ builder chưa được quy kết cho đến khi có nghiên cứu được công bố ánh xạ cấu trúc dữ liệu HWID dạng ghép này với một họ mã độc cụ thể.",
+      "attack_techniques": [
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1518",
+          "name": "Dò tìm phần mềm"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": null,
+      "fields": [
+        "City",
+        "Country",
+        "CPU Cores",
+        "Disk",
+        "Display",
+        "Hostname",
+        "HWID",
+        "IP",
+        "ISP",
+        "Language",
+        "OS",
+        "RAM",
+        "Username"
+      ],
+      "filenames": [
+        "UserInfo.txt"
+      ],
+      "format_id": "cs-host-hwid-stealer",
+      "id": "v_4d36d33e840d0ff63e5f43c98ccd5481",
+      "markers": [],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_4d36d33e840d0ff63e5f43c98ccd5481/UserInfo.txt",
+        "sha256": "1e1d652ea130f45cd07035dce791f514f5e9fd592e8e31820fb95829633dec78",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}

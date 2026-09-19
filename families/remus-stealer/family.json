@@ -46,6 +46,39 @@
   "observed_channels": [
     "https://t.me/rmsops"
   ],
+  "localizations": {
+    "vi": {
+      "description": "Remus Stealer là mã độc đánh cắp thông tin 64-bit được cung cấp theo mô hình malware-as-a-service, ghi nhận lần đầu vào năm 2026 và được các nghiên cứu độc lập xác định có quan hệ gần với Lumma. Phần thân `Info.txt` đã biết chứa tham chiếu phân phối `@rmsops`, banner `# REMUS LOG` và khối gốc `build:` dạng YAML. Một số mẫu thu thập được có thêm banner của bên phân phối, chẳng hạn watermark cách điệu `RÔýĆløud`, đặt trước phần thân này. Cấu trúc trường tương đồng với danh sách tiền tố dấu gạch ngang của Lumma nhưng sử dụng banner và kênh phân phối khác.",
+      "typical_targets": [
+        "Thông tin xác thực và cookie đã lưu trong trình duyệt",
+        "Tiện ích mở rộng và ứng dụng ví tiền điện tử",
+        "Thông tin phần cứng hệ thống và ngôn ngữ/khu vực"
+      ],
+      "detection_notes": "Banner `# REMUS LOG` kết hợp với tham chiếu kênh `@rmsops` tạo thành dấu hiệu nhận diện Remus có độ tin cậy cao. Khối gốc `build:` dạng YAML và khối `hardware:` lồng bên trong giúp phân biệt Remus với Lumma nguyên bản, vốn sử dụng dạng `- LummaC2 Build:` có tiền tố dấu gạch ngang. Watermark của bên phân phối có thể xuất hiện trước các neo này và cần được xem là ngữ cảnh phân phối, không phải một định dạng phần thân khác.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  },
   "variants": [
     {
       "id": "v_0b6a40975520ab343d4d6ad9a6073ea0",
@@ -134,6 +167,61 @@
       }
     },
     {
+      "attribution_confidence": "high",
+      "distribution_channel": null,
+      "fields": [
+        "anti-virus",
+        "computer-name",
+        "core count",
+        "core enabled",
+        "country",
+        "cpu",
+        "date",
+        "display",
+        "domain",
+        "elevated",
+        "gpu",
+        "hardware",
+        "hostname",
+        "install-date",
+        "ip-address",
+        "language",
+        "local-date",
+        "manufacturer",
+        "motherboard",
+        "name",
+        "netbios",
+        "os",
+        "path",
+        "product",
+        "ram",
+        "size",
+        "state",
+        "thread count",
+        "time",
+        "time-zone",
+        "user-name",
+        "version"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "format_id": "remus",
+      "id": "v_3fd5e702d8f417070e20ecdf7546038f",
+      "layout_id": "yaml-build-root-stripped",
+      "markers": [
+        "hardware:"
+      ],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_3fd5e702d8f417070e20ecdf7546038f/Info.txt",
+        "sha256": "a81830a125f8cab129fc56a408128d5c0fdd420a42872bd86f0b091767ee1ff5",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
       "id": "v_40b69f8215f8aad13e8f74334058d313",
       "format_id": "remus",
       "filenames": [
@@ -161,38 +249,5 @@
       },
       "layout_id": "yaml-build-root"
     }
-  ],
-  "localizations": {
-    "vi": {
-      "description": "Remus Stealer là mã độc đánh cắp thông tin 64-bit được cung cấp theo mô hình malware-as-a-service, ghi nhận lần đầu vào năm 2026 và được các nghiên cứu độc lập xác định có quan hệ gần với Lumma. Phần thân `Info.txt` đã biết chứa tham chiếu phân phối `@rmsops`, banner `# REMUS LOG` và khối gốc `build:` dạng YAML. Một số mẫu thu thập được có thêm banner của bên phân phối, chẳng hạn watermark cách điệu `RÔýĆløud`, đặt trước phần thân này. Cấu trúc trường tương đồng với danh sách tiền tố dấu gạch ngang của Lumma nhưng sử dụng banner và kênh phân phối khác.",
-      "typical_targets": [
-        "Thông tin xác thực và cookie đã lưu trong trình duyệt",
-        "Tiện ích mở rộng và ứng dụng ví tiền điện tử",
-        "Thông tin phần cứng hệ thống và ngôn ngữ/khu vực"
-      ],
-      "detection_notes": "Banner `# REMUS LOG` kết hợp với tham chiếu kênh `@rmsops` tạo thành dấu hiệu nhận diện Remus có độ tin cậy cao. Khối gốc `build:` dạng YAML và khối `hardware:` lồng bên trong giúp phân biệt Remus với Lumma nguyên bản, vốn sử dụng dạng `- LummaC2 Build:` có tiền tố dấu gạch ngang. Watermark của bên phân phối có thể xuất hiện trước các neo này và cần được xem là ngữ cảnh phân phối, không phải một định dạng phần thân khác.",
-      "attack_techniques": [
-        {
-          "id": "T1555",
-          "name": "Thông tin xác thực từ kho mật khẩu"
-        },
-        {
-          "id": "T1555.003",
-          "name": "Thông tin xác thực từ trình duyệt web"
-        },
-        {
-          "id": "T1539",
-          "name": "Đánh cắp cookie phiên web"
-        },
-        {
-          "id": "T1005",
-          "name": "Dữ liệu từ hệ thống cục bộ"
-        },
-        {
-          "id": "T1082",
-          "name": "Dò tìm thông tin hệ thống"
-        }
-      ]
-    }
-  }
+  ]
 }

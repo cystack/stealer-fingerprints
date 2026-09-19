@@ -20,8 +20,8 @@ Các biến thể log dạng khối mở rộng (extended-block) của RedLine. 
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `redline`, `redline-extended`
-- Variants observed: **6**
-- CyStack observations represented: **1,063,175**
+- Variants observed: **7**
+- CyStack observations represented: **1,063,176**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -115,6 +115,24 @@ Recognition anchors:
 
 - Stable markers: -
 - Field labels: `Operation System`, `Traffic`
+
+### `v_8f791a8040e2e6593efabd4a991c2b56`
+
+- Format ID: `redline-like-stealer`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **unknown**
+- Layout: `current-path`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_8f791a8040e2e6593efabd4a991c2b56/UserInformation.txt)
+- Sample SHA-256: `29d4fb61258df304a60a95afb53e5875f8c89b1935408fce2b7a09b8fd16ca31`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `ComputerName`, `Country`, `Current Path`, `Graphics card`, `Installed RAM`, `IP`, `Keyboard Language`, `Log date`, `MachineID`, `Operation System`, `Processor`, `ScreenSize`, `System Language`, `TimeZone`, `User Language`, `UserName`, `UUID`
 
 ### `v_925a2717759e113f55e4f8f24d7c663e`
 

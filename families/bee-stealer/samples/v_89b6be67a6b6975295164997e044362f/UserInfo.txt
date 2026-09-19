@@ -1,0 +1,26 @@
+              _   _	 |
+             ( | / )	 |
+           \\ \|/,'_	 |
+           (")(_)()))=-  |
+Bee stealer    <\\	 |
+----------------------------
+os: Windows 10 Pro
+time-zone: UTC+1
+local-date: 14.7.2026 2:22
+language: fr-FR
+computer-name: <HOST>
+netbios: <HOST>
+hostname: <HOST>
+user-name: <USER>
+domain: 
+cpu-cores: 16
+cpu: Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz
+ram-total: 32768MB
+display-x: 1920
+display-y: 1080
+gpu: Meta Virtual Monitor
+
+Ip: <IP>
+Country: France
+
+Procces riped: True

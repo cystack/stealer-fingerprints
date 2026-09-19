@@ -44,8 +44,8 @@ Các trường nội dung: `Build Date`, `Configuration`, `Execution Path`,
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **low**
 - Aliases: `BRADMAX Info.txt with Lumma sig watermark`, `Bare-KV Redline-style panel with Lumma sig suffix`
-- Variants observed: **1**
-- CyStack observations represented: **10,811**
+- Variants observed: **2**
+- CyStack observations represented: **10,812**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -98,6 +98,24 @@ Recognition anchors:
 
 - Stable markers: `(sig:`
 - Field labels: `Country`, `Execution Path`, `Installed RAM`, `IP Address`
+
+### `v_7a05ee499eb89ba2e184501cb922cd9a`
+
+- Format ID: `cs-sig-info-stealer`
+- Observed filenames: `Info.txt`
+- Panel brand: -
+- Distribution channel: `@BRADLOGS`
+- Attribution confidence: **low**
+- Layout: `footer-stub`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_7a05ee499eb89ba2e184501cb922cd9a/Info.txt)
+- Sample SHA-256: `edb8bea5f34968f3bf19405cc514388889fc113b5e6573ce3aa1a09f5bc13698`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Antivirus`, `Computer Name`, `Country`, `Display Resolution`, `Elevated`, `Graphics Card`, `HWID`, `Install Date`, `Installed RAM`, `IP Address`, `Netbios`, `Operation System`, `Processor`, `Processor Cores`, `Processor Threads`, `System Date`, `Time`, `Time Zone`, `User`, `User Language`, `User Name`
 
 
 ## MITRE ATT&CK

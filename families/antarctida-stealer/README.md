@@ -19,8 +19,8 @@ Hồ sơ dựa trên nhãn tự khai báo quan sát được cho các nhật ký
 - Classification / Phân loại: **Observed self-label / Tên tự nhận quan sát được**
 - Attribution confidence: **unknown**
 - Aliases: `Antarctida Stealer`
-- Variants observed: **1**
-- CyStack observations represented: **33**
+- Variants observed: **2**
+- CyStack observations represented: **34**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -62,6 +62,23 @@ Recognition anchors:
 
 - Stable markers: `Antarctida Stealer`
 - Field labels: -
+
+### `v_c935b3796d814f9bc9b02e605fc7d622`
+
+- Format ID: `antarctida`
+- Observed filenames: `Information.txt`
+- Panel brand: `Antarctida Stealer`
+- Distribution channel: -
+- Attribution confidence: **unknown**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_c935b3796d814f9bc9b02e605fc7d622/Information.txt)
+- Sample SHA-256: `bbbe1d02d8f4b27faefd3b116ba47fa7fb3ab67bc509d3c43e56b617ac753ae7`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `Antarctida Stealer`, `❄ Antarctida Stealer ❄`
+- Field labels: `Computer Name`, `CPU`, `Disk`, `GPU`, `IP`, `OS`, `RAM`, `System Directory`, `Username`
 
 
 ## MITRE ATT&CK

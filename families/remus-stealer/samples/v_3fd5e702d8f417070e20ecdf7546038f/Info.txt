@@ -1,0 +1,39 @@
+  date: 01.07.2026
+  path: <PATH>
+  elevated: false
+  ip-address: <IP>
+  country: AO
+  time: 06.07.2026, 05:40:52
+os:
+  version: Windows 11 Pro (10.0.26200) x64
+  time-zone: UTC+1
+  local-date: 06.07.2026 06:40:52
+  install-date: 15.06.2026 11:10:58
+  language: pt-BR
+  computer-name: <HOST>
+  user-name: <USER>
+  netbios: <HOST>
+  domain: 
+  hostname: <HOST>
+  anti-virus:
+  - name: Windows Defender
+    state: active
+hardware:
+  motherboard:
+    manufacturer: 'Dell Inc.'
+    product: 'Latitude 3500'
+  cpu:
+  - manufacturer: 'Intel(R) Corporation'
+    product: 'Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz'
+    core count: 4
+    core enabled: 4
+    thread count: 8
+  ram:
+  - product: '4ATF51264HZ-3G2R1   '
+    size: 4096MB
+  - product: 'M471A5143SB1-CRC    '
+    size: 4096MB
+  gpu:
+  - 'NVIDIA GeForce MX130'
+  - 'Intel(R) UHD Graphics 620'
+  display: 1920x1080

@@ -1,0 +1,18 @@
+Log date: 2026-07-01 19:59:22
+# Buy now: TG @FATETRAFFIC | @GGFATE | @FATEPRODUCTBOT 
+IP: <IP>
+Country: CA
+UserName: <USER>
+ComputerName: <HOST>
+Operation System: Windows 10 build 19045
+System Language: English
+User Language: English
+Keyboard Language: English
+TimeZone: UTC-3:0
+MachineID: <HWID>
+UUID: <HWID>
+Current Path: C:\ProgramData\app_config\Creh\753748.exe
+ScreenSize: 1600x900
+Processor: Intel(R) Pentium(R) CPU        P6100  @ 2.00GHz
+Installed RAM: 7860 MB
+Graphics card: Intel(R) HD Graphics

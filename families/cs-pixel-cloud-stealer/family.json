@@ -25,7 +25,6 @@
     "redline-like-stealer",
     "x-files"
   ],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "CSPixelCloudStealer là định danh do CyStack đặt cho tệp ``System.txt`` dạng rút gọn theo cấu trúc dữ liệu Redline của bộ tổng hợp ``t.me/PIXELCLOUD3``, được ghi nhận bên trong các gói tổng hợp ``@ft7links-lumma``. Bảng điều khiển tạo dữ liệu đầu ra là một banner ASCII-art theo sau bởi mười hai dòng ``https://t.me/PIXELCLOUD3`` subscriber lặp lại, được sắp xếp thành khối 3 hàng x 4 cột.",
@@ -33,5 +32,48 @@
       "detection_notes": "Cấu trúc dữ liệu của phần thân trùng khớp với các biến thể được ghi nhận đầu tiên của CSRussia34Stealer và CSEnchantCloudStealer; @ft7links gắn nhãn kho lưu trữ là 'lumma' nhưng phần thân lại là dạng phái sinh Redline điển hình đối với biến thể 1. Bốn biến thể tạo dữ liệu đầu ra từ các họ mã độc nền tảng khác nhau.",
       "attack_techniques": []
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "t.me/PIXELCLOUD3",
+      "fields": [
+        "Admin Group",
+        "Computer Name",
+        "Country",
+        "Display Resolution",
+        "Domain Name",
+        "Graphics card",
+        "HWID",
+        "Installed RAM",
+        "Integrity",
+        "IP",
+        "Keyboard Language",
+        "Log date",
+        "now",
+        "Operation System",
+        "Processor",
+        "System Language",
+        "TimeZone",
+        "User Name",
+        "UserLanguage",
+        "Version Build"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "format_id": "cs-pixel-cloud-stealer",
+      "id": "v_d73679982ffbd4a944760d7d353aee79",
+      "layout_id": "redline-like",
+      "markers": [],
+      "panel_brand": "PIXELCLOUD3 (RedlineLike Admin/Integrity)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_d73679982ffbd4a944760d7d353aee79/UserInformation.txt",
+        "sha256": "4c72ad178a8174718586bccfe7cbc82d9892dcd71cf1211d9c395630b2cb0a16",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

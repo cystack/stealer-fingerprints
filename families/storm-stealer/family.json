@@ -1,0 +1,153 @@
+{
+  "aliases": [
+    "Storm",
+    "StormStealer"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    },
+    {
+      "id": "T1518.001",
+      "name": "Security Software Discovery"
+    },
+    {
+      "id": "T1027",
+      "name": "Obfuscated Files or Information"
+    }
+  ],
+  "attribution_confidence": "high",
+  "classification": "known_family",
+  "description": "Storm Stealer is a C++ malware-as-a-service infostealer first\npublicly documented by Varonis in early 2026 and cross-covered\nby Infosecurity Magazine, Hackread, and BleepingComputer. The\npanel is marketed as a session-hijacking / server-side\ndecryption platform aimed at browser cookies, saved credentials,\nand cryptocurrency wallet artefacts. Public reporting places\npanel infrastructure at `storm-project.biz` and describes a\nsubscription pricing model of roughly $300 for a seven-day\ndemo, $900/month for a standard seat, and $1,800/month for a\nteam tier that includes 100 operator seats and 200 builds.\nVaronis analysis notes that the loader runs stages in memory\nto reduce disk-based detection surface.\n\nThe panel writes a `SystemInfo.txt` per victim opening with a\n`Storm Stealer` self-brand banner and the panel-support URL\n`https://storm-project.biz/support`, followed by a geolocation\nblock (`Remote IP`, `Location`, `State/Region`, `ZIP/Postal Code`, `Coordinates`, `Location Accuracy`, `Timezone`, `ISP`,\n`AS Number`), a device block (`OS`, `Computer`, `User`, `AV`,\n`CPU`, `RAM`, `GPU`, `Display`), a numbered network-interface\nblock (`[N] IP <v4>` / `MAC <mac>` / `GW <v4>` / `Name <adapter>`), and a `Launch:` line recording the loader\nexecution mode. Sections are separated by U+2500 box-drawing\nhorizontal rules rather than ASCII dashes. The `User:` field\nsuffixes a bracketed Windows privilege class (`sidne [User]` /\n`admin [Administrator]`) and the `CPU:` field emits only a\ncounts pair (`4C / 8T`) without the WMI-derived processor\nmodel string that Redline, Lumma, and Rhadamanthys all\ninclude.",
+  "detection_notes": "High-confidence trigger: the `Storm Stealer` self-brand token\nAND the `storm-project.biz` panel-support URL both present in\nthe same `SystemInfo.txt` body. The two-anchor requirement\ndefends against CTI report excerpts that quote the brand name\nor the domain in prose without shipping the full panel body.\nThe `CPU: NC / NT` counts-only shape, the box-drawing\nseparator lines, and the `Launch: Memory` loader-mode field\nare additional Storm-specific artefacts once the primary\nanchors have fired.",
+  "id": "storm-stealer",
+  "name": "Storm Stealer",
+  "observed_channels": [
+    "https://t.me/StormProject"
+  ],
+  "related_families": [],
+  "sources": [
+    "https://www.varonis.com/blog/storm-infostealer",
+    "https://www.infosecurity-magazine.com/news/storm-infostealer-remotely/",
+    "https://hackread.com/storm-infostealer-sold-as-service-browsers-wallets/"
+  ],
+  "typical_targets": [
+    "Browser saved credentials, cookies, autofill",
+    "Cryptocurrency wallet browser extensions and desktop clients",
+    "Session tokens for high-value web services",
+    "Host geolocation (IP, city, country, coordinates, ISP, ASN)",
+    "Windows privilege class and antivirus product name",
+    "Enumerated network interfaces (IPv4, MAC, gateway, adapter)"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "Storm Stealer là mã độc đánh cắp thông tin dạng malware-as-a-service viết bằng C++, lần đầu được Varonis công khai tài liệu hóa vào đầu năm 2026 và được Infosecurity Magazine, Hackread, và BleepingComputer đưa tin lại. Bảng điều khiển được quảng cáo là nền tảng chiếm đoạt phiên (session-hijacking) / giải mã phía máy chủ, nhắm vào cookie trình duyệt, thông tin xác thực đã lưu, và các dấu vết liên quan đến ví tiền mã hóa. Các báo cáo công khai cho biết hạ tầng bảng điều khiển đặt tại `storm-project.biz` và mô tả mô hình định giá thuê bao khoảng 300 USD cho bản demo bảy ngày, 900 USD/tháng cho gói tiêu chuẩn, và 1.800 USD/tháng cho gói nhóm bao gồm 100 chỗ vận hành và 200 bản dựng (build). Phân tích của Varonis ghi nhận rằng trình tải chạy các giai đoạn trong bộ nhớ nhằm giảm bề mặt nhận diện dựa trên đĩa.\n\nBảng điều khiển ghi một `SystemInfo.txt` cho mỗi nạn nhân, mở đầu bằng biểu ngữ tự thương hiệu hóa `Storm Stealer` và URL hỗ trợ bảng điều khiển `https://storm-project.biz/support`, tiếp theo là một khối định vị địa lý (`Remote IP`, `Location`, `State/Region`, `ZIP/Postal Code`, `Coordinates`, `Location Accuracy`, `Timezone`, `ISP`, `AS Number`), một khối thiết bị (`OS`, `Computer`, `User`, `AV`, `CPU`, `RAM`, `GPU`, `Display`), một khối giao diện mạng được đánh số (`[N] IP <v4>` / `MAC <mac>` / `GW <v4>` / `Name <adapter>`), và một dòng `Launch:` ghi lại chế độ thực thi của trình tải. Các phần được phân tách bằng đường kẻ ngang vẽ hộp U+2500 thay vì dấu gạch ngang ASCII. Trường `User:` thêm hậu tố là lớp đặc quyền Windows trong dấu ngoặc vuông (`sidne [User]` / `admin [Administrator]`), và trường `CPU:` chỉ tạo dữ liệu đầu ra là một cặp số đếm (`4C / 8T`) mà không có chuỗi tên model bộ xử lý lấy từ WMI mà Redline, Lumma, và Rhadamanthys đều có.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu, cookie, dữ liệu tự động điền trong trình duyệt",
+        "Tiện ích mở rộng trình duyệt và ứng dụng desktop cho ví tiền mã hóa",
+        "Token phiên cho các dịch vụ web có giá trị cao",
+        "Vị trí địa lý của máy (IP, thành phố, quốc gia, tọa độ, ISP, ASN)",
+        "Lớp đặc quyền Windows và tên sản phẩm diệt virus",
+        "Các giao diện mạng được liệt kê (IPv4, MAC, gateway, adapter)"
+      ],
+      "detection_notes": "Điều kiện kích hoạt độ tin cậy cao: token tự thương hiệu hóa `Storm Stealer` VÀ URL hỗ trợ bảng điều khiển `storm-project.biz` cùng xuất hiện trong cùng nội dung `SystemInfo.txt`. Yêu cầu hai mốc neo này giúp phòng tránh trường hợp các đoạn trích báo cáo CTI trích dẫn tên thương hiệu hoặc tên miền trong văn bản mô tả mà không kèm theo toàn bộ nội dung bảng điều khiển. Cấu trúc dữ liệu `CPU: NC / NT` chỉ chứa số đếm, các dòng phân tách bằng ký tự vẽ hộp, và trường chế độ trình tải `Launch: Memory` là các dấu vết đặc trưng bổ sung của Storm một khi các mốc neo chính đã kích hoạt.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1016",
+          "name": "Dò tìm cấu hình mạng hệ thống"
+        },
+        {
+          "id": "T1518.001",
+          "name": "Dò tìm phần mềm bảo mật"
+        },
+        {
+          "id": "T1027",
+          "name": "Tệp hoặc thông tin bị làm rối"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "@StormProject",
+      "fields": [
+        "AS Number",
+        "AV",
+        "Computer",
+        "Coordinates",
+        "CPU",
+        "Display",
+        "GPU",
+        "ISP",
+        "Launch",
+        "Location",
+        "Location Accuracy",
+        "OS",
+        "RAM",
+        "Remote IP",
+        "State/Region",
+        "Timezone",
+        "User",
+        "ZIP/Postal Code"
+      ],
+      "filenames": [
+        "SystemInfo.txt"
+      ],
+      "format_id": "storm-stealer",
+      "id": "v_5eeda44e4bf38670f1ee04378c51adcc",
+      "markers": [
+        "Storm Stealer"
+      ],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_5eeda44e4bf38670f1ee04378c51adcc/SystemInfo.txt",
+        "sha256": "79b2e1dc8b3a75919c7108e0f0788530b7620747638b0476f43e2974d85216d1",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}
