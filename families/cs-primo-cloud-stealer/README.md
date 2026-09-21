@@ -22,7 +22,8 @@ CSPrimoCloudStealer là định danh do CyStack đặt cho một lớp bọc tr�
 - Attribution confidence: **high**
 - Canonical family: [redline](../redline/)
 - Aliases: `Primo_Cloud`, `@Primo_Cloud`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -47,7 +48,23 @@ Dòng watermark `@Primo_Cloud:` là chỉ dấu kích hoạt rõ ràng nhất. K
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_238b7d97b79092d4d344e289f15c6b54`
+
+- Format ID: `cs-primo-cloud-stealer`
+- Observed filenames: `information.txt`
+- Panel brand: `@Primo_Cloud`
+- Distribution channel: `@ft7links`
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_238b7d97b79092d4d344e289f15c6b54/information.txt)
+- Sample SHA-256: `a9a8b46fb62eb75ca864d9c3da7a2944af56c5f8e5173c3583101dad9833de8b`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `@Primo_Cloud`, `[Hardware]`, `[Processes]`, `[Software]`
+- Field labels: `Antivirus`, `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Local Time`, `MachineID`, `MD5`, `Path`, `Processor`, `RAM`, `Threads`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
 
 ## MITRE ATT&CK
 

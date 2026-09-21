@@ -41,7 +41,6 @@
     "https://t.me/+ecb2NTo6VKFhYzI0"
   ],
   "canonical_family": "redline",
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "CSPrimoCloudStealer là định danh do CyStack đặt cho một lớp bọc trình tổng hợp `@Primo_Cloud` đã bị lược bỏ mạnh, được phát hiện bên trong các gói `@ft7links-vidar`. Bảng điều khiển tạo dữ liệu đầu ra gồm bốn dòng watermark `@Primo_Cloud:https://t.me/+ecb2NTo6VKFhYzI0` lặp lại, theo sau là phần thân dữ liệu theo chuẩn Redline nhưng đã bị rút gọn chỉ còn hai trường trên nạn nhân có IP bogon đã xác minh (`User Name:` và `Display Resolution:`).",
@@ -70,5 +69,52 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "@ft7links",
+      "fields": [
+        "Antivirus",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "IP",
+        "Local Time",
+        "MachineID",
+        "MD5",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "format_id": "cs-primo-cloud-stealer",
+      "id": "v_238b7d97b79092d4d344e289f15c6b54",
+      "markers": [
+        "@Primo_Cloud",
+        "[Hardware]",
+        "[Processes]",
+        "[Software]"
+      ],
+      "panel_brand": "@Primo_Cloud",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_238b7d97b79092d4d344e289f15c6b54/information.txt",
+        "sha256": "a9a8b46fb62eb75ca864d9c3da7a2944af56c5f8e5173c3583101dad9833de8b",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

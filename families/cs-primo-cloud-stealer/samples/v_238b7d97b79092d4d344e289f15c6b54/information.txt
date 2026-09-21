@@ -1,0 +1,364 @@
+@Primo_Cloud | https://t.me/+ecb2NTo6VKFhYzI0
+@Primo_Cloud | https://t.me/+ecb2NTo6VKFhYzI0
+@Primo_Cloud | https://t.me/+ecb2NTo6VKFhYzI0
+@Primo_Cloud | https://t.me/+ecb2NTo6VKFhYzI0
+@Primo_Cloud | https://t.me/+ecb2NTo6VKFhYzI0
+@Primo_Cloud | https://t.me/+ecb2NTo6VKFhYzI0
+@Primo_Cloud | https://t.me/+ecb2NTo6VKFhYzI0
+@Primo_Cloud | https://t.me/+ecb2NTo6VKFhYzI0
+@Primo_Cloud | https://t.me/+ecb2NTo6VKFhYzI0
+@Primo_Cloud | https://t.me/+ecb2NTo6VKFhYzI0
+@Primo_Cloud | https://t.me/+ecb2NTo6VKFhYzI0
+@Primo_Cloud | https://t.me/+ecb2NTo6VKFhYzI0
+@Primo_Cloud | https://t.me/+ecb2NTo6VKFhYzI0
+@Primo_Cloud | https://t.me/+ecb2NTo6VKFhYzI0
+@Primo_Cloud | https://t.me/+ecb2NTo6VKFhYzI0
+
+
+IP: <IP>
+Country: IN
+
+Date: 16.06.2026 14:06:22
+MachineID: <HWID>
+GUID: <HWID>
+HWID: <HWID>
+
+Path: <PATH>
+MD5: <SECRET>
+Work Dir: In memory
+
+Windows: Windows 11 Pro 25H2 (Build 26200)
+Computer Name: <HOST>
+User Name: <USER>
+Display Resolution: 1536x864
+Local Time: 16.06.2026 14:06:22
+Antivirus: Windows Defender
+
+[Hardware]
+Processor: AMD Ryzen 5 4600H with Radeon Graphics         
+Cores: 12
+Threads: 12
+RAM: 32115 MB
+VideoCard: NVIDIA GeForce GTX 1650 Ti
+
+[Processes]
+  [4] System
+  [188] Secure System
+  [232] Registry
+  [768] smss.exe
+  [1104] csrss.exe
+  [1248] wininit.exe
+  [1392] services.exe
+  [1412] LsaIso.exe
+  [1420] lsass.exe
+  [1560] svchost.exe
+  [1592] fontdrvhost.exe
+  [1684] svchost.exe
+  [1744] svchost.exe
+  [1864] svchost.exe
+  [1964] svchost.exe
+  [1976] svchost.exe
+  [1984] svchost.exe
+  [1820] svchost.exe
+  [2052] svchost.exe
+  [2196] svchost.exe
+  [2256] svchost.exe
+  [2276] svchost.exe
+  [2284] svchost.exe
+  [2336] svchost.exe
+  [2472] svchost.exe
+  [2500] svchost.exe
+  [2508] svchost.exe
+  [2960] svchost.exe
+  [2968] svchost.exe
+  [2976] svchost.exe
+  [3084] svchost.exe
+  [3104] OmenCap.exe
+  [3112] svchost.exe
+  [3176] WUDFHost.exe
+  [3192] svchost.exe
+  [3268] vmms.exe
+  [3300] svchost.exe
+  [3352] svchost.exe
+  [3416] svchost.exe
+  [3476] NVDisplay.Container.exe
+  [3536] svchost.exe
+  [3580] atiesrxx.exe
+  [3588] svchost.exe
+  [3596] svchost.exe
+  [3788] svchost.exe
+  [3880] svchost.exe
+  [2864] vmcompute.exe
+  [4136] svchost.exe
+  [4160] WmiPrvSE.exe
+  [4372] svchost.exe
+  [4532] svchost.exe
+  [4776] svchost.exe
+  [5032] svchost.exe
+  [5040] svchost.exe
+  [5048] svchost.exe
+  [3040] svchost.exe
+  [4728] TouchpointAnalyticsClientService.exe
+  [4748] SysInfoCap.exe
+  [4888] NetworkCap.exe
+  [4088] AppHelperCap.exe
+  [4884] DiagsCap.exe
+  [4900] Memory Compression
+  [5256] svchost.exe
+  [5612] unsecapp.exe
+  [5884] svchost.exe
+  [5892] svchost.exe
+  [5928] svchost.exe
+  [5804] svchost.exe
+  [6164] svchost.exe
+  [6224] svchost.exe
+  [6264] spoolsv.exe
+  [6380] svchost.exe
+  [6476] svchost.exe
+  [6484] DbxSvc.exe
+  [6492] EPA_IPROUTL_ENSV.exe
+  [6504] ETDService.exe
+  [6512] svchost.exe
+  [6520] FNPLicensingService64.exe
+  [6540] armsvc.exe
+  [6556] AnyDesk.exe
+  [6568] ibtsiva.exe
+  [6576] svchost.exe
+  [6604] OfficeClickToRun.exe
+  [6612] AdskLicensingService.exe
+  [6624] RtkAudUService64.exe
+  [6648] SECOMN64.exe
+  [6676] MpDefenderCoreService.exe
+  [6716] sqlwriter.exe
+  [6780] svchost.exe
+  [6796] cer_service.exe
+  [6836] AdskAccessServiceHost.exe
+  [6948] svchost.exe
+  [6368] svchost.exe
+  [7172] MsMpEng.exe
+  [7248] svchost.exe
+  [7380] wlanext.exe
+  [8708] AggregatorHost.exe
+  [6528] AdskAccessService.exe
+  [6596] svchost.exe
+  [9488] svchost.exe
+  [9700] svchost.exe
+  [9848] svchost.exe
+  [9608] svchost.exe
+  [10300] svchost.exe
+  [10476] svchost.exe
+  [11900] NisSrv.exe
+  [12604] SearchIndexer.exe
+  [8976] svchost.exe
+  [16280] svchost.exe
+  [15720] svchost.exe
+  [16632] SecurityHealthService.exe
+  [17512] svchost.exe
+  [19112] svchost.exe
+  [20736] svchost.exe
+  [20820] svchost.exe
+  [23004] svchost.exe
+  [13728] svchost.exe
+  [1876] svchost.exe
+  [19096] svchost.exe
+  [6900] svchost.exe
+  [8516] svchost.exe
+  [5608] McCHSvc.exe
+  [24260] svchost.exe
+  [15256] svchost.exe
+  [19684] csrss.exe
+  [19800] winlogon.exe
+  [13644] fontdrvhost.exe
+  [8212] dwm.exe
+  [1852] atieclxx.exe
+  [12388] NVDisplay.Container.exe
+  [7668] ETDCtrl.exe
+  [19856] sihost.exe
+  [16096] svchost.exe
+  [5720] svchost.exe
+  [13976] svchost.exe
+  [14892] svchost.exe
+  [22124] svchost.exe
+  [6156] taskhostw.exe
+  [13460] SSScheduler.exe
+  [23492] McUpdaterModule.exe
+  [18096] explorer.exe
+  [17844] ShellHost.exe
+  [12636] CrossDeviceResume.exe
+  [22928] svchost.exe
+  [22420] CrossDeviceService.exe
+  [1752] SearchHost.exe
+  [8900] StartMenuExperienceHost.exe
+  [3444] RuntimeBroker.exe
+  [15392] Widgets.exe
+  [17556] svchost.exe
+  [14036] WidgetService.exe
+  [17212] msedgewebview2.exe
+  [13580] msedgewebview2.exe
+  [9600] msedgewebview2.exe
+  [21172] msedgewebview2.exe
+  [11724] msedgewebview2.exe
+  [18812] msedgewebview2.exe
+  [1672] ctfmon.exe
+  [23372] TabTip.exe
+  [13388] LockApp.exe
+  [11020] RuntimeBroker.exe
+  [24372] RuntimeBroker.exe
+  [5348] svchost.exe
+  [11452] PhoneExperienceHost.exe
+  [4580] SecurityHealthSystray.exe
+  [5664] RtkAudUService64.exe
+  [14868] AdskAccessService.exe
+  [9556] AdskIdentityManager.exe
+  [10920] AdskAccessCore.exe
+  [15300] RevitAccelerator.exe
+  [17264] AdskAccessUIHost.exe
+  [15696] AdskAccessUIHost.exe
+  [7528] AdskAccessUIHost.exe
+  [14508] AdskAccessUIHost.exe
+  [15920] OneDrive.exe
+  [12620] UnInstDaemon.exe
+  [21708] ms-teams.exe
+  [21372] RuntimeBroker.exe
+  [16716] msedgewebview2.exe
+  [5700] msedgewebview2.exe
+  [2560] msedgewebview2.exe
+  [3496] msedgewebview2.exe
+  [21332] msedgewebview2.exe
+  [15548] msedgewebview2.exe
+  [19920] ms-teams.exe
+  [15448] svchost.exe
+  [14996] msedgewebview2.exe
+  [22192] AdobeCollabSync.exe
+  [16012] AdobeCollabSync.exe
+  [17948] msedge.exe
+  [15572] msedge.exe
+  [14748] msedge.exe
+  [9412] msedge.exe
+  [15488] msedge.exe
+  [15864] PSExpressBroker.exe
+  [8384] PSExpressCore.exe
+  [22980] RuntimeBroker.exe
+  [7644] Adobe Crash Processor_low.exe
+  [22616] ExpressPrtScBackgroundApp.exe
+  [3380] BingWallpaper.exe
+  [15608] TextInputHost.exe
+  [21776] m365copilot_autostarter.exe
+  [4248] AnyDesk.exe
+  [15464] Dropbox.exe
+  [1520] Dropbox.exe
+  [19780] Dropbox.exe
+  [9816] msedgewebview2.exe
+  [15196] msedgewebview2.exe
+  [21044] msedgewebview2.exe
+  [23276] msedgewebview2.exe
+  [11864] msedgewebview2.exe
+  [3808] msedgewebview2.exe
+  [15704] msedgewebview2.exe
+  [17344] msedgewebview2.exe
+  [5244] msedgewebview2.exe
+  [12672] msedgewebview2.exe
+  [12004] msedgewebview2.exe
+  [13588] msedgewebview2.exe
+  [11804] Dropbox.exe
+  [23392] Dropbox.exe
+  [24340] Dropbox.exe
+  [12048] Dropbox.exe
+  [23996] chrome.exe
+  [13128] chrome.exe
+  [24152] chrome.exe
+  [16616] chrome.exe
+  [10436] chrome.exe
+  [21324] chrome.exe
+  [20692] chrome.exe
+  [12612] chrome.exe
+  [24468] chrome.exe
+  [9120] GenuineService.exe
+  [6460] chrome.exe
+  [21744] Dropbox.exe
+  [16052] chrome.exe
+  [23888] Dropbox.exe
+  [11228] chrome.exe
+  [5140] chrome.exe
+  [20128] chrome.exe
+  [2432] chrome.exe
+  [16320] backgroundTaskHost.exe
+  [14716] ShellExperienceHost.exe
+  [12668] RuntimeBroker.exe
+  [20632] OneDrive.Sync.Service.exe
+  [2764] svchost.exe
+  [12068] svchost.exe
+  [2876] audiodg.exe
+  [11596] svchost.exe
+  [22560] svchost.exe
+  [24536] dllhost.exe
+  [19972] chrome.exe
+  [7052] chrome.exe
+  [16976] chrome.exe
+  [14088] ADPClientService.exe
+  [10864] conhost.exe
+  [9708] SearchProtocolHost.exe
+  [21540] chrome.exe
+  [14320] smartscreen.exe
+  [20672] cmd.exe
+  [5740] conhost.exe
+  [22636] rundll32.exe
+  [6864] MpCmdRun.exe
+  [11348] TvXq5R.exe
+  [11012] powershell.exe
+  [10772] conhost.exe
+  [6196] ctfmon.exe
+  [23444] powershell.exe
+[Software]
+  Docker Desktop
+  Microsoft Project Professional 2021 - en-us
+  Microsoft Office LTSC Standard 2021 - en-us
+  Microsoft Visio LTSC Professional 2021 - en-us
+  WinRAR 7.13 (64-bit)
+  Autodesk AutoCAD 2026.1.1 Update
+  FormIt Converter for Revit 2026
+  RSA COM
+  Autodesk CER
+  Steel Connections Content for Revit 2026
+  Autodesk Interoperability Engine Manager
+  Microsoft Azure CLI (64-bit)
+  Microsoft Windows Desktop Runtime - 8.0.28 (x64)
+  ACAD Private
+  AutoCAD 2026 - English
+  Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.42.34433
+  Personal Accelerator for Revit
+  eTransmit for Autodesk Revit 2026
+  QGIS 4.0.0 'Norrk�ping'
+  Worksharing Monitor for Autodesk Revit 2026
+  Autodesk Save to Web and Mobile
+  EPA SWMM 5.2.4 (64-bit)
+  PowerShell 7-x64
+  Revit 2026
+  RSA RoReinf
+  Batch Print for Autodesk Revit 2026
+  Autodesk Genuine Service
+  QGIS 3.44.9 'Solothurn'
+  Epson iProjection Ver.4.10
+  Autodesk Revit 2026
+  Autodesk Revit Add-Ins Manager 2026
+  Office 16 Click-to-Run Licensing Component
+  Office 16 Click-to-Run Extensibility Component
+  Autodesk Carbon Insights for Revit 2026
+  Microsoft .NET Runtime - 8.0.28 (x64)
+  Autodesk Access
+  Microsoft Teams Meeting Add-in for Microsoft Office
+  Adobe Acrobat (64-bit)
+  NVIDIA Graphics Driver 581.83
+  NVIDIA Install Application
+  Microsoft ASP.NET Core 8.0.28 Shared Framework (x64)
+  RSA CommonData
+  Autodesk Steel Connections Core Content for Revit 2026
+  Microsoft .NET Host - 8.0.28 (x64)
+  Autodesk Revit Product Feedback 2026
+  Microsoft Visual C++ 2022 X64 Additional Runtime - 14.42.34433
+  Microsoft .NET Host FX Resolver - 8.0.28 (x64)
+  Autodesk AutoCAD 2026 - English
+  OpenStudio CLI For Revit 2026
+  Generative Design For Revit
+  Microsoft SQL Server 2019 LocalDB 
+  AutoCAD Open in Desktop
