@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **136** CyStack tracking names
 - **11** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **146** observed log variants and **146** samples
-- **8,052,900** CyStack observations represented by the retained sample set
+- **147** observed log variants and **147** samples
+- **8,052,901** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -248,7 +248,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSDeimosStealer](families/cs-deimos-stealer/) → [lumma](families/lumma/) | medium | 1 | [1 retained](families/cs-deimos-stealer/#observed-log-variants) |
 | [CSEnchantCloudStealer](families/cs-enchant-cloud-stealer/) → [redline](families/redline/) | high | 0 | Metadata only |
 | [CSGeoBoxStealer](families/cs-geo-box-stealer/) → [redline](families/redline/) | high | 0 | Metadata only |
-| [CSHunterCloudStealer](families/cs-hunter-cloud-stealer/) → [redline](families/redline/) | high | 0 | Metadata only |
+| [CSHunterCloudStealer](families/cs-hunter-cloud-stealer/) → [redline](families/redline/) | high | 1 | [1 retained](families/cs-hunter-cloud-stealer/#observed-log-variants) |
 | [CSKortexStealer](families/cs-kortex-stealer/) → [lumma](families/lumma/) | low | 0 | Metadata only |
 | [CSPrimoCloudStealer](families/cs-primo-cloud-stealer/) → [redline](families/redline/) | high | 0 | Metadata only |
 | [CSRedhiveStealer](families/cs-redhive-stealer/) → [lumma](families/lumma/) | high | 1 | [1 retained](families/cs-redhive-stealer/#observed-log-variants) |

@@ -23,7 +23,8 @@ CSHunterCloudStealer là định danh do CyStack đặt cho biến thể `HUNTER
 - Attribution confidence: **high**
 - Canonical family: [redline](../redline/)
 - Aliases: `HUNTER CLOUD`, `HUNTER_CLOUD`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -46,7 +47,23 @@ Banner ASCII có các ký tự cách nhau `H U N T E R C L O U D` cùng với wa
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_62e4072dbdc87f967274fc6ed782fe5c`
+
+- Format ID: `cs-hunter-cloud-stealer`
+- Observed filenames: `Information.txt`
+- Panel brand: `HUNTER_CLOUD watermark`
+- Distribution channel: `t.me/HUNTER_CLOUD`
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_62e4072dbdc87f967274fc6ed782fe5c/Information.txt)
+- Sample SHA-256: `f57ea119366cd9af09120c9adf0fe4d3dcce331ad9ba58d7cc7fe70530c6802e`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Category`, `Cores/Threads`, `CPU`, `Displays`, `GPU`, `Keyboards`, `Language`, `Local Time`, `OS`, `RAM`, `System`, `Timezone`, `UTC Time`, `⚡Join`, `🌧 Payment Method`, `🏪 Support`, `💵 1 Month`, `💵 1 Week`, `💵 3 Months`, `💵 Lifetime`
+
 
 ## MITRE ATT&CK
 

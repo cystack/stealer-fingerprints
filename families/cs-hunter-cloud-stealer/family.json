@@ -41,7 +41,6 @@
     "https://t.me/HUNTER_CLOUD"
   ],
   "canonical_family": "redline",
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "CSHunterCloudStealer là định danh do CyStack đặt cho biến thể `HUNTER CLOUD` có gắn watermark, phái sinh từ Redline `UserInformation.txt`, được quan sát bên trong các gói phân phối bởi `@ft7links`. Kênh Telegram `HUNTER_CLOUD` phân phối lại các log phái sinh từ Redline (có cùng cấu trúc dữ liệu với RedlineLikeStealer biến thể 4: `BUILD NAME:` cộng thêm khối mở rộng) dưới một watermark chống thu thập dữ liệu (anti-scrape) theo từng dòng, khiến dấu vân tay (fingerprint) RedlineLike dựa trên vị trí dòng không thể khớp với nội dung.",
@@ -70,5 +69,47 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "t.me/HUNTER_CLOUD",
+      "fields": [
+        "Category",
+        "Cores/Threads",
+        "CPU",
+        "Displays",
+        "GPU",
+        "Keyboards",
+        "Language",
+        "Local Time",
+        "OS",
+        "RAM",
+        "System",
+        "Timezone",
+        "UTC Time",
+        "⚡Join",
+        "🌧 Payment Method",
+        "🏪 Support",
+        "💵 1 Month",
+        "💵 1 Week",
+        "💵 3 Months",
+        "💵 Lifetime"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "cs-hunter-cloud-stealer",
+      "id": "v_62e4072dbdc87f967274fc6ed782fe5c",
+      "markers": [],
+      "panel_brand": "HUNTER_CLOUD watermark",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_62e4072dbdc87f967274fc6ed782fe5c/Information.txt",
+        "sha256": "f57ea119366cd9af09120c9adf0fe4d3dcce331ad9ba58d7cc7fe70530c6802e",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }
