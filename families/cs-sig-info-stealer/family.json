@@ -88,6 +88,47 @@
   },
   "variants": [
     {
+      "attribution_confidence": "low",
+      "distribution_channel": "@BRADLOGS",
+      "fields": [
+        "Antivirus",
+        "Build Date",
+        "Computer Name",
+        "Configuration",
+        "Country",
+        "Display Resolution",
+        "Elevated",
+        "Execution Path",
+        "Graphics Card",
+        "HWID",
+        "Installed RAM",
+        "IP Address",
+        "Netbios",
+        "Processor",
+        "Processor Cores",
+        "Processor Threads",
+        "Time",
+        "User",
+        "User Language",
+        "User Name"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "format_id": "cs-sig-info-stealer",
+      "id": "v_08165723282867f7adece4de9ea6f5f2",
+      "layout_id": "device-os-suppressed",
+      "markers": [],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_08165723282867f7adece4de9ea6f5f2/Info.txt",
+        "sha256": "edd609b6f0cefcd42a7dcc5b7246e0889a3eabae6db105084b3b90183723d31e",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
       "id": "v_571b9735a207cab65f14c48899af7f62",
       "format_id": "cs-sig-info-stealer",
       "filenames": [

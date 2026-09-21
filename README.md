@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **195** research profiles
+- **196** research profiles
 - **42** known malware families
 - **2** observed self-labels without independent family attribution
-- **135** CyStack tracking names
+- **136** CyStack tracking names
 - **11** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **144** observed log variants and **144** samples
-- **8,052,898** CyStack observations represented by the retained sample set
+- **146** observed log variants and **146** samples
+- **8,052,900** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -96,7 +96,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Antarctida Stealer](families/antarctida-stealer/) | unknown | 2 | [2 retained](families/antarctida-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (135)
+### CyStack tracking names (136)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -162,6 +162,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSExePathInfoStealer](families/cs-exe-path-info-stealer/) | unknown | 0 | Metadata only |
 | [CSFacebookMarketStealer](families/cs-facebook-market-stealer/) | unknown | 1 | [1 retained](families/cs-facebook-market-stealer/#observed-log-variants) |
 | [CSFacebookProfileStealer](families/cs-facebook-profile-stealer/) | low | 1 | [1 retained](families/cs-facebook-profile-stealer/#observed-log-variants) |
+| [CSFateTrafficInfoStealer](families/cs-fate-traffic-info-stealer/) | unknown | 1 | [1 retained](families/cs-fate-traffic-info-stealer/#observed-log-variants) |
 | [CSFilesStolenStealer](families/cs-files-stolen-stealer/) | unknown | 0 | Metadata only |
 | [CSFlatMacBradmaxStealer](families/cs-flat-mac-bradmax-stealer/) | low | 0 | Metadata only |
 | [CSFlatMacProfilerStealer](families/cs-flat-mac-profiler-stealer/) | low | 3 | [3 retained](families/cs-flat-mac-profiler-stealer/#observed-log-variants) |
@@ -207,7 +208,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSPyHostTimeStealer](families/cs-py-host-time-stealer/) | unknown | 0 | Metadata only |
 | [CSRFDStealer](families/csrfd-stealer/) | unknown | 0 | Metadata only |
 | [CSRoyCloudInfoStealer](families/cs-roy-cloud-info-stealer/) | unknown | 1 | [1 retained](families/cs-roy-cloud-info-stealer/#observed-log-variants) |
-| [CSSigInfoStealer](families/cs-sig-info-stealer/) | low | 2 | [2 retained](families/cs-sig-info-stealer/#observed-log-variants) |
+| [CSSigInfoStealer](families/cs-sig-info-stealer/) | low | 3 | [3 retained](families/cs-sig-info-stealer/#observed-log-variants) |
 | [CSSlurmCloudStealer](families/cs-slurm-cloud-stealer/) | unknown | 0 | Metadata only |
 | [CSSoftHostStealer](families/cs-soft-host-stealer/) | unknown | 0 | Metadata only |
 | [CSSoftUrlPassStealer](families/cs-soft-url-pass-stealer/) | unknown | 0 | Metadata only |

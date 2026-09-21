@@ -1,0 +1,21 @@
+Build Date: May 12 2026
+Configuration: 
+Execution Path: C:\Users\<USER>\AppData\Local\Temp\12821380101\0bdaade835.exe
+Elevated: Yes
+Computer Name: <HOST>
+User Name: <USER>
+User Language: en-US
+Netbios: <HOST>
+Operation System: Windows 7 Ultimate  6.1.0 (x64)
+Install Date: 02.11.2022 03:46:34
+System Date: 07.11.2022 18:30:55
+Time Zone: UTC-8
+Antivirus: None
+HWID: <HWID>
+Processor: Intel Core Processor (Broadwell)
+Processor Threads: 2
+Processor Cores: 2
+Graphics Card:
+	Standard VGA Graphics Adapter
+Installed RAM: 0MB
+Display Resolution: 1280x720

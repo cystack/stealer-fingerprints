@@ -44,8 +44,8 @@ Các trường nội dung: `Build Date`, `Configuration`, `Execution Path`,
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **low**
 - Aliases: `BRADMAX Info.txt with Lumma sig watermark`, `Bare-KV Redline-style panel with Lumma sig suffix`
-- Variants observed: **2**
-- CyStack observations represented: **10,812**
+- Variants observed: **3**
+- CyStack observations represented: **10,813**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -80,6 +80,24 @@ the Lumma sig signature into a different panel template.
 Việc xác định dấu hiệu nhận diện yêu cầu chuỗi con `(sig:` (watermark Time-line chuẩn Lumma theo các phân tích Lumma công khai) VÀ tên trường `Execution Path:` VÀ lỗi đánh máy `Operation System:` VÀ `Installed RAM:` được gắn cố định theo dòng. Lumma và CSDeimosStealer bị loại trừ vì cả hai đều yêu cầu tiền tố dấu gạch `-` trên mọi trường; Redline bị loại trừ vì thiếu banner và các khóa chuẩn `FileLocation:` / `Build ID:`. Trong quá trình phân loại ban đầu, hãy coi watermark `sig:UNIX.HEX` là một chỉ báo thuộc họ Lumma nhưng không phải là xác nhận chắc chắn thuộc Lumma: cấu trúc dữ liệu bare-KV với tên trường đầy đủ không khớp với chuẩn Lumma, vì vậy builder nền tảng nhiều khả năng là một bản fork của Lumma hoặc một mã độc đánh cắp thông tin đã tích hợp chữ ký sig của Lumma vào một mẫu panel khác.
 
 ## Observed log variants
+
+### `v_08165723282867f7adece4de9ea6f5f2`
+
+- Format ID: `cs-sig-info-stealer`
+- Observed filenames: `Info.txt`
+- Panel brand: -
+- Distribution channel: `@BRADLOGS`
+- Attribution confidence: **low**
+- Layout: `device-os-suppressed`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_08165723282867f7adece4de9ea6f5f2/Info.txt)
+- Sample SHA-256: `edd609b6f0cefcd42a7dcc5b7246e0889a3eabae6db105084b3b90183723d31e`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Antivirus`, `Build Date`, `Computer Name`, `Configuration`, `Country`, `Display Resolution`, `Elevated`, `Execution Path`, `Graphics Card`, `HWID`, `Installed RAM`, `IP Address`, `Netbios`, `Processor`, `Processor Cores`, `Processor Threads`, `Time`, `User`, `User Language`, `User Name`
 
 ### `v_571b9735a207cab65f14c48899af7f62`
 

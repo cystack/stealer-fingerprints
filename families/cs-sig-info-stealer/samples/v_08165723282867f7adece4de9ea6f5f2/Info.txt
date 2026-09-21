@@ -1,0 +1,21 @@
+Build Date: Mar 31 2026
+Configuration: 
+Execution Path: C:\Users\<USER>\AppData\Local\Temp\tmp-04998-9kepbecsXgev\4BhBjLYr7.exe
+Elevated: No
+Computer Name: <HOST>
+User Name: <USER>
+User Language: ru-RU
+Netbios: <HOST>
+Antivirus: Windows Defender
+HWID: <HWID>
+Processor: AMD Ryzen 7 5800X 8-Core Processor             
+Processor Threads: 16
+Processor Cores: 8
+Graphics Card:
+Installed RAM: 65536MB
+Display Resolution: 1920x1080
+
+IP Address: <IP>
+Time: 05.04.2026 07:55:39 (sig:1775364939.<SECRET>)
+Country: ES
+User: <USER>
