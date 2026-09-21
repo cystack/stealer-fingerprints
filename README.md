@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **136** CyStack tracking names
 - **11** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **147** observed log variants and **147** samples
-- **8,052,901** CyStack observations represented by the retained sample set
+- **148** observed log variants and **148** samples
+- **8,052,902** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -242,7 +242,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
 | [CSALStealer](families/csal-stealer/) → [lumma](families/lumma/) | medium | 1 | [1 retained](families/csal-stealer/#observed-log-variants) |
-| [CSBabaCloudStealer](families/cs-baba-cloud-stealer/) → [vidar](families/vidar/) | medium | 1 | [1 retained](families/cs-baba-cloud-stealer/#observed-log-variants) |
+| [CSBabaCloudStealer](families/cs-baba-cloud-stealer/) → [vidar](families/vidar/) | medium | 2 | [2 retained](families/cs-baba-cloud-stealer/#observed-log-variants) |
 | [CSBabaStealer](families/cs-baba-stealer/) → [lumma](families/lumma/) | high | 1 | [1 retained](families/cs-baba-stealer/#observed-log-variants) |
 | [CSDarkSideCloudStealer](families/cs-dark-side-cloud-stealer/) → [redline](families/redline/) | high | 0 | Metadata only |
 | [CSDeimosStealer](families/cs-deimos-stealer/) → [lumma](families/lumma/) | medium | 1 | [1 retained](families/cs-deimos-stealer/#observed-log-variants) |

@@ -1,0 +1,28 @@
+<          Main Channel - @Rus_cloud.         >
+<           https://t.me/Rus_cloud.           >
+<    Public Logs Channel   :   @Universe_Logs    >
+<    Public Ulp Channel    :   @Rus_cloud      >
+<          Admin : @Pleas.             >
+<        https://t.me/Pleas.           >
+
+IP : <IP>
+Country : US
+Date : 14/08/2026
+Time : 23:24:47
+
+MachineID : <HWID>
+GUID : <HWID>
+HWID : <HWID>
+Path : <PATH>
+Work Dir : In memory
+Windows : Windows 11 Home 25H2 (Build 26200)
+Computer Name : <HOST>
+User Name : <USER>
+Display Resolution : 2560x1440
+
+--- [ Hardware ] ---
+Processor : Intel(R) Core(TM) Ultra 5 225F
+Cores : 10
+Threads : 10
+RAM : 32477 MB
+VideoCard : NVIDIA GeForce RTX 5060

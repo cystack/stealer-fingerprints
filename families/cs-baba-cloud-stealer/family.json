@@ -48,6 +48,40 @@
     "Cloud service session tokens and endpoint URLs",
     "System hardware and identity inventory"
   ],
+  "localizations": {
+    "vi": {
+      "description": "CSBabaCloudStealer là định danh do CyStack đặt cho một `System_Info.txt` có cấu trúc dữ liệu giống Vidar, được đối tượng vận hành kênh Telegram `@BabaCloud_New` phát tán. Các thư mục nạn nhân tuân theo cấu trúc `@BabaCloud_New {<seq>} [<CC>]_<IPv4>_ <HWID8>_<DDMMYYYY>_<HHMMSS>` và được đóng gói bên trong các tệp nén có tên `@BabaCloudNew { <count> } Logs Cloud <DDMMYYYY>.rar`.\n\nPhần nội dung mang theo phần mở đầu định danh chuẩn của Vidar (`MachineID`, `GUID`, `HWID`, `Path`, `Work Dir`, `Windows`, `Computer Name`, `User Name`, `Display Resolution`) cùng với bộ năm trường phần cứng chuẩn của Vidar (`Processor`, `Cores`, `Threads`, `RAM`, `VideoCard`) mà các báo cáo công khai ghi nhận là lược đồ riêng của Vidar từ bản dựng 4.x trở lên. Bản đổi thương hiệu này đã loại bỏ `Version`, `Install date`, `AV`, `Display Language`, `Keyboard Languages`, `Local Time`, `TimeZone`, cùng các phần `[Processes]` và `[Software]` ở cuối.\n\nCác khác biệt đáng chú ý trong cách trình bày so với nội dung Vidar chuẩn: mọi trường đều dùng dạng có khoảng trắng trước dấu hai chấm (`Key : Value`), thời điểm thu thập theo đồng hồ hệ thống được tách thành hai dòng `Date :` và `Time :` liền kề thay vì gộp thành một giá trị duy nhất, khối phần cứng được mở đầu bằng tiêu đề đóng khung bằng dấu gạch ngang `--- [ Hardware ] ---` thay vì tiêu đề dấu ngoặc vuông trần `[Hardware]`, và các nạn nhân không có đường dẫn mang dấu hiệu nhận biết dạng YAML block-scalar `Path : >-`. Biểu ngữ khung viền là một khối dấu mũ được kẹp giữa các dấu ngoặc nhọn, quảng cáo `Main Channel - @Baba_Logs`, `Public Logs Channel : @BabaCloud_New`, `Public Ulp Channel : @BabaUlp_New`, và `Admin : @Mr_Ghost_004` nằm giữa hai đường kẻ ngang.\n\nCác báo cáo công khai xác nhận `@BabaCloud_New` là một hoạt động log đám mây phát tán qua Telegram, đã phát hành nhiều lượt rò rỉ thông tin xác thực với hàng nghìn bản ghi kể từ giữa năm 2025, nhưng không nêu rõ tên họ panel nền tảng. Việc quy kết về Vidar ở đây được suy ra từ phần mở đầu định danh cùng bộ năm trường phần cứng - một tổ hợp mang tính chuẩn của Vidar - và được giữ ở mức độ tin cậy trung bình cho đến khi có ánh xạ đổi thương hiệu rõ ràng.\n\nTên theo dõi này không liên quan đến hồ sơ `CSBabaStealer`, vốn đề cập đến một bản đổi thương hiệu từ Lumma `.B.A.B.A.` được phát tán bởi một đối tượng vận hành khác; chuỗi ký tự `Baba` chung trong tên gọi chỉ là sự trùng hợp ngẫu nhiên.",
+      "typical_targets": [
+        "Thông tin xác thực, cookie, dữ liệu tự động điền đã lưu trong trình duyệt",
+        "Tiện ích mở rộng ví tiền điện tử và ứng dụng desktop",
+        "Token phiên đăng nhập dịch vụ đám mây và URL điểm cuối",
+        "Kiểm kê phần cứng và định danh hệ thống"
+      ],
+      "detection_notes": "Việc nhận diện dấu hiệu yêu cầu chuỗi ký tự thương hiệu phân phối `@BabaCloud_New` xuất hiện trong nội dung VÀ ít nhất một dòng trường chuẩn của Vidar được neo theo dạng có khoảng trắng trước dấu hai chấm (`MachineID :` HOẶC `VideoCard :`). Nội dung Vidar chuẩn sẽ không khớp với các mẫu này vì mọi dấu hiệu nhận diện chuẩn đều yêu cầu dạng không có khoảng trắng `Key:`.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  },
   "variants": [
     {
       "attribution_confidence": "medium",
@@ -89,40 +123,47 @@
         "source": "cystack_collection",
         "sanitized": true
       }
-    }
-  ],
-  "localizations": {
-    "vi": {
-      "description": "CSBabaCloudStealer là định danh do CyStack đặt cho một `System_Info.txt` có cấu trúc dữ liệu giống Vidar, được đối tượng vận hành kênh Telegram `@BabaCloud_New` phát tán. Các thư mục nạn nhân tuân theo cấu trúc `@BabaCloud_New {<seq>} [<CC>]_<IPv4>_ <HWID8>_<DDMMYYYY>_<HHMMSS>` và được đóng gói bên trong các tệp nén có tên `@BabaCloudNew { <count> } Logs Cloud <DDMMYYYY>.rar`.\n\nPhần nội dung mang theo phần mở đầu định danh chuẩn của Vidar (`MachineID`, `GUID`, `HWID`, `Path`, `Work Dir`, `Windows`, `Computer Name`, `User Name`, `Display Resolution`) cùng với bộ năm trường phần cứng chuẩn của Vidar (`Processor`, `Cores`, `Threads`, `RAM`, `VideoCard`) mà các báo cáo công khai ghi nhận là lược đồ riêng của Vidar từ bản dựng 4.x trở lên. Bản đổi thương hiệu này đã loại bỏ `Version`, `Install date`, `AV`, `Display Language`, `Keyboard Languages`, `Local Time`, `TimeZone`, cùng các phần `[Processes]` và `[Software]` ở cuối.\n\nCác khác biệt đáng chú ý trong cách trình bày so với nội dung Vidar chuẩn: mọi trường đều dùng dạng có khoảng trắng trước dấu hai chấm (`Key : Value`), thời điểm thu thập theo đồng hồ hệ thống được tách thành hai dòng `Date :` và `Time :` liền kề thay vì gộp thành một giá trị duy nhất, khối phần cứng được mở đầu bằng tiêu đề đóng khung bằng dấu gạch ngang `--- [ Hardware ] ---` thay vì tiêu đề dấu ngoặc vuông trần `[Hardware]`, và các nạn nhân không có đường dẫn mang dấu hiệu nhận biết dạng YAML block-scalar `Path : >-`. Biểu ngữ khung viền là một khối dấu mũ được kẹp giữa các dấu ngoặc nhọn, quảng cáo `Main Channel - @Baba_Logs`, `Public Logs Channel : @BabaCloud_New`, `Public Ulp Channel : @BabaUlp_New`, và `Admin : @Mr_Ghost_004` nằm giữa hai đường kẻ ngang.\n\nCác báo cáo công khai xác nhận `@BabaCloud_New` là một hoạt động log đám mây phát tán qua Telegram, đã phát hành nhiều lượt rò rỉ thông tin xác thực với hàng nghìn bản ghi kể từ giữa năm 2025, nhưng không nêu rõ tên họ panel nền tảng. Việc quy kết về Vidar ở đây được suy ra từ phần mở đầu định danh cùng bộ năm trường phần cứng - một tổ hợp mang tính chuẩn của Vidar - và được giữ ở mức độ tin cậy trung bình cho đến khi có ánh xạ đổi thương hiệu rõ ràng.\n\nTên theo dõi này không liên quan đến hồ sơ `CSBabaStealer`, vốn đề cập đến một bản đổi thương hiệu từ Lumma `.B.A.B.A.` được phát tán bởi một đối tượng vận hành khác; chuỗi ký tự `Baba` chung trong tên gọi chỉ là sự trùng hợp ngẫu nhiên.",
-      "typical_targets": [
-        "Thông tin xác thực, cookie, dữ liệu tự động điền đã lưu trong trình duyệt",
-        "Tiện ích mở rộng ví tiền điện tử và ứng dụng desktop",
-        "Token phiên đăng nhập dịch vụ đám mây và URL điểm cuối",
-        "Kiểm kê phần cứng và định danh hệ thống"
+    },
+    {
+      "attribution_confidence": "medium",
+      "distribution_channel": "@Rus_cloud",
+      "fields": [
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "IP",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "Time",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
       ],
-      "detection_notes": "Việc nhận diện dấu hiệu yêu cầu chuỗi ký tự thương hiệu phân phối `@BabaCloud_New` xuất hiện trong nội dung VÀ ít nhất một dòng trường chuẩn của Vidar được neo theo dạng có khoảng trắng trước dấu hai chấm (`MachineID :` HOẶC `VideoCard :`). Nội dung Vidar chuẩn sẽ không khớp với các mẫu này vì mọi dấu hiệu nhận diện chuẩn đều yêu cầu dạng không có khoảng trắng `Key:`.",
-      "attack_techniques": [
-        {
-          "id": "T1555",
-          "name": "Thông tin xác thực từ kho mật khẩu"
-        },
-        {
-          "id": "T1555.003",
-          "name": "Thông tin xác thực từ trình duyệt web"
-        },
-        {
-          "id": "T1539",
-          "name": "Đánh cắp cookie phiên web"
-        },
-        {
-          "id": "T1005",
-          "name": "Dữ liệu từ hệ thống cục bộ"
-        },
-        {
-          "id": "T1082",
-          "name": "Dò tìm thông tin hệ thống"
-        }
-      ]
+      "filenames": [
+        "System_Info.txt"
+      ],
+      "format_id": "cs-baba-cloud-stealer",
+      "id": "v_a80f145319e1797ee4f6b31abe02cb29",
+      "markers": [
+        "< Main Channel - @Rus_cloud. >",
+        "@Universe_Logs"
+      ],
+      "panel_brand": "@Universe_Logs",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_a80f145319e1797ee4f6b31abe02cb29/System_Info.txt",
+        "sha256": "3a39c9cc5fe9296ccdc72dc1992bf2e3444c3ded0ffbc41f65cabe8f0efbfb0e",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
     }
-  }
+  ]
 }
