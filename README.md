@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **135** CyStack tracking names
 - **11** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **143** observed log variants and **143** samples
-- **8,052,897** CyStack observations represented by the retained sample set
+- **144** observed log variants and **144** samples
+- **8,052,898** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -58,7 +58,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Cthulhu Stealer](families/cthulhu-stealer/) | high | 1 | [1 retained](families/cthulhu-stealer/#observed-log-variants) |
 | [DCRat](families/dc-rat/) | high | 1 | [1 retained](families/dc-rat/#observed-log-variants) |
 | [Erbium](families/erbium/) | high | 0 | Metadata only |
-| [Lumma](families/lumma/) | high | 6 | [6 retained](families/lumma/#observed-log-variants) |
+| [Lumma](families/lumma/) | high | 7 | [7 retained](families/lumma/#observed-log-variants) |
 | [MacSync](families/mac-sync/) | high | 1 | [1 retained](families/mac-sync/#observed-log-variants) |
 | [Mars Stealer](families/mars-stealer/) | medium | 1 | [1 retained](families/mars-stealer/#observed-log-variants) |
 | [Meduza](families/meduza/) | high | 1 | [1 retained](families/meduza/#observed-log-variants) |

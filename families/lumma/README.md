@@ -20,8 +20,8 @@ Nhật ký Lumma C2 (LummaC2). Panel ghi `System.txt` với danh sách kiểu YA
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `LummaC2`, `Lumma Stealer`
-- Variants observed: **6**
-- CyStack observations represented: **776,374**
+- Variants observed: **7**
+- CyStack observations represented: **776,375**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -49,6 +49,24 @@ the signature; they should be tracked separately.
 Dấu hiệu có độ tin cậy cao: chữ ký trong ngoặc đơn `(sig:UNIX.HEX)` trên dòng `- Time:`. Kết hợp với banner `- LummaC2 Build:`, đây là dấu hiệu nhận diện Lumma rõ ràng, không gây nhầm lẫn. Một số họ mã độc phái sinh (Remus, AL Stealer, BabaStealer, ArtHouseCloud, CashFlow) có chung cấu trúc dữ liệu dạng gạch đầu dòng nhưng không có chữ ký này; cần theo dõi các họ này riêng biệt.
 
 ## Observed log variants
+
+### `v_01e793cf438b7a047f7b8e05508af149`
+
+- Format ID: `lumma`
+- Observed filenames: `System.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `dash-cpu-ram-install-timezone`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_01e793cf438b7a047f7b8e05508af149/System.txt)
+- Sample SHA-256: `34d39a5aaea94aa5dbbd29f220500811ab7f9a57ef65803cbe03e7b1256f4279`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `stealer.su/Telegram t.me/SantaStealer2 t.me/SantaStealer2 t.me/SantaStealer2 stealer.su/Telegram`, `│ [ CLÓUD CHANNEL - @forza_traffic ] [ SUPPORT - @ez_sources ] │`
+- Field labels: `BSSID`, `Country`, `CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Display resolution`, `Elevated`, `Email`, `GPU`, `Hostname`, `HWID`, `Install Date`, `Language`, `Local Date`, `OS Version`, `Path`, `RAM Size`, `Time`, `Time Zone`, `Uptime`, `User`, `Wallpaper SHA256`, `Window`
 
 ### `v_098b5cb9b92999ab2453a165215e61e1`
 
