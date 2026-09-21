@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **194** research profiles
+- **195** research profiles
 - **42** known malware families
 - **2** observed self-labels without independent family attribution
-- **134** CyStack tracking names
+- **135** CyStack tracking names
 - **11** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **142** observed log variants and **142** samples
-- **8,052,896** CyStack observations represented by the retained sample set
+- **143** observed log variants and **143** samples
+- **8,052,897** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -96,7 +96,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Antarctida Stealer](families/antarctida-stealer/) | unknown | 2 | [2 retained](families/antarctida-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (134)
+### CyStack tracking names (135)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -180,6 +180,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSJohnDoeProjectStealer](families/cs-john-doe-project-stealer/) | unknown | 0 | Metadata only |
 | [CSJohnsHubStealer](families/cs-johns-hub-stealer/) | unknown | 0 | Metadata only |
 | [CSJsonCookiesOnlyStealer](families/cs-json-cookies-only-stealer/) | unknown | 0 | Metadata only |
+| [CSLcidBracketStealer](families/cs-lcid-bracket-stealer/) | unknown | 1 | [1 retained](families/cs-lcid-bracket-stealer/#observed-log-variants) |
 | [CSLeakClickCloudCookiesStealer](families/cs-leak-click-cloud-cookies-stealer/) | unknown | 0 | Metadata only |
 | [CSLoginsPathStealer](families/cs-logins-path-stealer/) | unknown | 0 | Metadata only |
 | [CSMacBareGeoStealer](families/cs-mac-bare-geo-stealer/) | unknown | 0 | Metadata only |

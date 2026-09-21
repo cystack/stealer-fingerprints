@@ -1,0 +1,12 @@
+Computer: <HOST>
+User: <USER>
+IP: <IP>
+OS: Windows 11 (Build 22621)
+CPU: Intel(R) Xeon(R) Silver 4210 CPU @ 2.20GHz (4 cores)
+RAM: 8191 MB
+Screen: 1440x900
+Language: English (United States) [0x0409]
+Keyboards: English, English
+Uptime: 87 min
+Path: <PATH>
+AV: None detected

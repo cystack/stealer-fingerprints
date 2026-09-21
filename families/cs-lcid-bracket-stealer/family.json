@@ -1,0 +1,110 @@
+{
+  "aliases": [
+    "FATETRAFFIC LCID-bracket UserInformation.txt",
+    "LCID bracket stealer"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1518.001",
+      "name": "Security Software Discovery"
+    },
+    {
+      "id": "T1614.001",
+      "name": "System Language Discovery"
+    }
+  ],
+  "attribution_confidence": "unknown",
+  "classification": "cystack_named",
+  "description": "CSLcidBracketStealer is a CyStack-coined identifier for a\ncompact plain `Key: Value` `UserInformation.txt` panel\nwhose `Language:` field appends the Windows Locale ID hex\ncode in square brackets (for example `Language: English (United States) [0x0409]`). Observed inside `BONUS @FATETRAFFIC <count> MIX <DD>-<MM>-<YYYY>.part<N>.rar`\naggregator packs at\n`[<CC>]_@FATETRAFFIC_<YYYY>_<MM>_<DD>_<N>/ UserInformation.txt` victim folders (for example\n`[US]_@FATETRAFFIC_2026_08_30_05503357/UserInformation.txt`).\n\nBody fields: `Computer`, `User`, `IP`, `OS`, `CPU`, `RAM`,\n`Screen`, `Language`, `Keyboards`, `Uptime`, `Path`, `AV`.\nThe layout uses terse single-word keys throughout and packs\nthe CPU core count inline in parentheses after the model\nstring (`CPU: Intel(R) Xeon(R) CPU @ 2.30GHz (2 cores)`).\nThe `User` value is a 16-character lowercase-hex identifier\nrather than the plain Windows account name emitted by every\ncatalogued stealer family, suggesting the panel writes a\nhashed identity to obfuscate victim attribution. `Uptime`\nis reported in a compact minutes-only form (`Uptime: 6 min`) unlike the long-form Noxty phrasing catalogued by\ncommunity indexes. `AV` reports a textual descriptor\n(`AV: None detected`) rather than a product-name list.\n`Path` records the sample execution path rather than the\n`FileLocation:` label Redline canonical uses.\n\nAttribution is provisional. No curated CTI vendor writeup\nor community catalog surveyed at time of integration\ndocuments this exact combination of terse single-word\nkeys, LCID-bracket `Language` trailer, `Keyboards:`\nfield, compact `Uptime: N min` shape, textual `AV: None detected` descriptor, and 16-character lowercase-hex\n`User:` identifier under the `UserInformation.txt`\nfilename. The archive-side `@FATETRAFFIC` handle is an\naggregator label rather than a stealer builder.",
+  "detection_notes": "Fingerprint requires a `Language:` line whose value ends\nwith a bracketed Windows Locale ID hex code (matching\n`[0x<hex>]`) AND a line-anchored `Uptime:` field. The\nLCID-bracket trailer paired with the compact uptime field\nis unique across catalogued stealer output. Canonical\nRedline declines because of the absent operator banner\nand the absent `FileLocation:`, `Build ID:`, and\n`Operation System:` typo anchors. Canonical Lumma\ndeclines because of the absent `-` dash prefix on every\nfield. During triage, treat the panel as an unattributed\nbuilder until published research maps the terse-key\nLCID-bracket schema to a specific family.",
+  "id": "cs-lcid-bracket-stealer",
+  "name": "CSLcidBracketStealer",
+  "related_families": [],
+  "sources": [],
+  "typical_targets": [
+    "Host metadata: hostname, hashed user identity, OS build",
+    "Hardware inventory: CPU model with core count, installed RAM",
+    "Screen resolution",
+    "Windows locale and keyboard layout enumeration",
+    "Machine uptime at time of exfiltration",
+    "Sample execution path",
+    "Installed antivirus product summary",
+    "Victim public IP"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSLcidBracketStealer là định danh do CyStack đặt tên cho một panel dạng `Key: Value` `UserInformation.txt` đơn giản, trong đó trường `Language:` được nối thêm mã hex Windows Locale ID trong dấu ngoặc vuông (ví dụ `Language: English (United States) [0x0409]`). Được quan sát bên trong các gói tổng hợp `BONUS @FATETRAFFIC <count> MIX <DD>-<MM>-<YYYY>.part<N>.rar` tại các thư mục nạn nhân `[<CC>]_@FATETRAFFIC_<YYYY>_<MM>_<DD>_<N>/ UserInformation.txt` (ví dụ `[US]_@FATETRAFFIC_2026_08_30_05503357/UserInformation.txt`).\n\nCác trường trong body: `Computer`, `User`, `IP`, `OS`, `CPU`, `RAM`, `Screen`, `Language`, `Keyboards`, `Uptime`, `Path`, `AV`. Bố cục sử dụng các khóa ngắn gọn một từ xuyên suốt và đóng gói số nhân CPU nội tuyến trong dấu ngoặc đơn sau chuỗi model (`CPU: Intel(R) Xeon(R) CPU @ 2.30GHz (2 cores)`).\n\nGiá trị `User` là một định danh hex chữ thường gồm 16 ký tự thay vì tên tài khoản Windows dạng văn bản thuần mà mọi họ mã độc đánh cắp thông tin đã được ghi nhận tạo ra, cho thấy panel này ghi lại một định danh đã băm nhằm gây khó khăn cho việc quy kết nạn nhân. `Uptime` được báo cáo dưới dạng rút gọn chỉ tính bằng phút (`Uptime: 6 min`), khác với cách diễn đạt dạng dài của Noxty đã được các chỉ mục cộng đồng ghi nhận. `AV` báo cáo một mô tả dạng văn bản (`AV: None detected`) thay vì danh sách tên sản phẩm. `Path` ghi lại đường dẫn thực thi của mẫu thay vì nhãn `FileLocation:` mà Redline điển hình sử dụng.\n\nViệc quy kết hiện chỉ mang tính tạm thời. Không có bài viết CTI được kiểm định từ nhà cung cấp nào hay danh mục cộng đồng nào được khảo sát tại thời điểm tích hợp ghi nhận đúng sự kết hợp này gồm các khóa ngắn gọn một từ, phần đuôi `Language` dạng LCID-bracket, trường `Keyboards:`, cấu trúc dữ liệu `Uptime: N min` rút gọn, mô tả `AV: None detected` dạng văn bản, và định danh `User:` hex chữ thường gồm 16 ký tự dưới tên tệp `UserInformation.txt`. Nhãn `@FATETRAFFIC` phía archive là một nhãn của công cụ tổng hợp chứ không phải bộ tạo mã độc đánh cắp thông tin.",
+      "typical_targets": [
+        "Thông tin máy: tên máy, định danh người dùng đã băm, phiên bản build hệ điều hành",
+        "Thông tin phần cứng: model CPU kèm số nhân, dung lượng RAM đã lắp đặt",
+        "Độ phân giải màn hình",
+        "Liệt kê locale và bố cục bàn phím của Windows",
+        "Thời gian hoạt động của máy tại thời điểm đưa dữ liệu ra ngoài",
+        "Đường dẫn thực thi của mẫu",
+        "Tóm tắt phần mềm diệt virus đã cài đặt",
+        "Địa chỉ IP công cộng của nạn nhân"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện yêu cầu một dòng `Language:` có giá trị kết thúc bằng mã hex Windows Locale ID trong dấu ngoặc vuông (khớp với `[0x<hex>]`) VÀ một trường `Uptime:` được neo theo dòng. Phần đuôi LCID-bracket kết hợp với trường thời gian hoạt động dạng rút gọn là đặc điểm duy nhất trong số các dữ liệu đầu ra của mã độc đánh cắp thông tin đã được ghi nhận. Redline điển hình bị loại trừ do thiếu banner của đối tượng vận hành và thiếu các điểm neo lỗi chính tả `FileLocation:`, `Build ID:`, và `Operation System:`. Lumma điển hình bị loại trừ do thiếu tiền tố gạch ngang `-` trên mọi trường. Trong quá trình phân loại ban đầu, hãy xem panel này là một công cụ xây dựng chưa được quy kết cho đến khi có nghiên cứu công bố ánh xạ lược đồ khóa ngắn gọn dạng LCID-bracket này với một họ mã độc cụ thể.",
+      "attack_techniques": [
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1518.001",
+          "name": "Dò tìm phần mềm bảo mật"
+        },
+        {
+          "id": "T1614.001",
+          "name": "Xác định ngôn ngữ hệ thống"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": null,
+      "fields": [
+        "AV",
+        "Computer",
+        "CPU",
+        "IP",
+        "Keyboards",
+        "Language",
+        "OS",
+        "Path",
+        "RAM",
+        "Screen",
+        "Uptime",
+        "User"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "format_id": "cs-lcid-bracket-stealer",
+      "id": "v_7d93bf3bdc7fa6df320571fb9592102f",
+      "markers": [],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_7d93bf3bdc7fa6df320571fb9592102f/UserInformation.txt",
+        "sha256": "112344ae071783e3a12d395159902c8a9a02afc4101981658654bec4189ca1c0",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}
