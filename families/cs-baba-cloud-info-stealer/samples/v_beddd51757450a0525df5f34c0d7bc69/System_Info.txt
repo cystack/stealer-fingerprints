@@ -1,0 +1,29 @@
+ 
+Build Date: Apr 18 2026
+Configuration: 
+Execution Path: C:\Users\<USER>\AppData\Local\Temp\<HWID>_𝐒𝐄𝐓𝐔𝐏.zip.e6c\Setup_Installer.exe
+Elevated: Yes
+Computer Name: <HOST>
+User Name: <USER>
+User Language: tr-TR
+Netbios: <HOST>
+Operation System: Windows 11 Pro 10.0.26200 (x64)
+Install Date: 20.12.2024 08:14:39
+System Date: 18.04.2026 19:26:33
+Time Zone: UTC+3
+Antivirus: Windows Defender
+HWID: <HWID>
+Processor: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+Processor Threads: 8
+Processor Cores: 4
+Graphics Card:
+	Intel(R) UHD Graphics
+Installed RAM: 8192MB
+Display Resolution: 1920x1080
+
+IP Address: <IP>
+Time : 03:37:03
+Country : TR
+User: <USER>
+
+Country : TR

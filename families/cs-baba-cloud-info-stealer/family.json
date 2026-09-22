@@ -1,0 +1,123 @@
+{
+  "aliases": [
+    "@BabaCloud_New + Info body",
+    "BabaCloud bare-KV Info variant"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    }
+  ],
+  "attribution_confidence": "unknown",
+  "classification": "cystack_named",
+  "description": "CSBabaCloudInfoStealer is a CyStack-coined identifier for\na third `@BabaCloud_New`-repackaged `System_Info.txt` body\nshape observed alongside the sibling Vidar-shape and\nBuildBlock-shape distributions from the same operator.\nThe body is a bare `Key: Value` block with verbose\nRedline-shape field names (`Execution Path`,\n`Computer Name`, `Installed RAM`, `Operation System` sic\ntypo, `Processor` split into `Processor Threads` /\n`Processor Cores`, `Graphics Card` header with the GPU\nmodel on the next indented line) followed by a blank line\nand a spaced-colon trailer footer carrying `IP Address:`,\n`Time :`, `Country :`, and `User:` values that the peer\nsibling Info shapes strip entirely.\n\nObserved inside `@BabaCloud_New { <count>+ } Cloud Logs <DD>.<MM>.<YYYY>.7z` aggregator packs at\n`@BabaCloud_New {<seq>} [<CC>]_<IPv4>_<HWIDPFX>_<8-digit>_ <6-digit>/System_Info.txt` victim folders. Field vocabulary\nis byte-identical to the peer `CSFateTrafficInfoStealer`,\n`CSRoyCloudInfoStealer`, and `CSForzaTrafficStealer`\nInfo-family profiles; only the surrounding aggregator\nwrapping (archive-path self-watermark, trailer footer\npresence, in-body banner) differs between the sibling\nprofiles.\n\nPublic reporting attests `@BabaCloud_New` as a Telegram\ncloud-logs operation that has released multiple\nthousand-record credential dumps since mid-2025 but does\nnot name the underlying panel family for either its\nVidar-shape, BuildBlock-shape, or Info-shape\ndistributions. The verbose bare-KV Info-family panel\nbuilder itself is unattested by any surveyed curated CTI\nvendor. Family stays CyStack-coined with the\n`@BabaCloud_New` distribution channel preserved as\nattribution context; rename the profile if a published\nthreat-intel mapping surfaces.",
+  "detection_notes": "Detection requires the case-insensitive `babacloud`\nself-watermark token in the `system_path` folder tree\ntogether with line-anchored `Execution Path:` and\n`Installed RAM:` substrings. The two Redline-shape\nbare-KV field anchors carry the body shape signal; the\n`babacloud` folder-tree token contains the claim to files\ndemonstrably shipped by this reseller channel. Peer\nsibling Info profiles (`CSFateTrafficInfoStealer`,\n`CSRoyCloudInfoStealer`, `CSForzaTrafficStealer`) gate on\ntheir own aggregator tokens (`fatetraffic`, `roycloud`,\n`forzatraffic`) so all four Info-shape parsers are\nmutually exclusive at dispatch time.",
+  "id": "cs-baba-cloud-info-stealer",
+  "name": "CSBabaCloudInfoStealer",
+  "related_families": [
+    "cs-fate-traffic-info-stealer",
+    "cs-roy-cloud-info-stealer",
+    "cs-forza-traffic-stealer",
+    "cs-baba-cloud-stealer",
+    "cs-baba-cloud-build-block-stealer"
+  ],
+  "sources": [
+    "https://heroic.com/darkhive-breaches/babacloudlogs-stealer-log-22361-credentials-leaked/",
+    "https://heroic.com/darkhive-breaches/babacloudlogs-stealer-log-breach-explained-17507-records/"
+  ],
+  "typical_targets": [
+    "Sample execution path and installer origin",
+    "Host, user, and NetBIOS identity with elevation status",
+    "CPU, GPU, memory, display, and antivirus inventory",
+    "Public-IP geolocation (ISO-2 country) and system wall-clock"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSBabaCloudInfoStealer là định danh do CyStack đặt tên cho một cấu trúc dữ liệu thân `@BabaCloud_New`-đóng gói lại lần thứ ba của `System_Info.txt`, được quan sát cùng với các bản phân phối cấu trúc Vidar-shape và BuildBlock-shape liên quan từ cùng một đối tượng vận hành.\n\nPhần thân là một khối `Key: Value` trần với các tên trường dạng Redline-shape rất chi tiết (`Execution Path`, `Computer Name`, `Installed RAM`, lỗi chính tả `Operation System` sic, `Processor` được tách thành `Processor Threads` / `Processor Cores`, tiêu đề `Graphics Card` với model GPU nằm ở dòng thụt lề kế tiếp) theo sau bởi một dòng trống và một phần chân trang dạng dấu hai chấm cách khoảng mang các giá trị `IP Address:`, `Time :`, `Country :`, và `User:` mà các cấu trúc Info liên quan khác đã loại bỏ hoàn toàn.\n\nĐược quan sát bên trong các gói tổng hợp `@BabaCloud_New { <count>+ } Cloud Logs <DD>.<MM>.<YYYY>.7z` tại các thư mục nạn nhân `@BabaCloud_New {<seq>} [<CC>]_<IPv4>_<HWIDPFX>_<8-digit>_ <6-digit>/System_Info.txt`. Từ vựng trường giống hệt từng byte với các hồ sơ họ mã độc Info liên quan `CSFateTrafficInfoStealer`, `CSRoyCloudInfoStealer`, và `CSForzaTrafficStealer`; chỉ có phần đóng gói tổng hợp xung quanh (watermark tự nhận riêng theo đường dẫn lưu trữ, sự hiện diện của chân trang, banner trong thân) là khác nhau giữa các hồ sơ liên quan.\n\nBáo cáo công khai xác nhận `@BabaCloud_New` là một hoạt động cloud-logs trên Telegram đã phát hành nhiều bản trích xuất thông tin xác thực hàng nghìn bản ghi kể từ giữa năm 2025, nhưng không nêu tên họ panel nền tảng cho bất kỳ bản phân phối nào của nó, dù là Vidar-shape, BuildBlock-shape, hay Info-shape. Bản thân trình xây dựng panel Info-family dạng bare-KV chi tiết này chưa được ghi nhận bởi bất kỳ nhà cung cấp CTI đã khảo sát nào. Họ mã độc vẫn giữ tên do CyStack đặt, với kênh phân phối `@BabaCloud_New` được bảo toàn làm bối cảnh quy kết; sẽ đổi tên hồ sơ này nếu xuất hiện một ánh xạ threat-intel đã công bố.",
+      "typical_targets": [
+        "Đường dẫn thực thi mẫu và nguồn gốc trình cài đặt",
+        "Định danh máy, người dùng và NetBIOS cùng trạng thái nâng quyền",
+        "Kiểm kê CPU, GPU, bộ nhớ, màn hình và phần mềm diệt virus",
+        "Định vị địa lý IP công khai (mã quốc gia ISO-2) và giờ hệ thống"
+      ],
+      "detection_notes": "Việc nhận diện đòi hỏi token watermark tự nhận không phân biệt hoa thường `babacloud` trong cây thư mục `system_path` cùng với các chuỗi con neo theo dòng `Execution Path:` và `Installed RAM:`. Hai điểm neo trường bare-KV dạng Redline-shape mang tín hiệu cấu trúc thân; token cây thư mục `babacloud` chứa khẳng định gắn với các tệp đã được chứng minh là phát hành qua kênh reseller này. Các hồ sơ Info liên quan khác (`CSFateTrafficInfoStealer`, `CSRoyCloudInfoStealer`, `CSForzaTrafficStealer`) được kiểm soát bởi các token tổng hợp riêng của chúng (`fatetraffic`, `roycloud`, `forzatraffic`), do đó cả bốn trình phân tích cấu trúc Info-shape đều loại trừ lẫn nhau tại thời điểm điều phối.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@BabaCloud_New",
+      "fields": [
+        "Antivirus",
+        "Build Date",
+        "Computer Name",
+        "Configuration",
+        "Country",
+        "Display Resolution",
+        "Elevated",
+        "Execution Path",
+        "Graphics Card",
+        "HWID",
+        "Install Date",
+        "Installed RAM",
+        "IP Address",
+        "Netbios",
+        "Operation System",
+        "Processor",
+        "Processor Cores",
+        "Processor Threads",
+        "System Date",
+        "Time",
+        "Time Zone",
+        "User",
+        "User Language",
+        "User Name"
+      ],
+      "filenames": [
+        "System_Info.txt"
+      ],
+      "format_id": "cs-baba-cloud-info-stealer",
+      "id": "v_beddd51757450a0525df5f34c0d7bc69",
+      "markers": [],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_beddd51757450a0525df5f34c0d7bc69/System_Info.txt",
+        "sha256": "517026d6aacf13746b0818ea8c2f108434de5a250e03a88cf091af69a3598b9c",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}

@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **199** research profiles
+- **200** research profiles
 - **42** known malware families
 - **3** observed self-labels without independent family attribution
-- **138** CyStack tracking names
+- **139** CyStack tracking names
 - **11** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **157** observed log variants and **157** samples
-- **8,052,911** CyStack observations represented by the retained sample set
+- **158** observed log variants and **158** samples
+- **8,052,912** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -97,7 +97,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Rivas Stealer](families/rivas-stealer/) | unknown | 1 | [1 retained](families/rivas-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (138)
+### CyStack tracking names (139)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -110,6 +110,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSAutofillProfileBundle](families/cs-autofill-profile-bundle/) | unknown | 0 | Metadata only |
 | [CSAzureBuildStealer](families/cs-azure-build-stealer/) | unknown | 1 | [1 retained](families/cs-azure-build-stealer/#observed-log-variants) |
 | [CSBabaCloudBuildBlockStealer](families/cs-baba-cloud-build-block-stealer/) | unknown | 1 | [1 retained](families/cs-baba-cloud-build-block-stealer/#observed-log-variants) |
+| [CSBabaCloudInfoStealer](families/cs-baba-cloud-info-stealer/) | unknown | 1 | [1 retained](families/cs-baba-cloud-info-stealer/#observed-log-variants) |
 | [CSBareUsernameAVStealer](families/cs-bare-username-av-stealer/) | unknown | 0 | Metadata only |
 | [CSBareVersionStealer](families/cs-bare-version-stealer/) | unknown | 0 | Metadata only |
 | [CSBase64CpuStealer](families/cs-base64-cpu-stealer/) | unknown | 0 | Metadata only |
