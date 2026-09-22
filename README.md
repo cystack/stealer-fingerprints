@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **136** CyStack tracking names
 - **11** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **154** observed log variants and **154** samples
-- **8,052,908** CyStack observations represented by the retained sample set
+- **155** observed log variants and **155** samples
+- **8,052,909** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -75,7 +75,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [PXA Stealer](families/pxa-stealer/) | high | 2 | [2 retained](families/pxa-stealer/#observed-log-variants) |
 | [Raccoon](families/raccoon/) | high | 2 | [2 retained](families/raccoon/#observed-log-variants) |
 | [Redline](families/redline/) | high | 2 | [2 retained](families/redline/#observed-log-variants) |
-| [Remus Stealer](families/remus-stealer/) | high | 4 | [4 retained](families/remus-stealer/#observed-log-variants) |
+| [Remus Stealer](families/remus-stealer/) | high | 5 | [5 retained](families/remus-stealer/#observed-log-variants) |
 | [Rhadamanthys](families/rhadamanthys/) | medium | 0 | Metadata only |
 | [RisePro](families/rise-pro/) | medium | 0 | Metadata only |
 | [RL Stealer](families/rl-stealer/) | medium | 2 | [2 retained](families/rl-stealer/#observed-log-variants) |

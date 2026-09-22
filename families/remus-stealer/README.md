@@ -22,8 +22,8 @@ Remus Stealer là mã độc đánh cắp thông tin 64-bit được cung cấp 
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Remus`
-- Variants observed: **4**
-- CyStack observations represented: **57**
+- Variants observed: **5**
+- CyStack observations represented: **58**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -122,6 +122,24 @@ Recognition anchors:
 
 - Stable markers: `# REMUS LOG`, `Daisy Cloud`, `hardware:`, `os:`
 - Field labels: `elevated`, `ip-address`
+
+### `v_8d9daf23145a8b62f2c41341332961c8`
+
+- Format ID: `remus`
+- Observed filenames: `Info.txt`
+- Panel brand: `Daisy Cloud`
+- Distribution channel: `@UP_DAISYCLOUD`
+- Attribution confidence: **high**
+- Layout: `yaml-build-root-stripped`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_8d9daf23145a8b62f2c41341332961c8/Info.txt)
+- Sample SHA-256: `aeb7e389fc2badb14cae32dd58eab33e15e05ec42d5ac80e65ab924d9da740e0`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `Daisy Cloud`, `hardware:`
+- Field labels: `1 Week`, `2 Week`, `A 3 Month`, `A _______ Join`, `anti-virus`, `computer-name`, `core count`, `core enabled`, `country`, `cpu`, `D 1 Month`, `D Join`, `date`, `display`, `domain`, `elevated`, `gpu`, `hardware`, `hostname`, `I LifeTime`, `install-date`, `ip-address`, `language`, `local-date`, `manufacturer`, `motherboard`, `name`, `netbios`, `os`, `path`, `product`, `ram`, `size`, `state`, `tag`, `thread count`, `thread enabled`, `time`, `time-zone`, `user-name`, `version`
 
 
 ## MITRE ATT&CK

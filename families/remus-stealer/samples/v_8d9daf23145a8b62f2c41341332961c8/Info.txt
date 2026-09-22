@@ -1,0 +1,74 @@
+|<SECRET>|
+| These logs belong to Daisy Cloud, if you see these logs elsewhere, you are being scammed and let us know immediately |
+|                                                                                                                      |
+| D           Join: https://t.me/UP_DAISYCLOUD                      _..._             .-'''-.                        D |
+| A  _______  Join: https://t.me/UP_DAISYCLOUD                   .-'_..._''. .---.   '   _    \       _______        A |
+| I  \  ___ `'.            .--.                                .' .'      '.\|   | /   /` '.   \      \  ___ `'.     I |
+| S   ' |--.\  \           |__|     .-.          .-           / .'           |   |.   |     \  '       ' |--.\  \    S |
+| Y   | |    \  '          .--.      \ \        / /          . '             |   ||   '      |  '      | |    \  '   Y |
+|     | |     |  '    __   |  |       \ \      / /           | |             |   |\    \     / /       | |     |  '    |
+| C   | |     |  | .:--.'. |  |     _  \ \    / /            | |             |   | `.   ` ..' /_    _  | |     |  |  C |
+| L   | |     ' .'/ |   \ ||  |   .' |  \ \  / /             . '             |   |    '-...-'`| '  / | | |     ' .'  L |
+| O   | |___.' /' `" __ | ||  |  .   | / \ `  /               \ '.          .|   |           .' | .' | | |___.' /'   O |
+| U  /_______.'/   .'.''| ||__|.'.'| |//  \  /                 '. `._____.-'/|   |           /  | /  |/_______.'/    U |
+| D  \_______|/   / /   | |_ .'.'.-'  /   / /                    `-.______ / '---'          |   `'.  |\_______|/     D |
+|                 \ \._,\ '/ .'   \_.'|`-' /                              `                 '   .'|  '/                |
+|                  `--'  `"            '..'                                                  `-'  `--'                 |
+|                                                  Daisy Private Cloud                                                 |
+|                                                      1 Week: $80                                                     |
+|                                                      2 Week: $120                                                    |
+| D                                                   1 Month: $200                                                  D |
+| A                                                   3 Month: $600                                                  A |
+| I                                                  LifeTime: $5000                                                 I |
+| S                                                                                                                  S |
+| Y                                 There are updates in the morning, noon and evening                               Y |
+|                                              Monthly 140k-700k PCS Logs                                              |
+| C                                             Weekly 35k-175k PCS Logs                                             C |
+| L                                              Daily 5k-25k PCS Logs                                               L |
+| O                                                                                                                  O |
+| U                           I don't upload logs like crap and garbage like other channels                          U |
+| D                                       100+ User reviews, Posts with #REF tags                                    D |
+|                                                                                                                      |
+|     DAISY CLOUD     DAISY CLOUD     DAISY CLOUD     DAISY  CLOUD     DAISY CLOUD     DAISY CLOUD     DAISY CLOUD     |
+|<SECRET>|
+ 
+  date: 10.07.2026
+  tag: 123
+  path: <PATH>
+  elevated: false
+  ip-address: <IP>
+  country: AO
+  time: 12.07.2026, 20:18:52
+os:
+  version: Windows 11 Home (10.0.26200) x64
+  time-zone: UTC+1
+  local-date: 12.07.2026 21:19:09
+  install-date: 26.04.2026 23:59:20
+  language: pt-PT
+  computer-name: <HOST>
+  user-name: <USER>
+  netbios: <HOST>
+  domain: 
+  hostname: <HOST>
+  anti-virus:
+  - name: Windows Defender
+    state: active
+hardware:
+  ram:
+  - product: 'K4U6E3S4AA-MGCL     '
+    size: 8192MB
+  - product: 'K4U6E3S4AA-MGCL     '
+    size: 8192MB
+  cpu:
+  - manufacturer: 'Intel(R) Corporation'
+    product: 'Intel(R) Core(TM) i5-1035G4 CPU @ 1.10GHz'
+    core count: 4
+    core enabled: 4
+    thread count: 8
+    thread enabled: 0
+  motherboard:
+    manufacturer: 'Microsoft Corporation'
+    product: 'Surface Pro 7'
+  gpu:
+  - 'Intel(R) Iris(R) Plus Graphics'
+  display: 1368x912
