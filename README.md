@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **136** CyStack tracking names
 - **11** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **152** observed log variants and **152** samples
-- **8,052,906** CyStack observations represented by the retained sample set
+- **154** observed log variants and **154** samples
+- **8,052,908** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -54,7 +54,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Aurora Stealer](families/aurora-stealer/) | high | 0 | Metadata only |
 | [Bee Stealer](families/bee-stealer/) | high | 1 | [1 retained](families/bee-stealer/#observed-log-variants) |
 | [Blank Grabber](families/blank-grabber/) | high | 3 | [3 retained](families/blank-grabber/#observed-log-variants) |
-| [CryptBot](families/crypt-bot/) | high | 2 | [2 retained](families/crypt-bot/#observed-log-variants) |
+| [CryptBot](families/crypt-bot/) | high | 3 | [3 retained](families/crypt-bot/#observed-log-variants) |
 | [Cthulhu Stealer](families/cthulhu-stealer/) | high | 1 | [1 retained](families/cthulhu-stealer/#observed-log-variants) |
 | [DCRat](families/dc-rat/) | high | 1 | [1 retained](families/dc-rat/#observed-log-variants) |
 | [Erbium](families/erbium/) | high | 0 | Metadata only |
@@ -64,7 +64,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Meduza](families/meduza/) | high | 1 | [1 retained](families/meduza/#observed-log-variants) |
 | [MeltStealer](families/melt-stealer/) | high | 1 | [1 retained](families/melt-stealer/#observed-log-variants) |
 | [MetaStealer](families/meta-stealer/) | high | 0 | Metadata only |
-| [Misericorde Stealer](families/misericorde-stealer/) | low | 0 | Metadata only |
+| [Misericorde Stealer](families/misericorde-stealer/) | low | 1 | [1 retained](families/misericorde-stealer/#observed-log-variants) |
 | [Nexus](families/nexus/) | medium | 0 | Metadata only |
 | [Odyssey Stealer](families/odyssey-stealer/) | high | 0 | Metadata only |
 | [Phantom Stealer](families/phantom-stealer/) | high | 3 | [3 retained](families/phantom-stealer/#observed-log-variants) |

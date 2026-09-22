@@ -50,7 +50,8 @@ Việc quy kết họ mã độc dựa trên chuỗi ký tự tự khai báo tro
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **low**
 - Aliases: `Misericorde`, `Misericorde C++ stub USER-HOST PANEL`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -86,7 +87,23 @@ Việc nhận diện dấu vết yêu cầu chuỗi con `misericorde_supp` VÀ �
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_ab788c5d32c84168f9750f3f64b79f7e`
+
+- Format ID: `cs-daisy-misericorde-stealer`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: `Daisy Private cloud (per-line watermark)`
+- Distribution channel: `@UP_DAISYCLOUD`
+- Attribution confidence: **low**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_ab788c5d32c84168f9750f3f64b79f7e/UserInformation.txt)
+- Sample SHA-256: `f370f02d92182958a88fc8792f5746fb1489b1bf088a1f0e62de398efab91688`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `[Hardware]`, `[System]`
+- Field labels: `Buildtag`, `City`, `Country`, `CPU`, `FileLocation`, `GPU`, `Hostname`, `Hwid`, `IP`, `Keyboard`, `Logdate`, `OS Product`, `RAM`, `Screensize`, `System Language`, `Timezone`, `Username`
+
 
 ## MITRE ATT&CK
 

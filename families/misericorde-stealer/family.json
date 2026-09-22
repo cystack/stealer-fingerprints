@@ -57,7 +57,6 @@
     "https://t.me/misericorde_supp",
     "https://t.me/UP_DAISYCLOUD"
   ],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "Misericorde Stealer là mã độc đánh cắp thông tin trên Windows viết bằng C++, được rao bán trên HackForums qua tin đăng sản phẩm `Misericorde Stealer (C++ stub) - USER-HOST PANEL` với các phiên bản v10 và v20. Mã độc tự khai báo tên của mình qua một khối banner ASCII-art đánh vần `Misericorde` cùng một URL kênh hỗ trợ đối tượng vận hành `Telegram -https://t.me/misericorde_supp` được tạo dữ liệu đầu ra ở đầu mỗi panel `UserInformation.txt`.\n\nPanel này cung cấp một phần mở đầu nhận dạng gồm 10 trường gọn nhẹ (`Username`, `Hostname`, `FileLocation`, `IP`, `Country`, `Timezone`, `City`, `Hwid`, `Logdate`, `Buildtag`), sau đó là một khối mục trong dấu ngoặc `[System]` (`OS Product`, `Screensize`, `Keyboard`, `System Language`), rồi tiếp đến một khối mục trong dấu ngoặc `[Hardware]` (`GPU`, `CPU`, `RAM`). Cách đánh vần khóa một từ `Username` / `Hostname` / `Hwid` / `Logdate` / `Buildtag` giúp phân biệt Misericorde với các panel thuộc dòng Redline (sử dụng dạng hai từ như `User Name` / `Computer Name` / `HWID`).\n\nMẫu quan sát được phân phối qua kênh Telegram bán lại `@UP_DAISYCLOUD` với lớp watermark theo từng dòng của Daisy Cloud (chuỗi xáo trộn `Daisy Private cloud` bị làm rối trên mỗi dòng payload). Phần thân Misericorde cơ bản độc lập với Daisy Cloud; các đối tượng bán lại khác có thể phân phối cùng panel này mà không có watermark.\n\nViệc quy kết họ mã độc dựa trên chuỗi ký tự tự khai báo trong banner kết hợp với tin đăng sản phẩm trên HackForums (danh mục cộng đồng / diễn đàn ngầm). Chưa có nghiên cứu công khai nào công bố báo cáo phân tích về Misericorde, và các danh mục cộng đồng cũng chưa ghi nhận nó. `attribution_confidence = 'low'` phản ánh nguồn gốc chỉ từ một diễn đàn ngầm duy nhất, kết hợp với tín hiệu tự khai báo banner có độ tin cậy cao.",
@@ -98,5 +97,47 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "low",
+      "distribution_channel": "@UP_DAISYCLOUD",
+      "fields": [
+        "Buildtag",
+        "City",
+        "Country",
+        "CPU",
+        "FileLocation",
+        "GPU",
+        "Hostname",
+        "Hwid",
+        "IP",
+        "Keyboard",
+        "Logdate",
+        "OS Product",
+        "RAM",
+        "Screensize",
+        "System Language",
+        "Timezone",
+        "Username"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "format_id": "cs-daisy-misericorde-stealer",
+      "id": "v_ab788c5d32c84168f9750f3f64b79f7e",
+      "markers": [
+        "[Hardware]",
+        "[System]"
+      ],
+      "panel_brand": "Daisy Private cloud (per-line watermark)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_ab788c5d32c84168f9750f3f64b79f7e/UserInformation.txt",
+        "sha256": "f370f02d92182958a88fc8792f5746fb1489b1bf088a1f0e62de398efab91688",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }
