@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **197** research profiles
+- **198** research profiles
 - **42** known malware families
 - **3** observed self-labels without independent family attribution
-- **136** CyStack tracking names
+- **137** CyStack tracking names
 - **11** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **155** observed log variants and **155** samples
-- **8,052,909** CyStack observations represented by the retained sample set
+- **156** observed log variants and **156** samples
+- **8,052,910** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -97,7 +97,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Rivas Stealer](families/rivas-stealer/) | unknown | 1 | [1 retained](families/rivas-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (136)
+### CyStack tracking names (137)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -144,6 +144,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSCrownBuildStealer](families/cs-crown-build-stealer/) | unknown | 1 | [1 retained](families/cs-crown-build-stealer/#observed-log-variants) |
 | [CSCyrillicCoresStealer](families/cs-cyrillic-cores-stealer/) | unknown | 0 | Metadata only |
 | [CSDaisyBonusProcSoftStealer](families/cs-daisy-bonus-proc-soft-stealer/) | unknown | 1 | [1 retained](families/cs-daisy-bonus-proc-soft-stealer/#observed-log-variants) |
+| [CSDaisyBuildBlockStealer](families/cs-daisy-build-block-stealer/) | unknown | 1 | [1 retained](families/cs-daisy-build-block-stealer/#observed-log-variants) |
 | [CSDaisyCloudStealer](families/cs-daisy-cloud-stealer/) | low | 1 | [1 retained](families/cs-daisy-cloud-stealer/#observed-log-variants) |
 | [CSDashPlusSepStealer](families/cs-dash-plus-sep-stealer/) | unknown | 1 | [1 retained](families/cs-dash-plus-sep-stealer/#observed-log-variants) |
 | [CSDashSectionStealer](families/cs-dash-section-stealer/) | low | 1 | [1 retained](families/cs-dash-section-stealer/#observed-log-variants) |
