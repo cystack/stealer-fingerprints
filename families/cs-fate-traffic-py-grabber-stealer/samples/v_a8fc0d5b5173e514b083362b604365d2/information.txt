@@ -1,0 +1,11 @@
+PC Name: <HOST>
+User Name: <USER>
+OS: Windows 10 (10.0.19045)
+Architecture: AMD64
+Processor: AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD
+Public IP: <IP>
+Country: Albania (AL)
+City: <LOCATION>
+Local IP: <IP>
+Drives: C:\, F:\
+Time: 2026-07-03 21:41:19

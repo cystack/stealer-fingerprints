@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **200** research profiles
+- **201** research profiles
 - **42** known malware families
 - **3** observed self-labels without independent family attribution
-- **139** CyStack tracking names
+- **140** CyStack tracking names
 - **11** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **158** observed log variants and **158** samples
-- **8,052,912** CyStack observations represented by the retained sample set
+- **159** observed log variants and **159** samples
+- **8,052,913** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -97,7 +97,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Rivas Stealer](families/rivas-stealer/) | unknown | 1 | [1 retained](families/rivas-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (139)
+### CyStack tracking names (140)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -167,6 +167,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSFacebookMarketStealer](families/cs-facebook-market-stealer/) | unknown | 1 | [1 retained](families/cs-facebook-market-stealer/#observed-log-variants) |
 | [CSFacebookProfileStealer](families/cs-facebook-profile-stealer/) | low | 1 | [1 retained](families/cs-facebook-profile-stealer/#observed-log-variants) |
 | [CSFateTrafficInfoStealer](families/cs-fate-traffic-info-stealer/) | unknown | 1 | [1 retained](families/cs-fate-traffic-info-stealer/#observed-log-variants) |
+| [CSFateTrafficPyGrabberStealer](families/cs-fate-traffic-py-grabber-stealer/) | unknown | 1 | [1 retained](families/cs-fate-traffic-py-grabber-stealer/#observed-log-variants) |
 | [CSFilesStolenStealer](families/cs-files-stolen-stealer/) | unknown | 0 | Metadata only |
 | [CSFlatMacBradmaxStealer](families/cs-flat-mac-bradmax-stealer/) | low | 0 | Metadata only |
 | [CSFlatMacProfilerStealer](families/cs-flat-mac-profiler-stealer/) | low | 3 | [3 retained](families/cs-flat-mac-profiler-stealer/#observed-log-variants) |
