@@ -1,0 +1,115 @@
+{
+  "aliases": [
+    "@BabaCloud_New + Build block body",
+    "BabaCloud gibberish-watermarked BuildBlock variant"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    }
+  ],
+  "attribution_confidence": "unknown",
+  "classification": "cystack_named",
+  "description": "CSBabaCloudBuildBlockStealer is a CyStack-coined identifier\nfor an `@BabaCloud_New`-repackaged `System_Info.txt` shape\nthat wraps the same four-key `Build Path` / `Build ID` /\n`Build Version` / `Build Comment` body already observed under\nthe `@ft7links` / `@BRADMAX` / `@updh1` bare distributions.\nThe distinguishing feature is a per-line watermark: every\npayload line carries a random 4-9-character lowercase\nalphabetic token followed by roughly eight spaces before the\ncanonical `Key: Value` text. The obfuscation defeats naive\nsubstring-search leak checks - a grep for `Build Path:` in\nisolation cannot extract the field because the substring\nnever appears at column 0.\n\nObserved inside `@BabaCloud_New { <count>+ } Cloud Logs <DD>.<MM>.<YYYY>.7z` aggregator packs at\n`@BabaCloud_New {<seq>} [<CC>]_<IPv4>_<HWIDPFX>_<8-digit>_ <6-digit>/System_Info.txt` victim folders. After stripping\nthe gibberish prefix, the body carries `User time` (ISO\nwall-clock), `HWID` (MD5-shape hex), `PC Name`, `User Name`\n(`HOSTNAME\\USERNAME`), `CPU`, `GPU`, `Memory` (GB-suffixed),\n`OS`, `Active window`, `Build Path`, `Build ID` (builder\nidentifier), `Build Version`, `Build Comment`, `Admin rights`\n(true/false), `IP`, `GEO` (ISO-2), and `Resolution`. Field\nvocabulary is identical to the sibling `CSBuildBlockStealer`\nlayout; only the panel wrapping differs. A trailing\n`Country : <CC>` tag in the Vidar-style spaced-colon form is\nsometimes appended after a blank line.\n\nPublic reporting attests `@BabaCloud_New` as a Telegram\ncloud-logs operation that has released multiple\nthousand-record credential dumps since mid-2025 but does not\nexplicitly name the underlying panel family for either its\nVidar-shape or BuildBlock-shape distributions. The parallel\nDaisy Cloud reseller applies a branded `Daisy Private cloud`\ndigit-obfuscated watermark to the same BuildBlock body; the\nsibling `CSBabaCloudStealer` profile covers a Vidar-shape\nbody from the same `@BabaCloud_New` operator with distinct\nfield vocabulary (`MachineID :` / `GUID :` / `HWID :` /\n`--- [ Hardware ] ---` section header). Family stays\nCyStack-coined pending a published rebrand mapping.",
+  "detection_notes": "Detection requires the per-line random-gibberish prefix to\nappear on 5+ lines (each line starts with a 4-9 lowercase\nalphabetic token followed by four or more whitespace\ncharacters and the start of a capitalised field key) plus\nthe `Build Path:` and `Active window:` substrings and at\nleast one of `Build ID:` or `Build Comment:`. The 5+\nprefix threshold guards against unrelated content that\nhappens to contain a single random-word-plus-spaces line.\nThe peer bare-body `CSBuildBlockStealer` profile is\nline-anchored on the canonical keys at column 0 and cleanly\ndeclines the watermarked shape; the parallel Daisy Cloud\n`CSDaisyBuildBlockStealer` profile requires the branded\n`Daisy Private cloud` digit-obfuscated watermark literal\nthat this `@BabaCloud_New` variant does not carry.",
+  "id": "cs-baba-cloud-build-block-stealer",
+  "name": "CSBabaCloudBuildBlockStealer",
+  "related_families": [
+    "cs-build-block-stealer",
+    "cs-baba-cloud-stealer",
+    "cs-daisy-build-block-stealer"
+  ],
+  "sources": [
+    "https://heroic.com/darkhive-breaches/babacloudlogs-stealer-log-22361-credentials-leaked/",
+    "https://heroic.com/darkhive-breaches/babacloudlogs-stealer-log-breach-explained-17507-records/"
+  ],
+  "typical_targets": [
+    "Sample execution path (`Build Path`) and builder identifier",
+    "Host and user identity with elevation status",
+    "CPU, GPU, memory, and display inventory",
+    "Public-IP geolocation (ISO-2 country) and system wall-clock"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSBabaCloudBuildBlockStealer là định danh do CyStack đặt cho một cấu trúc dữ liệu `System_Info.txt` được đóng gói lại dưới dạng `@BabaCloud_New`, bao bọc cùng một nội dung bốn khóa `Build Path` / `Build ID` / `Build Version` / `Build Comment` đã từng được ghi nhận trong các bản phân phối dạng thô `@ft7links` / `@BRADMAX` / `@updh1`.\n\nĐặc điểm nhận dạng riêng biệt là một watermark trên từng dòng: mỗi dòng dữ liệu mang một chuỗi ký tự chữ thường ngẫu nhiên dài 4-9 ký tự, theo sau bởi khoảng tám khoảng trắng trước khi đến văn bản `Key: Value` tiêu chuẩn. Kỹ thuật gây rối này vô hiệu hóa các phương pháp kiểm tra rò rỉ dữ liệu dựa trên tìm kiếm chuỗi con đơn giản - một lệnh grep tìm `Build Path:` đơn lẻ sẽ không thể trích xuất trường dữ liệu này vì chuỗi con đó không bao giờ xuất hiện ở cột 0.\n\nĐược quan sát bên trong các gói tổng hợp `@BabaCloud_New { <count>+ } Cloud Logs <DD>.<MM>.<YYYY>.7z` tại các thư mục nạn nhân `@BabaCloud_New {<seq>} [<CC>]_<IPv4>_<HWIDPFX>_<8-digit>_ <6-digit>/System_Info.txt`. Sau khi loại bỏ tiền tố ký tự vô nghĩa, nội dung mang các trường `User time` (giờ hệ thống dạng ISO), `HWID` (chuỗi hex dạng MD5), `PC Name`, `User Name` (`HOSTNAME\\USERNAME`), `CPU`, `GPU`, `Memory` (có hậu tố GB), `OS`, `Active window`, `Build Path`, `Build ID` (định danh builder), `Build Version`, `Build Comment`, `Admin rights` (true/false), `IP`, `GEO` (dạng ISO-2), và `Resolution`. Từ vựng của các trường dữ liệu giống hệt với bố cục `CSBuildBlockStealer` liên quan; chỉ có lớp bao bọc panel là khác biệt. Một thẻ `Country : <CC>` ở cuối, theo dạng dấu hai chấm cách khoảng kiểu Vidar, đôi khi được thêm vào sau một dòng trống.\n\nCác báo cáo công khai xác nhận `@BabaCloud_New` là một hoạt động cloud-logs trên Telegram đã phát hành nhiều bản dump thông tin xác thực với hàng nghìn bản ghi kể từ giữa năm 2025, nhưng không nêu rõ tên họ panel gốc cho cả bản phân phối dạng Vidar lẫn dạng BuildBlock của nó. Đối tác bán lại song song Daisy Cloud áp dụng một watermark gây rối bằng chữ số mang thương hiệu `Daisy Private cloud` lên cùng nội dung BuildBlock; hồ sơ liên quan `CSBabaCloudStealer` đề cập đến nội dung dạng Vidar từ cùng đối tượng vận hành `@BabaCloud_New` nhưng có từ vựng trường dữ liệu khác (tiêu đề mục `MachineID :` / `GUID :` / `HWID :` / `--- [ Hardware ] ---`). Họ mã độc vẫn giữ nguyên định danh do CyStack đặt cho đến khi có bản đồ đổi thương hiệu được công bố chính thức.",
+      "typical_targets": [
+        "Đường dẫn thực thi mẫu (`Build Path`) và định danh builder",
+        "Danh tính máy và người dùng cùng trạng thái nâng quyền",
+        "Kiểm kê CPU, GPU, bộ nhớ và màn hình",
+        "Định vị địa lý theo IP công khai (quốc gia dạng ISO-2) và giờ hệ thống"
+      ],
+      "detection_notes": "Việc nhận diện đòi hỏi tiền tố ký tự ngẫu nhiên vô nghĩa trên từng dòng phải xuất hiện ở 5 dòng trở lên (mỗi dòng bắt đầu bằng một chuỗi chữ thường 4-9 ký tự, theo sau bởi bốn khoảng trắng trở lên rồi đến phần đầu của một khóa trường dữ liệu viết hoa) cùng với các chuỗi con `Build Path:` và `Active window:`, và ít nhất một trong hai chuỗi `Build ID:` hoặc `Build Comment:`. Ngưỡng 5 dòng trở lên nhằm phòng tránh trường hợp nội dung không liên quan tình cờ chứa một dòng đơn lẻ dạng từ-ngẫu-nhiên-cộng-khoảng-trắng. Hồ sơ dạng thô liên quan `CSBuildBlockStealer` được neo theo dòng dựa trên các khóa tiêu chuẩn tại cột 0 và loại trừ rõ ràng cấu trúc có watermark này; trong khi đó hồ sơ Daisy Cloud `CSDaisyBuildBlockStealer` song song đòi hỏi chuỗi ký tự watermark gây rối bằng chữ số mang thương hiệu `Daisy Private cloud` mà biến thể `@BabaCloud_New` này không mang theo.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@BabaCloud_New",
+      "fields": [
+        "Country",
+        "covp Build Path",
+        "jvfo Active window",
+        "kasvushnz Build Version",
+        "kfmujdmpm Build Comment",
+        "lffoopyvd HWID",
+        "nlunyhbnx User time",
+        "nxojoxyzh IP",
+        "ogddl Memory",
+        "orscz OS",
+        "qirxikjfr PC Name",
+        "sfmzbjlqh GEO",
+        "udvjebosh GPU",
+        "vdibsr CPU",
+        "wmfh Admin rights",
+        "wmnvi User Name",
+        "zhzzrrf Build ID",
+        "zmln Resolution"
+      ],
+      "filenames": [
+        "System_Info.txt"
+      ],
+      "format_id": "cs-baba-cloud-build-block-stealer",
+      "id": "v_9df343d8a2434e2cc3d88ac472b23446",
+      "markers": [],
+      "panel_brand": "@BabaCloud_New per-line gibberish watermark (BuildBlock)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_9df343d8a2434e2cc3d88ac472b23446/System_Info.txt",
+        "sha256": "56e32d1e628d8fa6e9efcd6ee3cba7163b0ebbbc64aaa9acd702a3c38d9e61a7",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}

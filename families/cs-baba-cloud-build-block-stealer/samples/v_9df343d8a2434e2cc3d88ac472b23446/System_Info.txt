@@ -1,0 +1,21 @@
+ 
+kdctbhwmf   
+nlunyhbnx        User time: 2026-04-09 21:24:41
+lffoopyvd        HWID: <HWID>
+qirxikjfr        PC Name: <HOST>
+wmnvi        User Name: <USER>
+vdibsr        CPU: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+udvjebosh        GPU: Intel(R) UHD Graphics, NVIDIA GeForce RTX 3050 Ti Laptop GPU
+ogddl        Memory: 8 GB
+orscz        OS: Microsoft Windows 10 Home Single Language
+jvfo        Active window: YouTube - valorant bedava hile aimbot - YouTube
+covp        Build Path: C:\Users\<USER>\AppData\Local\Zoom\esif_uf.exe
+zhzzrrf        Build ID: QpOyhWNtM3up5JqV0wLo
+kasvushnz        Build Version: 0.28.0
+kfmujdmpm        Build Comment: gpucheck
+wmfh        Admin rights: true
+nxojoxyzh        IP: <IP>
+sfmzbjlqh        GEO: TR
+zmln        Resolution: 1920x1080
+
+Country : TR
