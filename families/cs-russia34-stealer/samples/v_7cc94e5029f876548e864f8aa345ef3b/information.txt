@@ -1,0 +1,418 @@
+383b.                 w         d88b   d8 
+3  .8 8   8 d83b d88b w .d83     wwP  dP3 
+8wwK' 8b d8 `Yb. `Yb. 8 8  3       8 dPw8 
+3  Yb `Y8P8 Y88P Y83P 8 `Y88    Y38P    3
+=========================================
+==========https://russia34.com===========
+====https://linktr.ee/RussiaCloudLink====
+=========================================
+
+
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+Подбор паролей к большинству крипто кошельков: 
+Exodus, Metamask, Phantom, Electrum, Trust Wallet и т.д
+Так же принимаем Exodus/Electrum прямо с отстука без известного баланса.
+Общий процент на любые балансы 75/25 (75% - клиенту) 
+Deposit 1,3 BTC
+Telegram: Qwerty99990000
+-------------------ОПЛАЧЕННАЯ РЕКЛАМА-------------------
+
+Version: Russia 34
+
+IP: <IP>
+Country: AE
+
+Date: 17.07.2026 09:45:06
+MachineID: <HWID>
+GUID: <HWID>
+HWID: <HWID>
+
+Path: C:\Windows\SysWOW32\install.exe
+MD5: <SECRET>
+Work Dir: Admin @logslead
+
+Windows: Windows 11 Pro 25H2 (Build 26200)
+Computer Name: <HOST>
+User Name: <USER>
+Display Resolution: 1250x1080
+Local Time: 17.07.2026 09:45:06
+Antivirus: Malwarebytes
+
+[Hardware]
+Processor: 12th Gen Intel(R) Core(TM) i5-12400F
+Cores: 12
+Threads: 12
+RAM: 32608 MB
+VideoCard: NVIDIA GeForce RTX 3070 Ti
+
+[Processes]
+  [4] System
+  [224] Registry
+  [844] smss.exe
+  [948] csrss.exe
+  [1112] wininit.exe
+  [1120] csrss.exe
+  [1216] services.exe
+  [1224] winlogon.exe
+  [1284] lsass.exe
+  [1424] svchost.exe
+  [1456] fontdrvhost.exe
+  [1460] fontdrvhost.exe
+  [1532] WUDFHost.exe
+  [1592] svchost.exe
+  [1632] svchost.exe
+  [1716] dwm.exe
+  [1748] svchost.exe
+  [1840] svchost.exe
+  [1892] svchost.exe
+  [1904] svchost.exe
+  [2000] svchost.exe
+  [1020] svchost.exe
+  [940] svchost.exe
+  [1160] svchost.exe
+  [1784] svchost.exe
+  [1960] svchost.exe
+  [2144] svchost.exe
+  [2268] svchost.exe
+  [2472] svchost.exe
+  [2636] NVDisplay.Container.exe
+  [2672] svchost.exe
+  [2712] svchost.exe
+  [2720] svchost.exe
+  [2728] svchost.exe
+  [2804] Memory Compression
+  [2856] svchost.exe
+  [2892] svchost.exe
+  [2900] svchost.exe
+  [2948] svchost.exe
+  [3020] svchost.exe
+  [3060] svchost.exe
+  [3136] svchost.exe
+  [3144] svchost.exe
+  [3236] svchost.exe
+  [3276] audiodg.exe
+  [3316] svchost.exe
+  [3356] svchost.exe
+  [3564] svchost.exe
+  [3580] spoolsv.exe
+  [3640] svchost.exe
+  [3728] NVDisplay.Container.exe
+  [3924] svchost.exe
+  [4024] svchost.exe
+  [4040] svchost.exe
+  [4048] svchost.exe
+  [4056] svchost.exe
+  [4064] AnyDesk.exe
+  [4072] GameInputRedistService.exe
+  [4080] svchost.exe
+  [4088] svchost.exe
+  [3268] svchost.exe
+  [3560] jhi_service.exe
+  [4152] svchost.exe
+  [4208] MpDefenderCoreService.exe
+  [4276] svchost.exe
+  [4324] NLSvc.exe
+  [4344] nvcontainer.exe
+  [4384] svchost.exe
+  [4392] svchost.exe
+  [4400] svchost.exe
+  [4432] wrapper.exe
+  [4440] wrapper.exe
+  [4508] svchost.exe
+  [4516] svchost.exe
+  [4536] MsMpEng.exe
+  [4548] WMIRegistrationService.exe
+  [4620] MBAMService.exe
+  [4648] dasHost.exe
+  [4668] svchost.exe
+  [4752] svchost.exe
+  [5108] gamingservicesnet.exe
+  [5116] gamingservices.exe
+  [4364] MSPCManagerService.exe
+  [5180] svchost.exe
+  [5896] svchost.exe
+  [4976] svchost.exe
+  [5348] svchost.exe
+  [1188] svchost.exe
+  [6164] conhost.exe
+  [6172] conhost.exe
+  [6316] WmiPrvSE.exe
+  [6380] GameInputRedistService.exe
+  [7216] warp-svc.exe
+  [7276] AggregatorHost.exe
+  [7832] nvcontainer.exe
+  [7852] WmiPrvSE.exe
+  [7884] nvcontainer.exe
+  [7932] nvcontainer.exe
+  [8096] sihost.exe
+  [8176] svchost.exe
+  [7176] svchost.exe
+  [8132] svchost.exe
+  [8036] taskhostw.exe
+  [8116] svchost.exe
+  [7752] svchost.exe
+  [8212] NVIDIA RTX Voice.exe
+  [8544] java.exe
+  [9172] svchost.exe
+  [3868] svchost.exe
+  [7840] explorer.exe
+  [9316] ShellHost.exe
+  [9644] svchost.exe
+  [9796] CrossDeviceResume.exe
+  [9852] svchost.exe
+  [10144] svchost.exe
+  [10280] svchost.exe
+  [10316] svchost.exe
+  [10468] svchost.exe
+  [11108] svchost.exe
+  [10388] svchost.exe
+  [11540] StartMenuExperienceHost.exe
+  [11576] SearchHost.exe
+  [12156] Widgets.exe
+  [12192] RuntimeBroker.exe
+  [12216] svchost.exe
+  [4016] nvsphelper64.exe
+  [11204] NVIDIA Overlay.exe
+  [9000] svchost.exe
+  [12428] WidgetService.exe
+  [13240] msedgewebview2.exe
+  [13284] msedgewebview2.exe
+  [6420] ctfmon.exe
+  [13668] LockApp.exe
+  [13912] msedgewebview2.exe
+  [13920] msedgewebview2.exe
+  [14020] msedgewebview2.exe
+  [14264] msedgewebview2.exe
+  [14364] NVIDIA Overlay.exe
+  [14412] RuntimeBroker.exe
+  [14444] NVIDIA Overlay.exe
+  [14720] NVIDIA Overlay.exe
+  [14776] svchost.exe
+  [14848] SearchIndexer.exe
+  [13468] NVIDIA Overlay.exe
+  [15976] svchost.exe
+  [15652] GameInputSvc.exe
+  [15848] GameInputSvc.exe
+  [16324] svchost.exe
+  [16592] java.exe
+  [17120] Malwarebytes.exe
+  [17316] svchost.exe
+  [18032] svchost.exe
+  [17720] NisSrv.exe
+  [14696] TextInputHost.exe
+  [17016] MoNotificationUx.exe
+  [18272] conhost.exe
+  [18460] cmd.exe
+  [18472] postgres.exe
+  [18556] postgres.exe
+  [18612] postgres.exe
+  [18620] postgres.exe
+  [18640] postgres.exe
+  [18660] postgres.exe
+  [18684] postgres.exe
+  [18708] postgres.exe
+  [18732] postgres.exe
+  [19100] postgres.exe
+  [19400] postgres.exe
+  [19436] postgres.exe
+  [6536] postgres.exe
+  [17204] postgres.exe
+  [17188] postgres.exe
+  [16240] postgres.exe
+  [16268] postgres.exe
+  [16456] postgres.exe
+  [10196] postgres.exe
+  [15524] postgres.exe
+  [15568] postgres.exe
+  [15420] postgres.exe
+  [17952] cmd.exe
+  [17836] conhost.exe
+  [19260] java.exe
+  [19084] smartscreen.exe
+  [18820] XMouseButtonControl.exe
+  [9888] dcnotificationserver.exe
+  [12560] dcnginx.exe
+  [16212] dcnginx.exe
+  [1348] conhost.exe
+  [1472] dcnginx.exe
+  [2888] conhost.exe
+  [9312] dcnginx.exe
+  [17504] conhost.exe
+  [10500] dcnginx.exe
+  [3944] conhost.exe
+  [2328] dcnginx.exe
+  [10808] conhost.exe
+  [16996] dcnginx.exe
+  [12392] conhost.exe
+  [12648] dcnginx.exe
+  [16016] conhost.exe
+  [16152] dcnginx.exe
+  [12960] conhost.exe
+  [18164] dcnginx.exe
+  [1776] conhost.exe
+  [4980] dcnginx.exe
+  [2988] conhost.exe
+  [3216] dcnginx.exe
+  [14824] conhost.exe
+  [12936] SearchProtocolHost.exe
+  [13552] dcnginx.exe
+  [14396] conhost.exe
+  [15996] wallpaper32.exe
+  [6436] sheep.exe
+  [18424] TranslucentTB.exe
+  [19532] RuntimeBroker.exe
+  [18656] taskhostw.exe
+  [19984] msedgewebview2.exe
+  [6460] msedgewebview2.exe
+  [20320] msedgewebview2.exe
+  [20284] msedgewebview2.exe
+  [15956] msedgewebview2.exe
+  [13592] msedgewebview2.exe
+  [18440] SearchFilterHost.exe
+  [14164] SearchFilterHost.exe
+  [3484] chrome.exe
+  [2920] chrome.exe
+  [17128] chrome.exe
+  [7916] chrome.exe
+  [1500] chrome.exe
+  [1848] chrome.exe
+  [18088] chrome.exe
+  [17940] chrome.exe
+  [18724] chrome.exe
+  [20540] cmd.exe
+  [20548] conhost.exe
+  [20656] MbamBgNativeMsg.exe
+  [20756] chrome.exe
+  [20488] svchost.exe
+  [13036] svchost.exe
+  [6308] svchost.exe
+  [14964] svchost.exe
+  [21296] svchost.exe
+  [19660] WMIADAP.exe
+  [5800] SearchFilterHost.exe
+  [8028] RuntimeBroker.exe
+  [5160] conhost.exe
+  [21340] backgroundTaskHost.exe
+  [9012] RuntimeBroker.exe
+  [14968] steam.exe
+  [20440] steamwebhelper.exe
+  [6004] steamservice.exe
+  [15000] steamwebhelper.exe
+  [14664] steamwebhelper.exe
+  [6600] steamwebhelper.exe
+  [10348] steamwebhelper.exe
+  [12036] Installer.exe
+  [4596] Installer.exe
+  [4612] Installer.exe
+  [6860] Installer.exe
+  [14508] steamwebhelper.exe
+  [9748] WmiPrvSE.exe
+  [13688] svchost.exe
+  [20904] chrome.exe
+  [1340] chrome.exe
+  [14668] chrome.exe
+  [3324] chrome.exe
+  [19036] steamwebhelper.exe
+  [17980] chrome.exe
+  [3368] RISK.exe
+  [6924] payload.exe
+  [2424] UnityCrashHandler64.exe
+  [8352] payload.exe
+  [10000] chrome.exe
+  [9436] explorer.exe
+  [7132] payload.exe
+  [20272] MoUsoCoreWorker.exe
+  [6960] svchost.exe
+  [13032] payload.exe
+  [21260] gameoverlayui64.exe
+  [12132] svchost.exe
+  [3120] cmd.exe
+  [20836] conhost.exe
+  [8020] powershell.exe
+[Software]
+  7-Zip 25.00 (x64)
+  AutoHotkey <IP>
+  Equalizer APO
+  Mem Reduct
+  Mozilla Firefox (x64 en-US)
+  Mozilla Maintenance Service
+  Riot Vanguard
+  RISK: Global Domination
+  Call of Duty
+  Supermarket Together
+  Wallpaper Engine
+  Dirty Business: Free of Charge
+  Nomad Drive Demo
+  Keep It Up! Demo
+  BOMBANANA! Demo
+  SteelSeries GG 108.1.0
+  System Informer
+  TikTok LIVE Studio
+  VLC media player
+  WinRAR 6.22 (64-bit)
+  SharpKeys
+  Microsoft Windows Desktop Runtime - 8.0.6 (x64)
+  Microsoft GameInput
+  Microsoft Update Health Tools
+  Python 3.13.4 Standard Library (64-bit)
+  Java 8 Update 51 (64-bit)
+  Windows App Certification Kit Native Components
+  Malwarebytes version 5.6.1.257
+  Python 3.13.4 Development Libraries (64-bit)
+  vs_communityx64msi
+  Oracle VirtualBox 7.1.10
+  vs_minshellx64msi
+  Microsoft .NET Host FX Resolver - 8.0.6 (x64)
+  vs_devenx64vmsi
+  Microsoft System CLR Types for SQL Server 2019
+  vs_Graphics_Singletonx64
+  VS JIT Debugger
+  icecap_collection_x64
+  Microsoft Visual Studio Installer
+  Microsoft Visual C++ 2022 X64 Additional Runtime - 14.51.36247
+  NetLimiter
+  Voicemod
+  Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.21005
+  Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.51.36247
+  Cloudflare WARP
+  Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.21005
+  Microsoft Teams Meeting Add-in for Microsoft Office
+  Application Verifier x64 External Package (DesktopEditions)
+  NVIDIA Graphics Driver 591.86
+  NVIDIA App 11.0.5.420
+  NVIDIA MessageBus 3 for NvApp
+  NVIDIA Backend
+  NvCpl
+  NVIDIA PhysX System Software 9.23.1019
+  NVIDIA FrameView SDK 1.5.11504.36206172
+  NVIDIA Install Application
+  NVIDIA Container
+  NVIDIA AIUser Container
+  NVIDIA LocalSystem Container
+  NVIDIA Session Container
+  NVIDIA User Container
+  NVIDIA NvDLISR
+  NVIDIA Watchdog Plugin for NvContainer
+  NVIDIA Telemetry Client
+  NVIDIA RTX Voice Application
+  NVIDIA NVIDIA RTX Voice Driver <IP>
+  NVIDIA ShadowPlay 11.0.5.400
+  NVIDIA Virtual Audio <IP>
+  vs_minshellinteropx64msi
+  Update for x64-based Windows Systems (KB5001716)
+  DiagnosticsHub_CollectionService
+  United States-International - Custom
+  Windows SDK DirectX x64 Remote
+  playit
+  Python 3.13.4 Core Interpreter (64-bit)
+  Application Verifier x64 External Package (OnecoreUAP)
+  Universal CRT Tools x64
+  Microsoft Keyboard Layout Creator 1.4
+  Microsoft .NET Host - 8.0.6 (x64)
+  PuTTY release 0.83 (64-bit)
+  Python 3.13.4 Executables (64-bit)
+  Soundpad
+  VS Script Debugging Common
+  Microsoft .NET Runtime - 8.0.6 (x64)
+  Epic Games Launcher Prerequisites (x64)
+  Microsoft Visual C++ 2022 X64 Debug Runtime - 14.44.35211

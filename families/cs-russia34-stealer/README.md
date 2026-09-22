@@ -23,7 +23,8 @@ Bảng điều khiển tạo dữ liệu đầu ra là một banner ASCII-art `R
 - Classification / Phân loại: **Log aggregator / Nguồn tổng hợp log**
 - Attribution confidence: **unknown**
 - Aliases: `russia34`, `Private Russia 34`
-- Variants observed: **0**
+- Variants observed: **2**
+- CyStack observations represented: **2**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -52,7 +53,42 @@ Banner ASCII-art REDLINE bên trong khung viền dấu hoa thị, theo sau là c
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_7cc94e5029f876548e864f8aa345ef3b`
+
+- Format ID: `cs-russia34-stealer`
+- Observed filenames: `information.txt`
+- Panel brand: `russia34.com (Lumma 'Russia 34' bullet)`
+- Distribution channel: `russia34.com`
+- Attribution confidence: **high**
+- Layout: `lumma-bullet-russia34`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_7cc94e5029f876548e864f8aa345ef3b/information.txt)
+- Sample SHA-256: `34b1944e98c81b9be1a4e8889a3de5be0f083a219116734748d4ae39cb74ec8b`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `[Hardware]`, `[Processes]`, `[Software]`
+- Field labels: `Antivirus`, `Computer Name`, `Cores`, `Country`, `Date`, `Dirty Business`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Local Time`, `MachineID`, `MD5`, `Path`, `Processor`, `RAM`, `RISK`, `Telegram`, `Threads`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`, `Подбор паролей к большинству крипто кошельков`
+
+### `v_fed52a266d896fd69cf78baa704d14b4`
+
+- Format ID: `cs-russia34-stealer`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: `russia34.com (RedlineLike Admin/Integrity)`
+- Distribution channel: `russia34.com`
+- Attribution confidence: **high**
+- Layout: `redline-like`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_fed52a266d896fd69cf78baa704d14b4/UserInformation.txt)
+- Sample SHA-256: `4a504b0eb89582a4e269cefe661683ba1b7a43e341ead49193ab4e809bf9c909`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Admin Group`, `Computer Name`, `Country`, `Display Resolution`, `Domain Name`, `Graphics card`, `HWID`, `Installed RAM`, `Integrity`, `IP`, `Keyboard Language`, `Log date`, `now`, `Operation System`, `Processor`, `System Language`, `TimeZone`, `User Name`, `UserLanguage`, `Version Build`
+
 
 ## MITRE ATT&CK
 

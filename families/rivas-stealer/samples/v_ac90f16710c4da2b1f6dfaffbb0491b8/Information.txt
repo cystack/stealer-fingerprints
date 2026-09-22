@@ -1,0 +1,31 @@
+<SECRET>
+              Rivas Stealer Report               
+<SECRET>
+
+---| User Info |---
+Username   : <USER>
+PC Name    : <HOST>
+OS Version : Windows 10 Pro (Build 19045)
+HWID       : <HWID>
+
+---| Hardware Info |---
+CPU        : AMD Ryzen 5 5500U with Radeon Graphics
+GPU        : AMD Radeon(TM) Graphics
+RAM        : 14 GB
+Screen     : 1366x768
+
+---| Network |---
+success
+Algeria
+DZ
+31
+Oran
+Oran
+31000
+35.7204
+-0.6659
+Africa/Algiers
+Algerie Telecom
+
+AS36947 Telecom Algeria
+<IP>
