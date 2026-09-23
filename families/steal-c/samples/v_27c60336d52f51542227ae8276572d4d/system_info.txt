@@ -1,0 +1,23 @@
+
+
+IP: <IP>
+Country: CZ
+HWID: <HWID>
+OS: Windows 11
+Architecture: x64
+UserName: <USER>
+Computer Name: <HOST>
+Local Time: 27.06.2026 21:23:06
+UTC: 1
+Language: cs-CZ
+Keyboards: Čeština (Česko)
+Laptop: TRUE
+Path: C:\Windows\SysWOW32\install.exe
+CPU: AMD Ryzen 5 7535HS with Radeon Graphics
+Cores: 6
+Threads: 12
+RAM: 7 GB
+Display Resolution:
+Device String: AMD Radeon(TM) 660M
+Resolution: 1920x1080
+GPU:

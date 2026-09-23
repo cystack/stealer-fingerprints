@@ -19,8 +19,8 @@ Nhật ký của StealC, một mã độc đánh cắp thông tin. Mã độc gh
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `StealC v1`, `StealC v2`
-- Variants observed: **2**
-- CyStack observations represented: **972,301**
+- Variants observed: **3**
+- CyStack observations represented: **972,302**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -82,6 +82,24 @@ Recognition anchors:
 
 - Stable markers: -
 - Field labels: `All Users`, `Current User`, `Installed Apps`
+
+### `v_27c60336d52f51542227ae8276572d4d`
+
+- Format ID: `stealc`
+- Observed filenames: `system_info.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `laptop-device-string`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_27c60336d52f51542227ae8276572d4d/system_info.txt)
+- Sample SHA-256: `6bc0066e2fe27f22195edf48ac053c22f2569795173828a9f9fbf9d25a0b6f34`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Architecture`, `Computer Name`, `Cores`, `Country`, `CPU`, `Device String`, `Display Resolution`, `GPU`, `HWID`, `IP`, `Keyboards`, `Language`, `Laptop`, `Local Time`, `OS`, `Path`, `RAM`, `Resolution`, `Threads`, `UserName`, `UTC`
 
 
 ## MITRE ATT&CK
