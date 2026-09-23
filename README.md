@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **202** research profiles
+- **203** research profiles
 - **42** known malware families
 - **3** observed self-labels without independent family attribution
-- **141** CyStack tracking names
+- **142** CyStack tracking names
 - **11** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **162** observed log variants and **162** samples
-- **8,052,916** CyStack observations represented by the retained sample set
+- **163** observed log variants and **163** samples
+- **8,052,917** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -97,7 +97,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Rivas Stealer](families/rivas-stealer/) | unknown | 1 | [1 retained](families/rivas-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (141)
+### CyStack tracking names (142)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -224,6 +224,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSStealerCloudUserInfoStealer](families/cs-stealer-cloud-user-info-stealer/) | low | 1 | [1 retained](families/cs-stealer-cloud-user-info-stealer/#observed-log-variants) |
 | [CSSystemRegionStealer](families/cs-system-region-stealer/) | unknown | 0 | Metadata only |
 | [CSSystemSummaryStealer](families/cs-system-summary-stealer/) | unknown | 0 | Metadata only |
+| [CSTagBuildStealer](families/cs-tag-build-stealer/) | unknown | 1 | [1 retained](families/cs-tag-build-stealer/#observed-log-variants) |
 | [CSTaggedInfoStealer](families/cs-tagged-info-stealer/) | unknown | 1 | [1 retained](families/cs-tagged-info-stealer/#observed-log-variants) |
 | [CSTagRegionStealer](families/cs-tag-region-stealer/) | unknown | 0 | Metadata only |
 | [CSTikTokAccountStealer](families/cs-tik-tok-account-stealer/) | unknown | 0 | Metadata only |

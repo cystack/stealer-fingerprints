@@ -1,0 +1,11 @@
+Country: RO
+RAM: 4GB
+CPU: 4
+Monitors: 1
+AV: Avira Security(ON)
+Elevation: Normal
+ID: KMPWPWAX
+IP: <IP>
+Version: 0.1.18
+Tag: live7
+BuildID: main

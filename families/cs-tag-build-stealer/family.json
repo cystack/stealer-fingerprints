@@ -1,0 +1,98 @@
+{
+  "aliases": [
+    "WATER CLOUD Events/BROWSER/userinfo.txt panel",
+    "11-field Tag+BuildID+Elevation stealer"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1518.001",
+      "name": "Security Software Discovery"
+    }
+  ],
+  "attribution_confidence": "unknown",
+  "classification": "cystack_named",
+  "description": "CSTagBuildStealer is a CyStack-coined identifier for a\ncompact eleven-field `Events/BROWSER/userinfo.txt` panel\nobserved inside WATER CLOUD Telegram aggregator archives\n(`@WATERCLOUD_INFO <count> PIECE & <DD>.<MM>.<YYYY>.zip. <NN>`) at `<32-char>_<YYYY>-<MM>-<DD> <HH>-<MM>-<SS>/ Events/BROWSER/userinfo.txt` victim folders. The panel\nbody carries only bare `Key: Value` lines with no leading\ndash prefix, no section headers, no operator banner, and\nno in-body watermark. Fields collected: `Country` (ISO-2),\n`RAM` (GB-suffixed), `CPU` (bare integer core count, not\na model name), `Monitors` (integer count), `AV` (product\nname plus parenthesised `(ON)` / `(OFF)` state suffix),\n`Elevation` (`Normal` for non-elevated, `Elevated` / `Admin`\nwhen observed), `ID` (8-char uppercase alphabetic short\nidentifier, not a GUID or MD5-hex HWID), `IP`, `Version`\n(semantic version like `0.1.18`), `Tag` (campaign or\naffiliate label), and `BuildID` (Git-branch-like reference\nlike `main`).\n\nThe `Events/BROWSER/` nested victim-folder path is\ndistinctive — no other panel in the surveyed corpus writes\nits system-info file under a two-level `Events/<Section>/`\nfolder tree. The three-way `Version` + `Tag` + `BuildID`\nbuild-metadata triple and the `AV: <product>(<STATE>)`\nstate-suffix syntax are equally novel to the surveyed\ncorpus.\n\nNo two curated CTI vendors document this exact\neleven-field compact shape. Aurora Stealer per eSentire\nand\nSekoia ships a compact `UserInformation` file but uses\ndifferent field naming (`Screen Size:` / `Display Device:`\n/ `Build Group:` / `Log date:`) and does not carry the\n`Events/BROWSER/` folder path or the `Elevation: Normal` /\n`AV: X(ON)` markers, so attribution to Aurora would be a\nmislabel. The WATER CLOUD aggregator resells logs from\nmultiple underlying builders, so the distribution channel\nis recorded as attribution context rather than lineage.",
+  "detection_notes": "Fingerprint requires line-anchored `Elevation:` AND\n`Monitors:` AND `Tag:` AND `BuildID:` — the four-key\ncombination is unique to this panel across the surveyed\ncorpus (no canonical Redline / Lumma / Vidar / Rhadamanthys\n/ Meduza layout emits any of these four field names\ntogether). `ID:` alone would collide with too many other\npanels; `Tag:` alone would collide with the `BuildTag:`\nsibling in the bracket-section families.",
+  "id": "cs-tag-build-stealer",
+  "name": "CSTagBuildStealer",
+  "related_families": [],
+  "sources": [
+    "https://blog.sekoia.io/aurora-a-rising-stealer-flying-under-the-radar/",
+    "https://www.esentire.com/blog/esentire-threat-intelligence-malware-analysis-aurora-stealer"
+  ],
+  "typical_targets": [
+    "Public-IP geolocation (ISO-2 country)",
+    "Coarse hardware inventory (RAM, CPU core count, monitor count)",
+    "Installed antivirus product name with running state",
+    "Sample builder version, campaign tag, and build identifier",
+    "Process elevation flag (Normal vs Elevated)"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSTagBuildStealer là định danh do CyStack đặt cho một bảng điều khiển `Events/BROWSER/userinfo.txt` gọn nhẹ gồm mười một trường, được quan sát bên trong các kho lưu trữ tổng hợp Telegram của WATER CLOUD (`@WATERCLOUD_INFO <count> PIECE & <DD>.<MM>.<YYYY>.zip. <NN>`) tại các thư mục nạn nhân `<32-char>_<YYYY>-<MM>-<DD> <HH>-<MM>-<SS>/ Events/BROWSER/userinfo.txt`. Nội dung bảng điều khiển chỉ chứa các dòng `Key: Value` trần trụi, không có tiền tố gạch đầu dòng, không có tiêu đề phần, không có biểu ngữ của đối tượng vận hành, và không có watermark trong nội dung. Các trường được thu thập gồm: `Country` (ISO-2), `RAM` (hậu tố GB), `CPU` (số nguyên trần chỉ số lượng lõi, không phải tên model), `Monitors` (số nguyên đếm), `AV` (tên sản phẩm kèm hậu tố trạng thái `(ON)` / `(OFF)` trong ngoặc đơn), `Elevation` (`Normal` khi không có đặc quyền cao, `Elevated` / `Admin` khi quan sát được), `ID` (định danh ngắn gồm 8 ký tự chữ cái viết hoa, không phải GUID hay HWID dạng MD5-hex), `IP`, `Version` (phiên bản ngữ nghĩa như `0.1.18`), `Tag` (nhãn chiến dịch hoặc đối tác liên kết), và `BuildID` (tham chiếu kiểu nhánh Git như `main`).\n\nĐường dẫn thư mục nạn nhân lồng nhau `Events/BROWSER/` là đặc điểm khác biệt — không có bảng điều khiển nào khác trong kho dữ liệu khảo sát ghi tệp thông tin hệ thống của mình dưới cây thư mục hai cấp `Events/<Section>/`. Bộ ba dữ liệu build `Version` + `Tag` + `BuildID` và cú pháp hậu tố trạng thái `AV: <product>(<STATE>)` cũng là điểm mới lạ tương tự đối với kho dữ liệu khảo sát.\n\nKhông có hai nhà cung cấp CTI được tuyển chọn nào ghi nhận đúng cấu trúc dữ liệu gọn mười một trường này. Theo eSentire và Sekoia, Aurora Stealer có một tệp `UserInformation` gọn nhẹ nhưng sử dụng cách đặt tên trường khác (`Screen Size:` / `Display Device:` / `Build Group:` / `Log date:`) và không mang theo đường dẫn thư mục `Events/BROWSER/` hay các dấu hiệu `Elevation: Normal` / `AV: X(ON)`, do đó việc quy kết cho Aurora sẽ là gán nhãn sai. Kênh phân phối tổng hợp của WATER CLOUD bán lại nhật ký từ nhiều bộ công cụ builder khác nhau, nên kênh phân phối này được ghi nhận như bối cảnh quy kết chứ không phải dòng dõi phát triển.",
+      "typical_targets": [
+        "Định vị địa lý theo IP công khai (mã quốc gia ISO-2)",
+        "Kiểm kê phần cứng ở mức thô (RAM, số lượng lõi CPU, số lượng màn hình)",
+        "Tên sản phẩm diệt virus đã cài đặt kèm trạng thái đang chạy",
+        "Phiên bản builder mẫu, nhãn chiến dịch và định danh build",
+        "Cờ đặc quyền tiến trình (Normal so với Elevated)"
+      ],
+      "detection_notes": "Việc xác định dấu hiệu nhận diện yêu cầu `Elevation:` neo theo dòng VÀ `Monitors:` VÀ `Tag:` VÀ `BuildID:` — tổ hợp bốn khóa này là duy nhất đối với bảng điều khiển này trong toàn bộ kho dữ liệu khảo sát (không có bố cục chuẩn nào của Redline / Lumma / Vidar / Rhadamanthys / Meduza tạo dữ liệu đầu ra cùng lúc bốn tên trường này). Chỉ riêng `ID:` sẽ trùng lặp với quá nhiều bảng điều khiển khác; chỉ riêng `Tag:` sẽ trùng lặp với `BuildTag:` liên quan trong các họ dùng cấu trúc phần trong dấu ngoặc vuông.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        },
+        {
+          "id": "T1518.001",
+          "name": "Dò tìm phần mềm bảo mật"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@WATERCLOUD_INFO",
+      "fields": [
+        "AV",
+        "BuildID",
+        "Country",
+        "CPU",
+        "Elevation",
+        "ID",
+        "IP",
+        "Monitors",
+        "RAM",
+        "Tag",
+        "Version"
+      ],
+      "filenames": [
+        "userinfo.txt"
+      ],
+      "format_id": "cs-tag-build-stealer",
+      "id": "v_e6b21c7ebd87c1cbf56dcd1f466cd1a0",
+      "markers": [],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_e6b21c7ebd87c1cbf56dcd1f466cd1a0/userinfo.txt",
+        "sha256": "737c6d5995e984803a6e58d43cd0d66ecf1d8f1a1bca1643d4a1f911fe697ec8",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}
