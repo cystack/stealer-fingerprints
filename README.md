@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **203** research profiles
+- **204** research profiles
 - **42** known malware families
 - **3** observed self-labels without independent family attribution
 - **142** CyStack tracking names
-- **11** CyStack names mapped to a known parent family
+- **12** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **164** observed log variants and **164** samples
-- **8,052,918** CyStack observations represented by the retained sample set
+- **165** observed log variants and **165** samples
+- **8,052,919** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -244,7 +244,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [PyInfo Stealer](families/py-info-stealer/) | unknown | 1 | [1 retained](families/py-info-stealer/#observed-log-variants) |
 | [RedlineLike Stealer](families/redline-like-stealer/) | unknown | 7 | [7 retained](families/redline-like-stealer/#observed-log-variants) |
 
-### Mapped family variants (11)
+### Mapped family variants (12)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -257,6 +257,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSGeoBoxStealer](families/cs-geo-box-stealer/) → [redline](families/redline/) | high | 0 | Metadata only |
 | [CSHunterCloudStealer](families/cs-hunter-cloud-stealer/) → [redline](families/redline/) | high | 1 | [1 retained](families/cs-hunter-cloud-stealer/#observed-log-variants) |
 | [CSKortexStealer](families/cs-kortex-stealer/) → [lumma](families/lumma/) | low | 0 | Metadata only |
+| [CSLogsTesterStealer](families/cs-logs-tester-stealer/) → [vidar](families/vidar/) | medium | 1 | [1 retained](families/cs-logs-tester-stealer/#observed-log-variants) |
 | [CSPrimoCloudStealer](families/cs-primo-cloud-stealer/) → [redline](families/redline/) | high | 1 | [1 retained](families/cs-primo-cloud-stealer/#observed-log-variants) |
 | [CSRedhiveStealer](families/cs-redhive-stealer/) → [lumma](families/lumma/) | high | 1 | [1 retained](families/cs-redhive-stealer/#observed-log-variants) |
 

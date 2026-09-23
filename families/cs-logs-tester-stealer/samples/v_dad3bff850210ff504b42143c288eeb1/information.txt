@@ -1,0 +1,328 @@
+@logstester
+
+Ip: <IP>
+Country: AE
+
+Date: 24.06.2026 14:24:09
+MachineID: <HWID>
+GUID: <HWID>
+HWID: <HWID>
+
+Path: C:\Windows\SysWOW32\install.exe
+MD5: <SECRET>
+Work Dir: Admin @logslead
+
+Windows: Windows 10 Home 22H2 (Build 19045)
+Computer Name: <HOST>
+User Name: <USER>
+Display Resolution: 1920x1080
+Local Time: 24.06.2026 14:24:10
+Antivirus: None
+
+[Hardware]
+Processor: Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz
+Cores: 16
+Threads: 16
+RAM: 16130 MB
+VideoCard: NVIDIA GeForce GT 730
+
+[Processes]
+  [4] System
+  [172] Registry
+  [552] smss.exe
+  [800] csrss.exe
+  [900] wininit.exe
+  [908] csrss.exe
+  [972] services.exe
+  [1012] lsass.exe
+  [1028] svchost.exe
+  [1072] winlogon.exe
+  [1092] fontdrvhost.exe
+  [1156] fontdrvhost.exe
+  [1220] svchost.exe
+  [1264] svchost.exe
+  [1380] dwm.exe
+  [1416] svchost.exe
+  [1524] IntelCpHDCPSvc.exe
+  [1532] svchost.exe
+  [1560] svchost.exe
+  [1684] svchost.exe
+  [1692] svchost.exe
+  [1700] svchost.exe
+  [1708] svchost.exe
+  [1744] svchost.exe
+  [1788] svchost.exe
+  [1932] svchost.exe
+  [1968] IntelCpHeciSvc.exe
+  [2044] NVDisplay.Container.exe
+  [1212] svchost.exe
+  [1260] svchost.exe
+  [2124] svchost.exe
+  [2200] svchost.exe
+  [2228] svchost.exe
+  [2236] svchost.exe
+  [2244] svchost.exe
+  [2380] svchost.exe
+  [2412] Memory Compression
+  [2492] igfxCUIService.exe
+  [2512] svchost.exe
+  [2696] NVDisplay.Container.exe
+  [2756] svchost.exe
+  [2800] svchost.exe
+  [2808] svchost.exe
+  [3064] svchost.exe
+  [3500] svchost.exe
+  [3568] svchost.exe
+  [3708] WUDFHost.exe
+  [3772] svchost.exe
+  [3844] svchost.exe
+  [3852] svchost.exe
+  [3860] svchost.exe
+  [3988] svchost.exe
+  [4068] svchost.exe
+  [4116] svchost.exe
+  [4172] svchost.exe
+  [4228] spoolsv.exe
+  [4304] svchost.exe
+  [4372] svchost.exe
+  [5972] svchost.exe
+  [5980] svchost.exe
+  [6024] svchost.exe
+  [6108] wlanext.exe
+  [6352] conhost.exe
+  [7268] svchost.exe
+  [7308] svchost.exe
+  [7316] svchost.exe
+  [7324] svchost.exe
+  [7332] svchost.exe
+  [7376] svchost.exe
+  [7392] svchost.exe
+  [7404] svchost.exe
+  [7412] svchost.exe
+  [7436] AnyDesk.exe
+  [7464] AppleMobileDeviceService.exe
+  [7488] mDNSResponder.exe
+  [7572] OneApp.IGCC.WinService.exe
+  [7792] sqlwriter.exe
+  [7800] MTPdriveAgent.exe
+  [7808] UltraViewer_Service.exe
+  [7852] Licensing.Service.exe
+  [7908] mqsvc.exe
+  [8052] ss_conn_service2.exe
+  [8076] SMSvcHost.exe
+  [8096] ss_conn_service.exe
+  [8144] jhi_service.exe
+  [8168] Seagull.Services.Hybrid.OnPremConnector.exe
+  [5960] RtkAudUService64.exe
+  [8216] WavesSysSvc64.exe
+  [8236] RstMwService.exe
+  [8276] WMIRegistrationService.exe
+  [8532] sqlservr.exe
+  [8888] svchost.exe
+  [7728] svchost.exe
+  [6828] svchost.exe
+  [9296] svchost.exe
+  [10780] svchost.exe
+  [11400] sqlceip.exe
+  [11672] svchost.exe
+  [12164] svchost.exe
+  [12284] BtSystem.Service.exe
+  [14012] SearchIndexer.exe
+  [20088] WmiPrvSE.exe
+  [20328] WmiPrvSE.exe
+  [17980] AggregatorHost.exe
+  [23696] svchost.exe
+  [24616] svchost.exe
+  [24620] svchost.exe
+  [24732] svchost.exe
+  [24904] dasHost.exe
+  [25328] svchost.exe
+  [25888] Maestro.Service.exe
+  [18528] svchost.exe
+  [14592] WindowsCalculator.exe
+  [22404] sihost.exe
+  [14576] svchost.exe
+  [17320] svchost.exe
+  [13988] igfxEM.exe
+  [21624] upd_<CARD>.exe
+  [12236] Chrome140.exe
+  [21604] svchost.exe
+  [19812] adamsync.exe
+  [20528] svchost.exe
+  [25020] svchost.exe
+  [15356] ctfmon.exe
+  [16176] taskhostw.exe
+  [3204] explorer.exe
+  [21088] svchost.exe
+  [17104] svchost.exe
+  [19364] svchost.exe
+  [19156] svchost.exe
+  [13108] svchost.exe
+  [24284] RtkAudUService64.exe
+  [7024] svchost.exe
+  [6528] StartMenuExperienceHost.exe
+  [9284] RuntimeBroker.exe
+  [15392] UserOOBEBroker.exe
+  [9596] SearchApp.exe
+  [9356] RuntimeBroker.exe
+  [13948] svchost.exe
+  [19760] backgroundTaskHost.exe
+  [22652] RuntimeBroker.exe
+  [24512] unsecapp.exe
+  [21196] taskmanager.exe
+  [16336] RtkAudUService64.exe
+  [13452] WavesSvc64.exe
+  [18240] dllhost.exe
+  [14928] Sys Service.exe
+  [22716] dllhost.exe
+  [22316] svchost.exe
+  [23076] SearchProtocolHost.exe
+  [20188] GDFwAdmin.exe
+  [11936] dllhost.exe
+  [16144] SearchFilterHost.exe
+  [3440] SearchProtocolHost.exe
+  [22020] dllhost.exe
+  [22048] rundll32.exe
+  [16392] SearchFilterHost.exe
+  [13664] file_ba0cf1b8b9aaa6fb.exe
+  [21732] dllhost.exe
+  [18896] rundll32.exe
+  [17560] SecurityHealthService.exe
+  [9556] SecurityHealthService.exe
+  [18720] GDFwAdmin.exe
+  [13608] Gqyjef.exe
+  [24780] svchost.exe
+  [14068] SearchApp.exe
+  [15420] svchost.exe
+  [14040] msedgewebview2.exe
+  [15676] msedgewebview2.exe
+  [22336] msedgewebview2.exe
+  [25692] msedgewebview2.exe
+  [21616] msedgewebview2.exe
+  [25796] msedgewebview2.exe
+  [1152] Integration.Service.exe
+  [13560] Seagull.<SECRET>.exe
+  [10416] conhost.exe
+  [5312] PrintScheduler.Service.exe
+  [34708] sqlservr.exe
+  [38772] WhatsApp.Root.exe
+  [38328] RuntimeBroker.exe
+  [17616] msedgewebview2.exe
+  [38620] msedgewebview2.exe
+  [36144] msedgewebview2.exe
+  [38372] msedgewebview2.exe
+  [22900] msedgewebview2.exe
+  [36436] M365Copilot.exe
+  [38124] AnyDesk.exe
+  [39328] RuntimeBroker.exe
+  [39672] msedgewebview2.exe
+  [39724] msedgewebview2.exe
+  [38960] msedgewebview2.exe
+  [39912] msedgewebview2.exe
+  [39188] msedgewebview2.exe
+  [39960] msedgewebview2.exe
+  [4112] R2PGtB3.exe
+  [28136] svchost.exe
+  [9192] quake3.exe
+  [6248] vlc.exe
+  [20420] msedgewebview2.exe
+  [38500] svchost.exe
+  [19696] svchost.exe
+  [30852] TextInputHost.exe
+  [14296] sqlservr.exe
+  [32724] Dllhost.exe
+  [3140] 7bce3307.exe
+  [28388] LtwQapnrxQR7.exe
+  [40716] svchost.exe
+  [33084] Chrome.exe
+  [19632] Wihnup.exe
+  [9424] BarTend.exe
+  [29852] chrome.exe
+  [23684] msedge.exe
+  [31020] chrome.exe
+  [6428] msedge.exe
+  [7984] chrome.exe
+  [27564] msedge.exe
+  [7560] msedge.exe
+  [33732] msedge.exe
+  [29596] msedge.exe
+  [10876] msedge.exe
+  [4688] hostprovider.exe
+  [32328] powershell.exe
+  [3044] conhost.exe
+  [35160] hostprovider.exe
+  [8392] WerFault.exe
+  [36244] backgroundTaskHost.exe
+  [20008] 4BtqZz1.exe
+  [6644] v49922.exe
+  [13632] CEqsnUi.exe
+  [30936] notepad.exe
+  [7040] notepad.exe
+  [33784] WerFault.exe
+  [16140] Server.exe
+  [27700] Server.exe
+  [32424] WerFault.exe
+[Software]
+  Windows Driver Package - Chimera SmartCard SmartCard  (05/07/2012 <IP>)
+  Windows Driver Package - Microsoft (USBCCID) SmartCardReader  (08/01/2015 5.2.3790.2724)
+  Windows Driver Package - QUALCOMM (qdbusb) USBDevice  (08/02/2017 <IP>)
+  7-Zip 26.00 (x64)
+  BarTender 12.0.1
+  Windows Driver Package - Qualcomm Incorporated (qcusbser) Modem  (08/02/2017 <IP>)
+  LibUSB-Win32-<IP>
+  MediaTek SP Driver version <IP>
+  Microsoft SQL Server 2019 (64-bit)
+  Microsoft SQL Server 2019 (64-bit)
+  WinRAR 7.20 (64-bit)
+  SQL Server 2019 Common Files
+  Microsoft SQL Server 2019 Setup (English)
+  Microsoft Update Health Tools
+  SQL Server 2019 XEvent
+  SQL Server 2019 XEvent
+  SQL Server 2019 SQL Diagnostics
+  Microsoft VSS Writer for SQL Server 2019
+  Microsoft .NET Host - 8.0.26 (x64)
+  Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.42.34438
+  Microsoft SQL Server 2019 T-SQL Language Service 
+  Compiled Driver Disk (MediaTek) 1.0
+  MOBILedit Forensic ver. 9.8.0.34378 (x64)
+  Bonjour
+  Microsoft SQL Server 2019 RsFx Driver
+  SQL Server 2019 Common Files
+  SQL Server 2019 Database Engine Shared
+  SQL Server 2019 Shared Management Objects
+  UsbDk Runtime Libraries
+  Microsoft ODBC Driver 17 for SQL Server
+  SQL Server 2019 DMF
+  Microsoft ASP.NET Core 8.0.3 Shared Framework (x64)
+  SQL Server 2019 Shared Management Objects Extensions
+  SQL Server 2019 Connection Info
+  Microsoft OLE DB Driver for SQL Server
+  Microsoft SQL Server 2012 Native Client 
+  Compiled Driver Disk (Unlocking) 1.0
+  SQL Server 2019 Database Engine Services
+  SQL Server 2019 Shared Management Objects
+  NVIDIA Control Panel 391.35
+  NVIDIA Install Application
+  NVIDIA Display Container
+  NVIDIA Display Container LS
+  NVIDIA Display Watchdog Plugin
+  NVIDIA Display Session Container
+  Update for x64-based Windows Systems (KB5001716)
+  Microsoft SQL Server 2014 Express LocalDB 
+  Microsoft Windows Desktop Runtime - 8.0.26 (x64)
+  SQL Server 2019 Shared Management Objects Extensions
+  Microsoft .NET Host FX Resolver - 8.0.26 (x64)
+  Apple Mobile Device Support
+  BarTender
+  SAMSUNG USB Driver for Mobile Phones
+  Microsoft .NET Runtime - 8.0.26 (x64)
+  SQL Server 2019 Batch Parser
+  Microsoft .NET Runtime - 8.0.3 (x64)
+  SQL Server 2019 Database Engine Shared
+  SQL Server 2019 Database Engine Services
+  Microsoft Visual C++ 2022 X64 Additional Runtime - 14.42.34438
+  Microsoft .NET Host FX Resolver - 8.0.3 (x64)
+  SAM Arabic Tool version 1.5
+  SQL Server 2019 DMF
+  SQL Server 2019 Connection Info
