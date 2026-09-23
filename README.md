@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **140** CyStack tracking names
 - **11** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **159** observed log variants and **159** samples
-- **8,052,913** CyStack observations represented by the retained sample set
+- **160** observed log variants and **160** samples
+- **8,052,914** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -131,7 +131,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSBrowserFingerprintStealer](families/cs-browser-fingerprint-stealer/) | unknown | 0 | Metadata only |
 | [CSBrowserProfileStealer](families/cs-browser-profile-stealer/) | unknown | 0 | Metadata only |
 | [CSBrowsersDisplayStealer](families/cs-browsers-display-stealer/) | unknown | 0 | Metadata only |
-| [CSBugattiCloudPcInfoStealer](families/cs-bugatti-cloud-pc-info-stealer/) | unknown | 0 | Metadata only |
+| [CSBugattiCloudPcInfoStealer](families/cs-bugatti-cloud-pc-info-stealer/) | unknown | 1 | [1 retained](families/cs-bugatti-cloud-pc-info-stealer/#observed-log-variants) |
 | [CSBugattiPcInfoStealer](families/cs-bugatti-pc-info-stealer/) | unknown | 1 | [1 retained](families/cs-bugatti-pc-info-stealer/#observed-log-variants) |
 | [CSBugattiUserInfoStealer](families/cs-bugatti-user-info-stealer/) | unknown | 0 | Metadata only |
 | [CSBuildBlockStealer](families/cs-build-block-stealer/) | unknown | 1 | [1 retained](families/cs-build-block-stealer/#observed-log-variants) |

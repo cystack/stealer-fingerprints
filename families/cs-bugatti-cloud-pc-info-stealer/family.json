@@ -37,7 +37,6 @@
   "observed_channels": [
     "https://t.me/Bugatti_Cloud"
   ],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "CSBugattiCloudPcInfoStealer là định danh do CyStack đặt cho lát cắt `pc_info.txt` đã được chuẩn hoá từ bộ tổng hợp Telegram @Bugatti_Cloud. Phần nội dung là một khối `Key: Value` phẳng gồm 13 trường: `IP`, `Country`, `HWID`, `OS`, `Architecture`, `UserName`, `Computer Name`, `Local Time`, `Cores`, `RAM`, một `Display Resolution` rỗng, một `Resolution` cấp cao nhất đã được điền dữ liệu, và một tiêu đề `GPU` kèm danh sách adapter thụt lề bằng tab. Trường `Local Time` mang literal JSON-null viết thường `null` khi giá trị chưa được thiết lập.\n\nHai dấu hiệu ở phía bộ chuẩn hoá chỉ ra đây là công cụ vận hành viết bằng Python hoặc Node.js chứ không phải bảng điều khiển (panel) của một mã độc đánh cắp thông tin gốc. Thứ nhất, giá trị `HWID` ghép `Computer Name` của máy (giữ nguyên, bao gồm cả tiền tố mặc định của Windows `DESKTOP-`) với MachineGuid UUID của máy mà không có ký tự phân tách, đây là cấu trúc dữ liệu ghép chuỗi kiểu f-string của Python. Thứ hai, literal `Local Time: null` khớp với `json.dumps(None)` thay vì giá trị rỗng chuẩn hoặc chuỗi dự phòng `Unknown` của bất kỳ họ mã độc đánh cắp thông tin gốc nào. Việc quy kết họ mã độc hiện vẫn còn tạm thời, chờ có báo cáo tình báo mối đe dọa công khai ánh xạ với bố cục này; các báo cáo công khai và danh mục cộng đồng chỉ ghi nhận @Bugatti_Cloud như một kênh phát tán lại, chưa từng được ghi nhận là một họ mã độc đánh cắp thông tin gốc.",
@@ -62,5 +61,44 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@Bugatti_Cloud",
+      "fields": [
+        "Architecture",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Display Resolution",
+        "GPU",
+        "HWID",
+        "IP",
+        "Local Time",
+        "OS",
+        "RAM",
+        "Resolution",
+        "UserName",
+        "⚡Join",
+        "⭐️HUNTER CLOUD PRICES",
+        "🌧 Payment Method",
+        "🏪 Support"
+      ],
+      "filenames": [
+        "pc_info.txt"
+      ],
+      "format_id": "cs-bugatti-cloud-pc-info-stealer",
+      "id": "v_eb652dced4d5641ba1285e90ef314c45",
+      "markers": [],
+      "panel_brand": "Bugatti Cloud",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_eb652dced4d5641ba1285e90ef314c45/pc_info.txt",
+        "sha256": "3c5d307b5f233d4115c88c4712b0eadc53b2b4fec7e1f964a4049edd3d3d1885",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

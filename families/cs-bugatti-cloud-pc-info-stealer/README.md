@@ -38,7 +38,8 @@ Hai dấu hiệu ở phía bộ chuẩn hoá chỉ ra đây là công cụ vận
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `@Bugatti_Cloud normalized pc_info.txt slice`, `Bugatti Cloud JSON-null Local Time variant`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -71,7 +72,23 @@ Việc tạo dấu vết nhận diện đòi hỏi phải có đồng thời lit
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_eb652dced4d5641ba1285e90ef314c45`
+
+- Format ID: `cs-bugatti-cloud-pc-info-stealer`
+- Observed filenames: `pc_info.txt`
+- Panel brand: `Bugatti Cloud`
+- Distribution channel: `@Bugatti_Cloud`
+- Attribution confidence: **unknown**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_eb652dced4d5641ba1285e90ef314c45/pc_info.txt)
+- Sample SHA-256: `3c5d307b5f233d4115c88c4712b0eadc53b2b4fec7e1f964a4049edd3d3d1885`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Architecture`, `Computer Name`, `Cores`, `Country`, `Display Resolution`, `GPU`, `HWID`, `IP`, `Local Time`, `OS`, `RAM`, `Resolution`, `UserName`, `⚡Join`, `⭐️HUNTER CLOUD PRICES`, `🌧 Payment Method`, `🏪 Support`
+
 
 ## MITRE ATT&CK
 
