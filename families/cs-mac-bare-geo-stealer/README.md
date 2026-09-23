@@ -44,7 +44,8 @@ Việc quy kết họ mã độc hiện chỉ mang tính tạm thời. Các báo
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `Bare 2-line geo macOS UserInformation.txt`, `Stripped IP + Country macOS panel`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -80,7 +81,23 @@ Việc nhận diện dấu vết yêu cầu các chuỗi con neo theo dòng `IP:
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_12e76e0f08fba5deef3aa1eb44fe305b`
+
+- Format ID: `cs-mac-bare-geo-stealer`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **unknown**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_12e76e0f08fba5deef3aa1eb44fe305b/UserInformation.txt)
+- Sample SHA-256: `9eba697473106e785e169f83f2735d50cdda58fd588277b208ff2bcc245f6700`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `Hardware:`, `Software:`
+- Field labels: `Activation Lock Status`, `Apple M3`, `Automatically Adjust Brightness`, `Boot Mode`, `Boot Volume`, `Bus`, `Chip`, `Chipset Model`, `City`, `Color LCD`, `Computer Name`, `Connection Type`, `Country`, `Display Type`, `Displays`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `Hardware UUID`, `Installed Applications`, `IP`, `Kernel Version`, `Main Display`, `Memory`, `Metal Support`, `Mirror`, `Model Identifier`, `Model Name`, `Model Number`, `Online`, `OS Loader Version`, `Provisioning UDID`, `Resolution`, `Secure Virtual Memory`, `Serial Number (system`, `Software`, `System Firmware Version`, `System Integrity Protection`, `System Software Overview`, `System Version`, `Time since boot`, `Total Number of Cores`, `Type`, `User Name`, `Userinfo`, `Vendor`
+
 
 ## MITRE ATT&CK
 

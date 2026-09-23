@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **142** CyStack tracking names
 - **11** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **163** observed log variants and **163** samples
-- **8,052,917** CyStack observations represented by the retained sample set
+- **164** observed log variants and **164** samples
+- **8,052,918** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -189,7 +189,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSLcidBracketStealer](families/cs-lcid-bracket-stealer/) | unknown | 1 | [1 retained](families/cs-lcid-bracket-stealer/#observed-log-variants) |
 | [CSLeakClickCloudCookiesStealer](families/cs-leak-click-cloud-cookies-stealer/) | unknown | 0 | Metadata only |
 | [CSLoginsPathStealer](families/cs-logins-path-stealer/) | unknown | 0 | Metadata only |
-| [CSMacBareGeoStealer](families/cs-mac-bare-geo-stealer/) | unknown | 0 | Metadata only |
+| [CSMacBareGeoStealer](families/cs-mac-bare-geo-stealer/) | unknown | 1 | [1 retained](families/cs-mac-bare-geo-stealer/#observed-log-variants) |
 | [CSMacKeychainPassStealer](families/cs-mac-keychain-pass-stealer/) | unknown | 1 | [1 retained](families/cs-mac-keychain-pass-stealer/#observed-log-variants) |
 | [CSMacUserinfoStealer](families/cs-mac-userinfo-stealer/) | unknown | 1 | [1 retained](families/cs-mac-userinfo-stealer/#observed-log-variants) |
 | [CSMainLootStealer](families/cs-main-loot-stealer/) | low | 1 | [1 retained](families/cs-main-loot-stealer/#observed-log-variants) |

@@ -1,0 +1,85 @@
+
+Userinfo:
+Country: IT
+IP: <IP>
+City: <LOCATION>
+Software:
+
+    System Software Overview:
+
+      System Version: macOS 14.4 (23E214)
+      Kernel Version: Darwin 23.4.0
+      Boot Volume: Macintosh HD
+      Boot Mode: Normal
+      Computer Name: <HOST>
+      User Name: <USER>
+      Secure Virtual Memory: Enabled
+      System Integrity Protection: Enabled
+      Time since boot: 545 giorni, 19 ore e 2 minuti
+
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: MacBook Air
+      Model Identifier: Mac15,12
+      Model Number: MRXT3T/A
+      Chip: Apple M3
+      Total Number of Cores: 8 (4 performance and 4 efficiency)
+      Memory: 8 GB
+      System Firmware Version: 10151.101.3
+      OS Loader Version: 10151.101.3
+      Serial Number (system): <SERIAL>
+      Hardware UUID: <HWID>
+      Provisioning UDID: <HWID>
+      Activation Lock Status: Enabled
+
+Graphics/Displays:
+
+    Apple M3:
+
+      Chipset Model: Apple M3
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+      Displays:
+        Color LCD:
+          Display Type: Built-in Liquid Retina Display
+          Resolution: 2560 x 1664 Retina
+          Main Display: Yes
+          Mirror: Off
+          Online: Yes
+          Automatically Adjust Brightness: Yes
+          Connection Type: Internal
+
+Installed Applications:
+Slate Digital
+T-RackS 5.app
+Supremo.app
+TONEX.app
+.DS_Store
+Keka.app
+Google Chrome.app
+Numbers.app
+.localized
+Splice.app
+EZdrummer-3.1.0
+Youlean Loudness Meter 2.app
+iMovie.app
+000 Player.app
+Microsoft Word.app
+IK Product Manager.app
+Toontrack
+Safari.app
+Utilities
+ilok
+Waves Central.app
+Keynote.app
+Waves
+Pages.app
+GarageBand.app
+.Microsoft Word.app.installBackup
+Plugin Alliance
+Logic Pro X.app

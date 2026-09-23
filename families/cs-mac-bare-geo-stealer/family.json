@@ -48,7 +48,6 @@
   "related_external": [
     "banshee-stealer"
   ],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "CSMacBareGeoStealer là định danh do CyStack đặt cho một panel macOS chỉ có phần header địa lý 2 dòng đơn giản, được quan sát bên trong các gói tổng hợp `!! 2025 DEC.part01.rar` tại các thư mục nạn nhân `[<CC>]<IPv4>/UserInformation.txt`. Phần thân bắt đầu chỉ với `IP: <ipv4>` và `Country: <full English name>` trên hai dòng, sau đó chuyển sang dữ liệu đầu ra nguyên văn dạng `system_profiler SPSoftwareDataType` / `SPHardwareDataType` / `SPDisplaysDataType`. Không có banner, không có dòng `Country Code:`, không có các trường `Region:` / `City:` / lat / lon / `Zipcode:` / `Timezone:`, không có nhãn `BuildID:` theo từng bản build, không có các dấu phân cách mục `MetaMask Info:` / `Debanks:` / `Userinfo:`, không có self-banner.\n\nHeader địa lý 2 dòng là điểm đặc trưng cho thấy panel này chỉ trích xuất tối thiểu. Các mã độc đánh cắp thông tin macOS đã được ghi nhận trước đây hoặc là đóng gói một khối địa lý phong phú hơn (khối 9 trường của Cthulhu, khối 3 trường của AMOS), hoặc tuần tự hóa thông tin hệ thống thành JSON (Banshee). Cấu trúc dữ liệu dạng văn bản khóa-phẳng cùng với việc thiếu trường mã quốc gia liên quan đã loại trừ cả bốn định dạng macOS đã được đăng ký (Cthulhu, MacSync, AMOS, CSMacUserinfo).\n\nViệc quy kết họ mã độc hiện chỉ mang tính tạm thời. Các báo cáo công khai và các danh mục định dạng mã độc đánh cắp thông tin công khai không ghi nhận một họ mã độc macOS nào tạo dữ liệu đầu ra đúng theo cấu trúc header địa lý 2 dòng đơn giản kèm `system_profiler` như thế này. Các tài liệu công khai về mã độc đánh cắp thông tin macOS tập trung vào Cthulhu, AMOS, Banshee, Poseidon / Odyssey và DigitStealer, nhưng không có bài viết nào trong số đó công bố một mẫu khớp với bố cục này.",
@@ -83,5 +82,76 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": null,
+      "fields": [
+        "Activation Lock Status",
+        "Apple M3",
+        "Automatically Adjust Brightness",
+        "Boot Mode",
+        "Boot Volume",
+        "Bus",
+        "Chip",
+        "Chipset Model",
+        "City",
+        "Color LCD",
+        "Computer Name",
+        "Connection Type",
+        "Country",
+        "Display Type",
+        "Displays",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "Hardware UUID",
+        "Installed Applications",
+        "IP",
+        "Kernel Version",
+        "Main Display",
+        "Memory",
+        "Metal Support",
+        "Mirror",
+        "Model Identifier",
+        "Model Name",
+        "Model Number",
+        "Online",
+        "OS Loader Version",
+        "Provisioning UDID",
+        "Resolution",
+        "Secure Virtual Memory",
+        "Serial Number (system",
+        "Software",
+        "System Firmware Version",
+        "System Integrity Protection",
+        "System Software Overview",
+        "System Version",
+        "Time since boot",
+        "Total Number of Cores",
+        "Type",
+        "User Name",
+        "Userinfo",
+        "Vendor"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "format_id": "cs-mac-bare-geo-stealer",
+      "id": "v_12e76e0f08fba5deef3aa1eb44fe305b",
+      "markers": [
+        "Hardware:",
+        "Software:"
+      ],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_12e76e0f08fba5deef3aa1eb44fe305b/UserInformation.txt",
+        "sha256": "9eba697473106e785e169f83f2735d50cdda58fd588277b208ff2bcc245f6700",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }
