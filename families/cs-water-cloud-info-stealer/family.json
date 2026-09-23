@@ -1,0 +1,121 @@
+{
+  "aliases": [
+    "WATER CLOUD bracket-section Information.txt",
+    "WATERCLOUD_INFO panel"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1518.001",
+      "name": "Security Software Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "attribution_confidence": "unknown",
+  "classification": "cystack_named",
+  "description": "CSWaterCloudInfoStealer is a CyStack-coined identifier for\na five-bracket-section `Information.txt` panel redistributed\nunder the WATER CLOUD Telegram aggregator. Observed inside\n`WATERCLOUD_INFO_<count>_FILES_<DD>_<MM>_<YYYY>_THANKS_FOR_ SUB_part<N>.rar` archives at `<32-char>_<YYYY>-<MM>-<DD> <HH>-<MM>-<SS>/Information.txt` victim folders.\n\nThe body has five bracket-section headers in fixed order:\n`[Location]`, `[General]`, `[Hardwares]` (plural), `[Anti-Viruses]`\n(hyphenated plural), and `[Build]`. Each section carries\nplain `Key: Value` fields with no leading dash prefix and no\noperator banner block. Fields collected: `IP`, `Country`\n(ISO-2), `City`, `Zip` under `[Location]`; `Username`,\n`Compname` (short form), `System`, `Language` (country-flag\nemoji + BCP-47 locale), `Framework` (.NET Framework minimum\nversion like `>= 4.8`), `Date` (mixed 24-hour + AM/PM\nrendering) under `[General]`; `CPU`, `GPU`, `RAM`, `SCREEN`\n(uppercase) under `[Hardwares]`; product-name-per-line list\nunder `[Anti-Viruses]`; `Version` and base64 `ID` under\n`[Build]`.\n\nThe hyphenated plural `[Anti-Viruses]` marker and the terse\n`Compname:` / `SCREEN:` (uppercase) / `Framework:` field\nnames distinguish this format from other bracket-section\nfamilies in the surveyed corpus. Canonical Stealerium per\nProofpoint and Malpedia uses an emoji-section Markdown-bold\nlayout with a `Stealerium - Report:` banner rather than\nsquare-bracket section headers, so attribution to canonical\nStealerium would be a mislabel despite the shared `Compname`\nand `SCREEN` field names noted in the MalBeacon\nwhat-is-this-stealer catalog. The WATER CLOUD aggregator\nresells logs\nfrom multiple underlying builders (per the sibling\nLumma-body WATER CLOUD variant), so the distribution channel\nis recorded as attribution context rather than lineage.",
+  "detection_notes": "Fingerprint requires line-anchored `[Location]` AND\n`[General]` AND `[Hardwares]` (plural with trailing `s`)\nAND `[Build]` bracket-section headers. The four-header\ncombination is unique to this panel across the surveyed\ncorpus; sibling bracket-section parsers use different\nsection names or different singular/plural forms\n(canonical Plutus uses uppercase `[GENERAL]` / `[LOCATION]`\n/ `[SYSTEM]` / `[HARDWARE]` / `[CLIPBOARD]`; canonical AMOS\nuses `[System Info]` with a space; canonical Stealerium\nuses emoji-section Markdown-bold headers without square\nbrackets).",
+  "id": "cs-water-cloud-info-stealer",
+  "name": "CSWaterCloudInfoStealer",
+  "related_families": [
+    "stealerium",
+    "lumma"
+  ],
+  "sources": [
+    "https://github.com/MalBeacon/what-is-this-stealer"
+  ],
+  "typical_targets": [
+    "Host and user identity (`Compname`, `Username`)",
+    "OS build and .NET Framework version reference",
+    "Hardware inventory (CPU, GPU, RAM, screen resolution)",
+    "Public-IP geolocation (ISO-2 country, city, zip)",
+    "Installed antivirus product list",
+    "Sample builder version and base64 build identifier"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSWaterCloudInfoStealer là định danh do CyStack đặt cho một bảng điều khiển năm mục-đề dạng dấu ngoặc vuông `Information.txt` được phân phối lại thông qua trình tổng hợp WATER CLOUD trên Telegram. Được ghi nhận bên trong các gói lưu trữ `WATERCLOUD_INFO_<count>_FILES_<DD>_<MM>_<YYYY>_THANKS_FOR_ SUB_part<N>.rar` tại các thư mục nạn nhân `<32-char>_<YYYY>-<MM>-<DD> <HH>-<MM>-<SS>/Information.txt`.\n\nPhần thân có năm mục-đề dấu ngoặc vuông theo thứ tự cố định:\n`[Location]`, `[General]`, `[Hardwares]` (số nhiều), `[Anti-Viruses]`\n(số nhiều có gạch nối), và `[Build]`. Mỗi mục chứa các trường\n`Key: Value` dạng thuần túy, không có tiền tố dấu gạch ngang đứng đầu và không có khối biểu ngữ đối tượng vận hành. Các trường được thu thập: `IP`, `Country`\n(ISO-2), `City`, `Zip` thuộc `[Location]`; `Username`,\n`Compname` (dạng viết tắt), `System`, `Language` (biểu tượng cảm xúc cờ quốc gia\nkèm mã locale BCP-47), `Framework` (phiên bản tối thiểu .NET Framework như\n`>= 4.8`), `Date` (hiển thị hỗn hợp định dạng 24 giờ và AM/PM)\nthuộc `[General]`; `CPU`, `GPU`, `RAM`, `SCREEN`\n(chữ hoa) thuộc `[Hardwares]`; danh sách tên sản phẩm mỗi dòng một mục\nthuộc `[Anti-Viruses]`; `Version` và `ID` dạng base64 thuộc\n`[Build]`.\n\nĐiểm đánh dấu số nhiều có gạch nối `[Anti-Viruses]` cùng các tên trường ngắn gọn\n`Compname:` / `SCREEN:` (chữ hoa) / `Framework:`\ngiúp phân biệt định dạng này với các họ mã độc dạng mục-đề dấu ngoặc vuông\nkhác trong tập dữ liệu được khảo sát. Stealerium chuẩn theo\nProofpoint và Malpedia sử dụng bố cục Markdown in đậm dạng mục-đề biểu tượng cảm xúc\nkèm biểu ngữ `Stealerium - Report:` thay vì\ncác mục-đề dấu ngoặc vuông, do đó việc quy kết cho Stealerium chuẩn\nsẽ là gán nhãn sai dù có chung tên trường `Compname`\nvà `SCREEN` được ghi nhận trong danh mục what-is-this-stealer của MalBeacon.\nTrình tổng hợp WATER CLOUD bán lại các log\ntừ nhiều bộ công cụ builder nền tảng khác nhau (theo biến thể WATER CLOUD phần thân Lumma\nliên quan), nên kênh phân phối này được ghi nhận như bối cảnh quy kết\nchứ không phải dòng dõi phát sinh.",
+      "typical_targets": [
+        "Danh tính máy và người dùng (`Compname`, `Username`)",
+        "Phiên bản build hệ điều hành và tham chiếu phiên bản .NET Framework",
+        "Kiểm kê phần cứng (CPU, GPU, RAM, độ phân giải màn hình)",
+        "Định vị địa lý theo IP công khai (mã quốc gia ISO-2, thành phố, mã bưu chính)",
+        "Danh sách phần mềm diệt vi-rút đã cài đặt",
+        "Phiên bản builder của mẫu và mã định danh build dạng base64"
+      ],
+      "detection_notes": "Việc lập dấu vân tay yêu cầu các mục-đề dấu ngoặc vuông neo theo dòng `[Location]` VÀ\n`[General]` VÀ `[Hardwares]` (số nhiều với hậu tố `s`)\nVÀ `[Build]`. Tổ hợp bốn mục-đề này là\nduy nhất đối với bảng điều khiển này trong toàn bộ tập dữ liệu được khảo sát; các trình phân tích\nmục-đề dấu ngoặc vuông liên quan khác sử dụng tên mục khác hoặc dạng số ít/số nhiều khác\n(Plutus chuẩn sử dụng `[GENERAL]` / `[LOCATION]`\n/ `[SYSTEM]` / `[HARDWARE]` / `[CLIPBOARD]` dạng chữ hoa; AMOS chuẩn\nsử dụng `[System Info]` có khoảng trắng; Stealerium chuẩn\nsử dụng các mục-đề Markdown in đậm dạng biểu tượng cảm xúc không có\ndấu ngoặc vuông).",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        },
+        {
+          "id": "T1518.001",
+          "name": "Dò tìm phần mềm bảo mật"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@watercloud_notify",
+      "fields": [
+        "City",
+        "Compname",
+        "Country",
+        "CPU",
+        "Date",
+        "Framework",
+        "GPU",
+        "ID",
+        "IP",
+        "Language",
+        "RAM",
+        "SCREEN",
+        "System",
+        "Username",
+        "Version",
+        "Zip"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "cs-watercloud-info-stealer",
+      "id": "v_0afc291d11a6bccff9f8d010bc6dc3ed",
+      "markers": [
+        "[Anti-Viruses]",
+        "[Build]",
+        "[General]",
+        "[Hardwares]",
+        "[Location]"
+      ],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_0afc291d11a6bccff9f8d010bc6dc3ed/Information.txt",
+        "sha256": "b3ed09ee03634fb7bd3abf3f1ca1d2643aedd8d9e0172ac121d66c7d2c81e4db",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}

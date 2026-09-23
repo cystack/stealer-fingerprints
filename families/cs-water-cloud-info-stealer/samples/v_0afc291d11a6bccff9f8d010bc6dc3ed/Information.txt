@@ -1,0 +1,26 @@
+[Location]
+IP: <IP>
+Country: BR
+City: <LOCATION>
+Zip: 92000
+
+[General]
+Username: <USER>
+Compname: <HOST>
+System: Windows 10 Pro (64 Bit)
+Language: 🇧🇷 pt-BR
+Framework: >= 4.8
+Date: 2022-03-12 22:24:30 PM
+
+[Hardwares]
+CPU: AMD Ryzen 3 2200G with Radeon Vega Graphics    
+GPU: AMD Radeon(TM) Vega 8 Graphics
+RAM: 14264MB
+SCREEN: 1360x768
+
+[Anti-Viruses]
+Windows Defender.
+
+[Build]
+Version: 1.2.8
+ID: ndGy7oWY5ZMdzv5/BenHdw==

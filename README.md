@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **201** research profiles
+- **202** research profiles
 - **42** known malware families
 - **3** observed self-labels without independent family attribution
-- **140** CyStack tracking names
+- **141** CyStack tracking names
 - **11** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **160** observed log variants and **160** samples
-- **8,052,914** CyStack observations represented by the retained sample set
+- **161** observed log variants and **161** samples
+- **8,052,915** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -97,7 +97,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Rivas Stealer](families/rivas-stealer/) | unknown | 1 | [1 retained](families/rivas-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (140)
+### CyStack tracking names (141)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -232,6 +232,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSUrlUserPassFromStealer](families/cs-url-user-pass-from-stealer/) | unknown | 0 | Metadata only |
 | [CSUserInfoBracketStealer](families/cs-user-info-bracket-stealer/) | unknown | 5 | [5 retained](families/cs-user-info-bracket-stealer/#observed-log-variants) |
 | [CSUsersListStealer](families/cs-users-list-stealer/) | unknown | 1 | [1 retained](families/cs-users-list-stealer/#observed-log-variants) |
+| [CSWaterCloudInfoStealer](families/cs-water-cloud-info-stealer/) | unknown | 1 | [1 retained](families/cs-water-cloud-info-stealer/#observed-log-variants) |
 | [CSWifiBackslashNStealer](families/cs-wifi-backslash-n-stealer/) | unknown | 0 | Metadata only |
 | [CSWLFRCloudStealer](families/cswlfr-cloud-stealer/) | unknown | 1 | [1 retained](families/cswlfr-cloud-stealer/#observed-log-variants) |
 | [CSWmicDumpStealer](families/cs-wmic-dump-stealer/) | unknown | 1 | [1 retained](families/cs-wmic-dump-stealer/#observed-log-variants) |
