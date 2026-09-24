@@ -36,7 +36,8 @@ Các nhãn bắt nguồn từ enum COMPUTER_NAME_FORMAT (`ComputerNameDnsHostnam
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `BRADMAX_CLOUD bare-key Information.txt slice`, `BRADMAX flat PC User HWID Screen Resoluton variant`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -70,7 +71,24 @@ Việc xác định dấu hiệu nhận dạng đòi hỏi cả tiền tố URL 
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_3e84975b41e8a954c0cab50a13034560`
+
+- Format ID: `cs-bradmax-cloud-pc-stealer`
+- Observed filenames: `System.txt`
+- Panel brand: `BRADMAX_CLOUD`
+- Distribution channel: `@logsdealerobot`
+- Attribution confidence: **unknown**
+- Layout: `dash-stripped`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_3e84975b41e8a954c0cab50a13034560/System.txt)
+- Sample SHA-256: `b1e3b2826c04a6f216b48a649383e32ec6eb0a1162f249d4869753abb5158ef2`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `ComputerNameDnsHostname`, `ComputerNameNetBIOS`, `CPU Name`, `Domain`, `GPU`, `HWID`, `IP Address`, `Language`, `OS Version`, `PC`, `Physical Installed Memory`, `Screen Resoluton`, `User`, `Workgroup`
+
 
 ## MITRE ATT&CK
 

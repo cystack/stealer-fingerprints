@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **142** CyStack tracking names
 - **12** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **165** observed log variants and **165** samples
-- **8,052,919** CyStack observations represented by the retained sample set
+- **166** observed log variants and **166** samples
+- **8,052,920** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -122,7 +122,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSBradMaxCloudBannerOnlyStealer](families/cs-brad-max-cloud-banner-only-stealer/) | unknown | 0 | Metadata only |
 | [CSBradMaxCloudMacStealer](families/cs-brad-max-cloud-mac-stealer/) | unknown | 0 | Metadata only |
 | [CSBradMaxCloudParsedStealer](families/cs-brad-max-cloud-parsed-stealer/) | unknown | 0 | Metadata only |
-| [CSBradMaxCloudPCStealer](families/cs-brad-max-cloud-pc-stealer/) | unknown | 0 | Metadata only |
+| [CSBradMaxCloudPCStealer](families/cs-brad-max-cloud-pc-stealer/) | unknown | 1 | [1 retained](families/cs-brad-max-cloud-pc-stealer/#observed-log-variants) |
 | [CSBradmaxCookiesOnlyStealer](families/cs-bradmax-cookies-only-stealer/) | unknown | 0 | Metadata only |
 | [CSBradMaxPwshStealer](families/cs-brad-max-pwsh-stealer/) | unknown | 0 | Metadata only |
 | [CSBradmaxRedlineTruncStealer](families/cs-bradmax-redline-trunc-stealer/) | unknown | 0 | Metadata only |

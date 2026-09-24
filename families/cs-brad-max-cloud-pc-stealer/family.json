@@ -35,7 +35,6 @@
   "observed_channels": [
     "https://t.me/BRADMAX_CLOUD"
   ],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "CSBradMaxCloudPCStealer là định danh do CyStack đặt cho một cấu trúc dữ liệu dạng phẳng bare-key `Key: Value` `Information.txt` được phát tán qua kênh Telegram @BRADMAX_CLOUD. Tệp chứa banner Figlet aBradMax bên trong khung viền `*` kèm watermark `Telegram: https://t.me/BRADMAX_CLOUD`, tiếp theo là phần thân phẳng gồm các dòng bare `Key: Value` (không có tiền tố gạch ngang, không có hậu tố `Name` trên các khóa `PC` / `User`). Tập trường bao gồm PC, User, Workgroup, ComputerNameDnsHostname, ComputerNameNetBIOS, OS Version, HWID, Screen Resoluton (nguyên văn), Language, CPU Name, GPU, Physical Installed Memory, IP Address, và Country.\n\nCác nhãn bắt nguồn từ enum COMPUTER_NAME_FORMAT (`ComputerNameDnsHostname`, `ComputerNameNetBIOS`) cùng tên trường `Physical Installed Memory` cho thấy đây là một công cụ dựng bằng .NET lặp qua các giá trị enum của Windows nguyên trạng, nhưng chưa có báo cáo công khai hay danh mục cộng đồng nào ghi nhận chính xác tập trường này cùng lỗi đánh máy `Screen Resoluton` của đối tượng vận hành. Việc quy kết họ mã độc hiện chỉ mang tính tạm thời, chờ một ánh xạ threat-intel đã công bố cho bố cục này.",
@@ -56,5 +55,42 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@logsdealerobot",
+      "fields": [
+        "ComputerNameDnsHostname",
+        "ComputerNameNetBIOS",
+        "CPU Name",
+        "Domain",
+        "GPU",
+        "HWID",
+        "IP Address",
+        "Language",
+        "OS Version",
+        "PC",
+        "Physical Installed Memory",
+        "Screen Resoluton",
+        "User",
+        "Workgroup"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "format_id": "cs-bradmax-cloud-pc-stealer",
+      "id": "v_3e84975b41e8a954c0cab50a13034560",
+      "layout_id": "dash-stripped",
+      "markers": [],
+      "panel_brand": "BRADMAX_CLOUD",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_3e84975b41e8a954c0cab50a13034560/System.txt",
+        "sha256": "b1e3b2826c04a6f216b48a649383e32ec6eb0a1162f249d4869753abb5158ef2",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

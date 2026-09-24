@@ -1,0 +1,20 @@
+https://t.me/logsdealerobot
+https://t.me/logsdealerobot
+
+- PC: <HOST>
+- User: <USER>
+- Domain: 
+- Workgroup: <HOST>
+- ComputerNameDnsHostname: <HOST>
+- ComputerNameNetBIOS: <HOST>
+- OS Version: Windows 10 (10.0.22621)
+- HWID: <HWID>
+- Screen Resoluton: 1536x864
+- Language: en-US
+- CPU Name: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+- GPU: Intel(R) UHD Graphics
+- Physical Installed Memory: 8192MB
+
+- IP Address: <IP>
+https://t.me/logsdealerobot
+$#@$@$#$#@ MM
