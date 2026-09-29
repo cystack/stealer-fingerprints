@@ -20,8 +20,8 @@ Biến thể nhật ký mã độc đánh cắp thông tin chưa xác định da
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: -
-- Variants observed: **1**
-- CyStack observations represented: **893**
+- Variants observed: **2**
+- CyStack observations represented: **894**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -59,6 +59,24 @@ Recognition anchors:
 
 - Stable markers: `[Hardware]`, `[System]`
 - Field labels: `Buildtag`
+
+### `v_94af753875e4c8a0418b6466e9e1f239`
+
+- Format ID: `bracket-section-stealer`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **unknown**
+- Layout: `hwid-screensize`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_94af753875e4c8a0418b6466e9e1f239/UserInformation.txt)
+- Sample SHA-256: `e23a7008c04a75df83f430d17c39cfb55809a7b305bca07e223418a188681ac0`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `City`, `Country`, `CPU`, `GPU`, `Hwid`, `IP`, `RAM`, `Screensize`, `System Language`, `Timezone`, `Username`, `❗️Actual Link`, `💎Buy`
 
 
 ## MITRE ATT&CK

@@ -34,34 +34,6 @@
     "https://heroic.com/darkhive-breaches/bugatti-cloud-telegram-stealer-log-july-2023-timeline/",
     "https://socradar.io/blog/top-stealer-log-telegram-channels/"
   ],
-  "variants": [
-    {
-      "id": "v_516063da5807a1399ea249ebe8f60e04",
-      "format_id": "bracket-section-stealer",
-      "filenames": [
-        "System.txt",
-        "UserInformation.txt"
-      ],
-      "panel_brand": null,
-      "distribution_channel": null,
-      "attribution_confidence": "unknown",
-      "markers": [
-        "[Hardware]",
-        "[System]"
-      ],
-      "fields": [
-        "Buildtag"
-      ],
-      "observations": 893,
-      "sample": {
-        "path": "samples/v_516063da5807a1399ea249ebe8f60e04/sample.txt",
-        "sha256": "d2b797c2c1bdd70b592fa28112165e11e0771335756c9f8f390412be2fea2708",
-        "source": "cystack_collection",
-        "sanitized": true
-      },
-      "layout_id": "system-hardware-buildtag"
-    }
-  ],
   "localizations": {
     "vi": {
       "description": "Biến thể nhật ký mã độc đánh cắp thông tin chưa xác định danh tính, chia phần bằng `[System]` / `[Hardware]`, quan sát được bên trong các gói tổng hợp `@bugatti_cloud`. Nội dung `UserInformation.txt` được chia thành các phần có tiêu đề trong dấu ngoặc vuông (`[System]`, `[Hardware]`, v.v.), mỗi phần theo sau bởi một khối khóa-giá trị phẳng. Việc quy kết họ mã độc là tạm thời; định dạng này chưa được ánh xạ với một tên tình báo mối đe dọa đã công bố.",
@@ -90,5 +62,67 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "id": "v_516063da5807a1399ea249ebe8f60e04",
+      "format_id": "bracket-section-stealer",
+      "filenames": [
+        "System.txt",
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "[Hardware]",
+        "[System]"
+      ],
+      "fields": [
+        "Buildtag"
+      ],
+      "observations": 893,
+      "sample": {
+        "path": "samples/v_516063da5807a1399ea249ebe8f60e04/sample.txt",
+        "sha256": "d2b797c2c1bdd70b592fa28112165e11e0771335756c9f8f390412be2fea2708",
+        "source": "cystack_collection",
+        "sanitized": true
+      },
+      "layout_id": "system-hardware-buildtag"
+    },
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": null,
+      "fields": [
+        "City",
+        "Country",
+        "CPU",
+        "GPU",
+        "Hwid",
+        "IP",
+        "RAM",
+        "Screensize",
+        "System Language",
+        "Timezone",
+        "Username",
+        "❗️Actual Link",
+        "💎Buy"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "format_id": "bracket-section-stealer",
+      "id": "v_94af753875e4c8a0418b6466e9e1f239",
+      "layout_id": "hwid-screensize",
+      "markers": [],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_94af753875e4c8a0418b6466e9e1f239/UserInformation.txt",
+        "sha256": "e23a7008c04a75df83f430d17c39cfb55809a7b305bca07e223418a188681ac0",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }
