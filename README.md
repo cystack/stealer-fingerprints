@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **142** CyStack tracking names
 - **12** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **166** observed log variants and **166** samples
-- **8,052,920** CyStack observations represented by the retained sample set
+- **167** observed log variants and **167** samples
+- **8,052,921** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -171,7 +171,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSFilesStolenStealer](families/cs-files-stolen-stealer/) | unknown | 0 | Metadata only |
 | [CSFlatMacBradmaxStealer](families/cs-flat-mac-bradmax-stealer/) | low | 0 | Metadata only |
 | [CSFlatMacProfilerStealer](families/cs-flat-mac-profiler-stealer/) | low | 3 | [3 retained](families/cs-flat-mac-profiler-stealer/#observed-log-variants) |
-| [CSFlatRemusStealer](families/cs-flat-remus-stealer/) | low | 0 | Metadata only |
+| [CSFlatRemusStealer](families/cs-flat-remus-stealer/) | low | 1 | [1 retained](families/cs-flat-remus-stealer/#observed-log-variants) |
 | [CSForzaTrafficStealer](families/cs-forza-traffic-stealer/) | unknown | 1 | [1 retained](families/cs-forza-traffic-stealer/#observed-log-variants) |
 | [CSGADSPanelStealer](families/csgads-panel-stealer/) | unknown | 1 | [1 retained](families/csgads-panel-stealer/#observed-log-variants) |
 | [CSGeoSysInfoStealer](families/cs-geo-sys-info-stealer/) | unknown | 1 | [1 retained](families/cs-geo-sys-info-stealer/#observed-log-variants) |

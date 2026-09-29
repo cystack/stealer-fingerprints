@@ -43,7 +43,8 @@ Các bài phân tích công khai xác nhận rằng Remus Stealer tạo dữ li�
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **low**
 - Aliases: `Flat-key Remus-vocabulary Info.txt panel`, `BRADMAX stripped Remus YAML variant`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -79,7 +80,23 @@ Việc nhận diện dấu hiệu yêu cầu bảy khóa neo theo dòng ở cộ
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_e9071d2d647441d8b15d2c23c1e9fd40`
+
+- Format ID: `cs-flat-remus-stealer`
+- Observed filenames: `Info.txt`
+- Panel brand: -
+- Distribution channel: `@BRADMAX`
+- Attribution confidence: **low**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_e9071d2d647441d8b15d2c23c1e9fd40/Info.txt)
+- Sample SHA-256: `0785df7a36372b1c50362476e36b8b13dadbcb83ccc740a7cb0fd9dc91cd502c`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `country`, `cpu`, `date`, `domain`, `gpu`, `language`, `os`, `path`, `ram`, `version`, `❗️Actual Link`, `💎Buy`
+
 
 ## MITRE ATT&CK
 
