@@ -23,7 +23,6 @@
     "redline",
     "x-files"
   ],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "CSArtHouseCloudStealer là định danh do CyStack đặt cho log ArtHouse Cloud `System.txt` đã bị lược bỏ nhiều thành phần, được ghi nhận bên trong các gói phân phối qua `@ft7links` cùng với nội dung Lumma nguyên bản và bản đổi thương hiệu `CSBabaStealer`. Phần nội dung bao bọc một khối thông tin nạn nhân có nguồn gốc từ XFiles bằng hai biểu ngữ ArtHouse Cloud (đầu trang + chân trang) được đóng khung bằng các đường kẻ ngang ký tự vẽ khung U+2500. Đối tượng vận hành `@ft7links` gắn nhãn kho lưu trữ là `lumma` và bán lại nhiều bảng điều khiển dưới một lớp vỏ chung.",
@@ -31,5 +30,35 @@
       "detection_notes": "Các biểu ngữ đầu trang/chân trang ArtHouse Cloud kèm tham chiếu `linktr.ee/ArtHouse_Cloud_Team` cùng khung đường kẻ ngang U+2500. Đã ghi nhận hai cấu trúc dữ liệu tập trường khác nhau (biến thể 5 trường và biến thể có nhiều trường hơn); cả hai đều dùng chung biểu ngữ.",
       "attack_techniques": []
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "@ArhontCorp",
+      "fields": [
+        "Computer Name",
+        "Country",
+        "CPU (Processor",
+        "IP",
+        "Operating System",
+        "Username",
+        "❗️Actual Link",
+        "💎Buy"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "cs-arthouse-cloud-stealer",
+      "id": "v_98ef534d916e6f477ab47647d35ba1a9",
+      "markers": [],
+      "panel_brand": "ArhontCloud (XFiles 5-field)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_98ef534d916e6f477ab47647d35ba1a9/Information.txt",
+        "sha256": "c76af5581db15b9213e07398bdf6de56c94f35a71190fc4a79b04b285be0b3a7",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

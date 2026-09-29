@@ -22,7 +22,8 @@ CSArtHouseCloudStealer là định danh do CyStack đặt cho log ArtHouse Cloud
 - Classification / Phân loại: **Log aggregator / Nguồn tổng hợp log**
 - Attribution confidence: **unknown**
 - Aliases: `ArtHouse Cloud`, `ArtHouse_Cloud_Team`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -49,7 +50,23 @@ Các biểu ngữ đầu trang/chân trang ArtHouse Cloud kèm tham chiếu `lin
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_98ef534d916e6f477ab47647d35ba1a9`
+
+- Format ID: `cs-arthouse-cloud-stealer`
+- Observed filenames: `Information.txt`
+- Panel brand: `ArhontCloud (XFiles 5-field)`
+- Distribution channel: `@ArhontCorp`
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_98ef534d916e6f477ab47647d35ba1a9/Information.txt)
+- Sample SHA-256: `c76af5581db15b9213e07398bdf6de56c94f35a71190fc4a79b04b285be0b3a7`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Computer Name`, `Country`, `CPU (Processor`, `IP`, `Operating System`, `Username`, `❗️Actual Link`, `💎Buy`
+
 
 ## MITRE ATT&CK
 

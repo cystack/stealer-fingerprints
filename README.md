@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **142** CyStack tracking names
 - **12** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **167** observed log variants and **167** samples
-- **8,052,921** CyStack observations represented by the retained sample set
+- **168** observed log variants and **168** samples
+- **8,052,922** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -266,7 +266,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
 | [Bugatti Cloud](families/bugatti-cloud/) | unknown | 1 | [1 retained](families/bugatti-cloud/#observed-log-variants) |
-| [CSArtHouseCloudStealer](families/cs-art-house-cloud-stealer/) | unknown | 0 | Metadata only |
+| [CSArtHouseCloudStealer](families/cs-art-house-cloud-stealer/) | unknown | 1 | [1 retained](families/cs-art-house-cloud-stealer/#observed-log-variants) |
 | [CSCashFlowStealer](families/cs-cash-flow-stealer/) | unknown | 0 | Metadata only |
 | [CSPixelCloudStealer](families/cs-pixel-cloud-stealer/) | unknown | 1 | [1 retained](families/cs-pixel-cloud-stealer/#observed-log-variants) |
 | [CSRussia34Stealer](families/cs-russia34-stealer/) | unknown | 2 | [2 retained](families/cs-russia34-stealer/#observed-log-variants) |
