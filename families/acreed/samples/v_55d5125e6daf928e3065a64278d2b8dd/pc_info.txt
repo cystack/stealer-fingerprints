@@ -1,0 +1,28 @@
+Re-Uploads Private Logs and ULPs /// t.me/ArhontCorp
+
+t.me/ArhontCorp
+t.me/ArhontCorp
+t.me/ArhontCorp
+
+💎Buy: t.me/ArhontSupport
+
+❗️Actual Link: https://linktr.ee/ArhontCloud
+
+
+
+
+PcName: <HOST>
+Os: Windows 10
+Ip: <IP>
+GPU: [
+RAM: 16326
+ScreenSize: 3440x1440
+Arch: x64
+CpuCores: 8
+Country: PL
+City: <LOCATION>
+ZipCode: <LOCATION>
+LocalTime: null
+UserName: <USER>
+Domain: <HOST>
+Hwid: <HWID>

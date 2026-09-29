@@ -40,31 +40,6 @@
   "sources": [
     "https://www.kaspersky.com/blog/acreed-stealer/"
   ],
-  "variants": [
-    {
-      "id": "v_02aba0afc027e0ffde6554b29031e0b1",
-      "format_id": "acreed",
-      "filenames": [
-        "pc_info.json",
-        "pc_info.txt"
-      ],
-      "panel_brand": null,
-      "distribution_channel": null,
-      "attribution_confidence": "high",
-      "markers": [],
-      "fields": [
-        "IsElevator",
-        "PcName"
-      ],
-      "observations": 224616,
-      "sample": {
-        "path": "samples/v_02aba0afc027e0ffde6554b29031e0b1/sample.txt",
-        "sha256": "b8f16d760313ebd4003085217477561045790d3303b9e579b81cbc88983ae551",
-        "source": "cystack_collection",
-        "sanitized": true
-      }
-    }
-  ],
   "localizations": {
     "vi": {
       "description": "Acreed Stealer là một trong số ít họ mã độc đánh cắp thông tin tạo dữ liệu đầu ra dạng JSON có cấu trúc thay vì văn bản dạng khóa/giá trị tự do. Dữ liệu nạn nhân được ghi vào `pc_info.json` với các khóa PascalCase (`PcName`, `Os`, `Cpu`, v.v.).",
@@ -98,5 +73,69 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "id": "v_02aba0afc027e0ffde6554b29031e0b1",
+      "format_id": "acreed",
+      "filenames": [
+        "pc_info.json",
+        "pc_info.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [],
+      "fields": [
+        "IsElevator",
+        "PcName"
+      ],
+      "observations": 224616,
+      "sample": {
+        "path": "samples/v_02aba0afc027e0ffde6554b29031e0b1/sample.txt",
+        "sha256": "b8f16d760313ebd4003085217477561045790d3303b9e579b81cbc88983ae551",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "@ArhontCorp",
+      "fields": [
+        "Arch",
+        "City",
+        "Country",
+        "CpuCores",
+        "Domain",
+        "GPU",
+        "Hwid",
+        "Ip",
+        "LocalTime",
+        "Os",
+        "PcName",
+        "RAM",
+        "ScreenSize",
+        "UserName",
+        "ZipCode",
+        "❗️Actual Link",
+        "💎Buy"
+      ],
+      "filenames": [
+        "pc_info.txt"
+      ],
+      "format_id": "cs-bradmax-acreed-flat-stealer",
+      "id": "v_55d5125e6daf928e3065a64278d2b8dd",
+      "markers": [
+        "ArhontCloud"
+      ],
+      "panel_brand": "ArhontCloud",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_55d5125e6daf928e3065a64278d2b8dd/pc_info.txt",
+        "sha256": "965cc985a4e65c561a3dabef0e5c1eda644f4795e3457cfa3b71a9559fadb6a7",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

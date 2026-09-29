@@ -18,8 +18,8 @@ Acreed Stealer là một trong số ít họ mã độc đánh cắp thông tin 
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Acreed Stealer`
-- Variants observed: **1**
-- CyStack observations represented: **224,616**
+- Variants observed: **2**
+- CyStack observations represented: **224,617**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -60,6 +60,23 @@ Recognition anchors:
 
 - Stable markers: -
 - Field labels: `IsElevator`, `PcName`
+
+### `v_55d5125e6daf928e3065a64278d2b8dd`
+
+- Format ID: `cs-bradmax-acreed-flat-stealer`
+- Observed filenames: `pc_info.txt`
+- Panel brand: `ArhontCloud`
+- Distribution channel: `@ArhontCorp`
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_55d5125e6daf928e3065a64278d2b8dd/pc_info.txt)
+- Sample SHA-256: `965cc985a4e65c561a3dabef0e5c1eda644f4795e3457cfa3b71a9559fadb6a7`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `ArhontCloud`
+- Field labels: `Arch`, `City`, `Country`, `CpuCores`, `Domain`, `GPU`, `Hwid`, `Ip`, `LocalTime`, `Os`, `PcName`, `RAM`, `ScreenSize`, `UserName`, `ZipCode`, `❗️Actual Link`, `💎Buy`
 
 
 ## MITRE ATT&CK

@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **142** CyStack tracking names
 - **12** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **170** observed log variants and **170** samples
-- **8,052,924** CyStack observations represented by the retained sample set
+- **171** observed log variants and **171** samples
+- **8,052,925** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -46,7 +46,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
-| [Acreed](families/acreed/) | high | 1 | [1 retained](families/acreed/#observed-log-variants) |
+| [Acreed](families/acreed/) | high | 2 | [2 retained](families/acreed/#observed-log-variants) |
 | [Ailurophile](families/ailurophile/) | high | 1 | [1 retained](families/ailurophile/#observed-log-variants) |
 | [AMOS Stealer](families/amos-stealer/) | high | 1 | [1 retained](families/amos-stealer/#observed-log-variants) |
 | [Arcane](families/arcane/) | high | 3 | [3 retained](families/arcane/#observed-log-variants) |
