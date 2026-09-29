@@ -59,6 +59,34 @@
         "source": "cystack_collection",
         "sanitized": true
       }
+    },
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "@ArhontCorp",
+      "fields": [
+        "Country",
+        "HWID",
+        "IP",
+        "Operation System",
+        "ScreenSize",
+        "UserName",
+        "❗️Actual Link",
+        "💎Buy"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "format_id": "cs-arthouse-cloud-stealer",
+      "id": "v_d429c125c8857b42f20ede100de00140",
+      "markers": [],
+      "panel_brand": "ArhontCloud (Redline dashed-HWID)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_d429c125c8857b42f20ede100de00140/System.txt",
+        "sha256": "f28e7a22fa6b4fec4dc91e9dc0cda91a5b0d579279e99a5ead5f4373ce964cc0",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
     }
   ]
 }
