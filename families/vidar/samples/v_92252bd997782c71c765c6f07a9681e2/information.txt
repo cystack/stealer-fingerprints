@@ -1,0 +1,7 @@
+IP: <IP>
+Country: AU
+
+Date: 21.05.2026 03:14:13
+MachineID: <HWID>
+GUID: <HWID>
+HWID: <HWID>

@@ -19,8 +19,8 @@ Nhật ký của Vidar Stealer. Bản dựng 4.x tạo tệp `information.txt` d
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `VidarStealer`
-- Variants observed: **8**
-- CyStack observations represented: **4,421,157**
+- Variants observed: **9**
+- CyStack observations represented: **4,421,158**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -155,6 +155,24 @@ Recognition anchors:
 
 - Stable markers: `[Processes]`, `[Software]`
 - Field labels: `VideoCard`
+
+### `v_92252bd997782c71c765c6f07a9681e2`
+
+- Format ID: `vidar`
+- Observed filenames: `information.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `identity-triple`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_92252bd997782c71c765c6f07a9681e2/information.txt)
+- Sample SHA-256: `6a1a6506c3e3e5f5770e7fa703a8ec27770e5d31813ec6309fe67afae82841df`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Country`, `Date`, `GUID`, `HWID`, `IP`, `MachineID`
 
 ### `v_935a854f26e6a11cb5c3868965b79119`
 
