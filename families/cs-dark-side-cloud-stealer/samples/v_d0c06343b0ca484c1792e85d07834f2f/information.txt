@@ -1,0 +1,370 @@
+===DARKSIDE_BRAND_BEGIN===
+|<SECRET>|
+| D                                                                                                                    D |
+| A Join: https://t.me/+abRpT5eRHCplNzIy                                                                               A |
+| R                                                                                                                    R |
+| K $$$$$$$\                      $$\                 $$\       $$\                                                    K |
+| S $$  __$$\                     $$ |                \__|      $$ |                                                   S |
+| I $$ |  $$ | $$$$$$\   $$$$$$\  $$ |  $$\  $$$$$$$\ $$\  $$$$$$$ | $$$$$$\                                           I |
+| D $$ |  $$ | \____$$\ $$  __$$\ $$ | $$  |$$  _____|$$ |$$  __$$ |$$  __$$\                                          D |
+| E $$ |  $$ | $$$$$$$ |$$ |  \__|$$$$$$  / \$$$$$$\  $$ |$$ /  $$ |$$$$$$$$ |                                         E |
+| C $$ |  $$ |$$  __$$ |$$ |      $$  _$$<   \____$$\ $$ |$$ |  $$ |$$   ____|                                         C |
+| L $$$$$$$  |\$$$$$$$ |$$ |      $$ | \$$\ $$$$$$$  |$$ |\$$$$$$$ |\$$$$$$$\                                          L |
+| O \_______/  \_______|\__|      \__|  \__|\_______/ \__| \_______| \_______|                                         O |
+| U                                                                                                                    U |
+| D                                                                                                                    D |
+| D                                                                                                                    D |
+| A                                                                                                                    A |
+| R DARKSIDE PRIVATE CLOUD - Private Monthly Packs                                                                     R |
+| K TIERS (monthly):  BUDGET $100  |  PREMIUM $200  |  GOLD $300                                                       K |
+| S                                                                                                                    S |
+| I                                                                                                                    I |
+| D C  Budget Channel: 100$/month - Access up to 10+ private channels (total 500$).                                    D |
+| E L  Premium Channel: 200$/month - Access to 10-20+ private channels (total 1000$).                                  E |
+| C O  Gold Channel: 300$/month - Access to 20-30+ private channels (total 2000$).                                     C |
+| L U          Join: https://t.me/+abRpT5eRHCplNzIy                                                                    L |
+| O D             Join: https://t.me/+abRpT5eRHCplNzIy                                                                 O |
+| U                   Join: https://t.me/+abRpT5eRHCplNzIy                                                             U |
+| D DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD     DARKSIDE CLOUD      D |
+|<SECRET>|
+===DARKSIDE_BRAND_END===
+
+|  _____  _   _ __   __  _____  _   _  _____  _____  ___   _      _      _____  |
+
+
+
+- WHERE BUY THE BEST INSTALLS ??
+
+
+**************************************************
+
+IP: <IP>
+Country: IN
+
+Date: 26.05.2026 02:04:50
+MachineID: <HWID>
+GUID: <HWID>
+HWID: <HWID>
+
+Path: <PATH>
+Work Dir: In memory
+
+Windows: Windows 10 Pro 22H2 (Build 19045)
+Computer Name: <HOST>
+User Name: <USER>
+Display Resolution: 1366x768
+Local Time: 26.05.2026 02:04:50
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz
+Cores: 4
+Threads: 4
+RAM: 8081 MB
+VideoCard: Intel(R) HD Graphics
+
+[Processes]
+  [4] System
+  [100] Registry
+  [348] smss.exe
+  [468] csrss.exe
+  [548] wininit.exe
+  [700] services.exe
+  [836] lsass.exe
+  [944] svchost.exe
+  [972] fontdrvhost.exe
+  [424] svchost.exe
+  [908] svchost.exe
+  [1092] svchost.exe
+  [1100] svchost.exe
+  [1108] svchost.exe
+  [1128] svchost.exe
+  [1140] svchost.exe
+  [1304] svchost.exe
+  [1476] svchost.exe
+  [1516] svchost.exe
+  [1636] svchost.exe
+  [1644] svchost.exe
+  [1704] svchost.exe
+  [1780] svchost.exe
+  [1804] svchost.exe
+  [1812] svchost.exe
+  [1824] svchost.exe
+  [1832] svchost.exe
+  [1936] svchost.exe
+  [1964] svchost.exe
+  [2036] svchost.exe
+  [1028] Memory Compression
+  [2096] svchost.exe
+  [2104] igfxCUIService.exe
+  [2164] svchost.exe
+  [2224] svchost.exe
+  [2232] svchost.exe
+  [2416] svchost.exe
+  [2624] svchost.exe
+  [2696] svchost.exe
+  [2788] svchost.exe
+  [2800] svchost.exe
+  [2808] svchost.exe
+  [2828] svchost.exe
+  [3012] svchost.exe
+  [2292] svchost.exe
+  [3100] svchost.exe
+  [3192] spoolsv.exe
+  [3268] svchost.exe
+  [3316] svchost.exe
+  [3564] svchost.exe
+  [3572] svchost.exe
+  [3584] svchost.exe
+  [3600] svchost.exe
+  [3708] svchost.exe
+  [3716] svchost.exe
+  [3724] RtkBtManServ.exe
+  [3748] svchost.exe
+  [3776] svchost.exe
+  [3856] svchost.exe
+  [3896] svchost.exe
+  [4140] svchost.exe
+  [4668] svchost.exe
+  [4972] SearchIndexer.exe
+  [4064] AggregatorHost.exe
+  [712] svchost.exe
+  [4368] svchost.exe
+  [5124] svchost.exe
+  [9200] dllhost.exe
+  [8584] dllhost.exe
+  [6316] SearchProtocolHost.exe
+  [6960] SearchFilterHost.exe
+  [5392] dllhost.exe
+  [1168] svchost.exe
+  [3912] audiodg.exe
+  [9560] svchost.exe
+  [8916] svchost.exe
+  [10212] svchost.exe
+  [1888] svchost.exe
+  [9340] svchost.exe
+  [10528] svchost.exe
+  [2460] svchost.exe
+  [11436] svchost.exe
+  [11060] svchost.exe
+  [11704] csrss.exe
+  [19040] winlogon.exe
+  [17004] fontdrvhost.exe
+  [10848] dwm.exe
+  [17552] svchost.exe
+  [16496] SearchProtocolHost.exe
+  [12080] sihost.exe
+  [11040] svchost.exe
+  [18704] svchost.exe
+  [17780] MicrosoftEdgeUpdate.exe
+  [18288] igfxEM.exe
+  [11752] igfxHK.exe
+  [14580] taskhostw.exe
+  [636] explorer.exe
+  [3008] svchost.exe
+  [12908] ctfmon.exe
+  [7656] taskhostw.exe
+  [4092] svchost.exe
+  [5896] svchost.exe
+  [14808] SearchProtocolHost.exe
+  [7312] SearchFilterHost.exe
+  [7360] svchost.exe
+  [10308] svchost.exe
+  [2836] StartMenuExperienceHost.exe
+  [12672] TrustedInstaller.exe
+  [4300] TiWorker.exe
+  [6036] RuntimeBroker.exe
+  [4072] svchost.exe
+  [16456] SearchApp.exe
+  [13728] RuntimeBroker.exe
+  [572] RuntimeBroker.exe
+  [10448] Paint.exe
+  [680] msedge.exe
+  [13172] 2940c74efa.exe
+  [16548] WmiPrvSE.exe
+  [7260] msedge.exe
+  [11536] msedge.exe
+  [4408] msedge.exe
+  [1604] msedge.exe
+  [18068] d27bac32d2.exe
+  [14728] 6f2a2c8cbd.exe
+  [15096] svchost.exe
+  [14976] svchost.exe
+  [2704] c253fbf6df.exe
+  [18652] f6b7e2f1ff.exe
+  [11824] a7f472b82a.exe
+  [11580] 1d8239ed58.exe
+  [10864] dfa62683d1.exe
+  [1088] crashhelper.exe
+  [1000] 78744380b0.exe
+  [1156] crashhelper.exe
+  [15684] b23ad08baa.exe
+  [11652] crashhelper.exe
+  [15720] cfed54eb3e.exe
+  [4612] msedge.exe
+  [19288] msedge.exe
+  [12940] crashhelper.exe
+  [14964] 34710a2b4e.exe
+  [15612] crashhelper.exe
+  [6684] 2065ea4ceb.exe
+  [8684] 8d38f402da.exe
+  [15492] crashhelper.exe
+  [17428] 06c4c581db.exe
+  [13864] crashhelper.exe
+  [17420] identity_helper.exe
+  [11420] e31c7d5cb6.exe
+  [4888] firefox.exe
+  [16228] 36f83b3c46.exe
+  [15388] crashhelper.exe
+  [4576] cb96fb3f28.exe
+  [11664] 4ac1518260.exe
+  [6644] firefox.exe
+  [11320] firefox.exe
+  [10352] 4d7ca8a393.exe
+  [15576] 492c9a5e9a.exe
+  [10072] 7d80bd74be.exe
+  [11304] 4f43d9d5bc.exe
+  [14064] c311d2d867.exe
+  [8880] 75fe40986b.exe
+  [17588] 0e3b3d8f9e.exe
+  [13428] 9926baed6d.exe
+  [14568] f46c0e8562.exe
+  [11188] crashhelper.exe
+  [10536] crashhelper.exe
+  [11396] 8f098a04ea.exe
+  [9972] crashhelper.exe
+  [6852] d8c55d2322.exe
+  [9456] chrome.exe
+  [15712] powershell.exe
+  [13532] conhost.exe
+  [13672] 9ba910f32d.exe
+  [5376] 2e9bc30ede.exe
+  [3344] 1e3acc09fd.exe
+  [3280] cecc21eff9.exe
+  [14732] msedge.exe
+  [1536] 34068d6251.exe
+  [1772] 902a1f8720.exe
+  [13976] 4eab5c44e7.exe
+  [9392] msedge.exe
+  [1048] 914e0a226b.exe
+  [17064] msedge.exe
+  [17188] ba39d70613.exe
+  [4260] crashhelper.exe
+  [16532] msedge.exe
+  [8740] 80c42a424f.exe
+  [9984] crashhelper.exe
+  [12168] firefox.exe
+  [9412] firefox.exe
+  [10000] 53d2769ce8.exe
+  [12624] msedge.exe
+  [6380] crashhelper.exe
+  [9884] 5209a02a37.exe
+  [12960] 441ed40c3b.exe
+  [6900] chrome.exe
+  [18648] chrome.exe
+  [14020] chrome.exe
+  [8144] msedge.exe
+  [13600] 39c10dc575.exe
+  [3704] firefox.exe
+  [9100] crashhelper.exe
+  [14556] fd0e924f58.exe
+  [9356] chrome.exe
+  [16880] firefox.exe
+  [12668] firefox.exe
+  [18436] msedge.exe
+  [16864] msedge.exe
+  [4592] 989d4432c0.exe
+  [10732] chrome.exe
+  [15572] chrome.exe
+  [17928] 7991da4242.exe
+  [15132] bb2c39f5f9.exe
+  [4960] firefox.exe
+  [19420] firefox.exe
+  [19044] e5493c53da.exe
+  [7472] 98a59cdf3a.exe
+  [3324] msedge.exe
+  [6016] crashhelper.exe
+  [14360] msedge.exe
+  [18444] crashhelper.exe
+  [9928] 337db23c1a.exe
+  [13780] firefox.exe
+  [1460] msedge.exe
+  [18160] crashhelper.exe
+  [6560] 79c7c09db9.exe
+  [19400] chrome.exe
+  [2664] chrome.exe
+  [15984] firefox.exe
+  [12492] 1aecf96df5.exe
+  [10344] msedge.exe
+  [3964] crashhelper.exe
+  [12204] firefox.exe
+  [3028] msedge.exe
+  [12892] msedge.exe
+  [5252] crashhelper.exe
+  [8764] firefox.exe
+  [5684] crashhelper.exe
+  [5756] firefox.exe
+  [12864] 5bcb2a253d.exe
+  [4808] msedge.exe
+  [18492] crashhelper.exe
+  [6520] chrome.exe
+  [16248] chrome.exe
+  [4984] firefox.exe
+  [18064] e8e2a9fa0a.exe
+  [11892] chrome.exe
+  [15560] chrome.exe
+  [12264] chrome.exe
+  [6812] firefox.exe
+  [1332] msedge.exe
+  [5968] 523b415bf3.exe
+  [14280] firefox.exe
+  [7228] chrome.exe
+  [15400] chrome.exe
+  [17128] wermgr.exe
+  [13400] 84664a83cd.exe
+  [8792] msedge.exe
+  [13416] chrome.exe
+  [4688] chrome.exe
+  [9416] firefox.exe
+  [3140] firefox.exe
+  [5624] 404d13b22a.exe
+  [14944] msedge.exe
+  [14660] msedge.exe
+  [3796] msedge.exe
+  [15072] msedge.exe
+  [19120] msedge.exe
+  [18644] 7e81cb3a54.exe
+  [7988] firefox.exe
+  [17952] firefox.exe
+  [14452] firefox.exe
+  [13276] firefox.exe
+  [8664] chrome.exe
+  [11572] chrome.exe
+  [7412] firefox.exe
+  [14896] msedge.exe
+  [14228] msedge.exe
+  [8264] msedge.exe
+  [6396] msedge.exe
+  [17676] firefox.exe
+  [12568] 2f3ffc7857.exe
+  [12056] firefox.exe
+  [17492] firefox.exe
+  [18836] msedge.exe
+  [14188] crashhelper.exe
+  [16028] firefox.exe
+  [5028] firefox.exe
+  [8320] afd99d6e86.exe
+  [11996] conhost.exe
+  [16020] firefox.exe
+  [7532] firefox.exe
+  [9160] 5eab8aa34c.exe
+  [884] firefox.exe
+  [15256] aafca83722.exe
+  [7124] conhost.exe
+  [18684] 242da45434.exe
+[Software]
+  Mozilla Maintenance Service
+  Microsoft Update Health Tools
+  Microsoft Office Office 64-bit Components 2007
+  Microsoft Office Shared 64-bit MUI (English) 2007
+  Microsoft Office Shared 64-bit Setup Metadata MUI (English) 2007
+  Update for x64-based Windows Systems (KB5001716)

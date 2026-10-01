@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **142** CyStack tracking names
 - **12** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **172** observed log variants and **172** samples
-- **8,052,926** CyStack observations represented by the retained sample set
+- **175** observed log variants and **175** samples
+- **8,052,929** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -251,7 +251,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSALStealer](families/csal-stealer/) → [lumma](families/lumma/) | medium | 1 | [1 retained](families/csal-stealer/#observed-log-variants) |
 | [CSBabaCloudStealer](families/cs-baba-cloud-stealer/) → [vidar](families/vidar/) | medium | 3 | [3 retained](families/cs-baba-cloud-stealer/#observed-log-variants) |
 | [CSBabaStealer](families/cs-baba-stealer/) → [lumma](families/lumma/) | high | 1 | [1 retained](families/cs-baba-stealer/#observed-log-variants) |
-| [CSDarkSideCloudStealer](families/cs-dark-side-cloud-stealer/) → [redline](families/redline/) | high | 0 | Metadata only |
+| [CSDarkSideCloudStealer](families/cs-dark-side-cloud-stealer/) → [redline](families/redline/) | high | 1 | [1 retained](families/cs-dark-side-cloud-stealer/#observed-log-variants) |
 | [CSDeimosStealer](families/cs-deimos-stealer/) → [lumma](families/lumma/) | medium | 1 | [1 retained](families/cs-deimos-stealer/#observed-log-variants) |
 | [CSEnchantCloudStealer](families/cs-enchant-cloud-stealer/) → [redline](families/redline/) | high | 0 | Metadata only |
 | [CSGeoBoxStealer](families/cs-geo-box-stealer/) → [redline](families/redline/) | high | 0 | Metadata only |
@@ -269,7 +269,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSArtHouseCloudStealer](families/cs-art-house-cloud-stealer/) | unknown | 2 | [2 retained](families/cs-art-house-cloud-stealer/#observed-log-variants) |
 | [CSCashFlowStealer](families/cs-cash-flow-stealer/) | unknown | 0 | Metadata only |
 | [CSPixelCloudStealer](families/cs-pixel-cloud-stealer/) | unknown | 1 | [1 retained](families/cs-pixel-cloud-stealer/#observed-log-variants) |
-| [CSRussia34Stealer](families/cs-russia34-stealer/) | unknown | 2 | [2 retained](families/cs-russia34-stealer/#observed-log-variants) |
+| [CSRussia34Stealer](families/cs-russia34-stealer/) | unknown | 4 | [4 retained](families/cs-russia34-stealer/#observed-log-variants) |
 
 ## Naming and evidence
 

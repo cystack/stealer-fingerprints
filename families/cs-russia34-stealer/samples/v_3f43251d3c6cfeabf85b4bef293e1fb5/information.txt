@@ -1,0 +1,308 @@
+***********************************************
+*                                             *
+*   ____  _____ ____  _     ___ _   _ _____   *
+*  |  _ \| ____|  _ \| |   |_ _| \ | | ____|  *
+*  | |_) |  _| | | | | |    | ||  \| |  _|    *
+*  |  _ <| |___| |_| | |___ | || |\  | |___   *
+*  |_| \_|_____|____/|_____|___|_| \_|_____|  *
+*                                             *
+*                                             *
+***********************************************
+*           New subscribers here:             *
+*           https://russia34.com              *
+*           https://russia34.com              *
+*           https://russia34.com              *
+***********************************************
+
+
+
+IP: <IP>
+Country: ET
+
+Date: 25.05.2026 17:22:11
+MachineID: <HWID>
+GUID: <HWID>
+HWID: <HWID>
+
+Path: C:\Windows\SysWOW32\install.exe
+Work Dir: Admin @logslead
+
+Windows: Windows 10 Pro 22H2 (Build 19045)
+Computer Name: <HOST>
+User Name: <USER>
+Display Resolution: 1366x768
+Local Time: 25.05.2026 17:22:11
+
+[Hardware]
+Processor: Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz
+Cores: 4
+Threads: 4
+RAM: 8112 MB
+VideoCard: Intel(R) HD Graphics 5500
+
+[Processes]
+  [4] System
+  [100] Registry
+  [412] smss.exe
+  [560] csrss.exe
+  [648] wininit.exe
+  [660] csrss.exe
+  [752] winlogon.exe
+  [772] services.exe
+  [804] lsass.exe
+  [928] svchost.exe
+  [956] fontdrvhost.exe
+  [964] fontdrvhost.exe
+  [504] svchost.exe
+  [496] svchost.exe
+  [1036] svchost.exe
+  [1072] svchost.exe
+  [1136] svchost.exe
+  [1188] svchost.exe
+  [1268] dwm.exe
+  [1300] svchost.exe
+  [1344] svchost.exe
+  [1396] svchost.exe
+  [1484] svchost.exe
+  [1548] svchost.exe
+  [1616] svchost.exe
+  [1628] svchost.exe
+  [1648] svchost.exe
+  [1684] svchost.exe
+  [1692] svchost.exe
+  [1864] svchost.exe
+  [1956] svchost.exe
+  [1976] svchost.exe
+  [1996] svchost.exe
+  [2020] svchost.exe
+  [1212] svchost.exe
+  [2148] svchost.exe
+  [2168] svchost.exe
+  [2220] Memory Compression
+  [2272] igfxCUIService.exe
+  [2280] powershell.exe
+  [2292] svchost.exe
+  [2304] powershell.exe
+  [2336] powershell.exe
+  [2344] powershell.exe
+  [2352] windows.exe
+  [2376] svchost.exe
+  [2384] svchost.exe
+  [2392] powershell.exe
+  [2424] svchost.exe
+  [2488] powershell.exe
+  [2496] powershell.exe
+  [2520] powershell.exe
+  [2548] svchost.exe
+  [2564] powershell.exe
+  [2572] svchost.exe
+  [2580] powershell.exe
+  [2608] powershell.exe
+  [2624] powershell.exe
+  [2644] powershell.exe
+  [2672] powershell.exe
+  [2712] powershell.exe
+  [2728] powershell.exe
+  [2756] powershell.exe
+  [2888] WmiPrvSE.exe
+  [3032] conhost.exe
+  [3040] conhost.exe
+  [3052] conhost.exe
+  [1964] conhost.exe
+  [2252] conhost.exe
+  [2432] conhost.exe
+  [2372] svchost.exe
+  [3084] conhost.exe
+  [3092] conhost.exe
+  [3104] conhost.exe
+  [3116] conhost.exe
+  [3180] conhost.exe
+  [3188] conhost.exe
+  [3196] conhost.exe
+  [3204] conhost.exe
+  [3228] conhost.exe
+  [3248] conhost.exe
+  [3324] svchost.exe
+  [3436] svchost.exe
+  [3464] svchost.exe
+  [3480] svchost.exe
+  [3604] svchost.exe
+  [3616] conhost.exe
+  [3708] svchost.exe
+  [3776] svchost.exe
+  [3768] svchost.exe
+  [3940] spoolsv.exe
+  [4084] AppleMobileDeviceService.exe
+  [3124] mDNSResponder.exe
+  [3516] svchost.exe
+  [3848] CxAudMsg64.exe
+  [3996] OfficeClickToRun.exe
+  [4124] svchost.exe
+  [4148] svchost.exe
+  [4172] ETDService.exe
+  [4244] svchost.exe
+  [4268] ibtsiva.exe
+  [4276] svchost.exe
+  [4352] svchost.exe
+  [4384] SASrv.exe
+  [4428] svchost.exe
+  [4460] svchost.exe
+  [4484] svchost.exe
+  [4528] svchost.exe
+  [4660] svchost.exe
+  [4704] dasHost.exe
+  [4820] svchost.exe
+  [5028] svchost.exe
+  [892] svchost.exe
+  [2544] svchost.exe
+  [3636] SearchIndexer.exe
+  [6212] svchost.exe
+  [6260] svchost.exe
+  [6340] powershell.exe
+  [6348] conhost.exe
+  [6408] svchost.exe
+  [6584] svchost.exe
+  [6612] dllhost.exe
+  [6776] svchost.exe
+  [6996] wermgr.exe
+  [6164] svchost.exe
+  [816] svchost.exe
+  [6192] AggregatorHost.exe
+  [5204] svchost.exe
+  [5212] ETDCtrl.exe
+  [976] svchost.exe
+  [1008] sihost.exe
+  [1592] svchost.exe
+  [1748] PresentationFontCache.exe
+  [7236] taskhostw.exe
+  [7356] svchost.exe
+  [7368] svchost.exe
+  [7384] svchost.exe
+  [7468] svchost.exe
+  [7588] ctfmon.exe
+  [7708] opushutil.exe
+  [8140] explorer.exe
+  [8156] svchost.exe
+  [6924] windowsruntime.exe
+  [2604] ETDCtrlHelper.exe
+  [5508] ETDIntelligent.exe
+  [8424] svchost.exe
+  [8848] igfxEM.exe
+  [8876] igfxHK.exe
+  [8904] igfxTray.exe
+  [9004] StartMenuExperienceHost.exe
+  [8224] Paint.exe
+  [8216] Paint.exe
+  [6532] RuntimeBroker.exe
+  [5276] TextInputHost.exe
+  [4156] svchost.exe
+  [1384] SearchApp.exe
+  [3732] RuntimeBroker.exe
+  [3496] backgroundTaskHost.exe
+  [7076] RuntimeBroker.exe
+  [9380] svchost.exe
+  [9440] CAudioFilterAgent64.exe
+  [9752] rundll32.exe
+  [9884] a2f34c3e78.exe
+  [9532] msedge.exe
+  [584] Grammarly.Desktop.exe
+  [5620] msedge.exe
+  [11764] svchost.exe
+  [12124] msedge.exe
+  [12132] msedge.exe
+  [12156] msedge.exe
+  [5064] msedge.exe
+  [1496] CvHostUpdater.exe
+  [6016] msedge.exe
+  [10220] msedge.exe
+  [8864] msedge.exe
+  [12076] msedge.exe
+  [12392] msedge.exe
+  [12476] MSBuild.exe
+  [12520] conhost.exe
+  [12636] msedge.exe
+  [12664] msedge.exe
+  [12844] msedge.exe
+  [5528] msedge.exe
+  [6392] msedge.exe
+  [11016] svchost.exe
+  [12492] MicrosoftEdgeUpdate.exe
+  [12784] Telegram.exe
+  [5460] OfficeC2RClient.exe
+  [1948] dllhost.exe
+  [8656] msedgewebview2.exe
+  [11848] msedgewebview2.exe
+  [13248] msedgewebview2.exe
+  [7652] msedgewebview2.exe
+  [2452] msedgewebview2.exe
+  [11352] msedgewebview2.exe
+  [4456] MicrosoftEdgeUpdate.exe
+  [11604] svchost.exe
+  [3120] SearchApp.exe
+  [9600] msedgewebview2.exe
+  [2240] msedgewebview2.exe
+  [3644] msedgewebview2.exe
+  [11492] msedgewebview2.exe
+  [13336] msedgewebview2.exe
+  [13428] msedgewebview2.exe
+  [13780] MicrosoftEdgeUpdate.exe
+  [13852] CompatTelRunner.exe
+  [13860] OfficeC2RClient.exe
+  [13280] svchost.exe
+  [14344] conhost.exe
+  [14536] WmiPrvSE.exe
+  [15140] CompatTelRunner.exe
+  [3648] ActionsServer.exe
+  [5600] powershell.exe
+  [5516] conhost.exe
+  [940] powershell.exe
+  [14964] powershell.exe
+  [14940] conhost.exe
+  [9452] conhost.exe
+  [14260] UserOOBEBroker.exe
+  [14052] msedge.exe
+  [13788] f803c572cd.exe
+  [8952] SDXHelper.exe
+  [14936] 8521c5fc22.exe
+  [8576] 4BtqZz1.exe
+  [8816] RuntimeBroker.exe
+  [2232] powershell.exe
+  [14512] conhost.exe
+  [13976] CEqsnUi.exe
+  [14580] svchost.exe
+  [2872] msedge.exe
+  [13068] svchost.exe
+  [3416] Crisis.exe
+  [15148] KAQ8PQ5.exe
+  [6104] msedge.exe
+  [8980] svchost.exe
+  [7440] audiodg.exe
+  [13016] chrome.exe
+  [8828] chrome.exe
+  [8] backgroundTaskHost.exe
+  [15284] deliverymgr61295.bin
+  [7568] chrome.exe
+  [3852] O2LyUcP.exe
+  [8448] 807c6e480c.exe
+  [11692] svchost.exe
+  [4004] svchost.exe
+  [12004] chrome.exe
+  [7304] chrome.exe
+  [11208] makecab.exe
+  [7660] conhost.exe
+[Software]
+  Conexant HD Audio
+  Microsoft Office Professional Plus 2016 - en-us
+  WinRAR 6.22 (64-bit)
+  Microsoft Update Health Tools
+  Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030
+  Bonjour
+  Office 16 Click-to-Run Licensing Component
+  Office 16 Click-to-Run Extensibility Component 64-bit Registration
+  Dolby Digital Plus Advanced Audio
+  Update for x64-based Windows Systems (KB5001716)
+  iTunes
+  Caption
+  Java(TM) SE Development Kit 20 (64-bit)
+  Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030
+  Apple Mobile Device Support

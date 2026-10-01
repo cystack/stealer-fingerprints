@@ -24,7 +24,8 @@ CSDarkSideCloudStealer là định danh do CyStack đặt cho một lớp bọc 
 - Attribution confidence: **high**
 - Canonical family: [redline](../redline/)
 - Aliases: `DARKSIDE PRIVATE CLOUD`, `darkside linklogs`, `DarkSide Cloud`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -47,7 +48,23 @@ Dòng phân tách `===DARKSIDE_BRAND_BEGIN===` dài 28 ký tự là dấu hiệu
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_d0c06343b0ca484c1792e85d07834f2f`
+
+- Format ID: `cs-darkside-cloud-stealer`
+- Observed filenames: `information.txt`
+- Panel brand: `DARKSIDE PRIVATE CLOUD`
+- Distribution channel: `t.me/+abRpT5eRHCplNzIy`
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_d0c06343b0ca484c1792e85d07834f2f/information.txt)
+- Sample SHA-256: `e6fc14c13c89a047727b9d90f06993a838b09875af476b2803000adb7d76cd91`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `[Hardware]`, `[Processes]`, `[Software]`, `DARKSIDE PRIVATE CLOUD`
+- Field labels: `A Join`, `C O Gold Channel`, `Computer Name`, `Cores`, `Country`, `D C Budget Channel`, `Date`, `Display Resolution`, `E L Premium Channel`, `GUID`, `HWID`, `IP`, `K TIERS (monthly`, `L U Join`, `Local Time`, `MachineID`, `O D Join`, `Path`, `Processor`, `RAM`, `Threads`, `U Join`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
 
 ## MITRE ATT&CK
 

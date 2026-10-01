@@ -23,8 +23,8 @@ Bảng điều khiển tạo dữ liệu đầu ra là một banner ASCII-art `R
 - Classification / Phân loại: **Log aggregator / Nguồn tổng hợp log**
 - Attribution confidence: **unknown**
 - Aliases: `russia34`, `Private Russia 34`
-- Variants observed: **2**
-- CyStack observations represented: **2**
+- Variants observed: **4**
+- CyStack observations represented: **4**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -52,6 +52,42 @@ Banner ASCII-art REDLINE bên trong khung viền dấu hoa thị, theo sau là c
 - [x-files](../x-files/)
 
 ## Observed log variants
+
+### `v_3f43251d3c6cfeabf85b4bef293e1fb5`
+
+- Format ID: `cs-russia34-stealer`
+- Observed filenames: `information.txt`
+- Panel brand: `russia34.com aggregator (legacy mixed-shape)`
+- Distribution channel: `russia34.com`
+- Attribution confidence: **unknown**
+- Layout: `banner-only`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_3f43251d3c6cfeabf85b4bef293e1fb5/information.txt)
+- Sample SHA-256: `9c6bdd38e832970c4df53b938caf54d771c7fcac91248a5f31136c9abf1f5206`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `[Hardware]`, `[Processes]`, `[Software]`
+- Field labels: `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Local Time`, `MachineID`, `New subscribers here`, `Path`, `Processor`, `RAM`, `Threads`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+### `v_46e4e13306357952f17857cf8534a29b`
+
+- Format ID: `cs-russia34-stealer`
+- Observed filenames: `system_info.txt`
+- Panel brand: `russia34.com (StealC-headerless)`
+- Distribution channel: `russia34.com`
+- Attribution confidence: **medium**
+- Layout: `stealc-headerless`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_46e4e13306357952f17857cf8534a29b/system_info.txt)
+- Sample SHA-256: `ff284509421fe4c4f278b0622446f636025c2d4c635419974d4c1cb875715a4b`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Architecture`, `Computer Name`, `Cores`, `Country`, `CPU`, `Device String`, `Display Resolution`, `GPU`, `HWID`, `IP`, `Keyboards`, `Language`, `Laptop`, `Local Time`, `New subscribers here`, `OS`, `Path`, `RAM`, `Resolution`, `Threads`, `UserName`, `UTC`
 
 ### `v_7cc94e5029f876548e864f8aa345ef3b`
 

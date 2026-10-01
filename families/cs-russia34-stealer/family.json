@@ -35,6 +35,93 @@
   },
   "variants": [
     {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "russia34.com",
+      "fields": [
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "IP",
+        "Local Time",
+        "MachineID",
+        "New subscribers here",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "format_id": "cs-russia34-stealer",
+      "id": "v_3f43251d3c6cfeabf85b4bef293e1fb5",
+      "layout_id": "banner-only",
+      "markers": [
+        "[Hardware]",
+        "[Processes]",
+        "[Software]"
+      ],
+      "panel_brand": "russia34.com aggregator (legacy mixed-shape)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_3f43251d3c6cfeabf85b4bef293e1fb5/information.txt",
+        "sha256": "9c6bdd38e832970c4df53b938caf54d771c7fcac91248a5f31136c9abf1f5206",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "medium",
+      "distribution_channel": "russia34.com",
+      "fields": [
+        "Architecture",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "CPU",
+        "Device String",
+        "Display Resolution",
+        "GPU",
+        "HWID",
+        "IP",
+        "Keyboards",
+        "Language",
+        "Laptop",
+        "Local Time",
+        "New subscribers here",
+        "OS",
+        "Path",
+        "RAM",
+        "Resolution",
+        "Threads",
+        "UserName",
+        "UTC"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "format_id": "cs-russia34-stealer",
+      "id": "v_46e4e13306357952f17857cf8534a29b",
+      "layout_id": "stealc-headerless",
+      "markers": [],
+      "panel_brand": "russia34.com (StealC-headerless)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_46e4e13306357952f17857cf8534a29b/system_info.txt",
+        "sha256": "ff284509421fe4c4f278b0622446f636025c2d4c635419974d4c1cb875715a4b",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
       "attribution_confidence": "high",
       "distribution_channel": "russia34.com",
       "fields": [
