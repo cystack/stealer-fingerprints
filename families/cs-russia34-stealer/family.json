@@ -175,6 +175,72 @@
       "attribution_confidence": "high",
       "distribution_channel": "russia34.com",
       "fields": [
+        "Country",
+        "Graphics card",
+        "Installed RAM",
+        "IP",
+        "Keyboard Language",
+        "Log date",
+        "MachineID",
+        "New subscribers here",
+        "Operation System",
+        "Processor",
+        "ScreenSize",
+        "System Language",
+        "TimeZone",
+        "User Language",
+        "UserName"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "format_id": "cs-russia34-stealer",
+      "id": "v_c4c02161b64494053788c5a5008013fd",
+      "layout_id": "redline",
+      "markers": [],
+      "panel_brand": "russia34.com (Redline-typo body)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_c4c02161b64494053788c5a5008013fd/UserInformation.txt",
+        "sha256": "4bc4800f3fa259e48c55c8561f636cf41be4c200b49d4f1767b37279691d11d0",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "medium",
+      "distribution_channel": "russia34.com",
+      "fields": [
+        "country",
+        "date",
+        "domain",
+        "gpu",
+        "language",
+        "New subscribers here",
+        "os",
+        "path",
+        "version"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "format_id": "cs-russia34-stealer",
+      "id": "v_d71f4e9486d02f7bf5d6acaf84fda8c2",
+      "layout_id": "banner-only",
+      "markers": [],
+      "panel_brand": "russia34.com (Remus stripped)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_d71f4e9486d02f7bf5d6acaf84fda8c2/Info.txt",
+        "sha256": "29f5ca89e6da676d1013df46ca2a6b431460ef2f49f8b7add9af2bce1ba0cef0",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "russia34.com",
+      "fields": [
         "Admin Group",
         "Computer Name",
         "Country",

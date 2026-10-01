@@ -21,8 +21,8 @@ Mã độc đánh cắp thông tin dạng khối Category chưa xác định dan
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: -
-- Variants observed: **2**
-- CyStack observations represented: **376**
+- Variants observed: **3**
+- CyStack observations represented: **377**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -61,6 +61,24 @@ Recognition anchors:
 
 - Stable markers: `Category: User`
 - Field labels: `Country`, `IP`
+
+### `v_66482446f6520487f98c0f5e968d5699`
+
+- Format ID: `category-stealer`
+- Observed filenames: `Information.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **unknown**
+- Layout: `headerless-keyboards-localtime-gpu`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_66482446f6520487f98c0f5e968d5699/Information.txt)
+- Sample SHA-256: `36a461c9f0e12f00879aeee5cec741a42c913bdc42983b17b3a62273770fc5c2`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Country`, `CPU`, `GPU`, `HWID`, `IP`, `Keyboards`, `Language`, `Local Time`, `New subscribers here`, `OS`, `Path`, `RAM`, `Timezone`, `Username`
 
 ### `v_93495bf8f14283ee6d5b4a5905b5ece2`
 

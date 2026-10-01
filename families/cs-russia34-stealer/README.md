@@ -23,8 +23,8 @@ Bảng điều khiển tạo dữ liệu đầu ra là một banner ASCII-art `R
 - Classification / Phân loại: **Log aggregator / Nguồn tổng hợp log**
 - Attribution confidence: **unknown**
 - Aliases: `russia34`, `Private Russia 34`
-- Variants observed: **4**
-- CyStack observations represented: **4**
+- Variants observed: **6**
+- CyStack observations represented: **6**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -106,6 +106,42 @@ Recognition anchors:
 
 - Stable markers: `[Hardware]`, `[Processes]`, `[Software]`
 - Field labels: `Antivirus`, `Computer Name`, `Cores`, `Country`, `Date`, `Dirty Business`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Local Time`, `MachineID`, `MD5`, `Path`, `Processor`, `RAM`, `RISK`, `Telegram`, `Threads`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`, `Подбор паролей к большинству крипто кошельков`
+
+### `v_c4c02161b64494053788c5a5008013fd`
+
+- Format ID: `cs-russia34-stealer`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: `russia34.com (Redline-typo body)`
+- Distribution channel: `russia34.com`
+- Attribution confidence: **high**
+- Layout: `redline`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_c4c02161b64494053788c5a5008013fd/UserInformation.txt)
+- Sample SHA-256: `4bc4800f3fa259e48c55c8561f636cf41be4c200b49d4f1767b37279691d11d0`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Country`, `Graphics card`, `Installed RAM`, `IP`, `Keyboard Language`, `Log date`, `MachineID`, `New subscribers here`, `Operation System`, `Processor`, `ScreenSize`, `System Language`, `TimeZone`, `User Language`, `UserName`
+
+### `v_d71f4e9486d02f7bf5d6acaf84fda8c2`
+
+- Format ID: `cs-russia34-stealer`
+- Observed filenames: `Info.txt`
+- Panel brand: `russia34.com (Remus stripped)`
+- Distribution channel: `russia34.com`
+- Attribution confidence: **medium**
+- Layout: `banner-only`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_d71f4e9486d02f7bf5d6acaf84fda8c2/Info.txt)
+- Sample SHA-256: `29f5ca89e6da676d1013df46ca2a6b431460ef2f49f8b7add9af2bce1ba0cef0`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `country`, `date`, `domain`, `gpu`, `language`, `New subscribers here`, `os`, `path`, `version`
 
 ### `v_fed52a266d896fd69cf78baa704d14b4`
 

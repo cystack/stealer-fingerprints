@@ -31,56 +31,6 @@
   ],
   "related_families": [],
   "sources": [],
-  "variants": [
-    {
-      "id": "v_6207ef922a5d4ce9cdbf6bc9de7c25e9",
-      "format_id": "category-stealer",
-      "filenames": [
-        "Information.txt"
-      ],
-      "panel_brand": null,
-      "distribution_channel": null,
-      "attribution_confidence": "unknown",
-      "markers": [
-        "Category: User"
-      ],
-      "fields": [
-        "Country",
-        "IP"
-      ],
-      "observations": 1,
-      "sample": {
-        "path": "samples/v_6207ef922a5d4ce9cdbf6bc9de7c25e9/sample.txt",
-        "sha256": "f0205a7d51757b3c1fef49f00edac33c10336b44ff904dd5d9d86005d4ecc56e",
-        "source": "cystack_collection",
-        "sanitized": true
-      },
-      "layout_id": "user-ip-country"
-    },
-    {
-      "id": "v_93495bf8f14283ee6d5b4a5905b5ece2",
-      "format_id": "category-stealer",
-      "filenames": [
-        "Information.txt"
-      ],
-      "panel_brand": null,
-      "distribution_channel": null,
-      "attribution_confidence": "unknown",
-      "markers": [
-        "Category: System",
-        "Category: User"
-      ],
-      "fields": [],
-      "observations": 375,
-      "sample": {
-        "path": "samples/v_93495bf8f14283ee6d5b4a5905b5ece2/sample.txt",
-        "sha256": "be55a1214cddcab3f472fe2e30d202cf727db2b36b0a3c52ed2d530043238d81",
-        "source": "cystack_collection",
-        "sanitized": true
-      },
-      "layout_id": "user-system-sections"
-    }
-  ],
   "localizations": {
     "vi": {
       "description": "Mã độc đánh cắp thông tin dạng khối Category chưa xác định danh tính, quan sát được bên trong các gói tổng hợp `@BRADMAX 20000 APRIL-MAY` và `@bugatti_cloud`. `Information.txt` được chia thành ba phần `Category:`, mỗi phần được ngăn cách bởi một dòng phân cách gồm 60 dấu gạch ngang, với các bản ghi khóa/giá trị canh cột bên dưới mỗi phần. Việc quy kết họ mã độc là tạm thời, chờ có ánh xạ tình báo mối đe dọa đã công bố cho bố cục này.",
@@ -109,5 +59,90 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "id": "v_6207ef922a5d4ce9cdbf6bc9de7c25e9",
+      "format_id": "category-stealer",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "Category: User"
+      ],
+      "fields": [
+        "Country",
+        "IP"
+      ],
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_6207ef922a5d4ce9cdbf6bc9de7c25e9/sample.txt",
+        "sha256": "f0205a7d51757b3c1fef49f00edac33c10336b44ff904dd5d9d86005d4ecc56e",
+        "source": "cystack_collection",
+        "sanitized": true
+      },
+      "layout_id": "user-ip-country"
+    },
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": null,
+      "fields": [
+        "Country",
+        "CPU",
+        "GPU",
+        "HWID",
+        "IP",
+        "Keyboards",
+        "Language",
+        "Local Time",
+        "New subscribers here",
+        "OS",
+        "Path",
+        "RAM",
+        "Timezone",
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "category-stealer",
+      "id": "v_66482446f6520487f98c0f5e968d5699",
+      "layout_id": "headerless-keyboards-localtime-gpu",
+      "markers": [],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_66482446f6520487f98c0f5e968d5699/Information.txt",
+        "sha256": "36a461c9f0e12f00879aeee5cec741a42c913bdc42983b17b3a62273770fc5c2",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "id": "v_93495bf8f14283ee6d5b4a5905b5ece2",
+      "format_id": "category-stealer",
+      "filenames": [
+        "Information.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "unknown",
+      "markers": [
+        "Category: System",
+        "Category: User"
+      ],
+      "fields": [],
+      "observations": 375,
+      "sample": {
+        "path": "samples/v_93495bf8f14283ee6d5b4a5905b5ece2/sample.txt",
+        "sha256": "be55a1214cddcab3f472fe2e30d202cf727db2b36b0a3c52ed2d530043238d81",
+        "source": "cystack_collection",
+        "sanitized": true
+      },
+      "layout_id": "user-system-sections"
+    }
+  ]
 }

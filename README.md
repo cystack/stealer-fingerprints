@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **142** CyStack tracking names
 - **12** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **175** observed log variants and **175** samples
-- **8,052,929** CyStack observations represented by the retained sample set
+- **178** observed log variants and **178** samples
+- **8,052,932** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -102,7 +102,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
 | [BracketSection Stealer](families/bracket-section-stealer/) | unknown | 2 | [2 retained](families/bracket-section-stealer/#observed-log-variants) |
-| [Category Stealer](families/category-stealer/) | unknown | 2 | [2 retained](families/category-stealer/#observed-log-variants) |
+| [Category Stealer](families/category-stealer/) | unknown | 3 | [3 retained](families/category-stealer/#observed-log-variants) |
 | [CSAdminCoresStealer](families/cs-admin-cores-stealer/) | unknown | 1 | [1 retained](families/cs-admin-cores-stealer/#observed-log-variants) |
 | [CSAntiSandboxStealer](families/cs-anti-sandbox-stealer/) | unknown | 1 | [1 retained](families/cs-anti-sandbox-stealer/#observed-log-variants) |
 | [CSApplicationsDiscordStealer](families/cs-applications-discord-stealer/) | unknown | 0 | Metadata only |
@@ -269,7 +269,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSArtHouseCloudStealer](families/cs-art-house-cloud-stealer/) | unknown | 2 | [2 retained](families/cs-art-house-cloud-stealer/#observed-log-variants) |
 | [CSCashFlowStealer](families/cs-cash-flow-stealer/) | unknown | 0 | Metadata only |
 | [CSPixelCloudStealer](families/cs-pixel-cloud-stealer/) | unknown | 1 | [1 retained](families/cs-pixel-cloud-stealer/#observed-log-variants) |
-| [CSRussia34Stealer](families/cs-russia34-stealer/) | unknown | 4 | [4 retained](families/cs-russia34-stealer/#observed-log-variants) |
+| [CSRussia34Stealer](families/cs-russia34-stealer/) | unknown | 6 | [6 retained](families/cs-russia34-stealer/#observed-log-variants) |
 
 ## Naming and evidence
 
