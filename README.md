@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **142** CyStack tracking names
 - **12** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **178** observed log variants and **178** samples
-- **8,052,932** CyStack observations represented by the retained sample set
+- **179** observed log variants and **179** samples
+- **8,052,933** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -231,7 +231,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSTop20ProcStealer](families/cs-top20-proc-stealer/) | unknown | 0 | Metadata only |
 | [CSTxtFilesPartStealer](families/cs-txt-files-part-stealer/) | unknown | 1 | [1 retained](families/cs-txt-files-part-stealer/#observed-log-variants) |
 | [CSUrlUserPassFromStealer](families/cs-url-user-pass-from-stealer/) | unknown | 0 | Metadata only |
-| [CSUserInfoBracketStealer](families/cs-user-info-bracket-stealer/) | unknown | 5 | [5 retained](families/cs-user-info-bracket-stealer/#observed-log-variants) |
+| [CSUserInfoBracketStealer](families/cs-user-info-bracket-stealer/) | unknown | 6 | [6 retained](families/cs-user-info-bracket-stealer/#observed-log-variants) |
 | [CSUsersListStealer](families/cs-users-list-stealer/) | unknown | 1 | [1 retained](families/cs-users-list-stealer/#observed-log-variants) |
 | [CSWaterCloudInfoStealer](families/cs-water-cloud-info-stealer/) | unknown | 1 | [1 retained](families/cs-water-cloud-info-stealer/#observed-log-variants) |
 | [CSWifiBackslashNStealer](families/cs-wifi-backslash-n-stealer/) | unknown | 0 | Metadata only |

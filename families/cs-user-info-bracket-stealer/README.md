@@ -21,8 +21,8 @@ pack. These labels are retained only as per-variant panel brands.
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `Aetheris Stealer (observed self-label)`, `Banshee v1.4 (observed self-label)`, `PDRstealer (observed self-label)`, `User Info / Input ISO bracket template`
-- Variants observed: **5**
-- CyStack observations represented: **5,375**
+- Variants observed: **6**
+- CyStack observations represented: **5,376**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -124,6 +124,24 @@ Recognition anchors:
 
 - Stable markers: `[User Info]`, `PDRstealer`
 - Field labels: `Input ISO`
+
+### `v_fa7375620f6e39a045204f8ab2e68f8f`
+
+- Format ID: `cs-user-info-bracket-stealer`
+- Observed filenames: `Information.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **unknown**
+- Layout: `bare-hwid-cpu-name`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_fa7375620f6e39a045204f8ab2e68f8f/Information.txt)
+- Sample SHA-256: `be1e52646bd98c1e65c00946ee658a7f038b584329b0832cfa100e76a683e6e0`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `CPU Name`, `Hwid`, `New subscribers here`
 
 ### `v_fdb74de9cb4f98c742de98b53c54eb33`
 

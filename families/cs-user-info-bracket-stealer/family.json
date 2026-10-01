@@ -226,6 +226,30 @@
       "layout_id": "user-info-input-iso"
     },
     {
+      "attribution_confidence": "unknown",
+      "distribution_channel": null,
+      "fields": [
+        "CPU Name",
+        "Hwid",
+        "New subscribers here"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "cs-user-info-bracket-stealer",
+      "id": "v_fa7375620f6e39a045204f8ab2e68f8f",
+      "layout_id": "bare-hwid-cpu-name",
+      "markers": [],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_fa7375620f6e39a045204f8ab2e68f8f/Information.txt",
+        "sha256": "be1e52646bd98c1e65c00946ee658a7f038b584329b0832cfa100e76a683e6e0",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
       "id": "v_fdb74de9cb4f98c742de98b53c54eb33",
       "format_id": "cs-user-info-bracket-stealer",
       "filenames": [
