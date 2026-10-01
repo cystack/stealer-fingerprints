@@ -1,0 +1,28 @@
+<<SECRET>>
+<    Public Logs Channel   :   @Xavier_Log  .    >
+<    Public Ulp Channel    :   @Xavier_Ulp  .      >
+<<SECRET>>
+<          Admin : @Mr_Xavier_Logan       .             >
+<        https://t.me/Mr_Xavier_Logan       .           >
+
+IP : <IP>
+Country : UNK
+Date : 28/05/2026
+Time : 17:18:26
+
+MachineID : <HWID>
+GUID : <HWID>
+HWID : <HWID>
+Path : C:\Windows\SysWOW32\install.exe
+Work Dir : Admin @Mr_Xavier_Logan       .
+Windows : Windows 10 Pro 22H2 (Build 19045)
+Computer Name : <HOST>
+User Name : <USER>
+Display Resolution : 1536x864
+
+--- [ Hardware ] ---
+Processor : Intel(R) Core(TM) i5-4300M CPU @ 2.60GHz
+Cores : 4
+Threads : 4
+RAM : 8089 MB
+VideoCard : Intel(R) HD Graphics 4600

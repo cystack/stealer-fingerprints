@@ -85,6 +85,46 @@
   "variants": [
     {
       "attribution_confidence": "medium",
+      "distribution_channel": "@Xavier_Log",
+      "fields": [
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "IP",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "Time",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "System_Info.txt"
+      ],
+      "format_id": "cs-baba-cloud-stealer",
+      "id": "v_56cfadc3218992bb1a64736d12194fd6",
+      "markers": [
+        "@Xavier_Log"
+      ],
+      "panel_brand": "@Xavier_Log",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_56cfadc3218992bb1a64736d12194fd6/System_Info.txt",
+        "sha256": "54fee2ab1b5fec50ae8865a07d2dad61150df3ec244f988869e7fbf800c452f0",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "medium",
       "distribution_channel": "@Baba_Logs",
       "fields": [
         "Computer Name",
