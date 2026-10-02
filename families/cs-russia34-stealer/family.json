@@ -264,6 +264,35 @@
       }
     },
     {
+      "attribution_confidence": "medium",
+      "distribution_channel": "russia34.com",
+      "fields": [
+        "Country",
+        "Database Name",
+        "IP Address",
+        "New subscribers here",
+        "Project Name",
+        "Time",
+        "User",
+        "User Name"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "format_id": "cs-russia34-stealer",
+      "id": "v_9483fc4646db6f9e2ff10e821090b14f",
+      "layout_id": "sig-footer-stub",
+      "markers": [],
+      "panel_brand": "russia34.com (sig footer stub)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_9483fc4646db6f9e2ff10e821090b14f/Info.txt",
+        "sha256": "0b99b68cab86a8ed4617fb6f2769e6a222d98ec010588359694c88809246f4e3",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
       "attribution_confidence": "high",
       "distribution_channel": "russia34.com",
       "fields": [
