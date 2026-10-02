@@ -23,8 +23,8 @@ Bảng điều khiển tạo dữ liệu đầu ra là một banner ASCII-art `R
 - Classification / Phân loại: **Log aggregator / Nguồn tổng hợp log**
 - Attribution confidence: **unknown**
 - Aliases: `russia34`, `Private Russia 34`
-- Variants observed: **6**
-- CyStack observations represented: **6**
+- Variants observed: **7**
+- CyStack observations represented: **7**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -106,6 +106,24 @@ Recognition anchors:
 
 - Stable markers: `[Hardware]`, `[Processes]`, `[Software]`
 - Field labels: `Antivirus`, `Computer Name`, `Cores`, `Country`, `Date`, `Dirty Business`, `Display Resolution`, `GUID`, `HWID`, `IP`, `Local Time`, `MachineID`, `MD5`, `Path`, `Processor`, `RAM`, `RISK`, `Telegram`, `Threads`, `User Name`, `Version`, `VideoCard`, `Windows`, `Work Dir`, `Подбор паролей к большинству крипто кошельков`
+
+### `v_8315bee0df2a33746993c92954c96106`
+
+- Format ID: `cs-russia34-stealer`
+- Observed filenames: `Information.txt`
+- Panel brand: `russia34.com (XFiles body)`
+- Distribution channel: `russia34.com`
+- Attribution confidence: **high**
+- Layout: `xfiles-5-field`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_8315bee0df2a33746993c92954c96106/Information.txt)
+- Sample SHA-256: `a02157fa806d67eecb4c0516d3578dfb5d87ca498555b58e433170e124ac99f1`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `ChromiumBrowsers`, `Computer Name`, `Country`, `CPU (Processor`, `Desktop Screenshot Taken`, `EmailClients`, `FileGrabber`, `Ftp`, `Games`, `GeckoBrowsers`, `GPU (Display Devices`, `Hardware`, `Hardware ID`, `IP`, `Jabber`, `Messengers`, `New subscribers here`, `Operating System`, `Operation ID`, `Processed parts`, `RAM (Memory`, `RemoteAdminControl`, `Screens`, `Telegram`, `Total Time to process`, `Username`, `Vnc`, `Vpn`, `Wallets`
 
 ### `v_c4c02161b64494053788c5a5008013fd`
 
