@@ -313,6 +313,63 @@
         "source": "cystack_collection",
         "sanitized": true
       }
+    },
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "@ArhontCorp",
+      "fields": [
+        "anti-virus",
+        "build",
+        "computer-name",
+        "core count",
+        "core enabled",
+        "country",
+        "cpu",
+        "date",
+        "display",
+        "domain",
+        "elevated",
+        "gpu",
+        "hardware",
+        "hostname",
+        "install-date",
+        "ip-address",
+        "language",
+        "local-date",
+        "manufacturer",
+        "motherboard",
+        "name",
+        "netbios",
+        "os",
+        "path",
+        "product",
+        "ram",
+        "size",
+        "state",
+        "tag",
+        "thread count",
+        "time",
+        "time-zone",
+        "user-name",
+        "version"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "format_id": "remus",
+      "id": "v_c6088cdc871a87e2a660fd5e3154e580",
+      "layout_id": "yaml-build-root",
+      "markers": [
+        "hardware:"
+      ],
+      "panel_brand": "Bugatti Private Cloud",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_c6088cdc871a87e2a660fd5e3154e580/Info.txt",
+        "sha256": "e00a283a81f4870410fba3f34b51d6d21d49170935d65260da255c73b990cc76",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
     }
   ]
 }

@@ -1,0 +1,48 @@
+# Re-Uploads Private Logs and ULPs -- https://linktr.ee/ArhontCloud
+# Беру логи с балансом более 10000$
+# В распоряжении 150 5090
+Re-Uploads Private Logs and ULPs -- t.me/ArhontCorp
+Re-Uploads Private Logs and ULPs -- t.me/ArhontCorp
+
+build:
+  date: 21.05.2026
+  tag: 2a727a032c4d
+  path: <PATH>
+  elevated: false
+  ip-address: <IP>
+  country: BH
+  time: 22.05.2026, 15:51:18
+os:
+  version: Windows 10 Pro (10.0.19045) x64
+  time-zone: UTC+3
+  local-date: 22.05.2026 19:04:12
+  install-date: 17.07.2021 22:38:49
+  language: en-AS
+  computer-name: <HOST>
+  user-name: <USER>
+  netbios: <HOST>
+  domain: 
+  hostname: <HOST>
+  anti-virus:
+  - name: Windows Defender
+    state: active
+  - name: Avast Antivirus
+    state: active
+hardware:
+  motherboard:
+    manufacturer: Dell Inc.
+    product: OptiPlex 7010
+  cpu:
+  - manufacturer: Intel
+    product: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+    core count: 4
+    core enabled: 4
+    thread count: 8
+  ram:
+  - product: M378B5273CH0-CH9  
+    size: 4096MB
+  - product: M378B5273CH0-CH9  
+    size: 4096MB
+  gpu:
+  - AMD Radeon HD 7500 Series
+  display: 1920x1200

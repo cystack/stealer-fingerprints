@@ -1,0 +1,17 @@
+Thông tin hệ thống
+
+windows_build: 19045
+hostname: <HOST>
+ram_used_percent: 20
+processor: AMD Ryzen 5 5600G with Radeon Graphics
+public_ip: <IP>
+user_domain: <HOST>
+product_name: Windows 10 Pro
+install_date: 1777082882
+timezone: SE Asia Standard Time
+local_ip: <IP>
+system_language: 0409
+windows_version: 22H2
+screen_resolution: 1920x1080
+gpu_info: NVIDIA GeForce GTX 1060 6GB
+computer_name: <HOST>

@@ -19,8 +19,8 @@ PXA Stealer là một mã độc đánh cắp thông tin có nguồn gốc từ 
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `PXAStealer`
-- Variants observed: **2**
-- CyStack observations represented: **108,969**
+- Variants observed: **3**
+- CyStack observations represented: **108,970**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -45,6 +45,24 @@ with the snake_case key style (`computer_system`, `os`,
 Banner tiếng Việt `Thông tin hệ thống` là dấu hiệu rõ ràng, không gây nhầm lẫn. Kết hợp với kiểu khóa snake_case (`computer_system`, `os`, `processor`, `bios`) để xác nhận.
 
 ## Observed log variants
+
+### `v_d85d1bf0272669ecf57860515949370a`
+
+- Format ID: `pxa`
+- Observed filenames: `system_info.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `stripped-snake-case-tail`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_d85d1bf0272669ecf57860515949370a/system_info.txt)
+- Sample SHA-256: `230d166668044b04eb210a1b19ea20984e4d07e551cb957d46fe0e4bbba0e1a9`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `computer_name`, `gpu_info`, `hostname`, `install_date`, `local_ip`, `processor`, `product_name`, `public_ip`, `ram_used_percent`, `screen_resolution`, `system_language`, `timezone`, `user_domain`, `windows_build`, `windows_version`
 
 ### `v_fb40413b70aabfded7e83dc45324181f`
 

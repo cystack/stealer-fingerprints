@@ -22,8 +22,8 @@ Remus Stealer là mã độc đánh cắp thông tin 64-bit được cung cấp 
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Remus`
-- Variants observed: **5**
-- CyStack observations represented: **58**
+- Variants observed: **6**
+- CyStack observations represented: **59**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -140,6 +140,24 @@ Recognition anchors:
 
 - Stable markers: `Daisy Cloud`, `hardware:`
 - Field labels: `1 Week`, `2 Week`, `A 3 Month`, `A _______ Join`, `anti-virus`, `computer-name`, `core count`, `core enabled`, `country`, `cpu`, `D 1 Month`, `D Join`, `date`, `display`, `domain`, `elevated`, `gpu`, `hardware`, `hostname`, `I LifeTime`, `install-date`, `ip-address`, `language`, `local-date`, `manufacturer`, `motherboard`, `name`, `netbios`, `os`, `path`, `product`, `ram`, `size`, `state`, `tag`, `thread count`, `thread enabled`, `time`, `time-zone`, `user-name`, `version`
+
+### `v_c6088cdc871a87e2a660fd5e3154e580`
+
+- Format ID: `remus`
+- Observed filenames: `Info.txt`
+- Panel brand: `Bugatti Private Cloud`
+- Distribution channel: `@ArhontCorp`
+- Attribution confidence: **high**
+- Layout: `yaml-build-root`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_c6088cdc871a87e2a660fd5e3154e580/Info.txt)
+- Sample SHA-256: `e00a283a81f4870410fba3f34b51d6d21d49170935d65260da255c73b990cc76`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `hardware:`
+- Field labels: `anti-virus`, `build`, `computer-name`, `core count`, `core enabled`, `country`, `cpu`, `date`, `display`, `domain`, `elevated`, `gpu`, `hardware`, `hostname`, `install-date`, `ip-address`, `language`, `local-date`, `manufacturer`, `motherboard`, `name`, `netbios`, `os`, `path`, `product`, `ram`, `size`, `state`, `tag`, `thread count`, `time`, `time-zone`, `user-name`, `version`
 
 
 ## MITRE ATT&CK
