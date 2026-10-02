@@ -35,6 +35,48 @@
   },
   "variants": [
     {
+      "attribution_confidence": "medium",
+      "distribution_channel": "russia34.com",
+      "fields": [
+        "Antivirus",
+        "Build Date",
+        "Computer Name",
+        "Configuration",
+        "Country",
+        "Display Resolution",
+        "Elevated",
+        "Graphics Card",
+        "HWID",
+        "Installed RAM",
+        "IP Address",
+        "Netbios",
+        "New subscribers here",
+        "Path",
+        "Processor",
+        "Processor Cores",
+        "Processor Threads",
+        "Time",
+        "User",
+        "User Language",
+        "User Name"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "format_id": "cs-russia34-stealer",
+      "id": "v_0bc8a9aa5d28bf50837f905a86c946db",
+      "layout_id": "sig-info-body",
+      "markers": [],
+      "panel_brand": "russia34.com (sig-info body)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_0bc8a9aa5d28bf50837f905a86c946db/Info.txt",
+        "sha256": "76d0302bc2bc1f6eabc016ca55f6487aaf41bc5a6358453d1688c4d374f26904",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
       "attribution_confidence": "unknown",
       "distribution_channel": "russia34.com",
       "fields": [
@@ -283,6 +325,37 @@
       "sample": {
         "path": "samples/v_d71f4e9486d02f7bf5d6acaf84fda8c2/Info.txt",
         "sha256": "29f5ca89e6da676d1013df46ca2a6b431460ef2f49f8b7add9af2bce1ba0cef0",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "russia34.com",
+      "fields": [
+        "Country",
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Display resolution",
+        "Domain",
+        "GPU",
+        "HWID",
+        "New subscribers here"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "format_id": "cs-russia34-stealer",
+      "id": "v_ec50b2e15d4c11f782bda89d68944a09",
+      "layout_id": "lumma-dashless",
+      "markers": [],
+      "panel_brand": "russia34.com (Lumma dashless)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_ec50b2e15d4c11f782bda89d68944a09/System.txt",
+        "sha256": "f9e8d955ab0144a80bc1eb07e8da939d9565a0f44bd4bd91d497d0fbafefe262",
         "source": "cystack_collection",
         "sanitized": true
       }
