@@ -267,6 +267,37 @@
       "attribution_confidence": "high",
       "distribution_channel": "russia34.com",
       "fields": [
+        "Backup channel here",
+        "Country",
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "Display resolution",
+        "GPU",
+        "HWID",
+        "Language",
+        "New subscribers here"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "format_id": "cs-russia34-stealer",
+      "id": "v_ad17ea3cf371b8ad7bc3edfeced8843e",
+      "layout_id": "banner-only",
+      "markers": [],
+      "panel_brand": "russia34.com (Lumma dashless)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_ad17ea3cf371b8ad7bc3edfeced8843e/System.txt",
+        "sha256": "ce0c7399d5a46a19ff53839b932d716d01a7470bb519241a2abc335c911a7fc3",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "russia34.com",
+      "fields": [
         "Country",
         "Graphics card",
         "Installed RAM",
