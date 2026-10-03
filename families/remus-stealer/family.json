@@ -316,6 +316,63 @@
     },
     {
       "attribution_confidence": "high",
+      "distribution_channel": "@Primo_Cloud",
+      "fields": [
+        "anti-virus",
+        "build",
+        "computer-name",
+        "core count",
+        "core enabled",
+        "country",
+        "cpu",
+        "date",
+        "display",
+        "domain",
+        "elevated",
+        "gpu",
+        "hardware",
+        "hostname",
+        "install-date",
+        "ip-address",
+        "language",
+        "local-date",
+        "manufacturer",
+        "motherboard",
+        "name",
+        "netbios",
+        "os",
+        "path",
+        "product",
+        "ram",
+        "size",
+        "state",
+        "tag",
+        "thread count",
+        "time",
+        "time-zone",
+        "user-name",
+        "version"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "format_id": "remus",
+      "id": "v_b6d17ee268125519fad0ffa2c0a8be37",
+      "layout_id": "yaml-build-root",
+      "markers": [
+        "hardware:"
+      ],
+      "panel_brand": "Primo Cloud",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_b6d17ee268125519fad0ffa2c0a8be37/Info.txt",
+        "sha256": "23c46d65bc32a287242ab786b965af9eec8307ead316ef4685209bbcab4c6bb4",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "high",
       "distribution_channel": "@ArhontCorp",
       "fields": [
         "anti-virus",

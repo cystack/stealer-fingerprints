@@ -22,8 +22,8 @@ Remus Stealer là mã độc đánh cắp thông tin 64-bit được cung cấp 
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Remus`
-- Variants observed: **6**
-- CyStack observations represented: **59**
+- Variants observed: **7**
+- CyStack observations represented: **60**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -140,6 +140,24 @@ Recognition anchors:
 
 - Stable markers: `Daisy Cloud`, `hardware:`
 - Field labels: `1 Week`, `2 Week`, `A 3 Month`, `A _______ Join`, `anti-virus`, `computer-name`, `core count`, `core enabled`, `country`, `cpu`, `D 1 Month`, `D Join`, `date`, `display`, `domain`, `elevated`, `gpu`, `hardware`, `hostname`, `I LifeTime`, `install-date`, `ip-address`, `language`, `local-date`, `manufacturer`, `motherboard`, `name`, `netbios`, `os`, `path`, `product`, `ram`, `size`, `state`, `tag`, `thread count`, `thread enabled`, `time`, `time-zone`, `user-name`, `version`
+
+### `v_b6d17ee268125519fad0ffa2c0a8be37`
+
+- Format ID: `remus`
+- Observed filenames: `Info.txt`
+- Panel brand: `Primo Cloud`
+- Distribution channel: `@Primo_Cloud`
+- Attribution confidence: **high**
+- Layout: `yaml-build-root`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_b6d17ee268125519fad0ffa2c0a8be37/Info.txt)
+- Sample SHA-256: `23c46d65bc32a287242ab786b965af9eec8307ead316ef4685209bbcab4c6bb4`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `hardware:`
+- Field labels: `anti-virus`, `build`, `computer-name`, `core count`, `core enabled`, `country`, `cpu`, `date`, `display`, `domain`, `elevated`, `gpu`, `hardware`, `hostname`, `install-date`, `ip-address`, `language`, `local-date`, `manufacturer`, `motherboard`, `name`, `netbios`, `os`, `path`, `product`, `ram`, `size`, `state`, `tag`, `thread count`, `time`, `time-zone`, `user-name`, `version`
 
 ### `v_c6088cdc871a87e2a660fd5e3154e580`
 
