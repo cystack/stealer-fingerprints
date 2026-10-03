@@ -23,8 +23,8 @@ Bảng điều khiển tạo dữ liệu đầu ra là một banner ASCII-art `R
 - Classification / Phân loại: **Log aggregator / Nguồn tổng hợp log**
 - Attribution confidence: **unknown**
 - Aliases: `russia34`, `Private Russia 34`
-- Variants observed: **12**
-- CyStack observations represented: **12**
+- Variants observed: **13**
+- CyStack observations represented: **13**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -124,6 +124,24 @@ Recognition anchors:
 
 - Stable markers: -
 - Field labels: `Country`, `New subscribers here`, `Operating System`, `Username`
+
+### `v_7c6a5d9c312920462553ea25feab28b8`
+
+- Format ID: `cs-russia34-stealer`
+- Observed filenames: `Information.txt`
+- Panel brand: `russia34.com (Antarctida Stealer)`
+- Distribution channel: `russia34.com`
+- Attribution confidence: **unknown**
+- Layout: `banner-only`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_7c6a5d9c312920462553ea25feab28b8/Information.txt)
+- Sample SHA-256: `cd73e571d8244c640c079bd08d50fc6addfd676e7def41016614e57c35cf45a6`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `❄ Antarctida Stealer ❄`
+- Field labels: `Computer Name`, `CPU`, `Disk`, `GPU`, `IP`, `New subscribers here`, `OS`, `RAM`, `System Directory`, `Username`
 
 ### `v_7cc94e5029f876548e864f8aa345ef3b`
 

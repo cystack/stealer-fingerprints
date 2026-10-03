@@ -189,6 +189,39 @@
       }
     },
     {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "russia34.com",
+      "fields": [
+        "Computer Name",
+        "CPU",
+        "Disk",
+        "GPU",
+        "IP",
+        "New subscribers here",
+        "OS",
+        "RAM",
+        "System Directory",
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "cs-russia34-stealer",
+      "id": "v_7c6a5d9c312920462553ea25feab28b8",
+      "layout_id": "banner-only",
+      "markers": [
+        "❄ Antarctida Stealer ❄"
+      ],
+      "panel_brand": "russia34.com (Antarctida Stealer)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_7c6a5d9c312920462553ea25feab28b8/Information.txt",
+        "sha256": "cd73e571d8244c640c079bd08d50fc6addfd676e7def41016614e57c35cf45a6",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
       "attribution_confidence": "high",
       "distribution_channel": "russia34.com",
       "fields": [
