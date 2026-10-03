@@ -167,6 +167,31 @@
       "attribution_confidence": "high",
       "distribution_channel": "russia34.com",
       "fields": [
+        "Country",
+        "New subscribers here",
+        "Operating System",
+        "Username"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "format_id": "cs-russia34-stealer",
+      "id": "v_5ce175aa7a15d680f51a82dfb3aa855b",
+      "layout_id": "xfiles-4-field",
+      "markers": [],
+      "panel_brand": "russia34.com (XFiles body)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_5ce175aa7a15d680f51a82dfb3aa855b/System.txt",
+        "sha256": "3c298d98be60292a68ddf40eae07989af537a5ee35b53e4213c39f12b06d1131",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "russia34.com",
+      "fields": [
         "Antivirus",
         "Computer Name",
         "Cores",

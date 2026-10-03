@@ -23,8 +23,8 @@ Bảng điều khiển tạo dữ liệu đầu ra là một banner ASCII-art `R
 - Classification / Phân loại: **Log aggregator / Nguồn tổng hợp log**
 - Attribution confidence: **unknown**
 - Aliases: `russia34`, `Private Russia 34`
-- Variants observed: **11**
-- CyStack observations represented: **11**
+- Variants observed: **12**
+- CyStack observations represented: **12**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -106,6 +106,24 @@ Recognition anchors:
 
 - Stable markers: -
 - Field labels: `Architecture`, `Computer Name`, `Cores`, `Country`, `CPU`, `Device String`, `Display Resolution`, `GPU`, `HWID`, `IP`, `Keyboards`, `Language`, `Laptop`, `Local Time`, `New subscribers here`, `OS`, `Path`, `RAM`, `Resolution`, `Threads`, `UserName`, `UTC`
+
+### `v_5ce175aa7a15d680f51a82dfb3aa855b`
+
+- Format ID: `cs-russia34-stealer`
+- Observed filenames: `System.txt`
+- Panel brand: `russia34.com (XFiles body)`
+- Distribution channel: `russia34.com`
+- Attribution confidence: **high**
+- Layout: `xfiles-4-field`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_5ce175aa7a15d680f51a82dfb3aa855b/System.txt)
+- Sample SHA-256: `3c298d98be60292a68ddf40eae07989af537a5ee35b53e4213c39f12b06d1131`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Country`, `New subscribers here`, `Operating System`, `Username`
 
 ### `v_7cc94e5029f876548e864f8aa345ef3b`
 
