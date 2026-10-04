@@ -35,7 +35,8 @@ Mã độc đánh cắp thông tin này chạy dưới dạng tệp AppleScript 
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Odyssey`, `Poseidon Stealer (predecessor)`, `ClickFix AppleScript stealer`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -74,7 +75,23 @@ Trường boolean `Is CIS: true` / `Is CIS: false` là điểm neo nhận diện
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_f5f363f736236900931ff58e262d144d`
+
+- Format ID: `odyssey`
+- Observed filenames: `Information.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_f5f363f736236900931ff58e262d144d/Information.txt)
+- Sample SHA-256: `11ce693758d5af6c503a91f86aa74441ea910920a153ed1165cb9da60a8d6594`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `Hardware:`, `Software:`
+- Field labels: `Activation Lock Status`, `Apple M3`, `Boot Mode`, `Boot Volume`, `Build Tag`, `Bus`, `Chip`, `Chipset Model`, `Color LCD`, `Connection Type`, `Display Type`, `Displays`, `External IP`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `Hardware UUID`, `Hostname`, `Is CIS`, `Kernel Version`, `Memory`, `Metal Support`, `Mirror`, `Model Identifier`, `Model Name`, `Model Number`, `OS Loader Version`, `OS Version`, `Password`, `Provisioning UDID`, `Secure Virtual Memory`, `Serial Number (system`, `Software`, `System Firmware Version`, `System Integrity Protection`, `System Software Overview`, `System Version`, `Time since boot`, `Total Number of Cores`, `Type`, `User Name`, `Username`, `Vendor`
+
 
 ## MITRE ATT&CK
 

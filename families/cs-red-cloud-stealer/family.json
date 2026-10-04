@@ -1,0 +1,94 @@
+{
+  "aliases": [
+    "RED CLOUD"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "attribution_confidence": "unknown",
+  "classification": "cystack_named",
+  "description": "CSRedCloudStealer is a CyStack-coined identifier for a\nstripped seven-field dashed-prefix `information.txt` panel\nthat self-brands as `RED CLOUD` on its build-line and ships\ninside `PRIVATE RED LOGS <N> (TG @ArhontCorp).rar` reseller\narchives at `<CC>[<32-char-HWID>]/information.txt` victim\nfolders. The body preamble is a multi-line @ArhontCorp\nadvertising header (`Re-Uploads Private Logs and ULPs /// t.me/ArhontCorp`, `t.me/ArhontSupport`, `usrlnk.io/ ArhontCloud`), followed by seven dash-prefixed fields: a\n`- RED CLOUD Build:` panel self-identifier with a build\ndate, a `- Configuration:` operator attribution string\n(gem-emoji-wrapped `@ArhontCorp red..shop`), a `- Path:`\nstealer install location (with a tab-indented `- t.me/redcloud_link` channel-plug continuation), a\n`- Display resolution:` WxH token, a `- IP Address:` IPv4,\na `- Time:` DD-MM-YYYY HH:MM:SS log timestamp, and a\n`- Country:` ISO-2 code.\n\nThe field vocabulary matches Lumma-canonical dashed-prefix\nform (`- IP Address:`, `- Display resolution:`, `- Country:`\nall documented as Lumma output by MalBeacon, Outpost24\nLummaC2 analysis, and Cloudflare Cloudforce One playbook)\nbut every Lumma-specific anchor is absent: no `- HWID:`,\nno `- CPU Vendor:`, no `- Build Date:`, no\n`(sig:UNIX.HEX)` watermark on the timestamp line, and the\ntimestamp uses hyphen date separators (`29-08-2026`)\nrather than Lumma's canonical dot separators\n(`29.08.2026`).\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for the `RED CLOUD` brand. Two\nindependent search passes across curated CTI vendor\ncorpora and public stealer-format catalogues confirmed\n@ArhontCorp as a documented stealer-log Telegram reseller\n(32,745-record dump dated 2026-06-03 indexed by\nheroic.com darkhive breaches) but surfaced no attribution\nfor the `RED CLOUD` panel brand or the stripped\nseven-field dashed-prefix body shape. The body is too stripped\nto call Lumma / Redline / Vidar with confidence. Treat\nthe family attribution as unknown during triage.",
+  "detection_notes": "Fingerprint requires the 18-char line-anchored `- RED CLOUD Build:` literal. The substring is unique across the\nregistry; no other panel emits the `RED CLOUD` brand\nliteral paired with a dash-prefix `Build:` sub-key.\nLumma's dashed-variant fallback declines cleanly because\nthe required `- HWID:` + `- CPU Vendor:` + `- IP Address:`\n+ `- Display resolution:` four-anchor combo is incomplete\n(this body lacks `- HWID:` and `- CPU Vendor:` entirely).\nDuring triage, treat the family attribution as unknown:\nthe panel self-id does not map to a named stealer family\nin any surveyed curated or community threat-intel corpus.",
+  "id": "cs-red-cloud-stealer",
+  "name": "CSRedCloudStealer",
+  "related_families": [],
+  "sources": [],
+  "typical_targets": [
+    "Victim public IP plus ISO-2 country code",
+    "Panel install path on the victim host",
+    "Display resolution (WxH)",
+    "Panel build date (operator-set label)",
+    "Operator attribution via the Configuration field"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSRedCloudStealer là tên định danh do CyStack đặt cho một bảng điều khiển (panel) đã bị tối giản hóa với bảy trường có tiền tố gạch ngang, tự gán nhãn là `RED CLOUD` trên dòng build, và được phân phối trong các gói `information.txt` bên trong các bộ lưu trữ reseller `PRIVATE RED LOGS <N> (TG @ArhontCorp).rar` tại các thư mục nạn nhân `<CC>[<32-char-HWID>]/information.txt`. Phần mở đầu thân nội dung là một tiêu đề quảng cáo nhiều dòng @ArhontCorp (`Re-Uploads Private Logs and ULPs /// t.me/ArhontCorp`, `t.me/ArhontSupport`, `usrlnk.io/ ArhontCloud`), tiếp theo là bảy trường có tiền tố gạch ngang: một chuỗi tự định danh panel `- RED CLOUD Build:` kèm ngày build, một chuỗi quy kết đối tượng vận hành `- Configuration:` (được bao quanh bởi biểu tượng viên ngọc `@ArhontCorp red..shop`), một vị trí cài đặt mã độc đánh cắp thông tin `- Path:` (kèm dòng tiếp nối quảng bá kênh `- t.me/redcloud_link` được thụt lề bằng tab), một token độ phân giải WxH `- Display resolution:`, một địa chỉ IPv4 `- IP Address:`, một mốc thời gian log dạng DD-MM-YYYY HH:MM:SS `- Time:`, và một mã quốc gia ISO-2 `- Country:`.\n\nTập hợp trường khớp với định dạng tiền tố gạch ngang chuẩn của Lumma (`- IP Address:`, `- Display resolution:`, `- Country:` đều đã được MalBeacon, phân tích LummaC2 của Outpost24, và playbook Cloudforce One của Cloudflare ghi nhận là dữ liệu đầu ra của Lumma) nhưng mọi mốc đặc trưng riêng của Lumma đều vắng mặt: không có `- HWID:`, không có `- CPU Vendor:`, không có `- Build Date:`, không có watermark `(sig:UNIX.HEX)` trên dòng mốc thời gian, và mốc thời gian sử dụng dấu phân cách ngày dạng gạch ngang (`29-08-2026`) thay vì dấu phân cách chấm chuẩn của Lumma (`29.08.2026`).\n\nViệc quy kết họ mã độc vẫn mang tính tạm thời cho đến khi có bản đồ tình báo đe dọa đã công bố cho thương hiệu `RED CLOUD`. Hai lượt tìm kiếm độc lập trên các nguồn dữ liệu CTI đã được tuyển chọn từ các nhà cung cấp và các danh mục định dạng stealer công khai xác nhận @ArhontCorp là một đối tượng reseller stealer-log trên Telegram đã được ghi nhận (bộ dữ liệu rò rỉ 32.745 bản ghi ngày 2026-06-03 được heroic.com darkhive breaches lập chỉ mục) nhưng không tìm thấy thông tin quy kết cho thương hiệu panel `RED CLOUD` hay cấu trúc thân nội dung bảy trường tiền tố gạch ngang đã bị tối giản hóa. Thân nội dung quá tối giản để có thể gọi tên chắc chắn là Lumma / Redline / Vidar. Trong giai đoạn phân loại ban đầu, hãy coi việc quy kết họ mã độc là chưa xác định.",
+      "typical_targets": [
+        "Địa chỉ IP công khai của nạn nhân kèm mã quốc gia ISO-2",
+        "Đường dẫn cài đặt panel trên máy nạn nhân",
+        "Độ phân giải màn hình (WxH)",
+        "Ngày build của panel (nhãn do đối tượng vận hành tự đặt)",
+        "Quy kết đối tượng vận hành qua trường Configuration"
+      ],
+      "detection_notes": "Việc nhận diện đòi hỏi chuỗi literal 18 ký tự được gắn cố định theo dòng `- RED CLOUD Build:`. Chuỗi con này là duy nhất trong toàn bộ danh mục; không có panel nào khác tạo dữ liệu đầu ra với literal thương hiệu `RED CLOUD` kết hợp cùng khóa con tiền tố gạch ngang `Build:`. Cơ chế dự phòng dạng biến thể gạch ngang của Lumma bị loại trừ một cách rõ ràng vì tổ hợp bốn mốc bắt buộc `- HWID:` + `- CPU Vendor:` + `- IP Address:` + `- Display resolution:` không đầy đủ (thân nội dung này hoàn toàn thiếu `- HWID:` và `- CPU Vendor:`). Trong giai đoạn phân loại ban đầu, hãy coi việc quy kết họ mã độc là chưa xác định: chuỗi tự định danh của panel không khớp với bất kỳ họ mã độc đánh cắp thông tin nào có tên trong các nguồn tình báo đe dọa đã được tuyển chọn hoặc từ cộng đồng được khảo sát.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@ArhontCorp",
+      "fields": [
+        "Configuration",
+        "Country",
+        "Display resolution",
+        "IP Address",
+        "Path",
+        "RED CLOUD Build",
+        "Time",
+        "❗️Actual Link",
+        "💎Buy"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "format_id": "cs-red-cloud-stealer",
+      "id": "v_6ce8bc1fd0ec6591279206426672c50b",
+      "markers": [
+        "RED CLOUD"
+      ],
+      "panel_brand": "RED CLOUD",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_6ce8bc1fd0ec6591279206426672c50b/UserInformation.txt",
+        "sha256": "ea96f21cde4a85a9174670754692900dad66ea6eff63295cdfe258561f0cc7bc",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}

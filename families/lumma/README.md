@@ -20,8 +20,8 @@ Nhật ký Lumma C2 (LummaC2). Panel ghi `System.txt` với danh sách kiểu YA
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `LummaC2`, `Lumma Stealer`
-- Variants observed: **7**
-- CyStack observations represented: **776,375**
+- Variants observed: **8**
+- CyStack observations represented: **776,376**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -84,6 +84,24 @@ Recognition anchors:
 
 - Stable markers: `- @BRADLOGS`, `- Date : Build:`, `BRADMAX`
 - Field labels: -
+
+### `v_3c4495c793b5f74ff6605d2381136858`
+
+- Format ID: `lumma`
+- Observed filenames: `information.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `dash-install-elevated-netbios-hostname`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_3c4495c793b5f74ff6605d2381136858/information.txt)
+- Sample SHA-256: `ca4cd47ffdbfe1d7327b5832f914d390bf16fd6676809f0836994da87f4aa157`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Anti Virus`, `Computer`, `Configuration`, `Country`, `Display resolution`, `Domain`, `Elevated`, `Hostname`, `HWID`, `Install Date`, `IP Address`, `Language`, `Local Date`, `NetBIOS`, `OS Version`, `Path`, `RED CLOUD Build`, `Time`, `Time Zone`, `User`, `❗️Actual Link`, `💎Buy`
 
 ### `v_41473f829c21e719f7d2c773a67ed897`
 

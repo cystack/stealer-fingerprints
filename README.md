@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **204** research profiles
+- **205** research profiles
 - **42** known malware families
 - **3** observed self-labels without independent family attribution
-- **142** CyStack tracking names
+- **143** CyStack tracking names
 - **12** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **191** observed log variants and **191** samples
-- **8,052,945** CyStack observations represented by the retained sample set
+- **194** observed log variants and **194** samples
+- **8,052,948** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -58,7 +58,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Cthulhu Stealer](families/cthulhu-stealer/) | high | 1 | [1 retained](families/cthulhu-stealer/#observed-log-variants) |
 | [DCRat](families/dc-rat/) | high | 1 | [1 retained](families/dc-rat/#observed-log-variants) |
 | [Erbium](families/erbium/) | high | 0 | Metadata only |
-| [Lumma](families/lumma/) | high | 7 | [7 retained](families/lumma/#observed-log-variants) |
+| [Lumma](families/lumma/) | high | 8 | [8 retained](families/lumma/#observed-log-variants) |
 | [MacSync](families/mac-sync/) | high | 1 | [1 retained](families/mac-sync/#observed-log-variants) |
 | [Mars Stealer](families/mars-stealer/) | medium | 1 | [1 retained](families/mars-stealer/#observed-log-variants) |
 | [Meduza](families/meduza/) | high | 1 | [1 retained](families/meduza/#observed-log-variants) |
@@ -66,7 +66,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [MetaStealer](families/meta-stealer/) | high | 0 | Metadata only |
 | [Misericorde Stealer](families/misericorde-stealer/) | low | 1 | [1 retained](families/misericorde-stealer/#observed-log-variants) |
 | [Nexus](families/nexus/) | medium | 0 | Metadata only |
-| [Odyssey Stealer](families/odyssey-stealer/) | high | 0 | Metadata only |
+| [Odyssey Stealer](families/odyssey-stealer/) | high | 1 | [1 retained](families/odyssey-stealer/#observed-log-variants) |
 | [Phantom Stealer](families/phantom-stealer/) | high | 3 | [3 retained](families/phantom-stealer/#observed-log-variants) |
 | [Phemedrone](families/phemedrone/) | high | 1 | [1 retained](families/phemedrone/#observed-log-variants) |
 | [Phexia](families/phexia/) | high | 1 | [1 retained](families/phexia/#observed-log-variants) |
@@ -97,7 +97,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Rivas Stealer](families/rivas-stealer/) | unknown | 1 | [1 retained](families/rivas-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (142)
+### CyStack tracking names (143)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -211,6 +211,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSPlutusStealer](families/cs-plutus-stealer/) | unknown | 0 | Metadata only |
 | [CSProcessElevationStealer](families/cs-process-elevation-stealer/) | medium | 0 | Metadata only |
 | [CSPyHostTimeStealer](families/cs-py-host-time-stealer/) | unknown | 0 | Metadata only |
+| [CSRedCloudStealer](families/cs-red-cloud-stealer/) | unknown | 1 | [1 retained](families/cs-red-cloud-stealer/#observed-log-variants) |
 | [CSRFDStealer](families/csrfd-stealer/) | unknown | 0 | Metadata only |
 | [CSRoyCloudInfoStealer](families/cs-roy-cloud-info-stealer/) | unknown | 1 | [1 retained](families/cs-roy-cloud-info-stealer/#observed-log-variants) |
 | [CSSigInfoStealer](families/cs-sig-info-stealer/) | low | 3 | [3 retained](families/cs-sig-info-stealer/#observed-log-variants) |

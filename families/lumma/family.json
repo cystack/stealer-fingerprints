@@ -168,6 +168,49 @@
       }
     },
     {
+      "attribution_confidence": "high",
+      "distribution_channel": null,
+      "fields": [
+        "Anti Virus",
+        "Computer",
+        "Configuration",
+        "Country",
+        "Display resolution",
+        "Domain",
+        "Elevated",
+        "Hostname",
+        "HWID",
+        "Install Date",
+        "IP Address",
+        "Language",
+        "Local Date",
+        "NetBIOS",
+        "OS Version",
+        "Path",
+        "RED CLOUD Build",
+        "Time",
+        "Time Zone",
+        "User",
+        "❗️Actual Link",
+        "💎Buy"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "format_id": "lumma",
+      "id": "v_3c4495c793b5f74ff6605d2381136858",
+      "layout_id": "dash-install-elevated-netbios-hostname",
+      "markers": [],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_3c4495c793b5f74ff6605d2381136858/information.txt",
+        "sha256": "ca4cd47ffdbfe1d7327b5832f914d390bf16fd6676809f0836994da87f4aa157",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
       "id": "v_41473f829c21e719f7d2c773a67ed897",
       "format_id": "cs-brad-logs-stealer",
       "filenames": [

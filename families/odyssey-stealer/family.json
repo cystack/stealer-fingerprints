@@ -67,7 +67,6 @@
   "related_external": [
     "poseidon-stealer"
   ],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "Odyssey Stealer là một mã độc đánh cắp thông tin trên macOS được bán dưới hình thức phần mềm độc hại dưới dạng dịch vụ (malware-as-a-service) bởi một đối tượng vận hành nói tiếng Nga. Các báo cáo công khai ghi nhận đây là bản đổi thương hiệu của Poseidon Stealer, vốn được phân nhánh từ mã nguồn của AMOS Stealer. Nghiên cứu công khai đã ghi lại chuỗi phát tán ClickFix vào tháng 4 năm 2026, và một bài viết tiếp theo về quá trình tiến hóa đã đề cập đến các kỹ thuật gây rối mã (obfuscation) và ký mã mới. Một bài viết riêng biệt khác đề cập đến cùng chiến dịch này từ góc độ phát tán.\n\nMã độc đánh cắp thông tin này chạy dưới dạng tệp AppleScript đã biên dịch (.scpt) được khởi chạy thông qua osascript. Tệp thông tin của nó mở đầu bằng `External IP: <ipv4>`, sau đó là tiêu đề thuần `System Info`, tiếp theo là các trường boolean `Username:` / `Password:` / `Hostname:` / `OS Version:` / `Is CIS:`, sau đó là dữ liệu đầu ra nguyên văn `system_profiler SPSoftwareDataType` / `SPHardwareDataType` / `SPDisplaysDataType`. Cờ `Is CIS:` được thiết lập bằng cách kiểm tra `~/Library/Preferences/com.apple.HIToolbox.plist` để tìm bố cục bàn phím Nga; tín hiệu beacon báo cáo cờ này để đối tượng vận hành có thể lọc hoặc loại bỏ nạn nhân thuộc khối CIS theo từng chiến dịch. Mật khẩu thu thập được được lấy thông qua một hộp thoại xác thực giả được hiển thị qua osascript.",
@@ -115,5 +114,73 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": null,
+      "fields": [
+        "Activation Lock Status",
+        "Apple M3",
+        "Boot Mode",
+        "Boot Volume",
+        "Build Tag",
+        "Bus",
+        "Chip",
+        "Chipset Model",
+        "Color LCD",
+        "Connection Type",
+        "Display Type",
+        "Displays",
+        "External IP",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "Hardware UUID",
+        "Hostname",
+        "Is CIS",
+        "Kernel Version",
+        "Memory",
+        "Metal Support",
+        "Mirror",
+        "Model Identifier",
+        "Model Name",
+        "Model Number",
+        "OS Loader Version",
+        "OS Version",
+        "Password",
+        "Provisioning UDID",
+        "Secure Virtual Memory",
+        "Serial Number (system",
+        "Software",
+        "System Firmware Version",
+        "System Integrity Protection",
+        "System Software Overview",
+        "System Version",
+        "Time since boot",
+        "Total Number of Cores",
+        "Type",
+        "User Name",
+        "Username",
+        "Vendor"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "odyssey",
+      "id": "v_f5f363f736236900931ff58e262d144d",
+      "markers": [
+        "Hardware:",
+        "Software:"
+      ],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_f5f363f736236900931ff58e262d144d/Information.txt",
+        "sha256": "11ce693758d5af6c503a91f86aa74441ea910920a153ed1165cb9da60a8d6594",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }
