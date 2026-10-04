@@ -21,8 +21,8 @@ Mã độc đánh cắp thông tin dạng khối Category chưa xác định dan
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: -
-- Variants observed: **3**
-- CyStack observations represented: **377**
+- Variants observed: **4**
+- CyStack observations represented: **378**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -79,6 +79,24 @@ Recognition anchors:
 
 - Stable markers: -
 - Field labels: `Country`, `CPU`, `GPU`, `HWID`, `IP`, `Keyboards`, `Language`, `Local Time`, `New subscribers here`, `OS`, `Path`, `RAM`, `Timezone`, `Username`
+
+### `v_78f31b549be3a6360569a8981031a61e`
+
+- Format ID: `category-stealer`
+- Observed filenames: `Information.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **unknown**
+- Layout: `flattened-system-hardware`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_78f31b549be3a6360569a8981031a61e/Information.txt)
+- Sample SHA-256: `9fc42ee914631e2a3af1f0d09db9b9673fbd14348f42c88a757ce11bb1603b3d`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `BuildID`, `Category`, `Computer`, `Cores/Threads`, `Country`, `CPU`, `Displays`, `GPU`, `HWID`, `IP`, `Keyboards`, `Language`, `LocalTime`, `OS`, `Path`, `RAM`, `System`, `Timezone`, `Username`, `UTCTime`
 
 ### `v_93495bf8f14283ee6d5b4a5905b5ece2`
 

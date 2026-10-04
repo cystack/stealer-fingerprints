@@ -122,6 +122,47 @@
       }
     },
     {
+      "attribution_confidence": "unknown",
+      "distribution_channel": null,
+      "fields": [
+        "BuildID",
+        "Category",
+        "Computer",
+        "Cores/Threads",
+        "Country",
+        "CPU",
+        "Displays",
+        "GPU",
+        "HWID",
+        "IP",
+        "Keyboards",
+        "Language",
+        "LocalTime",
+        "OS",
+        "Path",
+        "RAM",
+        "System",
+        "Timezone",
+        "Username",
+        "UTCTime"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "category-stealer",
+      "id": "v_78f31b549be3a6360569a8981031a61e",
+      "layout_id": "flattened-system-hardware",
+      "markers": [],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_78f31b549be3a6360569a8981031a61e/Information.txt",
+        "sha256": "9fc42ee914631e2a3af1f0d09db9b9673fbd14348f42c88a757ce11bb1603b3d",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
       "id": "v_93495bf8f14283ee6d5b4a5905b5ece2",
       "format_id": "category-stealer",
       "filenames": [

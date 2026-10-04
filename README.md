@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **142** CyStack tracking names
 - **12** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **190** observed log variants and **190** samples
-- **8,052,944** CyStack observations represented by the retained sample set
+- **191** observed log variants and **191** samples
+- **8,052,945** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -102,7 +102,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
 | [BracketSection Stealer](families/bracket-section-stealer/) | unknown | 2 | [2 retained](families/bracket-section-stealer/#observed-log-variants) |
-| [Category Stealer](families/category-stealer/) | unknown | 3 | [3 retained](families/category-stealer/#observed-log-variants) |
+| [Category Stealer](families/category-stealer/) | unknown | 4 | [4 retained](families/category-stealer/#observed-log-variants) |
 | [CSAdminCoresStealer](families/cs-admin-cores-stealer/) | unknown | 1 | [1 retained](families/cs-admin-cores-stealer/#observed-log-variants) |
 | [CSAntiSandboxStealer](families/cs-anti-sandbox-stealer/) | unknown | 1 | [1 retained](families/cs-anti-sandbox-stealer/#observed-log-variants) |
 | [CSApplicationsDiscordStealer](families/cs-applications-discord-stealer/) | unknown | 0 | Metadata only |
