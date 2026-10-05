@@ -251,6 +251,52 @@
     },
     {
       "attribution_confidence": "high",
+      "distribution_channel": null,
+      "fields": [
+        "anti-virus",
+        "build",
+        "computer-name",
+        "country",
+        "date",
+        "display",
+        "domain",
+        "elevated",
+        "gpu",
+        "hardware",
+        "hostname",
+        "install-date",
+        "ip-address",
+        "language",
+        "local-date",
+        "netbios",
+        "os",
+        "path",
+        "tag",
+        "time",
+        "time-zone",
+        "user-name",
+        "version"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "format_id": "remus",
+      "id": "v_67d68784c0cbf7823a6c55971057c913",
+      "layout_id": "yaml-build-root",
+      "markers": [
+        "hardware:"
+      ],
+      "panel_brand": "AUGUST 21 - 56076 LOGS2 zero-indent",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_67d68784c0cbf7823a6c55971057c913/Info.txt",
+        "sha256": "af9b1e3c960e80c03cf99e0e0f36bee063c5f257bd44d9ee13a3b87e622c7331",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "high",
       "distribution_channel": "@UP_DAISYCLOUD",
       "fields": [
         "1 Week",
