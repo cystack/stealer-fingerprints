@@ -132,6 +132,35 @@
       "layout_id": "workdir-video-card"
     },
     {
+      "attribution_confidence": "high",
+      "distribution_channel": null,
+      "fields": [
+        "Cores",
+        "New subscribers here",
+        "Processor",
+        "RAM",
+        "Threads",
+        "VideoCard"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "format_id": "vidar",
+      "id": "v_4b60006d07a7c00e41b698a7f6d1b82f",
+      "layout_id": "video-card-software",
+      "markers": [
+        "[Software]"
+      ],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_4b60006d07a7c00e41b698a7f6d1b82f/information.txt",
+        "sha256": "a0baf9431baa77879d6256ae45d903c180f05ec209cc45d0948a47bc85ea3230",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
       "id": "v_5825071c685a7739b705bb3b6c62eb4f",
       "format_id": "vidar",
       "filenames": [
