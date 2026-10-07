@@ -1,0 +1,72 @@
+{
+  "aliases": [
+    "@ArhontCorp Information.txt hardware preamble",
+    "Bugatti Private Cloud 3-field hardware sibling",
+    "CryptogoL (TG @ArhontCorp) capital-I Information.txt layout"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "attribution_confidence": "unknown",
+  "classification": "cystack_named",
+  "description": "CSArhontHardwarePreambleStealer is a CyStack-coined\nidentifier for a stripped 3-field hardware preamble observed\ninside `CryptogoL #<N> (TG @ArhontCorp).rar` aggregator packs\nat `<CC>_<Prefix>_<DD.MM.YYYY> (TG @ArhontCorp)/ Information.txt` (capital-I filename) victim folder paths.\nThe pack ships three per-victim files, each with a different\nstripped-content shape: an `Info.txt` containing a canonical\nRemus Stealer YAML body (handled under the Remus profile with\nthe Bugatti Private Cloud panel-brand overlay), a lowercase\n`information.txt` carrying a 6-field identity preamble\n(handled under the CSArhontIdentityStealer profile), and this\ncapital-I `Information.txt` carrying only three hardware\nfields.\n\nBody fields: `CPU` (space-padded colon convention, 1-space\nleading indent), `RAM` (same convention), `GPU` (same\nconvention). No system info, no network info, no\ncredentials. The @ArhontCorp Telegram channel is attested\nas a Russian-speaking log-aggregator and reseller brand\n(HEROIC darkhive-breaches catalogue: `Private Russia 34 TG ArhontCorp`, `KATANA CLOUD PRIVATE TG ArhontCorp`,\n`Slurm Private TG ArhontCorp`, `FateTraffic TG ArhontCloud`). No published source attributes the\nstripped-hardware preamble shape to a specific builder.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping. During triage, treat this label as a\n\"victim hardware preamble preserved under @ArhontCorp\nredistribution\" marker: the CPU / RAM / GPU values still\ntravel through the IOC and are usable for cross-sample\npivoting even without an underlying family attribution. The\ncompanion `Info.txt` carries the Remus YAML body with full\nsystem / identity / anti-virus enumeration; the companion\n`information.txt` carries the 6-field identity preamble\n(MachineID / GUID / HWID triple).",
+  "detection_notes": "Fingerprint requires the `t.me/ArhontCorp` channel\nsubstring plus the three hardware keys line-anchored with\nthe panel's exact space-padded colon convention: `CPU :`\n+ `RAM :` + `GPU :` (1-space leading indent, 1-space\nbefore and after the colon). The space-padded colon shape\nis the panel-distinguishing serialisation; every other\nregistered parser that captures hardware fields uses\neither tight `CPU:` or dash-prefixed `- CPU:` without the\nspace before the colon.",
+  "id": "cs-arhont-hardware-preamble-stealer",
+  "name": "CSArhontHardwarePreambleStealer",
+  "related_families": [
+    "remus-stealer",
+    "cs-arhont-identity-stealer"
+  ],
+  "sources": [
+    "https://heroic.com/darkhive-breaches/katana-cloud-private-tg-arhontcorp-uploaded-by-a-telegram-user/",
+    "https://www.sekoia.io/blog/overview-of-the-russian-speaking-infostealer-ecosystem-the-logs/"
+  ],
+  "typical_targets": [
+    "Victim hardware preamble (CPU model, RAM capacity, GPU model)"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSArhontHardwarePreambleStealer là một định danh do CyStack đặt cho một phần mở đầu phần cứng (hardware preamble) đã bị cắt giảm chỉ còn 3 trường, được quan sát bên trong các gói tổng hợp (aggregator pack) `CryptogoL #<N> (TG @ArhontCorp).rar` tại các đường dẫn thư mục nạn nhân `<CC>_<Prefix>_<DD.MM.YYYY> (TG @ArhontCorp)/ Information.txt` (tên tệp chữ I hoa).\n\nGói này chứa ba tệp theo từng nạn nhân, mỗi tệp có cấu trúc dữ liệu nội dung bị cắt giảm khác nhau: một `Info.txt` chứa phần thân YAML chuẩn của Remus Stealer (được xử lý theo hồ sơ Remus với lớp phủ thương hiệu panel Bugatti Private Cloud), một `information.txt` chữ thường mang phần mở đầu định danh gồm 6 trường (được xử lý theo hồ sơ CSArhontIdentityStealer), và tệp `Information.txt` chữ I hoa này chỉ mang ba trường phần cứng.\n\nCác trường trong phần thân: `CPU` (quy ước dấu hai chấm có khoảng trắng đệm, thụt đầu dòng 1 khoảng trắng), `RAM` (cùng quy ước), `GPU` (cùng quy ước). Không có thông tin hệ thống, không có thông tin mạng, không có thông tin xác thực. Kênh Telegram @ArhontCorp được xác nhận là một thương hiệu tổng hợp log (log-aggregator) và bán lại nói tiếng Nga (danh mục darkhive-breaches của HEROIC: `Private Russia 34 TG ArhontCorp`, `KATANA CLOUD PRIVATE TG ArhontCorp`, `Slurm Private TG ArhontCorp`, `FateTraffic TG ArhontCloud`). Không có nguồn công bố nào quy kết cấu trúc dữ liệu phần mở đầu phần cứng bị cắt giảm này cho một bộ công cụ builder cụ thể.\n\nViệc quy kết họ mã độc là tạm thời, chờ một ánh xạ tình báo mối đe dọa đã được công bố. Trong quá trình phân loại ban đầu (triage), hãy coi nhãn này là dấu hiệu \"phần mở đầu phần cứng của nạn nhân được giữ lại dưới hình thức phân phối lại @ArhontCorp\": các giá trị CPU / RAM / GPU vẫn được truyền qua IOC và có thể dùng để đối chiếu xoay trục (pivoting) giữa các mẫu ngay cả khi không có quy kết họ mã độc nền tảng. Tệp `Info.txt` liên quan mang phần thân YAML của Remus với liệt kê đầy đủ về hệ thống / định danh / phần mềm diệt virus; tệp `information.txt` liên quan mang phần mở đầu định danh gồm 6 trường (bộ ba MachineID / GUID / HWID).",
+      "typical_targets": [
+        "Phần mở đầu phần cứng của nạn nhân (model CPU, dung lượng RAM, model GPU)"
+      ],
+      "detection_notes": "Việc nhận diện dấu hiệu đòi hỏi chuỗi con của kênh `t.me/ArhontCorp` cùng với ba khóa phần cứng được neo theo dòng với đúng quy ước dấu hai chấm có khoảng trắng đệm của panel: `CPU :` + `RAM :` + `GPU :` (thụt đầu dòng 1 khoảng trắng, 1 khoảng trắng trước và sau dấu hai chấm). Cấu trúc dữ liệu dấu hai chấm có khoảng trắng đệm này là cách tuần tự hóa (serialisation) giúp phân biệt panel: mọi bộ phân tích (parser) khác đã được đăng ký mà có thu thập các trường phần cứng đều sử dụng hoặc dạng sát `CPU:` hoặc dạng có gạch ngang ở đầu `- CPU:` mà không có khoảng trắng trước dấu hai chấm.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@ArhontCorp",
+      "fields": [
+        "CPU",
+        "GPU",
+        "RAM",
+        "❗️Actual Link",
+        "💎Buy"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "cs-arhont-hardware-preamble-stealer",
+      "id": "v_111837e734cd8db51e82cf8e23c976a8",
+      "markers": [],
+      "panel_brand": "Bugatti Private Cloud (hardware preamble)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_111837e734cd8db51e82cf8e23c976a8/Information.txt",
+        "sha256": "b18a5f990acd0e8e80a2ef3f407543a0632877e29a95b9f42806f0432941defb",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}
