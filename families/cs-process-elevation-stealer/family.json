@@ -44,7 +44,6 @@
     "cs-russia34-stealer"
   ],
   "sources": [],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "CSProcessElevationStealer là định danh do CyStack đặt cho một mã độc đánh cắp thông tin có cấu trúc dữ liệu kiểu Redline `System.txt` được phát hiện bên trong các gói tổng hợp `@ft7links-lumma` trong các thư mục nạn nhân `@ft7links_lumma_<NN>_bogonip_<HWIDPFX>/`. Nội dung mang lỗi chính tả điển hình của Redline `Operation System:` (nguyên văn) và khối `Hardwares:`, nhưng bổ sung dòng `Process Elevation: True|False` mà Redline nguyên bản không bao giờ tạo dữ liệu đầu ra, ghép `ScreenSize:` và `TimeZone:` trên cùng một dòng với khoảng trắng quanh `=` (Redline nguyên bản tạo dữ liệu đầu ra không có khoảng trắng và tách chúng thành các dòng riêng biệt), đồng thời loại bỏ hoàn toàn phần mở đầu định danh của Redline (`Build ID:`, `IP:`, `FileLocation:`, `MachineName:`, `Location:`, `Log date:`) đối với các nạn nhân có IP bogon.\n\nMột danh mục định dạng mã độc đánh cắp thông tin do cộng đồng biên soạn ánh xạ chính xác cấu trúc trường dữ liệu này tới ArechClient2 / SectopRAT, và một bài phân tích mã độc độc lập xác nhận rằng bộ thu thập của ArechClient2 tạo dữ liệu đầu ra với tập trường tương ứng (`OSVersion`, `ScreenSize`, `TimeZone`, `AvailableLanguages`, `SystemHardwares`). Họ mã độc ArechClient2 / SectopRAT nguyên bản đã được ghi nhận công khai đầy đủ, nhưng không bài viết nào trong số đó công bố mẫu log cho thấy đúng tập nhãn nêu trên, do đó việc ánh xạ định dạng sang họ mã độc vẫn còn mang tính tạm thời và tiền tố `CS` được giữ nguyên cho đến khi có xác nhận được công bố.",
@@ -78,5 +77,43 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "medium",
+      "distribution_channel": "@ft7links",
+      "fields": [
+        "Anti-Viruses",
+        "Country",
+        "Current Language",
+        "HWID",
+        "IP",
+        "Location",
+        "Log date",
+        "Operation System",
+        "Process Elevation",
+        "ScreenSize",
+        "TimeZone",
+        "UAC",
+        "UserName",
+        "Zip Code",
+        "❗️Actual Link",
+        "💎Buy"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "format_id": "cs-process-elevation-stealer",
+      "id": "v_72e22daf67a463dd9618a8b46d2aacf6",
+      "markers": [],
+      "panel_brand": "Process Elevation: True/False",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_72e22daf67a463dd9618a8b46d2aacf6/UserInformation.txt",
+        "sha256": "da08c5b502c57cc8b17a64a54d11b195684fc1318ce6483e8f7f85a29393574e",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

@@ -19,8 +19,8 @@ Các log Redline Stealer chuẩn. Các tệp UserInformation.txt tạo dữ li�
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `RedLine`, `RedLineStealer`
-- Variants observed: **2**
-- CyStack observations represented: **31,304**
+- Variants observed: **3**
+- CyStack observations represented: **31,305**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -81,6 +81,24 @@ Recognition anchors:
 
 - Stable markers: `*  \|_\| \_\|_____\|____/\|_____\|___\|_\| \_\|_____\|  *`
 - Field labels: `Build ID`
+
+### `v_cbfa8a799da0f286c5a47e96c0d5329e`
+
+- Format ID: `redline`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `operation-system-total-ram`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_cbfa8a799da0f286c5a47e96c0d5329e/UserInformation.txt)
+- Sample SHA-256: `d209742734bafdfdc5de03ed664fc1033f6fc6b228f85915a92f2c05e0d0f980`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Anti-Viruses`, `Available KeyboardLayouts`, `Country`, `Current Language`, `Hardwares`, `HWID`, `IP`, `Location`, `Log date`, `Name`, `Operation System`, `Process Elevation`, `ScreenSize`, `TimeZone`, `UAC`, `UserName`, `Zip Code`, `❗️Actual Link`, `💎Buy`
 
 
 ## MITRE ATT&CK

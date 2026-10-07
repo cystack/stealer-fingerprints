@@ -1,0 +1,41 @@
+Re-Uploads Private Logs and ULPs /// t.me/ArhontCorp
+
+t.me/ArhontCorp
+t.me/ArhontCorp
+t.me/ArhontCorp
+
+💎Buy: t.me/ArhontSupport
+
+❗️Actual Link: Reserve link: https://linktr.ee/ArhontSupport
+
+
+
+
+
+IP: <IP>
+UserName: <USER>
+Country: BR
+Zip Code: <LOCATION>
+Location: <LOCATION>
+HWID: <HWID>
+Current Language: Portuguese (Brazil)
+ScreenSize: 1920x1080
+TimeZone: (UTC-03:00) Brasília
+Operation System: Windows 10 Home x64
+UAC: AllowAll
+Process Elevation: False
+Log date: 08.03.2021 20:51:37
+
+Available KeyboardLayouts: 
+Portuguese (Brazil)
+
+
+Hardwares: 
+Name: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz, 4 Cores
+Name: NVIDIA GeForce MX150, 2147483648 bytes
+Name: Intel(R) UHD Graphics 620, 1073741824 bytes
+Name: Total of RAM, 12197.22 MB or 12789714944 bytes
+
+
+Anti-Viruses: 
+Windows Defender

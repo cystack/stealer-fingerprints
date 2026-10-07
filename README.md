@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **145** CyStack tracking names
 - **12** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **200** observed log variants and **200** samples
-- **8,052,954** CyStack observations represented by the retained sample set
+- **204** observed log variants and **204** samples
+- **8,052,958** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -58,7 +58,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Cthulhu Stealer](families/cthulhu-stealer/) | high | 1 | [1 retained](families/cthulhu-stealer/#observed-log-variants) |
 | [DCRat](families/dc-rat/) | high | 1 | [1 retained](families/dc-rat/#observed-log-variants) |
 | [Erbium](families/erbium/) | high | 0 | Metadata only |
-| [Lumma](families/lumma/) | high | 8 | [8 retained](families/lumma/#observed-log-variants) |
+| [Lumma](families/lumma/) | high | 9 | [9 retained](families/lumma/#observed-log-variants) |
 | [MacSync](families/mac-sync/) | high | 1 | [1 retained](families/mac-sync/#observed-log-variants) |
 | [Mars Stealer](families/mars-stealer/) | medium | 1 | [1 retained](families/mars-stealer/#observed-log-variants) |
 | [Meduza](families/meduza/) | high | 1 | [1 retained](families/meduza/#observed-log-variants) |
@@ -74,7 +74,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [PureLogs](families/pure-logs/) | high | 1 | [1 retained](families/pure-logs/#observed-log-variants) |
 | [PXA Stealer](families/pxa-stealer/) | high | 3 | [3 retained](families/pxa-stealer/#observed-log-variants) |
 | [Raccoon](families/raccoon/) | high | 2 | [2 retained](families/raccoon/#observed-log-variants) |
-| [Redline](families/redline/) | high | 2 | [2 retained](families/redline/#observed-log-variants) |
+| [Redline](families/redline/) | high | 3 | [3 retained](families/redline/#observed-log-variants) |
 | [Remus Stealer](families/remus-stealer/) | high | 8 | [8 retained](families/remus-stealer/#observed-log-variants) |
 | [Rhadamanthys](families/rhadamanthys/) | medium | 0 | Metadata only |
 | [RisePro](families/rise-pro/) | medium | 0 | Metadata only |
@@ -211,7 +211,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSPcNameSnakeStealer](families/cs-pc-name-snake-stealer/) | unknown | 1 | [1 retained](families/cs-pc-name-snake-stealer/#observed-log-variants) |
 | [CSPlateformExploitationStealer](families/cs-plateform-exploitation-stealer/) | unknown | 0 | Metadata only |
 | [CSPlutusStealer](families/cs-plutus-stealer/) | unknown | 0 | Metadata only |
-| [CSProcessElevationStealer](families/cs-process-elevation-stealer/) | medium | 0 | Metadata only |
+| [CSProcessElevationStealer](families/cs-process-elevation-stealer/) | medium | 1 | [1 retained](families/cs-process-elevation-stealer/#observed-log-variants) |
 | [CSPyHostTimeStealer](families/cs-py-host-time-stealer/) | unknown | 0 | Metadata only |
 | [CSRedCloudStealer](families/cs-red-cloud-stealer/) | unknown | 1 | [1 retained](families/cs-red-cloud-stealer/#observed-log-variants) |
 | [CSRFDStealer](families/csrfd-stealer/) | unknown | 0 | Metadata only |
@@ -226,7 +226,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSStealerCloudInfoStealer](families/cs-stealer-cloud-info-stealer/) | low | 2 | [2 retained](families/cs-stealer-cloud-info-stealer/#observed-log-variants) |
 | [CSStealerCloudUserInfoStealer](families/cs-stealer-cloud-user-info-stealer/) | low | 1 | [1 retained](families/cs-stealer-cloud-user-info-stealer/#observed-log-variants) |
 | [CSSystemRegionStealer](families/cs-system-region-stealer/) | unknown | 0 | Metadata only |
-| [CSSystemSummaryStealer](families/cs-system-summary-stealer/) | unknown | 0 | Metadata only |
+| [CSSystemSummaryStealer](families/cs-system-summary-stealer/) | unknown | 1 | [1 retained](families/cs-system-summary-stealer/#observed-log-variants) |
 | [CSTagBuildStealer](families/cs-tag-build-stealer/) | unknown | 1 | [1 retained](families/cs-tag-build-stealer/#observed-log-variants) |
 | [CSTaggedInfoStealer](families/cs-tagged-info-stealer/) | unknown | 1 | [1 retained](families/cs-tagged-info-stealer/#observed-log-variants) |
 | [CSTagRegionStealer](families/cs-tag-region-stealer/) | unknown | 0 | Metadata only |

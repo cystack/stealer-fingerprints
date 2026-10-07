@@ -39,7 +39,8 @@ Một danh mục định dạng mã độc đánh cắp thông tin do cộng đ�
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **medium**
 - Aliases: `ArechClient2 (provisional)`, `SectopRAT (provisional)`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -72,7 +73,23 @@ Dòng `Process Elevation:` kết hợp với việc tạo dữ liệu đầu ra 
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_72e22daf67a463dd9618a8b46d2aacf6`
+
+- Format ID: `cs-process-elevation-stealer`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: `Process Elevation: True/False`
+- Distribution channel: `@ft7links`
+- Attribution confidence: **medium**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_72e22daf67a463dd9618a8b46d2aacf6/UserInformation.txt)
+- Sample SHA-256: `da08c5b502c57cc8b17a64a54d11b195684fc1318ce6483e8f7f85a29393574e`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Anti-Viruses`, `Country`, `Current Language`, `HWID`, `IP`, `Location`, `Log date`, `Operation System`, `Process Elevation`, `ScreenSize`, `TimeZone`, `UAC`, `UserName`, `Zip Code`, `❗️Actual Link`, `💎Buy`
+
 
 ## MITRE ATT&CK
 

@@ -33,7 +33,8 @@ CSSystemSummaryStealer là một định danh do CyStack đặt cho một `Syste
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: -
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -66,7 +67,24 @@ Dấu hiệu ba điểm neo `System Summary:` cùng với `- Laptop:` và `- Key
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_49811b32026abcf69f3569f7fa939d14`
+
+- Format ID: `cs-system-summary-stealer`
+- Observed filenames: `system_info.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **unknown**
+- Layout: `full-system-summary`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_49811b32026abcf69f3569f7fa939d14/system_info.txt)
+- Sample SHA-256: `2982c6bf3d8ebe91883bc36246c10a6fea86992ed4b9d87fd75d32ad91a0724c`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Architecture`, `Color Depth`, `Computer Name`, `Cores`, `Country`, `CPU`, `Current User`, `Device Name`, `Device String`, `Display Resolution`, `GPU`, `HWID`, `IP`, `Keyboards`, `Language`, `Laptop`, `Local Time`, `OS`, `Process count`, `Process List`, `RAM`, `Resolution`, `Running Path`, `System Summary`, `Threads`, `UserName`, `UTC`, `❗️Actual Link`, `💎Buy`
+
 
 ## MITRE ATT&CK
 

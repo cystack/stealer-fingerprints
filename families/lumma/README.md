@@ -20,8 +20,8 @@ Nhật ký Lumma C2 (LummaC2). Panel ghi `System.txt` với danh sách kiểu YA
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `LummaC2`, `Lumma Stealer`
-- Variants observed: **8**
-- CyStack observations represented: **776,376**
+- Variants observed: **9**
+- CyStack observations represented: **776,377**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -173,6 +173,24 @@ Recognition anchors:
 
 - Stable markers: -
 - Field labels: `CPU Vendor`, `Display resolution`, `HWID`
+
+### `v_d6a78f600991bc726a8a2972edd5a973`
+
+- Format ID: `lumma`
+- Observed filenames: `System.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Layout: `signed-time`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_d6a78f600991bc726a8a2972edd5a973/System.txt)
+- Sample SHA-256: `97a576a294eb90311243a4c0f904d163b50b513f193fa0ba1f6663875c27f266`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `@FloresOwner`, `Telegram @WLFRservices`
+- Field labels: `Anti Virus`, `Computer`, `Country`, `CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Display resolution`, `Domain`, `Elevated`, `GPU`, `Hostname`, `HWID`, `Install Date`, `IP Address`, `Language`, `LID`, `Local Date`, `NetBIOS`, `OS Version`, `RAM Size`, `Time`, `Time Zone`, `User`
 
 ### `v_db24fff43a757db95bdc275cd0470dea`
 

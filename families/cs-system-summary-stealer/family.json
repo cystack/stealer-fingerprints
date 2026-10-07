@@ -46,7 +46,6 @@
     "cs-common-files-category-stealer"
   ],
   "sources": [],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "CSSystemSummaryStealer là một định danh do CyStack đặt cho một `System.txt` có panel mở đầu bằng hai dòng định danh căn lề trái (`- IP:` và `- Country:`), sau đó là tiêu đề mục `System Summary:` theo sau là một khối 14 trường thụt lề bằng tab với các khóa có dấu gạch ngang (`- OS:`, `- Architecture:`, `- UserName:`, `- Computer Name:`, `- Local Time:`, `- UTC: <integer>`, `- Language:`, `- Keyboards:`, `- Laptop: TRUE/FALSE`, `- Cores:`, `- Threads:`, `- RAM:`, `- Display Resolution:` với khối lồng nhau theo từng màn hình, danh sách `- GPU:`). Ba tiêu đề mục nằm sau đó `Process count:` + `Process List:` + `Installed Apps:` bổ sung một danh mục tiến trình và một danh mục ứng dụng đã cài đặt được chia thành các phần con `All Users:` và `Current User:`.\n\nĐược ghi nhận bên trong các gói tổng hợp `MAY 02 - 8230 LOGS2` tại các thư mục nạn nhân `[<ISO2>]<IPv4>/System.txt`, cùng quy ước đặt tên thư mục nạn nhân theo quốc gia-IPv4 được sử dụng bởi CSCookiesSoftStealer. Tập trường dữ liệu này trùng lặp với một bài viết về Continental Stealer công bố vào tháng 10 năm 2023, nhưng bố cục panel chính xác chưa được ghi nhận trong các báo cáo công khai. Việc quy kết họ mã độc hiện chỉ mang tính tạm thời cho đến khi có một bài viết công khai xác nhận định dạng panel này.",
@@ -86,5 +85,57 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": null,
+      "fields": [
+        "Architecture",
+        "Color Depth",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "CPU",
+        "Current User",
+        "Device Name",
+        "Device String",
+        "Display Resolution",
+        "GPU",
+        "HWID",
+        "IP",
+        "Keyboards",
+        "Language",
+        "Laptop",
+        "Local Time",
+        "OS",
+        "Process count",
+        "Process List",
+        "RAM",
+        "Resolution",
+        "Running Path",
+        "System Summary",
+        "Threads",
+        "UserName",
+        "UTC",
+        "❗️Actual Link",
+        "💎Buy"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "format_id": "cs-system-summary-stealer",
+      "id": "v_49811b32026abcf69f3569f7fa939d14",
+      "layout_id": "full-system-summary",
+      "markers": [],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_49811b32026abcf69f3569f7fa939d14/system_info.txt",
+        "sha256": "2982c6bf3d8ebe91883bc36246c10a6fea86992ed4b9d87fd75d32ad91a0724c",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

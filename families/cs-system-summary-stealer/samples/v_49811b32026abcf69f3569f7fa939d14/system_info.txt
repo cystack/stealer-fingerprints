@@ -1,0 +1,119 @@
+Re-Uploads Private Logs and ULPs /// t.me/ArhontCorp
+
+t.me/ArhontCorp
+t.me/ArhontCorp
+t.me/ArhontCorp
+
+💎Buy: t.me/ArhontSupport
+
+❗️Actual Link: Reserve link: https://linktr.ee/ArhontSupport
+
+
+
+	- IP: <IP>
+	- Country: MX
+
+System Summary:
+	- HWID: <HWID>
+	- OS: Windows 10
+	- Architecture: x64
+	- UserName: <USER>
+	- Computer Name: <HOST>
+	- Local Time: 2026-03-24 20:19:12
+	- UTC: -6
+	- Language: es-MX
+	- Keyboards: Español (México)
+	- Laptop: FALSE
+	- Running Path: <PATH>
+	- CPU: AMD Ryzen 5 PRO 4650G with Radeon Graphics
+	- Cores: 6
+	- Threads: 12
+	- RAM: 14 GB
+	- Display Resolution: 
+		Monitor 1
+			Device Name: <HOST>
+			Device String: AMD Radeon(TM) Graphics
+			Resolution: 1920x1200
+			Color Depth: 32 bits per pixel
+	- GPU:
+		-AMD Radeon(TM) Graphics
+
+Process count: 214
+Process List: 
+	[System Process] [0]
+	System [4]
+	Registry [148]
+	smss.exe [516]
+	csrss.exe [656]
+	csrss.exe [788]
+	wininit.exe [812]
+	winlogon.exe [892]
+	services.exe [912]
+	lsass.exe [956]
+	svchost.exe [640]
+	fontdrvhost.exe [660]
+	fontdrvhost.exe [784]
+	svchost.exe [1060]
+	svchost.exe [1112]
+	dwm.exe [1184]
+	svchost.exe [1304]
+	svchost.exe [1360]
+	svchost.exe [1368]
+	svchost.exe [1376]
+	svchost.exe [1388]
+	svchost.exe [1540]
+	svchost.exe [1548]
+	svchost.exe [1600]
+	svchost.exe [1724]
+	svchost.exe [1804]
+	svchost.exe [1840]
+	svchost.exe [1904]
+	atiesrxx.exe [1948]
+	AsusCertService.exe [1956]
+	svchost.exe [1996]
+	svchost.exe [1928]
+	atieclxx.exe [2068]
+	svchost.exe [2128]
+	svchost.exe [2252]
+	svchost.exe [2368]
+	svchost.exe [2408]
+	svchost.exe [2424]
+	svchost.exe [2432]
+	svchost.exe [2440]
+	svchost.exe [2524]
+	svchost.exe [2572]
+	svchost.exe [2600]
+	svchost.exe [2608]
+	Memory Compression [2680]
+	svchost.exe [2788]
+	svchost.exe [2848]
+	svchost.exe [2980]
+	svchost.exe [2148]
+	svchost.exe [2024]
+	svchost.exe [3088]
+	svchost.exe [3152]
+	spoolsv.exe [3216]
+	svchost.exe [3332]
+	svchost.exe [3364]
+	svchost.exe [3460]
+	DbxSvc.exe [3664]
+	svchost.exe [3672]
+	svchost.exe [3680]
+	svchost.exe [3688]
+	svchost.exe [3696]
+	svchost.exe [3704]
+	svchost.exe [3712]
+	svchost.exe [3724]
+	svchost.exe [3736]
+	svchost.exe [3748]
+	escsvc64.exe [3828]
+	AnyDesk.exe [3884]
+	dasHost.exe [3900]
+	EPCP.exe [3912]
+	armsvc.exe [3924]
+	svchost.exe [4048]
+	FNPLicensingService64.exe [4056]
+	UltraViewer_Service.exe [4064]
+	sqlwriter.exe [4080]
+	MsMpEng.exe [4092]
+Current User:

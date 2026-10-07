@@ -302,6 +302,54 @@
       "layout_id": "bare-hwid-cpu-display"
     },
     {
+      "attribution_confidence": "high",
+      "distribution_channel": null,
+      "fields": [
+        "Anti Virus",
+        "Computer",
+        "Country",
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Display resolution",
+        "Domain",
+        "Elevated",
+        "GPU",
+        "Hostname",
+        "HWID",
+        "Install Date",
+        "IP Address",
+        "Language",
+        "LID",
+        "Local Date",
+        "NetBIOS",
+        "OS Version",
+        "RAM Size",
+        "Time",
+        "Time Zone",
+        "User"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "format_id": "lumma",
+      "id": "v_d6a78f600991bc726a8a2972edd5a973",
+      "layout_id": "signed-time",
+      "markers": [
+        "@FloresOwner",
+        "Telegram @WLFRservices"
+      ],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_d6a78f600991bc726a8a2972edd5a973/System.txt",
+        "sha256": "97a576a294eb90311243a4c0f904d163b50b513f193fa0ba1f6663875c27f266",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
       "id": "v_db24fff43a757db95bdc275cd0470dea",
       "format_id": "lumma",
       "filenames": [
