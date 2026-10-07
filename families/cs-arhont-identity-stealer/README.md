@@ -47,8 +47,8 @@ Việc quy kết họ mã độc chỉ là tạm thời, chờ một bản đồ
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `@ArhontCorp information.txt identity preamble`, `Bugatti Private Cloud 6-field identity sibling`, `CryptogoL (TG @ArhontCorp) information.txt layout`
-- Variants observed: **1**
-- CyStack observations represented: **1**
+- Variants observed: **2**
+- CyStack observations represented: **2**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -79,6 +79,24 @@ distinguishing serialisation choices.
 Việc nhận diện dấu vết yêu cầu chuỗi con của kênh `t.me/ArhontCorp` cùng với toàn bộ sáu khóa trong phần mở đầu danh tính, tất cả đều được neo theo dòng (line-anchored): `IP:` + `Country:` + `Date:` + `MachineID:` + `GUID:` + `HWID:`. Chỉ riêng chuỗi con của kênh thì không đủ để xác định duy nhất (lớp phủ Bugatti Private Cloud của hồ sơ Remus cũng chứa chuỗi này); việc kết hợp nó với toàn bộ cấu trúc dữ liệu sáu trường của phần mở đầu danh tính mới giúp xác định tệp liên quan viết thường `information.txt` thay vì tệp `Info.txt` được đóng gói theo Remus. Cấu trúc dữ liệu GUID bị cắt ngắn và bao trong dấu ngoặc nhọn của `GUID: {<trunc-pair>}`, cùng với HWID ghép có dấu gạch ngang với GUID được nhúng làm các đoạn giữa, là những lựa chọn tuần tự hóa (serialisation) đặc trưng, giúp phân biệt panel này.
 
 ## Observed log variants
+
+### `v_34b1d454a2cd7513cc50033d08fe6748`
+
+- Format ID: `cs-arhont-identity-stealer`
+- Observed filenames: `information.txt`
+- Panel brand: `Bugatti Private Cloud (identity preamble)`
+- Distribution channel: `@ArhontCorp`
+- Attribution confidence: **unknown**
+- Layout: `cvv-identity-plus-windows-software`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_34b1d454a2cd7513cc50033d08fe6748/information.txt)
+- Sample SHA-256: `1db23a2b88ae7667c5ba248c64b16f770dfefd48a0e7583489638caa4d21b57e`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `[Hardware]`, `[Software]`
+- Field labels: `Country`, `Date`, `GUID`, `HWID`, `IP`, `MachineID`, `Windows`
 
 ### `v_55cfc6b045fab62684be1fde211ee4c2`
 

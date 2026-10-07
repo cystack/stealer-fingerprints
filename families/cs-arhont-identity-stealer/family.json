@@ -64,6 +64,37 @@
         "HWID",
         "IP",
         "MachineID",
+        "Windows"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "format_id": "cs-arhont-identity-stealer",
+      "id": "v_34b1d454a2cd7513cc50033d08fe6748",
+      "layout_id": "cvv-identity-plus-windows-software",
+      "markers": [
+        "[Hardware]",
+        "[Software]"
+      ],
+      "panel_brand": "Bugatti Private Cloud (identity preamble)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_34b1d454a2cd7513cc50033d08fe6748/information.txt",
+        "sha256": "1db23a2b88ae7667c5ba248c64b16f770dfefd48a0e7583489638caa4d21b57e",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@ArhontCorp",
+      "fields": [
+        "Country",
+        "Date",
+        "GUID",
+        "HWID",
+        "IP",
+        "MachineID",
         "❗️Actual Link",
         "💎Buy"
       ],

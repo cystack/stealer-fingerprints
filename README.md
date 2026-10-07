@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **145** CyStack tracking names
 - **12** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **198** observed log variants and **198** samples
-- **8,052,952** CyStack observations represented by the retained sample set
+- **199** observed log variants and **199** samples
+- **8,052,953** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -108,7 +108,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSApplicationsDiscordStealer](families/cs-applications-discord-stealer/) | unknown | 0 | Metadata only |
 | [CSAppProfileStealer](families/cs-app-profile-stealer/) | unknown | 0 | Metadata only |
 | [CSArhontHardwarePreambleStealer](families/cs-arhont-hardware-preamble-stealer/) | unknown | 1 | [1 retained](families/cs-arhont-hardware-preamble-stealer/#observed-log-variants) |
-| [CSArhontIdentityStealer](families/cs-arhont-identity-stealer/) | unknown | 1 | [1 retained](families/cs-arhont-identity-stealer/#observed-log-variants) |
+| [CSArhontIdentityStealer](families/cs-arhont-identity-stealer/) | unknown | 2 | [2 retained](families/cs-arhont-identity-stealer/#observed-log-variants) |
 | [CSAutofillProfileBundle](families/cs-autofill-profile-bundle/) | unknown | 0 | Metadata only |
 | [CSAzureBuildStealer](families/cs-azure-build-stealer/) | unknown | 1 | [1 retained](families/cs-azure-build-stealer/#observed-log-variants) |
 | [CSBabaCloudBuildBlockStealer](families/cs-baba-cloud-build-block-stealer/) | unknown | 1 | [1 retained](families/cs-baba-cloud-build-block-stealer/#observed-log-variants) |

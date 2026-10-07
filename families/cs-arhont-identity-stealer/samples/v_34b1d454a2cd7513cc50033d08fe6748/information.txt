@@ -1,0 +1,31 @@
+IP: <IP>
+Country: IN
+Date: 20.08.2026 00:34:40
+MachineID: <HWID>
+GUID: <HWID>
+HWID: <HWID>
+
+Windows: Windows 11 Home 25H2 (Build 26200)
+
+[Hardware]
+
+[Software]
+  7-Zip 25.01 (x64)
+  Intel(R) Arc Software & Drivers
+  Mozilla Maintenance Service
+  Microsoft 365 Apps for enterprise - en-us
+  Microsoft OneDrive
+  WinRAR 7.13 (64-bit)
+  Zotero
+  Microsoft GameInput
+  Microsoft .NET Host FX Resolver - 8.0.7 (x64)
+  Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.44.35211
+  Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.4148
+  LibreOffice <IP>
+  Java 8 Update 491 (64-bit)
+  Microsoft Visual C++ 2022 X64 Additional Runtime - 14.44.35211
+  Office 16 Click-to-Run Extensibility Component
+  Adobe Acrobat (64-bit)
+  Microsoft .NET Runtime - 8.0.7 (x64)
+  Microsoft .NET Host - 8.0.7 (x64)
+  Microsoft Windows Desktop Runtime - 8.0.7 (x64)
