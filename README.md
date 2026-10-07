@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **145** CyStack tracking names
 - **12** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **199** observed log variants and **199** samples
-- **8,052,953** CyStack observations represented by the retained sample set
+- **200** observed log variants and **200** samples
+- **8,052,954** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -85,7 +85,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [StealC](families/steal-c/) | high | 3 | [3 retained](families/steal-c/#observed-log-variants) |
 | [Stealerium](families/stealerium/) | high | 1 | [1 retained](families/stealerium/#observed-log-variants) |
 | [Storm Stealer](families/storm-stealer/) | high | 1 | [1 retained](families/storm-stealer/#observed-log-variants) |
-| [Vidar](families/vidar/) | high | 10 | [10 retained](families/vidar/#observed-log-variants) |
+| [Vidar](families/vidar/) | high | 11 | [11 retained](families/vidar/#observed-log-variants) |
 | [WhiteSnake](families/white-snake/) | high | 1 | [1 retained](families/white-snake/#observed-log-variants) |
 | [XFiles](families/x-files/) | high | 2 | [2 retained](families/x-files/#observed-log-variants) |
 

@@ -1,0 +1,32 @@
+Re-Uploads Private Logs and ULPs /// t.me/ArhontCorp
+
+t.me/ArhontCorp
+t.me/ArhontCorp
+t.me/ArhontCorp
+
+💎Buy: t.me/ArhontSupport
+
+❗️Actual Link: Reserve link: https://linktr.ee/ArhontSupport
+
+
+
+==========https://linktr.ee/ArhontCloud===========
+====https://linktr.ee/ArhontCloud====
+
+
+IP: <IP>
+Country: BR
+Date: 18.05.2026 18:09:16
+MachineID: <HWID>
+HWID: <HWID>
+Path: C:\Windows\SysWOW32\install.exe
+Work Dir: Admin @ArhontSupport
+Windows: Windows 11 Pro 25H2 (Build 26200)
+Computer Name: <HOST>
+User Name: <USER>
+Display Resolution: 1366x768
+Local Time: 18.05.2026 18:09:15
+Processor: Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz
+Cores: 4
+Threads: 4
+RAM: 8122 MB

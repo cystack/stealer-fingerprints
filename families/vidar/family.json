@@ -108,6 +108,45 @@
       "layout_id": "hardware-section"
     },
     {
+      "attribution_confidence": "high",
+      "distribution_channel": null,
+      "fields": [
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "HWID",
+        "IP",
+        "Local Time",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "User Name",
+        "Windows",
+        "Work Dir",
+        "❗️Actual Link",
+        "💎Buy"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "format_id": "vidar",
+      "id": "v_291eb8692a0217153a196ae8e9db8f44",
+      "layout_id": "workdir-machineid-hwid",
+      "markers": [],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_291eb8692a0217153a196ae8e9db8f44/information.txt",
+        "sha256": "c9f88d48d50b2f485e64704df3f51b1d16b8a320f5c5c6b77cdcfe2d4cbf3802",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
       "id": "v_3d30d56f75090df4b0d9f8d114f8d4bc",
       "format_id": "vidar",
       "filenames": [
