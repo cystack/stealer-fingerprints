@@ -1,0 +1,86 @@
+{
+  "aliases": [
+    "@ArhontCorp information.txt identity preamble",
+    "Bugatti Private Cloud 6-field identity sibling",
+    "CryptogoL (TG @ArhontCorp) information.txt layout"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "attribution_confidence": "unknown",
+  "classification": "cystack_named",
+  "description": "CSArhontIdentityStealer is a CyStack-coined identifier for a\nstripped 6-field identity preamble observed inside `CryptogoL #<N> (TG @ArhontCorp).rar` aggregator packs at `<CC>_<Prefix>_ <DD.MM.YYYY> (TG @ArhontCorp)/information.txt` victim folder\npaths. The pack ships two per-victim files: an `Info.txt`\ncontaining a canonical Remus Stealer YAML body (handled under\nthe Remus profile with the Bugatti Private Cloud panel-brand\noverlay) and this lowercase `information.txt` sibling carrying\nonly an identity preamble - no system info, no device info,\nno credentials.\n\nBody fields: `IP`, `Country`, `Date` (DD.MM.YYYY HH:MM:SS\ntimestamp), `MachineID` (canonical Windows `MachineGuid`\nUUID), `GUID` (brace-wrapped truncated 8-4 hex pair, e.g.\n`{9aefd928-78ee}`), and `HWID` (dashed compound\n`<20-hex>-<8-hex>-<4-hex>-<7-hex>` with the GUID embedded\nas the middle segments). The @ArhontCorp Telegram channel\nis attested as a Russian-speaking log-aggregator and\nreseller brand (HEROIC darkhive-breaches catalogue:\n`Private Russia 34 TG ArhontCorp`, `KATANA CLOUD PRIVATE TG ArhontCorp`, `Slurm Private TG ArhontCorp`, `FateTraffic TG ArhontCloud`). No published source attributes the\nstripped-identity preamble shape to a specific builder.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping. During triage, treat this label as a\n\"victim identity triple preserved under @ArhontCorp\nredistribution\" marker: the MachineID / GUID / HWID values\nstill travel through the IOC and are usable for\ncross-sample pivoting even without an underlying family\nattribution. The companion `Info.txt` carries the Remus\nYAML body with full system / hardware / anti-virus\nenumeration.",
+  "detection_notes": "Fingerprint requires the `t.me/ArhontCorp` channel\nsubstring plus the six identity-preamble keys all\nline-anchored: `IP:` + `Country:` + `Date:` + `MachineID:` +\n`GUID:` + `HWID:`. The channel substring alone is not\nunique (the Remus profile's Bugatti Private Cloud\noverlay also sees it); pairing it with the full\nsix-field identity-preamble shape identifies the lowercase\n`information.txt` sibling rather than the Remus-wrapped\n`Info.txt`. The `GUID: {<trunc-pair>}` brace-wrapped\ntruncated-GUID shape and the dashed compound HWID with\nthe GUID embedded as middle segments are the panel's\ndistinguishing serialisation choices.",
+  "id": "cs-arhont-identity-stealer",
+  "name": "CSArhontIdentityStealer",
+  "related_families": [
+    "remus-stealer",
+    "cs-russia34-stealer",
+    "cs-enchant-cloud-stealer"
+  ],
+  "sources": [
+    "https://heroic.com/darkhive-breaches/katana-cloud-private-tg-arhontcorp-uploaded-by-a-telegram-user/",
+    "https://www.sekoia.io/blog/overview-of-the-russian-speaking-infostealer-ecosystem-the-logs/"
+  ],
+  "typical_targets": [
+    "Victim identity preamble (IP, country, machine identifiers)",
+    "Cross-sample pivot values (MachineID UUID, bracketed truncated GUID, dashed compound HWID)"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSArhontIdentityStealer là một định danh do CyStack đặt cho một phần mở đầu danh tính (identity preamble) gồm 6 trường đã bị rút gọn, được quan sát trong các gói tổng hợp `CryptogoL #<N> (TG @ArhontCorp).rar` tại đường dẫn thư mục nạn nhân `<CC>_<Prefix>_ <DD.MM.YYYY> (TG @ArhontCorp)/information.txt`. Gói này chứa hai tệp cho mỗi nạn nhân: một tệp `Info.txt` chứa phần nội dung YAML chuẩn của Remus Stealer (được xử lý theo hồ sơ Remus với lớp phủ thương hiệu panel Bugatti Private Cloud) và một tệp liên quan viết thường `information.txt` chỉ chứa phần mở đầu danh tính - không có thông tin hệ thống, không có thông tin thiết bị, không có thông tin xác thực.\n\nCác trường trong nội dung: `IP`, `Country`, `Date` (mốc thời gian theo định dạng DD.MM.YYYY HH:MM:SS), `MachineID` (UUID `MachineGuid` chuẩn của Windows), `GUID` (một cặp hex 8-4 đã bị cắt ngắn và bao trong dấu ngoặc nhọn, ví dụ `{9aefd928-78ee}`), và `HWID` (một chuỗi ghép có dấu gạch ngang `<20-hex>-<8-hex>-<4-hex>-<7-hex>` với GUID được nhúng vào làm các đoạn giữa). Kênh Telegram @ArhontCorp được xác nhận là một thương hiệu tổng hợp và tái bán log nói tiếng Nga (danh mục HEROIC darkhive-breaches: `Private Russia 34 TG ArhontCorp`, `KATANA CLOUD PRIVATE TG ArhontCorp`, `Slurm Private TG ArhontCorp`, `FateTraffic TG ArhontCloud`). Không có nguồn công bố nào quy kết cấu trúc dữ liệu phần mở đầu danh tính đã bị rút gọn này cho một công cụ builder cụ thể.\n\nViệc quy kết họ mã độc chỉ là tạm thời, chờ một bản đồ quy kết tình báo đe dọa đã được công bố. Trong quá trình phân loại ban đầu (triage), hãy coi nhãn này như một dấu hiệu \"bộ ba danh tính nạn nhân được giữ lại dưới hình thức phân phối lại @ArhontCorp\": các giá trị MachineID / GUID / HWID vẫn di chuyển theo IOC và có thể dùng để đối chiếu xoay trục giữa các mẫu (cross-sample pivoting) ngay cả khi không có quy kết họ mã độc làm nền. Tệp đi kèm `Info.txt` chứa phần nội dung YAML của Remus với đầy đủ thông tin liệt kê hệ thống / phần cứng / phần mềm diệt virus.",
+      "typical_targets": [
+        "Phần mở đầu danh tính nạn nhân (IP, quốc gia, các định danh máy)",
+        "Các giá trị dùng để đối chiếu xoay trục giữa các mẫu (UUID của MachineID, GUID bị cắt ngắn trong dấu ngoặc, HWID ghép có dấu gạch ngang)"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu chuỗi con của kênh `t.me/ArhontCorp` cùng với toàn bộ sáu khóa trong phần mở đầu danh tính, tất cả đều được neo theo dòng (line-anchored): `IP:` + `Country:` + `Date:` + `MachineID:` + `GUID:` + `HWID:`. Chỉ riêng chuỗi con của kênh thì không đủ để xác định duy nhất (lớp phủ Bugatti Private Cloud của hồ sơ Remus cũng chứa chuỗi này); việc kết hợp nó với toàn bộ cấu trúc dữ liệu sáu trường của phần mở đầu danh tính mới giúp xác định tệp liên quan viết thường `information.txt` thay vì tệp `Info.txt` được đóng gói theo Remus. Cấu trúc dữ liệu GUID bị cắt ngắn và bao trong dấu ngoặc nhọn của `GUID: {<trunc-pair>}`, cùng với HWID ghép có dấu gạch ngang với GUID được nhúng làm các đoạn giữa, là những lựa chọn tuần tự hóa (serialisation) đặc trưng, giúp phân biệt panel này.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@ArhontCorp",
+      "fields": [
+        "Country",
+        "Date",
+        "GUID",
+        "HWID",
+        "IP",
+        "MachineID",
+        "❗️Actual Link",
+        "💎Buy"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "format_id": "cs-arhont-identity-stealer",
+      "id": "v_55cfc6b045fab62684be1fde211ee4c2",
+      "markers": [],
+      "panel_brand": "Bugatti Private Cloud (identity preamble)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_55cfc6b045fab62684be1fde211ee4c2/information.txt",
+        "sha256": "2ee500cce358a1915d5684a4ea5dd0cfc4a66bf5eed7e0cead5080cfcc4597e5",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}

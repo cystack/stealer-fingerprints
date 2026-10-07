@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **205** research profiles
+- **206** research profiles
 - **42** known malware families
 - **3** observed self-labels without independent family attribution
-- **143** CyStack tracking names
+- **144** CyStack tracking names
 - **12** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **196** observed log variants and **196** samples
-- **8,052,950** CyStack observations represented by the retained sample set
+- **197** observed log variants and **197** samples
+- **8,052,951** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -97,7 +97,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Rivas Stealer](families/rivas-stealer/) | unknown | 1 | [1 retained](families/rivas-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (143)
+### CyStack tracking names (144)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -107,6 +107,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSAntiSandboxStealer](families/cs-anti-sandbox-stealer/) | unknown | 1 | [1 retained](families/cs-anti-sandbox-stealer/#observed-log-variants) |
 | [CSApplicationsDiscordStealer](families/cs-applications-discord-stealer/) | unknown | 0 | Metadata only |
 | [CSAppProfileStealer](families/cs-app-profile-stealer/) | unknown | 0 | Metadata only |
+| [CSArhontIdentityStealer](families/cs-arhont-identity-stealer/) | unknown | 1 | [1 retained](families/cs-arhont-identity-stealer/#observed-log-variants) |
 | [CSAutofillProfileBundle](families/cs-autofill-profile-bundle/) | unknown | 0 | Metadata only |
 | [CSAzureBuildStealer](families/cs-azure-build-stealer/) | unknown | 1 | [1 retained](families/cs-azure-build-stealer/#observed-log-variants) |
 | [CSBabaCloudBuildBlockStealer](families/cs-baba-cloud-build-block-stealer/) | unknown | 1 | [1 retained](families/cs-baba-cloud-build-block-stealer/#observed-log-variants) |
