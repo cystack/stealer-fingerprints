@@ -1,0 +1,133 @@
+{
+  "aliases": [
+    "@SNATCH_CLOUD",
+    "SNATCH CLOUD",
+    "sig-info space-stripped"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "attribution_confidence": "low",
+  "classification": "cystack_named",
+  "description": "CSSnatchCloudSigInfoStealer is a CyStack tracking name\nfor the @SNATCH_CLOUD reseller's space-stripped\n`Info.txt` sig-info variant, shipped alongside the\nreseller's Windows Redline `UserInformation.txt` and\nmacOS system_profiler `Information.txt` siblings inside\n`<DD.MM> @SNATCH_CLOUD <count>K.part<N>.rar` aggregator\npacks at `<CC><32-char-token>_<ISO8601-with-spaces>/ Info.txt` victim folders. The body carries the full\nsig-info-canonical field vocabulary (`BuildDate`,\n`Configuration`, `ExecutionPath`, `Elevated`,\n`ComputerName`, `UserName`, `UserLanguage`, `Netbios`,\n`OperationSystem`, `InstallDate`, `SystemDate`,\n`TimeZone`, `Antivirus`, `HWID` 32-hex, `Processor`,\n`ProcessorThreads`, `ProcessorCores`, `GraphicsCard`\nsection with indented GPU model, `InstalledRAM`,\n`DisplayResolution`, `IPAddress`, `Time:<DD.MM.YYYYHH: MM:SS>(sig:UNIX.HEX)`, `Country`, `User`), with every\ninter-word space inside keys removed by the reseller\n(`Build Date:` → `BuildDate:`, `Processor Threads:` →\n`ProcessorThreads:`, `Installed RAM:` →\n`InstalledRAM:`, `IP Address:` → `IPAddress:`) and\ninter-token spaces inside values collapsed\n(`Jan 14 2026` → `Jan142026`, `19.10.2024 01:09:10` →\n`19.10.202401:09:10`).\n\nFamily attribution preserves the CyStack-coined\nsig-info family at low confidence: the underlying panel\nbuilder has no curated-CTI mapping. The\n`(sig:UNIX.HEX)` watermark on the `Time:` footer line\nis documented as a Lumma-family artifact per\nCloudflare Cloudforce One, but the bare Key:Value field\nset with Redline-style verbose naming does not match\nLumma's canonical dash-prefixed layout; attribution\nstays low pending a curated mapping. HEROIC Threat\nIntelligence documents @SNATCH_CLOUD as a dedicated\nTelegram reseller releasing 18,561-record stealer-log\nbreach dumps, which the panel-brand overlay reflects.",
+  "detection_notes": "Fingerprint requires four space-stripped line-anchored\nkeys together - `BuildDate:` + `ProcessorThreads:` +\n`ProcessorCores:` + `InstalledRAM:` - all with the\nreseller space-stripped grammar. No other registered\nparser emits these exact no-space key spellings; the\ncanonical sig-info parser requires inter-word spaces\n(`Build Date:` / `Processor Threads:` /\n`Processor Cores:` / `Installed RAM:`) and declines the\nstripped form.",
+  "id": "cs-snatch-cloud-sig-info-stealer",
+  "name": "CSSnatchCloudSigInfoStealer",
+  "related_external": [
+    "csiginfostealer"
+  ],
+  "related_families": [
+    "lumma"
+  ],
+  "sources": [
+    "https://www.cloudflare.com/cloudforce-one/research/loot-load-repeat-dissecting-the-lumma-stealer-playbook/",
+    "https://heroic.com/darkhive-breaches/snatch-cloud-stealer-log-18561-logins-exposed/"
+  ],
+  "typical_targets": [
+    "Browser saved credentials and session cookies",
+    "Host identity and operating-system metadata",
+    "System hardware (CPU, GPU, RAM, display resolution)",
+    "Antivirus product inventory",
+    "Panel-side (sig:UNIX.HEX) distribution watermark"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSSnatchCloudSigInfoStealer là tên theo dõi của CyStack dành cho biến thể sig-info bị loại bỏ khoảng trắng của đối tượng bán lại @SNATCH_CLOUD, `Info.txt`, được phân phối cùng với các biến thể liên quan Windows Redline `UserInformation.txt` và macOS system_profiler `Information.txt` của cùng đối tượng bán lại, nằm trong các gói tổng hợp `<DD.MM> @SNATCH_CLOUD <count>K.part<N>.rar` tại các thư mục nạn nhân `<CC><32-char-token>_<ISO8601-with-spaces>/ Info.txt`. Phần thân chứa đầy đủ bộ từ vựng trường dữ liệu chuẩn theo sig-info (`BuildDate`, `Configuration`, `ExecutionPath`, `Elevated`, `ComputerName`, `UserName`, `UserLanguage`, `Netbios`, `OperationSystem`, `InstallDate`, `SystemDate`, `TimeZone`, `Antivirus`, `HWID` dạng 32 ký tự hex, `Processor`, `ProcessorThreads`, `ProcessorCores`, phần `GraphicsCard` với dòng mẫu GPU được thụt lề, `InstalledRAM`, `DisplayResolution`, `IPAddress`, `Time:<DD.MM.YYYYHH: MM:SS>(sig:UNIX.HEX)`, `Country`, `User`), với mọi khoảng trắng giữa các từ trong tên trường (key) bị đối tượng bán lại loại bỏ (`Build Date:` → `BuildDate:`, `Processor Threads:` → `ProcessorThreads:`, `Installed RAM:` → `InstalledRAM:`, `IP Address:` → `IPAddress:`) và các khoảng trắng giữa các token trong giá trị (value) bị thu gọn (`Jan 14 2026` → `Jan142026`, `19.10.2024 01:09:10` → `19.10.202401:09:10`).\n\nViệc quy kết họ mã độc vẫn giữ theo họ sig-info do CyStack đặt tên, với độ tin cậy thấp: trình xây dựng panel (panel builder) nền tảng chưa có bản đồ ánh xạ theo CTI đã được kiểm chứng. Watermark `(sig:UNIX.HEX)` trên dòng footer `Time:` được Cloudflare Cloudforce One ghi nhận là dấu vết thuộc họ Lumma, nhưng bộ trường Key:Value trần với cách đặt tên dài theo kiểu Redline không khớp với bố cục chuẩn có dấu gạch ngang ở đầu của Lumma; do đó việc quy kết vẫn ở mức thấp cho đến khi có bản đồ ánh xạ được kiểm chứng. HEROIC Threat Intelligence ghi nhận @SNATCH_CLOUD là một đối tượng bán lại chuyên biệt trên Telegram, phát hành các bản dump dữ liệu rò rỉ từ log mã độc đánh cắp thông tin gồm 18.561 bản ghi, điều này phản ánh qua lớp thương hiệu panel được phủ lên trên.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trong trình duyệt và cookie phiên làm việc",
+        "Thông tin nhận dạng máy và metadata hệ điều hành",
+        "Phần cứng hệ thống (CPU, GPU, RAM, độ phân giải màn hình)",
+        "Danh sách sản phẩm diệt virus đã cài đặt",
+        "Watermark phân phối phía panel (sig:UNIX.HEX)"
+      ],
+      "detection_notes": "Việc tạo dấu hiệu nhận diện (fingerprint) yêu cầu kết hợp bốn tên trường (key) bị loại bỏ khoảng trắng, được neo theo dòng - `BuildDate:` + `ProcessorThreads:` + `ProcessorCores:` + `InstalledRAM:` - tất cả theo đúng cú pháp bị loại bỏ khoảng trắng của đối tượng bán lại. Không có bộ phân tích (parser) nào khác đã được đăng ký tạo dữ liệu đầu ra với đúng cách viết tên trường không có khoảng trắng này; bộ phân tích sig-info chuẩn yêu cầu có khoảng trắng giữa các từ (`Build Date:` / `Processor Threads:` / `Processor Cores:` / `Installed RAM:`) và sẽ từ chối xử lý dạng bị loại bỏ khoảng trắng này.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "low",
+      "distribution_channel": "@SNATCH_CLOUD",
+      "fields": [
+        "Antivirus",
+        "BuildDate",
+        "ComputerName",
+        "Configuration",
+        "Country",
+        "DisplayResolution",
+        "Elevated",
+        "ExecutionPath",
+        "GraphicsCard",
+        "HWID",
+        "InstallDate",
+        "InstalledRAM",
+        "IPAddress",
+        "Netbios",
+        "OperationSystem",
+        "Processor",
+        "ProcessorCores",
+        "ProcessorThreads",
+        "SystemDate",
+        "Time",
+        "TimeZone",
+        "User",
+        "UserLanguage",
+        "UserName"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "format_id": "cs-snatch-cloud-sig-info-stealer",
+      "id": "v_41e2bbe67052aeb1196d52776bd5ac2b",
+      "markers": [],
+      "panel_brand": "@SNATCH_CLOUD",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_41e2bbe67052aeb1196d52776bd5ac2b/Info.txt",
+        "sha256": "d8fef021dccba270da0fbc3a586d3f09cada44cad7f35135cb69d7204349a7b8",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+BuildDate:Jan142026
+Configuration:
+ExecutionPath:C:\WINDOWS\SysWOW64\explorer.exe
+Elevated:No
+ComputerName:<HOST>
+UserName:<USER>
+UserLanguage:en-US
+Netbios:<HOST>
+OperationSystem:Windows11Home10.0.26200(x64)
+InstallDate:19.10.202401:09:10
+SystemDate:20.01.202623:27:28
+TimeZone:UTC-8
+Antivirus:WindowsDefender
+HWID:<HWID>
+Processor:Intel(R)Pentium(R)SilverN5030CPU@1.10GHz
+ProcessorThreads:4
+ProcessorCores:4
+GraphicsCard:
+	Intel(R)UHDGraphics605
+InstalledRAM:4096MB
+DisplayResolution:1600x900
+
+IPAddress:<IP>
+Time:21.01.202610:27:26(sig:1768980446.<SECRET>)
+Country:US
+User:<USER>

@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **208** research profiles
+- **210** research profiles
 - **42** known malware families
 - **3** observed self-labels without independent family attribution
-- **145** CyStack tracking names
-- **13** CyStack names mapped to a known parent family
+- **146** CyStack tracking names
+- **14** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **206** observed log variants and **206** samples
-- **8,052,960** CyStack observations represented by the retained sample set
+- **208** observed log variants and **208** samples
+- **8,052,962** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -97,7 +97,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Rivas Stealer](families/rivas-stealer/) | unknown | 1 | [1 retained](families/rivas-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (145)
+### CyStack tracking names (146)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -218,6 +218,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSRoyCloudInfoStealer](families/cs-roy-cloud-info-stealer/) | unknown | 1 | [1 retained](families/cs-roy-cloud-info-stealer/#observed-log-variants) |
 | [CSSigInfoStealer](families/cs-sig-info-stealer/) | low | 3 | [3 retained](families/cs-sig-info-stealer/#observed-log-variants) |
 | [CSSlurmCloudStealer](families/cs-slurm-cloud-stealer/) | unknown | 0 | Metadata only |
+| [CSSnatchCloudSigInfoStealer](families/cs-snatch-cloud-sig-info-stealer/) | low | 1 | [1 retained](families/cs-snatch-cloud-sig-info-stealer/#observed-log-variants) |
 | [CSSoftHostStealer](families/cs-soft-host-stealer/) | unknown | 0 | Metadata only |
 | [CSSoftUrlPassStealer](families/cs-soft-url-pass-stealer/) | unknown | 0 | Metadata only |
 | [CSSoftwareTailStealer](families/cs-software-tail-stealer/) | unknown | 1 | [1 retained](families/cs-software-tail-stealer/#observed-log-variants) |
@@ -247,7 +248,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [PyInfo Stealer](families/py-info-stealer/) | unknown | 1 | [1 retained](families/py-info-stealer/#observed-log-variants) |
 | [RedlineLike Stealer](families/redline-like-stealer/) | unknown | 7 | [7 retained](families/redline-like-stealer/#observed-log-variants) |
 
-### Mapped family variants (13)
+### Mapped family variants (14)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -264,6 +265,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSPrimoCloudStealer](families/cs-primo-cloud-stealer/) → [redline](families/redline/) | high | 1 | [1 retained](families/cs-primo-cloud-stealer/#observed-log-variants) |
 | [CSRedhiveStealer](families/cs-redhive-stealer/) → [lumma](families/lumma/) | high | 1 | [1 retained](families/cs-redhive-stealer/#observed-log-variants) |
 | [CSSnatchCloudRedlineStealer](families/cs-snatch-cloud-redline-stealer/) → [redline](families/redline/) | high | 1 | [1 retained](families/cs-snatch-cloud-redline-stealer/#observed-log-variants) |
+| [CSSnatchCloudXFilesStealer](families/cs-snatch-cloud-x-files-stealer/) → [x-files](families/x-files/) | high | 1 | [1 retained](families/cs-snatch-cloud-x-files-stealer/#observed-log-variants) |
 
 ### Log aggregators (5)
 
