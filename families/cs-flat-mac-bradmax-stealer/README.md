@@ -50,7 +50,8 @@ Việc quy kết họ mã độc hiện vẫn mang tính tạm thời, chờ m�
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **low**
 - Aliases: `Flat macOS system_profiler panel (aggressive collapse)`, `BRADMAX macOS Information.txt with space-collapsed keys`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -89,7 +90,23 @@ Việc xác định dấu hiệu nhận diện yêu cầu bốn chuỗi khóa ma
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_decc88b98dadf88c164076f21e3830bb`
+
+- Format ID: `cs-flat-mac-bradmax-stealer`
+- Observed filenames: `Information.txt`
+- Panel brand: -
+- Distribution channel: `@BRADMAX`
+- Attribution confidence: **low**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_decc88b98dadf88c164076f21e3830bb/Information.txt)
+- Sample SHA-256: `643b71be26de44f56342c9f3ba8a25c8afdc7497fba62fbade49896c6f8aa0b3`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `Hardware:`, `Software:`
+- Field labels: `AutomaticallyAdjustBrightness`, `BootMode`, `BootVolume`, `Bus`, `ChipsetModel`, `ColorLCD`, `ConnectionType`, `DeviceID`, `Displays`, `DisplayType`, `FramebufferDepth`, `Graphics/Displays`, `Hardware`, `HardwareOverview`, `HardwareUUID`, `Hyper-ThreadingTechnology`, `IntelIrisPro`, `IP`, `L2Cache(perCore`, `L3Cache`, `MainDisplay`, `Memory`, `MetalFamily`, `Mirror`, `ModelIdentifier`, `ModelName`, `NumberofProcessors`, `Online`, `Password`, `ProcessorName`, `ProcessorSpeed`, `ProvisioningUDID`, `Resolution`, `RevisionID`, `SecureVirtualMemory`, `SerialNumber(system`, `SMCVersion(system`, `Software`, `SystemIntegrityProtection`, `SystemSoftwareOverview`, `Timesinceboot`, `TotalNumberofCores`, `Type`, `UserName`, `Vendor`, `VRAM(Dynamic,Max`
+
 
 ## MITRE ATT&CK
 

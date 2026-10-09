@@ -46,7 +46,6 @@
   "related_external": [
     "banshee-stealer"
   ],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "CSFlatMacBradmaxStealer là định danh do CyStack đặt tên cho một biến thể bố cục dạng \"collapse triệt để\" (aggressive-collapse) của bảng điều khiển `system_profiler` `Information.txt` macOS được đóng gói lại (repackaged) bởi BRADMAX, trong đó toàn bộ khoảng trắng giữa các trường liền kề đã bị loại bỏ, kể cả bên trong tên khóa gồm nhiều từ. Các khóa chuẩn của mã độc đánh cắp thông tin macOS gồm `Model Name:`, `Chipset Model:`, `Total Number of Cores:`, `Hardware UUID:`, `Provisioning UDID:`, `Activation Lock Status:`, `Metal Support:`, `Model Identifier:` và `Model Number:` đều xuất hiện dưới dạng biến thể bị nén khoảng trắng (`ModelName:`, `ChipsetModel:`, `TotalNumberofCores:`, v.v.). Giá trị được gắn liền vào khóa mà không có khoảng trắng (`Memory:16GB`, `ModelIdentifier:Mac14,9`), tạo ra một phần thân gồm hai dòng vật lý ghép nối toàn bộ dữ liệu đầu ra của `SPHardwareDataType` và `SPDisplaysDataType`.\n\nĐược quan sát bên trong `@BRADMAX 12000 FEB-MARCH.part1.rar` tại các thư mục nạn nhân `@BRADMAX <count> <MONTHS>/[<CC>]<IPv4>/ Information.txt`. Mẫu quan sát được là một nạn nhân macOS dùng ngôn ngữ Ý (`Time since boot: 23 ore e 4 minuti` bị nén thành `Timesinceboot: 23oree4minuti`), chip Apple Silicon M2 Pro, model MacBook Pro.\n\nBố cục này khác biệt so với dấu vết liên quan `CSFlatMacProfilerStealer`, trong đó mỗi trường chiếm một dòng riêng và các khóa nhiều từ vẫn giữ khoảng trắng. Ở đây, việc khớp chuỗi con trên các khóa bị nén cùng với ngữ cảnh archive BRADMAX là yếu tố phân biệt biến thể collapse triệt để này.\n\nViệc quy kết họ mã độc hiện vẫn mang tính tạm thời, chờ một ánh xạ threat intel được công bố. Nhiều họ mã độc đánh cắp thông tin macOS chuẩn (AMOS / Atomic, Banshee, Cthulhu, Poseidon, MacSync) đều gọi ra cùng các lệnh con `system_profiler` theo các bài viết công khai. Do không còn banner đặc trưng của họ mã độc nào tồn tại trong bảng điều khiển collapse triệt để này, việc quy kết cho bất kỳ họ mã độc chuẩn cụ thể nào chỉ mang tính phỏng đoán. Định danh do CyStack đặt sẽ được đổi lại nếu sau này có bài viết công khai công bố một mẫu chính xác thuộc biến thể collapse triệt để này.",
@@ -78,5 +77,76 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "low",
+      "distribution_channel": "@BRADMAX",
+      "fields": [
+        "AutomaticallyAdjustBrightness",
+        "BootMode",
+        "BootVolume",
+        "Bus",
+        "ChipsetModel",
+        "ColorLCD",
+        "ConnectionType",
+        "DeviceID",
+        "Displays",
+        "DisplayType",
+        "FramebufferDepth",
+        "Graphics/Displays",
+        "Hardware",
+        "HardwareOverview",
+        "HardwareUUID",
+        "Hyper-ThreadingTechnology",
+        "IntelIrisPro",
+        "IP",
+        "L2Cache(perCore",
+        "L3Cache",
+        "MainDisplay",
+        "Memory",
+        "MetalFamily",
+        "Mirror",
+        "ModelIdentifier",
+        "ModelName",
+        "NumberofProcessors",
+        "Online",
+        "Password",
+        "ProcessorName",
+        "ProcessorSpeed",
+        "ProvisioningUDID",
+        "Resolution",
+        "RevisionID",
+        "SecureVirtualMemory",
+        "SerialNumber(system",
+        "SMCVersion(system",
+        "Software",
+        "SystemIntegrityProtection",
+        "SystemSoftwareOverview",
+        "Timesinceboot",
+        "TotalNumberofCores",
+        "Type",
+        "UserName",
+        "Vendor",
+        "VRAM(Dynamic,Max"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "cs-flat-mac-bradmax-stealer",
+      "id": "v_decc88b98dadf88c164076f21e3830bb",
+      "markers": [
+        "Hardware:",
+        "Software:"
+      ],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_decc88b98dadf88c164076f21e3830bb/Information.txt",
+        "sha256": "643b71be26de44f56342c9f3ba8a25c8afdc7497fba62fbade49896c6f8aa0b3",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }
