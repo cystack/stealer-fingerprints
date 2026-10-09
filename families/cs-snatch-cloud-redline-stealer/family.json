@@ -1,0 +1,128 @@
+{
+  "aliases": [
+    "@SNATCH_CLOUD",
+    "@watercloud_info",
+    "SNATCH CLOUD",
+    "Redline space-stripped"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "attribution_confidence": "high",
+  "canonical_family": "redline",
+  "classification": "family_variant",
+  "description": "CSSnatchCloudRedlineStealer is a CyStack tracking name\nfor a space-stripped Redline `UserInformation.txt`\ndistributed by the @SNATCH_CLOUD Telegram reseller under\nthe operator handle @watercloud_info. Observed inside\n`<DD.MM> @SNATCH_CLOUD <count>K.part<N>.rar` aggregator\npacks at `<CC><32-char-token>_<ISO8601-with-spaces>/ UserInformation.txt` victim folders. The body carries\nthe canonical REDLINE ASCII figlet banner and the\nofficial `https://t.me/redline_market_bot` sales-channel\nURL - Redline's documented storefront - alongside the\nfull Redline-canonical field vocabulary (`BuildID`,\n`FileLocation`, `UserName`, `Country`, `HWID`,\n`CurrentLanguage`, `ScreenSize`, `TimeZone`,\n`OperationSystem` Redline-typo, `UAC`,\n`ProcessElevation`, `Logdate`, `AvailableKeyboardLayouts`,\n`Hardwares:` + `Name:` entries, `Anti-Viruses:`). The\nreseller strips every whitespace separator from both\nkeys (`Build ID:` → `BuildID:`, `Operation System:` →\n`OperationSystem:`, `Current Language:` →\n`CurrentLanguage:`) and values (`16147.3MB or 16931676160 bytes` collapses to `16147.3MBor 16931676160bytes`); every other presentation detail\nmatches canonical Redline exactly.\n\nFamily attribution is canonical Redline: the body's\nofficial `t.me/redline_market_bot` sales-channel URL\nconfirms the panel builder as stock Redline, and the\nfull `BuildID` / `OperationSystem` / `FileLocation` /\n`Hardwares:` + `Name: Total of RAM, X MB or Y bytes`\ndual-serialization combination is Redline-canonical per\nSecurityScorecard's Redline disassembly and Flare's\nRedline write-up. HEROIC Threat Intelligence documents\n@SNATCH_CLOUD as a dedicated Telegram release vehicle\n(an 18,561-record stealer-log breach from the channel is\nin the Darkhive catalogue). The panel's own\n`BuildID: @<handle>` body header names the operator\n(@watercloud_info in observed samples) which the\nper-victim IOC emits as the distribution-channel\noverlay.",
+  "detection_notes": "Fingerprint requires three substrings together:\n`redline_market_bot` (Redline-official sales-channel\nURL in the banner block), `BuildID:` (space-stripped\nRedline canonical key - no other registered parser\nemits this spelling), and `OperationSystem:`\n(space-stripped Redline-typo key - canonical Redline\nuses `Operation System:` with the space intact). The\ncombination is unique across the registry: canonical\nRedline requires `Operation System:` with space (and\nthereby declines the space-stripped variant), and no\nother Redline-derivative fork registered strips every\nwhitespace separator from the field keys. The\n`BuildID: @<handle>` body header carries the reseller\noperator handle (@watercloud_info in observed samples)\nand is emitted on the per-victim IOC as the dynamic\ndistribution-channel overlay.",
+  "id": "cs-snatch-cloud-redline-stealer",
+  "name": "CSSnatchCloudRedlineStealer",
+  "related_families": [
+    "redline"
+  ],
+  "sources": [
+    "https://flare.io/learn/resources/blog/redline-stealer-malware/",
+    "https://heroic.com/darkhive-breaches/snatch-cloud-stealer-log-18561-logins-exposed/"
+  ],
+  "typical_targets": [
+    "Browser saved credentials, cookies, and autofill",
+    "Cryptocurrency wallet files and private keys",
+    "FTP and VPN client credentials",
+    "System hardware, locale, timezone, and screen inventory",
+    "Antivirus product inventory"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSSnatchCloudRedlineStealer là tên theo dõi của CyStack dành cho một bản build Redline `UserInformation.txt` đã bị loại bỏ khoảng trắng, được phân phối bởi đối tượng bán lại qua Telegram @SNATCH_CLOUD dưới tên tài khoản đối tượng vận hành @watercloud_info. Mẫu này được phát hiện trong các gói tổng hợp `<DD.MM> @SNATCH_CLOUD <count>K.part<N>.rar` tại các thư mục nạn nhân `<CC><32-char-token>_<ISO8601-with-spaces>/ UserInformation.txt`. Phần nội dung mang biểu ngữ ASCII figlet chuẩn của REDLINE và URL kênh bán hàng chính thức `https://t.me/redline_market_bot` - kênh bán hàng đã được ghi nhận của Redline - cùng với toàn bộ hệ thống tên trường chuẩn của Redline (`BuildID`, `FileLocation`, `UserName`, `Country`, `HWID`, `CurrentLanguage`, `ScreenSize`, `TimeZone`, `OperationSystem` lỗi chính tả kiểu Redline, `UAC`, `ProcessElevation`, `Logdate`, `AvailableKeyboardLayouts`, `Hardwares:` + các mục `Name:`, `Anti-Viruses:`). Đối tượng bán lại này loại bỏ mọi dấu khoảng trắng phân tách khỏi cả khóa (`Build ID:` → `BuildID:`, `Operation System:` → `OperationSystem:`, `Current Language:` → `CurrentLanguage:`) và giá trị (`16147.3MB or 16931676160 bytes` thu gọn thành `16147.3MBor 16931676160bytes`); mọi chi tiết trình bày khác đều khớp chính xác với Redline chuẩn.\\n\\nViệc quy kết họ mã độc là Redline chuẩn: URL kênh bán hàng chính thức `t.me/redline_market_bot` trong nội dung xác nhận builder của panel là Redline gốc, và toàn bộ tổ hợp tuần tự hóa kép `BuildID` / `OperationSystem` / `FileLocation` / `Hardwares:` + `Name: Total of RAM, X MB or Y bytes` là đặc trưng chuẩn của Redline theo tài liệu phân tích dịch ngược Redline của SecurityScorecard và bài viết phân tích Redline của Flare. HEROIC Threat Intelligence ghi nhận @SNATCH_CLOUD là một kênh phát hành chuyên biệt trên Telegram (một vụ rò rỉ log mã độc đánh cắp thông tin gồm 18.561 bản ghi từ kênh này có trong danh mục Darkhive). Tiêu đề nội dung `BuildID: @<handle>` của chính panel nêu tên đối tượng vận hành (@watercloud_info trong các mẫu đã quan sát), được dấu hiệu nhận biết (IOC) theo từng nạn nhân tạo dữ liệu đầu ra dưới dạng lớp phủ kênh phân phối.",
+      "typical_targets": [
+        "Thông tin xác thực, cookie và dữ liệu tự động điền được lưu trong trình duyệt",
+        "Tệp ví tiền mã hóa và khóa riêng tư",
+        "Thông tin xác thực FTP và VPN client",
+        "Thông tin phần cứng, ngôn ngữ hệ thống, múi giờ và cấu hình màn hình",
+        "Danh sách phần mềm diệt virus đã cài đặt"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện yêu cầu ba chuỗi con xuất hiện cùng nhau: `redline_market_bot` (URL kênh bán hàng chính thức của Redline trong khối biểu ngữ), `BuildID:` (khóa chuẩn của Redline đã bị loại bỏ khoảng trắng - không có công cụ phân tích đã đăng ký nào khác tạo dữ liệu đầu ra với cách viết này), và `OperationSystem:` (khóa lỗi chính tả kiểu Redline đã bị loại bỏ khoảng trắng - Redline chuẩn sử dụng `Operation System:` với khoảng trắng còn nguyên vẹn). Tổ hợp này là duy nhất trong toàn bộ registry: Redline chuẩn yêu cầu `Operation System:` có khoảng trắng (và do đó không chấp nhận biến thể đã loại bỏ khoảng trắng), và không có biến thể phái sinh nào khác của Redline đã đăng ký loại bỏ toàn bộ dấu khoảng trắng phân tách khỏi các khóa trường. Tiêu đề nội dung `BuildID: @<handle>` mang tên tài khoản đối tượng vận hành của đối tượng bán lại (@watercloud_info trong các mẫu đã quan sát) và được dấu hiệu nhận biết (IOC) theo từng nạn nhân tạo dữ liệu đầu ra dưới dạng lớp phủ kênh phân phối động.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "@watercloud_info",
+      "fields": [
+        "Anti-Viruses",
+        "AvailableKeyboardLayouts",
+        "BuildID",
+        "Country",
+        "CurrentLanguage",
+        "FileLocation",
+        "Hardwares",
+        "HWID",
+        "IP",
+        "Location",
+        "Logdate",
+        "Name",
+        "OperationSystem",
+        "ProcessElevation",
+        "ScreenSize",
+        "Telegram",
+        "TimeZone",
+        "UAC",
+        "UserName",
+        "ZipCode"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "format_id": "cs-snatch-cloud-redline-stealer",
+      "id": "v_c26dd9b52fb562ce7e27bfd0a7a8cdac",
+      "markers": [],
+      "panel_brand": "@SNATCH_CLOUD",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_c26dd9b52fb562ce7e27bfd0a7a8cdac/UserInformation.txt",
+        "sha256": "aa046f41af7b75334ef01c203294f5a095207828c7d8a59ca6c47d7e4eca2622",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}

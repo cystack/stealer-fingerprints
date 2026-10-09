@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **207** research profiles
+- **208** research profiles
 - **42** known malware families
 - **3** observed self-labels without independent family attribution
 - **145** CyStack tracking names
-- **12** CyStack names mapped to a known parent family
+- **13** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **204** observed log variants and **204** samples
-- **8,052,958** CyStack observations represented by the retained sample set
+- **205** observed log variants and **205** samples
+- **8,052,959** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -247,7 +247,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [PyInfo Stealer](families/py-info-stealer/) | unknown | 1 | [1 retained](families/py-info-stealer/#observed-log-variants) |
 | [RedlineLike Stealer](families/redline-like-stealer/) | unknown | 7 | [7 retained](families/redline-like-stealer/#observed-log-variants) |
 
-### Mapped family variants (12)
+### Mapped family variants (13)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -263,6 +263,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSLogsTesterStealer](families/cs-logs-tester-stealer/) → [vidar](families/vidar/) | medium | 1 | [1 retained](families/cs-logs-tester-stealer/#observed-log-variants) |
 | [CSPrimoCloudStealer](families/cs-primo-cloud-stealer/) → [redline](families/redline/) | high | 1 | [1 retained](families/cs-primo-cloud-stealer/#observed-log-variants) |
 | [CSRedhiveStealer](families/cs-redhive-stealer/) → [lumma](families/lumma/) | high | 1 | [1 retained](families/cs-redhive-stealer/#observed-log-variants) |
+| [CSSnatchCloudRedlineStealer](families/cs-snatch-cloud-redline-stealer/) → [redline](families/redline/) | high | 1 | [1 retained](families/cs-snatch-cloud-redline-stealer/#observed-log-variants) |
 
 ### Log aggregators (5)
 
