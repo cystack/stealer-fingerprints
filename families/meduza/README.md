@@ -37,8 +37,8 @@ Log thu thập được mở đầu bằng một banner ASCII-art bảy dòng đ
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Meduza Stealer`, `MeduzaStealer`
-- Variants observed: **1**
-- CyStack observations represented: **80**
+- Variants observed: **2**
+- CyStack observations represented: **81**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -90,6 +90,23 @@ Recognition anchors:
 
 - Stable markers: `One-Go`
 - Field labels: `Build Name`, `Execute Path`
+
+### `v_d914ed93f70617f46505fd85951944ef`
+
+- Format ID: `meduza`
+- Observed filenames: `UserInfo.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_d914ed93f70617f46505fd85951944ef/UserInfo.txt)
+- Sample SHA-256: `3436d9235fe8c52d4f1a1103d92629992f70ac96e1493ebd2fe897dbaccd5e6a`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Build Name`, `Computer Name`, `Country Code`, `CPU`, `Execute Path`, `GPU`, `HWID`, `IP`, `Log Date`, `Operation System`, `RAM`, `Screen Resolution`, `Time Zone`, `User Name`
 
 
 ## MITRE ATT&CK

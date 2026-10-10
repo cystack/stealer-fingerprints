@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **146** CyStack tracking names
 - **14** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **208** observed log variants and **208** samples
-- **8,052,962** CyStack observations represented by the retained sample set
+- **209** observed log variants and **209** samples
+- **8,052,963** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -61,7 +61,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Lumma](families/lumma/) | high | 9 | [9 retained](families/lumma/#observed-log-variants) |
 | [MacSync](families/mac-sync/) | high | 1 | [1 retained](families/mac-sync/#observed-log-variants) |
 | [Mars Stealer](families/mars-stealer/) | medium | 1 | [1 retained](families/mars-stealer/#observed-log-variants) |
-| [Meduza](families/meduza/) | high | 1 | [1 retained](families/meduza/#observed-log-variants) |
+| [Meduza](families/meduza/) | high | 2 | [2 retained](families/meduza/#observed-log-variants) |
 | [MeltStealer](families/melt-stealer/) | high | 1 | [1 retained](families/melt-stealer/#observed-log-variants) |
 | [MetaStealer](families/meta-stealer/) | high | 0 | Metadata only |
 | [Misericorde Stealer](families/misericorde-stealer/) | low | 1 | [1 retained](families/misericorde-stealer/#observed-log-variants) |
