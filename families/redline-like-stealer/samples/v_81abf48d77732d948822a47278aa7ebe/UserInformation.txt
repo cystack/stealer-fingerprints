@@ -1,0 +1,20 @@
+
+
+Log date: 2026-07-05 13:40:21
+now: @logslead
+IP: <IP>
+Country: IT
+UserName: <USER>
+ComputerName: <HOST>
+Operation System: Windows 10 build 19045
+System Language: Italian
+User Language: Italian
+Keyboard Language: Italian
+TimeZone: UTC+2:0
+MachineID: <HWID>
+UUID: <HWID>
+Path: C:\Windows\SysWOW32\install.exe
+ScreenSize: 1366x768
+Processor:       Intel(R) Core(TM) i7-3632QM CPU @ 2.20GHz
+Installed RAM: 8074 MB
+Graphics card: Intel(R) HD Graphics 4000

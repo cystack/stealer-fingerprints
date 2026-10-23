@@ -1,0 +1,28 @@
+****************************************************
+* ░█████╗░██╗░░░██╗██████╗░░█████╗░██████╗░░█████╗░*
+* ██╔══██╗██║░░░██║██╔══██╗██╔══██╗██╔══██╗██╔══██╗*
+* ███████║██║░░░██║██████╔╝██║░░██║██████╔╝███████║*
+* ██╔══██║██║░░░██║██╔══██╗██║░░██║██╔══██╗██╔══██║*
+* ██║░░██║╚██████╔╝██║░░██║╚█████╔╝██║░░██║██║░░██║*
+* ╚═╝░░╚═╝░╚═════╝░╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝*
+****************************************************
+<=========== INFORMATION ABOUT SOFTWARE ===========>
+CHANNEL: https://t.me/cheshire_aurora
+SUPPORT: https://t.me/aurora_botnet_support
+<================ BUILD INFORMATION ================>
+HWID: <HWID>
+Build ID:
+Log date: 2022-11-24 22:47:43.5924409 +0300 MSK m=+86123.265296301
+FileLocation: bypass11\winfix.scr
+<================= GEO INFORMATION =================>
+IP: <IP>
+Country: RO
+Region: <LOCATION>
+City: <LOCATION>
+<================= USER INFORMATION =================>
+ScreenSize: 1920x1080
+<SECRET>
+PC INFORMATION: 
+	- CPU: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+	- RAM: 8129
+	- Display Devices: NVIDIA GeForce GTX 1060 6GB

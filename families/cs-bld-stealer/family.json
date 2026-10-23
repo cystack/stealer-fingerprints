@@ -26,7 +26,6 @@
   ],
   "related_families": [],
   "sources": [],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "CSBldStealer là định danh do CyStack đặt tên cho một cấu trúc dữ liệu phẳng dạng bare-key ``system.txt`` với một tập từ vựng trường dạng viết tắt đặc trưng: ``BLD:`` (thẻ build), ``UUID:`` (UUID máy), ``PC Name:`` (tên máy tính), ``User:`` (tên người dùng), ``AD:`` (cờ admin, sentinel ``+`` / ``-``), ``CPU`` / ``GPU`` / ``RAM`` / ``Resolution``, ``System lang:`` (ngôn ngữ giao diện, dạng viết tắt ``lang``), ``System TimeZone:`` (khóa bare-offset), ``OS:``, ``AV:``, cùng với một khối phần mềm đã cài đặt ``Programs:`` ở cuối.\n\nCác dạng viết tắt ngắn (``BLD`` / ``AD`` / ``System lang``) không xuất hiện trong bất kỳ báo cáo công khai hay danh mục cộng đồng nào. Panel này có thể là một mã độc đánh cắp thông tin .NET mới, một phiên bản đổi thương hiệu của một họ mã độc đã có, hoặc một bản build panel riêng tư. Việc quy kết họ mã độc chỉ mang tính tạm thời cho đến khi có ánh xạ thông tin tình báo đe dọa được công bố cho cấu trúc dữ liệu này.",
@@ -47,5 +46,42 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": null,
+      "fields": [
+        "AD",
+        "AV",
+        "BLD",
+        "CPU",
+        "GPU",
+        "OS",
+        "PC Name",
+        "PICO PARK",
+        "Programs",
+        "RAM",
+        "Resolution",
+        "System lang",
+        "System TimeZone",
+        "User",
+        "UUID"
+      ],
+      "filenames": [
+        "system.txt"
+      ],
+      "format_id": "cs-bld-stealer",
+      "id": "v_05fe688bffca076b220804622a5c048d",
+      "markers": [],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_05fe688bffca076b220804622a5c048d/system.txt",
+        "sha256": "1aacac8d1908b7ec788c4c0cbbe1502b691cfb8d2fc5acece41c23b1a4fabb0a",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

@@ -41,7 +41,8 @@ CSMinutesFromGmtStealer là định danh do CyStack đặt tên cho một `Syste
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: -
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -73,7 +74,23 @@ Yếu tố kích hoạt có độ tin cậy cao: khóa `IP info:` được neo t
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_98d3d33e095aa01cf20a33847fe73619`
+
+- Format ID: `cs-minutes-from-gmt-stealer`
+- Observed filenames: `System Info.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **unknown**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_98d3d33e095aa01cf20a33847fe73619/System%20Info.txt)
+- Sample SHA-256: `d3d425dc28c8044e9d5a8dae54b146926c65247c2a41d371cf9292f3e05e8e59`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `System Information:`
+- Field labels: `Architecture`, `CPU`, `Display Devices`, `Display size`, `Installed applications`, `IP info`, `Locale`, `OS`, `RAM`, `System Information`, `Time zone`
+
 
 ## MITRE ATT&CK
 

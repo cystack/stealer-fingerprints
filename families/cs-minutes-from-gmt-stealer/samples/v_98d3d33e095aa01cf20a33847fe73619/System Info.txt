@@ -1,0 +1,62 @@
+IP info: DE <IP>
+
+System Information: 
+	- Locale: German
+	- Time zone: +60 minutes from GMT
+	- OS: Windows 10 Home
+	- Architecture: x64
+	- CPU: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GH (8 cores)
+	- RAM: 16057 MB
+	- Display size: 1536x864
+	- Display Devices:
+		0) Intel(R) Iris(R) Xe Graphics
+
+Installed applications:
+	7-Zip 21.07 (x64) 
+	Android Studio 2021.2
+	Mozilla Firefox (x64 de) 113.0.1
+	Mozilla Maintenance Service 113.0.1
+	VLC media player 3.0.16
+	WinRAR 6.11 (64-Bit) 6.11.0
+	WSA PacMan version 1.3.6 
+	XAMPP 8.1.6-0
+	Samsung Device Care Service 3.0.10
+	ColorEngine 5.4
+	Intel(R) Management Engine Driver <IP>
+	Samsung Update Service 3.0.87
+	ISS_Drivers_x64 3.10.100.4446
+	Intel(R) Management Engine Components 2103.15.0.2125
+	Google Drive <IP>
+	Intel(R) Management Engine Components <IP>
+	Galaxy Book Smart Switch service 1.2.5
+	Office 16 Click-to-Run Licensing Component 16.0.16327.20248
+	Office 16 Click-to-Run Extensibility Component 16.0.16130.20218
+	Office 16 Click-to-Run Localization Component 16.0.14026.20302
+	Intel(R) Chipset Device Software 10.1.18739.8272
+	Intel(R) Serial IO 30.100.2051.37
+	Samsung Recovery Service 8.1.44
+	Live Wallpaper Service 3.0.13
+	Nitro Pro 10 <IP>
+	Studio mode 1.0
+	Quick Search Service 2.0.26
+	Adobe Creative Cloud 5.10.0.573
+	Adobe Genuine Service <IP>
+	BS.Player FREE 2.77.1092
+	GOM Player 2.3.75.5339
+	Google Chrome 113.0.5672.127
+	LDPlayer 4.0.83
+	MediaHuman YouTube to MP3 Converter <IP> 
+	Microsoft Edge 113.0.1774.57
+	Microsoft Edge Update <IP>
+	Microsoft Edge WebView2 Runtime 113.0.1774.57
+	McAfee® 16.0 R51
+	Adobe Photoshop 2020 21.0.2
+	Intel(R) Wireless Bluetooth(R) <IP>
+	WebAdvisor by McAfee 4.1.1.816
+	Realtek Card Reader 10.0.22000.31269
+	Intel(R) Dynamic Tuning 8.7.10601.21688
+	Intel Software Package 8.7.10601.21688
+	Viber <IP>
+	Intel® Integrated Sensor Solution 3.10.100.4446
+	SysTools PDF Extractor v6.0 
+	Realtek Audio Driver 6.0.9129.1

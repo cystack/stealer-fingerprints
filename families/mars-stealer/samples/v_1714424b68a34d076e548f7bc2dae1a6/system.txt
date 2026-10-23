@@ -1,0 +1,619 @@
+
+Install Date: 22 Dec 22 13:51 CET
+HWID: <HWID>
+IP: <IP>
+Time Zone: UTC+5
+System Language: English
+User Language: English
+Keyboard Language: English
+Processor: Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz
+Installed RAM: 8080 MB
+OS: Windows 10 build 19044 (64 Bit)
+Video card: Intel(R) HD Graphics
+Display Resolution: 1024x768
+Computer Name: <HOST>
+User Name: <USER>
+Domain Name: <HOST>
+MachineID: <HWID>
+
+---------------------------------
+Display Name: <NAME>
+Publisher: Autodesk
+Version: <IP>
+Install Source: 
+Install Date: 11/21/2022
+
+Display Name: <NAME>
+Publisher: Mozilla
+Version: 108.0.1
+Install Source: 
+Install Date: 
+
+Display Name: <NAME>
+Publisher: Mozilla
+Version: 105.0.1
+Install Source: 
+Install Date: 
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: 
+Install Date: 
+
+Display Name: <NAME>
+Publisher: VideoLAN
+Version: <IP>
+Install Source: 
+Install Date: 
+
+Display Name: <NAME>
+Publisher: win.rar GmbH
+Version: 6.10.0
+Install Source: 
+Install Date: 
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 12.0.40664
+Install Source: C:\ProgramData\Package Cache\{<HWID>}v12.0.40664\packages\vcRuntimeAdditional_amd64\
+Install Date: 20221010
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 10.0.40219
+Install Source: e:\563224df04aab91350b20203097145\
+Install Date: 20220911
+
+Display Name: <NAME>
+Publisher: Autodesk
+Version: 3.0.21
+Install Source: C:\Users\<USER>\Desktop\Auto CAD\AutoCAD_2020_English_win_64bit_dlm\x64\SaveToWebAndMobile\
+Install Date: 20221020
+
+Display Name: <NAME>
+Publisher: Autodesk
+Version: <IP>
+Install Source: C:\Users\<USER>\Desktop\Auto CAD\AutoCAD_2020_English_win_64bit_dlm\x64\acad\
+Install Date: 20221121
+
+Display Name: <NAME>
+Publisher: Autodesk
+Version: <IP>
+Install Source: C:\Users\<USER>\Desktop\Auto CAD\AutoCAD_2020_English_win_64bit_dlm\x64\ACADPRIVATE\
+Install Date: 20221121
+
+Display Name: <NAME>
+Publisher: Autodesk
+Version: <IP>
+Install Source: C:\Users\<USER>\Desktop\Auto CAD\AutoCAD_2020_English_win_64bit_dlm\x64\en-us\acad\AcadLP\
+Install Date: 20221121
+
+Display Name: <NAME>
+Publisher: Autodesk
+Version: <IP>
+Install Source: C:\Users\<USER>\Desktop\Auto CAD\AutoCAD_2020_English_win_64bit_dlm\x64\en-us\acad\AcadPS\
+Install Date: 20221121
+
+Display Name: <NAME>
+Publisher: Autodesk
+Version: <IP>
+Install Source: C:\Users\<USER>\Desktop\Auto CAD\AutoCAD_2020_English_win_64bit_dlm\x64\ACAOE\
+Install Date: 20221121
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 11.0.61030
+Install Source: C:\ProgramData\Package Cache\{<HWID>}v11.0.61030\packages\vcRuntimeAdditional_amd64\
+Install Date: 20220911
+
+Display Name: <NAME>
+Publisher: Autodesk
+Version: <IP>
+Install Source: C:\Program Files (x86)\Autodesk\Autodesk Desktop App\AGS\
+Install Date: 20221121
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 12.0.40664
+Install Source: C:\ProgramData\Package Cache\{<HWID>}v12.0.40664\packages\vcRuntimeMinimum_amd64\
+Install Date: 20221010
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 3.6.2204.08001
+Install Source: C:\Windows\SoftwareDistribution\Download\<SECRET>\img\
+Install Date: 20220921
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: <IP>
+Install Source: C:\Windows\TEMP\<HWID>\
+Install Date: 20220921
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: <IP>
+Install Source: C:\Windows\SoftwareDistribution\Download\<SECRET>\img\
+Install Date: 20220924
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\Access.en-us\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\Proof.en\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\Proof.fr\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\Proof.es\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 15.0.4420.1017
+Install Source: C:\MSOCache\All Users\{<HWID>}-C\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 14.23.27820
+Install Source: C:\ProgramData\Package Cache\{<HWID>}v14.23.27820\packages\vcRuntimeAdditional_amd64\
+Install Date: 20220911
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 14.23.27820
+Install Source: C:\ProgramData\Package Cache\{<HWID>}v14.23.27820\packages\vcRuntimeMinimum_amd64\
+Install Date: 20220911
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 11.0.61030
+Install Source: C:\ProgramData\Package Cache\{<HWID>}v11.0.61030\packages\vcRuntimeMinimum_amd64\
+Install Date: 20220911
+
+Display Name: <NAME>
+Publisher: Autodesk
+Version: 10.22.00.1800
+Install Source: C:\Users\<USER>\Desktop\Auto CAD\AutoCAD_2020_English_win_64bit_dlm\x64\AdSSO\
+Install Date: 20221020
+
+Display Name: <NAME>
+Publisher: Discord Inc.
+Version: 1.0.9006
+Install Source: 
+Install Date: 20221911
+
+Display Name: <NAME>
+Publisher: MediaGet
+Version: 
+Install Source: 
+Install Date: 20221003
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 22.238.1114.0002
+Install Source: 
+Install Date: 
+
+Display Name: <NAME>
+Publisher: Adobe Inc.
+Version: 18.4.1
+Install Source: 
+Install Date: 10/10/2022
+
+Display Name: <NAME>
+Publisher: Autodesk
+Version: <IP>
+Install Source: 
+Install Date: 20221121
+
+Display Name: <NAME>
+Publisher: DEV47APPS
+Version: 6.5.2
+Install Source: 
+Install Date: 
+
+Display Name: <NAME>
+Publisher: Adobe Inc.
+Version: 22.0.5
+Install Source: 
+Install Date: 12/4/2022
+
+Display Name: <NAME>
+Publisher: Adobe Inc.
+Version: 24.3
+Install Source: 
+Install Date: 10/14/2022
+
+Display Name: <NAME>
+Publisher: Tonec Inc.
+Version: 6.40.2
+Install Source: 
+Install Date: 
+
+Display Name: <NAME>
+Publisher: Iriun
+Version: 2.7.7
+Install Source: 
+Install Date: 20221125
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 108.0.1462.54
+Install Source: 
+Install Date: 20221218
+
+Display Name: <NAME>
+Publisher: 
+Version: <IP>
+Install Source: 
+Install Date: 
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 108.0.1462.54
+Install Source: 
+Install Date: 20221218
+
+Display Name: <NAME>
+Publisher: Tencent Technology Company
+Version: <IP>
+Install Source: 
+Install Date: 
+
+Display Name: <NAME>
+Publisher: Adobe Inc.
+Version: 14.3
+Install Source: 
+Install Date: 9/11/2022
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 14.23.27820
+Install Source: C:\ProgramData\Package Cache\{<HWID>}v14.23.27820\packages\vcRuntimeMinimum_x86\
+Install Date: 20220911
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 12.0.40664.0
+Install Source: 
+Install Date: 
+
+Display Name: <NAME>
+Publisher: Autodesk
+Version: 3.0.0
+Install Source: C:\Users\<USER>\Desktop\Auto CAD\AutoCAD_2020_English_win_64bit_dlm\x64\ACADExtApps\
+Install Date: 20221020
+
+Display Name: <NAME>
+Publisher: Autodesk
+Version: <IP>
+Install Source: C:\Users\<USER>\Desktop\Auto CAD\AutoCAD_2020_English_win_64bit_dlm\Content\ADSKMaterials\2020\ILB\
+Install Date: 20221020
+
+Display Name: <NAME>
+Publisher: CELSYS
+Version: 1.11.8
+Install Source: C:\Users\<USER>\AppData\Local\Temp\Rar$EXb14316.1068\Clip_Studio_Paint_EX_v1.11.8x64\CSP_1118w_setup.exe
+Install Date: 20221222
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 24.64.30112
+Install Source: C:\ProgramData\Package Cache\{<HWID>}v24.64.30112\
+Install Date: 20221125
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 11.0.61030.0
+Install Source: 
+Install Date: 
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 14.23.27820.0
+Install Source: 
+Install Date: 
+
+Display Name: <NAME>
+Publisher: CELSYS
+Version: 1.11.6
+Install Source: C:\Users\<USER>\AppData\Local\Temp\{<HWID>}\{<HWID>}\setup.exe
+Install Date: 20221222
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 24.64.30112
+Install Source: C:\ProgramData\Package Cache\{<HWID>}v24.64.30112\
+Install Date: 20221125
+
+Display Name: <NAME>
+Publisher: Google LLC
+Version: <IP>
+Install Source: C:\Program Files (x86)\Google\Update\<IP>\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Intel Corporation
+Version: 8.1.0.1252
+Install Source: 
+Install Date: 
+
+Display Name: <NAME>
+Publisher: Google LLC
+Version: 108.0.5359.125
+Install Source: C:\Users\<USER>\AppData\Local\Temp\Rar$EXa5944.25179\Installers\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 12.0.40664
+Install Source: C:\ProgramData\Package Cache\{<HWID>}v12.0.40664\packages\vcRuntimeMinimum_x86\
+Install Date: 20221010
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 14.23.27820.0
+Install Source: 
+Install Date: 
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 14.23.27820
+Install Source: C:\ProgramData\Package Cache\{<HWID>}v14.23.27820\packages\vcRuntimeAdditional_x86\
+Install Date: 20220911
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 24.64.30112
+Install Source: C:\ProgramData\Package Cache\{<HWID>}v24.64.30112\
+Install Date: 20221125
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 12.0.40664.0
+Install Source: 
+Install Date: 
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 24.64.30112
+Install Source: C:\ProgramData\Package Cache\{<HWID>}v24.64.30112\
+Install Date: 20221125
+
+Display Name: <NAME>
+Publisher: Adobe Systems Incorporated
+Version: 1.8.0
+Install Source: C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\Cache\
+Install Date: 20221001
+
+Display Name: <NAME>
+Publisher: Adobe Systems Incorporated
+Version: 22.003.20282
+Install Source: C:\ProgramData\Adobe\Setup\{<HWID>}\
+Install Date: 20221118
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 11.0.61030
+Install Source: C:\ProgramData\Package Cache\{<HWID>}v11.0.61030\packages\vcRuntimeAdditional_x86\
+Install Date: 20220911
+
+Display Name: <NAME>
+Publisher: Autodesk
+Version: <IP>
+Install Source: C:\Users\<USER>\Desktop\Auto CAD\AutoCAD_2020_English_win_64bit_dlm\Content\ADSKMaterials\2020\CM\
+Install Date: 20221020
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 11.0.61030
+Install Source: C:\ProgramData\Package Cache\{<HWID>}v11.0.61030\packages\vcRuntimeMinimum_x86\
+Install Date: 20220911
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 11.0.61030.0
+Install Source: 
+Install Date: 
+
+Display Name: <NAME>
+Publisher: Autodesk
+Version: 3.0.0
+Install Source: C:\Users\<USER>\Desktop\Auto CAD\AutoCAD_2020_English_win_64bit_dlm\x64\ACADExtApps\
+Install Date: 20221020
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 12.0.40664
+Install Source: C:\ProgramData\Package Cache\{<HWID>}v12.0.40664\packages\vcRuntimeAdditional_x86\
+Install Date: 20221010
+
+Display Name: <NAME>
+Publisher: Microsoft Corporation
+Version: 10.0.40219
+Install Source: e:\46c1a283f4b48dc43586c6841894eb\
+Install Date: 20220911
+
+Display Name: <NAME>
+Publisher: Intel Corporation
+Version: 9.17.10.3517
+Install Source: 
+Install Date: 
+
+Display Name: <NAME>
+Publisher: Realtek Semiconductor Corp.
+Version: 6.0.1.8328
+Install Source: c:\SWSetup\_SP848~1\
+Install Date: 20220910
+
+Display Name: <NAME>
+Publisher: Intel Corporation
+Version: 15.0.179
+Install Source: C:\adobeTemp\ETRA746.tmp\1\support\keyfiles\CustomHook\win\
+Install Date: 20221010
+
+Display Name: <NAME>
+Publisher: Intel Corporation
+Version: 2.0.0.37149
+Install Source: 
+Install Date: 
+
+---------------------------------
+PROCESSOR_LEVEL = 6
+PROCESSOR_REVISION = 3a09
+SystemDrive = C:
+USERDOMAIN = <HOST>
+ALLUSERSPROFILE = C:\ProgramData
+INTEL_DEV_REDIST = C:\Program Files (x86)\Common Files\Intel\Shared Libraries\
+MIC_LD_LIBRARY_PATH = C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\mic
+NUMBER_OF_PROCESSORS = 4
+ProgramFiles = C:\Program Files
+ProgramFiles(x86) = C:\Program Files (x86)
+windir = C:\Windows
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+OneDrive = C:\Users\<USER>\OneDrive
+USERNAME = <USER>
+APPDATA = C:\Users\<USER>\AppData\Roaming
+CommonProgramFiles(x86) = C:\Program Files (x86)\Common Files
+ProgramData = C:\ProgramData
+SESSIONNAME = Console
+ComSpec = C:\Windows\system32\cmd.exe
+PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+ProgramW6432 = C:\Program Files
+TEMP = C:\Users\<USER>\AppData\Local\Temp
+COMPUTERNAME = <HOST>
+PROCESSOR_ARCHITECTURE = AMD64
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+PUBLIC = C:\Users\<USER>
+SystemRoot = C:\Windows
+USERDOMAIN_ROAMINGPROFILE = <HOST>
+CommonProgramFiles = C:\Program Files\Common Files
+CommonProgramW6432 = C:\Program Files\Common Files
+DriverData = C:\Windows\System32\Drivers\DriverData
+FPS_BROWSER_USER_PROFILE_STRING = Default
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+Path = C:\Program Files\WinRAR;C:\Program Files\WinRAR;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\dotnet\;C:\Users\<USER>\AppData\Local\Microsoft\WindowsApps;
+HOMEDRIVE = C:
+HOMEPATH = \Users\<USER>
+LOCALAPPDATA = C:\Users\<USER>\AppData\Local
+LOGONSERVER = <HOST>
+OS = Windows_NT
+TMP = C:\Users\<USER>\AppData\Local\Temp
+USERPROFILE = C:\Users\<USER>

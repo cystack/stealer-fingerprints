@@ -20,7 +20,8 @@ Nhật ký của MetaStealer. MetaStealer là một biến thể tách nhánh (f
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Meta Stealer`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -46,7 +47,23 @@ Sự kết hợp giữa `Log from:` (id nhà phân phối) và giá trị `Time 
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_281e309b36b3295e977211f51ed445d5`
+
+- Format ID: `meta-stealer`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_281e309b36b3295e977211f51ed445d5/UserInformation.txt)
+- Sample SHA-256: `45b9a9fb2108284fd63470ff0c47ba966ba610250c5ac1c586ffb8b2ca06a837`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Bot`, `Build ID`, `Country`, `CPU`, `File Location`, `GPU`, `Hardwares`, `IP`, `Location`, `Log from`, `RAM`, `Time Zone`
+
 
 ## MITRE ATT&CK
 

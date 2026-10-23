@@ -22,8 +22,8 @@ Remus Stealer là mã độc đánh cắp thông tin 64-bit được cung cấp 
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Remus`
-- Variants observed: **8**
-- CyStack observations represented: **61**
+- Variants observed: **9**
+- CyStack observations represented: **62**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -158,6 +158,24 @@ Recognition anchors:
 
 - Stable markers: `Daisy Cloud`, `hardware:`
 - Field labels: `1 Week`, `2 Week`, `A 3 Month`, `A _______ Join`, `anti-virus`, `computer-name`, `core count`, `core enabled`, `country`, `cpu`, `D 1 Month`, `D Join`, `date`, `display`, `domain`, `elevated`, `gpu`, `hardware`, `hostname`, `I LifeTime`, `install-date`, `ip-address`, `language`, `local-date`, `manufacturer`, `motherboard`, `name`, `netbios`, `os`, `path`, `product`, `ram`, `size`, `state`, `tag`, `thread count`, `thread enabled`, `time`, `time-zone`, `user-name`, `version`
+
+### `v_9290b257d43a932c1dfd1b88a23f91b7`
+
+- Format ID: `remus`
+- Observed filenames: `Info.txt`
+- Panel brand: `@forza_traffic`
+- Distribution channel: `@FORZATRAFFICx`
+- Attribution confidence: **high**
+- Layout: `yaml-build-root`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_9290b257d43a932c1dfd1b88a23f91b7/Info.txt)
+- Sample SHA-256: `8936129efb61d4700af8a819f6933bc9eedf8561bc3497f9ca155fe260247771`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `@forza_traffic`, `hardware:`, `│ [ CLÓUD CHANNEL - @forza_traffic ] [ SUPPORT - @ez_sources ] │`
+- Field labels: `anti-virus`, `build`, `computer-name`, `core count`, `core enabled`, `country`, `cpu`, `date`, `display`, `domain`, `elevated`, `gpu`, `hardware`, `hostname`, `install-date`, `ip-address`, `language`, `local-date`, `manufacturer`, `motherboard`, `name`, `netbios`, `os`, `path`, `product`, `ram`, `size`, `state`, `tag`, `thread count`, `time`, `time-zone`, `user-name`, `version`
 
 ### `v_b6d17ee268125519fad0ffa2c0a8be37`
 

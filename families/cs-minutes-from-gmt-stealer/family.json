@@ -31,7 +31,6 @@
     "https://github.com/MalBeacon/what-is-this-stealer",
     "https://www.cyfirma.com/research/ltx-stealer-analysis-of-a-node-js-based-credential-stealer/"
   ],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "CSMinutesFromGmtStealer là định danh do CyStack đặt tên cho một `System Info.txt` panel có trường timezone được tạo dữ liệu đầu ra dưới dạng `+NNN minutes from GMT` (một số nguyên có dấu biểu thị độ lệch phút kèm theo ký tự literal GMT ở cuối). Định dạng này mô phỏng theo ngữ nghĩa của `Date.prototype.getTimezoneOffset` trong JavaScript, cho thấy khả năng đây là một panel dựa trên Node.js hoặc Electron. Bài viết về LTX Stealer của Cyfirma và tài liệu hướng dẫn về việc lạm dụng Node.js của Microsoft đều ghi nhận các mã độc đánh cắp thông tin chạy trên nền Node.js là một nhóm đang gia tăng, nhưng chưa có nhà cung cấp CTI uy tín nào ghi nhận chính xác bố cục panel này.\n\nĐược quan sát bên trong các gói tổng hợp (aggregator packs) `MARCH 15 - 3059 LOGS.part01.rar` tại các thư mục nạn nhân `[<CC>]<32-hex-lowercase-HWID>/System Info.txt`. Tên tệp chứa một ký tự khoảng trắng ASCII thực; cấu trúc thư mục sử dụng HWID dạng 32 ký tự hex viết thường với tiền tố mã quốc gia đặt trong dấu ngoặc vuông. Phần thân bắt đầu bằng một dòng khóa đầu tiên trần gồm hai từ `IP info: <CC> <IPv4>` gộp mã quốc gia và địa chỉ IPv4 trên cùng một dòng, tiếp theo là tiêu đề mục trần `System Information:`, các trường con thụt lề bằng tab `- Key: Value` (Locale, Time zone, OS, Architecture, CPU, RAM, Display size, danh sách đánh số lồng nhau Display Devices), và một mục trần `Installed applications:` với các mục ứng dụng thụt lề bằng tab `<Name> <Version>` cho từng ứng dụng. Việc quy kết họ mã độc vẫn mang tính tạm thời cho đến khi có một bản đồ tình báo về mối đe dọa được công bố cho bố cục này.",
@@ -56,5 +55,40 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": null,
+      "fields": [
+        "Architecture",
+        "CPU",
+        "Display Devices",
+        "Display size",
+        "Installed applications",
+        "IP info",
+        "Locale",
+        "OS",
+        "RAM",
+        "System Information",
+        "Time zone"
+      ],
+      "filenames": [
+        "System Info.txt"
+      ],
+      "format_id": "cs-minutes-from-gmt-stealer",
+      "id": "v_98d3d33e095aa01cf20a33847fe73619",
+      "markers": [
+        "System Information:"
+      ],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_98d3d33e095aa01cf20a33847fe73619/System Info.txt",
+        "sha256": "d3d425dc28c8044e9d5a8dae54b146926c65247c2a41d371cf9292f3e05e8e59",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

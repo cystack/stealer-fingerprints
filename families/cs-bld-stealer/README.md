@@ -31,7 +31,8 @@ Các dạng viết tắt ngắn (``BLD`` / ``AD`` / ``System lang``) không xu�
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `BLD short-form panel`, `System lang / System TimeZone abbreviated variant`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -62,7 +63,23 @@ Việc nhận diện dấu vết yêu cầu ba nhãn dạng viết tắt đượ
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_05fe688bffca076b220804622a5c048d`
+
+- Format ID: `cs-bld-stealer`
+- Observed filenames: `system.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **unknown**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_05fe688bffca076b220804622a5c048d/system.txt)
+- Sample SHA-256: `1aacac8d1908b7ec788c4c0cbbe1502b691cfb8d2fc5acece41c23b1a4fabb0a`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `AD`, `AV`, `BLD`, `CPU`, `GPU`, `OS`, `PC Name`, `PICO PARK`, `Programs`, `RAM`, `Resolution`, `System lang`, `System TimeZone`, `User`, `UUID`
+
 
 ## MITRE ATT&CK
 

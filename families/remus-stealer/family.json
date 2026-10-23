@@ -362,6 +362,65 @@
     },
     {
       "attribution_confidence": "high",
+      "distribution_channel": "@FORZATRAFFICx",
+      "fields": [
+        "anti-virus",
+        "build",
+        "computer-name",
+        "core count",
+        "core enabled",
+        "country",
+        "cpu",
+        "date",
+        "display",
+        "domain",
+        "elevated",
+        "gpu",
+        "hardware",
+        "hostname",
+        "install-date",
+        "ip-address",
+        "language",
+        "local-date",
+        "manufacturer",
+        "motherboard",
+        "name",
+        "netbios",
+        "os",
+        "path",
+        "product",
+        "ram",
+        "size",
+        "state",
+        "tag",
+        "thread count",
+        "time",
+        "time-zone",
+        "user-name",
+        "version"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "format_id": "remus",
+      "id": "v_9290b257d43a932c1dfd1b88a23f91b7",
+      "layout_id": "yaml-build-root",
+      "markers": [
+        "@forza_traffic",
+        "hardware:",
+        "│ [ CLÓUD CHANNEL - @forza_traffic ] [ SUPPORT - @ez_sources ] │"
+      ],
+      "panel_brand": "@forza_traffic",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_9290b257d43a932c1dfd1b88a23f91b7/Info.txt",
+        "sha256": "8936129efb61d4700af8a819f6933bc9eedf8561bc3497f9ca155fe260247771",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "high",
       "distribution_channel": "@Primo_Cloud",
       "fields": [
         "anti-virus",

@@ -32,7 +32,8 @@ Payload là một tệp nhị phân Mach-O chạy một trình trợ giúp Apple
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `SHub`, `SHub Reaper`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -65,7 +66,23 @@ Dấu hiệu mạnh nhất là chuỗi ký tự văn bản nguyên văn `SHub St
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_daef8eea2e5a1f8b75786d45f852066a`
+
+- Format ID: `shub-stealer`
+- Observed filenames: `Information.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_daef8eea2e5a1f8b75786d45f852066a/Information.txt)
+- Sample SHA-256: `4927ed33865700d9cc78cb81d3ada53e44cb44213671ce631b60d1bae7da9a08`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `Hardware:`, `SHub Stealer (DEBUG)`, `Software:`
+- Field labels: `? Powered by Clover revision`, `Apple ROM Info`, `Automatically Adjust Brightness`, `Board-ID`, `Boot Mode`, `Boot ROM Version`, `Boot Volume`, `Build Tag`, `Bus`, `Computer Name`, `Device ID`, `Display`, `Displays`, `External IP`, `Framebuffer Depth`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `Hardware UUID`, `Hostname`, `Is CIS`, `Kernel Extension Info`, `Kernel Version`, `L2 Cache (per Core`, `L3 Cache`, `Main Display`, `Memory`, `Mirror`, `Model Identifier`, `Model Name`, `Number of Processors`, `Online`, `OS Version`, `Password`, `PCIe Lane Width`, `Processor Name`, `Processor Speed`, `Resolution`, `Revision ID`, `Secure Virtual Memory`, `Serial Number (system`, `Slot`, `SMC Version (system`, `Software`, `System Integrity Protection`, `System Software Overview`, `System Version`, `Time since boot`, `Total Number of Cores`, `Type`, `UI Looks like`, `User Name`, `Username`, `Vendor`, `VRAM (Total`
+
 
 ## MITRE ATT&CK
 

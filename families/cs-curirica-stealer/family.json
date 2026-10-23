@@ -1,0 +1,138 @@
+{
+  "aliases": [
+    "Curirica Stealer"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1518.001",
+      "name": "Security Software Discovery"
+    }
+  ],
+  "attribution_confidence": "unknown",
+  "classification": "cystack_named",
+  "description": "CSCuriricaStealer is a CyStack-coined identifier for an\nemoji-sectioned `Information.txt` panel that self-identifies\nwith the literal `Curirica Stealer` (comet-emoji wrapped) at\nthe top of the body. Observed inside reseller packs\ndistributed through the `@Primo_Cloud` Telegram channel,\nwith victim folders named `[<CC>]_<32-char-HWID>/ Information.txt`. The body opens with a `Curirica Stealer`\nself-id line, a horizontal-rule separator, then a sequence\nof named sections (Geolocation, Hardware Info, Report\nContents, Tags, Environment) each delimited by a\n`<section-emoji> ── <section-name> ─────` header line and\ncontaining data lines of the form `<field-emoji> <ASCII-key>: <value>`.\n\nThe hardware block ships IP, country name, concatenated\nuser/hostname pair (`User\\PCName`), OS display string,\ndisplay resolution (bare `WxH` form), GPU, CPU, and RAM\n(human-readable `N GB` form). The report-contents block\ncarries per-category counts for cookies, saved passwords,\ncredit cards, autofills, browser extensions, cryptocurrency\nwallets, and generic files harvested. The environment\nblock exposes the antivirus brand present at exfiltration\ntime and the panel executable path on the victim host. A\nfooter line names an operator Telegram handle; the\narchive filename names a separate reseller handle\n(distribution-chain intermediary).\n\nFamily attribution is provisional pending a published\nthreat-intel mapping for the `Curirica Stealer` brand or\nthe emoji-sectioned body shape. Two independent search\npasses across curated CTI vendor corpora and public\nstealer-format catalogues returned only generic\ninfostealer-ecosystem overviews, with one indirect\nreference to the `Primo_Cloud` distribution channel in the\nheroic.com darkhive breaches catalogue. Neither source\nattributes the specific layout or the `Curirica` brand to\na documented stealer family. Treat the family attribution\nas unknown during triage.",
+  "detection_notes": "Fingerprint requires the 16-char literal `Curirica Stealer`\nsubstring in the body. The literal is unique across the\nregistry - no other panel self-identifies with the\n`Curirica` brand, and the `<emoji> <ASCII-key>: <value>`\nfield vocabulary paired with `──`-delimited section headers\nis distinct from every other emoji-prefixed panel\n(CSEmojiInfo / CSEmojiCount / CSMainLoot / CSRLPanel /\nCSCrownBuild all use different section conventions or no\nsection-header pattern at all). During triage, treat the\nfamily attribution as unknown: the panel self-id does not\nmap to a named stealer family in any surveyed curated or\ncommunity threat-intel corpus. The per-victim user/host\npair is emitted joined with a literal backslash\n(`User\\PCName`) rather than as two distinct fields; the\naccount and computer name should be split on the\nbackslash separator before correlation. The operator\nTelegram handle in the footer is a channel-admin\nattribution, not an evidence of family affiliation.",
+  "id": "cs-curirica-stealer",
+  "name": "CSCuriricaStealer",
+  "related_families": [],
+  "sources": [],
+  "typical_targets": [
+    "Browser saved credentials (count surfaced as `Passwords`)",
+    "Browser cookies (count surfaced as `Cookies`)",
+    "Browser autofill entries (count surfaced as `AutoFills`)",
+    "Payment-card entries (count surfaced as `Credit Cards`)",
+    "Cryptocurrency wallet extensions (count surfaced as `Wallets`)",
+    "Browser extensions (count surfaced as `Extensions`)",
+    "Generic files harvested from the victim host (`Files`)",
+    "Antivirus product present at exfiltration time (`AVs`)"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSCuriricaStealer là một định danh do CyStack đặt tên cho một bảng điều khiển (panel) có phần thân chia theo mục bằng emoji, tự nhận dạng bằng chuỗi ký tự `Curirica Stealer` (được bọc bởi emoji sao chổi) ở đầu phần thân, với tên panel là `Information.txt`. Mẫu này được ghi nhận bên trong các gói reseller phân phối qua kênh Telegram `@Primo_Cloud`, với các thư mục nạn nhân được đặt tên theo định dạng `[<CC>]_<32-char-HWID>/ Information.txt`. Phần thân mở đầu bằng một dòng tự nhận dạng `Curirica Stealer`, tiếp theo là dấu phân cách dạng đường kẻ ngang, sau đó là một chuỗi các mục có tên gọi (Geolocation, Hardware Info, Report Contents, Tags, Environment), mỗi mục được phân tách bằng dòng tiêu đề `<section-emoji> ── <section-name> ─────` và chứa các dòng dữ liệu theo định dạng `<field-emoji> <ASCII-key>: <value>`.\n\nKhối Hardware chứa IP, tên quốc gia, cặp user/hostname được nối liền (`User\\PCName`), chuỗi hiển thị hệ điều hành, độ phân giải màn hình (dạng `WxH` không kèm nhãn), GPU, CPU và RAM (dạng `N GB` dễ đọc). Khối Report Contents mang số lượng theo từng hạng mục đối với cookie, mật khẩu đã lưu, thẻ tín dụng, dữ liệu tự động điền (autofill), tiện ích mở rộng trình duyệt, ví tiền điện tử, và các tệp thông thường đã thu thập được. Khối Environment hiển thị tên thương hiệu phần mềm diệt virus có mặt tại thời điểm đưa dữ liệu ra ngoài và đường dẫn tệp thực thi của panel trên máy nạn nhân. Một dòng footer nêu tên tài khoản Telegram của đối tượng vận hành; tên tệp lưu trữ (archive) nêu tên một tài khoản reseller khác (bên trung gian trong chuỗi phân phối).\n\nViệc quy kết họ mã độc hiện chỉ mang tính tạm thời, chờ có bản đồ tình báo mối đe dọa đã công bố cho thương hiệu `Curirica Stealer` hoặc cho cấu trúc dữ liệu phần thân chia theo mục bằng emoji. Hai lượt tìm kiếm độc lập trên các kho dữ liệu CTI đã được tuyển chọn từ các nhà cung cấp cùng các danh mục định dạng stealer công khai chỉ trả về các tổng quan chung chung về hệ sinh thái mã độc đánh cắp thông tin, cùng một tham chiếu gián tiếp tới kênh phân phối `Primo_Cloud` trong danh mục rò rỉ dữ liệu darkhive của heroic.com. Không nguồn nào trong số đó quy kết bố cục cụ thể này hay thương hiệu `Curirica` cho một họ mã độc đánh cắp thông tin đã được ghi nhận. Trong quá trình phân loại ban đầu (triage), hãy coi việc quy kết họ mã độc là chưa xác định.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trên trình duyệt (số lượng hiển thị dưới dạng `Passwords`)",
+        "Cookie trình duyệt (số lượng hiển thị dưới dạng `Cookies`)",
+        "Mục dữ liệu tự động điền (autofill) trên trình duyệt (số lượng hiển thị dưới dạng `AutoFills`)",
+        "Mục dữ liệu thẻ thanh toán (số lượng hiển thị dưới dạng `Credit Cards`)",
+        "Tiện ích mở rộng ví tiền điện tử (số lượng hiển thị dưới dạng `Wallets`)",
+        "Tiện ích mở rộng trình duyệt (số lượng hiển thị dưới dạng `Extensions`)",
+        "Các tệp thông thường thu thập được từ máy nạn nhân (`Files`)",
+        "Sản phẩm diệt virus có mặt tại thời điểm đưa dữ liệu ra ngoài (`AVs`)"
+      ],
+      "detection_notes": "Dấu hiệu nhận diện yêu cầu chuỗi ký tự dài 16 ký tự `Curirica Stealer` xuất hiện trong phần thân. Chuỗi này là duy nhất trong toàn bộ danh mục - không có panel nào khác tự nhận dạng bằng thương hiệu `Curirica`, và bộ từ vựng trường dữ liệu `<emoji> <ASCII-key>: <value>` kết hợp với các tiêu đề mục được phân tách bằng `──` khác biệt hoàn toàn so với mọi panel có tiền tố emoji khác (CSEmojiInfo / CSEmojiCount / CSMainLoot / CSRLPanel / CSCrownBuild đều dùng quy ước phân mục khác hoặc không có dạng tiêu đề mục nào cả). Trong quá trình phân loại ban đầu, hãy coi việc quy kết họ mã độc là chưa xác định: tên tự nhận dạng của panel không ánh xạ tới bất kỳ họ mã độc đánh cắp thông tin nào có tên gọi trong các kho dữ liệu tình báo mối đe dọa đã được tuyển chọn hoặc từ cộng đồng mà nhóm đã khảo sát. Cặp user/host theo từng nạn nhân được tạo dữ liệu đầu ra dưới dạng nối với nhau bằng ký tự dấu gạch chéo ngược (`User\\PCName`) thay vì là hai trường riêng biệt; cần tách tên tài khoản và tên máy tính theo dấu phân cách gạch chéo ngược trước khi đối chiếu dữ liệu. Tài khoản Telegram của đối tượng vận hành ở phần footer chỉ là thông tin quy kết quản trị viên kênh, không phải bằng chứng về mối liên hệ với một họ mã độc cụ thể.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1518.001",
+          "name": "Dò tìm phần mềm bảo mật"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@Primo_Cloud",
+      "fields": [
+        "⚙️ Service Tags",
+        "✍️ AutoFills",
+        "🌍 IP",
+        "🍪 Cookies",
+        "🍪 Cookies Tags",
+        "🎮 GPU(s",
+        "👛 Wallets",
+        "👤 User",
+        "💳 Credit Cards",
+        "💾 RAM",
+        "📁 Files",
+        "📂 Location",
+        "📍 Country",
+        "📐 Resolution",
+        "🔐 Password Tags",
+        "🔐 Passwords",
+        "🕒 22/05/2026 23",
+        "🧠 CPU",
+        "🧩 Extensions",
+        "🧰 AVs",
+        "🪟 OS"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "cs-curirica-stealer",
+      "id": "v_2f5b31b97024b373ca847185ee9cbe28",
+      "markers": [
+        "Curirica Stealer",
+        "☄️ Curirica Stealer ☄️",
+        "👤 @renggli"
+      ],
+      "panel_brand": "Curirica Stealer",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_2f5b31b97024b373ca847185ee9cbe28/Information.txt",
+        "sha256": "9a6565411aa312a8ae38d2283a10676d22493b2c7206c96fd28a9f341a8016bf",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}

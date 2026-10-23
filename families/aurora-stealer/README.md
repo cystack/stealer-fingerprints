@@ -53,7 +53,8 @@ Giá trị `FileLocation` chứa đường dẫn giải nén tạm thời của 
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Aurora`, `Aurora Botnet`, `Cheshire Aurora`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -90,7 +91,23 @@ Dấu hiệu nhận diện yêu cầu chuỗi con `cheshire_aurora` (biệt danh
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_a34f638327f89acff20320d0f3868c8a`
+
+- Format ID: `cs-daisy-aurora-stealer`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: `Daisy Private cloud (per-line watermark)`
+- Distribution channel: `@UP_DAISYCLOUD`
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_a34f638327f89acff20320d0f3868c8a/UserInformation.txt)
+- Sample SHA-256: `d43c435c20291cea8e341892450608d28196ed6db54c44ad58bcada8ddbdb210`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Build ID`, `CHANNEL`, `City`, `Country`, `CPU`, `Display Devices`, `FileLocation`, `HWID`, `IP`, `Log date`, `PC INFORMATION`, `RAM`, `Region`, `ScreenSize`, `SUPPORT`
+
 
 ## MITRE ATT&CK
 

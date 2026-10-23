@@ -43,8 +43,8 @@ Log thu thập được mở đầu bằng một khối hệ thống dạng `Key
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **medium**
 - Aliases: `Mars`, `MarsStealer`, `Mars Stealer family`
-- Variants observed: **1**
-- CyStack observations represented: **3**
+- Variants observed: **2**
+- CyStack observations represented: **4**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -77,6 +77,23 @@ fork is rarely identifiable from the panel output alone.
 Các chuỗi khóa trường dữ liệu `Installed RAM:` và `Video card:` là các điểm neo nhận diện rõ ràng nhất; cả hai đều được ghi nhận trong các phân tích công khai về Mars Stealer và không xuất hiện trong khuôn mẫu bảng điều khiển của các họ mã độc khác. Nên kết hợp một trong hai chuỗi này với khóa hai từ `Display Resolution:` để giảm thiểu rủi ro trùng lặp nhỏ còn lại với các văn bản không liên quan. Trong quá trình phân loại ban đầu, nên coi các mẫu xuất hiện sau tháng 3 năm 2022 thuộc dòng fork của Mars thay vì Mars nguyên bản: vụ rò rỉ mã nguồn đã tạo ra nhiều biến thể phái sinh và bản fork cụ thể hiếm khi có thể xác định chỉ dựa vào dữ liệu đầu ra của bảng điều khiển.
 
 ## Observed log variants
+
+### `v_1714424b68a34d076e548f7bc2dae1a6`
+
+- Format ID: `cs-bradmax-cloud-mars`
+- Observed filenames: `system.txt`
+- Panel brand: `LOGS`
+- Distribution channel: -
+- Attribution confidence: **medium**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_1714424b68a34d076e548f7bc2dae1a6/system.txt)
+- Sample SHA-256: `986edcd7f2cdcfc154a39e1659659205c7815bf919d740fa55e1476852588955`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `ALLUSERSPROFILE`, `APPDATA`, `CommonProgramFiles`, `CommonProgramFiles(x86`, `CommonProgramW6432`, `Computer Name`, `COMPUTERNAME`, `ComSpec`, `Display Name`, `Display Resolution`, `Domain Name`, `DriverData`, `FPS_BROWSER_APP_PROFILE_STRING`, `FPS_BROWSER_USER_PROFILE_STRING`, `HOMEDRIVE`, `HOMEPATH`, `HWID`, `Install Date`, `Install Source`, `Installed RAM`, `INTEL_DEV_REDIST`, `IP`, `Keyboard Language`, `LOCALAPPDATA`, `LOGONSERVER`, `MachineID`, `MIC_LD_LIBRARY_PATH`, `NUMBER_OF_PROCESSORS`, `OneDrive`, `OS`, `Path`, `PATHEXT`, `Processor`, `PROCESSOR_ARCHITECTURE`, `PROCESSOR_IDENTIFIER`, `PROCESSOR_LEVEL`, `PROCESSOR_REVISION`, `ProgramData`, `ProgramFiles`, `ProgramFiles(x86`, `ProgramW6432`, `PSModulePath`, `PUBLIC`, `Publisher`, `SESSIONNAME`, `System Language`, `SystemDrive`, `SystemRoot`, `TEMP`, `Time Zone`, `TMP`, `User Language`, `User Name`, `USERDOMAIN`, `USERDOMAIN_ROAMINGPROFILE`, `USERNAME`, `USERPROFILE`, `Version`, `Video card`, `windir`
 
 ### `v_8de2e373e826d69cbb04e67395a898f1`
 

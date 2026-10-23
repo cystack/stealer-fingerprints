@@ -1,0 +1,16 @@
+Root Team
+Bot: https://t.me/rootteam_bot
+
+Build ID:
+Log from: 1285574687
+File Location: <PATH>
+
+IP: <IP>
+Country: BR
+Location: <LOCATION>
+Time Zone: America/Sao_Paulo
+
+Hardwares:
+ CPU: Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz(6 cores)
+ GPU: Intel(R) UHD Graphics 630
+ RAM: 3948.61 MB [4140417024 bytes]

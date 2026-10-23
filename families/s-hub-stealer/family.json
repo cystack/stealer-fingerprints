@@ -64,7 +64,6 @@
     "https://securitylabs.datadoghq.com/articles/tech-impersonators-clickfix-and-macos-infostealers/",
     "https://www.helpnetsecurity.com/2026/05/19/shub-reaper-macos-infostealer-apple-google-microsoft/"
   ],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "SHub Stealer là mã độc đánh cắp thông tin nhắm vào macOS, lần đầu được ghi nhận công khai vào tháng 3 năm 2026 sau một chiến dịch dùng trang landing page giả mạo CleanMyMac để phát tán payload tới người nắm giữ tiền điện tử. Một biến thể tiếp theo được phân tích công khai với tag build `Reaper` vào tháng 5 năm 2026; họ mã độc này cũng nhận được sự đưa tin công khai rộng rãi.\n\nPayload là một tệp nhị phân Mach-O chạy một trình trợ giúp AppleScript để thu thập dữ liệu trình duyệt, ví tiền điện tử, các tệp cấu hình liên quan đến nhà phát triển, dữ liệu macOS Keychain, dữ liệu phiên iCloud, và các tệp phiên Telegram. Dữ liệu thu thập được đóng gói vào một tệp lưu trữ ZIP và được gửi bằng phương thức POST tới một điểm tiếp nhận được ghi cố định (ví dụ: `res2erch-sl0ut[.]com/gate`) cùng với một khóa API được ghi cố định dùng để nhận diện build mã độc. Nhãn chiến dịch `Build Tag` theo từng nạn nhân và mã băm build gồm 32 ký tự hỗ trợ việc theo dõi ở cấp độ đối tác liên kết. Các tag build được quan sát bao gồm `Reaper`, `PAds`, và `Crypto_Byte`.",
@@ -113,5 +112,86 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": null,
+      "fields": [
+        "? Powered by Clover revision",
+        "Apple ROM Info",
+        "Automatically Adjust Brightness",
+        "Board-ID",
+        "Boot Mode",
+        "Boot ROM Version",
+        "Boot Volume",
+        "Build Tag",
+        "Bus",
+        "Computer Name",
+        "Device ID",
+        "Display",
+        "Displays",
+        "External IP",
+        "Framebuffer Depth",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "Hardware UUID",
+        "Hostname",
+        "Is CIS",
+        "Kernel Extension Info",
+        "Kernel Version",
+        "L2 Cache (per Core",
+        "L3 Cache",
+        "Main Display",
+        "Memory",
+        "Mirror",
+        "Model Identifier",
+        "Model Name",
+        "Number of Processors",
+        "Online",
+        "OS Version",
+        "Password",
+        "PCIe Lane Width",
+        "Processor Name",
+        "Processor Speed",
+        "Resolution",
+        "Revision ID",
+        "Secure Virtual Memory",
+        "Serial Number (system",
+        "Slot",
+        "SMC Version (system",
+        "Software",
+        "System Integrity Protection",
+        "System Software Overview",
+        "System Version",
+        "Time since boot",
+        "Total Number of Cores",
+        "Type",
+        "UI Looks like",
+        "User Name",
+        "Username",
+        "Vendor",
+        "VRAM (Total"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "shub-stealer",
+      "id": "v_daef8eea2e5a1f8b75786d45f852066a",
+      "markers": [
+        "Hardware:",
+        "SHub Stealer (DEBUG)",
+        "Software:"
+      ],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_daef8eea2e5a1f8b75786d45f852066a/Information.txt",
+        "sha256": "4927ed33865700d9cc78cb81d3ada53e44cb44213671ce631b60d1bae7da9a08",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

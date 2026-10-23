@@ -1,0 +1,115 @@
+BLD: 6Xz0UjJj
+UUID: <HWID>
+PC Name: <HOST>
+User: <USER>
+AD: -
+CPU: Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz
+GPU: Intel(R) HD Graphics 5500 | NVIDIA GeForce 920M | 
+RAM: 4010 MB
+Resolution: 1366x768
+System lang: English (United States)
+System TimeZone: 04:00:00
+OS: Windows 10 Pro x64
+AV: Windows Defender
+
+
+Programs: 
+The Witcher Enhanced Edition Director's Cut <IP>
+MSI Afterburner 4.6.5 Beta 4 4.6.5 Beta 4
+Assassins Creed II v.1.0.1 
+Dying Light v. 1.38.0 (2046) 
+Far Cry 3 v.1.0.5 
+Far Cry 2 Fortune's Edition <IP>
+Google Chrome 114.0.5735.110
+MEGAsync 
+Microsoft Edge 114.0.1823.41
+Microsoft Edge Update <IP>
+Microsoft Edge WebView2 Runtime 114.0.1823.37
+OpenAL 
+Overwolf <IP>
+PCSX2 - Playstation 2 Emulator 1.6.0
+Raft 
+RivaTuner Statistics Server 7.3.4 Beta 6 7.3.4 Beta 6
+Sons Of The Forest 
+Steam <IP>
+The Forest 
+TLauncher 2.86
+Unreal Tournament 2004 
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.30501 12.0.30501.0
+Microsoft Visual C++ 2010  x86 Redistributable - 10.0.30319 10.0.30319
+Euro Truck Simulator 2 <IP>
+Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.31.31103 14.31.31103.0
+Microsoft XNA Framework Redistributable 4.0 4.0.20823.0
+Qualcomm Atheros QCA9377 Wireless LAN & Bluetooth Installer <IP>L
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030 11.0.61030.0
+Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.31.31103 14.31.31103.0
+Counter-Strike Source Edition version 1.6 1.6
+Java Auto Updater 2.8.371.11
+Microsoft Visual C++ 2022 X86 Additional Runtime - 14.31.31103 14.31.31103
+Realtek Card Reader 10.0.10586.31225
+GOG GALAXY 
+Microsoft Visual C++ 2005 Redistributable 8.0.56336
+Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.31.31103 14.31.31103
+Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.40664 12.0.40664
+EA app 12.108.0.5365
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.17 9.0.30729
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161 9.0.30729.6161
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40664 12.0.40664.0
+Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61030 11.0.61030
+Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61030 11.0.61030
+Pegasun System Utilities 8.0
+Python Launcher 3.11.3150.0
+Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030 11.0.61030.0
+Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.40664 12.0.40664
+Realtek High Definition Audio Driver 6.0.1.7451
+Viber <IP>
+Intel(R) Chipset Device Software 10.0.22
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.30501 12.0.30501.0
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.21022 9.0.21022
+Audacity 3.2.5 3.2.5
+Cheat Engine 7.5 
+Driver Easy 5.8.0 5.8.0
+ELAN HIDI2C Filter Driver X64 <IP>_WHQL <IP>
+TrackMania Nations Forever 
+Krunker 
+Treason 
+Banana Shooter 
+Unsolved Case 
+Trackmania 
+Team Fortress 2 
+PICO PARK:Classic Edition 
+WinRAR 6.11 (64-bit) 6.11.0
+Microsoft Visual C++ 2005 Redistributable (x64) 8.0.56336
+Python 3.11.3 Standard Library (64-bit) 3.11.3150.0
+Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219 10.0.40219
+Python 3.11.3 Documentation (64-bit) 3.11.3150.0
+Intel(R) Rapid Storage Technology 13.5.0.1056
+Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030 11.0.61030
+Intel(R) Rapid Storage Technology 13.5.0.1056
+Python 3.11.3 pip Bootstrap (64-bit) 3.11.3150.0
+Python 3.11.3 Utility Scripts (64-bit) 3.11.3150.0
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161 9.0.30729.6161
+Python 3.11.3 Core Interpreter (64-bit) 3.11.3150.0
+Microsoft Visual C++ 2005 Redistributable (x64) 8.0.50727.42
+Java 8 Update 371 (64-bit) 8.0.3710.11
+Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.21005 12.0.21005
+Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.31.31103 14.31.31103
+Python 3.11.3 Executables (64-bit) 3.11.3150.0
+Acer Care Center 1.00.3012
+Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.21005 12.0.21005
+Microsoft Visual C++ 2022 X64 Additional Runtime - 14.31.31103 14.31.31103
+NVIDIA Control Panel 425.31 425.31
+NVIDIA Install Application 2.1002.319.72
+NVIDIA Display Container 1.11
+NVIDIA Display Container LS 1.11
+NVIDIA Display Watchdog Plugin 1.11
+NVIDIA Display Session Container 1.11
+Quick CPU x64 <IP>
+Python 3.11.3 Test Suite (64-bit) 3.11.3150.0
+Microsoft Update Health Tools <IP>
+Intel(R) Chipset Device Software 10.0.22
+EA app 12.108.0.5365
+Python 3.11.3 Tcl/Tk Support (64-bit) 3.11.3150.0
+Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030 11.0.61030
+Python 3.11.3 Development Libraries (64-bit) 3.11.3150.0
+Node.js 18.16.0
