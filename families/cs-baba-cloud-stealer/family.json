@@ -85,6 +85,47 @@
   "variants": [
     {
       "attribution_confidence": "medium",
+      "distribution_channel": "@suncloud_chat",
+      "fields": [
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "IP",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "Time",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "System_Info.txt"
+      ],
+      "format_id": "cs-baba-cloud-stealer",
+      "id": "v_24461646f52e1a70046e107226696ef8",
+      "markers": [
+        "< Main Channel - @suncloud_chat >",
+        "@SunCloudNew"
+      ],
+      "panel_brand": "@SunCloudNew",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_24461646f52e1a70046e107226696ef8/System_Info.txt",
+        "sha256": "57f42c1eb550d5e39272ae70232699b8eedb02a4aa856a6a4d2e0a85968b089a",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "medium",
       "distribution_channel": "@Xavier_Log",
       "fields": [
         "Computer Name",
