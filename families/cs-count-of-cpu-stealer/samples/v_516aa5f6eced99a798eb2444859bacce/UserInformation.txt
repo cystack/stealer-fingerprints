@@ -1,0 +1,22 @@
+Timezone: (UTC+01:00) Brussels, Copenhagen, Madrid, Paris
+Time: Sun Apr 20 01:24:42 2025
+Language OS: fr-FR
+
+Username: <USER>
+PC Name: <HOST>
+OS: Microsoft Windows 10 Pro
+HWID: <HWID>
+
+Network:
+IP: <IP> 
+Country: United Kingdom (GB)
+Region: <LOCATION>
+City: <LOCATION>
+
+Features:
+CPU: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+Count of CPU cores: 4
+Count of CPU threads: 8
+GPU: Intel(R) UHD Graphics 620
+RAM: 11.89
+Screen Resolution: 1920x1080 (Primary)

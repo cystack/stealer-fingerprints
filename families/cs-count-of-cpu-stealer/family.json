@@ -51,7 +51,6 @@
     "xillenstealer",
     "inf0s3c-stealer"
   ],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "CSCountOfCpuStealer là định danh do CyStack đặt cho một bảng thông tin (panel) dạng Python `UserInformation.txt` được phát hiện bên trong các gói tổng hợp `<MONTH DAY> - <count> LOGS.part<N>.rar` tại các thư mục nạn nhân `<30-char alphanum>-XT/UserInformation.txt`. Nội dung là một khối `Key: Value` phẳng được chia thành phần đầu định danh (`Timezone:`, `Time:`, `Username:`, `PC Name:`, `OS:`, `HWID:`), khối định danh phần cứng (`BIOS Serial Number:`, `Machine GUID:`, `BaseBoard Manufacturer:`), phần `Network:` chứa dữ liệu định vị địa lý kiểu ipapi.co (`IP:`, `Country:`, `Region:`, `City:`, `Postal:`), phần `Hardwares:` (`CPU:`, `Count of CPU cores:`, `Count of CPU threads:`, `GPU:`, `Screen Resolution:`), và một bộ ba RAM trần (`RAM:`, `RAM Available:`, `RAM Used:`).\n\nNhiều chi tiết trong định dạng này cho thấy đây là mã Python viết tay thay vì một panel C# hoặc NodeJS được biên dịch. `Time:` được viết theo cấu trúc dữ liệu `time.asctime()` (`Sun Dec 17 11:24:02 2023`). `Timezone:` sử dụng dạng Olson (IANA) (`Africa/Accra`) mà `zoneinfo` / `time.tzname` trả về. `Postal: None` ghi nguyên văn giá trị literal Python `None` khi truy vấn ipapi.co không trả về mã bưu chính. Các khóa đầy đủ `Count of CPU cores:` và `Count of CPU threads:` đọc giống như một f-string ghép nhãn từ lệnh gọi `psutil.cpu_count(logical=False)` / `psutil.cpu_count()`. Các giá trị `RAM:` sử dụng đơn vị GB thập phân `X.XX GB`, không theo cấu trúc dữ liệu `MB` hoặc `bytes` mà các panel C# chuẩn tạo dữ liệu đầu ra.\n\nViệc quy kết họ mã độc hiện vẫn là tạm thời, chờ có tài liệu tình báo mối đe dọa công bố ánh xạ chính xác cho định dạng caption này. Các nhà cung cấp CTI đã được tuyển chọn (TrendMicro, SentinelOne Labs, Kaspersky SecureList, Cyfirma, SOCRadar, Cloudflare Cloudforce One, Talos, Unit 42, Microsoft TI, Mandiant, Recorded Future, eSentire, ANY.RUN) và các danh mục cộng đồng (MalBeacon what-is-this-stealer, deepdarkCTI, Malpedia, lexfo/stealer-parser, thredb/sysinfo-parser) đều không ghi nhận đúng tổ hợp `Count of CPU cores:` + `Postal: None` này. Các ứng viên Python viết tay gần nhất được khảo sát (Blank Grabber, XillenStealer, Inf0s3c) đều dùng tên tệp khác (`Information.txt`), banner khác (`<name> got a new victim:`), hoặc từ vựng trường dữ liệu khác (`Computer Name:` + `Total Memory:` + `UUID:` thay vì `PC Name:` + `RAM:` + `HWID:` + `Machine GUID:`).",
@@ -86,5 +85,48 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": null,
+      "fields": [
+        "City",
+        "Count of CPU cores",
+        "Count of CPU threads",
+        "Country",
+        "CPU",
+        "Features",
+        "GPU",
+        "HWID",
+        "IP",
+        "Language OS",
+        "Network",
+        "OS",
+        "PC Name",
+        "RAM",
+        "Region",
+        "Screen Resolution",
+        "Time",
+        "Timezone",
+        "Username"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "format_id": "cs-count-of-cpu-stealer",
+      "id": "v_516aa5f6eced99a798eb2444859bacce",
+      "markers": [
+        "Network:"
+      ],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_516aa5f6eced99a798eb2444859bacce/UserInformation.txt",
+        "sha256": "344221b4a456a86cfb67696ad3715c20ac0569832da2d5fc0abd3c9844f2734b",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

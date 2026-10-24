@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **147** CyStack tracking names
 - **14** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **219** observed log variants and **219** samples
-- **8,052,973** CyStack observations represented by the retained sample set
+- **221** observed log variants and **221** samples
+- **8,052,975** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -107,7 +107,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSAntiSandboxStealer](families/cs-anti-sandbox-stealer/) | unknown | 1 | [1 retained](families/cs-anti-sandbox-stealer/#observed-log-variants) |
 | [CSApplicationsDiscordStealer](families/cs-applications-discord-stealer/) | unknown | 0 | Metadata only |
 | [CSAppProfileStealer](families/cs-app-profile-stealer/) | unknown | 0 | Metadata only |
-| [CSArhontHardwarePreambleStealer](families/cs-arhont-hardware-preamble-stealer/) | unknown | 1 | [1 retained](families/cs-arhont-hardware-preamble-stealer/#observed-log-variants) |
+| [CSArhontHardwarePreambleStealer](families/cs-arhont-hardware-preamble-stealer/) | unknown | 2 | [2 retained](families/cs-arhont-hardware-preamble-stealer/#observed-log-variants) |
 | [CSArhontIdentityStealer](families/cs-arhont-identity-stealer/) | unknown | 2 | [2 retained](families/cs-arhont-identity-stealer/#observed-log-variants) |
 | [CSAutofillProfileBundle](families/cs-autofill-profile-bundle/) | unknown | 0 | Metadata only |
 | [CSAzureBuildStealer](families/cs-azure-build-stealer/) | unknown | 1 | [1 retained](families/cs-azure-build-stealer/#observed-log-variants) |
@@ -143,7 +143,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSCommonFilesCategoryStealer](families/cs-common-files-category-stealer/) | unknown | 0 | Metadata only |
 | [CSCookiesSoftStealer](families/cs-cookies-soft-stealer/) | unknown | 0 | Metadata only |
 | [CSCountCoreStealer](families/cs-count-core-stealer/) | unknown | 1 | [1 retained](families/cs-count-core-stealer/#observed-log-variants) |
-| [CSCountOfCpuStealer](families/cs-count-of-cpu-stealer/) | unknown | 0 | Metadata only |
+| [CSCountOfCpuStealer](families/cs-count-of-cpu-stealer/) | unknown | 1 | [1 retained](families/cs-count-of-cpu-stealer/#observed-log-variants) |
 | [CSCountRunsStealer](families/cs-count-runs-stealer/) | unknown | 1 | [1 retained](families/cs-count-runs-stealer/#observed-log-variants) |
 | [CSCrownBuildStealer](families/cs-crown-build-stealer/) | unknown | 1 | [1 retained](families/cs-crown-build-stealer/#observed-log-variants) |
 | [CSCuriricaStealer](families/cs-curirica-stealer/) | unknown | 1 | [1 retained](families/cs-curirica-stealer/#observed-log-variants) |

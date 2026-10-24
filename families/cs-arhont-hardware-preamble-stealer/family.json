@@ -67,6 +67,29 @@
         "source": "cystack_collection",
         "sanitized": true
       }
+    },
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@Bugatti_Cloud",
+      "fields": [
+        "CPU",
+        "GPU",
+        "RAM"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "cs-arhont-hardware-preamble-stealer",
+      "id": "v_89004ea5e29f10c816793160e1d769f3",
+      "markers": [],
+      "panel_brand": "Bugatti Cloud (hardware preamble)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_89004ea5e29f10c816793160e1d769f3/Information.txt",
+        "sha256": "e4dac066b9f62dfd62eaa849fc9e1061b6dbe30e2ac443a385805406a116affd",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
     }
   ]
 }

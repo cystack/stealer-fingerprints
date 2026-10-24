@@ -54,7 +54,8 @@ Việc quy kết họ mã độc hiện vẫn là tạm thời, chờ có tài l
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `LOGS-pack Python-shaped UserInformation panel`, `Count-of-CPU verbose-key UserInformation panel`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -91,7 +92,23 @@ Dấu vết nhận diện yêu cầu cả hai khóa cố định vị trí dòng
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_516aa5f6eced99a798eb2444859bacce`
+
+- Format ID: `cs-count-of-cpu-stealer`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **unknown**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_516aa5f6eced99a798eb2444859bacce/UserInformation.txt)
+- Sample SHA-256: `344221b4a456a86cfb67696ad3715c20ac0569832da2d5fc0abd3c9844f2734b`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `Network:`
+- Field labels: `City`, `Count of CPU cores`, `Count of CPU threads`, `Country`, `CPU`, `Features`, `GPU`, `HWID`, `IP`, `Language OS`, `Network`, `OS`, `PC Name`, `RAM`, `Region`, `Screen Resolution`, `Time`, `Timezone`, `Username`
+
 
 ## MITRE ATT&CK
 

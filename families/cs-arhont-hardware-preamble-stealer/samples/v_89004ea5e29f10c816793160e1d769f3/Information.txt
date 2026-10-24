@@ -1,0 +1,3 @@
+ CPU : Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+ RAM : 7869MB
+ GPU : Intel(R) UHD Graphics

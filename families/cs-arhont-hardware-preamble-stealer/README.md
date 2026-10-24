@@ -52,8 +52,8 @@ Việc quy kết họ mã độc là tạm thời, chờ một ánh xạ tình b
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `@ArhontCorp Information.txt hardware preamble`, `Bugatti Private Cloud 3-field hardware sibling`, `CryptogoL (TG @ArhontCorp) capital-I Information.txt layout`
-- Variants observed: **1**
-- CyStack observations represented: **1**
+- Variants observed: **2**
+- CyStack observations represented: **2**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -97,6 +97,23 @@ Recognition anchors:
 
 - Stable markers: -
 - Field labels: `CPU`, `GPU`, `RAM`, `❗️Actual Link`, `💎Buy`
+
+### `v_89004ea5e29f10c816793160e1d769f3`
+
+- Format ID: `cs-arhont-hardware-preamble-stealer`
+- Observed filenames: `Information.txt`
+- Panel brand: `Bugatti Cloud (hardware preamble)`
+- Distribution channel: `@Bugatti_Cloud`
+- Attribution confidence: **unknown**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_89004ea5e29f10c816793160e1d769f3/Information.txt)
+- Sample SHA-256: `e4dac066b9f62dfd62eaa849fc9e1061b6dbe30e2ac443a385805406a116affd`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `CPU`, `GPU`, `RAM`
 
 
 ## MITRE ATT&CK
