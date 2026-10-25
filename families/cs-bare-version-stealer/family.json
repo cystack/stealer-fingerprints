@@ -43,7 +43,6 @@
   "observed_channels": [
     "https://t.me/bradmax_cloud"
   ],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "CSBareVersionStealer là định danh do CyStack đặt cho một cấu trúc dữ liệu `UserInformation.txt` được quan sát bên trong các gói tổng hợp (aggregator pack) kiểu `!! 2026 JAN.part01.rar` nằm trong các thư mục nạn nhân `[CC]@BRADMAX (<N>)/UserInformation.txt`. Các danh mục trên kênh Telegram công khai liệt kê `t.me/bradmax_cloud` và bản sao đang hoạt động `t.me/+0IAf5VIrl_EzNWRi` là một aggregator Telegram mà đối tượng vận hành tự gắn nhãn \"Redline and Raccoon Data Logs\", nhưng phần thân dữ liệu lại thiếu mọi dấu hiệu neo (anchor) chuẩn của Redline (lỗi chính tả `Operation System:`, `FileLocation:`, khối `Hardwares:`, khối `Anti-Viruses:`) và mọi dấu hiệu neo chuẩn của Raccoon (`User ID: <UUID>|<user>`, JS-date `Last seen:`, `IP info: <CC> <IPv4>`), do đó nhãn do đối tượng vận hành tự đặt không thể được tin tưởng.\n\nVề cấu trúc, phần thân dữ liệu là một bản rút gọn của tệp/dấu vết liên quan `CSBuildBlockStealer`: cùng cấu trúc dữ liệu 12 trường (`User time:`, `HWID:`, `PC Name:`, `User Name:`, `CPU:`, `GPU:`, `Memory:`, `OS:`, `Active window:`, `Admin rights:`, `IP:`, `GEO:`) nhưng nhóm bốn dòng `Build Path:` / `Build ID:` / `Build Version:` / `Build Comment:` được thay bằng một dòng `Version` trần (không có dấu hai chấm, không có giá trị), và dòng `Resolution:` ở cuối bị loại bỏ. Các giá trị `IP:` / `GEO:` rỗng là bình thường: panel bỏ qua việc tra cứu định vị địa lý đối với các IP bogon thay vì tạo dữ liệu đầu ra là một chuỗi giữ chỗ (placeholder).\n\nViệc quy kết họ mã độc vẫn mang tính tạm thời, chờ có một bản đồ tình báo mối đe dọa được công bố cho bố cục dữ liệu rút gọn này. Các báo cáo công khai và danh mục cộng đồng hiện chưa ghi nhận một mã độc đánh cắp thông tin tạo dữ liệu đầu ra chính xác với tập trường Build rút gọn / `Version` trần như thế này.",
@@ -76,5 +75,41 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@BRADMAX",
+      "fields": [
+        "Active window",
+        "Admin rights",
+        "Build Comment",
+        "CPU",
+        "GEO",
+        "GPU",
+        "HWID",
+        "IP",
+        "Memory",
+        "OS",
+        "PC Name",
+        "Resolution",
+        "User Name",
+        "User time"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "format_id": "cs-bare-version-stealer",
+      "id": "v_ca33bd197b92a642317a2303d772b51e",
+      "markers": [],
+      "panel_brand": "bare Version line (Build block stripped)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_ca33bd197b92a642317a2303d772b51e/UserInformation.txt",
+        "sha256": "7f32472076ebe7d8abc5550bdd640aaaa6382e6cebcea556730a778dee9f931a",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

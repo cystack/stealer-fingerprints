@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **147** CyStack tracking names
 - **14** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **223** observed log variants and **223** samples
-- **8,052,977** CyStack observations represented by the retained sample set
+- **224** observed log variants and **224** samples
+- **8,052,978** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -114,7 +114,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSBabaCloudBuildBlockStealer](families/cs-baba-cloud-build-block-stealer/) | unknown | 1 | [1 retained](families/cs-baba-cloud-build-block-stealer/#observed-log-variants) |
 | [CSBabaCloudInfoStealer](families/cs-baba-cloud-info-stealer/) | unknown | 1 | [1 retained](families/cs-baba-cloud-info-stealer/#observed-log-variants) |
 | [CSBareUsernameAVStealer](families/cs-bare-username-av-stealer/) | unknown | 0 | Metadata only |
-| [CSBareVersionStealer](families/cs-bare-version-stealer/) | unknown | 0 | Metadata only |
+| [CSBareVersionStealer](families/cs-bare-version-stealer/) | unknown | 1 | [1 retained](families/cs-bare-version-stealer/#observed-log-variants) |
 | [CSBase64CpuStealer](families/cs-base64-cpu-stealer/) | unknown | 0 | Metadata only |
 | [CSBestPrivateLoggerStealer](families/cs-best-private-logger-stealer/) | unknown | 1 | [1 retained](families/cs-best-private-logger-stealer/#observed-log-variants) |
 | [CSBitArchStealer](families/cs-bit-arch-stealer/) | unknown | 1 | [1 retained](families/cs-bit-arch-stealer/#observed-log-variants) |

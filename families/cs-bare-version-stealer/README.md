@@ -43,7 +43,8 @@ Việc quy kết họ mã độc vẫn mang tính tạm thời, chờ có một 
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `@BRADMAX stripped Build variant`, `BradMax Cloud`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -76,7 +77,23 @@ Việc nhận diện dấu hiệu (fingerprint) yêu cầu các khóa `Active wi
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_ca33bd197b92a642317a2303d772b51e`
+
+- Format ID: `cs-bare-version-stealer`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: `bare Version line (Build block stripped)`
+- Distribution channel: `@BRADMAX`
+- Attribution confidence: **unknown**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_ca33bd197b92a642317a2303d772b51e/UserInformation.txt)
+- Sample SHA-256: `7f32472076ebe7d8abc5550bdd640aaaa6382e6cebcea556730a778dee9f931a`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Active window`, `Admin rights`, `Build Comment`, `CPU`, `GEO`, `GPU`, `HWID`, `IP`, `Memory`, `OS`, `PC Name`, `Resolution`, `User Name`, `User time`
+
 
 ## MITRE ATT&CK
 
