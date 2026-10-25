@@ -31,8 +31,8 @@ Dữ liệu đưa ra ngoài trên đường truyền là JSON, được nén GZI
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Aura Stealer`, `AuraStealer`
-- Variants observed: **1**
-- CyStack observations represented: **3,537**
+- Variants observed: **2**
+- CyStack observations represented: **3,538**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -83,6 +83,23 @@ Recognition anchors:
 
 - Stable markers: `[Hardware]`, `[System Info]`
 - Field labels: -
+
+### `v_c36c9073e886501d4867398d67a8698f`
+
+- Format ID: `cs-roycloud-aura-stealer`
+- Observed filenames: `System.txt`
+- Panel brand: `RoyCloud`
+- Distribution channel: `@ft7logs`
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_c36c9073e886501d4867398d67a8698f/System.txt)
+- Sample SHA-256: `5d99e3bc01ebb056b14eb8e025834032b742de4404f18f7c17a8b3a7560f9f2e`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `[Hardware]`, `[Installed Software]`, `[Processes List]`, `[System Info]`, `RÔýĆløud`
+- Field labels: `Architecture`, `Build Lab`, `Build Number`, `Computer Name`, `Edition`, `GPUs`, `Install Date`, `Keyboard Layouts`, `Language`, `Launched at`, `OS Name`, `Product Id`, `RAM`, `Run as Admin`, `Running on`, `Screen resolution`, `Time Zone`, `User in Admins group`, `User Name`, `Version`, `▶ 𝗙𝖮rе🅽ş𝕀c 𝗪𝘈t𝘌r𝖬á🅁𝖪`, `▶ 𝘛rᴀc𝙺i🅽g ID`
 
 
 ## MITRE ATT&CK

@@ -58,30 +58,6 @@
     "https://www.gendigital.com/blog/insights/research/defeating-aurastealer-obfuscation",
     "https://www.intrinsec.com/en/analysis-of-aurastealer-an-emerging-infostealer/"
   ],
-  "variants": [
-    {
-      "id": "v_97204ede3c0a7a80adbe42a20d7509b3",
-      "format_id": "aura-stealer",
-      "filenames": [
-        "System.txt"
-      ],
-      "panel_brand": null,
-      "distribution_channel": null,
-      "attribution_confidence": "high",
-      "markers": [
-        "[Hardware]",
-        "[System Info]"
-      ],
-      "fields": [],
-      "observations": 3537,
-      "sample": {
-        "path": "samples/v_97204ede3c0a7a80adbe42a20d7509b3/sample.txt",
-        "sha256": "30d64ac0e523bea150efddfa0d23068ef181f08d4d13250e20ba3b71dd1a7cc8",
-        "source": "cystack_collection",
-        "sanitized": true
-      }
-    }
-  ],
   "localizations": {
     "vi": {
       "description": "Aura Stealer (còn gọi là AuraStealer) là mã độc đánh cắp thông tin dưới dạng dịch vụ (infostealer-as-a-service) viết bằng C++, được quảng cáo trên các diễn đàn ngầm từ tháng 7 năm 2025 bởi tác nhân đe dọa AuraCorp. Các gói đăng ký đi kèm một trình dựng (builder) cùng một bảng điều khiển web tổng hợp các nhật ký thu thập được. Các chữ ký diệt vi-rút phân loại mã độc này dưới tên nhận diện `Trojan:MSIL/AuraStealer.AUKB!MTB`; các công cụ theo dõi mã độc công khai liệt kê nó là `win.aurastealer`.\n\nDữ liệu đưa ra ngoài trên đường truyền là JSON, được nén GZIP và mã hóa Base64 gửi đến C2. Dấu vết được ghi lại ở đây là bản kết xuất bảng điều khiển dành cho đối tượng vận hành, được ghi dưới dạng `System.txt` bên trong mỗi thư mục theo từng nạn nhân. Bản kết xuất bắt đầu bằng một biểu ngữ bản dựng `AURA v<x.y.z>`, sau đó là một khối trường thông tin định danh ở trên cùng (`HWID:`, cặp giờ địa phương/UTC `Launched at:`, `Location:`, các cờ nâng quyền), rồi đến bốn phần trong dấu ngoặc vuông theo thứ tự: `[System Info]`, `[Hardware]`, `[Processes List]`, `[Installed Software]`. Trường `Location:` mang mục tiêu process hollowing, thường là `C:\\\\Windows\\\\Microsoft.NET\\\\Framework\\\\v4.0.30319\\\\RegAsm.exe` theo chuỗi tiêm mã được ghi nhận công khai.",
@@ -127,5 +103,77 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "id": "v_97204ede3c0a7a80adbe42a20d7509b3",
+      "format_id": "aura-stealer",
+      "filenames": [
+        "System.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "high",
+      "markers": [
+        "[Hardware]",
+        "[System Info]"
+      ],
+      "fields": [],
+      "observations": 3537,
+      "sample": {
+        "path": "samples/v_97204ede3c0a7a80adbe42a20d7509b3/sample.txt",
+        "sha256": "30d64ac0e523bea150efddfa0d23068ef181f08d4d13250e20ba3b71dd1a7cc8",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "@ft7logs",
+      "fields": [
+        "Architecture",
+        "Build Lab",
+        "Build Number",
+        "Computer Name",
+        "Edition",
+        "GPUs",
+        "Install Date",
+        "Keyboard Layouts",
+        "Language",
+        "Launched at",
+        "OS Name",
+        "Product Id",
+        "RAM",
+        "Run as Admin",
+        "Running on",
+        "Screen resolution",
+        "Time Zone",
+        "User in Admins group",
+        "User Name",
+        "Version",
+        "▶ 𝗙𝖮rе🅽ş𝕀c 𝗪𝘈t𝘌r𝖬á🅁𝖪",
+        "▶ 𝘛rᴀc𝙺i🅽g ID"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "format_id": "cs-roycloud-aura-stealer",
+      "id": "v_c36c9073e886501d4867398d67a8698f",
+      "markers": [
+        "[Hardware]",
+        "[Installed Software]",
+        "[Processes List]",
+        "[System Info]",
+        "RÔýĆløud"
+      ],
+      "panel_brand": "RoyCloud",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_c36c9073e886501d4867398d67a8698f/System.txt",
+        "sha256": "5d99e3bc01ebb056b14eb8e025834032b742de4404f18f7c17a8b3a7560f9f2e",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }
