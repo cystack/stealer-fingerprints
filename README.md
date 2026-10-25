@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **147** CyStack tracking names
 - **14** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **221** observed log variants and **221** samples
-- **8,052,975** CyStack observations represented by the retained sample set
+- **222** observed log variants and **222** samples
+- **8,052,976** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -48,7 +48,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 |---|---|---:|---|
 | [Acreed](families/acreed/) | high | 2 | [2 retained](families/acreed/#observed-log-variants) |
 | [Ailurophile](families/ailurophile/) | high | 1 | [1 retained](families/ailurophile/#observed-log-variants) |
-| [AMOS Stealer](families/amos-stealer/) | high | 1 | [1 retained](families/amos-stealer/#observed-log-variants) |
+| [AMOS Stealer](families/amos-stealer/) | high | 2 | [2 retained](families/amos-stealer/#observed-log-variants) |
 | [Arcane](families/arcane/) | high | 3 | [3 retained](families/arcane/#observed-log-variants) |
 | [AuraStealer](families/aura-stealer/) | high | 1 | [1 retained](families/aura-stealer/#observed-log-variants) |
 | [Aurora Stealer](families/aurora-stealer/) | high | 1 | [1 retained](families/aurora-stealer/#observed-log-variants) |

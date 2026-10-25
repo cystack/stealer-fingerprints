@@ -67,31 +67,6 @@
     "banshee-stealer",
     "poseidon-stealer"
   ],
-  "variants": [
-    {
-      "id": "v_93dd7400af7f5eefc3087e22c6b99a1c",
-      "format_id": "amos",
-      "filenames": [
-        "UserInformation.txt"
-      ],
-      "panel_brand": null,
-      "distribution_channel": null,
-      "attribution_confidence": "medium",
-      "markers": [
-        "Debanks:",
-        "MetaMask Info:",
-        "Userinfo:"
-      ],
-      "fields": [],
-      "observations": 19149,
-      "sample": {
-        "path": "samples/v_93dd7400af7f5eefc3087e22c6b99a1c/sample.txt",
-        "sha256": "2356e0c8ea7177f7e7d33714b3b37bf74a3bbab1633e9f21b73d1d5fe30c7437",
-        "source": "cystack_collection",
-        "sanitized": true
-      }
-    }
-  ],
   "localizations": {
     "vi": {
       "description": "Atomic macOS Stealer (AMOS) là mã độc đánh cắp thông tin trên macOS viết bằng Go và C++, được bán dưới dạng malware-as-a-service qua các kênh Telegram riêng tư từ tháng 4 năm 2023. Bảng điều khiển đối tượng vận hành tính phí khoảng 1000 đô la mỗi tháng và đi kèm một trình dựng (builder), một bảng điều khiển web để quản lý nạn nhân, một công cụ dò mật khẩu (brute-forcer) cho MetaMask, và tính năng gửi nhật ký qua Telegram. Nhiều bài phân tích mã độc công khai đã mô tả chi tiết họ mã độc này. AMOS đã sinh ra các nhánh Banshee, Cthulhu, Poseidon và Odyssey được theo dõi riêng trong danh mục này.\n\nDấu vết được ghi lại ở đây là bản tóm tắt dành cho đối tượng vận hành được ghi dưới dạng `UserInformation.txt` bên trong các thư mục theo từng nạn nhân của các gói tổng hợp nhật ký AMOS. Tệp bắt đầu với bốn tiêu đề phần của bảng điều khiển canh lề trái theo thứ tự cố định (`MetaMask Info:`, `Debanks:`, `Userinfo:`, sau đó `Software:` / `Hardware:` / `Graphics/Displays:` giới thiệu dữ liệu đầu ra nguyên văn `system_profiler` cho các kiểu dữ liệu SPSoftwareDataType, SPHardwareDataType và SPDisplaysDataType). `MetaMask Info` và `Debanks` trống trong hầu hết các mẫu vì bảng điều khiển đưa các dấu vết liên quan đến ví vào các thư mục liên quan (`Wallets/`, `Keychain/`) thay vì chèn trực tiếp vào bản tóm tắt này.",
@@ -135,5 +110,107 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "id": "v_93dd7400af7f5eefc3087e22c6b99a1c",
+      "format_id": "amos",
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "panel_brand": null,
+      "distribution_channel": null,
+      "attribution_confidence": "medium",
+      "markers": [
+        "Debanks:",
+        "MetaMask Info:",
+        "Userinfo:"
+      ],
+      "fields": [],
+      "observations": 19149,
+      "sample": {
+        "path": "samples/v_93dd7400af7f5eefc3087e22c6b99a1c/sample.txt",
+        "sha256": "2356e0c8ea7177f7e7d33714b3b37bf74a3bbab1633e9f21b73d1d5fe30c7437",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "@UP_DAISYCLOUD",
+      "fields": [
+        "1 Week",
+        "2 Week",
+        "A 3 Month",
+        "A _______ Join",
+        "D 1 Month",
+        "D Join",
+        "D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 bfvys Hardware UUID",
+        "D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 ctkul Online",
+        "D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 dahw Country",
+        "D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 dvwbt Resolution",
+        "D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 kugnbtqd Model Name",
+        "D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 mqeyop Computer Name",
+        "D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 nkkvaizrl Installed Applications",
+        "D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 pqbbib Apple M4 Pro",
+        "D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 puhklxo Graphics/Displays",
+        "D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 tbwtt Display Type",
+        "D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 vdgo Chip",
+        "D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 beggqu System Firmware Version",
+        "D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 bkikjhls Model Identifier",
+        "D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 dcbqvo Hardware Overview",
+        "D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 gxpsvlldw Mirror",
+        "D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 gylyyyny Time since boot",
+        "D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 iggetun IP",
+        "D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 kchrvui Hardware",
+        "D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 tgwxccq Displays",
+        "D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 wakrhc User Name",
+        "D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 wlnshysuo Connection Type",
+        "D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 xiwzq System Software Overview",
+        "D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 zvxzod Color LCD",
+        "D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 ajznc Main Display",
+        "D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 dvixz Bus",
+        "D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 evwbssfo Vendor",
+        "D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 ezdul Model Number",
+        "D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 nwkrk Type",
+        "D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 otnbo Boot Volume",
+        "D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 qrvelg Automatically Adjust Brightness",
+        "D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 rpvx Boot Mode",
+        "D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 txothjzzm Software",
+        "D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 vauu Activation Lock Status",
+        "D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 wqqejga Metal Support",
+        "D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 zbho Serial Number (system",
+        "D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 bgelc BuildID",
+        "D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 broindc Total Number of Cores",
+        "D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 etsolk Userinfo",
+        "D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 gjije Provisioning UDID",
+        "D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 jrml City",
+        "D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 kpoyrpj Kernel Version",
+        "D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 pbclye System Integrity Protection",
+        "D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 plmxb Chipset Model",
+        "D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 rwav Memory",
+        "D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 tvsgr Total Number of Cores",
+        "D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 ubitwmz System Version",
+        "D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 wwqn OS Loader Version",
+        "D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 ykianntld Secure Virtual Memory",
+        "I LifeTime"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "format_id": "cs-daisy-up-cloud-amos-stealer",
+      "id": "v_c2253c1c58f2ed299a4434b11398cd45",
+      "markers": [
+        "Daisy Private Cloud"
+      ],
+      "panel_brand": "Daisy Private Cloud",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_c2253c1c58f2ed299a4434b11398cd45/UserInformation.txt",
+        "sha256": "23f21c4574b384e96cb64dd2fd0759c6daef51888e8d4b73dc9c35aada821de4",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

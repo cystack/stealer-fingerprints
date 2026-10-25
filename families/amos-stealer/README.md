@@ -37,8 +37,8 @@ Dấu vết được ghi lại ở đây là bản tóm tắt dành cho đối t
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Atomic Stealer`, `Atomic macOS Stealer`, `AMOS`, `Atomic Mac`
-- Variants observed: **1**
-- CyStack observations represented: **19,149**
+- Variants observed: **2**
+- CyStack observations represented: **19,150**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -91,6 +91,23 @@ Recognition anchors:
 
 - Stable markers: `Debanks:`, `MetaMask Info:`, `Userinfo:`
 - Field labels: -
+
+### `v_c2253c1c58f2ed299a4434b11398cd45`
+
+- Format ID: `cs-daisy-up-cloud-amos-stealer`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: `Daisy Private Cloud`
+- Distribution channel: `@UP_DAISYCLOUD`
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_c2253c1c58f2ed299a4434b11398cd45/UserInformation.txt)
+- Sample SHA-256: `23f21c4574b384e96cb64dd2fd0759c6daef51888e8d4b73dc9c35aada821de4`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `Daisy Private Cloud`
+- Field labels: `1 Week`, `2 Week`, `A 3 Month`, `A _______ Join`, `D 1 Month`, `D Join`, `D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 bfvys Hardware UUID`, `D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 ctkul Online`, `D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 dahw Country`, `D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 dvwbt Resolution`, `D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 kugnbtqd Model Name`, `D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 mqeyop Computer Name`, `D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 nkkvaizrl Installed Applications`, `D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 pqbbib Apple M4 Pro`, `D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 puhklxo Graphics/Displays`, `D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 tbwtt Display Type`, `D0a1i0s9y2 P9r4i2v5a4t2e c3l9o3u7d6 vdgo Chip`, `D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 beggqu System Firmware Version`, `D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 bkikjhls Model Identifier`, `D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 dcbqvo Hardware Overview`, `D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 gxpsvlldw Mirror`, `D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 gylyyyny Time since boot`, `D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 iggetun IP`, `D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 kchrvui Hardware`, `D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 tgwxccq Displays`, `D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 wakrhc User Name`, `D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 wlnshysuo Connection Type`, `D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 xiwzq System Software Overview`, `D4a6i9s5y7 P3r2i6v3a6t0e c0l5o6u8d9 zvxzod Color LCD`, `D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 ajznc Main Display`, `D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 dvixz Bus`, `D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 evwbssfo Vendor`, `D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 ezdul Model Number`, `D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 nwkrk Type`, `D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 otnbo Boot Volume`, `D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 qrvelg Automatically Adjust Brightness`, `D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 rpvx Boot Mode`, `D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 txothjzzm Software`, `D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 vauu Activation Lock Status`, `D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 wqqejga Metal Support`, `D4a7i6s5y5 P7r1i4v9a6t2e c7l8o8u9d0 zbho Serial Number (system`, `D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 bgelc BuildID`, `D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 broindc Total Number of Cores`, `D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 etsolk Userinfo`, `D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 gjije Provisioning UDID`, `D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 jrml City`, `D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 kpoyrpj Kernel Version`, `D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 pbclye System Integrity Protection`, `D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 plmxb Chipset Model`, `D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 rwav Memory`, `D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 tvsgr Total Number of Cores`, `D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 ubitwmz System Version`, `D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 wwqn OS Loader Version`, `D8a9i8s6y8 P3r7i0v2a4t7e c7l4o1u5d6 ykianntld Secure Virtual Memory`, `I LifeTime`
 
 
 ## MITRE ATT&CK
