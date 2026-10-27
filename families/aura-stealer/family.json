@@ -174,6 +174,51 @@
         "source": "cystack_collection",
         "sanitized": true
       }
+    },
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "@ArhontCorp",
+      "fields": [
+        "Architecture",
+        "Build Lab",
+        "Build Number",
+        "Computer Name",
+        "Edition",
+        "GPUs",
+        "Install Date",
+        "Keyboard Layouts",
+        "Language",
+        "Launched at",
+        "OS Name",
+        "Product Id",
+        "RAM",
+        "Run as Admin",
+        "Running on",
+        "Screen resolution",
+        "Time Zone",
+        "User in Admins group",
+        "User Name",
+        "Version"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "format_id": "cs-secret-starlink-aura-stealer",
+      "id": "v_d0a3b734e70887d6bedb559dadcd4640",
+      "markers": [
+        "[Hardware]",
+        "[Installed Software]",
+        "[Processes List]",
+        "[System Info]"
+      ],
+      "panel_brand": "Secret StarLink",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_d0a3b734e70887d6bedb559dadcd4640/System.txt",
+        "sha256": "3cf175c7220ebbc7782453c754643cdc831526a4231668dad8afab804f7fffb3",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
     }
   ]
 }

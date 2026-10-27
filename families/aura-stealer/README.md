@@ -31,8 +31,8 @@ Dữ liệu đưa ra ngoài trên đường truyền là JSON, được nén GZI
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Aura Stealer`, `AuraStealer`
-- Variants observed: **2**
-- CyStack observations represented: **3,538**
+- Variants observed: **3**
+- CyStack observations represented: **3,539**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -100,6 +100,23 @@ Recognition anchors:
 
 - Stable markers: `[Hardware]`, `[Installed Software]`, `[Processes List]`, `[System Info]`, `RÔýĆløud`
 - Field labels: `Architecture`, `Build Lab`, `Build Number`, `Computer Name`, `Edition`, `GPUs`, `Install Date`, `Keyboard Layouts`, `Language`, `Launched at`, `OS Name`, `Product Id`, `RAM`, `Run as Admin`, `Running on`, `Screen resolution`, `Time Zone`, `User in Admins group`, `User Name`, `Version`, `▶ 𝗙𝖮rе🅽ş𝕀c 𝗪𝘈t𝘌r𝖬á🅁𝖪`, `▶ 𝘛rᴀc𝙺i🅽g ID`
+
+### `v_d0a3b734e70887d6bedb559dadcd4640`
+
+- Format ID: `cs-secret-starlink-aura-stealer`
+- Observed filenames: `System.txt`
+- Panel brand: `Secret StarLink`
+- Distribution channel: `@ArhontCorp`
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_d0a3b734e70887d6bedb559dadcd4640/System.txt)
+- Sample SHA-256: `3cf175c7220ebbc7782453c754643cdc831526a4231668dad8afab804f7fffb3`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `[Hardware]`, `[Installed Software]`, `[Processes List]`, `[System Info]`
+- Field labels: `Architecture`, `Build Lab`, `Build Number`, `Computer Name`, `Edition`, `GPUs`, `Install Date`, `Keyboard Layouts`, `Language`, `Launched at`, `OS Name`, `Product Id`, `RAM`, `Run as Admin`, `Running on`, `Screen resolution`, `Time Zone`, `User in Admins group`, `User Name`, `Version`
 
 
 ## MITRE ATT&CK
