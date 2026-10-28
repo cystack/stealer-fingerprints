@@ -64,8 +64,8 @@ Tên theo dõi này không liên quan đến hồ sơ `CSBabaStealer`, vốn đ�
 - Attribution confidence: **medium**
 - Canonical family: [vidar](../vidar/)
 - Aliases: `BabaCloud Logs`, `BabaCloudLogs`, `@BabaCloud_New`
-- Variants observed: **4**
-- CyStack observations represented: **4**
+- Variants observed: **5**
+- CyStack observations represented: **5**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -92,6 +92,23 @@ requires the `Key:` no-space form.
 Việc nhận diện dấu hiệu yêu cầu chuỗi ký tự thương hiệu phân phối `@BabaCloud_New` xuất hiện trong nội dung VÀ ít nhất một dòng trường chuẩn của Vidar được neo theo dạng có khoảng trắng trước dấu hai chấm (`MachineID :` HOẶC `VideoCard :`). Nội dung Vidar chuẩn sẽ không khớp với các mẫu này vì mọi dấu hiệu nhận diện chuẩn đều yêu cầu dạng không có khoảng trắng `Key:`.
 
 ## Observed log variants
+
+### `v_1f52ba64d7f6959a0bdceb8a915db25e`
+
+- Format ID: `cs-baba-cloud-stealer`
+- Observed filenames: `System_Info.txt`
+- Panel brand: `@DataMonk_file`
+- Distribution channel: `@DataMonk_file`
+- Attribution confidence: **medium**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_1f52ba64d7f6959a0bdceb8a915db25e/System_Info.txt)
+- Sample SHA-256: `bb4882bdc632fc7f7360d927bca23647a3fa7fd89a42fcad30af804e77cf2196`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `@DataMonk_file`
+- Field labels: `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `Time`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
 
 ### `v_24461646f52e1a70046e107226696ef8`
 

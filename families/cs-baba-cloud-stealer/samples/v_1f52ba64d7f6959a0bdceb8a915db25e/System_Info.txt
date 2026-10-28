@@ -1,0 +1,26 @@
+<    Public Logs Channel   :   @DataMonk_file    >
+<    Public Ulp Channel    :   DataMonk_txt      >
+<          Admin : @DataMonk_Admin .             >
+<        https://t.me/DataMonk_Admin .           >
+
+IP : <IP>
+Country : FR
+Date : 13/08/2026
+Time : 01:04:02
+
+MachineID : <HWID>
+GUID : <HWID>
+HWID : <HWID>
+Path : C:\Windows\SysWOW32\install.exe
+Work Dir : Admin @DataMonk_Admin .
+Windows : Windows 11 Home 25H2 (Build 26200)
+Computer Name : <HOST>
+User Name : <USER>
+Display Resolution : 1920x1080
+
+--- [ Hardware ] ---
+Processor : Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+Cores : 12
+Threads : 12
+RAM : 16215 MB
+VideoCard : NVIDIA GeForce RTX 2060

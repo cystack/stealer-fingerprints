@@ -85,6 +85,46 @@
   "variants": [
     {
       "attribution_confidence": "medium",
+      "distribution_channel": "@DataMonk_file",
+      "fields": [
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "IP",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "Time",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "System_Info.txt"
+      ],
+      "format_id": "cs-baba-cloud-stealer",
+      "id": "v_1f52ba64d7f6959a0bdceb8a915db25e",
+      "markers": [
+        "@DataMonk_file"
+      ],
+      "panel_brand": "@DataMonk_file",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_1f52ba64d7f6959a0bdceb8a915db25e/System_Info.txt",
+        "sha256": "bb4882bdc632fc7f7360d927bca23647a3fa7fd89a42fcad30af804e77cf2196",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "medium",
       "distribution_channel": "@suncloud_chat",
       "fields": [
         "Computer Name",
