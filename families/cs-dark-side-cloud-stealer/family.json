@@ -90,6 +90,55 @@
         "IP",
         "K TIERS (monthly",
         "L U Join",
+        "MachineID",
+        "O D Join",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "Time",
+        "U Join",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "System_Info.txt"
+      ],
+      "format_id": "cs-darkside-cloud-stealer",
+      "id": "v_41fcd53373cc7b29f886b62f0825807a",
+      "layout_id": "cryptogol-full-fields",
+      "markers": [
+        "DARKSIDE PRIVATE CLOUD"
+      ],
+      "panel_brand": "DARKSIDE PRIVATE CLOUD",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_41fcd53373cc7b29f886b62f0825807a/System_Info.txt",
+        "sha256": "79ddbdc646886fe2dfc09a9d42719f44e6a22b6152bffb09a5c48d25e1144d63",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "t.me/+abRpT5eRHCplNzIy",
+      "fields": [
+        "A Join",
+        "C O Gold Channel",
+        "Computer Name",
+        "Cores",
+        "Country",
+        "D C Budget Channel",
+        "Date",
+        "Display Resolution",
+        "E L Premium Channel",
+        "GUID",
+        "HWID",
+        "IP",
+        "K TIERS (monthly",
+        "L U Join",
         "Local Time",
         "MachineID",
         "O D Join",

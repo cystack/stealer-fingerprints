@@ -24,8 +24,8 @@ CSDarkSideCloudStealer là định danh do CyStack đặt cho một lớp bọc 
 - Attribution confidence: **high**
 - Canonical family: [redline](../redline/)
 - Aliases: `DARKSIDE PRIVATE CLOUD`, `darkside linklogs`, `DarkSide Cloud`
-- Variants observed: **1**
-- CyStack observations represented: **1**
+- Variants observed: **2**
+- CyStack observations represented: **2**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -47,6 +47,24 @@ is incidental.
 Dòng phân tách `===DARKSIDE_BRAND_BEGIN===` dài 28 ký tự là dấu hiệu kích hoạt rõ ràng nhất; không có định dạng nào khác trong danh mục này sử dụng nó. Kết hợp với ít nhất một trường phần thân theo chuẩn Redline (`User Name:` hoặc `Display Resolution:`) để phân biệt với các dấu vết README chỉ chứa banner mà bảng điều khiển này cũng có thể tạo ra. Lưu ý: không liên quan đến chiến dịch mã độc tống tiền DarkSide có liên hệ với Nga (Colonial Pipeline, tháng 5/2021); việc trùng tên chỉ là ngẫu nhiên.
 
 ## Observed log variants
+
+### `v_41fcd53373cc7b29f886b62f0825807a`
+
+- Format ID: `cs-darkside-cloud-stealer`
+- Observed filenames: `System_Info.txt`
+- Panel brand: `DARKSIDE PRIVATE CLOUD`
+- Distribution channel: `t.me/+abRpT5eRHCplNzIy`
+- Attribution confidence: **high**
+- Layout: `cryptogol-full-fields`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_41fcd53373cc7b29f886b62f0825807a/System_Info.txt)
+- Sample SHA-256: `79ddbdc646886fe2dfc09a9d42719f44e6a22b6152bffb09a5c48d25e1144d63`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `DARKSIDE PRIVATE CLOUD`
+- Field labels: `A Join`, `C O Gold Channel`, `Computer Name`, `Cores`, `Country`, `D C Budget Channel`, `Date`, `Display Resolution`, `E L Premium Channel`, `GUID`, `HWID`, `IP`, `K TIERS (monthly`, `L U Join`, `MachineID`, `O D Join`, `Path`, `Processor`, `RAM`, `Threads`, `Time`, `U Join`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
 
 ### `v_d0c06343b0ca484c1792e85d07834f2f`
 
