@@ -77,6 +77,52 @@
       "distribution_channel": "t.me/+abRpT5eRHCplNzIy",
       "fields": [
         "A Join",
+        "Arch",
+        "C O Gold Channel",
+        "City",
+        "Country",
+        "CpuCores",
+        "D C Budget Channel",
+        "Domain",
+        "E L Premium Channel",
+        "GPU",
+        "Hwid",
+        "Ip",
+        "K TIERS (monthly",
+        "L U Join",
+        "LocalTime",
+        "O D Join",
+        "Os",
+        "PcName",
+        "RAM",
+        "ScreenSize",
+        "U Join",
+        "UserName",
+        "ZipCode"
+      ],
+      "filenames": [
+        "pc_info.txt"
+      ],
+      "format_id": "cs-darkside-cloud-stealer",
+      "id": "v_1eab99ee6efb286013fa92719c5eecb3",
+      "layout_id": "razertop-pc-info",
+      "markers": [
+        "DARKSIDE PRIVATE CLOUD"
+      ],
+      "panel_brand": "DARKSIDE PRIVATE CLOUD",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_1eab99ee6efb286013fa92719c5eecb3/pc_info.txt",
+        "sha256": "e703a82ef4c9e457daa7c823f460326f5c5576d4c04022c465cc2b4fdc3f817b",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "t.me/+abRpT5eRHCplNzIy",
+      "fields": [
+        "A Join",
         "C O Gold Channel",
         "Computer Name",
         "Cores",

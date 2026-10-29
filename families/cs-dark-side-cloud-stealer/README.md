@@ -24,8 +24,8 @@ CSDarkSideCloudStealer là định danh do CyStack đặt cho một lớp bọc 
 - Attribution confidence: **high**
 - Canonical family: [redline](../redline/)
 - Aliases: `DARKSIDE PRIVATE CLOUD`, `darkside linklogs`, `DarkSide Cloud`
-- Variants observed: **3**
-- CyStack observations represented: **3**
+- Variants observed: **4**
+- CyStack observations represented: **4**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -47,6 +47,24 @@ is incidental.
 Dòng phân tách `===DARKSIDE_BRAND_BEGIN===` dài 28 ký tự là dấu hiệu kích hoạt rõ ràng nhất; không có định dạng nào khác trong danh mục này sử dụng nó. Kết hợp với ít nhất một trường phần thân theo chuẩn Redline (`User Name:` hoặc `Display Resolution:`) để phân biệt với các dấu vết README chỉ chứa banner mà bảng điều khiển này cũng có thể tạo ra. Lưu ý: không liên quan đến chiến dịch mã độc tống tiền DarkSide có liên hệ với Nga (Colonial Pipeline, tháng 5/2021); việc trùng tên chỉ là ngẫu nhiên.
 
 ## Observed log variants
+
+### `v_1eab99ee6efb286013fa92719c5eecb3`
+
+- Format ID: `cs-darkside-cloud-stealer`
+- Observed filenames: `pc_info.txt`
+- Panel brand: `DARKSIDE PRIVATE CLOUD`
+- Distribution channel: `t.me/+abRpT5eRHCplNzIy`
+- Attribution confidence: **high**
+- Layout: `razertop-pc-info`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_1eab99ee6efb286013fa92719c5eecb3/pc_info.txt)
+- Sample SHA-256: `e703a82ef4c9e457daa7c823f460326f5c5576d4c04022c465cc2b4fdc3f817b`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `DARKSIDE PRIVATE CLOUD`
+- Field labels: `A Join`, `Arch`, `C O Gold Channel`, `City`, `Country`, `CpuCores`, `D C Budget Channel`, `Domain`, `E L Premium Channel`, `GPU`, `Hwid`, `Ip`, `K TIERS (monthly`, `L U Join`, `LocalTime`, `O D Join`, `Os`, `PcName`, `RAM`, `ScreenSize`, `U Join`, `UserName`, `ZipCode`
 
 ### `v_41fcd53373cc7b29f886b62f0825807a`
 
