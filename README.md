@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **211** research profiles
+- **212** research profiles
 - **42** known malware families
 - **3** observed self-labels without independent family attribution
 - **147** CyStack tracking names
-- **14** CyStack names mapped to a known parent family
+- **15** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **230** observed log variants and **230** samples
-- **8,052,984** CyStack observations represented by the retained sample set
+- **231** observed log variants and **231** samples
+- **8,052,985** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -249,7 +249,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [PyInfo Stealer](families/py-info-stealer/) | unknown | 1 | [1 retained](families/py-info-stealer/#observed-log-variants) |
 | [RedlineLike Stealer](families/redline-like-stealer/) | unknown | 9 | [9 retained](families/redline-like-stealer/#observed-log-variants) |
 
-### Mapped family variants (14)
+### Mapped family variants (15)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -265,6 +265,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSLogsTesterStealer](families/cs-logs-tester-stealer/) → [vidar](families/vidar/) | medium | 1 | [1 retained](families/cs-logs-tester-stealer/#observed-log-variants) |
 | [CSPrimoCloudStealer](families/cs-primo-cloud-stealer/) → [redline](families/redline/) | high | 1 | [1 retained](families/cs-primo-cloud-stealer/#observed-log-variants) |
 | [CSRedhiveStealer](families/cs-redhive-stealer/) → [lumma](families/lumma/) | high | 1 | [1 retained](families/cs-redhive-stealer/#observed-log-variants) |
+| [CSSlurmCloudSupportWhiteSnakeStealer](families/cs-slurm-cloud-support-white-snake-stealer/) → [white-snake](families/white-snake/) | high | 1 | [1 retained](families/cs-slurm-cloud-support-white-snake-stealer/#observed-log-variants) |
 | [CSSnatchCloudRedlineStealer](families/cs-snatch-cloud-redline-stealer/) → [redline](families/redline/) | high | 1 | [1 retained](families/cs-snatch-cloud-redline-stealer/#observed-log-variants) |
 | [CSSnatchCloudXFilesStealer](families/cs-snatch-cloud-x-files-stealer/) → [x-files](families/x-files/) | high | 1 | [1 retained](families/cs-snatch-cloud-x-files-stealer/#observed-log-variants) |
 
