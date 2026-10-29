@@ -171,6 +171,52 @@
         "source": "cystack_collection",
         "sanitized": true
       }
+    },
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "t.me/+abRpT5eRHCplNzIy",
+      "fields": [
+        "A Join",
+        "AV",
+        "C O Gold Channel",
+        "Computer Name",
+        "Cores",
+        "D C Budget Channel",
+        "Display Resolution",
+        "E L Premium Channel",
+        "HWID",
+        "K TIERS (monthly",
+        "Keyboard Languages",
+        "L U Join",
+        "Local Time",
+        "O D Join",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "TimeZone",
+        "U Join",
+        "User Name",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "format_id": "cs-darkside-cloud-stealer",
+      "id": "v_d2b59235f3cc35ad3b3da3f2b658998b",
+      "layout_id": "stripped-redline",
+      "markers": [
+        "DARKSIDE PRIVATE CLOUD"
+      ],
+      "panel_brand": "DARKSIDE PRIVATE CLOUD",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_d2b59235f3cc35ad3b3da3f2b658998b/information.txt",
+        "sha256": "cd624103b346b7f1526fb011ddd386415c584df7cf1795331501293233a798a4",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
     }
   ]
 }

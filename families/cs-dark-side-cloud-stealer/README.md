@@ -24,8 +24,8 @@ CSDarkSideCloudStealer là định danh do CyStack đặt cho một lớp bọc 
 - Attribution confidence: **high**
 - Canonical family: [redline](../redline/)
 - Aliases: `DARKSIDE PRIVATE CLOUD`, `darkside linklogs`, `DarkSide Cloud`
-- Variants observed: **2**
-- CyStack observations represented: **2**
+- Variants observed: **3**
+- CyStack observations represented: **3**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -82,6 +82,24 @@ Recognition anchors:
 
 - Stable markers: `[Hardware]`, `[Processes]`, `[Software]`, `DARKSIDE PRIVATE CLOUD`
 - Field labels: `A Join`, `C O Gold Channel`, `Computer Name`, `Cores`, `Country`, `D C Budget Channel`, `Date`, `Display Resolution`, `E L Premium Channel`, `GUID`, `HWID`, `IP`, `K TIERS (monthly`, `L U Join`, `Local Time`, `MachineID`, `O D Join`, `Path`, `Processor`, `RAM`, `Threads`, `U Join`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+### `v_d2b59235f3cc35ad3b3da3f2b658998b`
+
+- Format ID: `cs-darkside-cloud-stealer`
+- Observed filenames: `information.txt`
+- Panel brand: `DARKSIDE PRIVATE CLOUD`
+- Distribution channel: `t.me/+abRpT5eRHCplNzIy`
+- Attribution confidence: **high**
+- Layout: `stripped-redline`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_d2b59235f3cc35ad3b3da3f2b658998b/information.txt)
+- Sample SHA-256: `cd624103b346b7f1526fb011ddd386415c584df7cf1795331501293233a798a4`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `DARKSIDE PRIVATE CLOUD`
+- Field labels: `A Join`, `AV`, `C O Gold Channel`, `Computer Name`, `Cores`, `D C Budget Channel`, `Display Resolution`, `E L Premium Channel`, `HWID`, `K TIERS (monthly`, `Keyboard Languages`, `L U Join`, `Local Time`, `O D Join`, `Path`, `Processor`, `RAM`, `Threads`, `TimeZone`, `U Join`, `User Name`, `Windows`, `Work Dir`
 
 
 ## MITRE ATT&CK
