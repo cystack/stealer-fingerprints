@@ -1,0 +1,26 @@
+<    Public Logs Channel   :   @t.me/ArhontSupport  .    >
+<    Public Ulp Channel    :   @ArhontSupport.      >
+<          Admin : @Mr_t.me/ArhontSupportan.             >
+<        https://t.me/Mr_t.me/ArhontSupportan.           >
+
+IP : <IP>
+Country : DE
+Date : 03/09/2026
+Time : 12:55:46
+
+MachineID : <HWID>
+GUID : <HWID>
+HWID : <HWID>
+Path : C:\Windows\SysWOW32\install.exe
+Work Dir : Admin @MrGhost_07
+Windows : Windows 10 Pro 22H2 (Build 19045)
+Computer Name : <HOST>
+User Name : <USER>
+Display Resolution : 1920x1080
+
+--- [ Hardware ] ---
+Processor : Intel(R) Core(TM) i5-6600K CPU @ 3.50GHz
+Cores : 4
+Threads : 4
+RAM : 8132 MB
+VideoCard : AMD Radeon R9 200 Series

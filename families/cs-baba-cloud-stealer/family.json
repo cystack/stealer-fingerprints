@@ -285,6 +285,46 @@
         "source": "cystack_collection",
         "sanitized": true
       }
+    },
+    {
+      "attribution_confidence": "medium",
+      "distribution_channel": "@t",
+      "fields": [
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "IP",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "Time",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "System_Info.txt"
+      ],
+      "format_id": "cs-baba-cloud-stealer",
+      "id": "v_e5457ab99b315c914efa7c0eb0f41ffb",
+      "markers": [
+        "@t"
+      ],
+      "panel_brand": "@t",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_e5457ab99b315c914efa7c0eb0f41ffb/System_Info.txt",
+        "sha256": "ac57f6a08e560f4f05fce563e5ffc5541d7a2a826b0e425ad12cb0c798309fda",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
     }
   ]
 }
