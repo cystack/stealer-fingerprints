@@ -297,6 +297,52 @@
     },
     {
       "attribution_confidence": "high",
+      "distribution_channel": "@SlurmCloudSupport",
+      "fields": [
+        "anti-virus",
+        "Buy",
+        "computer-name",
+        "country",
+        "date",
+        "display",
+        "domain",
+        "elevated",
+        "gpu",
+        "hardware",
+        "hostname",
+        "install-date",
+        "ip-address",
+        "language",
+        "local-date",
+        "netbios",
+        "os",
+        "path",
+        "ReserveLink",
+        "time",
+        "time-zone",
+        "user-name",
+        "version"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "format_id": "remus",
+      "id": "v_6ecd7e457945f28b1a0f8f1ffcb54d63",
+      "layout_id": "zeroindent-slurm-cloud-support",
+      "markers": [
+        "hardware:"
+      ],
+      "panel_brand": "Slurm Cloud Support",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_6ecd7e457945f28b1a0f8f1ffcb54d63/Info.txt",
+        "sha256": "de743b6f5b5733d4ec0447be43c9bc3946029e94256062b14e35828e0618f7f8",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "high",
       "distribution_channel": "@UP_DAISYCLOUD",
       "fields": [
         "1 Week",

@@ -22,8 +22,8 @@ Remus Stealer là mã độc đánh cắp thông tin 64-bit được cung cấp 
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Remus`
-- Variants observed: **9**
-- CyStack observations represented: **62**
+- Variants observed: **10**
+- CyStack observations represented: **63**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -140,6 +140,24 @@ Recognition anchors:
 
 - Stable markers: `hardware:`
 - Field labels: `anti-virus`, `build`, `computer-name`, `country`, `date`, `display`, `domain`, `elevated`, `gpu`, `hardware`, `hostname`, `install-date`, `ip-address`, `language`, `local-date`, `netbios`, `os`, `path`, `tag`, `time`, `time-zone`, `user-name`, `version`
+
+### `v_6ecd7e457945f28b1a0f8f1ffcb54d63`
+
+- Format ID: `remus`
+- Observed filenames: `Info.txt`
+- Panel brand: `Slurm Cloud Support`
+- Distribution channel: `@SlurmCloudSupport`
+- Attribution confidence: **high**
+- Layout: `zeroindent-slurm-cloud-support`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_6ecd7e457945f28b1a0f8f1ffcb54d63/Info.txt)
+- Sample SHA-256: `de743b6f5b5733d4ec0447be43c9bc3946029e94256062b14e35828e0618f7f8`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `hardware:`
+- Field labels: `anti-virus`, `Buy`, `computer-name`, `country`, `date`, `display`, `domain`, `elevated`, `gpu`, `hardware`, `hostname`, `install-date`, `ip-address`, `language`, `local-date`, `netbios`, `os`, `path`, `ReserveLink`, `time`, `time-zone`, `user-name`, `version`
 
 ### `v_8d9daf23145a8b62f2c41341332961c8`
 
