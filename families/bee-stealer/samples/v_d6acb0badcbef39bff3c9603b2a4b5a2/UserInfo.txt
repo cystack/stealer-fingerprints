@@ -1,0 +1,26 @@
+	|
+(|/)	|
+\\\|/,'	|
+(")()()))=-|
+Beestealer<\\	|
+----------------------------
+os:Windows10Pro
+time-zone:UTC-5
+local-date:14.7.20268:11
+language:es-ES
+computer-name:<HOST>
+netbios:<HOST>
+hostname:<HOST>
+user-name:<USER>
+domain:
+cpu-cores:12
+cpu:AMDRyzen55500UwithRadeonGraphics
+ram-total:16384MB
+display-x:1366
+display-y:768
+gpu:AMDRadeon(TM)Graphics
+
+Ip:<IP>
+Country:Colombia
+
+Proccesriped:True

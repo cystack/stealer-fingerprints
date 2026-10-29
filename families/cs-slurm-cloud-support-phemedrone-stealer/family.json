@@ -1,0 +1,143 @@
+{
+  "aliases": [
+    "@SlurmCloudSupport",
+    "Custom Stealer",
+    "Slurm Cloud Support",
+    "Slurm Logs",
+    "@SlurmLogs"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1555",
+      "name": "Credentials from Password Stores"
+    },
+    {
+      "id": "T1555.003",
+      "name": "Credentials from Web Browsers"
+    },
+    {
+      "id": "T1539",
+      "name": "Steal Web Session Cookie"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    }
+  ],
+  "attribution_confidence": "high",
+  "canonical_family": "phemedrone",
+  "classification": "family_variant",
+  "description": "CSSlurmCloudSupportPhemedroneStealer is a CyStack tracking\nname for a whitespace-stripped Phemedrone `Information.txt`\ndistributed by the @SlurmCloudSupport Telegram reseller\nunder the operator rebrand label `Custom Stealer`.\nObserved inside `Slurm Logs (@SlurmLogs).rar` aggregator\npacks at `<HWID32>_<YYYY>_<MM>_<DD>T<HH>_<MM>_<SS>_<micros> -@SlurmCloudSupport/Information.txt` victim folders where\nthe per-victim folder suffix carries the operator channel\nhandle verbatim.\n\nThe body is a verbatim Phemedrone dashed-section\n`Information.txt` (same `----- Geolocation Data -----` /\n`----- Hardware Info -----` / `----- Report Contents -----`\n/ `----- Miscellaneous -----` section headers, same\n`Username: <user>\\<hostname>` concatenated-user shape,\nsame `Country: <Name> (<CC>)` parenthesised ISO2 shape,\nsame 32-hex `Hardware ID:`, same plural `Antivirus products:`, same `File Location:` and `Clipboard text:`\nmiscellaneous fields) with three reseller edits: every\nASCII whitespace separator is removed from section\nheaders, field names, and field values\n(`-----GeolocationData-----`, `Antivirusproducts:`,\n`FileLocation:`, `Windowsname:`, etc.); a 5-line\n`,d88b.d88b,` ASCII-art banner labelled `CustomStealer`\nis prepended, with the collection timestamp,\n`improvedandconfiguredby@SlurmCloudSupport` operator\ncredit, and operator-set `Tag:<csv>` service-target list\nattached to the banner lines; and three reseller-specific\nfields are injected (`ScreenResolution:`, `Uptime:`,\n`Battery:` in Hardware Info; `Gaming:` count in Report\nContents).\n\nFamily attribution is canonical Phemedrone (high\nconfidence): the dashed-section `Information.txt` layout\nand the Phemedrone-specific key set (`Windows name:`,\n`Hardware ID:`, `Antivirus products:`, `File Location:`,\n`Clipboard text:`, `Country: <Name> (<CC>)` parenthesised\nISO2, `Username: <user>\\<hostname>` concatenated-user)\nis Phemedrone-canonical per Trend Micro, Splunk,\nBrandefense, SpyCloud, and Malpedia. HEROIC also attests\nthe `@SlurmLogs` archive channel as a stealer-log\ndistributor. The reseller only edits whitespace, prepends\nan ASCII-art rebrand banner, and injects a few extra\ninventory fields; the underlying builder is unmistakably\nPhemedrone. The CyStack tracking name preserves the\n@SlurmCloudSupport rebrand context (operator channel +\n`Custom Stealer` label) while `canonical_family` remains\n`phemedrone`.",
+  "detection_notes": "The three whitespace-stripped section headers\n`-----GeolocationData-----`, `-----HardwareInfo-----`, and\n`-----Miscellaneous-----` form a unique triple -\ncanonical Phemedrone emits the spaced form\n`----- Geolocation Data -----` etc., so the reseller\nvariant does not collide with the sibling canonical\nparser. The ASCII-art `,d88b.d88b,` + `CustomStealer`\nbanner prefix and the `improvedandconfiguredby @SlurmCloudSupport` operator-credit watermark provide\nsecondary confirmation.",
+  "id": "cs-slurm-cloud-support-phemedrone-stealer",
+  "name": "CSSlurmCloudSupportPhemedroneStealer",
+  "related_families": [
+    "phemedrone"
+  ],
+  "sources": [
+    "https://www.trendmicro.com/en_us/research/24/a/cve-2023-36025-exploited-for-defense-evasion-in-phemedrone-steal.html",
+    "https://www.splunk.com/en_us/blog/security/unveiling-phemedrone-stealer-threat-analysis-and-detections.html",
+    "https://brandefense.io/blog/phemedrone-stealer-technical-analysis/",
+    "https://spycloud.com/blog/phemedrone-stealer/",
+    "https://malpedia.caad.fkie.fraunhofer.de/details/win.phemedrone_stealer",
+    "https://heroic.com/darkhive-breaches/slurm-logs-slurmlogs-uploaded-by-a-telegram-user"
+  ],
+  "typical_targets": [
+    "Browser saved credentials, cookies, autofill, and card data",
+    "Crypto wallet extensions and desktop clients",
+    "Discord, Telegram, Steam session data",
+    "FTP and VPN client credentials",
+    "Clipboard capture and screenshot grab"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSSlurmCloudSupportPhemedroneStealer là tên theo dõi của CyStack đặt cho một biến thể Phemedrone `Information.txt` đã bị loại bỏ khoảng trắng, được phân phối bởi đối tượng bán lại (reseller) Telegram @SlurmCloudSupport dưới nhãn đổi thương hiệu (rebrand) của đối tượng vận hành là `Custom Stealer`. Mẫu này được quan sát bên trong các gói tổng hợp `Slurm Logs (@SlurmLogs).rar` tại các thư mục nạn nhân `<HWID32>_<YYYY>_<MM>_<DD>T<HH>_<MM>_<SS>_<micros> -@SlurmCloudSupport/Information.txt`, trong đó phần hậu tố của thư mục từng nạn nhân mang nguyên văn tên kênh (channel handle) của đối tượng vận hành.\n\nPhần nội dung chính là nguyên văn cấu trúc dạng các mục có gạch ngang (dashed-section) `Information.txt` của Phemedrone (cùng các tiêu đề mục `----- Geolocation Data -----` / `----- Hardware Info -----` / `----- Report Contents -----` / `----- Miscellaneous -----`, cùng cấu trúc dữ liệu nối chuỗi người dùng (concatenated-user) `Username: <user>\\<hostname>`, cùng cấu trúc dữ liệu ISO2 đặt trong dấu ngoặc `Country: <Name> (<CC>)`, cùng chuỗi 32 ký tự hex `Hardware ID:`, cùng dạng số nhiều `Antivirus products:`, cùng các trường linh tinh `File Location:` và `Clipboard text:`) với ba chỉnh sửa của đối tượng bán lại: mọi dấu phân tách khoảng trắng ASCII đều bị loại bỏ khỏi tiêu đề mục, tên trường và giá trị trường (`-----GeolocationData-----`, `Antivirusproducts:`, `FileLocation:`, `Windowsname:`, v.v.); một banner ASCII-art gồm 5 dòng `,d88b.d88b,` được gán nhãn `CustomStealer` được chèn thêm vào đầu, kèm theo mốc thời gian thu thập, ghi công đối tượng vận hành `improvedandconfiguredby@SlurmCloudSupport`, và danh sách dịch vụ mục tiêu `Tag:<csv>` do đối tượng vận hành thiết lập được gắn vào các dòng banner; và ba trường đặc thù của đối tượng bán lại được chèn thêm (`ScreenResolution:`, `Uptime:`, `Battery:` trong Hardware Info; số lượng `Gaming:` trong Report Contents).\n\nViệc quy kết họ mã độc là Phemedrone chính thống (độ tin cậy cao): bố cục dạng mục có gạch ngang `Information.txt` và tập khóa đặc trưng của Phemedrone (`Windows name:`, `Hardware ID:`, `Antivirus products:`, `File Location:`, `Clipboard text:`, cấu trúc dữ liệu ISO2 đặt trong dấu ngoặc `Country: <Name> (<CC>)`, cấu trúc dữ liệu nối chuỗi người dùng `Username: <user>\\<hostname>`) được xác nhận là đặc trưng chính thống của Phemedrone theo Trend Micro, Splunk, Brandefense, SpyCloud và Malpedia. HEROIC cũng xác nhận kênh lưu trữ `@SlurmLogs` là một đối tượng phân phối log mã độc đánh cắp thông tin. Đối tượng bán lại chỉ chỉnh sửa khoảng trắng, chèn thêm banner ASCII-art đổi thương hiệu, và bổ sung một vài trường kiểm kê; trình dựng (builder) bên dưới chắc chắn là của Phemedrone. Tên theo dõi của CyStack giữ lại bối cảnh đổi thương hiệu @SlurmCloudSupport (kênh của đối tượng vận hành + nhãn `Custom Stealer`) trong khi `canonical_family` vẫn là `phemedrone`.",
+      "typical_targets": [
+        "Thông tin xác thực đã lưu trên trình duyệt, cookie, dữ liệu tự điền (autofill) và dữ liệu thẻ thanh toán",
+        "Tiện ích mở rộng ví tiền mã hóa và ứng dụng desktop",
+        "Dữ liệu phiên (session) của Discord, Telegram, Steam",
+        "Thông tin xác thực của ứng dụng FTP và VPN",
+        "Thu thập nội dung clipboard và chụp ảnh màn hình"
+      ],
+      "detection_notes": "Ba tiêu đề mục đã bị loại bỏ khoảng trắng `-----GeolocationData-----`, `-----HardwareInfo-----` và `-----Miscellaneous-----` tạo thành một tổ hợp ba duy nhất - Phemedrone chính thống tạo dữ liệu đầu ra dưới dạng có khoảng trắng `----- Geolocation Data -----` v.v., do đó biến thể của đối tượng bán lại không trùng lặp với bộ phân tích (parser) dành cho các tệp/dấu vết liên quan chính thống. Phần tiền tố banner ASCII-art `,d88b.d88b,` + `CustomStealer` và watermark ghi công đối tượng vận hành `improvedandconfiguredby @SlurmCloudSupport` cung cấp xác nhận bổ sung.",
+      "attack_techniques": [
+        {
+          "id": "T1555",
+          "name": "Thông tin xác thực từ kho mật khẩu"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Thông tin xác thực từ trình duyệt web"
+        },
+        {
+          "id": "T1539",
+          "name": "Đánh cắp cookie phiên web"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "@SlurmCloudSupport",
+      "fields": [
+        "`Y'Tag",
+        "`Y8888888Y'18/07/202611",
+        "Antivirusproducts",
+        "AutoFills",
+        "Battery",
+        "City",
+        "Clipboardtext",
+        "Cookies",
+        "Country",
+        "CPU",
+        "CreditCards",
+        "Extensions",
+        "FileLocation",
+        "Files",
+        "Gaming",
+        "GPU",
+        "HardwareID",
+        "IP",
+        "MAC",
+        "Passwords",
+        "Postal",
+        "RAM",
+        "ScreenResolution",
+        "Uptime",
+        "Username",
+        "Wallets",
+        "Windowsname"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "cs-slurm-cloud-support-phemedrone-stealer",
+      "id": "v_5c7f8582071d840909b78f3edffb7307",
+      "markers": [
+        "88888888888CustomStealer",
+        "`Y888Y'improvedandconfiguredby@SlurmCloudSupport"
+      ],
+      "panel_brand": "Custom Stealer",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_5c7f8582071d840909b78f3edffb7307/Information.txt",
+        "sha256": "d637b2acc8c36ce725bf0ff696e61c1d0d59c18d9acc8cfd35f9ee93cafdafe5",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}

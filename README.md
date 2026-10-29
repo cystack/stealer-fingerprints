@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **212** research profiles
+- **213** research profiles
 - **42** known malware families
 - **3** observed self-labels without independent family attribution
 - **147** CyStack tracking names
-- **15** CyStack names mapped to a known parent family
+- **16** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **232** observed log variants and **232** samples
-- **8,052,986** CyStack observations represented by the retained sample set
+- **234** observed log variants and **234** samples
+- **8,052,988** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -52,7 +52,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Arcane](families/arcane/) | high | 3 | [3 retained](families/arcane/#observed-log-variants) |
 | [AuraStealer](families/aura-stealer/) | high | 3 | [3 retained](families/aura-stealer/#observed-log-variants) |
 | [Aurora Stealer](families/aurora-stealer/) | high | 1 | [1 retained](families/aurora-stealer/#observed-log-variants) |
-| [Bee Stealer](families/bee-stealer/) | high | 1 | [1 retained](families/bee-stealer/#observed-log-variants) |
+| [Bee Stealer](families/bee-stealer/) | high | 2 | [2 retained](families/bee-stealer/#observed-log-variants) |
 | [Blank Grabber](families/blank-grabber/) | high | 3 | [3 retained](families/blank-grabber/#observed-log-variants) |
 | [CryptBot](families/crypt-bot/) | high | 3 | [3 retained](families/crypt-bot/#observed-log-variants) |
 | [Cthulhu Stealer](families/cthulhu-stealer/) | high | 1 | [1 retained](families/cthulhu-stealer/#observed-log-variants) |
@@ -249,7 +249,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [PyInfo Stealer](families/py-info-stealer/) | unknown | 1 | [1 retained](families/py-info-stealer/#observed-log-variants) |
 | [RedlineLike Stealer](families/redline-like-stealer/) | unknown | 9 | [9 retained](families/redline-like-stealer/#observed-log-variants) |
 
-### Mapped family variants (15)
+### Mapped family variants (16)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -265,6 +265,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSLogsTesterStealer](families/cs-logs-tester-stealer/) → [vidar](families/vidar/) | medium | 1 | [1 retained](families/cs-logs-tester-stealer/#observed-log-variants) |
 | [CSPrimoCloudStealer](families/cs-primo-cloud-stealer/) → [redline](families/redline/) | high | 1 | [1 retained](families/cs-primo-cloud-stealer/#observed-log-variants) |
 | [CSRedhiveStealer](families/cs-redhive-stealer/) → [lumma](families/lumma/) | high | 1 | [1 retained](families/cs-redhive-stealer/#observed-log-variants) |
+| [CSSlurmCloudSupportPhemedroneStealer](families/cs-slurm-cloud-support-phemedrone-stealer/) → [phemedrone](families/phemedrone/) | high | 1 | [1 retained](families/cs-slurm-cloud-support-phemedrone-stealer/#observed-log-variants) |
 | [CSSlurmCloudSupportWhiteSnakeStealer](families/cs-slurm-cloud-support-white-snake-stealer/) → [white-snake](families/white-snake/) | high | 1 | [1 retained](families/cs-slurm-cloud-support-white-snake-stealer/#observed-log-variants) |
 | [CSSnatchCloudRedlineStealer](families/cs-snatch-cloud-redline-stealer/) → [redline](families/redline/) | high | 1 | [1 retained](families/cs-snatch-cloud-redline-stealer/#observed-log-variants) |
 | [CSSnatchCloudXFilesStealer](families/cs-snatch-cloud-x-files-stealer/) → [x-files](families/x-files/) | high | 1 | [1 retained](families/cs-snatch-cloud-x-files-stealer/#observed-log-variants) |

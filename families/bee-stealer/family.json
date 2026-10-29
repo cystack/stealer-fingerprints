@@ -135,6 +135,46 @@
         "source": "cystack_collection",
         "sanitized": true
       }
+    },
+    {
+      "attribution_confidence": "high",
+      "distribution_channel": "@SlurmCloudSupport",
+      "fields": [
+        "computer-name",
+        "Country",
+        "cpu",
+        "cpu-cores",
+        "display-x",
+        "display-y",
+        "domain",
+        "gpu",
+        "hostname",
+        "Ip",
+        "language",
+        "local-date",
+        "netbios",
+        "os",
+        "Proccesriped",
+        "ram-total",
+        "time-zone",
+        "user-name"
+      ],
+      "filenames": [
+        "UserInfo.txt"
+      ],
+      "format_id": "bee-stealer",
+      "id": "v_d6acb0badcbef39bff3c9603b2a4b5a2",
+      "markers": [
+        "Beestealer<\\\\ |"
+      ],
+      "panel_brand": "Slurm Cloud Support",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_d6acb0badcbef39bff3c9603b2a4b5a2/UserInfo.txt",
+        "sha256": "d63d3f4dd3593b786a9bf245b5d1cf793e9399aeb2e7ff11c6b63d96503f8b13",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
     }
   ]
 }

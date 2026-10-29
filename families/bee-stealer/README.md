@@ -41,8 +41,8 @@ Bảng điều khiển tạo ra một tệp `UserInfo.txt` cho mỗi nạn nhân
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Bee`, `BeeStealer`
-- Variants observed: **1**
-- CyStack observations represented: **1**
+- Variants observed: **2**
+- CyStack observations represented: **2**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -90,6 +90,23 @@ Recognition anchors:
 
 - Stable markers: `Bee stealer <\\ \|`
 - Field labels: `computer-name`, `Country`, `cpu`, `cpu-cores`, `display-x`, `display-y`, `domain`, `gpu`, `hostname`, `Ip`, `language`, `local-date`, `netbios`, `os`, `Procces riped`, `ram-total`, `time-zone`, `user-name`
+
+### `v_d6acb0badcbef39bff3c9603b2a4b5a2`
+
+- Format ID: `bee-stealer`
+- Observed filenames: `UserInfo.txt`
+- Panel brand: `Slurm Cloud Support`
+- Distribution channel: `@SlurmCloudSupport`
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_d6acb0badcbef39bff3c9603b2a4b5a2/UserInfo.txt)
+- Sample SHA-256: `d63d3f4dd3593b786a9bf245b5d1cf793e9399aeb2e7ff11c6b63d96503f8b13`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `Beestealer<\\ \|`
+- Field labels: `computer-name`, `Country`, `cpu`, `cpu-cores`, `display-x`, `display-y`, `domain`, `gpu`, `hostname`, `Ip`, `language`, `local-date`, `netbios`, `os`, `Proccesriped`, `ram-total`, `time-zone`, `user-name`
 
 
 ## MITRE ATT&CK
