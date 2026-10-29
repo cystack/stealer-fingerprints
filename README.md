@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **147** CyStack tracking names
 - **14** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **228** observed log variants and **228** samples
-- **8,052,982** CyStack observations represented by the retained sample set
+- **229** observed log variants and **229** samples
+- **8,052,983** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -247,7 +247,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Minimal Stealer](families/minimal-stealer/) | unknown | 1 | [1 retained](families/minimal-stealer/#observed-log-variants) |
 | [PCInfo Stealer](families/pc-info-stealer/) | unknown | 1 | [1 retained](families/pc-info-stealer/#observed-log-variants) |
 | [PyInfo Stealer](families/py-info-stealer/) | unknown | 1 | [1 retained](families/py-info-stealer/#observed-log-variants) |
-| [RedlineLike Stealer](families/redline-like-stealer/) | unknown | 8 | [8 retained](families/redline-like-stealer/#observed-log-variants) |
+| [RedlineLike Stealer](families/redline-like-stealer/) | unknown | 9 | [9 retained](families/redline-like-stealer/#observed-log-variants) |
 
 ### Mapped family variants (14)
 

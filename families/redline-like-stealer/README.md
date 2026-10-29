@@ -20,8 +20,8 @@ Các biến thể log dạng khối mở rộng (extended-block) của RedLine. 
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `redline`, `redline-extended`
-- Variants observed: **8**
-- CyStack observations represented: **1,063,177**
+- Variants observed: **9**
+- CyStack observations represented: **1,063,178**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -169,6 +169,24 @@ Recognition anchors:
 
 - Stable markers: -
 - Field labels: `BUILD NAME`, `Operation System`
+
+### `v_eacf74f2ac79b03f79ee8fd8814da92a`
+
+- Format ID: `redline-like-stealer`
+- Observed filenames: `System.txt`
+- Panel brand: -
+- Distribution channel: -
+- Attribution confidence: **unknown**
+- Layout: `darkside-banner`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_eacf74f2ac79b03f79ee8fd8814da92a/System.txt)
+- Sample SHA-256: `9c8f736ab6bd70e7738847f5e7f434f850d200c4579352aac2b36ec6fa2623f5`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `A Join`, `C O Gold Channel`, `Country`, `D C Budget Channel`, `E L Premium Channel`, `HWID`, `IP`, `K TIERS (monthly`, `L U Join`, `O D Join`, `Operation System`, `ScreenSize`, `U Join`, `UserName`
 
 ### `v_f363fc0487965dea97d62674baf20c0b`
 

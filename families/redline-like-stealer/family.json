@@ -255,6 +255,41 @@
       "layout_id": "build-name"
     },
     {
+      "attribution_confidence": "unknown",
+      "distribution_channel": null,
+      "fields": [
+        "A Join",
+        "C O Gold Channel",
+        "Country",
+        "D C Budget Channel",
+        "E L Premium Channel",
+        "HWID",
+        "IP",
+        "K TIERS (monthly",
+        "L U Join",
+        "O D Join",
+        "Operation System",
+        "ScreenSize",
+        "U Join",
+        "UserName"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "format_id": "redline-like-stealer",
+      "id": "v_eacf74f2ac79b03f79ee8fd8814da92a",
+      "layout_id": "darkside-banner",
+      "markers": [],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_eacf74f2ac79b03f79ee8fd8814da92a/System.txt",
+        "sha256": "9c8f736ab6bd70e7738847f5e7f434f850d200c4579352aac2b36ec6fa2623f5",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
       "id": "v_f363fc0487965dea97d62674baf20c0b",
       "format_id": "redline-like-stealer",
       "filenames": [
