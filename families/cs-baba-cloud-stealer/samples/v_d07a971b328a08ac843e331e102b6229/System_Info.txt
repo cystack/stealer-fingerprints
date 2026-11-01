@@ -1,0 +1,28 @@
+<<SECRET>>
+<    Public Logs Channel   :   @RedX_cloud  .    >
+<    Public Ulp Channel    :   @RedX_Ulp  .      >
+<<SECRET>>
+<          Admin : @RedXhelp       .             >
+<        https://t.me/RedXhelp       .           >
+
+IP : <IP>
+Country : US
+Date : 23/09/2026
+Time : 16:34:47
+
+MachineID : <HWID>
+GUID : <HWID>
+HWID : <HWID>
+Path : <PATH>
+Work Dir : In memory
+Windows : Windows 11 Pro 25H2 (Build 26200)
+Computer Name : <HOST>
+User Name : <USER>
+Display Resolution : 1920x1080
+
+--- [ Hardware ] ---
+Processor : AMD Ryzen 5 7520U with Radeon Graphics
+Cores : 8
+Threads : 8
+RAM : 7379 MB
+VideoCard : AMD Radeon(TM) Graphics

@@ -64,8 +64,8 @@ Tên theo dõi này không liên quan đến hồ sơ `CSBabaStealer`, vốn đ�
 - Attribution confidence: **medium**
 - Canonical family: [vidar](../vidar/)
 - Aliases: `BabaCloud Logs`, `BabaCloudLogs`, `@BabaCloud_New`
-- Variants observed: **6**
-- CyStack observations represented: **6**
+- Variants observed: **7**
+- CyStack observations represented: **7**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -176,6 +176,23 @@ Recognition anchors:
 Recognition anchors:
 
 - Stable markers: `< Main Channel - @Rus_cloud. >`, `@Universe_Logs`
+- Field labels: `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `Time`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
+
+### `v_d07a971b328a08ac843e331e102b6229`
+
+- Format ID: `cs-baba-cloud-stealer`
+- Observed filenames: `System_Info.txt`
+- Panel brand: `@RedX_cloud`
+- Distribution channel: `@RedX_cloud`
+- Attribution confidence: **medium**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_d07a971b328a08ac843e331e102b6229/System_Info.txt)
+- Sample SHA-256: `81c572dbeb35233edff1c3c36bb5b9274cd6b56e7d48a2242d1ff126c43d3976`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `@RedX_cloud`
 - Field labels: `Computer Name`, `Cores`, `Country`, `Date`, `Display Resolution`, `GUID`, `HWID`, `IP`, `MachineID`, `Path`, `Processor`, `RAM`, `Threads`, `Time`, `User Name`, `VideoCard`, `Windows`, `Work Dir`
 
 ### `v_e5457ab99b315c914efa7c0eb0f41ffb`

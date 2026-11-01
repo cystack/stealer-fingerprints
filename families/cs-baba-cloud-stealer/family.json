@@ -288,6 +288,46 @@
     },
     {
       "attribution_confidence": "medium",
+      "distribution_channel": "@RedX_cloud",
+      "fields": [
+        "Computer Name",
+        "Cores",
+        "Country",
+        "Date",
+        "Display Resolution",
+        "GUID",
+        "HWID",
+        "IP",
+        "MachineID",
+        "Path",
+        "Processor",
+        "RAM",
+        "Threads",
+        "Time",
+        "User Name",
+        "VideoCard",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "System_Info.txt"
+      ],
+      "format_id": "cs-baba-cloud-stealer",
+      "id": "v_d07a971b328a08ac843e331e102b6229",
+      "markers": [
+        "@RedX_cloud"
+      ],
+      "panel_brand": "@RedX_cloud",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_d07a971b328a08ac843e331e102b6229/System_Info.txt",
+        "sha256": "81c572dbeb35233edff1c3c36bb5b9274cd6b56e7d48a2242d1ff126c43d3976",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "medium",
       "distribution_channel": "@t",
       "fields": [
         "Computer Name",
