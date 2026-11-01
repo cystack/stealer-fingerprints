@@ -23,8 +23,8 @@ Bảng điều khiển tạo dữ liệu đầu ra là một banner ASCII-art `R
 - Classification / Phân loại: **Log aggregator / Nguồn tổng hợp log**
 - Attribution confidence: **unknown**
 - Aliases: `russia34`, `Private Russia 34`
-- Variants observed: **13**
-- CyStack observations represented: **13**
+- Variants observed: **14**
+- CyStack observations represented: **14**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -232,6 +232,24 @@ Recognition anchors:
 
 - Stable markers: -
 - Field labels: `Country`, `Graphics card`, `Installed RAM`, `IP`, `Keyboard Language`, `Log date`, `MachineID`, `New subscribers here`, `Operation System`, `Processor`, `ScreenSize`, `System Language`, `TimeZone`, `User Language`, `UserName`
+
+### `v_d5806c0d8b567fd860f0c4e4d962e248`
+
+- Format ID: `cs-russia34-stealer`
+- Observed filenames: `SystemInfo.txt`
+- Panel brand: `russia34.com (Windows systeminfo.exe + Russia 34 watermark)`
+- Distribution channel: `russia34.com`
+- Attribution confidence: **unknown**
+- Layout: `lumma-bullet-russia34`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_d5806c0d8b567fd860f0c4e4d962e248/SystemInfo.txt)
+- Sample SHA-256: `60e3198f69b3254963fe8b58250e3e8cfb884060832cd00db20c087aba47703f`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `01`, `02`, `03`, `04`, `05`, `06`, `07`, `08`, `09`, `10`, `11`, `12`, `13`, `14`, `15`, `16`, `17`, `18`, `19`, `20`, `21`, `22`, `23`, `24`, `25`, `26`, `27`, `28`, `29`, `30`, `31`, `32`, `33`, `34`, `35`, `36`, `37`, `38`, `39`, `40`, `41`, `42`, `43`, `44`, `45`, `46`, `47`, `48`, `49`, `50`, `51`, `52`, `53`, `54`, `Available Physical Memory`, `Configuration`, `Connection Name`, `Data Execution Prevention Available`, `DHCP Enabled`, `DHCP Server`, `Domain`, `Host Name`, `Hotfix(s`, `Hyper-V Requirements`, `Input Locale`, `Logon Server`, `Network Card(s`, `Original Install Date`, `OS Build Type`, `OS Manufacturer`, `OS Name`, `Page File Location(s`, `Processor(s`, `Product ID`, `Registered Organization`, `Registered Owner`, `Second Level Address Translation`, `System Boot Time`, `System Directory`, `System Locale`, `System Manufacturer`, `System Model`, `System Type`, `Time Zone`, `Total Physical Memory`, `Version`, `Virtual Memory`, `Virtualization Enabled In Firmware`, `Windows Directory`
 
 ### `v_d71f4e9486d02f7bf5d6acaf84fda8c2`
 

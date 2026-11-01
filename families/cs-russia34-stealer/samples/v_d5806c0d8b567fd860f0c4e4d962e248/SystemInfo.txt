@@ -1,0 +1,98 @@
+Host Name:                 <HOST>
+OS Name:                   Microsoft Windows 10 Pro
+Version: Russia 34
+OS Manufacturer:           Microsoft Corporation
+Configuration: @logslead
+OS Build Type:             Multiprocessor Free
+Registered Owner:          <EMAIL>
+Registered Organization:   
+Product ID:                <HWID>
+Original Install Date:     27.02.2021, 22:24:34
+System Boot Time:          11.09.2026, 21:57:04
+System Manufacturer:       System manufacturer
+System Model:              System Product Name
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: AMD64 Family 23 Model 8 Stepping 2 AuthenticAMD ~3700 Mhz
+Version: Russia 34
+Windows Directory:         C:\Windows
+System Directory:          C:\Windows\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             pl;Polski
+Input Locale:              pl;Polski
+Time Zone:                 (UTC+01:00) Sarajewo, Skopie, Warszawa, Zagrzeb
+Total Physical Memory:     32ÿ695 MB
+Available Physical Memory: 25ÿ114 MB
+Virtual Memory: Max Size:  37ÿ559 MB
+Virtual Memory: Available: 24ÿ446 MB
+Virtual Memory: In Use:    13ÿ113 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    <HOST>
+Logon Server:              <HOST>
+Hotfix(s):                 54 Hotfix(s) Installed.
+                           [01]: KB5126421
+                           [02]: KB5028951
+                           [03]: KB4562830
+                           [04]: KB4570334
+                           [05]: KB4577586
+                           [06]: KB4580325
+                           [07]: KB4586864
+                           [08]: KB4589212
+                           [09]: KB4598481
+                           [10]: KB5003791
+                           [11]: KB5011048
+                           [12]: KB5011066
+                           [13]: KB5012170
+                           [14]: KB5015684
+                           [15]: KB5072653
+                           [16]: KB5122878
+                           [17]: KB5007273
+                           [18]: KB5011352
+                           [19]: KB5011651
+                           [20]: KB5014032
+                           [21]: KB5015895
+                           [22]: KB5016705
+                           [23]: KB5018506
+                           [24]: KB5020372
+                           [25]: KB5022924
+                           [26]: KB5023794
+                           [27]: KB5025315
+                           [28]: KB5026879
+                           [29]: KB5028380
+                           [30]: KB5029709
+                           [31]: KB5031539
+                           [32]: KB5032907
+                           [33]: KB5036447
+                           [34]: KB5037018
+                           [35]: KB5037240
+                           [36]: KB5037995
+                           [37]: KB5039336
+                           [38]: KB5041579
+                           [39]: KB5043935
+                           [40]: KB5043130
+                           [41]: KB5046823
+                           [42]: KB5050111
+                           [43]: KB5052916
+                           [44]: KB5054682
+                           [45]: KB5058526
+                           [46]: KB5063706
+                           [47]: KB5063261
+                           [48]: KB5063979
+                           [49]: KB5066790
+                           [50]: KB5071982
+                           [51]: KB5094145
+                           [52]: KB5104021
+                           [53]: KB5122877
+                           [54]: KB5005260
+Network Card(s):           1 NIC(s) Installed.
+                           [01]: Intel(R) I211 Gigabit Network Connection
+                                 Connection Name: Ethernet
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     <IP>
+                                 IP address(es)
+                                 [01]: <IP>
+                                 [02]: <IP>
+Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
+                           Virtualization Enabled In Firmware: No
+                           Second Level Address Translation: Yes
+                           Data Execution Prevention Available: Yes
