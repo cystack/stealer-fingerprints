@@ -1,0 +1,17 @@
+IP Address: <IP>
+BuildID [sal]
+Computer Name: <HOST>
+User Name: <USER>
+User Language: en
+Operation System: Windows 11 10.0.26200 (x64)
+Time Zone: UTC-5
+HWID: <HWID>
+Processor: Intel(R) Core(TM) i3-N305
+Processor Threads: 8
+Processor Cores: 4
+Graphics Card:
+  Intel(R) UHD Graphics
+Installed RAM: 7845MB
+Display Resolution: 1920x1080
+
+Server Time: 24.09.2026 14:46:57

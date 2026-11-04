@@ -23,8 +23,8 @@ Bảng điều khiển tạo dữ liệu đầu ra là một banner ASCII-art `R
 - Classification / Phân loại: **Log aggregator / Nguồn tổng hợp log**
 - Attribution confidence: **unknown**
 - Aliases: `russia34`, `Private Russia 34`
-- Variants observed: **14**
-- CyStack observations represented: **14**
+- Variants observed: **15**
+- CyStack observations represented: **15**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -124,6 +124,24 @@ Recognition anchors:
 
 - Stable markers: -
 - Field labels: `Country`, `New subscribers here`, `Operating System`, `Username`
+
+### `v_665b495d897cc9ecbeab399f1da93a39`
+
+- Format ID: `cs-russia34-stealer`
+- Observed filenames: `UserInfo.txt`
+- Panel brand: `russia34.com (BuildID [vtc] sig-info body)`
+- Distribution channel: `russia34.com`
+- Attribution confidence: **unknown**
+- Layout: `redline`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_665b495d897cc9ecbeab399f1da93a39/UserInfo.txt)
+- Sample SHA-256: `03239e71a7f1982f992b9f1cae2e30569b5433baa58fa83d25b1b5bbd1521439`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Computer Name`, `Display Resolution`, `Graphics Card`, `HWID`, `Installed RAM`, `IP Address`, `Operation System`, `Processor`, `Processor Cores`, `Processor Threads`, `Server Time`, `Time Zone`, `User Language`, `User Name`
 
 ### `v_7c6a5d9c312920462553ea25feab28b8`
 
