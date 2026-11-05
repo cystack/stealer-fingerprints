@@ -1,0 +1,115 @@
+{
+  "aliases": [
+    "@bugatti_cloudnew",
+    "@Bugatti_Cloud Bugatti_Man"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    }
+  ],
+  "attribution_confidence": "unknown",
+  "classification": "cystack_named",
+  "description": "CSBugattiCloudMacStealer is a CyStack-coined identifier for\nthe macOS `Information.txt` panel observed inside\n`@Bugatti_Cloud Bugatti_Man <DD.MM>.part<NN>.rar` reseller\npacks distributed through the `@bugatti_cloudnew` Telegram\nchannel. Victim folders follow a bracket-chain shape\n`@bugatti_cloudnew [<CC>][<build-tag>][<IPv4>][<YYYY.MM.DD_ HH.MM.SS>]` where the bracketed segments encode the ISO-2\ncountry, the per-build label, the public IPv4 and the\npanel-side capture timestamp.\n\nThe body opens with a triple-equals `=== System Info ===`\nbanner followed by a short pre-geo block carrying a `Build Tag` short lowercase alphanumeric code (`okob` in the\nobserved sample), the `External IP`, and a 2-letter\n`Country` code. A second bare `System Info` sub-header\nseparates the pre-geo block from an identity + host block\ncarrying `Username` (single-word spelling, distinct from\ncanonical `User Name`), a 16-hex half-length `Agent ID`\nper-installation identifier, `Hostname` (.local macOS\nsuffix observed), `OS Version` as a bare Darwin kernel\ntriplet (`15.0.1`, without the canonical `macOS <major>. <minor> (<build>)` wrapping that `system_profiler` emits),\nan IANA `Timezone` identifier, and a `Languages` JSON array\nof BCP-47 locale tags. The trailing `Hardware:` section\nexposes four 4-space-indented child scalars: `GPU` (Apple\nSilicon SoC name), `CPU Cores` (count only, distinct from\ncanonical `Total Number of Cores`), `RAM` (GB), and\n`Screen` (pre-normalised `WxH` form).\n\nFamily attribution is provisional pending a published\nthreat-intel mapping. The `@Bugatti_Cloud Bugatti_Man`\nreseller surfaces in commercial breach-scanner catalogues\nas a Telegram distributor of \"Bugatti_Cloud\" stealer-log\nbundles (listings dated April 2024 and July / August 2026\nwith conflicting record counts between the same vendor's\nown reports: 1,422 / 9,763 / 10,189 across neighbouring\ndates) but no curated CTI vendor or community catalogue\nsurveyed as of 2026-11-05 attributes this triple-equals\nbanner + `Build Tag` + `Agent ID` layout to a named\nstealer family. The surveyed macOS stealer families that\ncall `system_profiler` (Cthulhu per Darktrace, AMOS per\nSentinelOne / eSentire / Picus, Banshee per Elastic\nSecurity Labs / Check Point / Kaspersky, Poseidon / Odyssey\nper Red Canary, DigitStealer per Jamf) each publish\nsample logs with richer canonical field sets (`User Name`,\n`Hardware UUID`, `System Version: macOS ...`, `Total Number of Cores`, `Chipset Model`) that are all absent\nfrom this layout, ruling them out by field-key spelling\nalone. The @Bugatti_Cloud reseller ships at least two\ndistinct system-file layouts under the same bundle\nwatermark (a Windows-shaped `Info.txt` Remus derivative\nand this macOS `Information.txt` flavour); the two\nlayouts carry no shared field names, so they likely\noriginate from separate underlying builders bundled\nunder one reseller watermark. Treat the family attribution\nas unknown during triage.",
+  "detection_notes": "Fingerprint requires four body anchors: a triple-equals\n`=== System Info ===` banner literal, a `Build Tag:` key,\nan `Agent ID:` key (observed values are 16-hex half-length\nidentifiers), and a `Hardware:` section header. The\ntriple-equals banner alone rules out every documented\nmacOS panel format surveyed, and the `Build Tag` + `Agent ID` key pair pins the per-build correlator shape. The\n`Username` single-word key and bare-triplet `OS Version`\nvalue together rule out any panel that pipes raw\n`system_profiler` output. During triage, treat the\nfamily attribution as unknown: the panel builder does\nnot map to a named stealer family in any surveyed\ncurated or community threat-intel corpus.",
+  "id": "cs-bugatti-cloud-mac-stealer",
+  "name": "CSBugattiCloudMacStealer",
+  "related_external": [
+    "cs-bugatti-cloud-dcrat"
+  ],
+  "related_families": [
+    "cs-bugatti-cloud-pc-info-stealer"
+  ],
+  "sources": [],
+  "typical_targets": [
+    "Victim public IP plus ISO-2 country code",
+    "Per-build label (short lowercase alphanumeric tag)",
+    "Per-installation Agent ID (16-hex half-length identifier)",
+    "Victim macOS account username",
+    "Victim macOS hostname",
+    "macOS kernel version triplet",
+    "IANA timezone identifier",
+    "BCP-47 primary locale tag",
+    "Apple Silicon SoC name plus CPU core count",
+    "Installed RAM and screen resolution"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSBugattiCloudMacStealer là định danh do CyStack đặt cho bảng điều khiển (panel) macOS `Information.txt` được quan sát bên trong các gói bán lại `@Bugatti_Cloud Bugatti_Man <DD.MM>.part<NN>.rar` được phân phối qua kênh Telegram `@bugatti_cloudnew`. Các thư mục nạn nhân tuân theo cấu trúc chuỗi dấu ngoặc `@bugatti_cloudnew [<CC>][<build-tag>][<IPv4>][<YYYY.MM.DD_ HH.MM.SS>]`, trong đó các đoạn nằm trong dấu ngoặc mã hóa quốc gia theo chuẩn ISO-2, nhãn riêng cho từng bản build, địa chỉ IPv4 công khai và mốc thời gian thu thập phía panel.\n\nPhần thân bắt đầu bằng banner ba dấu bằng `=== System Info ===`, tiếp theo là một khối pre-geo ngắn chứa một mã chữ-số viết thường ngắn `Build Tag` (là `okob` trong mẫu được quan sát), `External IP`, và mã 2 chữ `Country`. Một tiêu đề phụ trần thứ hai `System Info` ngăn cách khối pre-geo với khối định danh + máy chứa `Username` (cách viết một từ, khác với `User Name` chính quy), một định danh riêng cho từng lần cài đặt `Agent ID` dạng 16 ký tự hex độ dài một nửa, `Hostname` (hậu tố .local của macOS được quan sát), `OS Version` dưới dạng bộ ba phiên bản nhân Darwin trần (`15.0.1`, không có phần bao `macOS <major>. <minor> (<build>)` chính quy mà `system_profiler` tạo dữ liệu đầu ra), một định danh múi giờ IANA `Timezone`, và một mảng JSON `Languages` chứa các thẻ locale theo chuẩn BCP-47. Phần `Hardware:` ở cuối hiển thị bốn giá trị con dạng scalar được thụt lề 4 khoảng trắng: `GPU` (tên SoC Apple Silicon), `CPU Cores` (chỉ số lượng, khác với `Total Number of Cores` chính quy), `RAM` (GB), và `Screen` (dạng `WxH` chưa được chuẩn hóa trước).\n\nViệc quy kết họ mã độc vẫn còn tạm thời, chờ một bản đồ tình báo đe dọa được công bố. Đối tượng bán lại `@Bugatti_Cloud Bugatti_Man` xuất hiện trong các danh mục quét dữ liệu vi phạm thương mại với vai trò là nhà phân phối trên Telegram các gói log mã độc đánh cắp thông tin \"Bugatti_Cloud\" (các danh sách được ghi ngày tháng 4/2024 và tháng 7/tháng 8/2026 với số lượng bản ghi mâu thuẫn nhau giữa các báo cáo của cùng một nhà cung cấp: 1.422 / 9.763 / 10.189 trên các ngày liền kề) nhưng không có nhà cung cấp CTI được chọn lọc hay danh mục cộng đồng nào được khảo sát tính đến ngày 05-11-2026 quy kết bố cục banner ba dấu bằng + `Build Tag` + `Agent ID` này cho một họ mã độc đánh cắp thông tin có tên cụ thể. Các họ mã độc đánh cắp thông tin macOS được khảo sát có gọi `system_profiler` (Cthulhu theo Darktrace, AMOS theo SentinelOne / eSentire / Picus, Banshee theo Elastic Security Labs / Check Point / Kaspersky, Poseidon / Odyssey theo Red Canary, DigitStealer theo Jamf) đều công bố mẫu log với tập trường dữ liệu chính quy phong phú hơn (`User Name`, `Hardware UUID`, `System Version: macOS ...`, `Total Number of Cores`, `Chipset Model`) mà đều không có trong bố cục này, qua đó có thể loại trừ các họ này chỉ dựa trên cách đặt tên trường dữ liệu. Đối tượng bán lại @Bugatti_Cloud phân phối ít nhất hai cấu trúc tệp hệ thống khác nhau dưới cùng một watermark gói hàng (một biến thể Remus có cấu trúc dành cho Windows `Info.txt` và biến thể macOS `Information.txt` này); hai cấu trúc này không có tên trường dữ liệu chung nào, do đó nhiều khả năng chúng xuất phát từ các bộ công cụ xây dựng (builder) nền tảng khác nhau được gói chung dưới một watermark của đối tượng bán lại. Hãy coi việc quy kết họ mã độc là chưa xác định trong quá trình phân loại ban đầu.",
+      "typical_targets": [
+        "Địa chỉ IP công khai của nạn nhân cùng mã quốc gia ISO-2",
+        "Nhãn riêng cho từng bản build (thẻ chữ-số viết thường ngắn)",
+        "Agent ID riêng cho từng lần cài đặt (định danh 16 ký tự hex độ dài một nửa)",
+        "Tên tài khoản macOS của nạn nhân",
+        "Tên máy (hostname) macOS của nạn nhân",
+        "Bộ ba phiên bản nhân macOS",
+        "Định danh múi giờ IANA",
+        "Thẻ locale chính theo chuẩn BCP-47",
+        "Tên SoC Apple Silicon cùng số nhân CPU",
+        "RAM đã cài đặt và độ phân giải màn hình"
+      ],
+      "detection_notes": "Việc lập dấu hiệu nhận diện yêu cầu bốn điểm neo trong phần thân: một chuỗi banner ba dấu bằng `=== System Info ===`, một khóa `Build Tag:`, một khóa `Agent ID:` (các giá trị quan sát được là định danh 16 ký tự hex độ dài một nửa), và một tiêu đề phần `Hardware:`. Chỉ riêng banner ba dấu bằng đã loại trừ mọi định dạng panel macOS đã được ghi nhận trong khảo sát, và cặp khóa `Build Tag` + `Agent ID` xác định cấu trúc dữ liệu liên kết theo từng bản build. Khóa một từ `Username` cùng với giá trị bộ ba trần `OS Version` cùng nhau loại trừ bất kỳ panel nào chuyển tiếp trực tiếp dữ liệu đầu ra thô của `system_profiler`. Trong quá trình phân loại ban đầu, hãy coi việc quy kết họ mã độc là chưa xác định: bộ công cụ xây dựng panel này không khớp với bất kỳ họ mã độc đánh cắp thông tin có tên cụ thể nào trong các nguồn tình báo đe dọa được chọn lọc hoặc cộng đồng đã khảo sát.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@bugatti_cloudnew",
+      "fields": [
+        "Agent ID",
+        "Build Tag",
+        "Country",
+        "CPU Cores",
+        "External IP",
+        "GPU",
+        "Hardware",
+        "Hostname",
+        "Languages",
+        "OS Version",
+        "RAM",
+        "Screen",
+        "Timezone",
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "cs-bugatti-cloud-mac-stealer",
+      "id": "v_ece25abb9dedf06803e3ec1eacf75249",
+      "markers": [
+        "Hardware:"
+      ],
+      "panel_brand": "@bugatti_cloudnew",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_ece25abb9dedf06803e3ec1eacf75249/Information.txt",
+        "sha256": "c9ca3bfd5b4bc2e22bd8c68ee8ef4ac63bf35fcd3ab340455cec24f226a045e5",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}

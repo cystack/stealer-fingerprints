@@ -1,0 +1,19 @@
+=== System Info ===
+Build Tag: okob
+External IP: <IP>
+Country: EE
+
+System Info
+Username: <USER>
+
+Agent ID: e045cd5fc2d4fe73
+Hostname: <HOST>
+OS Version: 15.0.1
+Timezone: Asia/Tehran
+Languages: ["en-AE","fa-AE","ar-AE"]
+
+Hardware:
+    GPU: Apple M3
+    CPU Cores: 8
+    RAM: 8 GB
+    Screen: 1470x956

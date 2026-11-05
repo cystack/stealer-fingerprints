@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **215** research profiles
+- **216** research profiles
 - **42** known malware families
 - **3** observed self-labels without independent family attribution
-- **149** CyStack tracking names
+- **150** CyStack tracking names
 - **16** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **243** observed log variants and **243** samples
-- **8,052,997** CyStack observations represented by the retained sample set
+- **244** observed log variants and **244** samples
+- **8,052,998** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -97,7 +97,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Rivas Stealer](families/rivas-stealer/) | unknown | 1 | [1 retained](families/rivas-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (149)
+### CyStack tracking names (150)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -135,6 +135,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSBrowserFingerprintStealer](families/cs-browser-fingerprint-stealer/) | unknown | 0 | Metadata only |
 | [CSBrowserProfileStealer](families/cs-browser-profile-stealer/) | unknown | 0 | Metadata only |
 | [CSBrowsersDisplayStealer](families/cs-browsers-display-stealer/) | unknown | 0 | Metadata only |
+| [CSBugattiCloudMacStealer](families/cs-bugatti-cloud-mac-stealer/) | unknown | 1 | [1 retained](families/cs-bugatti-cloud-mac-stealer/#observed-log-variants) |
 | [CSBugattiCloudPcInfoStealer](families/cs-bugatti-cloud-pc-info-stealer/) | unknown | 1 | [1 retained](families/cs-bugatti-cloud-pc-info-stealer/#observed-log-variants) |
 | [CSBugattiPcInfoStealer](families/cs-bugatti-pc-info-stealer/) | unknown | 1 | [1 retained](families/cs-bugatti-pc-info-stealer/#observed-log-variants) |
 | [CSBugattiUserInfoStealer](families/cs-bugatti-user-info-stealer/) | unknown | 0 | Metadata only |
