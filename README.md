@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **214** research profiles
+- **215** research profiles
 - **42** known malware families
 - **3** observed self-labels without independent family attribution
-- **148** CyStack tracking names
+- **149** CyStack tracking names
 - **16** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **242** observed log variants and **242** samples
-- **8,052,996** CyStack observations represented by the retained sample set
+- **243** observed log variants and **243** samples
+- **8,052,997** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -97,7 +97,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Rivas Stealer](families/rivas-stealer/) | unknown | 1 | [1 retained](families/rivas-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (148)
+### CyStack tracking names (149)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -129,6 +129,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSBradMaxPwshStealer](families/cs-brad-max-pwsh-stealer/) | unknown | 0 | Metadata only |
 | [CSBradmaxRedlineTruncStealer](families/cs-bradmax-redline-trunc-stealer/) | unknown | 1 | [1 retained](families/cs-bradmax-redline-trunc-stealer/#observed-log-variants) |
 | [CSBradMaxSystemInfoReportStealer](families/cs-brad-max-system-info-report-stealer/) | unknown | 1 | [1 retained](families/cs-brad-max-system-info-report-stealer/#observed-log-variants) |
+| [CSBradMaxUserInfoStealer](families/cs-brad-max-user-info-stealer/) | unknown | 1 | [1 retained](families/cs-brad-max-user-info-stealer/#observed-log-variants) |
 | [CSBrowersStealer](families/cs-browers-stealer/) | unknown | 1 | [1 retained](families/cs-browers-stealer/#observed-log-variants) |
 | [CSBrowserCategoryDumpStealer](families/cs-browser-category-dump-stealer/) | unknown | 0 | Metadata only |
 | [CSBrowserFingerprintStealer](families/cs-browser-fingerprint-stealer/) | unknown | 0 | Metadata only |

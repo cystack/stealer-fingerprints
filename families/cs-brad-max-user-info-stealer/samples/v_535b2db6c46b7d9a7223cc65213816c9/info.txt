@@ -1,0 +1,52 @@
+╔══════════════════════════════════════════════════════════╗
+║                        USER INFO                         ║
+╚══════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────┐
+│                    BASIC INFORMATION                     │
+└──────────────────────────────────────────────────────────┘
+Machine Name     : <HOST>
+User Name        : <USER>
+Domain           : <HOST>
+OS Version       : Microsoft Windows NT 6.2.9200.0
+Architecture     : x64
+System Directory : C:\WINDOWS\system32
+Uptime           : 00.00:33:05
+CLR Version      : 4.0.30319.42000
+
+┌──────────────────────────────────────────────────────────┐
+│                      HARDWARE                            │
+└──────────────────────────────────────────────────────────┘
+CPU              : 11th Gen Intel(R) Core(TM) i5-11260H @ 2.60GHz
+GPU              : Intel(R) UHD Graphics | NVIDIA GeForce GTX 1650 with Max-Q Design
+RAM              : 7.71 GB
+Disk Space       : 58 GB free / 202 GB total
+Screen Resolution: 1536x864
+
+┌──────────────────────────────────────────────────────────┐
+│                  NETWORK & LOCATION                      │
+└──────────────────────────────────────────────────────────┘
+Public IP        : <IP>
+Country          : India (IN)
+City             : <LOCATION>
+ISP              : <ISP>
+Local IP         : <IP>
+MAC Address      : <MAC>
+
+┌──────────────────────────────────────────────────────────┐
+│                       SOFTWARE                           │
+└──────────────────────────────────────────────────────────┘
+Installed Updates: 1 updates
+Antivirus        : Microsoft Defender Antivirus
+Firewall         : Enabled
+
+┌──────────────────────────────────────────────────────────┐
+│                         TIME                             │
+└──────────────────────────────────────────────────────────┘
+Current (UTC)    : 2026-07-20 12:26:17
+Current (Local)  : 2026-07-20 17:56:17
+Timezone         : India Standard Time (UTC 05:30:00)
+
+╔══════════════════════════════════════════════════════════╗
+║                     END OF USER INFO                     ║
+╚══════════════════════════════════════════════════════════╝
