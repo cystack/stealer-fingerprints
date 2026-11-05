@@ -1,0 +1,15 @@
+персональных данных! https://v-chat.pro
+Зарегистрируйся уже сейчас и займи лучший никнейм!
+IP: <IP>
+Country: IN
+
+Date: 22.08.2026 17:40:47
+MachineID: <HWID>
+GUID: <HWID>
+HWID: <HWID>
+
+Path: <PATH>
+MD5: <SECRET>
+Work Dir: In memory
+
+Windows: Windows 11 Home 25H2 (Build 26200)

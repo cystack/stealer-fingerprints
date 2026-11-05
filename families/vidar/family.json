@@ -247,6 +247,37 @@
       "layout_id": "keyboard-languages-local-time"
     },
     {
+      "attribution_confidence": "high",
+      "distribution_channel": null,
+      "fields": [
+        "Country",
+        "Date",
+        "GUID",
+        "HWID",
+        "IP",
+        "MachineID",
+        "MD5",
+        "Path",
+        "Windows",
+        "Work Dir"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "format_id": "vidar",
+      "id": "v_7967ef8051c21ced0d12b89a8b3d4b40",
+      "layout_id": "identity-triple-workdir",
+      "markers": [],
+      "panel_brand": null,
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_7967ef8051c21ced0d12b89a8b3d4b40/information.txt",
+        "sha256": "c3aac5ea8c2ed7f971bd535b890ba950dbde6ca06a78f6944cb3cbe2c39351a9",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
       "id": "v_7c7fa9256eb052b7159c7f6c24b3bd26",
       "format_id": "vidar",
       "filenames": [
