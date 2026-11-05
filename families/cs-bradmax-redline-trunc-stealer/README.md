@@ -51,7 +51,8 @@ Việc quy kết họ mã độc hiện vẫn ở dạng tạm thời, chờ có
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `BRADMAX truncated Redline-shape System.txt`, `BRADMAX preamble-stripped Redline variant`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -98,7 +99,23 @@ Dấu hiệu nhận diện yêu cầu đồng thời: (a) `Operation System:` ne
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_474ab737a31de45c361f19eac09b35e5`
+
+- Format ID: `cs-bradmax-redline-trunc-stealer`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: `BRADMAX truncated (Redline-shape)`
+- Distribution channel: `@BRADMAX`
+- Attribution confidence: **unknown**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_474ab737a31de45c361f19eac09b35e5/UserInformation.txt)
+- Sample SHA-256: `6db406ce26be510a61bfd060a5450d51b463bde97505b54cd1e7eebeb42f810f`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `* Rhadamanthys Stealer *`
+- Field labels: `Chrome Version`, `ComputerName`, `Country`, `DomainName`, `Edge Version`, `Hardwares`, `HWID`, `IP`, `Keyboard Language`, `Log Date`, `MachineID`, `Name`, `Operation System`, `ScreenSize`, `System Language`, `TimeZone`, `Traffic Name`, `Unknown Version`, `User Language`, `UserName`, `WallPaperHash`
+
 
 ## MITRE ATT&CK
 

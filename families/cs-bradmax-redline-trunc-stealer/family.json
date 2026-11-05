@@ -49,7 +49,6 @@
   "observed_channels": [
     "https://t.me/BRADLOGS"
   ],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "CSBradmaxRedlineTruncStealer là định danh do CyStack đặt cho phần thân dữ liệu dạng Redline bị cắt bởi BRADMAX (`System.txt` panel), trong đó phần mở đầu định danh (`IP:`, `UserName:`, `MachineName:`, `Country:`) đã bị bộ tổng hợp (aggregator) loại bỏ và phần thân bắt đầu ngay từ `Zip Code:`. Được ghi nhận bên trong `@BRADMAX 27000 FEB-MARCH.part01.rar` tại các thư mục nạn nhân `@BRADMAX <count> <MONTHS>/[<CC>]<IPv4>/System.txt` (ví dụ: `@BRADMAX 27000 FEB-MARCH/[DE]<IPv4>/System.txt`).\n\nTừ vựng trong phần thân mang tính đặc trưng chuẩn của Redline: lỗi chính tả `Operation System:` (dạng số ít `Operation`, không có `ing` ở cuối), ký hiệu số nhiều `Available KeyboardLayouts:` (không có khoảng trắng giữa `Keyboard` và `Layouts`), tiêu đề khối `Hardwares:` với các dòng `Name: <label>, <values>` bên dưới (dòng RAM dùng định dạng tuần tự hóa kép `<N.NN> Mb or <bytes> bytes`, các dòng GPU dùng `<vendor> <model>, <bytes> bytes`), cùng với một dòng `Windows Defender` trơn ở cuối, không có tiền tố khóa `AV:` / `Antivirus:`. Trường `FileLocation:` mà các panel Redline chuẩn `UserInformation.txt` thường tạo ra không xuất hiện, đây là điểm phân biệt biến thể bị cắt phần mở đầu này với bố cục chuẩn.\n\nCùng một nguồn gốc render panel này cũng xuất hiện trong dữ liệu đầu ra của đại lý bán lại Daisy Cloud, được xử lý bởi `CSDaisyBlockCloudStealer` (vẫn giữ nguyên phần mở đầu định danh và bổ sung banner ASCII art viền bằng ký tự pipe) và `CSDaisyCloudStealer` (lớp phủ watermark theo từng dòng). Biến thể bị cắt bởi BRADMAX này là biến thể liên quan không có banner và không có phần mở đầu định danh.\n\nViệc quy kết họ mã độc hiện vẫn ở dạng tạm thời, chờ có báo cáo tình báo mối đe dọa ánh xạ cho biến thể bị cắt cụ thể này. Các báo cáo công khai và danh mục cộng đồng có ghi nhận cấu trúc phần thân dạng Redline nền tảng, nhưng chưa xác nhận biến thể bị BRADMAX cắt bỏ phần mở đầu định danh cụ thể này. Do thiếu điểm neo `FileLocation:` chuẩn và phần mở đầu định danh, không thể xác nhận builder là Redline nguyên bản hay một bản fork của Redline (Meta, Aurora, Amadey đều kế thừa một phần từ vựng của Redline).",
@@ -87,5 +86,50 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@BRADMAX",
+      "fields": [
+        "Chrome Version",
+        "ComputerName",
+        "Country",
+        "DomainName",
+        "Edge Version",
+        "Hardwares",
+        "HWID",
+        "IP",
+        "Keyboard Language",
+        "Log Date",
+        "MachineID",
+        "Name",
+        "Operation System",
+        "ScreenSize",
+        "System Language",
+        "TimeZone",
+        "Traffic Name",
+        "Unknown Version",
+        "User Language",
+        "UserName",
+        "WallPaperHash"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "format_id": "cs-bradmax-redline-trunc-stealer",
+      "id": "v_474ab737a31de45c361f19eac09b35e5",
+      "markers": [
+        "* Rhadamanthys Stealer *"
+      ],
+      "panel_brand": "BRADMAX truncated (Redline-shape)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_474ab737a31de45c361f19eac09b35e5/UserInformation.txt",
+        "sha256": "6db406ce26be510a61bfd060a5450d51b463bde97505b54cd1e7eebeb42f810f",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

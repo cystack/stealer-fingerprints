@@ -1,0 +1,31 @@
+*************************************************************************************
+*                                                                                   *
+*                       Rhadamanthys Stealer                                        *
+*                                                                                   *
+*************************************************************************************
+
+Traffic Name: Build[1717879604]
+IP: <IP>
+Country: PE
+UserName: <USER>
+HWID: <HWID>
+ScreenSize: 1920x1080
+TimeZone: UTC-5
+ComputerName: <HOST>
+DomainName: <HOST>
+MachineID: <HWID>
+WallPaperHash: <HWID>
+Operation System: Windows 11 build 22631 (64 Bit)
+System Language: Spanish
+User Language: Spanish
+Keyboard Language: Spanish
+Log Date: 13 Jun 24 19:19 UTC
+
+Hardwares:
+Name: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+Name: Intel(R) UHD Graphics
+Name: Total of RAM, 16085 MB
+
+Unknown Version: 124.0.2478.80, 120.0.2210.77, 115.0.1901.203, 125.0.2535.92, 124.0.2478.80, 122.0.2365.66, 125.0.2535.85, 125.0.2535.92, 124.0.2478.80, 125.0.2535.92, 117.0.2045.60, 122.0.2365.52, 119.0.2151.72, 119.0.2151.72, 112.0.1722.48, 125.0.2535.92, 120.0.2210.61, 111.0.1661.54, 111.0.1661.54, 117.0.2045.60, 104.0.1293.47
+Chrome Version: 125.0.6422.144, 125.0.6422.144, 125.0.6422.144, 125.0.6422.144
+Edge Version: 125.0.2535.92

@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **148** CyStack tracking names
 - **16** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **239** observed log variants and **239** samples
-- **8,052,993** CyStack observations represented by the retained sample set
+- **241** observed log variants and **241** samples
+- **8,052,995** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -87,7 +87,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Storm Stealer](families/storm-stealer/) | high | 1 | [1 retained](families/storm-stealer/#observed-log-variants) |
 | [Vidar](families/vidar/) | high | 11 | [11 retained](families/vidar/#observed-log-variants) |
 | [WhiteSnake](families/white-snake/) | high | 1 | [1 retained](families/white-snake/#observed-log-variants) |
-| [XFiles](families/x-files/) | high | 2 | [2 retained](families/x-files/#observed-log-variants) |
+| [XFiles](families/x-files/) | high | 3 | [3 retained](families/x-files/#observed-log-variants) |
 
 ### Observed self-labels (3)
 
@@ -127,7 +127,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSBradMaxCloudPCStealer](families/cs-brad-max-cloud-pc-stealer/) | unknown | 1 | [1 retained](families/cs-brad-max-cloud-pc-stealer/#observed-log-variants) |
 | [CSBradmaxCookiesOnlyStealer](families/cs-bradmax-cookies-only-stealer/) | unknown | 0 | Metadata only |
 | [CSBradMaxPwshStealer](families/cs-brad-max-pwsh-stealer/) | unknown | 0 | Metadata only |
-| [CSBradmaxRedlineTruncStealer](families/cs-bradmax-redline-trunc-stealer/) | unknown | 0 | Metadata only |
+| [CSBradmaxRedlineTruncStealer](families/cs-bradmax-redline-trunc-stealer/) | unknown | 1 | [1 retained](families/cs-bradmax-redline-trunc-stealer/#observed-log-variants) |
 | [CSBradMaxSystemInfoReportStealer](families/cs-brad-max-system-info-report-stealer/) | unknown | 1 | [1 retained](families/cs-brad-max-system-info-report-stealer/#observed-log-variants) |
 | [CSBrowersStealer](families/cs-browers-stealer/) | unknown | 1 | [1 retained](families/cs-browers-stealer/#observed-log-variants) |
 | [CSBrowserCategoryDumpStealer](families/cs-browser-category-dump-stealer/) | unknown | 0 | Metadata only |

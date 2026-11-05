@@ -21,8 +21,8 @@ X-FILES (XFiles / DeerStealer) là một họ mã độc đánh cắp thông tin
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `X-FILES`, `DeerStealer`, `X-Files Stealer`
-- Variants observed: **2**
-- CyStack observations represented: **74,339**
+- Variants observed: **3**
+- CyStack observations represented: **74,340**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -53,6 +53,24 @@ shapes.
 XFiles `Information.txt` mang theo banner của bảng điều khiển cùng với các trường thông tin phần cứng và ngôn ngữ hệ thống của nạn nhân. Các biến thể cũ giai đoạn 2021-2022 và phiên bản đổi thương hiệu DeerStealer từ 2024 trở đi có chung tập trường dữ liệu, do đó quy tắc nhận diện họ mã độc này bao phủ cả hai giai đoạn. Một biến thể bị bộ tổng hợp lược bớt, được phát tán lại thông qua dự án Cloud WLFR (`t.me/WichLoveFromR`, `linktr.ee/WLFRcloud`, hỗ trợ `@AltairSupport`), loại bỏ định danh phiên chạy bảng điều khiển `Operation ID:` nhưng vẫn giữ nguyên phần còn lại của tập trường dữ liệu chuẩn XFiles; dấu vân tay cấu trúc dữ liệu bao phủ cả hai cấu trúc.
 
 ## Observed log variants
+
+### `v_50534f43dad5dd40af4f45fd7559139a`
+
+- Format ID: `cs-bradmax-xfiles-stripped-stealer`
+- Observed filenames: `Information.txt`
+- Panel brand: `BRADMAX`
+- Distribution channel: `@BRADMAX`
+- Attribution confidence: **high**
+- Layout: `ip-country-cpu`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_50534f43dad5dd40af4f45fd7559139a/Information.txt)
+- Sample SHA-256: `b408cd5b2a2e8ba809e7bbac294a86b2fa1034714420ca902fe7fc3c9e5432f9`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Computer Name`, `Country`, `CPU (Processor`, `Desktop Screenshot Taken`, `GPU (Display Devices`, `Hardware ID`, `IP`, `Operating System`, `Operation ID`, `RAM (Memory`, `Screens`, `Username`
 
 ### `v_696f8d4a627ea995706ebfc9ab448d36`
 
