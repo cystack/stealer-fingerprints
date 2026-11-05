@@ -1,0 +1,159 @@
+{
+  "aliases": [
+    "SYSTEM INFORMATION REPORT",
+    "@BRADMAX info.txt panel",
+    "banner-stripped SYSTEM INFORMATION REPORT"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    },
+    {
+      "id": "T1124",
+      "name": "System Time Discovery"
+    },
+    {
+      "id": "T1518",
+      "name": "Software Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "attribution_confidence": "unknown",
+  "classification": "cystack_named",
+  "description": "CSBradMaxSystemInfoReportStealer is a CyStack-coined\nidentifier for a banner-stripped `info.txt` panel\ndistributed through the @BRADMAX Telegram log-reseller\nchannel (distinct from the sibling @BRADMAX_CLOUD\nreseller). Observed inside `@BRADMAX <N> <MONTH>-<MONTH> .part<N>.rar` aggregator packs at `[<CC>]UNKNOWN_(<N>) /info.txt` victim folders.\n\nThe body opens with a `=` border framing a centered\n`SYSTEM INFORMATION REPORT` title, followed by six\nbracketed-with-spaces section headers in fixed order:\n`[ IDENTIFICATION ]`, `[ OS ]`, `[ HARDWARE ]`,\n`[ NETWORK & LOCATION ]`, `[ SOFTWARE ]`, `[ TIME ]`.\nEach section emits column-18 aligned-colon\n`Key : Value` fields with trailing-space padding on\nthe key side. Field vocabulary includes a dashed UUID\n`HWID`, Windows NT-style `OS Version`, .NET\n`CLR Version` and TimeSpan `Uptime`, `Country` with a\ntrailing parenthesised ISO-2 country code\n(`Brazil (BR)` shape, distinct from Redline and Lumma),\n`Public IP` + `Local IP` + `MAC Address` network trio,\n`Installed Updates` + `Antivirus` + `Firewall` software\ntrio, and `Current (UTC)` + `Current (Local)` +\n`Timezone` time trio where the timezone value carries\nboth a Windows display name and a signed UTC offset\nwith seconds.\n\nThe same title-plus-sections layout is observed under\nthe russia34.com aggregator as a banner-stripped variant\nof its wider panel portfolio. Neither reseller attributes\nthe underlying builder, and no curated CTI vendor\ndocuments the exact `SYSTEM INFORMATION REPORT` title\nplus bracketed-with-spaces section vocabulary. The .NET\n`CLR Version` + TimeSpan `Uptime` combination points at\na .NET-based builder.\n\nFamily attribution stays CyStack-coined (Case C) pending\na published mapping. HEROIC darkhive-breaches attests\nthe @BRADMAX distributor at multiple pack entries\nseparately from the @BRADMAX_CLOUD sibling but names\nonly the distributor. Candidates ruled out include\nRedline canonical (`Build ID` / `IP Address` / `Country`\nlabelled-block layout differs), Lumma (`Software:` and\n`Hardware:` sections with dash-bulleted fields, absent),\nVidar (tight `[Hardware]` section header, absent),\nRhadamanthys (`Wallpaper Hash:` required, absent), XFiles\n(`CPU (Processor):` parens-alias key, absent here),\nMars Stealer and Amadey (documented section vocabulary\ndiffers).",
+  "detection_notes": "Fingerprint requires the `@bradmax` channel substring\nin the victim-folder path (case-insensitive, matches\nboth the @BRADMAX bare reseller and the @BRADMAX_CLOUD\nsibling) AND the `SYSTEM INFORMATION REPORT` title\nliteral AND at least four of the six bracketed-with-spaces section headers\n(`[ IDENTIFICATION ]`, `[ OS ]`, `[ HARDWARE ]`,\n`[ NETWORK & LOCATION ]`, `[ SOFTWARE ]`, `[ TIME ]`).\nThe title literal alone would collide with the sibling\nrussia34 variant 23 shape if the path gate were\nskipped; the path gate alone would collide with the\nsibling BRADMAX parsers (XFiles-stripped, Acreed-flat,\nLumma variants, etc) that share the channel; title\nplus section quartet together pin the shape\nunambiguously under the `@bradmax` path gate.",
+  "id": "cs-brad-max-system-info-report-stealer",
+  "name": "CSBradMaxSystemInfoReportStealer",
+  "related_external": [
+    "cs-bradmax-xfiles-stripped-stealer",
+    "cs-bradmax-acreed-flat-stealer"
+  ],
+  "related_families": [
+    "cs-russia34-stealer",
+    "cs-brad-max-pwsh-stealer"
+  ],
+  "sources": [
+    "https://heroic.com/darkhive-breaches/bradmax-1500-july-stealer-log-10273-exposed/",
+    "https://heroic.com/darkhive-breaches/bradmax-1000-nov-stealer-log-telegram-23k-records/",
+    "https://heroic.com/darkhive-breaches/bradmax-800-june-telegram-breach-chained-account-risk/",
+    "https://heroic.com/darkhive-breaches/bradmax-1200-feb-stealer-log-breach-2026/"
+  ],
+  "typical_targets": [
+    "Hardware identifier (dashed UUID)",
+    "Host identity (`Machine Name`, `Domain`)",
+    "Windows user account name",
+    "Operating system build and architecture",
+    ".NET CLR version",
+    "Hardware inventory (CPU, GPU, RAM, disk space, screen)",
+    "Public-IP geolocation (parenthesised ISO-2 country, city, ISP)",
+    "Local IP and MAC address",
+    "Installed antivirus product and firewall state",
+    "Panel timestamp in UTC and local wall-clock plus Windows timezone name"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSBradMaxSystemInfoReportStealer là định danh do CyStack đặt cho một panel bị gỡ bỏ banner của `info.txt`, được phân phối qua kênh Telegram chuyên bán lại log @BRADMAX (khác với đối tượng bán lại liên quan @BRADMAX_CLOUD). Được quan sát bên trong các gói tổng hợp `@BRADMAX <N> <MONTH>-<MONTH> .part<N>.rar` tại các thư mục nạn nhân `[<CC>]UNKNOWN_(<N>) /info.txt`.\n\nPhần nội dung mở đầu bằng một đường viền `=` bao quanh tiêu đề `SYSTEM INFORMATION REPORT` được căn giữa, theo sau là sáu tiêu đề mục được đặt trong ngoặc vuông có khoảng trắng theo thứ tự cố định: `[ IDENTIFICATION ]`, `[ OS ]`, `[ HARDWARE ]`, `[ NETWORK & LOCATION ]`, `[ SOFTWARE ]`, `[ TIME ]`. Mỗi mục tạo dữ liệu đầu ra là các trường `Key : Value` được căn chỉnh dấu hai chấm ở cột 18, với phần khóa được đệm khoảng trắng ở cuối. Tập hợp trường dữ liệu bao gồm UUID có dấu gạch nối `HWID`, `OS Version` kiểu Windows NT, `CLR Version` của .NET và TimeSpan `Uptime`, `Country` kèm mã quốc gia ISO-2 trong ngoặc đơn ở cuối (cấu trúc dữ liệu `Brazil (BR)`, khác với Redline và Lumma), bộ ba mạng `Public IP` + `Local IP` + `MAC Address`, bộ ba phần mềm `Installed Updates` + `Antivirus` + `Firewall`, và bộ ba thời gian `Current (UTC)` + `Current (Local)` + `Timezone` trong đó giá trị múi giờ mang cả tên hiển thị của Windows lẫn độ lệch UTC có dấu kèm giây.\n\nBố cục tiêu đề cộng các mục tương tự được quan sát dưới aggregator russia34.com như một biến thể bị gỡ banner trong danh mục panel rộng hơn của nó. Không đối tượng bán lại nào quy kết công cụ xây dựng gốc, và chưa có nhà cung cấp CTI đã qua kiểm định nào tài liệu hóa chính xác tiêu đề `SYSTEM INFORMATION REPORT` cùng tập hợp mục trong ngoặc vuông có khoảng trắng này. Sự kết hợp `CLR Version` của .NET + TimeSpan `Uptime` cho thấy đây là một công cụ xây dựng dựa trên .NET.\n\nQuy kết họ mã độc vẫn ở dạng do CyStack đặt tên (Case C) cho đến khi có ánh xạ được công bố. HEROIC darkhive-breaches xác nhận đối tượng phân phối @BRADMAX tại nhiều mục trong gói, tách biệt với đối tượng liên quan @BRADMAX_CLOUD, nhưng chỉ nêu tên đối tượng phân phối. Các ứng viên đã bị loại trừ bao gồm Redline chuẩn (bố cục khối có nhãn `Build ID` / `IP Address` / `Country` khác biệt), Lumma (các mục `Software:` và `Hardware:` với trường có dấu gạch đầu dòng, không có mặt), Vidar (tiêu đề mục `[Hardware]` sát nhau, không có mặt), Rhadamanthys (yêu cầu `Wallpaper Hash:`, không có mặt), XFiles (khóa bí danh trong ngoặc đơn `CPU (Processor):`, không có mặt ở đây), Mars Stealer và Amadey (tập hợp mục đã được tài liệu hóa khác biệt).",
+      "typical_targets": [
+        "Định danh phần cứng (UUID có dấu gạch nối)",
+        "Thông tin định danh máy (`Machine Name`, `Domain`)",
+        "Tên tài khoản người dùng Windows",
+        "Phiên bản build và kiến trúc hệ điều hành",
+        "Phiên bản .NET CLR",
+        "Thông tin phần cứng (CPU, GPU, RAM, dung lượng ổ đĩa, màn hình)",
+        "Định vị địa lý theo IP công khai (mã quốc gia ISO-2 trong ngoặc đơn, thành phố, ISP)",
+        "Địa chỉ IP nội bộ và địa chỉ MAC",
+        "Phần mềm diệt virus đã cài đặt và trạng thái tường lửa",
+        "Dấu thời gian của panel theo UTC và giờ địa phương cùng tên múi giờ Windows"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu chuỗi con kênh `@bradmax` xuất hiện trong đường dẫn thư mục nạn nhân (không phân biệt chữ hoa/thường, khớp cả với đối tượng bán lại thuần @BRADMAX lẫn đối tượng liên quan @BRADMAX_CLOUD) VÀ chuỗi tiêu đề `SYSTEM INFORMATION REPORT` VÀ ít nhất bốn trong sáu tiêu đề mục trong ngoặc vuông có khoảng trắng (`[ IDENTIFICATION ]`, `[ OS ]`, `[ HARDWARE ]`, `[ NETWORK & LOCATION ]`, `[ SOFTWARE ]`, `[ TIME ]`). Nếu chỉ dựa vào chuỗi tiêu đề mà bỏ qua điều kiện đường dẫn, sẽ xảy ra trùng lặp với cấu trúc dữ liệu biến thể 23 của russia34 liên quan; nếu chỉ dựa vào điều kiện đường dẫn mà không có tiêu đề, sẽ trùng lặp với các trình phân tích BRADMAX liên quan khác (biến thể gỡ XFiles, biến thể Acreed-flat, biến thể Lumma, v.v.) cùng chia sẻ kênh này; kết hợp tiêu đề cùng bốn mục nêu trên dưới điều kiện đường dẫn `@bradmax` sẽ xác định chính xác cấu trúc dữ liệu này mà không gây nhầm lẫn.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1016",
+          "name": "Dò tìm cấu hình mạng hệ thống"
+        },
+        {
+          "id": "T1124",
+          "name": "Xác định thời gian hệ thống"
+        },
+        {
+          "id": "T1518",
+          "name": "Dò tìm phần mềm"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@BRADMAX",
+      "fields": [
+        "Antivirus",
+        "Architecture",
+        "City",
+        "CLR Version",
+        "Country",
+        "CPU",
+        "Current (Local",
+        "Current (UTC",
+        "Disk Space",
+        "Domain",
+        "Firewall",
+        "GPU",
+        "HWID",
+        "Installed Updates",
+        "ISP",
+        "Local IP",
+        "MAC Address",
+        "Machine Name",
+        "OS Version",
+        "Public IP",
+        "RAM",
+        "Screen Resolution",
+        "System Directory",
+        "Timezone",
+        "Uptime",
+        "User Name"
+      ],
+      "filenames": [
+        "info.txt"
+      ],
+      "format_id": "cs-bradmax-system-info-report-stealer",
+      "id": "v_c978ed72a1d5b3c367fd5414680a3b88",
+      "markers": [
+        "SYSTEM INFORMATION REPORT"
+      ],
+      "panel_brand": "SYSTEM INFORMATION REPORT",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_c978ed72a1d5b3c367fd5414680a3b88/info.txt",
+        "sha256": "8b317b1c7e80e3ebf58ff8938f202ef281728e8528f36fe1f1a90fa9103782dc",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}

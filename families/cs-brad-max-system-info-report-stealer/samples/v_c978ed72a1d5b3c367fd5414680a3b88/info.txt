@@ -1,0 +1,42 @@
+<SECRET>
+              SYSTEM INFORMATION REPORT
+<SECRET>
+
+[ IDENTIFICATION ]
+HWID             : <HWID>
+Machine Name     : <HOST>
+User Name        : <USER>
+Domain           : <HOST>
+
+[ OS ]
+OS Version       : Microsoft Windows NT 6.2.9200.0
+Architecture     : x64
+System Directory : C:\WINDOWS\system32
+Uptime           : 00.02:21:39
+CLR Version      : 4.0.30319.42000
+
+[ HARDWARE ]
+CPU              : Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz
+GPU              : Intel(R) HD Graphics 4000 | NVIDIA GeForce GT 630M
+RAM              : 7,84 GB
+Disk Space       : 72 GB free / 111 GB total
+Screen Resolution: 1440x900
+
+[ NETWORK & LOCATION ]
+Public IP        : <IP>
+Country          : Brazil (BR)
+City             : <LOCATION>
+ISP              : <ISP>
+Local IP         : <IP>
+MAC Address      : <MAC>
+
+[ SOFTWARE ]
+Installed Updates: 6 updates
+Antivirus        : Microsoft Defender Antivírus
+Firewall         : Enabled
+
+[ TIME ]
+Current (UTC)    : 2026-07-26 18:52:16
+Current (Local)  : 2026-07-26 15:52:16
+Timezone         : Hora Padrão de Buenos Aires (UTC -03:00:00)
+<SECRET>
