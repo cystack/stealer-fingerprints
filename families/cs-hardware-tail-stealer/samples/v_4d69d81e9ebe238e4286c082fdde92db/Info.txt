@@ -1,0 +1,23 @@
+  ip-address: <IP>
+  country: MA
+  time: 30.09.2026, 13:48:18
+os:
+  version: Windows 10 Professionnel (10.0.19045) x64
+  time-zone: UTC+2
+  local-date: 30.09.2026 13:46:16
+  install-date: 13.03.2022 15:09:00
+  language: fr-FR
+  computer-name: <HOST>
+  user-name: <USER>
+  netbios: <HOST>
+  domain: 
+  hostname: <HOST>
+  anti-virus:
+  - name: dnot.sh
+    state: active
+  - name: Windows Defender
+    state: active
+hardware:
+  gpu:
+  - 'Intel(R) HD Graphics Family'
+  display: 1600x900

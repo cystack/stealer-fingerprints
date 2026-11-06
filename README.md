@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **151** CyStack tracking names
 - **16** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **245** observed log variants and **245** samples
-- **8,052,999** CyStack observations represented by the retained sample set
+- **247** observed log variants and **247** samples
+- **8,053,001** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -184,7 +184,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSGeoSysInfoStealer](families/cs-geo-sys-info-stealer/) | unknown | 1 | [1 retained](families/cs-geo-sys-info-stealer/#observed-log-variants) |
 | [CSGoRuntimeStealer](families/cs-go-runtime-stealer/) | unknown | 1 | [1 retained](families/cs-go-runtime-stealer/#observed-log-variants) |
 | [CSGuidRedlineStealer](families/cs-guid-redline-stealer/) | unknown | 0 | Metadata only |
-| [CSHardwareTailStealer](families/cs-hardware-tail-stealer/) | low | 1 | [1 retained](families/cs-hardware-tail-stealer/#observed-log-variants) |
+| [CSHardwareTailStealer](families/cs-hardware-tail-stealer/) | low | 3 | [3 retained](families/cs-hardware-tail-stealer/#observed-log-variants) |
 | [CSHostHwidStealer](families/cs-host-hwid-stealer/) | unknown | 1 | [1 retained](families/cs-host-hwid-stealer/#observed-log-variants) |
 | [CSImportantFilesOnlyStealer](families/cs-important-files-only-stealer/) | unknown | 0 | Metadata only |
 | [CSInfoNetworkSectionStealer](families/cs-info-network-section-stealer/) | unknown | 0 | Metadata only |

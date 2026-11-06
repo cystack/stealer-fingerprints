@@ -1,0 +1,35 @@
+  ip-address: <IP>
+  country: PE
+  time: 30.09.2026, 15:58:23
+os:
+  version: Windows 11 Pro (10.0.22631) x64
+  time-zone: UTC-5
+  local-date: 30.09.2026 10:57:03
+  install-date: 26.02.2024 18:04:14
+  language: es-PE
+  computer-name: <HOST>
+  user-name: <USER>
+  netbios: <HOST>
+  domain: 
+  hostname: <HOST>
+  anti-virus:
+  - none
+hardware:
+  cpu:
+  - manufacturer: 'Intel(R) Corporation'
+    product: 'Intel(R) Core(TM)2 Quad CPU    Q8400  @ 2.66GHz'
+  motherboard:
+    manufacturer: '                                '
+    product: '                                '
+  ram:
+  - product: '0x202020202020202020202020202020202020'
+    size: 2048MB
+  - product: '0x202020202020202020202020202020202020'
+    size: 2048MB
+  - product: '0x202020202020202020202020202020202020'
+    size: 2048MB
+  - product: '0x202020202020202020202020202020202020'
+    size: 2048MB
+  gpu:
+  - 'NVIDIA GeForce GT 440'
+  display: 1366x768

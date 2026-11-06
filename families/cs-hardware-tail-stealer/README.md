@@ -44,8 +44,8 @@ Hai biến thể bị cắt bớt được phát tán cùng một gói dữ li�
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **low**
 - Aliases: `STEALERCLOUD`, `STEALERBOSS hardware tail`
-- Variants observed: **1**
-- CyStack observations represented: **5,951**
+- Variants observed: **3**
+- CyStack observations represented: **5,953**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -74,6 +74,42 @@ so the retained evidence carries only the hardware inventory.
 Dấu hiệu nhận diện dựa trên ba mỏ neo: một khóa `core enabled:` được neo theo dòng (có khoảng trắng đầu dòng và giá trị số nguyên), một dòng `display:` được neo theo dòng với thụt lề 2 khoảng trắng mang giá trị vô hướng `<W>x<H>`, và việc thiếu khóa cấp cao nhất `build:` ở cột 0. Bộ ba mỏ neo này loại trừ khả năng đây là Remus chuẩn (vốn luôn bắt đầu ở cột 0 với `build:`) và ghi nhận sự khác biệt về cấu trúc dữ liệu so với Remus. Phần thân không phát tán bất kỳ trường định danh nạn nhân nào, do đó bằng chứng còn lại chỉ mang thông tin kiểm kê phần cứng.
 
 ## Observed log variants
+
+### `v_4d69d81e9ebe238e4286c082fdde92db`
+
+- Format ID: `cs-hardware-tail-stealer`
+- Observed filenames: `Info.txt`
+- Panel brand: `STEALERCLOUD`
+- Distribution channel: `@STEALERBOSS`
+- Attribution confidence: **low**
+- Layout: `gpu-display`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_4d69d81e9ebe238e4286c082fdde92db/Info.txt)
+- Sample SHA-256: `f4f05a768fbc6018126483380e8168ec67e41a147d381901ebfa8151e1afba3a`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `hardware:`
+- Field labels: `anti-virus`, `computer-name`, `country`, `display`, `domain`, `gpu`, `hardware`, `hostname`, `install-date`, `ip-address`, `language`, `local-date`, `name`, `netbios`, `os`, `state`, `time`, `time-zone`, `user-name`, `version`
+
+### `v_60b0b89562e9bb0a40cf72c6154389c2`
+
+- Format ID: `cs-hardware-tail-stealer`
+- Observed filenames: `Info.txt`
+- Panel brand: `STEALERCLOUD`
+- Distribution channel: `@STEALERBOSS`
+- Attribution confidence: **low**
+- Layout: `motherboard`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_60b0b89562e9bb0a40cf72c6154389c2/Info.txt)
+- Sample SHA-256: `9f24c98ba7e730cb77317b04d19c76d27b96864389318f506bf372ef238e3def`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `hardware:`
+- Field labels: `anti-virus`, `computer-name`, `country`, `cpu`, `display`, `domain`, `gpu`, `hardware`, `hostname`, `install-date`, `ip-address`, `language`, `local-date`, `manufacturer`, `motherboard`, `netbios`, `os`, `product`, `ram`, `size`, `time`, `time-zone`, `user-name`, `version`
 
 ### `v_e32e486c362d196da51fec0543f79f1f`
 
