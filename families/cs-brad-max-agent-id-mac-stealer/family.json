@@ -1,0 +1,142 @@
+{
+  "aliases": [
+    "=== System Info ===",
+    "@BRADMAX Agent-ID macOS panel",
+    "banner-stripped @BRADMAX macOS Information.txt"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    },
+    {
+      "id": "T1124",
+      "name": "System Time Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "attribution_confidence": "unknown",
+  "classification": "cystack_named",
+  "description": "CSBradMaxAgentIdMacStealer is a CyStack-coined identifier\nfor a banner-stripped macOS `Information.txt` panel\ndistributed through the @BRADMAX Telegram log-reseller\nchannel (distinct from the sibling @BRADMAX_CLOUD\nreseller). Observed inside `@BRADMAX <N> <MONTH>.part<N> .rar` aggregator packs at `[<CC>]<IPv4>/Information.txt`\nvictim folders.\n\nThe body opens with the `=== System Info ===` triple-equals banner (shared with canonical SHub\nStealer) but\ndrops the `SHub Stealer` self-identification literal that\nSHub bodies carry on the second line. A `Build Tag: <short-tag>` identifier line and an `External IP:` +\n`Country:` geo pair follow, then a second `System Info`\nsection header, a `Username:` line, and the distinctive\n`Agent ID: <16-hex>` per-victim session identifier.\nDevice identity carries `Hostname:` (macOS Bonjour\n`<name>.local`), `OS Version:` as bare semantic version\n(e.g. `14.5.0` with no `macOS` prefix), `Timezone:` as an\nIANA tz-database identifier (`Europe/Zagreb`), and\n`Languages:` as a JSON array string of BCP-47 locales\n(`[\"de-AT\"]`). A terse `Hardware:` block with four\n4-space-indented children follows: `GPU:`, `CPU Cores:`,\n`RAM: <N> GB`, `Screen: <WxH>`.\n\nThe field set diverges sharply from every registered\nmacOS stealer: SHub, Phexia, MacSync / mac.c, Cthulhu,\nAMOS, Banshee, and Odyssey all ship the verbose\n`system_profiler SPSoftwareDataType` /\n`SPHardwareDataType` / `SPDisplaysDataType` output with\n`System Software Overview` / `Hardware Overview` /\n`Model Name` / `Model Identifier` / `Chip` /\n`Total Number of Cores` / `Memory` / `Hardware UUID` /\n`Serial Number` / `Chipset Model` field wrappers. The\nterse four-field `Hardware:` block here indicates a\nlightweight custom harvester rather than a\n`system_profiler` pipe. The `Agent ID:` plaintext line\nwith a 16-hex-lowercase value is not observed in any\ndocumented macOS stealer format; closest analogs are\nthe Odyssey hidden `.botid` config file and build-header\nidentifiers embedded in Atomic macOS Stealer samples,\nneither of which matches the plaintext field shape.\n\nFamily attribution stays CyStack-coined (Case C) pending\na published mapping. A multi-vendor curated CTI survey\n(SentinelOne Labs, Malwarebytes, Jamf Threat Labs, CIS,\nMoonlock Lab, Huntress, Red Canary, Check Point Research,\nElastic Security Labs, Cyfirma, Censys, BleepingComputer\nresearch, Dark Reading, Help Net Security, Datadog\nSecurity Labs, Microsoft TI, Cookie Engineer, PCRisk)\ndoes not document the shape; community catalogues\n(MalBeacon what-is-this-stealer, deepdarkCTI,\nRussianPanda) also do not attest it. HEROIC darkhive-breaches attests the @BRADMAX\ndistributor at multiple pack entries separately from\nthe @BRADMAX_CLOUD sibling.",
+  "detection_notes": "Fingerprint requires the `@bradmax` channel substring\nin the victim-folder path (case-insensitive, matches\nboth the @BRADMAX bare reseller and the @BRADMAX_CLOUD\nsibling) AND the `=== System Info ===` banner literal\nAND the `Agent ID:` identifier line AND the absence of\nthe `SHub Stealer` banner literal. The SHub-banner\nnegative anchor routes bodies that self-identify as\ncanonical SHub Stealer to the SHub parser; the\n`Agent ID:` line alone is unique enough across the\nregistry to admit the body, and the two additional\npositive anchors plus the SHub-banner negative anchor\nkeep dispatch deterministic.",
+  "id": "cs-brad-max-agent-id-mac-stealer",
+  "name": "CSBradMaxAgentIdMacStealer",
+  "related_external": [
+    "cs-bradmax-cloud-mac"
+  ],
+  "related_families": [
+    "s-hub-stealer",
+    "phexia",
+    "mac-sync",
+    "cthulhu-stealer"
+  ],
+  "sources": [
+    "https://heroic.com/darkhive-breaches/bradmax-500-nov-stealer-log-12003-records-exposed-2025/",
+    "https://heroic.com/darkhive-breaches/bradmax-1000-dec-uploaded-by-a-telegram-user/",
+    "https://heroic.com/darkhive-breaches/bradmax-cloud-stealer-log-8418-records-exposed/"
+  ],
+  "typical_targets": [
+    "Panel build tag",
+    "Per-victim session identifier (`Agent ID:` 16-hex)",
+    "Victim public IP and 2-letter country code",
+    "macOS user account name",
+    "Bonjour-style fully qualified local hostname",
+    "macOS semantic version",
+    "IANA timezone identifier",
+    "BCP-47 locale list",
+    "GPU product name, CPU core count",
+    "Installed RAM (GB)",
+    "Primary display resolution"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSBradMaxAgentIdMacStealer là định danh do CyStack đặt tên cho một bảng điều khiển `Information.txt` dành cho macOS đã bị loại bỏ banner, được phân phối qua kênh Telegram bán lại log @BRADMAX (khác với kênh @BRADMAX_CLOUD liên quan). Được quan sát trong các gói tổng hợp `@BRADMAX <N> <MONTH>.part<N> .rar` tại các thư mục nạn nhân `[<CC>]<IPv4>/Information.txt`.\n\nPhần thân mở đầu bằng banner ba dấu bằng `=== System Info ===` (dùng chung với SHub Stealer chuẩn) nhưng loại bỏ dấu hiệu tự định danh `SHub Stealer` mà phần thân SHub mang ở dòng thứ hai. Tiếp theo là một dòng định danh `Build Tag: <short-tag>` và một cặp địa lý `External IP:` + `Country:`, sau đó là tiêu đề phần `System Info` thứ hai, một dòng `Username:`, và định danh phiên theo từng nạn nhân đặc trưng `Agent ID: <16-hex>`.\n\nThông tin định danh thiết bị mang `Hostname:` (tên máy đầy đủ dạng Bonjour của macOS `<name>.local`), `OS Version:` dưới dạng phiên bản ngữ nghĩa trần (ví dụ `14.5.0` không có tiền tố `macOS`), `Timezone:` dưới dạng định danh cơ sở dữ liệu múi giờ IANA (`Europe/Zagreb`), và `Languages:` dưới dạng chuỗi mảng JSON các locale BCP-47 (`[\"de-AT\"]`). Tiếp theo là một khối `Hardware:` ngắn gọn với bốn phần tử con thụt lề 4 khoảng trắng: `GPU:`, `CPU Cores:`, `RAM: <N> GB`, `Screen: <WxH>`.\n\nTập trường dữ liệu khác biệt rõ rệt so với mọi mã độc đánh cắp thông tin macOS đã được đăng ký: SHub, Phexia, MacSync / mac.c, Cthulhu, AMOS, Banshee và Odyssey đều tạo dữ liệu đầu ra chi tiết `system_profiler SPSoftwareDataType` / `SPHardwareDataType` / `SPDisplaysDataType` với các bộ bao trường `System Software Overview` / `Hardware Overview` / `Model Name` / `Model Identifier` / `Chip` / `Total Number of Cores` / `Memory` / `Hardware UUID` / `Serial Number` / `Chipset Model`. Khối `Hardware:` ngắn gọn với bốn trường ở đây cho thấy đây là một bộ thu thập dữ liệu tùy biến nhẹ hơn là một pipe `system_profiler`. Dòng văn bản thuần `Agent ID:` với giá trị 16 ký tự hex viết thường không được quan sát thấy trong bất kỳ định dạng mã độc đánh cắp thông tin macOS đã được ghi nhận nào; các ví dụ gần nhất là tệp cấu hình ẩn `.botid` của Odyssey và các định danh tiêu đề bản dựng được nhúng trong các mẫu Atomic macOS Stealer, nhưng không cái nào khớp với cấu trúc dữ liệu của trường văn bản thuần này.\n\nViệc quy kết họ mã độc vẫn ở dạng do CyStack đặt tên (Trường hợp C) cho đến khi có một bản đối chiếu được công bố. Một khảo sát CTI đa nguồn được tuyển chọn (SentinelOne Labs, Malwarebytes, Jamf Threat Labs, CIS, Moonlock Lab, Huntress, Red Canary, Check Point Research, Elastic Security Labs, Cyfirma, Censys, nghiên cứu của BleepingComputer, Dark Reading, Help Net Security, Datadog Security Labs, Microsoft TI, Cookie Engineer, PCRisk) không ghi nhận cấu trúc dữ liệu này; các danh mục cộng đồng (MalBeacon what-is-this-stealer, deepdarkCTI, RussianPanda) cũng không xác nhận. HEROIC darkhive-breaches xác nhận đối tượng phân phối @BRADMAX tại nhiều mục trong gói dữ liệu, tách biệt với kênh liên quan @BRADMAX_CLOUD.",
+      "typical_targets": [
+        "Thẻ bản dựng của bảng điều khiển",
+        "Định danh phiên theo từng nạn nhân (`Agent ID:` 16 ký tự hex)",
+        "Địa chỉ IP công khai của nạn nhân và mã quốc gia 2 chữ cái",
+        "Tên tài khoản người dùng macOS",
+        "Tên máy cục bộ đầy đủ kiểu Bonjour",
+        "Phiên bản ngữ nghĩa macOS",
+        "Định danh múi giờ IANA",
+        "Danh sách locale BCP-47",
+        "Tên sản phẩm GPU, số lõi CPU",
+        "Dung lượng RAM đã cài đặt (GB)",
+        "Độ phân giải màn hình chính"
+      ],
+      "detection_notes": "Việc nhận diện dấu vết yêu cầu chuỗi con kênh `@bradmax` xuất hiện trong đường dẫn thư mục nạn nhân (không phân biệt hoa thường, khớp cả với kênh bán lại trần @BRADMAX và kênh liên quan @BRADMAX_CLOUD) VÀ dấu hiệu banner `=== System Info ===` VÀ dòng định danh `Agent ID:` VÀ sự vắng mặt của dấu hiệu banner `SHub Stealer`. Mốc phủ định banner-SHub sẽ định tuyến các phần thân tự nhận diện là SHub Stealer chuẩn sang bộ phân tích SHub; riêng dòng `Agent ID:` đã đủ độc nhất trong toàn bộ danh mục để xác nhận phần thân, và hai mốc khẳng định bổ sung cộng với mốc phủ định banner-SHub giúp việc điều hướng luôn mang tính tất định.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1016",
+          "name": "Dò tìm cấu hình mạng hệ thống"
+        },
+        {
+          "id": "T1124",
+          "name": "Xác định thời gian hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@BRADMAX",
+      "fields": [
+        "Agent ID",
+        "Build Tag",
+        "Country",
+        "CPU Cores",
+        "External IP",
+        "GPU",
+        "Hardware",
+        "Hostname",
+        "Languages",
+        "OS Version",
+        "RAM",
+        "Screen",
+        "Timezone",
+        "Username"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "cs-bradmax-agent-id-mac-stealer",
+      "id": "v_ee81e19fad54a22a7c0bbd0229bdfd0b",
+      "markers": [
+        "=== System Info ===",
+        "Hardware:"
+      ],
+      "panel_brand": "=== System Info ===",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_ee81e19fad54a22a7c0bbd0229bdfd0b/Information.txt",
+        "sha256": "d2a85d078b04373545f8ced6345ffd5fdd8884d783ebaf4215a1106bb865090e",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}

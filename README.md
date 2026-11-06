@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **216** research profiles
+- **217** research profiles
 - **42** known malware families
 - **3** observed self-labels without independent family attribution
-- **150** CyStack tracking names
+- **151** CyStack tracking names
 - **16** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **244** observed log variants and **244** samples
-- **8,052,998** CyStack observations represented by the retained sample set
+- **245** observed log variants and **245** samples
+- **8,052,999** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -97,7 +97,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Rivas Stealer](families/rivas-stealer/) | unknown | 1 | [1 retained](families/rivas-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (150)
+### CyStack tracking names (151)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -120,6 +120,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSBitArchStealer](families/cs-bit-arch-stealer/) | unknown | 1 | [1 retained](families/cs-bit-arch-stealer/#observed-log-variants) |
 | [CSBldStealer](families/cs-bld-stealer/) | unknown | 1 | [1 retained](families/cs-bld-stealer/#observed-log-variants) |
 | [CSBracketVendorCardsStealer](families/cs-bracket-vendor-cards-stealer/) | unknown | 0 | Metadata only |
+| [CSBradMaxAgentIdMacStealer](families/cs-brad-max-agent-id-mac-stealer/) | unknown | 1 | [1 retained](families/cs-brad-max-agent-id-mac-stealer/#observed-log-variants) |
 | [CSBradmaxCategoryStealer](families/cs-bradmax-category-stealer/) | unknown | 0 | Metadata only |
 | [CSBradMaxCloudBannerOnlyStealer](families/cs-brad-max-cloud-banner-only-stealer/) | unknown | 0 | Metadata only |
 | [CSBradMaxCloudMacStealer](families/cs-brad-max-cloud-mac-stealer/) | unknown | 0 | Metadata only |

@@ -1,0 +1,19 @@
+=== System Info ===
+Build Tag: obko
+External IP: <IP>
+Country: AT
+
+System Info
+Username: <USER>
+
+Agent ID: 6595ac9794ba283d
+Hostname: <HOST>
+OS Version: 14.5.0
+Timezone: Europe/Zagreb
+Languages: ["de-AT"]
+
+Hardware:
+    GPU: Apple M1 Max
+    CPU Cores: 10
+    RAM: 64 GB
+    Screen: 1728x1117
