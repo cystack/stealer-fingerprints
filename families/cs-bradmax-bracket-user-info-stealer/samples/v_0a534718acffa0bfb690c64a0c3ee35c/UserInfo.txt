@@ -1,0 +1,20 @@
+WĤËН YÔÙ EVERŸ ŠËÊN THÍŚ LÔĞS, TḦÊ PĒRŚÓН İS МOТHĒṘFUĆKEṘ ТḦİŞ LŐĞS FŔÓM FŌŔZÄŢŘÁFФÍĆ
+
+IP Address: <IP>
+BuildID [vtc2]
+Computer Name: <HOST>
+User Name: <USER>
+User Language: en
+Operation System: Windows 11 10.0.26200 (x64)
+Time Zone: UTC+1
+HWID: <HWID>
+Processor: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+Processor Threads: 8
+Processor Cores: 4
+Graphics Card:
+  Intel(R) Iris(R) Xe Graphics
+  NVIDIA T500
+Installed RAM: 32487MB
+Display Resolution: 1920x1080
+
+Server Time: 24.09.2026 22:53:21
