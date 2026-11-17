@@ -624,6 +624,48 @@
       }
     },
     {
+      "attribution_confidence": "medium",
+      "distribution_channel": "russia34.com",
+      "fields": [
+        "Anti Virus",
+        "Computer",
+        "Country",
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "GPU",
+        "HWID",
+        "IP Address",
+        "Language",
+        "Local Date",
+        "RAM Size",
+        "Stealer",
+        "System Installed",
+        "Time Save Log",
+        "Time Zone",
+        "User",
+        "Version"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "format_id": "cs-russia34-stealer",
+      "id": "v_ef5c7826c6309f5240804cd8476a922a",
+      "layout_id": "updh2-spaced-lumma-bullet",
+      "markers": [
+        "⚡@updh2",
+        "🔥Lifetime - 400$ + Bee checker + Simple checker + Selfmade Stealer"
+      ],
+      "panel_brand": "russia34.com (@updh2 letter-spaced Lumma bullet)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_ef5c7826c6309f5240804cd8476a922a/System.txt",
+        "sha256": "be6074d23aaf61a76cc70df9c6cb5f4d69b19c3095c1cc91028788f575788218",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
       "attribution_confidence": "high",
       "distribution_channel": "russia34.com",
       "fields": [

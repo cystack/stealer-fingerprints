@@ -23,8 +23,8 @@ Bảng điều khiển tạo dữ liệu đầu ra là một banner ASCII-art `R
 - Classification / Phân loại: **Log aggregator / Nguồn tổng hợp log**
 - Attribution confidence: **unknown**
 - Aliases: `russia34`, `Private Russia 34`
-- Variants observed: **15**
-- CyStack observations represented: **15**
+- Variants observed: **16**
+- CyStack observations represented: **16**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -304,6 +304,24 @@ Recognition anchors:
 
 - Stable markers: -
 - Field labels: `Country`, `CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Display resolution`, `Domain`, `GPU`, `HWID`, `New subscribers here`
+
+### `v_ef5c7826c6309f5240804cd8476a922a`
+
+- Format ID: `cs-russia34-stealer`
+- Observed filenames: `System.txt`
+- Panel brand: `russia34.com (@updh2 letter-spaced Lumma bullet)`
+- Distribution channel: `russia34.com`
+- Attribution confidence: **medium**
+- Layout: `updh2-spaced-lumma-bullet`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_ef5c7826c6309f5240804cd8476a922a/System.txt)
+- Sample SHA-256: `be6074d23aaf61a76cc70df9c6cb5f4d69b19c3095c1cc91028788f575788218`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `⚡@updh2`, `🔥Lifetime - 400$ + Bee checker + Simple checker + Selfmade Stealer`
+- Field labels: `Anti Virus`, `Computer`, `Country`, `CPU Cores`, `CPU Name`, `CPU Threads`, `GPU`, `HWID`, `IP Address`, `Language`, `Local Date`, `RAM Size`, `Stealer`, `System Installed`, `Time Save Log`, `Time Zone`, `User`, `Version`
 
 ### `v_fed52a266d896fd69cf78baa704d14b4`
 
