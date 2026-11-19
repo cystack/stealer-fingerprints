@@ -1,0 +1,41 @@
+========== SYSTEM INFORMATION ==========
+
+[Operating System]
+Windows: Windows 11 build 26200
+Architecture: x64
+HWID: <HWID>
+
+[User]
+Username: <USER>
+Computer Name: <HOST>
+IP: <IP>
+
+[CPU]
+Processor: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+Physical Cores: 4
+Logical Processors: 8
+
+[Memory]
+Total RAM: 15.69 GB
+Available RAM: 6.12 GB
+Used RAM: 9.56 GB
+
+[Graphics]
+GPU 1:
+  Name: Intel(R) Iris(R) Xe Graphics
+  Driver Version: 32.0.101.7088
+  Video Memory: 
+
+[Storage]
+Disk 1:
+  Model: SAMSUNG MZVLQ512HBLU-00BH1
+  Interface: SCSI
+  Capacity: 476.94 GB
+
+=========================================
+
+api: 
+browsers: true
+proc: false
+pipe: true
+screen:

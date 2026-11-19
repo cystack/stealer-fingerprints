@@ -79,6 +79,60 @@
   "variants": [
     {
       "attribution_confidence": "unknown",
+      "distribution_channel": "@FATETRAFFIC",
+      "fields": [
+        "api",
+        "Architecture",
+        "Available RAM",
+        "browsers",
+        "Capacity",
+        "Computer Name",
+        "Disk 1",
+        "Driver Version",
+        "GPU 1",
+        "HWID",
+        "Interface",
+        "IP",
+        "Logical Processors",
+        "Model",
+        "Name",
+        "Physical Cores",
+        "pipe",
+        "proc",
+        "Processor",
+        "screen",
+        "Total RAM",
+        "Used RAM",
+        "Username",
+        "Video Memory",
+        "Windows"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "format_id": "cs-voidcloud-system-info-stealer",
+      "id": "v_2bcfe9540a738f0c42e696a24a557483",
+      "markers": [
+        "========== SYSTEM INFORMATION ==========",
+        "[CPU]",
+        "[Graphics]",
+        "[Memory]",
+        "[Operating System]",
+        "[Storage]",
+        "[User]",
+        "SYSTEM INFORMATION"
+      ],
+      "panel_brand": "SYSTEM INFORMATION",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_2bcfe9540a738f0c42e696a24a557483/system_info.txt",
+        "sha256": "917ae8093b1a9aa8bfed40d6edea482456f95eb79dbf9bad7e4ec577ab97e0a4",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "unknown",
       "distribution_channel": "@updh2",
       "fields": [
         "api",

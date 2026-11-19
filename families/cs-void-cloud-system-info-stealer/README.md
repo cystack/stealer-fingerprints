@@ -60,8 +60,8 @@ Không có nhà cung cấp CTI đã qua tuyển chọn nào ghi nhận tài li�
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `Void Cloud (@updh2)`, `voidcloudv2.byethost14.com panel`, `@updh2 system_info.txt`
-- Variants observed: **1**
-- CyStack observations represented: **1**
+- Variants observed: **2**
+- CyStack observations represented: **2**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -96,6 +96,23 @@ two attributions are mutually exclusive on folder shape.
 Việc nhận diện dấu hiệu đòi hỏi chuỗi literal URL panel `voidcloudv2.byethost14.com` xuất hiện trong phần thân VÀ có ít nhất bốn trong số sáu tiêu đề mục đóng ngoặc sát nhau (`[Operating System]`, `[User]`, `[CPU]`, `[Memory]`, `[Graphics]`, `[Storage]`). Chỉ dựa vào chuỗi literal URL panel sẽ có nguy cơ khớp nhầm với một README quảng cáo chỉ mang tính banner mà cũng trích dẫn cùng URL đó; bộ bốn mục đóng ngoặc này xác nhận một phần thân thông tin hệ thống đã được điền đầy đủ. Bộ nhận diện cấp thư mục đi kèm bao quát các nạn nhân @updh2 dạng rút gọn không chứa `system_info.txt` nào (thông qua một mỏ neo liên quan là tài sản panel `Void Cloud.png`), do đó hai quy kết này loại trừ lẫn nhau xét theo cấu trúc dữ liệu của thư mục.
 
 ## Observed log variants
+
+### `v_2bcfe9540a738f0c42e696a24a557483`
+
+- Format ID: `cs-voidcloud-system-info-stealer`
+- Observed filenames: `system_info.txt`
+- Panel brand: `SYSTEM INFORMATION`
+- Distribution channel: `@FATETRAFFIC`
+- Attribution confidence: **unknown**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_2bcfe9540a738f0c42e696a24a557483/system_info.txt)
+- Sample SHA-256: `917ae8093b1a9aa8bfed40d6edea482456f95eb79dbf9bad7e4ec577ab97e0a4`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `========== SYSTEM INFORMATION ==========`, `[CPU]`, `[Graphics]`, `[Memory]`, `[Operating System]`, `[Storage]`, `[User]`, `SYSTEM INFORMATION`
+- Field labels: `api`, `Architecture`, `Available RAM`, `browsers`, `Capacity`, `Computer Name`, `Disk 1`, `Driver Version`, `GPU 1`, `HWID`, `Interface`, `IP`, `Logical Processors`, `Model`, `Name`, `Physical Cores`, `pipe`, `proc`, `Processor`, `screen`, `Total RAM`, `Used RAM`, `Username`, `Video Memory`, `Windows`
 
 ### `v_921f8f471c602f1525af714e01597e3f`
 
