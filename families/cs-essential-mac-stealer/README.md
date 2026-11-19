@@ -36,7 +36,8 @@ Cấu trúc dữ liệu của phần thân giống hệt về mặt cấu trúc 
 - Classification / Phân loại: **CyStack tracking name / Tên theo dõi do CyStack đặt**
 - Attribution confidence: **unknown**
 - Aliases: `Essential macOS Stealer`, `Mac.c-fork-shape stealer with Essential banner`
-- Variants observed: **0**
+- Variants observed: **1**
+- CyStack observations represented: **1**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -71,7 +72,23 @@ Việc nhận diện dấu hiệu yêu cầu chuỗi con banner dòng đầu ti�
 
 ## Observed log variants
 
-No representative sample has been retained by CyStack Threat Intelligence for this profile yet. The catalog does not publish placeholder variants or synthetic samples.
+### `v_d1848ef0da9220a3b0b539321d2f026a`
+
+- Format ID: `cs-essential-mac-stealer`
+- Observed filenames: `Information.txt`
+- Panel brand: `Essential macOS Stealer`
+- Distribution channel: `@Bugatti_Cloud`
+- Attribution confidence: **unknown**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_d1848ef0da9220a3b0b539321d2f026a/Information.txt)
+- Sample SHA-256: `8bf278b7470a1b84dd252fe07f38c074ddcd12a1fa7da50fff8523e06b1f26bf`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `Essential macOS Stealer`, `Hardware:`, `Software:`
+- Field labels: `Activation Lock Status`, `Apple M1`, `Boot Mode`, `Boot Volume`, `Build`, `Bus`, `Chip`, `Chipset Model`, `Computer Name`, `Graphics/Displays`, `Hardware`, `Hardware Overview`, `Hardware UUID`, `Hostname`, `IP`, `Kernel Version`, `Memory`, `Metal Support`, `Model Identifier`, `Model Name`, `Model Number`, `OS Loader Version`, `Password`, `Provisioning UDID`, `Secure Virtual Memory`, `Serial Number (system`, `Software`, `System Firmware Version`, `System Integrity Protection`, `System Software Overview`, `System Version`, `Time since boot`, `Total Number of Cores`, `Type`, `User Name`, `Username`, `Vendor`
+
 
 ## MITRE ATT&CK
 

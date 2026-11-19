@@ -47,7 +47,6 @@
   "observed_channels": [
     "https://t.me/Bugatti_Cloud"
   ],
-  "variants": [],
   "localizations": {
     "vi": {
       "description": "CSEssentialMacStealer là một định danh do CyStack đặt cho một mã độc đánh cắp thông tin trên macOS tự nhận dạng bằng banner dòng đầu tiên ``Essential macOS Stealer``. Tệp này là ``UserInformation.txt`` với phần mở đầu ngắn gọn (định danh riêng cho từng bản build ``Build:`` cùng với thông tin xác thực đăng nhập ``Username:`` / ``Password:`` đã thu thập được cộng với ``IP Address:``), tiếp theo là ba khối phần ``system_profiler``: ``Software:``, ``Hardware:`` và ``Graphics/Displays:``. Mỗi khối bao bọc dữ liệu đầu ra nguyên văn từ kiểu dữ liệu ``system_profiler`` tương ứng, với định dạng thụt lề lồng nhau 4-6 khoảng trắng được giữ nguyên.\n\nCấu trúc dữ liệu của phần thân giống hệt về mặt cấu trúc với Phexia macOS Stealer theo các bài viết công khai, và một cuộc phỏng vấn đã công bố với nhà phát triển Phexia xác nhận rằng Phexia là một trong nhiều bản fork của mô-đun mã độc đánh cắp thông tin Mac.c dùng chung. ``Essential`` có thể là một bản fork khác của Mac.c hoặc là bản đổi tên của một trong các họ mã độc liên quan đã được ghi nhận, nhưng các báo cáo công khai không ghi nhận cụ thể banner này. Việc quy kết họ mã độc vẫn còn mang tính tạm thời cho đến khi có bài viết phân tích tình báo mối đe dọa được công bố cho banner ``Essential macOS Stealer``.",
@@ -80,5 +79,68 @@
         }
       ]
     }
-  }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@Bugatti_Cloud",
+      "fields": [
+        "Activation Lock Status",
+        "Apple M1",
+        "Boot Mode",
+        "Boot Volume",
+        "Build",
+        "Bus",
+        "Chip",
+        "Chipset Model",
+        "Computer Name",
+        "Graphics/Displays",
+        "Hardware",
+        "Hardware Overview",
+        "Hardware UUID",
+        "Hostname",
+        "IP",
+        "Kernel Version",
+        "Memory",
+        "Metal Support",
+        "Model Identifier",
+        "Model Name",
+        "Model Number",
+        "OS Loader Version",
+        "Password",
+        "Provisioning UDID",
+        "Secure Virtual Memory",
+        "Serial Number (system",
+        "Software",
+        "System Firmware Version",
+        "System Integrity Protection",
+        "System Software Overview",
+        "System Version",
+        "Time since boot",
+        "Total Number of Cores",
+        "Type",
+        "User Name",
+        "Username",
+        "Vendor"
+      ],
+      "filenames": [
+        "Information.txt"
+      ],
+      "format_id": "cs-essential-mac-stealer",
+      "id": "v_d1848ef0da9220a3b0b539321d2f026a",
+      "markers": [
+        "Essential macOS Stealer",
+        "Hardware:",
+        "Software:"
+      ],
+      "panel_brand": "Essential macOS Stealer",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_d1848ef0da9220a3b0b539321d2f026a/Information.txt",
+        "sha256": "8bf278b7470a1b84dd252fe07f38c074ddcd12a1fa7da50fff8523e06b1f26bf",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
 }

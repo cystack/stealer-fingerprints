@@ -18,8 +18,8 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 - **152** CyStack tracking names
 - **16** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **249** observed log variants and **249** samples
-- **8,053,003** CyStack observations represented by the retained sample set
+- **250** observed log variants and **250** samples
+- **8,053,004** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -168,7 +168,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSEmojiCountStealer](families/cs-emoji-count-stealer/) | unknown | 1 | [1 retained](families/cs-emoji-count-stealer/#observed-log-variants) |
 | [CSEmojiInfoStealer](families/cs-emoji-info-stealer/) | unknown | 1 | [1 retained](families/cs-emoji-info-stealer/#observed-log-variants) |
 | [CSEnvVarDumpStealer](families/cs-env-var-dump-stealer/) | unknown | 1 | [1 retained](families/cs-env-var-dump-stealer/#observed-log-variants) |
-| [CSEssentialMacStealer](families/cs-essential-mac-stealer/) | unknown | 0 | Metadata only |
+| [CSEssentialMacStealer](families/cs-essential-mac-stealer/) | unknown | 1 | [1 retained](families/cs-essential-mac-stealer/#observed-log-variants) |
 | [CSEvelatedTypoInfoStealer](families/cs-evelated-typo-info-stealer/) | unknown | 0 | Metadata only |
 | [CSExceptionCookiesOnlyStealer](families/cs-exception-cookies-only-stealer/) | unknown | 0 | Metadata only |
 | [CSExePathInfoStealer](families/cs-exe-path-info-stealer/) | unknown | 0 | Metadata only |
