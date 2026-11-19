@@ -1,0 +1,135 @@
+{
+  "aliases": [
+    "Void Cloud (@updh2)",
+    "voidcloudv2.byethost14.com panel",
+    "@updh2 system_info.txt"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1033",
+      "name": "System Owner/User Discovery"
+    },
+    {
+      "id": "T1016",
+      "name": "System Network Configuration Discovery"
+    },
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    }
+  ],
+  "attribution_confidence": "unknown",
+  "classification": "cystack_named",
+  "description": "CSVoidCloudSystemInfoStealer is a CyStack-coined\nidentifier for a `system_info.txt` panel distributed\nthrough the @updh2 Telegram log-reseller channel under\nthe \"Void Cloud\" panel brand. Observed inside\n`@updh2 [VIP] LOGS <D.M.YYYY>.part<N>.rar` aggregator\npacks at `@updh2 - <32-char-HWID>_<YYYY>_<MM>_<DD>T <HH>_<MM>_<SS>_<microseconds>/system_info.txt` victim\nfolders.\n\nThe body opens with a figlet-spelt `VoidCloud` header, a\n`a d m i n ~ @ u p d h 2` letter-spaced admin line, a\n`Private ULP & Logs Leaks` subscription-tier promo\nblock, and a `voidcloudv2.byethost14.com` panel URL. The\ndevice-info body ships six tight-bracketed section\nheaders in fixed order: `[Operating System]`, `[User]`,\n`[CPU]`, `[Memory]`, `[Graphics]`, `[Storage]`. Each\nsection emits `Key: Value` fields without column\nalignment; nested `GPU <N>:` and `Disk <N>:` outer keys\nwrap inner `Name:`, `Driver Version:`, `Model:`,\n`Interface:`, `Capacity:` lines under two-space\nindentation. The `HWID:` field is a 16-hex WMIC-style\nserial rather than a dashed UUID, and the `[CPU]`\nsection carries a distinctive `Physical Cores:` +\n`Logical Processors:` label pair. A config-style footer\n(`api:` / `browsers:` / `proc:` / `pipe:` / `screen:`)\ndocuments the harvester toggles the operator enabled per\nvictim.\n\nNo curated CTI vendor documents the underlying builder\nfor the Void Cloud panel. The sibling @updh1 distributor\nis attested by HEROIC darkhive-breaches at multiple pack\nentries but ships a different `UserInformation.txt`\nBuild-ID layout; the @updh2 evolution appears to be the\nsame operator with an upgraded panel. Family attribution\nstays CyStack-coined (Case C) pending a published\nmapping. Candidates ruled out include Redline canonical\n(`Build ID` / `IP Address` / `Country` labelled-block\nlayout differs), Lumma (`Software:` + `Hardware:`\ndash-bulleted sections, absent), Vidar (`[Hardware]`\ntight-bracket header without `[Graphics]` / `[Storage]`\ndisjoint spelling), Rhadamanthys (`Wallpaper Hash:`\nrequired, absent), XFiles (`CPU (Processor):`\nparens-alias key, absent).",
+  "detection_notes": "Fingerprint requires the `voidcloudv2.byethost14.com`\npanel-URL literal in the body AND at least four of the\nsix tight-bracketed section headers\n(`[Operating System]`, `[User]`, `[CPU]`, `[Memory]`,\n`[Graphics]`, `[Storage]`). The panel-URL literal alone\nwould risk false-matching a banner-only promotional\nREADME that cites the same URL; the bracketed-section\nquartet confirms a populated system-info body. The\ncompanion folder-level detector covers stripped @updh2\nvictims that ship no `system_info.txt` at all (via a\n`Void Cloud.png` panel-asset sibling anchor), so the\ntwo attributions are mutually exclusive on folder shape.",
+  "id": "cs-void-cloud-system-info-stealer",
+  "name": "CSVoidCloudSystemInfoStealer",
+  "related_external": [
+    "cs-stealer-voidcloud"
+  ],
+  "related_families": [],
+  "sources": [
+    "https://heroic.com/darkhive-breaches/updh1-logs-breach-33483-records-exposed/",
+    "https://heroic.com/darkhive-breaches/updh1-vip-logs-4-07-2026-uploaded-by-a-telegram-user/"
+  ],
+  "typical_targets": [
+    "Hardware identifier (16-hex WMIC SerialNumber)",
+    "Host identity (`Computer Name`)",
+    "Windows user account name",
+    "Operating system build and architecture",
+    "Hardware inventory (CPU model, physical / logical core counts, GPU list, RAM, disk)",
+    "Public IP address (no geolocation enrichment in body)"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSVoidCloudSystemInfoStealer là tên định danh do CyStack đặt cho một panel `system_info.txt` được phân phối qua kênh Telegram bán lại log @updh2 dưới thương hiệu panel \"Void Cloud\". Được quan sát bên trong các gói tổng hợp `@updh2 [VIP] LOGS <D.M.YYYY>.part<N>.rar` tại các thư mục nạn nhân `@updh2 - <32-char-HWID>_<YYYY>_<MM>_<DD>T <HH>_<MM>_<SS>_<microseconds>/system_info.txt`.\n\nPhần thân bắt đầu bằng một tiêu đề `VoidCloud` được viết dạng figlet, một dòng admin `a d m i n ~ @ u p d h 2` giãn cách chữ cái, một khối quảng cáo gói đăng ký `Private ULP & Logs Leaks`, và một URL panel `voidcloudv2.byethost14.com`. Phần thân thông tin thiết bị chứa sáu tiêu đề mục được đóng ngoặc vuông sát nhau theo thứ tự cố định: `[Operating System]`, `[User]`, `[CPU]`, `[Memory]`, `[Graphics]`, `[Storage]`. Mỗi mục tạo dữ liệu đầu ra là các trường `Key: Value` không căn chỉnh cột; các khóa ngoài lồng nhau `GPU <N>:` và `Disk <N>:` bao bọc các dòng bên trong `Name:`, `Driver Version:`, `Model:`, `Interface:`, `Capacity:` với thụt lề hai khoảng trắng. Trường `HWID:` là một số serial kiểu WMIC gồm 16 ký tự hex thay vì một UUID có dấu gạch ngang, và mục `[CPU]` mang một cặp nhãn đặc trưng `Physical Cores:` + `Logical Processors:`. Một phần chân kiểu cấu hình (`api:` / `browsers:` / `proc:` / `pipe:` / `screen:`) ghi lại các tùy chọn thu thập dữ liệu mà đối tượng vận hành đã bật cho từng nạn nhân.\n\nKhông có nhà cung cấp CTI đã qua tuyển chọn nào ghi nhận tài liệu về builder nền tảng cho panel Void Cloud. Đơn vị phân phối liên quan @updh1 được HEROIC darkhive-breaches xác nhận tại nhiều mục gói, nhưng sử dụng bố cục Build-ID `UserInformation.txt` khác; phiên bản tiến hóa @updh2 dường như là cùng một đối tượng vận hành với một panel đã được nâng cấp. Quy kết họ mã độc vẫn do CyStack tự đặt (Trường hợp C) cho đến khi có một ánh xạ được công bố chính thức. Các ứng viên đã bị loại trừ bao gồm Redline chuẩn (bố cục khối có nhãn `Build ID` / `IP Address` / `Country` khác), Lumma (thiếu các mục có gạch đầu dòng `Software:` + `Hardware:`), Vidar (tiêu đề đóng ngoặc sát `[Hardware]` không có cách viết tách rời `[Graphics]` / `[Storage]`), Rhadamanthys (thiếu `Wallpaper Hash:` vốn là bắt buộc), XFiles (thiếu khóa bí danh trong ngoặc đơn `CPU (Processor):`).",
+      "typical_targets": [
+        "Định danh phần cứng (SerialNumber WMIC gồm 16 ký tự hex)",
+        "Danh tính máy (`Computer Name`)",
+        "Tên tài khoản người dùng Windows",
+        "Phiên bản build và kiến trúc hệ điều hành",
+        "Thông tin kiểm kê phần cứng (model CPU, số nhân vật lý / logic, danh sách GPU, RAM, ổ đĩa)",
+        "Địa chỉ IP công khai (không có bổ sung thông tin định vị địa lý trong phần thân)"
+      ],
+      "detection_notes": "Việc nhận diện dấu hiệu đòi hỏi chuỗi literal URL panel `voidcloudv2.byethost14.com` xuất hiện trong phần thân VÀ có ít nhất bốn trong số sáu tiêu đề mục đóng ngoặc sát nhau (`[Operating System]`, `[User]`, `[CPU]`, `[Memory]`, `[Graphics]`, `[Storage]`). Chỉ dựa vào chuỗi literal URL panel sẽ có nguy cơ khớp nhầm với một README quảng cáo chỉ mang tính banner mà cũng trích dẫn cùng URL đó; bộ bốn mục đóng ngoặc này xác nhận một phần thân thông tin hệ thống đã được điền đầy đủ. Bộ nhận diện cấp thư mục đi kèm bao quát các nạn nhân @updh2 dạng rút gọn không chứa `system_info.txt` nào (thông qua một mỏ neo liên quan là tài sản panel `Void Cloud.png`), do đó hai quy kết này loại trừ lẫn nhau xét theo cấu trúc dữ liệu của thư mục.",
+      "attack_techniques": [
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1033",
+          "name": "Xác định chủ sở hữu/người dùng hệ thống"
+        },
+        {
+          "id": "T1016",
+          "name": "Dò tìm cấu hình mạng hệ thống"
+        },
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@updh2",
+      "fields": [
+        "api",
+        "Architecture",
+        "Available RAM",
+        "browsers",
+        "Capacity",
+        "Computer Name",
+        "Disk 1",
+        "Driver Version",
+        "GPU 1",
+        "GPU 2",
+        "HWID",
+        "Interface",
+        "IP",
+        "Logical Processors",
+        "Model",
+        "Name",
+        "Physical Cores",
+        "pipe",
+        "proc",
+        "Processor",
+        "screen",
+        "Total RAM",
+        "Used RAM",
+        "Username",
+        "Video Memory",
+        "Windows"
+      ],
+      "filenames": [
+        "system_info.txt"
+      ],
+      "format_id": "cs-voidcloud-system-info-stealer",
+      "id": "v_921f8f471c602f1525af714e01597e3f",
+      "markers": [
+        "[CPU]",
+        "[Graphics]",
+        "[Memory]",
+        "[Operating System]",
+        "[Storage]",
+        "[User]",
+        "⚡@updh2"
+      ],
+      "panel_brand": "Void Cloud (@updh2)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_921f8f471c602f1525af714e01597e3f/system_info.txt",
+        "sha256": "a7a93c14ad4bbf39b3e3a81c9c4325ce131f11eadd77f7483dd5fd89f6e39313",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}
