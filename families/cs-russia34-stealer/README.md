@@ -23,8 +23,8 @@ Bảng điều khiển tạo dữ liệu đầu ra là một banner ASCII-art `R
 - Classification / Phân loại: **Log aggregator / Nguồn tổng hợp log**
 - Attribution confidence: **unknown**
 - Aliases: `russia34`, `Private Russia 34`
-- Variants observed: **16**
-- CyStack observations represented: **16**
+- Variants observed: **17**
+- CyStack observations represented: **17**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -196,6 +196,24 @@ Recognition anchors:
 
 - Stable markers: -
 - Field labels: `ChromiumBrowsers`, `Computer Name`, `Country`, `CPU (Processor`, `Desktop Screenshot Taken`, `EmailClients`, `FileGrabber`, `Ftp`, `Games`, `GeckoBrowsers`, `GPU (Display Devices`, `Hardware`, `Hardware ID`, `IP`, `Jabber`, `Messengers`, `New subscribers here`, `Operating System`, `Operation ID`, `Processed parts`, `RAM (Memory`, `RemoteAdminControl`, `Screens`, `Telegram`, `Total Time to process`, `Username`, `Vnc`, `Vpn`, `Wallets`
+
+### `v_8e7b4747f1b5815d1fb61374766f3ed4`
+
+- Format ID: `cs-russia34-stealer`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: `russia34.com (@VidarTraffics bare Vidar-vocab via linktr.ee/RussiaCloudLink)`
+- Distribution channel: `russia34.com`
+- Attribution confidence: **low**
+- Layout: `vidartraffics-bare-vidar-vocab`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_8e7b4747f1b5815d1fb61374766f3ed4/UserInformation.txt)
+- Sample SHA-256: `885f22a2753b22c5a43ba82d48bd8ac1774a19eade21573bc059b028c4b526a9`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `AV`, `CPU`, `IP`, `Keyboards`, `Language`, `OS`, `Path`, `RAM`
 
 ### `v_9483fc4646db6f9e2ff10e821090b14f`
 

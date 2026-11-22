@@ -357,6 +357,35 @@
       }
     },
     {
+      "attribution_confidence": "low",
+      "distribution_channel": "russia34.com",
+      "fields": [
+        "AV",
+        "CPU",
+        "IP",
+        "Keyboards",
+        "Language",
+        "OS",
+        "Path",
+        "RAM"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "format_id": "cs-russia34-stealer",
+      "id": "v_8e7b4747f1b5815d1fb61374766f3ed4",
+      "layout_id": "vidartraffics-bare-vidar-vocab",
+      "markers": [],
+      "panel_brand": "russia34.com (@VidarTraffics bare Vidar-vocab via linktr.ee/RussiaCloudLink)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_8e7b4747f1b5815d1fb61374766f3ed4/UserInformation.txt",
+        "sha256": "885f22a2753b22c5a43ba82d48bd8ac1774a19eade21573bc059b028c4b526a9",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
       "attribution_confidence": "medium",
       "distribution_channel": "russia34.com",
       "fields": [
