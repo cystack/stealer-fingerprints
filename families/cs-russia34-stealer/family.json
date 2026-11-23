@@ -622,6 +622,52 @@
       }
     },
     {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "russia34.com",
+      "fields": [
+        "Antivirus",
+        "Architecture",
+        "City",
+        "CLR Version",
+        "Country",
+        "CPU",
+        "Current (Local",
+        "Current (UTC",
+        "Disk Space",
+        "Domain",
+        "Firewall",
+        "GPU",
+        "Installed Updates",
+        "ISP",
+        "Local IP",
+        "MAC Address",
+        "Machine Name",
+        "OS Version",
+        "Public IP",
+        "RAM",
+        "Screen Resolution",
+        "System Directory",
+        "Timezone",
+        "Uptime",
+        "User Name"
+      ],
+      "filenames": [
+        "info.txt"
+      ],
+      "format_id": "cs-russia34-stealer",
+      "id": "v_eadb15f8f0d2039e463303bb26ee1b88",
+      "layout_id": "user-info-boxed",
+      "markers": [],
+      "panel_brand": "russia34.com (USER INFO boxed)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_eadb15f8f0d2039e463303bb26ee1b88/info.txt",
+        "sha256": "7f23739018127c2c43623f5ef700da723e3f758d416c6cfd416bbbbb811d3cb5",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
       "attribution_confidence": "high",
       "distribution_channel": "russia34.com",
       "fields": [

@@ -23,8 +23,8 @@ Bảng điều khiển tạo dữ liệu đầu ra là một banner ASCII-art `R
 - Classification / Phân loại: **Log aggregator / Nguồn tổng hợp log**
 - Attribution confidence: **unknown**
 - Aliases: `russia34`, `Private Russia 34`
-- Variants observed: **17**
-- CyStack observations represented: **17**
+- Variants observed: **18**
+- CyStack observations represented: **18**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -304,6 +304,24 @@ Recognition anchors:
 
 - Stable markers: -
 - Field labels: `country`, `date`, `domain`, `gpu`, `language`, `New subscribers here`, `os`, `path`, `version`
+
+### `v_eadb15f8f0d2039e463303bb26ee1b88`
+
+- Format ID: `cs-russia34-stealer`
+- Observed filenames: `info.txt`
+- Panel brand: `russia34.com (USER INFO boxed)`
+- Distribution channel: `russia34.com`
+- Attribution confidence: **unknown**
+- Layout: `user-info-boxed`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_eadb15f8f0d2039e463303bb26ee1b88/info.txt)
+- Sample SHA-256: `7f23739018127c2c43623f5ef700da723e3f758d416c6cfd416bbbbb811d3cb5`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Antivirus`, `Architecture`, `City`, `CLR Version`, `Country`, `CPU`, `Current (Local`, `Current (UTC`, `Disk Space`, `Domain`, `Firewall`, `GPU`, `Installed Updates`, `ISP`, `Local IP`, `MAC Address`, `Machine Name`, `OS Version`, `Public IP`, `RAM`, `Screen Resolution`, `System Directory`, `Timezone`, `Uptime`, `User Name`
 
 ### `v_ec50b2e15d4c11f782bda89d68944a09`
 
