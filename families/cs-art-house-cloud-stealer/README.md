@@ -22,8 +22,8 @@ CSArtHouseCloudStealer là định danh do CyStack đặt cho log ArtHouse Cloud
 - Classification / Phân loại: **Log aggregator / Nguồn tổng hợp log**
 - Attribution confidence: **unknown**
 - Aliases: `ArtHouse Cloud`, `ArtHouse_Cloud_Team`
-- Variants observed: **5**
-- CyStack observations represented: **5**
+- Variants observed: **6**
+- CyStack observations represented: **6**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -83,6 +83,23 @@ Recognition anchors:
 
 - Stable markers: -
 - Field labels: `BSSID`, `Country`, `CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Display resolution`, `Elevated`, `Email`, `GPU`, `Hostname`, `HWID`, `Install Date`, `Language`, `Local Date`, `Owner`, `Path`, `RAM Size`, `Time`, `Time Zone`, `Uptime`, `User`, `Version`, `Wallpaper SHA256`, `Window`
+
+### `v_813d2e554aa16b3519f60ad7f4895087`
+
+- Format ID: `cs-arthouse-cloud-stealer`
+- Observed filenames: `UserInformation.txt`
+- Panel brand: `ArtHouse Cloud (Lumma bullet banner-only stub)`
+- Distribution channel: `linktr.ee/ArtHouse_Cloud_Team / @arthouse_full_bot`
+- Attribution confidence: **low**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_813d2e554aa16b3519f60ad7f4895087/UserInformation.txt)
+- Sample SHA-256: `ada47950d1d50b3ae992c03f8d44521006adb6c60e8bcbb991809f0779598e45`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `Re-Uploads Private Logs and ULPs /// Bot @arthouse_full_bot`
+- Field labels: `Country`, `Display resolution`, `IP Address`, `Path`, `Time`, `❗️Actual Link`, `💎Buy`
 
 ### `v_98ef534d916e6f477ab47647d35ba1a9`
 

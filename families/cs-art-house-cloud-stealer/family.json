@@ -118,6 +118,35 @@
       }
     },
     {
+      "attribution_confidence": "low",
+      "distribution_channel": "linktr.ee/ArtHouse_Cloud_Team / @arthouse_full_bot",
+      "fields": [
+        "Country",
+        "Display resolution",
+        "IP Address",
+        "Path",
+        "Time",
+        "❗️Actual Link",
+        "💎Buy"
+      ],
+      "filenames": [
+        "UserInformation.txt"
+      ],
+      "format_id": "cs-arthouse-cloud-stealer",
+      "id": "v_813d2e554aa16b3519f60ad7f4895087",
+      "markers": [
+        "Re-Uploads Private Logs and ULPs /// Bot @arthouse_full_bot"
+      ],
+      "panel_brand": "ArtHouse Cloud (Lumma bullet banner-only stub)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_813d2e554aa16b3519f60ad7f4895087/UserInformation.txt",
+        "sha256": "ada47950d1d50b3ae992c03f8d44521006adb6c60e8bcbb991809f0779598e45",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
       "attribution_confidence": "high",
       "distribution_channel": "@ArhontCorp",
       "fields": [
