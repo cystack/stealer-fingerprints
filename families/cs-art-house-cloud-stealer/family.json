@@ -34,6 +34,46 @@
   "variants": [
     {
       "attribution_confidence": "high",
+      "distribution_channel": "linktr.ee/ArtHouse_Cloud_Team / @arthouse_full_bot",
+      "fields": [
+        "Anti Virus",
+        "Computer",
+        "Country",
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "Display resolution",
+        "GPU",
+        "HWID",
+        "IP Address",
+        "Language",
+        "Lid",
+        "Local Date",
+        "Mops Stealer V2",
+        "RAM Size",
+        "System Installed",
+        "Time Zone",
+        "User"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "format_id": "cs-arthouse-cloud-stealer",
+      "id": "v_36757d995a0898309828908b53f3fce6",
+      "markers": [
+        "q@PE FBk m $ J r n K o q o 1"
+      ],
+      "panel_brand": "ArtHouse Cloud (Mops Stealer V2 Lumma bullet)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_36757d995a0898309828908b53f3fce6/System.txt",
+        "sha256": "1da0a43829c6f529740221a8e6759edf02163679f2666520b77e0e64edbe64b0",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "high",
       "distribution_channel": "@ArhontCorp",
       "fields": [
         "Computer Name",

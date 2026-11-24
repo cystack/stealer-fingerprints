@@ -22,8 +22,8 @@ CSArtHouseCloudStealer là định danh do CyStack đặt cho log ArtHouse Cloud
 - Classification / Phân loại: **Log aggregator / Nguồn tổng hợp log**
 - Attribution confidence: **unknown**
 - Aliases: `ArtHouse Cloud`, `ArtHouse_Cloud_Team`
-- Variants observed: **2**
-- CyStack observations represented: **2**
+- Variants observed: **3**
+- CyStack observations represented: **3**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -49,6 +49,23 @@ Các biểu ngữ đầu trang/chân trang ArtHouse Cloud kèm tham chiếu `lin
 - [x-files](../x-files/)
 
 ## Observed log variants
+
+### `v_36757d995a0898309828908b53f3fce6`
+
+- Format ID: `cs-arthouse-cloud-stealer`
+- Observed filenames: `System.txt`
+- Panel brand: `ArtHouse Cloud (Mops Stealer V2 Lumma bullet)`
+- Distribution channel: `linktr.ee/ArtHouse_Cloud_Team / @arthouse_full_bot`
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_36757d995a0898309828908b53f3fce6/System.txt)
+- Sample SHA-256: `1da0a43829c6f529740221a8e6759edf02163679f2666520b77e0e64edbe64b0`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `q@PE FBk m $ J r n K o q o 1`
+- Field labels: `Anti Virus`, `Computer`, `Country`, `CPU Cores`, `CPU Name`, `CPU Threads`, `Display resolution`, `GPU`, `HWID`, `IP Address`, `Language`, `Lid`, `Local Date`, `Mops Stealer V2`, `RAM Size`, `System Installed`, `Time Zone`, `User`
 
 ### `v_98ef534d916e6f477ab47647d35ba1a9`
 
