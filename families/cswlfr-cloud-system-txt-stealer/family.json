@@ -1,0 +1,118 @@
+{
+  "aliases": [
+    "WLFR Cloud System.txt",
+    "@WichLoveFromR System.txt"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1614.001",
+      "name": "System Language Discovery"
+    }
+  ],
+  "attribution_confidence": "unknown",
+  "classification": "cystack_named",
+  "description": "CSWLFRCloudSystemTxtStealer is a CyStack-coined identifier\nfor a second panel shape distributed by the WLFR Cloud\n(`@WichLoveFromR`) Telegram log-reseller channel. The format\nis a Title-case `System.txt` body distinct from the sibling\nlowercase-terse `Info.txt` layout the same channel also\nships (captured separately as CSWLFRCloudStealer) and from\nthe XFiles-derived redistribution branch the channel also\nresells (captured by the canonical XFiles parser).\n\nObserved inside `ТG - @WichLoveFromR.rar` reseller packs -\nnote the leading Cyrillic `Т` homoglyph the operator uses\nin the archive name to defeat naive handle-watermark grep\n- at `[<CC>]<IP-sanitised>-<HWID-prefix>-<alphabet>-(TG @WichLoveFromR)/System.txt` victim folders. The reseller\nchannel self-watermark lands in the trailing parenthesis\ngroup of the victim-folder name rather than in the body.\n\nThe body opens with a bare `Key: Value` block of\n`IP` / `Country` / `HWID` / `CPU Cores` / `GPU` / `Volume Serial` / `RAM` / `OS` / `Display` / `Language` keys, then\nan `Installed Apps (<N>)` section header with a\nparenthesised count, a Unicode box-drawing separator, and\na two-space-indented application list. Distinguishing\nconventions versus other panel layouts: `Volume Serial:`\ncarries an 8-hex Windows `GetVolumeInformationA` output\nwith no counterpart in any surveyed stealer-log format;\n`CPU Cores:` ships bare with no `CPU Name:` / `Processor:`\n/ `CPU Threads:` companion; `OS:` emits just the Windows\nmarketing version (`11`) followed by the\nfull `RtlGetVersion` triple in parens rather than the\nstandard `Windows <edition> (Build <N>)` display string;\n`HWID:` is a 64-character hex SHA256-shape value rather\nthan the Redline-derivative dashed compound, the canonical\nMachineGuid UUID, or the 32-char Lumma / sig-info hex;\n`IP:` tolerates an optional CIDR prefix suffix (`/128`\nobserved on IPv6 values).\n\nFamily attribution is provisional pending a published\nthreat-intel mapping. Public research on stealer-log\nTelegram clouds documents the WLFR Cloud / `@WichLoveFromR`\nchannel as a stealer-log distribution cloud, but none of\nthe surveyed curated or community sources attribute this\nspecific Title-case `Volume Serial:` + `CPU Cores:` +\n`Installed Apps (<N>)` layout to a known underlying\nbuilder as of 2026-11-24. The `CSWLFRCloudSystemTxtStealer`\nliteral captures the discovery while the surrounding\nresearch trail lets a future maintainer rename the family\nconstant if a published mapping later surfaces.",
+  "detection_notes": "Confidence anchors: line-anchored `Volume Serial:` AND\nline-anchored `CPU Cores:` AND an `Installed Apps (<N>)`\nsection header carrying a parenthesised count. The\n`Volume Serial:` key is unique across the surveyed\nformat corpus - no other panel emits it - so the first\nanchor alone is near-definitive; pairing with the bare\n`CPU Cores:` key (other panels emit it only alongside\ntheir own self-brand literals this body never carries)\nand the parenthesised-count section header makes the\nclaim unambiguous. The same `@WichLoveFromR` channel\nresells several distinct panel shapes - triage logs\nfrom this channel at the panel-brand level rather than\nassuming a single underlying stealer family.",
+  "id": "cswlfr-cloud-system-txt-stealer",
+  "name": "CSWLFRCloudSystemTxtStealer",
+  "observed_channels": [
+    "https://t.me/WichLoveFromR"
+  ],
+  "related_families": [
+    "cswlfr-cloud-stealer",
+    "x-files"
+  ],
+  "sources": [],
+  "typical_targets": [
+    "Victim public IP plus ISO-2 country code",
+    "Victim HWID (64-character SHA256-shape hex)",
+    "Victim Windows volume serial number",
+    "OS marketing version plus full build triple",
+    "CPU core count (no CPU model string)",
+    "Primary video adapter name",
+    "Installed RAM in megabytes",
+    "Primary display resolution",
+    "Installed application inventory with versions",
+    "Locale identifier"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSWLFRCloudSystemTxtStealer là định danh do CyStack đặt cho một cấu trúc dữ liệu panel thứ hai được phân phối qua kênh Telegram chuyên bán lại log WLFR Cloud (`@WichLoveFromR`). Định dạng này là nội dung `System.txt` viết hoa chữ cái đầu (Title-case), khác biệt với bố cục `Info.txt` viết thường, ngắn gọn mà cùng kênh này cũng phân phối (được ghi nhận riêng dưới tên CSWLFRCloudStealer) và khác với nhánh phân phối lại bắt nguồn từ XFiles mà kênh này cũng bán lại (được ghi nhận bởi trình phân tích XFiles chuẩn).\n\nĐược phát hiện bên trong các gói bán lại `ТG - @WichLoveFromR.rar` - lưu ý ký tự homoglyph Cyrillic `Т` ở đầu mà đối tượng vận hành sử dụng trong tên tệp lưu trữ nhằm qua mặt việc tìm kiếm (grep) đơn giản theo watermark định danh - tại các thư mục nạn nhân `[<CC>]<IP-sanitised>-<HWID-prefix>-<alphabet>-(TG @WichLoveFromR)/System.txt`. Watermark tự nhận diện của kênh bán lại nằm ở nhóm dấu ngoặc đơn phía cuối của tên thư mục nạn nhân, chứ không nằm trong nội dung chính.\n\nNội dung chính mở đầu bằng một khối thuần túy gồm các khóa `Key: Value` của `IP` / `Country` / `HWID` / `CPU Cores` / `GPU` / `Volume Serial` / `RAM` / `OS` / `Display` / `Language`, sau đó là tiêu đề phần `Installed Apps (<N>)` kèm số đếm trong ngoặc đơn, một dấu phân cách bằng ký tự vẽ khung Unicode, và danh sách ứng dụng thụt lề hai khoảng trắng. Các quy ước phân biệt so với các bố cục panel khác: `Volume Serial:` mang dữ liệu đầu ra 8 ký tự hex của Windows `GetVolumeInformationA` mà không có đối ứng ở bất kỳ định dạng log mã độc đánh cắp thông tin nào được khảo sát; `CPU Cores:` xuất hiện trơ trụi, không kèm `CPU Name:` / `Processor:` / `CPU Threads:` đi kèm; `OS:` chỉ tạo dữ liệu đầu ra là phiên bản thương mại của Windows (`11`) theo sau là bộ ba `RtlGetVersion` đầy đủ trong ngoặc đơn, thay vì chuỗi hiển thị `Windows <edition> (Build <N>)` tiêu chuẩn; `HWID:` là giá trị hex 64 ký tự dạng SHA256 thay vì chuỗi ghép nối có dấu gạch ngang kiểu phái sinh từ Redline, UUID MachineGuid chuẩn, hay hex 32 ký tự của Lumma / thông tin chữ ký; `IP:` chấp nhận hậu tố tiền tố CIDR tùy chọn (`/128` được quan sát trên các giá trị IPv6).\n\nViệc quy kết họ mã độc vẫn mang tính tạm thời, chờ một bản đồ quy kết tình báo đe dọa đã được công bố. Các nghiên cứu công khai về các cloud log mã độc đánh cắp thông tin trên Telegram ghi nhận WLFR Cloud / kênh `@WichLoveFromR` là một cloud phân phối log mã độc đánh cắp thông tin, nhưng tính đến ngày 24-11-2026, không có nguồn nào trong số các nguồn được chọn lọc hay cộng đồng được khảo sát quy kết bố cục viết hoa chữ cái đầu `Volume Serial:` + `CPU Cores:` + `Installed Apps (<N>)` cụ thể này cho một trình tạo (builder) cơ bản đã biết. Chuỗi ký tự `CSWLFRCloudSystemTxtStealer` ghi lại phát hiện này, trong khi lộ trình nghiên cứu liên quan cho phép người quản trị trong tương lai đổi tên hằng số họ mã độc nếu sau này xuất hiện một bản đồ quy kết đã được công bố.",
+      "typical_targets": [
+        "Địa chỉ IP công khai của nạn nhân kèm mã quốc gia ISO-2",
+        "HWID của nạn nhân (hex 64 ký tự dạng SHA256)",
+        "Số serial của volume Windows của nạn nhân",
+        "Phiên bản thương mại của hệ điều hành kèm bộ ba build đầy đủ",
+        "Số lõi CPU (không có chuỗi tên model CPU)",
+        "Tên card đồ họa chính",
+        "Dung lượng RAM đã cài đặt tính theo megabyte",
+        "Độ phân giải màn hình chính",
+        "Danh mục các ứng dụng đã cài đặt kèm phiên bản",
+        "Định danh locale"
+      ],
+      "detection_notes": "Các điểm neo tin cậy: `Volume Serial:` neo theo dòng VÀ `CPU Cores:` neo theo dòng VÀ tiêu đề phần `Installed Apps (<N>)` kèm số đếm trong ngoặc đơn. Khóa `Volume Serial:` là duy nhất trong toàn bộ kho định dạng được khảo sát - không có panel nào khác tạo dữ liệu đầu ra này - nên chỉ riêng điểm neo đầu tiên đã gần như mang tính xác định; kết hợp với khóa trơ trụi `CPU Cores:` (các panel khác chỉ tạo dữ liệu đầu ra này cùng với các chuỗi tự nhận diện thương hiệu riêng mà nội dung này không hề mang) và tiêu đề phần kèm số đếm trong ngoặc đơn khiến nhận định trở nên rõ ràng, không còn mơ hồ. Cùng kênh `@WichLoveFromR` bán lại nhiều cấu trúc dữ liệu panel khác nhau - cần phân loại log từ kênh này ở cấp độ thương hiệu panel thay vì giả định chỉ có một họ mã độc đánh cắp thông tin cơ bản duy nhất.",
+      "attack_techniques": [
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        },
+        {
+          "id": "T1614.001",
+          "name": "Xác định ngôn ngữ hệ thống"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": "@WichLoveFromR",
+      "fields": [
+        "Country",
+        "CPU Cores",
+        "Display",
+        "GPU",
+        "HWID",
+        "IP",
+        "Language",
+        "OS",
+        "RAM",
+        "Volume Serial"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "format_id": "cs-wlfr-cloud-systemtxt-stealer",
+      "id": "v_542bb543b91c28738d7f6b6692393228",
+      "markers": [],
+      "panel_brand": "@WichLoveFromR System.txt (Volume Serial + Installed Apps)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_542bb543b91c28738d7f6b6692393228/System.txt",
+        "sha256": "13f6e9831dbafd02383edbb75c4a5d9e6b91b9062887d2d23f6e285f0cb37e6b",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}

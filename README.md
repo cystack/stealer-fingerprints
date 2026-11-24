@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **219** research profiles
+- **220** research profiles
 - **42** known malware families
 - **3** observed self-labels without independent family attribution
-- **153** CyStack tracking names
+- **154** CyStack tracking names
 - **16** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **254** observed log variants and **254** samples
-- **8,053,008** CyStack observations represented by the retained sample set
+- **255** observed log variants and **255** samples
+- **8,053,009** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -97,7 +97,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Rivas Stealer](families/rivas-stealer/) | unknown | 1 | [1 retained](families/rivas-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (153)
+### CyStack tracking names (154)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -247,6 +247,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSWaterCloudInfoStealer](families/cs-water-cloud-info-stealer/) | unknown | 1 | [1 retained](families/cs-water-cloud-info-stealer/#observed-log-variants) |
 | [CSWifiBackslashNStealer](families/cs-wifi-backslash-n-stealer/) | unknown | 0 | Metadata only |
 | [CSWLFRCloudStealer](families/cswlfr-cloud-stealer/) | unknown | 1 | [1 retained](families/cswlfr-cloud-stealer/#observed-log-variants) |
+| [CSWLFRCloudSystemTxtStealer](families/cswlfr-cloud-system-txt-stealer/) | unknown | 1 | [1 retained](families/cswlfr-cloud-system-txt-stealer/#observed-log-variants) |
 | [CSWmicDumpStealer](families/cs-wmic-dump-stealer/) | unknown | 1 | [1 retained](families/cs-wmic-dump-stealer/#observed-log-variants) |
 | [CSX3zeroBotStealer](families/csx3zero-bot-stealer/) | unknown | 0 | Metadata only |
 | [DiskInfo Stealer](families/disk-info-stealer/) | unknown | 1 | [1 retained](families/disk-info-stealer/#observed-log-variants) |

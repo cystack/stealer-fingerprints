@@ -1,0 +1,19 @@
+IP: <IP>
+Country: AR
+HWID: <HWID>
+CPU Cores: 2
+GPU: Intel(R) UHD Graphics 600
+Volume Serial: <SERIAL>
+RAM: 7998 MB
+OS: 11 (10.0.22631)
+Display: 1366x768
+Language: es-AR
+Installed Apps (33)
+────────────────────────
+  Update for Windows 10 for x64-based Systems (KB5001716) <IP>
+  User Experience Improvement Program Service 5.00.3010
+  WebAdvisor de McAfee <IP>
+  WinRAR 6.11 (64-bit) 6.11.0
+  Wondershare Filmora 14(Build 14.5.20.12999)
+  Zoom 5.14.11 (17466)
+  aTube Catcher versión 3.8 3.8
