@@ -22,8 +22,8 @@ CSArtHouseCloudStealer là định danh do CyStack đặt cho log ArtHouse Cloud
 - Classification / Phân loại: **Log aggregator / Nguồn tổng hợp log**
 - Attribution confidence: **unknown**
 - Aliases: `ArtHouse Cloud`, `ArtHouse_Cloud_Team`
-- Variants observed: **4**
-- CyStack observations represented: **4**
+- Variants observed: **5**
+- CyStack observations represented: **5**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -117,6 +117,23 @@ Recognition anchors:
 
 - Stable markers: -
 - Field labels: `Country`, `HWID`, `IP`, `Operation System`, `ScreenSize`, `UserName`, `❗️Actual Link`, `💎Buy`
+
+### `v_f5a0c017ac8da24ba224a6179cdda955`
+
+- Format ID: `cs-arthouse-cloud-stealer`
+- Observed filenames: `information.txt`
+- Panel brand: `ArtHouse Cloud (Lumma bullet stub, banner sabotage)`
+- Distribution channel: `linktr.ee/ArtHouse_Cloud_Team / @arthouse_full_bot`
+- Attribution confidence: **medium**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_f5a0c017ac8da24ba224a6179cdda955/information.txt)
+- Sample SHA-256: `94369bec5b79d4f59901393849b4b54bafcbbc6a1bd326a662eba09aeef472fd`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `Anti Virus`, `Computer`, `Country`, `Display resolution`, `Domain`, `Elevated`, `Hostname`, `HWID`, `Install Date`, `IP Address`, `Language`, `Local Date`, `NetBIOS`, `OS Version`, `Path`, `Time`, `Time Zone`, `User`, `❗️Actual Link`, `💎Buy`
 
 
 ## MITRE ATT&CK

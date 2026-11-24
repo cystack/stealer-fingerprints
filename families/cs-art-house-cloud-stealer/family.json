@@ -172,6 +172,46 @@
         "source": "cystack_collection",
         "sanitized": true
       }
+    },
+    {
+      "attribution_confidence": "medium",
+      "distribution_channel": "linktr.ee/ArtHouse_Cloud_Team / @arthouse_full_bot",
+      "fields": [
+        "Anti Virus",
+        "Computer",
+        "Country",
+        "Display resolution",
+        "Domain",
+        "Elevated",
+        "Hostname",
+        "HWID",
+        "Install Date",
+        "IP Address",
+        "Language",
+        "Local Date",
+        "NetBIOS",
+        "OS Version",
+        "Path",
+        "Time",
+        "Time Zone",
+        "User",
+        "❗️Actual Link",
+        "💎Buy"
+      ],
+      "filenames": [
+        "information.txt"
+      ],
+      "format_id": "cs-arthouse-cloud-stealer",
+      "id": "v_f5a0c017ac8da24ba224a6179cdda955",
+      "markers": [],
+      "panel_brand": "ArtHouse Cloud (Lumma bullet stub, banner sabotage)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_f5a0c017ac8da24ba224a6179cdda955/information.txt",
+        "sha256": "94369bec5b79d4f59901393849b4b54bafcbbc6a1bd326a662eba09aeef472fd",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
     }
   ]
 }
