@@ -1,0 +1,31 @@
+1 Week ~ $60
+1 Month ~ $170
+3 Months ~ $350
+
+Owner: Bot   @arthouse_full_bot   https://linktr.ee/ArtHouse_Cloud_Team      Subscribe    ArtHouse
+
+- Path: C:\Windows\SysWOW32\install.exe
+Version:
+- Local Date: 07.09.2026 03:33:12
+- Install Date: 19.05.2025 21:55:51
+- Uptime: 0h 5m
+- Time Zone: Taipei Standard Time
+- Elevated: true
+- Hostname: <HOST>
+- User: <USER>
+- Email: <EMAIL>
+- Language: en-US
+- HWID: <HWID>
+- RAM Size: 130769MB
+- CPU Vendor: GenuineIntel
+- CPU Name: Intel(R) Core(TM) i9-14900HX
+- CPU Threads: 32
+- CPU Cores: 32
+- GPU:
+	- Intel(R) UHD Graphics
+- Display resolution: 1920x1200
+- BSSID: <MAC>
+- Country: TW
+- Window: App_setup_pack_full_September_6_11 - File Explorer
+- Time: 07.09.2026 03:33:13 (sig:1788723193.6a9dbff9)
+- Wallpaper SHA256: <SECRET>

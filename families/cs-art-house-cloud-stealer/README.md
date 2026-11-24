@@ -22,8 +22,8 @@ CSArtHouseCloudStealer là định danh do CyStack đặt cho log ArtHouse Cloud
 - Classification / Phân loại: **Log aggregator / Nguồn tổng hợp log**
 - Attribution confidence: **unknown**
 - Aliases: `ArtHouse Cloud`, `ArtHouse_Cloud_Team`
-- Variants observed: **3**
-- CyStack observations represented: **3**
+- Variants observed: **4**
+- CyStack observations represented: **4**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -66,6 +66,23 @@ Recognition anchors:
 
 - Stable markers: `q@PE FBk m $ J r n K o q o 1`
 - Field labels: `Anti Virus`, `Computer`, `Country`, `CPU Cores`, `CPU Name`, `CPU Threads`, `Display resolution`, `GPU`, `HWID`, `IP Address`, `Language`, `Lid`, `Local Date`, `Mops Stealer V2`, `RAM Size`, `System Installed`, `Time Zone`, `User`
+
+### `v_6f6797ca458703a80b71bec490abb68d`
+
+- Format ID: `cs-arthouse-cloud-stealer`
+- Observed filenames: `System.txt`
+- Panel brand: `ArtHouse Cloud (canonical Lumma bullet)`
+- Distribution channel: `linktr.ee/ArtHouse_Cloud_Team / @arthouse_full_bot`
+- Attribution confidence: **high**
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_6f6797ca458703a80b71bec490abb68d/System.txt)
+- Sample SHA-256: `b357839e1db4bc78781c4462d2078d4357eff874a11c9c14ab8131c00163ab9d`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: -
+- Field labels: `BSSID`, `Country`, `CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `Display resolution`, `Elevated`, `Email`, `GPU`, `Hostname`, `HWID`, `Install Date`, `Language`, `Local Date`, `Owner`, `Path`, `RAM Size`, `Time`, `Time Zone`, `Uptime`, `User`, `Version`, `Wallpaper SHA256`, `Window`
 
 ### `v_98ef534d916e6f477ab47647d35ba1a9`
 

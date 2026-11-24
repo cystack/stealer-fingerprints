@@ -74,6 +74,51 @@
     },
     {
       "attribution_confidence": "high",
+      "distribution_channel": "linktr.ee/ArtHouse_Cloud_Team / @arthouse_full_bot",
+      "fields": [
+        "BSSID",
+        "Country",
+        "CPU Cores",
+        "CPU Name",
+        "CPU Threads",
+        "CPU Vendor",
+        "Display resolution",
+        "Elevated",
+        "Email",
+        "GPU",
+        "Hostname",
+        "HWID",
+        "Install Date",
+        "Language",
+        "Local Date",
+        "Owner",
+        "Path",
+        "RAM Size",
+        "Time",
+        "Time Zone",
+        "Uptime",
+        "User",
+        "Version",
+        "Wallpaper SHA256",
+        "Window"
+      ],
+      "filenames": [
+        "System.txt"
+      ],
+      "format_id": "cs-arthouse-cloud-stealer",
+      "id": "v_6f6797ca458703a80b71bec490abb68d",
+      "markers": [],
+      "panel_brand": "ArtHouse Cloud (canonical Lumma bullet)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_6f6797ca458703a80b71bec490abb68d/System.txt",
+        "sha256": "b357839e1db4bc78781c4462d2078d4357eff874a11c9c14ab8131c00163ab9d",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    },
+    {
+      "attribution_confidence": "high",
       "distribution_channel": "@ArhontCorp",
       "fields": [
         "Computer Name",
