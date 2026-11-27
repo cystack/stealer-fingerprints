@@ -12,14 +12,14 @@ Các trang hồ sơ trình bày phần mô tả nghiên cứu, danh mục mục 
 
 ## Corpus at a glance
 
-- **220** research profiles
+- **221** research profiles
 - **42** known malware families
 - **3** observed self-labels without independent family attribution
-- **154** CyStack tracking names
+- **155** CyStack tracking names
 - **16** CyStack names mapped to a known parent family
 - **5** log aggregators
-- **259** observed log variants and **259** samples
-- **8,053,013** CyStack observations represented by the retained sample set
+- **260** observed log variants and **260** samples
+- **8,053,014** CyStack observations represented by the retained sample set
 
 The historical-record count is a cumulative lower bound attached to the retained samples, not a live telemetry counter.
 
@@ -97,7 +97,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [Rivas Stealer](families/rivas-stealer/) | unknown | 1 | [1 retained](families/rivas-stealer/#observed-log-variants) |
 | [Snake Stealer](families/snake-stealer/) | unknown | 1 | [1 retained](families/snake-stealer/#observed-log-variants) |
 
-### CyStack tracking names (154)
+### CyStack tracking names (155)
 
 | Profile | Confidence | Variants | Sample status |
 |---|---|---:|---|
@@ -194,6 +194,7 @@ The matcher runs locally with Python 3.11+ and has no third-party dependencies.
 | [CSJohnDoeProjectStealer](families/cs-john-doe-project-stealer/) | unknown | 0 | Metadata only |
 | [CSJohnsHubStealer](families/cs-johns-hub-stealer/) | unknown | 0 | Metadata only |
 | [CSJsonCookiesOnlyStealer](families/cs-json-cookies-only-stealer/) | unknown | 0 | Metadata only |
+| [CSKleptoManiaStealer](families/cs-klepto-mania-stealer/) | unknown | 1 | [1 retained](families/cs-klepto-mania-stealer/#observed-log-variants) |
 | [CSLcidBracketStealer](families/cs-lcid-bracket-stealer/) | unknown | 1 | [1 retained](families/cs-lcid-bracket-stealer/#observed-log-variants) |
 | [CSLeakClickCloudCookiesStealer](families/cs-leak-click-cloud-cookies-stealer/) | unknown | 0 | Metadata only |
 | [CSLoginsPathStealer](families/cs-logins-path-stealer/) | unknown | 0 | Metadata only |

@@ -1,0 +1,117 @@
+{
+  "aliases": [
+    "KleptoMania",
+    "PHANTOMTRAFFIC"
+  ],
+  "attack_techniques": [
+    {
+      "id": "T1005",
+      "name": "Data from Local System"
+    },
+    {
+      "id": "T1082",
+      "name": "System Information Discovery"
+    },
+    {
+      "id": "T1614",
+      "name": "System Location Discovery"
+    },
+    {
+      "id": "T1614.001",
+      "name": "System Language Discovery"
+    }
+  ],
+  "attribution_confidence": "unknown",
+  "classification": "cystack_named",
+  "description": "CSKleptoManiaStealer is a CyStack-coined identifier for the\n`#KleptoMania` self-branded `Info.txt` panel wrapping a\n`PHANTOMTRAFFIC` figlet ASCII-art banner. Observed inside\n`IziCloud <count>pcs.part<NN>.rar` reseller packs at\n`IziCloud_<DDMMYYYY>_<numeric-id>/Info.txt` victim folders.\nThe body opens with a block-shaded `PHANTOMTRAFFIC` figlet,\na `: <alphanum> PHANTOMTRAFFIC<alphanum>` watermark line,\nand a `#KleptoMania` self-brand hashtag on its own line;\nthen a flat identity preamble (`Path:` / `Elevated:`); then\nthree hashtag-prefixed section headers (`#Info` /\n`#Hardware` / `#Space`) each followed by a block of flat\n`Key: Value` lines.\n\nDistinguishing vocabulary: `Motherboard:` mainboard key\n(uncommon across cataloged stealer panels), `External IPv4:` + `Default Gateway:` + `Internal IPv4:` network\ntrio, `OS Product: <SKU> <arch> <locale> (Build: <version>.<revision>)` Windows SKU display string with\nparenthesised build, `Time: YYYY/MM/DD - HH:MM:SS` slash\ndate format with a space-delimited date and time, and a\n`#Space` section listing each mounted drive as `<Letter>: Fixed <N>GB (<N>GB Free)` compact capacity and free lines.\n\nFamily attribution is provisional pending a published\nthreat-intel mapping. The `#KleptoMania` self-brand plus\n`PHANTOMTRAFFIC` watermark pair does not match any\ndocumented malware family in the surveyed curated or\ncommunity catalogues. `PHANTOMTRAFFIC` is unrelated to\nthe generic `Phantom Stealer` MaaS (which emits\nJSON-structured logs without hashtag sections per\npublished writeups). The CyStack-coined identifier\ncaptures the\npanel self-brand as the suffix; a future curated CTI\nmapping can promote the family literal.",
+  "detection_notes": "Fingerprint requires three substring anchors all present\nin the body: the `#KleptoMania` self-brand hashtag, the\n`#Info` section header, and the `#Hardware` section\nheader. The `#KleptoMania` literal is 13 chars long and\npanel-specific. No other cataloged stealer panel uses\nthe hashtag-section-header convention, so the triple\ncoupled together cannot plausibly co-occur in unrelated\ncontent. False-positive risk is low because the three\nanchors are sibling markers from the same panel builder.",
+  "id": "cs-klepto-mania-stealer",
+  "name": "CSKleptoManiaStealer",
+  "related_families": [],
+  "sources": [],
+  "typical_targets": [
+    "Victim public IPv4 plus LAN address and default gateway",
+    "Panel log timestamp (YYYY/MM/DD HH:MM:SS)",
+    "Victim HWID (16-hex short form)",
+    "Windows SKU display string with build revision",
+    "CPU and GPU model identifiers",
+    "Installed RAM in megabytes with free-memory annotation",
+    "Mainboard model identifier",
+    "Per-drive capacity and free-space inventory",
+    "Primary display resolution"
+  ],
+  "localizations": {
+    "vi": {
+      "description": "CSKleptoManiaStealer là định danh do CyStack đặt tên cho bảng điều khiển tự nhận thương hiệu `#KleptoMania` `Info.txt` bao bọc một biểu ngữ ASCII art kiểu figlet `PHANTOMTRAFFIC`. Được ghi nhận bên trong các gói bán lại `IziCloud <count>pcs.part<NN>.rar` tại các thư mục nạn nhân `IziCloud_<DDMMYYYY>_<numeric-id>/Info.txt`.\nPhần thân mở đầu bằng một figlet dạng khối bóng mờ `PHANTOMTRAFFIC`,\nmột dòng watermark `: <alphanum> PHANTOMTRAFFIC<alphanum>`,\nvà một hashtag tự nhận thương hiệu `#KleptoMania` trên dòng riêng; sau đó là phần mở đầu danh tính dạng phẳng (`Path:` / `Elevated:`); tiếp theo là ba tiêu đề mục có tiền tố hashtag (`#Info` /\n`#Hardware` / `#Space`), mỗi tiêu đề theo sau là một khối các dòng phẳng `Key: Value`.\n\nTừ vựng đặc trưng: khóa mainboard `Motherboard:`\n(hiếm gặp trong các bảng điều khiển mã độc đánh cắp thông tin đã được lập danh mục), bộ ba thông tin mạng `External IPv4:` + `Default Gateway:` + `Internal IPv4:`, chuỗi hiển thị phiên bản Windows SKU `OS Product: <SKU> <arch> <locale> (Build: <version>.<revision>)` kèm số build trong ngoặc đơn, định dạng ngày kiểu gạch chéo `Time: YYYY/MM/DD - HH:MM:SS` với ngày và giờ phân tách bằng khoảng trắng, và một mục `#Space` liệt kê từng ổ đĩa đã gắn kèm dòng dung lượng và dung lượng trống dạng rút gọn `<Letter>: Fixed <N>GB (<N>GB Free)`.\n\nViệc quy kết họ mã độc hiện vẫn mang tính tạm thời cho đến khi có ánh xạ tình báo đe dọa được công bố. Cặp tự nhận thương hiệu `#KleptoMania` cùng watermark `PHANTOMTRAFFIC` không khớp với bất kỳ họ mã độc nào đã được ghi nhận trong các danh mục tình báo đe dọa đã qua chọn lọc hoặc danh mục cộng đồng được khảo sát. `PHANTOMTRAFFIC` không liên quan đến dịch vụ MaaS `Phantom Stealer` chung chung (loại tạo dữ liệu đầu ra dạng log có cấu trúc JSON mà không có các mục hashtag theo các bài viết đã công bố). Định danh do CyStack đặt tên lấy thương hiệu tự nhận trên bảng điều khiển làm hậu tố; một ánh xạ tình báo đe dọa đã qua chọn lọc trong tương lai có thể nâng cấp định danh họ mã độc này.",
+      "typical_targets": [
+        "Địa chỉ IPv4 công khai của nạn nhân cùng địa chỉ LAN và gateway mặc định",
+        "Dấu thời gian log của bảng điều khiển (YYYY/MM/DD HH:MM:SS)",
+        "HWID của nạn nhân (dạng rút gọn 16 ký tự hex)",
+        "Chuỗi hiển thị phiên bản Windows SKU kèm số hiệu bản build",
+        "Định danh model CPU và GPU",
+        "Dung lượng RAM đã cài đặt tính bằng megabyte kèm chú thích bộ nhớ trống",
+        "Định danh model mainboard",
+        "Danh sách dung lượng và dung lượng trống theo từng ổ đĩa",
+        "Độ phân giải màn hình chính"
+      ],
+      "detection_notes": "Việc lấy dấu vân tay yêu cầu ba điểm neo chuỗi con đều phải có mặt trong phần thân: hashtag tự nhận thương hiệu `#KleptoMania`, tiêu đề mục `#Info`, và tiêu đề mục `#Hardware`. Chuỗi `#KleptoMania` dài 13 ký tự và là đặc trưng riêng của bảng điều khiển này. Không có bảng điều khiển mã độc đánh cắp thông tin nào khác đã được lập danh mục sử dụng quy ước tiêu đề mục dạng hashtag này, do đó bộ ba điểm neo này khi kết hợp với nhau khó có thể cùng xuất hiện một cách ngẫu nhiên trong nội dung không liên quan. Rủi ro dương tính giả ở mức thấp vì ba điểm neo này là các dấu vết liên quan xuất phát từ cùng một công cụ xây dựng bảng điều khiển.",
+      "attack_techniques": [
+        {
+          "id": "T1005",
+          "name": "Dữ liệu từ hệ thống cục bộ"
+        },
+        {
+          "id": "T1082",
+          "name": "Dò tìm thông tin hệ thống"
+        },
+        {
+          "id": "T1614",
+          "name": "Xác định vị trí hệ thống"
+        },
+        {
+          "id": "T1614.001",
+          "name": "Xác định ngôn ngữ hệ thống"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "attribution_confidence": "unknown",
+      "distribution_channel": null,
+      "fields": [
+        "C",
+        "CPU",
+        "D",
+        "Default Gateway",
+        "Elevated",
+        "External IPv4",
+        "GPU",
+        "Hwid",
+        "Internal IPv4",
+        "Machine",
+        "Motherboard",
+        "OS Product",
+        "Path",
+        "RAM",
+        "Resolution",
+        "Time",
+        "User"
+      ],
+      "filenames": [
+        "Info.txt"
+      ],
+      "format_id": "cs-kleptomania-stealer",
+      "id": "v_ddad525ac9f67aaae0c7c33abda62ee0",
+      "markers": [],
+      "panel_brand": "KleptoMania (PHANTOMTRAFFIC watermark)",
+      "observations": 1,
+      "sample": {
+        "path": "samples/v_ddad525ac9f67aaae0c7c33abda62ee0/Info.txt",
+        "sha256": "6e13ddd3d38f7fe2747ef2c92f2fa0d1de96b97662b3f8bc0bc8befd4276200a",
+        "source": "cystack_collection",
+        "sanitized": true
+      }
+    }
+  ]
+}
