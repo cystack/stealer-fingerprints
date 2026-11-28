@@ -1,0 +1,67 @@
+|<SECRET>|
+| These logs belong to Daisy Cloud, if you see these logs elsewhere, you are being scammed and let us know immediately |
+|                                                                                                                      |
+| D           Join: https://t.me/UP_DAISYCLOUD                      _..._             .-'''-.                        D |
+| A  _______  Join: https://t.me/UP_DAISYCLOUD                   .-'_..._''. .---.   '   _    \       _______        A |
+| I  \  ___ `'.            .--.                                .' .'      '.\|   | /   /` '.   \      \  ___ `'.     I |
+| S   ' |--.\  \           |__|     .-.          .-           / .'           |   |.   |     \  '       ' |--.\  \    S |
+| Y   | |    \  '          .--.      \ \        / /          . '             |   ||   '      |  '      | |    \  '   Y |
+|     | |     |  '    __   |  |       \ \      / /           | |             |   |\    \     / /       | |     |  '    |
+| C   | |     |  | .:--.'. |  |     _  \ \    / /            | |             |   | `.   ` ..' /_    _  | |     |  |  C |
+| L   | |     ' .'/ |   \ ||  |   .' |  \ \  / /             . '             |   |    '-...-'`| '  / | | |     ' .'  L |
+| O   | |___.' /' `" __ | ||  |  .   | / \ `  /               \ '.          .|   |           .' | .' | | |___.' /'   O |
+| U  /_______.'/   .'.''| ||__|.'.'| |//  \  /                 '. `._____.-'/|   |           /  | /  |/_______.'/    U |
+| D  \_______|/   / /   | |_ .'.'.-'  /   / /                    `-.______ / '---'          |   `'.  |\_______|/     D |
+|                 \ \._,\ '/ .'   \_.'|`-' /                              `                 '   .'|  '/                |
+|                  `--'  `"            '..'                                                  `-'  `--'                 |
+|                                                  Daisy Private Cloud                                                 |
+|                                                      1 Week: $80                                                     |
+|                                                      2 Week: $120                                                    |
+| D                                                   1 Month: $200                                                  D |
+| A                                                   3 Month: $600                                                  A |
+| I                                                  LifeTime: $5000                                                 I |
+| S                                                                                                                  S |
+| Y                                 There are updates in the morning, noon and evening                               Y |
+|                                              Monthly 140k-700k PCS Logs                                              |
+| C                                             Weekly 35k-175k PCS Logs                                             C |
+| L                                              Daily 5k-25k PCS Logs                                               L |
+| O                                                                                                                  O |
+| U                           I don't upload logs like crap and garbage like other channels                          U |
+| D                                       100+ User reviews, Posts with #REF tags                                    D |
+|                                                                                                                      |
+|     DAISY CLOUD     DAISY CLOUD     DAISY CLOUD     DAISY  CLOUD     DAISY CLOUD     DAISY CLOUD     DAISY CLOUD     |
+|<SECRET>|
+ 
+███████╗ █████╗ ███╗   ██╗████████╗ █████╗      ███████╗████████╗███████╗ █████╗ ██╗     ███████╗██████╗    
+██╔════╝██╔══██╗████╗  ██║╚══██╔══╝██╔══██╗     ██╔════╝╚══██╔══╝██╔════╝██╔══██╗██║     ██╔════╝██╔══██╗   
+███████╗███████║██╔██╗ ██║   ██║   ███████║     ███████╗   ██║   █████╗  ███████║██║     █████╗  ██████╔╝   
+╚════██║██╔══██║██║╚██╗██║   ██║   ██╔══██║     ╚════██║   ██║   ██╔══╝  ██╔══██║██║     ██╔══╝  ██╔══██╗   
+███████║██║  ██║██║ ╚████║   ██║   ██║  ██║     ███████║   ██║   ███████╗██║  ██║███████╗███████╗██║  ██║   
+╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝     ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝   
+stealer.su/Telegram   t.me/SantaStealer2   t.me/SantaStealer2   t.me/SantaStealer2   stealer.su/Telegram  
+
+- Path: <PATH>
+- OS Version: Windows 11 Home Single Language 25H2 (Build 26200) x64
+- Local Date: 07.09.2026 00:31:35
+- Install Date: 20.08.2026 12:48:49
+- Uptime: 4d 1h 16m
+- Time Zone: India Standard Time
+- Elevated: true
+- Hostname: <HOST>
+- User: <USER>
+- Email: <EMAIL>
+- Language: en-US
+- HWID: <HWID>
+- RAM Size: 7931MB
+- CPU Vendor: GenuineIntel
+- CPU Name: Intel(R) Core(TM) 3 100U
+- CPU Threads: 8
+- CPU Cores: 8
+- GPU:
+	- Intel(R) Graphics
+- Display resolution: 1536x864
+- BSSID: <MAC>
+- Country: IN
+- Window: RAV Endpoint Protection notification
+- Time: 07.09.2026 00:31:35 (sig:1788721295.6a9db88f)
+- Wallpaper SHA256: <SECRET>

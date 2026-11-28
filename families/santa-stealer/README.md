@@ -36,8 +36,8 @@ Mã độc chạy 14 mô-đun thu thập dữ liệu song song theo các luồng
 - Classification / Phân loại: **Known malware family / Họ mã độc đã được định danh**
 - Attribution confidence: **high**
 - Aliases: `Santa Stealer`, `BluelineStealer`
-- Variants observed: **1**
-- CyStack observations represented: **2**
+- Variants observed: **2**
+- CyStack observations represented: **3**
 
 ## What it targets / Mục tiêu thường gặp
 
@@ -70,6 +70,24 @@ literal rather than the banner text itself.
 Tín hiệu mạnh nhất là tên kênh Telegram `t.me/SantaStealer` được nhúng nguyên văn trong cấu hình của mã độc và ghi vào mọi dấu vết mà mã độc tạo ra. Kết hợp với tiêu đề manifest của mô-đun thu thập tệp `Found N Sensitive files. Many of these will be false positives`, việc quy kết họ mã độc đạt mức độ tin cậy cao. Biểu ngữ ASCII-art `SANTA STEALER` sử dụng các ký tự vẽ khung Unicode, do đó các quy tắc phân loại nên bám vào tên kênh và chuỗi khuôn mẫu (template literal) thay vì nội dung văn bản của biểu ngữ.
 
 ## Observed log variants
+
+### `v_4e1e5c5c4efcdbd85da220e1818a396e`
+
+- Format ID: `santastealer`
+- Observed filenames: `System.txt`
+- Panel brand: `SantaStealer2 System.txt (Daisy Cloud resale)`
+- Distribution channel: `t.me/SantaStealer2`
+- Attribution confidence: **high**
+- Layout: `lumma-bullet-system-txt`
+- Historical records represented: **1**
+- Representative sample: [open sample](samples/v_4e1e5c5c4efcdbd85da220e1818a396e/System.txt)
+- Sample SHA-256: `5d81dea7d0daed60e9fc948dfc03858931b224b88ad9839252b6d309545b62c9`
+- Sample provenance: CyStack Threat Intelligence collection, scrubbed for public research
+
+Recognition anchors:
+
+- Stable markers: `stealer.su/Telegram t.me/SantaStealer2 t.me/SantaStealer2 t.me/SantaStealer2 stealer.su/Telegram`
+- Field labels: `1 Week`, `2 Week`, `A 3 Month`, `A _______ Join`, `BSSID`, `Country`, `CPU Cores`, `CPU Name`, `CPU Threads`, `CPU Vendor`, `D 1 Month`, `D Join`, `Display resolution`, `Elevated`, `Email`, `GPU`, `Hostname`, `HWID`, `I LifeTime`, `Install Date`, `Language`, `Local Date`, `OS Version`, `Path`, `RAM Size`, `Time`, `Time Zone`, `Uptime`, `User`, `Wallpaper SHA256`, `Window`
 
 ### `v_e8de83dfb299d4ae3148727b940ff625`
 
